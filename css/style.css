@@ -455,3 +455,86 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
   .heat { grid-template-columns: repeat(14, 1fr); }
   .today-card .split { flex-direction: column; }
 }
+
+/* ============ 单词测试(完形填空) ============ */
+.quiz-container { max-width: 720px; }
+
+/* --- 首页 --- */
+.quiz-setup { background: var(--card); border-radius: 16px; padding: 32px 28px; box-shadow: 0 2px 14px rgba(0,0,0,.05); text-align: center; }
+.quiz-setup .eyebrow { color: #9ccca3; font: 700 11px Georgia, serif; letter-spacing: .18em; }
+.quiz-setup h2 { margin: 6px 0 10px; font: 700 30px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.quiz-intro { max-width: 440px; margin: 0 auto 20px; color: #6a7a6e; font-size: 14px; }
+.quiz-stat { color: #4a9d5b; font-size: 14px; margin-bottom: 22px; }
+.quiz-stat b { color: #2d6940; }
+.quiz-start-btns { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.quiz-primary { background: #243b2e; color: #fff; border: none; border-radius: 10px; padding: 13px 26px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.quiz-primary:hover { background: #2f4d3b; }
+.quiz-secondary { background: #fff; color: #2d6940; border: 1.5px solid #cbd9cd; border-radius: 10px; padding: 13px 22px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.quiz-secondary:hover:not(:disabled) { background: #f2f9f3; border-color: #4a9d5b; }
+.quiz-secondary:disabled { color: #b3bdb5; border-color: #e3e8e3; cursor: not-allowed; }
+.quiz-notice { margin-top: 18px; color: #a06a3b; background: #fdf6ee; border-radius: 10px; padding: 12px 16px; font-size: 13px; }
+
+/* --- 答题 --- */
+.quiz-play { background: var(--card); border-radius: 16px; padding: 26px 26px 30px; box-shadow: 0 2px 14px rgba(0,0,0,.05); }
+.quiz-topline { display: flex; justify-content: space-between; align-items: center; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.quiz-bar { height: 6px; background: #e7ece7; border-radius: 99px; margin-bottom: 26px; overflow: hidden; }
+.quiz-bar-fill { height: 100%; width: 0; background: var(--green-dark); border-radius: 99px; transition: width .25s ease; }
+.quiz-stem { font-size: 19px; line-height: 1.9; color: #1f2d24; margin-bottom: 26px; }
+.q-word { cursor: help; border-bottom: 1px dotted transparent; }
+.q-word:hover { border-bottom-color: #9ccca3; background: #f0f8f1; }
+.q-blank { display: inline-block; min-width: 92px; border-bottom: 2px solid var(--green-dark); margin: 0 3px; vertical-align: bottom; }
+.quiz-options { display: flex; flex-direction: column; gap: 11px; }
+.q-option { display: flex; align-items: center; gap: 13px; padding: 13px 18px; border: 1.5px solid #e2e8e3; border-radius: 11px; background: #fff; font-size: 16px; color: #2b3a30; cursor: pointer; text-align: left; transition: border-color .12s, background .12s; }
+.q-option:hover:not(.locked) { border-color: var(--green); background: #f5faf6; }
+.q-option b { color: var(--green-dark); min-width: 14px; }
+.q-option.locked { cursor: default; }
+.q-option.right { border-color: #52b168; background: #eefaf0; }
+.q-option.right b, .q-option.right span { color: #1f7a3a; font-weight: 600; }
+.q-option.wrong { border-color: #dd6a63; background: #fdf1f0; }
+.q-option.wrong b, .q-option.wrong span { color: #b23c34; }
+.q-option.dim { color: #a7b1a9; }
+.q-option.dim b { color: #b8c1ba; }
+
+/* --- 解析 --- */
+.quiz-explain { margin-top: 22px; padding-top: 20px; border-top: 1px solid #e7ece7; }
+.q-sentence { position: relative; background: #f6f9f6; border-radius: 11px; padding: 15px 17px; margin-bottom: 15px; }
+.q-en { font-size: 16px; color: #1f2d24; margin-bottom: 7px; }
+.q-fill { color: #1f7a3a; }
+.q-zh { font-size: 14px; color: #566a5c; }
+.q-speak { margin-top: 10px; }
+.q-speak-btn { background: #eef4ef; border: 1px solid #d3e0d5; color: #2d6940; border-radius: 7px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
+.q-speak-btn:disabled { opacity: .5; cursor: not-allowed; }
+.q-why { margin-bottom: 15px; }
+.q-why-label { font: 700 12px Georgia, serif; letter-spacing: .04em; color: var(--green-dark); margin-bottom: 5px; }
+.q-why-text { font-size: 14px; color: #37453b; line-height: 1.7; }
+.q-defs { border-top: 1px solid #e7ece7; padding-top: 13px; font-size: 13px; color: #4a5850; line-height: 2; }
+.q-defs b { color: #2b3a30; margin-right: 4px; }
+.q-def-ans b { color: #1f7a3a; }
+.quiz-next { width: 100%; margin-top: 20px; background: #243b2e; color: #fff; border: none; border-radius: 10px; padding: 13px; font-size: 15px; font-weight: 600; cursor: pointer; }
+.quiz-next:hover { background: #2f4d3b; }
+
+/* --- 悬停查词气泡 --- */
+.q-tip { position: absolute; z-index: 50; max-width: 240px; background: #22352a; color: #eaf5ec; border-radius: 9px; padding: 9px 12px; box-shadow: 0 8px 24px rgba(0,0,0,.22); font-size: 13px; pointer-events: none; }
+.q-tip-w { font-weight: 700; }
+.q-tip-ph { color: #9fc7a8; font-size: 12px; margin-left: 6px; }
+.q-tip-def { margin-top: 3px; color: #d3e6d7; line-height: 1.5; }
+
+/* --- 结果 --- */
+.quiz-result { background: var(--card); border-radius: 16px; padding: 32px 28px; box-shadow: 0 2px 14px rgba(0,0,0,.05); text-align: center; }
+.quiz-score-big { font: 700 52px Georgia, serif; color: #2d6940; }
+.quiz-score-big span { font-size: 26px; color: #9bb3a1; }
+.quiz-pct { color: #6a7a6e; font-size: 15px; margin-top: 4px; }
+.quiz-missed-title { margin: 26px 0 10px; font: 700 16px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.quiz-missed { list-style: none; padding: 0; margin: 0 auto 24px; max-width: 420px; text-align: left; }
+.quiz-missed li { display: flex; justify-content: space-between; gap: 14px; padding: 9px 14px; border-bottom: 1px solid #eef2ee; font-size: 14px; }
+.quiz-missed li b { color: #b23c34; }
+.quiz-missed li span { color: #566a5c; text-align: right; }
+.quiz-missed li.q-none { justify-content: center; color: #4a9d5b; border: none; }
+.quiz-result-btns { display: flex; gap: 11px; justify-content: center; flex-wrap: wrap; }
+.quiz-ghost { background: transparent; color: #6a7a6e; border: 1px solid #d9ded7; border-radius: 10px; padding: 13px 22px; font-size: 15px; cursor: pointer; }
+.quiz-ghost:hover { background: #f4f7f4; }
+
+@media (max-width: 760px) {
+  .quiz-stem { font-size: 17px; }
+  .quiz-setup, .quiz-result { padding: 24px 18px; }
+}

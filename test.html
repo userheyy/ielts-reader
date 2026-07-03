@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>单词测试</title>
+  <link rel="stylesheet" href="css/style.css?v=5" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="test.html">测试</a>
+  </header>
+  <div class="container quiz-container">
+
+    <!-- 首页 / 开始 -->
+    <section id="setup" class="quiz-setup">
+      <span class="eyebrow">CLOZE TEST</span>
+      <h2>单词测试</h2>
+      <p class="quiz-intro">看句子选词，选完看翻译和辨析。答错的词进错题本，可以只刷错题，连续答对两次才移出。</p>
+      <div class="quiz-stat" id="stat-summary"></div>
+      <div class="quiz-start-btns">
+        <button id="start-normal" class="quiz-primary">开始测试（10 题）</button>
+        <button id="start-wrong" class="quiz-secondary">重做错题（0）</button>
+      </div>
+      <div class="speech-controls" style="margin-top:16px;display:inline-flex" aria-label="单词朗读设置">
+        <span>发音</span>
+        <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
+        <select id="speech-rate" aria-label="朗读速度">
+          <option value="0.7">慢速 0.7×</option>
+          <option value="0.9">清晰 0.9×</option>
+          <option value="1" selected>正常 1×</option>
+        </select>
+        <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
+      </div>
+      <p class="quiz-notice" id="notice" hidden></p>
+    </section>
+
+    <!-- 答题 -->
+    <section id="quiz" class="quiz-play" hidden>
+      <div class="quiz-topline">
+        <span id="q-progress">第 1 / 10 题</span>
+        <span id="q-score">✅ 0　❌ 0</span>
+      </div>
+      <div class="quiz-bar"><div class="quiz-bar-fill" id="q-bar"></div></div>
+      <div class="quiz-stem" id="q-stem"></div>
+      <div class="quiz-options" id="q-options"></div>
+      <div class="quiz-explain" id="q-explain" hidden></div>
+      <button class="quiz-next" id="q-next" hidden>下一题 →</button>
+    </section>
+
+    <!-- 结果 -->
+    <section id="result" class="quiz-result" hidden>
+      <div class="quiz-score-big" id="r-score"></div>
+      <div class="quiz-pct" id="r-pct"></div>
+      <h3 class="quiz-missed-title">本轮错题</h3>
+      <ul class="quiz-missed" id="r-missed"></ul>
+      <div class="quiz-result-btns">
+        <button id="r-again" class="quiz-primary">再来一组</button>
+        <button id="r-again-wrong" class="quiz-secondary">重做错题（0）</button>
+        <button id="r-back" class="quiz-ghost">返回</button>
+      </div>
+    </section>
+
+  </div>
+  <script type="module" src="js/test.js?v=1"></script>
+</body>
+</html>

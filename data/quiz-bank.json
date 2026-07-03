@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
+    "generated_batches": 1,
+    "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
+    "count": 12
+  },
+  "questions": [
+    {
+      "word": "predict",
+      "pos": "v.",
+      "def": "预测，预言",
+      "sentence": "Climate models can now ___ temperature changes decades into the future with growing accuracy.",
+      "sentence_zh": "气候模型现在能够以越来越高的准确度预测未来几十年的气温变化。",
+      "explain": "根据现有数据对未来做出判断，用 predict（预测）。construct 是建造、reduce 是减少、respect 是尊重，都不合“对未来气温的预判”这个语境。"
+    },
+    {
+      "word": "construct",
+      "pos": "v.",
+      "def": "建造，构造",
+      "sentence": "Engineers plan to ___ a new bridge across the river to ease the city's traffic.",
+      "sentence_zh": "工程师计划在河上建造一座新桥，以缓解这座城市的交通压力。",
+      "explain": "“建造”桥梁用 construct。predict 是预测、export 是出口、include 是包含，都不能用于修建建筑物。"
+    },
+    {
+      "word": "reduce",
+      "pos": "v.",
+      "def": "减少，降低",
+      "sentence": "The new policy aims to ___ carbon emissions by nearly a third within ten years.",
+      "sentence_zh": "这项新政策旨在十年内将碳排放量减少近三分之一。",
+      "explain": "“减少”排放量用 reduce。inspect 是检查、produce 是生产、instruct 是指导，都不表示数量的降低。"
+    },
+    {
+      "word": "export",
+      "pos": "v.",
+      "def": "出口，输出",
+      "sentence": "The country began to ___ large quantities of coffee to markets across Europe.",
+      "sentence_zh": "这个国家开始向欧洲各地的市场出口大量咖啡。",
+      "explain": "把货物运往国外销售用 export（出口）。conclude 是得出结论、respect 是尊重、reduce 是减少，都不合“向外国销售商品”的意思。"
+    },
+    {
+      "word": "inspect",
+      "pos": "v.",
+      "def": "检查，视察",
+      "sentence": "Officials arrived to ___ the factory for any violations of safety rules.",
+      "sentence_zh": "官员们前来检查这家工厂是否存在任何违反安全规定的情况。",
+      "explain": "仔细查看以发现问题用 inspect（检查）。predict 是预测、produce 是生产、include 是包含，都不表示“审查、查验”。"
+    },
+    {
+      "word": "produce",
+      "pos": "v.",
+      "def": "生产，制造",
+      "sentence": "Modern factories can ___ thousands of identical parts in a single day.",
+      "sentence_zh": "现代工厂一天之内就能生产出数千个相同的零件。",
+      "explain": "制造、生产出产品用 produce。inspect 是检查、export 是出口、conclude 是得出结论，都不表示“制造出来”。"
+    },
+    {
+      "word": "conclude",
+      "pos": "v.",
+      "def": "得出结论；结束",
+      "sentence": "After months of research, the scientists were able to ___ that the drug was safe.",
+      "sentence_zh": "经过数月的研究，科学家们得以得出结论：这种药物是安全的。",
+      "explain": "根据证据得出结论用 conclude。construct 是建造、reduce 是减少、instruct 是指导，都不表示“推断出结论”。"
+    },
+    {
+      "word": "include",
+      "pos": "v.",
+      "def": "包含，包括",
+      "sentence": "The museum ticket does not ___ access to the special exhibition on the top floor.",
+      "sentence_zh": "这张博物馆门票不包含顶层特别展览的参观权限。",
+      "explain": "把某事物作为整体的一部分用 include（包含）。predict 是预测、export 是出口、inspect 是检查，都不表示“包括在内”。"
+    },
+    {
+      "word": "instruct",
+      "pos": "v.",
+      "def": "指导，指示",
+      "sentence": "The manual will ___ new users on how to set up the software step by step.",
+      "sentence_zh": "这本手册将逐步指导新用户如何安装该软件。",
+      "explain": "教导、指示他人怎么做用 instruct。produce 是生产、conclude 是得出结论、reduce 是减少，都不表示“指导”。"
+    },
+    {
+      "word": "structure",
+      "pos": "n.",
+      "def": "结构，构造",
+      "sentence": "The overall ___ of the essay was clear, with a strong introduction and conclusion.",
+      "sentence_zh": "这篇文章的整体结构很清晰，有一个有力的引言和结论。",
+      "explain": "各部分的组织方式、结构用 structure。prediction 是预测、instruction 是指示、reduction 是减少，都不表示“结构”。"
+    },
+    {
+      "word": "transport",
+      "pos": "v.",
+      "def": "运输，运送",
+      "sentence": "Trucks are used to ___ fresh vegetables from the farms to the city each morning.",
+      "sentence_zh": "每天早晨，卡车被用来把新鲜蔬菜从农场运送到城市。",
+      "explain": "把人或货物从一地运到另一地用 transport（运输）。inspect 是检查、conclude 是得出结论、include 是包含，都不表示“运送”。"
+    },
+    {
+      "word": "respect",
+      "pos": "v.",
+      "def": "尊重，敬重",
+      "sentence": "Good researchers ___ the work of others by citing their sources carefully.",
+      "sentence_zh": "优秀的研究者通过仔细标注出处来尊重他人的成果。",
+      "explain": "重视、敬重他人或其成果用 respect。export 是出口、produce 是生产、construct 是建造，都不合“尊重他人成果”这个语境。"
+    }
+  ]
+}
