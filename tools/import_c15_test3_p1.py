@@ -1,0 +1,745 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c15-test3-p1.json (Henry Moore (1898-1986))."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # –
+
+sentences = [
+    # Para 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "Henry Moore was born in Castleford, a small town near Leeds in the north of England.",
+        "zh": "亨利·摩尔出生于卡斯尔福德，那是英格兰北部利兹附近的一个小镇。",
+        "grammar": {
+            "type": "被动 + 同位语",
+            "note": "was born in 为被动结构；a small town near Leeds... 为 Castleford 的同位语。"
+        },
+        "words": [
+            {"w": "be born in", "pos": "phr.", "def": "出生于"},
+            {"w": "near", "pos": "prep.", "def": "在……附近"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "He was the seventh child of Raymond Moore and his wife Mary Baker.",
+        "zh": "他是雷蒙德·摩尔与其妻子玛丽·贝克的第七个孩子。",
+        "grammar": {
+            "type": "主系表",
+            "note": "the seventh child of... 为表语，序数词 seventh 前用定冠词 the。"
+        },
+        "words": [
+            {"w": "seventh", "pos": "num.", "def": "第七"},
+            {"w": "wife", "pos": "n.", "def": "妻子"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "He studied at Castleford Grammar School from 1909 to 1915, where his early interest in art was encouraged by his teacher Alice Gostick.",
+        "zh": "1909年至1915年，他就读于卡斯尔福德文法学校，在那里他早年对艺术的兴趣得到了老师爱丽丝·戈斯蒂克的鼓励。",
+        "grammar": {
+            "type": "非限定性定语从句 + 被动",
+            "note": "where his early interest... was encouraged... 为 where 引导的非限定性定语从句；from 1909 to 1915 为时间状语。"
+        },
+        "words": [
+            {"w": "grammar school", "pos": "phr.", "def": "文法学校"},
+            {"w": "interest", "pos": "n.", "def": "兴趣"},
+            {"w": "encourage", "pos": "v.", "def": "鼓励"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 1,
+        "en": "After leaving school, Moore hoped to become a sculptor, but instead he complied with his father" + RSQUO + "s wish that he train as a schoolteacher.",
+        "zh": "离开学校后，摩尔希望成为一名雕塑家，但他还是顺从了父亲希望他接受师范培训的意愿。",
+        "grammar": {
+            "type": "转折并列 + 同位语从句（虚拟）",
+            "note": "but instead 表转折；his father's wish that he train as... 中 that 引导同位语从句，因表 “愿望” 用虚拟语气（train 为原形）；comply with 意为 “顺从、遵从”。"
+        },
+        "words": [
+            {"w": "sculptor", "pos": "n.", "def": "雕塑家"},
+            {"w": "comply with", "pos": "phr.", "def": "顺从；遵从"},
+            {"w": "wish", "pos": "n.", "def": "愿望"},
+            {"w": "schoolteacher", "pos": "n.", "def": "中小学教师"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 1,
+        "en": "He had to abandon his training in 1917 when he was sent to France to fight in the First World War.",
+        "zh": "1917年，他不得不放弃培训，被派往法国参加第一次世界大战。",
+        "grammar": {
+            "type": "时间状语从句 + 被动",
+            "note": "when he was sent to France... 为时间状语从句（被动）；to fight in... 为目的状语；abandon 意为 “放弃”。"
+        },
+        "words": [
+            {"w": "abandon", "pos": "v.", "def": "放弃；抛弃"},
+            {"w": "training", "pos": "n.", "def": "培训；训练"},
+            {"w": "be sent to", "pos": "phr.", "def": "被派往"}
+        ]
+    },
+    # Para 2
+    {
+        "id": 6,
+        "para": 2,
+        "en": "After the war, Moore enrolled at the Leeds School of Art, where he studied for two years.",
+        "zh": "战后，摩尔进入利兹艺术学校学习，在那里学习了两年。",
+        "grammar": {
+            "type": "非限定性定语从句",
+            "note": "where he studied for two years 为 where 引导的非限定性定语从句；enrol at 意为 “入（学）、注册”。"
+        },
+        "words": [
+            {"w": "enrol", "pos": "v.", "def": "入学；注册"},
+            {"w": "school of art", "pos": "phr.", "def": "艺术学校"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "In his first year, he spent most of his time drawing.",
+        "zh": "第一年，他把大部分时间都花在了绘画上。",
+        "grammar": {
+            "type": "简单句",
+            "note": "spend time doing 意为 “花时间做某事”，doing 用现在分词 drawing。"
+        },
+        "words": [
+            {"w": "spend time", "pos": "phr.", "def": "花时间"},
+            {"w": "drawing", "pos": "n.", "def": "绘画；素描"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "Although he wanted to study sculpture, no teacher was appointed until his second year.",
+        "zh": "尽管他想学雕塑，但直到第二年才有雕塑老师被任命。",
+        "grammar": {
+            "type": "让步状语从句 + not until",
+            "note": "Although 引导让步状语从句；no teacher was appointed until... 为 “not...until” 结构（此处以 no 表否定），意为 “直到……才”。"
+        },
+        "words": [
+            {"w": "sculpture", "pos": "n.", "def": "雕塑"},
+            {"w": "appoint", "pos": "v.", "def": "任命；委派"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "At the end of that year, he passed the sculpture examination and was awarded a scholarship to the Royal College of Art in London.",
+        "zh": "那一年年底，他通过了雕塑考试，并获得了伦敦皇家艺术学院的奖学金。",
+        "grammar": {
+            "type": "并列谓语（含被动）",
+            "note": "passed... and was awarded... 为并列谓语，后者为被动；be awarded a scholarship 意为 “被授予奖学金”。"
+        },
+        "words": [
+            {"w": "examination", "pos": "n.", "def": "考试"},
+            {"w": "award", "pos": "v.", "def": "授予；给予"},
+            {"w": "scholarship", "pos": "n.", "def": "奖学金"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "In September 1921, he moved to London and began three years of advanced study in sculpture.",
+        "zh": "1921年9月，他搬到伦敦，开始了为期三年的雕塑高级研修。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "moved to... and began... 为并列谓语；advanced study 意为 “高级研修、深造”。"
+        },
+        "words": [
+            {"w": "move to", "pos": "phr.", "def": "搬到；迁往"},
+            {"w": "advanced", "pos": "adj.", "def": "高级的；先进的"}
+        ]
+    },
+    # Para 3
+    {
+        "id": 11,
+        "para": 3,
+        "en": "Alongside the instruction he received at the Royal College, Moore visited many of the London museums, particularly the British Museum, which had a wide-ranging collection of ancient sculpture.",
+        "zh": "除了在皇家艺术学院接受的教学之外，摩尔还参观了伦敦的许多博物馆，尤其是拥有大量古代雕塑藏品的大英博物馆。",
+        "grammar": {
+            "type": "省略定语从句 + 非限定性定语从句",
+            "note": "(that) he received at the Royal College 为省略关系词的定语从句修饰 the instruction；which had a wide-ranging collection... 为非限定性定语从句修饰 the British Museum；Alongside 意为 “除……之外、与……一起”。"
+        },
+        "words": [
+            {"w": "alongside", "pos": "prep.", "def": "除……之外；与……一起"},
+            {"w": "instruction", "pos": "n.", "def": "教学；指导"},
+            {"w": "wide-ranging", "pos": "adj.", "def": "范围广泛的"},
+            {"w": "collection", "pos": "n.", "def": "收藏；藏品"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 3,
+        "en": "During these visits, he discovered the power and beauty of ancient Egyptian and African sculpture.",
+        "zh": "在这些参观中，他发现了古埃及和非洲雕塑的力量与美。",
+        "grammar": {
+            "type": "简单句",
+            "note": "During these visits 为时间状语；the power and beauty of... 为并列宾语。"
+        },
+        "words": [
+            {"w": "discover", "pos": "v.", "def": "发现"},
+            {"w": "ancient", "pos": "adj.", "def": "古代的"},
+            {"w": "Egyptian", "pos": "adj.", "def": "埃及的"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "As he became increasingly interested in these " + LSQUO + "primitive" + RSQUO + " forms of art, he turned away from European sculptural traditions.",
+        "zh": "随着他对这些“原始”艺术形式越来越感兴趣，他逐渐背离了欧洲的雕塑传统。",
+        "grammar": {
+            "type": "时间/原因状语从句",
+            "note": "As 引导状语从句（表 “随着/由于”）；turn away from 意为 “背离、抛弃”；increasingly interested in 意为 “越来越感兴趣”。"
+        },
+        "words": [
+            {"w": "increasingly", "pos": "adv.", "def": "越来越；日益"},
+            {"w": "primitive", "pos": "adj.", "def": "原始的"},
+            {"w": "turn away from", "pos": "phr.", "def": "背离；抛弃"},
+            {"w": "tradition", "pos": "n.", "def": "传统"}
+        ]
+    },
+    # Para 4
+    {
+        "id": 14,
+        "para": 4,
+        "en": "After graduating, Moore spent the first six months of 1925 travelling in France.",
+        "zh": "毕业后，摩尔用1925年上半年的时间在法国旅行。",
+        "grammar": {
+            "type": "现在分词状语 + spend 结构",
+            "note": "After graduating 为介词短语作时间状语；spend time doing 结构，travelling 为现在分词。"
+        },
+        "words": [
+            {"w": "graduate", "pos": "v.", "def": "毕业"},
+            {"w": "travel", "pos": "v.", "def": "旅行"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 4,
+        "en": "When he visited the Trocadero Museum in Paris, he was impressed by a cast of a Mayan sculpture of the rain spirit.",
+        "zh": "当他参观巴黎的特罗卡德罗博物馆时，一件玛雅雨神雕塑的铸模给他留下了深刻印象。",
+        "grammar": {
+            "type": "时间状语从句 + 被动",
+            "note": "When 引导时间状语从句；was impressed by 为被动，意为 “被……打动”；a cast of 意为 “……的铸模/翻模”。"
+        },
+        "words": [
+            {"w": "be impressed by", "pos": "phr.", "def": "被……打动；对……印象深刻"},
+            {"w": "cast", "pos": "n.", "def": "铸件；翻模"},
+            {"w": "spirit", "pos": "n.", "def": "神灵；精灵"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 4,
+        "en": "It was a male reclining figure with its knees drawn up together, and its head at a right angle to its body.",
+        "zh": "那是一个斜倚的男性形象，双膝并拢抬起，头部与身体成直角。",
+        "grammar": {
+            "type": "主系表 + with 复合结构",
+            "note": "with its knees drawn up together, and its head at a right angle... 为两个 with 复合结构作伴随状语；reclining 为现在分词作定语；at a right angle to 意为 “与……成直角”。"
+        },
+        "words": [
+            {"w": "reclining", "pos": "adj.", "def": "斜倚的；躺卧的"},
+            {"w": "figure", "pos": "n.", "def": "人像；人物"},
+            {"w": "at a right angle", "pos": "phr.", "def": "成直角"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 4,
+        "en": "Moore became fascinated with this stone sculpture, which he thought had a power and originality that no other stone sculpture possessed.",
+        "zh": "摩尔对这件石雕着了迷，他认为它具有其他任何石雕都不具备的力量与独创性。",
+        "grammar": {
+            "type": "非限定性定语从句 + 定语从句",
+            "note": "which he thought had a power and originality 为非限定性定语从句（含插入语 he thought）；that no other stone sculpture possessed 为定语从句修饰 a power and originality；be fascinated with 意为 “对……着迷”。"
+        },
+        "words": [
+            {"w": "be fascinated with", "pos": "phr.", "def": "对……着迷"},
+            {"w": "originality", "pos": "n.", "def": "独创性；新颖"},
+            {"w": "possess", "pos": "v.", "def": "拥有；具有"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": "He himself started carving a variety of subjects in stone, including depictions of reclining women, mother-and-child groups, and masks.",
+        "zh": "他本人开始用石头雕刻各种题材，包括斜倚的女性、母子组合和面具的形象。",
+        "grammar": {
+            "type": "现在分词状语 + 举例",
+            "note": "including depictions of... 为现在分词短语作定语/状语举例；He himself 中 himself 为反身代词加强语气；a variety of 意为 “各种各样的”。"
+        },
+        "words": [
+            {"w": "carve", "pos": "v.", "def": "雕刻"},
+            {"w": "a variety of", "pos": "phr.", "def": "各种各样的"},
+            {"w": "depiction", "pos": "n.", "def": "描绘；描画"},
+            {"w": "mask", "pos": "n.", "def": "面具"}
+        ]
+    },
+    # Para 5
+    {
+        "id": 19,
+        "para": 5,
+        "en": "Moore" + RSQUO + "s exceptional talent soon gained recognition, and in 1926 he started work as a sculpture instructor at the Royal College.",
+        "zh": "摩尔非凡的才华很快得到认可，1926年他开始在皇家艺术学院担任雕塑讲师。",
+        "grammar": {
+            "type": "并列句",
+            "note": "and 连接两分句；gain recognition 意为 “得到认可”；work as 意为 “担任、从事……工作”。"
+        },
+        "words": [
+            {"w": "exceptional", "pos": "adj.", "def": "非凡的；杰出的"},
+            {"w": "talent", "pos": "n.", "def": "才能；天赋"},
+            {"w": "recognition", "pos": "n.", "def": "认可；赏识"},
+            {"w": "instructor", "pos": "n.", "def": "讲师；指导者"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 5,
+        "en": "In 1933, he became a member of a group of young artists called Unit One.",
+        "zh": "1933年，他成为一个名为“第一小组”的青年艺术家团体的成员。",
+        "grammar": {
+            "type": "过去分词定语",
+            "note": "called Unit One 为过去分词短语作定语修饰 a group of young artists；a member of 意为 “……的成员”。"
+        },
+        "words": [
+            {"w": "member", "pos": "n.", "def": "成员"},
+            {"w": "artist", "pos": "n.", "def": "艺术家"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 5,
+        "en": "The aim of the group was to convince the English public of the merits of the emerging international movement in modern art and architecture.",
+        "zh": "该团体的宗旨是让英国公众相信现代艺术与建筑领域这一新兴国际运动的价值。",
+        "grammar": {
+            "type": "主系表（不定式）",
+            "note": "表语为不定式 to convince...；convince sb of sth 意为 “使某人相信某事”；emerging 意为 “新兴的”。"
+        },
+        "words": [
+            {"w": "aim", "pos": "n.", "def": "目标；宗旨"},
+            {"w": "convince ... of", "pos": "phr.", "def": "使……相信"},
+            {"w": "merit", "pos": "n.", "def": "优点；价值"},
+            {"w": "emerging", "pos": "adj.", "def": "新兴的"}
+        ]
+    },
+    # Para 6
+    {
+        "id": 22,
+        "para": 6,
+        "en": "Around this time, Moore moved away from the human figure to experiment with abstract shapes.",
+        "zh": "大约在这一时期，摩尔从人体形象转向对抽象形状的尝试。",
+        "grammar": {
+            "type": "不定式目的状语",
+            "note": "to experiment with abstract shapes 为不定式作目的状语；move away from 意为 “远离、脱离”。"
+        },
+        "words": [
+            {"w": "move away from", "pos": "phr.", "def": "远离；脱离"},
+            {"w": "experiment with", "pos": "phr.", "def": "对……进行尝试/试验"},
+            {"w": "abstract", "pos": "adj.", "def": "抽象的"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 6,
+        "en": "In 1931, he held an exhibition at the Leicester Galleries in London.",
+        "zh": "1931年，他在伦敦的莱斯特画廊举办了一场展览。",
+        "grammar": {
+            "type": "简单句",
+            "note": "hold an exhibition 意为 “举办展览”；at the Leicester Galleries 为地点状语。"
+        },
+        "words": [
+            {"w": "hold", "pos": "v.", "def": "举办；举行"},
+            {"w": "exhibition", "pos": "n.", "def": "展览"},
+            {"w": "gallery", "pos": "n.", "def": "画廊；美术馆"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 6,
+        "en": "His work was enthusiastically welcomed by fellow sculptors, but the reviews in the press were extremely negative and turned Moore into a notorious figure.",
+        "zh": "他的作品受到雕塑同行的热烈欢迎，但媒体上的评论却极其负面，把摩尔变成了一个声名狼藉的人物。",
+        "grammar": {
+            "type": "转折并列 + 被动",
+            "note": "was welcomed 为被动；but 后 the reviews... were... and turned Moore into... 为并列谓语；turn A into B 意为 “把 A 变成 B”。"
+        },
+        "words": [
+            {"w": "enthusiastically", "pos": "adv.", "def": "热情地"},
+            {"w": "fellow", "pos": "adj.", "def": "同行的；同类的"},
+            {"w": "review", "pos": "n.", "def": "评论"},
+            {"w": "notorious", "pos": "adj.", "def": "臭名昭著的"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 6,
+        "en": "There were calls for his resignation from the Royal College, and the following year, when his contract expired, he left to start a sculpture department at the Chelsea School of Art in London.",
+        "zh": "有人呼吁他从皇家艺术学院辞职，第二年，当他的合同到期时，他离开了那里，去伦敦切尔西艺术学校创办了一个雕塑系。",
+        "grammar": {
+            "type": "并列句 + 时间状语从句",
+            "note": "and 连接两分句；when his contract expired 为时间状语从句；calls for his resignation 意为 “要求他辞职的呼声”；to start a sculpture department 为目的状语。"
+        },
+        "words": [
+            {"w": "call for", "pos": "phr.", "def": "要求；呼吁"},
+            {"w": "resignation", "pos": "n.", "def": "辞职"},
+            {"w": "contract", "pos": "n.", "def": "合同"},
+            {"w": "expire", "pos": "v.", "def": "到期；期满"}
+        ]
+    },
+    # Para 7
+    {
+        "id": 26,
+        "para": 7,
+        "en": "Throughout the 1930s, Moore did not show any inclination to please the British public.",
+        "zh": "在整个20世纪30年代，摩尔丝毫没有表现出取悦英国公众的意向。",
+        "grammar": {
+            "type": "简单句",
+            "note": "show an inclination to do 意为 “表现出做……的意向”；Throughout the 1930s 为时间状语。"
+        },
+        "words": [
+            {"w": "inclination", "pos": "n.", "def": "倾向；意向"},
+            {"w": "please", "pos": "v.", "def": "取悦；使高兴"},
+            {"w": "public", "pos": "n.", "def": "公众"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 7,
+        "en": "He became interested in the paintings of the Spanish artist Pablo Picasso, whose work inspired him to distort the human body in a radical way.",
+        "zh": "他对西班牙艺术家巴勃罗·毕加索的画作产生了兴趣，毕加索的作品启发他以一种激进的方式扭曲人体。",
+        "grammar": {
+            "type": "非限定性定语从句",
+            "note": "whose work inspired him to... 为 whose 引导的非限定性定语从句；inspire sb to do 意为 “启发/激励某人做”；distort 意为 “扭曲”。"
+        },
+        "words": [
+            {"w": "painting", "pos": "n.", "def": "画作；绘画"},
+            {"w": "inspire", "pos": "v.", "def": "启发；激励"},
+            {"w": "distort", "pos": "v.", "def": "扭曲；使变形"},
+            {"w": "radical", "pos": "adj.", "def": "激进的；彻底的"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 7,
+        "en": "At times, he seemed to abandon the human figure altogether.",
+        "zh": "有时，他似乎完全放弃了人体形象。",
+        "grammar": {
+            "type": "简单句",
+            "note": "At times 意为 “有时”；seem to do 意为 “似乎做”；altogether 意为 “完全、彻底”。"
+        },
+        "words": [
+            {"w": "at times", "pos": "phr.", "def": "有时；偶尔"},
+            {"w": "altogether", "pos": "adv.", "def": "完全；总共"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 7,
+        "en": "The pages of his sketchbooks from this period show his ideas for abstract sculptures that bore little resemblance to the human form.",
+        "zh": "他这一时期速写本上的页面显示出他对抽象雕塑的构想，那些雕塑与人体形态几乎毫无相似之处。",
+        "grammar": {
+            "type": "定语从句",
+            "note": "that bore little resemblance to... 为定语从句修饰 abstract sculptures；bear resemblance to 意为 “与……相似”。"
+        },
+        "words": [
+            {"w": "sketchbook", "pos": "n.", "def": "速写本；素描本"},
+            {"w": "bear resemblance to", "pos": "phr.", "def": "与……相似"},
+            {"w": "form", "pos": "n.", "def": "形态；外形"}
+        ]
+    },
+    # Para 8
+    {
+        "id": 30,
+        "para": 8,
+        "en": "In 1940, during the Second World War, Moore stopped teaching at the Chelsea School and moved to a farmhouse about 20 miles north of London.",
+        "zh": "1940年，二战期间，摩尔停止了在切尔西学校的教学，搬到了伦敦以北约20英里的一处农舍。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "stopped teaching... and moved to... 为并列谓语；stop doing 意为 “停止做”；about 20 miles north of London 为地点状语。"
+        },
+        "words": [
+            {"w": "farmhouse", "pos": "n.", "def": "农舍"},
+            {"w": "north of", "pos": "phr.", "def": "在……以北"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 8,
+        "en": "A shortage of materials forced him to focus on drawing.",
+        "zh": "材料的短缺迫使他把精力集中在绘画上。",
+        "grammar": {
+            "type": "简单句",
+            "note": "force sb to do 意为 “迫使某人做”；a shortage of 意为 “……的短缺”；focus on 意为 “专注于”。"
+        },
+        "words": [
+            {"w": "shortage", "pos": "n.", "def": "短缺；不足"},
+            {"w": "force", "pos": "v.", "def": "迫使"},
+            {"w": "focus on", "pos": "phr.", "def": "专注于；集中于"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 8,
+        "en": "He did numerous small sketches of Londoners, later turning these ideas into large coloured drawings in his studio.",
+        "zh": "他画了大量伦敦人的小幅素描，后来在工作室里把这些构思变成了大幅彩色画作。",
+        "grammar": {
+            "type": "现在分词状语",
+            "note": "later turning these ideas into... 为现在分词短语作伴随/结果状语；turn A into B 意为 “把 A 变成 B”；numerous 意为 “许多的”。"
+        },
+        "words": [
+            {"w": "numerous", "pos": "adj.", "def": "许多的；无数的"},
+            {"w": "sketch", "pos": "n.", "def": "素描；速写"},
+            {"w": "studio", "pos": "n.", "def": "工作室；画室"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 8,
+        "en": "In 1942, he returned to Castleford to make a series of sketches of the miners who worked there.",
+        "zh": "1942年，他回到卡斯尔福德，为在那里工作的矿工画了一系列素描。",
+        "grammar": {
+            "type": "不定式状语 + 定语从句",
+            "note": "to make a series of sketches... 为目的状语；who worked there 为定语从句修饰 the miners；a series of 意为 “一系列”。"
+        },
+        "words": [
+            {"w": "return to", "pos": "phr.", "def": "返回"},
+            {"w": "a series of", "pos": "phr.", "def": "一系列"},
+            {"w": "miner", "pos": "n.", "def": "矿工"}
+        ]
+    },
+    # Para 9
+    {
+        "id": 34,
+        "para": 9,
+        "en": "In 1944, Harlow, a town near London, offered Moore a commission for a sculpture depicting a family.",
+        "zh": "1944年，伦敦附近的哈洛镇委托摩尔创作一件描绘一家人的雕塑。",
+        "grammar": {
+            "type": "同位语 + 现在分词定语",
+            "note": "a town near London 为 Harlow 的同位语；offer sb a commission 意为 “委托某人（创作）”；depicting a family 为现在分词短语作定语修饰 a sculpture。"
+        },
+        "words": [
+            {"w": "offer", "pos": "v.", "def": "提供；给予"},
+            {"w": "commission", "pos": "n.", "def": "委托（创作）；佣金"},
+            {"w": "depict", "pos": "v.", "def": "描绘；描画"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 9,
+        "en": "The resulting work signifies a dramatic change in Moore" + RSQUO + "s style, away from the experimentation of the 1930s towards a more natural and humanistic subject matter.",
+        "zh": "由此产生的作品标志着摩尔风格的剧烈转变——从20世纪30年代的实验性探索转向更自然、更人文主义的题材。",
+        "grammar": {
+            "type": "简单句 + 介词短语状语",
+            "note": "away from... towards... 为介词短语作状语，说明 change 的方向；signify 意为 “标志、意味着”；resulting 为现在分词作定语。"
+        },
+        "words": [
+            {"w": "signify", "pos": "v.", "def": "标志；意味着"},
+            {"w": "dramatic", "pos": "adj.", "def": "剧烈的；引人注目的"},
+            {"w": "experimentation", "pos": "n.", "def": "实验；试验"},
+            {"w": "humanistic", "pos": "adj.", "def": "人文主义的"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 9,
+        "en": "He did dozens of studies in clay for the sculpture, and these were cast in bronze and issued in editions of seven to nine copies each.",
+        "zh": "他为这件雕塑用黏土做了几十件习作，这些习作被铸成青铜，每件以七到九件为一版发行。",
+        "grammar": {
+            "type": "并列句 + 被动",
+            "note": "and 连接两分句；were cast in bronze and issued in editions of... 为并列被动；dozens of 意为 “几十个”；in editions of 意为 “以……版发行”。"
+        },
+        "words": [
+            {"w": "study", "pos": "n.", "def": "习作；试作"},
+            {"w": "clay", "pos": "n.", "def": "黏土"},
+            {"w": "bronze", "pos": "n.", "def": "青铜"},
+            {"w": "edition", "pos": "n.", "def": "版；版本"}
+        ]
+    },
+    {
+        "id": 37,
+        "para": 9,
+        "en": "In this way, Moore" + RSQUO + "s work became available to collectors all over the world.",
+        "zh": "通过这种方式，摩尔的作品得以为世界各地的收藏家所购藏。",
+        "grammar": {
+            "type": "主系表",
+            "note": "In this way 意为 “以这种方式”；available to 意为 “可供……获得的”；collectors 意为 “收藏家”。"
+        },
+        "words": [
+            {"w": "in this way", "pos": "phr.", "def": "以这种方式"},
+            {"w": "available", "pos": "adj.", "def": "可获得的；可买到的"},
+            {"w": "collector", "pos": "n.", "def": "收藏家"}
+        ]
+    },
+    {
+        "id": 38,
+        "para": 9,
+        "en": "The boost to his income enabled him to take on ambitious projects and start working on the scale he felt his sculpture demanded.",
+        "zh": "收入的增长使他得以承接雄心勃勃的项目，并开始以他认为其雕塑所需要的规模进行创作。",
+        "grammar": {
+            "type": "enable sb to do + 省略定语从句",
+            "note": "enable sb to do 意为 “使某人能够做”；后接并列不定式 take on... and start working on...；(that) he felt his sculpture demanded 为省略关系词的定语从句修饰 the scale；take on 意为 “承担、接受”。"
+        },
+        "words": [
+            {"w": "boost", "pos": "n.", "def": "增长；提振"},
+            {"w": "income", "pos": "n.", "def": "收入"},
+            {"w": "take on", "pos": "phr.", "def": "承担；接受"},
+            {"w": "scale", "pos": "n.", "def": "规模；比例"}
+        ]
+    },
+    # Para 10
+    {
+        "id": 39,
+        "para": 10,
+        "en": "Critics who had begun to think that Moore had become less revolutionary were proven wrong by the appearance, in 1950, of the first of Moore" + RSQUO + "s series of standing figures in bronze, with their harsh and angular pierced forms and distinct impression of menace.",
+        "zh": "那些开始认为摩尔已不再具有革新精神的评论家被证明错了——1950年，摩尔一系列青铜站立人像中的第一件问世，它们造型粗粝、棱角分明、带有穿孔，散发出一种鲜明的威胁感。",
+        "grammar": {
+            "type": "定语从句 + 被动 + with 结构",
+            "note": "who had begun to think that... 为定语从句修饰 Critics，含 that 宾语从句；主句 were proven wrong 为被动；with their harsh and angular pierced forms... 为 with 复合结构；appearance of 意为 “……的出现”。"
+        },
+        "words": [
+            {"w": "critic", "pos": "n.", "def": "评论家；批评家"},
+            {"w": "revolutionary", "pos": "adj.", "def": "革命性的；创新的"},
+            {"w": "angular", "pos": "adj.", "def": "有棱角的"},
+            {"w": "pierced", "pos": "adj.", "def": "有穿孔的；被刺穿的"},
+            {"w": "menace", "pos": "n.", "def": "威胁；恐吓"}
+        ]
+    },
+    {
+        "id": 40,
+        "para": 10,
+        "en": "Moore also varied his subject matter in the 1950s with such works as Warrior with Shield and Falling Warrior.",
+        "zh": "20世纪50年代，摩尔还以《持盾武士》和《倒下的武士》等作品丰富了他的题材。",
+        "grammar": {
+            "type": "简单句 + such ... as 举例",
+            "note": "such works as... 为 “such...as...” 举例结构；vary 意为 “使多样化、变换”；subject matter 意为 “题材”。"
+        },
+        "words": [
+            {"w": "vary", "pos": "v.", "def": "使多样化；变换"},
+            {"w": "subject matter", "pos": "phr.", "def": "题材；主题"},
+            {"w": "warrior", "pos": "n.", "def": "武士；战士"},
+            {"w": "shield", "pos": "n.", "def": "盾牌"}
+        ]
+    },
+    {
+        "id": 41,
+        "para": 10,
+        "en": "These were rare examples of Moore" + RSQUO + "s use of the male figure and owe something to his visit to Greece in 1951, when he had the opportunity to study ancient works of art.",
+        "zh": "这些是摩尔运用男性形象的少见例子，它们在一定程度上得益于他1951年的希腊之行——那次他有机会研究古代艺术作品。",
+        "grammar": {
+            "type": "并列谓语 + 非限定性定语从句",
+            "note": "were rare examples... and owe something to... 为并列谓语；owe sth to 意为 “把……归功于”；when he had the opportunity... 为非限定性定语从句修饰 1951。"
+        },
+        "words": [
+            {"w": "rare", "pos": "adj.", "def": "罕见的；稀少的"},
+            {"w": "owe ... to", "pos": "phr.", "def": "把……归功于；归因于"},
+            {"w": "opportunity", "pos": "n.", "def": "机会"}
+        ]
+    },
+    {
+        "id": 42,
+        "para": 10,
+        "en": "In his final years, Moore created the Henry Moore Foundation to promote art appreciation and to display his work.",
+        "zh": "在生命的最后几年，摩尔创立了亨利·摩尔基金会，以推广艺术鉴赏并展示他的作品。",
+        "grammar": {
+            "type": "不定式目的状语",
+            "note": "to promote... and to display... 为并列不定式作目的状语；promote 意为 “推广、促进”；art appreciation 意为 “艺术鉴赏”。"
+        },
+        "words": [
+            {"w": "foundation", "pos": "n.", "def": "基金会"},
+            {"w": "promote", "pos": "v.", "def": "推广；促进"},
+            {"w": "appreciation", "pos": "n.", "def": "鉴赏；欣赏"},
+            {"w": "display", "pos": "v.", "def": "展示；陈列"}
+        ]
+    },
+    {
+        "id": 43,
+        "para": 10,
+        "en": "Moore was the first modern English sculptor to achieve international critical acclaim and he is still regarded as one of the most important sculptors of the 20th century.",
+        "zh": "摩尔是第一位赢得国际评论界赞誉的现代英国雕塑家，至今仍被视为20世纪最重要的雕塑家之一。",
+        "grammar": {
+            "type": "并列句 + 不定式定语",
+            "note": "the first... sculptor to achieve... 中不定式作定语修饰 sculptor；and 连接第二分句 he is still regarded as...；be regarded as 意为 “被视为”。"
+        },
+        "words": [
+            {"w": "achieve", "pos": "v.", "def": "获得；实现"},
+            {"w": "critical acclaim", "pos": "phr.", "def": "评论界的赞誉"},
+            {"w": "be regarded as", "pos": "phr.", "def": "被视为；被认为是"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "comply with", "pos": "phr.", "def": "顺从；遵从"},
+    {"w": "turn away from", "pos": "phr.", "def": "背离；抛弃"},
+    {"w": "be impressed by", "pos": "phr.", "def": "被……打动；对……印象深刻"},
+    {"w": "be fascinated with", "pos": "phr.", "def": "对……着迷"},
+    {"w": "call for", "pos": "phr.", "def": "要求；呼吁"},
+    {"w": "move away from", "pos": "phr.", "def": "远离；脱离"},
+    {"w": "bear resemblance to", "pos": "phr.", "def": "与……相似"},
+    {"w": "take on", "pos": "phr.", "def": "承担；接受"},
+    {"w": "owe ... to", "pos": "phr.", "def": "把……归功于；归因于"},
+    {"w": "be regarded as", "pos": "phr.", "def": "被视为；被认为是"}
+]
+
+questions = [
+    {
+        "title": "Questions 1" + DASH + "7",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 1?",
+            "In boxes 1" + DASH + "7 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 1, "prompt": "On leaving school, Moore did what his father wanted him to do.", "answer": "TRUE", "evidence_sentence": 4},
+            {"number": 2, "prompt": "Moore began studying sculpture in his first term at the Leeds School of Art.", "answer": "FALSE", "evidence_sentence": 8},
+            {"number": 3, "prompt": "When Moore started at the Royal College of Art, its reputation for teaching sculpture was excellent.", "answer": "NOT GIVEN", "evidence_sentence": 10},
+            {"number": 4, "prompt": "Moore became aware of ancient sculpture as a result of visiting London museums.", "answer": "TRUE", "evidence_sentence": 11},
+            {"number": 5, "prompt": "The Trocadero Museum" + RSQUO + "s Mayan sculpture attracted a lot of public interest.", "answer": "NOT GIVEN", "evidence_sentence": 15},
+            {"number": 6, "prompt": "Moore thought the Mayan sculpture was similar in certain respects to other stone sculptures.", "answer": "FALSE", "evidence_sentence": 17},
+            {"number": 7, "prompt": "The artists who belonged to Unit One wanted to make modern art and architecture more popular.", "answer": "TRUE", "evidence_sentence": 21}
+        ]
+    },
+    {
+        "title": "Questions 8" + DASH + "13",
+        "type": "note_completion",
+        "instructions": [
+            "Complete the notes below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 8" + DASH + "13 on your answer sheet.",
+            "Moore" + RSQUO + "s career as an artist"
+        ],
+        "items": [
+            {"number": 8, "prompt": "1930s: Moore is urged to offer his __________ and leave the Royal College", "answer": "resignation", "evidence_sentence": 25},
+            {"number": 9, "prompt": "1940s: Moore turns to drawing because __________ for sculpting are not readily available", "answer": "materials", "evidence_sentence": 31},
+            {"number": 10, "prompt": "While visiting his hometown, Moore does some drawings of __________", "answer": "miners", "evidence_sentence": 33},
+            {"number": 11, "prompt": "Moore is employed to produce a sculpture of a __________", "answer": "family", "evidence_sentence": 34},
+            {"number": 12, "prompt": "__________ start to buy Moore" + RSQUO + "s work", "answer": "collectors", "evidence_sentence": 37},
+            {"number": 13, "prompt": "Moore" + RSQUO + "s increased __________ makes it possible for him to do more ambitious sculptures", "answer": "income", "evidence_sentence": 38}
+        ]
+    }
+]
+
+data = {
+    "id": "c15-test3-p1",
+    "source": "剑桥雅思15 Test 3 Passage 1",
+    "title": "Henry Moore (1898" + DASH + "1986)",
+    "subtitle": "The British sculptor Henry Moore was a leading figure in the 20th-century art world",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c15-test3-p1.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

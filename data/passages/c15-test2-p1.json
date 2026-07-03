@@ -1,0 +1,1192 @@
+{
+  "id": "c15-test2-p1",
+  "source": "剑桥雅思15 Test 2 Passage 1",
+  "title": "Could urban engineers learn from dance?",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "phrases": [
+    {
+      "w": "have an impact on",
+      "pos": "phr.",
+      "def": "对……有影响"
+    },
+    {
+      "w": "account for",
+      "pos": "phr.",
+      "def": "占（比例）；解释"
+    },
+    {
+      "w": "be tasked with",
+      "pos": "phr.",
+      "def": "受命；负责"
+    },
+    {
+      "w": "take into account",
+      "pos": "phr.",
+      "def": "考虑到；顾及"
+    },
+    {
+      "w": "put off",
+      "pos": "phr.",
+      "def": "使不愿；使反感"
+    },
+    {
+      "w": "translate into",
+      "pos": "phr.",
+      "def": "转化为；转变成"
+    },
+    {
+      "w": "get around",
+      "pos": "phr.",
+      "def": "绕过；避开"
+    },
+    {
+      "w": "bring about",
+      "pos": "phr.",
+      "def": "带来；引起"
+    },
+    {
+      "w": "try out",
+      "pos": "phr.",
+      "def": "尝试；试验"
+    },
+    {
+      "w": "above all",
+      "pos": "phr.",
+      "def": "最重要的是；尤其"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "The way we travel around cities has a major impact on whether they are sustainable.",
+      "zh": "我们在城市中出行的方式，对城市能否可持续发展有着重大影响。",
+      "grammar": {
+        "type": "省略定语从句 + 宾语从句",
+        "note": "(that/in which) we travel around cities 为省略关系词的定语从句修饰 The way；whether they are sustainable 为介词 on 的宾语从句；have an impact on 意为 “对……有影响”。"
+      },
+      "words": [
+        {
+          "w": "have an impact on",
+          "pos": "phr.",
+          "def": "对……有影响"
+        },
+        {
+          "w": "sustainable",
+          "pos": "adj.",
+          "def": "可持续的"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "Transportation is estimated to account for 30% of energy consumption in most of the world’s most developed nations, so lowering the need for energy-using vehicles is essential for decreasing the environmental impact of mobility.",
+      "zh": "据估计，在世界上大多数最发达的国家，交通运输占能源消耗的30%，因此降低对耗能车辆的需求，对减少出行造成的环境影响至关重要。",
+      "grammar": {
+        "type": "被动 + 结果状语 + 动名词主语",
+        "note": "is estimated to account for 为被动+不定式；account for 意为 “占（比例）”；so 引出结果分句，其主语为动名词短语 lowering the need...；be essential for 意为 “对……必不可少”。"
+      },
+      "words": [
+        {
+          "w": "account for",
+          "pos": "phr.",
+          "def": "占（比例）；解释"
+        },
+        {
+          "w": "consumption",
+          "pos": "n.",
+          "def": "消耗；消费"
+        },
+        {
+          "w": "developed nation",
+          "pos": "phr.",
+          "def": "发达国家"
+        },
+        {
+          "w": "mobility",
+          "pos": "n.",
+          "def": "出行；移动性"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "But as more and more people move to cities, it is important to think about other kinds of sustainable travel too.",
+      "zh": "但随着越来越多的人涌入城市，思考其他类型的可持续出行也同样重要。",
+      "grammar": {
+        "type": "时间状语从句 + 形式主语",
+        "note": "as 引导时间状语从句（表 “随着”）；it is important to think about... 为形式主语结构，真正主语是 to think about...。"
+      },
+      "words": [
+        {
+          "w": "move to",
+          "pos": "phr.",
+          "def": "搬到；迁往"
+        },
+        {
+          "w": "sustainable travel",
+          "pos": "phr.",
+          "def": "可持续出行"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "The ways we travel affect our physical and mental health, our social lives, our access to work and culture, and the air we breathe.",
+      "zh": "我们的出行方式会影响我们的身心健康、社交生活、获取工作与文化的机会，以及我们呼吸的空气。",
+      "grammar": {
+        "type": "并列宾语 + 省略定语从句",
+        "note": "affect 后接一系列并列宾语；(that) we travel 与 (that) we breathe 均为省略关系词的定语从句，分别修饰 The ways 和 the air。"
+      },
+      "words": [
+        {
+          "w": "affect",
+          "pos": "v.",
+          "def": "影响"
+        },
+        {
+          "w": "physical",
+          "pos": "adj.",
+          "def": "身体的"
+        },
+        {
+          "w": "mental",
+          "pos": "adj.",
+          "def": "心理的；精神的"
+        },
+        {
+          "w": "access to",
+          "pos": "phr.",
+          "def": "获得……的机会/途径"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "Engineers are tasked with changing how we travel round cities through urban design, but the engineering industry still works on the assumptions that led to the creation of the energy-consuming transport systems we have now: the emphasis placed solely on efficiency, speed, and quantitative data.",
+      "zh": "工程师们受命通过城市设计来改变我们在城市中的出行方式，但工程行业仍在沿用那些催生了我们如今耗能交通系统的假设：即只重视效率、速度和量化数据。",
+      "grammar": {
+        "type": "转折并列 + 定语从句 + 冒号说明",
+        "note": "be tasked with 意为 “受命做”；but 后 that led to... 为定语从句修饰 assumptions；(that) we have now 为省略关系词的定语从句修饰 transport systems；冒号后 the emphasis placed solely on... 对 assumptions 具体说明，placed 为过去分词定语。"
+      },
+      "words": [
+        {
+          "w": "be tasked with",
+          "pos": "phr.",
+          "def": "受命；负责"
+        },
+        {
+          "w": "assumption",
+          "pos": "n.",
+          "def": "假设；设想"
+        },
+        {
+          "w": "emphasis",
+          "pos": "n.",
+          "def": "强调；重视"
+        },
+        {
+          "w": "solely",
+          "pos": "adv.",
+          "def": "仅仅；唯一地"
+        },
+        {
+          "w": "quantitative",
+          "pos": "adj.",
+          "def": "定量的；数量的"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 1,
+      "en": "We need radical changes, to make it healthier, more enjoyable, and less environmentally damaging to travel around cities.",
+      "zh": "我们需要根本性的变革，以使在城市中出行变得更健康、更愉快，且对环境的破坏更小。",
+      "grammar": {
+        "type": "目的状语 + 形式宾语",
+        "note": "to make it... to travel around cities 为目的状语，其中 it 为形式宾语，真正宾语是 to travel around cities；healthier, more enjoyable, and less environmentally damaging 为并列宾补。"
+      },
+      "words": [
+        {
+          "w": "radical",
+          "pos": "adj.",
+          "def": "根本的；彻底的"
+        },
+        {
+          "w": "enjoyable",
+          "pos": "adj.",
+          "def": "愉快的；令人享受的"
+        },
+        {
+          "w": "damaging",
+          "pos": "adj.",
+          "def": "有害的；破坏性的"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "Dance might hold some of the answers.",
+      "zh": "舞蹈或许能提供部分答案。",
+      "grammar": {
+        "type": "简单句",
+        "note": "hold the answers 意为 “掌握着答案”；might 表推测。"
+      },
+      "words": [
+        {
+          "w": "hold",
+          "pos": "v.",
+          "def": "拥有；掌握"
+        },
+        {
+          "w": "answer",
+          "pos": "n.",
+          "def": "答案；解决办法"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 2,
+      "en": "That is not to suggest everyone should dance their way to work, however healthy and happy it might make us, but rather that the techniques used by choreographers to experiment with and design movement in dance could provide engineers with tools to stimulate new ideas in city-making.",
+      "zh": "这并不是说人人都该一路跳舞去上班——尽管那样也许会让我们既健康又快乐——而是说，编舞者用来试验和设计舞蹈动作的技巧，能够为工程师提供激发城市营造新思路的工具。",
+      "grammar": {
+        "type": "not ... but rather ... + 让步插入",
+        "note": "not to suggest (that)... but rather that... 为 “不是……而是……” 结构，连接两个宾语从句；however healthy and happy it might make us 为让步状语从句插入；used by choreographers to... 为过去分词短语作定语修饰 techniques。"
+      },
+      "words": [
+        {
+          "w": "suggest",
+          "pos": "v.",
+          "def": "暗示；表明"
+        },
+        {
+          "w": "choreographer",
+          "pos": "n.",
+          "def": "编舞者"
+        },
+        {
+          "w": "experiment with",
+          "pos": "phr.",
+          "def": "对……进行试验"
+        },
+        {
+          "w": "stimulate",
+          "pos": "v.",
+          "def": "激发；刺激"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 2,
+      "en": "Richard Sennett, an influential urbanist and sociologist who has transformed ideas about the way cities are made, argues that urban design has suffered from a separation between mind and body since the introduction of the architectural blueprint.",
+      "zh": "颇具影响力的城市研究者兼社会学家理查德·桑内特——他彻底改变了人们关于城市营造方式的观念——认为，自建筑蓝图问世以来，城市设计便一直受困于身心分离的问题。",
+      "grammar": {
+        "type": "同位语 + 定语从句 + 宾语从句",
+        "note": "an influential urbanist and sociologist... 为主语的同位语，含 who 定语从句；argues that... 后接宾语从句；suffer from 意为 “受……之苦”；since the introduction of... 为时间状语。"
+      },
+      "words": [
+        {
+          "w": "influential",
+          "pos": "adj.",
+          "def": "有影响力的"
+        },
+        {
+          "w": "urbanist",
+          "pos": "n.",
+          "def": "城市研究者；城市规划专家"
+        },
+        {
+          "w": "sociologist",
+          "pos": "n.",
+          "def": "社会学家"
+        },
+        {
+          "w": "separation",
+          "pos": "n.",
+          "def": "分离；分开"
+        },
+        {
+          "w": "blueprint",
+          "pos": "n.",
+          "def": "蓝图；设计图"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 3,
+      "en": "Whereas medieval builders improvised and adapted construction through their intimate knowledge of materials and personal experience of the conditions on a site, building designs are now conceived and stored in media technologies that detach the designer from the physical and social realities they are creating.",
+      "zh": "中世纪的建造者凭借对材料的深入了解和对现场状况的亲身经验来临场发挥、灵活调整施工，而如今建筑设计却是在各种媒介技术中构思和存储的，这些技术使设计者脱离了他们正在营造的物质与社会现实。",
+      "grammar": {
+        "type": "Whereas 对比状语从句 + 定语从句",
+        "note": "Whereas 引导对比状语从句（improvised 与 adapted 并列谓语）；主句 building designs are now conceived and stored...；that detach... 为定语从句修饰 media technologies；(that) they are creating 为省略关系词的定语从句修饰 realities。"
+      },
+      "words": [
+        {
+          "w": "medieval",
+          "pos": "adj.",
+          "def": "中世纪的"
+        },
+        {
+          "w": "improvise",
+          "pos": "v.",
+          "def": "即兴创作；临场发挥"
+        },
+        {
+          "w": "intimate",
+          "pos": "adj.",
+          "def": "熟悉的；密切的"
+        },
+        {
+          "w": "conceive",
+          "pos": "v.",
+          "def": "构思；想出"
+        },
+        {
+          "w": "detach",
+          "pos": "v.",
+          "def": "使分离；使脱离"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 3,
+      "en": "While the design practices created by these new technologies are essential for managing the technical complexity of the modern city, they have the drawback of simplifying reality in the process.",
+      "zh": "尽管这些新技术所催生的设计实践对于驾驭现代城市的技术复杂性必不可少，但它们也有一个缺点，即在此过程中把现实简单化了。",
+      "grammar": {
+        "type": "While 让步从句 + 过去分词定语",
+        "note": "While 引导让步状语从句；created by these new technologies 为过去分词短语作定语修饰 the design practices；the drawback of simplifying reality 中 of doing 为同位说明；in the process 意为 “在此过程中”。"
+      },
+      "words": [
+        {
+          "w": "practice",
+          "pos": "n.",
+          "def": "做法；实践"
+        },
+        {
+          "w": "complexity",
+          "pos": "n.",
+          "def": "复杂性"
+        },
+        {
+          "w": "drawback",
+          "pos": "n.",
+          "def": "缺点；不利之处"
+        },
+        {
+          "w": "simplify",
+          "pos": "v.",
+          "def": "简化"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 4,
+      "en": "To illustrate, Sennett discusses the Peachtree Center in Atlanta, USA, a development typical of the modernist approach to urban planning prevalent in the 1970s.",
+      "zh": "为了说明这一点，桑内特谈到了美国亚特兰大的桃树中心——一个典型体现20世纪70年代盛行的现代主义城市规划方法的开发项目。",
+      "grammar": {
+        "type": "不定式状语 + 同位语",
+        "note": "To illustrate 为不定式作目的状语；a development typical of... 为 the Peachtree Center 的同位语；prevalent in the 1970s 为形容词短语作定语修饰 approach。"
+      },
+      "words": [
+        {
+          "w": "illustrate",
+          "pos": "v.",
+          "def": "说明；举例说明"
+        },
+        {
+          "w": "development",
+          "pos": "n.",
+          "def": "开发项目；开发区"
+        },
+        {
+          "w": "modernist",
+          "pos": "adj.",
+          "def": "现代主义的"
+        },
+        {
+          "w": "prevalent",
+          "pos": "adj.",
+          "def": "盛行的；普遍的"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 4,
+      "en": "Peachtree created a grid of streets and towers intended as a new pedestrian-friendly downtown for Atlanta.",
+      "zh": "桃树中心打造了一个由街道和高楼组成的网格，意在为亚特兰大建成一个便于行人的新市中心。",
+      "grammar": {
+        "type": "过去分词定语",
+        "note": "intended as a new pedestrian-friendly downtown 为过去分词短语作定语修饰 a grid of streets and towers；be intended as 意为 “旨在成为”。"
+      },
+      "words": [
+        {
+          "w": "grid",
+          "pos": "n.",
+          "def": "网格；方格"
+        },
+        {
+          "w": "tower",
+          "pos": "n.",
+          "def": "高楼；塔"
+        },
+        {
+          "w": "pedestrian-friendly",
+          "pos": "adj.",
+          "def": "便于行人的"
+        },
+        {
+          "w": "downtown",
+          "pos": "n.",
+          "def": "市中心"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 4,
+      "en": "According to Sennett, this failed because its designers had invested too much faith in computer-aided design to tell them how it would operate.",
+      "zh": "在桑内特看来，这一项目之所以失败，是因为其设计者过分寄望于计算机辅助设计来告诉他们它将如何运作。",
+      "grammar": {
+        "type": "原因状语从句 + 过去完成时",
+        "note": "because 引导原因状语从句，用过去完成时 had invested；invest faith in 意为 “把信心寄托于”；to tell them how it would operate 为不定式作目的状语，其中含宾语从句。"
+      },
+      "words": [
+        {
+          "w": "invest",
+          "pos": "v.",
+          "def": "投入；寄予"
+        },
+        {
+          "w": "faith",
+          "pos": "n.",
+          "def": "信心；信任"
+        },
+        {
+          "w": "computer-aided",
+          "pos": "adj.",
+          "def": "计算机辅助的"
+        },
+        {
+          "w": "operate",
+          "pos": "v.",
+          "def": "运作；运转"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 4,
+      "en": "They failed to take into account that purpose-built street cafés could not operate in the hot sun without the protective awnings common in older buildings, and would need energy-consuming air conditioning instead, or that its giant car park would feel so unwelcoming that it would put people off getting out of their cars.",
+      "zh": "他们没有考虑到：专门修建的临街咖啡馆在烈日下若没有老建筑常见的遮阳篷便无法营业，反而需要耗能的空调；也没有考虑到其巨大的停车场会让人感到极不友好，以至于人们不愿下车。",
+      "grammar": {
+        "type": "并列宾语从句 + so...that...",
+        "note": "take into account 后接两个由 or 连接的并列宾语从句（that... and would need... / that its giant car park would feel so... that...）；后一从句含 so...that... 结果结构；put sb off doing 意为 “使某人不愿做”。"
+      },
+      "words": [
+        {
+          "w": "take into account",
+          "pos": "phr.",
+          "def": "考虑到；顾及"
+        },
+        {
+          "w": "purpose-built",
+          "pos": "adj.",
+          "def": "为特定用途而建造的"
+        },
+        {
+          "w": "awning",
+          "pos": "n.",
+          "def": "遮阳篷；雨篷"
+        },
+        {
+          "w": "air conditioning",
+          "pos": "phr.",
+          "def": "空调"
+        },
+        {
+          "w": "put off",
+          "pos": "phr.",
+          "def": "使不愿；使反感"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 4,
+      "en": "What seems entirely predictable and controllable on screen has unexpected results when translated into reality.",
+      "zh": "在屏幕上看似完全可预测、可掌控的东西，一旦付诸现实却会产生意想不到的结果。",
+      "grammar": {
+        "type": "主语从句 + 省略状语从句",
+        "note": "What seems entirely predictable and controllable on screen 为主语从句；when translated into reality 为 when 引导的省略状语从句（=when it is translated...）。"
+      },
+      "words": [
+        {
+          "w": "predictable",
+          "pos": "adj.",
+          "def": "可预测的"
+        },
+        {
+          "w": "controllable",
+          "pos": "adj.",
+          "def": "可控制的"
+        },
+        {
+          "w": "unexpected",
+          "pos": "adj.",
+          "def": "意想不到的"
+        },
+        {
+          "w": "translate into",
+          "pos": "phr.",
+          "def": "转化为；转变成"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 5,
+      "en": "The same is true in transport engineering, which uses models to predict and shape the way people move through the city.",
+      "zh": "在交通工程领域也是如此，该领域利用模型来预测并塑造人们在城市中的出行方式。",
+      "grammar": {
+        "type": "非限定性定语从句",
+        "note": "which uses models to... 为非限定性定语从句修饰 transport engineering；the way (that) people move 为省略关系词的定语从句；The same is true 意为 “情况同样如此”。"
+      },
+      "words": [
+        {
+          "w": "model",
+          "pos": "n.",
+          "def": "模型"
+        },
+        {
+          "w": "predict",
+          "pos": "v.",
+          "def": "预测"
+        },
+        {
+          "w": "shape",
+          "pos": "v.",
+          "def": "塑造；影响"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 5,
+      "en": "Again, these models are necessary, but they are built on specific world views in which certain forms of efficiency and safety are considered and other experiences of the city ignored.",
+      "zh": "同样，这些模型是必要的，但它们建立在特定的世界观之上——在这种世界观中，某些形式的效率和安全被纳入考量，而对城市的其他体验则被忽视。",
+      "grammar": {
+        "type": "转折并列 + 定语从句",
+        "note": "but 连接转折；in which certain forms... are considered and other experiences... ignored 为定语从句修饰 world views，后半 ignored 前承前省略 are；be built on 意为 “建立在……之上”。"
+      },
+      "words": [
+        {
+          "w": "world view",
+          "pos": "phr.",
+          "def": "世界观"
+        },
+        {
+          "w": "efficiency",
+          "pos": "n.",
+          "def": "效率"
+        },
+        {
+          "w": "consider",
+          "pos": "v.",
+          "def": "考虑；顾及"
+        },
+        {
+          "w": "ignore",
+          "pos": "v.",
+          "def": "忽视"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 5,
+      "en": "Designs that seem logical in models appear counter-intuitive in the actual experience of their users.",
+      "zh": "在模型中看似合理的设计，在使用者的实际体验中却显得违反直觉。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "that seem logical in models 为定语从句修饰 Designs；appear + 形容词 counter-intuitive 为系表结构；counter-intuitive 意为 “反直觉的”。"
+      },
+      "words": [
+        {
+          "w": "logical",
+          "pos": "adj.",
+          "def": "合乎逻辑的；合理的"
+        },
+        {
+          "w": "counter-intuitive",
+          "pos": "adj.",
+          "def": "违反直觉的"
+        },
+        {
+          "w": "actual",
+          "pos": "adj.",
+          "def": "实际的"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 5,
+      "en": "The guard rails that will be familiar to anyone who has attempted to cross a British road, for example, were an engineering solution to pedestrian safety based on models that prioritise the smooth flow of traffic.",
+      "zh": "举例来说，任何试图横穿英国马路的人都会对护栏很熟悉，而护栏正是一种针对行人安全的工程解决方案，它基于那些优先保障交通顺畅通行的模型。",
+      "grammar": {
+        "type": "双重定语从句 + 过去分词定语",
+        "note": "that will be familiar to anyone 为定语从句修饰 guard rails，其中 who has attempted... 又修饰 anyone；based on models that prioritise... 为过去分词短语作定语，含 that 定语从句；for example 为插入语。"
+      },
+      "words": [
+        {
+          "w": "guard rail",
+          "pos": "phr.",
+          "def": "护栏；防护栏"
+        },
+        {
+          "w": "attempt",
+          "pos": "v.",
+          "def": "试图；尝试"
+        },
+        {
+          "w": "solution",
+          "pos": "n.",
+          "def": "解决方案"
+        },
+        {
+          "w": "prioritise",
+          "pos": "v.",
+          "def": "优先考虑"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 5,
+      "en": "On wide major roads, they often guide pedestrians to specific crossing points and slow down their progress across the road by using staggered access points to divide the crossing into two – one for each carriageway.",
+      "zh": "在宽阔的主干道上，护栏常常把行人引导到特定的过街点，并通过设置交错的出入口把过街路段一分为二——每条车道各一段，从而减缓行人过马路的速度。",
+      "grammar": {
+        "type": "并列谓语 + 方式状语",
+        "note": "guide... and slow down... 为并列谓语；by using staggered access points to... 为方式状语；破折号后 one for each carriageway 补充说明；divide... into two 意为 “分成两部分”。"
+      },
+      "words": [
+        {
+          "w": "guide",
+          "pos": "v.",
+          "def": "引导；带领"
+        },
+        {
+          "w": "pedestrian",
+          "pos": "n.",
+          "def": "行人"
+        },
+        {
+          "w": "staggered",
+          "pos": "adj.",
+          "def": "交错的；错开的"
+        },
+        {
+          "w": "carriageway",
+          "pos": "n.",
+          "def": "车行道；车道"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 5,
+      "en": "In doing so they make crossings feel longer, introducing psychological barriers greatly impacting those that are the least mobile, and encouraging others to make dangerous crossings to get around the guard rails.",
+      "zh": "如此一来，护栏使过街显得更漫长，制造出心理障碍，对行动最不便的人群影响极大，还促使其他人为绕过护栏而危险地横穿马路。",
+      "grammar": {
+        "type": "现在分词状语并列",
+        "note": "In doing so 为介词短语作状语；introducing... 与 encouraging... 为并列现在分词短语作结果状语；greatly impacting those... 为现在分词短语作定语修饰 barriers；get around 意为 “绕过、避开”。"
+      },
+      "words": [
+        {
+          "w": "psychological",
+          "pos": "adj.",
+          "def": "心理的"
+        },
+        {
+          "w": "barrier",
+          "pos": "n.",
+          "def": "障碍；屏障"
+        },
+        {
+          "w": "mobile",
+          "pos": "adj.",
+          "def": "能自由活动的；行动方便的"
+        },
+        {
+          "w": "get around",
+          "pos": "phr.",
+          "def": "绕过；避开"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 5,
+      "en": "These barriers don’t just make it harder to cross the road: they divide communities and decrease opportunities for healthy transport.",
+      "zh": "这些障碍不仅让过马路变得更难：它们还割裂社区，减少了健康出行的机会。",
+      "grammar": {
+        "type": "not just ... 冒号递进",
+        "note": "don't just make it harder... 中 it 为形式宾语；冒号后 they divide... and decrease... 进一步说明其危害；not just 意为 “不仅”。"
+      },
+      "words": [
+        {
+          "w": "divide",
+          "pos": "v.",
+          "def": "分割；使分裂"
+        },
+        {
+          "w": "community",
+          "pos": "n.",
+          "def": "社区；社群"
+        },
+        {
+          "w": "decrease",
+          "pos": "v.",
+          "def": "减少"
+        },
+        {
+          "w": "opportunity",
+          "pos": "n.",
+          "def": "机会"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 5,
+      "en": "As a result, many are now being removed, causing disruption, cost, and waste.",
+      "zh": "因此，如今许多护栏正被拆除，这带来了混乱、成本和浪费。",
+      "grammar": {
+        "type": "现在进行被动 + 分词状语",
+        "note": "are now being removed 为现在进行时被动；causing disruption, cost, and waste 为现在分词短语作结果状语；As a result 意为 “因此”。"
+      },
+      "words": [
+        {
+          "w": "remove",
+          "pos": "v.",
+          "def": "移除；拆除"
+        },
+        {
+          "w": "disruption",
+          "pos": "n.",
+          "def": "扰乱；混乱"
+        },
+        {
+          "w": "cost",
+          "pos": "n.",
+          "def": "成本；花费"
+        },
+        {
+          "w": "waste",
+          "pos": "n.",
+          "def": "浪费"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 6,
+      "en": "If their designers had had the tools to think with their bodies – like dancers – and imagine how these barriers would feel, there might have been a better solution.",
+      "zh": "如果护栏的设计者当初拥有像舞者那样用身体去思考的工具，并能想象这些障碍会给人什么样的感受，或许就会有更好的解决方案。",
+      "grammar": {
+        "type": "虚拟条件（与过去相反）",
+        "note": "与过去相反的虚拟条件句：If... had had... and imagine..., there might have been...；两破折号间 like dancers 为插入类比；how these barriers would feel 为宾语从句。"
+      },
+      "words": [
+        {
+          "w": "tool",
+          "pos": "n.",
+          "def": "工具"
+        },
+        {
+          "w": "imagine",
+          "pos": "v.",
+          "def": "想象"
+        },
+        {
+          "w": "solution",
+          "pos": "n.",
+          "def": "解决方案"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 6,
+      "en": "In order to bring about fundamental changes to the ways we use our cities, engineering will need to develop a richer understanding of why people move in certain ways, and how this movement affects them.",
+      "zh": "为了给我们使用城市的方式带来根本性变革，工程学将需要更深入地理解人们为何以某些方式移动，以及这种移动如何影响他们。",
+      "grammar": {
+        "type": "目的状语 + 并列宾语从句",
+        "note": "In order to bring about... 为目的状语；(that) we use our cities 为省略关系词的定语从句；why people move in certain ways 与 how this movement affects them 为并列宾语从句作 understanding of 的宾语。"
+      },
+      "words": [
+        {
+          "w": "bring about",
+          "pos": "phr.",
+          "def": "带来；引起"
+        },
+        {
+          "w": "fundamental",
+          "pos": "adj.",
+          "def": "根本的；基础的"
+        },
+        {
+          "w": "movement",
+          "pos": "n.",
+          "def": "移动；运动"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 6,
+      "en": "Choreography may not seem an obvious choice for tackling this problem. Yet it shares with engineering the aim of designing patterns of movement within limitations of space.",
+      "zh": "编舞或许看起来并不是解决这一问题的显而易见之选。然而，它与工程学有一个共同的目标：在空间的限制内设计运动的模式。",
+      "grammar": {
+        "type": "让步转折 + 双宾语结构",
+        "note": "Yet 表转折；shares with engineering the aim of... 为 “share A with B” 的变式（宾语 the aim 后置）；tackle 意为 “处理、解决”；within limitations of space 意为 “在空间限制之内”。"
+      },
+      "words": [
+        {
+          "w": "choreography",
+          "pos": "n.",
+          "def": "编舞；舞蹈编排"
+        },
+        {
+          "w": "obvious",
+          "pos": "adj.",
+          "def": "明显的；显而易见的"
+        },
+        {
+          "w": "tackle",
+          "pos": "v.",
+          "def": "处理；应对"
+        },
+        {
+          "w": "limitation",
+          "pos": "n.",
+          "def": "限制；局限"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 6,
+      "en": "It is an art form developed almost entirely by trying out ideas with the body, and gaining instant feedback on how the results feel.",
+      "zh": "它是一种几乎完全通过用身体尝试各种想法、并即时获得关于效果如何的反馈而发展起来的艺术形式。",
+      "grammar": {
+        "type": "过去分词定语 + 动名词并列",
+        "note": "developed almost entirely by... 为过去分词短语作定语修饰 an art form；by trying out... and gaining... 为并列动名词短语作方式状语；how the results feel 为宾语从句。"
+      },
+      "words": [
+        {
+          "w": "art form",
+          "pos": "phr.",
+          "def": "艺术形式"
+        },
+        {
+          "w": "try out",
+          "pos": "phr.",
+          "def": "尝试；试验"
+        },
+        {
+          "w": "instant",
+          "pos": "adj.",
+          "def": "即时的；立刻的"
+        },
+        {
+          "w": "feedback",
+          "pos": "n.",
+          "def": "反馈"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 6,
+      "en": "Choreographers have deep understanding of the psychological, aesthetic, and physical implications of different ways of moving.",
+      "zh": "编舞者对不同运动方式所带来的心理、审美和身体层面的影响有着深刻的理解。",
+      "grammar": {
+        "type": "简单句",
+        "note": "have understanding of 意为 “对……有理解”；psychological, aesthetic, and physical 为三个并列形容词修饰 implications。"
+      },
+      "words": [
+        {
+          "w": "aesthetic",
+          "pos": "adj.",
+          "def": "审美的；美学的"
+        },
+        {
+          "w": "implication",
+          "pos": "n.",
+          "def": "影响；含意"
+        },
+        {
+          "w": "deep understanding",
+          "pos": "phr.",
+          "def": "深刻的理解"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 7,
+      "en": "Observing the choreographer Wayne McGregor, cognitive scientist David Kirsh described how he ‘thinks with the body’.",
+      "zh": "通过观察编舞家韦恩·麦格雷戈，认知科学家戴维·基尔希描述了他如何“用身体思考”。",
+      "grammar": {
+        "type": "现在分词状语 + 宾语从句",
+        "note": "Observing the choreographer Wayne McGregor 为现在分词短语作状语；described how he 'thinks with the body' 中 how... 为宾语从句。"
+      },
+      "words": [
+        {
+          "w": "observe",
+          "pos": "v.",
+          "def": "观察"
+        },
+        {
+          "w": "cognitive",
+          "pos": "adj.",
+          "def": "认知的"
+        },
+        {
+          "w": "describe",
+          "pos": "v.",
+          "def": "描述"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 7,
+      "en": "Kirsh argues that by using the body to simulate outcomes, McGregor is able to imagine solutions that would not be possible using purely abstract thought.",
+      "zh": "基尔希认为，通过用身体来模拟各种结果，麦格雷戈得以想象出那些仅凭纯粹抽象思维无法获得的解决方案。",
+      "grammar": {
+        "type": "宾语从句 + 定语从句",
+        "note": "argues that... 后接宾语从句；by using the body to simulate outcomes 为方式状语；that would not be possible... 为定语从句修饰 solutions；using purely abstract thought 为现在分词短语作条件状语。"
+      },
+      "words": [
+        {
+          "w": "simulate",
+          "pos": "v.",
+          "def": "模拟；仿真"
+        },
+        {
+          "w": "outcome",
+          "pos": "n.",
+          "def": "结果"
+        },
+        {
+          "w": "abstract",
+          "pos": "adj.",
+          "def": "抽象的"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 7,
+      "en": "This kind of physical knowledge is valued in many areas of expertise, but currently has no place in formal engineering design processes.",
+      "zh": "这种身体层面的知识在许多专业领域都受到重视，但目前在正规的工程设计流程中却毫无立足之地。",
+      "grammar": {
+        "type": "转折并列 + 被动",
+        "note": "is valued 为被动；but currently has no place... 为并列谓语，与前呼应；area of expertise 意为 “专业领域”。"
+      },
+      "words": [
+        {
+          "w": "value",
+          "pos": "v.",
+          "def": "重视；珍视"
+        },
+        {
+          "w": "expertise",
+          "pos": "n.",
+          "def": "专业知识；专长"
+        },
+        {
+          "w": "formal",
+          "pos": "adj.",
+          "def": "正式的；正规的"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 7,
+      "en": "A suggested method for transport engineers is to improvise design solutions and get instant feedback about how they would work from their own experience of them, or model designs at full scale in the way choreographers experiment with groups of dancers.",
+      "zh": "针对交通工程师的一个建议方法是：即兴设计出解决方案，并从自己的亲身体验中即时获得关于其效果的反馈；或者像编舞者用一群舞者做试验那样，以实际尺寸对设计方案进行模拟。",
+      "grammar": {
+        "type": "主系表（并列不定式）+ 定语从句",
+        "note": "表语为并列不定式 to improvise... and get... , or model...；how they would work 为宾语从句；in the way (that) choreographers experiment... 为方式状语从句；at full scale 意为 “以实际尺寸”。"
+      },
+      "words": [
+        {
+          "w": "improvise",
+          "pos": "v.",
+          "def": "即兴创作；临场发挥"
+        },
+        {
+          "w": "at full scale",
+          "pos": "phr.",
+          "def": "以实际大小；全尺寸地"
+        },
+        {
+          "w": "experiment with",
+          "pos": "phr.",
+          "def": "用……做试验"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 7,
+      "en": "Above all, perhaps, they might learn to design for emotional as well as functional effects.",
+      "zh": "而最重要的或许是，他们可以学会既为功能效果、也为情感效果而设计。",
+      "grammar": {
+        "type": "简单句 + A as well as B",
+        "note": "Above all 意为 “最重要的是”；emotional as well as functional effects 为 “A as well as B” 结构，意为 “既……又……”；design for 意为 “为……而设计”。"
+      },
+      "words": [
+        {
+          "w": "above all",
+          "pos": "phr.",
+          "def": "最重要的是；尤其"
+        },
+        {
+          "w": "emotional",
+          "pos": "adj.",
+          "def": "情感的"
+        },
+        {
+          "w": "functional",
+          "pos": "adj.",
+          "def": "功能的；实用的"
+        },
+        {
+          "w": "as well as",
+          "pos": "phr.",
+          "def": "既……又……；以及"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 1–6",
+      "type": "matching_information",
+      "instructions": [
+        "Reading Passage 1 has seven paragraphs, A–G.",
+        "Which paragraph contains the following information?",
+        "Write the correct letter, A–G, in boxes 1–6 on your answer sheet."
+      ],
+      "items": [
+        {
+          "number": 1,
+          "prompt": "reference to an appealing way of using dance that the writer is not proposing",
+          "answer": "B",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 2,
+          "prompt": "an example of a contrast between past and present approaches to building",
+          "answer": "C",
+          "evidence_sentence": 10
+        },
+        {
+          "number": 3,
+          "prompt": "mention of an objective of both dance and engineering",
+          "answer": "F",
+          "evidence_sentence": 27
+        },
+        {
+          "number": 4,
+          "prompt": "reference to an unforeseen problem arising from ignoring the climate",
+          "answer": "D",
+          "evidence_sentence": 15
+        },
+        {
+          "number": 5,
+          "prompt": "why some measures intended to help people are being reversed",
+          "answer": "E",
+          "evidence_sentence": 24
+        },
+        {
+          "number": 6,
+          "prompt": "reference to how transport has an impact on human lives",
+          "answer": "A",
+          "evidence_sentence": 4
+        }
+      ]
+    },
+    {
+      "title": "Questions 7–13",
+      "type": "summary_completion",
+      "instructions": [
+        "Complete the summary below.",
+        "Choose ONE WORD ONLY from the passage for each answer.",
+        "Write your answers in boxes 7–13 on your answer sheet.",
+        "Guard rails"
+      ],
+      "items": [
+        {
+          "number": 7,
+          "prompt": "Guard rails were introduced on British roads to improve the __________ of pedestrians, while ensuring that the movement of [8] is not disrupted.",
+          "answer": "safety",
+          "evidence_sentence": 20
+        },
+        {
+          "number": 8,
+          "prompt": "... while ensuring that the movement of __________ is not disrupted.",
+          "answer": "traffic",
+          "evidence_sentence": 20
+        },
+        {
+          "number": 9,
+          "prompt": "Pedestrians are led to access points, and encouraged to cross one __________ at a time.",
+          "answer": "carriageway",
+          "evidence_sentence": 21
+        },
+        {
+          "number": 10,
+          "prompt": "An unintended effect is to create psychological difficulties in crossing the road, particularly for less __________ people.",
+          "answer": "mobile",
+          "evidence_sentence": 22
+        },
+        {
+          "number": 11,
+          "prompt": "Another result is that some people cross the road in a __________ way.",
+          "answer": "dangerous",
+          "evidence_sentence": 22
+        },
+        {
+          "number": 12,
+          "prompt": "The guard rails separate __________, and make it more difficult to introduce forms of transport that are [13].",
+          "answer": "communities",
+          "evidence_sentence": 23
+        },
+        {
+          "number": 13,
+          "prompt": "... and make it more difficult to introduce forms of transport that are __________.",
+          "answer": "healthy",
+          "evidence_sentence": 23
+        }
+      ]
+    }
+  ]
+}

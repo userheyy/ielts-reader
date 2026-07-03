@@ -1,0 +1,635 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c15-test2-p2.json (Should we try to bring extinct species back to life?)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # –
+LDQUO = "“"
+RDQUO = "”"
+
+sentences = [
+    # Para A (1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "The passenger pigeon was a legendary species.",
+        "zh": "旅鸽是一种传奇性的物种。",
+        "grammar": {
+            "type": "主系表",
+            "note": "a legendary species 为表语；legendary 意为 “传奇的、著名的”。"
+        },
+        "words": [
+            {"w": "passenger pigeon", "pos": "phr.", "def": "旅鸽（已灭绝）"},
+            {"w": "legendary", "pos": "adj.", "def": "传奇的；著名的"},
+            {"w": "species", "pos": "n.", "def": "物种"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Flying in vast numbers across North America, with potentially many millions within a single flock, their migration was once one of nature" + RSQUO + "s great spectacles.",
+        "zh": "它们成群结队、数量庞大地飞越北美，单个鸟群就可能多达数百万只，其迁徙一度是大自然的壮观景象之一。",
+        "grammar": {
+            "type": "现在分词状语 + with 结构",
+            "note": "Flying in vast numbers across North America 为现在分词短语作状语；with potentially many millions within a single flock 为 with 复合结构；主句为主系表 their migration was once one of...。"
+        },
+        "words": [
+            {"w": "vast", "pos": "adj.", "def": "巨大的；大量的"},
+            {"w": "flock", "pos": "n.", "def": "（鸟）群"},
+            {"w": "migration", "pos": "n.", "def": "迁徙"},
+            {"w": "spectacle", "pos": "n.", "def": "壮观的景象；奇观"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "Sadly, the passenger pigeon" + RSQUO + "s existence came to an end on 1 September 1914, when the last living specimen died at Cincinnati Zoo.",
+        "zh": "遗憾的是，旅鸽的存在于1914年9月1日画上句号，那一天最后一只活体标本在辛辛那提动物园死去。",
+        "grammar": {
+            "type": "非限定性定语从句",
+            "note": "when the last living specimen died... 为 when 引导的非限定性定语从句修饰日期；come to an end 意为 “结束、告终”。"
+        },
+        "words": [
+            {"w": "existence", "pos": "n.", "def": "存在"},
+            {"w": "come to an end", "pos": "phr.", "def": "结束；告终"},
+            {"w": "specimen", "pos": "n.", "def": "标本；样本"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 1,
+        "en": "Geneticist Ben Novak is lead researcher on an ambitious project which now aims to bring the bird back to life through a process known as " + LSQUO + "de-extinction" + RSQUO + ".",
+        "zh": "遗传学家本·诺瓦克是一个雄心勃勃项目的首席研究员，该项目如今旨在通过一种称为“去灭绝”的过程使这种鸟复活。",
+        "grammar": {
+            "type": "定语从句 + 过去分词定语",
+            "note": "which now aims to... 为定语从句修饰 an ambitious project；known as 'de-extinction' 为过去分词短语作定语修饰 a process；bring... back to life 意为 “使……复活”。"
+        },
+        "words": [
+            {"w": "geneticist", "pos": "n.", "def": "遗传学家"},
+            {"w": "ambitious", "pos": "adj.", "def": "雄心勃勃的"},
+            {"w": "bring back to life", "pos": "phr.", "def": "使复活；使复苏"},
+            {"w": "de-extinction", "pos": "n.", "def": "去灭绝；物种复活"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 1,
+        "en": "The basic premise involves using cloning technology to turn the DNA of extinct animals into a fertilised embryo, which is carried by the nearest relative still in existence " + DASH + " in this case, the abundant band-tailed pigeon " + DASH + " before being born as a living, breathing animal.",
+        "zh": "其基本前提是利用克隆技术，把已灭绝动物的DNA转化为一个受精胚胎，再由现存最近的近亲——本例中即数量众多的斑尾鸽——孕育，最终作为一个活生生、能呼吸的动物出生。",
+        "grammar": {
+            "type": "动名词宾语 + 定语从句 + 状语",
+            "note": "involves using... to turn... 中 using 为动名词作宾语；which is carried by... 为定语从句修饰 embryo；两破折号间为插入举例；before being born... 为时间状语（动名词被动）。"
+        },
+        "words": [
+            {"w": "premise", "pos": "n.", "def": "前提"},
+            {"w": "cloning", "pos": "n.", "def": "克隆"},
+            {"w": "fertilised", "pos": "adj.", "def": "受精的"},
+            {"w": "embryo", "pos": "n.", "def": "胚胎"},
+            {"w": "abundant", "pos": "adj.", "def": "大量的；丰富的"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 1,
+        "en": "Passenger pigeons are one of the pioneering species in this field, but they are far from the only ones on which this cutting-edge technology is being trialled.",
+        "zh": "旅鸽是这一领域的先驱物种之一，但它们远非唯一在其身上试验这项尖端技术的物种。",
+        "grammar": {
+            "type": "转折并列 + 定语从句",
+            "note": "but 连接转折；on which this cutting-edge technology is being trialled 为定语从句修饰 the only ones；far from 意为 “远非、绝不”；cutting-edge 意为 “尖端的”。"
+        },
+        "words": [
+            {"w": "pioneering", "pos": "adj.", "def": "开创性的；先驱的"},
+            {"w": "far from", "pos": "phr.", "def": "远非；绝不"},
+            {"w": "cutting-edge", "pos": "adj.", "def": "尖端的；前沿的"},
+            {"w": "trial", "pos": "v.", "def": "试验；试用"}
+        ]
+    },
+    # Para B (2)
+    {
+        "id": 7,
+        "para": 2,
+        "en": "In Australia, the thylacine, more commonly known as the Tasmanian tiger, is another extinct creature which genetic scientists are striving to bring back to life.",
+        "zh": "在澳大利亚，袋狼——更常被称为塔斯马尼亚虎——是遗传学家们正努力使之复活的另一种已灭绝生物。",
+        "grammar": {
+            "type": "插入语 + 定语从句",
+            "note": "more commonly known as the Tasmanian tiger 为过去分词短语作插入的同位说明；which genetic scientists are striving to bring back to life 为定语从句修饰 another extinct creature；strive to do 意为 “努力做”。"
+        },
+        "words": [
+            {"w": "thylacine", "pos": "n.", "def": "袋狼"},
+            {"w": "creature", "pos": "n.", "def": "生物；动物"},
+            {"w": "strive to", "pos": "phr.", "def": "努力；力求"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": LSQUO + "There is no carnivore now in Tasmania that fills the niche which thylacines once occupied," + RSQUO + " explains Michael Archer of the University of New South Wales.",
+        "zh": "“如今塔斯马尼亚没有任何食肉动物能填补袋狼曾经占据的生态位，”新南威尔士大学的迈克尔·阿彻解释道。",
+        "grammar": {
+            "type": "引语 + 双重定语从句",
+            "note": "引语内 that fills the niche 为定语从句修饰 no carnivore，which thylacines once occupied 又修饰 the niche；fill the niche 意为 “填补生态位”。"
+        },
+        "words": [
+            {"w": "carnivore", "pos": "n.", "def": "食肉动物"},
+            {"w": "niche", "pos": "n.", "def": "生态位；小生境"},
+            {"w": "occupy", "pos": "v.", "def": "占据"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "He points out that in the decades since the thylacine went extinct, there has been a spread in a " + LSQUO + "dangerously debilitating" + RSQUO + " facial tumour syndrome which threatens the existence of the Tasmanian devils, the island" + RSQUO + "s other notorious resident.",
+        "zh": "他指出，在袋狼灭绝以来的数十年间，一种“危险地使动物衰弱”的面部肿瘤综合征已经蔓延开来，威胁到塔斯马尼亚袋獾——这座岛屿另一著名居民——的生存。",
+        "grammar": {
+            "type": "宾语从句 + 定语从句 + 同位语",
+            "note": "points out that... 后接宾语从句；since the thylacine went extinct 为时间状语从句；which threatens... 为定语从句修饰 syndrome；the island's other notorious resident 为 the Tasmanian devils 的同位语。"
+        },
+        "words": [
+            {"w": "debilitating", "pos": "adj.", "def": "使人（动物）虚弱的"},
+            {"w": "tumour", "pos": "n.", "def": "肿瘤"},
+            {"w": "syndrome", "pos": "n.", "def": "综合征"},
+            {"w": "notorious", "pos": "adj.", "def": "臭名昭著的；出了名的"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "Thylacines would have prevented this spread because they would have killed significant numbers of Tasmanian devils.",
+        "zh": "袋狼本可以阻止这种蔓延，因为它们本会杀死相当数量的塔斯马尼亚袋獾。",
+        "grammar": {
+            "type": "与过去相反的虚拟",
+            "note": "would have prevented / would have killed 为与过去事实相反的虚拟语气；because 引导原因状语从句。"
+        },
+        "words": [
+            {"w": "prevent", "pos": "v.", "def": "阻止；防止"},
+            {"w": "spread", "pos": "n.", "def": "蔓延；扩散"},
+            {"w": "significant", "pos": "adj.", "def": "相当大的；重要的"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 2,
+        "en": LSQUO + "If that contagious cancer had popped up previously, it would have burned out in whatever region it started.",
+        "zh": "“如果那种传染性癌症在过去就出现过，它本会在其起始的任何地区自行消退。",
+        "grammar": {
+            "type": "与过去相反的虚拟条件句",
+            "note": "If... had popped up..., it would have burned out... 为与过去相反的虚拟条件句；whatever region it started 为 whatever 引导的地点状语从句；pop up 意为 “突然出现”，burn out 此处意为 “自行消退”。"
+        },
+        "words": [
+            {"w": "contagious", "pos": "adj.", "def": "传染性的"},
+            {"w": "pop up", "pos": "phr.", "def": "突然出现"},
+            {"w": "burn out", "pos": "phr.", "def": "烧尽；自行消退"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 2,
+        "en": "The return of thylacines to Tasmania could help to ensure that devils are never again subjected to risks of this kind." + RSQUO,
+        "zh": "让袋狼重返塔斯马尼亚，或许有助于确保袋獾再也不会遭受此类风险。”",
+        "grammar": {
+            "type": "宾语从句 + 被动",
+            "note": "ensure that... 后接宾语从句；are subjected to 为被动结构；be subjected to 意为 “遭受、经受”。"
+        },
+        "words": [
+            {"w": "ensure", "pos": "v.", "def": "确保"},
+            {"w": "be subjected to", "pos": "phr.", "def": "遭受；经受"},
+            {"w": "risk", "pos": "n.", "def": "风险"}
+        ]
+    },
+    # Para C (3)
+    {
+        "id": 13,
+        "para": 3,
+        "en": "If extinct species can be brought back to life, can humanity begin to correct the damage it has caused to the natural world over the past few millennia?",
+        "zh": "如果已灭绝的物种能够复活，人类是否能开始弥补自己在过去几千年里对自然界造成的破坏呢？",
+        "grammar": {
+            "type": "条件句 + 疑问句",
+            "note": "If 引导条件从句（被动 can be brought back）；主句为疑问句；(that) it has caused 为省略关系词的定语从句修饰 the damage；millennia 为 millennium 的复数。"
+        },
+        "words": [
+            {"w": "humanity", "pos": "n.", "def": "人类"},
+            {"w": "correct", "pos": "v.", "def": "纠正；弥补"},
+            {"w": "damage", "pos": "n.", "def": "破坏；损害"},
+            {"w": "millennia", "pos": "n.", "def": "千年（millennium 的复数）"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": LSQUO + "The idea of de-extinction is that we can reverse this process, bringing species that no longer exist back to life," + RSQUO + " says Beth Shapiro of University of California Santa Cruz" + RSQUO + "s Genomics Institute.",
+        "zh": "“去灭绝的理念在于，我们可以逆转这一过程，让不再存在的物种复活，”加州大学圣克鲁兹分校基因组研究所的贝丝·夏皮罗说。",
+        "grammar": {
+            "type": "表语从句 + 现在分词状语",
+            "note": "The idea... is that... 为表语从句；bringing species... back to life 为现在分词短语作伴随状语；that no longer exist 为定语从句修饰 species。"
+        },
+        "words": [
+            {"w": "reverse", "pos": "v.", "def": "逆转；扭转"},
+            {"w": "process", "pos": "n.", "def": "过程"},
+            {"w": "no longer", "pos": "phr.", "def": "不再"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": LSQUO + "I don" + RSQUO + "t think that we can do this. There is no way to bring back something that is 100 per cent identical to a species that went extinct a long time ago." + RSQUO,
+        "zh": "“我认为我们做不到这一点。没有办法让某种与很久以前灭绝的物种100%完全相同的东西复活。”",
+        "grammar": {
+            "type": "宾语从句 + 双重定语从句",
+            "note": "I don't think that... 为宾语从句（否定前置）；that is 100 per cent identical... 修饰 something，that went extinct... 又修饰 a species；identical to 意为 “与……完全相同”。"
+        },
+        "words": [
+            {"w": "identical to", "pos": "phr.", "def": "与……完全相同"},
+            {"w": "go extinct", "pos": "phr.", "def": "灭绝"},
+            {"w": "per cent", "pos": "phr.", "def": "百分之……"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 3,
+        "en": "A more practical approach for long-extinct species is to take the DNA of existing species as a template, ready for the insertion of strands of extinct animal DNA to create something new; a hybrid, based on the living species, but which looks and/or acts like the animal which died out.",
+        "zh": "对于灭绝已久的物种，一种更实际的做法是以现存物种的DNA作为模板，为插入已灭绝动物的DNA片段做好准备，从而创造出某种新东西；即一种以现存物种为基础、但外形和/或行为像那种已灭绝动物的杂交种。",
+        "grammar": {
+            "type": "主系表（不定式）+ 分号补充 + 定语从句",
+            "note": "表语为不定式 to take the DNA... as a template；ready for... 为形容词短语作状语；分号后 a hybrid... 为对 something new 的补充，含 based on... 过去分词定语与 which looks and/or acts... 定语从句。"
+        },
+        "words": [
+            {"w": "practical", "pos": "adj.", "def": "实际的；可行的"},
+            {"w": "template", "pos": "n.", "def": "模板"},
+            {"w": "insertion", "pos": "n.", "def": "插入"},
+            {"w": "strand", "pos": "n.", "def": "（DNA）链；股"},
+            {"w": "hybrid", "pos": "n.", "def": "杂交种；混合物"}
+        ]
+    },
+    # Para D (4)
+    {
+        "id": 17,
+        "para": 4,
+        "en": "This complicated process and questionable outcome begs the question: what is the actual point of this technology?",
+        "zh": "这一复杂的过程和难以确定的结果不禁让人发问：这项技术真正的意义究竟何在？",
+        "grammar": {
+            "type": "冒号引出问句",
+            "note": "beg the question 此处意为 “引出/回避这样一个问题”；冒号后 what is the actual point... 为具体问题；point 意为 “意义、目的”。"
+        },
+        "words": [
+            {"w": "complicated", "pos": "adj.", "def": "复杂的"},
+            {"w": "questionable", "pos": "adj.", "def": "可疑的；不确定的"},
+            {"w": "outcome", "pos": "n.", "def": "结果"},
+            {"w": "beg the question", "pos": "phr.", "def": "引出（回避）问题"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": LSQUO + "For us, the goal has always been replacing the extinct species with a suitable replacement," + RSQUO + " explains Novak.",
+        "zh": "“对我们来说，目标一直是用一个合适的替代者来取代已灭绝的物种，”诺瓦克解释道。",
+        "grammar": {
+            "type": "主系表（动名词表语）",
+            "note": "the goal has always been replacing... 中 replacing 为动名词作表语；replace A with B 意为 “用 B 取代 A”。"
+        },
+        "words": [
+            {"w": "goal", "pos": "n.", "def": "目标"},
+            {"w": "replace with", "pos": "phr.", "def": "用……取代"},
+            {"w": "suitable", "pos": "adj.", "def": "合适的"},
+            {"w": "replacement", "pos": "n.", "def": "替代者；替代物"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": LSQUO + "When it comes to breeding, band-tailed pigeons scatter and make maybe one or two nests per hectare, whereas passenger pigeons were very social and would make 10,000 or more nests in one hectare." + RSQUO,
+        "zh": "“说到繁殖，斑尾鸽会分散开来，每公顷或许只筑一两个巢，而旅鸽则非常群居，每公顷会筑一万个甚至更多的巢。”",
+        "grammar": {
+            "type": "when it comes to + whereas 对比",
+            "note": "When it comes to breeding 意为 “说到繁殖”，to 为介词后接动名词；whereas 引导对比状语从句；scatter 意为 “分散”。"
+        },
+        "words": [
+            {"w": "when it comes to", "pos": "phr.", "def": "说到；谈及"},
+            {"w": "breeding", "pos": "n.", "def": "繁殖"},
+            {"w": "scatter", "pos": "v.", "def": "分散；散开"},
+            {"w": "hectare", "pos": "n.", "def": "公顷"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": "Since the disappearance of this key species, ecosystems in the eastern US have suffered, as the lack of disturbance caused by thousands of passenger pigeons wrecking trees and branches means there has been minimal need for regrowth.",
+        "zh": "自从这一关键物种消失以来，美国东部的生态系统深受其害，因为成千上万只旅鸽损毁树木和枝干所造成的扰动如今不复存在，这意味着几乎不再需要再生。",
+        "grammar": {
+            "type": "时间状语 + 原因状语从句",
+            "note": "Since... 为时间状语；as... means... 为原因状语从句；caused by thousands of passenger pigeons wrecking... 为过去分词短语作定语修饰 disturbance，其中 wrecking 为现在分词修饰 pigeons。"
+        },
+        "words": [
+            {"w": "disappearance", "pos": "n.", "def": "消失"},
+            {"w": "disturbance", "pos": "n.", "def": "扰动；干扰"},
+            {"w": "wreck", "pos": "v.", "def": "破坏；损毁"},
+            {"w": "regrowth", "pos": "n.", "def": "再生；再生长"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 4,
+        "en": "This has left forests stagnant and therefore unwelcoming to the plants and animals which evolved to help regenerate the forest after a disturbance.",
+        "zh": "这使森林陷入停滞，因而对那些进化出在扰动后帮助森林再生能力的动植物变得不再适宜。",
+        "grammar": {
+            "type": "复合宾语 + 定语从句",
+            "note": "left forests stagnant and... unwelcoming 为 “leave + 宾语 + 形容词” 复合宾语；which evolved to help regenerate... 为定语从句修饰 the plants and animals。"
+        },
+        "words": [
+            {"w": "stagnant", "pos": "adj.", "def": "停滞的；不流动的"},
+            {"w": "unwelcoming", "pos": "adj.", "def": "不友好的；不适宜的"},
+            {"w": "evolve", "pos": "v.", "def": "进化"},
+            {"w": "regenerate", "pos": "v.", "def": "使再生；恢复"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 4,
+        "en": "According to Novak, a hybridised band-tailed pigeon, with the added nesting habits of a passenger pigeon, could, in theory, re-establish that forest disturbance, thereby creating a habitat necessary for a great many other native species to thrive.",
+        "zh": "据诺瓦克说，一种兼具旅鸽筑巢习性的杂交斑尾鸽，理论上可以重新制造出那种森林扰动，从而创造出许多其他本地物种得以繁盛所必需的栖息地。",
+        "grammar": {
+            "type": "with 插入 + 现在分词状语",
+            "note": "with the added nesting habits of a passenger pigeon 为 with 短语作插入定语；thereby creating... 为现在分词短语作结果状语；necessary for... to thrive 为形容词短语作定语修饰 habitat。"
+        },
+        "words": [
+            {"w": "hybridised", "pos": "adj.", "def": "杂交的"},
+            {"w": "in theory", "pos": "phr.", "def": "理论上"},
+            {"w": "re-establish", "pos": "v.", "def": "重新建立；恢复"},
+            {"w": "thrive", "pos": "v.", "def": "繁盛；茁壮成长"}
+        ]
+    },
+    # Para E (5)
+    {
+        "id": 23,
+        "para": 5,
+        "en": "Another popular candidate for this technology is the woolly mammoth.",
+        "zh": "这项技术另一个热门的候选对象是长毛猛犸象。",
+        "grammar": {
+            "type": "主系表",
+            "note": "candidate for 意为 “……的候选者”；the woolly mammoth 为表语。"
+        },
+        "words": [
+            {"w": "candidate", "pos": "n.", "def": "候选者；候选对象"},
+            {"w": "woolly mammoth", "pos": "phr.", "def": "长毛猛犸象"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": "George Church, professor at Harvard Medical School and leader of the Woolly Mammoth Revival Project, has been focusing on cold resistance, the main way in which the extinct woolly mammoth and its nearest living relative, the Asian elephant, differ.",
+        "zh": "哈佛医学院教授、长毛猛犸象复活项目负责人乔治·丘奇一直专注于耐寒性研究——这正是已灭绝的长毛猛犸象与其现存最近的近亲亚洲象之间的主要差异所在。",
+        "grammar": {
+            "type": "同位语 + 定语从句",
+            "note": "professor at... and leader of... 为主语的同位语；the main way in which... differ 为对 cold resistance 的同位说明，含 in which 定语从句；its nearest living relative, the Asian elephant 为同位语。"
+        },
+        "words": [
+            {"w": "resistance", "pos": "n.", "def": "抵抗力；耐性"},
+            {"w": "revival", "pos": "n.", "def": "复兴；复活"},
+            {"w": "relative", "pos": "n.", "def": "亲属；近亲"},
+            {"w": "differ", "pos": "v.", "def": "相异；不同"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": "By pinpointing which genetic traits made it possible for mammoths to survive the icy climate of the tundra, the project" + RSQUO + "s goal is to return mammoths, or a mammoth-like species, to the area.",
+        "zh": "通过精确找出使猛犸象得以在苔原严寒气候中生存的那些遗传性状，该项目的目标是让猛犸象（或一种类似猛犸象的物种）重返这一地区。",
+        "grammar": {
+            "type": "动名词状语 + 宾语从句",
+            "note": "By pinpointing which genetic traits... 为方式状语，其中 which... 为宾语从句（含形式宾语 it 与真正主语 for mammoths to survive...）；主句为主系表 the project's goal is to return...。"
+        },
+        "words": [
+            {"w": "pinpoint", "pos": "v.", "def": "精确找出；准确指出"},
+            {"w": "genetic trait", "pos": "phr.", "def": "遗传性状"},
+            {"w": "icy", "pos": "adj.", "def": "冰冷的；结冰的"},
+            {"w": "tundra", "pos": "n.", "def": "苔原；冻土地带"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 5,
+        "en": LSQUO + "My highest priority would be preserving the endangered Asian elephant," + RSQUO + " says Church, " + LSQUO + "expanding their range to the huge ecosystem of the tundra.",
+        "zh": "“我的首要任务将是保护濒危的亚洲象，”丘奇说，“把它们的活动范围扩大到苔原这一庞大的生态系统。",
+        "grammar": {
+            "type": "主系表 + 现在分词状语",
+            "note": "would be preserving... 中 preserving 为动名词作表语；expanding their range to... 为现在分词短语作伴随状语；highest priority 意为 “最优先事项”。"
+        },
+        "words": [
+            {"w": "priority", "pos": "n.", "def": "优先事项；优先"},
+            {"w": "preserve", "pos": "v.", "def": "保护；保存"},
+            {"w": "endangered", "pos": "adj.", "def": "濒危的"},
+            {"w": "range", "pos": "n.", "def": "活动范围；分布区"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 5,
+        "en": "Necessary adaptations would include smaller ears, thicker hair, and extra insulating fat, all for the purpose of reducing heat loss in the tundra, and all traits found in the now extinct woolly mammoth." + RSQUO,
+        "zh": "必要的适应性改变将包括更小的耳朵、更厚的毛发和额外的隔热脂肪，这些都是为了减少在苔原上的热量散失，而且全都是如今已灭绝的长毛猛犸象所具备的性状。”",
+        "grammar": {
+            "type": "同位补充 + 过去分词定语",
+            "note": "all for the purpose of... 与 all traits found in... 为两个并列的补充成分；found in the now extinct woolly mammoth 为过去分词短语作定语修饰 traits；for the purpose of 意为 “为了”。"
+        },
+        "words": [
+            {"w": "adaptation", "pos": "n.", "def": "适应；适应性变化"},
+            {"w": "insulating", "pos": "adj.", "def": "隔热的；绝缘的"},
+            {"w": "heat loss", "pos": "phr.", "def": "热量散失"},
+            {"w": "trait", "pos": "n.", "def": "特征；性状"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 5,
+        "en": "This repopulation of the tundra and boreal forests of Eurasia and North America with large mammals could also be a useful factor in reducing carbon emissions " + DASH + " elephants punch holes through snow and knock down trees, which encourages grass growth.",
+        "zh": "在欧亚大陆和北美洲的苔原及北方针叶林中重新引入大型哺乳动物，也可能成为减少碳排放的一个有益因素——大象会在雪地上踩出洞、撞倒树木，从而促进草的生长。",
+        "grammar": {
+            "type": "破折号说明 + 非限定性定语从句",
+            "note": "主句为主系表 This repopulation... could... be a useful factor...；破折号后 elephants punch... and knock down...；which encourages grass growth 为非限定性定语从句，which 指前面整件事。"
+        },
+        "words": [
+            {"w": "repopulation", "pos": "n.", "def": "重新引入种群；再度繁衍"},
+            {"w": "boreal forest", "pos": "phr.", "def": "北方针叶林"},
+            {"w": "carbon emissions", "pos": "phr.", "def": "碳排放"},
+            {"w": "knock down", "pos": "phr.", "def": "撞倒；击倒"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 5,
+        "en": "This grass growth would reduce temperatures, and mitigate emissions from melting permafrost.",
+        "zh": "这种草的生长会降低气温，并减轻永久冻土融化所释放的排放。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "would reduce... and mitigate... 为并列谓语；from melting permafrost 为介词短语作定语修饰 emissions；mitigate 意为 “减轻、缓解”。"
+        },
+        "words": [
+            {"w": "reduce", "pos": "v.", "def": "降低；减少"},
+            {"w": "mitigate", "pos": "v.", "def": "减轻；缓解"},
+            {"w": "permafrost", "pos": "n.", "def": "永久冻土"}
+        ]
+    },
+    # Para F (6)
+    {
+        "id": 30,
+        "para": 6,
+        "en": "While the prospect of bringing extinct animals back to life might capture imaginations, it is, of course, far easier to try to save an existing species which is merely threatened with extinction.",
+        "zh": "尽管让已灭绝动物复活的前景可能激发人们的想象，但要挽救一个仅仅面临灭绝威胁的现存物种，当然要容易得多。",
+        "grammar": {
+            "type": "While 让步从句 + 形式主语",
+            "note": "While 引导让步状语从句；主句 it is far easier to try to save... 为形式主语结构；which is merely threatened with extinction 为定语从句修饰 an existing species；capture imaginations 意为 “激发想象”。"
+        },
+        "words": [
+            {"w": "prospect", "pos": "n.", "def": "前景；可能性"},
+            {"w": "capture imaginations", "pos": "phr.", "def": "激发想象；引人遐想"},
+            {"w": "merely", "pos": "adv.", "def": "仅仅"},
+            {"w": "threatened with", "pos": "phr.", "def": "受到……的威胁"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 6,
+        "en": LSQUO + "Many of the technologies that people have in mind when they think about de-extinction can be used as a form of " + LDQUO + "genetic rescue" + RDQUO + "," + RSQUO + " explains Shapiro.",
+        "zh": "“人们在想到去灭绝时所设想的许多技术，都可以用作一种“基因拯救”的形式，”夏皮罗解释道。",
+        "grammar": {
+            "type": "定语从句 + 时间状语从句",
+            "note": "that people have in mind 为定语从句修饰 the technologies，when they think about de-extinction 为其内的时间状语从句；have in mind 意为 “设想、想着”；be used as 意为 “被用作”。"
+        },
+        "words": [
+            {"w": "have in mind", "pos": "phr.", "def": "设想；想着"},
+            {"w": "genetic rescue", "pos": "phr.", "def": "基因拯救"},
+            {"w": "a form of", "pos": "phr.", "def": "一种……的形式"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 6,
+        "en": "She prefers to focus the debate on how this emerging technology could be used to fully understand why various species went extinct in the first place, and therefore how we could use it to make genetic modifications which could prevent mass extinctions in the future.",
+        "zh": "她更愿意把讨论的重点放在：如何利用这项新兴技术去充分理解各类物种当初为何会灭绝，从而如何利用它进行基因改造，以防止未来发生物种大灭绝。",
+        "grammar": {
+            "type": "并列宾语从句 + 定语从句",
+            "note": "focus... on how... and therefore how... 为两个并列宾语从句；why various species went extinct 为其内宾语从句；which could prevent mass extinctions 为定语从句修饰 genetic modifications；in the first place 意为 “起初、原本”。"
+        },
+        "words": [
+            {"w": "emerging", "pos": "adj.", "def": "新兴的"},
+            {"w": "in the first place", "pos": "phr.", "def": "起初；原本"},
+            {"w": "modification", "pos": "n.", "def": "改造；修改"},
+            {"w": "mass extinction", "pos": "phr.", "def": "大灭绝"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 6,
+        "en": LSQUO + "I would also say there" + RSQUO + "s an incredible moral hazard to not do anything at all," + RSQUO + " she continues.",
+        "zh": "“我还想说，完全无所作为，会带来极大的道德风险，”她继续说道。",
+        "grammar": {
+            "type": "宾语从句",
+            "note": "I would also say (that) there's... 为省略 that 的宾语从句；to not do anything at all 为不定式作定语修饰 moral hazard；moral hazard 意为 “道德风险”。"
+        },
+        "words": [
+            {"w": "incredible", "pos": "adj.", "def": "巨大的；难以置信的"},
+            {"w": "moral hazard", "pos": "phr.", "def": "道德风险"},
+            {"w": "at all", "pos": "phr.", "def": "（用于否定）根本；完全"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 6,
+        "en": LSQUO + "We know that what we are doing today is not enough, and we have to be willing to take some calculated and measured risks." + RSQUO,
+        "zh": "“我们知道，如今所做的还不够，我们必须愿意去承担一些经过深思熟虑、有所权衡的风险。”",
+        "grammar": {
+            "type": "宾语从句 + 主语从句",
+            "note": "know that... 后接宾语从句，其主语为 what we are doing today；and we have to be willing to... 为并列分句；calculated and measured 意为 “经过算计和权衡的”。"
+        },
+        "words": [
+            {"w": "be willing to", "pos": "phr.", "def": "愿意（做）"},
+            {"w": "calculated", "pos": "adj.", "def": "经过深思熟虑的；有意的"},
+            {"w": "measured", "pos": "adj.", "def": "慎重的；有分寸的"},
+            {"w": "take risks", "pos": "phr.", "def": "冒险；承担风险"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "come to an end", "pos": "phr.", "def": "结束；告终"},
+    {"w": "bring back to life", "pos": "phr.", "def": "使复活；使复苏"},
+    {"w": "far from", "pos": "phr.", "def": "远非；绝不"},
+    {"w": "strive to", "pos": "phr.", "def": "努力；力求"},
+    {"w": "be subjected to", "pos": "phr.", "def": "遭受；经受"},
+    {"w": "when it comes to", "pos": "phr.", "def": "说到；谈及"},
+    {"w": "in theory", "pos": "phr.", "def": "理论上"},
+    {"w": "have in mind", "pos": "phr.", "def": "设想；想着"},
+    {"w": "in the first place", "pos": "phr.", "def": "起初；原本"},
+    {"w": "take risks", "pos": "phr.", "def": "冒险；承担风险"}
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "17",
+        "type": "matching_information",
+        "instructions": [
+            "Reading Passage 2 has six paragraphs, A" + DASH + "F.",
+            "Which paragraph contains the following information?",
+            "Write the correct letter, A" + DASH + "F, in boxes 14" + DASH + "17 on your answer sheet.",
+            "NB You may use any letter more than once."
+        ],
+        "items": [
+            {"number": 14, "prompt": "a reference to how further disappearance of multiple species could be avoided", "answer": "F", "evidence_sentence": 32},
+            {"number": 15, "prompt": "explanation of a way of reproducing an extinct animal using the DNA of only that species", "answer": "A", "evidence_sentence": 5},
+            {"number": 16, "prompt": "reference to a habitat which has suffered following the extinction of a species", "answer": "D", "evidence_sentence": 20},
+            {"number": 17, "prompt": "mention of the exact point at which a particular species became extinct", "answer": "A", "evidence_sentence": 3}
+        ]
+    },
+    {
+        "title": "Questions 18" + DASH + "22",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+            "Write your answers in boxes 18" + DASH + "22 on your answer sheet.",
+            "The woolly mammoth revival project"
+        ],
+        "items": [
+            {"number": 18, "prompt": "Professor George Church and his team are trying to identify the __________ which enabled mammoths to live in the tundra.", "answer": "genetic traits", "evidence_sentence": 25},
+            {"number": 19, "prompt": "According to Church, introducing Asian elephants to the tundra would involve certain physical adaptations to minimise __________.", "answer": "heat loss", "evidence_sentence": 27},
+            {"number": 20, "prompt": "To survive in the tundra, the species would need to have the mammoth-like features of thicker hair, __________ of a reduced size and more [21].", "answer": "ears", "evidence_sentence": 27},
+            {"number": 21, "prompt": "... ears of a reduced size and more __________.", "answer": "(insulating) fat", "evidence_sentence": 27},
+            {"number": 22, "prompt": "Repopulating the tundra ... would also have an impact on the environment, which could help to reduce temperatures and decrease __________.", "answer": "(carbon) emissions", "evidence_sentence": 28}
+        ]
+    },
+    {
+        "title": "Questions 23" + DASH + "26",
+        "type": "matching_people",
+        "instructions": [
+            "Look at the following statements (Questions 23" + DASH + "26) and the list of people below.",
+            "Match each statement with the correct person, A, B or C.",
+            "Write the correct letter, A, B or C, in boxes 23" + DASH + "26 on your answer sheet.",
+            "NB You may use any letter more than once.",
+            "List of People: A Ben Novak  B Michael Archer  C Beth Shapiro"
+        ],
+        "items": [
+            {"number": 23, "prompt": "Reintroducing an extinct species to its original habitat could improve the health of a particular species living there.", "answer": "B", "evidence_sentence": 12},
+            {"number": 24, "prompt": "It is important to concentrate on the causes of an animal" + RSQUO + "s extinction.", "answer": "C", "evidence_sentence": 32},
+            {"number": 25, "prompt": "A species brought back from extinction could have an important beneficial impact on the vegetation of its habitat.", "answer": "A", "evidence_sentence": 22},
+            {"number": 26, "prompt": "Our current efforts at preserving biodiversity are insufficient.", "answer": "C", "evidence_sentence": 34}
+        ]
+    }
+]
+
+data = {
+    "id": "c15-test2-p2",
+    "source": "剑桥雅思15 Test 2 Passage 2",
+    "title": "Should we try to bring extinct species back to life?",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c15-test2-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

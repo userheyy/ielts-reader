@@ -1,0 +1,653 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c15-test3-p2.json (The Desolenator: producing clean water)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # –
+PND = "£"
+USD = "$"
+
+sentences = [
+    # Section A (1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "Travelling around Thailand in the 1990s, William Janssen was impressed with the basic rooftop solar heating systems that were on many homes, where energy from the sun was absorbed by a plate and then used to heat water for domestic use.",
+        "zh": "20世纪90年代在泰国各地旅行时，威廉·扬森对许多住宅屋顶上那种简易的太阳能加热系统印象深刻——在这种系统中，太阳的能量被一块集热板吸收，然后用来加热供家庭使用的水。",
+        "grammar": {
+            "type": "现在分词状语 + 定语从句",
+            "note": "Travelling around Thailand... 为现在分词短语作时间状语；that were on many homes 为定语从句修饰 systems，where energy... 又为定语从句进一步说明；be impressed with 意为 “对……印象深刻”。"
+        },
+        "words": [
+            {"w": "rooftop", "pos": "adj.", "def": "屋顶的"},
+            {"w": "solar", "pos": "adj.", "def": "太阳能的"},
+            {"w": "absorb", "pos": "v.", "def": "吸收"},
+            {"w": "domestic", "pos": "adj.", "def": "家用的；家庭的"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Two decades later Janssen developed that basic idea he saw in Southeast Asia into a portable device that uses the power from the sun to purify water.",
+        "zh": "二十年后，扬森把他在东南亚看到的那个基本构想发展成了一种利用太阳能净化水的便携式装置。",
+        "grammar": {
+            "type": "省略定语从句 + develop into",
+            "note": "(that) he saw in Southeast Asia 为省略关系词的定语从句修饰 that basic idea；that uses the power... 为定语从句修饰 a portable device；develop A into B 意为 “把 A 发展成 B”。"
+        },
+        "words": [
+            {"w": "decade", "pos": "n.", "def": "十年"},
+            {"w": "portable", "pos": "adj.", "def": "便携的"},
+            {"w": "device", "pos": "n.", "def": "装置；设备"},
+            {"w": "purify", "pos": "v.", "def": "净化；提纯"}
+        ]
+    },
+    # Section B (2)
+    {
+        "id": 3,
+        "para": 2,
+        "en": "The Desolenator operates as a mobile desalination unit that can take water from different places, such as the sea, rivers, boreholes and rain, and purify it for human consumption.",
+        "zh": "“脱盐器”作为一种移动式海水淡化装置运作，它可以从海洋、河流、钻井和雨水等不同来源取水，并将其净化以供人饮用。",
+        "grammar": {
+            "type": "定语从句",
+            "note": "that can take water... and purify it... 为定语从句修饰 a mobile desalination unit（含并列谓语 take 与 purify）；operate as 意为 “作为……运作”；such as 举例。"
+        },
+        "words": [
+            {"w": "operate", "pos": "v.", "def": "运作；运转"},
+            {"w": "desalination", "pos": "n.", "def": "脱盐；海水淡化"},
+            {"w": "borehole", "pos": "n.", "def": "钻孔；钻井"},
+            {"w": "consumption", "pos": "n.", "def": "消费；饮用"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 2,
+        "en": "It is particularly valuable in regions where natural groundwater reserves have been polluted, or where seawater is the only water source available.",
+        "zh": "在天然地下水储量已遭污染、或海水是唯一可用水源的地区，它尤为珍贵。",
+        "grammar": {
+            "type": "并列定语从句",
+            "note": "where natural groundwater reserves have been polluted 与 where seawater is the only water source available 为两个并列定语从句修饰 regions；available 为后置定语。"
+        },
+        "words": [
+            {"w": "valuable", "pos": "adj.", "def": "有价值的；珍贵的"},
+            {"w": "groundwater", "pos": "n.", "def": "地下水"},
+            {"w": "reserve", "pos": "n.", "def": "储量；储备"},
+            {"w": "pollute", "pos": "v.", "def": "污染"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "Janssen saw that there was a need for a sustainable way to clean water in both the developing and the developed countries when he moved to the United Arab Emirates and saw large-scale water processing.",
+        "zh": "当扬森搬到阿拉伯联合酋长国、目睹大规模的水处理时，他意识到无论是发展中国家还是发达国家，都需要一种可持续的净水方式。",
+        "grammar": {
+            "type": "宾语从句 + 时间状语从句",
+            "note": "saw that there was a need... 后接宾语从句；when he moved to... and saw... 为时间状语从句（并列谓语）；a need for a... way to do 意为 “对……方式的需求”。"
+        },
+        "words": [
+            {"w": "sustainable", "pos": "adj.", "def": "可持续的"},
+            {"w": "developing country", "pos": "phr.", "def": "发展中国家"},
+            {"w": "large-scale", "pos": "adj.", "def": "大规模的"},
+            {"w": "processing", "pos": "n.", "def": "加工；处理"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": LSQUO + "I was confronted with the enormous carbon footprint that the Gulf nations have because of all of the desalination that they do," + RSQUO + " he says.",
+        "zh": "“由于海湾国家进行的全部海水淡化，我直面了它们所造成的巨大碳足迹，”他说。",
+        "grammar": {
+            "type": "定语从句嵌套 + 原因状语",
+            "note": "that the Gulf nations have 为定语从句修饰 the enormous carbon footprint；because of all of the desalination that they do 为原因状语，含定语从句；be confronted with 意为 “面对、面临”。"
+        },
+        "words": [
+            {"w": "be confronted with", "pos": "phr.", "def": "面对；面临"},
+            {"w": "enormous", "pos": "adj.", "def": "巨大的"},
+            {"w": "carbon footprint", "pos": "phr.", "def": "碳足迹"},
+            {"w": "Gulf", "pos": "n.", "def": "海湾（尤指波斯湾）"}
+        ]
+    },
+    # Section C (3)
+    {
+        "id": 7,
+        "para": 3,
+        "en": "The Desolenator can produce 15 litres of drinking water per day, enough to sustain a family for cooking and drinking.",
+        "zh": "“脱盐器”每天能生产15升饮用水，足以满足一个家庭做饭和饮用的需要。",
+        "grammar": {
+            "type": "形容词短语作补充",
+            "note": "enough to sustain a family... 为形容词短语作补充说明，表结果/程度；per day 意为 “每天”；sustain 意为 “维持、供养”。"
+        },
+        "words": [
+            {"w": "litre", "pos": "n.", "def": "升"},
+            {"w": "sustain", "pos": "v.", "def": "维持；供养"},
+            {"w": "per day", "pos": "phr.", "def": "每天"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 3,
+        "en": "Its main selling point is that unlike standard desalination techniques, it doesn" + RSQUO + "t require a generated power supply: just sunlight.",
+        "zh": "它的主要卖点在于：与标准的海水淡化技术不同，它不需要外接发电的电源，只需阳光。",
+        "grammar": {
+            "type": "表语从句 + 冒号补充",
+            "note": "is that... 后接表语从句；unlike standard desalination techniques 为插入的比较状语；冒号后 just sunlight 补充说明所需能源；selling point 意为 “卖点”。"
+        },
+        "words": [
+            {"w": "selling point", "pos": "phr.", "def": "卖点；销售亮点"},
+            {"w": "standard", "pos": "adj.", "def": "标准的"},
+            {"w": "require", "pos": "v.", "def": "需要"},
+            {"w": "power supply", "pos": "phr.", "def": "电源；供电"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 3,
+        "en": "It measures 120 cm by 90 cm, and is easy to transport, thanks to its two wheels.",
+        "zh": "它的尺寸为120厘米乘90厘米，而且由于装有两个轮子，便于运输。",
+        "grammar": {
+            "type": "并列谓语 + thanks to",
+            "note": "measures... and is easy to transport 为并列谓语；measure 此处作 “尺寸为”；thanks to 意为 “多亏、由于”；120 cm by 90 cm 表尺寸。"
+        },
+        "words": [
+            {"w": "measure", "pos": "v.", "def": "（尺寸/长度）为"},
+            {"w": "transport", "pos": "v.", "def": "运输"},
+            {"w": "thanks to", "pos": "phr.", "def": "多亏；由于"},
+            {"w": "wheel", "pos": "n.", "def": "轮子"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 3,
+        "en": "Water enters through a pipe, and flows as a thin film between a sheet of double glazing and the surface of a solar panel, where it is heated by the sun.",
+        "zh": "水通过一根管子进入，以一层薄膜的形式在一块双层玻璃与太阳能板表面之间流动，在那里被太阳加热。",
+        "grammar": {
+            "type": "并列谓语 + 定语从句",
+            "note": "enters... and flows... 为并列谓语；where it is heated by the sun 为定语从句修饰前面的位置；as a thin film 意为 “以薄膜形式”；double glazing 意为 “双层玻璃”。"
+        },
+        "words": [
+            {"w": "pipe", "pos": "n.", "def": "管子；管道"},
+            {"w": "film", "pos": "n.", "def": "薄膜；薄层"},
+            {"w": "double glazing", "pos": "phr.", "def": "双层玻璃"},
+            {"w": "solar panel", "pos": "phr.", "def": "太阳能板"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 3,
+        "en": "The warm water flows into a small boiler (heated by a solar-powered battery) where it is converted to steam.",
+        "zh": "温水流入一个小锅炉（由太阳能电池加热），在其中被转化为蒸汽。",
+        "grammar": {
+            "type": "定语从句 + 插入过去分词",
+            "note": "(heated by a solar-powered battery) 为过去分词短语作插入定语修饰 boiler；where it is converted to steam 为定语从句；be converted to 意为 “被转化为”。"
+        },
+        "words": [
+            {"w": "boiler", "pos": "n.", "def": "锅炉"},
+            {"w": "solar-powered", "pos": "adj.", "def": "太阳能供电的"},
+            {"w": "convert to", "pos": "phr.", "def": "转化为；转变成"},
+            {"w": "steam", "pos": "n.", "def": "蒸汽"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 3,
+        "en": "When the steam cools, it becomes distilled water.",
+        "zh": "当蒸汽冷却时，它就变成了蒸馏水。",
+        "grammar": {
+            "type": "时间状语从句",
+            "note": "When the steam cools 为时间状语从句；become + 名词 表状态变化；distilled water 意为 “蒸馏水”。"
+        },
+        "words": [
+            {"w": "cool", "pos": "v.", "def": "冷却；变凉"},
+            {"w": "distilled water", "pos": "phr.", "def": "蒸馏水"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "The device has a very simple filter to trap particles, and this can easily be shaken to remove them.",
+        "zh": "该装置有一个非常简单的过滤器用来截留颗粒物，而这个过滤器可以很容易地通过摇动来去除颗粒。",
+        "grammar": {
+            "type": "不定式定语 + 并列句（被动）",
+            "note": "to trap particles 为不定式作定语修饰 filter；and this can... be shaken to remove them 为并列分句（被动+目的状语）；trap 意为 “截留、困住”。"
+        },
+        "words": [
+            {"w": "filter", "pos": "n.", "def": "过滤器"},
+            {"w": "trap", "pos": "v.", "def": "截留；使陷入"},
+            {"w": "particle", "pos": "n.", "def": "颗粒；微粒"},
+            {"w": "shake", "pos": "v.", "def": "摇动；抖动"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": "There are two tubes for liquid coming out: one for the waste " + DASH + " salt from seawater, fluoride, etc. " + DASH + " and another for the distilled water.",
+        "zh": "有两根管子供液体流出：一根排废物——海水中的盐、氟化物等等——另一根排蒸馏水。",
+        "grammar": {
+            "type": "冒号说明 + 破折号插入",
+            "note": "冒号后 one for the waste... and another for the distilled water 为并列说明；两破折号间为对 the waste 的举例；coming out 为现在分词作定语修饰 liquid。"
+        },
+        "words": [
+            {"w": "tube", "pos": "n.", "def": "管子"},
+            {"w": "liquid", "pos": "n.", "def": "液体"},
+            {"w": "waste", "pos": "n.", "def": "废物；废料"},
+            {"w": "fluoride", "pos": "n.", "def": "氟化物"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": "The performance of the unit is shown on an LCD screen and transmitted to the company which provides servicing when necessary.",
+        "zh": "该装置的运行状况会显示在一块液晶屏上，并传输给公司，公司会在必要时提供维护服务。",
+        "grammar": {
+            "type": "并列被动 + 定语从句",
+            "note": "is shown... and transmitted... 为并列被动；which provides servicing when necessary 为定语从句修饰 the company；when necessary 意为 “必要时”。"
+        },
+        "words": [
+            {"w": "performance", "pos": "n.", "def": "性能；运行状况"},
+            {"w": "transmit", "pos": "v.", "def": "传输；传送"},
+            {"w": "servicing", "pos": "n.", "def": "维护；保养"},
+            {"w": "when necessary", "pos": "phr.", "def": "必要时"}
+        ]
+    },
+    # Section D (4)
+    {
+        "id": 16,
+        "para": 4,
+        "en": "A recent analysis found that at least two-thirds of the world" + RSQUO + "s population lives with severe water scarcity for at least a month every year.",
+        "zh": "最近一项分析发现，全世界至少有三分之二的人口每年至少有一个月生活在严重缺水的状态中。",
+        "grammar": {
+            "type": "宾语从句",
+            "note": "found that... 后接宾语从句；two-thirds of 意为 “三分之二”；live with 意为 “忍受、与……共处”；water scarcity 意为 “水资源短缺”。"
+        },
+        "words": [
+            {"w": "analysis", "pos": "n.", "def": "分析"},
+            {"w": "two-thirds", "pos": "phr.", "def": "三分之二"},
+            {"w": "severe", "pos": "adj.", "def": "严重的"},
+            {"w": "scarcity", "pos": "n.", "def": "短缺；匮乏"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 4,
+        "en": "Janssen says that by 2030 half of the world" + RSQUO + "s population will be living with water stress " + DASH + " where the demand exceeds the supply over a certain period of time.",
+        "zh": "扬森说，到2030年，全世界将有一半人口生活在用水压力之下——即在某段时间内需求超过供给。",
+        "grammar": {
+            "type": "宾语从句 + 破折号定语从句",
+            "note": "says that... 后接宾语从句（将来进行时 will be living）；破折号后 where the demand exceeds the supply... 为定语从句解释 water stress；exceed 意为 “超过”。"
+        },
+        "words": [
+            {"w": "water stress", "pos": "phr.", "def": "用水压力；水资源紧张"},
+            {"w": "demand", "pos": "n.", "def": "需求"},
+            {"w": "exceed", "pos": "v.", "def": "超过；超出"},
+            {"w": "supply", "pos": "n.", "def": "供给；供应"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": LSQUO + "It is really important that a sustainable solution is brought to the market that is able to help these people," + RSQUO + " he says.",
+        "zh": "“把一种能够帮助这些人的可持续解决方案推向市场，这一点非常重要，”他说。",
+        "grammar": {
+            "type": "形式主语 + 定语从句",
+            "note": "It is really important that... 为形式主语结构；that is able to help these people 为定语从句修饰 a sustainable solution（因中间隔了 is brought to the market 而后置）；be brought to the market 意为 “被推向市场”。"
+        },
+        "words": [
+            {"w": "solution", "pos": "n.", "def": "解决方案"},
+            {"w": "bring to the market", "pos": "phr.", "def": "推向市场"},
+            {"w": "be able to", "pos": "phr.", "def": "能够"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": "Many countries " + LSQUO + "don" + RSQUO + "t have the money for desalination plants, which are very expensive to build.",
+        "zh": "许多国家“没有钱建海水淡化厂，而这类工厂造价高昂。",
+        "grammar": {
+            "type": "非限定性定语从句",
+            "note": "which are very expensive to build 为非限定性定语从句修饰 desalination plants；very expensive to build 中不定式表 “在建造方面”；money for 意为 “用于……的钱”。"
+        },
+        "words": [
+            {"w": "desalination plant", "pos": "phr.", "def": "海水淡化厂"},
+            {"w": "expensive", "pos": "adj.", "def": "昂贵的"},
+            {"w": "build", "pos": "v.", "def": "建造"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": "They don" + RSQUO + "t have the money to operate them, they are very maintenance intensive, and they don" + RSQUO + "t have the money to buy the diesel to run the desalination plants, so it is a really bad situation." + RSQUO,
+        "zh": "它们没有钱运营这些工厂，这些工厂维护成本极高，它们也没有钱购买运转海水淡化厂所需的柴油，所以情况确实很糟。”",
+        "grammar": {
+            "type": "并列句 + 结果状语",
+            "note": "多个分句并列（逗号连接），so 引出结果分句；to operate them / to buy the diesel / to run... 均为不定式作定语或目的状语；maintenance intensive 意为 “维护密集的、维护成本高的”。"
+        },
+        "words": [
+            {"w": "operate", "pos": "v.", "def": "运营；操作"},
+            {"w": "maintenance", "pos": "n.", "def": "维护；保养"},
+            {"w": "intensive", "pos": "adj.", "def": "密集的；集中的"},
+            {"w": "diesel", "pos": "n.", "def": "柴油"}
+        ]
+    },
+    # Section E (5)
+    {
+        "id": 21,
+        "para": 5,
+        "en": "The device is aimed at a wide variety of users " + DASH + " from homeowners in the developing world who do not have a constant supply of water to people living off the grid in rural parts of the US.",
+        "zh": "该装置面向各种各样的用户——从发展中国家中没有稳定供水的房主，到生活在美国乡村、不接入电网的人群。",
+        "grammar": {
+            "type": "破折号举例 + 定语从句",
+            "note": "be aimed at 意为 “针对、面向”；破折号后 from... to... 举例说明用户范围；who do not have a constant supply of water 为定语从句修饰 homeowners；living off the grid 为现在分词作定语；off the grid 意为 “不接入电网、独立于公共电网”。"
+        },
+        "words": [
+            {"w": "be aimed at", "pos": "phr.", "def": "针对；面向"},
+            {"w": "a wide variety of", "pos": "phr.", "def": "各种各样的"},
+            {"w": "constant", "pos": "adj.", "def": "持续的；恒定的"},
+            {"w": "off the grid", "pos": "phr.", "def": "不接入电网的；离网的"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 5,
+        "en": "The first commercial versions of the Desolenator are expected to be in operation in India early next year, after field tests are carried out.",
+        "zh": "“脱盐器”的首批商用版本预计在实地测试完成后，于明年初在印度投入使用。",
+        "grammar": {
+            "type": "被动 + 时间状语从句",
+            "note": "are expected to be in operation 为被动+不定式；after field tests are carried out 为时间状语从句（被动）；in operation 意为 “运行中、使用中”；carry out 意为 “进行、实施”。"
+        },
+        "words": [
+            {"w": "commercial", "pos": "adj.", "def": "商业的；商用的"},
+            {"w": "in operation", "pos": "phr.", "def": "运行中；使用中"},
+            {"w": "field test", "pos": "phr.", "def": "实地测试"},
+            {"w": "carry out", "pos": "phr.", "def": "进行；实施"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 5,
+        "en": "The market for the self-sufficient devices in developing countries is twofold " + DASH + " those who cannot afford the money for the device outright and pay through microfinance, and middle-income homes that can lease their own equipment.",
+        "zh": "在发展中国家，这种自给自足装置的市场分为两类——无力一次性付清购买款而通过小额信贷付款的人，以及能够租赁自己设备的中等收入家庭。",
+        "grammar": {
+            "type": "破折号说明 + 定语从句",
+            "note": "破折号后 those who... and middle-income homes that... 为对 twofold 的两类说明，各含定语从句；afford the money for... outright 意为 “一次性付清购买”；microfinance 意为 “小额信贷”。"
+        },
+        "words": [
+            {"w": "self-sufficient", "pos": "adj.", "def": "自给自足的"},
+            {"w": "twofold", "pos": "adj.", "def": "双重的；分两方面的"},
+            {"w": "outright", "pos": "adv.", "def": "一次性地；彻底地"},
+            {"w": "microfinance", "pos": "n.", "def": "小额信贷；微型金融"},
+            {"w": "lease", "pos": "v.", "def": "租赁"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": LSQUO + "People in India don" + RSQUO + "t pay for a fridge outright; they pay for it over six months.",
+        "zh": "“印度人不会一次性付清买一台冰箱的钱；他们会分六个月来付。",
+        "grammar": {
+            "type": "分号并列",
+            "note": "分号连接两个对比分句；pay for sth outright 意为 “一次性付清”；over six months 意为 “分六个月、在六个月内”。"
+        },
+        "words": [
+            {"w": "pay for", "pos": "phr.", "def": "为……付款"},
+            {"w": "fridge", "pos": "n.", "def": "冰箱"},
+            {"w": "outright", "pos": "adv.", "def": "一次性地"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": "They would put the Desolenator on their roof and hook it up to their municipal supply and they would get very reliable drinking water on a daily basis," + RSQUO + " Janssen says.",
+        "zh": "他们会把“脱盐器”放在屋顶，接入市政供水，这样每天就能获得非常可靠的饮用水，”扬森说。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "would put... and hook it up... and would get... 为并列谓语；hook up to 意为 “连接到”；on a daily basis 意为 “每天、按日”；municipal supply 意为 “市政供水”。"
+        },
+        "words": [
+            {"w": "hook up to", "pos": "phr.", "def": "连接到；接入"},
+            {"w": "municipal", "pos": "adj.", "def": "市政的；市的"},
+            {"w": "reliable", "pos": "adj.", "def": "可靠的"},
+            {"w": "on a daily basis", "pos": "phr.", "def": "每天；按日"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 5,
+        "en": "In the developed world, it is aimed at niche markets where tap water is unavailable " + DASH + " for camping, on boats, or for the military, for instance.",
+        "zh": "在发达国家，它面向那些无法获得自来水的小众市场——例如露营、船上使用，或供军队使用。",
+        "grammar": {
+            "type": "定语从句 + 破折号举例",
+            "note": "where tap water is unavailable 为定语从句修饰 niche markets；破折号后 for camping, on boats, or for the military 为举例，for instance 意为 “例如”；niche market 意为 “利基市场、小众市场”。"
+        },
+        "words": [
+            {"w": "niche market", "pos": "phr.", "def": "利基市场；小众市场"},
+            {"w": "tap water", "pos": "phr.", "def": "自来水"},
+            {"w": "unavailable", "pos": "adj.", "def": "无法获得的"},
+            {"w": "military", "pos": "n.", "def": "军队；军方"}
+        ]
+    },
+    # Section F (6)
+    {
+        "id": 27,
+        "para": 6,
+        "en": "Prices will vary according to where it is bought.",
+        "zh": "价格会根据购买地点的不同而有所差异。",
+        "grammar": {
+            "type": "宾语从句作介词宾语",
+            "note": "vary according to 意为 “根据……而变化”；where it is bought 为 according to 的宾语从句。"
+        },
+        "words": [
+            {"w": "vary", "pos": "v.", "def": "变化；不同"},
+            {"w": "according to", "pos": "phr.", "def": "根据；按照"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 6,
+        "en": "In the developing world, the price will depend on what deal aid organisations can negotiate.",
+        "zh": "在发展中国家，价格将取决于援助组织能谈成什么样的协议。",
+        "grammar": {
+            "type": "宾语从句",
+            "note": "depend on 意为 “取决于”；what deal aid organisations can negotiate 为 on 的宾语从句；negotiate 意为 “谈判、商定”。"
+        },
+        "words": [
+            {"w": "depend on", "pos": "phr.", "def": "取决于；依赖"},
+            {"w": "deal", "pos": "n.", "def": "协议；交易"},
+            {"w": "aid organisation", "pos": "phr.", "def": "援助组织"},
+            {"w": "negotiate", "pos": "v.", "def": "谈判；商定"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 6,
+        "en": "In developed countries, it is likely to come in at " + USD + "1,000 (" + PND + "685) a unit, said Janssen.",
+        "zh": "在发达国家，它的售价可能为每台1000美元（685英镑），扬森说。",
+        "grammar": {
+            "type": "简单句",
+            "note": "be likely to do 意为 “很可能”；come in at 意为 “（价格）定在、达到”；a unit 意为 “每台”。"
+        },
+        "words": [
+            {"w": "be likely to", "pos": "phr.", "def": "很可能"},
+            {"w": "come in at", "pos": "phr.", "def": "（价格/数值）为；定在"},
+            {"w": "unit", "pos": "n.", "def": "台；件；单位"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 6,
+        "en": LSQUO + "We are a venture with a social mission.",
+        "zh": "“我们是一家带有社会使命的企业。",
+        "grammar": {
+            "type": "主系表",
+            "note": "a venture with a social mission 为表语；with a social mission 为介词短语作定语；venture 意为 “（商业）企业、风险项目”。"
+        },
+        "words": [
+            {"w": "venture", "pos": "n.", "def": "（商业）企业；风险项目"},
+            {"w": "mission", "pos": "n.", "def": "使命；任务"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 6,
+        "en": "We are aware that the product we have envisioned is mainly finding application in the developing world and humanitarian sector and that this is the way we will proceed.",
+        "zh": "我们清楚，我们所构想的这款产品主要应用于发展中国家和人道主义领域，而且这也是我们将要推进的方向。",
+        "grammar": {
+            "type": "并列宾语从句",
+            "note": "be aware that... and that... 为两个并列宾语从句；(that) we have envisioned 为省略关系词的定语从句修饰 the product；(that) we will proceed 为省略关系词的定语从句修饰 the way；find application 意为 “得到应用”。"
+        },
+        "words": [
+            {"w": "be aware that", "pos": "phr.", "def": "意识到；清楚"},
+            {"w": "envision", "pos": "v.", "def": "设想；展望"},
+            {"w": "application", "pos": "n.", "def": "应用"},
+            {"w": "humanitarian", "pos": "adj.", "def": "人道主义的"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 6,
+        "en": "We do realise, though, that to be a viable company there is a bottom line to keep in mind," + RSQUO + " he says.",
+        "zh": "不过，我们确实明白，要成为一家能存续下去的公司，必须牢记盈亏底线，”他说。",
+        "grammar": {
+            "type": "宾语从句 + 不定式状语",
+            "note": "do realise 中 do 表强调；that... 为宾语从句；to be a viable company 为不定式作条件/目的状语；bottom line 意为 “底线、盈亏底线”；keep in mind 意为 “牢记”。"
+        },
+        "words": [
+            {"w": "realise", "pos": "v.", "def": "意识到；认识到"},
+            {"w": "viable", "pos": "adj.", "def": "可行的；能存续的"},
+            {"w": "bottom line", "pos": "phr.", "def": "底线；盈亏底线"},
+            {"w": "keep in mind", "pos": "phr.", "def": "牢记；记住"}
+        ]
+    },
+    # Section G (7)
+    {
+        "id": 33,
+        "para": 7,
+        "en": "The company itself is based at Imperial College London, although Janssen, its chief executive, still lives in the UAE.",
+        "zh": "公司本身设在伦敦帝国理工学院，尽管其首席执行官扬森仍居住在阿联酋。",
+        "grammar": {
+            "type": "让步状语从句 + 同位语",
+            "note": "although 引导让步状语从句；its chief executive 为 Janssen 的同位语；be based at 意为 “设在、以……为基地”。"
+        },
+        "words": [
+            {"w": "be based at", "pos": "phr.", "def": "设在；以……为基地"},
+            {"w": "chief executive", "pos": "phr.", "def": "首席执行官"},
+            {"w": "UAE", "pos": "n.", "def": "阿拉伯联合酋长国（缩写）"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 7,
+        "en": "It has raised " + PND + "340,000 in funding so far.",
+        "zh": "到目前为止，它已筹集了34万英镑的资金。",
+        "grammar": {
+            "type": "现在完成时",
+            "note": "has raised 为现在完成时，与 so far 呼应；raise funding 意为 “筹集资金”；so far 意为 “到目前为止”。"
+        },
+        "words": [
+            {"w": "raise", "pos": "v.", "def": "筹集；募集"},
+            {"w": "funding", "pos": "n.", "def": "资金；拨款"},
+            {"w": "so far", "pos": "phr.", "def": "到目前为止"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 7,
+        "en": "Within two years, he says, the company aims to be selling 1,000 units a month, mainly in the humanitarian field.",
+        "zh": "他说，公司的目标是在两年内实现每月销售1000台，主要面向人道主义领域。",
+        "grammar": {
+            "type": "插入语 + 不定式宾语",
+            "note": "he says 为插入语；aim to be selling... 中不定式进行式表 “持续销售”；Within two years 为时间状语；a month 意为 “每月”。"
+        },
+        "words": [
+            {"w": "aim to", "pos": "phr.", "def": "旨在；目标是"},
+            {"w": "field", "pos": "n.", "def": "领域"},
+            {"w": "within", "pos": "prep.", "def": "在……之内"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 7,
+        "en": "They are expected to be sold in areas such as Australia, northern Chile, Peru, Texas and California.",
+        "zh": "预计它们将在澳大利亚、智利北部、秘鲁、得克萨斯州和加利福尼亚州等地区销售。",
+        "grammar": {
+            "type": "被动 + 举例",
+            "note": "are expected to be sold 为被动+不定式；such as... 举例说明 areas；northern Chile 意为 “智利北部”。"
+        },
+        "words": [
+            {"w": "be expected to", "pos": "phr.", "def": "预计；被期望"},
+            {"w": "area", "pos": "n.", "def": "地区；区域"},
+            {"w": "northern", "pos": "adj.", "def": "北部的"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "be impressed with", "pos": "phr.", "def": "对……印象深刻"},
+    {"w": "be confronted with", "pos": "phr.", "def": "面对；面临"},
+    {"w": "thanks to", "pos": "phr.", "def": "多亏；由于"},
+    {"w": "be aimed at", "pos": "phr.", "def": "针对；面向"},
+    {"w": "off the grid", "pos": "phr.", "def": "不接入电网的；离网的"},
+    {"w": "carry out", "pos": "phr.", "def": "进行；实施"},
+    {"w": "on a daily basis", "pos": "phr.", "def": "每天；按日"},
+    {"w": "depend on", "pos": "phr.", "def": "取决于；依赖"},
+    {"w": "keep in mind", "pos": "phr.", "def": "牢记；记住"},
+    {"w": "so far", "pos": "phr.", "def": "到目前为止"}
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "20",
+        "type": "matching_headings",
+        "instructions": [
+            "Reading Passage 2 has seven sections, A" + DASH + "G.",
+            "Choose the correct heading for each section from the list of headings below.",
+            "Write the correct number, i" + DASH + "x, in boxes 14" + DASH + "20 on your answer sheet.",
+            "List of Headings: i Getting the finance for production | ii An unexpected benefit | iii From initial inspiration to new product | iv The range of potential customers for the device | v What makes the device different from alternatives | vi Cleaning water from a range of sources | vii Overcoming production difficulties | viii Profit not the primary goal | ix A warm welcome for the device | x The number of people affected by water shortages"
+        ],
+        "items": [
+            {"number": 14, "prompt": "Section A", "answer": "iii", "evidence_sentence": 2},
+            {"number": 15, "prompt": "Section B", "answer": "vi", "evidence_sentence": 3},
+            {"number": 16, "prompt": "Section C", "answer": "v", "evidence_sentence": 8},
+            {"number": 17, "prompt": "Section D", "answer": "x", "evidence_sentence": 16},
+            {"number": 18, "prompt": "Section E", "answer": "iv", "evidence_sentence": 21},
+            {"number": 19, "prompt": "Section F", "answer": "viii", "evidence_sentence": 30},
+            {"number": 20, "prompt": "Section G", "answer": "i", "evidence_sentence": 34}
+        ]
+    },
+    {
+        "title": "Questions 21" + DASH + "26",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 21" + DASH + "26 on your answer sheet.",
+            "How the Desolenator works"
+        ],
+        "items": [
+            {"number": 21, "prompt": "The device can be used in different locations, as it has __________.", "answer": "wheels", "evidence_sentence": 9},
+            {"number": 22, "prompt": "Water is fed into a pipe, and a __________ of water flows over a solar panel.", "answer": "film", "evidence_sentence": 10},
+            {"number": 23, "prompt": "Any particles in the water are caught in a __________.", "answer": "filter", "evidence_sentence": 13},
+            {"number": 24, "prompt": "The purified water comes out through one tube, and all types of __________ come out through another.", "answer": "waste", "evidence_sentence": 14},
+            {"number": 25, "prompt": "A screen displays the __________ of the device, and transmits the information to the company ...", "answer": "performance", "evidence_sentence": 15},
+            {"number": 26, "prompt": "... so that they know when the Desolenator requires __________.", "answer": "servicing", "evidence_sentence": 15}
+        ]
+    }
+]
+
+data = {
+    "id": "c15-test3-p2",
+    "source": "剑桥雅思15 Test 3 Passage 2",
+    "title": "The Desolenator: producing clean water",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c15-test3-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))
