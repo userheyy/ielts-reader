@@ -1,0 +1,722 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test1-p3.json (The future of work)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+LDQUO = "“"  # "
+RDQUO = "”"  # "
+DASH = "–"   # -
+PCT = "%"
+
+sentences = [
+    # Para 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "According to a leading business consultancy, 3" + DASH + "14" + PCT + " of the global workforce will need to switch to a different occupation within the next 10" + DASH + "15 years, and all workers will need to adapt as their occupations evolve alongside increasingly capable machines.",
+        "zh": "据一家顶尖商业咨询公司称，未来10到15年内，全球劳动力中将有3%到14%的人需要转向不同的职业，而且随着职业与能力日益强大的机器共同演进，所有劳动者都将需要适应。",
+        "grammar": {
+            "type": "and 并列句 + as 时间/伴随从句",
+            "note": "According to 意为 “据……所说”；两个分句由 and 并列；as their occupations evolve... 为 as 引导的时间/伴随状语从句；alongside 意为 “与……一起、并排”；switch to 意为 “转向”。"
+        },
+        "words": [
+            {"w": "consultancy", "pos": "n.", "def": "咨询公司"},
+            {"w": "workforce", "pos": "n.", "def": "劳动力"},
+            {"w": "switch to", "pos": "phr.", "def": "转向；切换到"},
+            {"w": "occupation", "pos": "n.", "def": "职业"},
+            {"w": "evolve", "pos": "v.", "def": "演进；进化"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Automation " + DASH + " or " + LSQUO + "embodied artificial intelligence" + RSQUO + " (AI) " + DASH + " is one aspect of the disruptive effects of technology on the labour market.",
+        "zh": "自动化——或称“具身人工智能”（AI）——是技术对劳动力市场颠覆性影响的一个方面。",
+        "grammar": {
+            "type": "破折号插入同位",
+            "note": "两破折号间 or 'embodied artificial intelligence' (AI) 为对 Automation 的同位解释；one aspect of 意为 “……的一个方面”；disruptive effects 意为 “颠覆性影响”。"
+        },
+        "words": [
+            {"w": "automation", "pos": "n.", "def": "自动化"},
+            {"w": "embodied", "pos": "adj.", "def": "具身的；实体化的"},
+            {"w": "disruptive", "pos": "adj.", "def": "颠覆性的；扰乱性的"},
+            {"w": "labour market", "pos": "phr.", "def": "劳动力市场"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": LSQUO + "Disembodied AI" + RSQUO + ", like the algorithms running in our smartphones, is another.",
+        "zh": "“非具身人工智能”，比如在我们智能手机中运行的算法，则是另一个方面。",
+        "grammar": {
+            "type": "省略 + 插入定语",
+            "note": "is another 后省略 aspect（呼应上句 one aspect）；like the algorithms running in our smartphones 为插入的举例，running... 为现在分词定语修饰 algorithms。"
+        },
+        "words": [
+            {"w": "disembodied", "pos": "adj.", "def": "非具身的；无实体的"},
+            {"w": "algorithm", "pos": "n.", "def": "算法"},
+            {"w": "another", "pos": "pron.", "def": "另一个"}
+        ]
+    },
+    # Para 2
+    {
+        "id": 4,
+        "para": 2,
+        "en": "Dr Stella Pachidi from Cambridge Judge Business School believes that some of the most fundamental changes are happening as a result of the " + LSQUO + "algorithmication" + RSQUO + " of jobs that are dependent on data rather than on production " + DASH + " the so-called knowledge economy.",
+        "zh": "剑桥贾奇商学院的斯特拉·帕基迪博士认为，一些最根本的变化正因那些依赖数据而非生产的工作的“算法化”而发生——即所谓的知识经济。",
+        "grammar": {
+            "type": "that 宾语从句 + that 定语从句 + 破折号同位",
+            "note": "believes that... 为宾语从句；as a result of 意为 “由于”；that are dependent on data rather than on production 为定语从句修饰 jobs；破折号后 the so-called knowledge economy 为同位说明；rather than 意为 “而不是”。"
+        },
+        "words": [
+            {"w": "fundamental", "pos": "adj.", "def": "根本的"},
+            {"w": "as a result of", "pos": "phr.", "def": "由于；作为……的结果"},
+            {"w": "be dependent on", "pos": "phr.", "def": "依赖于"},
+            {"w": "so-called", "pos": "adj.", "def": "所谓的"},
+            {"w": "knowledge economy", "pos": "phr.", "def": "知识经济"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "Algorithms are capable of learning from data to undertake tasks that previously needed human judgement, such as reading legal contracts, analysing medical scans and gathering market intelligence.",
+        "zh": "算法能够从数据中学习，从而承担以往需要人类判断的任务，例如审阅法律合同、分析医学扫描影像和收集市场情报。",
+        "grammar": {
+            "type": "be capable of + that 定语从句 + such as 举例",
+            "note": "be capable of doing 意为 “能够做”；to undertake tasks 为不定式表目的；that previously needed human judgement 为定语从句修饰 tasks；such as 后接三个并列动名词短语作举例。"
+        },
+        "words": [
+            {"w": "be capable of", "pos": "phr.", "def": "能够"},
+            {"w": "undertake", "pos": "v.", "def": "承担；从事"},
+            {"w": "judgement", "pos": "n.", "def": "判断（力）"},
+            {"w": "legal contract", "pos": "phr.", "def": "法律合同"},
+            {"w": "market intelligence", "pos": "phr.", "def": "市场情报"}
+        ]
+    },
+    # Para 3
+    {
+        "id": 6,
+        "para": 3,
+        "en": LSQUO + "In many cases, they can outperform humans," + RSQUO + " says Pachidi.",
+        "zh": "“在许多情况下，它们的表现能超过人类，”帕基迪说。",
+        "grammar": {
+            "type": "直接引语 + 倒装",
+            "note": "引语在前、says Pachidi 在后为引述倒装；outperform 意为 “胜过、优于”；they 指代上文 algorithms。"
+        },
+        "words": [
+            {"w": "outperform", "pos": "v.", "def": "胜过；优于"},
+            {"w": "in many cases", "pos": "phr.", "def": "在许多情况下"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 3,
+        "en": LSQUO + "Organisations are attracted to using algorithms because they want to make choices based on what they consider is " + LDQUO + "perfect information" + RDQUO + ", as well as to reduce costs and enhance productivity." + RSQUO,
+        "zh": "“各组织之所以青睐使用算法，是因为它们想基于其所认为的“完美信息”来做出选择，同时也为了降低成本、提高生产力。”",
+        "grammar": {
+            "type": "because 原因 + as well as 并列不定式",
+            "note": "be attracted to doing 意为 “被……吸引、青睐”；because they want to... 为原因从句；based on what they consider is 'perfect information' 中 what 引导宾语从句，they consider 为插入；as well as to reduce... and enhance... 与前面 to make choices 并列。"
+        },
+        "words": [
+            {"w": "be attracted to", "pos": "phr.", "def": "被……吸引；青睐"},
+            {"w": "based on", "pos": "phr.", "def": "基于"},
+            {"w": "as well as", "pos": "phr.", "def": "以及；还"},
+            {"w": "enhance", "pos": "v.", "def": "提高；增强"},
+            {"w": "productivity", "pos": "n.", "def": "生产力"}
+        ]
+    },
+    # Para 4
+    {
+        "id": 8,
+        "para": 4,
+        "en": LSQUO + "But these enhancements are not without consequences," + RSQUO + " says Pachidi.",
+        "zh": "“但这些改进并非没有代价，”帕基迪说。",
+        "grammar": {
+            "type": "not without 双重否定",
+            "note": "not without consequences 为双重否定，实指 “有其后果/代价”；these enhancements 指代前文提到的算法带来的种种好处。"
+        },
+        "words": [
+            {"w": "enhancement", "pos": "n.", "def": "改进；提升"},
+            {"w": "not without", "pos": "phr.", "def": "并非没有"},
+            {"w": "consequence", "pos": "n.", "def": "后果"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 4,
+        "en": LSQUO + "If routine cognitive tasks are taken over by AI, how do professions develop their future experts?" + RSQUO + " she asks.",
+        "zh": "“如果常规的认知性任务被人工智能接管，各行业该如何培养未来的专家呢？”她问道。",
+        "grammar": {
+            "type": "if 条件从句 + 特殊疑问",
+            "note": "If routine cognitive tasks are taken over by AI 为条件从句，含被动 be taken over by；主句为特殊疑问句 how do professions develop...；routine cognitive tasks 意为 “常规认知任务”。"
+        },
+        "words": [
+            {"w": "routine", "pos": "adj.", "def": "常规的；例行的"},
+            {"w": "cognitive", "pos": "adj.", "def": "认知的"},
+            {"w": "take over", "pos": "phr.", "def": "接管；接手"},
+            {"w": "profession", "pos": "n.", "def": "行业；职业"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 4,
+        "en": LSQUO + "One way of learning about a job is " + LDQUO + "legitimate peripheral participation" + RDQUO + " " + DASH + " a novice stands next to experts and learns by observation.",
+        "zh": "“了解一份工作的一种方式是“合法的边缘性参与”——新手站在专家身旁，通过观察来学习。",
+        "grammar": {
+            "type": "破折号解释",
+            "note": "One way of learning about a job is... 为主系表；破折号后 a novice stands next to experts and learns by observation 对该术语作解释；learn by observation 意为 “通过观察学习”。"
+        },
+        "words": [
+            {"w": "legitimate", "pos": "adj.", "def": "合法的；正当的"},
+            {"w": "peripheral", "pos": "adj.", "def": "外围的；边缘的"},
+            {"w": "novice", "pos": "n.", "def": "新手"},
+            {"w": "observation", "pos": "n.", "def": "观察"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 4,
+        "en": "If this isn" + RSQUO + "t happening, then you need to find new ways to learn." + RSQUO,
+        "zh": "如果这种情况不再发生，那么你就需要找到新的学习方式。”",
+        "grammar": {
+            "type": "if 条件从句",
+            "note": "If this isn't happening 为条件从句，this 指代上句的 “边缘性参与” 学习方式；then you need to find new ways to learn 为主句；to learn 为不定式作定语修饰 ways。"
+        },
+        "words": [
+            {"w": "happen", "pos": "v.", "def": "发生"},
+            {"w": "find ways to", "pos": "phr.", "def": "找到……的方法"}
+        ]
+    },
+    # Para 5
+    {
+        "id": 12,
+        "para": 5,
+        "en": "Another issue is the extent to which the technology influences or even controls the workforce.",
+        "zh": "另一个问题是这项技术在多大程度上影响甚至控制劳动力。",
+        "grammar": {
+            "type": "the extent to which 定语从句",
+            "note": "the extent to which the technology influences or even controls... 为 “……的程度” 结构，to which 引导定语从句修饰 extent；influences or even controls 为并列谓语，even 表递进强调。"
+        },
+        "words": [
+            {"w": "issue", "pos": "n.", "def": "问题"},
+            {"w": "the extent to which", "pos": "phr.", "def": "……的程度"},
+            {"w": "influence", "pos": "v.", "def": "影响"},
+            {"w": "control", "pos": "v.", "def": "控制"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 5,
+        "en": "For over two years, Pachidi monitored a telecommunications company.",
+        "zh": "在两年多的时间里，帕基迪对一家电信公司进行了跟踪研究。",
+        "grammar": {
+            "type": "时间状语 + 简单句",
+            "note": "For over two years 为时间状语置于句首；monitor 意为 “监测、跟踪观察”；telecommunications company 意为 “电信公司”。"
+        },
+        "words": [
+            {"w": "monitor", "pos": "v.", "def": "监测；跟踪观察"},
+            {"w": "telecommunications", "pos": "n.", "def": "电信"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 5,
+        "en": LSQUO + "The way telecoms salespeople work is through personal and frequent contact with clients, using the benefit of experience to assess a situation and reach a decision." + RSQUO,
+        "zh": "“电信销售人员的工作方式是与客户进行频繁的私人接触，利用经验的优势来评估情况并做出决定。”",
+        "grammar": {
+            "type": "省略关系词定语从句 + 现在分词状语",
+            "note": "The way (that) telecoms salespeople work 含省略关系词的定语从句；is through... 为主系表；using the benefit of experience to assess... and reach... 为现在分词作伴随状语；reach a decision 意为 “做出决定”。"
+        },
+        "words": [
+            {"w": "salespeople", "pos": "n.", "def": "销售人员"},
+            {"w": "frequent", "pos": "adj.", "def": "频繁的"},
+            {"w": "assess", "pos": "v.", "def": "评估"},
+            {"w": "reach a decision", "pos": "phr.", "def": "做出决定"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 5,
+        "en": "However, the company had started using a[n] ... algorithm that defined when account managers should contact certain customers about which kinds of campaigns and what to offer them." + RSQUO,
+        "zh": "“然而，这家公司已开始使用一种……算法，它规定了客户经理应在何时就哪类营销活动联系哪些特定客户、以及向他们提供什么。”",
+        "grammar": {
+            "type": "that 定语从句 + when/which/what 宾语从句",
+            "note": "that defined when... about which kinds... and what to offer 为定语从句修饰 algorithm；define 后接 when 引导的宾语从句；about which kinds of campaigns 与 what to offer them 并列作补充；account manager 意为 “客户经理”。"
+        },
+        "words": [
+            {"w": "define", "pos": "v.", "def": "规定；界定"},
+            {"w": "account manager", "pos": "phr.", "def": "客户经理"},
+            {"w": "campaign", "pos": "n.", "def": "（营销）活动"},
+            {"w": "offer", "pos": "v.", "def": "提供"}
+        ]
+    },
+    # Para 6
+    {
+        "id": 16,
+        "para": 6,
+        "en": "The algorithm " + DASH + " usually built by external designers " + DASH + " often becomes the keeper of knowledge, she explains.",
+        "zh": "她解释说，这种算法——通常由外部设计者构建——往往成为知识的掌管者。",
+        "grammar": {
+            "type": "破折号插入 + she explains",
+            "note": "两破折号间 usually built by external designers 为过去分词短语作插入定语；主句 The algorithm often becomes the keeper of knowledge；she explains 为引述插入语；keeper of knowledge 意为 “知识的掌管者”。"
+        },
+        "words": [
+            {"w": "external", "pos": "adj.", "def": "外部的"},
+            {"w": "designer", "pos": "n.", "def": "设计者"},
+            {"w": "keeper", "pos": "n.", "def": "保管者；掌管者"},
+            {"w": "explain", "pos": "v.", "def": "解释"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 6,
+        "en": "In cases like this, Pachidi believes, a short-sighted view begins to creep into working practices whereby workers learn through the " + LSQUO + "algorithm" + RSQUO + "s eyes" + RSQUO + " and become dependent on its instructions.",
+        "zh": "帕基迪认为，在这样的情况下，一种短视的观念开始悄然渗入工作实践，由此工人们透过“算法之眼”来学习，并变得依赖它的指令。",
+        "grammar": {
+            "type": "whereby 定语从句 + 插入语",
+            "note": "Pachidi believes 为插入语；主句 a short-sighted view begins to creep into working practices；whereby workers learn... and become dependent on... 为 whereby（= by which）引导的定语从句修饰 working practices；creep into 意为 “悄悄进入”。"
+        },
+        "words": [
+            {"w": "short-sighted", "pos": "adj.", "def": "短视的；目光短浅的"},
+            {"w": "creep into", "pos": "phr.", "def": "悄悄进入；渗入"},
+            {"w": "whereby", "pos": "adv.", "def": "凭此；由此"},
+            {"w": "instruction", "pos": "n.", "def": "指令；指示"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 6,
+        "en": "Alternative explorations " + DASH + " where experimentation and human instinct lead to progress and new ideas " + DASH + " are effectively discouraged.",
+        "zh": "而其他探索方式——那些让试验和人类直觉带来进步与新想法的方式——实际上受到了抑制。",
+        "grammar": {
+            "type": "where 定语从句插入 + 被动",
+            "note": "主语 Alternative explorations，谓语 are effectively discouraged 为被动；两破折号间 where experimentation and human instinct lead to... 为 where 引导的定语从句作插入修饰 explorations；lead to 意为 “导致、带来”。"
+        },
+        "words": [
+            {"w": "alternative", "pos": "adj.", "def": "替代的；另外的"},
+            {"w": "experimentation", "pos": "n.", "def": "试验"},
+            {"w": "instinct", "pos": "n.", "def": "直觉；本能"},
+            {"w": "discourage", "pos": "v.", "def": "抑制；阻止"}
+        ]
+    },
+    # Para 7
+    {
+        "id": 19,
+        "para": 7,
+        "en": "Pachidi and colleagues even observed people developing strategies to make the algorithm work to their own advantage.",
+        "zh": "帕基迪和同事们甚至观察到，人们会制定策略，使算法为自己谋利。",
+        "grammar": {
+            "type": "observe sb doing + 不定式目的",
+            "note": "observed people developing strategies 为 observe sb doing 结构；to make the algorithm work to their own advantage 为不定式表目的，make sth do 为使役结构；work to one's advantage 意为 “对某人有利”。"
+        },
+        "words": [
+            {"w": "observe", "pos": "v.", "def": "观察到"},
+            {"w": "strategy", "pos": "n.", "def": "策略"},
+            {"w": "to one" + RSQUO + "s advantage", "pos": "phr.", "def": "对某人有利"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 7,
+        "en": LSQUO + "We are seeing cases where workers feed the algorithm with false data to reach their targets," + RSQUO + " she reports.",
+        "zh": "“我们看到有些情况下，工人们向算法输入虚假数据以达成他们的业绩指标，”她报告道。",
+        "grammar": {
+            "type": "where 定语从句 + 不定式目的",
+            "note": "cases where workers feed the algorithm with false data 中 where 引导定语从句修饰 cases；to reach their targets 为不定式表目的；feed sth with 意为 “给……提供”；reach targets 意为 “达成指标”。"
+        },
+        "words": [
+            {"w": "feed ... with", "pos": "phr.", "def": "向……提供；给……输入"},
+            {"w": "false data", "pos": "phr.", "def": "虚假数据"},
+            {"w": "target", "pos": "n.", "def": "目标；指标"}
+        ]
+    },
+    # Para 8
+    {
+        "id": 21,
+        "para": 8,
+        "en": "It" + RSQUO + "s scenarios like these that many researchers are working to avoid.",
+        "zh": "正是这样的情形，许多研究人员正努力设法避免。",
+        "grammar": {
+            "type": "it is ... that 强调句",
+            "note": "It's scenarios like these that... 为强调句，强调 scenarios like these；many researchers are working to avoid 为被强调后的剩余部分；work to do 意为 “努力做”。"
+        },
+        "words": [
+            {"w": "scenario", "pos": "n.", "def": "情形；设想"},
+            {"w": "work to", "pos": "phr.", "def": "努力（做）"},
+            {"w": "avoid", "pos": "v.", "def": "避免"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 8,
+        "en": "Their objective is to make AI technologies more trustworthy and transparent, so that organisations and individuals understand how AI decisions are made.",
+        "zh": "他们的目标是让人工智能技术更值得信赖、更透明，以便组织和个人能够理解人工智能的决策是如何做出的。",
+        "grammar": {
+            "type": "so that 目的从句",
+            "note": "make AI technologies more trustworthy and transparent 为 make sth + 形容词；so that... 引导目的状语从句；how AI decisions are made 为 understand 的宾语从句，含被动。"
+        },
+        "words": [
+            {"w": "objective", "pos": "n.", "def": "目标"},
+            {"w": "trustworthy", "pos": "adj.", "def": "值得信赖的"},
+            {"w": "transparent", "pos": "adj.", "def": "透明的"},
+            {"w": "individual", "pos": "n.", "def": "个人"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 8,
+        "en": "In the meantime, says Pachidi, " + LSQUO + "We need to make sure we fully understand the dilemmas that this new world raises regarding expertise, occupational boundaries and control." + RSQUO,
+        "zh": "帕基迪说，与此同时，“我们需要确保自己充分理解这个新世界在专业知识、职业边界和控制权方面所引发的种种困境。”",
+        "grammar": {
+            "type": "that 定语从句 + regarding",
+            "note": "In the meantime 意为 “与此同时”；make sure (that) we fully understand... 含省略 that 的宾语从句；the dilemmas that this new world raises 为定语从句；regarding expertise... 为介词短语表 “关于”。"
+        },
+        "words": [
+            {"w": "in the meantime", "pos": "phr.", "def": "与此同时"},
+            {"w": "dilemma", "pos": "n.", "def": "困境；两难"},
+            {"w": "expertise", "pos": "n.", "def": "专业知识"},
+            {"w": "occupational boundary", "pos": "phr.", "def": "职业边界"}
+        ]
+    },
+    # Para 9
+    {
+        "id": 24,
+        "para": 9,
+        "en": "Economist Professor Hamish Low believes that the future of work will involve major transitions across the whole life course for everyone.",
+        "zh": "经济学家哈米什·洛教授认为，未来的工作将涉及每个人在整个人生历程中经历重大的转变。",
+        "grammar": {
+            "type": "that 宾语从句",
+            "note": "believes that... 为宾语从句；involve major transitions 意为 “涉及重大转变”；across the whole life course 意为 “贯穿整个人生历程”；for everyone 为状语。"
+        },
+        "words": [
+            {"w": "economist", "pos": "n.", "def": "经济学家"},
+            {"w": "involve", "pos": "v.", "def": "涉及；包含"},
+            {"w": "transition", "pos": "n.", "def": "转变；过渡"},
+            {"w": "life course", "pos": "phr.", "def": "人生历程"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 9,
+        "en": LSQUO + "The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement is a thing of the past," + RSQUO + " says Low.",
+        "zh": "“全日制教育、继而全职工作、再继而领取养老金退休的传统人生轨迹已成为过去，”洛说。",
+        "grammar": {
+            "type": "过去分词定语连缀",
+            "note": "主语 The traditional trajectory of full-time education followed by full-time work followed by a pensioned retirement 中两处 followed by 为过去分词定语，层层连缀；a thing of the past 意为 “过去之物、已成历史”。"
+        },
+        "words": [
+            {"w": "trajectory", "pos": "n.", "def": "轨迹；轨道"},
+            {"w": "full-time", "pos": "adj.", "def": "全职的；全日制的"},
+            {"w": "pensioned", "pos": "adj.", "def": "领养老金的"},
+            {"w": "a thing of the past", "pos": "phr.", "def": "过去之事；已成历史"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 9,
+        "en": "Instead, he envisages a multistage employment life: one where retraining happens across the life course, and where multiple jobs and no job happen by choice at different stages.",
+        "zh": "相反，他设想了一种多阶段的职业生涯：在这种生涯中，再培训贯穿人生各阶段，多份工作和无工作状态都在不同阶段出于自身选择而发生。",
+        "grammar": {
+            "type": "冒号同位 + 两个 where 定语从句",
+            "note": "Instead 表对比；冒号后 one 指代 employment life；两个 where 引导的定语从句并列修饰 one；envisage 意为 “设想”；by choice 意为 “出于选择”。"
+        },
+        "words": [
+            {"w": "envisage", "pos": "v.", "def": "设想；展望"},
+            {"w": "multistage", "pos": "adj.", "def": "多阶段的"},
+            {"w": "retraining", "pos": "n.", "def": "再培训"},
+            {"w": "by choice", "pos": "phr.", "def": "出于选择；自愿"}
+        ]
+    },
+    # Para 10
+    {
+        "id": 27,
+        "para": 10,
+        "en": "On the subject of job losses, Low believes the predictions are founded on a fallacy: " + LSQUO + "It assumes that the number of jobs is fixed.",
+        "zh": "关于失业问题，洛认为那些预测建立在一个谬误之上：“它假定工作岗位的数量是固定的。",
+        "grammar": {
+            "type": "冒号引出 + that 宾语从句",
+            "note": "On the subject of 意为 “关于”；be founded on a fallacy 意为 “建立在谬误之上”；冒号引出引语；It assumes that the number of jobs is fixed 含 that 宾语从句。"
+        },
+        "words": [
+            {"w": "on the subject of", "pos": "phr.", "def": "关于；就……而言"},
+            {"w": "prediction", "pos": "n.", "def": "预测"},
+            {"w": "be founded on", "pos": "phr.", "def": "建立在……之上"},
+            {"w": "fallacy", "pos": "n.", "def": "谬误"},
+            {"w": "assume", "pos": "v.", "def": "假定；假设"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 10,
+        "en": "If in 30 years, half of 100 jobs are being carried out by robots, that doesn" + RSQUO + "t mean we are left with just 50 jobs for humans.",
+        "zh": "如果30年后，100份工作中有一半由机器人来完成，这并不意味着留给人类的就只剩50份工作。",
+        "grammar": {
+            "type": "if 条件从句 + that 主语 + 省略that宾语从句",
+            "note": "If... half of 100 jobs are being carried out by robots 为条件从句，含现在进行时被动；主句 that doesn't mean (that) we are left with...；be left with 意为 “剩下”；carry out 意为 “执行、完成”。"
+        },
+        "words": [
+            {"w": "carry out", "pos": "phr.", "def": "执行；完成"},
+            {"w": "be left with", "pos": "phr.", "def": "剩下；留有"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 10,
+        "en": "The number of jobs will increase: we would expect there to be 150 jobs." + RSQUO,
+        "zh": "工作岗位的数量将会增加：我们可以预期会有150份工作。”",
+        "grammar": {
+            "type": "冒号解释 + expect there to be",
+            "note": "冒号后对前句作解释；we would expect there to be 150 jobs 中 expect there to be 为 “预期有”，there to be 为不定式的存在结构；would 表推测。"
+        },
+        "words": [
+            {"w": "increase", "pos": "v.", "def": "增加"},
+            {"w": "expect", "pos": "v.", "def": "预期；期望"}
+        ]
+    },
+    # Para 11
+    {
+        "id": 30,
+        "para": 11,
+        "en": "Dr Ewan McGaughey, at Cambridge" + RSQUO + "s Centre for Business Research and King" + RSQUO + "s College London, agrees that " + LSQUO + "apocalyptic" + RSQUO + " views about the future of work are misguided.",
+        "zh": "剑桥商业研究中心和伦敦国王学院的伊万·麦高希博士认同，那些关于未来工作的“末日论”观点是被误导的。",
+        "grammar": {
+            "type": "同位插入 + that 宾语从句",
+            "note": "at Cambridge's Centre... and King's College London 为插入的同位说明其任职；agrees that... 为宾语从句；'apocalyptic' views... are misguided 为从句主干；misguided 意为 “被误导的”。"
+        },
+        "words": [
+            {"w": "agree that", "pos": "phr.", "def": "认同；同意"},
+            {"w": "apocalyptic", "pos": "adj.", "def": "末日的；灾难性的"},
+            {"w": "misguided", "pos": "adj.", "def": "被误导的；错误的"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 11,
+        "en": LSQUO + "It" + RSQUO + "s the laws that restrict the supply of capital to the job market, not the advent of new technologies that causes unemployment." + RSQUO,
+        "zh": "“造成失业的是那些限制资本流入就业市场的法律，而不是新技术的到来。”",
+        "grammar": {
+            "type": "强调句 + that 定语从句 + not 对比",
+            "note": "It's the laws that... not the advent of new technologies that causes unemployment 为强调句，强调 the laws 而非 the advent；两个 that 分别引导定语从句修饰 laws 与 technologies；restrict the supply of capital 意为 “限制资本供给”。"
+        },
+        "words": [
+            {"w": "restrict", "pos": "v.", "def": "限制"},
+            {"w": "capital", "pos": "n.", "def": "资本"},
+            {"w": "advent", "pos": "n.", "def": "到来；出现"},
+            {"w": "unemployment", "pos": "n.", "def": "失业"}
+        ]
+    },
+    # Para 12
+    {
+        "id": 32,
+        "para": 12,
+        "en": "His recently published research answers the question of whether automation, AI and robotics will mean a " + LSQUO + "jobless future" + RSQUO + " by looking at the causes of unemployment.",
+        "zh": "他最近发表的研究通过考察失业的原因，回答了自动化、人工智能和机器人技术是否会意味着一个“无工作的未来”这一问题。",
+        "grammar": {
+            "type": "whether 同位语从句 + by 方式",
+            "note": "the question of whether... 中 whether 引导同位语从句说明 question 的内容；by looking at the causes of unemployment 为 by + 动名词表方式；recently published 为过去分词定语。"
+        },
+        "words": [
+            {"w": "publish", "pos": "v.", "def": "发表；出版"},
+            {"w": "robotics", "pos": "n.", "def": "机器人技术"},
+            {"w": "jobless", "pos": "adj.", "def": "失业的；无工作的"},
+            {"w": "cause", "pos": "n.", "def": "原因"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 12,
+        "en": LSQUO + "History is clear that change can mean redundancies. But social policies can tackle this through retraining and redeployment." + RSQUO,
+        "zh": "“历史清楚地表明，变革可能意味着裁员。但社会政策可以通过再培训和重新部署来应对这一问题。”",
+        "grammar": {
+            "type": "that 从句 + but 转折",
+            "note": "History is clear that change can mean redundancies 中 that 引导表语从句（clear 后接从句）；But 转折；tackle this through... 意为 “通过……应对这一问题”；redundancy 意为 “裁员、冗余”。"
+        },
+        "words": [
+            {"w": "redundancy", "pos": "n.", "def": "裁员；冗余"},
+            {"w": "social policy", "pos": "phr.", "def": "社会政策"},
+            {"w": "tackle", "pos": "v.", "def": "处理；应对"},
+            {"w": "redeployment", "pos": "n.", "def": "重新部署；重新调配"}
+        ]
+    },
+    # Para 13
+    {
+        "id": 34,
+        "para": 13,
+        "en": "He adds: " + LSQUO + "If there is going to be change to jobs as a result of AI and robotics then I" + RSQUO + "d like to see governments seizing the opportunity to improve policy to enforce good job security.",
+        "zh": "他补充道：“如果人工智能和机器人技术将导致工作发生变化，那么我希望看到各国政府抓住机会改进政策，以保障良好的就业稳定。",
+        "grammar": {
+            "type": "if 条件从句 + see sb doing",
+            "note": "If there is going to be change... then... 为条件从句加主句；I'd like to see governments seizing the opportunity 为 see sb doing；to improve policy to enforce good job security 为连续的不定式表目的；seize the opportunity 意为 “抓住机会”。"
+        },
+        "words": [
+            {"w": "seize the opportunity", "pos": "phr.", "def": "抓住机会"},
+            {"w": "improve", "pos": "v.", "def": "改进；改善"},
+            {"w": "enforce", "pos": "v.", "def": "保障；强制实施"},
+            {"w": "job security", "pos": "phr.", "def": "就业保障；工作稳定"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 13,
+        "en": "We can " + LDQUO + "reprogramme" + RDQUO + " the law to prepare for a fairer future of work and leisure." + RSQUO,
+        "zh": "我们可以“重新编程”法律，为一个更公平的工作与休闲的未来做好准备。”",
+        "grammar": {
+            "type": "不定式目的",
+            "note": "reprogramme the law 为 “重新编排/编程法律” 的比喻用法；to prepare for a fairer future 为不定式表目的；of work and leisure 为 future 的后置定语；fairer 为 fair 的比较级。"
+        },
+        "words": [
+            {"w": "reprogramme", "pos": "v.", "def": "重新编程；重新规划"},
+            {"w": "prepare for", "pos": "phr.", "def": "为……做准备"},
+            {"w": "leisure", "pos": "n.", "def": "休闲；闲暇"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 13,
+        "en": "McGaughey" + RSQUO + "s findings are a call to arms to leaders of organisations, governments and banks to pre-empt the coming changes with bold new policies that guarantee full employment, fair incomes and a thriving economic democracy.",
+        "zh": "麦高希的研究结论是向各组织、政府和银行的领导者发出的行动号召，呼吁他们以大胆的新政策抢先应对即将到来的变革，从而保障充分就业、公平收入以及一个繁荣的经济民主体制。",
+        "grammar": {
+            "type": "call to arms + 不定式 + that 定语从句",
+            "note": "a call to arms to... 意为 “向……发出的行动号召”；to pre-empt the coming changes 为不定式表目的；that guarantee full employment... 为定语从句修饰 policies；三项并列宾语 full employment, fair incomes and a thriving economic democracy。"
+        },
+        "words": [
+            {"w": "a call to arms", "pos": "phr.", "def": "战斗/行动号召"},
+            {"w": "pre-empt", "pos": "v.", "def": "抢先应对；先发制人"},
+            {"w": "guarantee", "pos": "v.", "def": "保障；保证"},
+            {"w": "thriving", "pos": "adj.", "def": "繁荣的；兴旺的"}
+        ]
+    },
+    # Para 14
+    {
+        "id": 37,
+        "para": 14,
+        "en": LSQUO + "The promises of these new technologies are astounding. They deliver humankind the capacity to live in a way that nobody could have once imagined," + RSQUO + " he adds.",
+        "zh": "“这些新技术所带来的前景令人震撼。它们赋予人类以一种无人曾经能够想象的方式生活的能力，”他补充道。",
+        "grammar": {
+            "type": "that 定语从句 + could have 虚拟",
+            "note": "The promises... are astounding 为主系表；deliver humankind the capacity 为双宾语；to live in a way that nobody could have once imagined 中 that 引导定语从句修饰 way，could have imagined 为对过去的虚拟；astounding 意为 “令人震惊的”。"
+        },
+        "words": [
+            {"w": "promise", "pos": "n.", "def": "前景；期望"},
+            {"w": "astounding", "pos": "adj.", "def": "令人震惊的"},
+            {"w": "deliver", "pos": "v.", "def": "给予；提供"},
+            {"w": "capacity", "pos": "n.", "def": "能力"}
+        ]
+    },
+    {
+        "id": 38,
+        "para": 14,
+        "en": LSQUO + "Just as the industrial revolution brought people past subsistence agriculture, and the corporate revolution enabled mass production, a third revolution has been pronounced.",
+        "zh": "“正如工业革命使人们摆脱了勉强糊口的农业、企业革命实现了大规模生产一样，第三次革命已被宣告到来。",
+        "grammar": {
+            "type": "Just as 类比状语 + 并列",
+            "note": "Just as the industrial revolution brought... and the corporate revolution enabled... 为 just as 引导的方式状语从句，内含两个并列分句；主句 a third revolution has been pronounced 为现在完成时被动；bring sb past 意为 “使某人越过/摆脱”。"
+        },
+        "words": [
+            {"w": "industrial revolution", "pos": "phr.", "def": "工业革命"},
+            {"w": "subsistence agriculture", "pos": "phr.", "def": "自给农业；勉强糊口的农业"},
+            {"w": "mass production", "pos": "phr.", "def": "大规模生产"},
+            {"w": "pronounce", "pos": "v.", "def": "宣告；宣布"}
+        ]
+    },
+    {
+        "id": 39,
+        "para": 14,
+        "en": "But it will not only be one of technology. The next revolution will be social." + RSQUO,
+        "zh": "但它将不仅仅是一场技术革命。下一场革命将是社会性的。”",
+        "grammar": {
+            "type": "not only + 省略",
+            "note": "it will not only be one of technology 中 one 指代 revolution，not only 表 “不仅仅”；The next revolution will be social 为简短的主系表句，呼应并强调其社会属性。"
+        },
+        "words": [
+            {"w": "not only", "pos": "phr.", "def": "不仅仅"},
+            {"w": "technology", "pos": "n.", "def": "技术"},
+            {"w": "social", "pos": "adj.", "def": "社会的"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "switch to", "pos": "phr.", "def": "转向；切换到"},
+    {"w": "as a result of", "pos": "phr.", "def": "由于；作为……的结果"},
+    {"w": "be capable of", "pos": "phr.", "def": "能够"},
+    {"w": "take over", "pos": "phr.", "def": "接管；接手"},
+    {"w": "the extent to which", "pos": "phr.", "def": "……的程度"},
+    {"w": "creep into", "pos": "phr.", "def": "悄悄进入；渗入"},
+    {"w": "carry out", "pos": "phr.", "def": "执行；完成"},
+    {"w": "be founded on", "pos": "phr.", "def": "建立在……之上"},
+    {"w": "seize the opportunity", "pos": "phr.", "def": "抓住机会"},
+    {"w": "a thing of the past", "pos": "phr.", "def": "过去之事；已成历史"}
+]
+
+questions = [
+    {
+        "title": "Questions 27" + DASH + "30",
+        "type": "multiple_choice",
+        "instructions": [
+            "Choose the correct letter, A, B, C or D.",
+            "Write the correct letter in boxes 27" + DASH + "30 on your answer sheet."
+        ],
+        "items": [
+            {"number": 27, "prompt": "The first paragraph tells us about\nA the kinds of jobs that will be most affected by the growth of AI.\nB the extent to which AI will alter the nature of the work that people do.\nC the proportion of the world" + RSQUO + "s labour force who will have jobs in AI in the future.\nD the difference between ways that embodied and disembodied AI will impact on workers.", "answer": "B", "evidence_sentence": 1},
+            {"number": 28, "prompt": "According to the second paragraph, what is Stella Pachidi" + RSQUO + "s view of the " + LSQUO + "knowledge economy" + RSQUO + "?\nA It is having an influence on the number of jobs available.\nB It is changing people" + RSQUO + "s attitudes towards their occupations.\nC It is the main reason why the production sector is declining.\nD It is a key factor driving current developments in the workplace.", "answer": "D", "evidence_sentence": 4},
+            {"number": 29, "prompt": "What did Pachidi observe at the telecommunications company?\nA staff disagreeing with the recommendations of AI\nB staff feeling resentful about the intrusion of AI in their work\nC staff making sure that AI produces the results that they want\nD staff allowing AI to carry out tasks they ought to do themselves", "answer": "C", "evidence_sentence": 20},
+            {"number": 30, "prompt": "In his recently published research, Ewan McGaughey\nA challenges the idea that redundancy is a negative thing.\nB shows the profound effect of mass unemployment on society.\nC highlights some differences between past and future job losses.\nD illustrates how changes in the job market can be successfully handled.", "answer": "D", "evidence_sentence": 33}
+        ]
+    },
+    {
+        "title": "Questions 31" + DASH + "34",
+        "type": "summary_wordlist",
+        "instructions": [
+            "Complete the summary using the list of words, A" + DASH + "G, below.",
+            "Write the correct letter, A" + DASH + "G, in boxes 31" + DASH + "34 on your answer sheet.",
+            "The " + LSQUO + "algorithmication" + RSQUO + " of jobs",
+            "Word list: A pressure  B satisfaction  C intuition  D promotion  E reliance  F confidence  G information"
+        ],
+        "items": [
+            {"number": 31, "prompt": "Stella Pachidi ... has been focusing on the " + LSQUO + "algorithmication" + RSQUO + " of jobs which rely not on production but on 31 ______.", "answer": "G", "evidence_sentence": 4},
+            {"number": 32, "prompt": "While monitoring a telecommunications company, Pachidi observed a growing 32 ______ on the recommendations made by AI, as workers begin to learn through the " + LSQUO + "algorithm" + RSQUO + "s eyes" + RSQUO + ".", "answer": "E", "evidence_sentence": 17},
+            {"number": 33, "prompt": "Meanwhile, staff are deterred from experimenting and using their own 33 ______, and are therefore prevented from achieving innovation.", "answer": "C", "evidence_sentence": 18},
+            {"number": 34, "prompt": "To avoid the kind of situations which Pachidi observed, researchers are trying to make AI" + RSQUO + "s decision-making process easier to comprehend, and to increase users" + RSQUO + " 34 ______ with regard to the technology.", "answer": "F", "evidence_sentence": 22}
+        ]
+    },
+    {
+        "title": "Questions 35" + DASH + "40",
+        "type": "matching_people",
+        "instructions": [
+            "Look at the following statements (Questions 35" + DASH + "40) and the list of people below.",
+            "Match each statement with the correct person, A, B or C.",
+            "Write the correct letter, A, B or C, in boxes 35" + DASH + "40 on your answer sheet.",
+            "NB You may use any letter more than once.",
+            "List of people: A Stella Pachidi  B Hamish Low  C Ewan McGaughey"
+        ],
+        "items": [
+            {"number": 35, "prompt": "Greater levels of automation will not result in lower employment.", "answer": "B", "evidence_sentence": 28},
+            {"number": 36, "prompt": "There are several reasons why AI is appealing to businesses.", "answer": "A", "evidence_sentence": 7},
+            {"number": 37, "prompt": "AI" + RSQUO + "s potential to transform people" + RSQUO + "s lives has parallels with major cultural shifts which occurred in previous eras.", "answer": "C", "evidence_sentence": 38},
+            {"number": 38, "prompt": "It is important to be aware of the range of problems that AI causes.", "answer": "A", "evidence_sentence": 23},
+            {"number": 39, "prompt": "People are going to follow a less conventional career path than in the past.", "answer": "B", "evidence_sentence": 26},
+            {"number": 40, "prompt": "Authorities should take measures to ensure that there will be adequately paid work for everyone.", "answer": "C", "evidence_sentence": 36}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test1-p3",
+    "source": "剑桥雅思16 Test 1 Passage 3",
+    "title": "The future of work",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test1-p3.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

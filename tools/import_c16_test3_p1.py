@@ -1,0 +1,716 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test3-p1.json (Roman shipbuilding and navigation)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # -
+
+sentences = [
+    # Para 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "Shipbuilding today is based on science and ships are built using computers and sophisticated tools.",
+        "zh": "如今的造船业以科学为基础，船只是使用计算机和精密工具建造的。",
+        "grammar": {
+            "type": "and 并列句 + 现在分词状语",
+            "note": "两个分句由 and 并列；be based on 意为 “以……为基础”；are built using... 中 using computers and sophisticated tools 为现在分词作方式状语；sophisticated 意为 “精密的、复杂的”。"
+        },
+        "words": [
+            {"w": "shipbuilding", "pos": "n.", "def": "造船（业）"},
+            {"w": "be based on", "pos": "phr.", "def": "以……为基础"},
+            {"w": "sophisticated", "pos": "adj.", "def": "精密的；复杂的"},
+            {"w": "tool", "pos": "n.", "def": "工具"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Shipbuilding in ancient Rome, however, was more of an art relying on estimation, inherited techniques and personal experience.",
+        "zh": "然而，古罗马的造船更像是一门依靠估算、世代相传的技艺和个人经验的艺术。",
+        "grammar": {
+            "type": "more of a + 现在分词定语",
+            "note": "however 作插入语；more of an art 意为 “更像是一门艺术”；relying on estimation... 为现在分词短语作定语修饰 art；三项并列宾语 estimation, inherited techniques and personal experience；inherited 意为 “继承的”。"
+        },
+        "words": [
+            {"w": "ancient", "pos": "adj.", "def": "古代的"},
+            {"w": "estimation", "pos": "n.", "def": "估算；估计"},
+            {"w": "inherited", "pos": "adj.", "def": "继承的；世代相传的"},
+            {"w": "technique", "pos": "n.", "def": "技艺；技术"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "The Romans were not traditionally sailors but mostly land-based people, who learned to build ships from the people that they conquered, namely the Greeks and the Egyptians.",
+        "zh": "罗马人传统上并非航海者，而多是以陆地为家的民族，他们从被自己征服的民族——即希腊人和埃及人——那里学会了造船。",
+        "grammar": {
+            "type": "not ... but + who 定语从句 + that 定语从句",
+            "note": "not... but... 意为 “不是……而是……”；who learned to build ships from... 为非限制性定语从句；the people that they conquered 含 that 定语从句；namely 意为 “即、也就是”；land-based 意为 “以陆地为基础的”。"
+        },
+        "words": [
+            {"w": "sailor", "pos": "n.", "def": "水手；航海者"},
+            {"w": "land-based", "pos": "adj.", "def": "以陆地为基础的"},
+            {"w": "conquer", "pos": "v.", "def": "征服"},
+            {"w": "namely", "pos": "adv.", "def": "即；也就是"}
+        ]
+    },
+    # Para 2
+    {
+        "id": 4,
+        "para": 2,
+        "en": "There are a few surviving written documents that give descriptions and representations of ancient Roman ships, including the sails and rigging.",
+        "zh": "现存的少数书面文献描述并呈现了古罗马船只，包括船帆和索具。",
+        "grammar": {
+            "type": "there be + that 定语从句 + including",
+            "note": "There are a few surviving written documents that... 含 that 定语从句；surviving 意为 “现存的”；including the sails and rigging 为介词短语作补充；rigging 意为 “索具”。"
+        },
+        "words": [
+            {"w": "surviving", "pos": "adj.", "def": "现存的；幸存的"},
+            {"w": "representation", "pos": "n.", "def": "呈现；描绘"},
+            {"w": "sail", "pos": "n.", "def": "帆"},
+            {"w": "rigging", "pos": "n.", "def": "索具；帆缆"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "Excavated vessels also provide some clues about ancient shipbuilding techniques.",
+        "zh": "出土的船只也为古代造船技术提供了一些线索。",
+        "grammar": {
+            "type": "简单句",
+            "note": "Excavated 为过去分词作定语修饰 vessels；provide clues about 意为 “提供关于……的线索”；vessel 意为 “船只”。"
+        },
+        "words": [
+            {"w": "excavated", "pos": "adj.", "def": "出土的；发掘的"},
+            {"w": "vessel", "pos": "n.", "def": "船只"},
+            {"w": "clue", "pos": "n.", "def": "线索"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": "Studies of these have taught us that ancient Roman shipbuilders built the outer hull first, then proceeded with the frame and the rest of the ship.",
+        "zh": "对这些船只的研究让我们了解到，古罗马造船者先建造外壳，然后再制作船架和船的其余部分。",
+        "grammar": {
+            "type": "that 宾语从句 + 并列谓语",
+            "note": "Studies of these have taught us that... 为宾语从句；从句内 built... first, then proceeded with... 为并列谓语，first/then 表先后；proceed with 意为 “继续进行”；outer hull 意为 “外壳”。"
+        },
+        "words": [
+            {"w": "shipbuilder", "pos": "n.", "def": "造船者"},
+            {"w": "outer hull", "pos": "phr.", "def": "外壳；船体外壳"},
+            {"w": "proceed with", "pos": "phr.", "def": "继续进行"},
+            {"w": "frame", "pos": "n.", "def": "框架；骨架"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "Planks used to build the outer hull were initially sewn together.",
+        "zh": "用来建造外壳的木板最初是缝合在一起的。",
+        "grammar": {
+            "type": "过去分词定语 + 被动",
+            "note": "used to build the outer hull 为过去分词短语作定语修饰 Planks；were initially sewn together 为被动语态；sew together 意为 “缝合在一起”；plank 意为 “木板”。"
+        },
+        "words": [
+            {"w": "plank", "pos": "n.", "def": "木板"},
+            {"w": "initially", "pos": "adv.", "def": "最初"},
+            {"w": "sew", "pos": "v.", "def": "缝合"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "Starting from the 6th century BCE, they were fixed using a method called mortise and tenon, whereby one plank locked into another without the need for stitching.",
+        "zh": "从公元前6世纪起，它们改用一种名为“榫卯”的方法固定，通过这种方法，一块木板可以嵌入另一块木板，而无需缝合。",
+        "grammar": {
+            "type": "现在分词状语 + 过去分词定语 + whereby 定语从句",
+            "note": "Starting from the 6th century BCE 为现在分词作时间状语；were fixed using a method 为被动加分词；called mortise and tenon 为过去分词定语；whereby one plank locked into another 为 whereby 引导的定语从句；without the need for 意为 “无需”。"
+        },
+        "words": [
+            {"w": "fix", "pos": "v.", "def": "固定"},
+            {"w": "mortise and tenon", "pos": "phr.", "def": "榫卯（结构）"},
+            {"w": "whereby", "pos": "adv.", "def": "凭此；借以"},
+            {"w": "stitching", "pos": "n.", "def": "缝合"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "Then in the first centuries of the current era, Mediterranean shipbuilders shifted to another shipbuilding method, still in use today, which consisted of building the frame first and then proceeding with the hull and the other components of the ship.",
+        "zh": "随后，在公元最初的几个世纪里，地中海的造船者转而采用另一种至今仍在使用的造船方法，即先建造船架，然后再制作船壳和船的其他部件。",
+        "grammar": {
+            "type": "which 非限制性定语 + consist of doing",
+            "note": "shift to 意为 “转向”；still in use today 为插入的形容词短语作定语；which consisted of building... and then proceeding with... 为非限制性定语从句；consist of doing 意为 “由做……构成”；component 意为 “部件”。"
+        },
+        "words": [
+            {"w": "current era", "pos": "phr.", "def": "公元；当前纪元"},
+            {"w": "shift to", "pos": "phr.", "def": "转向；转变为"},
+            {"w": "consist of", "pos": "phr.", "def": "由……构成"},
+            {"w": "component", "pos": "n.", "def": "部件；组成部分"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "This method was more systematic and dramatically shortened ship construction times.",
+        "zh": "这种方法更为系统，并大大缩短了造船时间。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "was more systematic 与 dramatically shortened... 为两个并列谓语；systematic 意为 “系统的”；dramatically 意为 “大幅地”；ship construction times 意为 “造船时间”。"
+        },
+        "words": [
+            {"w": "systematic", "pos": "adj.", "def": "系统的"},
+            {"w": "dramatically", "pos": "adv.", "def": "大幅地；显著地"},
+            {"w": "shorten", "pos": "v.", "def": "缩短"},
+            {"w": "construction", "pos": "n.", "def": "建造；施工"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 2,
+        "en": "The ancient Romans built large merchant ships and warships whose size and technology were unequalled until the 16th century CE.",
+        "zh": "古罗马人建造了大型商船和战船，其尺寸和技术直到公元16世纪都无与伦比。",
+        "grammar": {
+            "type": "whose 定语从句 + until",
+            "note": "whose size and technology were unequalled 为 whose 引导的定语从句修饰 ships；until the 16th century CE 为时间状语；unequalled 意为 “无与伦比的”；merchant ship 意为 “商船”，warship 意为 “战船”。"
+        },
+        "words": [
+            {"w": "merchant ship", "pos": "phr.", "def": "商船"},
+            {"w": "warship", "pos": "n.", "def": "战船；军舰"},
+            {"w": "unequalled", "pos": "adj.", "def": "无与伦比的"},
+            {"w": "technology", "pos": "n.", "def": "技术"}
+        ]
+    },
+    # Para 3
+    {
+        "id": 12,
+        "para": 3,
+        "en": "Warships were built to be lightweight and very speedy.",
+        "zh": "战船被造得轻便而快速。",
+        "grammar": {
+            "type": "被动 + 不定式作状语",
+            "note": "were built to be lightweight and very speedy 为被动加不定式，to be... 表建造的目的/结果；lightweight 意为 “轻量的”，speedy 意为 “快速的”。"
+        },
+        "words": [
+            {"w": "lightweight", "pos": "adj.", "def": "轻量的"},
+            {"w": "speedy", "pos": "adj.", "def": "快速的"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "They had to be able to sail near the coast, which is why they had no ballast or excess load and were built with a long, narrow hull.",
+        "zh": "它们必须能够在近海航行，这就是为什么它们不携带压舱物或多余负载，并且被造成又长又窄的船体。",
+        "grammar": {
+            "type": "which is why 非限制性定语从句",
+            "note": "主句 They had to be able to sail near the coast；which is why... 为非限制性定语从句，说明原因结果；从句内 had no ballast... and were built with... 为并列谓语；ballast 意为 “压舱物”，excess load 意为 “多余负载”。"
+        },
+        "words": [
+            {"w": "sail", "pos": "v.", "def": "航行"},
+            {"w": "coast", "pos": "n.", "def": "海岸"},
+            {"w": "ballast", "pos": "n.", "def": "压舱物"},
+            {"w": "narrow", "pos": "adj.", "def": "狭窄的"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": "They did not sink when damaged and often would lie crippled on the sea" + RSQUO + "s surface following naval battles.",
+        "zh": "它们受损时不会下沉，海战之后常常瘫痪地漂浮在海面上。",
+        "grammar": {
+            "type": "when 省略从句 + 并列谓语",
+            "note": "when damaged 为省略主语和 be 的时间状语（= when they were damaged）；often would lie crippled... 为并列谓语，crippled 为过去分词作主语补足语；following naval battles 意为 “在海战之后”；naval 意为 “海军的”。"
+        },
+        "words": [
+            {"w": "sink", "pos": "v.", "def": "下沉；沉没"},
+            {"w": "crippled", "pos": "adj.", "def": "瘫痪的；受损的"},
+            {"w": "surface", "pos": "n.", "def": "表面"},
+            {"w": "naval", "pos": "adj.", "def": "海军的"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": "They had a bronze battering ram, which was used to pierce the timber hulls or break the oars of enemy vessels.",
+        "zh": "它们装有青铜撞角，用来刺穿敌船的木质船体或折断其船桨。",
+        "grammar": {
+            "type": "which 非限制性定语从句",
+            "note": "which was used to pierce... or break... 为非限制性定语从句修饰 battering ram，含并列不定式；bronze battering ram 意为 “青铜撞角”；pierce 意为 “刺穿”，oar 意为 “船桨”。"
+        },
+        "words": [
+            {"w": "bronze", "pos": "n.", "def": "青铜"},
+            {"w": "battering ram", "pos": "phr.", "def": "撞角；攻城槌"},
+            {"w": "pierce", "pos": "v.", "def": "刺穿"},
+            {"w": "oar", "pos": "n.", "def": "桨"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 3,
+        "en": "Warships used both wind (sails) and human power (oarsmen) and were therefore very fast.",
+        "zh": "战船同时利用风力（帆）和人力（桨手），因此速度很快。",
+        "grammar": {
+            "type": "both ... and ... + 并列谓语",
+            "note": "used both wind... and human power... 为 both...and... 结构；and were therefore very fast 为并列谓语，therefore 表因果；oarsman 意为 “桨手”。"
+        },
+        "words": [
+            {"w": "human power", "pos": "phr.", "def": "人力"},
+            {"w": "oarsman", "pos": "n.", "def": "桨手"},
+            {"w": "therefore", "pos": "adv.", "def": "因此"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 3,
+        "en": "Eventually, Rome" + RSQUO + "s navy became the largest and most powerful in the Mediterranean, and the Romans had control over what they therefore called Mare Nostrum meaning " + LSQUO + "our sea" + RSQUO + ".",
+        "zh": "最终，罗马的海军成为地中海地区最庞大、最强大的海军，罗马人因此掌控了他们所称的“Mare Nostrum”，意为“我们的海”。",
+        "grammar": {
+            "type": "and 并列 + what 宾语从句",
+            "note": "两个分句由 and 并列；the largest and most powerful 为最高级并列；had control over what they... called... 中 what 引导宾语从句；meaning 'our sea' 为现在分词作定语解释 Mare Nostrum；have control over 意为 “掌控”。"
+        },
+        "words": [
+            {"w": "eventually", "pos": "adv.", "def": "最终"},
+            {"w": "navy", "pos": "n.", "def": "海军"},
+            {"w": "have control over", "pos": "phr.", "def": "掌控；控制"},
+            {"w": "the Mediterranean", "pos": "phr.", "def": "地中海（地区）"}
+        ]
+    },
+    # Para 4
+    {
+        "id": 18,
+        "para": 4,
+        "en": "There were many kinds of warship. The " + LSQUO + "trireme" + RSQUO + " was the dominant warship from the 7th to 4th century BCE.",
+        "zh": "战船有许多种类。“三列桨座战船”是公元前7世纪至前4世纪占主导地位的战船。",
+        "grammar": {
+            "type": "there be + 主系表",
+            "note": "There were many kinds of warship 为存在句；The 'trireme' was the dominant warship 为主系表；from the 7th to 4th century BCE 为时间状语；dominant 意为 “占主导的”；trireme 意为 “三列桨座战船”。"
+        },
+        "words": [
+            {"w": "trireme", "pos": "n.", "def": "三列桨座战船"},
+            {"w": "dominant", "pos": "adj.", "def": "占主导的；支配的"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": "It had rowers in the top, middle and lower levels, and approximately 50 rowers in each bank.",
+        "zh": "它在上、中、下三层都设有划桨手，每一排大约有50名划桨手。",
+        "grammar": {
+            "type": "并列成分",
+            "note": "had rowers in the top, middle and lower levels 为三层并列；and approximately 50 rowers in each bank 为并列成分；bank 此处意为 “（桨的）一排”；rower 意为 “划桨手”。"
+        },
+        "words": [
+            {"w": "rower", "pos": "n.", "def": "划桨手"},
+            {"w": "level", "pos": "n.", "def": "层；层次"},
+            {"w": "approximately", "pos": "adv.", "def": "大约"},
+            {"w": "bank", "pos": "n.", "def": "（桨的）一排；一列"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": "The rowers at the bottom had the most uncomfortable position as they were under the other rowers and were exposed to the water entering through the oar-holes.",
+        "zh": "底层的划桨手处境最不舒适，因为他们位于其他划桨手之下，还要承受从桨孔涌入的海水。",
+        "grammar": {
+            "type": "as 原因从句 + 现在分词定语",
+            "note": "as they were under... and were exposed to... 为 as 引导的原因状语从句，含并列谓语；the water entering through the oar-holes 中 entering... 为现在分词作定语修饰 water；be exposed to 意为 “暴露于”。"
+        },
+        "words": [
+            {"w": "uncomfortable", "pos": "adj.", "def": "不舒适的"},
+            {"w": "be exposed to", "pos": "phr.", "def": "暴露于；遭受"},
+            {"w": "oar-hole", "pos": "n.", "def": "桨孔"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 4,
+        "en": "It is worth noting that contrary to popular perception, rowers were not slaves but mostly Roman citizens enrolled in the military.",
+        "zh": "值得注意的是，与大众的普遍看法相反，划桨手并非奴隶，而多是应征入伍的罗马公民。",
+        "grammar": {
+            "type": "it is worth doing + that 从句 + not ... but ...",
+            "note": "It is worth noting that... 为 “值得注意的是” 结构，that 引导宾语从句；contrary to popular perception 为插入的介词短语；not slaves but mostly Roman citizens 为 not...but... 结构；enrolled in the military 为过去分词定语。"
+        },
+        "words": [
+            {"w": "worth noting", "pos": "phr.", "def": "值得注意"},
+            {"w": "contrary to", "pos": "phr.", "def": "与……相反"},
+            {"w": "perception", "pos": "n.", "def": "看法；认知"},
+            {"w": "enrol", "pos": "v.", "def": "招募；入伍"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 4,
+        "en": "The trireme was superseded by larger ships with even more rowers.",
+        "zh": "三列桨座战船后来被拥有更多划桨手的更大船只所取代。",
+        "grammar": {
+            "type": "被动语态",
+            "note": "was superseded by 为被动语态，意为 “被……取代”；larger ships with even more rowers 中 with 短语作后置定语；even more 表比较级强调；supersede 意为 “取代”。"
+        },
+        "words": [
+            {"w": "supersede", "pos": "v.", "def": "取代；替代"},
+            {"w": "larger", "pos": "adj.", "def": "更大的"}
+        ]
+    },
+    # Para 5
+    {
+        "id": 23,
+        "para": 5,
+        "en": "Merchant ships were built to transport lots of cargo over long distances and at a reasonable cost.",
+        "zh": "商船被建造用来以合理的成本长途运输大量货物。",
+        "grammar": {
+            "type": "被动 + 不定式目的",
+            "note": "were built to transport... 为被动加不定式表目的；over long distances 与 at a reasonable cost 为并列状语；cargo 意为 “货物”；reasonable 意为 “合理的”。"
+        },
+        "words": [
+            {"w": "transport", "pos": "v.", "def": "运输"},
+            {"w": "cargo", "pos": "n.", "def": "货物"},
+            {"w": "distance", "pos": "n.", "def": "距离"},
+            {"w": "reasonable", "pos": "adj.", "def": "合理的"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": "They had a wider hull, double planking and a solid interior for added stability.",
+        "zh": "它们拥有更宽的船体、双层板材和坚固的内部结构，以增强稳定性。",
+        "grammar": {
+            "type": "并列宾语 + for 目的",
+            "note": "三项并列宾语 a wider hull, double planking and a solid interior；for added stability 为介词短语表目的；added 为过去分词作定语意为 “增加的”；stability 意为 “稳定性”。"
+        },
+        "words": [
+            {"w": "hull", "pos": "n.", "def": "船体"},
+            {"w": "planking", "pos": "n.", "def": "板材；铺板"},
+            {"w": "interior", "pos": "n.", "def": "内部"},
+            {"w": "stability", "pos": "n.", "def": "稳定性"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": "Unlike warships, their V-shaped hull was deep underwater, meaning that they could not sail too close to the coast.",
+        "zh": "与战船不同，它们的V形船体深入水下，这意味着它们无法过于靠近海岸航行。",
+        "grammar": {
+            "type": "Unlike 介词 + 现在分词状语",
+            "note": "Unlike warships 为介词短语作状语表对比；their V-shaped hull was deep underwater 为主句；meaning that they could not sail... 为现在分词作结果状语，接 that 宾语从句；V-shaped 意为 “V形的”。"
+        },
+        "words": [
+            {"w": "unlike", "pos": "prep.", "def": "与……不同"},
+            {"w": "V-shaped", "pos": "adj.", "def": "V形的"},
+            {"w": "underwater", "pos": "adv.", "def": "在水下"},
+            {"w": "close to", "pos": "phr.", "def": "靠近"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 5,
+        "en": "They usually had two huge side rudders located off the stern and controlled by a small tiller bar connected to a system of cables.",
+        "zh": "它们通常在船尾外侧装有两个巨大的侧舵，由一根与缆索系统相连的小舵杆操控。",
+        "grammar": {
+            "type": "过去分词定语连缀",
+            "note": "located off the stern 与 controlled by... 为并列的过去分词定语修饰 rudders；connected to a system of cables 为过去分词定语修饰 tiller bar；side rudder 意为 “侧舵”，stern 意为 “船尾”，tiller bar 意为 “舵杆”。"
+        },
+        "words": [
+            {"w": "rudder", "pos": "n.", "def": "舵"},
+            {"w": "stern", "pos": "n.", "def": "船尾"},
+            {"w": "tiller bar", "pos": "phr.", "def": "舵杆"},
+            {"w": "cable", "pos": "n.", "def": "缆索"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 5,
+        "en": "They had from one to three masts with large square sails and a small triangular sail at the bow.",
+        "zh": "它们有一到三根桅杆，配有大型方帆，船首处还有一面小三角帆。",
+        "grammar": {
+            "type": "from ... to ... + with 短语",
+            "note": "from one to three masts 意为 “一到三根桅杆”；with large square sails and a small triangular sail at the bow 为 with 短语作后置定语；mast 意为 “桅杆”，bow 意为 “船首”，triangular 意为 “三角形的”。"
+        },
+        "words": [
+            {"w": "mast", "pos": "n.", "def": "桅杆"},
+            {"w": "square sail", "pos": "phr.", "def": "方帆"},
+            {"w": "triangular", "pos": "adj.", "def": "三角形的"},
+            {"w": "bow", "pos": "n.", "def": "船首"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 5,
+        "en": "Just like warships, merchant ships used oarsmen, but coordinating the hundreds of rowers in both types of ship was not an easy task.",
+        "zh": "和战船一样，商船也使用桨手，但协调这两类船上数以百计的划桨手并非易事。",
+        "grammar": {
+            "type": "but 转折 + 动名词主语",
+            "note": "Just like warships 为介词短语作状语表类比；but coordinating the hundreds of rowers... was not an easy task 中 coordinating... 为动名词短语作主语；coordinate 意为 “协调”。"
+        },
+        "words": [
+            {"w": "coordinate", "pos": "v.", "def": "协调"},
+            {"w": "hundreds of", "pos": "phr.", "def": "数以百计的"},
+            {"w": "task", "pos": "n.", "def": "任务"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 5,
+        "en": "In order to assist them, music would be played on an instrument, and oars would then keep time with this.",
+        "zh": "为了帮助他们，人们会用乐器演奏音乐，桨手们便随着音乐合拍划桨。",
+        "grammar": {
+            "type": "in order to + 被动 + 并列",
+            "note": "In order to assist them 为不定式表目的；music would be played on an instrument 为被动；and oars would then keep time with this 为并列分句；keep time with 意为 “与……合拍”；instrument 意为 “乐器”。"
+        },
+        "words": [
+            {"w": "in order to", "pos": "phr.", "def": "为了"},
+            {"w": "assist", "pos": "v.", "def": "帮助；协助"},
+            {"w": "instrument", "pos": "n.", "def": "乐器；仪器"},
+            {"w": "keep time", "pos": "phr.", "def": "合拍；打拍子"}
+        ]
+    },
+    # Para 6
+    {
+        "id": 30,
+        "para": 6,
+        "en": "The cargo on merchant ships included raw materials (e.g. iron bars, copper, marble and granite), and agricultural products (e.g. grain from Egypt" + RSQUO + "s Nile valley).",
+        "zh": "商船上的货物包括原材料（例如铁条、铜、大理石和花岗岩）以及农产品（例如来自埃及尼罗河谷的谷物）。",
+        "grammar": {
+            "type": "并列宾语 + 举例",
+            "note": "included raw materials... and agricultural products... 为并列宾语，各以 e.g. 举例；raw materials 意为 “原材料”，agricultural products 意为 “农产品”；grain 意为 “谷物”。"
+        },
+        "words": [
+            {"w": "raw material", "pos": "phr.", "def": "原材料"},
+            {"w": "marble", "pos": "n.", "def": "大理石"},
+            {"w": "granite", "pos": "n.", "def": "花岗岩"},
+            {"w": "grain", "pos": "n.", "def": "谷物"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 6,
+        "en": "During the Empire, Rome was a huge city by ancient standards of about one million inhabitants.",
+        "zh": "在帝国时期，按古代标准，罗马是一座拥有约一百万居民的大城市。",
+        "grammar": {
+            "type": "介词短语状语",
+            "note": "During the Empire 为时间状语；by ancient standards 意为 “按古代标准”；of about one million inhabitants 为后置定语修饰 city；inhabitant 意为 “居民”。"
+        },
+        "words": [
+            {"w": "empire", "pos": "n.", "def": "帝国"},
+            {"w": "standard", "pos": "n.", "def": "标准"},
+            {"w": "inhabitant", "pos": "n.", "def": "居民"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 6,
+        "en": "Goods from all over the world would come to the city through the port of Pozzuoli situated west of the bay of Naples in Italy and through the gigantic port of Ostia situated at the mouth of the Tiber River.",
+        "zh": "来自世界各地的货物会通过位于意大利那不勒斯湾以西的波佐利港，以及位于台伯河河口的巨大的奥斯蒂亚港，运抵这座城市。",
+        "grammar": {
+            "type": "两个过去分词定语",
+            "note": "两个 through the port of... 短语并列表途径；situated west of the bay of Naples 与 situated at the mouth of the Tiber River 为过去分词短语作定语，分别修饰两个港口；gigantic 意为 “巨大的”；mouth of the river 意为 “河口”。"
+        },
+        "words": [
+            {"w": "goods", "pos": "n.", "def": "货物；商品"},
+            {"w": "port", "pos": "n.", "def": "港口"},
+            {"w": "gigantic", "pos": "adj.", "def": "巨大的"},
+            {"w": "mouth", "pos": "n.", "def": "（河）口"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 6,
+        "en": "Large merchant ships would approach the destination port and, just like today, be intercepted by a number of towboats that would drag them to the quay.",
+        "zh": "大型商船会驶近目的港，然后——正如今天一样——被若干拖船拦截，拖到码头。",
+        "grammar": {
+            "type": "并列谓语 + that 定语从句",
+            "note": "would approach... and be intercepted by... 为并列谓语，后者为被动；just like today 为插入语；that would drag them to the quay 为定语从句修饰 towboats；intercept 意为 “拦截”，towboat 意为 “拖船”，quay 意为 “码头”。"
+        },
+        "words": [
+            {"w": "approach", "pos": "v.", "def": "驶近；接近"},
+            {"w": "destination", "pos": "n.", "def": "目的地"},
+            {"w": "intercept", "pos": "v.", "def": "拦截"},
+            {"w": "towboat", "pos": "n.", "def": "拖船"},
+            {"w": "quay", "pos": "n.", "def": "码头"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 6,
+        "en": "The time of travel along the many sailing routes could vary widely.",
+        "zh": "沿众多航线航行所需的时间差异很大。",
+        "grammar": {
+            "type": "简单句",
+            "note": "主语 The time of travel along the many sailing routes；谓语 could vary widely；vary widely 意为 “差异很大”；sailing route 意为 “航线”。"
+        },
+        "words": [
+            {"w": "travel", "pos": "n.", "def": "旅行；航行"},
+            {"w": "sailing route", "pos": "phr.", "def": "航线"},
+            {"w": "vary", "pos": "v.", "def": "变化；不同"},
+            {"w": "widely", "pos": "adv.", "def": "广泛地；很大程度上"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 6,
+        "en": "Navigation in ancient Rome did not rely on sophisticated instruments such as compasses but on experience, local knowledge and observation of natural phenomena.",
+        "zh": "古罗马的航海并不依赖罗盘之类的精密仪器，而是依靠经验、当地知识和对自然现象的观察。",
+        "grammar": {
+            "type": "not ... but ...",
+            "note": "did not rely on... but on... 为 not...but... 结构，两个 on 短语对比；such as compasses 为举例；三项并列 experience, local knowledge and observation；compass 意为 “罗盘”，phenomena 意为 “现象（复数）”。"
+        },
+        "words": [
+            {"w": "navigation", "pos": "n.", "def": "航海；导航"},
+            {"w": "rely on", "pos": "phr.", "def": "依赖"},
+            {"w": "compass", "pos": "n.", "def": "罗盘；指南针"},
+            {"w": "phenomena", "pos": "n.", "def": "现象（phenomenon的复数）"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 6,
+        "en": "In conditions of good visibility, seamen in the Mediterranean often had the mainland or islands in sight, which greatly facilitated navigation.",
+        "zh": "在能见度良好的条件下，地中海的海员常常能看到大陆或岛屿，这大大便利了航海。",
+        "grammar": {
+            "type": "which 非限制性定语从句",
+            "note": "In conditions of good visibility 为条件状语；had... in sight 意为 “看得见”；which greatly facilitated navigation 为非限制性定语从句，which 指代前面整句；visibility 意为 “能见度”，facilitate 意为 “便利、促进”。"
+        },
+        "words": [
+            {"w": "visibility", "pos": "n.", "def": "能见度"},
+            {"w": "seaman", "pos": "n.", "def": "海员；水手"},
+            {"w": "in sight", "pos": "phr.", "def": "看得见；在视野内"},
+            {"w": "facilitate", "pos": "v.", "def": "便利；促进"}
+        ]
+    },
+    {
+        "id": 37,
+        "para": 6,
+        "en": "They sailed by noting their position relative to a succession of recognisable landmarks.",
+        "zh": "他们通过记录自己相对于一连串可辨认地标的位置来航行。",
+        "grammar": {
+            "type": "by 方式状语",
+            "note": "by noting their position 为 by + 动名词表方式；relative to a succession of recognisable landmarks 为形容词短语作定语修饰 position；a succession of 意为 “一连串”；landmark 意为 “地标”。"
+        },
+        "words": [
+            {"w": "note", "pos": "v.", "def": "注意；记录"},
+            {"w": "relative to", "pos": "phr.", "def": "相对于"},
+            {"w": "a succession of", "pos": "phr.", "def": "一连串；一系列"},
+            {"w": "landmark", "pos": "n.", "def": "地标"}
+        ]
+    },
+    {
+        "id": 38,
+        "para": 6,
+        "en": "When weather conditions were not good or where land was no longer visible, Roman mariners estimated directions from the pole star or, with less accuracy, from the Sun at noon.",
+        "zh": "当天气状况不佳，或看不见陆地时，罗马航海者会依据北极星、或（准确性较低地）依据正午的太阳来估算方向。",
+        "grammar": {
+            "type": "When/where 状语从句 + 插入语",
+            "note": "When weather conditions were not good or where land was no longer visible 为并列的时间/地点状语从句；主句 Roman mariners estimated directions from the pole star or... from the Sun；with less accuracy 为插入语；mariner 意为 “水手”，pole star 意为 “北极星”。"
+        },
+        "words": [
+            {"w": "mariner", "pos": "n.", "def": "水手；海员"},
+            {"w": "estimate", "pos": "v.", "def": "估算"},
+            {"w": "pole star", "pos": "phr.", "def": "北极星"},
+            {"w": "accuracy", "pos": "n.", "def": "准确性"}
+        ]
+    },
+    {
+        "id": 39,
+        "para": 6,
+        "en": "They also estimated directions relative to the wind and swell.",
+        "zh": "他们还会根据风和涌浪来估算方向。",
+        "grammar": {
+            "type": "简单句",
+            "note": "estimated directions relative to the wind and swell 中 relative to 意为 “相对于、根据”；swell 意为 “涌浪、海浪的起伏”；also 表递进。"
+        },
+        "words": [
+            {"w": "estimate", "pos": "v.", "def": "估算"},
+            {"w": "swell", "pos": "n.", "def": "涌浪；海浪起伏"}
+        ]
+    },
+    {
+        "id": 40,
+        "para": 6,
+        "en": "Overall, shipping in ancient Roman times resembled shipping today with large vessels regularly crossing the seas and bringing supplies from their Empire.",
+        "zh": "总的来说，古罗马时代的航运与今天的航运颇为相似，大型船只定期跨海航行，从帝国各地运来物资。",
+        "grammar": {
+            "type": "with 复合结构",
+            "note": "Overall 意为 “总的来说”；resembled shipping today 为谓语；with large vessels regularly crossing... and bringing... 为 with 复合结构，含两个并列现在分词；resemble 意为 “与……相似”；supplies 意为 “物资”。"
+        },
+        "words": [
+            {"w": "overall", "pos": "adv.", "def": "总的来说"},
+            {"w": "shipping", "pos": "n.", "def": "航运；运输"},
+            {"w": "resemble", "pos": "v.", "def": "与……相似"},
+            {"w": "supplies", "pos": "n.", "def": "物资；补给"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "be based on", "pos": "phr.", "def": "以……为基础"},
+    {"w": "proceed with", "pos": "phr.", "def": "继续进行"},
+    {"w": "shift to", "pos": "phr.", "def": "转向；转变为"},
+    {"w": "consist of", "pos": "phr.", "def": "由……构成"},
+    {"w": "have control over", "pos": "phr.", "def": "掌控；控制"},
+    {"w": "be exposed to", "pos": "phr.", "def": "暴露于；遭受"},
+    {"w": "contrary to", "pos": "phr.", "def": "与……相反"},
+    {"w": "rely on", "pos": "phr.", "def": "依赖"},
+    {"w": "a succession of", "pos": "phr.", "def": "一连串；一系列"},
+    {"w": "relative to", "pos": "phr.", "def": "相对于"}
+]
+
+questions = [
+    {
+        "title": "Questions 1" + DASH + "5",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 1?",
+            "In boxes 1" + DASH + "5 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 1, "prompt": "The Romans" + RSQUO + " shipbuilding skills were passed on to the Greeks and the Egyptians.", "answer": "FALSE", "evidence_sentence": 3},
+            {"number": 2, "prompt": "Skilled craftsmen were needed for the mortise and tenon method of fixing planks.", "answer": "NOT GIVEN", "evidence_sentence": 8},
+            {"number": 3, "prompt": "The later practice used by Mediterranean shipbuilders involved building the hull before the frame.", "answer": "FALSE", "evidence_sentence": 9},
+            {"number": 4, "prompt": "The Romans called the Mediterranean Sea Mare Nostrum because they dominated its use.", "answer": "TRUE", "evidence_sentence": 17},
+            {"number": 5, "prompt": "Most rowers on ships were people from the Roman army.", "answer": "TRUE", "evidence_sentence": 21}
+        ]
+    },
+    {
+        "title": "Questions 6" + DASH + "13",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 6" + DASH + "13 on your answer sheet.",
+            "Warships and merchant ships"
+        ],
+        "items": [
+            {"number": 6, "prompt": "Warships were designed so that they were 6 ______ and moved quickly.", "answer": "lightweight", "evidence_sentence": 12},
+            {"number": 7, "prompt": "A battering ram made of 7 ______ was included in the design for attacking and damaging the timber and oars of enemy ships.", "answer": "bronze", "evidence_sentence": 15},
+            {"number": 8, "prompt": "Warships, such as the " + LSQUO + "trireme" + RSQUO + ", had rowers on three different 8 ______.", "answer": "levels", "evidence_sentence": 19},
+            {"number": 9, "prompt": "Unlike warships, merchant ships had a broad 9 ______ that lay far below the surface of the sea.", "answer": "hull", "evidence_sentence": 25},
+            {"number": 10, "prompt": "They had both square and 10 ______ sails.", "answer": "triangular", "evidence_sentence": 27},
+            {"number": 11, "prompt": "On merchant ships and warships, 11 ______ was used to ensure rowers moved their oars in and out of the water at the same time.", "answer": "music", "evidence_sentence": 29},
+            {"number": 12, "prompt": "Quantities of agricultural goods such as 12 ______ were transported by merchant ships to two main ports in Italy.", "answer": "grain", "evidence_sentence": 30},
+            {"number": 13, "prompt": "The ships were pulled to the shore by 13 ______.", "answer": "towboats", "evidence_sentence": 33}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test3-p1",
+    "source": "剑桥雅思16 Test 3 Passage 1",
+    "title": "Roman shipbuilding and navigation",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test3-p1.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

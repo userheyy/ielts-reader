@@ -1,0 +1,733 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test3-p2.json (Climate change reveals ancient artefacts in Norway's glaciers)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # -
+
+sentences = [
+    # Section A (para 1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "Well above the treeline in Norway" + RSQUO + "s highest mountains, ancient fields of ice are shrinking as Earth" + RSQUO + "s climate warms.",
+        "zh": "在挪威最高山脉中远高于树线的地方，随着地球气候变暖，古老的冰原正在萎缩。",
+        "grammar": {
+            "type": "as 时间/原因状语从句",
+            "note": "Well above the treeline... 为地点状语，well 加强程度；主句 ancient fields of ice are shrinking；as Earth's climate warms 为 as 引导的时间/原因状语从句；treeline 意为 “树线”，shrink 意为 “萎缩”。"
+        },
+        "words": [
+            {"w": "treeline", "pos": "n.", "def": "树线；林木线"},
+            {"w": "field of ice", "pos": "phr.", "def": "冰原"},
+            {"w": "shrink", "pos": "v.", "def": "萎缩；收缩"},
+            {"w": "climate", "pos": "n.", "def": "气候"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "As the ice has vanished, it has been giving up the treasures it has preserved in cold storage for the last 6,000 years " + DASH + " items such as ancient arrows and skis from Viking Age traders.",
+        "zh": "随着冰的消融，它一直在交出过去6000年间保存在“冷藏库”里的珍宝——诸如维京时代商人留下的古箭和滑雪板之类的物品。",
+        "grammar": {
+            "type": "As 时间从句 + 省略that定语从句 + 破折号同位",
+            "note": "As the ice has vanished 为时间状语从句；has been giving up 为现在完成进行时；the treasures (that) it has preserved... 为省略关系词的定语从句；破折号后 items such as... 为 treasures 的同位举例；vanish 意为 “消失”。"
+        },
+        "words": [
+            {"w": "vanish", "pos": "v.", "def": "消失"},
+            {"w": "give up", "pos": "phr.", "def": "交出；放弃"},
+            {"w": "treasure", "pos": "n.", "def": "珍宝"},
+            {"w": "preserve", "pos": "v.", "def": "保存"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "And those artefacts have provided archaeologists with some surprising insights into how ancient Norwegians made their livings.",
+        "zh": "而那些文物为考古学家提供了一些令人惊讶的洞见，让他们得以了解古代挪威人如何谋生。",
+        "grammar": {
+            "type": "provide sb with sth + how 宾语从句",
+            "note": "provide sb with sth 意为 “向某人提供某物”；insights into how ancient Norwegians made their livings 中 how 引导宾语从句；make one's living 意为 “谋生”；artefact 意为 “文物、人工制品”。"
+        },
+        "words": [
+            {"w": "artefact", "pos": "n.", "def": "文物；人工制品"},
+            {"w": "archaeologist", "pos": "n.", "def": "考古学家"},
+            {"w": "insight", "pos": "n.", "def": "洞见"},
+            {"w": "make a living", "pos": "phr.", "def": "谋生"}
+        ]
+    },
+    # Section B (para 2)
+    {
+        "id": 4,
+        "para": 2,
+        "en": "Organic materials like textiles and hides are relatively rare finds at archaeological sites.",
+        "zh": "像纺织品和兽皮这样的有机材料，在考古遗址中是相对罕见的发现。",
+        "grammar": {
+            "type": "简单句",
+            "note": "主语 Organic materials like textiles and hides；like textiles and hides 为举例；relatively rare finds 作表语，finds 此处为名词意为 “发现物”；hide 意为 “兽皮”。"
+        },
+        "words": [
+            {"w": "organic", "pos": "adj.", "def": "有机的"},
+            {"w": "textile", "pos": "n.", "def": "纺织品"},
+            {"w": "hide", "pos": "n.", "def": "兽皮"},
+            {"w": "find", "pos": "n.", "def": "发现物"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "This is because unless they" + RSQUO + "re protected from the microorganisms that cause decay, they tend not to last long.",
+        "zh": "这是因为，除非它们受到保护、免受导致腐烂的微生物侵害，否则往往难以长久保存。",
+        "grammar": {
+            "type": "because + unless 条件从句 + that 定语从句",
+            "note": "This is because... 说明原因；unless they're protected from... 为 unless 条件从句；the microorganisms that cause decay 含 that 定语从句；tend not to do 意为 “往往不……”；decay 意为 “腐烂”。"
+        },
+        "words": [
+            {"w": "microorganism", "pos": "n.", "def": "微生物"},
+            {"w": "decay", "pos": "n.", "def": "腐烂；衰败"},
+            {"w": "tend to", "pos": "phr.", "def": "往往；倾向于"},
+            {"w": "last", "pos": "v.", "def": "持续；保存"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": "Extreme cold is one reliable way to keep artefacts relatively fresh for a few thousand years, but once thawed out, these materials experience degradation relatively swiftly.",
+        "zh": "极寒是使文物在数千年间保持相对完好的一种可靠方式，但一旦解冻，这些材料就会相对迅速地发生降解。",
+        "grammar": {
+            "type": "but 转折 + once 省略从句",
+            "note": "one reliable way to keep artefacts... fresh 中 to keep... 为不定式定语；but 转折；once thawed out 为省略主语和 be 的时间从句（= once they are thawed out）；experience degradation 意为 “经历降解”；thaw out 意为 “解冻”。"
+        },
+        "words": [
+            {"w": "reliable", "pos": "adj.", "def": "可靠的"},
+            {"w": "thaw out", "pos": "phr.", "def": "解冻；融化"},
+            {"w": "degradation", "pos": "n.", "def": "降解；退化"},
+            {"w": "swiftly", "pos": "adv.", "def": "迅速地"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "With climate change shrinking ice cover around the world, glacial archaeologists need to race the clock to find newly revealed artefacts, preserve them, and study them.",
+        "zh": "随着气候变化使全球的冰盖不断缩小，冰川考古学家需要争分夺秒地去寻找、保护并研究那些新露出的文物。",
+        "grammar": {
+            "type": "with 复合结构 + 并列不定式",
+            "note": "With climate change shrinking ice cover 为 with 复合结构（现在分词）；race the clock 意为 “争分夺秒”；to find... preserve... and study... 为三个并列不定式；glacial archaeologist 意为 “冰川考古学家”；ice cover 意为 “冰盖”。"
+        },
+        "words": [
+            {"w": "ice cover", "pos": "phr.", "def": "冰盖"},
+            {"w": "glacial", "pos": "adj.", "def": "冰川的"},
+            {"w": "race the clock", "pos": "phr.", "def": "争分夺秒"},
+            {"w": "reveal", "pos": "v.", "def": "露出；揭示"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "If something fragile dries and is windblown it might very soon be lost to science, or an arrow might be exposed and then covered again by the next snow and remain well-preserved.",
+        "zh": "如果某件脆弱的物品干燥后被风吹走，它可能很快就会从科学研究中消失；而一支箭则可能先露出、随后又被下一场雪覆盖，从而保持完好。",
+        "grammar": {
+            "type": "if 条件从句 + or 并列",
+            "note": "If something fragile dries and is windblown 为条件从句，含并列谓语；主句 it might very soon be lost to science；or an arrow might be exposed and then covered... and remain... 为并列的另一种情况，含三个并列谓语；be lost to 意为 “对……而言失去”。"
+        },
+        "words": [
+            {"w": "fragile", "pos": "adj.", "def": "脆弱的；易碎的"},
+            {"w": "windblown", "pos": "adj.", "def": "被风吹的"},
+            {"w": "be exposed", "pos": "phr.", "def": "被暴露"},
+            {"w": "well-preserved", "pos": "adj.", "def": "保存完好的"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "The unpredictability means that glacial archaeologists have to be systematic in their approach to fieldwork.",
+        "zh": "这种不可预测性意味着冰川考古学家在开展野外工作时必须讲究系统性。",
+        "grammar": {
+            "type": "that 宾语从句",
+            "note": "The unpredictability means that... 为宾语从句；be systematic in one's approach to 意为 “在……方法上讲究系统”；unpredictability 意为 “不可预测性”，fieldwork 意为 “野外工作”。"
+        },
+        "words": [
+            {"w": "unpredictability", "pos": "n.", "def": "不可预测性"},
+            {"w": "systematic", "pos": "adj.", "def": "系统的"},
+            {"w": "approach", "pos": "n.", "def": "方法；途径"},
+            {"w": "fieldwork", "pos": "n.", "def": "野外工作；实地考察"}
+        ]
+    },
+    # Section C (para 3)
+    {
+        "id": 10,
+        "para": 3,
+        "en": "Over a nine-year period, a team of archaeologists, which included Lars Pil" + RSQUO + " of Oppland County Council, Norway, and James Barrett of the McDonald Institute for Archaeological Research, surveyed patches of ice in Oppland, an area of south-central Norway that is home to some of the country" + RSQUO + "s highest mountains.",
+        "zh": "在长达九年的时间里，一支考古团队——其中包括挪威奥普兰郡议会的拉尔斯·皮洛以及麦克唐纳考古研究所的詹姆斯·巴雷特——对奥普兰的冰块进行了调查，奥普兰位于挪威中南部，是该国一些最高山脉的所在地。",
+        "grammar": {
+            "type": "which 非限制性定语 + 同位语 + that 定语从句",
+            "note": "which included Lars Pilø... and James Barrett 为非限制性定语从句；主句谓语 surveyed patches of ice；Oppland, an area of south-central Norway 为同位语；that is home to... 为定语从句修饰 area；be home to 意为 “是……的所在地”。"
+        },
+        "words": [
+            {"w": "survey", "pos": "v.", "def": "调查；勘察"},
+            {"w": "patch", "pos": "n.", "def": "小块；斑块"},
+            {"w": "county council", "pos": "phr.", "def": "郡议会"},
+            {"w": "be home to", "pos": "phr.", "def": "是……的所在地"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 3,
+        "en": "Reindeer once congregated on these icy patches in the later summer months to escape biting insects, and from the late Stone Age, hunters followed.",
+        "zh": "驯鹿曾经在夏末的几个月里聚集在这些冰块上，以躲避叮咬的昆虫；而从石器时代晚期起，猎人便随之而来。",
+        "grammar": {
+            "type": "不定式目的 + and 并列",
+            "note": "Reindeer once congregated on... 为主句；to escape biting insects 为不定式表目的；and from the late Stone Age, hunters followed 为并列分句；congregate 意为 “聚集”；biting insects 意为 “叮咬的昆虫”，reindeer 意为 “驯鹿”。"
+        },
+        "words": [
+            {"w": "reindeer", "pos": "n.", "def": "驯鹿"},
+            {"w": "congregate", "pos": "v.", "def": "聚集"},
+            {"w": "escape", "pos": "v.", "def": "躲避；逃离"},
+            {"w": "insect", "pos": "n.", "def": "昆虫"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 3,
+        "en": "In addition, trade routes threaded through the mountain passes of Oppland, linking settlements in Norway to the rest of Europe.",
+        "zh": "此外，贸易路线穿过奥普兰的山口，把挪威的定居点与欧洲其他地区连接起来。",
+        "grammar": {
+            "type": "现在分词状语",
+            "note": "trade routes threaded through... 为主句，thread through 意为 “穿过”；linking settlements... to the rest of Europe 为现在分词作伴随状语；link A to B 意为 “把 A 连到 B”；mountain pass 意为 “山口”。"
+        },
+        "words": [
+            {"w": "trade route", "pos": "phr.", "def": "贸易路线"},
+            {"w": "thread through", "pos": "phr.", "def": "穿过；蜿蜒通过"},
+            {"w": "mountain pass", "pos": "phr.", "def": "山口"},
+            {"w": "settlement", "pos": "n.", "def": "定居点"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "The slow but steady movement of glaciers tends to destroy anything at their bases, so the team focused on stationary patches of ice, mostly above 1,400 metres.",
+        "zh": "冰川缓慢而稳定的移动往往会破坏其底部的一切，因此团队把重点放在了大多位于1400米以上的静止冰块上。",
+        "grammar": {
+            "type": "so 结果状语",
+            "note": "The slow but steady movement of glaciers 为主语；tends to destroy 意为 “往往会破坏”；so the team focused on... 为 so 引导的结果分句；stationary patches of ice 意为 “静止的冰块”；mostly above 1,400 metres 为插入的补充。"
+        },
+        "words": [
+            {"w": "steady", "pos": "adj.", "def": "稳定的"},
+            {"w": "glacier", "pos": "n.", "def": "冰川"},
+            {"w": "base", "pos": "n.", "def": "底部；基部"},
+            {"w": "stationary", "pos": "adj.", "def": "静止的"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": "That ice is found amid fields of frost-weathered boulders, fallen rocks, and exposed bedrock that for nine months of the year is buried beneath snow.",
+        "zh": "那些冰位于经霜风化的巨砾群、坠落的岩石以及裸露基岩之间，而这些地方一年中有九个月都被埋在雪下。",
+        "grammar": {
+            "type": "被动 + that 定语从句",
+            "note": "That ice is found amid... 为被动；三项并列 frost-weathered boulders, fallen rocks, and exposed bedrock；that for nine months of the year is buried beneath snow 为 that 定语从句修饰 bedrock；frost-weathered 意为 “经霜风化的”，boulder 意为 “巨砾”。"
+        },
+        "words": [
+            {"w": "amid", "pos": "prep.", "def": "在……之间"},
+            {"w": "frost-weathered", "pos": "adj.", "def": "经霜风化的"},
+            {"w": "boulder", "pos": "n.", "def": "巨砾；大圆石"},
+            {"w": "bedrock", "pos": "n.", "def": "基岩"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": LSQUO + "Fieldwork is hard work " + DASH + " hiking with all our equipment, often camping on permafrost " + DASH + " but very rewarding.",
+        "zh": "“野外工作很辛苦——背着我们所有的装备徒步跋涉，常常在永久冻土上宿营——但非常有价值。",
+        "grammar": {
+            "type": "破折号插入",
+            "note": "Fieldwork is hard work... but very rewarding 为主句；两破折号间 hiking with all our equipment, often camping on permafrost 为现在分词短语作插入说明；permafrost 意为 “永久冻土”，rewarding 意为 “有回报的”。"
+        },
+        "words": [
+            {"w": "hike", "pos": "v.", "def": "徒步；远足"},
+            {"w": "equipment", "pos": "n.", "def": "装备"},
+            {"w": "permafrost", "pos": "n.", "def": "永久冻土"},
+            {"w": "rewarding", "pos": "adj.", "def": "有回报的；有价值的"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 3,
+        "en": "You" + RSQUO + "re rescuing the archaeology, bringing the melting ice to wider attention, discovering a unique environmental history and really connecting with the natural environment," + RSQUO + " says Barrett.",
+        "zh": "你是在抢救考古遗存，让融化的冰引起更广泛的关注，发现一段独特的环境史，并真正与自然环境建立联系，”巴雷特说。",
+        "grammar": {
+            "type": "现在进行时 + 并列分词状语",
+            "note": "You're rescuing the archaeology 为现在进行时；bringing... discovering... and really connecting... 为三个并列现在分词作伴随状语；bring sth to wider attention 意为 “使……受到更广泛关注”；rescue 意为 “抢救”。"
+        },
+        "words": [
+            {"w": "rescue", "pos": "v.", "def": "抢救；营救"},
+            {"w": "melting", "pos": "adj.", "def": "融化的"},
+            {"w": "attention", "pos": "n.", "def": "关注"},
+            {"w": "connect with", "pos": "phr.", "def": "与……联系"}
+        ]
+    },
+    # Section D (para 4)
+    {
+        "id": 17,
+        "para": 4,
+        "en": "At the edges of the contracting ice patches, archaeologists found more than 2,000 artefacts, which formed a material record that ran from 4,000 BCE to the beginnings of the Renaissance in the 14th century.",
+        "zh": "在不断收缩的冰块边缘，考古学家发现了2000多件文物，这些文物构成了一份从公元前4000年一直延续到14世纪文艺复兴开端的实物记录。",
+        "grammar": {
+            "type": "which 非限制性定语 + that 定语从句",
+            "note": "At the edges of the contracting ice patches 为地点状语；which formed a material record 为非限制性定语从句；that ran from 4,000 BCE to... 为 that 定语从句修饰 record；contracting 意为 “收缩的”，Renaissance 意为 “文艺复兴”。"
+        },
+        "words": [
+            {"w": "contracting", "pos": "adj.", "def": "收缩的"},
+            {"w": "material record", "pos": "phr.", "def": "实物记录"},
+            {"w": "run from ... to", "pos": "phr.", "def": "从……延续到"},
+            {"w": "Renaissance", "pos": "n.", "def": "文艺复兴"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": "Many of the artefacts are associated with hunting.",
+        "zh": "许多文物都与狩猎有关。",
+        "grammar": {
+            "type": "be associated with",
+            "note": "be associated with 意为 “与……相关联”；Many of the artefacts 为主语；hunting 意为 “狩猎”。"
+        },
+        "words": [
+            {"w": "be associated with", "pos": "phr.", "def": "与……相关"},
+            {"w": "hunting", "pos": "n.", "def": "狩猎"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": "Hunters would have easily misplaced arrows and they often discarded broken bows rather than take them all the way home.",
+        "zh": "猎人很容易就把箭弄丢，而且他们常常丢弃损坏的弓，而不愿把它们一路带回家。",
+        "grammar": {
+            "type": "would have done 推测 + rather than",
+            "note": "would have easily misplaced 为对过去的推测；they often discarded broken bows rather than take them... 中 rather than 后接动词原形 take，表 “而不是”；misplace 意为 “放错、丢失”，discard 意为 “丢弃”。"
+        },
+        "words": [
+            {"w": "misplace", "pos": "v.", "def": "放错；丢失"},
+            {"w": "discard", "pos": "v.", "def": "丢弃"},
+            {"w": "bow", "pos": "n.", "def": "弓"},
+            {"w": "rather than", "pos": "phr.", "def": "而不是"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": "Other items could have been used by hunters traversing the high mountain passes of Oppland: all-purpose items like tools, skis, and horse tack.",
+        "zh": "另一些物品可能是猎人在穿越奥普兰高山口时使用的：诸如工具、滑雪板和马具之类的多用途物品。",
+        "grammar": {
+            "type": "could have been done + 冒号举例",
+            "note": "could have been used by... 为对过去的被动推测；traversing the high mountain passes 为现在分词定语修饰 hunters；冒号后 all-purpose items like... 为对 Other items 的举例；horse tack 意为 “马具”，all-purpose 意为 “多用途的”。"
+        },
+        "words": [
+            {"w": "traverse", "pos": "v.", "def": "穿越；横越"},
+            {"w": "all-purpose", "pos": "adj.", "def": "多用途的"},
+            {"w": "ski", "pos": "n.", "def": "滑雪板"},
+            {"w": "horse tack", "pos": "phr.", "def": "马具"}
+        ]
+    },
+    # Section E (para 5)
+    {
+        "id": 21,
+        "para": 5,
+        "en": "Barrett" + RSQUO + "s team radiocarbon-dated 153 of the artefacts and compared those dates to the timing of major environmental changes in the region " + DASH + " such as periods of cooling or warming " + DASH + " and major social and economic shifts " + DASH + " such as the growth of farming settlements and the spread of international trade networks leading up to the Viking Age.",
+        "zh": "巴雷特的团队对其中153件文物进行了放射性碳定年，并将这些年代与该地区重大环境变化（如变冷或变暖时期）以及重大社会经济变迁（如农业定居点的发展、以及通往维京时代的国际贸易网络的扩张）的时间相比对。",
+        "grammar": {
+            "type": "并列谓语 + 两处破折号举例",
+            "note": "radiocarbon-dated... and compared those dates to... 为并列谓语；compare A to B 意为 “把 A 与 B 比较”；两处破折号分别对 environmental changes 和 social and economic shifts 举例；leading up to the Viking Age 为现在分词定语，意为 “通往维京时代”。"
+        },
+        "words": [
+            {"w": "radiocarbon-date", "pos": "v.", "def": "对……进行放射性碳定年"},
+            {"w": "timing", "pos": "n.", "def": "时间；时机"},
+            {"w": "shift", "pos": "n.", "def": "变迁；转变"},
+            {"w": "lead up to", "pos": "phr.", "def": "通向；导致"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 5,
+        "en": "They found that some periods had produced lots of artefacts, which indicates that people had been pretty active in the mountains during those times.",
+        "zh": "他们发现某些时期产生了大量文物，这表明在那些时期人们在山区相当活跃。",
+        "grammar": {
+            "type": "that 宾语从句 + which 非限制性定语",
+            "note": "found that some periods had produced... 为宾语从句，含过去完成时；which indicates that... 为非限制性定语从句，which 指代前面整句，其后又接 that 宾语从句；pretty active 意为 “相当活跃”。"
+        },
+        "words": [
+            {"w": "produce", "pos": "v.", "def": "产生；生产"},
+            {"w": "indicate", "pos": "v.", "def": "表明"},
+            {"w": "active", "pos": "adj.", "def": "活跃的"},
+            {"w": "period", "pos": "n.", "def": "时期"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 5,
+        "en": "But there were few or no signs of activity during other periods.",
+        "zh": "但在另一些时期，几乎没有或完全没有活动的迹象。",
+        "grammar": {
+            "type": "there be + 对比",
+            "note": "But 表转折；there were few or no signs of activity 为存在句，few or no 表 “几乎没有或完全没有”；during other periods 为时间状语，与上句 those times 形成对比；sign 意为 “迹象”。"
+        },
+        "words": [
+            {"w": "sign", "pos": "n.", "def": "迹象；标志"},
+            {"w": "activity", "pos": "n.", "def": "活动"},
+            {"w": "few or no", "pos": "phr.", "def": "几乎没有或完全没有"}
+        ]
+    },
+    # Section F (para 6)
+    {
+        "id": 24,
+        "para": 6,
+        "en": "What was surprising, according to Barrett, was the timing of these periods.",
+        "zh": "据巴雷特所说，令人惊讶的是这些时期的时间分布。",
+        "grammar": {
+            "type": "主语从句 + 插入语",
+            "note": "What was surprising 为主语从句；according to Barrett 为插入语；was the timing of these periods 为系表结构；the timing 意为 “时间安排、时间分布”。"
+        },
+        "words": [
+            {"w": "surprising", "pos": "adj.", "def": "令人惊讶的"},
+            {"w": "according to", "pos": "phr.", "def": "据……所说"},
+            {"w": "timing", "pos": "n.", "def": "时间；时机"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 6,
+        "en": "Oppland" + RSQUO + "s mountains present daunting terrain and in periods of extreme cold, glaciers could block the higher mountain passes and make travel in the upper reaches of the mountains extremely difficult.",
+        "zh": "奥普兰的山脉地形险峻，在极寒时期，冰川可能会封住较高的山口，使得在山脉上部区域的行进变得极为困难。",
+        "grammar": {
+            "type": "并列谓语 + make sth adj.",
+            "note": "present daunting terrain 与 (in periods of extreme cold) glaciers could block... and make... 为并列内容；make travel... extremely difficult 为 make sth + 形容词；daunting 意为 “令人生畏的”，upper reaches 意为 “上游/上部区域”。"
+        },
+        "words": [
+            {"w": "daunting", "pos": "adj.", "def": "令人生畏的"},
+            {"w": "terrain", "pos": "n.", "def": "地形"},
+            {"w": "block", "pos": "v.", "def": "封堵；阻挡"},
+            {"w": "upper reaches", "pos": "phr.", "def": "上游；上部区域"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 6,
+        "en": "Archaeologists assumed people would stick to lower elevations during a time like the Late Antique Little Ice Age, a short period of deeper-than-usual cold from about 536" + DASH + "600 CE.",
+        "zh": "考古学家原本以为，在像“古典晚期小冰期”这样的时期——约公元536年至600年间一段比通常更为严寒的短暂时期——人们会固守于较低的海拔。",
+        "grammar": {
+            "type": "省略that宾语从句 + 同位语",
+            "note": "assumed (that) people would stick to lower elevations 为省略 that 的宾语从句；stick to 意为 “固守、坚持”；a short period of deeper-than-usual cold... 为 the Late Antique Little Ice Age 的同位语；elevation 意为 “海拔”。"
+        },
+        "words": [
+            {"w": "assume", "pos": "v.", "def": "假定；以为"},
+            {"w": "stick to", "pos": "phr.", "def": "固守；坚持"},
+            {"w": "elevation", "pos": "n.", "def": "海拔；高度"},
+            {"w": "deeper-than-usual", "pos": "adj.", "def": "比通常更深/更甚的"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 6,
+        "en": "But it turned out that hunters kept regularly venturing into the mountains even when the climate turned cold, based on the amount of stuff they had apparently dropped there.",
+        "zh": "但结果表明，即使在气候变冷时，猎人们仍定期冒险进入山区——这是根据他们显然遗落在那里的物品数量推断出来的。",
+        "grammar": {
+            "type": "it turned out that + even when 让步",
+            "note": "it turned out that... 为形式主语句，意为 “结果表明”；kept regularly venturing into 意为 “持续定期冒险进入”；even when the climate turned cold 为让步从句；based on... 为过去分词短语作状语；venture into 意为 “冒险进入”。"
+        },
+        "words": [
+            {"w": "turn out", "pos": "phr.", "def": "结果是；原来是"},
+            {"w": "venture into", "pos": "phr.", "def": "冒险进入"},
+            {"w": "stuff", "pos": "n.", "def": "东西；物品"},
+            {"w": "apparently", "pos": "adv.", "def": "显然；似乎"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 6,
+        "en": LSQUO + "Remarkably, though, the finds from the ice may have continued through this period, perhaps suggesting that the importance of mountain hunting increased to supplement failing agricultural harvests in times of low temperatures," + RSQUO + " says Barrett.",
+        "zh": "“不过，值得注意的是，来自冰层的发现物在这一时期可能仍在持续，这或许表明，在低温时期，山地狩猎的重要性有所上升，以补充歉收的农业收成，”巴雷特说。",
+        "grammar": {
+            "type": "may have done + 现在分词状语 + that 宾语从句",
+            "note": "Remarkably, though 为插入的评注状语；the finds... may have continued 为对过去的推测；perhaps suggesting that... 为现在分词作结果状语，接 that 宾语从句；to supplement failing agricultural harvests 为不定式表目的；supplement 意为 “补充”。"
+        },
+        "words": [
+            {"w": "remarkably", "pos": "adv.", "def": "值得注意地；显著地"},
+            {"w": "supplement", "pos": "v.", "def": "补充"},
+            {"w": "failing", "pos": "adj.", "def": "衰减的；歉收的"},
+            {"w": "harvest", "pos": "n.", "def": "收成；收获"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 6,
+        "en": "A colder turn in the Scandinavian climate would likely have meant widespread crop failures, so more people would have depended on hunting to make up for those losses.",
+        "zh": "斯堪的纳维亚气候的变冷可能意味着大范围的作物歉收，因此更多的人会依靠狩猎来弥补这些损失。",
+        "grammar": {
+            "type": "would have done 推测 + so 结果",
+            "note": "would likely have meant... 为对过去的推测；so more people would have depended on hunting 为结果分句；to make up for those losses 为不定式表目的；make up for 意为 “弥补”；crop failure 意为 “作物歉收”。"
+        },
+        "words": [
+            {"w": "Scandinavian", "pos": "adj.", "def": "斯堪的纳维亚的"},
+            {"w": "widespread", "pos": "adj.", "def": "广泛的；大范围的"},
+            {"w": "crop failure", "pos": "phr.", "def": "作物歉收"},
+            {"w": "make up for", "pos": "phr.", "def": "弥补"}
+        ]
+    },
+    # Section G (para 7)
+    {
+        "id": 30,
+        "para": 7,
+        "en": "Many of the artefacts Barrett" + RSQUO + "s team recovered date from the beginning of the Viking Age, the 700s through to the 900s CE.",
+        "zh": "巴雷特团队找回的许多文物可追溯到维京时代之初，即公元700年代至900年代。",
+        "grammar": {
+            "type": "省略关系词定语从句 + 同位语",
+            "note": "Many of the artefacts (that) Barrett's team recovered 为省略关系词的定语从句；date from 意为 “可追溯到”作谓语；the 700s through to the 900s CE 为 the beginning of the Viking Age 的同位语；recover 意为 “找回、复得”。"
+        },
+        "words": [
+            {"w": "recover", "pos": "v.", "def": "找回；复得"},
+            {"w": "date from", "pos": "phr.", "def": "可追溯到"},
+            {"w": "beginning", "pos": "n.", "def": "开始；初期"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 7,
+        "en": "Trade networks connecting Scandinavia with Europe and the Middle East were expanding around this time.",
+        "zh": "连接斯堪的纳维亚与欧洲及中东的贸易网络在这一时期正在扩张。",
+        "grammar": {
+            "type": "现在分词定语 + 过去进行时",
+            "note": "connecting Scandinavia with Europe and the Middle East 为现在分词短语作定语修饰 Trade networks；were expanding 为过去进行时；connect A with B 意为 “把 A 与 B 相连”；the Middle East 意为 “中东”。"
+        },
+        "words": [
+            {"w": "trade network", "pos": "phr.", "def": "贸易网络"},
+            {"w": "connect ... with", "pos": "phr.", "def": "把……与……相连"},
+            {"w": "expand", "pos": "v.", "def": "扩张；扩大"},
+            {"w": "the Middle East", "pos": "phr.", "def": "中东"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 7,
+        "en": "Although we usually think of ships when we think of Scandinavian expansion, these recent discoveries show that plenty of goods travelled on overland routes, like the mountain passes of Oppland.",
+        "zh": "尽管我们一提到斯堪的纳维亚的扩张通常就会想到船只，但这些近期的发现表明，大量货物是通过陆路运输的，比如奥普兰的山口。",
+        "grammar": {
+            "type": "Although 让步 + that 宾语从句",
+            "note": "Although we usually think of ships when... 为让步从句，内含 when 时间从句；主句 these recent discoveries show that...；that plenty of goods travelled on overland routes 为宾语从句；overland 意为 “陆路的”，expansion 意为 “扩张”。"
+        },
+        "words": [
+            {"w": "expansion", "pos": "n.", "def": "扩张"},
+            {"w": "plenty of", "pos": "phr.", "def": "大量的"},
+            {"w": "overland", "pos": "adj.", "def": "陆路的"},
+            {"w": "route", "pos": "n.", "def": "路线"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 7,
+        "en": "And growing Norwegian towns, along with export markets, would have created a booming demand for hides to fight off the cold, as well as antlers to make useful things like combs.",
+        "zh": "而不断发展的挪威城镇，连同出口市场，会催生出对御寒兽皮的旺盛需求，以及对制作梳子等实用物品所需鹿角的需求。",
+        "grammar": {
+            "type": "would have done 推测 + 不定式定语 + as well as",
+            "note": "growing Norwegian towns, along with export markets 为主语，along with 引出伴随；would have created a booming demand for... 为对过去的推测；hides to fight off the cold 与 antlers to make useful things 各含不定式定语，由 as well as 并列；fight off 意为 “抵御”，antler 意为 “鹿角”。"
+        },
+        "words": [
+            {"w": "export market", "pos": "phr.", "def": "出口市场"},
+            {"w": "booming", "pos": "adj.", "def": "繁荣的；旺盛的"},
+            {"w": "antler", "pos": "n.", "def": "鹿角"},
+            {"w": "comb", "pos": "n.", "def": "梳子"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 7,
+        "en": "Business must have been good for hunters.",
+        "zh": "对猎人来说，生意想必是很不错的。",
+        "grammar": {
+            "type": "must have been 推测",
+            "note": "must have been good 为对过去的肯定推测，意为 “想必曾经很好”；for hunters 为状语；此句简短总结上文，呼应狩猎者的好处。"
+        },
+        "words": [
+            {"w": "business", "pos": "n.", "def": "生意；业务"},
+            {"w": "must have been", "pos": "phr.", "def": "想必曾经是"}
+        ]
+    },
+    # Section H (para 8)
+    {
+        "id": 35,
+        "para": 8,
+        "en": "Norway" + RSQUO + "s mountains are probably still hiding a lot of history " + DASH + " and prehistory " + DASH + " in remote ice patches.",
+        "zh": "挪威的群山很可能仍在偏远的冰块中隐藏着大量的历史——乃至史前史。",
+        "grammar": {
+            "type": "现在进行时 + 破折号插入",
+            "note": "are probably still hiding a lot of history 为现在进行时；两破折号间 and prehistory 为补充；in remote ice patches 为地点状语；prehistory 意为 “史前史”，remote 意为 “偏远的”。"
+        },
+        "words": [
+            {"w": "hide", "pos": "v.", "def": "隐藏"},
+            {"w": "prehistory", "pos": "n.", "def": "史前史"},
+            {"w": "remote", "pos": "adj.", "def": "偏远的"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 8,
+        "en": "When Barrett" + RSQUO + "s team looked at the dates for their sample of 153 artefacts, they noticed a gap with almost no artefacts from about 3,800 to 2,200 BCE.",
+        "zh": "当巴雷特的团队查看这153件文物样本的年代时，他们注意到在约公元前3800年至前2200年间存在一个几乎没有文物的空白期。",
+        "grammar": {
+            "type": "When 时间从句",
+            "note": "When Barrett's team looked at the dates... 为时间状语从句；主句 they noticed a gap；with almost no artefacts from... to... 为 with 短语作后置定语修饰 gap；sample 意为 “样本”，gap 意为 “空白、缺口”。"
+        },
+        "words": [
+            {"w": "sample", "pos": "n.", "def": "样本"},
+            {"w": "notice", "pos": "v.", "def": "注意到"},
+            {"w": "gap", "pos": "n.", "def": "空白；缺口"}
+        ]
+    },
+    {
+        "id": 37,
+        "para": 8,
+        "en": "In fact, archaeological finds from that period are rare all over Norway.",
+        "zh": "事实上，那个时期的考古发现在整个挪威都很稀少。",
+        "grammar": {
+            "type": "简单句",
+            "note": "In fact 意为 “事实上”；archaeological finds from that period 为主语；are rare all over Norway 为系表结构，all over 意为 “遍及”；finds 此处为名词。"
+        },
+        "words": [
+            {"w": "in fact", "pos": "phr.", "def": "事实上"},
+            {"w": "rare", "pos": "adj.", "def": "稀少的"},
+            {"w": "all over", "pos": "phr.", "def": "遍及；到处"}
+        ]
+    },
+    {
+        "id": 38,
+        "para": 8,
+        "en": "The researchers say that could be because many of those artefacts have already disintegrated or are still frozen in the ice.",
+        "zh": "研究人员表示，这可能是因为那些文物中有许多已经分解，或仍然冻结在冰中。",
+        "grammar": {
+            "type": "省略that宾语从句 + because 原因",
+            "note": "say (that) that could be because... 含省略 that 的宾语从句；could be because... 表推测原因；many of those artefacts have already disintegrated or are still frozen 为并列谓语；disintegrate 意为 “分解、瓦解”。"
+        },
+        "words": [
+            {"w": "researcher", "pos": "n.", "def": "研究人员"},
+            {"w": "disintegrate", "pos": "v.", "def": "分解；瓦解"},
+            {"w": "frozen", "pos": "adj.", "def": "冻结的"}
+        ]
+    },
+    {
+        "id": 39,
+        "para": 8,
+        "en": "That means archaeologists could be extracting some of those artefacts from retreating ice in years to come.",
+        "zh": "这意味着，在未来的岁月里，考古学家或许能从退缩的冰层中提取出其中一些文物。",
+        "grammar": {
+            "type": "省略that宾语从句 + 现在分词定语",
+            "note": "That means (that) archaeologists could be extracting... 含省略 that 的宾语从句；could be extracting 为进行体推测；retreating ice 中 retreating 为现在分词作定语；in years to come 意为 “在未来的岁月里”；extract 意为 “提取”。"
+        },
+        "words": [
+            {"w": "extract", "pos": "v.", "def": "提取"},
+            {"w": "retreating", "pos": "adj.", "def": "退缩的；后退的"},
+            {"w": "in years to come", "pos": "phr.", "def": "在未来的岁月里"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "give up", "pos": "phr.", "def": "交出；放弃"},
+    {"w": "make a living", "pos": "phr.", "def": "谋生"},
+    {"w": "thaw out", "pos": "phr.", "def": "解冻；融化"},
+    {"w": "race the clock", "pos": "phr.", "def": "争分夺秒"},
+    {"w": "be home to", "pos": "phr.", "def": "是……的所在地"},
+    {"w": "lead up to", "pos": "phr.", "def": "通向；导致"},
+    {"w": "turn out", "pos": "phr.", "def": "结果是；原来是"},
+    {"w": "make up for", "pos": "phr.", "def": "弥补"},
+    {"w": "date from", "pos": "phr.", "def": "可追溯到"},
+    {"w": "in years to come", "pos": "phr.", "def": "在未来的岁月里"}
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "19",
+        "type": "matching_info",
+        "instructions": [
+            "Reading Passage 2 has eight sections, A" + DASH + "H.",
+            "Which section contains the following information?",
+            "Write the correct letter, A" + DASH + "H, in boxes 14" + DASH + "19 on your answer sheet."
+        ],
+        "items": [
+            {"number": 14, "prompt": "an explanation for weapons being left behind in the mountains", "answer": "D", "evidence_sentence": 19},
+            {"number": 15, "prompt": "a reference to the physical difficulties involved in an archaeological expedition", "answer": "C", "evidence_sentence": 15},
+            {"number": 16, "prompt": "an explanation of why less food may have been available", "answer": "F", "evidence_sentence": 29},
+            {"number": 17, "prompt": "a reference to the possibility of future archaeological discoveries", "answer": "H", "evidence_sentence": 39},
+            {"number": 18, "prompt": "examples of items that would have been traded", "answer": "G", "evidence_sentence": 33},
+            {"number": 19, "prompt": "a reference to the pressure archaeologists are under to work quickly", "answer": "B", "evidence_sentence": 7}
+        ]
+    },
+    {
+        "title": "Questions 20" + DASH + "22",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 20" + DASH + "22 on your answer sheet.",
+            "Interesting finds at an archaeological site"
+        ],
+        "items": [
+            {"number": 20, "prompt": "They have little protection against 20 ______, which means that they decay relatively quickly.", "answer": "microorganisms", "evidence_sentence": 5},
+            {"number": 21, "prompt": "In the past, there were trade routes through these mountains and 21 ______ gathered there in the summer months to avoid being attacked by insects on lower ground.", "answer": "reindeer", "evidence_sentence": 11},
+            {"number": 22, "prompt": "... 21 gathered there in the summer months to avoid being attacked by 22 ______ on lower ground.", "answer": "insects", "evidence_sentence": 11}
+        ]
+    },
+    {
+        "title": "Questions 23 and 24",
+        "type": "multiple_choice",
+        "instructions": [
+            "Choose TWO letters, A" + DASH + "E.",
+            "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+            "Which TWO of the following statements does the writer make about the discoveries of Barrett" + RSQUO + "s team?",
+            "A Artefacts found in the higher mountain passes were limited to skiing equipment.",
+            "B Hunters went into the mountains even during periods of extreme cold.",
+            "C The number of artefacts from certain time periods was relatively low.",
+            "D Radiocarbon dating of artefacts produced some unreliable results.",
+            "E More artefacts were found in Oppland than at any other mountain site."
+        ],
+        "items": [
+            {"number": 23, "prompt": "Which TWO statements does the writer make about the discoveries of Barrett" + RSQUO + "s team? (first answer)", "answer": "B", "evidence_sentence": 27},
+            {"number": 24, "prompt": "Which TWO statements does the writer make about the discoveries of Barrett" + RSQUO + "s team? (second answer)", "answer": "C", "evidence_sentence": 23}
+        ]
+    },
+    {
+        "title": "Questions 25 and 26",
+        "type": "multiple_choice",
+        "instructions": [
+            "Choose TWO letters, A" + DASH + "E.",
+            "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+            "Which TWO of the following statements does the writer make about the Viking Age?",
+            "A Hunters at this time benefited from an increased demand for goods.",
+            "B The beginning of the period saw the greatest growth in the wealth of Vikings.",
+            "C Vikings did not rely on ships alone to transport goods.",
+            "D Norwegian towns at this time attracted traders from around the world.",
+            "E Vikings were primarily interested in their trading links with the Middle East."
+        ],
+        "items": [
+            {"number": 25, "prompt": "Which TWO statements does the writer make about the Viking Age? (first answer)", "answer": "A", "evidence_sentence": 33},
+            {"number": 26, "prompt": "Which TWO statements does the writer make about the Viking Age? (second answer)", "answer": "C", "evidence_sentence": 32}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test3-p2",
+    "source": "剑桥雅思16 Test 3 Passage 2",
+    "title": "Climate change reveals ancient artefacts in Norway" + RSQUO + "s glaciers",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test3-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

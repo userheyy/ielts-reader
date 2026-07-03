@@ -1,0 +1,648 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test2-p1.json (The White Horse of Uffington)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # -
+
+sentences = [
+    # Para 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "The cutting of huge figures or " + LSQUO + "geoglyphs" + RSQUO + " into the earth of English hillsides has taken place for more than 3,000 years.",
+        "zh": "在英格兰山坡的土地上开凿巨大的图形（即“地画”）这一做法已经存在了3000多年。",
+        "grammar": {
+            "type": "动名词主语 + 现在完成时",
+            "note": "The cutting of huge figures... into the earth 为动名词短语作主语；or 'geoglyphs' 为同位补充；has taken place 为现在完成时；for more than 3,000 years 表持续时间。"
+        },
+        "words": [
+            {"w": "cutting", "pos": "n.", "def": "开凿；切割"},
+            {"w": "figure", "pos": "n.", "def": "图形；人像"},
+            {"w": "geoglyph", "pos": "n.", "def": "地画；地面图形"},
+            {"w": "hillside", "pos": "n.", "def": "山坡"},
+            {"w": "take place", "pos": "phr.", "def": "发生；进行"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "There are 56 hill figures scattered around England, with the vast majority on the chalk downlands of the country" + RSQUO + "s southern counties.",
+        "zh": "英格兰各地分布着56处山丘图形，其中绝大多数位于该国南部各郡的白垩丘陵地带。",
+        "grammar": {
+            "type": "there be + 过去分词定语 + with 复合结构",
+            "note": "There are 56 hill figures 为存在句；scattered around England 为过去分词短语作定语；with the vast majority on... 为 with 复合结构；the vast majority 意为 “绝大多数”。"
+        },
+        "words": [
+            {"w": "scatter", "pos": "v.", "def": "散布；分散"},
+            {"w": "the vast majority", "pos": "phr.", "def": "绝大多数"},
+            {"w": "chalk", "pos": "n.", "def": "白垩；粉笔"},
+            {"w": "downland", "pos": "n.", "def": "丘陵地；开阔高地"},
+            {"w": "county", "pos": "n.", "def": "郡；县"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "The figures include giants, horses, crosses and regimental badges.",
+        "zh": "这些图形包括巨人、马、十字架和军团徽章。",
+        "grammar": {
+            "type": "简单句并列宾语",
+            "note": "include 后接四个并列名词宾语 giants, horses, crosses and regimental badges；regimental badge 意为 “军团徽章”。"
+        },
+        "words": [
+            {"w": "giant", "pos": "n.", "def": "巨人"},
+            {"w": "cross", "pos": "n.", "def": "十字架；十字形"},
+            {"w": "regimental", "pos": "adj.", "def": "团的；军团的"},
+            {"w": "badge", "pos": "n.", "def": "徽章"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 1,
+        "en": "Although the majority of these geoglyphs date within the last 300 years or so, there are one or two that are much older.",
+        "zh": "尽管这些地画中的大多数可追溯到近300年左右，但也有一两处要古老得多。",
+        "grammar": {
+            "type": "Although 让步 + that 定语从句",
+            "note": "Although the majority... date within the last 300 years 为让步状语从句；date within 意为 “可追溯到”；主句 there are one or two that are much older 含 that 定语从句；or so 意为 “大约”。"
+        },
+        "words": [
+            {"w": "date", "pos": "v.", "def": "追溯到；确定年代"},
+            {"w": "or so", "pos": "phr.", "def": "大约；左右"},
+            {"w": "much older", "pos": "phr.", "def": "古老得多"}
+        ]
+    },
+    # Para 2
+    {
+        "id": 5,
+        "para": 2,
+        "en": "The most famous of these figures is perhaps also the most mysterious " + DASH + " the Uffington White Horse in Oxfordshire.",
+        "zh": "这些图形中最著名的，或许也是最神秘的——就是牛津郡的乌芬顿白马。",
+        "grammar": {
+            "type": "破折号同位",
+            "note": "The most famous... is perhaps also the most mysterious 为主系表，两个最高级并列；破折号后 the Uffington White Horse in Oxfordshire 为同位说明其具体所指。"
+        },
+        "words": [
+            {"w": "famous", "pos": "adj.", "def": "著名的"},
+            {"w": "mysterious", "pos": "adj.", "def": "神秘的"},
+            {"w": "Oxfordshire", "pos": "n.", "def": "牛津郡"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": "The White Horse has recently been re-dated and shown to be even older than its previously assigned ancient pre-Roman Iron Age date.",
+        "zh": "白马最近被重新测定年代，结果显示它比先前所认定的前罗马铁器时代的古老年代还要久远。",
+        "grammar": {
+            "type": "现在完成时被动 + 比较",
+            "note": "has been re-dated and shown 为现在完成时被动，两过去分词并列；shown to be even older than... 为 “显示比……还老”；previously assigned 为过去分词定语修饰 date；pre-Roman Iron Age 意为 “前罗马铁器时代”。"
+        },
+        "words": [
+            {"w": "re-date", "pos": "v.", "def": "重新测定年代"},
+            {"w": "assign", "pos": "v.", "def": "认定；指定"},
+            {"w": "pre-Roman", "pos": "adj.", "def": "前罗马（时期）的"},
+            {"w": "Iron Age", "pos": "phr.", "def": "铁器时代"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "More controversial is the date of the enigmatic Long Man of Wilmington in Sussex.",
+        "zh": "更具争议的是萨塞克斯郡那神秘的威尔明顿长人的年代。",
+        "grammar": {
+            "type": "表语前置倒装",
+            "note": "More controversial is the date of... 为表语前置的倒装句，正常语序为 The date of... is more controversial；enigmatic 意为 “神秘费解的”。"
+        },
+        "words": [
+            {"w": "controversial", "pos": "adj.", "def": "有争议的"},
+            {"w": "enigmatic", "pos": "adj.", "def": "神秘的；费解的"},
+            {"w": "Sussex", "pos": "n.", "def": "萨塞克斯（郡）"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "While many historians are convinced the figure is prehistoric, others believe that it was the work of an artistic monk from a nearby priory and was created between the 11th and 15th centuries.",
+        "zh": "尽管许多历史学家确信这个图形属于史前时期，但另一些人认为它是附近一座修道院里一位有艺术天分的僧侣的作品，创作于11至15世纪之间。",
+        "grammar": {
+            "type": "While 让步 + 省略that宾语从句 + 被动",
+            "note": "While many historians are convinced (that) the figure is prehistoric 为让步从句；主句 others believe that it was the work of... and was created...，含并列谓语；be convinced (that) 意为 “确信”；prehistoric 意为 “史前的”。"
+        },
+        "words": [
+            {"w": "be convinced", "pos": "phr.", "def": "确信"},
+            {"w": "prehistoric", "pos": "adj.", "def": "史前的"},
+            {"w": "monk", "pos": "n.", "def": "僧侣；修道士"},
+            {"w": "priory", "pos": "n.", "def": "小修道院"}
+        ]
+    },
+    # Para 3
+    {
+        "id": 9,
+        "para": 3,
+        "en": "The method of cutting these huge figures was simply to remove the overlying grass to reveal the gleaming white chalk below.",
+        "zh": "开凿这些巨大图形的方法很简单，就是去除表层的草，露出下方闪亮的白垩。",
+        "grammar": {
+            "type": "不定式作表语 + 不定式目的",
+            "note": "The method... was simply to remove... 中 to remove 为不定式作表语；to reveal the gleaming white chalk below 为不定式表目的；overlying 意为 “覆盖在上面的”；gleaming 意为 “闪亮的”。"
+        },
+        "words": [
+            {"w": "method", "pos": "n.", "def": "方法"},
+            {"w": "overlying", "pos": "adj.", "def": "覆盖在上的"},
+            {"w": "reveal", "pos": "v.", "def": "露出；揭示"},
+            {"w": "gleaming", "pos": "adj.", "def": "闪亮的"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 3,
+        "en": "However, the grass would soon grow over the geoglyph again unless it was regularly cleaned or scoured by a fairly large team of people.",
+        "zh": "然而，除非有一支相当大的队伍定期清理或刮擦，否则草很快就会再次长满地画。",
+        "grammar": {
+            "type": "unless 条件从句 + 被动",
+            "note": "the grass would soon grow over... again 为主句；unless it was regularly cleaned or scoured by... 为 unless 引导的条件从句，含被动，两过去分词并列；grow over 意为 “长满、覆盖”；scour 意为 “擦洗、刮”。"
+        },
+        "words": [
+            {"w": "grow over", "pos": "phr.", "def": "长满；覆盖"},
+            {"w": "unless", "pos": "conj.", "def": "除非"},
+            {"w": "regularly", "pos": "adv.", "def": "定期地"},
+            {"w": "scour", "pos": "v.", "def": "擦洗；刮擦"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 3,
+        "en": "One reason that the vast majority of hill figures have disappeared is that when the traditions associated with the figures faded, people no longer bothered or remembered to clear away the grass to expose the chalk outline.",
+        "zh": "绝大多数山丘图形消失的一个原因是：当与这些图形相关的传统淡去后，人们便不再费心或记得去清除杂草、露出白垩的轮廓。",
+        "grammar": {
+            "type": "that 定语从句 + that 表语从句 + when 时间从句",
+            "note": "One reason that... have disappeared 含 that 定语从句修饰 reason；is that... 为表语从句；when the traditions... faded 为时间从句；associated with the figures 为过去分词定语；no longer bothered or remembered to do 意为 “不再费心或记得做”。"
+        },
+        "words": [
+            {"w": "disappear", "pos": "v.", "def": "消失"},
+            {"w": "tradition", "pos": "n.", "def": "传统"},
+            {"w": "fade", "pos": "v.", "def": "淡去；消退"},
+            {"w": "clear away", "pos": "phr.", "def": "清除；扫除"},
+            {"w": "outline", "pos": "n.", "def": "轮廓"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 3,
+        "en": "Furthermore, over hundreds of years the outlines would sometimes change due to people not always cutting in exactly the same place, thus creating a different shape to the original geoglyph.",
+        "zh": "此外，数百年来，由于人们并不总是在完全相同的位置开凿，轮廓有时会发生变化，从而形成与原始地画不同的形状。",
+        "grammar": {
+            "type": "due to + 动名词复合结构 + 分词状语",
+            "note": "due to people not always cutting... 中 due to 后接动名词复合结构（people 为动名词逻辑主语）；thus creating a different shape 为现在分词作结果状语；a different shape to 意为 “与……不同的形状”。"
+        },
+        "words": [
+            {"w": "furthermore", "pos": "adv.", "def": "此外；而且"},
+            {"w": "due to", "pos": "phr.", "def": "由于"},
+            {"w": "exactly", "pos": "adv.", "def": "恰好；确切地"},
+            {"w": "original", "pos": "adj.", "def": "原始的；最初的"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "The fact that any ancient hill figures survive at all in England today is testament to the strength and continuity of local customs and beliefs which, in one case at least, must stretch back over millennia.",
+        "zh": "如今在英格兰竟然还有任何古代山丘图形留存下来，这一事实证明了当地习俗与信仰的强大和延续性——这些习俗信仰至少在一个例子中必定可以追溯到数千年前。",
+        "grammar": {
+            "type": "that 同位语从句 + which 定语从句",
+            "note": "The fact that any ancient hill figures survive... 中 that 引导同位语从句；at all 强调 “竟然、根本”；is testament to 意为 “是……的证明”；which... must stretch back over millennia 为定语从句修饰 customs and beliefs；in one case at least 为插入语。"
+        },
+        "words": [
+            {"w": "survive", "pos": "v.", "def": "幸存；留存"},
+            {"w": "testament", "pos": "n.", "def": "证明；证据"},
+            {"w": "continuity", "pos": "n.", "def": "连续性；延续"},
+            {"w": "stretch back", "pos": "phr.", "def": "追溯；上溯"},
+            {"w": "millennia", "pos": "n.", "def": "数千年（millennium的复数）"}
+        ]
+    },
+    # Para 4
+    {
+        "id": 14,
+        "para": 4,
+        "en": "The Uffington White Horse is a unique, stylised representation of a horse consisting of a long, sleek back, thin disjointed legs, a streaming tail, and a bird-like beaked head.",
+        "zh": "乌芬顿白马是对一匹马独特而程式化的呈现，由细长光滑的背部、纤细而不相连的腿、飘扬的尾巴以及一个鸟喙般的头部组成。",
+        "grammar": {
+            "type": "现在分词定语",
+            "note": "consisting of... 为现在分词短语作定语修饰 representation；其后四项并列 a long, sleek back / thin disjointed legs / a streaming tail / a bird-like beaked head；stylised 意为 “程式化的”；consist of 意为 “由……组成”。"
+        },
+        "words": [
+            {"w": "stylised", "pos": "adj.", "def": "程式化的；风格化的"},
+            {"w": "representation", "pos": "n.", "def": "表现；呈现"},
+            {"w": "sleek", "pos": "adj.", "def": "光滑的；流线型的"},
+            {"w": "disjointed", "pos": "adj.", "def": "脱节的；不连贯的"},
+            {"w": "beaked", "pos": "adj.", "def": "有喙的"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 4,
+        "en": "The elegant creature almost melts into the landscape.",
+        "zh": "这个优雅的形象几乎融入了周围的景观之中。",
+        "grammar": {
+            "type": "简单句",
+            "note": "主语 The elegant creature，谓语 melts into；melt into 意为 “融入、消融于”；almost 修饰程度；the landscape 意为 “景观、风景”。"
+        },
+        "words": [
+            {"w": "elegant", "pos": "adj.", "def": "优雅的"},
+            {"w": "creature", "pos": "n.", "def": "生物；形象"},
+            {"w": "melt into", "pos": "phr.", "def": "融入；消融于"},
+            {"w": "landscape", "pos": "n.", "def": "景观；风景"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 4,
+        "en": "The horse is situated 2.5 km from Uffington village on a steep slope close to the Late Bronze Age (c. 7th century BCE) hillfort of Uffington Castle and below the Ridgeway, a long-distance Neolithic track.",
+        "zh": "这匹马位于距乌芬顿村2.5公里处的一道陡坡上，靠近乌芬顿城堡这座青铜时代晚期（约公元前7世纪）的山丘堡垒，并处在里奇韦古道——一条长距离的新石器时代小径——的下方。",
+        "grammar": {
+            "type": "be situated + 多重后置定语 + 同位语",
+            "note": "is situated 2.5 km from... on a steep slope close to... and below... 含多个介词短语表位置；the Ridgeway, a long-distance Neolithic track 中后者为前者同位语；hillfort of Uffington Castle 意为 “乌芬顿城堡山丘堡垒”。"
+        },
+        "words": [
+            {"w": "be situated", "pos": "phr.", "def": "位于"},
+            {"w": "steep", "pos": "adj.", "def": "陡峭的"},
+            {"w": "hillfort", "pos": "n.", "def": "山丘堡垒"},
+            {"w": "Neolithic", "pos": "adj.", "def": "新石器时代的"}
+        ]
+    },
+    # Para 5
+    {
+        "id": 17,
+        "para": 5,
+        "en": "The Uffington Horse is also surrounded by Bronze Age burial mounds.",
+        "zh": "乌芬顿马的周围还环绕着青铜时代的墓冢。",
+        "grammar": {
+            "type": "被动语态",
+            "note": "is surrounded by 为被动语态；Bronze Age burial mounds 意为 “青铜时代的墓冢”；burial mound 意为 “墓冢、土丘墓”。"
+        },
+        "words": [
+            {"w": "be surrounded by", "pos": "phr.", "def": "被……环绕"},
+            {"w": "Bronze Age", "pos": "phr.", "def": "青铜时代"},
+            {"w": "burial mound", "pos": "phr.", "def": "墓冢；土丘墓"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 5,
+        "en": "It is not far from the Bronze Age cemetery of Lambourn Seven Barrows, which consists of more than 30 well-preserved burial mounds.",
+        "zh": "它离兰伯恩七冢这一青铜时代墓地不远，那里有30多座保存完好的墓冢。",
+        "grammar": {
+            "type": "which 非限制性定语从句",
+            "note": "not far from 意为 “离……不远”；which consists of more than 30 well-preserved burial mounds 为非限制性定语从句修饰 cemetery；well-preserved 意为 “保存完好的”。"
+        },
+        "words": [
+            {"w": "cemetery", "pos": "n.", "def": "墓地"},
+            {"w": "barrow", "pos": "n.", "def": "古冢；墓丘"},
+            {"w": "consist of", "pos": "phr.", "def": "由……组成"},
+            {"w": "well-preserved", "pos": "adj.", "def": "保存完好的"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 5,
+        "en": "The carving has been placed in such a way as to make it extremely difficult to see from close quarters, and like many geoglyphs is best appreciated from the air.",
+        "zh": "这幅雕刻被安置成一种从近处极难看清的方式，而且与许多地画一样，从空中欣赏效果最佳。",
+        "grammar": {
+            "type": "in such a way as to + 并列谓语",
+            "note": "in such a way as to make it... difficult to see 为 “以一种……的方式” 结构，as to 引出结果；it 为形式宾语，真正宾语为 to see；from close quarters 意为 “从近处”；and (it) is best appreciated from the air 为并列谓语。"
+        },
+        "words": [
+            {"w": "carving", "pos": "n.", "def": "雕刻（作品）"},
+            {"w": "from close quarters", "pos": "phr.", "def": "从近处"},
+            {"w": "appreciate", "pos": "v.", "def": "欣赏"},
+            {"w": "from the air", "pos": "phr.", "def": "从空中"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 5,
+        "en": "Nevertheless, there are certain areas of the Vale of the White Horse, the valley containing and named after the enigmatic creature, from which an adequate impression may be gained.",
+        "zh": "尽管如此，白马谷（即容纳这一神秘形象并以其命名的山谷）中的某些区域，仍可让人获得较为充分的观赏印象。",
+        "grammar": {
+            "type": "同位语 + from which 定语从句",
+            "note": "the Vale of the White Horse, the valley containing and named after... 中后者为前者同位语，containing 与 named 为并列的分词定语；from which an adequate impression may be gained 为定语从句，介词 from 提前；gain an impression 意为 “获得印象”。"
+        },
+        "words": [
+            {"w": "nevertheless", "pos": "adv.", "def": "尽管如此"},
+            {"w": "vale", "pos": "n.", "def": "山谷"},
+            {"w": "be named after", "pos": "phr.", "def": "以……命名"},
+            {"w": "adequate", "pos": "adj.", "def": "足够的；充分的"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 5,
+        "en": "Indeed on a clear day the carving can be seen from up to 30 km away.",
+        "zh": "事实上，在晴朗的日子里，这幅雕刻在远达30公里处都能看到。",
+        "grammar": {
+            "type": "情态被动",
+            "note": "the carving can be seen 为情态动词+被动；on a clear day 为时间状语；from up to 30 km away 意为 “从远达30公里外”；up to 意为 “多达、远达”。"
+        },
+        "words": [
+            {"w": "indeed", "pos": "adv.", "def": "确实；事实上"},
+            {"w": "clear day", "pos": "phr.", "def": "晴天"},
+            {"w": "up to", "pos": "phr.", "def": "多达；远达"}
+        ]
+    },
+    # Para 6
+    {
+        "id": 22,
+        "para": 6,
+        "en": "The earliest evidence of a horse at Uffington is from the 1070s CE when " + LSQUO + "White Horse Hill" + RSQUO + " is mentioned in documents from the nearby Abbey of Abingdon, and the first reference to the horse itself is soon after, in 1190 CE.",
+        "zh": "关于乌芬顿有马的最早证据来自公元1070年代，当时“白马山”在附近阿宾登修道院的文献中被提及；而对这匹马本身的首次提及则紧随其后，出现在公元1190年。",
+        "grammar": {
+            "type": "when 定语从句 + and 并列句",
+            "note": "when 'White Horse Hill' is mentioned... 为定语从句修饰 the 1070s CE；and the first reference... is soon after 为并列分句；be mentioned in 意为 “在……中被提及”；reference to 意为 “提及、指涉”。"
+        },
+        "words": [
+            {"w": "evidence", "pos": "n.", "def": "证据"},
+            {"w": "mention", "pos": "v.", "def": "提及"},
+            {"w": "document", "pos": "n.", "def": "文献；文件"},
+            {"w": "abbey", "pos": "n.", "def": "修道院；大教堂"},
+            {"w": "reference", "pos": "n.", "def": "提及；指涉"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 6,
+        "en": "However, the carving is believed to date back much further than that.",
+        "zh": "然而，人们相信这幅雕刻的年代要比那早得多。",
+        "grammar": {
+            "type": "be believed to + 比较",
+            "note": "is believed to date back 为 “被认为可追溯到”；much further than that 为比较结构，that 指代上句提到的年代；date back 意为 “追溯到”。"
+        },
+        "words": [
+            {"w": "be believed to", "pos": "phr.", "def": "被认为"},
+            {"w": "date back", "pos": "phr.", "def": "追溯到"},
+            {"w": "further", "pos": "adv.", "def": "更远；更早"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 6,
+        "en": "Due to the similarity of the Uffington White Horse to the stylised depictions of horses on 1st century BCE coins, it had been thought that the creature must also date to that period.",
+        "zh": "由于乌芬顿白马与公元前1世纪钱币上程式化的马的描绘相似，人们曾认为这个形象也必定属于那个时期。",
+        "grammar": {
+            "type": "Due to + it 形式主语 + 过去完成时",
+            "note": "Due to the similarity of A to B 意为 “由于 A 与 B 的相似”；it had been thought that... 为过去完成时被动的形式主语句；the creature must also date to that period 为 that 从句；depiction 意为 “描绘”。"
+        },
+        "words": [
+            {"w": "similarity", "pos": "n.", "def": "相似（性）"},
+            {"w": "depiction", "pos": "n.", "def": "描绘；描述"},
+            {"w": "coin", "pos": "n.", "def": "硬币；钱币"},
+            {"w": "period", "pos": "n.", "def": "时期"}
+        ]
+    },
+    # Para 7
+    {
+        "id": 25,
+        "para": 7,
+        "en": "However, in 1995 Optically Stimulated Luminescence (OSL) testing was carried out by the Oxford Archaeological Unit on soil from two of the lower layers of the horse" + RSQUO + "s body, and from another cut near the base.",
+        "zh": "然而，1995年，牛津考古小组对取自马身较低两层以及底部附近另一处开凿处的土壤进行了光释光（OSL）测年。",
+        "grammar": {
+            "type": "被动语态 + 并列状语",
+            "note": "OSL testing was carried out by... on soil from... and from... 为被动，两个 from 短语并列表来源；carry out 意为 “进行、执行”；Optically Stimulated Luminescence 为专业术语（光释光）。"
+        },
+        "words": [
+            {"w": "luminescence", "pos": "n.", "def": "发光；释光"},
+            {"w": "carry out", "pos": "phr.", "def": "进行；执行"},
+            {"w": "soil", "pos": "n.", "def": "土壤"},
+            {"w": "layer", "pos": "n.", "def": "层"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 7,
+        "en": "The result was a date for the horse" + RSQUO + "s construction somewhere between 1400 and 600 BCE " + DASH + " in other words, it had a Late Bronze Age or Early Iron Age origin.",
+        "zh": "结果得出这匹马建造的年代大约在公元前1400年至公元前600年之间——换句话说，它起源于青铜时代晚期或铁器时代早期。",
+        "grammar": {
+            "type": "破折号解释",
+            "note": "The result was a date... somewhere between 1400 and 600 BCE 为主系表；破折号后 in other words... 对结果作换言之的解释；in other words 意为 “换句话说”；origin 意为 “起源”。"
+        },
+        "words": [
+            {"w": "construction", "pos": "n.", "def": "建造"},
+            {"w": "in other words", "pos": "phr.", "def": "换句话说"},
+            {"w": "origin", "pos": "n.", "def": "起源"}
+        ]
+    },
+    # Para 8
+    {
+        "id": 27,
+        "para": 8,
+        "en": "The latter end of this date range would tie the carving of the horse in with occupation of the nearby Uffington hillfort, indicating that it may represent a tribal emblem marking the land of the inhabitants of the hillfort.",
+        "zh": "这一年代范围的较晚一端，会把这匹马的雕刻与附近乌芬顿山丘堡垒的占用时期联系起来，这表明它可能是一个部落徽章，用以标示堡垒居民的领地。",
+        "grammar": {
+            "type": "tie ... in with + 分词状语",
+            "note": "tie A in with B 意为 “把 A 与 B 联系起来”；indicating that... 为现在分词作结果状语，接 that 宾语从句；marking the land of... 为现在分词定语修饰 emblem；the latter end 意为 “较晚的一端”。"
+        },
+        "words": [
+            {"w": "the latter", "pos": "adj.", "def": "后者的；较晚的"},
+            {"w": "tie in with", "pos": "phr.", "def": "与……相符/联系"},
+            {"w": "occupation", "pos": "n.", "def": "占用；占据"},
+            {"w": "tribal", "pos": "adj.", "def": "部落的"},
+            {"w": "emblem", "pos": "n.", "def": "徽章；象征"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 8,
+        "en": "Alternatively, the carving may have been carried out during a Bronze or Iron Age ritual.",
+        "zh": "或者，这幅雕刻也可能是在青铜时代或铁器时代的某场仪式中完成的。",
+        "grammar": {
+            "type": "情态完成被动",
+            "note": "may have been carried out 为 “情态动词+完成式+被动”，表对过去的推测；Alternatively 意为 “或者、作为替代”；during a... ritual 为时间状语；ritual 意为 “仪式”。"
+        },
+        "words": [
+            {"w": "alternatively", "pos": "adv.", "def": "或者；作为替代"},
+            {"w": "ritual", "pos": "n.", "def": "仪式"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 8,
+        "en": "Some researchers see the horse as representing the Celtic horse goddess Epona, who was worshipped as a protector of horses, and for her associations with fertility.",
+        "zh": "一些研究人员将这匹马视为凯尔特马神埃波娜的象征——她作为马匹的保护神受到崇拜，也因其与生育的关联而被敬奉。",
+        "grammar": {
+            "type": "see ... as doing + who 定语从句",
+            "note": "see A as doing 意为 “把 A 视为……”；who was worshipped as... and for her associations with fertility 为非限制性定语从句，as 短语与 for 短语并列表崇拜的缘由；goddess 意为 “女神”。"
+        },
+        "words": [
+            {"w": "see ... as", "pos": "phr.", "def": "把……视为"},
+            {"w": "goddess", "pos": "n.", "def": "女神"},
+            {"w": "worship", "pos": "v.", "def": "崇拜；敬奉"},
+            {"w": "association", "pos": "n.", "def": "关联；联系"},
+            {"w": "fertility", "pos": "n.", "def": "生育力；肥沃"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 8,
+        "en": "However, the cult of Epona was not imported from Gaul (France) until around the first century CE.",
+        "zh": "然而，埃波娜崇拜直到公元1世纪前后才从高卢（法国）传入。",
+        "grammar": {
+            "type": "not ... until",
+            "note": "not imported... until around the first century CE 为 not...until 结构，意为 “直到……才”；the cult of Epona 意为 “埃波娜崇拜”；be imported from 意为 “从……传入/进口”。"
+        },
+        "words": [
+            {"w": "cult", "pos": "n.", "def": "崇拜；教派"},
+            {"w": "import", "pos": "v.", "def": "引进；进口"},
+            {"w": "Gaul", "pos": "n.", "def": "高卢（古地区名）"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 8,
+        "en": "This date is at least six centuries after the Uffington Horse was probably carved.",
+        "zh": "这个年代比乌芬顿马可能被雕刻的时间至少晚了六个世纪。",
+        "grammar": {
+            "type": "after 时间从句",
+            "note": "at least six centuries after... 为 “比……晚至少六个世纪”；after the Uffington Horse was probably carved 为时间状语从句；probably 表推测。"
+        },
+        "words": [
+            {"w": "at least", "pos": "phr.", "def": "至少"},
+            {"w": "century", "pos": "n.", "def": "世纪"},
+            {"w": "carve", "pos": "v.", "def": "雕刻"}
+        ]
+    },
+    {
+        "id": 32,
+        "para": 8,
+        "en": "Nevertheless, the horse had great ritual and economic significance during the Bronze and Iron Ages, as attested by its depictions on jewellery and other metal objects.",
+        "zh": "尽管如此，在青铜时代和铁器时代，这匹马都具有重大的仪式意义和经济意义，其在珠宝及其他金属器物上的描绘便可为证。",
+        "grammar": {
+            "type": "as attested by",
+            "note": "the horse had great ritual and economic significance 为主句；as attested by its depictions... 为 as 引导的方式状语（= as is attested by），attest 意为 “证明”；ritual and economic significance 意为 “仪式与经济意义”。"
+        },
+        "words": [
+            {"w": "significance", "pos": "n.", "def": "意义；重要性"},
+            {"w": "attest", "pos": "v.", "def": "证明；证实"},
+            {"w": "jewellery", "pos": "n.", "def": "珠宝；首饰"},
+            {"w": "metal object", "pos": "phr.", "def": "金属器物"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 8,
+        "en": "It is possible that the carving represents a goddess in native mythology, such as Rhiannon, described in later Welsh mythology as a beautiful woman dressed in gold and riding a white horse.",
+        "zh": "这幅雕刻有可能象征着本土神话中的一位女神，比如里安农——在后来的威尔士神话中，她被描述为一位身着金衣、骑着白马的美丽女子。",
+        "grammar": {
+            "type": "it 形式主语 + 过去分词定语",
+            "note": "It is possible that... 为形式主语句；such as Rhiannon 为举例；described in later Welsh mythology as... 为过去分词短语作定语修饰 Rhiannon；dressed in gold and riding a white horse 为并列分词作定语修饰 woman；native mythology 意为 “本土神话”。"
+        },
+        "words": [
+            {"w": "represent", "pos": "v.", "def": "象征；代表"},
+            {"w": "native", "pos": "adj.", "def": "本土的；本地的"},
+            {"w": "mythology", "pos": "n.", "def": "神话（体系）"},
+            {"w": "Welsh", "pos": "adj.", "def": "威尔士的"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 8,
+        "en": "The fact that geoglyphs can disappear easily, along with their associated rituals and meaning, indicates that they were never intended to be anything more than temporary gestures.",
+        "zh": "地画连同其相关的仪式和含义都可能轻易消失，这一事实表明它们从来就无意成为比临时性举动更长久的东西。",
+        "grammar": {
+            "type": "that 同位语从句 + that 宾语从句",
+            "note": "The fact that geoglyphs can disappear easily 含同位语从句；along with... 为插入的伴随状语；主句谓语 indicates that they were never intended to be...；be intended to be 意为 “打算成为”；anything more than 意为 “比……更多的东西”。"
+        },
+        "words": [
+            {"w": "along with", "pos": "phr.", "def": "连同；和……一起"},
+            {"w": "be intended to", "pos": "phr.", "def": "打算；旨在"},
+            {"w": "temporary", "pos": "adj.", "def": "临时的；暂时的"},
+            {"w": "gesture", "pos": "n.", "def": "姿态；举动"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 8,
+        "en": "But this does not lessen their importance. These giant carvings are a fascinating glimpse into the minds of their creators and how they viewed the landscape in which they lived.",
+        "zh": "但这并不减损它们的重要性。这些巨大的雕刻让我们得以迷人地一窥其创作者的内心，以及他们如何看待自己所生活的这片土地。",
+        "grammar": {
+            "type": "并列句 + in which 定语从句",
+            "note": "this does not lessen their importance 为独立分句；a fascinating glimpse into... and how they viewed... 中 into 后接名词与 how 从句并列作宾语；in which they lived 为定语从句修饰 landscape；lessen 意为 “减少、减损”。"
+        },
+        "words": [
+            {"w": "lessen", "pos": "v.", "def": "减少；减损"},
+            {"w": "fascinating", "pos": "adj.", "def": "迷人的；引人入胜的"},
+            {"w": "glimpse", "pos": "n.", "def": "一瞥；一窥"},
+            {"w": "creator", "pos": "n.", "def": "创作者"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "take place", "pos": "phr.", "def": "发生；进行"},
+    {"w": "the vast majority", "pos": "phr.", "def": "绝大多数"},
+    {"w": "clear away", "pos": "phr.", "def": "清除；扫除"},
+    {"w": "stretch back", "pos": "phr.", "def": "追溯；上溯"},
+    {"w": "melt into", "pos": "phr.", "def": "融入；消融于"},
+    {"w": "date back", "pos": "phr.", "def": "追溯到"},
+    {"w": "in other words", "pos": "phr.", "def": "换句话说"},
+    {"w": "tie in with", "pos": "phr.", "def": "与……相符/联系"},
+    {"w": "see ... as", "pos": "phr.", "def": "把……视为"},
+    {"w": "not ... until", "pos": "phr.", "def": "直到……才"}
+]
+
+questions = [
+    {
+        "title": "Questions 1" + DASH + "8",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 1?",
+            "In boxes 1" + DASH + "8 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 1, "prompt": "Most geoglyphs in England are located in a particular area of the country.", "answer": "TRUE", "evidence_sentence": 2},
+            {"number": 2, "prompt": "There are more geoglyphs in the shape of a horse than any other creature.", "answer": "NOT GIVEN", "evidence_sentence": 3},
+            {"number": 3, "prompt": "A recent dating of the Uffington White Horse indicates that people were mistaken about its age.", "answer": "TRUE", "evidence_sentence": 6},
+            {"number": 4, "prompt": "Historians have come to an agreement about the origins of the Long Man of Wilmington.", "answer": "FALSE", "evidence_sentence": 8},
+            {"number": 5, "prompt": "Geoglyphs were created by people placing white chalk on the hillside.", "answer": "FALSE", "evidence_sentence": 9},
+            {"number": 6, "prompt": "Many geoglyphs in England are no longer visible.", "answer": "TRUE", "evidence_sentence": 11},
+            {"number": 7, "prompt": "The shape of some geoglyphs has been altered over time.", "answer": "TRUE", "evidence_sentence": 12},
+            {"number": 8, "prompt": "The fame of the Uffington White Horse is due to its size.", "answer": "NOT GIVEN", "evidence_sentence": 5}
+        ]
+    },
+    {
+        "title": "Questions 9" + DASH + "13",
+        "type": "note_completion",
+        "instructions": [
+            "Complete the notes below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 9" + DASH + "13 on your answer sheet.",
+            "The Uffington White Horse"
+        ],
+        "items": [
+            {"number": 9, "prompt": "The location of the Uffington White Horse: near an ancient road known as the 9 ______.", "answer": "Ridgeway", "evidence_sentence": 16},
+            {"number": 10, "prompt": "Dating the Uffington White Horse: first reference to White Horse Hill appears in 10 ______ from the 1070s.", "answer": "documents", "evidence_sentence": 22},
+            {"number": 11, "prompt": "According to analysis of the surrounding 11 ______, the Horse is Late Bronze Age / Early Iron Age.", "answer": "soil", "evidence_sentence": 25},
+            {"number": 12, "prompt": "Possible reasons for creation: was a representation of goddess Epona " + DASH + " associated with protection of horses and 12 ______.", "answer": "fertility", "evidence_sentence": 29},
+            {"number": 13, "prompt": "Possible reasons for creation: was a representation of a Welsh goddess called 13 ______.", "answer": "Rhiannon", "evidence_sentence": 33}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test2-p1",
+    "source": "剑桥雅思16 Test 2 Passage 1",
+    "title": "The White Horse of Uffington",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test2-p1.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

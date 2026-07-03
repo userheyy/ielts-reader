@@ -1,0 +1,565 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test3-p3.json (Plant 'thermometer' triggers springtime growth)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # -
+PCT = "%"
+
+sentences = [
+    # Section A (para 1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "An international team of scientists led by the University of Cambridge has discovered that the " + LSQUO + "thermometer" + RSQUO + " molecule in plants enables them to develop according to seasonal temperature changes.",
+        "zh": "一支由剑桥大学牵头的国际科学家团队发现，植物体内的“温度计”分子使它们能够根据季节性温度变化而生长发育。",
+        "grammar": {
+            "type": "过去分词定语 + that 宾语从句",
+            "note": "led by the University of Cambridge 为过去分词短语作定语修饰 team；has discovered that... 为宾语从句；enable sb/sth to do 意为 “使……能够做”；according to 意为 “根据”；molecule 意为 “分子”。"
+        },
+        "words": [
+            {"w": "international", "pos": "adj.", "def": "国际的"},
+            {"w": "thermometer", "pos": "n.", "def": "温度计"},
+            {"w": "molecule", "pos": "n.", "def": "分子"},
+            {"w": "enable", "pos": "v.", "def": "使能够"},
+            {"w": "seasonal", "pos": "adj.", "def": "季节性的"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Researchers have revealed that molecules called phytochromes " + DASH + " used by plants to detect light during the day " + DASH + " actually change their function in darkness to become cellular temperature gauges that measure the heat of the night.",
+        "zh": "研究人员揭示，被称为光敏色素的分子——白天被植物用来感知光线——在黑暗中实际上会改变其功能，成为测量夜间热量的细胞温度计。",
+        "grammar": {
+            "type": "that 宾语从句 + 破折号插入 + that 定语从句",
+            "note": "have revealed that... 为宾语从句；called phytochromes 为过去分词定语；两破折号间 used by plants to detect light during the day 为过去分词插入定语；that measure the heat of the night 为定语从句修饰 gauges；cellular temperature gauge 意为 “细胞温度计”。"
+        },
+        "words": [
+            {"w": "reveal", "pos": "v.", "def": "揭示"},
+            {"w": "phytochrome", "pos": "n.", "def": "光敏色素"},
+            {"w": "detect", "pos": "v.", "def": "察觉；检测"},
+            {"w": "cellular", "pos": "adj.", "def": "细胞的"},
+            {"w": "gauge", "pos": "n.", "def": "计量器；测量仪"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "The new findings, published in the journal Science, show that phytochromes control genetic switches in response to temperature as well as light to dictate plant development.",
+        "zh": "这些发表在《科学》杂志上的新发现表明，光敏色素会响应温度和光线来控制基因开关，从而决定植物的发育。",
+        "grammar": {
+            "type": "过去分词定语 + that 宾语从句",
+            "note": "published in the journal Science 为过去分词短语作定语修饰 findings；show that... 为宾语从句；in response to 意为 “响应、对……作出反应”；as well as 连接 temperature 与 light；to dictate plant development 为不定式表结果/目的；dictate 意为 “决定、支配”。"
+        },
+        "words": [
+            {"w": "finding", "pos": "n.", "def": "发现；研究结果"},
+            {"w": "genetic switch", "pos": "phr.", "def": "基因开关"},
+            {"w": "in response to", "pos": "phr.", "def": "响应；对……作出反应"},
+            {"w": "dictate", "pos": "v.", "def": "决定；支配"}
+        ]
+    },
+    # Section B (para 2)
+    {
+        "id": 4,
+        "para": 2,
+        "en": "At night, these molecules change states, and the pace at which they change is " + LSQUO + "directly proportional to temperature" + RSQUO + ", say scientists, who compare phytochromes to mercury in a thermometer.",
+        "zh": "科学家们表示，在夜间，这些分子会改变状态，而其变化的速度“与温度成正比”，他们把光敏色素比作温度计中的水银。",
+        "grammar": {
+            "type": "at which 定语从句 + who 非限制性定语",
+            "note": "these molecules change states 为主句之一；the pace at which they change is 'directly proportional to temperature' 含 at which 定语从句；say scientists 为引述倒装；who compare phytochromes to mercury 为非限制性定语从句；compare A to B 意为 “把 A 比作 B”；directly proportional to 意为 “与……成正比”。"
+        },
+        "words": [
+            {"w": "state", "pos": "n.", "def": "状态"},
+            {"w": "pace", "pos": "n.", "def": "速度；步调"},
+            {"w": "proportional to", "pos": "phr.", "def": "与……成正比"},
+            {"w": "mercury", "pos": "n.", "def": "水银；汞"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "The warmer it is, the faster the molecular change " + DASH + " stimulating plant growth.",
+        "zh": "天气越暖，分子变化就越快——从而刺激植物生长。",
+        "grammar": {
+            "type": "the + 比较级, the + 比较级 + 分词状语",
+            "note": "The warmer it is, the faster the molecular change 为 “the+比较级..., the+比较级...” 结构，表 “越……越……”，后半省略了 is；stimulating plant growth 为现在分词作结果状语；stimulate 意为 “刺激、促进”。"
+        },
+        "words": [
+            {"w": "molecular", "pos": "adj.", "def": "分子的"},
+            {"w": "stimulate", "pos": "v.", "def": "刺激；促进"},
+            {"w": "growth", "pos": "n.", "def": "生长"}
+        ]
+    },
+    # Section C (para 3)
+    {
+        "id": 6,
+        "para": 3,
+        "en": "Farmers and gardeners have known for hundreds of years how responsive plants are to temperature: warm winters cause many trees and flowers to bud early, something humans have long used to predict weather and harvest times for the coming year.",
+        "zh": "数百年来，农民和园丁一直都知道植物对温度有多敏感：暖冬会使许多树木和花卉提早发芽，而人类长期以来一直用这一现象来预测来年的天气和收获时节。",
+        "grammar": {
+            "type": "how 宾语从句 + 冒号 + 省略关系词定语从句",
+            "note": "have known... how responsive plants are to temperature 中 how 引导宾语从句；冒号后为具体说明；cause sth to do 意为 “使……做”；something (that) humans have long used to... 为省略关系词的定语从句，作前面整句的同位补充；responsive to 意为 “对……敏感/反应快”。"
+        },
+        "words": [
+            {"w": "responsive", "pos": "adj.", "def": "反应快的；敏感的"},
+            {"w": "bud", "pos": "v.", "def": "发芽；抽芽"},
+            {"w": "predict", "pos": "v.", "def": "预测"},
+            {"w": "harvest", "pos": "n.", "def": "收获；收成"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 3,
+        "en": "The latest research pinpoints for the first time a molecular mechanism in plants that reacts to temperature " + DASH + " often triggering the buds of spring we long to see at the end of winter.",
+        "zh": "这项最新研究首次精确定位了植物体内一种对温度作出反应的分子机制——它常常触发我们在冬末渴望见到的春芽。",
+        "grammar": {
+            "type": "that 定语从句 + 分词状语 + 省略关系词定语从句",
+            "note": "pinpoints... a molecular mechanism... that reacts to temperature 含 that 定语从句；often triggering the buds of spring 为现在分词作结果状语；(that) we long to see 为省略关系词的定语从句修饰 buds；pinpoint 意为 “精确定位”，long to 意为 “渴望”。"
+        },
+        "words": [
+            {"w": "pinpoint", "pos": "v.", "def": "精确定位"},
+            {"w": "mechanism", "pos": "n.", "def": "机制"},
+            {"w": "react to", "pos": "phr.", "def": "对……作出反应"},
+            {"w": "long to", "pos": "phr.", "def": "渴望"}
+        ]
+    },
+    # Section D (para 4)
+    {
+        "id": 8,
+        "para": 4,
+        "en": "With weather and temperatures set to become ever more unpredictable due to climate change, researchers say the discovery that this light-sensing molecule also functions as the internal thermometer in plant cells could help us breed tougher crops.",
+        "zh": "由于气候变化，天气和气温注定会变得越来越难以预测，研究人员表示，这一发现——即这种感光分子在植物细胞中还充当内部温度计——可能有助于我们培育更耐受的作物。",
+        "grammar": {
+            "type": "with 复合结构 + 省略that宾语从句 + that 同位语从句",
+            "note": "With weather and temperatures set to become... 为 with 复合结构；researchers say (that) the discovery... could help us breed... 为省略 that 的宾语从句；the discovery that this light-sensing molecule also functions as... 含 that 同位语从句；function as 意为 “充当”；breed 意为 “培育”。"
+        },
+        "words": [
+            {"w": "unpredictable", "pos": "adj.", "def": "难以预测的"},
+            {"w": "light-sensing", "pos": "adj.", "def": "感光的"},
+            {"w": "function as", "pos": "phr.", "def": "充当；起……作用"},
+            {"w": "breed", "pos": "v.", "def": "培育；繁殖"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 4,
+        "en": LSQUO + "It is estimated that agricultural yields will need to double by 2050, but climate change is a major threat to achieving this.",
+        "zh": "“据估计，到2050年农业产量将需要翻一番，但气候变化是实现这一目标的重大威胁。",
+        "grammar": {
+            "type": "it 形式主语 + but 转折",
+            "note": "It is estimated that... 为形式主语句；agricultural yields will need to double by 2050 为 that 从句；but climate change is a major threat to achieving this 为转折分句；a threat to doing 意为 “对做……的威胁”；yield 意为 “产量”。"
+        },
+        "words": [
+            {"w": "estimate", "pos": "v.", "def": "估计"},
+            {"w": "agricultural yield", "pos": "phr.", "def": "农业产量"},
+            {"w": "double", "pos": "v.", "def": "翻倍"},
+            {"w": "threat", "pos": "n.", "def": "威胁"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 4,
+        "en": "Key crops such as wheat and rice are sensitive to high temperatures. Thermal stress reduces crop yields by around 10" + PCT + " for every one degree increase in temperature," + RSQUO + " says lead researcher Dr Philip Wigge from Cambridge" + RSQUO + "s Sainsbury Laboratory.",
+        "zh": "小麦和水稻等主要作物对高温很敏感。温度每升高一度，热胁迫就会使作物产量减少约10%，”剑桥大学桑斯伯里实验室的首席研究员菲利普·维格博士说。",
+        "grammar": {
+            "type": "两句并列 + for every 状语",
+            "note": "Key crops such as wheat and rice are sensitive to high temperatures 为独立句；Thermal stress reduces crop yields by around 10% 为另一句；for every one degree increase 为 “每升高一度” 状语；be sensitive to 意为 “对……敏感”；thermal stress 意为 “热胁迫”。"
+        },
+        "words": [
+            {"w": "be sensitive to", "pos": "phr.", "def": "对……敏感"},
+            {"w": "thermal stress", "pos": "phr.", "def": "热胁迫；热应激"},
+            {"w": "reduce", "pos": "v.", "def": "减少"},
+            {"w": "degree", "pos": "n.", "def": "度；程度"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 4,
+        "en": LSQUO + "Discovering the molecules that allow plants to sense temperature has the potential to accelerate the breeding of crops resilient to thermal stress and climate change." + RSQUO,
+        "zh": "“发现那些使植物能够感知温度的分子，有望加速培育出能耐受热胁迫和气候变化的作物。”",
+        "grammar": {
+            "type": "动名词主语 + that 定语从句",
+            "note": "Discovering the molecules that allow plants to sense temperature 为动名词短语作主语，含 that 定语从句；have the potential to do 意为 “有做……的潜力”；crops resilient to... 中 resilient to 为形容词短语作后置定语；accelerate 意为 “加速”，resilient 意为 “有韧性的、耐受的”。"
+        },
+        "words": [
+            {"w": "sense", "pos": "v.", "def": "感知"},
+            {"w": "potential", "pos": "n.", "def": "潜力"},
+            {"w": "accelerate", "pos": "v.", "def": "加速"},
+            {"w": "resilient", "pos": "adj.", "def": "有韧性的；耐受的"}
+        ]
+    },
+    # Section E (para 5)
+    {
+        "id": 12,
+        "para": 5,
+        "en": "In their active state, phytochrome molecules bind themselves to DNA to restrict plant growth.",
+        "zh": "在其活跃状态下，光敏色素分子会与DNA结合，以抑制植物生长。",
+        "grammar": {
+            "type": "bind to + 不定式目的",
+            "note": "In their active state 为状语；bind themselves to DNA 意为 “与 DNA 结合”；to restrict plant growth 为不定式表目的；restrict 意为 “限制、抑制”；active state 意为 “活跃状态”。"
+        },
+        "words": [
+            {"w": "active state", "pos": "phr.", "def": "活跃状态"},
+            {"w": "bind to", "pos": "phr.", "def": "与……结合"},
+            {"w": "restrict", "pos": "v.", "def": "限制；抑制"},
+            {"w": "growth", "pos": "n.", "def": "生长"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 5,
+        "en": "During the day, sunlight activates the molecules, slowing down growth.",
+        "zh": "在白天，阳光会激活这些分子，从而减缓生长。",
+        "grammar": {
+            "type": "现在分词状语",
+            "note": "During the day 为时间状语；sunlight activates the molecules 为主句；slowing down growth 为现在分词作结果状语；activate 意为 “激活”，slow down 意为 “减缓”。"
+        },
+        "words": [
+            {"w": "sunlight", "pos": "n.", "def": "阳光"},
+            {"w": "activate", "pos": "v.", "def": "激活"},
+            {"w": "slow down", "pos": "phr.", "def": "减缓；放慢"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 5,
+        "en": "If a plant finds itself in shade, phytochromes are quickly inactivated " + DASH + " enabling it to grow faster to find sunlight again.",
+        "zh": "如果一株植物处于阴影之中，光敏色素会迅速失活——从而使它能够更快地生长，以重新找到阳光。",
+        "grammar": {
+            "type": "if 条件从句 + 破折号分词状语",
+            "note": "If a plant finds itself in shade 为条件从句，find oneself in 意为 “发觉自己处于”；主句 phytochromes are quickly inactivated 为被动；破折号后 enabling it to grow faster... 为现在分词作结果状语；inactivate 意为 “使失活”。"
+        },
+        "words": [
+            {"w": "shade", "pos": "n.", "def": "阴影；遮阴"},
+            {"w": "inactivate", "pos": "v.", "def": "使失活；使不活跃"},
+            {"w": "enable", "pos": "v.", "def": "使能够"},
+            {"w": "find oneself", "pos": "phr.", "def": "发觉自己处于"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 5,
+        "en": "This is how plants compete to escape each other" + RSQUO + "s shade. " + LSQUO + "Light-driven changes to phytochrome activity occur very fast, in less than a second," + RSQUO + " says Wigge.",
+        "zh": "这就是植物相互竞争以摆脱彼此遮阴的方式。维格说：“由光驱动的光敏色素活性变化发生得非常快，不到一秒钟。”",
+        "grammar": {
+            "type": "how 表语从句 + 引语",
+            "note": "This is how plants compete to escape... 中 how 引导表语从句；compete to do 意为 “竞相做”；引语 Light-driven changes... occur very fast 为主句；light-driven 意为 “光驱动的”；in less than a second 为状语。"
+        },
+        "words": [
+            {"w": "compete", "pos": "v.", "def": "竞争"},
+            {"w": "escape", "pos": "v.", "def": "摆脱；逃离"},
+            {"w": "light-driven", "pos": "adj.", "def": "光驱动的"},
+            {"w": "occur", "pos": "v.", "def": "发生"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 5,
+        "en": "At night, however, it" + RSQUO + "s a different story. Instead of a rapid deactivation following sundown, the molecules gradually change from their active to inactive state.",
+        "zh": "然而到了夜间，情况就不同了。这些分子并非在日落后迅速失活，而是逐渐从活跃状态转变为不活跃状态。",
+        "grammar": {
+            "type": "Instead of 介词短语 + from ... to ...",
+            "note": "it's a different story 意为 “情况不同”；Instead of a rapid deactivation following sundown 为介词短语作状语表 “而非”；change from their active to inactive state 为 from...to... 结构；following sundown 意为 “日落之后”，deactivation 意为 “失活”。"
+        },
+        "words": [
+            {"w": "deactivation", "pos": "n.", "def": "失活；停用"},
+            {"w": "sundown", "pos": "n.", "def": "日落"},
+            {"w": "gradually", "pos": "adv.", "def": "逐渐地"},
+            {"w": "inactive", "pos": "adj.", "def": "不活跃的"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 5,
+        "en": "This is called " + LSQUO + "dark reversion" + RSQUO + ". " + LSQUO + "Just as mercury rises in a thermometer, the rate at which phytochromes revert to their inactive state during the night is a direct measure of temperature," + RSQUO + " says Wigge.",
+        "zh": "这被称为“暗逆转”。维格说：“正如温度计中的水银上升一样，光敏色素在夜间恢复到不活跃状态的速度，是对温度的直接量度。”",
+        "grammar": {
+            "type": "Just as 类比 + at which 定语从句",
+            "note": "This is called 'dark reversion' 为被动；Just as mercury rises... 为 just as 类比状语；the rate at which phytochromes revert to... 含 at which 定语从句；is a direct measure of temperature 为主句；revert to 意为 “恢复到、逆转到”。"
+        },
+        "words": [
+            {"w": "dark reversion", "pos": "phr.", "def": "暗逆转"},
+            {"w": "just as", "pos": "phr.", "def": "正如"},
+            {"w": "revert to", "pos": "phr.", "def": "恢复到；逆转到"},
+            {"w": "measure", "pos": "n.", "def": "量度；衡量"}
+        ]
+    },
+    # Section F (para 6)
+    {
+        "id": 18,
+        "para": 6,
+        "en": LSQUO + "The lower the temperature, the slower the rate at which phytochromes revert to inactivity, so the molecules spend more time in their active, growth-suppressing state.",
+        "zh": "“温度越低，光敏色素恢复到不活跃状态的速度就越慢，因此这些分子会有更多时间处于活跃的、抑制生长的状态。",
+        "grammar": {
+            "type": "the+比较级...the+比较级... + so 结果",
+            "note": "The lower the temperature, the slower the rate... 为 “the+比较级..., the+比较级...” 结构；at which phytochromes revert to inactivity 为定语从句；so the molecules spend more time in... 为结果分句；growth-suppressing 意为 “抑制生长的”。"
+        },
+        "words": [
+            {"w": "inactivity", "pos": "n.", "def": "不活跃；不活动"},
+            {"w": "spend time in", "pos": "phr.", "def": "把时间花在……状态"},
+            {"w": "growth-suppressing", "pos": "adj.", "def": "抑制生长的"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 6,
+        "en": "This is why plants are slower to grow in winter. Warm temperatures accelerate dark reversion, so that phytochromes rapidly reach an inactive state and detach themselves from the plant" + RSQUO + "s DNA " + DASH + " allowing genes to be expressed and plant growth to resume." + RSQUO,
+        "zh": "这就是植物在冬天生长较慢的原因。温暖的气温会加速暗逆转，使光敏色素迅速进入不活跃状态并脱离植物的DNA——从而让基因得以表达、植物生长得以恢复。”",
+        "grammar": {
+            "type": "why 表语从句 + so that 结果 + 分词状语",
+            "note": "This is why... 中 why 引导表语从句；so that phytochromes rapidly reach... and detach... 为结果状语从句，含并列谓语；破折号后 allowing genes to be expressed and plant growth to resume 为现在分词作结果状语，含两个 “allow sth to do” 并列；detach from 意为 “脱离”。"
+        },
+        "words": [
+            {"w": "accelerate", "pos": "v.", "def": "加速"},
+            {"w": "detach", "pos": "v.", "def": "使分离；脱离"},
+            {"w": "express", "pos": "v.", "def": "（基因）表达"},
+            {"w": "resume", "pos": "v.", "def": "恢复；重新开始"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 6,
+        "en": "Wigge believes phytochrome thermo-sensing evolved at a later stage, and co-opted the biological network already used for light-based growth during the downtime of night.",
+        "zh": "维格认为，光敏色素的温度感知功能是在较晚阶段进化出来的，并借用了在夜间空闲时段本已用于光照生长的生物网络。",
+        "grammar": {
+            "type": "省略that宾语从句 + 并列谓语",
+            "note": "believes (that) phytochrome thermo-sensing evolved... and co-opted... 为省略 that 的宾语从句，含并列谓语；already used for light-based growth 为过去分词定语修饰 network；co-opt 意为 “借用、吸纳”；thermo-sensing 意为 “温度感知”。"
+        },
+        "words": [
+            {"w": "thermo-sensing", "pos": "n.", "def": "温度感知"},
+            {"w": "evolve", "pos": "v.", "def": "进化；演变"},
+            {"w": "co-opt", "pos": "v.", "def": "借用；吸纳"},
+            {"w": "downtime", "pos": "n.", "def": "空闲时段；停歇期"}
+        ]
+    },
+    # Section G (para 7)
+    {
+        "id": 21,
+        "para": 7,
+        "en": "Some plants mainly use day length as an indicator of the season.",
+        "zh": "有些植物主要以昼长作为季节的指示标志。",
+        "grammar": {
+            "type": "use ... as ...",
+            "note": "use day length as an indicator of the season 为 use A as B 结构，意为 “把 A 用作 B”；day length 意为 “昼长”；indicator 意为 “指示物、标志”。"
+        },
+        "words": [
+            {"w": "day length", "pos": "phr.", "def": "昼长；日照时长"},
+            {"w": "indicator", "pos": "n.", "def": "指示物；标志"},
+            {"w": "season", "pos": "n.", "def": "季节"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 7,
+        "en": "Other species, such as daffodils, have considerable temperature sensitivity, and can flower months in advance during a warm winter.",
+        "zh": "另一些物种，比如水仙花，对温度相当敏感，能在暖冬里提前数月开花。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "Other species, such as daffodils 为主语加举例；have considerable temperature sensitivity, and can flower months in advance 为并列谓语；months in advance 意为 “提前数月”；daffodil 意为 “水仙花”，considerable 意为 “相当大的”。"
+        },
+        "words": [
+            {"w": "daffodil", "pos": "n.", "def": "水仙花"},
+            {"w": "considerable", "pos": "adj.", "def": "相当大的"},
+            {"w": "sensitivity", "pos": "n.", "def": "敏感性"},
+            {"w": "in advance", "pos": "phr.", "def": "提前"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 7,
+        "en": "In fact, the discovery of the dual role of phytochromes provides the science behind a well-known rhyme long used to predict the coming season: oak before ash we" + RSQUO + "ll have a splash, ash before oak we" + RSQUO + "re in for a soak.",
+        "zh": "事实上，光敏色素双重作用的发现，为一句长期用来预测季节的著名谚语提供了科学依据：橡树先于白蜡树发芽，我们会有点小雨；白蜡树先于橡树，我们则要迎来一场大雨。",
+        "grammar": {
+            "type": "过去分词定语 + 冒号引出谚语",
+            "note": "the discovery of the dual role of phytochromes provides the science 为主句；behind a well-known rhyme 为介词短语作定语；long used to predict the coming season 为过去分词定语修饰 rhyme；冒号后为谚语内容；dual role 意为 “双重作用”，rhyme 意为 “押韵的谚语”。"
+        },
+        "words": [
+            {"w": "dual role", "pos": "phr.", "def": "双重作用"},
+            {"w": "rhyme", "pos": "n.", "def": "押韵诗；谚语"},
+            {"w": "oak", "pos": "n.", "def": "橡树"},
+            {"w": "ash", "pos": "n.", "def": "白蜡树"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 7,
+        "en": "Wigge explains: " + LSQUO + "Oak trees rely much more on temperature, likely using phytochromes as thermometers to dictate development, whereas ash trees rely on measuring day length to determine their seasonal timing.",
+        "zh": "维格解释说：“橡树更多地依赖温度，很可能把光敏色素当作温度计来决定其生长发育，而白蜡树则依靠测量昼长来确定其季节时序。",
+        "grammar": {
+            "type": "现在分词状语 + whereas 对比",
+            "note": "Oak trees rely much more on temperature 为主句；likely using phytochromes as thermometers... 为现在分词作伴随状语；whereas ash trees rely on measuring day length... 为 whereas 引导的对比从句；rely on 意为 “依赖”，whereas 意为 “而、然而”。"
+        },
+        "words": [
+            {"w": "rely on", "pos": "phr.", "def": "依赖"},
+            {"w": "whereas", "pos": "conj.", "def": "而；然而"},
+            {"w": "determine", "pos": "v.", "def": "确定；决定"},
+            {"w": "timing", "pos": "n.", "def": "时序；时机"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 7,
+        "en": "A warmer spring, and consequently a higher likeliness of a hot summer, will result in oak leafing before ash. A cold spring will see the opposite. As the British know only too well, a colder summer is likely to be a rain-soaked one." + RSQUO,
+        "zh": "更温暖的春天，以及随之而来的更高概率的炎热夏天，会导致橡树先于白蜡树长叶。而寒冷的春天则会出现相反的情况。正如英国人再清楚不过的那样，较凉爽的夏天很可能是一个雨水浸透的夏天。”",
+        "grammar": {
+            "type": "result in + As 状语从句",
+            "note": "A warmer spring... will result in oak leafing before ash 中 result in doing 意为 “导致”；A cold spring will see the opposite 为拟人化表达；As the British know only too well 为 as 引导的状语从句；only too well 意为 “太清楚了”；leaf 作动词意为 “长叶”。"
+        },
+        "words": [
+            {"w": "consequently", "pos": "adv.", "def": "因此；随之"},
+            {"w": "likeliness", "pos": "n.", "def": "可能性"},
+            {"w": "leaf", "pos": "v.", "def": "长叶"},
+            {"w": "rain-soaked", "pos": "adj.", "def": "雨水浸透的"}
+        ]
+    },
+    # Section H (para 8)
+    {
+        "id": 26,
+        "para": 8,
+        "en": "The new findings are the culmination of twelve years of research involving scientists from Germany, Argentina and the US, as well as the Cambridge team.",
+        "zh": "这些新发现是历时十二年研究的结晶，参与研究的除剑桥团队外，还有来自德国、阿根廷和美国的科学家。",
+        "grammar": {
+            "type": "现在分词定语 + as well as",
+            "note": "the culmination of twelve years of research 意为 “十二年研究的顶点/结晶”；involving scientists from... 为现在分词短语作定语修饰 research；as well as the Cambridge team 由 as well as 并列；culmination 意为 “顶点、高潮”。"
+        },
+        "words": [
+            {"w": "culmination", "pos": "n.", "def": "顶点；结晶"},
+            {"w": "involve", "pos": "v.", "def": "涉及；使参与"},
+            {"w": "as well as", "pos": "phr.", "def": "以及"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 8,
+        "en": "The work was done in a model system, using a mustard plant called Arabidopsis, but Wigge says the phytochrome genes necessary for temperature sensing are found in crop plants as well.",
+        "zh": "这项研究是在一个模式系统中完成的，使用了一种名为拟南芥的芥菜植物，但维格表示，温度感知所必需的光敏色素基因在作物中也同样存在。",
+        "grammar": {
+            "type": "现在分词状语 + but + 省略that宾语从句",
+            "note": "The work was done in a model system 为被动；using a mustard plant called Arabidopsis 为现在分词作方式状语；but Wigge says (that) the phytochrome genes... are found in crop plants 为省略 that 的宾语从句；necessary for temperature sensing 为形容词短语作后置定语；mustard plant 意为 “芥菜植物”。"
+        },
+        "words": [
+            {"w": "model system", "pos": "phr.", "def": "模式系统"},
+            {"w": "mustard", "pos": "n.", "def": "芥菜；芥末"},
+            {"w": "gene", "pos": "n.", "def": "基因"},
+            {"w": "crop plant", "pos": "phr.", "def": "作物植物"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 8,
+        "en": LSQUO + "Recent advances in plant genetics now mean that scientists are able to rapidly identify the genes controlling these processes in crop plants, and even alter their activity using precise molecular " + '"' + "scalpels" + '"' + "," + RSQUO + " adds Wigge.",
+        "zh": "维格补充道：“植物遗传学的最新进展意味着，科学家如今能够迅速识别出作物中控制这些过程的基因，甚至可以用精确的分子“手术刀”来改变它们的活性。",
+        "grammar": {
+            "type": "that 宾语从句 + 现在分词定语",
+            "note": "Recent advances... mean that... 为宾语从句；be able to rapidly identify... and even alter... 为并列不定式；controlling these processes 为现在分词定语修饰 genes；using precise molecular 'scalpels' 为现在分词作方式状语；alter 意为 “改变”，scalpel 意为 “手术刀”。"
+        },
+        "words": [
+            {"w": "advance", "pos": "n.", "def": "进展"},
+            {"w": "genetics", "pos": "n.", "def": "遗传学"},
+            {"w": "alter", "pos": "v.", "def": "改变"},
+            {"w": "scalpel", "pos": "n.", "def": "手术刀"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 8,
+        "en": "Cambridge is uniquely well-positioned to do this kind of research as we have outstanding collaborators nearby who work on more applied aspects of plant biology, and can help us transfer this new knowledge into the field." + RSQUO,
+        "zh": "剑桥在开展此类研究方面具有得天独厚的优势，因为我们附近有杰出的合作者，他们从事植物生物学中更偏应用的方面，并能帮助我们把这一新知识转化到实际应用中。”",
+        "grammar": {
+            "type": "as 原因从句 + who 定语从句",
+            "note": "be well-positioned to do 意为 “处于有利地位做”；as we have outstanding collaborators nearby 为 as 引导的原因从句；who work on... and can help us transfer... 为定语从句修饰 collaborators，含并列谓语；applied 意为 “应用的”，transfer into the field 意为 “转化到实际应用中”。"
+        },
+        "words": [
+            {"w": "well-positioned", "pos": "adj.", "def": "处于有利位置的"},
+            {"w": "collaborator", "pos": "n.", "def": "合作者"},
+            {"w": "applied", "pos": "adj.", "def": "应用的"},
+            {"w": "transfer", "pos": "v.", "def": "转移；转化"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "in response to", "pos": "phr.", "def": "响应；对……作出反应"},
+    {"w": "proportional to", "pos": "phr.", "def": "与……成正比"},
+    {"w": "react to", "pos": "phr.", "def": "对……作出反应"},
+    {"w": "function as", "pos": "phr.", "def": "充当；起……作用"},
+    {"w": "be sensitive to", "pos": "phr.", "def": "对……敏感"},
+    {"w": "bind to", "pos": "phr.", "def": "与……结合"},
+    {"w": "revert to", "pos": "phr.", "def": "恢复到；逆转到"},
+    {"w": "rely on", "pos": "phr.", "def": "依赖"},
+    {"w": "in advance", "pos": "phr.", "def": "提前"},
+    {"w": "as well as", "pos": "phr.", "def": "以及"}
+]
+
+questions = [
+    {
+        "title": "Questions 27" + DASH + "32",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 3?",
+            "In boxes 27" + DASH + "32 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 27, "prompt": "The Cambridge scientists" + RSQUO + " discovery of the " + LSQUO + "thermometer molecule" + RSQUO + " caused surprise among other scientists.", "answer": "NOT GIVEN", "evidence_sentence": 1},
+            {"number": 28, "prompt": "The target for agricultural production by 2050 could be missed.", "answer": "TRUE", "evidence_sentence": 9},
+            {"number": 29, "prompt": "Wheat and rice suffer from a rise in temperatures.", "answer": "TRUE", "evidence_sentence": 10},
+            {"number": 30, "prompt": "It may be possible to develop crops that require less water.", "answer": "NOT GIVEN", "evidence_sentence": 11},
+            {"number": 31, "prompt": "Plants grow faster in sunlight than in shade.", "answer": "FALSE", "evidence_sentence": 14},
+            {"number": 32, "prompt": "Phytochromes change their state at the same speed day and night.", "answer": "FALSE", "evidence_sentence": 16}
+        ]
+    },
+    {
+        "title": "Questions 33" + DASH + "37",
+        "type": "matching_info",
+        "instructions": [
+            "Reading Passage 3 has eight sections, A" + DASH + "H.",
+            "Which section contains the following information?",
+            "Write the correct letter, A" + DASH + "H, in boxes 33" + DASH + "37 on your answer sheet."
+        ],
+        "items": [
+            {"number": 33, "prompt": "mention of specialists who can make use of the research findings", "answer": "H", "evidence_sentence": 29},
+            {"number": 34, "prompt": "a reference to a potential benefit of the research findings", "answer": "D", "evidence_sentence": 8},
+            {"number": 35, "prompt": "scientific support for a traditional saying", "answer": "G", "evidence_sentence": 23},
+            {"number": 36, "prompt": "a reference to people traditionally making plans based on plant behaviour", "answer": "C", "evidence_sentence": 6},
+            {"number": 37, "prompt": "a reference to where the research has been reported", "answer": "A", "evidence_sentence": 3}
+        ]
+    },
+    {
+        "title": "Questions 38" + DASH + "40",
+        "type": "sentence_completion",
+        "instructions": [
+            "Complete the sentences below.",
+            "Choose NO MORE THAN TWO WORDS from the passage for each answer.",
+            "Write your answers in boxes 38" + DASH + "40 on your answer sheet."
+        ],
+        "items": [
+            {"number": 38, "prompt": "Daffodils are likely to flower early in response to ______ weather.", "answer": "warm (winter)", "evidence_sentence": 22},
+            {"number": 39, "prompt": "If ash trees come into leaf before oak trees, the weather in ______ will probably be wet.", "answer": "summer", "evidence_sentence": 25},
+            {"number": 40, "prompt": "The research was carried out using a particular species of ______.", "answer": "mustard (plant)", "evidence_sentence": 27}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test3-p3",
+    "source": "剑桥雅思16 Test 3 Passage 3",
+    "title": "Plant " + LSQUO + "thermometer" + RSQUO + " triggers springtime growth by measuring night-time heat",
+    "subtitle": "A photoreceptor molecule in plant cells has been found to have a second job as a thermometer after dark " + DASH + " allowing plants to read seasonal temperature changes.",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test3-p3.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

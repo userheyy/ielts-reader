@@ -1,0 +1,539 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c16-test2-p3.json (How to make wise decisions)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+LDQUO = "“"  # "
+RDQUO = "”"  # "
+DASH = "–"   # -
+
+sentences = [
+    # Para 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "Across cultures, wisdom has been considered one of the most revered human qualities.",
+        "zh": "在各种文化中，智慧一直被视为人类最受尊崇的品质之一。",
+        "grammar": {
+            "type": "现在完成时被动",
+            "note": "Across cultures 为状语意为 “在各种文化中”；has been considered 为现在完成时被动；one of the most revered human qualities 作宾语补足语；revered 意为 “受尊崇的”。"
+        },
+        "words": [
+            {"w": "across cultures", "pos": "phr.", "def": "跨文化地；在各文化中"},
+            {"w": "wisdom", "pos": "n.", "def": "智慧"},
+            {"w": "revered", "pos": "adj.", "def": "受尊崇的"},
+            {"w": "quality", "pos": "n.", "def": "品质"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Although the truly wise may seem few and far between, empirical research examining wisdom suggests that it isn" + RSQUO + "t an exceptional trait possessed by a small handful of bearded philosophers after all " + DASH + " in fact, the latest studies suggest that most of us have the ability to make wise decisions, given the right context.",
+        "zh": "尽管真正有智慧的人似乎寥寥无几，但考察智慧的实证研究表明，智慧毕竟并非少数留着胡子的哲学家才拥有的非凡特质——事实上，最新的研究表明，只要环境合适，我们大多数人都有做出明智决定的能力。",
+        "grammar": {
+            "type": "Although 让步 + that 宾语从句 + 破折号 + 独立主格",
+            "note": "Although the truly wise may seem few and far between 为让步从句，the truly wise 为 “the+形容词” 指一类人；examining wisdom 为现在分词定语；suggests that... 为宾语从句；possessed by... 为过去分词定语；given the right context 为独立主格作条件状语。"
+        },
+        "words": [
+            {"w": "few and far between", "pos": "phr.", "def": "寥寥无几；稀少"},
+            {"w": "empirical", "pos": "adj.", "def": "实证的；经验的"},
+            {"w": "exceptional", "pos": "adj.", "def": "非凡的；例外的"},
+            {"w": "trait", "pos": "n.", "def": "特质；特点"},
+            {"w": "given", "pos": "prep.", "def": "考虑到；假如有"}
+        ]
+    },
+    # Para 2
+    {
+        "id": 3,
+        "para": 2,
+        "en": LSQUO + "It appears that experiential, situational, and cultural factors are even more powerful in shaping wisdom than previously imagined," + RSQUO + " says Associate Professor Igor Grossmann of the University of Waterloo in Ontario, Canada.",
+        "zh": "“看来，经验因素、情境因素和文化因素在塑造智慧方面，比人们以往想象的还要更为强大，”加拿大安大略省滑铁卢大学的副教授伊戈尔·格罗斯曼说。",
+        "grammar": {
+            "type": "It appears that + 比较",
+            "note": "It appears that... 为形式主语句，意为 “看来……”；三项并列主语 experiential, situational, and cultural factors；even more powerful... than previously imagined 为比较结构，than 后省略；in shaping wisdom 为介词短语表方面。"
+        },
+        "words": [
+            {"w": "experiential", "pos": "adj.", "def": "经验的；体验的"},
+            {"w": "situational", "pos": "adj.", "def": "情境的"},
+            {"w": "shape", "pos": "v.", "def": "塑造"},
+            {"w": "associate professor", "pos": "phr.", "def": "副教授"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 2,
+        "en": LSQUO + "Recent empirical findings from cognitive, developmental, social, and personality psychology cumulatively suggest that people" + RSQUO + "s ability to reason wisely varies dramatically across experiential and situational contexts.",
+        "zh": "“来自认知心理学、发展心理学、社会心理学和人格心理学的近期实证研究结果累积起来表明，人们明智推理的能力在不同的经验情境和情境背景下差异极大。",
+        "grammar": {
+            "type": "that 宾语从句",
+            "note": "主语为一长串 Recent empirical findings from... psychology；cumulatively suggest that... 为宾语从句；people's ability to reason wisely 中 to reason wisely 为不定式定语；vary across 意为 “在……之间变化”；dramatically 意为 “显著地”。"
+        },
+        "words": [
+            {"w": "cognitive", "pos": "adj.", "def": "认知的"},
+            {"w": "developmental", "pos": "adj.", "def": "发展的"},
+            {"w": "cumulatively", "pos": "adv.", "def": "累积地"},
+            {"w": "reason", "pos": "v.", "def": "推理；思考"},
+            {"w": "dramatically", "pos": "adv.", "def": "显著地；剧烈地"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "Understanding the role of such contextual factors offers unique insights into understanding wisdom in daily life, as well as how it can be enhanced and taught." + RSQUO,
+        "zh": "理解这类情境因素所起的作用，能为理解日常生活中的智慧、以及智慧如何得以增强和传授，提供独特的洞见。”",
+        "grammar": {
+            "type": "动名词主语 + as well as",
+            "note": "Understanding the role of such contextual factors 为动名词短语作主语；offer insights into 意为 “提供对……的洞见”；into 后接 understanding wisdom 与 how 从句，由 as well as 并列；how it can be enhanced and taught 为宾语从句。"
+        },
+        "words": [
+            {"w": "contextual", "pos": "adj.", "def": "情境的；上下文的"},
+            {"w": "insight", "pos": "n.", "def": "洞见；见解"},
+            {"w": "as well as", "pos": "phr.", "def": "以及"},
+            {"w": "enhance", "pos": "v.", "def": "增强；提高"}
+        ]
+    },
+    # Para 3
+    {
+        "id": 6,
+        "para": 3,
+        "en": "It seems that it" + RSQUO + "s not so much that some people simply possess wisdom and others lack it, but that our ability to reason wisely depends on a variety of external factors.",
+        "zh": "看来，问题与其说在于某些人天生拥有智慧而另一些人缺乏智慧，不如说在于我们明智推理的能力取决于各种外部因素。",
+        "grammar": {
+            "type": "not so much ... but (rather) ...",
+            "note": "It seems that... 为形式主语；not so much that... but that... 为 “与其说……不如说……” 结构，连接两个 that 从句；depend on 意为 “取决于”；a variety of 意为 “各种各样的”。"
+        },
+        "words": [
+            {"w": "not so much ... as/but", "pos": "phr.", "def": "与其说……不如说……"},
+            {"w": "possess", "pos": "v.", "def": "拥有"},
+            {"w": "lack", "pos": "v.", "def": "缺乏"},
+            {"w": "external", "pos": "adj.", "def": "外部的"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 3,
+        "en": LSQUO + "It is impossible to characterize thought processes attributed to wisdom without considering the role of contextual factors," + RSQUO + " explains Grossmann.",
+        "zh": "“如果不考虑情境因素所起的作用，就不可能刻画那些被归因于智慧的思维过程，”格罗斯曼解释道。",
+        "grammar": {
+            "type": "it 形式主语 + without 介词状语",
+            "note": "It is impossible to characterize... 为形式主语句；attributed to wisdom 为过去分词定语修饰 thought processes；without considering... 为介词短语表条件（“如果不……”）；characterize 意为 “刻画、描述特征”。"
+        },
+        "words": [
+            {"w": "characterize", "pos": "v.", "def": "刻画；描述特征"},
+            {"w": "thought process", "pos": "phr.", "def": "思维过程"},
+            {"w": "attribute to", "pos": "phr.", "def": "把……归因于"},
+            {"w": "consider", "pos": "v.", "def": "考虑"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 3,
+        "en": LSQUO + "In other words, wisdom is not solely an " + LDQUO + "inner quality" + RDQUO + " but rather unfolds as a function of situations people happen to be in.",
+        "zh": "“换句话说，智慧不仅仅是一种“内在品质”，而更多是随着人们所处的具体情境而展现出来的。",
+        "grammar": {
+            "type": "not solely ... but rather + 省略定语从句",
+            "note": "not solely... but rather... 为 “不仅仅……而是……” 结构；unfolds as a function of 意为 “作为……的函数/随……而展现”；situations (that) people happen to be in 为省略关系词的定语从句；happen to be 意为 “恰好处于”。"
+        },
+        "words": [
+            {"w": "solely", "pos": "adv.", "def": "仅仅；唯一地"},
+            {"w": "inner quality", "pos": "phr.", "def": "内在品质"},
+            {"w": "unfold", "pos": "v.", "def": "展现；展开"},
+            {"w": "happen to", "pos": "phr.", "def": "恰好；碰巧"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 3,
+        "en": "Some situations are more likely to promote wisdom than others." + RSQUO,
+        "zh": "有些情境比其他情境更有可能促进智慧的产生。”",
+        "grammar": {
+            "type": "比较结构",
+            "note": "Some situations are more likely to promote wisdom than others 为比较句；be likely to 意为 “有可能”；than others 中 others 指代 other situations；promote 意为 “促进”。"
+        },
+        "words": [
+            {"w": "be likely to", "pos": "phr.", "def": "有可能"},
+            {"w": "promote", "pos": "v.", "def": "促进"}
+        ]
+    },
+    # Para 4
+    {
+        "id": 10,
+        "para": 4,
+        "en": "Coming up with a definition of wisdom is challenging, but Grossmann and his colleagues have identified four key characteristics as part of a framework of wise reasoning.",
+        "zh": "为智慧下定义是件难事，但格罗斯曼和同事们已确定了四个关键特征，作为明智推理框架的组成部分。",
+        "grammar": {
+            "type": "动名词主语 + but 转折",
+            "note": "Coming up with a definition of wisdom 为动名词短语作主语；come up with 意为 “想出、提出”；but 转折；have identified... as part of... 意为 “把……确定为……的一部分”；framework 意为 “框架”。"
+        },
+        "words": [
+            {"w": "come up with", "pos": "phr.", "def": "想出；提出"},
+            {"w": "definition", "pos": "n.", "def": "定义"},
+            {"w": "identify", "pos": "v.", "def": "确定；识别"},
+            {"w": "framework", "pos": "n.", "def": "框架；体系"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 4,
+        "en": "One is intellectual humility or recognition of the limits of our own knowledge, and another is appreciation of perspectives wider than the issue at hand.",
+        "zh": "其一是智识上的谦逊，即认识到自身知识的局限；另一个是能够欣赏比眼前问题更为宽广的种种视角。",
+        "grammar": {
+            "type": "One ... and another ... + 比较",
+            "note": "One is... and another is... 为并列列举；intellectual humility or recognition of... 中 or 表同位解释；perspectives wider than the issue at hand 中 wider than... 为后置定语；the issue at hand 意为 “手头/眼前的问题”。"
+        },
+        "words": [
+            {"w": "intellectual humility", "pos": "phr.", "def": "智识上的谦逊"},
+            {"w": "recognition", "pos": "n.", "def": "认识；认可"},
+            {"w": "appreciation", "pos": "n.", "def": "欣赏；领会"},
+            {"w": "the issue at hand", "pos": "phr.", "def": "手头/眼前的问题"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 4,
+        "en": "Sensitivity to the possibility of change in social relations is also key, along with compromise or integration of different attitudes and beliefs.",
+        "zh": "对社会关系可能发生变化的敏感性也是关键，与之相伴的还有对不同态度和信念的折中或整合。",
+        "grammar": {
+            "type": "along with 伴随",
+            "note": "Sensitivity to... is also key 为主系表；along with compromise or integration of... 为介词短语作伴随状语；sensitivity to 意为 “对……的敏感性”；integration of 意为 “对……的整合”。"
+        },
+        "words": [
+            {"w": "sensitivity", "pos": "n.", "def": "敏感性"},
+            {"w": "social relations", "pos": "phr.", "def": "社会关系"},
+            {"w": "compromise", "pos": "n.", "def": "折中；妥协"},
+            {"w": "integration", "pos": "n.", "def": "整合；结合"}
+        ]
+    },
+    # Para 5
+    {
+        "id": 13,
+        "para": 5,
+        "en": "Grossmann and his colleagues have also found that one of the most reliable ways to support wisdom in our own day-to-day decisions is to look at scenarios from a third-party perspective, as though giving advice to a friend.",
+        "zh": "格罗斯曼和同事们还发现，在我们自己的日常决策中，支持智慧最可靠的方法之一，就是从第三方的视角来看待各种情形，仿佛在给朋友出主意一样。",
+        "grammar": {
+            "type": "that 宾语从句 + as though",
+            "note": "have found that... 为宾语从句；one of the most reliable ways to support wisdom... is to look at... 为主系表，to look 为不定式表语；as though giving advice to a friend 为 as though 引导的方式状语（省略主语和 be）；third-party perspective 意为 “第三方视角”。"
+        },
+        "words": [
+            {"w": "reliable", "pos": "adj.", "def": "可靠的"},
+            {"w": "day-to-day", "pos": "adj.", "def": "日常的"},
+            {"w": "scenario", "pos": "n.", "def": "情形；设想"},
+            {"w": "third-party", "pos": "adj.", "def": "第三方的"},
+            {"w": "as though", "pos": "phr.", "def": "仿佛；好像"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 5,
+        "en": "Research suggests that when adopting a first-person viewpoint we focus on " + LSQUO + "the focal features of the environment" + RSQUO + " and when we adopt a third-person, " + LSQUO + "observer" + RSQUO + " viewpoint we reason more broadly and focus more on interpersonal and moral ideals such as justice and impartiality.",
+        "zh": "研究表明，当采用第一人称视角时，我们会聚焦于“环境的核心特征”；而当我们采用第三人称的“旁观者”视角时，我们会更宽广地推理，并更关注人际与道德层面的理想，如公正和公平。",
+        "grammar": {
+            "type": "that 宾语从句 + 两个 when 从句并列",
+            "note": "suggests that... 为宾语从句；从句内含两个 when 时间状语从句并列（when adopting... / when we adopt...），前者为分词形式；focus on 意为 “聚焦于”；such as justice and impartiality 为举例。"
+        },
+        "words": [
+            {"w": "adopt", "pos": "v.", "def": "采用；采取"},
+            {"w": "focal", "pos": "adj.", "def": "焦点的；核心的"},
+            {"w": "interpersonal", "pos": "adj.", "def": "人际的"},
+            {"w": "impartiality", "pos": "n.", "def": "公正；不偏不倚"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 5,
+        "en": "Looking at problems from this more expansive viewpoint appears to foster cognitive processes related to wise decisions.",
+        "zh": "从这种更为开阔的视角看待问题，似乎能够培养与明智决策相关的认知过程。",
+        "grammar": {
+            "type": "动名词主语 + 过去分词定语",
+            "note": "Looking at problems from this more expansive viewpoint 为动名词短语作主语；appears to foster 意为 “似乎能培养”；related to wise decisions 为过去分词短语作定语修饰 cognitive processes；expansive 意为 “开阔的”。"
+        },
+        "words": [
+            {"w": "expansive", "pos": "adj.", "def": "开阔的；广泛的"},
+            {"w": "foster", "pos": "v.", "def": "培养；促进"},
+            {"w": "cognitive process", "pos": "phr.", "def": "认知过程"},
+            {"w": "be related to", "pos": "phr.", "def": "与……相关"}
+        ]
+    },
+    # Para 6
+    {
+        "id": 16,
+        "para": 6,
+        "en": "What are we to do, then, when confronted with situations like a disagreement with a spouse or negotiating a contract at work, that require us to take a personal stake?",
+        "zh": "那么，当我们面对诸如与配偶发生分歧、或在工作中谈判合同这类要求我们切身介入的情境时，我们该怎么办呢？",
+        "grammar": {
+            "type": "be to do + when 从句 + that 定语从句",
+            "note": "What are we to do 中 be to do 表 “该做什么”；when confronted with... 为省略主语的时间状语；that require us to take a personal stake 为定语从句修饰 situations；take a personal stake 意为 “有切身利害、切身介入”。"
+        },
+        "words": [
+            {"w": "be confronted with", "pos": "phr.", "def": "面对；遭遇"},
+            {"w": "spouse", "pos": "n.", "def": "配偶"},
+            {"w": "negotiate", "pos": "v.", "def": "谈判；协商"},
+            {"w": "personal stake", "pos": "phr.", "def": "切身利害；个人利益"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 6,
+        "en": "Grossmann argues that even when we aren" + RSQUO + "t able to change the situation, we can still evaluate these experiences from different perspectives.",
+        "zh": "格罗斯曼认为，即使我们无法改变处境，我们仍然可以从不同的视角来评估这些经历。",
+        "grammar": {
+            "type": "that 宾语从句 + even when 让步",
+            "note": "argues that... 为宾语从句；even when we aren't able to change the situation 为 even when 引导的让步状语从句；主句 we can still evaluate these experiences from different perspectives；evaluate 意为 “评估”。"
+        },
+        "words": [
+            {"w": "argue", "pos": "v.", "def": "认为；主张"},
+            {"w": "evaluate", "pos": "v.", "def": "评估；评价"},
+            {"w": "perspective", "pos": "n.", "def": "视角；观点"}
+        ]
+    },
+    # Para 7
+    {
+        "id": 18,
+        "para": 7,
+        "en": "For example, in one experiment that took place during the peak of a recent economic recession, graduating college seniors were asked to reflect on their job prospects.",
+        "zh": "例如，在最近一次经济衰退高峰期进行的一项实验中，即将毕业的大学生被要求思考他们的就业前景。",
+        "grammar": {
+            "type": "that 定语从句 + 被动",
+            "note": "in one experiment that took place during... 含 that 定语从句修饰 experiment；graduating college seniors were asked to reflect on... 为被动，ask sb to do 的被动形式；reflect on 意为 “思考、反思”；job prospects 意为 “就业前景”。"
+        },
+        "words": [
+            {"w": "experiment", "pos": "n.", "def": "实验"},
+            {"w": "peak", "pos": "n.", "def": "高峰；顶点"},
+            {"w": "recession", "pos": "n.", "def": "衰退；不景气"},
+            {"w": "reflect on", "pos": "phr.", "def": "思考；反思"},
+            {"w": "prospect", "pos": "n.", "def": "前景；前途"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 7,
+        "en": "The students were instructed to imagine their career either " + LSQUO + "as if you were a distant observer" + RSQUO + " or " + LSQUO + "before your own eyes as if you were right there" + RSQUO + ".",
+        "zh": "学生们被要求想象自己的职业生涯，要么“仿佛你是一个远处的旁观者”，要么“就在你眼前，仿佛你身临其境”。",
+        "grammar": {
+            "type": "被动 + either ... or ... + as if 虚拟",
+            "note": "were instructed to imagine 为被动；either 'as if...' or 'before your own eyes as if...' 为两种想象方式并列；两处 as if you were... 为虚拟语气（与现实相反）；distant observer 意为 “远处的旁观者”。"
+        },
+        "words": [
+            {"w": "instruct", "pos": "v.", "def": "指示；要求"},
+            {"w": "imagine", "pos": "v.", "def": "想象"},
+            {"w": "distant", "pos": "adj.", "def": "遥远的；疏远的"},
+            {"w": "as if", "pos": "phr.", "def": "仿佛；好像"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 7,
+        "en": "Participants in the group assigned to the " + LSQUO + "distant observer" + RSQUO + " role displayed more wisdom-related reasoning (intellectual humility and recognition of change) than did participants in the control group.",
+        "zh": "被分配到“远处旁观者”角色的那组参与者，比对照组的参与者表现出更多与智慧相关的推理（智识上的谦逊和对变化的认识）。",
+        "grammar": {
+            "type": "过去分词定语 + than 比较倒装",
+            "note": "assigned to the 'distant observer' role 为过去分词短语作定语修饰 group；主句谓语 displayed more wisdom-related reasoning；than did participants in the control group 为比较状语，did 为助动词倒装；control group 意为 “对照组”。"
+        },
+        "words": [
+            {"w": "participant", "pos": "n.", "def": "参与者"},
+            {"w": "assign", "pos": "v.", "def": "分配；指派"},
+            {"w": "display", "pos": "v.", "def": "表现；展示"},
+            {"w": "control group", "pos": "phr.", "def": "对照组"}
+        ]
+    },
+    # Para 8
+    {
+        "id": 21,
+        "para": 8,
+        "en": "In another study, couples in long-term romantic relationships were instructed to visualize an unresolved relationship conflict either through the eyes of an outsider or from their own perspective.",
+        "zh": "在另一项研究中，处于长期恋爱关系中的伴侣被要求想象一场尚未解决的关系冲突，要么通过局外人的眼光，要么从他们自己的视角。",
+        "grammar": {
+            "type": "被动 + either ... or ...",
+            "note": "were instructed to visualize 为被动；an unresolved relationship conflict 为宾语；either through the eyes of an outsider or from their own perspective 为两种方式并列；visualize 意为 “想象、设想”；unresolved 意为 “未解决的”。"
+        },
+        "words": [
+            {"w": "couple", "pos": "n.", "def": "伴侣；一对"},
+            {"w": "romantic", "pos": "adj.", "def": "恋爱的；浪漫的"},
+            {"w": "visualize", "pos": "v.", "def": "想象；使形象化"},
+            {"w": "unresolved", "pos": "adj.", "def": "未解决的"},
+            {"w": "conflict", "pos": "n.", "def": "冲突"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 8,
+        "en": "Participants then discussed the incident with their partner for 10 minutes, after which they wrote down their thoughts about it.",
+        "zh": "然后参与者与伴侣就该事件讨论了10分钟，之后写下他们对此的想法。",
+        "grammar": {
+            "type": "after which 定语从句",
+            "note": "主句 Participants then discussed the incident with their partner；after which they wrote down their thoughts 为 “介词+which” 引导的非限制性定语从句，which 指代前面的讨论；write down 意为 “写下”。"
+        },
+        "words": [
+            {"w": "discuss", "pos": "v.", "def": "讨论"},
+            {"w": "incident", "pos": "n.", "def": "事件"},
+            {"w": "partner", "pos": "n.", "def": "伴侣；搭档"},
+            {"w": "write down", "pos": "phr.", "def": "写下；记下"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 8,
+        "en": "Couples in the " + LSQUO + "other" + RSQUO + "s eyes" + RSQUO + " condition were significantly more likely to rely on wise reasoning " + DASH + " recognizing others" + RSQUO + " perspectives and searching for a compromise " + DASH + " compared to the couples in the egocentric condition.",
+        "zh": "与处于“自我中心”状态的伴侣相比，处于“他人眼光”状态的伴侣明显更有可能依靠明智的推理——即承认他人的视角并寻求折中。",
+        "grammar": {
+            "type": "破折号插入 + compared to",
+            "note": "主句 Couples... were significantly more likely to rely on wise reasoning；破折号间 recognizing... and searching for... 为现在分词短语对 wise reasoning 作解释；compared to the couples in the egocentric condition 为比较状语；egocentric 意为 “自我中心的”。"
+        },
+        "words": [
+            {"w": "significantly", "pos": "adv.", "def": "显著地"},
+            {"w": "rely on", "pos": "phr.", "def": "依靠；依赖"},
+            {"w": "search for", "pos": "phr.", "def": "寻找；寻求"},
+            {"w": "egocentric", "pos": "adj.", "def": "自我中心的"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 8,
+        "en": LSQUO + "Ego-decentering promotes greater focus on others and enables a bigger picture, conceptual view of the experience, affording recognition of intellectual humility and change," + RSQUO + " says Grossmann.",
+        "zh": "“去自我中心化能促使人更多地关注他人，使人对经历产生一种更宏观、更概念化的看法，从而带来对智识谦逊与变化的认识，”格罗斯曼说。",
+        "grammar": {
+            "type": "并列谓语 + 现在分词状语",
+            "note": "Ego-decentering 为动名词作主语；两个并列谓语 promotes... and enables...；affording recognition of... 为现在分词作结果状语；a bigger picture, conceptual view 中两形容词性成分并列修饰 view；ego-decentering 意为 “去自我中心化”。"
+        },
+        "words": [
+            {"w": "ego-decentering", "pos": "n.", "def": "去自我中心化"},
+            {"w": "enable", "pos": "v.", "def": "使能够；使成为可能"},
+            {"w": "conceptual", "pos": "adj.", "def": "概念的"},
+            {"w": "afford", "pos": "v.", "def": "提供；给予"}
+        ]
+    },
+    # Para 9
+    {
+        "id": 25,
+        "para": 9,
+        "en": "We might associate wisdom with intelligence or particular personality traits, but research shows only a small positive relationship between wise thinking and crystallized intelligence and the personality traits of openness and agreeableness.",
+        "zh": "我们或许会把智慧与智力或特定的人格特质联系起来，但研究显示，明智思维与晶体智力、以及开放性和宜人性这两种人格特质之间，只存在微弱的正相关关系。",
+        "grammar": {
+            "type": "associate ... with + but 转折",
+            "note": "associate A with B 意为 “把 A 与 B 联系起来”；but research shows... 为转折分句；a small positive relationship between X and Y 中 Y 含 crystallized intelligence and the personality traits of...；crystallized intelligence 意为 “晶体智力”。"
+        },
+        "words": [
+            {"w": "associate ... with", "pos": "phr.", "def": "把……与……联系"},
+            {"w": "intelligence", "pos": "n.", "def": "智力"},
+            {"w": "crystallized intelligence", "pos": "phr.", "def": "晶体智力"},
+            {"w": "agreeableness", "pos": "n.", "def": "宜人性；随和"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 9,
+        "en": LSQUO + "It is remarkable how much people can vary in their wisdom from one situation to the next, and how much stronger such contextual effects are for understanding the relationship between wise judgment and its social and affective outcomes as compared to the generalized " + LDQUO + "traits" + RDQUO + "," + RSQUO + " Grossmann explains.",
+        "zh": "“令人瞩目的是，人们的智慧在不同情境之间会有多大的差异，以及在理解明智判断与其社会性和情感性结果之间的关系时，相比笼统的“特质”，这类情境效应要强大得多，”格罗斯曼解释道。",
+        "grammar": {
+            "type": "it 形式主语 + 两个 how much 感叹从句",
+            "note": "It is remarkable how much... and how much... 为形式主语句，两个 how much 引导主语从句并列；vary from one situation to the next 意为 “在不同情境间变化”；as compared to 意为 “与……相比”；affective 意为 “情感的”。"
+        },
+        "words": [
+            {"w": "remarkable", "pos": "adj.", "def": "非凡的；引人注目的"},
+            {"w": "vary", "pos": "v.", "def": "变化；不同"},
+            {"w": "affective", "pos": "adj.", "def": "情感的"},
+            {"w": "generalized", "pos": "adj.", "def": "笼统的；一般化的"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 9,
+        "en": LSQUO + "That is, knowing how wisely a person behaves in a given situation is more informative for understanding their emotions or likelihood to forgive [or] retaliate as compared to knowing whether the person may be wise " + LDQUO + "in general" + RDQUO + "." + RSQUO,
+        "zh": "“也就是说，与知道一个人是否“总体上”有智慧相比，了解他在特定情境中行为有多明智，对于理解其情绪、以及其原谅[或]报复的可能性更有参考价值。”",
+        "grammar": {
+            "type": "动名词主语 + as compared to + whether 宾语从句",
+            "note": "That is 意为 “也就是说”；knowing how wisely a person behaves... 为动名词主语，含 how 从句；is more informative for... 为主系表；as compared to knowing whether... 为比较状语，whether 引导宾语从句；informative 意为 “提供信息的、有参考价值的”。"
+        },
+        "words": [
+            {"w": "that is", "pos": "phr.", "def": "也就是说"},
+            {"w": "informative", "pos": "adj.", "def": "提供信息的；有益的"},
+            {"w": "likelihood", "pos": "n.", "def": "可能性"},
+            {"w": "retaliate", "pos": "v.", "def": "报复"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "few and far between", "pos": "phr.", "def": "寥寥无几；稀少"},
+    {"w": "not so much ... as/but", "pos": "phr.", "def": "与其说……不如说……"},
+    {"w": "come up with", "pos": "phr.", "def": "想出；提出"},
+    {"w": "the issue at hand", "pos": "phr.", "def": "手头/眼前的问题"},
+    {"w": "as though", "pos": "phr.", "def": "仿佛；好像"},
+    {"w": "be confronted with", "pos": "phr.", "def": "面对；遭遇"},
+    {"w": "reflect on", "pos": "phr.", "def": "思考；反思"},
+    {"w": "rely on", "pos": "phr.", "def": "依靠；依赖"},
+    {"w": "associate ... with", "pos": "phr.", "def": "把……与……联系"},
+    {"w": "that is", "pos": "phr.", "def": "也就是说"}
+]
+
+questions = [
+    {
+        "title": "Questions 27" + DASH + "30",
+        "type": "multiple_choice",
+        "instructions": [
+            "Choose the correct letter, A, B, C or D.",
+            "Write the correct letter in boxes 27" + DASH + "30 on your answer sheet."
+        ],
+        "items": [
+            {"number": 27, "prompt": "What point does the writer make in the first paragraph?\nA Wisdom appears to be unique to the human race.\nB A basic assumption about wisdom may be wrong.\nC Concepts of wisdom may depend on the society we belong to.\nD There is still much to be discovered about the nature of wisdom.", "answer": "B", "evidence_sentence": 2},
+            {"number": 28, "prompt": "What does Igor Grossmann suggest about the ability to make wise decisions?\nA It can vary greatly from one person to another.\nB Earlier research into it was based on unreliable data.\nC The importance of certain influences on it was underestimated.\nD Various branches of psychology define it according to their own criteria.", "answer": "C", "evidence_sentence": 3},
+            {"number": 29, "prompt": "According to the third paragraph, Grossmann claims that the level of wisdom an individual shows\nA can be greater than they think it is.\nB will be different in different circumstances.\nC may be determined by particular aspects of their personality.\nD should develop over time as a result of their life experiences.", "answer": "B", "evidence_sentence": 8},
+            {"number": 30, "prompt": "What is described in the fifth paragraph?\nA a difficulty encountered when attempting to reason wisely\nB an example of the type of person who is likely to reason wisely\nC a controversial view about the benefits of reasoning wisely\nD a recommended strategy that can help people to reason wisely", "answer": "D", "evidence_sentence": 13}
+        ]
+    },
+    {
+        "title": "Questions 31" + DASH + "35",
+        "type": "summary_wordlist",
+        "instructions": [
+            "Complete the summary using the list of words, A" + DASH + "J, below.",
+            "Write the correct letter, A" + DASH + "J, in boxes 31" + DASH + "35 on your answer sheet.",
+            "The characteristics of wise reasoning",
+            "Word list: A opinions  B confidence  C view  D modesty  E problems  F objectivity  G fairness  H experiences  I range  J reasons"
+        ],
+        "items": [
+            {"number": 31, "prompt": "It is important to have a certain degree of 31 ______ regarding the extent of our knowledge.", "answer": "D", "evidence_sentence": 11},
+            {"number": 32, "prompt": "... and to take into account 32 ______ which may not be the same as our own.", "answer": "A", "evidence_sentence": 11},
+            {"number": 33, "prompt": "We should also be able to take a broad 33 ______ of any situation.", "answer": "C", "evidence_sentence": 11},
+            {"number": 34, "prompt": "Grossmann also believes that it is better to regard scenarios with 34 ______.", "answer": "F", "evidence_sentence": 14},
+            {"number": 35, "prompt": "By avoiding the first-person perspective, we focus more on 35 ______ and on other moral ideals.", "answer": "G", "evidence_sentence": 14}
+        ]
+    },
+    {
+        "title": "Questions 36" + DASH + "40",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 3?",
+            "In boxes 36" + DASH + "40 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 36, "prompt": "Students participating in the job prospects experiment could choose one of two perspectives to take.", "answer": "FALSE", "evidence_sentence": 20},
+            {"number": 37, "prompt": "Participants in the couples experiment were aware that they were taking part in a study about wise reasoning.", "answer": "NOT GIVEN", "evidence_sentence": 21},
+            {"number": 38, "prompt": "In the couples experiments, the length of the couples" + RSQUO + " relationships had an impact on the results.", "answer": "NOT GIVEN", "evidence_sentence": 21},
+            {"number": 39, "prompt": "In both experiments, the participants who looked at the situation from a more detached viewpoint tended to make wiser decisions.", "answer": "TRUE", "evidence_sentence": 23},
+            {"number": 40, "prompt": "Grossmann believes that a person" + RSQUO + "s wisdom is determined by their intelligence to only a very limited extent.", "answer": "TRUE", "evidence_sentence": 25}
+        ]
+    }
+]
+
+data = {
+    "id": "c16-test2-p3",
+    "source": "剑桥雅思16 Test 2 Passage 3",
+    "title": "How to make wise decisions",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c16-test2-p3.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))
