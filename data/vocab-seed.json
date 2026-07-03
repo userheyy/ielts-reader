@@ -1,7 +1,7 @@
 {
   "meta": {
     "source": "engra IELTS.json (3575) 按 ECDICT 词频排序，分批滚动生产",
-    "generated_batches": 2,
+    "generated_batches": 3,
     "batch_size_note": "每批约 40 词，逐词人工核对词根/词形，联想宁缺毋滥",
     "total_target": 3575,
     "attribution": "词表 engra(MIT)；词频/词形 ECDICT(MIT)；词根参考 generated-english-roots-list(MIT) 与 word-root-workshop(MIT)；联想受 DictionaryByGPT4(CC-BY-SA) 启发，文字均经重写"
@@ -5307,6 +5307,3387 @@
             "word": "administrative",
             "pos": "adj.",
             "def": "行政的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "occur",
+      "phonetic": "əˈkɜː",
+      "pos": "v.",
+      "def": "发生；出现在脑海",
+      "cefr": "B1",
+      "freq_rank": 756,
+      "sentence_en": "Earthquakes occur frequently in this region.",
+      "sentence_zh": "这个地区地震频繁发生。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "oc",
+            "type": "prefix",
+            "gloss": "朝向(ob 变体)"
+          },
+          {
+            "text": "cur",
+            "type": "root",
+            "gloss": "跑"
+          }
+        ],
+        "derivation": "oc(朝向)+cur(跑) → 事情朝你跑来 → 发生",
+        "family": {
+          "root": "cur",
+          "gloss": "跑",
+          "words": [
+            {
+              "word": "current",
+              "def": "当前的；水流"
+            },
+            {
+              "word": "recur",
+              "def": "再次发生"
+            },
+            {
+              "word": "excursion",
+              "def": "远足"
+            },
+            {
+              "word": "currency",
+              "def": "货币"
+            }
+          ]
+        },
+        "mnemonic": "cur=跑(想 current 水流);一件事朝你(oc-)跑过来撞上,就是 occur 发生;occur to sb=突然想到。",
+        "forms": [
+          {
+            "word": "occurred",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "occurrence",
+            "pos": "n.",
+            "def": "发生；事件"
+          }
+        ]
+      }
+    },
+    {
+      "word": "indicate",
+      "phonetic": "ˈɪndɪkeɪt",
+      "pos": "v.",
+      "def": "表明，指示，指出",
+      "cefr": "B2",
+      "freq_rank": 785,
+      "sentence_en": "The results indicate a clear trend.",
+      "sentence_zh": "结果表明了一个明显的趋势。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "in",
+            "type": "prefix",
+            "gloss": "向"
+          },
+          {
+            "text": "dic",
+            "type": "root",
+            "gloss": "说"
+          },
+          {
+            "text": "ate",
+            "type": "suffix",
+            "gloss": "动词后缀"
+          }
+        ],
+        "derivation": "in(向)+dic(说) → 向人说明、指出 → 表明",
+        "family": {
+          "root": "dic/dict",
+          "gloss": "说",
+          "words": [
+            {
+              "word": "predict",
+              "def": "预测"
+            },
+            {
+              "word": "dictate",
+              "def": "口述"
+            },
+            {
+              "word": "contradict",
+              "def": "反驳"
+            },
+            {
+              "word": "dedicate",
+              "def": "奉献"
+            }
+          ]
+        },
+        "mnemonic": "dic=说(想 predict);向人明白地说出、点出,就是 indicate 表明、指示。",
+        "forms": [
+          {
+            "word": "indication",
+            "pos": "n.",
+            "def": "迹象，指示"
+          },
+          {
+            "word": "indicator",
+            "pos": "n.",
+            "def": "指标；指示器"
+          }
+        ]
+      }
+    },
+    {
+      "word": "determine",
+      "phonetic": "dɪˈtɜːmɪn",
+      "pos": "v.",
+      "def": "决定；查明；下决心",
+      "cefr": "B2",
+      "freq_rank": 773,
+      "sentence_en": "Your effort will determine your success.",
+      "sentence_zh": "你的努力将决定你的成功。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "de",
+            "type": "prefix",
+            "gloss": "彻底"
+          },
+          {
+            "text": "termin",
+            "type": "root",
+            "gloss": "界限，边界"
+          },
+          {
+            "text": "e",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "de(彻底)+termin(界限) → 彻底划定界限 → 决定、确定",
+        "family": {
+          "root": "termin",
+          "gloss": "界限、结束",
+          "words": [
+            {
+              "word": "terminal",
+              "def": "终点站"
+            },
+            {
+              "word": "terminate",
+              "def": "终止"
+            },
+            {
+              "word": "term",
+              "def": "期限；术语"
+            }
+          ]
+        },
+        "mnemonic": "termin=界限(想 terminal 终点);把范围彻底(de-)划死、定死,就是 determine 决定、查明。",
+        "forms": [
+          {
+            "word": "determined",
+            "pos": "adj.",
+            "def": "坚定的"
+          },
+          {
+            "word": "determination",
+            "pos": "n.",
+            "def": "决心；测定"
+          }
+        ]
+      }
+    },
+    {
+      "word": "respond",
+      "phonetic": "rɪˈspɒnd",
+      "pos": "v.",
+      "def": "回应，回答；作出反应",
+      "cefr": "B1",
+      "freq_rank": 920,
+      "sentence_en": "She did not respond to my email.",
+      "sentence_zh": "她没有回复我的邮件。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "re",
+            "type": "prefix",
+            "gloss": "回，返"
+          },
+          {
+            "text": "spond",
+            "type": "root",
+            "gloss": "承诺，回答"
+          }
+        ],
+        "derivation": "re(回)+spond(答) → 回过头来答复 → 回应",
+        "family": {
+          "root": "spond/spons",
+          "gloss": "承诺、回答",
+          "words": [
+            {
+              "word": "response",
+              "def": "回应"
+            },
+            {
+              "word": "responsible",
+              "def": "负责的"
+            },
+            {
+              "word": "sponsor",
+              "def": "赞助者"
+            },
+            {
+              "word": "correspond",
+              "def": "符合；通信"
+            }
+          ]
+        },
+        "mnemonic": "spond=回答;对方来一句你回(re-)一句,就是 respond 回应;名词 response。",
+        "forms": [
+          {
+            "word": "response",
+            "pos": "n.",
+            "def": "回应"
+          },
+          {
+            "word": "responsive",
+            "pos": "adj.",
+            "def": "反应积极的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "impact",
+      "phonetic": "ˈɪmpækt",
+      "pos": "n./v.",
+      "def": "影响，冲击",
+      "cefr": "B2",
+      "freq_rank": 919,
+      "sentence_en": "Social media has a huge impact on teenagers.",
+      "sentence_zh": "社交媒体对青少年有巨大影响。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "im",
+            "type": "prefix",
+            "gloss": "向内，进入"
+          },
+          {
+            "text": "pact",
+            "type": "root",
+            "gloss": "打紧，钉牢"
+          }
+        ],
+        "derivation": "im(向内)+pact(打) → 猛地撞进去 → 冲击、影响",
+        "family": {
+          "root": "pact",
+          "gloss": "打紧、钉牢",
+          "words": [
+            {
+              "word": "compact",
+              "def": "紧凑的"
+            },
+            {
+              "word": "pact",
+              "def": "协定"
+            }
+          ]
+        },
+        "mnemonic": "pact=打紧、撞;一股力量向内(im-)狠狠撞上,就是 impact 冲击、影响。",
+        "forms": [
+          {
+            "word": "impacts",
+            "pos": "n.",
+            "def": "影响(复数)"
+          },
+          {
+            "word": "impacted",
+            "pos": "adj.",
+            "def": "受影响的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "establish",
+      "phonetic": "ɪˈstæblɪʃ",
+      "pos": "v.",
+      "def": "建立，确立；查实",
+      "cefr": "B2",
+      "freq_rank": 896,
+      "sentence_en": "The company was established in 1990.",
+      "sentence_zh": "这家公司成立于1990年。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "e",
+            "type": "prefix",
+            "gloss": "加强"
+          },
+          {
+            "text": "st",
+            "type": "root",
+            "gloss": "站，立"
+          },
+          {
+            "text": "abl",
+            "type": "root",
+            "gloss": "能"
+          },
+          {
+            "text": "ish",
+            "type": "suffix",
+            "gloss": "动词后缀"
+          }
+        ],
+        "derivation": "e+st(站立) → 使稳稳立起来 → 建立、确立",
+        "family": {
+          "root": "st/sta",
+          "gloss": "站、立",
+          "words": [
+            {
+              "word": "stable",
+              "def": "稳定的"
+            },
+            {
+              "word": "constant",
+              "def": "恒定的"
+            },
+            {
+              "word": "distance",
+              "def": "距离"
+            },
+            {
+              "word": "status",
+              "def": "状态"
+            }
+          ]
+        },
+        "mnemonic": "st=站;让一个机构/事实稳稳站立起来,就是 establish 建立、确立。",
+        "forms": [
+          {
+            "word": "established",
+            "pos": "adj.",
+            "def": "已确立的"
+          },
+          {
+            "word": "establishment",
+            "pos": "n.",
+            "def": "建立；机构"
+          }
+        ]
+      }
+    },
+    {
+      "word": "standard",
+      "phonetic": "ˈstændəd",
+      "pos": "n./adj.",
+      "def": "标准，规格；标准的",
+      "cefr": "B1",
+      "freq_rank": 806,
+      "sentence_en": "The product meets international standards.",
+      "sentence_zh": "该产品符合国际标准。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "stand",
+            "type": "root",
+            "gloss": "站立"
+          },
+          {
+            "text": "ard",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "stand(站立) → 立起来的旗标(供衡量) → 标准",
+        "family": {
+          "root": "st/sta",
+          "gloss": "站、立",
+          "words": [
+            {
+              "word": "stand",
+              "def": "站立"
+            },
+            {
+              "word": "stable",
+              "def": "稳定的"
+            },
+            {
+              "word": "establish",
+              "def": "建立"
+            }
+          ]
+        },
+        "mnemonic": "古时把军旗(standard)立在阵中作为集结/衡量的基准——立起来的那杆标尺,就是 standard 标准。",
+        "forms": [
+          {
+            "word": "standards",
+            "pos": "n.",
+            "def": "标准(复数)"
+          },
+          {
+            "word": "standardize",
+            "pos": "v.",
+            "def": "使标准化"
+          }
+        ]
+      }
+    },
+    {
+      "word": "identify",
+      "phonetic": "aɪˈdentɪfaɪ",
+      "pos": "v.",
+      "def": "识别，辨认；确定",
+      "cefr": "B2",
+      "freq_rank": 770,
+      "sentence_en": "Police identified the suspect from a photo.",
+      "sentence_zh": "警方通过照片辨认出了嫌疑人。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "ident",
+            "type": "root",
+            "gloss": "相同"
+          },
+          {
+            "text": "i",
+            "type": "connector",
+            "gloss": "连接"
+          },
+          {
+            "text": "fy",
+            "type": "suffix",
+            "gloss": "使…(动词)"
+          }
+        ],
+        "derivation": "ident(相同)+fy(使) → 认出它与已知的是同一个 → 识别",
+        "family": {
+          "root": "ident",
+          "gloss": "相同",
+          "words": [
+            {
+              "word": "identity",
+              "def": "身份"
+            },
+            {
+              "word": "identical",
+              "def": "完全相同的"
+            },
+            {
+              "word": "identification",
+              "def": "识别"
+            }
+          ]
+        },
+        "mnemonic": "ident=相同(想 identical 一模一样);认出'这个和那个是同一个',就是 identify 识别、确定。",
+        "forms": [
+          {
+            "word": "identity",
+            "pos": "n.",
+            "def": "身份，特性"
+          },
+          {
+            "word": "identification",
+            "pos": "n.",
+            "def": "识别；身份证明"
+          }
+        ]
+      }
+    },
+    {
+      "word": "former",
+      "phonetic": "ˈfɔːmə",
+      "pos": "adj.",
+      "def": "从前的，前者的",
+      "cefr": "B1",
+      "freq_rank": 442,
+      "sentence_en": "The former president gave a speech.",
+      "sentence_zh": "前总统发表了演讲。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "form",
+            "type": "root",
+            "gloss": "在前(fore 相关)"
+          },
+          {
+            "text": "er",
+            "type": "suffix",
+            "gloss": "较…的"
+          }
+        ],
+        "derivation": "form(前)+er → 更靠前的、在前的 → 从前的、前者",
+        "family": {
+          "root": "form/fore",
+          "gloss": "前",
+          "words": [
+            {
+              "word": "formerly",
+              "def": "以前"
+            },
+            {
+              "word": "foremost",
+              "def": "最前的"
+            }
+          ]
+        },
+        "mnemonic": "和 fore-(前,如 forehead 前额)相关;时间上更靠前的,就是 former 从前的、前者;反义 latter 后者。",
+        "forms": [
+          {
+            "word": "formerly",
+            "pos": "adv.",
+            "def": "从前，以前"
+          }
+        ]
+      }
+    },
+    {
+      "word": "form",
+      "phonetic": "fɔːm",
+      "pos": "n./v.",
+      "def": "形式，形状；表格；形成",
+      "cefr": "A2",
+      "freq_rank": 523,
+      "sentence_en": "Please fill in this form.",
+      "sentence_zh": "请填写这张表格。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "form",
+            "type": "root",
+            "gloss": "形状，形式"
+          }
+        ],
+        "derivation": "拉丁 forma'形状'。名词=形式/表格;动词=形成、组成。",
+        "family": {
+          "root": "form",
+          "gloss": "形式、形状",
+          "words": [
+            {
+              "word": "reform",
+              "def": "改革"
+            },
+            {
+              "word": "transform",
+              "def": "改变"
+            },
+            {
+              "word": "uniform",
+              "def": "制服"
+            },
+            {
+              "word": "formula",
+              "def": "公式"
+            }
+          ]
+        },
+        "mnemonic": "form=形状(词根家族的老祖宗);东西的样子=form 形式;按格式填的纸=form 表格;使成形=form 形成。",
+        "forms": [
+          {
+            "word": "formation",
+            "pos": "n.",
+            "def": "形成；队形"
+          },
+          {
+            "word": "formal",
+            "pos": "adj.",
+            "def": "正式的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "prepare",
+      "phonetic": "prɪˈpeə",
+      "pos": "v.",
+      "def": "准备，预备",
+      "cefr": "A2",
+      "freq_rank": 774,
+      "sentence_en": "We need time to prepare for the exam.",
+      "sentence_zh": "我们需要时间为考试做准备。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "pre",
+            "type": "prefix",
+            "gloss": "预先"
+          },
+          {
+            "text": "pare",
+            "type": "root",
+            "gloss": "准备，摆放"
+          }
+        ],
+        "derivation": "pre(预先)+pare(备) → 事先备好 → 准备",
+        "family": {
+          "root": "pare/par",
+          "gloss": "准备、摆",
+          "words": [
+            {
+              "word": "repair",
+              "def": "修理(重新备好)"
+            },
+            {
+              "word": "apparatus",
+              "def": "设备"
+            },
+            {
+              "word": "separate",
+              "def": "分开"
+            }
+          ]
+        },
+        "mnemonic": "pre-(预先)+pare(备)——提前把东西摆好、备齐,就是 prepare 准备。",
+        "forms": [
+          {
+            "word": "preparation",
+            "pos": "n.",
+            "def": "准备"
+          },
+          {
+            "word": "prepared",
+            "pos": "adj.",
+            "def": "有准备的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "approach",
+      "phonetic": "əˈprəʊtʃ",
+      "pos": "v./n.",
+      "def": "接近；方法，途径",
+      "cefr": "B1",
+      "freq_rank": 750,
+      "sentence_en": "We need a new approach to this problem.",
+      "sentence_zh": "我们需要用新方法解决这个问题。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "ap",
+            "type": "prefix",
+            "gloss": "朝向(ad 变体)"
+          },
+          {
+            "text": "proach",
+            "type": "root",
+            "gloss": "靠近(prope 近)"
+          }
+        ],
+        "derivation": "ap(朝向)+proach(近) → 朝目标靠近 → 接近;引申'切入的路径'→方法",
+        "family": {
+          "root": "prop/proach",
+          "gloss": "靠近",
+          "words": [
+            {
+              "word": "approximate",
+              "def": "大约的"
+            },
+            {
+              "word": "proper",
+              "def": "恰当的"
+            }
+          ]
+        },
+        "mnemonic": "proach≈近(prope);朝(ap-)某物靠近,就是 approach 接近;通向问题的那条'近路'=方法、途径。",
+        "forms": [
+          {
+            "word": "approaches",
+            "pos": "n.",
+            "def": "方法(复数)"
+          },
+          {
+            "word": "approaching",
+            "pos": "adj.",
+            "def": "即将到来的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "individual",
+      "phonetic": "ˌɪndɪˈvɪdʒʊəl",
+      "pos": "n./adj.",
+      "def": "个人，个体；个别的",
+      "cefr": "B1",
+      "freq_rank": 762,
+      "sentence_en": "Each individual has different needs.",
+      "sentence_zh": "每个人的需求各不相同。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "in",
+            "type": "prefix",
+            "gloss": "不"
+          },
+          {
+            "text": "divid",
+            "type": "root",
+            "gloss": "分"
+          },
+          {
+            "text": "ual",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "in(不)+divid(分) → 不可再分的最小单位 → 个体、个人",
+        "family": {
+          "root": "divid/vid",
+          "gloss": "分",
+          "words": [
+            {
+              "word": "divide",
+              "def": "分开"
+            },
+            {
+              "word": "division",
+              "def": "分割"
+            },
+            {
+              "word": "individual",
+              "def": "个体"
+            }
+          ]
+        },
+        "mnemonic": "in-(不)+divid(分)——不能再往下分的一个单位,就是 individual 个体、个人。",
+        "forms": [
+          {
+            "word": "individually",
+            "pos": "adv.",
+            "def": "个别地"
+          },
+          {
+            "word": "individuals",
+            "pos": "n.",
+            "def": "个人(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "recognize",
+      "phonetic": "ˈrekəɡnaɪz",
+      "pos": "v.",
+      "def": "认出，识别；承认",
+      "cefr": "B1",
+      "freq_rank": 779,
+      "sentence_en": "I didn't recognize you with your new haircut.",
+      "sentence_zh": "你换了新发型，我都没认出你。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "re",
+            "type": "prefix",
+            "gloss": "再"
+          },
+          {
+            "text": "cogn",
+            "type": "root",
+            "gloss": "知道"
+          },
+          {
+            "text": "ize",
+            "type": "suffix",
+            "gloss": "使…(动词)"
+          }
+        ],
+        "derivation": "re(再)+cogn(知) → 再次认知出来 → 认出、承认",
+        "family": {
+          "root": "cogn/gno",
+          "gloss": "知道",
+          "words": [
+            {
+              "word": "cognitive",
+              "def": "认知的"
+            },
+            {
+              "word": "ignore",
+              "def": "忽视(不知)"
+            },
+            {
+              "word": "diagnose",
+              "def": "诊断"
+            }
+          ]
+        },
+        "mnemonic": "cogn=知(想 cognitive 认知);再一次(re-)在脑中确认知道'是它',就是 recognize 认出、承认。",
+        "forms": [
+          {
+            "word": "recognition",
+            "pos": "n.",
+            "def": "认出；承认"
+          },
+          {
+            "word": "recognizable",
+            "pos": "adj.",
+            "def": "可辨认的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "argue",
+      "phonetic": "ˈɑːɡjuː",
+      "pos": "v.",
+      "def": "争论，辩论；主张，认为",
+      "cefr": "B1",
+      "freq_rank": 778,
+      "sentence_en": "They often argue about money.",
+      "sentence_zh": "他们经常为钱争吵。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "argu",
+            "type": "root",
+            "gloss": "使清楚，论证"
+          },
+          {
+            "text": "e",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "argu(使清楚) → 摆理由把事说清 → 论证、争论",
+        "family": {
+          "root": "argu",
+          "gloss": "论证",
+          "words": [
+            {
+              "word": "argument",
+              "def": "论点；争吵"
+            },
+            {
+              "word": "arguable",
+              "def": "有争议的"
+            }
+          ]
+        },
+        "mnemonic": "argue 是'摆道理'——为把观点说清而各执一词,就是 argue 争论/主张;名词 argument。",
+        "forms": [
+          {
+            "word": "argument",
+            "pos": "n.",
+            "def": "论点；争吵"
+          },
+          {
+            "word": "arguably",
+            "pos": "adv.",
+            "def": "可以说"
+          }
+        ]
+      }
+    },
+    {
+      "word": "pressure",
+      "phonetic": "ˈpreʃə",
+      "pos": "n./v.",
+      "def": "压力；施压",
+      "cefr": "B1",
+      "freq_rank": 765,
+      "sentence_en": "He is under a lot of pressure at work.",
+      "sentence_zh": "他在工作上承受很大压力。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "press",
+            "type": "root",
+            "gloss": "压"
+          },
+          {
+            "text": "ure",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "press(压)+ure → 压的作用/状态 → 压力",
+        "family": {
+          "root": "press",
+          "gloss": "压",
+          "words": [
+            {
+              "word": "press",
+              "def": "按压"
+            },
+            {
+              "word": "express",
+              "def": "表达(压出来)"
+            },
+            {
+              "word": "impress",
+              "def": "印象(压入)"
+            },
+            {
+              "word": "compress",
+              "def": "压缩"
+            }
+          ]
+        },
+        "mnemonic": "press=压(想 press 按键);压在身上的力=pressure 压力;把想法'压'出来=express 表达。",
+        "forms": [
+          {
+            "word": "pressures",
+            "pos": "n.",
+            "def": "压力(复数)"
+          },
+          {
+            "word": "pressured",
+            "pos": "adj.",
+            "def": "有压力的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "amount",
+      "phonetic": "əˈmaʊnt",
+      "pos": "n./v.",
+      "def": "数量，总额；总计",
+      "cefr": "A2",
+      "freq_rank": 782,
+      "sentence_en": "A large amount of money was spent.",
+      "sentence_zh": "花了一大笔钱。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "a",
+            "type": "prefix",
+            "gloss": "朝，向"
+          },
+          {
+            "text": "mount",
+            "type": "root",
+            "gloss": "山，登上"
+          }
+        ],
+        "derivation": "a(向)+mount(登高) → 累加登高的总和 → 总额、数量",
+        "family": {
+          "root": "mount",
+          "gloss": "山、登",
+          "words": [
+            {
+              "word": "mountain",
+              "def": "山"
+            },
+            {
+              "word": "mount",
+              "def": "登上；安装"
+            },
+            {
+              "word": "surmount",
+              "def": "克服"
+            }
+          ]
+        },
+        "mnemonic": "mount=山/往上堆;东西一点点往上堆积成一座'山'的总和,就是 amount 数量、总额。",
+        "forms": [
+          {
+            "word": "amounts",
+            "pos": "n.",
+            "def": "数量(复数)"
+          },
+          {
+            "word": "amounted",
+            "pos": "v.",
+            "def": "总计(过去式)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "ability",
+      "phonetic": "əˈbɪlɪti",
+      "pos": "n.",
+      "def": "能力，才能",
+      "cefr": "A2",
+      "freq_rank": 783,
+      "sentence_en": "She has the ability to solve hard problems.",
+      "sentence_zh": "她有解决难题的能力。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "abil",
+            "type": "root",
+            "gloss": "能"
+          },
+          {
+            "text": "ity",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "abil(能)+ity → 能做某事的性质 → 能力",
+        "family": {
+          "root": "abil/able",
+          "gloss": "能",
+          "words": [
+            {
+              "word": "able",
+              "def": "能够的"
+            },
+            {
+              "word": "enable",
+              "def": "使能够"
+            },
+            {
+              "word": "disability",
+              "def": "残疾"
+            }
+          ]
+        },
+        "mnemonic": "abil=able(能);'能做到'这件事本身,就是 ability 能力;反义 -in 变 inability 无能。",
+        "forms": [
+          {
+            "word": "able",
+            "pos": "adj.",
+            "def": "能够的"
+          },
+          {
+            "word": "abilities",
+            "pos": "n.",
+            "def": "能力(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "analysis",
+      "phonetic": "əˈnæləsɪs",
+      "pos": "n.",
+      "def": "分析",
+      "cefr": "B2",
+      "freq_rank": 811,
+      "sentence_en": "The report gives a detailed analysis of the data.",
+      "sentence_zh": "报告对数据做了详细分析。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "ana",
+            "type": "prefix",
+            "gloss": "彻底，分开"
+          },
+          {
+            "text": "lys",
+            "type": "root",
+            "gloss": "松开，分解"
+          },
+          {
+            "text": "is",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "ana(分开)+lys(分解) → 把整体拆开细究 → 分析",
+        "family": {
+          "root": "lys/lyt",
+          "gloss": "松开、分解",
+          "words": [
+            {
+              "word": "analyze",
+              "def": "分析"
+            },
+            {
+              "word": "paralyze",
+              "def": "使瘫痪"
+            },
+            {
+              "word": "analyst",
+              "def": "分析师"
+            }
+          ]
+        },
+        "mnemonic": "lys=分解、松开;把一整块彻底(ana-)拆解开来看,就是 analysis 分析;动词 analyze,复数 analyses。",
+        "forms": [
+          {
+            "word": "analyze",
+            "pos": "v.",
+            "def": "分析"
+          },
+          {
+            "word": "analyst",
+            "pos": "n.",
+            "def": "分析师"
+          }
+        ]
+      }
+    },
+    {
+      "word": "compare",
+      "phonetic": "kəmˈpeə",
+      "pos": "v.",
+      "def": "比较，对照；比作",
+      "cefr": "A2",
+      "freq_rank": 831,
+      "sentence_en": "Compare the two pictures and find the differences.",
+      "sentence_zh": "比较这两幅图，找出不同。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "com",
+            "type": "prefix",
+            "gloss": "一起"
+          },
+          {
+            "text": "par",
+            "type": "root",
+            "gloss": "相等，配对"
+          },
+          {
+            "text": "e",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "com(一起)+par(相等) → 把两者并到一起看是否相当 → 比较",
+        "family": {
+          "root": "par",
+          "gloss": "相等、配对",
+          "words": [
+            {
+              "word": "pair",
+              "def": "一对"
+            },
+            {
+              "word": "parity",
+              "def": "同等"
+            },
+            {
+              "word": "peer",
+              "def": "同辈"
+            },
+            {
+              "word": "compare",
+              "def": "比较"
+            }
+          ]
+        },
+        "mnemonic": "par=相等、配对(想 pair 一对);把两样东西一起(com-)并排比对,就是 compare 比较。",
+        "forms": [
+          {
+            "word": "comparison",
+            "pos": "n.",
+            "def": "比较"
+          },
+          {
+            "word": "comparable",
+            "pos": "adj.",
+            "def": "可比较的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "design",
+      "phonetic": "dɪˈzaɪn",
+      "pos": "n./v.",
+      "def": "设计；图样；意图",
+      "cefr": "A2",
+      "freq_rank": 834,
+      "sentence_en": "The building has an unusual design.",
+      "sentence_zh": "这座建筑有着不寻常的设计。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "de",
+            "type": "prefix",
+            "gloss": "出，加强"
+          },
+          {
+            "text": "sign",
+            "type": "root",
+            "gloss": "记号，标记"
+          }
+        ],
+        "derivation": "de(出)+sign(标记) → 把构想标画出来 → 设计",
+        "family": {
+          "root": "sign",
+          "gloss": "记号、标志",
+          "words": [
+            {
+              "word": "signal",
+              "def": "信号"
+            },
+            {
+              "word": "signature",
+              "def": "签名"
+            },
+            {
+              "word": "significant",
+              "def": "重要的"
+            },
+            {
+              "word": "assign",
+              "def": "分配"
+            }
+          ]
+        },
+        "mnemonic": "sign=标记(想 signature 签名);把脑中构想用记号标画出来,就是 design 设计。",
+        "forms": [
+          {
+            "word": "designer",
+            "pos": "n.",
+            "def": "设计师"
+          },
+          {
+            "word": "designed",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          }
+        ]
+      }
+    },
+    {
+      "word": "section",
+      "phonetic": "ˈsekʃən",
+      "pos": "n.",
+      "def": "部分，部门；剖面",
+      "cefr": "B1",
+      "freq_rank": 818,
+      "sentence_en": "This section of the book is about grammar.",
+      "sentence_zh": "这本书的这一部分讲语法。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "sect",
+            "type": "root",
+            "gloss": "切"
+          },
+          {
+            "text": "ion",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "sect(切)+ion → 切下来的一块 → 部分、剖面",
+        "family": {
+          "root": "sect",
+          "gloss": "切",
+          "words": [
+            {
+              "word": "insect",
+              "def": "昆虫(身体分节)"
+            },
+            {
+              "word": "intersect",
+              "def": "相交"
+            },
+            {
+              "word": "dissect",
+              "def": "解剖"
+            }
+          ]
+        },
+        "mnemonic": "sect=切(想 insect 昆虫,身体一节节被切开);切下来的一块,就是 section 部分、剖面。",
+        "forms": [
+          {
+            "word": "sections",
+            "pos": "n.",
+            "def": "部分(复数)"
+          },
+          {
+            "word": "sector",
+            "pos": "n.",
+            "def": "部门，扇区"
+          }
+        ]
+      }
+    },
+    {
+      "word": "region",
+      "phonetic": "ˈriːdʒən",
+      "pos": "n.",
+      "def": "地区，区域；领域",
+      "cefr": "B1",
+      "freq_rank": 793,
+      "sentence_en": "This region is famous for its wine.",
+      "sentence_zh": "这个地区以葡萄酒闻名。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "reg",
+            "type": "root",
+            "gloss": "统治，划界"
+          },
+          {
+            "text": "ion",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "reg(统治、划界)+ion → 划定管辖的一片 → 地区",
+        "family": {
+          "root": "reg",
+          "gloss": "统治、划界",
+          "words": [
+            {
+              "word": "region",
+              "def": "地区"
+            },
+            {
+              "word": "regular",
+              "def": "规则的"
+            },
+            {
+              "word": "regime",
+              "def": "政权"
+            },
+            {
+              "word": "reign",
+              "def": "统治"
+            }
+          ]
+        },
+        "mnemonic": "reg=统治、划界(想 reign 统治);被划出来统一管辖的一片地方,就是 region 地区。",
+        "forms": [
+          {
+            "word": "regions",
+            "pos": "n.",
+            "def": "地区(复数)"
+          },
+          {
+            "word": "regional",
+            "pos": "adj.",
+            "def": "地区的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "authority",
+      "phonetic": "ɔːˈθɒrɪti",
+      "pos": "n.",
+      "def": "权力，权威；当局",
+      "cefr": "B2",
+      "freq_rank": 832,
+      "sentence_en": "The local authority approved the plan.",
+      "sentence_zh": "当地政府批准了这项计划。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "author",
+            "type": "root",
+            "gloss": "创始者，权威"
+          },
+          {
+            "text": "ity",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "author(创始者)+ity → 有创立/裁决之权的地位 → 权威、当局",
+        "family": {
+          "root": "author",
+          "gloss": "创始者",
+          "words": [
+            {
+              "word": "author",
+              "def": "作者"
+            },
+            {
+              "word": "authorize",
+              "def": "授权"
+            },
+            {
+              "word": "authentic",
+              "def": "真正的"
+            }
+          ]
+        },
+        "mnemonic": "author=作者/创始者;能一锤定音、说了算的地位,就是 authority 权威、当局。",
+        "forms": [
+          {
+            "word": "authorities",
+            "pos": "n.",
+            "def": "当局(复数)"
+          },
+          {
+            "word": "authorize",
+            "pos": "v.",
+            "def": "授权"
+          }
+        ]
+      }
+    },
+    {
+      "word": "strategy",
+      "phonetic": "ˈstrætɪdʒi",
+      "pos": "n.",
+      "def": "策略，战略",
+      "cefr": "B2",
+      "freq_rank": 844,
+      "sentence_en": "The company needs a new marketing strategy.",
+      "sentence_zh": "公司需要新的营销策略。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "strateg",
+            "type": "root",
+            "gloss": "将军，统率"
+          },
+          {
+            "text": "y",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "希腊 strategos'将军';将军统率全局之术 → 战略",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "strategic",
+              "def": "战略的"
+            },
+            {
+              "word": "strategist",
+              "def": "战略家"
+            }
+          ]
+        },
+        "mnemonic": "词根来自'将军'(strategos);像将军统筹全局那样谋划,就是 strategy 战略、策略。",
+        "forms": [
+          {
+            "word": "strategic",
+            "pos": "adj.",
+            "def": "战略的"
+          },
+          {
+            "word": "strategies",
+            "pos": "n.",
+            "def": "策略(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "environment",
+      "phonetic": "ɪnˈvaɪərənmənt",
+      "pos": "n.",
+      "def": "环境",
+      "cefr": "B1",
+      "freq_rank": 855,
+      "sentence_en": "We must protect the environment.",
+      "sentence_zh": "我们必须保护环境。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "en",
+            "type": "prefix",
+            "gloss": "使处于"
+          },
+          {
+            "text": "viron",
+            "type": "root",
+            "gloss": "围绕(环)"
+          },
+          {
+            "text": "ment",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "en+viron(围绕) → 围绕在四周的一切 → 环境",
+        "family": {
+          "root": "viron",
+          "gloss": "围绕",
+          "words": [
+            {
+              "word": "environmental",
+              "def": "环境的"
+            }
+          ]
+        },
+        "mnemonic": "viron=围绕(法语 virer'转、环绕');环绕在你四周的所有条件,就是 environment 环境。",
+        "forms": [
+          {
+            "word": "environmental",
+            "pos": "adj.",
+            "def": "环境的"
+          },
+          {
+            "word": "environments",
+            "pos": "n.",
+            "def": "环境(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "point",
+      "phonetic": "pɔɪnt",
+      "pos": "n./v.",
+      "def": "点；要点；指向",
+      "cefr": "A1",
+      "freq_rank": 211,
+      "sentence_en": "That's a good point.",
+      "sentence_zh": "这一点说得好。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "point",
+            "type": "root",
+            "gloss": "尖，刺"
+          }
+        ],
+        "derivation": "拉丁 punctum'刺出的点'。尖端→点→要点;用尖端指→指向。",
+        "family": {
+          "root": "punct/point",
+          "gloss": "刺、点",
+          "words": [
+            {
+              "word": "appoint",
+              "def": "任命"
+            },
+            {
+              "word": "disappoint",
+              "def": "使失望"
+            },
+            {
+              "word": "punctual",
+              "def": "准时的"
+            }
+          ]
+        },
+        "mnemonic": "point=尖点;笔尖戳一下留个'点';谈话的'点子'=要点;用尖端一指=point 指向。",
+        "forms": [
+          {
+            "word": "points",
+            "pos": "n.",
+            "def": "点(复数)"
+          },
+          {
+            "word": "pointed",
+            "pos": "adj.",
+            "def": "尖的；尖锐的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "however",
+      "phonetic": "haʊˈevə",
+      "pos": "adv./conj.",
+      "def": "然而，可是；无论如何",
+      "cefr": "A2",
+      "freq_rank": 284,
+      "sentence_en": "The plan is good; however, it is expensive.",
+      "sentence_zh": "这个计划不错，然而太贵了。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "how",
+            "type": "root",
+            "gloss": "如何"
+          },
+          {
+            "text": "ever",
+            "type": "root",
+            "gloss": "无论，究竟"
+          }
+        ],
+        "derivation": "how(如何)+ever(无论) → 无论怎样 → 然而、无论如何",
+        "family": {
+          "root": "ever",
+          "gloss": "无论、任何时候",
+          "words": [
+            {
+              "word": "whatever",
+              "def": "无论什么"
+            },
+            {
+              "word": "whenever",
+              "def": "无论何时"
+            },
+            {
+              "word": "whoever",
+              "def": "无论谁"
+            }
+          ]
+        },
+        "mnemonic": "how+ever(无论如何);承接转折时'话说回来、可是',就是 however 然而。写作衔接高频词。",
+        "forms": []
+      }
+    },
+    {
+      "word": "despite",
+      "phonetic": "dɪˈspaɪt",
+      "pos": "prep.",
+      "def": "尽管，不管",
+      "cefr": "B1",
+      "freq_rank": 742,
+      "sentence_en": "Despite the rain, they went out.",
+      "sentence_zh": "尽管下雨，他们还是出门了。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "de",
+            "type": "prefix",
+            "gloss": "向下"
+          },
+          {
+            "text": "spite",
+            "type": "root",
+            "gloss": "看(spic)"
+          }
+        ],
+        "derivation": "de(向下)+spite(看) → 蔑视地往下看、不顾 → 尽管",
+        "family": {
+          "root": "spic/spect",
+          "gloss": "看",
+          "words": [
+            {
+              "word": "spite",
+              "def": "恶意"
+            },
+            {
+              "word": "inspect",
+              "def": "检查"
+            },
+            {
+              "word": "despise",
+              "def": "鄙视"
+            }
+          ]
+        },
+        "mnemonic": "spite=看(spic);对困难'向下看、不放在眼里'地照做,就是 despite 尽管、不顾;后接名词。",
+        "forms": []
+      }
+    },
+    {
+      "word": "beyond",
+      "phonetic": "bɪˈjɒnd",
+      "pos": "prep./adv.",
+      "def": "超过；在…那边",
+      "cefr": "B1",
+      "freq_rank": 746,
+      "sentence_en": "The task was beyond his ability.",
+      "sentence_zh": "这项任务超出了他的能力。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "be",
+            "type": "prefix",
+            "gloss": "加强"
+          },
+          {
+            "text": "yond",
+            "type": "root",
+            "gloss": "那边(yon)"
+          }
+        ],
+        "derivation": "be+yond(那边) → 在更远的那一边 → 超过",
+        "family": {
+          "root": "yon",
+          "gloss": "那边",
+          "words": [
+            {
+              "word": "yonder",
+              "def": "那边的"
+            }
+          ]
+        },
+        "mnemonic": "yond=那边(yon);越过界线到更远'那边',就是 beyond 超过、在…之外;beyond one's ability 力所不及。",
+        "forms": []
+      }
+    },
+    {
+      "word": "treatment",
+      "phonetic": "ˈtriːtmənt",
+      "pos": "n.",
+      "def": "治疗；对待，处理",
+      "cefr": "B1",
+      "freq_rank": 745,
+      "sentence_en": "The patient responded well to treatment.",
+      "sentence_zh": "病人对治疗反应良好。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "treat",
+            "type": "root",
+            "gloss": "对待，处理"
+          },
+          {
+            "text": "ment",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "treat(对待)+ment → 对待/处理的方式 → 治疗、对待",
+        "family": {
+          "root": "treat",
+          "gloss": "对待、处理",
+          "words": [
+            {
+              "word": "treat",
+              "def": "对待；治疗"
+            },
+            {
+              "word": "treaty",
+              "def": "条约"
+            },
+            {
+              "word": "retreat",
+              "def": "撤退"
+            }
+          ]
+        },
+        "mnemonic": "treat=对待/医治;如何处理、医治一件事/一个人,就是 treatment 治疗、对待。",
+        "forms": [
+          {
+            "word": "treat",
+            "pos": "v.",
+            "def": "对待；治疗"
+          },
+          {
+            "word": "treatments",
+            "pos": "n.",
+            "def": "治疗(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "resource",
+      "phonetic": "rɪˈsɔːs",
+      "pos": "n.",
+      "def": "资源；办法",
+      "cefr": "B1",
+      "freq_rank": 769,
+      "sentence_en": "Water is a precious natural resource.",
+      "sentence_zh": "水是宝贵的自然资源。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "re",
+            "type": "prefix",
+            "gloss": "再"
+          },
+          {
+            "text": "source",
+            "type": "root",
+            "gloss": "源头，涌出"
+          }
+        ],
+        "derivation": "re(再)+source(源) → 可反复取用的来源 → 资源",
+        "family": {
+          "root": "sourc/surg",
+          "gloss": "涌起、源",
+          "words": [
+            {
+              "word": "source",
+              "def": "来源"
+            },
+            {
+              "word": "surge",
+              "def": "激增"
+            },
+            {
+              "word": "resurgence",
+              "def": "复兴"
+            }
+          ]
+        },
+        "mnemonic": "source=源头;可以一再(re-)从中取用的源泉,就是 resource 资源。",
+        "forms": [
+          {
+            "word": "resources",
+            "pos": "n.",
+            "def": "资源(复数)"
+          },
+          {
+            "word": "resourceful",
+            "pos": "adj.",
+            "def": "足智多谋的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "career",
+      "phonetic": "kəˈrɪə",
+      "pos": "n.",
+      "def": "职业，生涯",
+      "cefr": "A2",
+      "freq_rank": 741,
+      "sentence_en": "She had a long career in medicine.",
+      "sentence_zh": "她在医学界有着漫长的职业生涯。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "car",
+            "type": "root",
+            "gloss": "车，路(carrus)"
+          },
+          {
+            "text": "eer",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "car(车、道) → 人生所跑的'车道' → 职业生涯",
+        "family": {
+          "root": "car",
+          "gloss": "车、跑",
+          "words": [
+            {
+              "word": "car",
+              "def": "汽车"
+            },
+            {
+              "word": "carry",
+              "def": "运送"
+            },
+            {
+              "word": "cargo",
+              "def": "货物"
+            }
+          ]
+        },
+        "mnemonic": "car=车/道(想 car 汽车);你人生这辆车一路跑过的轨道,就是 career 职业生涯。",
+        "forms": [
+          {
+            "word": "careers",
+            "pos": "n.",
+            "def": "职业(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "fund",
+      "phonetic": "fʌnd",
+      "pos": "n./v.",
+      "def": "基金，资金；资助",
+      "cefr": "B1",
+      "freq_rank": 754,
+      "sentence_en": "The project is funded by the government.",
+      "sentence_zh": "该项目由政府出资。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "fund",
+            "type": "root",
+            "gloss": "底，基础"
+          }
+        ],
+        "derivation": "拉丁 fundus'底、基础';作为底子的钱 → 基金、资金。",
+        "family": {
+          "root": "fund/found",
+          "gloss": "底、基础",
+          "words": [
+            {
+              "word": "fundamental",
+              "def": "基础的"
+            },
+            {
+              "word": "found",
+              "def": "创立"
+            },
+            {
+              "word": "foundation",
+              "def": "基础，基金会"
+            }
+          ]
+        },
+        "mnemonic": "fund=底(想 fundamental 根本的);垫底、备用的那笔钱,就是 fund 基金、资金;动词=出资。",
+        "forms": [
+          {
+            "word": "funding",
+            "pos": "n.",
+            "def": "资金，拨款"
+          },
+          {
+            "word": "funds",
+            "pos": "n.",
+            "def": "资金(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "character",
+      "phonetic": "ˈkærɪktə",
+      "pos": "n.",
+      "def": "性格；人物；字符",
+      "cefr": "B1",
+      "freq_rank": 786,
+      "sentence_en": "She has a strong character.",
+      "sentence_zh": "她性格坚强。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "charact",
+            "type": "root",
+            "gloss": "刻，雕(希腊 kharakter)"
+          },
+          {
+            "text": "er",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "charact(刻)→ 刻印在心的印记 → 性格;刻出的符号 → 字符;戏里刻画的角色 → 人物",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "characteristic",
+              "def": "特征"
+            },
+            {
+              "word": "characterize",
+              "def": "刻画"
+            }
+          ]
+        },
+        "mnemonic": "词根意为'刻印';刻在骨子里的印记=character 性格;刻写的符号=字符;书里刻画的=人物。",
+        "forms": [
+          {
+            "word": "characteristic",
+            "pos": "n.",
+            "def": "特征"
+          },
+          {
+            "word": "characters",
+            "pos": "n.",
+            "def": "人物；字符(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "wonder",
+      "phonetic": "ˈwʌndə",
+      "pos": "v./n.",
+      "def": "想知道；惊奇；奇迹",
+      "cefr": "A2",
+      "freq_rank": 790,
+      "sentence_en": "I wonder what happened.",
+      "sentence_zh": "我想知道发生了什么。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "wonder",
+            "type": "root",
+            "gloss": "惊奇"
+          }
+        ],
+        "derivation": "古英语 wundor'奇迹、惊奇'。惊奇→好奇想知道;了不起的事→奇迹。",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "wonderful",
+              "def": "极好的"
+            },
+            {
+              "word": "wondrous",
+              "def": "奇妙的"
+            }
+          ]
+        },
+        "mnemonic": "心里又惊又奇、忍不住想弄明白,就是 wonder 想知道/惊奇;令人惊叹的=wonderful;世界奇迹=wonder。",
+        "forms": [
+          {
+            "word": "wonderful",
+            "pos": "adj.",
+            "def": "精彩的，极好的"
+          },
+          {
+            "word": "wondered",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          }
+        ]
+      }
+    },
+    {
+      "word": "attack",
+      "phonetic": "əˈtæk",
+      "pos": "n./v.",
+      "def": "攻击，进攻；抨击",
+      "cefr": "A2",
+      "freq_rank": 791,
+      "sentence_en": "The army launched an attack at dawn.",
+      "sentence_zh": "军队在黎明发动了进攻。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "at",
+            "type": "prefix",
+            "gloss": "朝向(ad 变体)"
+          },
+          {
+            "text": "tack",
+            "type": "root",
+            "gloss": "钉，扣(接触)"
+          }
+        ],
+        "derivation": "at(朝向)+tack(扣、接触) → 朝对方扑上去接触 → 攻击",
+        "family": {
+          "root": "tack/tact",
+          "gloss": "接触、钉",
+          "words": [
+            {
+              "word": "attach",
+              "def": "附上"
+            },
+            {
+              "word": "contact",
+              "def": "接触"
+            },
+            {
+              "word": "tackle",
+              "def": "应对，抢断"
+            }
+          ]
+        },
+        "mnemonic": "tack=接触、扣(想 attach 附着);朝(at-)敌人扑上去动手,就是 attack 攻击;反义 defend 防御。",
+        "forms": [
+          {
+            "word": "attacks",
+            "pos": "n.",
+            "def": "攻击(复数)"
+          },
+          {
+            "word": "attacker",
+            "pos": "n.",
+            "def": "攻击者"
+          }
+        ]
+      }
+    },
+    {
+      "word": "physical",
+      "phonetic": "ˈfɪzɪkəl",
+      "pos": "adj.",
+      "def": "身体的；物质的；物理的",
+      "cefr": "B1",
+      "freq_rank": 802,
+      "sentence_en": "Regular physical exercise is important.",
+      "sentence_zh": "规律的身体锻炼很重要。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "phys",
+            "type": "root",
+            "gloss": "自然，身体"
+          },
+          {
+            "text": "ical",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "phys(自然、身体)+ical → 与自然物质/身体有关的 → 身体的、物理的",
+        "family": {
+          "root": "phys",
+          "gloss": "自然、身体",
+          "words": [
+            {
+              "word": "physics",
+              "def": "物理学"
+            },
+            {
+              "word": "physician",
+              "def": "内科医生"
+            },
+            {
+              "word": "physique",
+              "def": "体格"
+            }
+          ]
+        },
+        "mnemonic": "phys=自然/身体(想 physics 物理);关乎肉体或物质世界的,就是 physical 身体的、物质的、物理的。",
+        "forms": [
+          {
+            "word": "physically",
+            "pos": "adv.",
+            "def": "身体上；物理上"
+          },
+          {
+            "word": "physics",
+            "pos": "n.",
+            "def": "物理学"
+          }
+        ]
+      }
+    },
+    {
+      "word": "general",
+      "phonetic": "ˈdʒenərəl",
+      "pos": "adj./n.",
+      "def": "总的，普遍的；将军",
+      "cefr": "A2",
+      "freq_rank": 804,
+      "sentence_en": "In general, the plan is good.",
+      "sentence_zh": "总的来说，这个计划不错。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "gener",
+            "type": "root",
+            "gloss": "种类，产生"
+          },
+          {
+            "text": "al",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "gener(种类)+al → 涵盖整个种类的 → 全体的、普遍的",
+        "family": {
+          "root": "gener/gen",
+          "gloss": "产生、种类",
+          "words": [
+            {
+              "word": "generate",
+              "def": "产生"
+            },
+            {
+              "word": "generation",
+              "def": "一代"
+            },
+            {
+              "word": "genre",
+              "def": "类型"
+            },
+            {
+              "word": "genetic",
+              "def": "基因的"
+            }
+          ]
+        },
+        "mnemonic": "gener=种类(想 genre 类型);适用于一整类、大多数情况的,就是 general 总的、普遍的;in general 总的来说。",
+        "forms": [
+          {
+            "word": "generally",
+            "pos": "adv.",
+            "def": "一般地，通常"
+          },
+          {
+            "word": "generalize",
+            "pos": "v.",
+            "def": "概括"
+          }
+        ]
+      }
+    },
+    {
+      "word": "crime",
+      "phonetic": "kraɪm",
+      "pos": "n.",
+      "def": "罪行，犯罪",
+      "cefr": "B1",
+      "freq_rank": 828,
+      "sentence_en": "Violent crime has decreased.",
+      "sentence_zh": "暴力犯罪有所下降。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "crim",
+            "type": "root",
+            "gloss": "罪，控告"
+          },
+          {
+            "text": "e",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "拉丁 crimen'控告、罪'。→ 罪行、犯罪。",
+        "family": {
+          "root": "crim",
+          "gloss": "罪、控告",
+          "words": [
+            {
+              "word": "criminal",
+              "def": "罪犯；犯罪的"
+            },
+            {
+              "word": "incriminate",
+              "def": "归罪于"
+            }
+          ]
+        },
+        "mnemonic": "crim=罪(想 criminal 罪犯);触犯法律的行为,就是 crime 罪行;做这事的人=criminal。",
+        "forms": [
+          {
+            "word": "criminal",
+            "pos": "n.",
+            "def": "罪犯"
+          },
+          {
+            "word": "crimes",
+            "pos": "n.",
+            "def": "罪行(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "stage",
+      "phonetic": "steɪdʒ",
+      "pos": "n./v.",
+      "def": "阶段；舞台；上演",
+      "cefr": "A2",
+      "freq_rank": 829,
+      "sentence_en": "The project is at an early stage.",
+      "sentence_zh": "项目处于早期阶段。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "stage",
+            "type": "root",
+            "gloss": "站立处，台(st)"
+          }
+        ],
+        "derivation": "与 st'站'相关;可站立/停留的台或段落 → 舞台、阶段。",
+        "family": {
+          "root": "st/sta",
+          "gloss": "站、立",
+          "words": [
+            {
+              "word": "stand",
+              "def": "站立"
+            },
+            {
+              "word": "station",
+              "def": "站"
+            },
+            {
+              "word": "stable",
+              "def": "稳定的"
+            }
+          ]
+        },
+        "mnemonic": "和 st(站)一家;供人站上去表演的台=stage 舞台;一段可'驻停'的进程=stage 阶段。",
+        "forms": [
+          {
+            "word": "stages",
+            "pos": "n.",
+            "def": "阶段(复数)"
+          },
+          {
+            "word": "staged",
+            "pos": "v.",
+            "def": "上演(过去式)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "various",
+      "phonetic": "ˈveəriəs",
+      "pos": "adj.",
+      "def": "各种各样的，不同的",
+      "cefr": "B1",
+      "freq_rank": 859,
+      "sentence_en": "The shop sells various kinds of bread.",
+      "sentence_zh": "这家店卖各种各样的面包。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "vari",
+            "type": "root",
+            "gloss": "变化"
+          },
+          {
+            "text": "ous",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "vari(变化)+ous → 有变化、多样的 → 各种各样的",
+        "family": {
+          "root": "vari",
+          "gloss": "变化",
+          "words": [
+            {
+              "word": "vary",
+              "def": "变化"
+            },
+            {
+              "word": "variety",
+              "def": "多样性"
+            },
+            {
+              "word": "variable",
+              "def": "可变的"
+            },
+            {
+              "word": "various",
+              "def": "各种的"
+            }
+          ]
+        },
+        "mnemonic": "vari=变(想 vary 变化);花样繁多、各不相同的,就是 various 各种各样的。",
+        "forms": [
+          {
+            "word": "vary",
+            "pos": "v.",
+            "def": "变化"
+          },
+          {
+            "word": "variety",
+            "pos": "n.",
+            "def": "多样性；种类"
+          }
+        ]
+      }
+    },
+    {
+      "word": "entire",
+      "phonetic": "ɪnˈtaɪə",
+      "pos": "adj.",
+      "def": "整个的，全部的",
+      "cefr": "B1",
+      "freq_rank": 868,
+      "sentence_en": "She ate the entire cake.",
+      "sentence_zh": "她把整个蛋糕都吃了。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "en",
+            "type": "prefix",
+            "gloss": "不(in 变体)"
+          },
+          {
+            "text": "tire",
+            "type": "root",
+            "gloss": "触碰(tang)"
+          }
+        ],
+        "derivation": "en(不)+tire(触、损) → 未被触动、完好无缺的 → 完整的、整个的",
+        "family": {
+          "root": "tire/tang",
+          "gloss": "触碰",
+          "words": [
+            {
+              "word": "integrity",
+              "def": "完整；正直"
+            },
+            {
+              "word": "intact",
+              "def": "完整无损的"
+            },
+            {
+              "word": "tangible",
+              "def": "可触的"
+            }
+          ]
+        },
+        "mnemonic": "与 integrity/intact 同源;'没被动过一分、完好'的,就是 entire 整个的、全部的。",
+        "forms": [
+          {
+            "word": "entirely",
+            "pos": "adv.",
+            "def": "完全地"
+          },
+          {
+            "word": "entirety",
+            "pos": "n.",
+            "def": "全部"
+          }
+        ]
+      }
+    },
+    {
+      "word": "claim",
+      "phonetic": "kleɪm",
+      "pos": "v./n.",
+      "def": "声称；索要，认领",
+      "cefr": "B1",
+      "freq_rank": 874,
+      "sentence_en": "He claims to be an expert.",
+      "sentence_zh": "他声称自己是专家。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "claim",
+            "type": "root",
+            "gloss": "喊，叫(clam)"
+          }
+        ],
+        "derivation": "拉丁 clamare'喊叫';大声主张 → 声称;喊着要回 → 索要、认领。",
+        "family": {
+          "root": "claim/clam",
+          "gloss": "喊、叫",
+          "words": [
+            {
+              "word": "exclaim",
+              "def": "惊呼"
+            },
+            {
+              "word": "proclaim",
+              "def": "宣告"
+            },
+            {
+              "word": "declare",
+              "def": "宣布"
+            }
+          ]
+        },
+        "mnemonic": "claim=喊(想 exclaim 惊呼);大声主张'是这样'=claim 声称;喊着'这是我的'=claim 认领、索赔。",
+        "forms": [
+          {
+            "word": "claims",
+            "pos": "n.",
+            "def": "主张(复数)"
+          },
+          {
+            "word": "claimed",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          }
+        ]
+      }
+    },
+    {
+      "word": "legal",
+      "phonetic": "ˈliːɡəl",
+      "pos": "adj.",
+      "def": "法律的；合法的",
+      "cefr": "B1",
+      "freq_rank": 883,
+      "sentence_en": "It is not legal to park here.",
+      "sentence_zh": "在这里停车是不合法的。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "leg",
+            "type": "root",
+            "gloss": "法律"
+          },
+          {
+            "text": "al",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "leg(法律)+al → 与法律有关的、法律允许的 → 合法的",
+        "family": {
+          "root": "leg",
+          "gloss": "法律",
+          "words": [
+            {
+              "word": "legislation",
+              "def": "立法"
+            },
+            {
+              "word": "legitimate",
+              "def": "合法的"
+            },
+            {
+              "word": "legal",
+              "def": "合法的"
+            }
+          ]
+        },
+        "mnemonic": "leg=法(想 legislation 立法);合乎法律的,就是 legal 合法的;加 il- 变 illegal 非法的。",
+        "forms": [
+          {
+            "word": "legally",
+            "pos": "adv.",
+            "def": "法律上，合法地"
+          },
+          {
+            "word": "illegal",
+            "pos": "adj.",
+            "def": "非法的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "avoid",
+      "phonetic": "əˈvɔɪd",
+      "pos": "v.",
+      "def": "避免，回避",
+      "cefr": "A2",
+      "freq_rank": 908,
+      "sentence_en": "Try to avoid making the same mistake.",
+      "sentence_zh": "尽量避免犯同样的错误。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "a",
+            "type": "prefix",
+            "gloss": "离开"
+          },
+          {
+            "text": "void",
+            "type": "root",
+            "gloss": "空的"
+          }
+        ],
+        "derivation": "a(离)+void(空) → 让开、腾空 → 避免、回避",
+        "family": {
+          "root": "void/vac",
+          "gloss": "空",
+          "words": [
+            {
+              "word": "void",
+              "def": "空的；无效的"
+            },
+            {
+              "word": "vacant",
+              "def": "空的"
+            },
+            {
+              "word": "vacuum",
+              "def": "真空"
+            }
+          ]
+        },
+        "mnemonic": "void=空(想 vacant 空的);把自己从某事里抽空、让开,就是 avoid 避免、回避。",
+        "forms": [
+          {
+            "word": "avoided",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "avoidance",
+            "pos": "n.",
+            "def": "回避"
+          }
+        ]
+      }
+    },
+    {
+      "word": "imagine",
+      "phonetic": "ɪˈmædʒɪn",
+      "pos": "v.",
+      "def": "想象，设想",
+      "cefr": "A2",
+      "freq_rank": 909,
+      "sentence_en": "Imagine living on the moon.",
+      "sentence_zh": "想象一下住在月球上。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "imag",
+            "type": "root",
+            "gloss": "像，图像"
+          },
+          {
+            "text": "ine",
+            "type": "suffix",
+            "gloss": "动词后缀"
+          }
+        ],
+        "derivation": "imag(像)+ine → 在脑中造出图像 → 想象",
+        "family": {
+          "root": "imag",
+          "gloss": "像、模仿",
+          "words": [
+            {
+              "word": "image",
+              "def": "形象"
+            },
+            {
+              "word": "imaginary",
+              "def": "虚构的"
+            },
+            {
+              "word": "imagination",
+              "def": "想象力"
+            }
+          ]
+        },
+        "mnemonic": "imag=像(想 image 图像);在脑海里造出一幅画面,就是 imagine 想象。",
+        "forms": [
+          {
+            "word": "imagination",
+            "pos": "n.",
+            "def": "想象力"
+          },
+          {
+            "word": "imaginary",
+            "pos": "adj.",
+            "def": "虚构的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "theory",
+      "phonetic": "ˈθɪəri",
+      "pos": "n.",
+      "def": "理论，学说",
+      "cefr": "B1",
+      "freq_rank": 918,
+      "sentence_en": "In theory, the plan should work.",
+      "sentence_zh": "从理论上讲，这个计划应该行得通。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "theor",
+            "type": "root",
+            "gloss": "观察，思索"
+          },
+          {
+            "text": "y",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "希腊 theoria'观察、沉思';对事物观察思索后的系统看法 → 理论",
+        "family": {
+          "root": "theor",
+          "gloss": "观察、思索",
+          "words": [
+            {
+              "word": "theoretical",
+              "def": "理论的"
+            },
+            {
+              "word": "theorist",
+              "def": "理论家"
+            }
+          ]
+        },
+        "mnemonic": "词根意为'观察沉思';经过反复思索归纳出的系统学说,就是 theory 理论;in theory 理论上。",
+        "forms": [
+          {
+            "word": "theoretical",
+            "pos": "adj.",
+            "def": "理论的"
+          },
+          {
+            "word": "theories",
+            "pos": "n.",
+            "def": "理论(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "management",
+      "phonetic": "ˈmænɪdʒmənt",
+      "pos": "n.",
+      "def": "管理，经营；管理层",
+      "cefr": "B1",
+      "freq_rank": 906,
+      "sentence_en": "Good time management is essential.",
+      "sentence_zh": "良好的时间管理至关重要。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "man",
+            "type": "root",
+            "gloss": "手"
+          },
+          {
+            "text": "age",
+            "type": "root",
+            "gloss": "做"
+          },
+          {
+            "text": "ment",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "man(手)+age → 用手操持、驾驭 → 管理",
+        "family": {
+          "root": "man",
+          "gloss": "手",
+          "words": [
+            {
+              "word": "manage",
+              "def": "管理"
+            },
+            {
+              "word": "manual",
+              "def": "手册；手动的"
+            },
+            {
+              "word": "manufacture",
+              "def": "制造"
+            },
+            {
+              "word": "manipulate",
+              "def": "操纵"
+            }
+          ]
+        },
+        "mnemonic": "man=手(想 manual 手动);用手把事务操持、驾驭好,就是 management 管理;动词 manage。",
+        "forms": [
+          {
+            "word": "manage",
+            "pos": "v.",
+            "def": "管理；设法做到"
+          },
+          {
+            "word": "manager",
+            "pos": "n.",
+            "def": "经理"
+          }
+        ]
+      }
+    },
+    {
+      "word": "stock",
+      "phonetic": "stɒk",
+      "pos": "n./v.",
+      "def": "存货，库存；股票",
+      "cefr": "B1",
+      "freq_rank": 740,
+      "sentence_en": "The item is out of stock.",
+      "sentence_zh": "这件商品缺货了。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "stock",
+            "type": "root",
+            "gloss": "树干，储备"
+          }
+        ],
+        "derivation": "本义'树干、根株';由'根本储备'引申为存货、股本、股票。",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "stockpile",
+              "def": "囤积"
+            },
+            {
+              "word": "livestock",
+              "def": "牲畜"
+            }
+          ]
+        },
+        "mnemonic": "stock=树干/根株→'家底储备';仓库里的家底=库存;公司的资本份额=股票;out of stock=缺货。",
+        "forms": [
+          {
+            "word": "stocks",
+            "pos": "n.",
+            "def": "股票；存货(复数)"
+          },
+          {
+            "word": "stocked",
+            "pos": "v.",
+            "def": "储备(过去式)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "check",
+      "phonetic": "tʃek",
+      "pos": "v./n.",
+      "def": "检查，核对；制止；支票",
+      "cefr": "A1",
+      "freq_rank": 854,
+      "sentence_en": "Please check your answers.",
+      "sentence_zh": "请核对你的答案。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "check",
+            "type": "root",
+            "gloss": "国王(棋),制止"
+          }
+        ],
+        "derivation": "源自国际象棋'将军(check)'——迫使对方停手核验局面 → 制止、检查。",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "checkpoint",
+              "def": "检查站"
+            },
+            {
+              "word": "checklist",
+              "def": "清单"
+            }
+          ]
+        },
+        "mnemonic": "来自象棋'将军'(check)——喝止对方、逼你核查局面;由此=检查、核对、制止。",
+        "forms": [
+          {
+            "word": "checked",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "checking",
+            "pos": "n.",
+            "def": "检查"
+          }
+        ]
+      }
+    },
+    {
+      "word": "firm",
+      "phonetic": "fɜːm",
+      "pos": "adj./n.",
+      "def": "坚定的，牢固的；公司",
+      "cefr": "B1",
+      "freq_rank": 902,
+      "sentence_en": "She gave a firm answer.",
+      "sentence_zh": "她给出了坚定的回答。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "firm",
+            "type": "root",
+            "gloss": "坚固"
+          }
+        ],
+        "derivation": "拉丁 firmus'坚固';形容词=坚定牢固;名词'签字确立的商号'→ 公司。",
+        "family": {
+          "root": "firm",
+          "gloss": "坚固",
+          "words": [
+            {
+              "word": "confirm",
+              "def": "确认"
+            },
+            {
+              "word": "affirm",
+              "def": "断言"
+            },
+            {
+              "word": "infirm",
+              "def": "虚弱的"
+            }
+          ]
+        },
+        "mnemonic": "firm=坚固;立场牢不可动=firm 坚定的;把它再夯实=confirm 确认;签字定下的商号=firm 公司。",
+        "forms": [
+          {
+            "word": "firmly",
+            "pos": "adv.",
+            "def": "坚定地"
+          },
+          {
+            "word": "firms",
+            "pos": "n.",
+            "def": "公司(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "trial",
+      "phonetic": "ˈtraɪəl",
+      "pos": "n.",
+      "def": "审判；试验；考验",
+      "cefr": "B2",
+      "freq_rank": 898,
+      "sentence_en": "The new drug is undergoing clinical trials.",
+      "sentence_zh": "这种新药正在进行临床试验。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "tri",
+            "type": "root",
+            "gloss": "试(try)"
+          },
+          {
+            "text": "al",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "tri(试)+al → 尝试/查验的过程 → 试验、审判",
+        "family": {
+          "root": "tri/try",
+          "gloss": "试",
+          "words": [
+            {
+              "word": "try",
+              "def": "尝试"
+            },
+            {
+              "word": "retry",
+              "def": "重试"
+            }
+          ]
+        },
+        "mnemonic": "tri=try(试);对药物/被告的检验过程,就是 trial 试验、审判;trial and error 反复试错。",
+        "forms": [
+          {
+            "word": "trials",
+            "pos": "n.",
+            "def": "试验(复数)"
+          },
+          {
+            "word": "trial",
+            "pos": "v.",
+            "def": "试验"
+          }
+        ]
+      }
+    },
+    {
+      "word": "cell",
+      "phonetic": "sel",
+      "pos": "n.",
+      "def": "细胞；小房间；电池",
+      "cefr": "B1",
+      "freq_rank": 895,
+      "sentence_en": "The human body is made of cells.",
+      "sentence_zh": "人体由细胞构成。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "cell",
+            "type": "root",
+            "gloss": "小室(cella)"
+          }
+        ],
+        "derivation": "拉丁 cella'小室、储藏室';引申最小的'小室'→ 细胞、牢房、电池单元。",
+        "family": {
+          "root": "cell",
+          "gloss": "小室",
+          "words": [
+            {
+              "word": "cellar",
+              "def": "地窖"
+            },
+            {
+              "word": "cellular",
+              "def": "细胞的；蜂窝的"
+            }
+          ]
+        },
+        "mnemonic": "cell=小室(想 cellar 地窖);生物最小的'小房间'=细胞;关人的小室=牢房;电的单元=电池。",
+        "forms": [
+          {
+            "word": "cells",
+            "pos": "n.",
+            "def": "细胞(复数)"
+          },
+          {
+            "word": "cellular",
+            "pos": "adj.",
+            "def": "细胞的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "lead",
+      "phonetic": "liːd",
+      "pos": "v./n.",
+      "def": "带领，引导；领先；铅",
+      "cefr": "A2",
+      "freq_rank": 318,
+      "sentence_en": "She will lead the team.",
+      "sentence_zh": "她将带领这个团队。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "lead",
+            "type": "root",
+            "gloss": "引导"
+          }
+        ],
+        "derivation": "古英语 lǽdan'引导'。带领→领先;另一同形词 lead=铅(读 /led/)。",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "leader",
+              "def": "领导者"
+            },
+            {
+              "word": "leadership",
+              "def": "领导力"
+            }
+          ]
+        },
+        "mnemonic": "lead=引导;走在前面带路=lead 带领、领先(过去式不规则 led);注意同形异义词 lead /led/=铅。",
+        "forms": [
+          {
+            "word": "led",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "leader",
+            "pos": "n.",
+            "def": "领导者"
+          }
+        ]
+      }
+    },
+    {
+      "word": "level",
+      "phonetic": "ˈlevl",
+      "pos": "n./adj.",
+      "def": "水平；级别；平的",
+      "cefr": "A2",
+      "freq_rank": 338,
+      "sentence_en": "Water finds its own level.",
+      "sentence_zh": "水会自己找平。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "lev",
+            "type": "root",
+            "gloss": "抬起，轻(平衡)"
+          },
+          {
+            "text": "el",
+            "type": "suffix",
+            "gloss": "名词后缀"
+          }
+        ],
+        "derivation": "lev(平衡、水准仪)→ 水平面、水平、级别",
+        "family": {
+          "root": "lev",
+          "gloss": "抬起、轻",
+          "words": [
+            {
+              "word": "elevate",
+              "def": "抬高"
+            },
+            {
+              "word": "elevator",
+              "def": "电梯"
+            },
+            {
+              "word": "relevant",
+              "def": "相关的"
+            }
+          ]
+        },
+        "mnemonic": "lev=抬/平衡(想 elevator 电梯上抬);水准仪测出的水平面=level 水平;高低层次=级别。",
+        "forms": [
+          {
+            "word": "levels",
+            "pos": "n.",
+            "def": "级别(复数)"
+          },
+          {
+            "word": "leveled",
+            "pos": "v.",
+            "def": "弄平(过去式)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "military",
+      "phonetic": "ˈmɪlɪtəri",
+      "pos": "adj./n.",
+      "def": "军事的；军队",
+      "cefr": "B1",
+      "freq_rank": 474,
+      "sentence_en": "He joined the military at eighteen.",
+      "sentence_zh": "他十八岁参军。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "milit",
+            "type": "root",
+            "gloss": "士兵，战斗"
+          },
+          {
+            "text": "ary",
+            "type": "suffix",
+            "gloss": "…的"
+          }
+        ],
+        "derivation": "milit(士兵)+ary → 与士兵、战斗有关的 → 军事的",
+        "family": {
+          "root": "milit",
+          "gloss": "士兵、战斗",
+          "words": [
+            {
+              "word": "militant",
+              "def": "好斗的"
+            },
+            {
+              "word": "militia",
+              "def": "民兵"
+            }
+          ]
+        },
+        "mnemonic": "milit=士兵(想 militia 民兵);和当兵打仗有关的一切,就是 military 军事的、军队。",
+        "forms": [
+          {
+            "word": "militant",
+            "pos": "adj.",
+            "def": "好斗的"
+          }
+        ]
+      }
+    },
+    {
+      "word": "carry",
+      "phonetic": "ˈkæri",
+      "pos": "v.",
+      "def": "携带，运送；支撑",
+      "cefr": "A1",
+      "freq_rank": 487,
+      "sentence_en": "Can you help me carry these bags?",
+      "sentence_zh": "你能帮我拎这些包吗？",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "carr",
+            "type": "root",
+            "gloss": "车，运(carrus)"
+          },
+          {
+            "text": "y",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "carr(车)→ 用车运 → 携带、运送",
+        "family": {
+          "root": "car",
+          "gloss": "车、运",
+          "words": [
+            {
+              "word": "car",
+              "def": "汽车"
+            },
+            {
+              "word": "cargo",
+              "def": "货物"
+            },
+            {
+              "word": "career",
+              "def": "生涯"
+            },
+            {
+              "word": "carriage",
+              "def": "马车"
+            }
+          ]
+        },
+        "mnemonic": "carr=车(想 car 汽车、cargo 货物);像用车装着运走,就是 carry 携带;carry out=执行。",
+        "forms": [
+          {
+            "word": "carried",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "carrier",
+            "pos": "n.",
+            "def": "运载工具；携带者"
+          }
+        ]
+      }
+    },
+    {
+      "word": "focus",
+      "phonetic": "ˈfəʊkəs",
+      "pos": "n./v.",
+      "def": "焦点；集中，聚焦",
+      "cefr": "B1",
+      "freq_rank": 688,
+      "sentence_en": "Try to focus on your work.",
+      "sentence_zh": "尽量专注于你的工作。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "focus",
+            "type": "root",
+            "gloss": "炉灶，焦点(拉丁)"
+          }
+        ],
+        "derivation": "拉丁 focus'炉灶'——光/热汇聚之处 → 焦点;使汇聚 → 集中。",
+        "family": {
+          "root": "",
+          "gloss": "相关词",
+          "words": [
+            {
+              "word": "focal",
+              "def": "焦点的"
+            }
+          ]
+        },
+        "mnemonic": "focus 本义'炉灶'(火光汇聚处);光线/注意力汇到一点=focus 焦点、集中;focus on=专注于。",
+        "forms": [
+          {
+            "word": "focused",
+            "pos": "v.",
+            "def": "过去式/过去分词"
+          },
+          {
+            "word": "focuses",
+            "pos": "n.",
+            "def": "焦点(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "data",
+      "phonetic": "ˈdeɪtə",
+      "pos": "n.",
+      "def": "数据，资料",
+      "cefr": "A2",
+      "freq_rank": 559,
+      "sentence_en": "We need more data to decide.",
+      "sentence_zh": "我们需要更多数据才能决定。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "dat",
+            "type": "root",
+            "gloss": "给出"
+          },
+          {
+            "text": "a",
+            "type": "suffix",
+            "gloss": "复数结尾"
+          }
+        ],
+        "derivation": "拉丁 datum'给出之物'的复数 data → 已知给出的资料 → 数据",
+        "family": {
+          "root": "dat/don",
+          "gloss": "给",
+          "words": [
+            {
+              "word": "date",
+              "def": "日期"
+            },
+            {
+              "word": "donate",
+              "def": "捐赠"
+            },
+            {
+              "word": "edit",
+              "def": "编辑"
+            }
+          ]
+        },
+        "mnemonic": "dat=给(想 date 给定的日期);被给出、已知的一堆事实,就是 data 数据(本是 datum 的复数)。",
+        "forms": [
+          {
+            "word": "database",
+            "pos": "n.",
+            "def": "数据库"
+          }
+        ]
+      }
+    },
+    {
+      "word": "course",
+      "phonetic": "kɔːs",
+      "pos": "n.",
+      "def": "课程；过程；路线",
+      "cefr": "A2",
+      "freq_rank": 418,
+      "sentence_en": "I'm taking an English course.",
+      "sentence_zh": "我在上一门英语课。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "cours",
+            "type": "root",
+            "gloss": "跑，流(cur)"
+          },
+          {
+            "text": "e",
+            "type": "suffix",
+            "gloss": "结尾"
+          }
+        ],
+        "derivation": "cours(跑)→ 跑过的路径/进程 → 路线、过程;按顺序跑的一段学习 → 课程",
+        "family": {
+          "root": "cur/cours",
+          "gloss": "跑、流",
+          "words": [
+            {
+              "word": "current",
+              "def": "当前的"
+            },
+            {
+              "word": "occur",
+              "def": "发生"
+            },
+            {
+              "word": "excursion",
+              "def": "远足"
+            }
+          ]
+        },
+        "mnemonic": "cours=跑(同 cur,想 current);一路跑过的路径=course 路线/过程;成套跑完的学习=course 课程;of course 当然。",
+        "forms": [
+          {
+            "word": "courses",
+            "pos": "n.",
+            "def": "课程(复数)"
+          }
+        ]
+      }
+    },
+    {
+      "word": "event",
+      "phonetic": "ɪˈvent",
+      "pos": "n.",
+      "def": "事件，大事；比赛项目",
+      "cefr": "A2",
+      "freq_rank": 525,
+      "sentence_en": "The wedding was a happy event.",
+      "sentence_zh": "婚礼是一件喜事。",
+      "aids": {
+        "morphemes": [
+          {
+            "text": "e",
+            "type": "prefix",
+            "gloss": "出，向外"
+          },
+          {
+            "text": "vent",
+            "type": "root",
+            "gloss": "来"
+          }
+        ],
+        "derivation": "e(出)+vent(来) → 冒出来发生的事 → 事件",
+        "family": {
+          "root": "vent",
+          "gloss": "来",
+          "words": [
+            {
+              "word": "invent",
+              "def": "发明(来到心中)"
+            },
+            {
+              "word": "prevent",
+              "def": "预防"
+            },
+            {
+              "word": "adventure",
+              "def": "冒险"
+            },
+            {
+              "word": "convention",
+              "def": "惯例"
+            }
+          ]
+        },
+        "mnemonic": "vent=来(想 prevent 预防);冒出来、降临的一件事,就是 event 事件;in the event of=万一。",
+        "forms": [
+          {
+            "word": "events",
+            "pos": "n.",
+            "def": "事件(复数)"
+          },
+          {
+            "word": "eventual",
+            "pos": "adj.",
+            "def": "最终的"
           }
         ]
       }
