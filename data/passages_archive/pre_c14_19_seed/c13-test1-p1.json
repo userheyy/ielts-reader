@@ -1,0 +1,181 @@
+{
+  "id": "c13-test1-p1",
+  "source": "剑桥雅思13 · Test 1 · Passage 1",
+  "title": "Case Study: Tourism New Zealand website",
+  "phrases": [
+    { "w": "New Zealand", "pos": "n.", "def": "新西兰" },
+    { "w": "Tourism New Zealand", "pos": "n.", "def": "新西兰旅游局" },
+    { "w": "gross domestic product", "pos": "n.", "def": "国内生产总值" },
+    { "w": "long-haul flight", "pos": "n.", "def": "长途航班" },
+    { "w": "account for", "pos": "phr.", "def": "占；构成" },
+    { "w": "once-in-a-lifetime", "pos": "adj.", "def": "一生一次的" }
+  ],
+  "analysis_unit": "paragraph",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "New Zealand is a small country of four million inhabitants, a long-haul flight from all the major tourist-generating markets of the world. Tourism currently makes up 9% of the country's gross domestic product, and is the country's largest export sector. Unlike other export sectors, which make products and then sell them overseas, tourism brings its customers to New Zealand. The product is the country itself - the people, the places and the experiences. In 1999, Tourism New Zealand launched a campaign to communicate a new brand position to the world. The campaign focused on New Zealand's scenic beauty, exhilarating outdoor activities and authentic Maori culture, and it made New Zealand one of the strongest national brands in the world.",
+      "details": [
+        { "zh": "新西兰是一个拥有四百万人口的小国，距离世界各大游客来源市场都要经过长途飞行。", "grammar": { "type": "主系表 + 同位补充", "note": "主干为 New Zealand is a small country；of four million inhabitants 后置修饰 country，逗号后的名词短语补充说明其地理劣势。" } },
+        { "zh": "目前，旅游业占该国国内生产总值的9%，并且是该国最大的出口产业。", "grammar": { "type": "并列谓语", "note": "makes up 与 is 共享主语 Tourism；make up 表示“占据、构成”。" } },
+        { "zh": "与生产商品并销往海外的其他出口行业不同，旅游业把顾客带到新西兰。", "grammar": { "type": "Unlike 比较 + 定语从句", "note": "Unlike 引出对照；which make...and sell... 修饰 other export sectors。" } },
+        { "zh": "这里的产品就是这个国家本身——这里的人、地方和体验。", "grammar": { "type": "主系表 + 同位解释", "note": "破折号后的 the people, the places and the experiences 具体解释 the country itself。" } },
+        { "zh": "1999年，新西兰旅游局发起了一项宣传活动，向世界传达新的品牌定位。", "grammar": { "type": "不定式表目的", "note": "to communicate... 作目的状语，说明 launched a campaign 的目的。" } },
+        { "zh": "这项活动突出新西兰秀美的风景、刺激的户外活动和原汁原味的毛利文化，使新西兰成为世界上最强势的国家品牌之一。", "grammar": { "type": "并列句 + make 复合结构", "note": "and 连接两个分句；made New Zealand one of... 为 make + 宾语 + 宾补。" } }
+      ],
+      "zh": "新西兰是一个仅有四百万人口的小国，距离世界各大游客来源市场都要经过长途飞行。目前旅游业占该国国内生产总值的9%，也是其最大的出口产业。与生产商品并销往海外的其他出口行业不同，旅游业把顾客带到新西兰；这里的产品就是这个国家本身——这里的人、地方和体验。1999年，新西兰旅游局发起宣传活动，向世界传达新的品牌定位。活动突出新西兰秀美的风景、刺激的户外活动和原汁原味的毛利文化，使新西兰成为世界上最强势的国家品牌之一。",
+      "grammar": { "type": "背景与品牌定位", "note": "本段先用数据说明旅游业的重要性，再以 Unlike 引出旅游业与传统出口业的区别，最后交代1999年品牌宣传活动及其结果。" },
+      "words": [
+        { "w": "inhabitant", "pos": "n.", "def": "居民" },
+        { "w": "gross domestic product", "pos": "n.", "def": "国内生产总值" },
+        { "w": "exhilarating", "pos": "adj.", "def": "令人兴奋的" }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 2,
+      "en": "A key feature of the campaign was the website www.newzealand.com, which provided potential visitors to New Zealand with a single gateway to everything the destination had to offer. The heart of the website was a database of tourism services operators, both those based in New Zealand and those based abroad which offered tourism services to the country. Any tourism-related business could be listed by filling in a simple form. This meant that even the smallest bed and breakfast address or specialist activity provider could gain a web presence with access to an audience of long-haul visitors. In addition, because participating businesses were able to update the details they gave on a regular basis, the information provided remained accurate. And to maintain and improve standards, Tourism New Zealand organised a scheme whereby organisations appearing on the website underwent an independent evaluation against a set of agreed national standards of quality. As part of this, the effect of each business on the environment was considered.",
+      "details": [
+        { "zh": "这项宣传活动的一大特色是网站 www.newzealand.com，它为潜在游客提供了一个了解新西兰全部旅游资源的统一入口。", "grammar": { "type": "主系表 + 非限制性定语从句", "note": "which 指代网站并补充其功能；everything 后省略关系代词 that，the destination had to offer 修饰 everything。" } },
+        { "zh": "网站的核心是旅游服务商数据库，既包括新西兰本地企业，也包括在海外提供赴新西兰旅游服务的企业。", "grammar": { "type": "同位展开 + 定语从句", "note": "both those...and those... 构成并列；based... 为过去分词短语，which offered... 修饰后一个 those。" } },
+        { "zh": "任何旅游相关企业都可以通过填写一张简单表格被收录。", "grammar": { "type": "情态被动 + by doing", "note": "could be listed 为被动语态；by filling... 表示实现方式。" } },
+        { "zh": "这意味着，即使是最小的家庭旅馆或专项活动供应商，也能在网上展示自己并接触长途游客。", "grammar": { "type": "宾语从句", "note": "that 引导 meant 的宾语从句；with access to... 补充说明 web presence 带来的渠道。" } },
+        { "zh": "此外，由于参与企业可以定期更新其资料，网站提供的信息能够保持准确。", "grammar": { "type": "because 原因状语从句", "note": "because 从句解释信息准确的原因；they gave 为省略关系代词的定语从句，修饰 details。" } },
+        { "zh": "为了保持并提高标准，新西兰旅游局建立了一套制度，让网站上的机构依据全国统一质量标准接受独立评估。", "grammar": { "type": "目的状语 + whereby 从句", "note": "to maintain... 表目的；whereby 表示“借此、凭此方式”；appearing... 修饰 organisations。" } },
+        { "zh": "作为评估的一部分，各企业对环境的影响也会被考量。", "grammar": { "type": "一般过去时被动", "note": "the effect 是主语，was considered 表示“被纳入考虑”。" } }
+      ],
+      "zh": "这项宣传活动的一大特色是网站 www.newzealand.com，它为潜在游客提供了一个了解新西兰全部旅游资源的统一入口。网站的核心是旅游服务商数据库，既包括新西兰本地企业，也包括在海外提供赴新西兰旅游服务的企业。任何旅游相关企业只需填写一张简单表格即可被收录。因此，即使是最小的家庭旅馆或专项活动供应商，也能在网上展示自己并接触长途游客。此外，参与企业可以定期更新资料，使网站信息保持准确。为保持并提高服务标准，新西兰旅游局还建立了一套制度，让网站上的机构依据全国统一质量标准接受独立评估，其中也会考量各企业对环境的影响。",
+      "grammar": { "type": "网站数据库与质量控制", "note": "which 引导非限制性定语从句解释网站功能；because 说明信息准确的原因；whereby 引导关系副词从句，说明质量评估制度的运作方式。" },
+      "words": [
+        { "w": "gateway", "pos": "n.", "def": "入口；门户" },
+        { "w": "undergo", "pos": "v.", "def": "经历；接受" },
+        { "w": "evaluation", "pos": "n.", "def": "评估" }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 3,
+      "en": "To communicate the New Zealand experience, the site also carried features relating to famous people and places. One of the most popular was an interview with former New Zealand All Blacks rugby captain Tana Umaga. Another feature that attracted a lot of attention was an interactive journey through a number of the locations chosen for blockbuster films which had made use of New Zealand's stunning scenery as a backdrop. As the site developed, additional features were added to help independent travellers devise their own customised itineraries. To make it easier to plan motoring holidays, the site catalogued the most popular driving routes in the country, highlighting different routes according to the season and indicating distances and times.",
+      "details": [
+        { "zh": "为了传达新西兰式体验，网站还刊载了与名人和著名地点有关的专题内容。", "grammar": { "type": "不定式表目的", "note": "To communicate... 位于句首作目的状语；relating to... 为现在分词短语修饰 features。" } },
+        { "zh": "其中最受欢迎的内容之一，是对前新西兰全黑橄榄球队队长塔纳·乌马加的采访。", "grammar": { "type": "省略中心名词", "note": "One of the most popular 后省略 features；with 引出采访对象。" } },
+        { "zh": "另一个备受关注的专题，是互动游览多部大片的取景地；这些影片曾以新西兰壮丽的景色为背景。", "grammar": { "type": "多层定语从句", "note": "that attracted... 修饰 feature；chosen for... 修饰 locations；which had made use of... 修饰 films。" } },
+        { "zh": "随着网站发展，更多功能被加入，以帮助自由行游客设计个性化行程。", "grammar": { "type": "as 时间从句 + 被动语态", "note": "As 表示“随着”；were added 为被动；to help... 表目的。" } },
+        { "zh": "为了方便规划自驾假期，网站汇总了全国最受欢迎的驾车路线，按季节突出不同路线，并标明距离和时间。", "grammar": { "type": "形式宾语 + 分词伴随", "note": "make it easier to do 中 it 是形式宾语；highlighting 与 indicating 并列作伴随状语。" } }
+      ],
+      "zh": "为了传达新西兰式体验，网站还刊载与名人和著名地点有关的专题内容。其中最受欢迎的内容之一，是对前新西兰全黑橄榄球队队长塔纳·乌马加的采访。另一个备受关注的专题，是带用户互动游览多部大片的取景地；这些影片曾以新西兰壮丽的景色为背景。随着网站发展，更多功能被加入，以帮助自由行游客设计个性化行程。为了方便规划自驾假期，网站还汇总了全国最受欢迎的驾车路线，按季节突出不同路线，并标明距离和时间。",
+      "grammar": { "type": "特色内容与自助行程", "note": "两个 To do 不定式短语分别表示目的；that 与 which 引导定语从句；highlighting 和 indicating 为现在分词，补充说明路线目录提供的信息。" },
+      "words": [
+        { "w": "itinerary", "pos": "n.", "def": "行程安排" },
+        { "w": "backdrop", "pos": "n.", "def": "背景" },
+        { "w": "catalogue", "pos": "v.", "def": "把……编入目录" }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 4,
+      "en": "Later, a Travel Planner feature was added, which allowed visitors to click and 'bookmark' places or attractions they were interested in, and then view the results on a map. The Travel Planner offered suggested routes and public transport options between the chosen locations. There were also links to accommodation in the area. By registering with the website, users could save their Travel Plan and return to it later, or print it out to take on the visit. The website also had a 'Your Words' section where anyone could submit a blog of their New Zealand travels for possible inclusion on the website.",
+      "details": [
+        { "zh": "后来，网站增加了“旅行规划器”功能，游客可以收藏自己感兴趣的地点或景点，再在地图上查看结果。", "grammar": { "type": "被动语态 + 非限制性定语从句", "note": "was added 为被动；which 指代该功能；they were interested in 修饰 places or attractions。" } },
+        { "zh": "旅行规划器会给出所选地点之间的建议路线和公共交通方案。", "grammar": { "type": "简单句", "note": "offered 后接两个并列宾语 suggested routes 与 public transport options。" } },
+        { "zh": "网站还提供当地住宿链接。", "grammar": { "type": "There be 句型", "note": "There were 表示“存在、提供”；to accommodation 修饰 links。" } },
+        { "zh": "用户注册网站后，可以保存旅行计划，日后继续查看，也可以打印出来随身携带。", "grammar": { "type": "By doing + 并列谓语", "note": "By registering... 表方式；save、return 和 print 构成并列动作；to take... 表目的。" } },
+        { "zh": "网站还有一个“你的文字”栏目，任何人都可以提交记录新西兰旅程的博客，供网站考虑收录。", "grammar": { "type": "where 定语从句", "note": "where 修饰 section；for possible inclusion 表示提交博客的潜在用途。" } }
+      ],
+      "zh": "后来，网站增加了“旅行规划器”功能，游客可以点击并收藏自己感兴趣的地点或景点，再在地图上查看结果。旅行规划器会给出所选地点之间的建议路线和公共交通方案，并提供当地住宿链接。用户注册后可以保存旅行计划，日后继续查看，也可以打印出来随身携带。网站还有一个“你的文字”栏目，任何人都可以提交记录新西兰旅程的博客，供网站考虑收录。",
+      "grammar": { "type": "旅行规划器功能", "note": "which 引导非限制性定语从句说明新增功能；they were interested in 为省略关系代词的定语从句；By doing 表示实现保存计划的方式。" },
+      "words": [
+        { "w": "bookmark", "pos": "v.", "def": "收藏网页或地点" },
+        { "w": "accommodation", "pos": "n.", "def": "住宿" },
+        { "w": "inclusion", "pos": "n.", "def": "收录；包含" }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 5,
+      "en": "The Tourism New Zealand website won two Webby awards for online achievement and innovation. More importantly perhaps, the growth of tourism to New Zealand was impressive. Overall tourism expenditure increased by an average of 6.9% per year between 1999 and 2004. From Britain, visits to New Zealand grew at an average annual rate of 13% between 2002 and 2006, compared to a rate of 4% overall for British visits abroad.",
+      "details": [
+        { "zh": "新西兰旅游网站凭借网络成就和创新赢得了两项威比奖。", "grammar": { "type": "简单句", "note": "won 后接 awards；for 引出获奖所表彰的方面。" } },
+        { "zh": "或许更重要的是，赴新西兰旅游的增长十分显著。", "grammar": { "type": "主系表", "note": "More importantly perhaps 是评注性状语；主语是 the growth of tourism to New Zealand。" } },
+        { "zh": "1999年至2004年，旅游总支出年均增长6.9%。", "grammar": { "type": "数据表达", "note": "by an average of 表示增长幅度；per year 表示每年。" } },
+        { "zh": "2002年至2006年，英国游客赴新西兰的人次年均增长13%，而同期英国人整体出境游的增速为4%。", "grammar": { "type": "过去分词比较结构", "note": "compared to... 将13%与4%对照；visits to New Zealand 是句子主语。" } }
+      ],
+      "zh": "新西兰旅游网站凭借网络成就和创新赢得了两项威比奖。或许更重要的是，赴新西兰旅游的增长十分显著：1999年至2004年，旅游总支出年均增长6.9%；2002年至2006年，英国游客赴新西兰的人次年均增长13%，而同期英国人整体出境游的增速只有4%。",
+      "grammar": { "type": "成果与数据对比", "note": "本段以奖项和增长率证明网站成效；compared to 引出对照数据，是雅思阅读常见的数据比较结构。" },
+      "words": [
+        { "w": "expenditure", "pos": "n.", "def": "支出；消费额" },
+        { "w": "annual", "pos": "adj.", "def": "年度的" }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 6,
+      "en": "The website was set up to allow both individuals and travel organisations to create itineraries and travel packages to suit their own needs and interests. On the website, visitors can search for activities not solely by geographical location, but also by the particular nature of the activity. This is important as research shows that activities are the key driver of visitor satisfaction, contributing 74% to visitor satisfaction, while transport and accommodation account for the remaining 26%. The more activities that visitors undertake, the more satisfied they will be. It has also been found that visitors enjoy cultural activities most when they are interactive, such as visiting a marae (meeting ground) to learn about traditional Maori life. Many long-haul travellers enjoy such learning experiences, which provide them with stories to take home to their friends and family. In addition, it appears that visitors to New Zealand don't want to be 'one of the crowd' and find activities that involve only a few people more special and meaningful.",
+      "details": [
+        { "zh": "该网站的设立，是为了让个人和旅行机构都能按照自身需要与兴趣创建行程和旅游套餐。", "grammar": { "type": "被动语态 + 不定式链", "note": "was set up 为被动；to allow 表目的；allow somebody to do；to suit... 修饰 itineraries and packages。" } },
+        { "zh": "游客不仅可以按地理位置搜索活动，也可以按活动的具体性质搜索。", "grammar": { "type": "not solely...but also", "note": "两个 by 短语并列，分别表示两种搜索依据。" } },
+        { "zh": "这一点很重要，因为研究显示活动是游客满意度的关键驱动因素，占满意度的74%，而交通和住宿合计占其余26%。", "grammar": { "type": "as 原因从句 + while 对比", "note": "as 表原因；that 引导 shows 的宾语从句；contributing... 补充比例；while 引出对比。" } },
+        { "zh": "游客参加的活动越多，他们就越满意。", "grammar": { "type": "the more..., the more...", "note": "比较级成对使用，表达两个变量同步变化；that visitors undertake 修饰 activities。" } },
+        { "zh": "研究还发现，互动式文化活动最受游客欢迎，例如参观毛利会堂以了解传统毛利生活。", "grammar": { "type": "现在完成时被动 + 时间从句", "note": "It has been found that 是客观报告句型；when they are interactive 说明最受欢迎的条件。" } },
+        { "zh": "许多长途游客喜欢这类学习体验，因为它们能让游客带着故事回去与亲友分享。", "grammar": { "type": "非限制性定语从句", "note": "which 指代 learning experiences；to take home 修饰 stories。" } },
+        { "zh": "此外，游客似乎不愿成为“人群中的普通一员”，并认为只有少数人参加的活动更加特别、更有意义。", "grammar": { "type": "It appears that + 并列谓语", "note": "that 引导真正主语；don't want 与 find 并列；that involve... 修饰 activities。" } }
+      ],
+      "zh": "该网站的设立，是为了让个人和旅行机构都能按照自身需要与兴趣创建行程和旅游套餐。游客不仅可以按地理位置搜索活动，也可以按活动的具体性质搜索。这一点很重要，因为研究显示，活动是游客满意度的关键驱动因素，占74%；交通和住宿合计占其余26%。游客参与的活动越多，满意度就越高。研究还发现，互动式文化活动最受游客欢迎，例如参观毛利会堂以了解传统毛利生活。许多长途游客喜欢这类学习体验，因为它们能让游客带着故事回去与亲友分享。此外，游客似乎不愿成为“人群中的普通一员”，而认为只有少数人参加的活动更加特别、更有意义。",
+      "grammar": { "type": "游客满意度研究", "note": "not solely...but also 构成并列；contributing 与 while 分别补充比例和对比；the more..., the more... 表示“越……越……”；It has been found that 为客观研究报告句式。" },
+      "words": [
+        { "w": "solely", "pos": "adv.", "def": "仅仅；单独地" },
+        { "w": "account for", "pos": "phr.", "def": "占；构成" },
+        { "w": "undertake", "pos": "v.", "def": "从事；参加" }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 7,
+      "en": "It could be argued that New Zealand is not a typical destination. New Zealand is a small country with a visitor economy composed mainly of small businesses. It is generally perceived as a safe English-speaking country with a reliable transport infrastructure. Because of the long-haul flight, most visitors stay for longer (average 20 days) and want to see as much of the country as possible on what is often seen as a once-in-a-lifetime visit. However, the underlying lessons apply anywhere - the effectiveness of a strong brand, a strategy based on unique experiences and a comprehensive and user-friendly website.",
+      "details": [
+        { "zh": "有人可能会说，新西兰并不是一个典型旅游目的地。", "grammar": { "type": "形式主语 + 被动报告结构", "note": "It 是形式主语，that 从句是真正主语；could be argued 弱化语气。" } },
+        { "zh": "新西兰是一个小国，其旅游经济主要由小企业构成。", "grammar": { "type": "with 复合修饰", "note": "with 引出 country 的附加特征；composed mainly of... 为过去分词短语修饰 economy。" } },
+        { "zh": "人们普遍认为它是一个安全的英语国家，并拥有可靠的交通基础设施。", "grammar": { "type": "被动语态 + perceive as", "note": "be perceived as 表示“被认为是”；with 引出伴随特征。" } },
+        { "zh": "由于路途遥远，大多数游客停留时间较长，平均约20天，并希望在这趟常被视为一生仅有一次的旅行中尽可能多地游览全国。", "grammar": { "type": "原因状语 + 并列谓语", "note": "Because of 后接名词短语；stay 与 want 并列；as much...as possible 表最大程度；what 引导介词宾语从句。" } },
+        { "zh": "不过，这些深层经验适用于任何地方：强势品牌的有效性、以独特体验为基础的策略，以及一个全面而易用的网站。", "grammar": { "type": "转折 + 同位列举", "note": "However 转折；破折号后的三个并列名词短语具体解释 underlying lessons。" } }
+      ],
+      "zh": "有人可能会说，新西兰并不是一个典型旅游目的地。它是一个小国，旅游经济主要由小企业构成；人们普遍认为它是一个安全的英语国家，并拥有可靠的交通基础设施。由于路途遥远，大多数游客停留时间较长，平均约20天，并希望在这趟常被视为一生仅有一次的旅行中尽可能多地游览全国。不过，文章总结出的深层经验适用于任何地方：强势品牌的有效性、以独特体验为基础的策略，以及一个全面而易用的网站。",
+      "grammar": { "type": "局限与普适结论", "note": "It could be argued that 用于提出让步观点；composed mainly of 为过去分词短语作后置定语；Because of 解释停留较久的原因；However 转向可普遍应用的结论。" },
+      "words": [
+        { "w": "infrastructure", "pos": "n.", "def": "基础设施" },
+        { "w": "once-in-a-lifetime", "pos": "adj.", "def": "一生一次的" },
+        { "w": "underlying", "pos": "adj.", "def": "根本的；潜在的" }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 1–7 · Table completion",
+      "type": "table_completion",
+      "instructions": ["Complete the table below.", "Choose ONE WORD ONLY from the passage for each answer."],
+      "items": [
+        { "number": 1, "prompt": "Database: allowed businesses to ___ information regularly.", "answer": "update", "evidence_sentence": 2 },
+        { "number": 2, "prompt": "Evaluation included each business's impact on the ___.", "answer": "environment", "evidence_sentence": 2 },
+        { "number": 3, "prompt": "An interview with a former sports ___.", "answer": "captain", "evidence_sentence": 3 },
+        { "number": 4, "prompt": "An interactive tour of locations used in ___.", "answer": "films", "evidence_sentence": 3 },
+        { "number": 5, "prompt": "Driving routes varied depending on the ___.", "answer": "season", "evidence_sentence": 3 },
+        { "number": 6, "prompt": "Travel Planner included details of local ___.", "answer": "accommodation", "evidence_sentence": 4 },
+        { "number": 7, "prompt": "Travellers could send a link to their ___.", "answer": "blog", "evidence_sentence": 4 }
+      ]
+    },
+    {
+      "title": "Questions 8–13 · TRUE / FALSE / NOT GIVEN",
+      "type": "true_false_not_given",
+      "instructions": ["Decide whether each statement agrees with the passage."],
+      "items": [
+        { "number": 8, "prompt": "The website aimed to provide ready-made itineraries and packages for travel companies and individual tourists.", "answer": "FALSE", "evidence_sentence": 6 },
+        { "number": 9, "prompt": "Most visitors started searching on the website by geographical location.", "answer": "NOT GIVEN", "evidence_sentence": 6 },
+        { "number": 10, "prompt": "According to research, 26% of visitor satisfaction is related to accommodation.", "answer": "FALSE", "evidence_sentence": 6 },
+        { "number": 11, "prompt": "Visitors to New Zealand like to become involved in the local culture.", "answer": "TRUE", "evidence_sentence": 6 },
+        { "number": 12, "prompt": "Visitors like staying in small hotels in New Zealand rather than in larger ones.", "answer": "NOT GIVEN", "evidence_sentence": 7 },
+        { "number": 13, "prompt": "Many visitors feel it is unlikely that they will return to New Zealand after their visit.", "answer": "TRUE", "evidence_sentence": 7 }
+      ]
+    }
+  ]
+}

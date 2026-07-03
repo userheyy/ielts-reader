@@ -1,0 +1,332 @@
+# -*- coding: utf-8 -*-
+"""从零导入 剑19 Test2 Passage3 'An inquiry into the existence of the gifted child'（双栏，主 agent 亲抄）。"""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "data" / "passages" / "c19-test2-p3.json"
+
+
+def w(word, pos, d):
+    return {"w": word, "pos": pos, "def": d}
+
+
+PHRASES = [
+    w("Fields Medal", "n.", "菲尔兹奖（数学界最高荣誉之一）"),
+    w("lay one's hands on", "phr.", "弄到手；找到"),
+    w("sum up", "phr.", "总结；概括"),
+    w("deliberate practice", "n.", "刻意练习"),
+    w("pause for thought", "phr.", "引人深思"),
+    w("work ethic", "n.", "职业道德；勤奋精神"),
+    w("spin-off research", "n.", "衍生研究"),
+    w("free school meals", "n.", "（因贫困提供的）免费校餐"),
+    w("high performance learning", "n.", "高绩效学习（法）"),
+    w("the epitome of", "phr.", "……的典型/缩影"),
+]
+
+# 每句: (en, zh, gtype, note, [words])
+S = [
+    # ---- para 1 (左栏起) ----
+    ("Let us start by looking at a modern ‘genius’, Maryam Mirzakhani, who died at the early age of 40.",
+     "让我们先来看一位现代“天才”——玛丽亚姆·米尔札哈尼，她在40岁的盛年便离世了。",
+     "祈使句 + 非限制性定语从句", "Let us start by doing 是祈使结构；who died... 是非限制性定语从句，补充说明 Mirzakhani。",
+     [w("genius", "n.", "天才"), w("Maryam Mirzakhani", "n.", "玛丽亚姆·米尔札哈尼（人名）")]),
+    ("She was the only woman to win the Fields Medal – the mathematical equivalent of a Nobel prize.",
+     "她是唯一一位获得菲尔兹奖的女性——该奖相当于数学界的诺贝尔奖。",
+     "主系表 + 破折号同位语", "主干 She was the only woman；to win... 是不定式作后置定语；破折号后的名词短语解释 Fields Medal。",
+     [w("equivalent", "n.", "相当物；对等物")]),
+    ("It would be easy to assume that someone as special as Mirzakhani must have been one of those ‘gifted’ children, those who have an extraordinary ability in a specific sphere of activity or knowledge.",
+     "人们很容易假定：像米尔札哈尼这样出众的人，一定曾是那些“天赋异禀”的孩子之一——即在某个特定活动或知识领域拥有非凡能力的孩子。",
+     "形式主语 + 宾语从句 + 定语从句", "It 为形式主语，真正主语是 to assume...；that 引导宾语从句；those who... 是定语从句，进一步解释 gifted children。",
+     [w("assume", "v.", "假定；认为"), w("extraordinary", "adj.", "非凡的")]),
+    ("But look closer and a different story emerges.",
+     "但只要走近细看，就会浮现出另一个截然不同的故事。",
+     "祈使句 + and 结果", "“祈使句 + and + 陈述句”表条件结果，相当于 If you look closer, a different story emerges。",
+     [w("emerge", "v.", "浮现；显现")]),
+    ("Mirzakhani was born in Tehran, Iran.",
+     "米尔札哈尼出生于伊朗德黑兰。",
+     "简单句", "主谓 + 地点状语的最简结构，was born in 表出生地。",
+     [w("Tehran", "n.", "德黑兰（伊朗首都）")]),
+    ("She went to a highly selective girls’ school but maths wasn’t her interest – reading was.",
+     "她就读于一所竞争极为激烈的女子学校，但数学并非她的兴趣所在——阅读才是。",
+     "并列句 + 省略", "but 连接两分句；破折号后的 reading was 省略了 her interest，与前句形成对比。",
+     [w("selective", "adj.", "选拔严格的；精挑细选的")]),
+    ("She loved novels and would read anything she could lay her hands on.",
+     "她热爱小说，凡是能找到的读物都会拿来读。",
+     "并列谓语 + 定语从句", "loved 与 would read 并列；anything (that) she could lay her hands on 是省略关系词的定语从句。",
+     [w("lay one's hands on", "phr.", "弄到；找到")]),
+    ("As for maths, she did rather poorly at it for the first couple of years in her middle school, but became interested when her elder brother told her about what he’d learned.",
+     "至于数学，她在中学最初几年成绩相当差，但当哥哥向她讲述他所学到的东西时，她开始产生了兴趣。",
+     "并列谓语 + when 时间状语从句", "did poorly 与 became interested 并列；when 引导时间状语从句；what he’d learned 是 told 的宾语从句。",
+     [w("rather", "adv.", "相当地"), w("poorly", "adv.", "差地；不好地")]),
+    ("He shared a famous maths problem from a magazine that fascinated her – and she was hooked.",
+     "他分享了杂志上一道著名的数学题，令她着迷——她就此深深入迷。",
+     "定语从句 + 破折号结果", "that fascinated her 是定语从句修饰 problem；破折号后 she was hooked 表结果，be hooked 意为“上瘾、着迷”。",
+     [w("fascinate", "v.", "使着迷"), w("be hooked", "phr.", "入迷；上瘾")]),
+    # ---- para 2 ----
+    ("In adult life it is clear that she was curious, excited by what she did and also resolute in the face of setbacks.",
+     "在成年后可以清楚看到，她充满好奇，对自己所做的事满怀热情，面对挫折也十分坚定。",
+     "形式主语 + 表语从句", "it is clear that... 用形式主语；从句内 curious / excited / resolute 三个形容词并列作表语；in the face of 意为“面对”。",
+     [w("resolute", "adj.", "坚定的"), w("setback", "n.", "挫折")]),
+    ("One of her comments sums it up.",
+     "她的一句话很好地概括了这一点。",
+     "简单句", "主干 One of her comments sums it up；sum up 意为“概括、总结”。",
+     [w("sum up", "phr.", "概括；总结")]),
+    ("‘Of course, the most rewarding part is the “Aha” moment, the excitement of discovery and enjoyment of understanding something new . . . But most of the time, doing mathematics for me is like being on a long hike with no trail and no end in sight.’",
+     "“当然，最有收获的时刻是那个‘啊哈’的顿悟瞬间——发现的兴奋、以及理解新事物的乐趣……但大多数时候，对我而言做数学就像走在一条没有小径、望不到尽头的漫长徒步路上。”",
+     "直接引语 + 同位语 + 比喻", "引语主干 the most rewarding part is the “Aha” moment；后面名词短语作同位语补充；like being on a long hike 用比喻描述做数学的感受。",
+     [w("rewarding", "adj.", "有收获的；值得的"), w("in sight", "phr.", "看得见；在望")]),
+    ("That trail took her to the heights of original research into mathematics.",
+     "正是那条“路”，把她带到了数学原创研究的高峰。",
+     "隐喻延续", "沿用上句 trail 的比喻；took her to the heights of... 意为“将她带到……的高峰”。",
+     [w("original", "adj.", "原创的"), w("height", "n.", "高峰；高处")]),
+    # ---- para 3 ----
+    ("Is her background unusual?",
+     "她的背景不同寻常吗？",
+     "一般疑问句", "以设问引出下文；作者用问句过渡，随后给出回答。",
+     [w("background", "n.", "背景")]),
+    ("Apparently not.",
+     "显然并非如此。",
+     "省略句", "对上句设问的简短否定回答，完整意为 Apparently her background is not unusual。",
+     [w("apparently", "adv.", "显然；看来")]),
+    ("Most Nobel prize winners were unexceptional in childhood.",
+     "大多数诺贝尔奖得主在童年时期都并不出众。",
+     "主系表", "主干 winners were unexceptional；in childhood 作时间状语；unexceptional 意为“平凡的、不突出的”。",
+     [w("unexceptional", "adj.", "平凡的；不出众的")]),
+    ("Einstein was slow to talk as a baby.",
+     "爱因斯坦婴儿时期说话很晚。",
+     "主系表 + as 状语", "be slow to do 意为“做某事迟缓”；as a baby 作时间状语。",
+     [w("Einstein", "n.", "爱因斯坦")]),
+    ("He failed the general part of the entry test to Zurich Polytechnic – though they let him in because of high physics and maths scores.",
+     "他没通过苏黎世理工学院入学考试的普通科目——不过校方因其物理和数学成绩优异而录取了他。",
+     "主谓宾 + though 让步", "主干 He failed the general part；破折号后 though 引导让步状语从句，说明仍被录取的原因。",
+     [w("entry test", "n.", "入学考试"), w("polytechnic", "n.", "理工学院")]),
+    ("He struggled at work initially, but he kept plugging away and eventually rewrote the laws of Newtonian mechanics with his theory of relativity.",
+     "他起初工作上举步维艰，但坚持不懈，最终用相对论改写了牛顿力学定律。",
+     "并列句 + 并列谓语", "but 连接两分句；后一分句 kept plugging away 与 rewrote 并列；plug away 意为“坚持苦干”。",
+     [w("plug away", "phr.", "坚持不懈地做"), w("Newtonian mechanics", "n.", "牛顿力学")]),
+    # ---- para 4 ----
+    ("There has been a considerable amount of research on high performance over the last century that suggests it goes way beyond tested intelligence.",
+     "过去一个世纪里，有大量关于高水平表现的研究，它们表明高水平表现远不止于可测量的智力。",
+     "There be + 定语从句", "There has been... research 为主干；that suggests... 是定语从句修饰 research；it goes way beyond... 是 suggests 的宾语从句。",
+     [w("considerable", "adj.", "相当大的"), w("go beyond", "phr.", "超出；远不止")]),
+    ("On top of that, research is clear that brains are flexible, new neural pathways can be created, and IQ isn’t fixed.",
+     "此外，研究明确指出：大脑是可塑的，新的神经通路能够被建立，智商也并非固定不变。",
+     "表语从句 + 并列分句", "research is clear that... 引出宾语性表语从句；从句内三个分句（brains are flexible / pathways can be created / IQ isn’t fixed）并列。",
+     [w("flexible", "adj.", "灵活的；可塑的"), w("neural pathway", "n.", "神经通路")]),
+    ("For example, just because you can read stories with hundreds of pages at the age of five doesn’t mean you will still be ahead of your contemporaries in your teens.",
+     "例如，五岁就能读数百页的故事，并不意味着到了十几岁你仍会领先于同龄人。",
+     "just because... doesn't mean... 结构", "“just because A doesn’t mean B”表“不能因为A就断定B”；you can read... 是 because 从句，you will still be ahead... 是 mean 的宾语从句。",
+     [w("contemporary", "n.", "同龄人；同辈"), w("in one's teens", "phr.", "在十几岁时")]),
+    # ---- para 5 ----
+    ("While the jury is out on giftedness being innate and other factors potentially making the difference, what is certain is that the behaviours associated with high levels of performance are replicable and most can be taught – even traits such as curiosity.",
+     "尽管“天赋是否与生俱来、其他因素是否才是关键”尚无定论，但可以确定的是：与高水平表现相关的行为是可复制的，且大多可以后天习得——甚至连好奇心这类特质也是如此。",
+     "while 让步 + 主语从句", "While 引导让步状语（the jury is out on... 意为“尚无定论”）；what is certain 为主语从句作主语；that... 为表语从句；破折号后举例补充。",
+     [w("the jury is out", "phr.", "尚无定论"), w("innate", "adj.", "天生的"), w("replicable", "adj.", "可复制的")]),
+    ("According to my colleague Prof Deborah Eyre, with whom I’ve collaborated on the book Great Minds and How to Grow Them, the latest neuroscience and psychological research suggests most individuals can reach levels of performance associated in school with the gifted and talented.",
+     "据我的同事德博拉·艾尔教授（我曾与她合著《伟大的头脑及如何培养他们》一书）所言，最新的神经科学与心理学研究表明：大多数人都能达到在学校里被视为“天赋异禀者”才有的表现水平。",
+     "插入定语从句 + 宾语从句", "with whom I’ve collaborated... 是介词前置的非限制性定语从句，插入补充；主干 research suggests (that) most individuals can reach...；associated... 为过去分词作后置定语。",
+     [w("collaborate", "v.", "合作"), w("neuroscience", "n.", "神经科学")]),
+    ("However, they must be taught the right attitudes and approaches to their learning and develop the attributes of high performers – curiosity, persistence and hard work, for example – an approach Eyre calls ‘high performance learning’.",
+     "然而，必须教给他们正确的学习态度与方法，并培养出高绩效者的特质——例如好奇心、毅力和勤奋——这正是艾尔所称的“高绩效学习”。",
+     "被动 + 并列谓语 + 同位语", "must be taught 为被动，与 develop 并列共用主语 they；破折号列举 attributes；末尾 an approach... 作整句的同位语，an approach (that) Eyre calls... 省略了关系词。",
+     [w("attribute", "n.", "特质；属性"), w("persistence", "n.", "毅力；坚持")]),
+    ("Critically, they need the right support in developing those approaches at home as well as at school.",
+     "至关重要的是，他们在家里和在学校都需要恰当的支持来培养这些方法。",
+     "副词强调 + 状语", "Critically 作评注性状语强调重要性；in developing... 说明 support 的用途；A as well as B 表“A和B都”。",
+     [w("critically", "adv.", "至关重要地"), w("as well as", "phr.", "也；和……一样")]),
+    # ---- para 6 ----
+    ("Prof Anders Ericsson, an eminent education psychologist at Florida State University, US, is the co-author of Peak: Secrets from the New Science of Expertise.",
+     "美国佛罗里达州立大学的杰出教育心理学家安德斯·埃里克森教授，是《巅峰：新专长科学的秘密》一书的合著者。",
+     "主系表 + 同位语", "主干 Prof Anders Ericsson is the co-author of...；an eminent education psychologist... 为人名的同位语补充身份。",
+     [w("eminent", "adj.", "杰出的；著名的"), w("co-author", "n.", "合著者")]),
+    ("After research going back to 1980 into diverse achievements, from music to memory to sport, he doesn’t think unique and innate talents are at the heart of performance.",
+     "在对音乐、记忆、体育等各类成就进行了追溯至1980年的研究之后，他认为独特而天生的才能并非表现的核心。",
+     "介词状语 + 宾语从句", "After research... 为时间状语，going back to 1980 是现在分词作后置定语修饰 research；主干 he doesn’t think (that) talents are at the heart of...。",
+     [w("diverse", "adj.", "多种多样的"), w("at the heart of", "phr.", "处于……的核心")]),
+    ("Deliberate practice, that stretches you every step of the way, and around 10,000 hours of it, is what produces the goods.",
+     "刻意练习——那种每一步都逼你不断突破的练习——以及大约一万小时的这种练习，才是造就成果的关键。",
+     "定语从句 + 表语从句", "主语 Deliberate practice... and around 10,000 hours of it；that stretches you... 是定语从句插入修饰；is what produces the goods 用 what 引导表语从句，produce the goods 意为“取得成功”。",
+     [w("deliberate practice", "n.", "刻意练习"), w("stretch", "v.", "使竭尽全力；使伸展")]),
+    ("It’s not a magic number – the highest performers move on to doing a whole lot more, of course.",
+     "这并不是一个神奇的数字——当然，最顶尖的人会继续投入远超于此的练习。",
+     "主系表 + 破折号补充", "主干 It’s not a magic number；破折号后补充说明，move on to doing 意为“接着去做”。",
+     [w("magic number", "n.", "神奇（万能）数字"), w("move on to", "phr.", "转而去做")]),
+    ("Ericsson’s memory research is particularly interesting because random students, trained in memory techniques for the study, went on to outperform others thought to have innately superior memories – those who you might call gifted.",
+     "埃里克森的记忆研究尤其有趣，因为为该研究接受过记忆技巧训练的随机学生，后来竟胜过了那些被认为天生记忆力更强的人——也就是你可能会称之为“天才”的人。",
+     "because 原因从句 + 分词定语", "because 引导原因状语从句，主干 random students went on to outperform others；trained in... 和 thought to have... 均为过去分词作后置定语；破折号后 those who... 补充解释 others。",
+     [w("outperform", "v.", "胜过；表现优于"), w("superior", "adj.", "更好的；优越的")]),
+    # ---- para 7 ----
+    ("But it is perhaps the work of Benjamin Bloom, another distinguished American educationist working in the 1980s, that gives the most pause for thought.",
+     "但或许最引人深思的，是另一位20世纪80年代活跃的杰出美国教育学家本杰明·布卢姆的研究。",
+     "强调句 + 同位语", "it is... that... 为强调句型，强调 the work of Benjamin Bloom；another distinguished... 是人名的同位语；give pause for thought 意为“引人深思”。",
+     [w("distinguished", "adj.", "杰出的"), w("give pause for thought", "phr.", "引人深思")]),
+    ("Bloom’s team looked at a group of extraordinarily high achieving people in disciplines as varied as ballet, swimming, piano, tennis, maths, sculpture and neurology.",
+     "布卢姆的团队考察了一群成就极高的人，他们所处的领域五花八门，包括芭蕾、游泳、钢琴、网球、数学、雕塑和神经学。",
+     "主谓宾 + as...as 结构", "主干 team looked at a group of people；in disciplines as varied as... 说明领域之多样，as varied as 意为“像……一样多样”。",
+     [w("discipline", "n.", "学科；领域"), w("varied", "adj.", "各种各样的")]),
+    ("He found a pattern of parents encouraging and supporting their children, often in areas they enjoyed themselves.",
+     "他发现了一种模式：父母鼓励并支持孩子，而且往往是在他们自己也乐在其中的领域。",
+     "动名词复合结构 + 定语从句", "主干 He found a pattern；of parents encouraging and supporting... 用动名词复合结构说明 pattern 内容；(that) they enjoyed 是省略关系词的定语从句修饰 areas。",
+     [w("pattern", "n.", "模式；规律")]),
+    ("Bloom’s outstanding people had worked very hard and consistently at something they had become hooked on when at a young age, and their parents all emerged as having strong work ethics themselves.",
+     "布卢姆研究中那些出类拔萃的人，都在年少时便迷上的某件事上持续而刻苦地努力，而他们的父母自身也无一不展现出强烈的勤奋精神。",
+     "过去完成时 + 并列句", "两分句由 and 并列；前句 had worked... 用过去完成时，(that) they had become hooked on 修饰 something；后句 emerged as having... 意为“显现为具有……”。",
+     [w("consistently", "adv.", "始终如一地"), w("work ethic", "n.", "勤奋精神；职业操守")]),
+    # ---- para 8 ----
+    ("Eyre says we know how high performers learn.",
+     "艾尔说，我们了解高绩效者是如何学习的。",
+     "宾语从句 + 间接疑问", "Eyre says (that)... 为宾语从句；how high performers learn 是 know 的间接疑问宾语。",
+     [w("high performer", "n.", "高绩效者；表现优异者")]),
+    ("From that she has developed a high performing learning approach.",
+     "由此，她开发出了一套高绩效学习法。",
+     "状语前置 + 现在完成时", "From that 状语前置指代上句内容；has developed 用现在完成时表已取得的成果。",
+     [w("approach", "n.", "方法；途径")]),
+    ("She is working on this with a group of schools, both in Britain and abroad.",
+     "她正与一批学校合作推进此事，这些学校既有英国本土的，也有海外的。",
+     "现在进行时 + both...and", "is working on 表正在进行；both in Britain and abroad 补充说明学校范围。",
+     [w("abroad", "adv.", "在国外")]),
+    ("Some spin-off research, which looked in detail at 24 of the 3,000 children being studied who were succeeding despite difficult circumstances, found something remarkable.",
+     "一项衍生研究详细考察了所研究的3000名孩子中、在艰难处境下仍取得成功的24人，发现了一个引人注目的现象。",
+     "非限制性定语从句 + 嵌套定语", "主干 research found something remarkable；which looked in detail at... 是非限制性定语从句；being studied 与 who were succeeding... 层层修饰 children。",
+     [w("spin-off", "adj.", "衍生的"), w("circumstance", "n.", "环境；境况")]),
+    ("Half were getting free school meals because of poverty, more than half were living with a single parent, and four in five were living in disadvantaged areas.",
+     "其中一半因贫困而领取免费校餐，超过一半与单亲生活，五分之四住在贫困地区。",
+     "并列句 + 数量主语", "三个分句并列，主语分别为 Half / more than half / four in five；because of poverty 说明原因；four in five 意为“五分之四”。",
+     [w("disadvantaged", "adj.", "贫困的；处境不利的"), w("four in five", "phr.", "五分之四")]),
+    ("Interviews uncovered strong evidence of an adult or adults in the child’s life who valued and supported education, either in the immediate or extended family or in the child’s wider community.",
+     "访谈揭示出有力证据：这些孩子的生活中存在一位或多位重视并支持教育的成年人——或来自直系或大家庭，或来自孩子更广泛的社区。",
+     "主谓宾 + 定语从句", "主干 Interviews uncovered strong evidence；who valued and supported education 是定语从句修饰 adult(s)；either... or... or... 列举这些成年人的来源。",
+     [w("uncover", "v.", "揭示；发现"), w("extended family", "n.", "大家庭（含旁系亲属）")]),
+    ("Children talked about the need to work hard at school, to listen in class and keep trying.",
+     "孩子们谈到需要在学校努力用功、在课堂上专心听讲并不断尝试。",
+     "并列不定式", "主干 Children talked about the need；to work hard / to listen / (to) keep trying 三个不定式并列，作 need 的后置定语。",
+     [w("keep trying", "phr.", "不断尝试；坚持努力")]),
+    # ---- para 9 (结尾, 右栏) ----
+    ("Let us end with Einstein, the epitome of a genius.",
+     "让我们以爱因斯坦——这位天才的典范——作结。",
+     "祈使句 + 同位语", "Let us end with... 为祈使结构；the epitome of a genius 是 Einstein 的同位语。",
+     [w("epitome", "n.", "典型；缩影")]),
+    ("He clearly had curiosity, character and determination.",
+     "他显然兼具好奇心、品格与决心。",
+     "主谓宾", "主干 He had curiosity, character and determination；三个名词并列作宾语。",
+     [w("determination", "n.", "决心")]),
+    ("He struggled against rejection in early life but was undeterred.",
+     "他早年屡遭拒绝，却毫不气馁。",
+     "并列谓语", "struggled against... 与 was undeterred 由 but 并列，形成转折；undeterred 意为“未被吓退的”。",
+     [w("rejection", "n.", "拒绝；否定"), w("undeterred", "adj.", "不气馁的；未被吓退的")]),
+    ("Did he think he was a genius or even gifted?",
+     "他认为自己是天才、甚至天赋异禀吗？",
+     "一般疑问 + 宾语从句", "以设问引出爱因斯坦的自评；(that) he was a genius... 是 think 的宾语从句。",
+     [w("gifted", "adj.", "有天赋的")]),
+    ("He once wrote: ‘It’s not that I’m so smart, it’s just that I stay with problems longer.",
+     "他曾写道：“并不是我多聪明，只是我能在问题上钻研得更久。",
+     "强调句式引语", "引语用 It’s not that... it’s just that... 对比结构，表“不是……而是……”；stay with problems 意为“坚持钻研问题”。",
+     [w("stay with", "phr.", "坚持；不放弃")]),
+    ("Most people say it is the intellect which makes a great scientist.",
+     "多数人说，造就伟大科学家的是智力。",
+     "宾语从句 + 强调句", "say (that)... 引导宾语从句；从句内 it is the intellect which... 为强调句，强调 the intellect。",
+     [w("intellect", "n.", "智力；才智")]),
+    ("They are wrong: it is character.’",
+     "他们错了：真正起作用的是品格。”",
+     "冒号解释", "主干 They are wrong；冒号后 it is character 补充说明正确答案，与上句 intellect 形成对照。",
+     [w("character", "n.", "品格；个性")]),
+]
+
+PHRASE_LIST_2732 = [
+    "A  appeal", "B  determined", "C  intrigued", "D  single", "E  achievement",
+    "F  devoted", "G  involved", "H  unique", "I  innovative", "J  satisfaction", "K  intent",
+]
+
+QUESTIONS = [
+    {
+        "title": "Questions 27-32 · Summary completion",
+        "type": "summary",
+        "instructions": [
+            "Complete the summary using the list of phrases, A–K, below.",
+            "Write the correct letter, A–K, in boxes 27–32 on your answer sheet.",
+            "Maryam Mirzakhani",
+        ] + PHRASE_LIST_2732,
+        "items": [
+            {"number": 27, "prompt": "Maryam Mirzakhani is regarded as 27 ____ in the field of mathematics because she was the only female holder of the prestigious Fields Medal.", "answer": "H", "evidence_sentence": 2},
+            {"number": 28, "prompt": "However, maths held little 28 ____ for her as a child and in fact her performance was below average until she was 29 ____ by a difficult puzzle that one of her siblings showed her.", "answer": "A", "evidence_sentence": 6},
+            {"number": 29, "prompt": "... her performance was below average until she was 29 ____ by a difficult puzzle that one of her siblings showed her.", "answer": "C", "evidence_sentence": 9},
+            {"number": 30, "prompt": "Later, as a professional mathematician, she had an inquiring mind and proved herself to be 30 ____ when things did not go smoothly.", "answer": "B", "evidence_sentence": 10},
+            {"number": 31, "prompt": "She said she got the greatest 31 ____ from making ground-breaking discoveries ...", "answer": "J", "evidence_sentence": 12},
+            {"number": 32, "prompt": "... and in fact she was responsible for some extremely 32 ____ mathematical studies.", "answer": "I", "evidence_sentence": 14},
+        ],
+    },
+    {
+        "title": "Questions 33-37 · YES / NO / NOT GIVEN",
+        "type": "ynng",
+        "instructions": [
+            "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+            "In boxes 33–37 on your answer sheet, write",
+            "YES if the statement agrees with the claims of the writer",
+            "NO if the statement contradicts the claims of the writer",
+            "NOT GIVEN if it is impossible to say what the writer thinks about this",
+        ],
+        "items": [
+            {"number": 33, "prompt": "Many people who ended up winning prestigious intellectual prizes only reached an average standard when young.", "answer": "YES", "evidence_sentence": 17},
+            {"number": 34, "prompt": "Einstein’s failures as a young man were due to his lack of confidence.", "answer": "NOT GIVEN", "evidence_sentence": 19},
+            {"number": 35, "prompt": "It is difficult to reach agreement on whether some children are actually born gifted.", "answer": "YES", "evidence_sentence": 23},
+            {"number": 36, "prompt": "Einstein was upset by the public’s view of his life’s work.", "answer": "NOT GIVEN", "evidence_sentence": 46},
+            {"number": 37, "prompt": "Einstein put his success down to the speed at which he dealt with scientific questions.", "answer": "NO", "evidence_sentence": 47},
+        ],
+    },
+    {
+        "title": "Questions 38-40 · Multiple choice",
+        "type": "mcq",
+        "instructions": [
+            "Choose the correct letter, A, B, C or D.",
+            "Write the correct letter in boxes 38–40 on your answer sheet.",
+        ],
+        "items": [
+            {"number": 38, "prompt": "What does Eyre believe is needed for children to equal ‘gifted’ standards?",
+             "options": ["A  strict discipline from the teaching staff", "B  assistance from their peers in the classroom", "C  the development of a spirit of inquiry towards their studies", "D  the determination to surpass everyone else’s achievements"],
+             "answer": "C", "evidence_sentence": 25},
+            {"number": 39, "prompt": "What is the result of Ericsson’s research?",
+             "options": ["A  Very gifted students do not need to work on improving memory skills.", "B  Being born with a special gift is not the key factor in becoming expert.", "C  Including time for physical exercise is crucial in raising performance.", "D  10,000 hours of relevant and demanding work will create a genius."],
+             "answer": "B", "evidence_sentence": 29},
+            {"number": 40, "prompt": "In the penultimate paragraph, it is stated the key to some deprived children’s success is",
+             "options": ["A  a regular and nourishing diet at home.", "B  the loving support of more than one parent.", "C  a community which has well-funded facilities for learning.", "D  the guidance of someone who recognises the benefits of learning."],
+             "answer": "D", "evidence_sentence": 43},
+        ],
+    },
+]
+
+
+def main():
+    sentences = []
+    para = 1
+    # 段边界: 句index(0基)起始 -> 段号。手工按上面注释划分。
+    para_starts = {0: 1, 9: 2, 13: 3, 20: 4, 23: 5, 28: 6, 33: 7, 37: 8, 46: 9}
+    cur = 1
+    for i, (en, zh, gtype, note, words) in enumerate(S):
+        if i in para_starts:
+            cur = para_starts[i]
+        sentences.append({
+            "id": i + 1,
+            "para": cur,
+            "en": en,
+            "zh": zh,
+            "grammar": {"type": gtype, "note": note},
+            "words": words,
+        })
+    data = {
+        "id": "c19-test2-p3",
+        "source": "剑桥雅思19 · Test 2 · Passage 3",
+        "title": "An inquiry into the existence of the gifted child",
+        "quality": "teacher_refined",
+        "analysis_unit": "sentence",
+        "phrases": PHRASES,
+        "sentences": sentences,
+        "questions": QUESTIONS,
+    }
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"wrote {OUT} ({len(sentences)} sentences, {sum(len(g['items']) for g in QUESTIONS)} questions)")
+
+
+if __name__ == "__main__":
+    main()

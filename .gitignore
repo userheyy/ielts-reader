@@ -1,0 +1,14 @@
+# 临时文件：PDF 渲染图、抄录中间产物（体积大，运行时用不到）
+tmp/
+
+# 编辑器 / 系统
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/

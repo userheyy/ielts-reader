@@ -1,0 +1,964 @@
+{
+  "id": "c17-test2-p2",
+  "source": "剑桥雅思17 · Test 2 · Passage 2",
+  "title": "A second attempt at domesticating the tomato",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "It took at least 3,000 years for humans to learn how to domesticate the wild tomato and cultivate it for food.",
+      "zh": "人类花了至少 3,000 年才学会如何驯化野生番茄并将其培育成食物。",
+      "grammar": {
+        "type": "主干句 + 不定式作状语",
+        "note": "主干是 It took ... 3,000 years；It 为形式主语，真正内容在 for humans to learn ... 中；how to domesticate 与 cultivate 并列作 learn 的宾语。"
+      },
+      "words": [
+        {
+          "w": "domesticate",
+          "pos": "v.",
+          "def": "驯化"
+        },
+        {
+          "w": "cultivate",
+          "pos": "v.",
+          "def": "培育；种植"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "Now two separate teams in Brazil and China have done it all over again in less than three years.",
+      "zh": "如今，巴西和中国的两支独立团队在不到三年的时间里就把这件事又重做了一遍。",
+      "grammar": {
+        "type": "主干句 + 时间状语",
+        "note": "主干 two separate teams have done it；all over again 意为“从头再来一遍”；in less than three years 作时间状语，与首句 3,000 年形成鲜明对比。"
+      },
+      "words": [
+        {
+          "w": "separate",
+          "pos": "adj.",
+          "def": "各自独立的"
+        },
+        {
+          "w": "all over again",
+          "pos": "phr.",
+          "def": "重头再来一遍"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "And they have done it better in some ways, as the re-domesticated tomatoes are more nutritious than the ones we eat at present.",
+      "zh": "而且他们在某些方面做得更好，因为重新驯化出的番茄比我们现在吃的更有营养。",
+      "grammar": {
+        "type": "并列句 + as 原因状语从句",
+        "note": "主干 they have done it better；as 引导原因状语从句，its 主语 the re-domesticated tomatoes 与 the ones we eat 作比较；the ones 指代 tomatoes。"
+      },
+      "words": [
+        {
+          "w": "re-domesticated",
+          "pos": "adj.",
+          "def": "重新驯化的"
+        },
+        {
+          "w": "nutritious",
+          "pos": "adj.",
+          "def": "有营养的"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "This approach relies on the revolutionary CRISPR genome editing technique, in which changes are deliberately made to the DNA of a living cell, allowing genetic material to be added, removed or altered.",
+      "zh": "这种方法依赖革命性的 CRISPR 基因组编辑技术——该技术会有意改动活细胞的 DNA，从而实现遗传物质的添加、删除或改变。",
+      "grammar": {
+        "type": "非限制性定语从句 + 分词状语",
+        "note": "主干 This approach relies on the technique；in which 引导定语从句修饰 technique；allowing ... 为现在分词作结果状语，其后 to be added, removed or altered 三个动词并列。"
+      },
+      "words": [
+        {
+          "w": "genome",
+          "pos": "n.",
+          "def": "基因组"
+        },
+        {
+          "w": "deliberately",
+          "pos": "adv.",
+          "def": "故意地；有意地"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "The technique could not only improve existing crops, but could also be used to turn thousands of wild plants into useful and appealing foods.",
+      "zh": "这项技术不仅能改良现有作物，还能把成千上万种野生植物变成有用、诱人的食物。",
+      "grammar": {
+        "type": "not only ... but also 并列 + 被动语态",
+        "note": "not only ... but (also) 连接两个并列谓语 could improve 与 could be used；后半句用被动 be used to turn ... into ...，强调技术的用途。"
+      },
+      "words": [
+        {
+          "w": "existing",
+          "pos": "adj.",
+          "def": "现有的"
+        },
+        {
+          "w": "appealing",
+          "pos": "adj.",
+          "def": "有吸引力的"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 1,
+      "en": "In fact, a third team in the US has already begun to do this with a relative of the tomato called the groundcherry.",
+      "zh": "事实上，美国的第三支团队已经开始用番茄的一种近亲——地樱桃（groundcherry）——来做这件事。",
+      "grammar": {
+        "type": "主干句 + 过去分词后置定语",
+        "note": "主干 a third team has already begun to do this；a relative of the tomato 后接 called the groundcherry（过去分词短语作定语，等于 which is called）。"
+      },
+      "words": [
+        {
+          "w": "a relative of",
+          "pos": "phr.",
+          "def": "……的近亲"
+        },
+        {
+          "w": "groundcherry",
+          "pos": "n.",
+          "def": "地樱桃"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "This fast-track domestication could help make the world’s food supply healthier and far more resistant to diseases, such as the rust fungus devastating wheat crops.",
+      "zh": "这种快速驯化能帮助让全球粮食供应更健康，也远更能抵抗病害，例如正在摧毁小麦作物的锈菌。",
+      "grammar": {
+        "type": "make + 宾补 + 现在分词定语",
+        "note": "主干 domestication could help make the food supply healthier and more resistant；healthier 与 more resistant 为并列宾补；devastating wheat crops 为现在分词短语修饰 the rust fungus。"
+      },
+      "words": [
+        {
+          "w": "resistant",
+          "pos": "adj.",
+          "def": "有抵抗力的"
+        },
+        {
+          "w": "devastate",
+          "pos": "v.",
+          "def": "毁灭；重创"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 2,
+      "en": "‘This could transform what we eat,’ says Jorg Kudla at the University of Munster in Germany, a member of the Brazilian team.",
+      "zh": "“这可能会改变我们的饮食，”德国明斯特大学的约尔格·库德拉（Jorg Kudla）说，他是巴西团队的一员。",
+      "grammar": {
+        "type": "直接引语 + 同位语",
+        "note": "引语作 says 的宾语，主谓倒装 says Jorg Kudla；a member of the Brazilian team 为 Jorg Kudla 的同位语，补充其身份。"
+      },
+      "words": [
+        {
+          "w": "transform",
+          "pos": "v.",
+          "def": "彻底改变"
+        },
+        {
+          "w": "member",
+          "pos": "n.",
+          "def": "成员"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 2,
+      "en": "‘There are 50,000 edible plants in the world, but 90 percent of our energy comes from just 15 crops.’ ‘We can now mimic the known domestication course of major crops like rice, maize, sorghum or others,’ says Caixia Gao of the Chinese Academy of Sciences in Beijing.",
+      "zh": "“世界上有 5 万种可食用植物，但我们 90% 的能量只来自 15 种作物。”北京中国科学院的高彩霞（Caixia Gao）说：“我们现在能够模仿水稻、玉米、高粱等主要作物已知的驯化历程。”",
+      "grammar": {
+        "type": "两句直接引语衔接",
+        "note": "本处含两段引语：前一段 There are ... just 15 crops 收尾 Kudla 的话；后一段以 says Caixia Gao 倒装引出高彩霞的新话；mimic ... course 意为“复刻……历程”，常被题目改写为 copy/reproduce。"
+      },
+      "words": [
+        {
+          "w": "edible",
+          "pos": "adj.",
+          "def": "可食用的"
+        },
+        {
+          "w": "mimic",
+          "pos": "v.",
+          "def": "模仿；复刻"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 2,
+      "en": "‘Then we might try to domesticate plants that have never been domesticated.’ Wild tomatoes, which are native to the Andes region in South America, produce pea-sized fruits.",
+      "zh": "“那样我们或许可以尝试去驯化那些从未被驯化过的植物。”原产于南美安第斯山区的野生番茄，结出的果实只有豌豆般大小。",
+      "grammar": {
+        "type": "引语收尾 + 非限制性定语从句",
+        "note": "前半句引语收束高彩霞的话；后半句主干 Wild tomatoes produce pea-sized fruits，which are native to ... 为插入的非限制性定语从句，补充野生番茄的原产地。"
+      },
+      "words": [
+        {
+          "w": "native to",
+          "pos": "phr.",
+          "def": "原产于……的"
+        },
+        {
+          "w": "pea-sized",
+          "pos": "adj.",
+          "def": "豌豆大小的"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 2,
+      "en": "Over many generations, peoples such as the Aztecs and Incas transformed the plant by selecting and breeding plants with mutations* in their genetic structure, which resulted in desirable traits such as larger fruit.",
+      "zh": "历经许多世代，阿兹特克人、印加人等民族通过挑选并培育遗传结构发生突变的植株来改造这种植物，这些突变带来了诸如果实更大等合意性状。",
+      "grammar": {
+        "type": "介词短语状语 + 非限制性定语从句",
+        "note": "主干 peoples transformed the plant；by selecting and breeding ... 为方式状语；which resulted in ... 为非限制性定语从句，指前面“突变”所导致的结果。"
+      },
+      "words": [
+        {
+          "w": "breed",
+          "pos": "v.",
+          "def": "培育；繁殖"
+        },
+        {
+          "w": "mutation",
+          "pos": "n.",
+          "def": "突变"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 2,
+      "en": "But every time a single plant with a mutation is taken from a larger population for breeding, much genetic diversity is lost.",
+      "zh": "但每当从一个较大的种群中取出单独一株带有突变的植株来育种，就会损失大量的遗传多样性。",
+      "grammar": {
+        "type": "every time 引导时间状语从句 + 被动语态",
+        "note": "every time 引导时间状语从句（相当于 whenever），从句用被动 a single plant is taken；主句 much genetic diversity is lost 同样为被动，强调“多样性被损失”。"
+      },
+      "words": [
+        {
+          "w": "population",
+          "pos": "n.",
+          "def": "（生物）种群"
+        },
+        {
+          "w": "genetic diversity",
+          "pos": "n.",
+          "def": "遗传多样性"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 3,
+      "en": "And sometimes the desirable mutations come with less desirable traits.",
+      "zh": "而且有时候，那些合意的突变会连带出不太合意的性状。",
+      "grammar": {
+        "type": "主干句",
+        "note": "主干 the desirable mutations come with less desirable traits；come with 意为“伴随而来”；desirable 与 less desirable 前后对照，是本篇的核心矛盾。"
+      },
+      "words": [
+        {
+          "w": "desirable",
+          "pos": "adj.",
+          "def": "合意的；理想的"
+        },
+        {
+          "w": "come with",
+          "pos": "phr.",
+          "def": "伴随……而来"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 3,
+      "en": "For instance, the tomato strains grown for supermarkets have lost much of their flavour.",
+      "zh": "例如，为超市种植的番茄品种就已经丧失了大部分风味。",
+      "grammar": {
+        "type": "主干句 + 过去分词定语",
+        "note": "主干 the tomato strains have lost much of their flavour；grown for supermarkets 为过去分词短语作后置定语，修饰 strains；此句对应“loss of flavour”一题。"
+      },
+      "words": [
+        {
+          "w": "strain",
+          "pos": "n.",
+          "def": "（动植物）品系；品种"
+        },
+        {
+          "w": "flavour",
+          "pos": "n.",
+          "def": "风味"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 3,
+      "en": "By comparing the genomes of modern plants to those of their wild relatives, biologists have been working out what genetic changes occurred as plants were domesticated.",
+      "zh": "通过把现代植物的基因组与其野生近缘种的基因组相比较，生物学家一直在弄清楚植物在驯化过程中发生了哪些遗传变化。",
+      "grammar": {
+        "type": "介词短语状语 + 宾语从句",
+        "note": "By comparing ... 为方式状语；主干 biologists have been working out ...；what genetic changes occurred 为 working out 的宾语从句；those 指代 the genomes。"
+      },
+      "words": [
+        {
+          "w": "work out",
+          "pos": "phr.",
+          "def": "弄清楚；推算出"
+        },
+        {
+          "w": "relative",
+          "pos": "n.",
+          "def": "近缘种；亲缘物种"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 3,
+      "en": "The teams in Brazil and China have now used this knowledge to reintroduce these changes from scratch while maintaining or even enhancing the desirable traits of wild strains. Kudla’s team made six changes altogether.",
+      "zh": "巴西和中国的团队如今已利用这些知识，从头重新引入这些变化，同时保持甚至强化野生品系的合意性状。库德拉的团队总共做了六处改动。",
+      "grammar": {
+        "type": "目的状语 + while 让步/伴随状语",
+        "note": "第一句主干 The teams have used this knowledge to reintroduce ...；while maintaining or even enhancing ... 为分词状语，表“在……的同时”；第二句为 C 段首句，是独立短句。"
+      },
+      "words": [
+        {
+          "w": "reintroduce",
+          "pos": "v.",
+          "def": "重新引入"
+        },
+        {
+          "w": "enhance",
+          "pos": "v.",
+          "def": "增强；提高"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 3,
+      "en": "For instance, they tripled the size of fruit by editing a gene called FRUIT WEIGHT, and increased the number of tomatoes per truss by editing another called MULTIFLORA.",
+      "zh": "例如，他们通过编辑一个名为 FRUIT WEIGHT 的基因，把果实的大小增至三倍；又通过编辑另一个名为 MULTIFLORA 的基因，增加了每串番茄的数量。",
+      "grammar": {
+        "type": "并列谓语 + by 方式状语",
+        "note": "两个并列谓语 tripled the size 与 increased the number，各自后接 by editing a gene 说明手段；triple 意为“使成三倍”，是数字题常考的表达。"
+      },
+      "words": [
+        {
+          "w": "triple",
+          "pos": "v.",
+          "def": "使增至三倍"
+        },
+        {
+          "w": "truss",
+          "pos": "n.",
+          "def": "（果实的）串；序"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 3,
+      "en": "While the historical domestication of tomatoes reduced levels of the red pigment lycopene – thought to have potential health benefits – the team in Brazil managed to boost it instead.",
+      "zh": "尽管历史上对番茄的驯化降低了红色素番茄红素（被认为有潜在的健康益处）的含量，巴西团队却反而设法把它提高了。",
+      "grammar": {
+        "type": "While 引导让步状语从句 + 破折号插入",
+        "note": "While 引导让步状语从句，主句为 the team managed to boost it instead；两个破折号之间 thought to have potential health benefits 为插入语，补充说明 lycopene。"
+      },
+      "words": [
+        {
+          "w": "pigment",
+          "pos": "n.",
+          "def": "色素"
+        },
+        {
+          "w": "boost",
+          "pos": "v.",
+          "def": "提高；增强"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 4,
+      "en": "The wild tomato has twice as much lycopene as cultivated ones; the newly domesticated one has five times as much.",
+      "zh": "野生番茄的番茄红素含量是栽培番茄的两倍，而新驯化出的品种更是达到五倍。",
+      "grammar": {
+        "type": "分号并列 + 倍数比较",
+        "note": "分号连接两个结构对称的分句；twice as much ... as 与 five times as much 均为“倍数 + as much (as)”结构，作数字对比。"
+      },
+      "words": [
+        {
+          "w": "cultivated",
+          "pos": "adj.",
+          "def": "栽培的"
+        },
+        {
+          "w": "twice as much as",
+          "pos": "phr.",
+          "def": "是……的两倍"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 4,
+      "en": "‘They are quite tasty,’ says Kudla.",
+      "zh": "“它们相当好吃，”库德拉说。",
+      "grammar": {
+        "type": "直接引语 + 倒装",
+        "note": "引语作宾语，says Kudla 主谓倒装；quite 在此为“相当地”，程度略强于中文的“挺”。"
+      },
+      "words": [
+        {
+          "w": "tasty",
+          "pos": "adj.",
+          "def": "好吃的；美味的"
+        },
+        {
+          "w": "quite",
+          "pos": "adv.",
+          "def": "相当地"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 4,
+      "en": "‘A little bit strong.",
+      "zh": "“味道有点浓。",
+      "grammar": {
+        "type": "省略式口语短句",
+        "note": "口语中省略主谓，完整为 (It is) a little bit strong；strong 在描述味道时指“味浓、味重”。"
+      },
+      "words": [
+        {
+          "w": "a little bit",
+          "pos": "phr.",
+          "def": "有一点点"
+        },
+        {
+          "w": "strong",
+          "pos": "adj.",
+          "def": "（味道）浓的"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 4,
+      "en": "And very aromatic.’ The team in China re-domesticated several strains of wild tomatoes with desirable traits lost in domesticated tomatoes.",
+      "zh": "而且非常芳香。”中国团队重新驯化了好几个野生番茄品系，这些品系带有已在栽培番茄身上丢失的合意性状。",
+      "grammar": {
+        "type": "引语收尾 + 过去分词定语",
+        "note": "前半句 And very aromatic 收束库德拉的引语；后半句主干 The team re-domesticated several strains；lost in domesticated tomatoes 为过去分词短语作定语，修饰 desirable traits。"
+      },
+      "words": [
+        {
+          "w": "aromatic",
+          "pos": "adj.",
+          "def": "芳香的"
+        },
+        {
+          "w": "re-domesticate",
+          "pos": "v.",
+          "def": "重新驯化"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 4,
+      "en": "In this way they managed to create a strain resistant to a common disease called bacterial spot race, which can devastate yields.",
+      "zh": "通过这种方式，他们成功培育出一个能抵抗名为“细菌性斑点病”这一常见病害的品系，而这种病害会重创产量。",
+      "grammar": {
+        "type": "结果状语 + 非限制性定语从句",
+        "note": "主干 they managed to create a strain；resistant to ... 为形容词短语作后置定语修饰 strain；which can devastate yields 为非限制性定语从句，补充 disease 的危害。"
+      },
+      "words": [
+        {
+          "w": "bacterial spot",
+          "pos": "n.",
+          "def": "细菌性斑点病"
+        },
+        {
+          "w": "yield",
+          "pos": "n.",
+          "def": "产量"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 4,
+      "en": "They also created another strain that is more salt tolerant – and has higher levels of vitamin C.",
+      "zh": "他们还培育出另一个品系，它更耐盐，且维生素 C 含量更高。",
+      "grammar": {
+        "type": "that 定语从句",
+        "note": "主干 They created another strain；that is more salt tolerant and has higher levels of vitamin C 为 that 引导的定语从句，破折号在此起补充强调作用。"
+      },
+      "words": [
+        {
+          "w": "salt tolerant",
+          "pos": "adj.",
+          "def": "耐盐的"
+        },
+        {
+          "w": "vitamin",
+          "pos": "n.",
+          "def": "维生素"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 5,
+      "en": "Meanwhile, Joyce Van Eck at the Boyce Thompson Institute in New York state decided to use the same approach to domesticate the groundcherry or goldenberry (Physalis pruinosa) for the first time.",
+      "zh": "与此同时，纽约州博伊斯·汤普森研究所的乔伊斯·范·埃克（Joyce Van Eck）决定首次用同样的方法来驯化地樱桃（又称金浆果，学名 Physalis pruinosa）。",
+      "grammar": {
+        "type": "主干句 + 不定式目的状语",
+        "note": "主干 Joyce Van Eck decided to use the same approach；to domesticate ... for the first time 为不定式作目的状语；括号中的拉丁学名为专有名词，翻译时保留。"
+      },
+      "words": [
+        {
+          "w": "meanwhile",
+          "pos": "adv.",
+          "def": "与此同时"
+        },
+        {
+          "w": "goldenberry",
+          "pos": "n.",
+          "def": "金浆果"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 5,
+      "en": "This fruit looks similar to the closely related Cape gooseberry (Physalis peruviana).",
+      "zh": "这种水果看起来与其近缘的灯笼果（学名 Physalis peruviana）很相似。",
+      "grammar": {
+        "type": "主干句 + 分词作定语",
+        "note": "主干 This fruit looks similar to the Cape gooseberry；closely related 为过去分词短语作定语，修饰 Cape gooseberry；look similar to 意为“看起来像”。"
+      },
+      "words": [
+        {
+          "w": "closely related",
+          "pos": "phr.",
+          "def": "亲缘关系密切的"
+        },
+        {
+          "w": "gooseberry",
+          "pos": "n.",
+          "def": "醋栗；灯笼果"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 5,
+      "en": "Groundcherries are already sold to a limited extent in the US but they are hard to produce because the plant has a sprawling growth habit and the small fruits fall off the branches when ripe.",
+      "zh": "地樱桃在美国已有小范围销售，但很难量产，因为这种植物生长蔓生散乱，而且小果实一成熟就会从枝上掉落。",
+      "grammar": {
+        "type": "转折 + because 原因状语从句（含两个并列原因）",
+        "note": "主干 they are hard to produce；because 引导原因状语从句，其内部 the plant has ... 与 the small fruits fall off ... 为两个并列原因；when ripe 为省略式时间状语（= when they are ripe）。"
+      },
+      "words": [
+        {
+          "w": "sprawling",
+          "pos": "adj.",
+          "def": "蔓生的；散乱伸展的"
+        },
+        {
+          "w": "ripe",
+          "pos": "adj.",
+          "def": "成熟的"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 5,
+      "en": "Van Eck’s team has edited the plants to increase fruit size, make their growth more compact and to stop fruits dropping.",
+      "zh": "范·埃克的团队已对这种植物进行了编辑，以增大果实、使其生长更紧凑，并防止果实掉落。",
+      "grammar": {
+        "type": "目的状语（三个并列不定式）",
+        "note": "主干 Van Eck’s team has edited the plants；后接三项并列目的 to increase ... / make ... / to stop ...（并列时不定式符号 to 可省可留）；stop fruits dropping 为 stop + 宾语 + 动名词。"
+      },
+      "words": [
+        {
+          "w": "compact",
+          "pos": "adj.",
+          "def": "紧凑的；密实的"
+        },
+        {
+          "w": "stop ... dropping",
+          "pos": "phr.",
+          "def": "防止……掉落"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 5,
+      "en": "‘There’s potential for this to be a commercial crop,’ says Van Eck.",
+      "zh": "“这有潜力成为一种商业作物，”范·埃克说。",
+      "grammar": {
+        "type": "直接引语（There’s 存在句）+ 倒装",
+        "note": "引语内部为 There’s potential for ... to be ...（“有……的潜力”句型）；主句 says Van Eck 主谓倒装。"
+      },
+      "words": [
+        {
+          "w": "potential",
+          "pos": "n.",
+          "def": "潜力；可能性"
+        },
+        {
+          "w": "commercial",
+          "pos": "adj.",
+          "def": "商业的"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 5,
+      "en": "But she adds that taking the work further would be expensive because of the need to pay for a licence for the CRISPR technology and get regulatory approval.",
+      "zh": "但她补充说，把这项工作继续推进下去会代价高昂，因为需要为使用 CRISPR 技术支付许可费，并获得监管审批。",
+      "grammar": {
+        "type": "宾语从句 + because 原因状语从句",
+        "note": "主干 she adds that ...；that 引导宾语从句，从句主干 taking the work further would be expensive（动名词短语作主语）；because of the need to ... 说明昂贵的原因。"
+      },
+      "words": [
+        {
+          "w": "licence",
+          "pos": "n.",
+          "def": "许可证；授权"
+        },
+        {
+          "w": "regulatory approval",
+          "pos": "n.",
+          "def": "监管审批"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 6,
+      "en": "This approach could boost the use of many obscure plants, says Jonathan Jones of the Sainsbury Lab in the UK.",
+      "zh": "英国塞恩斯伯里实验室的乔纳森·琼斯（Jonathan Jones）说，这种方法能够推动许多冷门植物的利用。",
+      "grammar": {
+        "type": "直接引述 + 倒装",
+        "note": "本句为 says 后置的引述结构：引述内容 This approach could boost the use of many obscure plants 在前，says Jonathan Jones ... 在后（主谓倒装）；boost the use of 意为“推动……的使用”。"
+      },
+      "words": [
+        {
+          "w": "boost",
+          "pos": "v.",
+          "def": "推动；促进"
+        },
+        {
+          "w": "obscure",
+          "pos": "adj.",
+          "def": "鲜为人知的；冷门的"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 6,
+      "en": "But it will be hard for new foods to grow so popular with farmers and consumers that they become new staple crops, he thinks.",
+      "zh": "但他认为，新食物很难受到农民和消费者的欢迎，以至于成为新的主粮作物。",
+      "grammar": {
+        "type": "so ... that 结果状语从句 + he thinks 后置",
+        "note": "主干 it will be hard for new foods to grow so popular ...；so popular ... that they become new staple crops 为 so...that 结果结构；he thinks 后置，表明这是琼斯的判断（态度题信号）。"
+      },
+      "words": [
+        {
+          "w": "consumer",
+          "pos": "n.",
+          "def": "消费者"
+        },
+        {
+          "w": "staple crop",
+          "pos": "n.",
+          "def": "主粮作物"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 6,
+      "en": "The three teams already have their eye on other plants that could be ‘catapulted into the mainstream’, including foxtail, oat-grass and cowpea.",
+      "zh": "这三支团队已经把目光投向了其他有望被“送入主流”的植物，包括狗尾草、燕麦草和豇豆。",
+      "grammar": {
+        "type": "主干句 + that 定语从句",
+        "note": "主干 The three teams have their eye on other plants；that could be ‘catapulted into the mainstream’ 为定语从句修饰 plants；including ... 列举具体植物；have one’s eye on 意为“看中、盯上”。"
+      },
+      "words": [
+        {
+          "w": "have one’s eye on",
+          "pos": "phr.",
+          "def": "看中；盯上"
+        },
+        {
+          "w": "catapult",
+          "pos": "v.",
+          "def": "把……猛地送入"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 6,
+      "en": "By choosing wild plants that are drought or heat tolerant, says Gao, we could create crops that will thrive even as the planet warms.",
+      "zh": "高彩霞说，通过挑选耐旱或耐热的野生植物，我们就能培育出即便在地球变暖时也能茁壮生长的作物。",
+      "grammar": {
+        "type": "方式状语 + 引述插入 + that 定语从句",
+        "note": "By choosing ... 为方式状语；says Gao 为插入的引述；主干 we could create crops；that will thrive ... 为定语从句修饰 crops；even as 意为“即便在……的时候”。"
+      },
+      "words": [
+        {
+          "w": "drought",
+          "pos": "n.",
+          "def": "干旱"
+        },
+        {
+          "w": "thrive",
+          "pos": "v.",
+          "def": "茁壮成长；兴旺"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 6,
+      "en": "But Kudla didn’t want to reveal which species were in his team’s sights, because CRISPR has made the process so easy.",
+      "zh": "但库德拉不愿透露他的团队盯上了哪些物种，因为 CRISPR 已经把这个过程变得如此简单。",
+      "grammar": {
+        "type": "宾语从句 + because 原因状语从句",
+        "note": "主干 Kudla didn’t want to reveal ...；which species were in his team’s sights 为 reveal 的宾语从句；because 引导原因状语从句；in one’s sights 意为“在……的视线/目标之内”。"
+      },
+      "words": [
+        {
+          "w": "reveal",
+          "pos": "v.",
+          "def": "透露；揭示"
+        },
+        {
+          "w": "in one’s sights",
+          "pos": "phr.",
+          "def": "在……的目标之内"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 6,
+      "en": "‘Any one with the right skills could go to their lab and do this.’",
+      "zh": "“任何具备相应技能的人，都可以走进他们的实验室把这件事做出来。”",
+      "grammar": {
+        "type": "直接引语 + 情态动词",
+        "note": "主干 Any one could go to their lab and do this；with the right skills 为介词短语作定语修饰 Any one；情态动词 could 在此表“完全有可能做到”，呼应上句“CRISPR 让过程变简单”。"
+      },
+      "words": [
+        {
+          "w": "skill",
+          "pos": "n.",
+          "def": "技能；本领"
+        },
+        {
+          "w": "the right",
+          "pos": "phr.",
+          "def": "合适的；恰当的"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 14–26 · Matching information/researchers + sentence completion",
+      "type": "mixed",
+      "instructions": [
+        "Questions 14–18: Reading Passage 2 has five sections, A–E. Which section contains the following information?",
+        "Questions 19–23: Match each statement with the correct researcher, A–D. A Jorg Kudla; B Caixia Gao; C Joyce Van Eck; D Jonathan Jones.",
+        "Questions 24–26: Complete the sentences below. Choose ONE WORD ONLY from the passage for each answer."
+      ],
+      "items": [
+        {
+          "number": 14,
+          "prompt": "a reference to a type of tomato that can resist a dangerous infection",
+          "answer": "C",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 15,
+          "prompt": "an explanation of how problems can arise from focusing only on a certain type of tomato plant",
+          "answer": "B",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 16,
+          "prompt": "a number of examples of plants that are not cultivated at present but could be useful as food sources",
+          "answer": "E",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 17,
+          "prompt": "a comparison between the early domestication of the tomato and more recent research",
+          "answer": "A",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 18,
+          "prompt": "a personal reaction to the flavour of a tomato that has been genetically edited",
+          "answer": "C",
+          "evidence_sentence": 10
+        },
+        {
+          "number": 19,
+          "prompt": "Domestication of certain plants could allow them to adapt to future environmental challenges.",
+          "answer": "B",
+          "evidence_sentence": 9
+        },
+        {
+          "number": 20,
+          "prompt": "The idea of growing and eating unusual plants may not be accepted on a large scale.",
+          "answer": "D",
+          "evidence_sentence": 10
+        },
+        {
+          "number": 21,
+          "prompt": "It is not advisable for the future direction of certain research to be made public.",
+          "answer": "A",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 22,
+          "prompt": "Present efforts to domesticate one wild fruit are limited by the costs involved.",
+          "answer": "C",
+          "evidence_sentence": 14
+        },
+        {
+          "number": 23,
+          "prompt": "Humans only make use of a small proportion of the plant food available on Earth.",
+          "answer": "A",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 24,
+          "prompt": "An undesirable trait such as loss of ___ may be caused by a mutation in a tomato gene.",
+          "answer": "flavour",
+          "evidence_sentence": 14
+        },
+        {
+          "number": 25,
+          "prompt": "By modifying one gene in a tomato plant, researchers made the tomato three times its original ___.",
+          "answer": "size",
+          "evidence_sentence": 10
+        },
+        {
+          "number": 26,
+          "prompt": "A type of tomato which was not badly affected by ___, and was rich in vitamin C, was produced by a team of researchers in China.",
+          "answer": "salt",
+          "evidence_sentence": 24
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "w": "domesticate the wild tomato",
+      "pos": "phr.",
+      "def": "驯化野生番茄"
+    },
+    {
+      "w": "cultivate ... for food",
+      "pos": "phr.",
+      "def": "培育……作食物"
+    },
+    {
+      "w": "CRISPR genome editing technique",
+      "pos": "n.",
+      "def": "CRISPR 基因组编辑技术"
+    },
+    {
+      "w": "genetic material",
+      "pos": "n.",
+      "def": "遗传物质"
+    },
+    {
+      "w": "fast-track domestication",
+      "pos": "n.",
+      "def": "快速驯化"
+    },
+    {
+      "w": "be resistant to",
+      "pos": "phr.",
+      "def": "对……有抗性"
+    },
+    {
+      "w": "genetic diversity",
+      "pos": "n.",
+      "def": "遗传多样性"
+    },
+    {
+      "w": "desirable traits",
+      "pos": "n.",
+      "def": "理想（合意）性状"
+    },
+    {
+      "w": "from scratch",
+      "pos": "phr.",
+      "def": "从头开始"
+    },
+    {
+      "w": "salt tolerant",
+      "pos": "adj.",
+      "def": "耐盐的"
+    },
+    {
+      "w": "growth habit",
+      "pos": "n.",
+      "def": "生长习性"
+    },
+    {
+      "w": "regulatory approval",
+      "pos": "n.",
+      "def": "监管审批"
+    },
+    {
+      "w": "staple crop",
+      "pos": "n.",
+      "def": "主粮作物"
+    },
+    {
+      "w": "drought or heat tolerant",
+      "pos": "phr.",
+      "def": "耐旱或耐热的"
+    }
+  ]
+}

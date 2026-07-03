@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雅思阅读精读器 · 文章库</title>
+  <link rel="stylesheet" href="css/style.css?v=2" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="vocab.html">生词库</a>
+  </header>
+  <div class="container">
+    <div class="library-tools">
+      <div>
+        <strong>文章库</strong>
+        <span>导入 Agent 生成的单篇文章 JSON；全量备份会带走浏览器里的生词、临时导入文章和朗读设置</span>
+        <em class="library-stats" id="library-stats"></em>
+      </div>
+      <div class="tool-actions">
+        <label class="filebtn">导入文章 JSON<input type="file" id="passage-import" accept="application/json" hidden /></label>
+        <button id="profile-export" class="ghostbtn">全量备份</button>
+        <label class="filebtn ghostfile">恢复全量备份<input type="file" id="profile-import" accept="application/json" hidden /></label>
+      </div>
+    </div>
+    <div id="list" class="card-grid"></div>
+    <p id="empty" style="display:none;color:var(--muted)">还没有文章。请先用预处理流程生成。</p>
+  </div>
+  <script type="module" src="js/index.js?v=3"></script>
+</body>
+</html>

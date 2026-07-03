@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>阅读器</title>
+  <link rel="stylesheet" href="css/style.css?v=2" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="vocab.html">生词库</a>
+  </header>
+  <div class="container">
+    <div class="reader-toolbar">
+      <span class="src" id="src"></span>
+      <button id="toggle-zh">隐藏翻译</button>
+      <div class="speech-controls" aria-label="朗读设置">
+        <span>朗读</span>
+        <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
+        <select id="speech-rate" aria-label="朗读速度">
+          <option value="0.7">慢速 0.7×</option>
+          <option value="0.9">清晰 0.9×</option>
+          <option value="1">正常 1×</option>
+        </select>
+        <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
+      </div>
+    </div>
+    <div class="reader-grid">
+      <div class="pane left" id="left"></div>
+      <aside class="pane questions" id="questions"></aside>
+      <div class="pane right" id="right"></div>
+    </div>
+  </div>
+  <script type="module" src="js/reader.js?v=9"></script>
+</body>
+</html>

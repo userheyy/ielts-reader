@@ -1,0 +1,593 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c19-test4-p2.json (Deep-sea mining)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+RDQUO = "”"  # "
+LDQUO = "“"  # "
+DASH = "–"   # en dash
+
+sentences = [
+    # Paragraph A
+    {
+        "id": 1,
+        "para": 1,
+        "en": "When Professor Mat Upton found that a microbe from a deep-sea sponge was killing pathogenic bugs in his laboratory, he realised it could be a breakthrough in the fight against antibiotic-resistant superbugs, which are responsible for thousands of deaths a year in the UK alone.",
+        "zh": "当马特·厄普顿教授发现一种取自深海海绵的微生物能在其实验室里杀死致病菌时，他意识到这可能是对抗抗生素耐药性超级细菌的一项突破——仅在英国，这类超级细菌每年就造成数千人死亡。",
+        "grammar": {
+            "type": "when 时间状语从句 + 宾语从句 + 非限定性定语从句",
+            "note": "When 引导时间状语从句 When Professor Mat Upton found that...，其中 that 引导 found 的宾语从句；主句是 he realised it could be a breakthrough，realised 后接省略 that 的宾语从句；which are responsible for... 为非限定性定语从句修饰 superbugs。"
+        },
+        "words": [
+            {"w": "microbe", "pos": "n.", "def": "微生物"},
+            {"w": "pathogenic", "pos": "adj.", "def": "致病的；引起疾病的"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Further tests confirmed that an antibiotic from the sponge bacteria, found living more than 700 metres under the sea at the Rockall trough in the north-east Atlantic, was previously unknown to science, boosting its potential as a life-saving medicine.",
+        "zh": "进一步的测试证实，这种取自海绵细菌的抗生素——该细菌生活在东北大西洋罗科尔海槽700多米深的海底——此前不为科学界所知，这提升了它作为救命药物的潜力。",
+        "grammar": {
+            "type": "宾语从句 + 过去分词短语作插入定语 + 现在分词状语",
+            "note": "主干是 Further tests confirmed that...，that 引导宾语从句，从句主干为 an antibiotic... was previously unknown to science；found living... in the north-east Atlantic 为过去分词短语作插入语修饰 antibiotic；boosting its potential... 为现在分词短语作结果状语。"
+        },
+        "words": [
+            {"w": "antibiotic", "pos": "n.", "def": "抗生素"},
+            {"w": "boost", "pos": "v.", "def": "提升；增强"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "But Upton, and other scientists who view the deep ocean and its wealth of unique and undocumented species as a prospecting ground for new medicines, fear such potential will be lost in the rush to exploit the deep sea" + RSQUO + "s equally rich metal and mineral resources.",
+        "zh": "但厄普顿以及其他一些科学家——他们把深海及其大量独特而未被记录的物种视为寻找新药的勘探场——担心在争相开采深海同样丰富的金属和矿产资源的热潮中，这种潜力会丧失。",
+        "grammar": {
+            "type": "定语从句 + 宾语从句",
+            "note": "主干是 But Upton, and other scientists... fear such potential will be lost；who view the deep ocean... as a prospecting ground 为定语从句修饰 scientists，view A as B 表“把A视为B”；fear 后接省略 that 的宾语从句 such potential will be lost...。"
+        },
+        "words": [
+            {"w": "undocumented", "pos": "adj.", "def": "未被记录的"},
+            {"w": "exploit", "pos": "v.", "def": "开采；利用"}
+        ]
+    },
+    # Paragraph B
+    {
+        "id": 4,
+        "para": 2,
+        "en": LSQUO + "We" + RSQUO + "re looking at the bioactive potential of marine resources, to see if there are any more medicines or drugs down there before we destroy it for ever," + RSQUO + " says Upton, a medical microbiologist at the University of Plymouth.",
+        "zh": "“我们正在研究海洋资源的生物活性潜力，想看看在我们永久毁掉它之前，那里是否还有更多的药物，”普利茅斯大学的医学微生物学家厄普顿说道。",
+        "grammar": {
+            "type": "直接引语 + 目的状语 + 同位语",
+            "note": "引号内为直接引语，主干 We" + RSQUO + "re looking at the bioactive potential，to see if... 为不定式作目的状语，if 引导宾语从句；before we destroy it for ever 为时间状语从句；says Upton 为引述句，a medical microbiologist at the University of Plymouth 是 Upton 的同位语。"
+        },
+        "words": [
+            {"w": "bioactive", "pos": "adj.", "def": "生物活性的"},
+            {"w": "microbiologist", "pos": "n.", "def": "微生物学家"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "He is among many scientists urging a halt to deep-sea mining, asking for time to weigh up the pros and cons.",
+        "zh": "他是众多敦促暂停深海采矿的科学家之一，要求给出时间来权衡利弊。",
+        "grammar": {
+            "type": "现在分词短语作后置定语/状语",
+            "note": "主干是 He is among many scientists；urging a halt to deep-sea mining 为现在分词短语修饰 scientists；asking for time to weigh up the pros and cons 为现在分词短语作伴随状语，weigh up 表“权衡”。"
+        },
+        "words": [
+            {"w": "halt", "pos": "n.", "def": "停止；暂停"},
+            {"w": "weigh up", "pos": "phr.", "def": "权衡；斟酌"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": LSQUO + "In sustainability terms, this could be a better way of exploiting the economic potential of the deep sea," + RSQUO + " he argues.",
+        "zh": "“从可持续性的角度来看，这可能是开发深海经济潜力的更好方式，”他论证道。",
+        "grammar": {
+            "type": "直接引语 + 介词短语状语",
+            "note": "引号内为直接引语，In sustainability terms 为介词短语作状语，表“就可持续性而言”；主干 this could be a better way of exploiting...；he argues 为引述句。"
+        },
+        "words": [
+            {"w": "sustainability", "pos": "n.", "def": "可持续性"},
+            {"w": "in ... terms", "pos": "phr.", "def": "就……而言；从……角度"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "Oceanographers using remotely operated vehicles have spotted many new species.",
+        "zh": "使用遥控潜水器的海洋学家已经发现了许多新物种。",
+        "grammar": {
+            "type": "现在分词短语作定语",
+            "note": "主干是 Oceanographers... have spotted many new species；using remotely operated vehicles 为现在分词短语作后置定语修饰 Oceanographers，说明借助的手段。"
+        },
+        "words": [
+            {"w": "oceanographer", "pos": "n.", "def": "海洋学家"},
+            {"w": "remotely operated vehicle", "pos": "phr.", "def": "遥控潜水器（ROV）"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "Among them have been sea cucumbers with tails allowing them to sail along the ocean floor, and a rare " + LSQUO + "Dumbo" + RSQUO + " octopus, found 3,000 metres under the Pacific Ocean, off the coast of California.",
+        "zh": "其中包括长着尾巴、能沿着海底“航行”的海参，以及一种罕见的“小飞象”章鱼——它是在加利福尼亚沿海太平洋3000米深处被发现的。",
+        "grammar": {
+            "type": "全部倒装 + 现在分词定语 + 过去分词定语",
+            "note": "Among them have been... 为地点状语提前引起的完全倒装，真正主语是 sea cucumbers... and a rare " + LSQUO + "Dumbo" + RSQUO + " octopus；with tails allowing them to sail... 修饰 sea cucumbers；found 3,000 metres under... 为过去分词短语修饰 octopus。"
+        },
+        "words": [
+            {"w": "sea cucumber", "pos": "n.", "def": "海参"},
+            {"w": "octopus", "pos": "n.", "def": "章鱼"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "Any one of these could offer lifesaving potential.",
+        "zh": "这些物种中的任何一种都可能提供拯救生命的潜力。",
+        "grammar": {
+            "type": "简单句",
+            "note": "主干是 Any one of these could offer lifesaving potential；Any one of these 作主语指代前文提到的这些新物种；could 表示可能性。"
+        },
+        "words": [
+            {"w": "lifesaving", "pos": "adj.", "def": "救命的；拯救生命的"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "Upton estimates it could take up to a decade for a newly discovered antibiotic to become a medicine " + DASH + " but the race towards commercial mining in the ocean abyss has already begun.",
+        "zh": "厄普顿估计，一种新发现的抗生素要变成药物可能需要长达十年之久——但争夺深海海底商业采矿的竞赛已经开始了。",
+        "grammar": {
+            "type": "宾语从句 + it 形式主语 + 破折号转折",
+            "note": "主干是 Upton estimates（后接省略 that 的宾语从句）；从句用 it could take up to a decade for... to become...，it 为形式主语，for a newly discovered antibiotic 为不定式的逻辑主语；破折号后 but 引出转折 the race... has already begun。"
+        },
+        "words": [
+            {"w": "decade", "pos": "n.", "def": "十年"},
+            {"w": "abyss", "pos": "n.", "def": "深渊；深海海底"}
+        ]
+    },
+    # Paragraph C
+    {
+        "id": 11,
+        "para": 3,
+        "en": "The deep sea contains more nickel, cobalt and rare earth metals than all land reserves combined, according to the US Geological Survey.",
+        "zh": "据美国地质调查局称，深海所含的镍、钴和稀土金属比所有陆地储量的总和还要多。",
+        "grammar": {
+            "type": "比较结构 + 过去分词",
+            "note": "主干是 The deep sea contains more nickel, cobalt and rare earth metals than all land reserves combined；more... than... 为比较结构；combined 为过去分词作后置定语修饰 land reserves，表“合起来的”；according to... 为来源状语。"
+        },
+        "words": [
+            {"w": "reserve", "pos": "n.", "def": "储量；储备"},
+            {"w": "rare earth metal", "pos": "phr.", "def": "稀土金属"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 3,
+        "en": "Mining corporations argue that deep-sea exploration could help diversify the supply of metals and point to the fact that demand for resources such as copper, aluminium, cobalt for electric car batteries and other metals to power technology and smartphones, is soaring.",
+        "zh": "采矿公司辩称，深海勘探有助于使金属供应多元化，并指出这样一个事实：对铜、铝、用于电动汽车电池的钴以及为科技产品和智能手机供电的其他金属等资源的需求正在飙升。",
+        "grammar": {
+            "type": "宾语从句 + 同位语从句 + 并列谓语",
+            "note": "主干为并列谓语 Mining corporations argue that... and point to the fact that...；第一个 that 引导 argue 的宾语从句；第二个 that 引导 the fact 的同位语从句，从句主干是 demand for resources... is soaring。"
+        },
+        "words": [
+            {"w": "diversify", "pos": "v.", "def": "使多样化；使多元化"},
+            {"w": "soar", "pos": "v.", "def": "飙升；猛增"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "They say that deep-sea mining could yield far superior ore to land mining with little, if any, waste.",
+        "zh": "他们说，深海采矿能产出远优于陆地采矿的矿石，而且几乎不产生废料。",
+        "grammar": {
+            "type": "宾语从句 + 比较结构 + 插入语",
+            "note": "主干是 They say that...，that 引导宾语从句；从句主干 deep-sea mining could yield far superior ore to land mining，superior to 表“优于”，far 修饰比较级；with little, if any, waste 为介词短语，if any 为插入语，强调“几乎没有”。"
+        },
+        "words": [
+            {"w": "yield", "pos": "v.", "def": "产出；出产"},
+            {"w": "ore", "pos": "n.", "def": "矿石"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": "Different methods of extraction exist, but most involve employing some form of converted machinery previously used in terrestrial mining to excavate materials from the sea floor, at depths of up to 6,000 metres, then drawing a seawater slurry, containing rock and other solid particles, from the sea floor to ships on the surface.",
+        "zh": "存在不同的开采方法，但大多数都要用到某种由陆地采矿所用设备改装而来的机械，在深达6000米处从海底挖出物料，然后把含有岩石和其他固体颗粒的海水泥浆从海底抽到海面上的船只。",
+        "grammar": {
+            "type": "转折并列句 + 动名词宾语 + 现在分词",
+            "note": "but 连接转折，主干是 most involve employing some form of converted machinery；previously used in terrestrial mining 为过去分词修饰 machinery；to excavate... 与 then drawing... 表连续动作，drawing 为并列的动名词；containing rock and other solid particles 修饰 slurry。"
+        },
+        "words": [
+            {"w": "terrestrial", "pos": "adj.", "def": "陆地的；陆生的"},
+            {"w": "slurry", "pos": "n.", "def": "泥浆；稀浆"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": "The slurry is then " + LSQUO + "de-watered" + RSQUO + " and transferred to another vessel for shipping.",
+        "zh": "然后这些泥浆被“脱水”，并转移到另一艘船上进行运输。",
+        "grammar": {
+            "type": "被动语态 + 并列谓语",
+            "note": "主干是 The slurry is then " + LSQUO + "de-watered" + RSQUO + " and transferred to another vessel，为被动语态，两个过去分词 de-watered 与 transferred 并列；for shipping 为目的状语。"
+        },
+        "words": [
+            {"w": "de-water", "pos": "v.", "def": "脱水；除去水分"},
+            {"w": "vessel", "pos": "n.", "def": "船只"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 3,
+        "en": "Extracted seawater is pumped back down and discharged close to the sea floor.",
+        "zh": "被抽取出的海水会被泵回并在靠近海底处排放。",
+        "grammar": {
+            "type": "被动语态 + 过去分词定语",
+            "note": "主干是 Extracted seawater is pumped back down and discharged，为被动语态，pumped 与 discharged 并列；Extracted 为过去分词作前置定语修饰 seawater；close to the sea floor 为地点状语。"
+        },
+        "words": [
+            {"w": "pump", "pos": "v.", "def": "用泵抽送"},
+            {"w": "discharge", "pos": "v.", "def": "排放；排出"}
+        ]
+    },
+    # Paragraph D
+    {
+        "id": 17,
+        "para": 4,
+        "en": "But environmental and legal groups have urged caution, arguing there are potentially massive and unknown ramifications for the environment and for nearby communities, and that the global regulatory framework is not yet drafted.",
+        "zh": "但环保组织和法律团体敦促谨慎行事，他们认为此举对环境和附近社区可能造成巨大且未知的后果，而且全球监管框架尚未拟定。",
+        "grammar": {
+            "type": "现在分词状语 + 两个并列宾语从句",
+            "note": "主干是 But environmental and legal groups have urged caution；arguing... 为现在分词短语作伴随状语，其后接两个并列宾语从句：（省略 that 的）there are potentially massive and unknown ramifications... 和 that the global regulatory framework is not yet drafted。"
+        },
+        "words": [
+            {"w": "caution", "pos": "n.", "def": "谨慎；小心"},
+            {"w": "ramification", "pos": "n.", "def": "（复杂的）后果；影响"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": LSQUO + "Despite arising in the last half century, the " + LDQUO + "new global gold rush" + RDQUO + " of deep-sea mining shares many features with past resource scrambles " + DASH + " including a general disregard for environmental and social impacts, and the marginalisation of indigenous peoples and their rights," + RSQUO + " a paper, written by Julie Hunter and Julian Aguon, from Blue Ocean Law, and Pradeep Singh, from the Center for Marine Environmental Sciences, Bremen, argues.",
+        "zh": "“尽管深海采矿这场‘新的全球淘金热’兴起于近半个世纪之内，它却与过去的资源争夺有诸多共同之处——包括对环境和社会影响的普遍漠视，以及对原住民及其权利的边缘化，”一篇论文这样论证道，该文由来自蓝色海洋法律事务所的朱莉·亨特和朱利安·阿贡，以及来自不来梅海洋环境科学中心的普拉迪普·辛格共同撰写。",
+        "grammar": {
+            "type": "直接引语 + 让步状语 + 过去分词后置定语",
+            "note": "引号内主干 the " + LDQUO + "new global gold rush" + RDQUO + " of deep-sea mining shares many features with past resource scrambles；Despite arising... 为介词加动名词的让步状语；破折号后 including... 举例说明 features；引述句 a paper... argues，written by... 为过去分词短语修饰 a paper。"
+        },
+        "words": [
+            {"w": "scramble", "pos": "n.", "def": "争夺；抢夺"},
+            {"w": "marginalisation", "pos": "n.", "def": "边缘化"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": "The authors say that knowledge of the deep seabed remains extremely limited.",
+        "zh": "作者们表示，人类对深海海床的了解仍然极其有限。",
+        "grammar": {
+            "type": "宾语从句",
+            "note": "主干是 The authors say that...，that 引导宾语从句；从句主干 knowledge of the deep seabed remains extremely limited，remains 为系动词接形容词 limited 作表语。"
+        },
+        "words": [
+            {"w": "seabed", "pos": "n.", "def": "海床；海底"},
+            {"w": "remain", "pos": "v.", "def": "仍然是；保持"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": LSQUO + "The surface of the Moon, Mars and even Venus have all been mapped and studied in much greater detail, leading marine scientists to commonly remark that, with respect to the deep sea, " + LDQUO + "We don" + RSQUO + "t yet know what we need to know" + RDQUO + "." + RSQUO,
+        "zh": "“月球、火星乃至金星的表面都已经被绘制成图并得到了远为详尽的研究，这使得海洋科学家们常常评论说，就深海而言，‘我们尚且不知道自己需要知道什么’。”",
+        "grammar": {
+            "type": "被动语态 + 现在分词结果状语 + 宾语从句",
+            "note": "主干是 The surface of the Moon, Mars and even Venus have all been mapped and studied，为被动语态；leading marine scientists to commonly remark that... 为现在分词短语作结果状语，remark 后接 that 宾语从句；with respect to the deep sea 为插入的介词短语。"
+        },
+        "words": [
+            {"w": "map", "pos": "v.", "def": "绘制……的地图；测绘"},
+            {"w": "with respect to", "pos": "phr.", "def": "关于；就……而言"}
+        ]
+    },
+    # Paragraph E
+    {
+        "id": 21,
+        "para": 5,
+        "en": "Scientific research " + DASH + " including a recent paper in Marine Policy journal " + DASH + " has suggested the deep seabed, and hydrothermal vents, which are created when seawater meets volcanic magma, have crucial impacts upon biodiversity and the global climate.",
+        "zh": "科学研究——包括《海洋政策》期刊上近期的一篇论文——表明，深海海床以及热液喷口（当海水遇到火山岩浆时便会形成）对生物多样性和全球气候有着至关重要的影响。",
+        "grammar": {
+            "type": "宾语从句 + 非限定性定语从句 + 时间状语从句",
+            "note": "主干是 Scientific research... has suggested（后接省略 that 的宾语从句）；破折号内 including... 为插入语；从句主干 the deep seabed, and hydrothermal vents... have crucial impacts；which are created when seawater meets volcanic magma 为非限定性定语从句修饰 hydrothermal vents，内含 when 时间状语从句。"
+        },
+        "words": [
+            {"w": "hydrothermal vent", "pos": "phr.", "def": "热液喷口"},
+            {"w": "biodiversity", "pos": "n.", "def": "生物多样性"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 5,
+        "en": "The mineral-rich vents and their surrounds are also home to many well-known animals including crustaceans, tubeworms, clams, slugs, anemones and fish.",
+        "zh": "这些富含矿物的喷口及其周边区域也是许多知名动物的家园，包括甲壳类动物、管虫、蛤蜊、海蛞蝓、海葵和鱼类。",
+        "grammar": {
+            "type": "主系表 + 现在分词举例",
+            "note": "主干是 The mineral-rich vents and their surrounds are also home to many well-known animals，be home to 表“是……的栖息地”；including crustaceans, tubeworms... 为现在分词短语举例说明 animals。"
+        },
+        "words": [
+            {"w": "crustacean", "pos": "n.", "def": "甲壳类动物"},
+            {"w": "anemone", "pos": "n.", "def": "海葵"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 5,
+        "en": LSQUO + "It is becoming increasingly clear that deep-sea mining poses a grave threat to these vital seabed functions," + RSQUO + " the paper says.",
+        "zh": "“越来越清楚的是，深海采矿对这些至关重要的海床功能构成了严重威胁，”该论文写道。",
+        "grammar": {
+            "type": "it 形式主语 + 主语从句",
+            "note": "引号内 It is becoming increasingly clear that...，it 为形式主语，that 引导真正的主语从句；从句主干 deep-sea mining poses a grave threat to these vital seabed functions，pose a threat to 表“对……构成威胁”；the paper says 为引述句。"
+        },
+        "words": [
+            {"w": "grave", "pos": "adj.", "def": "严重的；严峻的"},
+            {"w": "pose a threat", "pos": "phr.", "def": "构成威胁"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": LSQUO + "Extraction methods would produce large sediment plumes and involve the discharge of waste back into the ocean, significantly disturbing seafloor environments," + RSQUO + " the paper continues.",
+        "zh": "“开采方法会产生大量的沉积物羽流，并涉及把废料排回海洋，从而严重扰乱海底环境，”该论文接着写道。",
+        "grammar": {
+            "type": "并列谓语 + 现在分词结果状语",
+            "note": "引号内主干为并列谓语 Extraction methods would produce large sediment plumes and involve the discharge of waste back into the ocean；significantly disturbing seafloor environments 为现在分词短语作结果状语；the paper continues 为引述句。"
+        },
+        "words": [
+            {"w": "sediment", "pos": "n.", "def": "沉积物；沉淀物"},
+            {"w": "plume", "pos": "n.", "def": "羽状物；（扩散的）烟羽/浊流"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": LSQUO + "On deep sea vents, scientists are clear," + RSQUO + " says Dr Jon Copley of the National Oceanography Centre, Southampton: " + LSQUO + "we don" + RSQUO + "t want mining on them." + RSQUO,
+        "zh": "“在深海喷口问题上，科学家们态度明确，”南安普顿国家海洋学中心的乔恩·科普利博士说：“我们不希望在那里进行采矿。”",
+        "grammar": {
+            "type": "直接引语 + 引述倒装 + 冒号补充引语",
+            "note": "第一段引语 On deep sea vents, scientists are clear；引述句 says Dr Jon Copley of the National Oceanography Centre, Southampton 为主谓倒装；冒号后 we don" + RSQUO + "t want mining on them 为其继续的直接引语。"
+        },
+        "words": [
+            {"w": "vent", "pos": "n.", "def": "喷口；排气孔"},
+            {"w": "oceanography", "pos": "n.", "def": "海洋学"}
+        ]
+    },
+    # Paragraph F
+    {
+        "id": 26,
+        "para": 6,
+        "en": "The oceans occupy around 70% of the planet and are relatively unexplored, says Mike Johnston, chief executive of Nautilus, a Canadian underwater exploration company: " + LSQUO + "It makes sense to explore this untapped potential in an environmentally sustainable way, instead of continually looking at the fast depleting land resources of the planet to meet society" + RSQUO + "s rising needs." + RSQUO,
+        "zh": "加拿大水下勘探公司鹦鹉螺公司的首席执行官迈克·约翰斯顿说，海洋约占地球的70%，且相对未被探索：“以对环境可持续的方式去开发这一未被利用的潜力是明智之举，而不是不断盯着地球上快速枯竭的陆地资源来满足社会日益增长的需求。”",
+        "grammar": {
+            "type": "引述倒装 + 同位语 + it 形式主语 + instead of 对比",
+            "note": "主干 The oceans occupy around 70%... and are relatively unexplored；引述句 says Mike Johnston, chief executive of Nautilus，a Canadian underwater exploration company 为同位语；冒号后引语 It makes sense to explore...，it 为形式主语；instead of continually looking at... 表对比。"
+        },
+        "words": [
+            {"w": "untapped", "pos": "adj.", "def": "未被利用的；未开发的"},
+            {"w": "deplete", "pos": "v.", "def": "耗尽；使枯竭"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 6,
+        "en": "Those leading the global rush to place giant mining machines thousands of metres below the sea surface say the environmental impacts will be far lower than on land.",
+        "zh": "那些在全球范围内带头争相把巨型采矿机器安置到海面以下数千米处的人说，其对环境的影响将远低于陆地采矿。",
+        "grammar": {
+            "type": "现在分词作主语后置定语 + 宾语从句 + 比较结构",
+            "note": "主语是 Those，leading the global rush to place giant mining machines... 为现在分词短语作后置定语；谓语 say 后接省略 that 的宾语从句 the environmental impacts will be far lower than on land，far lower than 为比较结构。"
+        },
+        "words": [
+            {"w": "giant", "pos": "adj.", "def": "巨大的"},
+            {"w": "impact", "pos": "n.", "def": "影响；冲击"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 6,
+        "en": "But critics say exotic and little-known ecosystems in the deep oceans could be destroyed and must be protected.",
+        "zh": "但批评者说，深海中那些奇异而鲜为人知的生态系统可能会被摧毁，必须加以保护。",
+        "grammar": {
+            "type": "宾语从句 + 情态被动并列",
+            "note": "主干是 But critics say...（后接省略 that 的宾语从句）；从句主干 exotic and little-known ecosystems... could be destroyed and must be protected，两个情态被动结构由 and 并列。"
+        },
+        "words": [
+            {"w": "exotic", "pos": "adj.", "def": "奇异的；外来的"},
+            {"w": "ecosystem", "pos": "n.", "def": "生态系统"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 6,
+        "en": LSQUO + "Mining will be the greatest assault on deep-sea ecosystems ever inflicted by humans," + RSQUO + " according to hydrothermal vent expert Verena Tunnicliffe, at the University of Victoria in Canada.",
+        "zh": "“采矿将是人类对深海生态系统造成的有史以来最严重的侵害，”加拿大维多利亚大学的热液喷口专家维雷娜·滕尼克利夫说道。",
+        "grammar": {
+            "type": "直接引语 + 最高级 + 过去分词后置定语",
+            "note": "引号内主干 Mining will be the greatest assault on deep-sea ecosystems；ever inflicted by humans 为过去分词短语作后置定语修饰 assault，inflict 表“使遭受”；according to... 引出说话人及其身份。"
+        },
+        "words": [
+            {"w": "assault", "pos": "n.", "def": "攻击；侵害"},
+            {"w": "inflict", "pos": "v.", "def": "使遭受；造成（伤害）"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 6,
+        "en": "She argues that active vents must be off-limits for mining to protect the new knowledge and biotechnology spin-offs they can deliver, and that strict controls must be in place elsewhere.",
+        "zh": "她主张，活跃的喷口必须禁止采矿，以保护它们所能带来的新知识和生物技术衍生成果，并且别处也必须实行严格的管控。",
+        "grammar": {
+            "type": "两个并列宾语从句 + 目的状语 + 省略关系词定语从句",
+            "note": "主干是 She argues that... and that...，两个 that 引导并列宾语从句；第一个从句 active vents must be off-limits for mining，to protect... 为目的状语，they can deliver 为省略关系词的定语从句修饰 spin-offs；第二个从句 strict controls must be in place elsewhere。"
+        },
+        "words": [
+            {"w": "off-limits", "pos": "adj.", "def": "禁止进入的；禁区的"},
+            {"w": "spin-off", "pos": "n.", "def": "衍生产品；副产品"}
+        ]
+    }
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "17",
+        "type": "matching_information",
+        "instructions": [
+            "Reading Passage 2 has six paragraphs, A" + DASH + "F.",
+            "Which paragraph contains the following information?",
+            "Write the correct letter, A" + DASH + "F, in boxes 14" + DASH + "17 on your answer sheet."
+        ],
+        "items": [
+            {
+                "number": 14,
+                "prompt": "reference to the rapidly increasing need for one raw material in the transport industry",
+                "answer": "C",
+                "evidence_sentence": 12
+            },
+            {
+                "number": 15,
+                "prompt": "a rough estimate of the area of the Earth covered by the oceans",
+                "answer": "F",
+                "evidence_sentence": 26
+            },
+            {
+                "number": 16,
+                "prompt": "how a particular underwater habitat, where minerals and organisms co-exist, is formed",
+                "answer": "E",
+                "evidence_sentence": 21
+            },
+            {
+                "number": 17,
+                "prompt": "reference to the fact that the countries of the world have yet to agree on rules for the exploration of the seabed",
+                "answer": "D",
+                "evidence_sentence": 17
+            }
+        ]
+    },
+    {
+        "title": "Questions 18" + DASH + "23",
+        "type": "matching_people",
+        "instructions": [
+            "Look at the following statements (Questions 18" + DASH + "23) and the list of people below.",
+            "Match each statement with the correct person or people, A" + DASH + "E.",
+            "Write the correct letter, A" + DASH + "E, in boxes 18" + DASH + "23 on your answer sheet.",
+            "NB You may use any letter more than once.",
+            "List of People",
+            "A Professor Mat Upton",
+            "B Julie Hunter, Julian Aguon and Pradeep Singh",
+            "C Dr Jon Copley",
+            "D Mike Johnston",
+            "E Verena Tunnicliffe"
+        ],
+        "items": [
+            {
+                "number": 18,
+                "prompt": "A move away from the exploration of heavily mined reserves on land is a good idea.",
+                "answer": "D",
+                "evidence_sentence": 26
+            },
+            {
+                "number": 19,
+                "prompt": "The negative effects of undersea exploration on local areas and their inhabitants are being ignored.",
+                "answer": "B",
+                "evidence_sentence": 18
+            },
+            {
+                "number": 20,
+                "prompt": "There are more worthwhile things to extract from the sea than minerals.",
+                "answer": "A",
+                "evidence_sentence": 4
+            },
+            {
+                "number": 21,
+                "prompt": "No other form of human exploration will have such a destructive impact on marine life as deep-sea mining.",
+                "answer": "E",
+                "evidence_sentence": 29
+            },
+            {
+                "number": 22,
+                "prompt": "More is known about outer space than about what lies beneath the oceans.",
+                "answer": "B",
+                "evidence_sentence": 20
+            },
+            {
+                "number": 23,
+                "prompt": "There is one marine life habitat where experts agree mining should not take place.",
+                "answer": "C",
+                "evidence_sentence": 25
+            }
+        ]
+    },
+    {
+        "title": "Questions 24" + DASH + "26",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 24" + DASH + "26 on your answer sheet.",
+            "Mining the sea floor"
+        ],
+        "items": [
+            {
+                "number": 24,
+                "prompt": "Mining corporations believe that the mineral resources lying under the sea may be superior to those found in the earth. They also say that these can be removed without producing much 24 ____ .",
+                "answer": "waste",
+                "evidence_sentence": 13
+            },
+            {
+                "number": 25,
+                "prompt": "The extraction is often done by adapting the 25 ____ that has already been used to work on land.",
+                "answer": "machinery",
+                "evidence_sentence": 14
+            },
+            {
+                "number": 26,
+                "prompt": "However, concerned groups strongly believe that 26 ____ is necessary due to the possible number of unidentified consequences.",
+                "answer": "caution",
+                "evidence_sentence": 17
+            }
+        ]
+    }
+]
+
+phrases = [
+    {"w": "deep-sea mining", "pos": "n.", "def": "深海采矿"},
+    {"w": "antibiotic-resistant superbug", "pos": "n.", "def": "抗生素耐药性超级细菌"},
+    {"w": "Rockall trough", "pos": "n.", "def": "罗科尔海槽（东北大西洋一处深海海槽）"},
+    {"w": "US Geological Survey", "pos": "n.", "def": "美国地质调查局"},
+    {"w": "prospecting ground", "pos": "n.", "def": "勘探场；探矿地"},
+    {"w": "the pros and cons", "pos": "phr.", "def": "利弊；正反两方面"},
+    {"w": "gold rush", "pos": "n.", "def": "淘金热；蜂拥而至的争夺"},
+    {"w": "indigenous peoples", "pos": "n.", "def": "原住民；土著民族"},
+    {"w": "sediment plume", "pos": "n.", "def": "沉积物羽流（采矿搅起的悬浮浊流）"},
+    {"w": "biotechnology spin-off", "pos": "n.", "def": "生物技术衍生成果"}
+]
+
+data = {
+    "id": "c19-test4-p2",
+    "source": "剑桥雅思19 · Test 4 · Passage 2",
+    "title": "Deep-sea mining",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "subtitle": "Bacteria from the ocean floor can beat superbugs and cancer. But habitats are at risk from the hunger for marine minerals",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c19-test4-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

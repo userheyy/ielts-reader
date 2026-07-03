@@ -1,0 +1,988 @@
+{
+  "id": "c17-test4-p2",
+  "source": "剑桥雅思17 · Test 4 · Passage 2",
+  "title": "Does education fuel economic growth?",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "Does education fuel economic growth?",
+      "zh": "教育能否推动经济增长？",
+      "grammar": {
+        "type": "标题设问",
+        "note": "全文标题，用一般疑问句形式提出核心议题：education（教育）与 economic growth（经济增长）之间是否存在推动关系；fuel 在此作动词，表“助长、驱动”。"
+      },
+      "words": [
+        {
+          "w": "fuel",
+          "pos": "v.",
+          "def": "助长；驱动"
+        },
+        {
+          "w": "economic growth",
+          "pos": "n.",
+          "def": "经济增长"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "Over the last decade, a huge database about the lives of southwest German villagers between 1600 and 1900 has been compiled by a team led by Professor Sheilagh Ogilvie at Cambridge University’s Faculty of Economics.",
+      "zh": "过去十年间，剑桥大学经济学院希拉·奥格尔维（Sheilagh Ogilvie）教授领衔的团队，编制了一个关于 1600 至 1900 年间德国西南部村民生活的庞大数据库。",
+      "grammar": {
+        "type": "被动语态 + 过去分词短语作后置定语",
+        "note": "主干是 a huge database... has been compiled（被动语态，强调数据库本身而非施动者）；about the lives of... 修饰 database；led by... 是过去分词短语作后置定语，修饰 a team。"
+      },
+      "words": [
+        {
+          "w": "compile",
+          "pos": "v.",
+          "def": "编制；汇编"
+        },
+        {
+          "w": "database",
+          "pos": "n.",
+          "def": "数据库"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "It includes court records, guild ledgers, parish registers, village censuses, tax lists and – the most recent addition – 9,000 handwritten inventories listing over a million personal possessions belonging to ordinary women and men across three centuries.",
+      "zh": "它包括法庭记录、行会账簿、教区登记册、村庄人口普查、纳税清单，以及最新增补的 9,000 份手写清单——这些清单列出了三个世纪以来普通男女所拥有的逾百万件个人物品。",
+      "grammar": {
+        "type": "主谓宾 + 破折号插入补充",
+        "note": "主干是 It includes... 后接一串并列宾语；两个破折号之间的 the most recent addition 是插入语，补充说明紧随其后的 9,000 handwritten inventories；listing... 是现在分词短语，说明这些清单的内容。"
+      },
+      "words": [
+        {
+          "w": "guild",
+          "pos": "n.",
+          "def": "行会"
+        },
+        {
+          "w": "inventory",
+          "pos": "n.",
+          "def": "清单；财产清册"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "Ogilvie, who discovered the inventories in the archives of two German communities 30 years ago, believes they may hold the answer to a conundrum that has long puzzled economists: the lack of evidence for a causal link between education and a country’s economic growth.",
+      "zh": "奥格尔维 30 年前在两个德国社区的档案里发现了这些清单，她相信这些清单或许能解答一个长期困扰经济学家的难题：教育与一国经济增长之间缺乏因果关系的证据。",
+      "grammar": {
+        "type": "非限制性定语从句 + 冒号解释",
+        "note": "主干是 Ogilvie... believes they may hold the answer；who discovered... 是插入的非限制性定语从句，补充奥格尔维的背景；that has long puzzled economists 修饰 conundrum；冒号后的名词短语 the lack of evidence... 具体解释 conundrum 到底是什么。"
+      },
+      "words": [
+        {
+          "w": "conundrum",
+          "pos": "n.",
+          "def": "难题；谜题"
+        },
+        {
+          "w": "causal link",
+          "pos": "n.",
+          "def": "因果联系"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "As Ogilvie explains, ‘Education helps us to work more productively, invent better technology, and earn more … surely it must be critical for economic growth?",
+      "zh": "正如奥格尔维所解释的：“教育帮助我们更高效地工作、发明更好的技术、赚得更多……它对经济增长想必是至关重要的吧？",
+      "grammar": {
+        "type": "As 引导方式状语 + 直接引语内的设问",
+        "note": "As Ogilvie explains 是方式状语，引出后面的直接引语；引语主干是 Education helps us to...，后接三个并列不定式 work / invent / earn；破折号省略号后的 surely it must be critical...? 用反问表达“看似理所当然”的推断。"
+      },
+      "words": [
+        {
+          "w": "productively",
+          "pos": "adv.",
+          "def": "高效地；富有成效地"
+        },
+        {
+          "w": "critical",
+          "pos": "adj.",
+          "def": "至关重要的"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 1,
+      "en": "But, if you look back through history, there’s no evidence that having a high literacy rate made a country industrialise earlier.’ Between 1600 and 1900, England had only mediocre literacy rates by European standards, yet its economy grew fast and it was the first country to industrialise.",
+      "zh": "但是，如果你回顾历史，就会发现没有任何证据表明高识字率能让一个国家更早实现工业化。”1600 至 1900 年间，按欧洲标准衡量，英国的识字率仅属中等，其经济却增长迅速，还成为第一个实现工业化的国家。",
+      "grammar": {
+        "type": "条件状语从句 + 让步转折（yet）",
+        "note": "引语部分主干是 there's no evidence that...，that 引导同位语从句解释 evidence 的内容，其中 having a high literacy rate 是动名词作主语；引语结束后另起一句，主干是 England had... literacy rates，yet 引出转折——识字率中等，经济却增长快、工业化早。"
+      },
+      "words": [
+        {
+          "w": "literacy rate",
+          "pos": "n.",
+          "def": "识字率"
+        },
+        {
+          "w": "mediocre",
+          "pos": "adj.",
+          "def": "平庸的；中等的"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "During this period, Germany and Scandinavia had excellent literacy rates, but their economies grew slowly and they industrialised late.",
+      "zh": "而同一时期，德国和斯堪的纳维亚地区识字率极高，经济增长却很缓慢，工业化也来得晚。",
+      "grammar": {
+        "type": "并列句（but 转折对比）",
+        "note": "本句与上一句形成对照：主干是 Germany and Scandinavia had excellent literacy rates，but 之后 their economies grew slowly and they industrialised late 是并列谓语，说明高识字率并未带来快速增长——这正是常被出题改写的“反例”。"
+      },
+      "words": [
+        {
+          "w": "literacy rate",
+          "pos": "n.",
+          "def": "识字率"
+        },
+        {
+          "w": "industrialise",
+          "pos": "v.",
+          "def": "（使）工业化"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 2,
+      "en": "‘Modern cross-country analyses have also struggled to find evidence that education causes economic growth, even though there is plenty of evidence that growth increases education,’ she adds.",
+      "zh": "“现代的跨国对比分析也很难找到教育促进经济增长的证据，尽管有大量证据表明是经济增长带动了教育，”她补充道。",
+      "grammar": {
+        "type": "宾语从句 + even though 让步状语从句",
+        "note": "引语主干是 analyses have struggled to find evidence；that education causes economic growth 是同位语从句说明 evidence 内容；even though 引导让步从句，点出因果方向恰恰相反——是 growth increases education，这一“方向倒置”是理解全文的关键。"
+      },
+      "words": [
+        {
+          "w": "cross-country analysis",
+          "pos": "n.",
+          "def": "跨国对比分析"
+        },
+        {
+          "w": "struggle to",
+          "pos": "phr.",
+          "def": "难以；费力去做"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 2,
+      "en": "In the handwritten inventories that Ogilvie is analysing are the belongings of women and men at marriage, remarriage and death.",
+      "zh": "在奥格尔维正在分析的这些手写清单中，记录着人们在结婚、再婚和离世时所拥有的财产。",
+      "grammar": {
+        "type": "完全倒装句 + 定语从句",
+        "note": "本句是地点状语前置引起的完全倒装：正常语序为 the belongings of women and men... are in the handwritten inventories；that Ogilvie is analysing 是定语从句修饰 inventories；at marriage, remarriage and death 说明记录财产的三个人生时点。"
+      },
+      "words": [
+        {
+          "w": "belongings",
+          "pos": "n.",
+          "def": "财物；所有物"
+        },
+        {
+          "w": "remarriage",
+          "pos": "n.",
+          "def": "再婚"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 2,
+      "en": "From badger skins to Bibles, sewing machines to scarlet bodices – the villagers’ entire worldly goods are included.",
+      "zh": "从獾皮到《圣经》，从缝纫机到猩红色的紧身胸衣——村民们全部的世俗家当都被囊括其中。",
+      "grammar": {
+        "type": "破折号前置列举 + 被动语态主干",
+        "note": "破折号前用 From... to..., ... to... 结构罗列各式物品，起铺陈作用；破折号后才是句子主干 the villagers' entire worldly goods are included（被动语态），强调“无所不包”。"
+      },
+      "words": [
+        {
+          "w": "worldly goods",
+          "pos": "phr.",
+          "def": "世俗财产；家当"
+        },
+        {
+          "w": "bodice",
+          "pos": "n.",
+          "def": "紧身胸衣"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 2,
+      "en": "Inventories of agricultural equipment and craft tools reveal economic activities; ownership of books and education- related objects like pens and slates suggests how people learned.",
+      "zh": "农具和手工工具的清单揭示了经济活动；书籍以及钢笔、石板等与教育相关的物品的拥有情况，则暗示了人们的学习方式。",
+      "grammar": {
+        "type": "分号并列的两个分句",
+        "note": "分号连接两个结构平行的分句：前句主干 Inventories... reveal economic activities，后句主干 ownership... suggests how people learned；suggests 后接 how 引导的宾语从句。分号常是信息并列点，也是出题定位高频处。"
+      },
+      "words": [
+        {
+          "w": "agricultural equipment",
+          "pos": "n.",
+          "def": "农业设备"
+        },
+        {
+          "w": "slate",
+          "pos": "n.",
+          "def": "石板（旧时书写用）"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 2,
+      "en": "In addition, the tax lists included in the database record the value of farms, workshops, assets and debts; signatures and people’s estimates of their age indicate literacy and numeracy levels; and court records reveal obstacles (such as the activities of the guilds*) that stifled industry.",
+      "zh": "此外，数据库中收录的纳税清单记录了农场、作坊、资产与债务的价值；签名以及人们对自己年龄的估算，反映出识字与算术水平；法庭记录则揭示了扼杀工业发展的种种障碍（如行会*的活动）。",
+      "grammar": {
+        "type": "分号并列的三个分句 + 括号举例",
+        "note": "In addition 承接上文继续举例；三个由分号隔开的分句结构平行（tax lists record... / signatures and... estimates indicate... / court records reveal...）；included in the database 是过去分词短语修饰 tax lists；括号内 such as... 举例说明 obstacles。"
+      },
+      "words": [
+        {
+          "w": "numeracy",
+          "pos": "n.",
+          "def": "计算能力；算术能力"
+        },
+        {
+          "w": "stifle",
+          "pos": "v.",
+          "def": "扼杀；抑制"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 3,
+      "en": "Previous studies usually had just one way of linking education with economic growth – the presence of schools and printing presses, perhaps, or school enrolment, or the ability to sign names.",
+      "zh": "以往的研究通常只用一种方式把教育和经济增长挂钩——也许是看有没有学校和印刷机，或看入学率，又或看能否签写自己的名字。",
+      "grammar": {
+        "type": "主干 + 破折号后同位列举",
+        "note": "主干是 Previous studies had just one way of linking education with economic growth；破折号后用 the presence of...  or... or... 列举“那一种方式”可能的几种具体形式，是对 one way 的同位补充；这种“单一指标”与下文奥格尔维的“多重指标”形成对比。"
+      },
+      "words": [
+        {
+          "w": "enrolment",
+          "pos": "n.",
+          "def": "入学（人数）；注册"
+        },
+        {
+          "w": "printing press",
+          "pos": "n.",
+          "def": "印刷机"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 3,
+      "en": "According to Ogilvie, the database provides multiple indicators for the same individuals, making it possible to analyse links between literacy, numeracy, wealth, and industriousness, for individual women and men over the long term.",
+      "zh": "奥格尔维指出，该数据库能为同一批人提供多重指标，从而得以就每一位女性和男性，长期追踪其识字、算术、财富与勤勉程度之间的关联。",
+      "grammar": {
+        "type": "主干 + 现在分词短语表结果",
+        "note": "主干是 the database provides multiple indicators for the same individuals；making it possible to analyse links... 是现在分词短语作结果状语，其中 it 是形式宾语，真正宾语是 to analyse links...；between literacy, numeracy, wealth, and industriousness 说明所比较的四类指标。"
+      },
+      "words": [
+        {
+          "w": "indicator",
+          "pos": "n.",
+          "def": "指标"
+        },
+        {
+          "w": "industriousness",
+          "pos": "n.",
+          "def": "勤勉；勤奋"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 3,
+      "en": "Ogilvie and her team have been building the vast database of material possessions on top of their full demographic reconstruction of the people who lived in these two German communities. ‘We can follow the same people – and their descendants – across 300 years of educational and economic change,’ she says.",
+      "zh": "奥格尔维和她的团队在对这两个德国社区居民所做的完整人口重建之上，进一步构建了这个庞大的物质财产数据库。她说：“我们能够追踪同一批人——以及他们的后代——跨越 300 年的教育与经济变迁。”",
+      "grammar": {
+        "type": "现在完成进行时 + 直接引语",
+        "note": "第一句主干是 Ogilvie and her team have been building the vast database（现在完成进行时，强调持续进行的工作），on top of... 表“在……的基础之上”，who lived in... 修饰 the people；第二句为直接引语，两处破折号之间 and their descendants 是插入补充，与题目考点 descendants 对应。"
+      },
+      "words": [
+        {
+          "w": "demographic reconstruction",
+          "pos": "n.",
+          "def": "人口重建"
+        },
+        {
+          "w": "descendant",
+          "pos": "n.",
+          "def": "后代；后裔"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 3,
+      "en": "Individual lives have unfolded before their eyes.",
+      "zh": "一个个鲜活的人生就这样在他们眼前徐徐展开。",
+      "grammar": {
+        "type": "现在完成时短句",
+        "note": "结构简短：主干是 Individual lives have unfolded；before their eyes 是地点状语，形象地表达“研究者仿佛亲眼见证”；unfold 在此比喻人生像画卷一样逐渐铺展。"
+      },
+      "words": [
+        {
+          "w": "unfold",
+          "pos": "v.",
+          "def": "展开；徐徐呈现"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 3,
+      "en": "Stories like that of the 24-year-olds Ana Regina and Magdalena Riethmüllerin, who were chastised in 1707 for reading books in church instead of listening to the sermon.",
+      "zh": "比如那两位 24 岁的姑娘安娜·雷吉娜（Ana Regina）和玛格达莱娜·里特米勒林（Magdalena Riethmüllerin）的故事——她们在 1707 年因在教堂里看书、而非聆听布道，遭到了训诫。",
+      "grammar": {
+        "type": "名词短语 + 非限制性定语从句",
+        "note": "本句以名词短语 Stories like that of... 起首（that 指代 the story，避免重复）；who were chastised... 是非限制性定语从句，交代二人被训诫的原因；instead of listening to the sermon 用 instead of 表对比——sermon 正是题目所考的词。"
+      },
+      "words": [
+        {
+          "w": "chastise",
+          "pos": "v.",
+          "def": "训诫；责罚"
+        },
+        {
+          "w": "sermon",
+          "pos": "n.",
+          "def": "布道；讲道"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 3,
+      "en": "‘This tells us they were continuing to develop their reading skills at least a decade after leaving school,’ explains Ogilvie.",
+      "zh": "“这说明她们在离校之后至少又坚持提升了十年的阅读能力，”奥格尔维解释道。",
+      "grammar": {
+        "type": "宾语从句 + 时间状语",
+        "note": "引语主干是 This tells us (that) they were continuing to develop their reading skills，tells 后省略了 that 引导的宾语从句；at least a decade after leaving school 是时间状语，说明“离校后仍持续学习”，据此推断当时识字并非止步于学校。"
+      },
+      "words": [
+        {
+          "w": "continue to",
+          "pos": "phr.",
+          "def": "继续（做）"
+        },
+        {
+          "w": "at least",
+          "pos": "phr.",
+          "def": "至少"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 4,
+      "en": "The database also reveals the case of Juliana Schweickherdt, a 50-year-old spinster living in the small Black Forest community of Wildberg, who was reprimanded in 1752 by the local weavers’ guild for ‘weaving cloth and combing wool, counter to the guild ordinance’.",
+      "zh": "数据库还披露了朱莉安娜·施韦克赫特（Juliana Schweickherdt）的案例：她是住在黑森林小镇维尔德贝格（Wildberg）的一位 50 岁未婚女子，1752 年被当地织工行会申斥，罪名是“违反行会条例织布、梳理羊毛”。",
+      "grammar": {
+        "type": "主干 + 非限制性定语从句",
+        "note": "主干是 The database reveals the case of Juliana Schweickherdt；a 50-year-old spinster... 是同位语，进一步说明她的身份，其中 living in... 是现在分词短语作定语；who was reprimanded... 是非限制性定语从句，for 引出被申斥的原因，引号内是行会给出的“罪名”。"
+      },
+      "words": [
+        {
+          "w": "spinster",
+          "pos": "n.",
+          "def": "老处女；未婚女子"
+        },
+        {
+          "w": "reprimand",
+          "pos": "v.",
+          "def": "申斥；谴责"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 4,
+      "en": "When Juliana continued taking jobs reserved for male guild members, she was summoned before the guild court and told to pay a fine equivalent to one third of a servant’s annual wage.",
+      "zh": "当朱莉安娜继续承接那些专属于男性行会成员的活计时，她被传唤到行会法庭，并被勒令缴纳一笔相当于仆人年薪三分之一的罚款。",
+      "grammar": {
+        "type": "When 时间状语从句 + 被动语态并列谓语",
+        "note": "When 引导时间状语从句 When Juliana continued taking jobs...，reserved for male guild members 是过去分词短语修饰 jobs；主句主干为被动语态的并列谓语 she was summoned... and told to pay a fine；equivalent to... 修饰 fine，说明罚款数额——fine 是题目考点。"
+      },
+      "words": [
+        {
+          "w": "summon",
+          "pos": "v.",
+          "def": "传唤；召唤"
+        },
+        {
+          "w": "equivalent to",
+          "pos": "phr.",
+          "def": "相当于"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 4,
+      "en": "It was a small act of defiance by today’s standards, but it reflects a time when laws in Germany and elsewhere regulated people’s access to labour markets.",
+      "zh": "以今天的标准看，这不过是小小的一次抗命，却折射出一个时代——在德国乃至别处，法律都限制着人们进入劳动力市场。",
+      "grammar": {
+        "type": "并列句（but 转折）+ when 定语从句",
+        "note": "两个分句由 but 连接：前句 It was a small act of defiance（by today's standards 是状语），后句 it reflects a time；when laws... regulated people's access... 是定语从句修饰 a time，说明那是个“法律管制就业”的年代。"
+      },
+      "words": [
+        {
+          "w": "defiance",
+          "pos": "n.",
+          "def": "违抗；反抗"
+        },
+        {
+          "w": "access to",
+          "pos": "phr.",
+          "def": "进入……的权利/机会"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 4,
+      "en": "The dominance of guilds not only prevented people from using their skills, but also held back even the simplest industrial innovation.",
+      "zh": "行会的垄断地位不仅使人们无法施展技能，甚至连最简单的工业创新也横加阻挠。",
+      "grammar": {
+        "type": "not only... but also 递进",
+        "note": "主干是 The dominance of guilds prevented... but also held back...；not only... but also... 是递进结构，从“妨碍个人发挥技能”递进到“阻碍工业创新”，程度加深；even the simplest 强调“连最基本的创新都被压制”。innovation 是题目考点。"
+      },
+      "words": [
+        {
+          "w": "dominance",
+          "pos": "n.",
+          "def": "支配地位；主导"
+        },
+        {
+          "w": "industrial innovation",
+          "pos": "n.",
+          "def": "工业创新"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 4,
+      "en": "The data-gathering phase of the project has been completed and now, according to Ogilvie, it is time ‘to ask the big questions’.",
+      "zh": "奥格尔维表示，项目的数据采集阶段已经完成，如今“是时候提出那些重大问题了”。",
+      "grammar": {
+        "type": "并列主干 + according to 插入语",
+        "note": "两个分句由 and 连接：前句 The data-gathering phase has been completed（现在完成时被动语态，表阶段收尾），后句 it is time 'to ask the big questions'（it is time to do 表“该做某事了”）；according to Ogilvie 是插入语，标明这是她的说法。"
+      },
+      "words": [
+        {
+          "w": "data-gathering",
+          "pos": "n.",
+          "def": "数据采集"
+        },
+        {
+          "w": "phase",
+          "pos": "n.",
+          "def": "阶段"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 4,
+      "en": "One way to look at whether education causes economic growth is to ‘hold wealth constant’.",
+      "zh": "考察教育是否促进经济增长的一种方法，是“把财富水平固定下来”。",
+      "grammar": {
+        "type": "不定式作主语补足语",
+        "note": "主干是 One way... is to 'hold wealth constant'；to look at whether... 是不定式短语作 One way 的后置定语，whether 引导宾语从句；系动词 is 后的不定式 to hold... 作表语，hold... constant 是“hold + 宾语 + 形容词”结构，意为“使……保持不变”。"
+      },
+      "words": [
+        {
+          "w": "hold wealth constant",
+          "pos": "phr.",
+          "def": "控制财富水平不变"
+        },
+        {
+          "w": "cause",
+          "pos": "v.",
+          "def": "导致；引起"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 5,
+      "en": "This involves following the lives of different people with the same level of wealth over a period of time.",
+      "zh": "这意味着要在一段时间内，追踪一批财富水平相同的不同人的人生轨迹。",
+      "grammar": {
+        "type": "动名词作宾语",
+        "note": "主干是 This involves following the lives...；involve 后接动名词 following 作宾语；with the same level of wealth 是介词短语作定语，修饰 different people；over a period of time 是时间状语。此句解释上一句“hold wealth constant”具体怎么操作。"
+      },
+      "words": [
+        {
+          "w": "involve",
+          "pos": "v.",
+          "def": "涉及；需要"
+        },
+        {
+          "w": "over a period of time",
+          "pos": "phr.",
+          "def": "在一段时间内"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 5,
+      "en": "If wealth is constant, it is possible to discover whether education was, for example, linked to the cultivation of new crops, or to the adoption of industrial innovations like sewing machines.",
+      "zh": "一旦财富保持恒定，就有可能查明教育是否与某些行为有关，比如种植新作物，或采用缝纫机之类的工业创新。",
+      "grammar": {
+        "type": "If 条件状语从句 + 宾语从句",
+        "note": "If wealth is constant 是条件状语从句；主句 it is possible to discover whether... 中 it 是形式主语，真正主语是不定式 to discover...；whether 引导宾语从句，was linked to A or (to) B 是并列结构，for example / like 引出例子。"
+      },
+      "words": [
+        {
+          "w": "cultivation",
+          "pos": "n.",
+          "def": "种植；栽培"
+        },
+        {
+          "w": "adoption",
+          "pos": "n.",
+          "def": "采用；采纳"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 5,
+      "en": "The team will also ask what aspect of education helped people engage more with productive and innovative activities.",
+      "zh": "团队还将追问：究竟是教育的哪个方面，促使人们更多地投身于生产性与创新性的活动。",
+      "grammar": {
+        "type": "宾语从句（what 引导）",
+        "note": "主干是 The team will ask what aspect of education helped...；what aspect of education 是宾语从句的主语；helped people engage more with... 中 help sb (to) do 省略了 to，engage with 意为“参与、投入”。此句提出下文一连串具体设问的总纲。"
+      },
+      "words": [
+        {
+          "w": "aspect",
+          "pos": "n.",
+          "def": "方面"
+        },
+        {
+          "w": "engage with",
+          "pos": "phr.",
+          "def": "参与；投入"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 5,
+      "en": "Was it, for instance, literacy, numeracy, book ownership, years of schooling?",
+      "zh": "比如说，起作用的到底是识字能力、算术能力、藏书量，还是受教育的年限？",
+      "grammar": {
+        "type": "省略式并列疑问句",
+        "note": "本句承接上句 what aspect，用一般疑问句列举可能的“方面”：Was it, for instance, A, B, C, D? 主干 Was it，后面并列若干名词短语；for instance 是插入语，表举例。这类罗列常被改写成题目选项。"
+      },
+      "words": [
+        {
+          "w": "literacy",
+          "pos": "n.",
+          "def": "识字能力"
+        },
+        {
+          "w": "numeracy",
+          "pos": "n.",
+          "def": "计算能力"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 5,
+      "en": "Was there a threshold level – a tipping point – that needed to be reached to affect economic performance?",
+      "zh": "是否存在一个必须跨过的门槛值——一个引爆点——达到之后才会影响经济表现？",
+      "grammar": {
+        "type": "定语从句 + 破折号同位语",
+        "note": "主干是 Was there a threshold level？（there be 句型的疑问式）；a tipping point 是破折号内的同位语，形象解释 threshold level；that needed to be reached 是定语从句修饰 threshold level，to affect economic performance 是不定式表目的/结果。"
+      },
+      "words": [
+        {
+          "w": "threshold",
+          "pos": "n.",
+          "def": "门槛；临界值"
+        },
+        {
+          "w": "tipping point",
+          "pos": "n.",
+          "def": "引爆点；临界点"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 5,
+      "en": "Ogilvie hopes to start finding answers to these questions over the next few years.",
+      "zh": "奥格尔维希望在未来几年里，开始为这些问题找到答案。",
+      "grammar": {
+        "type": "主干句 + 不定式作宾语",
+        "note": "结构简明：主干是 Ogilvie hopes to start finding answers；hope to do 表“希望做某事”，start doing 表“开始做某事”；over the next few years 是时间状语，呼应上文项目“数据已备、正待分析”的阶段。"
+      },
+      "words": [
+        {
+          "w": "hope to",
+          "pos": "phr.",
+          "def": "希望（做）"
+        },
+        {
+          "w": "over the next few years",
+          "pos": "phr.",
+          "def": "在未来几年里"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 6,
+      "en": "One thing is already clear, she says: the relationship between education and economic growth is far from straightforward.",
+      "zh": "她说，有一点已经很清楚：教育与经济增长之间的关系，远非简单明了。",
+      "grammar": {
+        "type": "主干 + 冒号解释",
+        "note": "主干是 One thing is already clear；she says 是插入语；冒号后 the relationship... is far from straightforward 具体说明“已经清楚的那件事”是什么；far from 意为“远非、绝不”，是强调“不简单”的常用表达。"
+      },
+      "words": [
+        {
+          "w": "far from straightforward",
+          "pos": "phr.",
+          "def": "远非简单明了"
+        },
+        {
+          "w": "relationship",
+          "pos": "n.",
+          "def": "关系"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 6,
+      "en": "‘German-speaking central Europe is an excellent laboratory for testing theories of economic growth,’ she explains.",
+      "zh": "“说德语的中欧地区，是检验经济增长理论的绝佳实验室，”她解释道。",
+      "grammar": {
+        "type": "主系表 + 比喻",
+        "note": "引语是一个主系表结构：主干 German-speaking central Europe is an excellent laboratory；for testing theories of economic growth 是介词短语作定语，说明这个“实验室”用于什么；laboratory 在此为比喻，指“理想的研究样本地”。"
+      },
+      "words": [
+        {
+          "w": "laboratory",
+          "pos": "n.",
+          "def": "实验室"
+        },
+        {
+          "w": "theory",
+          "pos": "n.",
+          "def": "理论"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 6,
+      "en": "Between 1600 and 1900, literacy rates and book ownership were high and yet the region remained poor.",
+      "zh": "1600 至 1900 年间，那里的识字率和藏书量都很高，可这一地区却始终贫穷。",
+      "grammar": {
+        "type": "并列句（and yet 转折）",
+        "note": "两个分句由 and yet 连接，形成鲜明反差：前句 literacy rates and book ownership were high，后句 the region remained poor；and yet 强调“高教育水平与贫穷并存”，正是全文用来质疑“教育必然带来增长”的核心证据。"
+      },
+      "words": [
+        {
+          "w": "literacy rate",
+          "pos": "n.",
+          "def": "识字率"
+        },
+        {
+          "w": "book ownership",
+          "pos": "n.",
+          "def": "藏书（拥有）情况"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 6,
+      "en": "It was also the case that local guilds and merchant associations were extremely powerful and legislated against anything that undermined their monopolies.",
+      "zh": "还有一个情况是：当地行会和商人协会势力极大，会立法抵制一切损害其垄断利益的事物。",
+      "grammar": {
+        "type": "It was the case that + 定语从句",
+        "note": "It was also the case that... 是形式主语句型，that 引导真正的主语从句；从句主干 local guilds and merchant associations were powerful and legislated against anything；that undermined their monopolies 是定语从句修饰 anything，说明它们抵制什么。"
+      },
+      "words": [
+        {
+          "w": "merchant association",
+          "pos": "n.",
+          "def": "商人协会"
+        },
+        {
+          "w": "monopoly",
+          "pos": "n.",
+          "def": "垄断"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 6,
+      "en": "In villages throughout the region, guilds blocked labour migration and resisted changes that might reduce their influence.",
+      "zh": "在这一地区的各个村庄里，行会阻断劳动力流动，并抵制任何可能削弱自身影响力的变革。",
+      "grammar": {
+        "type": "并列谓语 + 定语从句",
+        "note": "主干是 guilds blocked labour migration and resisted changes（and 连接两个并列谓语）；In villages throughout the region 是地点状语；that might reduce their influence 是定语从句修饰 changes，说明行会所抵制的“变革”是哪一类——这与题目 25“反对为工作而迁移”直接对应。"
+      },
+      "words": [
+        {
+          "w": "labour migration",
+          "pos": "n.",
+          "def": "劳动力迁移/流动"
+        },
+        {
+          "w": "resist",
+          "pos": "v.",
+          "def": "抵制；反抗"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 6,
+      "en": "‘Early findings suggest that the potential benefits of education for the economy can be held back by other barriers, and this has implications for today,’ says Ogilvie.",
+      "zh": "“早期研究结果表明，教育对经济的潜在益处，可能被其他障碍所压制，而这对当今也具有借鉴意义，”奥格尔维说。",
+      "grammar": {
+        "type": "宾语从句 + 被动语态",
+        "note": "引语主干是 Early findings suggest that...，that 引导宾语从句；从句主干 the potential benefits... can be held back by other barriers 是被动语态，held back 意为“被阻碍、被压制”；and this has implications for today 是并列分句，把历史结论引向现实启示。"
+      },
+      "words": [
+        {
+          "w": "hold back",
+          "pos": "phr.",
+          "def": "阻碍；压制"
+        },
+        {
+          "w": "implications",
+          "pos": "n.",
+          "def": "影响；启示"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "para": 7,
+      "en": "‘Huge amounts are spent improving education in developing countries, but this spending can fail to deliver economic growth if restrictions block people – especially women and the poor – from using their education in economically productive ways.",
+      "zh": "“如今人们在发展中国家投入巨资改善教育，但假如种种限制阻止人们——尤其是妇女和穷人——以经济上有产出的方式运用所受的教育，这笔投入就可能无法转化为经济增长。",
+      "grammar": {
+        "type": "被动语态主干 + if 条件状语从句",
+        "note": "主干是 Huge amounts are spent improving education（被动语态，are spent doing 表“被花在做某事上”）；but 后 this spending can fail to deliver economic growth 是转折；if restrictions block people from using... 是条件状语从句，block sb from doing 表“阻止某人做某事”，两处破折号之间 especially women and the poor 是插入补充。"
+      },
+      "words": [
+        {
+          "w": "developing countries",
+          "pos": "n.",
+          "def": "发展中国家"
+        },
+        {
+          "w": "deliver",
+          "pos": "v.",
+          "def": "带来；实现"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "para": 7,
+      "en": "If economic institutions are poorly set up, for instance, education can’t lead to growth.’",
+      "zh": "举例来说，如果经济制度建设得不健全，教育就无法带来增长。”",
+      "grammar": {
+        "type": "If 条件状语从句 + 主句",
+        "note": "If economic institutions are poorly set up 是条件状语从句，set up 意为“建立、构建”，poorly set up 即“建得不好”；主句 education can't lead to growth 点明结论；for instance 是插入语。全句为奥格尔维的收束之语，强调“制度”是教育转化为增长的前提。"
+      },
+      "words": [
+        {
+          "w": "economic institutions",
+          "pos": "n.",
+          "def": "经济制度/机构"
+        },
+        {
+          "w": "lead to",
+          "pos": "phr.",
+          "def": "导致；带来"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 14–26 · Matching information + summary + multiple answers",
+      "type": "mixed",
+      "instructions": [
+        "Questions 14–18: Reading Passage 2 has six sections, A–F. Which section contains the following information?",
+        "Questions 19–22: Complete the summary below. Choose ONE WORD from the passage for each answer.",
+        "Questions 23–26: Choose TWO letters, A–E."
+      ],
+      "items": [
+        {
+          "number": 14,
+          "prompt": "an explanation of the need for research to focus on individuals with a fairly consistent income",
+          "answer": "E",
+          "evidence_sentence": 14
+        },
+        {
+          "number": 15,
+          "prompt": "examples of the sources the database has been compiled from",
+          "answer": "A",
+          "evidence_sentence": 2
+        },
+        {
+          "number": 16,
+          "prompt": "an account of one individual’s refusal to obey an order",
+          "answer": "D",
+          "evidence_sentence": 14
+        },
+        {
+          "number": 17,
+          "prompt": "a reference to a region being particularly suited to research into the link between education and economic growth",
+          "answer": "F",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 18,
+          "prompt": "examples of the items included in a list of personal possessions",
+          "answer": "C",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 19,
+          "prompt": "The database that Ogilvie and her team has compiled sheds light on the lives of a range of individuals, as well as those of their ___, over a 300-year period.",
+          "answer": "descendants",
+          "evidence_sentence": 15
+        },
+        {
+          "number": 20,
+          "prompt": "Ana Regina and Magdalena Riethmüllerin were reprimanded for reading while they should have been paying attention to a ___.",
+          "answer": "sermon",
+          "evidence_sentence": 17
+        },
+        {
+          "number": 21,
+          "prompt": "Juliana Schweickherdt was later given a ___ as a punishment.",
+          "answer": "fine",
+          "evidence_sentence": 20
+        },
+        {
+          "number": 22,
+          "prompt": "Cases like this illustrate how the guilds could prevent ___ and stop skilled people from working.",
+          "answer": "innovation",
+          "evidence_sentence": 22
+        },
+        {
+          "number": 23,
+          "prompt": "Which TWO of the following statements does the writer make about literacy rates in Section B?<br>A Very little research has been done into the link between high literacy rates and improved earnings.<br>B Literacy rates in Germany between 1600 and 1900 were very good.<br>C There is strong evidence that high literacy rates in the modern world result in economic growth.<br>D England is a good example of how high literacy rates helped a country industrialise.<br>E Economic growth can help to improve literacy rates.",
+          "answer": "B",
+          "evidence_sentence": 6
+        },
+        {
+          "number": 24,
+          "prompt": "Which TWO of the following statements does the writer make about literacy rates in Section B?<br>A Very little research has been done into the link between high literacy rates and improved earnings.<br>B Literacy rates in Germany between 1600 and 1900 were very good.<br>C There is strong evidence that high literacy rates in the modern world result in economic growth.<br>D England is a good example of how high literacy rates helped a country industrialise.<br>E Economic growth can help to improve literacy rates.",
+          "answer": "E",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 25,
+          "prompt": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?<br>A They helped young people to learn a skill.<br>B They were opposed to people moving to an area for work.<br>C They kept better records than guilds in other parts of the world.<br>D They opposed practices that threatened their control over a trade.<br>E They predominantly consisted of wealthy merchants.",
+          "answer": "B",
+          "evidence_sentence": 35
+        },
+        {
+          "number": 26,
+          "prompt": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?<br>A They helped young people to learn a skill.<br>B They were opposed to people moving to an area for work.<br>C They kept better records than guilds in other parts of the world.<br>D They opposed practices that threatened their control over a trade.<br>E They predominantly consisted of wealthy merchants.",
+          "answer": "D",
+          "evidence_sentence": 38
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "w": "economic growth",
+      "pos": "n.",
+      "def": "经济增长"
+    },
+    {
+      "w": "literacy rate",
+      "pos": "n.",
+      "def": "识字率"
+    },
+    {
+      "w": "causal link",
+      "pos": "n.",
+      "def": "因果联系"
+    },
+    {
+      "w": "cross-country analysis",
+      "pos": "n.",
+      "def": "跨国（对比）分析"
+    },
+    {
+      "w": "demographic reconstruction",
+      "pos": "n.",
+      "def": "人口重建（还原历史人口结构）"
+    },
+    {
+      "w": "hold wealth constant",
+      "pos": "phr.",
+      "def": "控制财富水平不变"
+    },
+    {
+      "w": "industrial innovation",
+      "pos": "n.",
+      "def": "工业创新"
+    },
+    {
+      "w": "tipping point",
+      "pos": "n.",
+      "def": "临界点；引爆点"
+    },
+    {
+      "w": "far from straightforward",
+      "pos": "phr.",
+      "def": "远非简单明了"
+    },
+    {
+      "w": "hold back",
+      "pos": "phr.",
+      "def": "阻碍；妨碍"
+    },
+    {
+      "w": "guild",
+      "pos": "n.",
+      "def": "行会（工匠或商人组成、监管本行业的组织）"
+    }
+  ]
+}

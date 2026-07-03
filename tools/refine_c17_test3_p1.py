@@ -1,0 +1,330 @@
+"""Teacher-refine Cambridge IELTS 17 Test 3 Passage 1 — The thylacine.
+
+The draft extraction had mangled sentence boundaries on page 60 (footnote/header
+junk merged into s18; the John Gould + 'However' sentences merged into s23; the
+'A notable exception was T.T. Flynn...' sentence wrongly split across s24/s25).
+This script rebuilds the sentences array to the true 32 sentences of the passage,
+matching the PDF page images exactly, and upgrades quality to teacher_refined.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+PATH = ROOT / "data" / "passages" / "c17-test3-p1.json"
+INDEX = ROOT / "data" / "index.json"
+
+
+def w(word, pos, definition):
+    return {"w": word, "pos": pos, "def": definition}
+
+
+PHRASES = [
+    w("the thylacine", "n.", "袋狼"),
+    w("Tasmanian tiger", "n.", "塔斯马尼亚虎（袋狼的俗称）"),
+    w("marsupial", "n.", "有袋动物"),
+    w("bear a resemblance to", "phr.", "与……相似"),
+    w("prime habitat", "n.", "主要栖息地"),
+    w("in terms of", "phr.", "在……方面"),
+    w("breeding season", "n.", "繁殖季"),
+    w("in captivity", "phr.", "被圈养；在人工饲养环境中"),
+    w("on the edge of extinction", "phr.", "濒临灭绝"),
+    w("be attributed to", "phr.", "被归因于"),
+    w("contribute to", "phr.", "促成；导致"),
+]
+
+
+# id: (para, en, zh, gtype, note, [words])
+REFINED = {
+    1: (
+        1,
+        "The extinct thylacine, also known as the Tasmanian tiger, was a marsupial* that bore a superficial resemblance to a dog.",
+        "已灭绝的袋狼，又称塔斯马尼亚虎，是一种在外形上与狗略有几分相似的有袋动物*。",
+        "主系表 + 定语从句",
+        "主干是 thylacine was a marsupial；also known as... 是插入的同位语补充别名；that bore a... resemblance to a dog 是修饰 marsupial 的定语从句，说明其外形。",
+        [w("extinct", "adj.", "已灭绝的"), w("superficial", "adj.", "表面的；肤浅的")],
+    ),
+    2: (
+        1,
+        "Its most distinguishing feature was the 13–19 dark brown stripes over its back, beginning at the rear of the body and extending onto the tail.",
+        "它最显著的特征是背上那 13 至 19 条深棕色条纹，从身体后端开始，一直延伸到尾巴上。",
+        "主系表 + 现在分词后置定语",
+        "主干是 feature was the stripes；beginning at... 和 extending onto... 是两个并列的现在分词短语，共同修饰 stripes，说明条纹的起止位置。",
+        [w("distinguishing", "adj.", "有区别性的；显著的"), w("stripe", "n.", "条纹")],
+    ),
+    3: (
+        1,
+        "The thylacine’s average nose-to-tail length for adult males was 162.6 cm, compared to 153.7 cm for females.",
+        "成年雄性袋狼从鼻到尾的平均体长为 162.6 厘米，而雌性为 153.7 厘米。",
+        "主系表 + 比较状语",
+        "主干是 length was 162.6 cm；compared to 153.7 cm for females 作比较状语，把雄性与雌性的数据对照，这类数字对比常成为细节题的考点。",
+        [w("average", "adj.", "平均的"), w("compared to", "phr.", "与……相比")],
+    ),
+    4: (
+        2,
+        "The thylacine appeared to occupy most types of terrain except dense rainforest, with open eucalyptus forest thought to be its prime habitat.",
+        "袋狼似乎栖居于除茂密雨林之外的大多数地形，其中开阔的桉树林被认为是它的主要栖息地。",
+        "主干 + with 独立主格",
+        "主干是 thylacine appeared to occupy most terrain；except dense rainforest 作排除；with open eucalyptus forest thought to be... 是 with 引导的独立主格结构，补充说明最佳栖息地。",
+        [w("terrain", "n.", "地形；地带"), w("prime habitat", "n.", "主要栖息地")],
+    ),
+    5: (
+        2,
+        "In terms of feeding, it was exclusively carnivorous, and its stomach was muscular with an ability to distend so that it could eat large amounts of food at one time, probably an adaptation to compensate for long periods when hunting was unsuccessful and food scarce.",
+        "在摄食方面，它是纯肉食性的；它的胃部肌肉发达，能够扩张，因而一次可吞下大量食物——这很可能是一种适应，用以弥补那些捕猎无果、食物匮乏的漫长时期。",
+        "并列句 + so that 结果状语 + 同位语",
+        "两个并列分句 it was carnivorous 与 stomach was muscular；so that 引导结果状语从句；末尾 probably an adaptation... 是名词短语作同位语，解释“胃能扩张”这一现象的意义，to compensate for... 说明其作用。",
+        [w("carnivorous", "adj.", "肉食性的"), w("distend", "v.", "（使）扩张；膨胀")],
+    ),
+    6: (
+        2,
+        "The thylacine was not a fast runner and probably caught its prey by exhausting it during a long pursuit.",
+        "袋狼跑得不快，很可能是靠长时间追逐把猎物拖垮来捕食的。",
+        "并列谓语 + by 方式状语",
+        "was not a fast runner 与 caught its prey 是并列谓语；by exhausting it during a long pursuit 作方式状语，说明它如何捕食（“耗尽体力”而非“追速”）。",
+        [w("prey", "n.", "猎物"), w("pursuit", "n.", "追逐；追捕")],
+    ),
+    7: (
+        2,
+        "During long-distance chases, thylacines were likely to have relied more on scent than any other sense.",
+        "在长距离追逐中，袋狼很可能更多地依赖嗅觉，而非其他任何感官。",
+        "主干 + 比较结构",
+        "主干是 thylacines were likely to have relied on scent；more... than any other sense 是比较结构，突出“嗅觉”优先于其他感官，对应第 2 题的同义改写（depended mainly on scent）。",
+        [w("scent", "n.", "气味；嗅觉"), w("rely on", "phr.", "依赖")],
+    ),
+    8: (
+        2,
+        "They emerged to hunt during the evening, night and early morning and tended to retreat to the hills and forest for shelter during the day.",
+        "它们在傍晚、夜间和清晨出没觅食，白天则往往退回到山丘和森林中躲藏。",
+        "并列谓语",
+        "emerged to hunt 与 tended to retreat 是两个并列谓语，用 and 连接，形成“夜出昼伏”的时间对比；for shelter 作目的状语。",
+        [w("emerge", "v.", "出现；出没"), w("retreat", "v.", "退回；撤退")],
+    ),
+    9: (
+        2,
+        "Despite the common name ‘tiger’, the thylacine had a shy, nervous temperament.",
+        "尽管有“虎”这一俗称，袋狼实际上性情胆小而神经质。",
+        "介词 despite 引导让步",
+        "Despite + 名词短语作让步状语，暗示“名不副实”；主干是 thylacine had a shy, nervous temperament，形容词 shy 与 nervous 并列描写性情。",
+        [w("temperament", "n.", "性情；气质"), w("shy", "adj.", "胆怯的；羞怯的")],
+    ),
+    10: (
+        2,
+        "Although mainly nocturnal, it was sighted moving during the day and some individuals were even recorded basking in the sun.",
+        "尽管主要在夜间活动，但人们也曾看到它白天出来走动，甚至有个体被记录到在晒太阳。",
+        "Although 让步（省略）+ 被动语态",
+        "Although mainly nocturnal 是省略了主谓的让步状语从句（= although it was mainly nocturnal）；主句用两个被动结构 was sighted... 与 were recorded...，moving 与 basking 作宾语补足语。",
+        [w("nocturnal", "adj.", "夜间活动的"), w("bask", "v.", "晒太阳；取暖")],
+    ),
+    11: (
+        3,
+        "The thylacine had an extended breeding season from winter to spring, with indications that some breeding took place throughout the year.",
+        "袋狼的繁殖季较长，从冬季持续到春季，且有迹象表明全年都可能有繁殖发生。",
+        "主干 + with 独立主格 + 同位语从句",
+        "主干是 thylacine had an extended breeding season；with indications that... 是 with 独立主格补充信息，其中 that some breeding took place... 是 indications 的同位语从句，说明“迹象”的具体内容。",
+        [w("breeding season", "n.", "繁殖季"), w("throughout", "prep.", "遍及；在整个……期间")],
+    ),
+    12: (
+        3,
+        "The thylacine, like all marsupials, was tiny and hairless when born.",
+        "袋狼和所有有袋动物一样，出生时身体极小且没有毛。",
+        "主系表 + 插入语 + 时间状语从句（省略）",
+        "主干是 thylacine was tiny and hairless；like all marsupials 是插入的类比成分；when born 是省略主谓的时间状语从句（= when it was born）。",
+        [w("hairless", "adj.", "无毛的"), w("marsupial", "n.", "有袋动物")],
+    ),
+    13: (
+        3,
+        "Newborns crawled into the pouch on the belly of their mother, and attached themselves to one of the four teats, remaining there for up to three months.",
+        "幼崽出生后爬进母亲腹部的育儿袋，附着在四个乳头之一上，在那里停留长达三个月。",
+        "并列谓语 + 现在分词状语",
+        "crawled into... 与 attached themselves to... 是并列谓语；remaining there for up to three months 是现在分词短语作伴随状语，说明附着后的持续状态；pouch 对应第 3 题答案。",
+        [w("pouch", "n.", "育儿袋"), w("teat", "n.", "乳头")],
+    ),
+    14: (
+        3,
+        "When old enough to leave the pouch, the young stayed in a lair such as a deep rocky cave, well-hidden nest or hollow log, whilst the mother hunted.",
+        "等到长大到可以离开育儿袋时，幼崽便待在巢穴里——比如深深的岩洞、隐蔽的窝或空心树干——而母亲则外出捕猎。",
+        "时间状语从句（省略）+ whilst 对比状语",
+        "When old enough to leave the pouch 是省略主谓的时间状语从句；主干是 the young stayed in a lair；such as... 举例说明巢穴类型；whilst the mother hunted 用 whilst（= while）引导对比，说明母幼分工。",
+        [w("lair", "n.", "巢穴；兽穴"), w("hollow", "adj.", "空心的")],
+    ),
+    15: (
+        4,
+        "Approximately 4,000 years ago, the thylacine was widespread throughout New Guinea and most of mainland Australia, as well as the island of Tasmania.",
+        "大约 4000 年前，袋狼曾广泛分布于新几内亚、澳大利亚大陆大部分地区以及塔斯马尼亚岛。",
+        "主系表 + 时间状语",
+        "时间状语 Approximately 4,000 years ago 置于句首交代年代；主干是 thylacine was widespread；throughout... and... as well as... 并列列举三处分布地。",
+        [w("widespread", "adj.", "分布广泛的"), w("as well as", "phr.", "以及；还有")],
+    ),
+    16: (
+        4,
+        "The most recent, well-dated occurrence of a thylacine on the mainland is a carbon-dated fossil from Murray Cave in Western Australia, which is around 3,100 years old.",
+        "在大陆上有确切年代记录的袋狼、时间最近的一次发现，是西澳大利亚墨累洞（Murray Cave）出土的一块碳测年化石，距今约 3100 年。",
+        "主系表 + 非限制性定语从句",
+        "主干是 occurrence is a fossil；on the mainland 限定范围；which is around 3,100 years old 是非限制性定语从句，补充说明化石年代；fossil 对应第 4 题答案。",
+        [w("occurrence", "n.", "出现；发生的事例"), w("fossil", "n.", "化石")],
+    ),
+    17: (
+        4,
+        "Its extinction coincided closely with the arrival of wild dogs called dingoes in Australia and a similar predator in New Guinea.",
+        "它的灭绝在时间上与野狗——即澳大利亚的澳洲野犬（dingo）和新几内亚一种类似掠食者——的到来高度吻合。",
+        "主干 + 过去分词后置定语",
+        "主干是 extinction coincided with the arrival；called dingoes 是过去分词短语作后置定语修饰 wild dogs；coincided closely with 暗含“时间相关”而非直接因果，需注意与因果题的区别。",
+        [w("coincide with", "phr.", "与……同时发生；吻合"), w("predator", "n.", "掠食者")],
+    ),
+    18: (
+        4,
+        "Dingoes never reached Tasmania, and most scientists see this as the main reason for the thylacine’s survival there.",
+        "澳洲野犬从未抵达塔斯马尼亚，大多数科学家认为这正是袋狼得以在当地存活的主要原因。",
+        "并列句 + see ... as 结构",
+        "两个分句用 and 连接；后一分句主干是 scientists see this as the main reason，see A as B 意为“把 A 看作 B”；this 指代前句“野犬未到塔斯马尼亚”这一事实。",
+        [w("reach", "v.", "抵达；到达"), w("survival", "n.", "存活；幸存")],
+    ),
+    19: (
+        5,
+        "The dramatic decline of the thylacine in Tasmania, which began in the 1830s and continued for a century, is generally attributed to the relentless efforts of sheep farmers and bounty hunters** with shotguns.",
+        "袋狼在塔斯马尼亚的急剧减少始于 19 世纪 30 年代，持续了一个世纪，一般认为这要归因于养羊户和持枪赏金猎人**的不懈捕杀。",
+        "主谓被动 + 非限制性定语从句",
+        "主干是 the decline is attributed to the efforts；which began... and continued... 是插入的非限制性定语从句，交代减少的时间跨度；be attributed to 意为“被归因于”，对应第 6 题（1830 年代起遭大量捕杀）。",
+        [w("dramatic", "adj.", "急剧的；显著的"), w("relentless", "adj.", "不懈的；持续不断的")],
+    ),
+    20: (
+        5,
+        "While this determined campaign undoubtedly played a large part, it is likely that various other factors also contributed to the decline and eventual extinction of the species.",
+        "尽管这场坚决的捕杀行动无疑起了很大作用，但很可能还有其他各种因素也促成了该物种的衰落和最终灭绝。",
+        "While 让步从句 + it 形式主语",
+        "While 引导让步状语从句 this campaign played a large part；主句 it is likely that... 中 it 是形式主语，真正主语是 that 从句；contributed to 意为“促成”。",
+        [w("campaign", "n.", "（有组织的）行动；运动"), w("contribute to", "phr.", "促成；导致")],
+    ),
+    21: (
+        5,
+        "These include competition with wild dogs introduced by European settlers, loss of habitat along with the disappearance of prey species, and a distemper-like disease which may also have affected the thylacine.",
+        "这些因素包括：与欧洲殖民者引入的野狗争夺资源、栖息地的丧失连同猎物物种的消失，以及一种可能也曾侵袭袋狼的类犬瘟热疾病。",
+        "主谓宾 + 三项并列宾语",
+        "These 指代前句的 other factors；include 后接三个并列名词短语 competition / loss of habitat / a disease；introduced by... 作定语修饰 wild dogs，which may also have affected... 作定语修饰 disease；habitat 对应第 5 题答案。",
+        [w("settler", "n.", "移民；殖民者"), w("distemper", "n.", "（犬）瘟热")],
+    ),
+    22: (
+        6,
+        "There was only one successful attempt to breed a thylacine in captivity, at Melbourne Zoo in 1899.",
+        "圈养条件下成功繁育袋狼的尝试仅有一次，即 1899 年在墨尔本动物园的那一次。",
+        "There be 句型 + 不定式定语",
+        "There was only one attempt 是 there be 句型主干；to breed a thylacine in captivity 是不定式作定语修饰 attempt；at Melbourne Zoo in 1899 补充地点时间；in captivity 意为“被圈养”。",
+        [w("attempt", "n.", "尝试"), w("in captivity", "phr.", "被圈养")],
+    ),
+    23: (
+        6,
+        "This was despite the large numbers that went through some zoos, particularly London Zoo and Tasmania’s Hobart Zoo.",
+        "尽管有大量袋狼曾进出一些动物园——尤其是伦敦动物园和塔斯马尼亚的霍巴特动物园——但成功繁育仍只有那一次。",
+        "主系表 + despite 介词短语",
+        "主干是 This was despite the large numbers；that went through some zoos 是定语从句修饰 numbers；particularly... 举例强调；despite 点明“数量多”与“仅成功一次”之间的反差。",
+        [w("despite", "prep.", "尽管"), w("go through", "phr.", "经过；经历")],
+    ),
+    24: (
+        6,
+        "The famous naturalist John Gould foresaw the thylacine’s demise when he published his Mammals of Australia between 1848 and 1863, writing, ‘The numbers of this singular animal will speedily diminish, extermination will have its full sway, and it will then, like the wolf of England and Scotland, be recorded as an animal of the past.’",
+        "著名博物学家约翰·古尔德（John Gould）在 1848 至 1863 年间出版《澳大利亚哺乳动物》一书时，便预见到了袋狼的灭亡；他写道：“这种奇特动物的数量将迅速减少，灭绝将全面降临，届时它会像英格兰和苏格兰的狼一样，被记入历史，成为过去的动物。”",
+        "主干 + when 时间从句 + 分词状语 + 直接引语",
+        "主干是 John Gould foresaw the demise；when he published... 是时间状语从句；writing, '...' 是现在分词短语作伴随状语，引出他的原话；引语内 will diminish / will have / will be recorded 是三处并列预测。",
+        [w("naturalist", "n.", "博物学家"), w("demise", "n.", "灭亡；消亡")],
+    ),
+    25: (
+        7,
+        "However, there seems to have been little public pressure to preserve the thylacine, nor was much concern expressed by scientists at the decline of this species in the decades that followed.",
+        "然而，当时几乎没有要求保护袋狼的公众呼声，在随后的几十年里，科学家们对该物种的衰落也没有表达多少关切。",
+        "there be 句型 + nor 引导的部分倒装",
+        "前半 there seems to have been little pressure 是 there be 句型；nor 引导否定并列句并触发部分倒装（was much concern expressed）；that followed 是定语从句修饰 decades；此句支持第 9 题（20 世纪初科学家并不担忧）。",
+        [w("preserve", "v.", "保护；保存"), w("concern", "n.", "关切；担忧")],
+    ),
+    26: (
+        7,
+        "A notable exception was T.T. Flynn, Professor of Biology at the University of Tasmania.",
+        "一个值得注意的例外是塔斯马尼亚大学生物学教授 T.T. 弗林（T.T. Flynn）。",
+        "主系表 + 同位语",
+        "主干是 exception was T.T. Flynn；Professor of Biology at the University of Tasmania 是名词短语作同位语，补充说明 Flynn 的身份。",
+        [w("notable", "adj.", "值得注意的；显著的"), w("exception", "n.", "例外")],
+    ),
+    27: (
+        7,
+        "In 1914, he was sufficiently concerned about the scarcity of the thylacine to suggest that some should be captured and placed on a small island.",
+        "1914 年，他对袋狼的稀少深感忧虑，以至于建议捕捉一些个体安置到一座小岛上。",
+        "so...that 变体（sufficiently...to）+ 宾语从句",
+        "主干是 he was sufficiently concerned to suggest...，sufficiently... to 相当于 so... that，表“如此……以至于”；that some should be captured and placed 是 suggest 的宾语从句，用 should + 被动表建议内容。",
+        [w("scarcity", "n.", "稀少；匮乏"), w("capture", "v.", "捕捉")],
+    ),
+    28: (
+        7,
+        "But it was not until 1929, with the species on the very edge of extinction, that Tasmania’s Animals and Birds Protection Board passed a motion protecting thylacines only for the month of December, which was thought to be their prime breeding season.",
+        "但直到 1929 年，在该物种濒临灭绝之际，塔斯马尼亚动植物保护委员会才通过一项动议，仅在 12 月份保护袋狼——这个月被认为是它们的主要繁殖季。",
+        "not until 强调句 + 定语从句",
+        "这是 It was not until... that... 强调句，强调时间 1929；with the species on the very edge of extinction 是 with 独立主格补充背景；protecting... 作定语修饰 motion；which was thought to be... 修饰 December；支持第 11 题（立法时数量已极少）。",
+        [w("motion", "n.", "动议；提案"), w("on the edge of extinction", "phr.", "濒临灭绝")],
+    ),
+    29: (
+        7,
+        "The last known wild thylacine to be killed was shot by a farmer in the north-east of Tasmania in 1930, leaving just captive specimens.",
+        "已知最后一只被猎杀的野生袋狼，于 1930 年在塔斯马尼亚东北部被一名农民射杀，此后便只剩下圈养的个体。",
+        "被动语态 + 不定式定语 + 分词结果状语",
+        "主干是 The thylacine was shot by a farmer；to be killed 是不定式作定语修饰 thylacine；leaving just captive specimens 是现在分词短语作结果状语；此句与第 12 题（1930-1936 年仅存圈养个体）相关。",
+        [w("specimen", "n.", "标本；样本"), w("captive", "adj.", "被圈养的")],
+    ),
+    30: (
+        7,
+        "Official protection of the species by the Tasmanian government was introduced in July 1936, 59 days before the last known individual died in Hobart Zoo on 7th September, 1936.",
+        "塔斯马尼亚政府于 1936 年 7 月才正式立法保护该物种，而仅仅 59 天后，最后一只已知的袋狼便于 1936 年 9 月 7 日在霍巴特动物园死去。",
+        "被动语态 + before 时间状语",
+        "主干是 Official protection was introduced（被动）；59 days before... 是时间状语，用具体天数凸显“保护来得太迟”的讽刺；before 从句交代最后个体死亡的时间地点。",
+        [w("official", "adj.", "官方的；正式的"), w("introduce", "v.", "引入；实行（法规等）")],
+    ),
+    31: (
+        8,
+        "There have been numerous expeditions and searches for the thylacine over the years, none of which has produced definitive evidence that thylacines still exist.",
+        "多年来，人们进行了无数次探寻和搜索，但没有一次拿出确凿证据证明袋狼仍然存活。",
+        "there be 句型 + none of which 定语从句 + 同位语从句",
+        "There have been... expeditions and searches 是 there be 句型主干；none of which has produced... 是“介词 + which”型非限制性定语从句，which 指代前面的搜索；that thylacines still exist 是 evidence 的同位语从句。",
+        [w("expedition", "n.", "探险；考察"), w("definitive", "adj.", "确凿的；决定性的")],
+    ),
+    32: (
+        8,
+        "The species was declared extinct by the Tasmanian government in 1986.",
+        "1986 年，塔斯马尼亚政府正式宣布该物种灭绝。",
+        "被动语态",
+        "全句是被动结构 The species was declared extinct，declared 后的 extinct 作宾语补足语；by the Tasmanian government 表施动者，in 1986 表时间。",
+        [w("declare", "v.", "宣布；宣告"), w("extinct", "adj.", "已灭绝的")],
+    ),
+}
+
+
+def main():
+    data = json.loads(PATH.read_text(encoding="utf-8"))
+    data["quality"] = "teacher_refined"
+    data["phrases"] = PHRASES
+
+    new_sentences = []
+    for sid in sorted(REFINED):
+        para, en, zh, gtype, note, words = REFINED[sid]
+        new_sentences.append({
+            "id": sid,
+            "para": para,
+            "en": en,
+            "zh": zh,
+            "grammar": {"type": gtype, "note": note},
+            "words": words,
+        })
+    data["sentences"] = new_sentences
+
+    PATH.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    idx = json.loads(INDEX.read_text(encoding="utf-8"))
+    for row in idx.get("passages", []):
+        if row.get("id") == data["id"]:
+            row["quality"] = "teacher_refined"
+            row["sentence_count"] = len(new_sentences)
+    INDEX.write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    print(f"refined {PATH} — {len(new_sentences)} sentences")
+
+
+if __name__ == "__main__":
+    main()

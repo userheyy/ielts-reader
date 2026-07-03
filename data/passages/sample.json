@@ -1,0 +1,34 @@
+{
+  "id": "sample",
+  "source": "示例 · Test 0 · Passage 0",
+  "title": "Sample Passage (UI 测试用)",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "Why are some people right-handed and others left-handed?",
+      "zh": "为什么有些人惯用右手,有些人惯用左手?",
+      "grammar": {
+        "type": "特殊疑问句(并列)",
+        "note": "由 and 连接两个并列问句;后半句 others (are) left-handed 承前省略了 are。"
+      },
+      "words": [
+        { "w": "right-handed", "pos": "adj.", "def": "惯用右手的" },
+        { "w": "left-handed", "pos": "adj.", "def": "惯用左手的" }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "This has never been a straightforward question to answer.",
+      "zh": "这从来都不是一个容易回答的问题。",
+      "grammar": {
+        "type": "主系表(现在完成时)",
+        "note": "has never been 现在完成时表持续状态;to answer 为不定式作后置定语修饰 question。"
+      },
+      "words": [
+        { "w": "straightforward", "pos": "adj.", "def": "简单明了的;直截了当的" }
+      ]
+    }
+  ]
+}

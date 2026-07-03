@@ -1,0 +1,1071 @@
+{
+  "id": "c19-test3-p3",
+  "source": "剑桥雅思19 · Test 3 · Passage 3",
+  "title": "Is the era of artificial speech translation upon us?",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "subtitle": "Once the stuff of science fiction, technology that enables people to talk using different languages is now here. But how effective is it?",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "Noise, Alex Waibel tells me, is one of the major challenges that artificial speech translation has to meet.",
+      "zh": "亚历克斯·魏贝尔告诉我，噪音是人工语音翻译必须应对的重大挑战之一。",
+      "grammar": {
+        "type": "插入语 + 定语从句",
+        "note": "主干是 Noise is one of the major challenges；Alex Waibel tells me 为插入语，说明信息来源；that artificial speech translation has to meet 为定语从句修饰 challenges，that 作 meet 的宾语。"
+      },
+      "words": [
+        {
+          "w": "artificial",
+          "pos": "adj.",
+          "def": "人工的；人造的"
+        },
+        {
+          "w": "challenge",
+          "pos": "n.",
+          "def": "挑战；难题"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "A device may be able to recognise speech in a laboratory, or a meeting room, but will struggle to cope with the kind of background noise I can hear in my office surrounding Professor Waibel as he speaks to me from Kyoto station in Japan.",
+      "zh": "一台设备也许能在实验室或会议室里识别语音，但要应对我办公室里听到的那种背景噪音就很吃力了——魏贝尔教授正从日本京都车站与我通话，那种噪音就萦绕在他周围。",
+      "grammar": {
+        "type": "转折并列句 + 省略关系词定语从句 + as 时间状语从句",
+        "note": "but 连接两个并列谓语 may be able to recognise 与 will struggle to cope；the kind of background noise (that) I can hear... 省略了关系代词；surrounding Professor Waibel 为现在分词短语修饰 noise；as he speaks to me... 为时间状语从句。"
+      },
+      "words": [
+        {
+          "w": "recognise",
+          "pos": "v.",
+          "def": "识别；辨认"
+        },
+        {
+          "w": "cope with",
+          "pos": "phr.",
+          "def": "应对；处理"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "I'm struggling to follow him in English, on a scratchy line that reminds me we are nearly 10,000 kilometres apart – and that distance is still an obstacle to communication even if you're speaking the same language, as we are.",
+      "zh": "我正吃力地用英语跟上他的话，电话线路杂音很重，提醒着我们相距近一万公里——而且即便你我说着同一种语言（正如我们此刻这样），这段距离仍是沟通的障碍。",
+      "grammar": {
+        "type": "现在进行时 + 定语从句 + 让步状语从句",
+        "note": "主干是 I'm struggling to follow him；on a scratchy line 为方式状语，that reminds me... 为定语从句修饰 line，其后 we are nearly 10,000 kilometres apart 为省略 that 的宾语从句；破折号后 that distance is still an obstacle...，even if 引导让步从句，as we are 为方式状语。"
+      },
+      "words": [
+        {
+          "w": "scratchy",
+          "pos": "adj.",
+          "def": "（声音）刺耳的；杂音多的"
+        },
+        {
+          "w": "obstacle",
+          "pos": "n.",
+          "def": "障碍；阻碍"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "We haven't reached the future yet.",
+      "zh": "我们还没有抵达那个未来。",
+      "grammar": {
+        "type": "现在完成时（否定）",
+        "note": "简单句，主干是 We haven't reached the future；yet 与现在完成时否定连用，表示“尚未”；此句短促，起承上启下、点题的作用。"
+      },
+      "words": [
+        {
+          "w": "reach",
+          "pos": "v.",
+          "def": "到达；抵达"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "If we had, Waibel would have been able to speak more comfortably in his native German and I would have been able to hear his words in English.",
+      "zh": "倘若我们已经抵达，魏贝尔本可以更自在地用他的母语德语讲话，而我则本可以用英语听到他所说的话。",
+      "grammar": {
+        "type": "虚拟语气（对过去的虚拟）",
+        "note": "对过去情况的虚拟条件句：条件句 If we had (reached the future) 省略了 reached the future；主句用 would have been able to...，两个并列主句分别以 Waibel 和 I 为主语；native 表“本国的、母语的”。"
+      },
+      "words": [
+        {
+          "w": "native",
+          "pos": "adj.",
+          "def": "母语的；本国的"
+        },
+        {
+          "w": "comfortably",
+          "pos": "adv.",
+          "def": "自在地；舒适地"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 2,
+      "en": "At Karlsruhe Institute of Technology, where he is a professor of computer science, Waibel and his colleagues already give lectures in German that their students can follow in English via an electronic translator.",
+      "zh": "在卡尔斯鲁厄理工学院——魏贝尔在那里担任计算机科学教授——他和同事们已经在用德语讲课，而学生们可以借助一台电子翻译器用英语跟上课程。",
+      "grammar": {
+        "type": "where 非限制性定语从句 + that 定语从句",
+        "note": "主干是 Waibel and his colleagues already give lectures in German；where he is a professor of computer science 为非限制性定语从句修饰地点；that their students can follow in English 为定语从句修饰 lectures；via an electronic translator 为方式状语。"
+      },
+      "words": [
+        {
+          "w": "colleague",
+          "pos": "n.",
+          "def": "同事"
+        },
+        {
+          "w": "lecture",
+          "pos": "n.",
+          "def": "讲座；课"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "The system generates text that students can read on their laptops or phones, so the process is somewhat similar to subtitling.",
+      "zh": "该系统会生成文字，学生可以在笔记本电脑或手机上阅读，因此这一过程与加字幕有几分相似。",
+      "grammar": {
+        "type": "定语从句 + so 结果状语",
+        "note": "主干是 The system generates text；that students can read on their laptops or phones 为定语从句修饰 text；so 引导结果分句 the process is somewhat similar to subtitling，be similar to 表“与……相似”。"
+      },
+      "words": [
+        {
+          "w": "generate",
+          "pos": "v.",
+          "def": "生成；产生"
+        },
+        {
+          "w": "subtitling",
+          "pos": "n.",
+          "def": "（影视）加字幕"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 2,
+      "en": "It helps that lecturers speak clearly, don't have to compete with background chatter, and say much the same thing each year.",
+      "zh": "有几点很有帮助：讲师吐字清晰、不必与背景嘈杂声相抗衡，而且每年讲的内容大致相同。",
+      "grammar": {
+        "type": "形式主语 it + 主语从句 + 三项并列谓语",
+        "note": "It 为形式主语，真正主语是 that 引导的主语从句；从句内三个并列谓语 speak clearly / don't have to compete with... / say much the same thing；much the same 表“大致相同”。"
+      },
+      "words": [
+        {
+          "w": "chatter",
+          "pos": "n.",
+          "def": "闲聊声；嘈杂人声"
+        },
+        {
+          "w": "compete with",
+          "pos": "phr.",
+          "def": "与……竞争/抗衡"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 3,
+      "en": "The idea of artificial speech translation has been around for a long time.",
+      "zh": "人工语音翻译这一构想已经存在很久了。",
+      "grammar": {
+        "type": "现在完成时",
+        "note": "主干是 The idea...has been around；of artificial speech translation 为介词短语作后置定语修饰 idea；has been around for a long time 用现在完成时表持续至今，be around 表“存在、出现”。"
+      },
+      "words": [
+        {
+          "w": "idea",
+          "pos": "n.",
+          "def": "构想；想法"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 3,
+      "en": "Douglas Adams' science fiction novel, The Hitchhiker's Guide to the Galaxy, published in 1979, featured a life form called the 'Babel fish' which, when placed in the ear, enabled a listener to understand any language in the universe.",
+      "zh": "道格拉斯·亚当斯于1979年出版的科幻小说《银河系搭车客指南》中，就有一种名为“巴别鱼”的生物，把它放进耳朵里，听者便能听懂宇宙中的任何语言。",
+      "grammar": {
+        "type": "同位语 + 过去分词后置定语 + which 定语从句",
+        "note": "主干是 novel...featured a life form；The Hitchhiker's Guide to the Galaxy 为 novel 的同位语，published in 1979 为过去分词短语修饰 novel；called the 'Babel fish' 修饰 life form；which...enabled... 为定语从句，其中 when placed in the ear 为省略主语的时间状语（=when it was placed）。"
+      },
+      "words": [
+        {
+          "w": "feature",
+          "pos": "v.",
+          "def": "以……为特色；（作品中）出现"
+        },
+        {
+          "w": "life form",
+          "pos": "phr.",
+          "def": "生命形态；生物"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 3,
+      "en": "It came to represent one of those devices that technology enthusiasts dream of long before they become practically realisable, like TVs flat enough to hang on walls: objects that we once could only dream of having but that are now commonplace.",
+      "zh": "它逐渐成为这样一类装置的象征：技术爱好者们早在其真正可实现之前很久就梦寐以求，就像薄到能挂在墙上的电视机——这些东西我们曾经只能幻想拥有，如今却已司空见惯。",
+      "grammar": {
+        "type": "come to do + 多重定语从句 + 冒号解释",
+        "note": "主干是 It came to represent one of those devices，come to represent 表“逐渐成为……的代表”；that technology enthusiasts dream of 为定语从句修饰 devices；long before they become practically realisable 为时间状语从句；冒号后 objects that...but that... 用两个 that 定语从句修饰 objects，由 but 对比。"
+      },
+      "words": [
+        {
+          "w": "enthusiast",
+          "pos": "n.",
+          "def": "爱好者；狂热者"
+        },
+        {
+          "w": "commonplace",
+          "pos": "adj.",
+          "def": "司空见惯的；平常的"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 3,
+      "en": "Now devices that look like prototype Babel fish have started to appear, riding a wave of advances in artificial translation and voice recognition.",
+      "zh": "如今，一些看上去像是“巴别鱼”雏形的设备已开始涌现，它们正搭乘着人工翻译与语音识别领域进步的浪潮。",
+      "grammar": {
+        "type": "定语从句 + 现在分词状语",
+        "note": "主干是 devices...have started to appear；that look like prototype Babel fish 为定语从句修饰 devices；riding a wave of advances... 为现在分词短语作伴随状语，ride a wave of 表“乘着……之势”。"
+      },
+      "words": [
+        {
+          "w": "prototype",
+          "pos": "n.",
+          "def": "原型；雏形"
+        },
+        {
+          "w": "advance",
+          "pos": "n.",
+          "def": "进步；进展"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 4,
+      "en": "At this stage, however, they seem to be regarded as eye-catching novelties rather than steps towards what Waibel calls 'making a language-transparent society'.",
+      "zh": "然而现阶段，它们似乎被视为吸引眼球的新奇玩意儿，而非迈向魏贝尔所说的“打造语言无障碍社会”的步骤。",
+      "grammar": {
+        "type": "被动语态 + rather than 对比 + 宾语从句",
+        "note": "主干是 they seem to be regarded as eye-catching novelties，be regarded as 表“被视为”；rather than steps towards... 表对比；what Waibel calls '...' 为 towards 的宾语从句。"
+      },
+      "words": [
+        {
+          "w": "eye-catching",
+          "pos": "adj.",
+          "def": "引人注目的；吸睛的"
+        },
+        {
+          "w": "novelty",
+          "pos": "n.",
+          "def": "新奇事物"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 4,
+      "en": "They tend to be domestic devices or applications suitable for hotel check-ins, for example, providing a practical alternative to speaking traveller's English.",
+      "zh": "它们往往是家用设备或应用程序，比如适用于酒店入住登记，为“旅行者英语”提供了一种实用的替代方案。",
+      "grammar": {
+        "type": "主系表 + 形容词短语后置定语 + 现在分词状语",
+        "note": "主干是 They tend to be domestic devices or applications；suitable for hotel check-ins 为形容词短语作后置定语；providing a practical alternative to... 为现在分词短语作结果状语，an alternative to 表“……的替代方案”。"
+      },
+      "words": [
+        {
+          "w": "domestic",
+          "pos": "adj.",
+          "def": "家用的；国内的"
+        },
+        {
+          "w": "alternative",
+          "pos": "n.",
+          "def": "替代方案；选择"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 4,
+      "en": "The efficiency of the translator is less important than the social function.",
+      "zh": "翻译器的效率不如其社交功能重要。",
+      "grammar": {
+        "type": "比较级",
+        "note": "主干是 The efficiency...is less important than the social function；less...than 表“不如……”，把 efficiency 与 social function 作比较。"
+      },
+      "words": [
+        {
+          "w": "efficiency",
+          "pos": "n.",
+          "def": "效率"
+        },
+        {
+          "w": "function",
+          "pos": "n.",
+          "def": "功能；作用"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 4,
+      "en": "However, 'Professionals are less inclined to be patient in a conversation,' founder and CEO at Waverly Labs, Andrew Ochoa, observes.",
+      "zh": "然而，Waverly Labs 的创始人兼首席执行官安德鲁·奥乔亚指出：“专业人士在对话中往往不那么有耐心。”",
+      "grammar": {
+        "type": "直接引语 + 同位语 + 倒装引述",
+        "note": "引号内为直接引语，主干 Professionals are less inclined to be patient，be inclined to 表“倾向于”；founder and CEO at Waverly Labs 为 Andrew Ochoa 的同位语；observes 为引述动词（此处主语在前）。"
+      },
+      "words": [
+        {
+          "w": "be inclined to",
+          "pos": "phr.",
+          "def": "倾向于；有意于"
+        },
+        {
+          "w": "observe",
+          "pos": "v.",
+          "def": "评论；指出"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 4,
+      "en": "To redress this, Waverly is now preparing a new model for professional applications, which entails performance improvements in speech recognition, translation accuracy and the time it takes to deliver the translated speech.",
+      "zh": "为纠正这一问题，Waverly 正在为专业应用场景准备一款新机型，这需要在语音识别、翻译准确度以及输出译文所需时间等方面提升性能。",
+      "grammar": {
+        "type": "不定式目的状语 + which 非限制性定语从句",
+        "note": "To redress this 为目的状语；主干是 Waverly is now preparing a new model；which entails performance improvements... 为非限制性定语从句修饰前面整件事，entail 表“需要、使必然发生”；the time (that) it takes to deliver... 中省略了关系代词。"
+      },
+      "words": [
+        {
+          "w": "redress",
+          "pos": "v.",
+          "def": "纠正；矫正"
+        },
+        {
+          "w": "entail",
+          "pos": "v.",
+          "def": "需要；使必然发生"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 5,
+      "en": "For a conversation, both speakers need to have devices called Pilots (translator earpieces) in their ears.",
+      "zh": "要进行对话，双方说话者都需要在耳中佩戴一种名为 Pilots 的设备（翻译耳机）。",
+      "grammar": {
+        "type": "过去分词后置定语",
+        "note": "主干是 both speakers need to have devices...in their ears；called Pilots 为过去分词短语作后置定语修饰 devices；括号内 translator earpieces 为解释说明。"
+      },
+      "words": [
+        {
+          "w": "earpiece",
+          "pos": "n.",
+          "def": "耳机；听筒"
+        },
+        {
+          "w": "device",
+          "pos": "n.",
+          "def": "设备；装置"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 5,
+      "en": "'We find that there's a barrier with sharing one of the earphones with a stranger,' says Ochoa.",
+      "zh": "“我们发现，与陌生人共用一只耳机是有心理障碍的，”奥乔亚说。",
+      "grammar": {
+        "type": "直接引语 + 宾语从句 + 倒装引述",
+        "note": "引号内主干 We find that...，that 引导宾语从句；从句 there's a barrier with sharing... 为 there be 结构，with sharing one of the earphones 说明障碍所在；says Ochoa 为主谓倒装的引述句。"
+      },
+      "words": [
+        {
+          "w": "barrier",
+          "pos": "n.",
+          "def": "障碍；隔阂"
+        },
+        {
+          "w": "stranger",
+          "pos": "n.",
+          "def": "陌生人"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 5,
+      "en": "That can't have been totally unexpected.",
+      "zh": "这一点应该并非完全出人意料。",
+      "grammar": {
+        "type": "情态动词 + 完成时（推测）",
+        "note": "主干是 That can't have been totally unexpected；can't have been 表示对过去情况的否定推测，意为“不可能曾经是……”；unexpected 意为“意料之外的”。"
+      },
+      "words": [
+        {
+          "w": "unexpected",
+          "pos": "adj.",
+          "def": "意外的；出乎意料的"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 5,
+      "en": "The problem would be solved if earpiece translators became sufficiently prevalent that strangers would be likely to already have their own in their ears.",
+      "zh": "如果耳机式翻译器足够普及，以至于陌生人很可能自己耳中就已戴着一只，那么这个问题就会迎刃而解。",
+      "grammar": {
+        "type": "虚拟语气 + so...that 结果从句",
+        "note": "对现在/将来的虚拟：主句 The problem would be solved（被动），if 从句 earpiece translators became sufficiently prevalent；prevalent 后接 that 结果状语从句 strangers would be likely to already have their own；their own = their own earpiece translators。"
+      },
+      "words": [
+        {
+          "w": "prevalent",
+          "pos": "adj.",
+          "def": "普遍的；流行的"
+        },
+        {
+          "w": "sufficiently",
+          "pos": "adv.",
+          "def": "充分地；足够地"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 5,
+      "en": "Whether that happens, and how quickly, will probably depend not so much on the earpieces themselves, but on the prevalence of voice-controlled devices and artificial translation in general.",
+      "zh": "这种情况是否会发生、又会多快发生，很可能主要并不取决于耳机本身，而是取决于语音控制设备以及人工翻译总体上的普及程度。",
+      "grammar": {
+        "type": "主语从句 + not so much...but 结构",
+        "note": "主语是 Whether that happens, and how quickly 两个并列的疑问词引导从句；谓语 will probably depend；not so much on...but on... 表“与其说取决于A，不如说取决于B”；in general 表“总体上”。"
+      },
+      "words": [
+        {
+          "w": "prevalence",
+          "pos": "n.",
+          "def": "普及；盛行"
+        },
+        {
+          "w": "voice-controlled",
+          "pos": "adj.",
+          "def": "语音控制的"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 6,
+      "en": "Waibel highlights the significance of certain Asian nations, noting that voice translation has really taken off in countries such as Japan with a range of systems.",
+      "zh": "魏贝尔强调了某些亚洲国家的重要性，他指出，在日本等国，语音翻译已凭借一系列系统真正流行开来。",
+      "grammar": {
+        "type": "现在分词状语 + 宾语从句",
+        "note": "主干是 Waibel highlights the significance of certain Asian nations；noting that... 为现在分词短语作伴随状语，that 引导其宾语从句；从句主干 voice translation has really taken off，take off 表“迅速流行/起飞”。"
+      },
+      "words": [
+        {
+          "w": "highlight",
+          "pos": "v.",
+          "def": "强调；突出"
+        },
+        {
+          "w": "take off",
+          "pos": "phr.",
+          "def": "迅速流行；腾飞"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 6,
+      "en": "There is still a long way to go, though.",
+      "zh": "不过，要走的路还很长。",
+      "grammar": {
+        "type": "There be 结构 + 让步副词",
+        "note": "There is still a long way to go 为固定表达，表“仍有很长的路要走”；to go 为不定式作后置定语修饰 way；though 位于句末作让步副词，表“不过、然而”。"
+      },
+      "words": [
+        {
+          "w": "though",
+          "pos": "adv.",
+          "def": "不过；然而（句末）"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 6,
+      "en": "A translation system needs to be simultaneous, like the translator's voice speaking over the foreign politician being interviewed on the TV, rather than in sections that oblige speakers to pause after every few remarks and wait for the translation to be delivered.",
+      "zh": "翻译系统需要做到同步，就像译员的声音盖过电视上正接受采访的外国政要那样，而不是分段进行、迫使说话者每讲几句就得停下来等待译文送达。",
+      "grammar": {
+        "type": "主系表 + like 举例 + rather than 对比 + 定语从句",
+        "note": "主干是 A translation system needs to be simultaneous；like the translator's voice speaking over... 为举例，being interviewed 修饰 politician；rather than in sections 表对比；that oblige speakers to pause...and wait... 为定语从句修饰 sections，oblige sb to do 表“迫使某人做”。"
+      },
+      "words": [
+        {
+          "w": "simultaneous",
+          "pos": "adj.",
+          "def": "同时的；同步的"
+        },
+        {
+          "w": "oblige",
+          "pos": "v.",
+          "def": "迫使；使不得不"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 6,
+      "en": "It needs to work offline, for situations where internet access isn't possible, and to address apprehensions about the amount of private speech data accumulating in the cloud, having been sent to servers for processing.",
+      "zh": "它还需要能够离线工作，以应对无法联网的情况，并需消解人们对大量私人语音数据积存于云端的担忧——这些数据是被发送到服务器进行处理的。",
+      "grammar": {
+        "type": "并列不定式 + where 定语从句 + 完成式分词",
+        "note": "主干为并列不定式 It needs to work offline...and to address apprehensions...；where internet access isn't possible 为定语从句修饰 situations；accumulating in the cloud 为现在分词修饰 data；having been sent to servers 为完成式分词，表已被发送。"
+      },
+      "words": [
+        {
+          "w": "apprehension",
+          "pos": "n.",
+          "def": "忧虑；担心"
+        },
+        {
+          "w": "accumulate",
+          "pos": "v.",
+          "def": "积累；积存"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 7,
+      "en": "Systems not only need to cope with physical challenges such as noise, they will also need to be socially aware by addressing people in the right way.",
+      "zh": "系统不仅需要应对噪音等物理层面的挑战，还需要具备社交意识，以恰当的方式称呼他人。",
+      "grammar": {
+        "type": "not only...also 并列 + by 方式状语",
+        "note": "not only...(they) will also... 连接两个分句，构成递进；主干谓语分别为 need to cope with 与 need to be socially aware；by addressing people in the right way 为方式状语，address 表“称呼”。"
+      },
+      "words": [
+        {
+          "w": "socially aware",
+          "pos": "phr.",
+          "def": "有社交意识的"
+        },
+        {
+          "w": "address",
+          "pos": "v.",
+          "def": "称呼；应对"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 7,
+      "en": "Some cultural traditions demand solemn respect for academic status, for example, and it is only polite to respect this.",
+      "zh": "例如，某些文化传统要求对学术地位表示庄重的敬意，而尊重这一点也只是出于礼貌。",
+      "grammar": {
+        "type": "并列句 + 形式主语 it",
+        "note": "and 连接两个分句。前句主干 Some cultural traditions demand solemn respect for academic status；后句 it is only polite to respect this，it 为形式主语，真正主语是 to respect this，only polite 表“不过是礼貌之举”。"
+      },
+      "words": [
+        {
+          "w": "solemn",
+          "pos": "adj.",
+          "def": "庄重的；严肃的"
+        },
+        {
+          "w": "status",
+          "pos": "n.",
+          "def": "地位；身份"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 7,
+      "en": "Etiquette-sensitive artificial translators could relieve people of the need to know these differing cultural norms.",
+      "zh": "对礼节敏感的人工翻译器，可以让人们免于去了解这些各不相同的文化规范。",
+      "grammar": {
+        "type": "主谓宾 + relieve sb of sth",
+        "note": "主干是 Etiquette-sensitive artificial translators could relieve people of the need；relieve sb of sth 表“使某人免除某事”；to know these differing cultural norms 为不定式修饰 need，differing 表“不同的”。"
+      },
+      "words": [
+        {
+          "w": "etiquette",
+          "pos": "n.",
+          "def": "礼节；礼仪"
+        },
+        {
+          "w": "norm",
+          "pos": "n.",
+          "def": "规范；准则"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 7,
+      "en": "At the same time, they might help to preserve local customs, slowing the spread of habits associated with international English, such as its readiness to get on first-name terms.",
+      "zh": "与此同时，它们或许有助于保护当地习俗，减缓与国际英语相关的一些习惯的蔓延——比如动辄以名字相称的随意做派。",
+      "grammar": {
+        "type": "现在分词结果状语 + 过去分词后置定语",
+        "note": "主干是 they might help to preserve local customs；slowing the spread of habits 为现在分词短语作结果状语；associated with international English 为过去分词短语修饰 habits；such as its readiness to get on first-name terms 举例，get on first-name terms 表“以名相称”。"
+      },
+      "words": [
+        {
+          "w": "preserve",
+          "pos": "v.",
+          "def": "保护；保存"
+        },
+        {
+          "w": "readiness",
+          "pos": "n.",
+          "def": "乐意；倾向于（做某事）"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 8,
+      "en": "Professors and other professionals will not outsource language awareness to software, though.",
+      "zh": "不过，教授及其他专业人士并不会把语言意识外包给软件。",
+      "grammar": {
+        "type": "一般将来时（否定）+ 让步副词",
+        "note": "主干是 Professors and other professionals will not outsource language awareness to software；outsource A to B 表“把A外包给B”；though 位于句末，作让步副词表转折。"
+      },
+      "words": [
+        {
+          "w": "outsource",
+          "pos": "v.",
+          "def": "外包"
+        },
+        {
+          "w": "awareness",
+          "pos": "n.",
+          "def": "意识；认识"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 8,
+      "en": "If the technology matures into seamless, ubiquitous artificial speech translation, it will actually add value to language skills.",
+      "zh": "如果这项技术发展成无缝、无处不在的人工语音翻译，它实际上会为语言能力增添价值。",
+      "grammar": {
+        "type": "if 条件状语从句 + 一般将来时",
+        "note": "If 引导真实条件从句 the technology matures into...，mature into 表“发展成熟为”；主句 it will actually add value to language skills，add value to 表“为……增值”；seamless、ubiquitous 两个形容词并列修饰。"
+      },
+      "words": [
+        {
+          "w": "seamless",
+          "pos": "adj.",
+          "def": "无缝的；顺畅衔接的"
+        },
+        {
+          "w": "ubiquitous",
+          "pos": "adj.",
+          "def": "无处不在的"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 8,
+      "en": "Whether it will help people conduct their family lives or relationships is open to question – though one noteworthy possibility is that it could overcome the language barriers that often arise between generations after migration, leaving children and their grandparents without a shared language.",
+      "zh": "它是否会帮助人们经营家庭生活或人际关系，尚无定论——不过一个值得注意的可能性是，它或许能跨越移民之后代际之间常常出现的语言隔阂，那种隔阂会让孩子和祖辈之间没有共同语言。",
+      "grammar": {
+        "type": "主语从句 + 表语从句 + 定语从句 + 分词状语",
+        "note": "主语是 Whether it will help...relationships 从句，谓语 is open to question；破折号后 one noteworthy possibility is that... 为表语从句；that often arise between generations after migration 为定语从句修饰 barriers；leaving children and their grandparents without... 为现在分词作结果状语。"
+      },
+      "words": [
+        {
+          "w": "noteworthy",
+          "pos": "adj.",
+          "def": "值得注意的"
+        },
+        {
+          "w": "migration",
+          "pos": "n.",
+          "def": "迁徙；移民"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 9,
+      "en": "Whatever uses it is put to, though, it will never be as good as the real thing.",
+      "zh": "然而，无论它被用于何种用途，都永远比不上真人的本领。",
+      "grammar": {
+        "type": "whatever 让步状语从句 + as...as 同级比较",
+        "note": "Whatever uses it is put to 为让步状语从句，put sth to use 表“加以利用”，此处被动 it is put to（whatever uses）；主句 it will never be as good as the real thing，as...as 同级比较的否定表“不如”。"
+      },
+      "words": [
+        {
+          "w": "put to use",
+          "pos": "phr.",
+          "def": "使用；加以利用"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 9,
+      "en": "Even if voice-morphing technology simulates the speaker's voice, their lip movements won't match, and they will look like they are in a dubbed movie.",
+      "zh": "即便语音变形技术模拟出说话者的嗓音，其嘴唇动作也对不上，看起来就像身处一部配音译制片里。",
+      "grammar": {
+        "type": "even if 让步从句 + 并列主句",
+        "note": "Even if 引导让步从句 voice-morphing technology simulates the speaker's voice；and 连接两个并列主句 their lip movements won't match 与 they will look like...；like they are in a dubbed movie 中 like 作连词引出方式从句。"
+      },
+      "words": [
+        {
+          "w": "simulate",
+          "pos": "v.",
+          "def": "模拟；模仿"
+        },
+        {
+          "w": "dubbed",
+          "pos": "adj.",
+          "def": "配音的；译制的"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 9,
+      "en": "The contrast will underline the value of shared languages, and the value of learning them.",
+      "zh": "这种反差会凸显出共享语言的价值，以及学习这些语言的价值。",
+      "grammar": {
+        "type": "一般将来时 + 并列宾语",
+        "note": "主干是 The contrast will underline the value of shared languages...；underline 此处表“强调、突显”；and the value of learning them 与前一宾语并列，them 指代 shared languages。"
+      },
+      "words": [
+        {
+          "w": "contrast",
+          "pos": "n.",
+          "def": "对比；反差"
+        },
+        {
+          "w": "underline",
+          "pos": "v.",
+          "def": "强调；使突出"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "para": 9,
+      "en": "Sharing a language can promote a sense of belonging and community, as with the international scientists who use English as a lingua franca, where their predecessors used Latin.",
+      "zh": "共享一门语言能增进归属感和共同体意识，就如同国际科学家们如今以英语作为通用语，而他们的前辈当年用的则是拉丁语。",
+      "grammar": {
+        "type": "as with 类比 + who 定语从句 + where 定语从句",
+        "note": "主干是 Sharing a language can promote a sense of belonging and community；as with... 引出类比；who use English as a lingua franca 为定语从句修饰 scientists；where their predecessors used Latin 为定语从句，此处 where 相当于“在……情形下”。"
+      },
+      "words": [
+        {
+          "w": "lingua franca",
+          "pos": "phr.",
+          "def": "通用语；共通语"
+        },
+        {
+          "w": "predecessor",
+          "pos": "n.",
+          "def": "前辈；前任"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "para": 9,
+      "en": "Though the practical need for a common language will diminish, the social value of sharing one will persist.",
+      "zh": "尽管对共同语言的实际需求会减弱，但共享一门语言的社会价值将长存。",
+      "grammar": {
+        "type": "though 让步状语从句 + 对比主句",
+        "note": "Though 引导让步从句 the practical need...will diminish；主句 the social value of sharing one will persist，one 指代 a common language；diminish 与 persist 形成对比。"
+      },
+      "words": [
+        {
+          "w": "diminish",
+          "pos": "v.",
+          "def": "减少；减弱"
+        },
+        {
+          "w": "persist",
+          "pos": "v.",
+          "def": "持续；存留"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "para": 9,
+      "en": "And software will never be a substitute for the subtle but vital understanding that comes with knowledge of a language.",
+      "zh": "而且，软件永远无法替代那种随掌握一门语言而来的、微妙却至关重要的领悟。",
+      "grammar": {
+        "type": "主系表 + 定语从句",
+        "note": "主干是 software will never be a substitute for the...understanding，a substitute for 表“……的替代品”；subtle but vital 并列修饰 understanding；that comes with knowledge of a language 为定语从句，come with 表“伴随……而来”。"
+      },
+      "words": [
+        {
+          "w": "substitute",
+          "pos": "n.",
+          "def": "替代品；代替者"
+        },
+        {
+          "w": "vital",
+          "pos": "adj.",
+          "def": "至关重要的"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 27-30 · Multiple choice",
+      "type": "mcq",
+      "instructions": [
+        "Choose the correct letter, A, B, C or D.",
+        "Write the correct letter in boxes 27-30 on your answer sheet."
+      ],
+      "items": [
+        {
+          "number": 27,
+          "prompt": "What does the reader learn about the conversation in the first paragraph?",
+          "options": [
+            "A  The speakers are communicating in different languages.",
+            "B  Neither of the speakers is familiar with their environment.",
+            "C  The topic of the conversation is difficult for both speakers.",
+            "D  Aspects of the conversation are challenging for both speakers."
+          ],
+          "answer": "D",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 28,
+          "prompt": "What assists the electronic translator during lectures at Karlsruhe Institute of Technology?",
+          "options": [
+            "A  the repeated content of lectures",
+            "B  the students' reading skills",
+            "C  the languages used",
+            "D  the lecturers' technical ability"
+          ],
+          "answer": "A",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 29,
+          "prompt": "When referring to The Hitchhiker's Guide to the Galaxy, the writer suggests that",
+          "options": [
+            "A  the Babel fish was considered undesirable at the time.",
+            "B  this book was not seriously intending to predict the future.",
+            "C  artificial speech translation was not a surprising development.",
+            "D  some speech translation techniques are better than others."
+          ],
+          "answer": "C",
+          "evidence_sentence": 11
+        },
+        {
+          "number": 30,
+          "prompt": "What does the writer say about sharing earpieces?",
+          "options": [
+            "A  It is something people will get used to doing.",
+            "B  The reluctance to do this is understandable.",
+            "C  The equipment will be unnecessary in the future.",
+            "D  It is something few people need to worry about."
+          ],
+          "answer": "B",
+          "evidence_sentence": 20
+        }
+      ]
+    },
+    {
+      "title": "Questions 31-34 · Matching sentence endings",
+      "type": "matching",
+      "instructions": [
+        "Complete each sentence with the correct ending, A-F, below.",
+        "Write the correct letter, A-F, in boxes 31-34 on your answer sheet.",
+        "A  but there are concerns about this.",
+        "B  as systems do not need to conform to standard practices.",
+        "C  but they are far from perfect.",
+        "D  despite the noise issues.",
+        "E  because translation is immediate.",
+        "F  and have an awareness of good manners."
+      ],
+      "items": [
+        {
+          "number": 31,
+          "prompt": "Speech translation methods are developing fast in Japan",
+          "options": [
+            "A  but there are concerns about this.",
+            "B  as systems do not need to conform to standard practices.",
+            "C  but they are far from perfect.",
+            "D  despite the noise issues.",
+            "E  because translation is immediate.",
+            "F  and have an awareness of good manners."
+          ],
+          "answer": "C",
+          "evidence_sentence": 24
+        },
+        {
+          "number": 32,
+          "prompt": "TV interviews that use translation voiceover methods are successful",
+          "options": [
+            "A  but there are concerns about this.",
+            "B  as systems do not need to conform to standard practices.",
+            "C  but they are far from perfect.",
+            "D  despite the noise issues.",
+            "E  because translation is immediate.",
+            "F  and have an awareness of good manners."
+          ],
+          "answer": "E",
+          "evidence_sentence": 25
+        },
+        {
+          "number": 33,
+          "prompt": "Future translation systems should address people appropriately",
+          "options": [
+            "A  but there are concerns about this.",
+            "B  as systems do not need to conform to standard practices.",
+            "C  but they are far from perfect.",
+            "D  despite the noise issues.",
+            "E  because translation is immediate.",
+            "F  and have an awareness of good manners."
+          ],
+          "answer": "F",
+          "evidence_sentence": 27
+        },
+        {
+          "number": 34,
+          "prompt": "Users may be able to maintain their local customs",
+          "options": [
+            "A  but there are concerns about this.",
+            "B  as systems do not need to conform to standard practices.",
+            "C  but they are far from perfect.",
+            "D  despite the noise issues.",
+            "E  because translation is immediate.",
+            "F  and have an awareness of good manners."
+          ],
+          "answer": "B",
+          "evidence_sentence": 30
+        }
+      ]
+    },
+    {
+      "title": "Questions 35-40 · YES / NO / NOT GIVEN",
+      "type": "ynng",
+      "instructions": [
+        "Do the following statements agree with the views of the writer in Reading Passage 3?",
+        "In boxes 35-40 on your answer sheet, write",
+        "YES if the statement agrees with the views of the writer",
+        "NO if the statement contradicts the views of the writer",
+        "NOT GIVEN if it is impossible to say what the writer thinks about this"
+      ],
+      "items": [
+        {
+          "number": 35,
+          "prompt": "Language translation systems will be seen as very useful throughout the academic and professional worlds.",
+          "answer": "NO",
+          "evidence_sentence": 13
+        },
+        {
+          "number": 36,
+          "prompt": "The overall value of automated translation to family life is yet to be shown.",
+          "answer": "YES",
+          "evidence_sentence": 33
+        },
+        {
+          "number": 37,
+          "prompt": "Automated translation could make life more difficult for immigrant families.",
+          "answer": "NO",
+          "evidence_sentence": 33
+        },
+        {
+          "number": 38,
+          "prompt": "Visual aspects of language translation are being considered by scientists.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 35
+        },
+        {
+          "number": 39,
+          "prompt": "International scientists have found English easier to translate into other languages than Latin.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 37
+        },
+        {
+          "number": 40,
+          "prompt": "As far as language is concerned, there is a difference between people's social and practical needs.",
+          "answer": "YES",
+          "evidence_sentence": 38
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "w": "artificial speech translation",
+      "pos": "phr.",
+      "def": "人工语音翻译"
+    },
+    {
+      "w": "background noise",
+      "pos": "phr.",
+      "def": "背景噪音"
+    },
+    {
+      "w": "Babel fish",
+      "pos": "n.",
+      "def": "巴别鱼（科幻小说中放入耳中即可听懂任何语言的生物）"
+    },
+    {
+      "w": "voice recognition",
+      "pos": "phr.",
+      "def": "语音识别"
+    },
+    {
+      "w": "language-transparent society",
+      "pos": "phr.",
+      "def": "语言无障碍社会"
+    },
+    {
+      "w": "translator earpiece",
+      "pos": "phr.",
+      "def": "翻译耳机"
+    },
+    {
+      "w": "voice-morphing technology",
+      "pos": "phr.",
+      "def": "语音变形技术"
+    },
+    {
+      "w": "first-name terms",
+      "pos": "phr.",
+      "def": "以名字相称的关系（表亲近随意）"
+    },
+    {
+      "w": "on first-name terms",
+      "pos": "phr.",
+      "def": "以名字互称；关系随意亲近"
+    }
+  ]
+}

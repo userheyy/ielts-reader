@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>生词库</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="vocab.html">生词库</a>
+  </header>
+  <div class="container">
+    <section class="review-studio" id="review-studio">
+      <div class="review-intro">
+        <span class="eyebrow">MEMORY LOOP</span>
+        <h2>随机复习</h2>
+        <p>错得越多，出现得越频繁；记得越牢，再见面的间隔越长。</p>
+        <div class="review-stats" id="review-stats"></div>
+        <div class="review-buttons">
+          <button id="start-review">开始抽词</button>
+          <div class="speech-controls vocab-speech-controls" aria-label="单词朗读设置">
+            <span>发音</span>
+            <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
+            <select id="speech-rate" aria-label="朗读速度">
+              <option value="0.7">慢速 0.7×</option>
+              <option value="0.9">清晰 0.9×</option>
+              <option value="1">正常 1×</option>
+            </select>
+            <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
+          </div>
+        </div>
+      </div>
+      <div class="review-card idle" id="review-card">
+        <div class="review-progress" id="review-progress">等待开始</div>
+        <div class="review-word-line">
+          <div class="review-word" id="review-word">Ready?</div>
+          <button class="speak-review-word" id="speak-review-word" title="朗读当前单词" disabled>🔊</button>
+        </div>
+        <div class="review-pos" id="review-pos"></div>
+        <div class="review-answer" id="review-answer">
+          <strong id="review-def"></strong>
+          <p id="review-example"></p>
+        </div>
+        <button class="reveal" id="reveal-answer" disabled>显示释义</button>
+        <div class="review-actions" id="review-actions" hidden>
+          <button data-rating="forgot">忘记了 <small>很快再来</small></button>
+          <button data-rating="fuzzy">有点模糊 <small>明天复习</small></button>
+          <button data-rating="remembered">记住了 <small>拉长间隔</small></button>
+        </div>
+      </div>
+    </section>
+    <div class="vocab-tools">
+      <input type="text" id="search" placeholder="搜索单词或出处…" />
+      <button id="export">备份生词</button>
+      <label class="filebtn">恢复生词备份<input type="file" id="import" accept="application/json" hidden /></label>
+      <button id="profile-export" class="ghostbtn">全量备份</button>
+      <label class="filebtn ghostfile">恢复全量备份<input type="file" id="profile-import" accept="application/json" hidden /></label>
+      <span class="vocab-count" id="count"></span>
+    </div>
+    <table class="vocab">
+      <thead>
+        <tr><th>单词</th><th>释义</th><th>例句</th><th>出处</th><th>时间</th><th></th></tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p id="empty" style="display:none;color:var(--muted);margin-top:16px">生词库还是空的。去阅读文章时点单词入库吧。</p>
+  </div>
+  <script type="module" src="js/vocab.js?v=7"></script>
+</body>
+</html>

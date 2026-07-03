@@ -1,0 +1,933 @@
+{
+  "id": "c19-test1-p3",
+  "source": "剑桥雅思19 · Test 1 · Passage 3",
+  "title": "The persistence and peril of misinformation",
+  "subtitle": "Brian Southwell looks at how human brains verify information and discusses some of the challenges of battling widespread falsehoods",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "Misinformation – both deliberately promoted and accidentally shared – is perhaps an inevitable part of the world in which we live, but it is not a new problem.",
+      "zh": "错误信息——既有蓄意散布的，也有无意中传播的——或许是我们所处世界中不可避免的一部分，但它并不是一个新问题。",
+      "grammar": {
+        "type": "并列句 + 破折号插入",
+        "note": "主干是 Misinformation is an inevitable part..., but it is not a new problem 两个分句由 but 连接；破折号中 both...and... 并列两个过去分词短语补充说明 misinformation 的来源。"
+      },
+      "words": [
+        {
+          "w": "misinformation",
+          "pos": "n.",
+          "def": "错误信息；虚假信息"
+        },
+        {
+          "w": "inevitable",
+          "pos": "adj.",
+          "def": "不可避免的"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "People likely have lied to one another for roughly as long as verbal communication has existed.",
+      "zh": "大概自从语言交流出现以来，人们就一直在相互撒谎。",
+      "grammar": {
+        "type": "as long as 时间状语从句",
+        "note": "主干是 People have lied to one another；as long as verbal communication has existed 引导时间状语从句，两处均用现在完成时表示从过去持续至今。"
+      },
+      "words": [
+        {
+          "w": "verbal",
+          "pos": "adj.",
+          "def": "言语的；口头的"
+        },
+        {
+          "w": "roughly",
+          "pos": "adv.",
+          "def": "大致；大约"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "Deceiving others can offer an apparent opportunity to gain strategic advantage, to motivate others to action, or even to protect interpersonal bonds.",
+      "zh": "欺骗他人似乎能提供机会去获取战略优势、促使他人行动，甚至去维护人际关系。",
+      "grammar": {
+        "type": "动名词主语 + 并列不定式",
+        "note": "Deceiving others 是动名词短语作主语；三个不定式 to gain..., to motivate..., or even to protect... 并列，作 opportunity 的后置修饰，说明机会的具体内容。"
+      },
+      "words": [
+        {
+          "w": "deceive",
+          "pos": "v.",
+          "def": "欺骗"
+        },
+        {
+          "w": "interpersonal bonds",
+          "pos": "n.",
+          "def": "人际关系纽带"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "Moreover, people inadvertently have been sharing inaccurate information with one another for thousands of years.",
+      "zh": "而且，几千年来人们一直在无意间相互分享不准确的信息。",
+      "grammar": {
+        "type": "现在完成进行时",
+        "note": "have been sharing 为现在完成进行时，强调动作从过去持续至今；inadvertently 作方式状语修饰，突出“无意”这一点。"
+      },
+      "words": [
+        {
+          "w": "inadvertently",
+          "pos": "adv.",
+          "def": "无意地；不经意地"
+        },
+        {
+          "w": "inaccurate",
+          "pos": "adj.",
+          "def": "不准确的"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 2,
+      "en": "However, we currently live in an era in which technology enables information to reach large audiences distributed across the globe, and thus the potential for immediate and widespread effects from misinformation now looms larger than in the past.",
+      "zh": "然而，我们如今生活在这样一个时代：技术使信息得以触及遍布全球的庞大受众，因此错误信息造成即时而广泛影响的可能性，如今比过去更加突出。",
+      "grammar": {
+        "type": "定语从句 + 并列结果",
+        "note": "in which technology enables... 修饰 era；enables information to reach... 为 enable sb/sth to do 结构；distributed across the globe 为过去分词短语修饰 audiences；and thus 引出结果分句，looms larger 表“愈发突出”。"
+      },
+      "words": [
+        {
+          "w": "loom",
+          "pos": "v.",
+          "def": "隐现；逼近（显得重大）"
+        },
+        {
+          "w": "widespread",
+          "pos": "adj.",
+          "def": "广泛的；普遍的"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 2,
+      "en": "Yet the means to correct misinformation might, over time, be found in those same patterns of mass communication and of the facilitated spread of information.",
+      "zh": "然而，纠正错误信息的手段，或许随着时间推移，恰恰能在这些大众传播以及信息便捷扩散的相同模式中被找到。",
+      "grammar": {
+        "type": "被动语态 + 插入语",
+        "note": "主干是 the means might be found in those same patterns（被动语态）；over time 为插入的时间状语；of mass communication 与 of the facilitated spread 并列修饰 patterns。"
+      },
+      "words": [
+        {
+          "w": "means",
+          "pos": "n.",
+          "def": "手段；方法"
+        },
+        {
+          "w": "facilitated",
+          "pos": "adj.",
+          "def": "被促进的；变得便利的"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 3,
+      "en": "The main worry regarding misinformation is its potential to unduly influence attitudes and behavior, leading people to think and act differently than they would if they were correctly informed, as suggested by the research teams of Stephan Lewandowsky of the University of Bristol and Elizabeth Marsh of Duke University, among others.",
+      "zh": "关于错误信息，人们主要担忧的是它可能过度影响人们的态度和行为，使人们的思考和行动方式不同于他们在获得正确信息时会有的方式——正如布里斯托大学的斯蒂芬·莱万多夫斯基和杜克大学的伊丽莎白·马什等人的研究团队所指出的那样。",
+      "grammar": {
+        "type": "主系表 + 分词状语 + 虚拟条件",
+        "note": "主干是 The main worry is its potential to...influence...；leading people to... 为现在分词短语表结果；than they would (act) if they were correctly informed 为含虚拟语气的比较从句；as suggested by... 为方式状语，交代研究来源。"
+      },
+      "words": [
+        {
+          "w": "unduly",
+          "pos": "adv.",
+          "def": "过度地；不适当地"
+        },
+        {
+          "w": "attitude",
+          "pos": "n.",
+          "def": "态度"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 3,
+      "en": "In other words, we worry that misinformation might lead people to hold misperceptions (or false beliefs) and that these misperceptions, especially when they occur among large groups of people, may have detrimental, downstream consequences for health, social harmony, and the political climate.",
+      "zh": "换句话说，我们担心错误信息可能导致人们产生错误认知（即错误信念），而且这些错误认知——尤其是当它们出现在大群人当中时——可能对健康、社会和谐以及政治氛围带来有害的连锁后果。",
+      "grammar": {
+        "type": "并列宾语从句",
+        "note": "worry 后接两个由 that 引导的并列宾语从句；第二个从句主语 these misperceptions 与谓语 may have 之间插入 especially when... 时间状语；detrimental, downstream 并列修饰 consequences。"
+      },
+      "words": [
+        {
+          "w": "misperception",
+          "pos": "n.",
+          "def": "错误认知；误解"
+        },
+        {
+          "w": "detrimental",
+          "pos": "adj.",
+          "def": "有害的"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 4,
+      "en": "At least three observations related to misinformation in the contemporary mass-media environment warrant the attention of researchers, policy makers, and really everyone who watches television, listens to the radio, or reads information online.",
+      "zh": "在当代大众媒体环境中，至少有三个与错误信息相关的现象值得研究者、政策制定者以及几乎每一个看电视、听广播或在线阅读信息的人关注。",
+      "grammar": {
+        "type": "主谓宾 + 定语从句",
+        "note": "主干是 three observations warrant the attention；related to... 为过去分词短语修饰 observations；who watches..., listens..., or reads... 三个并列谓语构成定语从句修饰 everyone。"
+      },
+      "words": [
+        {
+          "w": "warrant",
+          "pos": "v.",
+          "def": "值得；使有必要"
+        },
+        {
+          "w": "contemporary",
+          "pos": "adj.",
+          "def": "当代的"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 4,
+      "en": "First of all, people who encounter misinformation tend to believe it, at least initially.",
+      "zh": "首先，遇到错误信息的人往往会相信它，至少一开始如此。",
+      "grammar": {
+        "type": "定语从句 + tend to do",
+        "note": "who encounter misinformation 为定语从句修饰 people；tend to believe 表“倾向于相信”；at least initially 为让步性补充状语。"
+      },
+      "words": [
+        {
+          "w": "encounter",
+          "pos": "v.",
+          "def": "遇到；碰到"
+        },
+        {
+          "w": "initially",
+          "pos": "adv.",
+          "def": "最初；起初"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 4,
+      "en": "Secondly, electronic and print media often do not block many types of misinformation before it appears in content available to large audiences.",
+      "zh": "其次，电子媒体和纸质媒体往往不会在许多类型的错误信息出现在面向广大受众的内容之前将其拦截。",
+      "grammar": {
+        "type": "时间状语从句 + 后置定语",
+        "note": "主干是 media do not block many types of misinformation；before it appears in content 为时间状语从句；available to large audiences 为形容词短语后置修饰 content。"
+      },
+      "words": [
+        {
+          "w": "block",
+          "pos": "v.",
+          "def": "阻挡；拦截"
+        },
+        {
+          "w": "print media",
+          "pos": "n.",
+          "def": "纸质媒体；印刷媒体"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 4,
+      "en": "Thirdly, countering misinformation once it has enjoyed wide exposure can be a resource-intensive effort.",
+      "zh": "第三，一旦错误信息已被广泛传播，再去反击它可能是一件耗费大量资源的事。",
+      "grammar": {
+        "type": "动名词主语 + 时间状语从句",
+        "note": "countering misinformation 为动名词短语作主语；once it has enjoyed wide exposure 为 once 引导的时间状语从句（现在完成时）；can be a resource-intensive effort 为主系表。"
+      },
+      "words": [
+        {
+          "w": "counter",
+          "pos": "v.",
+          "def": "反击；抵制"
+        },
+        {
+          "w": "resource-intensive",
+          "pos": "adj.",
+          "def": "耗费大量资源的"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 5,
+      "en": "Knowing what happens when people initially encounter misinformation holds tremendous importance for estimating the potential for subsequent problems.",
+      "zh": "了解人们初次遇到错误信息时会发生什么，对于评估后续问题的可能性具有极其重大的意义。",
+      "grammar": {
+        "type": "动名词主语 + 嵌套疑问从句",
+        "note": "主语是动名词短语 Knowing what happens...，其中 what happens when... 为宾语从句且内嵌 when 时间状语；主句谓语 holds tremendous importance；for estimating... 为介词短语表用途。"
+      },
+      "words": [
+        {
+          "w": "tremendous",
+          "pos": "adj.",
+          "def": "巨大的；极其重要的"
+        },
+        {
+          "w": "subsequent",
+          "pos": "adj.",
+          "def": "随后的；接下来的"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 5,
+      "en": "Although it is fairly routine for individuals to come across information that is false, the question of exactly how – and when – we mentally label information as true or false has garnered philosophical debate.",
+      "zh": "尽管个人碰到虚假信息是相当常见的事，但我们究竟如何——以及何时——在心理上把信息标记为真或假这一问题，却引发了哲学上的争论。",
+      "grammar": {
+        "type": "让步状语从句 + 主句同位语式结构",
+        "note": "Although 引导让步从句，其中 it is...for sb to do 为形式主语结构，that is false 修饰 information；主句主语是 the question of...，其中 how – and when – we mentally label information 为 of 的宾语从句；主句谓语 has garnered。"
+      },
+      "words": [
+        {
+          "w": "garner",
+          "pos": "v.",
+          "def": "获得；引起（关注、争论）"
+        },
+        {
+          "w": "routine",
+          "pos": "adj.",
+          "def": "常规的；例行的"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 5,
+      "en": "The dilemma is neatly summarized by a contrast between how the 17th-century philosophers René Descartes and Baruch Spinoza described human information engagement, with conflicting predictions that only recently have been empirically tested in robust ways.",
+      "zh": "这一难题可以通过17世纪哲学家勒内·笛卡尔与巴鲁赫·斯宾诺莎对人类信息处理方式的不同描述之间的对比，被简洁地概括出来；而两人相互矛盾的预测，直到最近才以严谨的方式得到实证检验。",
+      "grammar": {
+        "type": "被动语态 + with 独立结构",
+        "note": "主干为 The dilemma is summarized by a contrast（被动）；between how...Descartes and...Spinoza described... 说明对比对象；with conflicting predictions 为 with 引出的伴随结构，其中 that only recently have been empirically tested 为定语从句修饰 predictions。"
+      },
+      "words": [
+        {
+          "w": "dilemma",
+          "pos": "n.",
+          "def": "困境；难题"
+        },
+        {
+          "w": "empirically",
+          "pos": "adv.",
+          "def": "凭经验地；以实证方式"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 5,
+      "en": "Descartes argued that a person only accepts or rejects information after considering its truth or falsehood; Spinoza argued that people accept all encountered information (or misinformation) by default and then subsequently verify or reject it through a separate cognitive process.",
+      "zh": "笛卡尔认为，人只有在考虑过信息的真伪之后，才会接受或拒绝它；斯宾诺莎则认为，人们默认会接受所遇到的一切信息（或错误信息），然后再通过一个独立的认知过程去验证或拒绝它。",
+      "grammar": {
+        "type": "分号并列 + 宾语从句",
+        "note": "分号连接两个结构对称的分句，均为 argued that...；前句 after considering... 为时间状语；后句 accept...by default 与 then subsequently verify or reject 构成先后并列，through a separate cognitive process 为方式状语。"
+      },
+      "words": [
+        {
+          "w": "by default",
+          "pos": "phr.",
+          "def": "默认地；在无其他选择时"
+        },
+        {
+          "w": "cognitive",
+          "pos": "adj.",
+          "def": "认知的"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 5,
+      "en": "In recent decades, empirical evidence from the research teams of Erik Asp of the University of Chicago and Daniel Gilbert at Harvard University, among others, has supported Spinoza's account: people appear to encode all new information as if it were true, even if only momentarily, and later tag the information as being either true or false, a pattern that seems consistent with the observation that mental resources for skepticism physically reside in a different part of the brain than the resources used in perceiving and encoding.",
+      "zh": "近几十年来，来自芝加哥大学埃里克·阿斯普和哈佛大学丹尼尔·吉尔伯特等人研究团队的实证证据支持了斯宾诺莎的说法：人们似乎会把所有新信息当作真的来编码（哪怕只是短暂如此），之后再把这些信息标记为真或假——这一模式似乎与如下观察相吻合：负责怀疑的心理资源在大脑中所处的部位，不同于用于感知和编码的资源。",
+      "grammar": {
+        "type": "冒号解释 + 同位语 + 双层从句",
+        "note": "主干为 empirical evidence has supported Spinoza's account；冒号后 people appear to encode...and later tag... 为并列不定式，as if it were true 为虚拟语气；a pattern that seems consistent with the observation 为同位语，其后 that mental resources...reside in a different part... 为 observation 的同位语从句，than 引出比较对象。"
+      },
+      "words": [
+        {
+          "w": "encode",
+          "pos": "v.",
+          "def": "编码；将信息存入记忆"
+        },
+        {
+          "w": "skepticism",
+          "pos": "n.",
+          "def": "怀疑；怀疑态度"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 6,
+      "en": "What about our second observation that misinformation often can appear in electronic or print media without being preemptively blocked?",
+      "zh": "那么我们的第二个现象——错误信息常常能出现在电子或纸质媒体中而未被事先拦截——又该如何看待呢？",
+      "grammar": {
+        "type": "疑问句 + 同位语从句",
+        "note": "What about...? 为设问句式；that misinformation often can appear... 为 observation 的同位语从句；without being preemptively blocked 为介词短语，动名词被动式表“未被事先拦截”。"
+      },
+      "words": [
+        {
+          "w": "preemptively",
+          "pos": "adv.",
+          "def": "先发制人地；事先地"
+        },
+        {
+          "w": "observation",
+          "pos": "n.",
+          "def": "观察所得；看法"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 6,
+      "en": "In support of this, one might consider the nature of regulatory structures in the United States: regulatory agencies here tend to focus on post hoc detection of broadcast information.",
+      "zh": "为支持这一点，我们不妨考察美国监管体制的性质：这里的监管机构往往侧重于对已播出信息进行事后检测。",
+      "grammar": {
+        "type": "冒号说明 + 介词短语状语",
+        "note": "In support of this 为目的状语；主句 one might consider the nature of...；冒号后展开说明，regulatory agencies...tend to focus on...，post hoc（拉丁语“事后”）作定语修饰 detection。"
+      },
+      "words": [
+        {
+          "w": "regulatory",
+          "pos": "adj.",
+          "def": "监管的；监督的"
+        },
+        {
+          "w": "post hoc",
+          "pos": "phr.",
+          "def": "事后的（拉丁语）"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 6,
+      "en": "Organizations such as the Food and Drug Administration (FDA) offer considerable monitoring and notification functions, but these roles typically do not involve preemptive censoring.",
+      "zh": "像食品药品监督管理局（FDA）这样的机构提供了大量的监测和通报职能，但这些职能通常并不包括事先审查。",
+      "grammar": {
+        "type": "并列句 + 转折",
+        "note": "such as the...(FDA) 为举例插入；主干 Organizations offer...functions, but these roles do not involve...；monitoring and notification 并列作定语修饰 functions。"
+      },
+      "words": [
+        {
+          "w": "considerable",
+          "pos": "adj.",
+          "def": "相当大的；大量的"
+        },
+        {
+          "w": "censoring",
+          "pos": "n.",
+          "def": "审查（内容）"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 6,
+      "en": "The FDA oversees direct-to-consumer prescription drug advertising, for example, and has developed mechanisms such as the 'Bad Ad' program, through which people can report advertising in apparent violation of FDA guidelines on drug risks.",
+      "zh": "例如，FDA负责监管面向消费者的处方药广告，并开发了诸如“不良广告”（Bad Ad）项目之类的机制，人们可以通过该机制举报明显违反FDA药物风险指南的广告。",
+      "grammar": {
+        "type": "并列谓语 + 介词关系从句",
+        "note": "主语 The FDA 带两个并列谓语 oversees...and has developed...；such as the 'Bad Ad' program 举例；through which people can report... 为“介词 + which”引导的定语从句；in apparent violation of... 为后置定语修饰 advertising。"
+      },
+      "words": [
+        {
+          "w": "oversee",
+          "pos": "v.",
+          "def": "监督；监管"
+        },
+        {
+          "w": "violation",
+          "pos": "n.",
+          "def": "违反；违规"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 6,
+      "en": "Such programs, although laudable and useful, do not keep false advertising off the airwaves.",
+      "zh": "这类项目尽管值得称道且有用，却无法使虚假广告远离电视广播。",
+      "grammar": {
+        "type": "让步插入语",
+        "note": "主干为 Such programs do not keep false advertising off the airwaves；although laudable and useful 为省略主谓的让步状语插入；keep...off... 表“使……远离”。"
+      },
+      "words": [
+        {
+          "w": "laudable",
+          "pos": "adj.",
+          "def": "值得称赞的"
+        },
+        {
+          "w": "airwaves",
+          "pos": "n.",
+          "def": "电波；广播（电视）频道"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 6,
+      "en": "In addition, even misinformation that is successfully corrected can continue to affect attitudes.",
+      "zh": "此外，即使是被成功纠正的错误信息，也可能继续影响人们的态度。",
+      "grammar": {
+        "type": "定语从句 + 让步",
+        "note": "that is successfully corrected 为定语从句修饰 misinformation；even 强调让步；主句谓语 can continue to affect attitudes。"
+      },
+      "words": [
+        {
+          "w": "correct",
+          "pos": "v.",
+          "def": "纠正；改正"
+        },
+        {
+          "w": "affect",
+          "pos": "v.",
+          "def": "影响"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 7,
+      "en": "This leads us to our third observation: a campaign to correct misinformation, even if rhetorically compelling, requires resources and planning to accomplish necessary reach and frequency.",
+      "zh": "这就引出了我们的第三个现象：一场旨在纠正错误信息的行动，即便在言辞上很有说服力，也需要资源和规划，才能达到必要的覆盖面和传播频率。",
+      "grammar": {
+        "type": "冒号引出 + 让步插入",
+        "note": "冒号后为核心内容，主干 a campaign...requires resources and planning；to correct misinformation 为不定式定语修饰 campaign；even if rhetorically compelling 为让步插入；to accomplish...reach and frequency 为目的状语。"
+      },
+      "words": [
+        {
+          "w": "compelling",
+          "pos": "adj.",
+          "def": "有说服力的；令人信服的"
+        },
+        {
+          "w": "frequency",
+          "pos": "n.",
+          "def": "频率；（传播的）次数"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 7,
+      "en": "For corrective campaigns to be persuasive, audiences need to be able to comprehend them, which requires either effort to frame messages in ways that are accessible or effort to educate and sensitize audiences to the possibility of misinformation.",
+      "zh": "要使纠正性的宣传具有说服力，受众必须能够理解它们，而这需要付出努力：要么以易于理解的方式组织信息，要么去教育受众、让他们对错误信息的可能性保持警觉。",
+      "grammar": {
+        "type": "for sb to do 结构 + 非限制性定语从句",
+        "note": "For corrective campaigns to be persuasive 为“for + 逻辑主语 + 不定式”作目的状语；主句 audiences need to be able to comprehend them；which requires... 为非限定性定语从句指代前一整句，either...or... 并列两个 effort to do。"
+      },
+      "words": [
+        {
+          "w": "comprehend",
+          "pos": "v.",
+          "def": "理解；领会"
+        },
+        {
+          "w": "sensitize",
+          "pos": "v.",
+          "def": "使敏感；使警觉"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 7,
+      "en": "That some audiences might be unaware of the potential for misinformation also suggests the utility of media literacy efforts as early as elementary school.",
+      "zh": "有些受众可能意识不到错误信息的存在，这一点也表明，早在小学阶段就开展媒介素养教育是有意义的。",
+      "grammar": {
+        "type": "主语从句",
+        "note": "That some audiences might be unaware of... 为 that 引导的主语从句；主句谓语 suggests the utility of...；as early as elementary school 为时间状语，强调“早至小学”。"
+      },
+      "words": [
+        {
+          "w": "utility",
+          "pos": "n.",
+          "def": "用处；效用"
+        },
+        {
+          "w": "media literacy",
+          "pos": "n.",
+          "def": "媒介素养"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 7,
+      "en": "Even with journalists and scholars pointing to the phenomenon of 'fake news', people do not distinguish between demonstrably false stories and those based in fact when scanning and processing written information.",
+      "zh": "即便有记者和学者不断指出“假新闻”这一现象，人们在浏览和处理文字信息时，仍然分不清那些明显虚假的报道与那些基于事实的报道。",
+      "grammar": {
+        "type": "with 复合结构 + 时间状语",
+        "note": "Even with journalists and scholars pointing to... 为 with 复合结构作让步状语；主句 people do not distinguish between A and B，those 指代 stories；when scanning and processing... 为省略主语的时间状语从句。"
+      },
+      "words": [
+        {
+          "w": "distinguish",
+          "pos": "v.",
+          "def": "区分；辨别"
+        },
+        {
+          "w": "demonstrably",
+          "pos": "adv.",
+          "def": "明显地；可证实地"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 8,
+      "en": "We live at a time when widespread misinformation is common.",
+      "zh": "我们生活在一个错误信息广泛存在、司空见惯的时代。",
+      "grammar": {
+        "type": "when 定语从句",
+        "note": "主干 We live at a time；when widespread misinformation is common 为定语从句修饰 time，when 作时间关系副词。"
+      },
+      "words": [
+        {
+          "w": "common",
+          "pos": "adj.",
+          "def": "常见的；普遍的"
+        },
+        {
+          "w": "widespread",
+          "pos": "adj.",
+          "def": "普遍的；广泛传播的"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 8,
+      "en": "Yet at this time many people also are passionately developing potential solutions and remedies.",
+      "zh": "然而，当下也有许多人正满怀热情地开发潜在的解决方案和补救办法。",
+      "grammar": {
+        "type": "转折 + 现在进行时",
+        "note": "Yet 表转折；主干 many people are developing solutions and remedies（现在进行时）；passionately 为方式状语，at this time 为时间状语。"
+      },
+      "words": [
+        {
+          "w": "remedy",
+          "pos": "n.",
+          "def": "补救办法；对策"
+        },
+        {
+          "w": "passionately",
+          "pos": "adv.",
+          "def": "满怀热情地"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 8,
+      "en": "The journey forward undoubtedly will be a long and arduous one.",
+      "zh": "前行的道路无疑将是漫长而艰辛的。",
+      "grammar": {
+        "type": "主系表",
+        "note": "The journey forward 为主语，forward 作后置定语；will be a long and arduous one 为系表结构，one 代指 journey。"
+      },
+      "words": [
+        {
+          "w": "arduous",
+          "pos": "adj.",
+          "def": "艰巨的；费力的"
+        },
+        {
+          "w": "undoubtedly",
+          "pos": "adv.",
+          "def": "无疑地"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 8,
+      "en": "Future remedies will require not only continued theoretical consideration but also the development and maintenance of consistent monitoring tools – and a recognition among fellow members of society that claims which find prominence in the media that are insufficiently based in scientific consensus and social reality should be countered.",
+      "zh": "未来的对策不仅需要持续的理论思考，还需要开发和维护稳定一致的监测工具——以及社会成员之间形成一种共识：那些在媒体上占据显要位置、却缺乏充分科学共识与社会现实依据的说法，应当受到抵制。",
+      "grammar": {
+        "type": "not only...but also + 同位语从句",
+        "note": "not only...but also... 并列两个宾语；破折号后 a recognition...that... 为同位语从句；其中 claims which find prominence in the media 与 that are insufficiently based in... 两层定语从句修饰 claims，主句谓语 should be countered。"
+      },
+      "words": [
+        {
+          "w": "prominence",
+          "pos": "n.",
+          "def": "显著；突出（地位）"
+        },
+        {
+          "w": "consensus",
+          "pos": "n.",
+          "def": "共识；一致意见"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 8,
+      "en": "Misinformation arises as a result of human fallibility and human information needs.",
+      "zh": "错误信息之所以产生，是人类易犯错误的天性与人类信息需求共同作用的结果。",
+      "grammar": {
+        "type": "as a result of 结构",
+        "note": "主干 Misinformation arises；as a result of... 表原因；human fallibility and human information needs 两个名词短语并列作原因。"
+      },
+      "words": [
+        {
+          "w": "arise",
+          "pos": "v.",
+          "def": "产生；出现"
+        },
+        {
+          "w": "fallibility",
+          "pos": "n.",
+          "def": "易犯错误（的特性）"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 8,
+      "en": "To overcome the worst effects of the phenomenon, we will need coordinated efforts over time, rather than any singular one-time panacea we could hope to offer.",
+      "zh": "要克服这一现象最糟糕的影响，我们需要的是长期协调一致的努力，而不是我们所能寄望提供的某种一劳永逸的灵丹妙药。",
+      "grammar": {
+        "type": "不定式目的状语 + rather than 对比",
+        "note": "To overcome... 为目的状语；主干 we will need coordinated efforts；rather than 引出对比，any singular one-time panacea (that) we could hope to offer 中省略了关系代词 that，we could hope to offer 为定语从句修饰 panacea。"
+      },
+      "words": [
+        {
+          "w": "coordinated",
+          "pos": "adj.",
+          "def": "协调的；配合的"
+        },
+        {
+          "w": "panacea",
+          "pos": "n.",
+          "def": "万能药；灵丹妙药"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 27-30 · Multiple choice",
+      "type": "mcq",
+      "instructions": [
+        "Choose the correct letter, A, B, C or D.",
+        "Write the correct letter in boxes 27-30 on your answer sheet."
+      ],
+      "items": [
+        {
+          "number": 27,
+          "prompt": "What point does the writer make about misinformation in the first paragraph?",
+          "options": [
+            "A  Misinformation is a relatively recent phenomenon.",
+            "B  Some people find it easy to identify misinformation.",
+            "C  Misinformation changes as it is passed from one person to another.",
+            "D  There may be a number of reasons for the spread of misinformation."
+          ],
+          "answer": "D",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 28,
+          "prompt": "What does the writer say about the role of technology?",
+          "options": [
+            "A  It may at some point provide us with a solution to misinformation.",
+            "B  It could fundamentally alter the way in which people regard information.",
+            "C  It has changed the way in which organisations use misinformation.",
+            "D  It has made it easier for people to check whether information is accurate."
+          ],
+          "answer": "A",
+          "evidence_sentence": 6
+        },
+        {
+          "number": 29,
+          "prompt": "What is the writer doing in the fourth paragraph?",
+          "options": [
+            "A  comparing the different opinions people have of misinformation",
+            "B  explaining how the effects of misinformation have changed over time",
+            "C  outlining which issues connected with misinformation are significant today",
+            "D  describing the attitude of policy makers towards misinformation in the media"
+          ],
+          "answer": "C",
+          "evidence_sentence": 9
+        },
+        {
+          "number": 30,
+          "prompt": "What point does the writer make about regulation in the USA?",
+          "options": [
+            "A  The guidelines issued by the FDA need to be simplified.",
+            "B  Regulation does not affect people's opinions of new prescription drugs.",
+            "C  The USA has more regulatory bodies than most other countries.",
+            "D  Regulation fails to prevent misinformation from appearing in the media."
+          ],
+          "answer": "D",
+          "evidence_sentence": 22
+        }
+      ]
+    },
+    {
+      "title": "Questions 31-36 · Summary completion",
+      "type": "summary",
+      "instructions": [
+        "Complete the summary using the list of phrases, A-J, below.",
+        "Write the correct letter, A-J, in boxes 31-36 on your answer sheet.",
+        "What happens when people encounter misinformation?",
+        "List of phrases: A constant conflict; B additional evidence; C different locations; D experimental subjects; E short period; F extreme distrust; G frequent exposure; H mental operation; I dubious reason; J different ideas."
+      ],
+      "items": [
+        {
+          "number": 31,
+          "prompt": "Although people have 31 ____ to misinformation, there is debate about precisely how and when we label something as true or untrue.",
+          "answer": "G",
+          "evidence_sentence": 14
+        },
+        {
+          "number": 32,
+          "prompt": "The philosophers Descartes and Spinoza had 32 ____ about how people engage with information.",
+          "answer": "J",
+          "evidence_sentence": 16
+        },
+        {
+          "number": 33,
+          "prompt": "Moreover, Spinoza believed that a distinct 33 ____ is involved in these stages.",
+          "answer": "H",
+          "evidence_sentence": 16
+        },
+        {
+          "number": 34,
+          "prompt": "Recent research has provided 34 ____ for Spinoza's theory and it would appear that people accept all encountered information as if it were true, even if this is for an extremely 35 ____ , and do not label the information as true or false until later.",
+          "answer": "B",
+          "evidence_sentence": 17
+        },
+        {
+          "number": 35,
+          "prompt": "... people accept all encountered information as if it were true, even if this is for an extremely 35 ____ , and do not label the information as true or false until later.",
+          "answer": "E",
+          "evidence_sentence": 17
+        },
+        {
+          "number": 36,
+          "prompt": "This is consistent with the fact that the resources for scepticism and the resources for perceiving and encoding are in 36 ____ in the brain.",
+          "answer": "C",
+          "evidence_sentence": 17
+        }
+      ]
+    },
+    {
+      "title": "Questions 37-40 · YES / NO / NOT GIVEN",
+      "type": "ynng",
+      "instructions": [
+        "Do the following statements agree with the claims of the writer in Reading Passage 3?",
+        "In boxes 37-40 on your answer sheet, write",
+        "YES if the statement agrees with the claims of the writer",
+        "NO if the statement contradicts the claims of the writer",
+        "NOT GIVEN if it is impossible to say what the writer thinks about this"
+      ],
+      "items": [
+        {
+          "number": 37,
+          "prompt": "Campaigns designed to correct misinformation will fail to achieve their purpose if people are unable to understand them.",
+          "answer": "YES",
+          "evidence_sentence": 25
+        },
+        {
+          "number": 38,
+          "prompt": "Attempts to teach elementary school students about misinformation have been opposed.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 26
+        },
+        {
+          "number": 39,
+          "prompt": "It may be possible to overcome the problem of misinformation in a relatively short period.",
+          "answer": "NO",
+          "evidence_sentence": 30
+        },
+        {
+          "number": 40,
+          "prompt": "The need to keep up with new information is hugely exaggerated in today's world.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 32
+        }
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "w": "misinformation",
+      "pos": "n.",
+      "def": "错误信息；虚假信息"
+    },
+    {
+      "w": "interpersonal bonds",
+      "pos": "n.",
+      "def": "人际关系纽带"
+    },
+    {
+      "w": "mass communication",
+      "pos": "n.",
+      "def": "大众传播"
+    },
+    {
+      "w": "misperception",
+      "pos": "n.",
+      "def": "错误认知；误解"
+    },
+    {
+      "w": "post hoc detection",
+      "pos": "n.",
+      "def": "事后检测"
+    },
+    {
+      "w": "Food and Drug Administration (FDA)",
+      "pos": "n.",
+      "def": "（美国）食品药品监督管理局"
+    },
+    {
+      "w": "media literacy",
+      "pos": "n.",
+      "def": "媒介素养"
+    },
+    {
+      "w": "fake news",
+      "pos": "n.",
+      "def": "假新闻"
+    },
+    {
+      "w": "scientific consensus",
+      "pos": "n.",
+      "def": "科学共识"
+    },
+    {
+      "w": "one-time panacea",
+      "pos": "n.",
+      "def": "一劳永逸的灵丹妙药"
+    }
+  ]
+}
