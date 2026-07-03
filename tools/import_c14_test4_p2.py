@@ -1,0 +1,592 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c14-test4-p2.json (Why zoos are good)."""
+import json
+import os
+
+RSQUO = "’"  # '
+LSQUO = "‘"  # '
+DASH = "–"   # –
+
+sentences = [
+    # Para A (1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "In my view, it is perfectly possible for many species of animals living in zoos or wildlife parks to have a quality of life as high as, or higher than, in the wild.",
+        "zh": "在我看来，许多生活在动物园或野生动物园里的物种，其生活质量完全有可能达到甚至高于在野外的水平。",
+        "grammar": {
+            "type": "形式主语 + 比较结构",
+            "note": "it is possible for... to have... 为形式主语结构，真正主语是 for many species... to have...；as high as, or higher than 为并列比较结构。"
+        },
+        "words": [
+            {"w": "in my view", "pos": "phr.", "def": "在我看来"},
+            {"w": "quality of life", "pos": "phr.", "def": "生活质量"},
+            {"w": "the wild", "pos": "n.", "def": "野外；野生环境"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Animals in good zoos get a varied and high-quality diet with all the supplements required, and any illnesses they might have will be treated.",
+        "zh": "好的动物园里的动物能得到多样化的高质量饮食，配有所需的一切营养补充，而且它们可能患的任何疾病都会得到治疗。",
+        "grammar": {
+            "type": "并列句 + 定语从句",
+            "note": "两个分句由 and 连接；any illnesses (that) they might have 中省略了关系代词 that。"
+        },
+        "words": [
+            {"w": "varied", "pos": "adj.", "def": "多样的；各式各样的"},
+            {"w": "diet", "pos": "n.", "def": "饮食；日常食物"},
+            {"w": "supplement", "pos": "n.", "def": "补充物；营养补充剂"},
+            {"w": "illness", "pos": "n.", "def": "疾病"},
+            {"w": "treat", "pos": "v.", "def": "治疗；医治"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "Their movement might be somewhat restricted, but they have a safe environment in which to live, and they are spared bullying and social ostracism by others of their kind.",
+        "zh": "它们的活动或许会受到一定限制，但它们拥有安全的生活环境，也免于遭受同类的欺凌和排斥。",
+        "grammar": {
+            "type": "转折并列句 + 定语从句",
+            "note": "but 连接转折；in which to live 为 “介词 + which + 不定式” 定语，修饰 environment；be spared sth 意为 “免受某事”。"
+        },
+        "words": [
+            {"w": "restricted", "pos": "adj.", "def": "受限制的"},
+            {"w": "spare", "pos": "v.", "def": "使免遭；免除"},
+            {"w": "bullying", "pos": "n.", "def": "欺凌；霸凌"},
+            {"w": "ostracism", "pos": "n.", "def": "排斥；排挤"},
+            {"w": "of their kind", "pos": "phr.", "def": "同类的"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 1,
+        "en": "They do not suffer from the threat or stress of predators, or the irritation and pain of parasites or injuries.",
+        "zh": "它们不会遭受捕食者带来的威胁或压力，也不会受到寄生虫或受伤造成的刺激与痛苦。",
+        "grammar": {
+            "type": "并列宾语",
+            "note": "suffer from 后接两组并列名词短语：the threat or stress of predators 与 the irritation and pain of parasites or injuries。"
+        },
+        "words": [
+            {"w": "suffer from", "pos": "phr.", "def": "遭受；受……之苦"},
+            {"w": "predator", "pos": "n.", "def": "捕食者；食肉动物"},
+            {"w": "irritation", "pos": "n.", "def": "刺激；疼痛不适"},
+            {"w": "parasite", "pos": "n.", "def": "寄生虫"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 1,
+        "en": "The average captive animal will have a greater life expectancy compared with its wild counterpart, and will not die of drought, of starvation or in the jaws of a predator.",
+        "zh": "与野外的同类相比，一般的圈养动物寿命更长，而且不会死于干旱、饥饿，也不会命丧捕食者之口。",
+        "grammar": {
+            "type": "并列谓语 + 比较状语",
+            "note": "主语 The average captive animal 带两个并列谓语 will have... 和 will not die...；compared with its wild counterpart 为比较状语；in the jaws of a predator 意为 “在捕食者口中”。"
+        },
+        "words": [
+            {"w": "captive", "pos": "adj.", "def": "被圈养的；被俘的"},
+            {"w": "life expectancy", "pos": "phr.", "def": "预期寿命"},
+            {"w": "counterpart", "pos": "n.", "def": "对应的人或物；同类"},
+            {"w": "drought", "pos": "n.", "def": "干旱"},
+            {"w": "starvation", "pos": "n.", "def": "饥饿；饿死"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 1,
+        "en": "A lot of very nasty things happen to truly " + LSQUO + "wild" + RSQUO + " animals that simply don" + RSQUO + "t happen in good zoos, and to view a life that is " + LSQUO + "free" + RSQUO + " as one that is automatically " + LSQUO + "good" + RSQUO + " is, I think, an error.",
+        "zh": "许多非常糟糕的事情会发生在真正的“野生”动物身上，而这些在好的动物园里根本不会发生；我认为，把“自由”的生活想当然地视为“美好”的生活，是一种错误。",
+        "grammar": {
+            "type": "并列句 + 定语从句 + 动名词主语",
+            "note": "前半句 that simply don't happen... 为定语从句修饰 things；后半句以动名词短语 to view a life... as one... 作主语，view A as B 意为 “把 A 视为 B”。"
+        },
+        "words": [
+            {"w": "nasty", "pos": "adj.", "def": "糟糕的；令人不快的"},
+            {"w": "view ... as", "pos": "phr.", "def": "把……视为"},
+            {"w": "automatically", "pos": "adv.", "def": "自动地；想当然地"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 1,
+        "en": "Furthermore, zoos serve several key purposes.",
+        "zh": "此外，动物园还发挥着若干关键作用。",
+        "grammar": {
+            "type": "简单句",
+            "note": "Furthermore 为承接副词，引出下文；serve a purpose 意为 “起作用、达到目的”。"
+        },
+        "words": [
+            {"w": "furthermore", "pos": "adv.", "def": "此外；而且"},
+            {"w": "serve a purpose", "pos": "phr.", "def": "起作用；达到目的"}
+        ]
+    },
+    # Para B (2)
+    {
+        "id": 8,
+        "para": 2,
+        "en": "Firstly, zoos aid conservation.",
+        "zh": "首先，动物园有助于物种保护。",
+        "grammar": {
+            "type": "简单句",
+            "note": "Firstly 为列举顺序副词；aid 此处作及物动词，意为 “有助于、帮助”。"
+        },
+        "words": [
+            {"w": "aid", "pos": "v.", "def": "帮助；有助于"},
+            {"w": "conservation", "pos": "n.", "def": "（对自然环境、物种的）保护"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "Colossal numbers of species are becoming extinct across the world, and many more are increasingly threatened and therefore risk extinction.",
+        "zh": "全世界正有大量物种走向灭绝，还有更多物种日益受到威胁，因而面临灭绝的风险。",
+        "grammar": {
+            "type": "并列句",
+            "note": "and 连接两个分句；risk doing/risk sth 意为 “冒……的风险”，此处 risk extinction 即 “面临灭绝风险”。"
+        },
+        "words": [
+            {"w": "colossal", "pos": "adj.", "def": "巨大的；庞大的"},
+            {"w": "extinct", "pos": "adj.", "def": "灭绝的"},
+            {"w": "threatened", "pos": "adj.", "def": "受到威胁的"},
+            {"w": "extinction", "pos": "n.", "def": "灭绝"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "Moreover, some of these collapses have been sudden, dramatic and unexpected, or were simply discovered very late in the day.",
+        "zh": "而且，其中一些（种群）崩溃来得突然、剧烈、出人意料，或者只是被发现得太晚了。",
+        "grammar": {
+            "type": "系表并列 + 被动",
+            "note": "have been sudden, dramatic and unexpected 为系表结构；or were simply discovered... 为被动；late in the day 为习语，意为 “为时已晚”。"
+        },
+        "words": [
+            {"w": "moreover", "pos": "adv.", "def": "此外；而且"},
+            {"w": "collapse", "pos": "n.", "def": "崩溃；（数量的）骤减"},
+            {"w": "dramatic", "pos": "adj.", "def": "剧烈的；引人注目的"},
+            {"w": "late in the day", "pos": "phr.", "def": "为时已晚"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 2,
+        "en": "A species protected in captivity can be bred up to provide a reservoir population against a population crash or extinction in the wild.",
+        "zh": "受到圈养保护的物种可以繁育壮大，形成一个储备种群，以应对野外种群骤减或灭绝。",
+        "grammar": {
+            "type": "过去分词定语 + 被动",
+            "note": "protected in captivity 为过去分词短语作后置定语修饰 A species；be bred up 为被动，breed 意为 “繁育”；against 此处表 “以防、抵御”。"
+        },
+        "words": [
+            {"w": "in captivity", "pos": "phr.", "def": "被圈养地；被囚禁地"},
+            {"w": "breed", "pos": "v.", "def": "繁育；使繁殖"},
+            {"w": "reservoir", "pos": "n.", "def": "储备；蓄积（此处作定语指储备种群）"},
+            {"w": "crash", "pos": "n.", "def": "骤降；暴跌"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 2,
+        "en": "A good number of species only exist in captivity, with many of these living in zoos.",
+        "zh": "相当多的物种只存在于圈养环境中，其中许多就生活在动物园里。",
+        "grammar": {
+            "type": "with 独立主格",
+            "note": "with many of these living in zoos 为 “with + 名词 + 现在分词” 的独立主格结构，作伴随状语；a good number of 意为 “相当多的”。"
+        },
+        "words": [
+            {"w": "a good number of", "pos": "phr.", "def": "相当多的"},
+            {"w": "exist", "pos": "v.", "def": "存在"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 2,
+        "en": "Still more only exist in the wild because they have been reintroduced from zoos, or have wild populations that have been boosted by captive bred animals.",
+        "zh": "还有更多物种之所以能存在于野外，是因为它们从动物园被重新引入，或者其野外种群借助圈养繁育的动物得到了补充壮大。",
+        "grammar": {
+            "type": "原因状语从句 + 定语从句",
+            "note": "because 引导原因状语从句，从句内含两个并列谓语 have been reintroduced 与 have wild populations...；that have been boosted... 为定语从句修饰 populations。"
+        },
+        "words": [
+            {"w": "reintroduce", "pos": "v.", "def": "重新引入（物种）"},
+            {"w": "boost", "pos": "v.", "def": "增强；促进；使增长"},
+            {"w": "captive bred", "pos": "adj.", "def": "人工圈养繁育的"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 2,
+        "en": "Without these efforts there would be fewer species alive today.",
+        "zh": "如果没有这些努力，如今存活的物种就会更少。",
+        "grammar": {
+            "type": "虚拟条件（含蓄条件）",
+            "note": "Without these efforts 为含蓄虚拟条件，相当于 if it were not for these efforts；主句用 there would be 表与现在事实相反的假设。"
+        },
+        "words": [
+            {"w": "effort", "pos": "n.", "def": "努力；付出"},
+            {"w": "alive", "pos": "adj.", "def": "活着的"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 2,
+        "en": "Although reintroduction successes are few and far between, the numbers are increasing, and the very fact that species have been saved or reintroduced as a result of captive breeding proves the value of such initiatives.",
+        "zh": "尽管重新引入的成功案例寥寥无几，但其数量正在增加；而物种得以因圈养繁育被拯救或重新引入这一事实本身，就证明了此类举措的价值。",
+        "grammar": {
+            "type": "让步状语从句 + 同位语从句",
+            "note": "Although 引导让步状语从句；the very fact that... 为同位语从句解释 fact，其中 the very 起强调作用；few and far between 为习语，意为 “稀少的”。"
+        },
+        "words": [
+            {"w": "few and far between", "pos": "phr.", "def": "稀少的；寥寥无几的"},
+            {"w": "the very", "pos": "phr.", "def": "正是这个；……本身（强调）"},
+            {"w": "initiative", "pos": "n.", "def": "倡议；新举措"}
+        ]
+    },
+    # Para C (3)
+    {
+        "id": 16,
+        "para": 3,
+        "en": "Zoos also provide education.",
+        "zh": "动物园还提供教育功能。",
+        "grammar": {
+            "type": "简单句",
+            "note": "also 承接上文列举的另一作用；provide education 意为 “提供教育”。"
+        },
+        "words": [
+            {"w": "provide", "pos": "v.", "def": "提供"},
+            {"w": "education", "pos": "n.", "def": "教育"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 3,
+        "en": "Many children and adults, especially those in cities, will never see a wild animal beyond a fox or pigeon.",
+        "zh": "许多儿童和成年人，尤其是城市里的人，除了狐狸或鸽子之外，一辈子都见不到野生动物。",
+        "grammar": {
+            "type": "简单句 + 插入语",
+            "note": "especially those in cities 为插入语补充说明主语；beyond 此处意为 “除……之外”；those 指代 children and adults。"
+        },
+        "words": [
+            {"w": "beyond", "pos": "prep.", "def": "超过；除……以外"},
+            {"w": "pigeon", "pos": "n.", "def": "鸽子"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 3,
+        "en": "While it is true that television documentaries are becoming ever more detailed and impressive, and many natural history specimens are on display in museums, there really is nothing to compare with seeing a living creature in the flesh, hearing it, smelling it, watching what it does and having the time to absorb details.",
+        "zh": "虽然电视纪录片确实越来越细致、越来越震撼，许多自然史标本也在博物馆里展出，但没有什么能比得上亲眼看到一个活生生的生物、听它、闻它、观察它的举动，并有时间去细细体会各种细节。",
+        "grammar": {
+            "type": "让步状语从句 + 并列动名词",
+            "note": "While 引导让步状语从句（内含两个并列分句）；主句 there is nothing to compare with 后接一系列并列动名词短语 seeing... hearing... smelling... watching... having...；in the flesh 意为 “亲眼、本人”。"
+        },
+        "words": [
+            {"w": "documentary", "pos": "n.", "def": "纪录片"},
+            {"w": "specimen", "pos": "n.", "def": "标本；样本"},
+            {"w": "on display", "pos": "phr.", "def": "展出；陈列"},
+            {"w": "in the flesh", "pos": "phr.", "def": "亲眼；本人亲自"},
+            {"w": "absorb", "pos": "v.", "def": "吸收；领会"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 3,
+        "en": "That alone will bring a greater understanding and perspective to many, and hopefully give them a greater appreciation for wildlife, conservation efforts and how they can contribute.",
+        "zh": "仅凭这一点，就能让许多人获得更深的理解与视角，并有望使他们更加珍视野生动物、保护工作，以及自己能作出怎样的贡献。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "主语 That alone 带两个并列谓语 will bring... 和 give...；how they can contribute 为并列宾语之一（与 wildlife、conservation efforts 并列作 appreciation for 的宾语）。"
+        },
+        "words": [
+            {"w": "perspective", "pos": "n.", "def": "视角；看法"},
+            {"w": "appreciation", "pos": "n.", "def": "欣赏；重视；理解"},
+            {"w": "contribute", "pos": "v.", "def": "贡献；出力"}
+        ]
+    },
+    # Para D (4)
+    {
+        "id": 20,
+        "para": 4,
+        "en": "In addition to this, there is also the education that can take place in zoos through signs, talks and presentations which directly communicate information to visitors about the animals they are seeing and their place in the world.",
+        "zh": "除此之外，动物园里还能通过标识、讲解和展示进行教育，这些方式直接向游客传达有关他们所看到的动物及其在自然界中所处地位的信息。",
+        "grammar": {
+            "type": "there be + 双层定语从句",
+            "note": "主干 there is also the education；that can take place... 为定语从句修饰 education；which directly communicate... 为定语从句修饰 signs, talks and presentations；(that) they are seeing 又省略关系代词修饰 the animals。"
+        },
+        "words": [
+            {"w": "in addition to", "pos": "phr.", "def": "除……之外（还）"},
+            {"w": "take place", "pos": "phr.", "def": "发生；进行"},
+            {"w": "presentation", "pos": "n.", "def": "展示；讲演"},
+            {"w": "communicate", "pos": "v.", "def": "传达；传递（信息）"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 4,
+        "en": "This was an area where zoos used to be lacking, but they are now increasingly sophisticated in their communication and outreach work.",
+        "zh": "这曾是动物园过去较为欠缺的一个方面，但如今它们在信息传达和对外推广工作上日益成熟老练。",
+        "grammar": {
+            "type": "定语从句 + 转折并列",
+            "note": "where zoos used to be lacking 为定语从句修饰 area；but 连接转折分句；used to do 意为 “过去常常”，be lacking 意为 “欠缺”。"
+        },
+        "words": [
+            {"w": "used to", "pos": "phr.", "def": "过去常常（现已不然）"},
+            {"w": "lacking", "pos": "adj.", "def": "缺乏的；不足的"},
+            {"w": "sophisticated", "pos": "adj.", "def": "复杂精密的；老练成熟的"},
+            {"w": "outreach", "pos": "n.", "def": "外展服务；对外推广"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 4,
+        "en": "Many zoos also work directly to educate conservation workers in other countries, or send their animal keepers abroad to contribute their knowledge and skills to those working in zoos and reserves, thereby helping to improve conditions and reintroductions all over the world.",
+        "zh": "许多动物园还直接致力于培训其他国家的保护工作者，或把自己的饲养员派往国外，向在动物园和保护区工作的人贡献知识与技能，从而帮助改善世界各地的（动物）生存条件并推动物种重新引入。",
+        "grammar": {
+            "type": "并列谓语 + 目的状语 + 分词状语",
+            "note": "两个并列谓语 work to educate... 与 send their animal keepers abroad...；to contribute... 为目的状语；thereby helping... 为现在分词短语作结果状语；those working in... 中 those 指人。"
+        },
+        "words": [
+            {"w": "animal keeper", "pos": "phr.", "def": "动物饲养员"},
+            {"w": "abroad", "pos": "adv.", "def": "在国外；到国外"},
+            {"w": "reserve", "pos": "n.", "def": "保护区"},
+            {"w": "thereby", "pos": "adv.", "def": "从而；由此"}
+        ]
+    },
+    # Para E (5)
+    {
+        "id": 23,
+        "para": 5,
+        "en": "Zoos also play a key role in research.",
+        "zh": "动物园在科研方面也发挥着关键作用。",
+        "grammar": {
+            "type": "简单句",
+            "note": "play a key role in 意为 “在……中起关键作用”；research 为不可数名词。"
+        },
+        "words": [
+            {"w": "play a role in", "pos": "phr.", "def": "在……中发挥作用"},
+            {"w": "research", "pos": "n.", "def": "研究；科研"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": "If we are to save wild species and restore and repair ecosystems we need to know about how key species live, act and react.",
+        "zh": "如果我们要拯救野生物种、恢复并修复生态系统，就需要了解关键物种如何生活、行动和反应。",
+        "grammar": {
+            "type": "条件状语从句 + 宾语从句",
+            "note": "If 引导条件状语从句，be to do 表 “打算、必须”；主句 we need to know about...；how key species live, act and react 为宾语从句（三个并列谓语）。"
+        },
+        "words": [
+            {"w": "restore", "pos": "v.", "def": "恢复；使复原"},
+            {"w": "repair", "pos": "v.", "def": "修复；修补"},
+            {"w": "ecosystem", "pos": "n.", "def": "生态系统"},
+            {"w": "react", "pos": "v.", "def": "反应；作出回应"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": "Being able to undertake research on animals in zoos where there is less risk and fewer variables means real changes can be effected on wild populations.",
+        "zh": "能够在风险更小、变量更少的动物园里对动物开展研究，意味着可以对野外种群带来切实的改变。",
+        "grammar": {
+            "type": "动名词主语 + 定语从句",
+            "note": "动名词短语 Being able to undertake research... 作主语；where there is less risk... 为定语从句修饰 zoos；means 后接省略 that 的宾语从句；be effected 意为 “被实现、被促成”。"
+        },
+        "words": [
+            {"w": "undertake", "pos": "v.", "def": "着手；从事；进行"},
+            {"w": "variable", "pos": "n.", "def": "变量；可变因素"},
+            {"w": "effect", "pos": "v.", "def": "使发生；实现（改变）"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 5,
+        "en": "Finding out about, for example, the oestrus cycle of an animal or its breeding rate helps us manage wild populations.",
+        "zh": "例如，弄清一种动物的发情周期或其繁殖率，有助于我们管理野外种群。",
+        "grammar": {
+            "type": "动名词主语 + 插入语",
+            "note": "动名词短语 Finding out about... 作主语；for example 为插入语；help sb do 意为 “帮助某人做某事”。"
+        },
+        "words": [
+            {"w": "find out about", "pos": "phr.", "def": "了解；查明关于……"},
+            {"w": "oestrus cycle", "pos": "phr.", "def": "发情周期"},
+            {"w": "breeding rate", "pos": "phr.", "def": "繁殖率"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 5,
+        "en": "Procedures such as capturing and moving at-risk or dangerous individuals are bolstered by knowledge gained in zoos about doses for anaesthetics, and by experience in handling and transporting animals.",
+        "zh": "诸如捕捉和转移濒危或危险个体之类的操作，依靠在动物园中获得的关于麻醉剂用量的知识，以及处理和运输动物的经验，得到了有力支撑。",
+        "grammar": {
+            "type": "被动 + 过去分词定语",
+            "note": "主干 Procedures... are bolstered by... and by...；such as capturing and moving... 举例说明 Procedures；gained in zoos 为过去分词短语作定语修饰 knowledge。"
+        },
+        "words": [
+            {"w": "procedure", "pos": "n.", "def": "程序；步骤；操作"},
+            {"w": "at-risk", "pos": "adj.", "def": "处于危险中的；濒危的"},
+            {"w": "bolster", "pos": "v.", "def": "支持；加强"},
+            {"w": "dose", "pos": "n.", "def": "剂量；用量"},
+            {"w": "anaesthetic", "pos": "n.", "def": "麻醉剂"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 5,
+        "en": "This can make a real difference to conservation efforts and to the reduction of human" + DASH + "animal conflicts, and can provide a knowledge base for helping with the increasing threats of habitat destruction and other problems.",
+        "zh": "这能对保护工作以及减少人与动物之间的冲突产生实实在在的影响，还能为应对日益加剧的栖息地破坏及其他问题提供知识基础。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "主语 This 带两个并列谓语 can make a real difference... 与 can provide a knowledge base...；make a difference to 意为 “对……产生影响”。"
+        },
+        "words": [
+            {"w": "make a difference", "pos": "phr.", "def": "有影响；起作用"},
+            {"w": "conflict", "pos": "n.", "def": "冲突；矛盾"},
+            {"w": "knowledge base", "pos": "phr.", "def": "知识库；知识基础"},
+            {"w": "habitat", "pos": "n.", "def": "栖息地"},
+            {"w": "destruction", "pos": "n.", "def": "破坏；毁灭"}
+        ]
+    },
+    # Para F (6)
+    {
+        "id": 29,
+        "para": 6,
+        "en": "In conclusion, considering the many ongoing global threats to the environment, it is hard for me to see zoos as anything other than essential to the long-term survival of numerous species.",
+        "zh": "总而言之，考虑到当前环境面临的诸多持续性全球威胁，我很难不把动物园视为对众多物种长期存续至关重要的存在。",
+        "grammar": {
+            "type": "形式主语 + 分词状语",
+            "note": "considering... 为现在分词短语作状语；it is hard for me to see... 为形式主语结构；see A as anything other than B 意为 “只能把 A 看作 B（而非别的）”。"
+        },
+        "words": [
+            {"w": "in conclusion", "pos": "phr.", "def": "总之；最后"},
+            {"w": "ongoing", "pos": "adj.", "def": "持续进行的"},
+            {"w": "anything other than", "pos": "phr.", "def": "除……之外的任何（用于否定，强调 “只能是”）"},
+            {"w": "essential", "pos": "adj.", "def": "必不可少的；至关重要的"},
+            {"w": "numerous", "pos": "adj.", "def": "众多的；许多的"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 6,
+        "en": "They are vital not just in terms of protecting animals, but as a means of learning about them to aid those still in the wild, as well as educating and informing the general population about these animals and their world so that they can assist or at least accept the need to be more environmentally conscious.",
+        "zh": "它们的重要性不仅体现在保护动物上，还在于成为了解动物、进而帮助仍在野外的动物的手段，同时也向公众普及有关这些动物及其世界的知识，使人们能够协助——或至少认可——更具环保意识的必要性。",
+        "grammar": {
+            "type": "not just ... but ... 并列 + 目的状语从句",
+            "note": "not just... but... 连接两组并列成分；as well as educating... 补充并列；to aid those still in the wild 为目的状语；so that they can assist... 为目的状语从句。"
+        },
+        "words": [
+            {"w": "vital", "pos": "adj.", "def": "至关重要的"},
+            {"w": "in terms of", "pos": "phr.", "def": "就……而言；在……方面"},
+            {"w": "a means of", "pos": "phr.", "def": "……的手段/方法"},
+            {"w": "the general population", "pos": "phr.", "def": "普通大众；公众"},
+            {"w": "environmentally conscious", "pos": "phr.", "def": "有环保意识的"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 6,
+        "en": "Without them, the world would be, and would increasingly become, a much poorer place.",
+        "zh": "没有它们，世界将会——而且会越来越——变得贫乏得多。",
+        "grammar": {
+            "type": "虚拟条件（含蓄条件）+ 并列谓语",
+            "note": "Without them 为含蓄虚拟条件；主句用两个并列谓语 would be 和 would increasingly become 表与现在相反的假设；a much poorer place 中 much 修饰比较级 poorer。"
+        },
+        "words": [
+            {"w": "poorer", "pos": "adj.", "def": "更贫乏的；更差的（poor 的比较级）"},
+            {"w": "increasingly", "pos": "adv.", "def": "越来越；日益"}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "quality of life", "pos": "phr.", "def": "生活质量"},
+    {"w": "in captivity", "pos": "phr.", "def": "被圈养地；被囚禁地"},
+    {"w": "life expectancy", "pos": "phr.", "def": "预期寿命"},
+    {"w": "few and far between", "pos": "phr.", "def": "稀少的；寥寥无几的"},
+    {"w": "in the flesh", "pos": "phr.", "def": "亲眼；本人亲自"},
+    {"w": "play a role in", "pos": "phr.", "def": "在……中发挥作用"},
+    {"w": "make a difference", "pos": "phr.", "def": "有影响；起作用"},
+    {"w": "in terms of", "pos": "phr.", "def": "就……而言；在……方面"},
+    {"w": "in conclusion", "pos": "phr.", "def": "总之；最后"},
+    {"w": "used to", "pos": "phr.", "def": "过去常常（现已不然）"}
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "17",
+        "type": "matching_information",
+        "instructions": [
+            "Reading Passage 2 has six paragraphs, A" + DASH + "F.",
+            "Which paragraph contains the following information?",
+            "Write the correct letter, A" + DASH + "F, in boxes 14" + DASH + "17 on your answer sheet."
+        ],
+        "items": [
+            {"number": 14, "prompt": "a reference to how quickly animal species can die out", "answer": "B", "evidence_sentence": 10},
+            {"number": 15, "prompt": "reasons why it is preferable to study animals in captivity rather than in the wild", "answer": "E", "evidence_sentence": 25},
+            {"number": 16, "prompt": "mention of two ways of learning about animals other than visiting them in zoos", "answer": "C", "evidence_sentence": 18},
+            {"number": 17, "prompt": "reasons why animals in zoos may be healthier than those in the wild", "answer": "A", "evidence_sentence": 2}
+        ]
+    },
+    {
+        "title": "Questions 18" + DASH + "22",
+        "type": "true_false_notgiven",
+        "instructions": [
+            "Do the following statements agree with the information given in Reading Passage 2?",
+            "In boxes 18" + DASH + "22 on your answer sheet, write",
+            "TRUE if the statement agrees with the information",
+            "FALSE if the statement contradicts the information",
+            "NOT GIVEN if there is no information on this"
+        ],
+        "items": [
+            {"number": 18, "prompt": "An animal is likely to live longer in a zoo than in the wild.", "answer": "TRUE", "evidence_sentence": 5},
+            {"number": 19, "prompt": "There are some species in zoos which can no longer be found in the wild.", "answer": "TRUE", "evidence_sentence": 12},
+            {"number": 20, "prompt": "Improvements in the quality of TV wildlife documentaries have resulted in increased numbers of zoo visitors.", "answer": "NOT GIVEN", "evidence_sentence": 18},
+            {"number": 21, "prompt": "Zoos have always excelled at transmitting information about animals to the public.", "answer": "FALSE", "evidence_sentence": 21},
+            {"number": 22, "prompt": "Studying animals in zoos is less stressful for the animals than studying them in the wild.", "answer": "NOT GIVEN", "evidence_sentence": 25}
+        ]
+    },
+    {
+        "title": "Questions 23 and 24",
+        "type": "multiple_choice_two",
+        "instructions": [
+            "Choose TWO letters, A" + DASH + "E.",
+            "Write the correct letters in boxes 23 and 24 on your answer sheet.",
+            "Which TWO of the following are stated about zoo staff in the text?"
+        ],
+        "items": [
+            {"number": 23, "prompt": "A  Some take part in television documentaries about animals.\nB  Some travel to overseas locations to join teams in zoos.\nC  Some get experience with species in the wild before taking up zoo jobs.\nD  Some teach people who are involved with conservation projects.\nE  Some specialise in caring for species which are under threat.", "answer": "B, D", "evidence_sentence": 22},
+            {"number": 24, "prompt": "(See Question 23 " + DASH + " choose the second of the TWO correct letters.)", "answer": "B, D", "evidence_sentence": 22}
+        ]
+    },
+    {
+        "title": "Questions 25 and 26",
+        "type": "multiple_choice_two",
+        "instructions": [
+            "Choose TWO letters, A" + DASH + "E.",
+            "Write the correct letters in boxes 25 and 26 on your answer sheet.",
+            "Which TWO of these beliefs about zoos does the writer mention in the text?"
+        ],
+        "items": [
+            {"number": 25, "prompt": "A  They can help children overcome their fears of wild animals.\nB  They can increase public awareness of environmental issues.\nC  They can provide employment for a range of professional people.\nD  They can generate income to support wildlife conservation projects.\nE  They can raise animals which can later be released into the wild.", "answer": "B, E", "evidence_sentence": 19},
+            {"number": 26, "prompt": "(See Question 25 " + DASH + " choose the second of the TWO correct letters.)", "answer": "B, E", "evidence_sentence": 13}
+        ]
+    }
+]
+
+data = {
+    "id": "c14-test4-p2",
+    "source": "剑桥雅思14 Test 4 Passage 2",
+    "title": "Why zoos are good",
+    "subtitle": "Scientist David Hone makes the case for zoos",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c14-test4-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))

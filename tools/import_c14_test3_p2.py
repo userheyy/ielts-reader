@@ -1,0 +1,598 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c14-test3-p2.json (Saving bugs to find new drugs)."""
+import json
+import os
+
+RSQUO = "’"
+LSQUO = "‘"
+DASH = "–"
+
+sentences = [
+    # Section A (1)
+    {
+        "id": 1,
+        "para": 1,
+        "en": "More drugs than you might think are derived from, or inspired by, compounds found in living things.",
+        "zh": "比你可能以为的更多的药物，都源自或受启发于在生物体中发现的化合物。",
+        "grammar": {
+            "type": "比较结构 + 过去分词定语",
+            "note": "主语 More drugs than you might think，than 引出比较；谓语 are derived from, or inspired by, compounds；found in living things 为过去分词短语作 compounds 的后置定语。"
+        },
+        "words": [
+            {"w": "be derived from", "pos": "phr.", "def": "源自；由……得来"},
+            {"w": "compound", "pos": "n.", "def": "化合物"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "Looking to nature for the soothing and curing of our ailments is nothing new " + DASH + " we have been doing it for tens of thousands of years.",
+        "zh": "向自然寻求缓解和治愈我们病痛的方法，并不是什么新鲜事——我们已经这样做了数万年。",
+        "grammar": {
+            "type": "动名词主语 + 破折号 + 现在完成进行时",
+            "note": "主语为动名词短语 Looking to nature for the soothing and curing of our ailments，谓语 is nothing new；破折号后 we have been doing it for tens of thousands of years 为现在完成进行时，表持续。"
+        },
+        "words": [
+            {"w": "soothe", "pos": "v.", "def": "缓解；抚慰"},
+            {"w": "ailment", "pos": "n.", "def": "小病；不适"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "You only have to look at other primates " + DASH + " such as the capuchin monkeys who rub themselves with toxin-oozing millipedes to deter mosquitoes, or the chimpanzees who use noxious forest plants to rid themselves of intestinal parasites " + DASH + " to realise that our ancient ancestors too probably had a basic grasp of medicine.",
+        "zh": "你只需看看其他灵长类动物——比如用会渗出毒素的马陆蹭身以驱赶蚊子的卷尾猴，或利用有毒的林间植物来清除肠道寄生虫的黑猩猩——就能意识到，我们远古的祖先很可能也掌握了基本的医术。",
+        "grammar": {
+            "type": "have to do...to do + 破折号插入 + who 定语从句",
+            "note": "主干 You only have to look at other primates... to realise that...，only have to do... to do... 意为“只需……就能……”；两破折号间为举例，含两个 who 定语从句；to realise that our ancient ancestors too probably had a basic grasp of medicine 为不定式结果，that 引导宾语从句。"
+        },
+        "words": [
+            {"w": "primate", "pos": "n.", "def": "灵长类动物"},
+            {"w": "intestinal parasite", "pos": "n.", "def": "肠道寄生虫"}
+        ]
+    },
+    # Section B (2)
+    {
+        "id": 4,
+        "para": 2,
+        "en": "Pharmaceutical science and chemistry built on these ancient foundations and perfected the extraction, characterisation, modification and testing of these natural products.",
+        "zh": "制药科学和化学在这些古老的基础上加以发展，完善了对这些天然产物的提取、表征、改造和检测。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "主语 Pharmaceutical science and chemistry 带两并列谓语 built on these ancient foundations 与 perfected the extraction, characterisation, modification and testing...；build on 意为“以……为基础发展”。"
+        },
+        "words": [
+            {"w": "pharmaceutical", "pos": "adj.", "def": "制药的；药物的"},
+            {"w": "extraction", "pos": "n.", "def": "提取；提炼"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 2,
+        "en": "Then, for a while, modern pharmaceutical science moved its focus away from nature and into the laboratory, designing chemical compounds from scratch.",
+        "zh": "此后有一段时间，现代制药科学把重心从自然转移到了实验室，从零开始设计化学化合物。",
+        "grammar": {
+            "type": "现在分词状语 + away from...into 对照",
+            "note": "主干 modern pharmaceutical science moved its focus away from nature and into the laboratory，away from... and into... 构成方向对照；designing chemical compounds from scratch 为现在分词状语，from scratch 意为“从零开始”。"
+        },
+        "words": [
+            {"w": "from scratch", "pos": "phr.", "def": "从零开始；从头做起"},
+            {"w": "laboratory", "pos": "n.", "def": "实验室"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 2,
+        "en": "The main cause of this shift is that although there are plenty of promising chemical compounds in nature, finding them is far from easy.",
+        "zh": "这种转变的主要原因在于：尽管自然界中有大量前景可期的化学化合物，要找到它们却绝非易事。",
+        "grammar": {
+            "type": "表语从句 + 让步从句 + 动名词主语",
+            "note": "主干 The main cause of this shift is that...；表语从句内含 although there are plenty of promising chemical compounds in nature 让步从句，主句 finding them is far from easy，finding them 为动名词主语，far from 意为“远非”。"
+        },
+        "words": [
+            {"w": "promising", "pos": "adj.", "def": "有前景的；有希望的"},
+            {"w": "far from", "pos": "phr.", "def": "远非；一点也不"}
+        ]
+    },
+    {
+        "id": 7,
+        "para": 2,
+        "en": "Securing sufficient numbers of the organism in question, isolating and characterising the compounds of interest, and producing large quantities of these compounds are all significant hurdles.",
+        "zh": "获取足够数量的相关生物、分离并表征所关注的化合物、以及大量生产这些化合物，都是重大的难关。",
+        "grammar": {
+            "type": "动名词并列主语",
+            "note": "主语由三个并列动名词短语构成：Securing sufficient numbers of the organism、isolating and characterising the compounds、producing large quantities of these compounds；谓语 are all significant hurdles；in question 意为“所讨论的、相关的”。"
+        },
+        "words": [
+            {"w": "isolate", "pos": "v.", "def": "分离；使隔离"},
+            {"w": "hurdle", "pos": "n.", "def": "障碍；难关"}
+        ]
+    },
+    # Section C (3)
+    {
+        "id": 8,
+        "para": 3,
+        "en": "Laboratory-based drug discovery has achieved varying levels of success, something which has now prompted the development of new approaches focusing once again on natural products.",
+        "zh": "基于实验室的药物研发取得的成效参差不齐，而这如今促使人们开发出重新聚焦于天然产物的新方法。",
+        "grammar": {
+            "type": "同位语 + 定语从句 + 现在分词定语",
+            "note": "主干 Laboratory-based drug discovery has achieved varying levels of success；something 为对前句的同位概括，which has now prompted the development of new approaches 为定语从句；focusing once again on natural products 为现在分词定语修饰 approaches。"
+        },
+        "words": [
+            {"w": "varying", "pos": "adj.", "def": "不同的；参差的"},
+            {"w": "prompt", "pos": "v.", "def": "促使；推动"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 3,
+        "en": "With the ability to mine genomes for useful compounds, it is now evident that we have barely scratched the surface of nature" + RSQUO + "s molecular diversity.",
+        "zh": "有了从基因组中发掘有用化合物的能力，现在显而易见的是，我们对自然界分子多样性的了解还只是皮毛。",
+        "grammar": {
+            "type": "with 状语 + 形式主语 + 宾语从句",
+            "note": "With the ability to mine genomes for useful compounds 为伴随状语；主句 it is now evident that...，it 为形式主语，that we have barely scratched the surface of... 为真正主语；scratch the surface 意为“略知皮毛”。"
+        },
+        "words": [
+            {"w": "genome", "pos": "n.", "def": "基因组"},
+            {"w": "scratch the surface", "pos": "phr.", "def": "只触及皮毛；浅尝辄止"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 3,
+        "en": "This realisation, together with several looming health crises, such as antibiotic resistance, has put bioprospecting " + DASH + " the search for useful compounds in nature " + DASH + " firmly back on the map.",
+        "zh": "这一认识，连同若干迫在眉睫的健康危机（如抗生素耐药性），使生物勘探——即在自然界中搜寻有用化合物——重新受到高度重视。",
+        "grammar": {
+            "type": "插入状语 + 破折号同位 + put...on the map",
+            "note": "主干 This realisation... has put bioprospecting... firmly back on the map，put sth on the map 意为“使受到重视”；together with several looming health crises 为插入状语；两破折号间 the search for useful compounds in nature 为 bioprospecting 的同位解释。"
+        },
+        "words": [
+            {"w": "looming", "pos": "adj.", "def": "迫近的；隐现的"},
+            {"w": "bioprospecting", "pos": "n.", "def": "生物勘探（寻找有价值的生物资源）"}
+        ]
+    },
+    # Section D (4)
+    {
+        "id": 11,
+        "para": 4,
+        "en": "Insects are the undisputed masters of the terrestrial domain, where they occupy every possible niche.",
+        "zh": "昆虫是陆地领域当之无愧的主宰，在那里它们占据着一切可能的生态位。",
+        "grammar": {
+            "type": "where 定语从句",
+            "note": "主干 Insects are the undisputed masters of the terrestrial domain；where they occupy every possible niche 为定语从句修饰 terrestrial domain；niche 此处指“生态位”。"
+        },
+        "words": [
+            {"w": "undisputed", "pos": "adj.", "def": "无可争议的"},
+            {"w": "niche", "pos": "n.", "def": "生态位；小生境"}
+        ]
+    },
+    {
+        "id": 12,
+        "para": 4,
+        "en": "Consequently, they have a bewildering array of interactions with other organisms, something which has driven the evolution of an enormous range of very interesting compounds for defensive and offensive purposes.",
+        "zh": "因此，它们与其他生物之间有着令人眼花缭乱的多种互动，而这推动了大量非常有趣的化合物为防御和进攻目的而演化。",
+        "grammar": {
+            "type": "同位语 + 定语从句",
+            "note": "主干 they have a bewildering array of interactions with other organisms；something which has driven the evolution of... 为对前句的同位概括加定语从句；for defensive and offensive purposes 为目的状语。"
+        },
+        "words": [
+            {"w": "bewildering", "pos": "adj.", "def": "令人眼花缭乱的；令人困惑的"},
+            {"w": "array", "pos": "n.", "def": "大量；一系列"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 4,
+        "en": "Their remarkable diversity exceeds that of every other group of animals on the planet combined.",
+        "zh": "它们惊人的多样性，超过了地球上其他所有动物类群的总和。",
+        "grammar": {
+            "type": "比较结构 + 过去分词定语",
+            "note": "主干 Their remarkable diversity exceeds that of every other group of animals；that 替代 the diversity；combined 为过去分词作后置定语，意为“合起来、总共”。"
+        },
+        "words": [
+            {"w": "exceed", "pos": "v.", "def": "超过；超出"},
+            {"w": "combined", "pos": "adj.", "def": "合起来的；总共的"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 4,
+        "en": "Yet even though insects are far and away the most diverse animals in existence, their potential as sources of therapeutic compounds is yet to be realised.",
+        "zh": "然而，尽管昆虫是现存动物中多样性遥遥领先的类群，它们作为治疗性化合物来源的潜力却尚未被开发出来。",
+        "grammar": {
+            "type": "even though 让步从句 + be yet to do",
+            "note": "even though insects are far and away the most diverse animals in existence 为让步状语从句，far and away 意为“遥遥地、无疑”；主句 their potential... is yet to be realised，be yet to do 意为“尚未……”。"
+        },
+        "words": [
+            {"w": "far and away", "pos": "phr.", "def": "遥遥领先；无疑"},
+            {"w": "therapeutic", "pos": "adj.", "def": "治疗的；有疗效的"}
+        ]
+    },
+    # Section E (5)
+    {
+        "id": 15,
+        "para": 5,
+        "en": "From the tiny proportion of insects that have been investigated, several promising compounds have been identified.",
+        "zh": "从已被研究的极小一部分昆虫中，已经鉴定出若干前景可期的化合物。",
+        "grammar": {
+            "type": "定语从句 + 现在完成时被动",
+            "note": "From the tiny proportion of insects that have been investigated 为介词短语作状语，含定语从句；主句 several promising compounds have been identified（现在完成时被动）。"
+        },
+        "words": [
+            {"w": "proportion", "pos": "n.", "def": "比例；部分"},
+            {"w": "identify", "pos": "v.", "def": "鉴定；识别"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 5,
+        "en": "For example, alloferon, an antimicrobial compound produced by blow fly larvae, is used as an antiviral and antitumor agent in South Korea and Russia.",
+        "zh": "例如，异肽素是一种由丽蝇幼虫产生的抗菌化合物，在韩国和俄罗斯被用作抗病毒和抗肿瘤药物。",
+        "grammar": {
+            "type": "同位语 + 过去分词定语",
+            "note": "主干 alloferon... is used as an antiviral and antitumor agent；an antimicrobial compound 为 alloferon 的同位语，produced by blow fly larvae 为过去分词定语修饰 compound。"
+        },
+        "words": [
+            {"w": "antimicrobial", "pos": "adj.", "def": "抗菌的"},
+            {"w": "larvae", "pos": "n.", "def": "幼虫（larva 的复数）"}
+        ]
+    },
+    {
+        "id": 17,
+        "para": 5,
+        "en": "The larvae of a few other insect species are being investigated for the potent antimicrobial compounds they produce.",
+        "zh": "另外几种昆虫的幼虫也正因其所产生的强效抗菌化合物而受到研究。",
+        "grammar": {
+            "type": "现在进行时被动 + 省略关系词定语从句",
+            "note": "主干 The larvae... are being investigated for the potent antimicrobial compounds（现在进行时被动）；(that) they produce 为省略关系词定语从句修饰 compounds。"
+        },
+        "words": [
+            {"w": "potent", "pos": "adj.", "def": "强效的；有力的"},
+            {"w": "species", "pos": "n.", "def": "物种"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 5,
+        "en": "Meanwhile, a compound from the venom of the wasp Polybia paulista has potential in cancer treatment.",
+        "zh": "与此同时，一种取自胡蜂 Polybia paulista 毒液的化合物，在癌症治疗方面具有潜力。",
+        "grammar": {
+            "type": "主谓宾 + 同位专名",
+            "note": "主干 a compound from the venom of the wasp... has potential in cancer treatment；Polybia paulista 为 wasp 的同位（拉丁学名）；from the venom of the wasp 为 compound 的后置定语。"
+        },
+        "words": [
+            {"w": "venom", "pos": "n.", "def": "（动物的）毒液"},
+            {"w": "wasp", "pos": "n.", "def": "黄蜂；胡蜂"}
+        ]
+    },
+    # Section F (6)
+    {
+        "id": 19,
+        "para": 6,
+        "en": "Why is it that insects have received relatively little attention in bioprospecting?",
+        "zh": "为什么在生物勘探中，昆虫所受到的关注相对较少呢？",
+        "grammar": {
+            "type": "强调结构疑问句",
+            "note": "Why is it that...? 为强调结构的疑问句，强调 that 之后 insects have received relatively little attention in bioprospecting 这一事实。"
+        },
+        "words": [
+            {"w": "attention", "pos": "n.", "def": "关注；注意"},
+            {"w": "relatively", "pos": "adv.", "def": "相对地；比较地"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 6,
+        "en": "Firstly, there are so many insects that, without some manner of targeted approach, investigating this huge variety of species is a daunting task.",
+        "zh": "首先，昆虫数量如此之多，以至于若不采用某种有针对性的方法，研究如此纷繁的物种便是一项令人望而生畏的任务。",
+        "grammar": {
+            "type": "so...that 结果状语从句 + 动名词主语",
+            "note": "there are so many insects that... 为 so...that... 结果结构；that 从句内 without some manner of targeted approach 为条件状语，主语为动名词短语 investigating this huge variety of species，谓语 is a daunting task。"
+        },
+        "words": [
+            {"w": "targeted", "pos": "adj.", "def": "有针对性的；定向的"},
+            {"w": "daunting", "pos": "adj.", "def": "令人畏惧的；艰巨的"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 6,
+        "en": "Secondly, insects are generally very small, and the glands inside them that secrete potentially useful compounds are smaller still.",
+        "zh": "其次，昆虫通常非常小，而它们体内分泌潜在有用化合物的腺体则更小。",
+        "grammar": {
+            "type": "并列句 + 定语从句 + 比较级",
+            "note": "两分句由 and 连接；后一分句主语 the glands inside them，that secrete potentially useful compounds 为定语从句修饰 glands；谓语 are smaller still，still 强化比较级，意为“更……”。"
+        },
+        "words": [
+            {"w": "gland", "pos": "n.", "def": "腺体"},
+            {"w": "secrete", "pos": "v.", "def": "分泌"}
+        ]
+    },
+    {
+        "id": 22,
+        "para": 6,
+        "en": "This can make it difficult to obtain sufficient quantities of the compound for subsequent testing.",
+        "zh": "这会使得难以获取足够数量的化合物以供后续检测。",
+        "grammar": {
+            "type": "make + 形式宾语 it",
+            "note": "主干 This can make it difficult to obtain...，it 为形式宾语，to obtain sufficient quantities of the compound 为真正宾语；for subsequent testing 为目的状语。"
+        },
+        "words": [
+            {"w": "subsequent", "pos": "adj.", "def": "随后的；后续的"},
+            {"w": "sufficient", "pos": "adj.", "def": "充足的"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 6,
+        "en": "Thirdly, although we consider insects to be everywhere, the reality of this ubiquity is vast numbers of a few extremely common species.",
+        "zh": "第三，尽管我们认为昆虫无处不在，但这种“无处不在”的实质，不过是少数几种极为常见物种的庞大数量而已。",
+        "grammar": {
+            "type": "让步从句 + 主系表",
+            "note": "although we consider insects to be everywhere 为让步状语从句，consider sb/sth to be 结构；主句 the reality of this ubiquity is vast numbers of a few extremely common species，ubiquity 意为“无处不在”。"
+        },
+        "words": [
+            {"w": "ubiquity", "pos": "n.", "def": "无处不在；普遍存在"},
+            {"w": "vast", "pos": "adj.", "def": "巨大的；大量的"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 6,
+        "en": "Many insect species are infrequently encountered and very difficult to rear in captivity, which, again, can leave us with insufficient material to work with.",
+        "zh": "许多昆虫物种很少被遇到，也很难人工饲养，这同样会使我们缺乏可供研究的材料。",
+        "grammar": {
+            "type": "并列表语 + 非限制性定语从句",
+            "note": "主干 Many insect species are infrequently encountered and very difficult to rear in captivity，两并列表语；which... can leave us with insufficient material to work with 为非限制性定语从句，rear in captivity 意为“人工饲养”。"
+        },
+        "words": [
+            {"w": "rear", "pos": "v.", "def": "饲养；抚养"},
+            {"w": "in captivity", "pos": "phr.", "def": "圈养；人工饲养状态"}
+        ]
+    },
+    # Section G (7)
+    {
+        "id": 25,
+        "para": 7,
+        "en": "My colleagues and I at Aberystwyth University in the UK have developed an approach in which we use our knowledge of ecology as a guide to target our efforts.",
+        "zh": "我和我在英国阿伯里斯特威斯大学的同事们开发了一种方法，即利用我们的生态学知识作为指引，来确定我们研究的目标方向。",
+        "grammar": {
+            "type": "in which 定语从句",
+            "note": "主干 My colleagues and I... have developed an approach；in which we use our knowledge of ecology as a guide 为定语从句修饰 approach；to target our efforts 为不定式作目的状语。"
+        },
+        "words": [
+            {"w": "colleague", "pos": "n.", "def": "同事"},
+            {"w": "ecology", "pos": "n.", "def": "生态学；生态"}
+        ]
+    },
+    {
+        "id": 26,
+        "para": 7,
+        "en": "The creatures that particularly interest us are the many insects that secrete powerful poison for subduing prey and keeping it fresh for future consumption.",
+        "zh": "特别让我们感兴趣的生物，是那些分泌强效毒液以制服猎物、并使其保持新鲜以备日后食用的众多昆虫。",
+        "grammar": {
+            "type": "两个 that 定语从句",
+            "note": "主干 The creatures... are the many insects；前一 that particularly interest us 修饰 The creatures，后一 that secrete powerful poison for... 修饰 insects；for subduing prey and keeping it fresh 为目的状语，两动名词并列。"
+        },
+        "words": [
+            {"w": "subdue", "pos": "v.", "def": "制服；征服"},
+            {"w": "prey", "pos": "n.", "def": "猎物"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 7,
+        "en": "There are even more insects that are masters of exploiting filthy habitats, such as faeces and carcasses, where they are regularly challenged by thousands of micro-organisms.",
+        "zh": "还有更多昆虫是利用污秽栖息地（如粪便和动物尸体）的高手，在那里它们经常受到成千上万种微生物的挑战。",
+        "grammar": {
+            "type": "there be + that 定语从句 + where 定语从句",
+            "note": "主干 There are even more insects；that are masters of exploiting filthy habitats 为定语从句修饰 insects，such as faeces and carcasses 为举例；where they are regularly challenged by... 为定语从句修饰 habitats。"
+        },
+        "words": [
+            {"w": "filthy", "pos": "adj.", "def": "污秽的；肮脏的"},
+            {"w": "carcass", "pos": "n.", "def": "（动物的）尸体"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 7,
+        "en": "These insects have many antimicrobial compounds for dealing with pathogenic bacteria and fungi, suggesting that there is certainly potential to find many compounds that can serve as or inspire new antibiotics.",
+        "zh": "这些昆虫拥有许多用于对付致病细菌和真菌的抗菌化合物，这表明确实有潜力找到许多可以充当或启发新型抗生素的化合物。",
+        "grammar": {
+            "type": "现在分词状语 + 宾语从句 + 定语从句",
+            "note": "主干 These insects have many antimicrobial compounds；for dealing with pathogenic bacteria and fungi 为目的状语；suggesting that... 为现在分词状语，that there is certainly potential to find many compounds 为宾语从句；that can serve as or inspire new antibiotics 为定语从句修饰 compounds。"
+        },
+        "words": [
+            {"w": "pathogenic", "pos": "adj.", "def": "致病的"},
+            {"w": "antibiotic", "pos": "n.", "def": "抗生素"}
+        ]
+    },
+    # Section H (8)
+    {
+        "id": 29,
+        "para": 8,
+        "en": "Although natural history knowledge points us in the right direction, it doesn" + RSQUO + "t solve the problems associated with obtaining useful compounds from insects.",
+        "zh": "尽管博物学知识为我们指明了正确的方向，它却并不能解决从昆虫身上获取有用化合物所伴随的种种问题。",
+        "grammar": {
+            "type": "让步状语从句 + 过去分词定语",
+            "note": "Although natural history knowledge points us in the right direction 为让步状语从句；主句 it doesn't solve the problems；associated with obtaining useful compounds from insects 为过去分词短语作 problems 的后置定语。"
+        },
+        "words": [
+            {"w": "natural history", "pos": "n.", "def": "博物学；自然史"},
+            {"w": "associated with", "pos": "phr.", "def": "与……相关的"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 8,
+        "en": "Fortunately, it is now possible to snip out the stretches of the insect" + RSQUO + "s DNA that carry the codes for the interesting compounds and insert them into cell lines that allow larger quantities to be produced.",
+        "zh": "幸运的是，如今已经能够剪切出昆虫DNA中携带有相关化合物编码的片段，并将其插入到能够大量生产这些化合物的细胞系中。",
+        "grammar": {
+            "type": "形式主语 + 不定式并列 + 定语从句",
+            "note": "主干 it is now possible to snip out... and insert them into...，it 为形式主语，两个不定式 to snip out 与 (to) insert 并列；that carry the codes for the interesting compounds 与 that allow larger quantities to be produced 分别为定语从句修饰 stretches 与 cell lines。"
+        },
+        "words": [
+            {"w": "snip out", "pos": "phr.", "def": "剪下；剪切出"},
+            {"w": "stretch", "pos": "n.", "def": "一段；一片"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 8,
+        "en": "And although the road from isolating and characterising compounds with desirable qualities to developing a commercial product is very long and full of pitfalls, the variety of successful animal-derived pharmaceuticals on the market demonstrates there is a precedent here that is worth exploring.",
+        "zh": "尽管从分离、表征具有理想性质的化合物到开发出商业产品的道路十分漫长且充满陷阱，但市场上种类繁多的成功动物源药物表明，这里存在着一个值得探索的先例。",
+        "grammar": {
+            "type": "让步状语从句 + 宾语从句 + 定语从句",
+            "note": "although the road from... to... is very long and full of pitfalls 为让步状语从句；主句 the variety of successful animal-derived pharmaceuticals on the market demonstrates (that) there is a precedent here；that is worth exploring 为定语从句修饰 a precedent。"
+        },
+        "words": [
+            {"w": "pitfall", "pos": "n.", "def": "陷阱；隐患"},
+            {"w": "precedent", "pos": "n.", "def": "先例；前例"}
+        ]
+    },
+    # Section I (9)
+    {
+        "id": 32,
+        "para": 9,
+        "en": "With every bit of wilderness that disappears, we deprive ourselves of potential medicines.",
+        "zh": "每消失一片荒野，我们就使自己失去了一些潜在的药物。",
+        "grammar": {
+            "type": "with 状语 + 定语从句",
+            "note": "With every bit of wilderness that disappears 为 with 引导的伴随/条件状语，含定语从句 that disappears；主句 we deprive ourselves of potential medicines，deprive sb of sth 意为“剥夺某人某物”。"
+        },
+        "words": [
+            {"w": "wilderness", "pos": "n.", "def": "荒野；荒地"},
+            {"w": "deprive of", "pos": "phr.", "def": "剥夺；使丧失"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 9,
+        "en": "As much as I" + RSQUO + "d love to help develop a groundbreaking insect-derived medicine, my main motivation for looking at insects in this way is conservation.",
+        "zh": "尽管我非常希望能帮助开发出一种开创性的昆虫源药物，但我以这种方式研究昆虫的主要动机是保护（自然）。",
+        "grammar": {
+            "type": "As much as 让步状语从句",
+            "note": "As much as I'd love to help develop... 为 as much as 引导的让步状语从句，意为“尽管我非常……”；主句 my main motivation for looking at insects in this way is conservation。"
+        },
+        "words": [
+            {"w": "groundbreaking", "pos": "adj.", "def": "开创性的；突破性的"},
+            {"w": "conservation", "pos": "n.", "def": "（自然资源的）保护"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 9,
+        "en": "I sincerely believe that all species, however small and seemingly insignificant, have a right to exist for their own sake.",
+        "zh": "我真诚地相信，所有物种，无论多么微小、看似多么无足轻重，都有权为其自身而存在。",
+        "grammar": {
+            "type": "宾语从句 + however 让步插入",
+            "note": "主干 I sincerely believe that...；从句 all species... have a right to exist for their own sake；however small and seemingly insignificant 为 however + 形容词引导的让步状语插入，for their own sake 意为“为其自身之故”。"
+        },
+        "words": [
+            {"w": "sincerely", "pos": "adv.", "def": "真诚地"},
+            {"w": "insignificant", "pos": "adj.", "def": "无足轻重的；微不足道的"}
+        ]
+    },
+    {
+        "id": 35,
+        "para": 9,
+        "en": "If we can shine a light on the darker recesses of nature" + RSQUO + "s medicine cabinet, exploring the useful chemistry of the most diverse animals on the planet, I believe we can make people think differently about the value of nature.",
+        "zh": "如果我们能照亮自然这座药柜中较为幽暗的角落，探索地球上多样性最丰富的动物身上有用的化学物质，我相信我们就能让人们以不同的眼光看待自然的价值。",
+        "grammar": {
+            "type": "if 条件从句 + 现在分词状语 + 宾语从句",
+            "note": "If we can shine a light on the darker recesses of nature's medicine cabinet 为条件状语从句，exploring... 为现在分词状语；主句 I believe (that) we can make people think differently about the value of nature，make sb do 结构。"
+        },
+        "words": [
+            {"w": "recess", "pos": "n.", "def": "隐蔽处；深处"},
+            {"w": "medicine cabinet", "pos": "n.", "def": "药柜；药箱"}
+        ]
+    }
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "20",
+        "type": "matching_information",
+        "instructions": [
+            "Reading Passage 2 has nine paragraphs, A" + DASH + "I.",
+            "Which paragraph contains the following information?",
+            "Write the correct letter, A" + DASH + "I, in boxes 14" + DASH + "20 on your answer sheet."
+        ],
+        "items": [
+            {"number": 14, "prompt": "mention of factors driving a renewed interest in natural medicinal compounds", "answer": "C", "evidence_sentence": 10},
+            {"number": 15, "prompt": "how recent technological advances have made insect research easier", "answer": "H", "evidence_sentence": 30},
+            {"number": 16, "prompt": "examples of animals which use medicinal substances from nature", "answer": "A", "evidence_sentence": 3},
+            {"number": 17, "prompt": "reasons why it is challenging to use insects in drug research", "answer": "F", "evidence_sentence": 20},
+            {"number": 18, "prompt": "reference to how interest in drug research may benefit wildlife", "answer": "I", "evidence_sentence": 33},
+            {"number": 19, "prompt": "a reason why nature-based medicines fell out of favour for a period", "answer": "B", "evidence_sentence": 6},
+            {"number": 20, "prompt": "an example of an insect-derived medicine in use at the moment", "answer": "E", "evidence_sentence": 16}
+        ]
+    },
+    {
+        "title": "Questions 21 and 22",
+        "type": "multiple_choice_two",
+        "instructions": [
+            "Choose TWO letters, A" + DASH + "E.",
+            "Write the correct letters in boxes 21 and 22 on your answer sheet.",
+            "Which TWO of the following make insects interesting for drug research?",
+            "A the huge number of individual insects in the world",
+            "B the variety of substances insects have developed to protect themselves",
+            "C the potential to extract and make use of insects" + RSQUO + " genetic codes",
+            "D the similarities between different species of insect",
+            "E the manageable size of most insects"
+        ],
+        "items": [
+            {"number": 21, "prompt": "Which TWO make insects interesting for drug research? (first answer)", "answer": "B", "evidence_sentence": 12},
+            {"number": 22, "prompt": "Which TWO make insects interesting for drug research? (second answer)", "answer": "C", "evidence_sentence": 30}
+        ]
+    },
+    {
+        "title": "Questions 23" + DASH + "26",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary below.",
+            "Choose ONE WORD ONLY from the passage for each answer.",
+            "Write your answers in boxes 23" + DASH + "26 on your answer sheet.",
+            "Research at Aberystwyth University"
+        ],
+        "items": [
+            {"number": 23, "prompt": "Ross Piper and fellow zoologists at Aberystwyth University are using their expertise in 23 ____ when undertaking bioprospecting with insects.", "answer": "ecology", "evidence_sentence": 25},
+            {"number": 24, "prompt": "They are especially interested in the compounds that insects produce to overpower and preserve their 24 ____ .", "answer": "prey", "evidence_sentence": 26},
+            {"number": 25, "prompt": "They are also interested in compounds which insects use to protect themselves from pathogenic bacteria and fungi found in their 25 ____ .", "answer": "habitats", "evidence_sentence": 27},
+            {"number": 26, "prompt": "Piper hopes that these substances will be useful in the development of drugs such as 26 ____ .", "answer": "antibiotics", "evidence_sentence": 28}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "bioprospecting", "pos": "n.", "def": "生物勘探"},
+    {"w": "natural product", "pos": "n.", "def": "天然产物"},
+    {"w": "antimicrobial compound", "pos": "n.", "def": "抗菌化合物"},
+    {"w": "antibiotic resistance", "pos": "n.", "def": "抗生素耐药性"},
+    {"w": "pharmaceutical", "pos": "n.", "def": "药物；药品"},
+    {"w": "drug discovery", "pos": "n.", "def": "药物研发；药物发现"},
+    {"w": "molecular diversity", "pos": "n.", "def": "分子多样性"},
+    {"w": "scratch the surface", "pos": "phr.", "def": "只触及皮毛"},
+    {"w": "in captivity", "pos": "phr.", "def": "圈养；人工饲养"},
+    {"w": "natural history", "pos": "n.", "def": "博物学；自然史"}
+]
+
+data = {
+    "id": "c14-test3-p2",
+    "source": "剑桥雅思14 · Test 3 · Passage 2",
+    "title": "Saving bugs to find new drugs",
+    "subtitle": "Zoologist Ross Piper looks at the potential of insects in pharmaceutical research",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c14-test3-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))
