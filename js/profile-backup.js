@@ -4,6 +4,11 @@ const VOCAB_KEY = "ielts_vocab";
 const PASSAGE_KEY = "ielts_imported_passages";
 const VOICE_KEY = "ielts_speech_voice";
 const RATE_KEY = "ielts_speech_rate";
+// 背单词相关键:内置词的复习状态/加入状态、每日任务与打卡痕迹。
+// 这些是不透明的 JSON,备份时整块存/恢复时整块覆盖(不做字段级校验)。
+const SEED_REVIEW_KEY = "ielts_vocab_seed_review";
+const SEED_ADDED_KEY = "ielts_vocab_seed_added";
+const DAILY_KEY = "ielts_daily";
 
 function storage() {
   if (typeof localStorage === "undefined") {
@@ -37,13 +42,19 @@ function normalizeVocabList(value) {
 export function collectProfileBackup() {
   const vocab = normalizeVocabList(readJSON(VOCAB_KEY, []));
   const importedPassages = normalizePassageMap(readJSON(PASSAGE_KEY, {}));
+  const seedReview = readJSON(SEED_REVIEW_KEY, {});
+  const seedAdded = readJSON(SEED_ADDED_KEY, {});
+  const daily = readJSON(DAILY_KEY, null);
   return {
     app: "ielts-reading-helper",
-    version: 1,
+    version: 2,
     exported_at: new Date().toISOString(),
     data: {
       vocab,
       imported_passages: importedPassages,
+      seed_review: seedReview,
+      seed_added: seedAdded,
+      daily,
       speech: {
         voice: storage().getItem(VOICE_KEY) || "",
         rate: storage().getItem(RATE_KEY) || "",
@@ -52,6 +63,8 @@ export function collectProfileBackup() {
     summary: {
       vocab_count: vocab.length,
       imported_passage_count: Object.keys(importedPassages).length,
+      seed_learned_count: Object.keys(seedReview).length,
+      daily_days: daily && daily.days ? Object.keys(daily.days).length : 0,
     },
   };
 }
@@ -101,10 +114,34 @@ export function restoreProfileBackup(text) {
     storage().setItem(RATE_KEY, String(speech.rate));
   }
 
+  // 背单词状态:内置词复习/加入状态、每日打卡。整块合并/覆盖。
+  // seed_review / seed_added:按 word 键合并,导入项覆盖同名。
+  if (data.seed_review && typeof data.seed_review === "object") {
+    const cur = readJSON(SEED_REVIEW_KEY, {});
+    storage().setItem(SEED_REVIEW_KEY, JSON.stringify({ ...cur, ...data.seed_review }));
+  }
+  if (data.seed_added && typeof data.seed_added === "object") {
+    const cur = readJSON(SEED_ADDED_KEY, {});
+    storage().setItem(SEED_ADDED_KEY, JSON.stringify({ ...cur, ...data.seed_added }));
+  }
+  // daily:打卡痕迹以"天"为粒度合并(导入的天覆盖同名天);settings/cursor 取导入值。
+  if (data.daily && typeof data.daily === "object") {
+    const cur = readJSON(DAILY_KEY, {});
+    const merged = {
+      settings: { ...(cur.settings || {}), ...(data.daily.settings || {}) },
+      new_word_cursor: Math.max(Number(cur.new_word_cursor) || 0, Number(data.daily.new_word_cursor) || 0),
+      days: { ...(cur.days || {}), ...(data.daily.days || {}) },
+    };
+    storage().setItem(DAILY_KEY, JSON.stringify(merged));
+  }
+
+  const dailyDays = data.daily && data.daily.days ? Object.keys(data.daily.days).length : 0;
   return {
     legacy: Boolean(backup.legacy),
     vocab_added_or_updated: incomingVocab.length,
     imported_passages_added_or_updated: Object.keys(incomingPassages).length,
+    seed_learned_restored: data.seed_review ? Object.keys(data.seed_review).length : 0,
+    daily_days_restored: dailyDays,
     total_vocab: mergedVocab.length,
     total_imported_passages: Object.keys(mergedPassages).length,
   };
@@ -133,6 +170,8 @@ export function bindProfileBackupUI({ exportButtonId, importInputId, onRestored 
       alert(
         `恢复完成：合并 ${result.vocab_added_or_updated} 个生词、` +
         `${result.imported_passages_added_or_updated} 篇临时导入文章。\n` +
+        (result.seed_learned_restored ? `恢复 ${result.seed_learned_restored} 个内置词的学习记录。\n` : "") +
+        (result.daily_days_restored ? `恢复 ${result.daily_days_restored} 天的打卡痕迹。\n` : "") +
         `当前共有 ${result.total_vocab} 个生词、${result.total_imported_passages} 篇临时导入文章。\n` +
         `注：项目自带的内置文章在 data 文件夹里，不需要放进浏览器备份。`
       );

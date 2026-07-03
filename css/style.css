@@ -368,3 +368,90 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 @media (max-width: 760px) {
   .lib-search { width: 100%; }
 }
+
+/* ==== 每日单词 daily.html ==== */
+/* 日历热力图 */
+.cal-card {
+  background: radial-gradient(circle at 85% 10%, rgba(123,196,127,.18), transparent 38%),
+              linear-gradient(135deg, #17281f, #263c30);
+  border-radius: 18px; padding: 22px 24px; color: #eef3ea; margin-bottom: 18px;
+  box-shadow: 0 12px 30px rgba(28,52,38,.16);
+}
+.cal-top { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 16px; }
+.cal-top h3 { margin: 0; font: 700 20px Georgia, "Microsoft YaHei", serif; }
+.cal-streak { color: #a8d7a8; font-size: 13px; }
+.cal-streak b { font-size: 21px; color: #fff; }
+.heat { display: grid; grid-template-columns: repeat(18, 1fr); gap: 5px; max-width: 560px; }
+.heat .cell { aspect-ratio: 1; border-radius: 4px; background: rgba(255,255,255,.07); }
+.heat .cell.l1 { background: #2f5137; }
+.heat .cell.l2 { background: #3f7a4c; }
+.heat .cell.l3 { background: #5bbf6a; }
+.heat .cell.l4 { background: #8ee89b; }
+.heat .cell.today { outline: 2px solid #ffd873; outline-offset: 1px; }
+.cal-legend { display: flex; align-items: center; gap: 6px; margin-top: 12px; font-size: 11px; color: #b6c7ba; }
+.cal-legend .cell { width: 12px; height: 12px; border-radius: 3px; background: rgba(255,255,255,.07); display: inline-block; }
+.cal-legend .cell.l1 { background: #2f5137; } .cal-legend .cell.l2 { background: #3f7a4c; }
+.cal-legend .cell.l3 { background: #5bbf6a; } .cal-legend .cell.l4 { background: #8ee89b; }
+.cal-legend .today-legend { outline: 2px solid #ffd873; outline-offset: 1px; background: #8ee89b; }
+
+/* 今日任务卡 */
+.today-card { background: #fff; border: 1px solid #e0ebe2; border-radius: 16px; padding: 22px 24px; box-shadow: 0 4px 16px rgba(0,0,0,.05); }
+.today-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 6px; }
+.today-head h3 { margin: 0; font: 700 22px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.today-date { color: #9aa39c; font-size: 13px; }
+.today-sub { color: #6a7a6e; font-size: 14px; margin: 0 0 18px; }
+.today-card .split { display: flex; gap: 14px; margin-bottom: 18px; flex-wrap: wrap; }
+.stat-box { flex: 1; min-width: 130px; border: 1px solid #e6ece7; border-radius: 12px; padding: 14px 16px; background: #fbfdfb; }
+.stat-box .n { font: 700 30px Georgia, serif; color: #2d6940; line-height: 1; }
+.stat-box .lbl { color: #6a7a6e; font-size: 12.5px; margin-top: 5px; }
+.stat-box.new .n { color: #c07a2a; }
+.prog-wrap { margin: 4px 0 18px; }
+.prog-bar { height: 10px; border-radius: 6px; background: #e8efe9; overflow: hidden; }
+.prog-fill { height: 100%; background: linear-gradient(90deg, #7bc47f, #4a9d5b); transition: width .4s cubic-bezier(.4,0,.2,1); }
+.prog-txt { font-size: 12px; color: #6a7a6e; margin-top: 6px; }
+.today-buttons { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.start-btn { background: #243b2e; color: #fff; border: none; border-radius: 10px; padding: 13px 26px; font-size: 16px; font-weight: 700; cursor: pointer; }
+.start-btn:hover { background: #2f4d3a; }
+.start-btn:disabled { background: #c3ccc5; cursor: default; }
+.pace-btn { background: #fff; color: #4a9d5b; border: 1px solid #9dcc9f; border-radius: 10px; padding: 12px 16px; cursor: pointer; font-size: 14px; }
+.pace-btn:hover { background: #eef8ef; }
+.mini-note { color: #9aa39c; font-size: 12px; margin-top: 12px; }
+
+/* 过词卡:复用 .review-card,补充徽章与容器 */
+.study-wrap { max-width: 760px; }
+.study-top { margin-bottom: 8px; }
+.study-badge { display: inline-block; border-radius: 999px; padding: 3px 12px; font-size: 12px; font-weight: 700; }
+.study-badge.new { background: rgba(192,122,42,.14); color: #b45309; }
+.study-badge.review { background: rgba(59,130,246,.12); color: #2563EB; }
+.study-wrap .review-card { min-height: 240px; }
+.study-wrap .review-card .reveal { position: static; margin-top: 14px; }
+.study-controls { display: flex; align-items: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
+.study-quit { background: #fff; color: #8a938c; border: 1px solid #d9ded7; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 13px; }
+.study-quit:hover { background: #f4f6f4; }
+
+/* 完成卡 */
+.done-card { background: #fff; border: 1px solid #cfe8d4; border-radius: 16px; padding: 34px 24px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,.05); }
+.done-card .done-emoji { font-size: 46px; }
+.done-card h3 { margin: 10px 0 6px; font: 700 22px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.done-card p { color: #6a7a6e; margin: 0 0 18px; }
+
+/* 节奏设置弹层 */
+.pace-modal { position: fixed; inset: 0; background: rgba(20,32,25,.45); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
+.pace-panel { background: #fff; border-radius: 16px; padding: 24px; max-width: 400px; width: 100%; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
+.pace-panel h3 { margin: 0 0 6px; font: 700 20px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.pace-hint { color: #6a7a6e; font-size: 13px; margin: 0 0 16px; }
+.pace-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 14px; }
+.pace-opt { text-align: left; border: 1px solid #e0ebe2; background: #fff; border-radius: 10px; padding: 12px 16px; cursor: pointer; font-size: 14px; color: #37453b; }
+.pace-opt:hover { background: #f4f9f5; }
+.pace-opt.active { border-color: #4a9d5b; box-shadow: 0 0 0 2px rgba(74,157,91,.3); background: #f0f8f1; }
+.pace-opt b { color: #2d6940; }
+.pace-custom { margin-bottom: 18px; }
+.pace-custom label { font-size: 14px; color: #37453b; }
+.pace-custom input { width: 72px; padding: 6px 8px; border: 1px solid #cbd4cd; border-radius: 6px; text-align: center; font-size: 14px; margin-left: 6px; }
+.pace-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.pace-cancel { background: #fff; color: #6a7a6e; border: 1px solid #d9ded7; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
+.pace-save { background: #243b2e; color: #fff; border: none; border-radius: 8px; padding: 9px 18px; cursor: pointer; font-weight: 600; }
+@media (max-width: 760px) {
+  .heat { grid-template-columns: repeat(14, 1fr); }
+  .today-card .split { flex-direction: column; }
+}
