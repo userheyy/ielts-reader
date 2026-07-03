@@ -267,3 +267,104 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
   .review-studio { grid-template-columns: 1fr; padding: 18px; }
   .review-actions { grid-template-columns: 1fr; }
 }
+
+/* ==== 记忆法卡片(aids.js 渲染,复习/列表/词库三处共用) ==== */
+/* 词根色块:前缀红 · 词根蓝(粗边) · 后缀琥珀 · 连接件灰。取自 word-root-workshop 配色 */
+.mchips { display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.mchip {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 1px;
+  padding: 4px 11px; border-radius: 9px; font-weight: 700; font-size: 15px; line-height: 1.15;
+}
+.mchip small { font-size: 10px; font-weight: 500; opacity: .85; }
+.mchip.pre { background: rgba(239,68,68,.10); color: #EF4444; border: 1px solid rgba(239,68,68,.28); }
+.mchip.rt  { background: rgba(59,130,246,.10); color: #3B82F6; border: 2px solid rgba(59,130,246,.32); }
+.mchip.suf { background: rgba(245,158,11,.10); color: #F59E0B; border: 1px solid rgba(245,158,11,.28); }
+.mchip.con { background: #f0f2f0; color: #7a837c; border: 1px solid #dfe4df; }
+.mplus { color: #b6bdb7; font-weight: 400; }
+
+.aids { display: flex; flex-direction: column; gap: 9px; }
+.aid-block { font-size: 13.5px; line-height: 1.55; color: #37453b; }
+.aid-label {
+  display: inline-block; margin-right: 8px; padding: 1px 8px; border-radius: 999px;
+  background: #eaf3ec; color: #3d7a4e; font-size: 11px; font-weight: 700;
+  letter-spacing: .03em; vertical-align: 2px;
+}
+.aid-deriv { color: #4a6b52; font-style: normal; background: #f4f9f5; border-radius: 7px; padding: 7px 11px; }
+.fam-root { color: #2563EB; margin-right: 4px; font-weight: 700; }
+.fam-pills { display: inline-flex; gap: 7px; flex-wrap: wrap; margin-top: 5px; }
+.fam-pill {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  background: rgba(59,130,246,.07); border: 1px solid rgba(59,130,246,.20);
+  color: #2563EB; border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 600;
+}
+.fam-pill i { color: #7a837c; font-style: normal; font-weight: 400; font-size: 11.5px; }
+.aid-mnemo { color: #6a4a1e; background: rgba(245,158,11,.07); border-radius: 7px; padding: 7px 11px; }
+.form-list { display: inline-flex; gap: 12px; flex-wrap: wrap; margin-top: 3px; }
+.form-item { font-size: 12.5px; color: #56605a; }
+.form-item b { color: #2d3a31; }
+
+/* 复习卡里的"词根提示区"(B 交互:显示释义前先给词根让你推词义) */
+.review-hint { margin: 14px 0 4px; }
+.review-hint .hint-tip { display: block; margin-top: 6px; color: #8a938c; font-size: 11px; font-style: italic; }
+.review-answer .aids { margin-top: 12px; }
+
+/* 列表行内的展开记忆法 */
+.vocab-aids-row td { background: #fbfdfb; padding: 12px 14px 15px; }
+.aids-expand-btn {
+  border: 0; background: #eef7ef; color: var(--green-dark); border-radius: 6px;
+  padding: 3px 9px; cursor: pointer; font-size: 12px; white-space: nowrap;
+}
+.aids-expand-btn:hover { background: #dcefdf; }
+.aids-expand-btn.empty { background: #f3f3f3; color: #9aa39c; }
+
+/* ==== 词库页 library.html ==== */
+.lib-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+.lib-head h2 { margin: 0; font: 700 24px Georgia, "Microsoft YaHei", serif; color: #20352a; }
+.lib-progress { color: var(--muted); font-size: 13px; }
+.lib-progress b { color: var(--green-dark); }
+.lib-tabs { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+.lib-tab {
+  border: 1px solid #cfe0d2; background: #fff; color: #3d7a4e; border-radius: 999px;
+  padding: 6px 15px; cursor: pointer; font-size: 13px; font-weight: 600;
+}
+.lib-tab.active { background: var(--green); color: #fff; border-color: var(--green); }
+.lib-search { padding: 6px 11px; border: 1px solid #ccc; border-radius: 6px; margin-bottom: 14px; width: 260px; max-width: 100%; }
+
+.lib-word-card {
+  background: var(--card); border: 1px solid #e4ece5; border-radius: 12px;
+  padding: 15px 18px; margin-bottom: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.05);
+}
+.lib-word-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.lib-word { font: 700 22px Georgia, serif; color: #1d2b22; }
+.lib-phon { color: #9aa39c; font-size: 13px; }
+.lib-pos { color: #758478; font-style: italic; font-size: 13px; }
+.lib-cefr { margin-left: auto; background: #eef2ff; color: #4560c0; border-radius: 999px; padding: 1px 9px; font-size: 11px; font-weight: 700; }
+.lib-def { color: #3a463e; font-size: 15px; margin: 5px 0 10px; }
+.lib-add-btn {
+  border: 1px solid #9dcc9f; background: #a8d7a8; color: #183021; border-radius: 999px;
+  padding: 5px 14px; cursor: pointer; font-size: 12.5px; font-weight: 700;
+}
+.lib-add-btn.added { background: #e8f3e9; color: #4a9d5b; border-color: #cfe0d2; cursor: default; }
+.lib-speak {
+  border: 0; border-radius: 50%; width: 26px; height: 26px; background: #e5f3e7;
+  color: var(--green-dark); cursor: pointer; font-size: 12px;
+}
+.lib-speak:hover, .lib-speak.speaking { background: var(--green); color: #fff; }
+
+/* 按词根成组 */
+.lib-root-group { margin-bottom: 26px; }
+.lib-root-title {
+  display: flex; align-items: baseline; gap: 10px; margin: 0 0 10px;
+  font: 700 18px Georgia, serif; color: #20352a;
+}
+.lib-root-title .rg-root {
+  background: rgba(59,130,246,.12); color: #2563EB; border-radius: 8px;
+  padding: 2px 12px; font-family: inherit;
+}
+.lib-root-title .rg-gloss { color: #758478; font-size: 14px; font-weight: 400; }
+.lib-root-title .rg-count { color: #9aa39c; font-size: 12px; font-weight: 400; margin-left: auto; }
+
+.lib-empty { color: var(--muted); padding: 30px; text-align: center; }
+@media (max-width: 760px) {
+  .lib-search { width: 100%; }
+}

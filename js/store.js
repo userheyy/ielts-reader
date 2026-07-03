@@ -64,13 +64,16 @@ export function addWord(entry) {
     sentence_id: entry.sentence_id || null,
     added_at: entry.added_at || new Date().toISOString().slice(0, 10),
     status: "new",
+    aids: entry.aids || null, // 记忆法数据;入库时通常为 null,之后备份→回填补上
     review: { level: 0, next_due: null, history: [] },
   };
   if (idx >= 0) {
-    // 保留原 added_at/status/review,更新语境与释义
+    // 保留原 added_at/status/review/aids,更新语境与释义
     record.added_at = list[idx].added_at;
     record.status = list[idx].status;
     record.review = list[idx].review;
+    // aids:新传入的优先(回填场景);否则保留已有的,不被清空
+    record.aids = entry.aids || list[idx].aids || null;
     list[idx] = record;
     saveAll(list);
     return { added: false };
