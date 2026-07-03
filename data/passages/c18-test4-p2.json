@@ -1,0 +1,1039 @@
+{
+  "id": "c18-test4-p2",
+  "source": "剑桥雅思18 · Test 4 · Passage 2",
+  "title": "The growth mindset",
+  "quality": "teacher_refined",
+  "analysis_unit": "sentence",
+  "phrases": [
+    {
+      "w": "growth mindset",
+      "pos": "n.",
+      "def": "成长型思维（相信能力可通过努力提升）"
+    },
+    {
+      "w": "fixed mindset",
+      "pos": "n.",
+      "def": "固定型思维（认为能力天生固定不可变）"
+    },
+    {
+      "w": "innate ability",
+      "pos": "n.",
+      "def": "先天能力；天生的才能"
+    },
+    {
+      "w": "cognitive dissonance",
+      "pos": "n.",
+      "def": "认知失调"
+    },
+    {
+      "w": "self-esteem",
+      "pos": "n.",
+      "def": "自尊；自我价值感"
+    },
+    {
+      "w": "self-perception",
+      "pos": "n.",
+      "def": "自我认知；自我知觉"
+    },
+    {
+      "w": "degrees of freedom",
+      "pos": "phr.",
+      "def": "自由度"
+    },
+    {
+      "w": "null result",
+      "pos": "n.",
+      "def": "零结果；无显著效应的结果"
+    },
+    {
+      "w": "targeted intervention",
+      "pos": "n.",
+      "def": "针对性干预"
+    },
+    {
+      "w": "intelligence test",
+      "pos": "n.",
+      "def": "智力测验"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "Over the past century, a powerful idea has taken root in the educational landscape.",
+      "zh": "在过去的一个世纪里，一个强有力的观念在教育领域扎下了根。",
+      "grammar": {
+        "type": "现在完成时",
+        "note": "主干 a powerful idea has taken root；take root 为固定搭配，意为“扎根、生根”；Over the past century 为时间状语，常与现在完成时连用。"
+      },
+      "words": [
+        {
+          "w": "take root",
+          "pos": "phr.",
+          "def": "扎根；生根；确立"
+        },
+        {
+          "w": "landscape",
+          "pos": "n.",
+          "def": "领域；局面；（比喻的）全景"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "The concept of intelligence as something innate has been supplanted by the idea that intelligence is not fixed, and that, with the right training, we can be the authors of our own cognitive capabilities.",
+      "zh": "智力是一种与生俱来之物的观念，已被这样一种理念所取代：智力并非一成不变，只要经过恰当的训练，我们就能成为自身认知能力的塑造者。",
+      "grammar": {
+        "type": "被动语态 + 同位语从句并列",
+        "note": "主干 The concept... has been supplanted by the idea；两个 that 引导并列的同位语从句解释 idea：that intelligence is not fixed 与 that we can be the authors...；with the right training 为条件状语。"
+      },
+      "words": [
+        {
+          "w": "innate",
+          "pos": "adj.",
+          "def": "与生俱来的；先天的"
+        },
+        {
+          "w": "supplant",
+          "pos": "v.",
+          "def": "取代；替代"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "Psychologist Alfred Binet, the developer of the first intelligence tests, was one of many 19th-century scientists who held that earlier view and sought to quantify cognitive ability.",
+      "zh": "心理学家阿尔弗雷德·比奈是首批智力测验的开发者，他是众多持有那种早期观点、并试图量化认知能力的19世纪科学家之一。",
+      "grammar": {
+        "type": "同位语 + 定语从句",
+        "note": "the developer of the first intelligence tests 为 Alfred Binet 的同位语；who held that earlier view and sought to quantify cognitive ability 为定语从句修饰 scientists，从句内 held 与 sought 两谓语并列。"
+      },
+      "words": [
+        {
+          "w": "quantify",
+          "pos": "v.",
+          "def": "量化；用数量表示"
+        },
+        {
+          "w": "cognitive",
+          "pos": "adj.",
+          "def": "认知的；认识的"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "Then, in the early 20th century, progressive thinkers revolted against the notion that inherent ability is destiny.",
+      "zh": "随后，在20世纪初，进步的思想家们起而反对“先天能力即命运”这一观念。",
+      "grammar": {
+        "type": "同位语从句",
+        "note": "主干 progressive thinkers revolted against the notion；that inherent ability is destiny 为同位语从句，说明 notion 的内容；revolt against 意为“反抗、反对”。"
+      },
+      "words": [
+        {
+          "w": "progressive",
+          "pos": "adj.",
+          "def": "进步的；开明的"
+        },
+        {
+          "w": "inherent",
+          "pos": "adj.",
+          "def": "固有的；内在的；与生俱来的"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "Instead, educators such as John Dewey argued that every child’s intelligence could be developed, given the right environment.",
+      "zh": "相反，像约翰·杜威这样的教育家主张，只要环境适宜，每个孩子的智力都能够得到发展。",
+      "grammar": {
+        "type": "宾语从句 + 独立分词状语",
+        "note": "主干 educators... argued that...；that every child's intelligence could be developed 为宾语从句；given the right environment 为过去分词短语作条件状语，相当于 if they are given the right environment。"
+      },
+      "words": [
+        {
+          "w": "educator",
+          "pos": "n.",
+          "def": "教育家；教育工作者"
+        },
+        {
+          "w": "given",
+          "pos": "prep.",
+          "def": "考虑到；假如有"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 2,
+      "en": "‘Growth mindset theory’ is a relatively new – and extremely popular – version of this idea.",
+      "zh": "“成长型思维理论”是这一观念的一个相对较新——且极为流行——的版本。",
+      "grammar": {
+        "type": "主系表 + 破折号插入语",
+        "note": "主干 'Growth mindset theory' is a... version of this idea；两个破折号之间的 and extremely popular 为插入成分，与前面的 relatively new 共同修饰 version。"
+      },
+      "words": [
+        {
+          "w": "growth mindset",
+          "pos": "n.",
+          "def": "成长型思维（认为能力可通过努力提升）"
+        },
+        {
+          "w": "relatively",
+          "pos": "adv.",
+          "def": "相对地；比较地"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "In many schools today you will see hallways covered in motivational posters and hear speeches on the mindset of great sporting heroes who simply believed their way to the top.",
+      "zh": "如今在许多学校里，你会看到走廊上贴满励志海报，会听到关于伟大体育英雄之思维方式的演讲——他们仅凭信念便一路登顶。",
+      "grammar": {
+        "type": "感官动词 see/hear + 宾补 + 定语从句",
+        "note": "you will see hallways covered... and hear speeches...，see/hear 后接宾语加过去分词/名词作宾补，两处并列；who simply believed their way to the top 为定语从句修饰 heroes，believe one's way to 为“凭信念达到”的生动表达。"
+      },
+      "words": [
+        {
+          "w": "hallway",
+          "pos": "n.",
+          "def": "走廊；门厅"
+        },
+        {
+          "w": "motivational",
+          "pos": "adj.",
+          "def": "激励的；激发动机的"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 2,
+      "en": "A major focus of the growth mindset in schools is coaxing students away from seeing failure as an indication of their ability, and towards seeing it as a chance to improve that ability.",
+      "zh": "成长型思维在学校中的一个主要着力点，是引导学生不再把失败看作自身能力的标志，转而将其视为提升该能力的一次机会。",
+      "grammar": {
+        "type": "动名词表语 + away from... towards 对照",
+        "note": "主干 A major focus... is coaxing students...；coax sb away from... and towards... 构成方向上的对照结构，两个 seeing... 动名词短语分别作 from 与 towards 的宾语。"
+      },
+      "words": [
+        {
+          "w": "coax",
+          "pos": "v.",
+          "def": "哄劝；循循善诱地引导"
+        },
+        {
+          "w": "indication",
+          "pos": "n.",
+          "def": "迹象；标志；表明"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 2,
+      "en": "As educationalist Jeff Howard noted several decades ago: ‘Smart is not something that you just are, smart is something that you can get.’",
+      "zh": "正如教育学家杰夫·霍华德几十年前所指出的：“聪明不是你天生就是的东西，聪明是你能够获得的东西。”",
+      "grammar": {
+        "type": "As 引导方式状语 + 直接引语",
+        "note": "As educationalist Jeff Howard noted 为 As 引导的方式状语从句；冒号后为直接引语，两个 something that you... 均为“名词+定语从句”结构，形成对比。"
+      },
+      "words": [
+        {
+          "w": "educationalist",
+          "pos": "n.",
+          "def": "教育学家；教育理论家"
+        },
+        {
+          "w": "note",
+          "pos": "v.",
+          "def": "指出；注意到"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 3,
+      "en": "The idea of the growth mindset is based on the work of psychologist Carol Dweck in California in the 1990s.",
+      "zh": "成长型思维这一理念，基于心理学家卡罗尔·德韦克20世纪90年代在加利福尼亚所做的研究。",
+      "grammar": {
+        "type": "被动语态 be based on",
+        "note": "主干 The idea... is based on the work of psychologist Carol Dweck；in California 与 in the 1990s 为地点、时间状语，共同限定 the work。"
+      },
+      "words": [
+        {
+          "w": "be based on",
+          "pos": "phr.",
+          "def": "以……为基础；根据"
+        },
+        {
+          "w": "psychologist",
+          "pos": "n.",
+          "def": "心理学家"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 3,
+      "en": "In one key experiment, Dweck divided a group of 10- to 12-year-olds into two groups.",
+      "zh": "在一项关键实验中，德韦克将一组10至12岁的儿童分成了两组。",
+      "grammar": {
+        "type": "divide... into 结构",
+        "note": "主干 Dweck divided a group... into two groups；divide A into B 意为“把A分成B”；10- to 12-year-olds 为复合形容词充当名词，表“10到12岁的孩子”。"
+      },
+      "words": [
+        {
+          "w": "experiment",
+          "pos": "n.",
+          "def": "实验；试验"
+        },
+        {
+          "w": "divide into",
+          "pos": "phr.",
+          "def": "把……分成"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 3,
+      "en": "All were told that they had achieved a high score on a test but the first group were praised for their intelligence in achieving this, while the others were praised for their effort.",
+      "zh": "所有人都被告知在一次测验中取得了高分，但第一组因取得这一成绩时所展现的聪明才智而受到表扬，而另一组则因其付出的努力而受到表扬。",
+      "grammar": {
+        "type": "被动语态 + but/while 对比",
+        "note": "三个被动结构 were told / were praised / were praised；but 引出转折，while 引导对比状语从句，形成“因智力受表扬”与“因努力受表扬”的对照。"
+      },
+      "words": [
+        {
+          "w": "praise",
+          "pos": "v.",
+          "def": "表扬；称赞"
+        },
+        {
+          "w": "effort",
+          "pos": "n.",
+          "def": "努力；付出"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 3,
+      "en": "The second group – those who had been instilled with a ‘growth mindset’ – were subsequently far more likely to put effort into future tasks.",
+      "zh": "第二组——那些被灌输了“成长型思维”的孩子——随后明显更愿意在未来的任务中投入努力。",
+      "grammar": {
+        "type": "破折号同位语 + 定语从句",
+        "note": "两个破折号之间 those who had been instilled with a 'growth mindset' 为 The second group 的同位语，内含定语从句（过去完成时被动）；主句 were subsequently far more likely to put effort...，far 修饰比较级 more likely。"
+      },
+      "words": [
+        {
+          "w": "instil",
+          "pos": "v.",
+          "def": "逐渐灌输；使潜移默化"
+        },
+        {
+          "w": "subsequently",
+          "pos": "adv.",
+          "def": "随后；接着"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 3,
+      "en": "Meanwhile, the former took on only those tasks that would not risk their sense of worth.",
+      "zh": "与此同时，前一组只接手那些不会危及其自我价值感的任务。",
+      "grammar": {
+        "type": "定语从句 + the former 指代",
+        "note": "the former 指代前文“因智力受表扬的第一组”；that would not risk their sense of worth 为定语从句修饰 those tasks；took on 意为“承担、接手”。"
+      },
+      "words": [
+        {
+          "w": "the former",
+          "pos": "phr.",
+          "def": "前者"
+        },
+        {
+          "w": "sense of worth",
+          "pos": "phr.",
+          "def": "自我价值感"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 3,
+      "en": "This group had inferred that success or failure is due to innate ability, and this ‘fixed mindset’ had led them to fear of failure and lack of effort.",
+      "zh": "这一组已推断出成功或失败取决于先天能力，而这种“固定型思维”致使他们害怕失败、缺乏努力。",
+      "grammar": {
+        "type": "过去完成时 + 宾语从句 + and 并列",
+        "note": "前一分句 This group had inferred that...，that 引导宾语从句；and 连接后一分句 this 'fixed mindset' had led them to...，lead sb to 意为“导致某人陷入……”，均用过去完成时表在过去某点之前。"
+      },
+      "words": [
+        {
+          "w": "infer",
+          "pos": "v.",
+          "def": "推断；推论"
+        },
+        {
+          "w": "fixed mindset",
+          "pos": "n.",
+          "def": "固定型思维（认为能力天生固定）"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 3,
+      "en": "Praising ability actually made the students perform worse, while praising effort emphasised that change was possible.",
+      "zh": "表扬能力实际上使学生表现更差，而表扬努力则强调了改变是可能的。",
+      "grammar": {
+        "type": "使役动词 make + while 对比",
+        "note": "主句 Praising ability... made the students perform worse，make sb do 为使役结构，动名词短语 Praising ability 作主语；while 引导对比从句，praising effort emphasised that change was possible，that 引导宾语从句。"
+      },
+      "words": [
+        {
+          "w": "emphasise",
+          "pos": "v.",
+          "def": "强调；着重"
+        },
+        {
+          "w": "perform",
+          "pos": "v.",
+          "def": "表现；执行"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 4,
+      "en": "One of the greatest impediments to successfully implementing a growth mindset, however, is the education system itself: in many parts of the world, the school climate is obsessed with performance in the form of constant testing, analysing and ranking of students – a key characteristic of the fixed mindset.",
+      "zh": "然而，成功实施成长型思维的最大障碍之一，恰恰是教育体制本身：在世界许多地方，学校氛围痴迷于以不断测试、分析和排名学生这种形式表现出来的成绩——而这正是固定型思维的一个关键特征。",
+      "grammar": {
+        "type": "主系表 + 冒号解释 + 破折号补充",
+        "note": "主干 One of the greatest impediments... is the education system itself；however 为插入转折；冒号后进一步说明；破折号后 a key characteristic of the fixed mindset 为对前述现象的同位补充。"
+      },
+      "words": [
+        {
+          "w": "impediment",
+          "pos": "n.",
+          "def": "障碍；妨碍"
+        },
+        {
+          "w": "be obsessed with",
+          "pos": "phr.",
+          "def": "痴迷于；沉迷于"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 4,
+      "en": "Nor is it unusual for schools to create a certain cognitive dissonance, when they applaud the benefits of a growth mindset but then hand out fixed target grades in lessons based on performance.",
+      "zh": "学校造成某种认知失调的情况也并不罕见——它们一面赞扬成长型思维的益处，一面却在课堂上依据表现发放固定的目标分数。",
+      "grammar": {
+        "type": "Nor 引导倒装 + 形式主语 + 时间状语从句",
+        "note": "Nor 置于句首引起部分倒装（Nor is it unusual...）；it 为形式主语，真正主语为 for schools to create...；when 引导时间状语从句，从句内 applaud... but then hand out... 两谓语并列，based on performance 为过去分词定语修饰 grades。"
+      },
+      "words": [
+        {
+          "w": "cognitive dissonance",
+          "pos": "n.",
+          "def": "认知失调（信念与行为不一致带来的矛盾）"
+        },
+        {
+          "w": "applaud",
+          "pos": "v.",
+          "def": "赞许；称赞；鼓掌"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 5,
+      "en": "Aside from the implementation problem, the original growth mindset research has also received harsh criticism.",
+      "zh": "除了实施上的问题之外，最初的成长型思维研究还受到了严厉的批评。",
+      "grammar": {
+        "type": "介词短语状语 + 现在完成时",
+        "note": "Aside from the implementation problem 为介词短语作让步/追加状语，意为“除……之外”；主干 the original... research has also received harsh criticism。"
+      },
+      "words": [
+        {
+          "w": "aside from",
+          "pos": "phr.",
+          "def": "除……之外（还）"
+        },
+        {
+          "w": "harsh",
+          "pos": "adj.",
+          "def": "严厉的；苛刻的"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 5,
+      "en": "The statistician Andrew Gelman claims that ‘their research designs have enough degrees of freedom that they could take their data to support just about any theory at all’.",
+      "zh": "统计学家安德鲁·盖尔曼声称：“他们的研究设计有着足够的自由度，以至于他们几乎可以用其数据来支持任何理论。”",
+      "grammar": {
+        "type": "宾语从句 + so...that 变体",
+        "note": "主干 Andrew Gelman claims that...，that 引导宾语从句；从句内 enough... that... 相当于“足够……以至于……”的结果结构；just about 意为“几乎”，修饰 any theory。"
+      },
+      "words": [
+        {
+          "w": "statistician",
+          "pos": "n.",
+          "def": "统计学家"
+        },
+        {
+          "w": "degrees of freedom",
+          "pos": "phr.",
+          "def": "自由度（可自由变动的量）"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 5,
+      "en": "Professor of Psychology Timothy Bates, who has been trying to replicate Dweck’s work, is finding that the results are repeatedly null.",
+      "zh": "心理学教授蒂莫西·贝茨一直试图复现德韦克的研究，他发现所得结果一再为零（无效）。",
+      "grammar": {
+        "type": "非限制性定语从句 + 宾语从句",
+        "note": "who has been trying to replicate Dweck's work 为非限制性定语从句修饰 Timothy Bates（现在完成进行时）；主句 is finding that...，that 引导宾语从句；null 意为“无效的、结果为零的”。"
+      },
+      "words": [
+        {
+          "w": "replicate",
+          "pos": "v.",
+          "def": "复现；重复（实验）"
+        },
+        {
+          "w": "null",
+          "pos": "adj.",
+          "def": "无效的；（结果）为零的"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 5,
+      "en": "He notes that: ‘People with a growth mindset don’t cope any better with failure ... Kids with the growth mindset aren’t getting better grades, either before or after our intervention study.’",
+      "zh": "他指出：“拥有成长型思维的人应对失败的能力并没有更强……具有成长型思维的孩子成绩也并未提高，无论是在我们的干预研究之前还是之后。”",
+      "grammar": {
+        "type": "直接引语 + either...or 状语",
+        "note": "主干 He notes that + 直接引语；引语中 don't cope any better with failure，any 强化比较级否定；either before or after our intervention study 为时间状语，either...or... 并列两个介词短语。"
+      },
+      "words": [
+        {
+          "w": "cope with",
+          "pos": "phr.",
+          "def": "应对；处理"
+        },
+        {
+          "w": "intervention",
+          "pos": "n.",
+          "def": "干预；介入"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 6,
+      "en": "Much of this criticism is not lost on Dweck, and she deserves great credit for responding to it and adapting her work accordingly.",
+      "zh": "这些批评中的大部分并未被德韦克忽视，而她因回应这些批评并据此调整自己的研究而理应得到高度赞誉。",
+      "grammar": {
+        "type": "be lost on 惯用 + and 并列",
+        "note": "be not lost on sb 意为“未被某人忽视、某人有所领会”；and 连接第二分句 she deserves great credit for...，for 后接两个并列动名词 responding to it 与 adapting her work，accordingly 意为“相应地”。"
+      },
+      "words": [
+        {
+          "w": "be lost on",
+          "pos": "phr.",
+          "def": "未被……领会；对……不起作用"
+        },
+        {
+          "w": "deserve credit",
+          "pos": "phr.",
+          "def": "理应得到赞誉；值得称许"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 6,
+      "en": "In fact, she argues that her work has been misunderstood and misapplied in a range of ways.",
+      "zh": "事实上，她辩称自己的研究在诸多方面遭到了误解和误用。",
+      "grammar": {
+        "type": "宾语从句 + 被动语态",
+        "note": "主干 she argues that...，that 引导宾语从句；从句谓语为被动结构 has been misunderstood and misapplied，两个过去分词并列；in a range of ways 为方式状语。"
+      },
+      "words": [
+        {
+          "w": "misapply",
+          "pos": "v.",
+          "def": "误用；错误地应用"
+        },
+        {
+          "w": "a range of",
+          "pos": "phr.",
+          "def": "一系列的；各种各样的"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 6,
+      "en": "She has also expressed concerns that her theories are being misappropriated in schools by being conflated with the self-esteem movement: ‘For me the growth mindset is a tool for learning and improvement. It’s not just a vehicle for making children feel good.’",
+      "zh": "她还表达了担忧：她的理论正在学校中被滥用，被与“自尊运动”混为一谈：“对我而言，成长型思维是一种用于学习和进步的工具，而不仅仅是让孩子自我感觉良好的手段。”",
+      "grammar": {
+        "type": "同位语从句 + 被动 + 冒号引语",
+        "note": "that her theories are being misappropriated... 为同位语从句说明 concerns（现在进行时被动）；by being conflated with... 为方式状语（动名词被动）；冒号后为直接引语佐证观点。"
+      },
+      "words": [
+        {
+          "w": "misappropriate",
+          "pos": "v.",
+          "def": "滥用；挪用"
+        },
+        {
+          "w": "conflate",
+          "pos": "v.",
+          "def": "混为一谈；合并"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 7,
+      "en": "But there is another factor at work here.",
+      "zh": "但这里还有另一个因素在起作用。",
+      "grammar": {
+        "type": "There be 存在句",
+        "note": "There is another factor 为存在句；at work 为介词短语作后置定语/状语，意为“在起作用、在运作”；here 为地点状语。"
+      },
+      "words": [
+        {
+          "w": "factor",
+          "pos": "n.",
+          "def": "因素；要素"
+        },
+        {
+          "w": "at work",
+          "pos": "phr.",
+          "def": "在起作用；在运转"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 7,
+      "en": "The failure to translate the growth mindset into the classroom might reflect a misunderstanding of the nature of teaching and learning itself.",
+      "zh": "未能将成长型思维转化到课堂之中，或许反映出对教与学本质本身的一种误解。",
+      "grammar": {
+        "type": "不定式作后置定语 + 情态动词",
+        "note": "主语 The failure，其后 to translate the growth mindset into the classroom 为不定式作后置定语；谓语 might reflect a misunderstanding of...；itself 强调 teaching and learning 本身。"
+      },
+      "words": [
+        {
+          "w": "translate into",
+          "pos": "phr.",
+          "def": "转化为；落实为"
+        },
+        {
+          "w": "nature",
+          "pos": "n.",
+          "def": "本质；性质"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 7,
+      "en": "Growth mindset supporters David Yeager and Gregory Walton claim that interventions should be delivered in a subtle way to maximise their effectiveness.",
+      "zh": "成长型思维的支持者戴维·耶格尔和格雷戈里·沃尔顿声称，干预应以一种不动声色的方式实施，以使其效果最大化。",
+      "grammar": {
+        "type": "宾语从句 + 情态被动 + 不定式目的",
+        "note": "主干 David Yeager and Gregory Walton claim that...；that 引导宾语从句，从句谓语为情态被动 should be delivered；in a subtle way 为方式状语，to maximise their effectiveness 为不定式目的状语。"
+      },
+      "words": [
+        {
+          "w": "subtle",
+          "pos": "adj.",
+          "def": "微妙的；不易察觉的；含蓄的"
+        },
+        {
+          "w": "maximise",
+          "pos": "v.",
+          "def": "使最大化"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 7,
+      "en": "They say that if adolescents perceive a teacher’s intervention as conveying that they are in need of help, this could undo its intended effects.",
+      "zh": "他们说，如果青少年把老师的干预理解为在传达“他们需要帮助”，这反而可能抵消干预原本的效果。",
+      "grammar": {
+        "type": "宾语从句 + 内嵌条件从句",
+        "note": "主干 They say that...；宾语从句内含 if 条件从句 if adolescents perceive... as conveying that...（perceive A as doing B，其中 that they are in need of help 为 conveying 的宾语从句）；主句 this could undo its intended effects。"
+      },
+      "words": [
+        {
+          "w": "adolescent",
+          "pos": "n.",
+          "def": "青少年"
+        },
+        {
+          "w": "undo",
+          "pos": "v.",
+          "def": "抵消；使无效；解开"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 8,
+      "en": "A lot of what drives students is their innate beliefs and how they perceive themselves.",
+      "zh": "驱动学生的很大一部分，是他们与生俱来的信念以及他们如何看待自己。",
+      "grammar": {
+        "type": "主语从句 + 表语并列",
+        "note": "主语 A lot of what drives students，其中 what drives students 为 of 的宾语从句；表语由 their innate beliefs 和 how they perceive themselves（疑问词引导的名词性从句）并列构成。"
+      },
+      "words": [
+        {
+          "w": "drive",
+          "pos": "v.",
+          "def": "驱动；促使"
+        },
+        {
+          "w": "perceive",
+          "pos": "v.",
+          "def": "认为；察觉；理解"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 8,
+      "en": "There is a strong correlation between self-perception and achievement, but there is evidence to suggest that the actual effect of achievement on self-perception is stronger than the other way round.",
+      "zh": "自我认知与成就之间存在密切的相关性，但有证据表明，成就对自我认知的实际影响，要强于反过来的影响。",
+      "grammar": {
+        "type": "There be + but + 宾语从句",
+        "note": "两个 There be 分句由 but 连接；后一分句 evidence to suggest that... 中，to suggest 为不定式定语，that 引导其内容从句；the other way round 意为“反过来、相反方向”。"
+      },
+      "words": [
+        {
+          "w": "correlation",
+          "pos": "n.",
+          "def": "相关性；关联"
+        },
+        {
+          "w": "the other way round",
+          "pos": "phr.",
+          "def": "反过来；相反地"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 8,
+      "en": "To stand up in a classroom and successfully deliver a good speech is a genuine achievement, and that is likely to be more powerfully motivating than vague notions of ‘motivation’ itself.",
+      "zh": "在课堂上站起来并成功地做一场精彩的演讲，是一项实实在在的成就，而这很可能比“动机”本身那种模糊的概念更具激励作用。",
+      "grammar": {
+        "type": "不定式作主语 + and 并列",
+        "note": "前一分句以不定式短语 To stand up... and... deliver a good speech 作主语，谓语 is a genuine achievement；and 连接第二分句 that is likely to be more powerfully motivating than...，than 引出比较对象。"
+      },
+      "words": [
+        {
+          "w": "genuine",
+          "pos": "adj.",
+          "def": "真正的；名副其实的"
+        },
+        {
+          "w": "vague",
+          "pos": "adj.",
+          "def": "模糊的；含糊的"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 9,
+      "en": "Recent evidence would suggest that growth mindset interventions are not the elixir of student learning that its proponents claim it to be.",
+      "zh": "近期的证据似乎表明，成长型思维干预并非其倡导者所宣称的那种学生学习的灵丹妙药。",
+      "grammar": {
+        "type": "宾语从句 + 定语从句",
+        "note": "主干 Recent evidence would suggest that...，would 表委婉推测；that 引导宾语从句；从句内 that its proponents claim it to be 为定语从句修饰 the elixir，claim sth to be 为“宣称某物是……”。"
+      },
+      "words": [
+        {
+          "w": "elixir",
+          "pos": "n.",
+          "def": "灵丹妙药；万能药"
+        },
+        {
+          "w": "proponent",
+          "pos": "n.",
+          "def": "支持者；倡导者"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 9,
+      "en": "The growth mindset appears to be a viable construct in the lab, which, when administered in the classroom via targeted interventions, doesn’t seem to work.",
+      "zh": "成长型思维在实验室里似乎是一种可行的建构，然而当它通过针对性干预被应用于课堂时，却又似乎行不通。",
+      "grammar": {
+        "type": "非限制性定语从句 + 时间状语从句插入",
+        "note": "主句 The growth mindset appears to be a viable construct in the lab；which... doesn't seem to work 为非限制性定语从句修饰 construct；其中 when administered in the classroom via targeted interventions 为省略式时间状语从句插入。"
+      },
+      "words": [
+        {
+          "w": "viable",
+          "pos": "adj.",
+          "def": "可行的；行得通的"
+        },
+        {
+          "w": "construct",
+          "pos": "n.",
+          "def": "（理论）建构；概念构想"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 9,
+      "en": "It is hard to dispute that having faith in the capacity to change is a good attribute for students.",
+      "zh": "很难否认，对改变的能力抱有信心，对学生而言是一种良好的品质。",
+      "grammar": {
+        "type": "形式主语 it + 宾语从句",
+        "note": "It 为形式主语，真正主语为 to dispute that...；that 引导宾语从句，从句主语 having faith in the capacity to change 为动名词短语，to change 为 capacity 的不定式定语。"
+      },
+      "words": [
+        {
+          "w": "dispute",
+          "pos": "v.",
+          "def": "质疑；反驳；争辩"
+        },
+        {
+          "w": "attribute",
+          "pos": "n.",
+          "def": "特质；属性"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 9,
+      "en": "Paradoxically, however, that aspiration is not well served by direct interventions that try to instil it.",
+      "zh": "然而，矛盾的是，那种志向恰恰无法通过试图灌输它的直接干预而得到很好的实现。",
+      "grammar": {
+        "type": "被动语态 + 定语从句 + 副词状语",
+        "note": "Paradoxically 与 however 为评注性/转折状语；主干 that aspiration is not well served by direct interventions（被动）；that try to instil it 为定语从句修饰 interventions。"
+      },
+      "words": [
+        {
+          "w": "paradoxically",
+          "pos": "adv.",
+          "def": "矛盾的是；反常地"
+        },
+        {
+          "w": "aspiration",
+          "pos": "n.",
+          "def": "志向；抱负；渴望"
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "para": 10,
+      "en": "Motivational posters and talks are often a waste of time, and might well give students a deluded notion of what success actually means.",
+      "zh": "励志海报和演讲往往是浪费时间，而且很可能让学生对成功的真正含义产生一种被误导的认识。",
+      "grammar": {
+        "type": "并列谓语 + 宾语从句",
+        "note": "主语 Motivational posters and talks 带两个并列谓语 are... and might well give...；might well 表“很可能”；of what success actually means 为介词宾语从句，作 notion 的后置定语。"
+      },
+      "words": [
+        {
+          "w": "deluded",
+          "pos": "adj.",
+          "def": "受蒙蔽的；想法被误导的"
+        },
+        {
+          "w": "notion",
+          "pos": "n.",
+          "def": "概念；观念；看法"
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "para": 10,
+      "en": "Teaching concrete skills such as how to write an effective introduction to an essay then praising students’ effort in getting there is probably a far better way of improving confidence than telling them how unique they are, or indeed how capable they are of changing their own brains.",
+      "zh": "教授具体的技能——比如如何为一篇文章写出有效的引言——再表扬学生为达成这一点所付出的努力，很可能是一种远比告诉他们“你有多么独特”、乃至“你多么有能力改变自己的大脑”更好的增强自信的方式。",
+      "grammar": {
+        "type": "动名词主语 + 比较结构 than",
+        "note": "主语为并列动名词短语 Teaching concrete skills... then praising students' effort...；谓语 is probably a far better way of improving confidence；than 引出比较对象，后接两个并列动名词宾语从句 how unique they are 与 how capable they are of...。"
+      },
+      "words": [
+        {
+          "w": "concrete",
+          "pos": "adj.",
+          "def": "具体的；实在的"
+        },
+        {
+          "w": "unique",
+          "pos": "adj.",
+          "def": "独特的；独一无二的"
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "para": 10,
+      "en": "Perhaps growth mindset works best as a philosophy and not an intervention.",
+      "zh": "或许，成长型思维作为一种理念、而非一种干预手段时，才发挥得最好。",
+      "grammar": {
+        "type": "as 介词短语 + not 对比",
+        "note": "主干 growth mindset works best；as a philosophy and not an intervention 为 as 引导的介词短语作方式状语，用 and not 构成对比，强调“作为理念而非干预”。"
+      },
+      "words": [
+        {
+          "w": "philosophy",
+          "pos": "n.",
+          "def": "理念；哲学；人生观"
+        },
+        {
+          "w": "work best",
+          "pos": "phr.",
+          "def": "效果最佳；最能奏效"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 14–16",
+      "type": "multiple_choice",
+      "instructions": [
+        "Choose the correct letter, A, B, C or D.",
+        "Write the correct letter in boxes 14–16 on your answer sheet."
+      ],
+      "items": [
+        {
+          "number": 14,
+          "prompt": "What can we learn from the first paragraph?\nA where the notion of innate intelligence first began\nB when ideas about the nature of intelligence began to shift\nC how scientists have responded to changing views of intelligence\nD why thinkers turned away from the idea of intelligence being fixed",
+          "answer": "B",
+          "evidence_sentence": 2
+        },
+        {
+          "number": 15,
+          "prompt": "The second paragraph describes how schools encourage students to\nA identify their personal ambitions.\nB help each other to realise their goals.\nC have confidence in their potential to succeed.\nD concentrate on where their particular strengths lie.",
+          "answer": "C",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 16,
+          "prompt": "In the third paragraph, the writer suggests that students with a fixed mindset\nA tend to be less competitive.\nB generally have a low sense of self-esteem.\nC will only work hard if they are given constant encouragement.\nD are afraid to push themselves beyond what they see as their limitations.",
+          "answer": "D",
+          "evidence_sentence": 14
+        }
+      ]
+    },
+    {
+      "title": "Questions 17–22",
+      "type": "matching_people",
+      "instructions": [
+        "Look at the following statements (Questions 17–22) and the list of people below.",
+        "Match each statement with the correct person or people, A–E.",
+        "Write the correct letter, A–E, in boxes 17–22 on your answer sheet.",
+        "NB You may use any letter more than once.",
+        "A Alfred Binet",
+        "B Carol Dweck",
+        "C Andrew Gelman",
+        "D Timothy Bates",
+        "E David Yeager and Gregory Walton"
+      ],
+      "items": [
+        {
+          "number": 17,
+          "prompt": "The methodology behind the growth mindset studies was not strict enough.",
+          "answer": "C",
+          "evidence_sentence": 20
+        },
+        {
+          "number": 18,
+          "prompt": "The idea of the growth mindset has been incorrectly interpreted.",
+          "answer": "B",
+          "evidence_sentence": 24
+        },
+        {
+          "number": 19,
+          "prompt": "Intellectual ability is an unchangeable feature of each individual.",
+          "answer": "A",
+          "evidence_sentence": 3
+        },
+        {
+          "number": 20,
+          "prompt": "The growth mindset should be promoted without students being aware of it.",
+          "answer": "E",
+          "evidence_sentence": 28
+        },
+        {
+          "number": 21,
+          "prompt": "The growth mindset is not simply about boosting students’ morale.",
+          "answer": "B",
+          "evidence_sentence": 25
+        },
+        {
+          "number": 22,
+          "prompt": "Research shows that the growth mindset has no effect on academic achievement.",
+          "answer": "D",
+          "evidence_sentence": 22
+        }
+      ]
+    },
+    {
+      "title": "Questions 23–26",
+      "type": "yes_no_notgiven",
+      "instructions": [
+        "Do the following statements agree with the views of the writer in Reading Passage 2?",
+        "In boxes 23–26 on your answer sheet, write",
+        "YES if the statement agrees with the views of the writer",
+        "NO if the statement contradicts the views of the writer",
+        "NOT GIVEN if it is impossible to say what the writer thinks about this"
+      ],
+      "items": [
+        {
+          "number": 23,
+          "prompt": "Dweck has handled criticisms of her work in an admirable way.",
+          "answer": "YES",
+          "evidence_sentence": 23
+        },
+        {
+          "number": 24,
+          "prompt": "Students’ self-perception is a more effective driver of self-confidence than actual achievement is.",
+          "answer": "NO",
+          "evidence_sentence": 31
+        },
+        {
+          "number": 25,
+          "prompt": "Recent evidence about growth mindset interventions has attracted unfair coverage in the media.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 33
+        },
+        {
+          "number": 26,
+          "prompt": "Deliberate attempts to encourage students to strive for high achievement may have a negative effect.",
+          "answer": "YES",
+          "evidence_sentence": 36
+        }
+      ]
+    }
+  ]
+}

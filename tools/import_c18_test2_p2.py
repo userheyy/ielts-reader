@@ -1,0 +1,782 @@
+# -*- coding: utf-8 -*-
+"""Generate data/passages/c18-test2-p2.json (Living with artificial intelligence)."""
+import json
+import os
+
+RSQUO = "’"
+LSQUO = "‘"
+DASH = "–"
+
+sentences = [
+    # Paragraph 1
+    {
+        "id": 1,
+        "para": 1,
+        "en": "This has been the decade of AI, with one astonishing feat after another.",
+        "zh": "这是属于人工智能的十年，一个又一个惊人的成就接连涌现。",
+        "grammar": {
+            "type": "现在完成时 + with 复合结构",
+            "note": "主干是 This has been the decade of AI；with one astonishing feat after another 为 with 复合结构作状语，one... after another 表“一个接一个”。"
+        },
+        "words": [
+            {"w": "decade", "pos": "n.", "def": "十年"},
+            {"w": "feat", "pos": "n.", "def": "壮举；功绩"}
+        ]
+    },
+    {
+        "id": 2,
+        "para": 1,
+        "en": "A chess-playing AI that can defeat not only all human chess players, but also all previous human-programmed chess machines, after learning the game in just four hours?",
+        "zh": "一个仅用四个小时学会国际象棋，就能击败所有人类棋手、甚至击败此前所有由人类编程的下棋机器的人工智能？",
+        "grammar": {
+            "type": "名词性反问 + 定语从句 + not only...but also...",
+            "note": "整句为省略谓语的名词性反问句；that can defeat not only all human chess players, but also all previous human-programmed chess machines 为定语从句修饰 AI，not only...but also... 表递进；after learning the game in just four hours 为时间状语。"
+        },
+        "words": [
+            {"w": "defeat", "pos": "v.", "def": "击败；战胜"},
+            {"w": "program", "pos": "v.", "def": "为……编程"}
+        ]
+    },
+    {
+        "id": 3,
+        "para": 1,
+        "en": "That" + RSQUO + "s yesterday" + RSQUO + "s news, what" + RSQUO + "s next?",
+        "zh": "那已是昨日旧闻了，接下来又会怎样呢？",
+        "grammar": {
+            "type": "并列疑问",
+            "note": "两个分句 That" + RSQUO + "s yesterday" + RSQUO + "s news 与 what" + RSQUO + "s next 由逗号连接，后者为特殊疑问句，语气上承接前句表“不足为奇”。"
+        },
+        "words": [
+            {"w": "news", "pos": "n.", "def": "新闻；消息"},
+            {"w": "next", "pos": "adv.", "def": "接下来"}
+        ]
+    },
+    {
+        "id": 4,
+        "para": 1,
+        "en": "True, these prodigious accomplishments are all in so-called narrow AI, where machines perform highly specialised tasks.",
+        "zh": "诚然，这些惊人的成就全都属于所谓的“弱人工智能”，即机器执行高度专门化的任务。",
+        "grammar": {
+            "type": "让步插入 + 定语从句",
+            "note": "True 为让步性插入语，表“的确”；主干 these prodigious accomplishments are all in so-called narrow AI；where machines perform highly specialised tasks 为定语从句修饰 narrow AI。"
+        },
+        "words": [
+            {"w": "prodigious", "pos": "adj.", "def": "惊人的；巨大的"},
+            {"w": "narrow AI", "pos": "phr.", "def": "弱人工智能；狭义人工智能"}
+        ]
+    },
+    {
+        "id": 5,
+        "para": 1,
+        "en": "But many experts believe this restriction is very temporary.",
+        "zh": "但许多专家认为，这种局限是非常短暂的。",
+        "grammar": {
+            "type": "宾语从句",
+            "note": "主干是 But many experts believe（后接省略 that 的宾语从句）this restriction is very temporary。"
+        },
+        "words": [
+            {"w": "restriction", "pos": "n.", "def": "限制；局限"},
+            {"w": "temporary", "pos": "adj.", "def": "暂时的；临时的"}
+        ]
+    },
+    {
+        "id": 6,
+        "para": 1,
+        "en": "By mid-century, we may have artificial general intelligence (AGI) " + DASH + " machines that can achieve human-level performance on the full range of tasks that we ourselves can tackle.",
+        "zh": "到本世纪中叶，我们可能会拥有通用人工智能（AGI）——即能够在我们人类自己所能处理的全部任务上达到人类水平表现的机器。",
+        "grammar": {
+            "type": "破折号同位语 + 嵌套定语从句",
+            "note": "主干是 we may have artificial general intelligence (AGI)；破折号后 machines that can achieve human-level performance... 为 AGI 的同位语，that 引导定语从句；that we ourselves can tackle 再修饰 tasks。"
+        },
+        "words": [
+            {"w": "artificial general intelligence", "pos": "phr.", "def": "通用人工智能（AGI）"},
+            {"w": "tackle", "pos": "v.", "def": "处理；应对"}
+        ]
+    },
+    # Paragraph 2
+    {
+        "id": 7,
+        "para": 2,
+        "en": "If so, there" + RSQUO + "s little reason to think it will stop there.",
+        "zh": "如果真是这样，那就没什么理由认为它会止步于此。",
+        "grammar": {
+            "type": "省略条件句 + there be + 不定式定语",
+            "note": "If so 为省略式条件状语（=If that is so）；主句 there" + RSQUO + "s little reason to think...，to think it will stop there 为不定式作定语修饰 reason，think 后接省略 that 的宾语从句。"
+        },
+        "words": [
+            {"w": "reason", "pos": "n.", "def": "理由；原因"},
+            {"w": "stop", "pos": "v.", "def": "停止"}
+        ]
+    },
+    {
+        "id": 8,
+        "para": 2,
+        "en": "Machines will be free of many of the physical constraints on human intelligence.",
+        "zh": "机器将摆脱许多制约人类智能的物理限制。",
+        "grammar": {
+            "type": "主系表",
+            "note": "主干是 Machines will be free of many of the physical constraints，be free of 表“摆脱、免于”；on human intelligence 为介词短语修饰 constraints。"
+        },
+        "words": [
+            {"w": "be free of", "pos": "phr.", "def": "摆脱；免于"},
+            {"w": "constraint", "pos": "n.", "def": "限制；约束"}
+        ]
+    },
+    {
+        "id": 9,
+        "para": 2,
+        "en": "Our brains run at slow biochemical processing speeds on the power of a light bulb, and their size is restricted by the dimensions of the human birth canal.",
+        "zh": "我们的大脑以缓慢的生化处理速度运转，功率不过相当于一只灯泡，而其大小又受到人类产道尺寸的限制。",
+        "grammar": {
+            "type": "并列句 + 被动语态",
+            "note": "两个分句由 and 连接；前句 Our brains run at slow biochemical processing speeds，on the power of a light bulb 为方式状语；后句 their size is restricted by the dimensions of the human birth canal 为被动语态。"
+        },
+        "words": [
+            {"w": "biochemical", "pos": "adj.", "def": "生物化学的"},
+            {"w": "birth canal", "pos": "phr.", "def": "产道"}
+        ]
+    },
+    {
+        "id": 10,
+        "para": 2,
+        "en": "It is remarkable what they accomplish, given these handicaps.",
+        "zh": "考虑到这些不利条件，大脑所取得的成就着实令人惊叹。",
+        "grammar": {
+            "type": "it 形式主语 + 主语从句 + given 状语",
+            "note": "主干 It is remarkable what they accomplish，it 为形式主语，what they accomplish 为真正的主语从句；given these handicaps 为 given 引导的状语，表“考虑到”。"
+        },
+        "words": [
+            {"w": "remarkable", "pos": "adj.", "def": "非凡的；引人注目的"},
+            {"w": "handicap", "pos": "n.", "def": "障碍；不利条件"}
+        ]
+    },
+    {
+        "id": 11,
+        "para": 2,
+        "en": "But they may be as far from the physical limits of thought as our eyes are from the incredibly powerful Webb Space Telescope.",
+        "zh": "但大脑距离思维的物理极限之远，也许就如同我们的肉眼距离那台无比强大的韦布空间望远镜一样。",
+        "grammar": {
+            "type": "as...as... 同级比较",
+            "note": "主干是 they may be as far from the physical limits of thought as our eyes are from the... Webb Space Telescope，as...as... 为同级比较结构，后半 as our eyes are (far) from... 中省略了 far。"
+        },
+        "words": [
+            {"w": "limit", "pos": "n.", "def": "极限；界限"},
+            {"w": "telescope", "pos": "n.", "def": "望远镜"}
+        ]
+    },
+    # Paragraph 3
+    {
+        "id": 12,
+        "para": 3,
+        "en": "Once machines are better than us at designing even smarter machines, progress towards these limits could accelerate.",
+        "zh": "一旦机器在设计更智能的机器方面胜过我们，朝这些极限迈进的进程就可能加速。",
+        "grammar": {
+            "type": "once 条件状语从句 + 主句",
+            "note": "Once machines are better than us at designing even smarter machines 为 once 引导的条件/时间状语从句，be better than sb at doing 表“在……方面胜过”；主句 progress towards these limits could accelerate。"
+        },
+        "words": [
+            {"w": "accelerate", "pos": "v.", "def": "加速；加快"},
+            {"w": "smarter", "pos": "adj.", "def": "更聪明的"}
+        ]
+    },
+    {
+        "id": 13,
+        "para": 3,
+        "en": "What would this mean for us? Could we ensure a safe and worthwhile coexistence with such machines?",
+        "zh": "这对我们意味着什么呢？我们能否确保与这类机器实现安全而有价值的共存？",
+        "grammar": {
+            "type": "并列疑问句",
+            "note": "两个疑问句并列：What would this mean for us 为特殊疑问句；Could we ensure a safe and worthwhile coexistence with such machines 为一般疑问句，均用于引发思考。"
+        },
+        "words": [
+            {"w": "ensure", "pos": "v.", "def": "确保；保证"},
+            {"w": "coexistence", "pos": "n.", "def": "共存；共处"}
+        ]
+    },
+    {
+        "id": 14,
+        "para": 3,
+        "en": "On the plus side, AI is already useful and profitable for many things, and super AI might be expected to be super useful, and super profitable.",
+        "zh": "从有利的一面看，人工智能在许多方面已经很有用、很有利可图，而超级人工智能则有望超级有用、超级有利可图。",
+        "grammar": {
+            "type": "并列句 + 被动推测",
+            "note": "On the plus side 为状语，表“从好的一面”；两个分句由 and 连接；后句 super AI might be expected to be super useful, and super profitable，为被动结构 be expected to be。"
+        },
+        "words": [
+            {"w": "profitable", "pos": "adj.", "def": "有利可图的；盈利的"},
+            {"w": "on the plus side", "pos": "phr.", "def": "从有利的一面看"}
+        ]
+    },
+    {
+        "id": 15,
+        "para": 3,
+        "en": "But the more powerful AI becomes, the more important it will be to specify its goals with great care.",
+        "zh": "但人工智能越强大，极其谨慎地设定其目标就越发重要。",
+        "grammar": {
+            "type": "the more...the more... 比较结构 + it 形式主语",
+            "note": "the more powerful AI becomes, the more important it will be to specify its goals 为“the + 比较级..., the + 比较级...”结构；后半 it 为形式主语，to specify its goals with great care 为真正主语。"
+        },
+        "words": [
+            {"w": "specify", "pos": "v.", "def": "明确规定；具体说明"},
+            {"w": "with great care", "pos": "phr.", "def": "非常谨慎地"}
+        ]
+    },
+    {
+        "id": 16,
+        "para": 3,
+        "en": "Folklore is full of tales of people who ask for the wrong thing, with disastrous consequences " + DASH + " King Midas, for example, might have wished that everything he touched turned to gold, but didn" + RSQUO + "t really intend this to apply to his breakfast.",
+        "zh": "民间传说里满是这样的故事：人们许错了愿，招致灾难性的后果——比如迈达斯国王也许曾希望自己触碰的一切都变成黄金，但他其实并不想让这也适用于他的早餐。",
+        "grammar": {
+            "type": "定语从句 + 破折号举例 + 宾语从句",
+            "note": "主干 Folklore is full of tales of people；who ask for the wrong thing 为定语从句修饰 people，with disastrous consequences 为伴随状语；破折号后举例 King Midas... might have wished that... but didn" + RSQUO + "t really intend this to apply to his breakfast，that 引导宾语从句。"
+        },
+        "words": [
+            {"w": "folklore", "pos": "n.", "def": "民间传说；民俗"},
+            {"w": "disastrous", "pos": "adj.", "def": "灾难性的"}
+        ]
+    },
+    # Paragraph 4
+    {
+        "id": 17,
+        "para": 4,
+        "en": "So we need to create powerful AI machines that are " + LSQUO + "human-friendly" + RSQUO + " " + DASH + " that have goals reliably aligned with our own values.",
+        "zh": "因此我们需要创造出“对人类友好”的强大人工智能机器——即目标与我们自身价值观可靠地保持一致的机器。",
+        "grammar": {
+            "type": "定语从句并列 + 破折号解释",
+            "note": "主干是 we need to create powerful AI machines that are " + LSQUO + "human-friendly" + RSQUO + "，that 引导定语从句；破折号后 that have goals reliably aligned with our own values 为并列定语从句进一步解释，aligned with 为过去分词修饰 goals。"
+        },
+        "words": [
+            {"w": "human-friendly", "pos": "adj.", "def": "对人类友好的"},
+            {"w": "align with", "pos": "phr.", "def": "与……一致；使对齐"}
+        ]
+    },
+    {
+        "id": 18,
+        "para": 4,
+        "en": "One thing that makes this task difficult is that we are far from reliably human-friendly ourselves.",
+        "zh": "使这项任务变得困难的一点在于，我们自己都远谈不上可靠地对人类友好。",
+        "grammar": {
+            "type": "定语从句 + 表语从句",
+            "note": "主语 One thing，that makes this task difficult 为定语从句修饰 thing；系动词 is，表语从句 that we are far from reliably human-friendly ourselves，far from 表“远非”。"
+        },
+        "words": [
+            {"w": "far from", "pos": "phr.", "def": "远非；一点也不"},
+            {"w": "reliably", "pos": "adv.", "def": "可靠地"}
+        ]
+    },
+    {
+        "id": 19,
+        "para": 4,
+        "en": "We do many terrible things to each other and to many other creatures with whom we share the planet.",
+        "zh": "我们对彼此、也对与我们共享这颗星球的许多其他生物做出了种种可怕的事情。",
+        "grammar": {
+            "type": "主谓宾 + 介词提前定语从句",
+            "note": "主干是 We do many terrible things to each other and to many other creatures；with whom we share the planet 为“介词+关系代词”引导的定语从句修饰 creatures。"
+        },
+        "words": [
+            {"w": "creature", "pos": "n.", "def": "生物；动物"},
+            {"w": "terrible", "pos": "adj.", "def": "可怕的；糟糕的"}
+        ]
+    },
+    {
+        "id": 20,
+        "para": 4,
+        "en": "If superintelligent machines don" + RSQUO + "t do a lot better than us, we" + RSQUO + "ll be in deep trouble.",
+        "zh": "如果超级智能机器做得并不比我们好多少，我们就会陷入大麻烦。",
+        "grammar": {
+            "type": "if 条件状语从句 + 主句",
+            "note": "If superintelligent machines don" + RSQUO + "t do a lot better than us 为条件状语从句，a lot 修饰比较级 better；主句 we" + RSQUO + "ll be in deep trouble。"
+        },
+        "words": [
+            {"w": "superintelligent", "pos": "adj.", "def": "超级智能的"},
+            {"w": "in deep trouble", "pos": "phr.", "def": "陷入大麻烦"}
+        ]
+    },
+    {
+        "id": 21,
+        "para": 4,
+        "en": "We" + RSQUO + "ll have powerful new intelligence amplifying the dark sides of our own fallible natures.",
+        "zh": "我们将拥有一种强大的新智能，而它却在放大我们自身易犯错的本性中阴暗的一面。",
+        "grammar": {
+            "type": "have sth doing 复合宾语",
+            "note": "主干 We" + RSQUO + "ll have powerful new intelligence amplifying the dark sides...，have + 宾语 + 现在分词 构成复合宾语，amplifying 表“正在放大”；of our own fallible natures 修饰 dark sides。"
+        },
+        "words": [
+            {"w": "amplify", "pos": "v.", "def": "放大；增强"},
+            {"w": "fallible", "pos": "adj.", "def": "易犯错的"}
+        ]
+    },
+    # Paragraph 5
+    {
+        "id": 22,
+        "para": 5,
+        "en": "For safety" + RSQUO + "s sake, then, we want the machines to be ethically as well as cognitively superhuman.",
+        "zh": "因此，为了安全起见，我们希望这些机器不仅在认知上、而且在道德上都超越常人。",
+        "grammar": {
+            "type": "want sb to do + as well as 并列",
+            "note": "主干是 we want the machines to be... superhuman，want sb to do 结构；ethically as well as cognitively 为两个副词由 as well as 并列作状语，表“不仅……而且……”；For safety" + RSQUO + "s sake 为目的状语。"
+        },
+        "words": [
+            {"w": "ethically", "pos": "adv.", "def": "在道德上；伦理上"},
+            {"w": "cognitively", "pos": "adv.", "def": "在认知上"}
+        ]
+    },
+    {
+        "id": 23,
+        "para": 5,
+        "en": "We want them to aim for the moral high ground, not for the troughs in which many of us spend some of our time.",
+        "zh": "我们希望它们瞄准道德的高地，而不是我们许多人时常置身其中的道德低谷。",
+        "grammar": {
+            "type": "want sb to do + not 对比 + 介词提前定语从句",
+            "note": "主干 We want them to aim for the moral high ground，want sb to do 结构；not for the troughs 与前面的 for the moral high ground 形成对比；in which many of us spend some of our time 为定语从句修饰 troughs。"
+        },
+        "words": [
+            {"w": "moral high ground", "pos": "phr.", "def": "道德高地"},
+            {"w": "trough", "pos": "n.", "def": "低谷；低点"}
+        ]
+    },
+    {
+        "id": 24,
+        "para": 5,
+        "en": "Luckily they" + RSQUO + "ll be smart enough for the job.",
+        "zh": "幸运的是，它们会足够聪明，能够胜任这项工作。",
+        "grammar": {
+            "type": "主系表 + enough 结构",
+            "note": "主干是 they" + RSQUO + "ll be smart enough for the job；smart enough for... 表“足够聪明以胜任”；Luckily 为评注性状语。"
+        },
+        "words": [
+            {"w": "smart", "pos": "adj.", "def": "聪明的"},
+            {"w": "luckily", "pos": "adv.", "def": "幸运地"}
+        ]
+    },
+    {
+        "id": 25,
+        "para": 5,
+        "en": "If there are routes to the moral high ground, they" + RSQUO + "ll be better than us at finding them, and steering us in the right direction.",
+        "zh": "如果存在通往道德高地的路径，它们会比我们更擅长找到这些路径，并把我们引向正确的方向。",
+        "grammar": {
+            "type": "if 条件从句 + 比较结构 + 动名词并列",
+            "note": "If there are routes to the moral high ground 为条件状语从句；主句 they" + RSQUO + "ll be better than us at finding them, and steering us...，at 后接两个并列动名词 finding 和 steering。"
+        },
+        "words": [
+            {"w": "route", "pos": "n.", "def": "路线；途径"},
+            {"w": "steer", "pos": "v.", "def": "引导；驾驶"}
+        ]
+    },
+    # Paragraph 6
+    {
+        "id": 26,
+        "para": 6,
+        "en": "However, there are two big problems with this utopian vision.",
+        "zh": "然而，这一乌托邦式的愿景存在两大难题。",
+        "grammar": {
+            "type": "there be 结构",
+            "note": "主干是 there are two big problems with this utopian vision；with this utopian vision 为介词短语说明问题所属；However 表转折。"
+        },
+        "words": [
+            {"w": "utopian", "pos": "adj.", "def": "乌托邦式的；理想化的"},
+            {"w": "vision", "pos": "n.", "def": "愿景；设想"}
+        ]
+    },
+    {
+        "id": 27,
+        "para": 6,
+        "en": "One is how we get the machines started on the journey, the other is what it would mean to reach this destination.",
+        "zh": "其一是我们如何让机器踏上这段旅程，其二是抵达这一终点又将意味着什么。",
+        "grammar": {
+            "type": "one...the other... + 表语从句",
+            "note": "One is... the other is... 为“一个……另一个……”结构；how we get the machines started on the journey 与 what it would mean to reach this destination 各为表语从句，后者 it 为形式主语。"
+        },
+        "words": [
+            {"w": "destination", "pos": "n.", "def": "终点；目的地"},
+            {"w": "journey", "pos": "n.", "def": "旅程"}
+        ]
+    },
+    {
+        "id": 28,
+        "para": 6,
+        "en": "The " + LSQUO + "getting started" + RSQUO + " problem is that we need to tell the machines what they" + RSQUO + "re looking for with sufficient clarity that we can be confident they will find it " + DASH + " whatever " + LSQUO + "it" + RSQUO + " actually turns out to be.",
+        "zh": "“如何起步”这个难题在于，我们需要足够清晰地告诉机器它们要找的是什么，清晰到让我们有把握相信它们能找到它——无论这个“它”最终究竟是什么。",
+        "grammar": {
+            "type": "表语从句 + 宾语从句 + so...that 隐含结果 + 让步从句",
+            "note": "主干 The problem is that...，that 引导表语从句；从句 we need to tell the machines what they" + RSQUO + "re looking for，what... 为宾语从句；with sufficient clarity that we can be confident... 中 that 引导结果状语；whatever " + LSQUO + "it" + RSQUO + " actually turns out to be 为让步状语从句。"
+        },
+        "words": [
+            {"w": "sufficient", "pos": "adj.", "def": "充足的；足够的"},
+            {"w": "clarity", "pos": "n.", "def": "清晰；明确"}
+        ]
+    },
+    {
+        "id": 29,
+        "para": 6,
+        "en": "This won" + RSQUO + "t be easy, given that we are tribal creatures and conflicted about the ideals ourselves.",
+        "zh": "这并不容易，因为我们本身就是有部落归属倾向的生物，而且我们自己对这些理想也心存矛盾。",
+        "grammar": {
+            "type": "主系表 + given that 原因状语从句",
+            "note": "主干是 This won" + RSQUO + "t be easy；given that we are tribal creatures and conflicted about the ideals ourselves 为 given that 引导的原因状语从句，表“鉴于、因为”。"
+        },
+        "words": [
+            {"w": "tribal", "pos": "adj.", "def": "部落的；有部落归属感的"},
+            {"w": "conflicted", "pos": "adj.", "def": "矛盾的；纠结的"}
+        ]
+    },
+    {
+        "id": 30,
+        "para": 6,
+        "en": "We often ignore the suffering of strangers, and even contribute to it, at least indirectly.",
+        "zh": "我们常常无视陌生人的苦难，甚至至少在间接层面助长了这种苦难。",
+        "grammar": {
+            "type": "并列谓语",
+            "note": "主语 We 带两个并列谓语 often ignore the suffering of strangers 和 even contribute to it；at least indirectly 为程度状语作补充。"
+        },
+        "words": [
+            {"w": "suffering", "pos": "n.", "def": "苦难；痛苦"},
+            {"w": "contribute to", "pos": "phr.", "def": "促成；助长"}
+        ]
+    },
+    {
+        "id": 31,
+        "para": 6,
+        "en": "How then, do we point machines in the direction of something better?",
+        "zh": "那么，我们又该如何把机器引向某种更好的方向呢？",
+        "grammar": {
+            "type": "特殊疑问句",
+            "note": "为特殊疑问句 how do we point machines in the direction of something better，then 为插入语；point sth in the direction of 表“把……指向”。"
+        },
+        "words": [
+            {"w": "point", "pos": "v.", "def": "指向；使朝向"},
+            {"w": "direction", "pos": "n.", "def": "方向"}
+        ]
+    },
+    # Paragraph 7
+    {
+        "id": 32,
+        "para": 7,
+        "en": "As for the " + LSQUO + "destination" + RSQUO + " problem, we might, by putting ourselves in the hands of these moral guides and gatekeepers, be sacrificing our own autonomy " + DASH + " an important part of what makes us human.",
+        "zh": "至于“终点”这个难题，我们把自己交到这些道德向导和守门人手中的同时，可能正在牺牲我们自身的自主性——而自主性正是使我们成其为人的重要组成部分。",
+        "grammar": {
+            "type": "as for 话题状语 + 插入状语 + 破折号同位语",
+            "note": "As for the " + LSQUO + "destination" + RSQUO + " problem 为话题状语；主干 we might... be sacrificing our own autonomy，by putting ourselves in the hands of these moral guides and gatekeepers 为插入的方式状语；破折号后 an important part of what makes us human 为 autonomy 的同位语。"
+        },
+        "words": [
+            {"w": "autonomy", "pos": "n.", "def": "自主性；自治"},
+            {"w": "gatekeeper", "pos": "n.", "def": "守门人；把关者"}
+        ]
+    },
+    {
+        "id": 33,
+        "para": 7,
+        "en": "Machines who are better than us at sticking to the moral high ground may be expected to discourage some of the lapses we presently take for granted.",
+        "zh": "那些比我们更善于坚守道德高地的机器，可能会被期望去阻止一些我们如今习以为常的道德过失。",
+        "grammar": {
+            "type": "定语从句 + 被动推测 + 省略关系词定语从句",
+            "note": "主干 Machines... may be expected to discourage some of the lapses；who are better than us at sticking to the moral high ground 为定语从句修饰 Machines；we presently take for granted 为省略关系词的定语从句修饰 lapses，take for granted 表“视为理所当然”。"
+        },
+        "words": [
+            {"w": "lapse", "pos": "n.", "def": "（道德/行为的）过失；小疏忽"},
+            {"w": "take for granted", "pos": "phr.", "def": "视为理所当然"}
+        ]
+    },
+    {
+        "id": 34,
+        "para": 7,
+        "en": "We might lose our freedom to discriminate in favour of our own communities, for example.",
+        "zh": "举例来说，我们可能会失去偏袒自己所属群体的那种自由。",
+        "grammar": {
+            "type": "主谓宾 + 不定式定语",
+            "note": "主干是 We might lose our freedom；to discriminate in favour of our own communities 为不定式作定语修饰 freedom，discriminate in favour of 表“偏袒”；for example 为插入语。"
+        },
+        "words": [
+            {"w": "discriminate", "pos": "v.", "def": "区别对待；歧视"},
+            {"w": "in favour of", "pos": "phr.", "def": "有利于；偏向"}
+        ]
+    },
+    # Paragraph 8
+    {
+        "id": 35,
+        "para": 8,
+        "en": "Loss of freedom to behave badly isn" + RSQUO + "t always a bad thing, of course: denying ourselves the freedom to put children to work in factories, or to smoke in restaurants are signs of progress.",
+        "zh": "当然，失去为非作歹的自由并不总是坏事：不让自己拥有把儿童送进工厂做工、或在餐馆吸烟的自由，恰恰是进步的标志。",
+        "grammar": {
+            "type": "主系表 + 冒号动名词主语",
+            "note": "主干 Loss of freedom to behave badly isn" + RSQUO + "t always a bad thing，of course 为插入语；冒号后 denying ourselves the freedom to put children to work... or to smoke... 为动名词短语作主语，谓语 are signs of progress。"
+        },
+        "words": [
+            {"w": "deny", "pos": "v.", "def": "拒绝给予；否认"},
+            {"w": "progress", "pos": "n.", "def": "进步"}
+        ]
+    },
+    {
+        "id": 36,
+        "para": 8,
+        "en": "But are we ready for ethical silicon police limiting our options?",
+        "zh": "但我们准备好接受限制我们选择的“道德硅基警察”了吗？",
+        "grammar": {
+            "type": "一般疑问句 + 现在分词定语",
+            "note": "为一般疑问句 are we ready for ethical silicon police；limiting our options 为现在分词短语作定语修饰 silicon police，silicon police 喻指人工智能。"
+        },
+        "words": [
+            {"w": "silicon", "pos": "n.", "def": "硅（喻指计算机/AI）"},
+            {"w": "option", "pos": "n.", "def": "选择；选项"}
+        ]
+    },
+    {
+        "id": 37,
+        "para": 8,
+        "en": "They might be so good at doing it that we won" + RSQUO + "t notice them; but few of us are likely to welcome such a future.",
+        "zh": "它们也许把这件事做得如此之好，以至于我们都察觉不到它们的存在；但我们中很少有人会愿意欢迎这样的未来。",
+        "grammar": {
+            "type": "so...that 结果状语从句 + 分号转折",
+            "note": "前半 They might be so good at doing it that we won" + RSQUO + "t notice them，so...that... 引导结果状语从句；分号后 but few of us are likely to welcome such a future 为转折分句，few 表否定“很少”。"
+        },
+        "words": [
+            {"w": "notice", "pos": "v.", "def": "注意到；察觉"},
+            {"w": "welcome", "pos": "v.", "def": "欢迎"}
+        ]
+    },
+    # Paragraph 9
+    {
+        "id": 38,
+        "para": 9,
+        "en": "These issues might seem far-fetched, but they are to some extent already here.",
+        "zh": "这些问题也许看似牵强，但它们在某种程度上其实已经出现了。",
+        "grammar": {
+            "type": "转折并列",
+            "note": "两个分句由 but 连接；前句 These issues might seem far-fetched；后句 they are to some extent already here，to some extent 表“在某种程度上”。"
+        },
+        "words": [
+            {"w": "far-fetched", "pos": "adj.", "def": "牵强的；不大可能的"},
+            {"w": "to some extent", "pos": "phr.", "def": "在某种程度上"}
+        ]
+    },
+    {
+        "id": 39,
+        "para": 9,
+        "en": "AI already has some input into how resources are used in our National Health Service (NHS) here in the UK, for example.",
+        "zh": "举例来说，在我们英国的国民医疗服务体系（NHS）中，人工智能已经对资源如何使用有了一定的参与。",
+        "grammar": {
+            "type": "主谓宾 + 介词短语宾语从句",
+            "note": "主干是 AI already has some input；into how resources are used in our National Health Service 为介词短语，how 引导宾语从句；for example 为插入语。"
+        },
+        "words": [
+            {"w": "input", "pos": "n.", "def": "投入；参与；输入"},
+            {"w": "resource", "pos": "n.", "def": "资源"}
+        ]
+    },
+    {
+        "id": 40,
+        "para": 9,
+        "en": "If it was given a greater role, it might do so much more efficiently than humans can manage, and act in the interests of taxpayers and those who use the health system.",
+        "zh": "如果赋予它更大的作用，它做这件事也许会比人类所能做到的高效得多，并且会为纳税人以及那些使用医疗系统的人的利益行事。",
+        "grammar": {
+            "type": "if 虚拟条件 + 比较结构 + 定语从句",
+            "note": "If it was given a greater role 为条件从句；主句 it might do so much more efficiently than humans can manage, and act in the interests of...，两个谓语 do 和 act 并列；who use the health system 为定语从句修饰 those。"
+        },
+        "words": [
+            {"w": "efficiently", "pos": "adv.", "def": "高效地"},
+            {"w": "taxpayer", "pos": "n.", "def": "纳税人"}
+        ]
+    },
+    {
+        "id": 41,
+        "para": 9,
+        "en": "However, we" + RSQUO + "d be depriving some humans (e.g. senior doctors) of the control they presently enjoy.",
+        "zh": "然而，我们这样会剥夺一些人（例如资深医生）目前所享有的控制权。",
+        "grammar": {
+            "type": "deprive sb of sth + 省略关系词定语从句",
+            "note": "主干是 we" + RSQUO + "d be depriving some humans of the control，deprive sb of sth 表“剥夺某人某物”；they presently enjoy 为省略关系词的定语从句修饰 control。"
+        },
+        "words": [
+            {"w": "deprive", "pos": "v.", "def": "剥夺"},
+            {"w": "senior", "pos": "adj.", "def": "资深的；高级的"}
+        ]
+    },
+    {
+        "id": 42,
+        "para": 9,
+        "en": "Since we" + RSQUO + "d want to ensure that people are treated equally and that policies are fair, the goals of AI would need to be specified correctly.",
+        "zh": "既然我们会希望确保人人受到平等对待、各项政策公平合理，那么人工智能的目标就需要被正确地设定。",
+        "grammar": {
+            "type": "since 原因状语从句 + 两个宾语从句 + 主句被动",
+            "note": "Since we" + RSQUO + "d want to ensure that... and that... 为 since 原因状语从句，两个 that 引导并列宾语从句；主句 the goals of AI would need to be specified correctly 为被动结构。"
+        },
+        "words": [
+            {"w": "equally", "pos": "adv.", "def": "平等地"},
+            {"w": "policy", "pos": "n.", "def": "政策；方针"}
+        ]
+    },
+    # Paragraph 10
+    {
+        "id": 43,
+        "para": 10,
+        "en": "We have a new powerful technology to deal with " + DASH + " itself, literally, a new way of thinking.",
+        "zh": "我们要应对的是一种强大的新技术——它本身，从字面意义上说，就是一种全新的思维方式。",
+        "grammar": {
+            "type": "不定式定语 + 破折号同位语",
+            "note": "主干是 We have a new powerful technology；to deal with 为不定式作定语修饰 technology；破折号后 itself... a new way of thinking 为同位语，literally 为插入语。"
+        },
+        "words": [
+            {"w": "technology", "pos": "n.", "def": "技术"},
+            {"w": "literally", "pos": "adv.", "def": "确实地；从字面意义上"}
+        ]
+    },
+    {
+        "id": 44,
+        "para": 10,
+        "en": "For our own safety, we need to point these new thinkers in the right direction, and get them to act well for us.",
+        "zh": "为了我们自身的安全，我们需要把这些新的“思考者”引向正确的方向，并让它们为我们好好行事。",
+        "grammar": {
+            "type": "并列谓语 + get sb to do",
+            "note": "主干 we need to point these new thinkers in the right direction, and get them to act well for us，两个谓语并列；get sb to do 表“使某人做”；For our own safety 为目的状语。"
+        },
+        "words": [
+            {"w": "thinker", "pos": "n.", "def": "思考者；思想家"},
+            {"w": "safety", "pos": "n.", "def": "安全"}
+        ]
+    },
+    {
+        "id": 45,
+        "para": 10,
+        "en": "It is not yet clear whether this is possible, but if it is, it will require a cooperative spirit, and a willingness to set aside self-interest.",
+        "zh": "目前尚不清楚这是否可行，但如果可行，它将需要一种合作精神，以及一种愿意搁置私利的意愿。",
+        "grammar": {
+            "type": "it 形式主语 + whether 主语从句 + if 条件 + 并列宾语",
+            "note": "前半 It is not yet clear whether this is possible，it 为形式主语，whether... 为主语从句；后半 but if it is（省略 possible），it will require a cooperative spirit, and a willingness to set aside self-interest，两个宾语并列，to set aside self-interest 为不定式定语。"
+        },
+        "words": [
+            {"w": "cooperative", "pos": "adj.", "def": "合作的；协作的"},
+            {"w": "set aside", "pos": "phr.", "def": "搁置；把……放在一边"}
+        ]
+    },
+    {
+        "id": 46,
+        "para": 10,
+        "en": "Both general intelligence and moral reasoning are often thought to be uniquely human capacities.",
+        "zh": "通用智能和道德推理常常被认为是人类独有的能力。",
+        "grammar": {
+            "type": "被动语态 + 主语并列",
+            "note": "主语为并列的 Both general intelligence and moral reasoning；谓语 are often thought to be uniquely human capacities，为被动结构 be thought to be。"
+        },
+        "words": [
+            {"w": "moral reasoning", "pos": "phr.", "def": "道德推理"},
+            {"w": "capacity", "pos": "n.", "def": "能力；才能"}
+        ]
+    },
+    {
+        "id": 47,
+        "para": 10,
+        "en": "But safety seems to require that we think of them as a package: if we are to give general intelligence to machines, we" + RSQUO + "ll need to give them moral authority, too.",
+        "zh": "但为了安全，我们似乎必须把它们视为一个整体：如果我们要赋予机器通用智能，就也得赋予它们道德权威。",
+        "grammar": {
+            "type": "宾语从句 + 冒号 + if 条件从句",
+            "note": "主干 But safety seems to require that we think of them as a package，that 引导宾语从句，think of A as B 表“把A视为B”；冒号后 if we are to give general intelligence to machines, we" + RSQUO + "ll need to give them moral authority，be to do 表将来计划。"
+        },
+        "words": [
+            {"w": "package", "pos": "n.", "def": "整体；一揽子（事物）"},
+            {"w": "moral authority", "pos": "phr.", "def": "道德权威"}
+        ]
+    },
+    {
+        "id": 48,
+        "para": 10,
+        "en": "And where exactly would that leave human beings? All the more reason to think about the destination now, and to be careful about what we wish for.",
+        "zh": "那么，这又究竟会把人类置于何地呢？这更加说明我们现在就应当思考那个终点，并谨慎对待自己所许下的愿望。",
+        "grammar": {
+            "type": "特殊疑问句 + 省略句 + 宾语从句",
+            "note": "前句为特殊疑问句 where exactly would that leave human beings；后句 All the more reason to think about the destination now, and to be careful about what we wish for 为省略主谓的强调表达，两个不定式并列，what we wish for 为宾语从句。"
+        },
+        "words": [
+            {"w": "all the more", "pos": "phr.", "def": "更加；越发"},
+            {"w": "human beings", "pos": "phr.", "def": "人类"}
+        ]
+    }
+]
+
+questions = [
+    {
+        "title": "Questions 14" + DASH + "19",
+        "type": "multiple_choice",
+        "instructions": [
+            "Choose the correct letter, A, B, C or D.",
+            "Write the correct letter in boxes 14" + DASH + "19 on your answer sheet."
+        ],
+        "items": [
+            {"number": 14, "prompt": "What point does the writer make about AI in the first paragraph? A It is difficult to predict how quickly AI will progress. B Much can be learned about the use of AI in chess machines. C The future is unlikely to see limitations on the capabilities of AI. D Experts disagree on which specialised tasks AI will be able to perform.", "answer": "C", "evidence_sentence": 6},
+            {"number": 15, "prompt": "What is the writer doing in the second paragraph? A explaining why machines will be able to outperform humans B describing the characteristics that humans and machines share C giving information about the development of machine intelligence D indicating which aspects of humans are the most advanced", "answer": "A", "evidence_sentence": 8},
+            {"number": 16, "prompt": "Why does the writer mention the story of King Midas? A to compare different visions of progress B to illustrate that poorly defined objectives can go wrong C to emphasise the need for cooperation D to point out the financial advantages of a course of action", "answer": "B", "evidence_sentence": 16},
+            {"number": 17, "prompt": "What challenge does the writer refer to in the fourth paragraph? A encouraging humans to behave in a more principled way B deciding which values we want AI to share with us C creating a better world for all creatures on the planet D ensuring AI is more human-friendly than we are ourselves", "answer": "B", "evidence_sentence": 28},
+            {"number": 18, "prompt": "What does the writer suggest about the future of AI in the fifth paragraph? A The safety of machines will become a key issue. B It is hard to know what impact machines will have on the world. C Machines will be superior to humans in certain respects. D Many humans will oppose machines having a wider role.", "answer": "C", "evidence_sentence": 25},
+            {"number": 19, "prompt": "Which of the following best summarises the writer" + RSQUO + "s argument in the sixth paragraph? A More intelligent machines will result in greater abuses of power. B Machine learning will share very few features with human learning. C There are a limited number of people with the knowledge to program machines. D Human shortcomings will make creating the machines we need more difficult.", "answer": "D", "evidence_sentence": 29}
+        ]
+    },
+    {
+        "title": "Questions 20" + DASH + "23",
+        "type": "yes_no_notgiven",
+        "instructions": [
+            "Do the following statements agree with the claims of the writer in Reading Passage 2?",
+            "In boxes 20" + DASH + "23 on your answer sheet, write",
+            "YES if the statement agrees with the claims of the writer",
+            "NO if the statement contradicts the claims of the writer",
+            "NOT GIVEN if it is impossible to say what the writer thinks about this"
+        ],
+        "items": [
+            {"number": 20, "prompt": "Machines with the ability to make moral decisions may prevent us from promoting the interests of our communities.", "answer": "YES", "evidence_sentence": 34},
+            {"number": 21, "prompt": "Silicon police would need to exist in large numbers in order to be effective.", "answer": "NOT GIVEN", "evidence_sentence": 36},
+            {"number": 22, "prompt": "Many people are comfortable with the prospect of their independence being restricted by machines.", "answer": "NO", "evidence_sentence": 37},
+            {"number": 23, "prompt": "If we want to ensure that machines act in our best interests, we all need to work together.", "answer": "YES", "evidence_sentence": 45}
+        ]
+    },
+    {
+        "title": "Questions 24" + DASH + "26",
+        "type": "summary_completion",
+        "instructions": [
+            "Complete the summary using the list of phrases, A" + DASH + "F, below.",
+            "Write the correct letter, A" + DASH + "F, in boxes 24" + DASH + "26 on your answer sheet.",
+            "Using AI in the UK health system",
+            "A medical practitioners",
+            "B specialised tasks",
+            "C available resources",
+            "D reduced illness",
+            "E professional authority",
+            "F technology experts"
+        ],
+        "items": [
+            {"number": 24, "prompt": "AI currently has a limited role in the way 24 ____ are allocated in the health service.", "answer": "C", "evidence_sentence": 39},
+            {"number": 25, "prompt": "However, such a change would result, for example, in certain 25 ____ not having their current level of 26 ____ .", "answer": "A", "evidence_sentence": 41},
+            {"number": 26, "prompt": "... certain medical practitioners not having their current level of 26 ____ .", "answer": "E", "evidence_sentence": 41}
+        ]
+    }
+]
+
+phrases = [
+    {"w": "artificial intelligence (AI)", "pos": "n.", "def": "人工智能"},
+    {"w": "narrow AI", "pos": "n.", "def": "弱人工智能；狭义人工智能"},
+    {"w": "artificial general intelligence (AGI)", "pos": "n.", "def": "通用人工智能"},
+    {"w": "moral high ground", "pos": "n.", "def": "道德高地"},
+    {"w": "human-friendly", "pos": "adj.", "def": "对人类友好的"},
+    {"w": "Webb Space Telescope", "pos": "n.", "def": "韦布空间望远镜"},
+    {"w": "King Midas", "pos": "n.", "def": "迈达斯国王（点物成金的希腊神话人物）"},
+    {"w": "National Health Service (NHS)", "pos": "n.", "def": "（英国）国民医疗服务体系"},
+    {"w": "moral reasoning", "pos": "n.", "def": "道德推理"},
+    {"w": "self-interest", "pos": "n.", "def": "私利；自身利益"}
+]
+
+data = {
+    "id": "c18-test2-p2",
+    "source": "剑桥雅思18 · Test 2 · Passage 2",
+    "title": "Living with artificial intelligence",
+    "quality": "teacher_refined",
+    "analysis_unit": "sentence",
+    "subtitle": "Powerful artificial intelligence (AI) needs to be reliably aligned with human values, but does this mean AI will eventually have to police those values?",
+    "phrases": phrases,
+    "sentences": sentences,
+    "questions": questions
+}
+
+out_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                        "data", "passages", "c18-test2-p2.json")
+with open(out_path, "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("Wrote", out_path)
+print("sentences:", len(sentences), "question groups:", len(questions), "phrases:", len(phrases))
