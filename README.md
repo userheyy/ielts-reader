@@ -6,7 +6,7 @@
 
 直接打开网址即可，任何电脑、手机浏览器都能用，无需安装任何东西：
 
-**👉 https://<你的用户名>.github.io/<仓库名>/**
+**👉 https://userheyy.github.io/ielts-reader/**
 
 > 部署在 GitHub Pages 上。作者 `git push` 更新后，刷新页面就是最新内容。
 
