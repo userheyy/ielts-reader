@@ -1,0 +1,39 @@
+/* 设置页专属样式(独立文件,不改 style.css)。沿用 style.css 的设计系统:
+   绿色主题 --green/--green-dark、.card 卡片、.ghostbtn 描边按钮。 */
+
+.set-title { margin: 4px 0 16px; font-size: 22px; }
+
+.set-card { max-width: 720px; margin-bottom: 18px; }
+.set-card h3 { margin: 0 0 6px; color: var(--green-dark); font-size: 17px; }
+.set-desc { margin: 0 0 12px; color: var(--muted); font-size: 13px; }
+.set-desc a { color: var(--green-dark); }
+
+.set-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.set-row label { flex: 0 0 64px; font-size: 14px; color: #435149; }
+.set-row input {
+  flex: 1; min-width: 220px; padding: 8px 10px;
+  border: 1px solid #cbd4cd; border-radius: 6px; font-size: 14px;
+  font-family: Consolas, "Courier New", monospace;
+}
+.set-row input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 2px #d7f0d9; }
+.set-key-wrap { display: flex; flex: 1; gap: 8px; min-width: 220px; }
+.set-key-wrap input { flex: 1; min-width: 0; }
+
+.set-actions { display: flex; gap: 9px; margin: 12px 0 4px; flex-wrap: wrap; }
+.set-btn {
+  border: 0; border-radius: 7px; padding: 7px 14px; cursor: pointer;
+  font-size: 14px; background: #e8efe9; color: #435149;
+}
+.set-btn.primary { background: var(--green); color: #fff; }
+.set-btn.primary:hover { background: var(--green-dark); }
+.set-btn:disabled { opacity: .5; cursor: default; }
+
+.set-status { min-height: 20px; margin-top: 6px; font-size: 13px; color: var(--muted); word-break: break-all; }
+.set-status.ok { color: var(--green-dark); }
+.set-status.err { color: #b3382c; }
+
+.set-warn {
+  margin: 14px 0 0; padding: 10px 12px; border: 1px solid #eccfcb;
+  border-radius: 8px; background: #fdf3f2; color: #9b4439; font-size: 13px;
+}
+.set-warn b { color: #7d2f24; }

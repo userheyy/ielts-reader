@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>设置</title>
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/settings.css?v=1" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="test.html">测试</a>
+    <a href="settings.html">设置</a>
+  </header>
+  <div class="container">
+    <h2 class="set-title">设置</h2>
+
+    <div class="card set-card">
+      <h3>DeepSeek AI</h3>
+      <p class="set-desc">
+        填好 API Key(接口密钥,相当于你调用 AI 的账号凭证)后,站内的 AI 功能才能用。
+        Key 在 DeepSeek 开放平台(platform.deepseek.com)注册后创建,按用量计费。
+      </p>
+      <div class="set-row">
+        <label for="ds-key">API Key</label>
+        <div class="set-key-wrap">
+          <input type="password" id="ds-key" placeholder="sk-..." autocomplete="off" spellcheck="false" />
+          <button type="button" id="ds-key-toggle" class="ghostbtn set-btn" title="显示或隐藏输入的 Key">显示</button>
+        </div>
+      </div>
+      <div class="set-row">
+        <label for="ds-model">模型名</label>
+        <input type="text" id="ds-model" placeholder="deepseek-chat" autocomplete="off" spellcheck="false" />
+      </div>
+      <div class="set-actions">
+        <button type="button" id="ds-save" class="set-btn primary">保存</button>
+        <button type="button" id="ds-clear" class="ghostbtn set-btn">清除 Key</button>
+        <button type="button" id="ds-test" class="ghostbtn set-btn">测试连接</button>
+      </div>
+      <div id="ds-status" class="set-status" aria-live="polite"></div>
+      <div id="ds-test-result" class="set-status" aria-live="polite"></div>
+      <p class="set-warn">
+        安全提示:Key 只保存在<b>本浏览器的 localStorage</b>(浏览器本地存储)里,本站不会把它上传到任何服务器。
+        在公共电脑上用完请点「清除 Key」;如果 Key 曾在聊天记录、截图里暴露过,请立刻到 DeepSeek 后台重置。
+      </p>
+    </div>
+
+    <div class="card set-card">
+      <h3>朗读设置</h3>
+      <p class="set-desc">
+        朗读的发音人和语速不在这里设置:阅读器、词库、生词库页面里都有「发音」工具条,
+        在那里选好发音人和语速,会自动记住,下次打开还是你选的。
+      </p>
+    </div>
+
+    <div class="card set-card">
+      <h3>数据</h3>
+      <p class="set-desc">
+        生词、导入的文章、朗读设置等数据都存在本浏览器里,换电脑或清浏览器缓存会丢。
+        备份方法:到 <a href="index.html">文章库</a> 页面,点右上角的「全量备份」导出一份 JSON 文件保存好;
+        在新电脑上用旁边的「恢复全量备份」把这份文件导回来即可。
+      </p>
+    </div>
+  </div>
+  <script type="module" src="js/settings.js?v=1"></script>
+</body>
+</html>
