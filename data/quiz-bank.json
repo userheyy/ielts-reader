@@ -1,9 +1,9 @@
 {
   "meta": {
     "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
-    "generated_batches": 5,
+    "generated_batches": 6,
     "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
-    "count": 212
+    "count": 252
   },
   "questions": [
     {
@@ -1701,6 +1701,326 @@
       "sentence": "The gallery specialises in ___ art created within the last twenty years.",
       "sentence_zh": "这家美术馆专门展出近二十年内创作的当代艺术。",
       "explain": "属于当代的，用 contemporary。temporary 是“临时的”（意思不同）、temporal 是时间的、contentory 罕用，形近的 temporary 尤其易混。"
+    },
+    {
+      "word": "compete",
+      "pos": "v.",
+      "def": "竞争，比赛",
+      "sentence": "Small shops find it hard to ___ with large supermarkets on price.",
+      "sentence_zh": "小商店很难在价格上与大型超市竞争。",
+      "explain": "为胜出而竞争（动词），用 compete。competition 是名词、complete 是完成、complex 是复杂的，形近但都不合这个“竞争”的动词位置。"
+    },
+    {
+      "word": "competition",
+      "pos": "n.",
+      "def": "竞争，比赛",
+      "sentence": "There is fierce ___ among airlines for passengers on this route.",
+      "sentence_zh": "各航空公司为争夺这条航线上的乘客展开激烈竞争。",
+      "explain": "竞争、比赛（名词），用 competition。compete 是动词、competitive 是形容词、completion 是完成，都不合这个名词位置。"
+    },
+    {
+      "word": "complete",
+      "pos": "adj./v.",
+      "def": "完整的，完全的；完成",
+      "sentence": "It took the team three years to ___ the construction of the tunnel.",
+      "sentence_zh": "团队花了三年时间完成隧道的建造。",
+      "explain": "使完成、完整的，用 complete。compete 是竞争、complex 是复杂的、compose 是组成，形近但都不表示“完成、完整”。"
+    },
+    {
+      "word": "complex",
+      "pos": "adj./n.",
+      "def": "复杂的；综合体；情结",
+      "sentence": "The human brain is far more ___ than any computer built so far.",
+      "sentence_zh": "人脑远比迄今建造的任何计算机都要复杂。",
+      "explain": "由许多部分交织而成、复杂的，用 complex。complete 是完整的、compete 是竞争、complicated 近义但不在选项，形近的 complete 尤其易混。"
+    },
+    {
+      "word": "component",
+      "pos": "n./adj.",
+      "def": "组成部分，部件；组成的",
+      "sentence": "Each ___ of the engine must be checked before it leaves the factory.",
+      "sentence_zh": "发动机的每个部件在出厂前都必须经过检查。",
+      "explain": "构成整体的部件，用 component。opponent 是对手、complement 是补充、compound 是化合物，形近但都不表示“组成部件”。"
+    },
+    {
+      "word": "complain",
+      "pos": "v.",
+      "def": "抱怨，投诉",
+      "sentence": "Several residents called to ___ about the noise from the building site.",
+      "sentence_zh": "几位居民打电话投诉建筑工地的噪音。",
+      "explain": "表达不满、投诉（动词），用 complain。complaint 是名词、explain 是解释、compliment 是称赞，形近但都不合这个“抱怨”的动词位置。"
+    },
+    {
+      "word": "complaint",
+      "pos": "n.",
+      "def": "抱怨，投诉；(病)不适",
+      "sentence": "The company received a formal ___ about the poor quality of its service.",
+      "sentence_zh": "公司收到了一份关于其服务质量差的正式投诉。",
+      "explain": "抱怨、投诉（名词），用 complaint。complain 是动词、compliment 是称赞、constraint 是约束，形近但都不合这个名词位置。"
+    },
+    {
+      "word": "compare",
+      "pos": "v.",
+      "def": "比较，对照；比作",
+      "sentence": "It is useful to ___ prices in several shops before you buy.",
+      "sentence_zh": "购买前在几家商店比较价格是很有用的。",
+      "explain": "对照、比较（动词），用 compare。comparison 是名词、prepare 是准备、compose 是组成，形近但都不合这个“比较”的动词位置。"
+    },
+    {
+      "word": "comparison",
+      "pos": "n.",
+      "def": "比较，对照",
+      "sentence": "By ___ with last year, sales have improved a great deal.",
+      "sentence_zh": "与去年相比，销售额有了很大的提高。",
+      "explain": "比较、对照（名词），用 comparison。compare 是动词、comparative 是形容词、composition 是作文，都不合这个名词位置。"
+    },
+    {
+      "word": "compose",
+      "pos": "v.",
+      "def": "组成，构成；创作，作曲；使镇定",
+      "sentence": "The committee is ___ of experts from several different fields.",
+      "sentence_zh": "该委员会由来自几个不同领域的专家组成。",
+      "explain": "构成、组成（常用 be composed of），用 compose。compare 是比较、propose 是提议、expose 是暴露，形近但都不合“组成、构成”的意思。"
+    },
+    {
+      "word": "composition",
+      "pos": "n.",
+      "def": "作文，作品；组成，构成",
+      "sentence": "Scientists studied the chemical ___ of the rock samples.",
+      "sentence_zh": "科学家研究了这些岩石样本的化学成分构成。",
+      "explain": "构成、成分（名词），用 composition。comparison 是比较、competition 是竞争、position 是位置，形近但都不表示“组成、成分”。"
+    },
+    {
+      "word": "interior",
+      "pos": "n./adj.",
+      "def": "内部(的)，室内(的)；内地",
+      "sentence": "The ___ of the old house had been completely redesigned.",
+      "sentence_zh": "这座老房子的室内已被彻底重新设计。",
+      "explain": "内部、室内，用 interior。exterior 意思相反（外部）、internal 侧重“内部/国内”、inferior 是较差的，都不合“室内、内部空间”的意思。"
+    },
+    {
+      "word": "internal",
+      "pos": "adj.",
+      "def": "内部的；国内的",
+      "sentence": "The company launched an ___ investigation into the missing funds.",
+      "sentence_zh": "公司就资金失踪一事展开了内部调查。",
+      "explain": "机构内部的，用 internal。external 意思相反（外部的）、interior 侧重“室内空间”、eternal 是永恒的，都不合“内部的”这个形容词。"
+    },
+    {
+      "word": "interpret",
+      "pos": "v.",
+      "def": "解释，理解；口译",
+      "sentence": "It is difficult to ___ the results without more background information.",
+      "sentence_zh": "在没有更多背景信息的情况下，很难解读这些结果。",
+      "explain": "解读、理解含义，用 interpret。interrupt 是打断（意思不同）、interfere 是干涉、interact 是互动，形近但都不表示“解释、解读”。"
+    },
+    {
+      "word": "interrupt",
+      "pos": "v.",
+      "def": "打断，打扰；中断",
+      "sentence": "Please do not ___ me while I am speaking to a customer.",
+      "sentence_zh": "我在跟顾客说话时，请不要打断我。",
+      "explain": "打断、中断，用 interrupt。interpret 是解释（意思不同）、interfere 是干涉、corrupt 是腐败的，形近但都不表示“打断”。"
+    },
+    {
+      "word": "overcome",
+      "pos": "v.",
+      "def": "克服，战胜；(情绪)压倒",
+      "sentence": "With determination, she managed to ___ her fear of public speaking.",
+      "sentence_zh": "凭着决心，她成功克服了当众演讲的恐惧。",
+      "explain": "战胜、克服（困难），用 overcome。recover 是恢复、outcome 是结果、income 是收入，形近但都不表示“克服、战胜”。"
+    },
+    {
+      "word": "recover",
+      "pos": "v.",
+      "def": "恢复，康复；重新获得",
+      "sentence": "It may take several weeks to fully ___ from the operation.",
+      "sentence_zh": "从手术中完全康复可能需要好几周。",
+      "explain": "恢复健康或状态，用 recover。discover 是发现、cover 是覆盖、overcome 是克服，形近但都不表示“康复、恢复”。"
+    },
+    {
+      "word": "discover",
+      "pos": "v.",
+      "def": "发现，找到",
+      "sentence": "Researchers were amazed to ___ a new species deep in the cave.",
+      "sentence_zh": "研究人员惊讶地在洞穴深处发现了一个新物种。",
+      "explain": "第一次找到、发现，用 discover。recover 是康复、cover 是覆盖、uncover 是揭开，形近但都不表示“发现、找到”。"
+    },
+    {
+      "word": "cover",
+      "pos": "v./n.",
+      "def": "覆盖；涵盖；封面；掩护",
+      "sentence": "The report does not ___ the events of the final week.",
+      "sentence_zh": "这份报告没有涵盖最后一周的事件。",
+      "explain": "涵盖、覆盖到，用 cover。discover 是发现、recover 是康复、coverage 是名词“覆盖范围”，都不合这个“涵盖”的动词位置。"
+    },
+    {
+      "word": "coverage",
+      "pos": "n.",
+      "def": "覆盖范围；报道；保险范围",
+      "sentence": "The event received wide media ___ across the country.",
+      "sentence_zh": "这次活动在全国范围内得到了媒体的广泛报道。",
+      "explain": "报道或覆盖的范围（名词），用 coverage。cover 是动词、average 是平均、beverage 是饮料，形近但都不表示“覆盖范围、报道”。"
+    },
+    {
+      "word": "reliable",
+      "pos": "adj.",
+      "def": "可靠的，可信赖的",
+      "sentence": "We need a ___ source of energy that will not run out.",
+      "sentence_zh": "我们需要一种不会枯竭的可靠能源。",
+      "explain": "可信赖、靠得住的，用 reliable。reasonable 是合理的、readable 是易读的、valuable 是贵重的，都不合“可靠、可信赖”的意思。"
+    },
+    {
+      "word": "reasonable",
+      "pos": "adj.",
+      "def": "合理的；通情达理的；公道的",
+      "sentence": "The shop sells good-quality clothes at very ___ prices.",
+      "sentence_zh": "这家商店以非常合理的价格出售优质衣服。",
+      "explain": "合情合理、公道的，用 reasonable。reliable 是可靠的、seasonal 是季节性的、remarkable 是非凡的，都不合“合理、公道”的意思。"
+    },
+    {
+      "word": "inevitable",
+      "pos": "adj.",
+      "def": "不可避免的，必然的",
+      "sentence": "As the population grows, some damage to the environment seems ___.",
+      "sentence_zh": "随着人口增长，对环境的某些破坏似乎不可避免。",
+      "explain": "无法避免、必然的，用 inevitable。invaluable 是极宝贵的、inseparable 是分不开的、incredible 是难以置信的，都不合“不可避免”的意思。"
+    },
+    {
+      "word": "remarkable",
+      "pos": "adj.",
+      "def": "非凡的，显著的，引人注目的",
+      "sentence": "The city has made ___ progress in reducing air pollution.",
+      "sentence_zh": "这座城市在减少空气污染方面取得了显著的进步。",
+      "explain": "值得注意、非凡的，用 remarkable。reasonable 是合理的、reliable 是可靠的、removable 是可移动的，都不合“非凡、显著”的意思。"
+    },
+    {
+      "word": "acceptable",
+      "pos": "adj.",
+      "def": "可接受的，令人满意的",
+      "sentence": "A short delay is ___, but waiting for hours is not.",
+      "sentence_zh": "短暂的延误是可以接受的，但等上几个小时就不行了。",
+      "explain": "可以接受的，用 acceptable。accessible 是可到达的、available 是可获得的、reasonable 是合理的，都不合“可接受、令人满意”的意思。"
+    },
+    {
+      "word": "existence",
+      "pos": "n.",
+      "def": "存在，生存",
+      "sentence": "The photographs proved the ___ of the rare animal in the region.",
+      "sentence_zh": "这些照片证明了这种珍稀动物在该地区的存在。",
+      "explain": "存在、生存（名词），用 existence。existing 是形容词、experience 是经历、essence 是本质，都不合这个“存在”的名词位置。"
+    },
+    {
+      "word": "confidence",
+      "pos": "n.",
+      "def": "信心，自信；信任",
+      "sentence": "Passing the first exam gave her the ___ to try the harder one.",
+      "sentence_zh": "通过第一场考试给了她尝试更难考试的信心。",
+      "explain": "自信、信心（名词），用 confidence。confident 是形容词、conference 是会议、coincidence 是巧合，都不合这个“信心”的名词位置。"
+    },
+    {
+      "word": "presence",
+      "pos": "n.",
+      "def": "出席，在场；存在",
+      "sentence": "The ___ of security guards made the visitors feel safe.",
+      "sentence_zh": "保安的在场让访客感到安全。",
+      "explain": "在场、存在（名词），用 presence。present 是礼物/现在的、presents 是其复数、patience 是耐心，都不合这个“在场”的名词位置。"
+    },
+    {
+      "word": "appearance",
+      "pos": "n.",
+      "def": "外表，外观；出现",
+      "sentence": "You should not judge people only by their ___.",
+      "sentence_zh": "你不应该仅凭外表来评判他人。",
+      "explain": "外表、外观（名词），用 appearance。appear 是动词、appearing 系其分词、experience 是经历，都不合这个“外表”的名词位置。"
+    },
+    {
+      "word": "performance",
+      "pos": "n.",
+      "def": "表现；表演；性能",
+      "sentence": "The car's ___ improves noticeably after the engine is upgraded.",
+      "sentence_zh": "升级发动机后，这辆车的性能明显提升。",
+      "explain": "表现、性能（名词），用 performance。perform 是动词、appearance 是外表、maintenance 是维护，都不合这个“表现、性能”的名词位置。"
+    },
+    {
+      "word": "maintenance",
+      "pos": "n.",
+      "def": "维护，保养；维持；抚养费",
+      "sentence": "Regular ___ is needed to keep the machines running safely.",
+      "sentence_zh": "需要定期保养才能让机器安全运转。",
+      "explain": "维护、保养（名词），用 maintenance。maintain 是动词、performance 是表现、appearance 是外表，都不合这个“保养”的名词位置。"
+    },
+    {
+      "word": "expansion",
+      "pos": "n.",
+      "def": "扩张，膨胀；扩展",
+      "sentence": "The rapid ___ of the city has put pressure on public transport.",
+      "sentence_zh": "城市的快速扩张给公共交通带来了压力。",
+      "explain": "扩张、扩展（名词），用 expansion。extension 侧重“延长/分机”、expensive 是昂贵的、expression 是表达，都不合“扩张、膨胀”的意思。"
+    },
+    {
+      "word": "extension",
+      "pos": "n.",
+      "def": "延长，扩展；(电话)分机；扩展名",
+      "sentence": "She asked for a two-week ___ to finish writing the report.",
+      "sentence_zh": "她请求延期两周以完成报告的撰写。",
+      "explain": "延长、扩展（名词），用 extension。expansion 侧重“规模扩张”、extensive 是形容词、intention 是意图，都不合“延期、延长”的意思。"
+    },
+    {
+      "word": "dimension",
+      "pos": "n.",
+      "def": "维度，方面；尺寸",
+      "sentence": "The project added a new ___ to our understanding of the problem.",
+      "sentence_zh": "这个项目为我们理解该问题增添了一个新的维度。",
+      "explain": "维度、方面（名词），用 dimension。dementia 是痴呆、tension 是紧张、mention 是提及，形近但都不表示“维度、方面”。"
+    },
+    {
+      "word": "profession",
+      "pos": "n.",
+      "def": "职业，行业(尤指专业性的)",
+      "sentence": "Teaching is a ___ that requires patience and dedication.",
+      "sentence_zh": "教书是一份需要耐心与奉献的职业。",
+      "explain": "专业性的职业，用 profession。possession 是拥有、procession 是队列、progression 是发展，形近但都不表示“职业、行业”。"
+    },
+    {
+      "word": "possession",
+      "pos": "n.",
+      "def": "拥有，占有；(复)财产，所有物",
+      "sentence": "The documents came into her ___ after her grandfather died.",
+      "sentence_zh": "这些文件在她祖父去世后归她所有。",
+      "explain": "拥有、占有（名词），用 possession。profession 是职业、procession 是队列、permission 是许可，形近但都不表示“拥有、占有”。"
+    },
+    {
+      "word": "restrict",
+      "pos": "v.",
+      "def": "限制，限定，约束",
+      "sentence": "New rules will ___ the number of cars allowed in the city centre.",
+      "sentence_zh": "新规定将限制允许进入市中心的汽车数量。",
+      "explain": "加以限制（动词），用 restrict。restriction 是名词、district 是地区、strict 是严格的，形近但都不合这个“限制”的动词位置。"
+    },
+    {
+      "word": "restriction",
+      "pos": "n.",
+      "def": "限制，约束",
+      "sentence": "There is a strict ___ on how much water each household may use.",
+      "sentence_zh": "对每户可用水量有严格的限制。",
+      "explain": "限制、约束（名词），用 restriction。restrict 是动词、district 是地区、instruction 是指示，形近但都不合这个名词位置。"
+    },
+    {
+      "word": "district",
+      "pos": "n.",
+      "def": "地区，区域；行政区",
+      "sentence": "The historic ___ of the city is popular with tourists.",
+      "sentence_zh": "这座城市的历史城区很受游客欢迎。",
+      "explain": "地区、行政区，用 district。restrict 是限制、restriction 是限制、distinct 是独特的，形近但都不表示“地区、区域”。"
+    },
+    {
+      "word": "creative",
+      "pos": "adj.",
+      "def": "有创造力的，创造性的",
+      "sentence": "The job calls for someone who is both organised and ___.",
+      "sentence_zh": "这份工作需要一个既有条理又有创造力的人。",
+      "explain": "富有创造力的，用 creative。creature 是名词“生物”、creation 是创造、curious 是好奇的，都不合这个“有创造力的”形容词位置。"
     }
   ]
 }
