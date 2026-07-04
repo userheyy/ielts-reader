@@ -15,3 +15,14 @@ venv/
 
 # brainstorming visual companion scratch
 .superpowers/
+
+# ---- 本地私有资源(绝不提交) ----
+# DeepSeek API key 等本地配置
+tools/config.local.json
+# AI 生成草稿(审核合并后才入库)
+tools/out/
+# 语法书提取内容(版权,仅本地个人学习)
+data/local/
+# 剑桥听力音频(版权,仅本地;保留目录说明)
+media/audio/**
+!media/audio/README.md
