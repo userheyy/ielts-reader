@@ -26,3 +26,6 @@ data/local/
 # 剑桥听力音频(版权,仅本地;保留目录说明)
 media/audio/**
 !media/audio/README.md
+# 剑桥听力逐句转写(版权,仅本地;index.json 仅结构元数据可提交)
+data/listening/*.json
+!data/listening/index.json

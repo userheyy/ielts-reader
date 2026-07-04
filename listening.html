@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雅思听力精听</title>
+  <link rel="stylesheet" href="css/style.css?v=7" />
+  <link rel="stylesheet" href="css/listening.css?v=1" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="listening.html">听力</a>
+    <a href="test.html">测试</a>
+  </header>
+  <div class="container">
+    <div id="notice"></div>
+
+    <!-- 落地页:测试卡列表(无 ?id 时显示) -->
+    <div id="landing" hidden>
+      <div class="lsn-head">
+        <h2>雅思听力精听</h2>
+        <p>逐句遮罩精听(先听后看)→ 听写判分 → 真题演练。选一个 Part 开始;句子没打时间点的篇目可进"打点模式"边听边补。</p>
+      </div>
+      <div id="landing-list"></div>
+    </div>
+
+    <!-- 精听三栏(?id=xxx 时显示) -->
+    <div id="player-view" hidden>
+      <div class="listen-toolbar">
+        <span class="src" id="lsn-src"></span>
+        <a class="lsn-annotate-link" id="annotate-link" href="#" hidden>打点模式</a>
+      </div>
+      <div class="listen-grid">
+        <div class="pane lsn-left" id="transcript"></div>
+        <aside class="pane questions" id="lsn-questions"></aside>
+        <div class="lsn-side" id="lsn-side"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/listening.js?v=1"></script>
+</body>
+</html>

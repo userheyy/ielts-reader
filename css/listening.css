@@ -1,0 +1,178 @@
+/* 听力模块样式(独立文件,按项目约定不动 style.css;页面需同时引入两者) */
+
+/* ---- 提示卡 ---- */
+.lsn-note {
+  margin-bottom: 14px; padding: 12px 16px; border: 1px solid #d7c28b;
+  border-radius: 10px; background: #fff9e8; font-size: 14px; line-height: 1.7;
+}
+.lsn-note.err { border-color: #d99a91; background: #fff5f3; }
+.lsn-note code { background: #f0ede2; border-radius: 4px; padding: 1px 5px; font-size: 12px; }
+.lsn-note a { color: var(--green-dark); font-weight: 600; }
+
+/* ---- 落地页 ---- */
+.lsn-head h2 { margin: 0 0 4px; }
+.lsn-head p { margin: 0 0 18px; color: var(--muted); font-size: 13px; }
+.card .lsn-card-foot { display: flex; align-items: center; gap: 10px; }
+.card .lsn-ann { margin-left: auto; font-size: 11px; color: #8a958c; }
+.card .lsn-ann:hover { color: var(--green-dark); text-decoration: underline; }
+
+/* ---- 三栏布局(参照 reader-grid 思路) ---- */
+.listen-toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
+.listen-toolbar .src { color: var(--muted); font-size: 14px; }
+.lsn-annotate-link {
+  margin-left: auto; border: 1px solid #acd5b1; border-radius: 999px; padding: 3px 11px;
+  background: #fff; color: var(--green-dark); font-size: 12px; text-decoration: none;
+}
+.lsn-annotate-link:hover { background: #eef8ef; }
+.listen-grid {
+  display: grid; gap: 16px; align-items: start;
+  grid-template-columns: minmax(340px, 1.15fr) minmax(290px, .9fr) minmax(300px, .85fr);
+}
+.listen-grid .pane { max-height: calc(100vh - 112px); overflow-y: auto; scrollbar-gutter: stable; }
+.lsn-side { max-height: calc(100vh - 112px); overflow-y: auto; display: flex; flex-direction: column; gap: 14px; }
+@media (min-width: 1200px) { .container:has(.listen-grid) { max-width: 1780px; } }
+@media (max-width: 1150px) {
+  .listen-grid { grid-template-columns: 1fr 1fr; }
+  .listen-grid .questions { grid-column: 1 / -1; max-height: none; }
+}
+@media (max-width: 760px) {
+  .listen-grid { grid-template-columns: 1fr; }
+  .listen-grid .pane, .lsn-side { max-height: none; }
+  .lsn-side { order: -1; }
+}
+
+/* ---- 左栏:逐句转写 ---- */
+.tr-bar {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  margin-bottom: 10px; font-size: 13px; color: var(--muted);
+}
+.tr-bar button {
+  border: 1px solid #acd5b1; border-radius: 999px; padding: 3px 10px;
+  background: #fff; color: var(--green-dark); cursor: pointer; font-size: 12px;
+}
+.tr-bar button:hover { background: #eef8ef; }
+.tr-follow { display: inline-flex; align-items: center; gap: 4px; cursor: pointer; user-select: none; }
+.seg {
+  border: 1px solid #e3eae4; border-radius: 8px; padding: 8px 11px;
+  margin-bottom: 8px; cursor: pointer; transition: background .15s, border-color .15s;
+}
+.seg:hover { background: #f4faf5; }
+.seg.locked { display: flex; align-items: center; gap: 10px; color: #8a958c; }
+.seg .seg-no { flex: 0 0 auto; min-width: 24px; font-weight: 700; color: var(--green-dark); font-size: 13px; }
+.seg .seg-time { font-size: 12px; color: #8a958c; font-variant-numeric: tabular-nums; }
+.seg .seg-lock { font-size: 12px; }
+.seg .seg-meta { display: flex; align-items: center; gap: 10px; margin-bottom: 3px; }
+.seg .seg-spk { font-size: 11px; font-weight: 700; color: #7f8d84; letter-spacing: .05em; }
+.seg .seg-ans {
+  border-radius: 999px; padding: 0 8px; background: #dbeee0; color: #356b42; font-size: 11px;
+}
+.seg .seg-play { margin-left: auto; color: var(--green-dark); font-size: 11px; opacity: .55; }
+.seg:hover .seg-play { opacity: 1; }
+.seg .seg-en { font-size: 16px; line-height: 1.55; }
+.seg .seg-zh { margin-top: 2px; color: #556058; font-size: 13px; }
+.seg.playing { border-color: var(--green); background: #eef8ef; box-shadow: 0 0 0 1px var(--green) inset; }
+.seg.pulse { animation: seg-pulse 1.15s ease-out; }
+@keyframes seg-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(74, 157, 91, .55); }
+  70% { box-shadow: 0 0 0 8px rgba(74, 157, 91, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 157, 91, 0); }
+}
+/* 生词气泡(简单 title 提示)与同义替换波浪线 */
+.wtip { border-bottom: 1px dotted #9fbea5; cursor: help; }
+.para-hl {
+  text-decoration: underline wavy var(--green-dark) 1.5px;
+  text-underline-offset: 3px; cursor: help;
+}
+/* 打点模式的行 */
+.seg.ann .seg-time.unset { color: #c08b2d; }
+.seg.ann-cur { border-color: #d7a53b; background: #fffaef; box-shadow: 0 0 0 1px #e5c988 inset; }
+
+/* ---- 中栏:多选题选项(填空复用 style.css 的 .question-item) ---- */
+.mc-opts { display: flex; flex-direction: column; gap: 6px; margin-top: 9px; }
+.mc-opt {
+  text-align: left; border: 1px solid #cbd4cd; border-radius: 6px; padding: 7px 10px;
+  background: #fff; cursor: pointer; font-size: 13px; line-height: 1.45; color: inherit;
+}
+.mc-opt b { color: var(--green-dark); margin-right: 6px; }
+.mc-opt:hover { border-color: #9fbea5; background: #f6fbf7; }
+.mc-opt.sel { border-color: var(--green-dark); background: #e8f6ea; box-shadow: 0 0 0 1px var(--green-dark) inset; }
+
+/* ---- 右栏:播放器卡片 ---- */
+.pl-card {
+  background: var(--card); border-radius: 10px; padding: 15px 17px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .08); font-size: 13px;
+}
+.pl-time { display: flex; align-items: center; gap: 9px; font-variant-numeric: tabular-nums; color: #556058; }
+.pl-time input[type="range"] { flex: 1; accent-color: var(--green-dark); }
+.pl-main { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 12px 0; }
+.pl-main button {
+  border: 1px solid #cbd4cd; border-radius: 8px; padding: 6px 12px;
+  background: #fff; cursor: pointer; font-size: 13px;
+}
+.pl-main button:hover { background: #f2f8f3; }
+.pl-main .pl-play {
+  border: 0; border-radius: 999px; padding: 9px 22px;
+  background: var(--green-dark); color: #fff; font-size: 15px; font-weight: 600;
+}
+.pl-main .pl-play:hover { background: #3f8a4f; }
+.pl-main button:disabled { opacity: .45; cursor: default; }
+.pl-row { display: flex; align-items: baseline; gap: 10px; margin: 9px 0; }
+.pl-label { flex: 0 0 32px; color: var(--muted); font-size: 12px; }
+.chiprow { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip {
+  border: 1px solid #cbd4cd; border-radius: 999px; padding: 3px 10px;
+  background: #fff; cursor: pointer; font-size: 12px; color: #435149;
+}
+.chip:hover { background: #f2f8f3; }
+.chip.on { border-color: var(--green-dark); background: var(--green-dark); color: #fff; }
+.chip:disabled { opacity: .4; cursor: default; }
+.mode-panel { margin-top: 9px; padding-top: 9px; border-top: 1px dashed #e0e7e1; color: #556058; }
+.mode-panel select { border: 1px solid #cbd4cd; border-radius: 6px; padding: 2px 6px; background: #fff; }
+.mode-panel .hint { color: #8a958c; font-size: 12px; margin-top: 5px; }
+.mode-panel .ab-times { font-variant-numeric: tabular-nums; }
+.pl-kbd { margin-top: 10px; padding-top: 9px; border-top: 1px dashed #e0e7e1; color: #9aa39c; font-size: 11px; }
+
+/* ---- 听写卡片 ---- */
+.dict-head { display: flex; align-items: baseline; gap: 9px; font-weight: 700; color: #20352a; }
+.dict-head small { font-weight: 400; color: var(--muted); }
+.dict-nav { display: flex; align-items: center; gap: 7px; margin: 10px 0; flex-wrap: wrap; }
+.dict-nav button {
+  border: 1px solid #cbd4cd; border-radius: 6px; padding: 4px 10px;
+  background: #fff; cursor: pointer; font-size: 12px;
+}
+.dict-nav button:hover { background: #f2f8f3; }
+.dict-nav button:disabled { opacity: .45; cursor: default; }
+.dict-nav .dict-playbtn { border-color: var(--green-dark); color: var(--green-dark); font-weight: 600; }
+.dict-card textarea {
+  width: 100%; border: 1px solid #cbd4cd; border-radius: 8px; padding: 8px 10px;
+  font: inherit; font-size: 14px; resize: vertical; background: #fff;
+}
+.dict-card textarea:focus { outline: 2px solid #bfe3c4; border-color: var(--green-dark); }
+.dict-result { margin-top: 9px; line-height: 1.9; }
+.dict-score { font-weight: 700; margin-right: 8px; }
+.dict-score.good { color: #2f7a3f; }
+.dict-score.bad { color: #b3552c; }
+.dk-tok { margin-right: 5px; font-size: 14px; }
+.dk-tok.correct { color: #2f7a3f; }
+.dk-tok.missing { color: #9aa39c; text-decoration: line-through; }
+.dk-tok.wrong { color: #c0392b; font-weight: 600; cursor: help; }
+.dk-tok.extra { color: #d98324; font-style: italic; }
+.dict-best { margin-top: 6px; color: var(--muted); font-size: 12px; }
+
+/* ---- 打点面板 ---- */
+.ann-card .ann-prog { font-weight: 700; color: #20352a; }
+.ann-card .ann-cur-en {
+  margin: 8px 0; padding: 8px 10px; border-radius: 8px; background: #fffaef;
+  border: 1px solid #ecd9a8; font-size: 13px; line-height: 1.5;
+}
+.ann-btns { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
+.ann-btns button {
+  border: 1px solid #cbd4cd; border-radius: 7px; padding: 6px 12px;
+  background: #fff; cursor: pointer; font-size: 13px;
+}
+.ann-btns button:hover { background: #f2f8f3; }
+.ann-btns button:disabled { opacity: .45; cursor: default; }
+.ann-btns .ann-mark { border: 0; background: #d7a53b; color: #fff; font-weight: 700; }
+.ann-btns .ann-mark:hover { background: #c2932f; }
+.ann-btns .ann-export { border-color: var(--green-dark); color: var(--green-dark); font-weight: 600; }
+.ann-hint { margin-top: 8px; color: #8a958c; font-size: 12px; line-height: 1.6; }
