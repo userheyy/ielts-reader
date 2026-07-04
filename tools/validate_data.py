@@ -25,6 +25,8 @@ def load_grammar_tags():
 def check_tag(ctx, tag):
     if not isinstance(tag, str):
         errors.append(f"{ctx}: tag 应为字符串")
+    elif tag == "":
+        return  # 空字符串等同于"没有 tag"(与 gen_deep_analysis.py 校验语义一致)
     elif GRAMMAR_TAG_IDS is not None and tag not in GRAMMAR_TAG_IDS:
         errors.append(f"{ctx}: tag '{tag}' 不在 grammar-tags.json 白名单")
 
@@ -141,6 +143,13 @@ def check_passage(path):
             dg = detail.get("grammar", {})
             if not isinstance(dg, dict) or "type" not in dg or "note" not in dg:
                 errors.append(f"{path} 段{s.get('para')} 第{i}句: grammar 需含 type 与 note")
+        if s.get("deep"):
+            check_deep(d.get("id", path), s)
+    sent_en = {s["id"]: s.get("en", "") for s in sents if "id" in s}
+    for grp in d.get("questions", []):
+        for q in grp.get("items", []):
+            if q.get("paraphrase"):
+                check_paraphrase(d.get("id", path), q, sent_en)
     return d
 
 def main():

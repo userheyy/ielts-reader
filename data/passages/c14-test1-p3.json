@@ -7563,7 +7563,283 @@
           "pos": "n.",
           "def": "不满；不满意"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(第一句)/ S + Vi(第二句)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "These",
+              "zh": "这些(因素)"
+            },
+            {
+              "role": "V",
+              "text": "include",
+              "zh": "包括"
+            },
+            {
+              "role": "O",
+              "text": "working conditions and job security",
+              "zh": "工作条件和工作保障"
+            }
+          ],
+          "plain": "第一句骨架 These include A and B,主语 These 指上一句提到的因素,include 是及物动词,后接并列宾语。第二句由 When... 状语从句 + 主句 job dissatisfaction may result 构成;result 在这里是不及物动词,意思是'产生、发生'。"
+        },
+        "chunks": [
+          {
+            "text": "These",
+            "role": "S",
+            "zh": "这些(因素)",
+            "note": "指代上文提到的因素,是回指(anaphora)。",
+            "tag": "ch2.det"
+          },
+          {
+            "text": "include",
+            "role": "V",
+            "zh": "包括",
+            "note": "及物动词,后接宾语列举包含的具体项目。",
+            "tag": "ch1.svo"
+          },
+          {
+            "text": "working conditions and job security",
+            "role": "O",
+            "zh": "工作条件和工作保障",
+            "note": "两个名词词组由 and 并列,共同作 include 的宾语。working 是动名词修饰 conditions。",
+            "tag": "ch13.parallel"
+          },
+          {
+            "text": "When these factors are unfavorable",
+            "role": "adv",
+            "zh": "当这些因素不利时",
+            "note": "when 引导的时间状语从句;从句主语 these factors,系动词 are,表语 unfavorable。",
+            "tag": "ch15.time"
+          },
+          {
+            "text": "job dissatisfaction",
+            "role": "S",
+            "zh": "工作不满",
+            "note": "主句主语,由前缀 dis- 组成的抽象名词。",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "may result",
+            "role": "V",
+            "zh": "可能会产生",
+            "note": "情态动词 may 表示可能性;result 在这里是不及物动词,不接宾语,意为'产生、发生'。",
+            "tag": "ch7.modal"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch15.time",
+            "name": "when 引导的时间状语从句",
+            "explain": "when + 从句 + 主句 的结构,when 从句作时间状语,回答'什么时候'。这里 When these factors are unfavorable 说明'什么时候会不满'。要点:when 从句可以在主句前(要加逗号),也可以在主句后(不加逗号),意思一样。"
+          },
+          {
+            "tag": "ch7.modal",
+            "name": "情态动词 may 表可能性",
+            "explain": "may + 动词原形,表示'可能、也许',语气弱于 will,比 might 稍强一点。这里 may result 是学术文章的常见搭配,给结论留余地——作者不敢说'一定'会产生不满,只说'可能'会。写作里这种语气很稳。"
+          },
+          {
+            "tag": "ch1.svo",
+            "name": "include 后接并列宾语",
+            "explain": "include 是及物动词,专门用来'列举其中一部分',与 consist of(囊括全部)不同。后面常跟名词、名词并列结构或 -ing 分词短语。这里 working conditions and job security 是两个名词短语并列作宾语,用 and 连接。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "unfavorable",
+            "lemma": "unfavorable",
+            "pos": "adj.",
+            "def": "不利的、不佳的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "un",
+                  "type": "prefix",
+                  "gloss": "不、无"
+                },
+                {
+                  "text": "favor",
+                  "type": "root",
+                  "gloss": "好意、偏爱"
+                },
+                {
+                  "text": "able",
+                  "type": "suffix",
+                  "gloss": "可...的"
+                }
+              ],
+              "derivation": "un-(不)+ favor(好意)+ -able(可...的)→ 不讨人喜欢的 = 不利的。",
+              "family": {
+                "root": "favor",
+                "gloss": "好意",
+                "words": [
+                  {
+                    "word": "favorable",
+                    "def": "有利的"
+                  },
+                  {
+                    "word": "favor",
+                    "def": "偏爱、恩惠(n./v.)"
+                  },
+                  {
+                    "word": "favorite",
+                    "def": "最喜欢的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "unfavorably",
+                  "pos": "adv.",
+                  "def": "不利地"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "adverse",
+                "note": "'不利的、逆的',雅思阅读高频学术替换"
+              },
+              {
+                "w": "poor",
+                "note": "'差的',更口语的替换"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "favorable",
+                "note": "反义:'有利的'(去掉 un-)"
+              }
+            ]
+          },
+          {
+            "w": "dissatisfaction",
+            "lemma": "dissatisfaction",
+            "pos": "n.",
+            "def": "不满、不满意",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "dis",
+                  "type": "prefix",
+                  "gloss": "不、否"
+                },
+                {
+                  "text": "satisfy",
+                  "type": "root",
+                  "gloss": "使满意"
+                },
+                {
+                  "text": "action",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "dis-(不)+ satisfaction(满意)→ 不满意。",
+              "family": {
+                "root": "satis",
+                "gloss": "足够",
+                "words": [
+                  {
+                    "word": "satisfaction",
+                    "def": "满意"
+                  },
+                  {
+                    "word": "satisfy",
+                    "def": "使满意"
+                  },
+                  {
+                    "word": "satisfactory",
+                    "def": "令人满意的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "dissatisfied",
+                  "pos": "adj.",
+                  "def": "不满的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "discontent",
+                "note": "'不满',是 dissatisfaction 的书面等价词,雅思阅读常见"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "satisfaction",
+                "note": "反义:'满意'"
+              }
+            ]
+          },
+          {
+            "w": "job security",
+            "lemma": "job security",
+            "pos": "phr.",
+            "def": "工作保障、就业稳定",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "job",
+                  "type": "root",
+                  "gloss": "工作"
+                },
+                {
+                  "text": "secur",
+                  "type": "root",
+                  "gloss": "安全、无忧"
+                },
+                {
+                  "text": "ity",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "job(工作)+ security(安全)→ 工作上有'不担心失业'的保障。",
+              "family": {
+                "root": "secur",
+                "gloss": "安全",
+                "words": [
+                  {
+                    "word": "secure",
+                    "def": "安全的/使安全"
+                  },
+                  {
+                    "word": "insecurity",
+                    "def": "不安全感(in-=不)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "employment stability",
+                "note": "'就业稳定性',学术性替换"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "may result",
+            "zh": "可能会产生/发生",
+            "usage": "学术写作里表达'某原因可能导致某后果'的稳妥说法:If X is unfavorable, negative outcomes may result(如果 X 不利,可能产生负面结果)。"
+          }
+        ]
+      }
     },
     {
       "id": 29,
@@ -10307,7 +10583,31 @@
           "number": 29,
           "prompt": "Little is done in the hospitality industry to help workers improve their skills.",
           "answer": "B",
-          "evidence_sentence": 10
+          "evidence_sentence": 10,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "little is done to help workers improve their skills",
+                "p": "enables developing and drawing out the full potential of people",
+                "kind": "neg",
+                "note": "题干'几乎没做什么帮员工提升技能'是否定表述;原文说 HRM 实践 does not appear to represent a managerial approach that enables developing... the full potential(不像是那种能够培养、发挥员工全部潜能的管理模式),整体带 does not 的否定框架就等于'没做'。注意原文用的是 enables(第三人称单数),不是 enabling。"
+              },
+              {
+                "q": "hospitality industry",
+                "p": "HRM practices",
+                "kind": "para",
+                "note": "题干泛指'酒店行业',原文用 HRM practices(人力资源管理实践),整篇文章说的就是 hospitality industry 的 HRM,是行业内的具体说法。"
+              },
+              {
+                "q": "improve their skills",
+                "p": "developing and drawing out the full potential",
+                "kind": "syn",
+                "note": "'提升技能'的更学术说法就是'开发和挖掘全部潜能'。developing/drawing out 都对应技能培养。"
+              }
+            ],
+            "trap": "题干说的是'几乎没做',要小心尾巴 even though employees may be broadly satisfied with many aspects of their work,员工的普遍满意不能反驳前半句的'没做',所以答案还是 B(Lucas 说的)。",
+            "explain": "抓 improve skills(提升技能)去原文找同义:developing and drawing out the full potential 是学术替换,前面的 does not appear to be designed 是否定,合起来就是'几乎不做技能培养'。"
+          }
         },
         {
           "number": 30,
@@ -10380,7 +10680,31 @@
           "number": 32,
           "prompt": "One reason for high staff turnover in the hospitality industry is poor morale.",
           "answer": "YES",
-          "evidence_sentence": 12
+          "evidence_sentence": 12,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "reason for high staff turnover",
+                "p": "Among the many cited reasons",
+                "kind": "para",
+                "note": "题干说'员工流失率高的一个原因',原文用 Among the many cited reasons(在诸多所引用的原因中),直接对应'原因'这一层。"
+              },
+              {
+                "q": "poor morale",
+                "p": "compromised employee morale",
+                "kind": "syn",
+                "note": "题干 poor morale(士气低下)与原文 compromised employee morale(受损/降低的员工士气)完全同义,compromised 在这里是'被削弱、变差'的意思。"
+              },
+              {
+                "q": "poor morale",
+                "p": "morale and attitudes",
+                "kind": "verbatim",
+                "note": "morale 一词原文原词出现,作为定位锚点。"
+              }
+            ],
+            "trap": "题干只提 morale 一项,原文并列了 low compensation/inadequate benefits/poor working conditions/compromised morale 四项;答 YES 是因为 morale 确实被列为其中一个原因。要小心 NG 陷阱:题干如果只提某一项,而原文有列表,只要该项在列表里就是 YES。",
+            "explain": "抓 morale 作锚点,原文 compromised employee morale 是同义,而 Among the many cited reasons 说明这是被列出的原因之一,与题干'One reason'完全吻合。"
+          }
         },
         {
           "number": 33,

@@ -4024,7 +4024,206 @@
           "pos": "phr.",
           "def": "一点也不；毫不"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(引语作宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "O",
+              "text": "'They said... a glorious future for the car,'",
+              "zh": "'他们说...汽车才是辉煌的未来,'(引语)"
+            },
+            {
+              "role": "V",
+              "text": "says",
+              "zh": "说"
+            },
+            {
+              "role": "S",
+              "text": "Schimmelpennink",
+              "zh": "希默尔平克"
+            }
+          ],
+          "plain": "整段可拆成两句。第一句是直接引语 + 引述部分 says Schimmelpennink,注意主谓倒装:引语在前时,英文常把动词 says 挪到主语前面(即 says + 人名)。第二句 But he was not in the least discouraged 是 S+V+C 结构(联系动词 was 后接补语)。"
+        },
+        "chunks": [
+          {
+            "text": "'They said that the bicycle belongs to the past.",
+            "role": "O",
+            "zh": "'他们说自行车属于过去。",
+            "note": "引语内含 that 引导的名词从句作 said 的宾语;belongs 用一般现在时,表示说话时的普遍状态。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "They saw a glorious future for the car,'",
+            "role": "O",
+            "zh": "他们看到汽车的辉煌未来,'(引语延续)",
+            "note": "引语第二句,see a future for X = 认为 X 有前途。saw 用一般过去时,与前句 belongs 时态错位是因为句意从'过去他们的观点'切到'当时他们描绘的画面'。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "says Schimmelpennink",
+            "role": "V",
+            "zh": "希默尔平克说",
+            "note": "引语后的说话人标注,动词 says 倒装到主语前面。这是英语引语的常见倒装写法,类似汉语'X 这样说道'。",
+            "tag": "ch18.quote-inversion"
+          },
+          {
+            "text": "But he was not in the least discouraged",
+            "role": "clause",
+            "zh": "但是他一点也没有灰心",
+            "note": "But 连接的转折句;结构是 S(he)+ Vlink(was)+ 状语(not in the least)+ C(discouraged 形容词性过去分词);not in the least 是加强否定的固定短语。",
+            "tag": "ch1.svc"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch18.quote-inversion",
+            "name": "直接引语后的主谓倒装",
+            "explain": "当直接引语在前、说话人在后时,英文常把动词提到主语前:'…,' says Schimmelpennink(不是 Schimmelpennink says)。这是新闻和小说里的常见写法,目的是把引语的视觉重心稳住。汉语翻成'…,' 希默尔平克说 即可。"
+          },
+          {
+            "tag": "ch14.noun-clause",
+            "name": "that 引导的名词从句作宾语",
+            "explain": "said 后面跟一个完整的句子 the bicycle belongs to the past,前面加 that 就变成一个名词从句,整体作 said 的宾语,回答'说了什么'。that 后必须是完整主谓宾结构,和关系子句(that 在从句里作某成分)不同。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "过去分词作表语(形容词化)",
+            "explain": "was discouraged 里的 discouraged 是过去分词,但在这里已经形容词化,表达'灰心的、气馁的'这种状态,和 be sad 里的 sad 一样是主语补语(C)。判断标准:能不能用 very 修饰?能 very discouraged,说明它是形容词性。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "glorious",
+            "lemma": "glorious",
+            "pos": "adj.",
+            "def": "辉煌的、光荣的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "glor",
+                  "type": "root",
+                  "gloss": "荣耀"
+                },
+                {
+                  "text": "ious",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "glor(荣耀)+ -ious → 充满荣耀的 = 辉煌的。",
+              "family": {
+                "root": "glor",
+                "gloss": "荣耀",
+                "words": [
+                  {
+                    "word": "glory",
+                    "def": "荣耀(n.)"
+                  },
+                  {
+                    "word": "glorify",
+                    "def": "美化、赞颂(-fy=使动化)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "brilliant",
+                "note": "'光辉灿烂',雅思阅读里替换'辉煌的未来'"
+              },
+              {
+                "w": "magnificent",
+                "note": "'壮丽的',书面语替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "discouraged",
+            "lemma": "discourage",
+            "pos": "adj.",
+            "def": "灰心的、气馁的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "dis",
+                  "type": "prefix",
+                  "gloss": "去除、反"
+                },
+                {
+                  "text": "courage",
+                  "type": "root",
+                  "gloss": "勇气"
+                },
+                {
+                  "text": "d",
+                  "type": "suffix",
+                  "gloss": "过去分词后缀"
+                }
+              ],
+              "derivation": "dis-(去)+ courage(勇气)+ -d → 勇气被抽走的 = 灰心的。",
+              "family": {
+                "root": "courage",
+                "gloss": "勇气",
+                "words": [
+                  {
+                    "word": "encourage",
+                    "def": "鼓励(en-=使有;给勇气)"
+                  },
+                  {
+                    "word": "courageous",
+                    "def": "勇敢的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "discourage",
+                  "pos": "v.",
+                  "def": "使灰心"
+                },
+                {
+                  "word": "discouragement",
+                  "pos": "n.",
+                  "def": "灰心"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "disheartened",
+                "note": "'气馁的',是 discouraged 的书面等价词"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "encouraged",
+                "note": "反义:'受到鼓舞的'(en- 使有 vs dis- 去掉)"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "not in the least",
+            "zh": "一点也不、丝毫不",
+            "usage": "加强否定的地道说法。写作里可迁移:He was not in the least surprised by the result(他对结果一点也不惊讶)。"
+          },
+          {
+            "text": "belong to the past",
+            "zh": "属于过去、已经过时",
+            "usage": "写作论述'旧事物退场'时可用:Some traditions belong to the past(有些传统已经过时了)。"
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -10407,7 +10606,31 @@
           "number": 16,
           "prompt": "a reference to a person being unable to profit from their work",
           "answer": "F",
-          "evidence_sentence": 35
+          "evidence_sentence": 35,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "profit from",
+                "p": "benefit from it",
+                "kind": "syn",
+                "note": "题干 profit from 与原文 benefit from it 同义:'从…中获利'。这是最核心的替换。"
+              },
+              {
+                "q": "being unable to profit",
+                "p": "didn",
+                "kind": "neg",
+                "note": "题干说'无法获利'是否定含义,原文用 didn't really benefit 表达'并没有真的获益',是等价的反面表达(didn 后跟花体撇号 t)。"
+              },
+              {
+                "q": "from their work",
+                "p": "financially",
+                "kind": "para",
+                "note": "题干 from their work(从自己的工作)对应原文 financially(在经济上、财务方面);他的'工作'指发明,原文用 financially 说明是经济层面的无收益。"
+              }
+            ],
+            "trap": "题干只关心'个人无法从工作中获利',要留意原因是 never filed for a patent(没有申请专利),而不是产品失败,这一段容易与其他段落混淆。",
+            "explain": "先抓题干关键词 profit(获利)+ unable(无法),到原文里找同义否定表达:financially I didn't really benefit from it 就是标准替换。"
+          }
         },
         {
           "number": 17,
@@ -10507,7 +10730,31 @@
           "number": 20,
           "prompt": "Which TWO statements are made about the Amsterdam bike-sharing scheme of 1999? (second answer)",
           "answer": "D",
-          "evidence_sentence": 21
+          "evidence_sentence": 21,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "bike-sharing scheme",
+                "p": "bike-sharing",
+                "kind": "verbatim",
+                "note": "题干与原文都出现 bike-sharing,这是定位锚点。"
+              },
+              {
+                "q": "was successful abroad first",
+                "p": "the Danish experiment had proved that bike-sharing was a real possibility",
+                "kind": "para",
+                "note": "选项 D 的核心信息(先在国外获得成功):原文用 Danish experiment(丹麦实验)已经证明可行来对应'先在国外成功'。"
+              },
+              {
+                "q": "confidence to launch it",
+                "p": "People had become more environmentally conscious",
+                "kind": "para",
+                "note": "为何1999年会重新启动:原文给的原因是'人们的环保意识增强了',支持选项D 的启动条件。"
+              }
+            ],
+            "trap": "题干问的是'1999 阿姆斯特丹方案',这一句没有直接说 Amsterdam 也没说 1999,是通过上下文推断的定位句;不要因'原文没写 Amsterdam'就跳过,it 指代的正是那个方案。",
+            "explain": "先抓 bike-sharing 作锚点,发现 Danish experiment had proved 的时态是过去完成时,说明 1999 方案启动时已具备两个条件:环保意识提升 + 有丹麦实验的成功先例。"
+          }
         }
       ]
     },
@@ -10529,7 +10776,31 @@
           "number": 21,
           "prompt": "Which TWO statements are made about Amsterdam today? (first answer)",
           "answer": "D",
-          "evidence_sentence": 39
+          "evidence_sentence": 39,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "additional transport",
+                "p": "additional transport",
+                "kind": "verbatim",
+                "note": "题干与原文一致的表达,是定位锚点。"
+              },
+              {
+                "q": "public transport users need bikes",
+                "p": "People who travel on the underground",
+                "kind": "para",
+                "note": "选项 D 关注'公共交通乘客需要自行车':原文 People who travel on the underground(坐地铁的人)对应'公共交通用户'。"
+              },
+              {
+                "q": "final destination",
+                "p": "final destination",
+                "kind": "verbatim",
+                "note": "'最终目的地'原词复现,原文说明为什么这些人需要 additional transport。"
+              }
+            ],
+            "trap": "题干说'关于阿姆斯特丹今天',原文这句其实没出现 Amsterdam 字眼,但这一段整体讨论的就是当前的阿姆斯特丹自行车方案,这是根据段落语境定位,不要因为没看到 Amsterdam 就跳过。",
+            "explain": "锁定 additional transport 这个原词锚点,发现原文说'地铁乘客需要额外交通抵达终点',正好对应选项 D 想说的'公共交通乘客需要自行车弥补最后一公里'。"
+          }
         },
         {
           "number": 22,

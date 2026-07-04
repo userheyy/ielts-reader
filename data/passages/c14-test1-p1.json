@@ -8541,7 +8541,298 @@
           "pos": "phr.",
           "def": "忽视；忘记；看不见"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + Vi + C(主语+联系动词+主语补语,被动形式)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "the importance of play",
+              "zh": "游戏的重要性"
+            },
+            {
+              "role": "V",
+              "text": "has been lost",
+              "zh": "被遗忘了"
+            }
+          ],
+          "plain": "整段引语的主干可拆成四个小句。首句的骨架是 The importance has been lost(重要性被丢了),这是被动语态 be+过去分词。后面三个小句分别是 It is regarded as something(被视作某种东西)、Let's not lose sight of...(咱们别忽视...)、Let's make sure...(咱们要确保...),后两句都是 Let's 引导的祈使句。"
+        },
+        "chunks": [
+          {
+            "text": "Somehow",
+            "role": "adv",
+            "zh": "不知何故",
+            "note": "副词作句首状语,表示说不清楚的原因。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": "the importance of play",
+            "role": "S",
+            "zh": "游戏的重要性",
+            "note": "名词词组;of play 是介词短语修饰 importance。",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "has been lost",
+            "role": "V",
+            "zh": "已经被遗忘/丢失",
+            "note": "现在完成时的被动语态:have + been + 过去分词,强调到目前为止的结果。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "in recent decades",
+            "role": "adv",
+            "zh": "在最近几十年里",
+            "note": "介词短语作时间状语。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "It's regarded as something trivial",
+            "role": "clause",
+            "zh": "它被视作某种琐碎的东西",
+            "note": "It 指 play;regard A as B 的被动形式 A is regarded as B。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "or even as something negative that contrasts with 'work'",
+            "role": "clause",
+            "zh": "甚至被视作与'工作'相对立的负面东西",
+            "note": "并列 as 短语;that contrasts with 'work' 是 that 引导的关系子句,修饰 something negative。",
+            "tag": "ch16.relative"
+          },
+          {
+            "text": "Let's not lose sight of its benefits",
+            "role": "clause",
+            "zh": "咱们别忽视游戏的好处",
+            "note": "Let's + not + 动词原形,祈使句的否定形式;lose sight of 是习惯搭配。",
+            "tag": "ch8.imperative"
+          },
+          {
+            "text": "and the fundamental contributions it makes to human achievements",
+            "role": "clause",
+            "zh": "以及它对人类成就作出的根本贡献",
+            "note": "and 并列 benefits 与 contributions;it makes 前省略了关系代词 that,是关系子句修饰 contributions。",
+            "tag": "ch20.rel-reduction"
+          },
+          {
+            "text": "in the arts, sciences and technology",
+            "role": "adv",
+            "zh": "在艺术、科学和技术领域",
+            "note": "介词短语,三个名词并列。",
+            "tag": "ch13.parallel"
+          },
+          {
+            "text": "Let's make sure children have a rich diet of play experiences",
+            "role": "clause",
+            "zh": "咱们要确保孩子们能享有丰富的游戏体验",
+            "note": "Let's + 动词原形的祈使句;make sure 后接省略了 that 的名词从句;a rich diet of 是比喻用法(丰富的一份食谱)。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch9.passive",
+            "name": "现在完成时的被动语态",
+            "explain": "结构是 have/has + been + 过去分词。这里 has been lost 表示到现在为止,重要性一直是被丢失的状态。用被动是因为说话人想强调'重要性'这个受事,而不是谁去丢失了它。中文可翻成'已经被遗忘'。"
+          },
+          {
+            "tag": "ch8.imperative",
+            "name": "Let's 祈使句",
+            "explain": "Let's 是 Let us 的缩写,表示说话人邀请别人一起做某事;后面直接跟动词原形。否定用 Let's not + 动词原形(不是 Let's don't)。这里连用两个 Let's 句子,像老师在演讲结尾的呼吁,语气很有感染力。"
+          },
+          {
+            "tag": "ch20.rel-reduction",
+            "name": "关系子句省略关系代词",
+            "explain": "the contributions (that) it makes 里,contributions 是先行词,it makes 是关系子句,原本应该是 that/which it makes,因为 that/which 在从句里做 makes 的宾语,所以可以省略。这种省略在阅读里经常出现,读到 the + 名词 + 主语 + 动词 就要意识到这里省了个 that/which。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "trivial",
+            "lemma": "trivial",
+            "pos": "adj.",
+            "def": "琐碎的、微不足道的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "tri",
+                  "type": "prefix",
+                  "gloss": "三(词源:三岔口)"
+                },
+                {
+                  "text": "via",
+                  "type": "root",
+                  "gloss": "路"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "词源自拉丁语 trivium(三岔路口),古罗马路口张贴的都是家常琐事,后引申为'琐碎'。",
+              "family": null,
+              "mnemonic": "记法:三岔路口的闲聊都是鸡毛蒜皮 → trivial(琐碎)。",
+              "forms": [
+                {
+                  "word": "triviality",
+                  "pos": "n.",
+                  "def": "琐事;微不足道"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "insignificant",
+                "note": "'不重要',雅思写作里替换 trivial 显得更正式"
+              },
+              {
+                "w": "unimportant",
+                "note": "'不重要',是最直白的替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "contributions",
+            "lemma": "contribution",
+            "pos": "n.",
+            "def": "贡献;捐献",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "con",
+                  "type": "prefix",
+                  "gloss": "一起"
+                },
+                {
+                  "text": "tribut",
+                  "type": "root",
+                  "gloss": "给予、贡"
+                },
+                {
+                  "text": "ion",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "con-(一起)+ tribut(给)+ -ion(名词)→ 大家一起给出去的东西 = 贡献。",
+              "family": {
+                "root": "tribut",
+                "gloss": "给予",
+                "words": [
+                  {
+                    "word": "contribute",
+                    "def": "贡献(v.)"
+                  },
+                  {
+                    "word": "tribute",
+                    "def": "赞美、贡品"
+                  },
+                  {
+                    "word": "distribute",
+                    "def": "分发(dis-=分开)"
+                  },
+                  {
+                    "word": "attribute",
+                    "def": "归因于(at-=向;归给某人)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "contribute",
+                  "pos": "v.",
+                  "def": "作出贡献"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "input",
+                "note": "'投入、贡献',阅读里可作替换,更口语化"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "fundamental",
+            "lemma": "fundamental",
+            "pos": "adj.",
+            "def": "根本的、基础的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "fund",
+                  "type": "root",
+                  "gloss": "底、基础"
+                },
+                {
+                  "text": "ment",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "fund(底)+ -ment + -al → 打底的、基础层面的。",
+              "family": {
+                "root": "fund",
+                "gloss": "底、基金",
+                "words": [
+                  {
+                    "word": "foundation",
+                    "def": "地基、基础"
+                  },
+                  {
+                    "word": "found",
+                    "def": "创立(打下基础)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "fundamentally",
+                  "pos": "adv.",
+                  "def": "根本上"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "essential",
+                "note": "'必不可少的',雅思阅读高频替换"
+              },
+              {
+                "w": "basic",
+                "note": "'基础的',更口语"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "lose sight of",
+            "zh": "忽视、看不见",
+            "usage": "写作里表达'别忘了...':Let's not lose sight of the fact that ...(咱们别忘了...这个事实)。"
+          },
+          {
+            "text": "a rich diet of",
+            "zh": "丰富的一份...(比喻)",
+            "usage": "把'食谱'比喻作'体验组合',写作里可迁移为 a rich diet of activities/reading(丰富多样的活动/阅读)。"
+          }
+        ]
+      }
     }
   ],
   "questions": [
