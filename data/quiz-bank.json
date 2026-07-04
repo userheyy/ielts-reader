@@ -1,9 +1,9 @@
 {
   "meta": {
     "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
-    "generated_batches": 7,
+    "generated_batches": 8,
     "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
-    "count": 292
+    "count": 332
   },
   "questions": [
     {
@@ -2341,6 +2341,326 @@
       "sentence": "It is wise to ___ a table in advance at popular restaurants.",
       "sentence_zh": "在热门餐厅提前预订座位是明智的。",
       "explain": "预留、预订，用 reserve。preserve 是保护、conserve 是节约、deserve 是应得，形近但都不合这个“预订、保留”的意思。"
+    },
+    {
+      "word": "influence",
+      "pos": "n./v.",
+      "def": "影响(力)",
+      "sentence": "Parents have a strong ___ on the eating habits of their children.",
+      "sentence_zh": "父母对孩子的饮食习惯有很大的影响。",
+      "explain": "潜移默化的影响(力)，用 influence。impact 侧重“冲击性影响”、outcome 是结果、difference 是差别，都不合“对…的影响力”这个语境。"
+    },
+    {
+      "word": "impact",
+      "pos": "n./v.",
+      "def": "影响，冲击",
+      "sentence": "The new technology had a huge ___ on the way people work.",
+      "sentence_zh": "这项新技术对人们的工作方式产生了巨大的冲击。",
+      "explain": "强烈、显著的冲击性影响，用 impact。influence 侧重“潜移默化”、outcome 是结果、contact 是接触，都不合“重大冲击”的语境。"
+    },
+    {
+      "word": "outcome",
+      "pos": "n.",
+      "def": "结果，结局",
+      "sentence": "No one could predict the final ___ of the long negotiations.",
+      "sentence_zh": "没有人能预测这场漫长谈判的最终结果。",
+      "explain": "最终产生的结果，用 outcome。income 是收入、impact 是冲击、influence 是影响，都不合“结局、结果”的意思。"
+    },
+    {
+      "word": "previous",
+      "pos": "adj.",
+      "def": "以前的，先前的",
+      "sentence": "As mentioned in the ___ chapter, the results were surprising.",
+      "sentence_zh": "正如前一章所提到的，这些结果令人惊讶。",
+      "explain": "之前的、先前的，用 previous。obvious 是明显的、precious 是珍贵的、various 是各种的，形近但都不表示“先前的”。"
+    },
+    {
+      "word": "continuous",
+      "pos": "adj.",
+      "def": "连续的，不间断的",
+      "sentence": "The machine gives off a ___ low hum while it is running.",
+      "sentence_zh": "这台机器运转时会发出连续不断的低沉嗡嗡声。",
+      "explain": "不间断、持续的，用 continuous。continual 侧重“反复间断”、numerous 是众多的、tremendous 是巨大的，都不合“不间断”的意思。"
+    },
+    {
+      "word": "numerous",
+      "pos": "adj.",
+      "def": "众多的，许多的",
+      "sentence": "The book has been translated into ___ languages around the world.",
+      "sentence_zh": "这本书已被翻译成世界上众多种语言。",
+      "explain": "数量众多的，用 numerous。tremendous 是巨大的、continuous 是连续的、generous 是慷慨的，形近但都不表示“众多的”。"
+    },
+    {
+      "word": "tremendous",
+      "pos": "adj.",
+      "def": "巨大的，极大的；极好的",
+      "sentence": "The volunteers put in a ___ amount of effort to clean the beach.",
+      "sentence_zh": "志愿者们付出了巨大的努力来清理海滩。",
+      "explain": "极大、惊人的，用 tremendous。numerous 是众多的、continuous 是连续的、enormous 近义但不在选项，都不合“巨大、惊人”这个具体搭配。"
+    },
+    {
+      "word": "indigenous",
+      "pos": "adj.",
+      "def": "本土的，原产的，土著的",
+      "sentence": "The kangaroo is ___ to Australia and is found nowhere else in the wild.",
+      "sentence_zh": "袋鼠是澳大利亚特有的物种，野外别处都找不到。",
+      "explain": "某地土生土长的，用 indigenous。numerous 是众多的、previous 是先前的、ingenious 是精巧的，形近但都不表示“本土的、原产的”。"
+    },
+    {
+      "word": "actual",
+      "pos": "adj.",
+      "def": "实际的，真实的",
+      "sentence": "The ___ cost of the trip was much higher than we had expected.",
+      "sentence_zh": "这次旅行的实际花费比我们预期的高得多。",
+      "explain": "真实的、实际的，用 actual。annual 是每年的、equal 是相等的、mutual 是相互的，形近但都不表示“实际的”。"
+    },
+    {
+      "word": "annual",
+      "pos": "adj.",
+      "def": "每年的，年度的",
+      "sentence": "The company holds an ___ meeting for all its shareholders each spring.",
+      "sentence_zh": "公司每年春天为全体股东举行一次年度会议。",
+      "explain": "一年一度的，用 annual。actual 是实际的、manual 是手册/手动的、mutual 是相互的，形近但都不表示“每年的”。"
+    },
+    {
+      "word": "individual",
+      "pos": "n./adj.",
+      "def": "个人，个体；个别的",
+      "sentence": "Each ___ has the right to express his or her own opinion.",
+      "sentence_zh": "每个人都有表达自己观点的权利。",
+      "explain": "单个的人、个体，用 individual。individually 是副词、identical 是相同的、indivisible 是不可分的，都不合这个“个人、个体”的意思。"
+    },
+    {
+      "word": "mutual",
+      "pos": "adj.",
+      "def": "相互的，彼此的；共同的",
+      "sentence": "A good friendship is built on ___ trust and respect.",
+      "sentence_zh": "良好的友谊建立在相互的信任和尊重之上。",
+      "explain": "彼此之间的，用 mutual。annual 是每年的、actual 是实际的、neutral 是中立的，形近但都不表示“相互的”。"
+    },
+    {
+      "word": "equal",
+      "pos": "adj./v./n.",
+      "def": "相等的，平等的；比得上",
+      "sentence": "Men and women should receive ___ pay for doing the same work.",
+      "sentence_zh": "男性和女性做同样的工作应当获得同等的报酬。",
+      "explain": "相等、平等的，用 equal。equality 是名词、equally 是副词、equator 是赤道，都不合这个“相等、平等”的形容词位置。"
+    },
+    {
+      "word": "relevant",
+      "pos": "adj.",
+      "def": "相关的，切题的",
+      "sentence": "Please include only information that is ___ to the main question.",
+      "sentence_zh": "请只纳入与主要问题相关的信息。",
+      "explain": "有关联、切题的，用 relevant。dominant 是主导的、brilliant 是杰出的、reluctant 是不情愿的，形近但都不表示“相关、切题”。"
+    },
+    {
+      "word": "brilliant",
+      "pos": "adj.",
+      "def": "极好的；才华横溢的；明亮的",
+      "sentence": "She came up with a ___ idea that solved the problem at once.",
+      "sentence_zh": "她想出了一个绝妙的主意，立刻解决了问题。",
+      "explain": "才华出众、极好的，用 brilliant。relevant 是相关的、dominant 是主导的、reluctant 是不情愿的，形近但都不表示“绝妙、才华横溢”。"
+    },
+    {
+      "word": "dominant",
+      "pos": "adj.",
+      "def": "占主导的，支配的；显性的",
+      "sentence": "English has become the ___ language of international business.",
+      "sentence_zh": "英语已成为国际商务中占主导地位的语言。",
+      "explain": "占支配地位的，用 dominant。relevant 是相关的、brilliant 是杰出的、prominent 是著名的，形近但都不表示“占主导的”。"
+    },
+    {
+      "word": "consultant",
+      "pos": "n.",
+      "def": "顾问，咨询师",
+      "sentence": "The firm hired a ___ to advise them on their marketing strategy.",
+      "sentence_zh": "公司聘请了一位顾问就其营销策略提供建议。",
+      "explain": "提供专业建议的人，用 consultant。consult 是动词、consultation 是咨询(过程)、assistant 是助理，都不合这个“顾问(人)”的意思。"
+    },
+    {
+      "word": "immigrant",
+      "pos": "n.",
+      "def": "(外来)移民",
+      "sentence": "The city has welcomed ___ from many different countries.",
+      "sentence_zh": "这座城市接纳了来自许多不同国家的移民。",
+      "explain": "迁入某国定居的人，用 immigrant。emigrant 侧重“迁出者”、migrant 是流动务工者、immigration 是移民(过程)，都不合“(外来)移民(人)”这个具体意思。"
+    },
+    {
+      "word": "apparent",
+      "pos": "adj.",
+      "def": "明显的；表面上的",
+      "sentence": "It soon became ___ that the plan was not going to work.",
+      "sentence_zh": "很快就明显看出，这个计划行不通。",
+      "explain": "显而易见的，用 apparent。ancient 是古代的、consistent 是一致的、transparent 是透明的，形近但都不表示“明显的”。"
+    },
+    {
+      "word": "consistent",
+      "pos": "adj.",
+      "def": "一致的，始终如一的",
+      "sentence": "Her marks have been ___ throughout the whole school year.",
+      "sentence_zh": "她的成绩在整个学年里都保持稳定一致。",
+      "explain": "前后一致、稳定的，用 consistent。consistent 与 constant 近义但形不同、apparent 是明显的、persistent 是坚持不懈的，都不合“始终如一”这个意思。"
+    },
+    {
+      "word": "ancient",
+      "pos": "adj.",
+      "def": "古代的，古老的",
+      "sentence": "The museum displays tools used by people in ___ times.",
+      "sentence_zh": "博物馆展出了古代人们使用的工具。",
+      "explain": "远古、古老的，用 ancient。apparent 是明显的、efficient 是高效的、patient 是耐心的，形近但都不表示“古代的”。"
+    },
+    {
+      "word": "excellent",
+      "pos": "adj.",
+      "def": "优秀的，杰出的",
+      "sentence": "The restaurant is known for its ___ service and friendly staff.",
+      "sentence_zh": "这家餐厅以其优质的服务和友好的员工而闻名。",
+      "explain": "极好、优秀的，用 excellent。excitement 是兴奋、excessive 是过度的、efficient 是高效的，都不合“优秀、杰出”这个意思。"
+    },
+    {
+      "word": "adolescent",
+      "pos": "n./adj.",
+      "def": "青少年；青春期的",
+      "sentence": "Many ___ struggle with a lack of sleep during the school week.",
+      "sentence_zh": "许多青少年在上学期间都为睡眠不足而苦恼。",
+      "explain": "处于青春期的人，用 adolescent。adult 是成年人、ancient 是古代的、opponent 是对手，都不合“青少年”这个意思。"
+    },
+    {
+      "word": "justify",
+      "pos": "v.",
+      "def": "证明…正当，为…辩护",
+      "sentence": "Nothing can ___ treating other people so unfairly.",
+      "sentence_zh": "没有什么能为如此不公平地对待他人辩解。",
+      "explain": "证明某事正当合理，用 justify。modify 是修改、identify 是辨认、notify 是通知，形近但都不表示“证明正当、辩护”。"
+    },
+    {
+      "word": "modify",
+      "pos": "v.",
+      "def": "修改，更改；缓和；修饰",
+      "sentence": "Engineers had to ___ the design after the first tests failed.",
+      "sentence_zh": "在首次测试失败后，工程师不得不修改设计。",
+      "explain": "作出修改、调整，用 modify。justify 是辩护、identify 是辨认、magnify 是放大，形近但都不表示“修改、更改”。"
+    },
+    {
+      "word": "theory",
+      "pos": "n.",
+      "def": "理论，学说",
+      "sentence": "In ___, the plan sounds perfect, but it may be hard to carry out.",
+      "sentence_zh": "从理论上讲，这个计划听起来很完美，但可能很难执行。",
+      "explain": "系统的理论、学说，用 theory。territory 是领土、category 是类别、memory 是记忆，形近但都不表示“理论”。"
+    },
+    {
+      "word": "territory",
+      "pos": "n.",
+      "def": "领土，领地；(活动)范围",
+      "sentence": "The explorers were the first to enter this unknown ___.",
+      "sentence_zh": "这些探险者是最早进入这片未知领地的人。",
+      "explain": "领土、地域范围，用 territory。theory 是理论、category 是类别、factory 是工厂，形近但都不表示“领土、领地”。"
+    },
+    {
+      "word": "category",
+      "pos": "n.",
+      "def": "类别，种类",
+      "sentence": "Books in the library are arranged by subject ___.",
+      "sentence_zh": "图书馆里的书籍按学科类别排列。",
+      "explain": "分类的类别，用 category。territory 是领土、theory 是理论、 category 与 catalogue 不同，都不合“类别、种类”这个意思。"
+    },
+    {
+      "word": "laboratory",
+      "pos": "n.",
+      "def": "实验室",
+      "sentence": "The samples were sent to a ___ for detailed testing.",
+      "sentence_zh": "样本被送往实验室进行详细检测。",
+      "explain": "做实验的场所，用 laboratory。factory 是工厂、territory 是领土、category 是类别，形近但都不表示“实验室”。"
+    },
+    {
+      "word": "primary",
+      "pos": "adj.",
+      "def": "首要的，主要的；初级的",
+      "sentence": "The ___ aim of the project is to improve children's reading skills.",
+      "sentence_zh": "该项目的首要目标是提高儿童的阅读能力。",
+      "explain": "最主要、首要的，用 primary。secondary 是次要的（意思相反）、primitive 是原始的、summary 是摘要，都不合“首要、主要”的意思。"
+    },
+    {
+      "word": "secondary",
+      "pos": "adj.",
+      "def": "次要的；中等的，中学的；第二的",
+      "sentence": "Cost is important, but safety must never be treated as ___.",
+      "sentence_zh": "成本很重要，但安全绝不能被当作次要的东西。",
+      "explain": "居于其次、次要的，用 secondary。primary 是首要的（意思相反）、ordinary 是普通的、secretary 是秘书，形近但都不表示“次要的”。"
+    },
+    {
+      "word": "boundary",
+      "pos": "n.",
+      "def": "边界，分界线",
+      "sentence": "The fence marks the ___ between the two farms.",
+      "sentence_zh": "这道栅栏标示出两座农场之间的边界。",
+      "explain": "分界的界线，用 boundary。border 近义但不在选项、bakery 是面包房、summary 是摘要，都不合“边界、分界线”这个意思。"
+    },
+    {
+      "word": "military",
+      "pos": "adj./n.",
+      "def": "军事的；军队",
+      "sentence": "The area is controlled by the ___ and closed to the public.",
+      "sentence_zh": "该地区由军方控制，不对公众开放。",
+      "explain": "军事的、军队的，用 military。primary 是主要的、mystery 是谜、memory 是记忆，形近但都不表示“军事的”。"
+    },
+    {
+      "word": "award",
+      "pos": "n./v.",
+      "def": "奖(品)；授予；裁定",
+      "sentence": "The film won an ___ for its stunning photography.",
+      "sentence_zh": "这部电影因其惊艳的摄影而获奖。",
+      "explain": "颁发的奖项，用 award。reward 侧重“回报、酬劳”、awkward 是尴尬的、toward 是朝向，都不合“奖项、授予”这个意思。"
+    },
+    {
+      "word": "reward",
+      "pos": "n./v.",
+      "def": "奖赏，报酬；酬谢",
+      "sentence": "The company offers a ___ to staff who come up with useful ideas.",
+      "sentence_zh": "公司向提出有用点子的员工提供奖励。",
+      "explain": "作为回报的奖赏，用 reward。award 侧重“正式奖项”、forward 是向前、toward 是朝向，都不合“报酬、酬谢”这个意思。"
+    },
+    {
+      "word": "grant",
+      "pos": "v./n.",
+      "def": "授予，准予；拨款",
+      "sentence": "The university may ___ students extra time in special circumstances.",
+      "sentence_zh": "在特殊情况下，大学可以准予学生额外的时间。",
+      "explain": "正式给予、准予，用 grant。grand 是宏伟的、grasp 是抓住、plant 是种植，形近但都不表示“授予、准予”。"
+    },
+    {
+      "word": "witness",
+      "pos": "n./v.",
+      "def": "目击者，证人；目睹",
+      "sentence": "The police asked every ___ to describe what they had seen.",
+      "sentence_zh": "警方要求每位目击者描述他们所看到的情况。",
+      "explain": "亲眼看见事件的人，用 witness。weakness 是弱点、wisdom 是智慧、illness 是疾病，都不合“目击者、证人”这个意思。"
+    },
+    {
+      "word": "weakness",
+      "pos": "n.",
+      "def": "虚弱；弱点，缺点；偏爱",
+      "sentence": "Failing to plan ahead is one of his greatest ___.",
+      "sentence_zh": "不提前计划是他最大的弱点之一。",
+      "explain": "弱点、缺点，用 weakness。witness 是证人、illness 是疾病、weaken 是动词“削弱”，都不合“弱点、缺点”这个名词意思。"
+    },
+    {
+      "word": "considerable",
+      "pos": "adj.",
+      "def": "相当大的，可观的",
+      "sentence": "Building the new hospital will require a ___ amount of money.",
+      "sentence_zh": "建造这家新医院需要相当大的一笔资金。",
+      "explain": "数量或程度相当大的，用 considerable。considerate 是“体贴的”（意思完全不同）、considering 是介词、reasonable 是合理的，都不合“相当大、可观”的意思。"
+    },
+    {
+      "word": "estimate",
+      "pos": "v./n.",
+      "def": "估计，估算；评价",
+      "sentence": "Experts ___ that the repairs will take at least six months.",
+      "sentence_zh": "专家估计这些维修至少需要六个月。",
+      "explain": "大致推算、估计，用 estimate。estimate 与 evaluate 近义但不同、intimate 是亲密的、eliminate 是消除，都不合“估算、估计”这个意思。"
     }
   ]
 }
