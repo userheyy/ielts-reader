@@ -182,6 +182,7 @@ function initAudio() {
     audioFailed = true;
     showAudioMissing();
     refreshPlayBtn();
+    if (ANNOTATE) refreshAnnPanel(); // 让打点按钮从"启用"变"disabled"
   });
   audio.addEventListener("loadedmetadata", () => {
     duration = audio.duration;
@@ -893,7 +894,7 @@ function refreshAnnPanel() {
     ${cur ? `<div class="ann-cur-en"><b>待打点 · 第 ${cur.id} 句</b><br>${esc(cur.en)}</div>`
           : '<div class="ann-cur-en">全部句子都打完点了,可以导出。</div>'}
     <div class="ann-btns">
-      <button type="button" id="ann-mark" class="ann-mark"${canPlay() ? "" : " disabled"}>打点(Space)</button>
+      <button type="button" id="ann-mark" class="ann-mark"${audio && !audioFailed ? "" : " disabled"}>打点(Space)</button>
       <button type="button" id="ann-minus"${last ? "" : " disabled"}>−0.2s</button>
       <button type="button" id="ann-plus"${last ? "" : " disabled"}>+0.2s</button>
       <button type="button" id="ann-export" class="ann-export">导出 JSON</button>
@@ -903,9 +904,16 @@ function refreshAnnPanel() {
       点左侧任意句可选中重打;导出的 JSON 覆盖 <code>data/listening/${esc(partId)}.json</code> 即完成打点。</div>`;
 }
 
+// 打点比普通播放宽松:audio 对象存在、没触发 error 就允许记录 currentTime。
+// canPlay() 会额外要求 readyState≥HAVE_FUTURE_DATA(浏览器实现里近似),
+// 一进 annotate 页(音频还没 loadedmetadata、用户还没按播放)就返回 false,
+// 直接把第一次 Space/点按钮拦掉——这是 bug 的根因。
+// 只用 audio && !audioFailed:currentTime 未加载好时为 0,后面 Math.round 也能安全处理;
+// 用户按播放后 currentTime 才推进,打点值自然正常。
 function annMark() {
-  if (!canPlay() || annIdx >= segs.length || annIdx < 0) return;
-  annStarts[annIdx] = Math.round(audio.currentTime * 10) / 10;
+  if (!audio || audioFailed || annIdx >= segs.length || annIdx < 0) return;
+  const t = Number(audio.currentTime);
+  annStarts[annIdx] = Math.round((isFinite(t) ? t : 0) * 10) / 10;
   annLast = annIdx;
   // 依次推进:找下一个未打点的句;都打过就顺延+1
   let next = annIdx + 1;
