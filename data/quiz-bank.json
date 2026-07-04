@@ -1,9 +1,9 @@
 {
   "meta": {
     "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
-    "generated_batches": 6,
+    "generated_batches": 7,
     "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
-    "count": 252
+    "count": 292
   },
   "questions": [
     {
@@ -2021,6 +2021,326 @@
       "sentence": "The job calls for someone who is both organised and ___.",
       "sentence_zh": "这份工作需要一个既有条理又有创造力的人。",
       "explain": "富有创造力的，用 creative。creature 是名词“生物”、creation 是创造、curious 是好奇的，都不合这个“有创造力的”形容词位置。"
+    },
+    {
+      "word": "authority",
+      "pos": "n.",
+      "def": "权力，权威；当局",
+      "sentence": "The local ___ is responsible for keeping the streets clean and safe.",
+      "sentence_zh": "地方当局负责保持街道的清洁与安全。",
+      "explain": "掌权的机构、当局，用 authority。majority 是多数、priority 是优先、minority 是少数，形近但都不表示“权力、当局”。"
+    },
+    {
+      "word": "majority",
+      "pos": "n.",
+      "def": "多数，大半",
+      "sentence": "The ___ of students said they preferred studying in the morning.",
+      "sentence_zh": "大多数学生表示他们更喜欢在早上学习。",
+      "explain": "过半数、大部分，用 majority。minority 意思相反（少数）、authority 是当局、priority 是优先，形近但都不表示“多数”。"
+    },
+    {
+      "word": "minority",
+      "pos": "n.",
+      "def": "少数；少数民族",
+      "sentence": "Only a small ___ of people voted against the new plan.",
+      "sentence_zh": "只有一小部分人投票反对新计划。",
+      "explain": "少数、小部分，用 minority。majority 意思相反（多数）、authority 是当局、priority 是优先，形近但都不表示“少数”。"
+    },
+    {
+      "word": "priority",
+      "pos": "n.",
+      "def": "优先，优先事项",
+      "sentence": "Improving road safety is a top ___ for the city government.",
+      "sentence_zh": "改善道路安全是市政府的首要任务。",
+      "explain": "优先考虑的事，用 priority。majority 是多数、minority 是少数、authority 是当局，形近但都不表示“优先事项”。"
+    },
+    {
+      "word": "security",
+      "pos": "n.",
+      "def": "安全；保障",
+      "sentence": "Airport ___ has become much stricter over the past twenty years.",
+      "sentence_zh": "过去二十年里，机场安检变得严格多了。",
+      "explain": "安全、保障，用 security。secure 是形容词/动词、curiosity 是好奇、authority 是当局，都不合这个“安全”的名词位置。"
+    },
+    {
+      "word": "celebrity",
+      "pos": "n.",
+      "def": "名人；名声",
+      "sentence": "The young singer became a national ___ almost overnight.",
+      "sentence_zh": "这位年轻歌手几乎一夜之间成了全国名人。",
+      "explain": "知名人物，用 celebrity。celebration 是庆祝、popularity 是知名度、authority 是当局，都不合“名人”这个意思。"
+    },
+    {
+      "word": "negative",
+      "pos": "adj./n.",
+      "def": "否定的；消极的；负的",
+      "sentence": "Too much screen time can have a ___ effect on children's sleep.",
+      "sentence_zh": "屏幕时间过长会对儿童的睡眠产生负面影响。",
+      "explain": "负面的、消极的，用 negative。positive 意思相反（积极的）、relative 是相对的、objective 是客观的，都不合“负面、消极”的意思。"
+    },
+    {
+      "word": "objective",
+      "pos": "n./adj.",
+      "def": "目标；客观的",
+      "sentence": "The main ___ of the campaign is to reduce the number of accidents.",
+      "sentence_zh": "这项活动的主要目标是减少事故的数量。",
+      "explain": "要达成的目标，用 objective。subjective 意思相反（主观的）、negative 是负面的、objection 是反对，都不合“目标”这个意思。"
+    },
+    {
+      "word": "initiative",
+      "pos": "n.",
+      "def": "主动性；倡议，新方案",
+      "sentence": "The government launched a new ___ to help young people find jobs.",
+      "sentence_zh": "政府发起了一项帮助年轻人就业的新倡议。",
+      "explain": "主动发起的方案、倡议，用 initiative。initial 是形容词“最初的”、initiation 是开始、alternative 是替代方案，都不合“倡议、新方案”的意思。"
+    },
+    {
+      "word": "alternative",
+      "pos": "n./adj.",
+      "def": "替代方案；供选择的",
+      "sentence": "Solar power offers a clean ___ to burning coal for electricity.",
+      "sentence_zh": "太阳能为燃煤发电提供了一种清洁的替代方案。",
+      "explain": "可替代的选择，用 alternative。alternate 侧重“交替的”、initiative 是倡议、relative 是相对的，都不合“替代方案”的意思。"
+    },
+    {
+      "word": "relative",
+      "pos": "n./adj.",
+      "def": "亲戚；相对的，比较的",
+      "sentence": "She invited all her friends and ___ to the wedding.",
+      "sentence_zh": "她邀请了所有的朋友和亲戚来参加婚礼。",
+      "explain": "亲属、亲戚，用 relative。relatively 是副词、negative 是否定的、representative 是代表，都不合这个“亲戚”的名词位置。"
+    },
+    {
+      "word": "representative",
+      "pos": "n./adj.",
+      "def": "代表；有代表性的",
+      "sentence": "Each class chooses one ___ to speak at the school meeting.",
+      "sentence_zh": "每个班级选出一名代表在学校会议上发言。",
+      "explain": "代表某群体的人，用 representative。representation 是名词“代表(权)”、relative 是亲戚、alternative 是替代方案，都不合“代表(人)”这个意思。"
+    },
+    {
+      "word": "argument",
+      "pos": "n.",
+      "def": "论点，论据；争论",
+      "sentence": "The writer puts forward a strong ___ in favour of free public transport.",
+      "sentence_zh": "作者提出了一个支持免费公共交通的有力论点。",
+      "explain": "论点、论据，用 argument。agreement 是协议、arrangement 是安排、assessment 是评估，形近但都不表示“论点、论据”。"
+    },
+    {
+      "word": "management",
+      "pos": "n.",
+      "def": "管理，经营；管理层",
+      "sentence": "Good time ___ is essential for anyone with a busy schedule.",
+      "sentence_zh": "对任何日程繁忙的人来说，良好的时间管理都至关重要。",
+      "explain": "管理、经营，用 management。manager 是经理、arrangement 是安排、movement 是运动，都不合这个“管理”的名词意思。"
+    },
+    {
+      "word": "assessment",
+      "pos": "n.",
+      "def": "评估，评定",
+      "sentence": "Teachers carry out a regular ___ of each student's progress.",
+      "sentence_zh": "老师定期对每个学生的进步进行评估。",
+      "explain": "评估、评定，用 assessment。agreement 是协议、argument 是论点、achievement 是成就，形近但都不表示“评估”。"
+    },
+    {
+      "word": "requirement",
+      "pos": "n.",
+      "def": "要求，必要条件",
+      "sentence": "A good level of English is a basic ___ for this course.",
+      "sentence_zh": "良好的英语水平是这门课程的基本要求。",
+      "explain": "必要条件、要求，用 requirement。arrangement 是安排、agreement 是协议、retirement 是退休，形近但都不表示“要求、必要条件”。"
+    },
+    {
+      "word": "achievement",
+      "pos": "n.",
+      "def": "成就，成绩；达成",
+      "sentence": "Winning the prize was a great ___ for such a young scientist.",
+      "sentence_zh": "对如此年轻的科学家来说，获奖是一项了不起的成就。",
+      "explain": "取得的成就，用 achievement。agreement 是协议、assessment 是评估、requirement 是要求，形近但都不表示“成就、成绩”。"
+    },
+    {
+      "word": "concentrate",
+      "pos": "v.",
+      "def": "集中，专注；浓缩",
+      "sentence": "It is hard to ___ on your work when the room is so noisy.",
+      "sentence_zh": "房间这么吵，很难专注于工作。",
+      "explain": "集中注意力（动词），用 concentrate。concentration 是名词、consider 是考虑、contribute 是贡献，都不合这个“专注”的动词位置。"
+    },
+    {
+      "word": "concentration",
+      "pos": "n.",
+      "def": "专注，集中；浓度",
+      "sentence": "The test measured the ___ of salt in each water sample.",
+      "sentence_zh": "该测试测量了每个水样中盐的浓度。",
+      "explain": "浓度、专注程度（名词），用 concentration。concentrate 是动词、consideration 是考虑、contribution 是贡献，都不合这个名词位置。"
+    },
+    {
+      "word": "demonstrate",
+      "pos": "v.",
+      "def": "证明，演示；示威",
+      "sentence": "The teacher will ___ how to use the equipment safely.",
+      "sentence_zh": "老师将演示如何安全地使用这套设备。",
+      "explain": "演示、证明（动词），用 demonstrate。demonstration 是名词、illustrate 是举例说明、demolish 是拆除，都不合这个“演示”的动词位置。"
+    },
+    {
+      "word": "demonstration",
+      "pos": "n.",
+      "def": "演示，示范；示威",
+      "sentence": "The shop gave a live ___ of how the new blender works.",
+      "sentence_zh": "商店现场演示了这台新搅拌机的工作方式。",
+      "explain": "演示、示范（名词），用 demonstration。demonstrate 是动词、illustration 是插图、declaration 是宣告，都不合这个名词位置。"
+    },
+    {
+      "word": "administration",
+      "pos": "n.",
+      "def": "管理，行政；政府",
+      "sentence": "Much of a manager's day is taken up with routine ___.",
+      "sentence_zh": "经理一天中的大部分时间都花在日常行政事务上。",
+      "explain": "行政、管理（名词），用 administration。administrative 是形容词、administrator 是管理员、admiration 是钦佩，形近但都不合这个名词位置。"
+    },
+    {
+      "word": "administrative",
+      "pos": "adj.",
+      "def": "行政的，管理的",
+      "sentence": "She was promoted to an ___ role that involves managing the whole office.",
+      "sentence_zh": "她被提拔到一个负责管理整个办公室的行政职位。",
+      "explain": "行政的、管理的（形容词），用 administrative。administration 是名词、administrator 是管理员、attractive 是有吸引力的，都不合这个形容词位置。"
+    },
+    {
+      "word": "administrator",
+      "pos": "n.",
+      "def": "管理员，行政人员",
+      "sentence": "The system ___ is the only person allowed to change these settings.",
+      "sentence_zh": "系统管理员是唯一获准更改这些设置的人。",
+      "explain": "从事行政管理的人，用 administrator。administration 是行政（事）、administrative 是形容词、administer 是动词，都不合这个“管理员(人)”的意思。"
+    },
+    {
+      "word": "critical",
+      "pos": "adj.",
+      "def": "批判的；关键的；危急的",
+      "sentence": "Getting enough clean water is ___ to the survival of the village.",
+      "sentence_zh": "获得足够的清洁水对这个村庄的生存至关重要。",
+      "explain": "至关重要、关键的，用 critical。crucial 近义但不在选项、typical 是典型的、practical 是实用的，都不合“关键、危急”的意思。"
+    },
+    {
+      "word": "physical",
+      "pos": "adj.",
+      "def": "身体的；物质的；物理的",
+      "sentence": "Regular ___ activity is important for both body and mind.",
+      "sentence_zh": "经常进行身体活动对身心都很重要。",
+      "explain": "身体的、物质的，用 physical。practical 是实用的、typical 是典型的、critical 是关键的，都不合“身体的、物质的”意思。"
+    },
+    {
+      "word": "typical",
+      "pos": "adj.",
+      "def": "典型的，有代表性的",
+      "sentence": "A ___ working day for her begins at eight and ends at six.",
+      "sentence_zh": "她典型的工作日是从八点开始，六点结束。",
+      "explain": "典型的、有代表性的，用 typical。practical 是实用的、physical 是身体的、critical 是关键的，都不合“典型”这个意思。"
+    },
+    {
+      "word": "practical",
+      "pos": "adj.",
+      "def": "实际的，实用的；务实的",
+      "sentence": "The course gives students ___ skills they can use at work.",
+      "sentence_zh": "这门课程教给学生可以在工作中使用的实用技能。",
+      "explain": "实用的、务实的，用 practical。typical 是典型的、physical 是身体的、critical 是关键的，都不合“实用、务实”的意思。"
+    },
+    {
+      "word": "potential",
+      "pos": "n./adj.",
+      "def": "潜力；潜在的，可能的",
+      "sentence": "The young player has enormous ___ and could become a star.",
+      "sentence_zh": "这名年轻球员潜力巨大，有望成为明星。",
+      "explain": "潜力、潜在的可能，用 potential。potent 是强有力的、essential 是必要的、tential 罕用，都不合“潜力、潜在”的意思。"
+    },
+    {
+      "word": "assume",
+      "pos": "v.",
+      "def": "假定，认为；承担；呈现",
+      "sentence": "We should not ___ that everyone has access to the internet.",
+      "sentence_zh": "我们不应假定每个人都能上网。",
+      "explain": "先行假定、认为，用 assume。assumption 是名词、consume 是消耗、resume 是恢复，形近但都不合这个“假定”的动词位置。"
+    },
+    {
+      "word": "assumption",
+      "pos": "n.",
+      "def": "假设，臆断；承担",
+      "sentence": "The plan was based on the ___ that prices would keep falling.",
+      "sentence_zh": "这项计划基于价格会持续下跌的假设。",
+      "explain": "假设、臆断（名词），用 assumption。assume 是动词、consumption 是消耗、absorption 是吸收，形近但都不合这个名词位置。"
+    },
+    {
+      "word": "consumption",
+      "pos": "n.",
+      "def": "消费，消耗(量)",
+      "sentence": "Switching off unused lights helps to cut energy ___.",
+      "sentence_zh": "关掉不用的灯有助于减少能源消耗。",
+      "explain": "消耗、消费（名词），用 consumption。assumption 是假设、consume 是动词、conception 是概念，形近但都不表示“消耗、消费”。"
+    },
+    {
+      "word": "perceive",
+      "pos": "v.",
+      "def": "察觉，感知；理解",
+      "sentence": "Different people may ___ the same event in completely different ways.",
+      "sentence_zh": "不同的人可能会以完全不同的方式看待同一件事。",
+      "explain": "察觉、理解（动词），用 perceive。perception 是名词、receive 是收到、deceive 是欺骗，形近但都不合这个“感知”的动词位置。"
+    },
+    {
+      "word": "perception",
+      "pos": "n.",
+      "def": "感知，知觉；看法",
+      "sentence": "Advertising can strongly shape the public's ___ of a product.",
+      "sentence_zh": "广告能极大地塑造公众对某产品的看法。",
+      "explain": "看法、感知（名词），用 perception。perceive 是动词、reception 是接待、deception 是欺骗，形近但都不合这个名词位置。"
+    },
+    {
+      "word": "resolve",
+      "pos": "v./n.",
+      "def": "解决；决心；分解",
+      "sentence": "The two sides met again in the hope of ___ their differences.",
+      "sentence_zh": "双方再次会面，希望能解决彼此的分歧。",
+      "explain": "彻底解决（尤指分歧/矛盾），用 resolve。solve 侧重“解答问题”、dissolve 是溶解、involve 是涉及，都不合“化解分歧”的语境。"
+    },
+    {
+      "word": "solve",
+      "pos": "v.",
+      "def": "解决，解答",
+      "sentence": "Mathematicians spent years trying to ___ this famous problem.",
+      "sentence_zh": "数学家们花了数年时间试图解答这个著名的难题。",
+      "explain": "解答、解决（问题），用 solve。resolve 侧重“化解分歧”、dissolve 是溶解、involve 是涉及，都不合“解答难题”的语境。"
+    },
+    {
+      "word": "solution",
+      "pos": "n.",
+      "def": "解决办法；溶液",
+      "sentence": "Engineers are searching for a lasting ___ to the traffic problem.",
+      "sentence_zh": "工程师们正在寻找解决交通问题的长久办法。",
+      "explain": "解决办法（名词），用 solution。solve 是动词、resolution 是决心/决议、pollution 是污染，形近但都不合“解决办法”这个名词位置。"
+    },
+    {
+      "word": "acquire",
+      "pos": "v.",
+      "def": "获得，取得；学到",
+      "sentence": "Children ___ their first language simply by listening to those around them.",
+      "sentence_zh": "孩子仅仅通过听周围人说话就习得了母语。",
+      "explain": "经过努力或过程获得，用 acquire。require 是需要（意思不同）、inquire 是询问、require 尤其易混，都不合“获得、习得”的意思。"
+    },
+    {
+      "word": "supply",
+      "pos": "n./v.",
+      "def": "供给，供应；补给品",
+      "sentence": "The town depends on a single reservoir for its water ___.",
+      "sentence_zh": "这个镇的供水依赖于一座单一的水库。",
+      "explain": "供给、供应，用 supply。apply 是申请、reply 是回复、imply 是暗示，形近但都不表示“供应、供给”。"
+    },
+    {
+      "word": "reserve",
+      "pos": "v./n.",
+      "def": "预订，保留；储备；保护区；矜持",
+      "sentence": "It is wise to ___ a table in advance at popular restaurants.",
+      "sentence_zh": "在热门餐厅提前预订座位是明智的。",
+      "explain": "预留、预订，用 reserve。preserve 是保护、conserve 是节约、deserve 是应得，形近但都不合这个“预订、保留”的意思。"
     }
   ]
 }
