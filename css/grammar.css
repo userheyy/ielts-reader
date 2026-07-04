@@ -1,0 +1,147 @@
+/* 语法书页样式,沿用 style.css 的绿色主题变量 */
+.grammar-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.grammar-toc {
+  position: sticky;
+  top: 12px;
+  max-height: calc(100vh - 90px);
+  overflow-y: auto;
+  background: var(--card, #fff);
+  border-radius: 10px;
+  padding: 12px 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+}
+.toc-part-title {
+  font-weight: 700;
+  color: var(--green-dark, #4a9d5b);
+  margin: 10px 4px 4px;
+  font-size: 13px;
+}
+.toc-ch > summary {
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 6px;
+  color: var(--text, #222);
+  list-style: none;
+}
+.toc-ch > summary::-webkit-details-marker { display: none; }
+.toc-ch > summary::before { content: "▸ "; color: var(--muted, #999); }
+.toc-ch[open] > summary::before { content: "▾ "; }
+.toc-ch > summary:hover { background: var(--hl, #eef7ef); }
+.grammar-toc ul { list-style: none; margin: 2px 0 6px; padding-left: 14px; }
+.grammar-toc li a {
+  display: block;
+  padding: 3px 6px;
+  color: #555;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 13px;
+}
+.grammar-toc li a:hover { background: var(--hl, #eef7ef); color: var(--green-dark, #4a9d5b); }
+
+.grammar-content {
+  background: var(--card, #fff);
+  border-radius: 10px;
+  padding: 20px 26px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  min-height: 60vh;
+  line-height: 1.75;
+}
+.g-chapter-head { border-bottom: 2px solid var(--hl, #e3f1e5); margin-bottom: 14px; padding-bottom: 8px; }
+.g-part-tag { font-size: 12px; color: var(--muted, #999); }
+.g-chapter-head h2 { margin: 4px 0 0; color: var(--green-dark, #4a9d5b); }
+.g-section { margin: 18px 0; scroll-margin-top: 12px; }
+.g-section-title {
+  font-size: 16px;
+  color: var(--text, #222);
+  border-left: 4px solid var(--green, #7bc47f);
+  padding-left: 10px;
+  margin: 0 0 8px;
+}
+.g-section-title small { color: var(--muted, #aaa); font-weight: 400; font-size: 12px; }
+.g-p { margin: 8px 0; color: #333; }
+.g-ex {
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f7fbf7;
+  border-radius: 8px;
+  border-left: 3px solid var(--green, #7bc47f);
+}
+.g-ex-en { font-weight: 600; color: #1f3a26; }
+.g-ex-zh { color: #555; font-size: 14px; margin-top: 2px; }
+.g-ex-note { color: var(--muted, #888); font-size: 13px; margin-top: 2px; }
+.g-concepts { margin: 6px 0 10px; }
+.g-concept {
+  display: inline-block;
+  background: var(--hl, #e3f1e5);
+  color: var(--green-dark, #4a9d5b);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+  margin: 0 6px 6px 0;
+}
+.g-flash { animation: gflash 1.6s ease; }
+@keyframes gflash {
+  0% { background: #fff6cc; }
+  100% { background: transparent; }
+}
+
+/* 降级提示 + 骨架 */
+.g-notice {
+  background: #fff8e6;
+  border: 1px solid #f0d98a;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+}
+.g-notice code {
+  display: block;
+  background: #2b2b2b;
+  color: #eaeaea;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 8px 0;
+  font-size: 13px;
+  overflow-x: auto;
+}
+.g-notice-sub { color: var(--muted, #888); font-size: 13px; margin: 4px 0 0; }
+.g-tag-skel { padding: 8px 0; border-bottom: 1px dashed #eee; }
+.g-tag-skel b { color: var(--green-dark, #4a9d5b); margin-right: 10px; }
+.g-tag-skel span { color: #555; font-size: 14px; }
+
+/* 窄屏:目录变抽屉 */
+.grammar-mobilebar { display: none; }
+@media (max-width: 900px) {
+  .grammar-grid { grid-template-columns: 1fr; }
+  .grammar-mobilebar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  #toc-toggle {
+    background: var(--green, #7bc47f);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  .grammar-crumb { font-size: 13px; color: var(--muted, #777); }
+  .grammar-toc {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; bottom: 0;
+    z-index: 50;
+    width: 82%;
+    max-width: 320px;
+    max-height: 100vh;
+    border-radius: 0;
+  }
+  body.toc-open .grammar-toc { display: block; }
+}

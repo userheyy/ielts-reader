@@ -2,75 +2,369 @@
   "version": 1,
   "notice": "语法标签白名单(taxonomy)。三方共享契约:①AI 生成 prompt 只能从此列表选 tag;②validate_data.py 校验 deep 中的 tag 必须在此;③grammar.html 按 book_anchor 定位《语法俱乐部》章节。id 与 name 由本项目自拟,book_anchor 由 extract_grammar_book.py --outline 核对后回填。",
   "tags": [
-    { "id": "ch1.sv",    "ch": 1, "name": "句型一:S+V(主语+不及物动词)", "brief": "动词自己就能把话说完,不需要宾语,如 Birds fly。", "book_anchor": null },
-    { "id": "ch1.svc",   "ch": 1, "name": "句型二:S+V+C(主系表)", "brief": "be/look/become 等连缀动词本身没内容,靠补语说明主语是什么、怎么样。", "book_anchor": null },
-    { "id": "ch1.svo",   "ch": 1, "name": "句型三:S+V+O(主谓宾)", "brief": "及物动词后面必须跟\"动作对象\"(宾语),如 build a kingdom。", "book_anchor": null },
-    { "id": "ch1.svoo",  "ch": 1, "name": "句型四:S+V+O+O(双宾语)", "brief": "give/send/tell 类动词带两个宾语:给谁+给什么。", "book_anchor": null },
-    { "id": "ch1.svoc",  "ch": 1, "name": "句型五:S+V+O+C(宾语补语)", "brief": "make/consider/call 等动词的宾语后还要补一块,说明宾语变成/是什么。", "book_anchor": null },
-    { "id": "ch1.there-be", "ch": 1, "name": "there be 存在句", "brief": "表示\"某处有某物\",真正的主语在 be 动词后面。", "book_anchor": null },
-
-    { "id": "ch2.np",    "ch": 2, "name": "名词词组", "brief": "限定词+形容词+名词的组合,是句子里当主语/宾语的基本单位。", "book_anchor": null },
-    { "id": "ch2.det",   "ch": 2, "name": "限定词与冠词", "brief": "a/the/this/some 等放在名词词组最前面,交代\"哪一个、多少\"。", "book_anchor": null },
-    { "id": "ch2.apposition", "ch": 2, "name": "同位语", "brief": "紧跟在名词后面、换个说法再指同一个东西的名词词组,如 Dr Whitebread, a researcher。", "book_anchor": null },
-
-    { "id": "ch3.modifier", "ch": 3, "name": "修饰语位置与归属", "brief": "判断一个修饰成分到底修饰谁——离得越近越可能是它的修饰对象。", "book_anchor": null },
-    { "id": "ch3.prep",  "ch": 3, "name": "介词短语作修饰", "brief": "介词+名词词组,既能修饰名词(作定语)也能修饰动词(作状语)。", "book_anchor": null },
-
-    { "id": "ch4.adj",   "ch": 4, "name": "形容词用法", "brief": "放名词前(定语)或连缀动词后(补语)描述性质状态。", "book_anchor": null },
-    { "id": "ch4.compound-adj", "ch": 4, "name": "复合形容词", "brief": "用连字符把几个词拼成一个形容词,如 six-year-old、fire-breathing。", "book_anchor": null },
-    { "id": "ch4.comparison", "ch": 4, "name": "比较句法", "brief": "比较级/最高级/as...as,比较的双方必须是同类东西。", "book_anchor": null },
-
-    { "id": "ch5.adv",   "ch": 5, "name": "副词", "brief": "修饰动词/形容词/整句,交代方式、程度、频率、态度等。", "book_anchor": null },
-    { "id": "ch5.adv-phrase", "ch": 5, "name": "短语作状语", "brief": "名词短语/介词短语直接当状语用,如 brick by brick、in the 1800s。", "book_anchor": null },
-
-    { "id": "ch6.simple-present", "ch": 6, "name": "现在简单式", "brief": "表常态、习惯、普遍事实——\"平常就这样\"。", "book_anchor": null },
-    { "id": "ch6.simple-past", "ch": 6, "name": "过去简单式", "brief": "过去某时发生的动作或状态,和现在切断。", "book_anchor": null },
-    { "id": "ch6.progressive", "ch": 6, "name": "进行式", "brief": "be+V-ing,\"此刻(或那时)正在进行中\"的画面感。", "book_anchor": null },
-    { "id": "ch6.perfect", "ch": 6, "name": "完成式", "brief": "have+过去分词,强调\"到目前为止已经…\"——影响延续到现在。", "book_anchor": null },
-    { "id": "ch6.perfect-progressive", "ch": 6, "name": "完成进行式", "brief": "have been V-ing,动作从过去持续到现在还没停。", "book_anchor": null },
-    { "id": "ch6.future", "ch": 6, "name": "未来表达", "brief": "will/be going to/进行式表将来等多种方式。", "book_anchor": null },
-    { "id": "ch6.tense-agreement", "ch": 6, "name": "时态呼应", "brief": "主句与从句时态的搭配关系,如主过去从过去。", "book_anchor": null },
-
-    { "id": "ch7.modal", "ch": 7, "name": "语气助动词", "brief": "can/may/must/should 等,给动词加上\"可能、必须、应该\"的口气。", "book_anchor": null },
-
-    { "id": "ch8.subjunctive", "ch": 8, "name": "假设语气(虚拟)", "brief": "用\"往回退一格\"的时态表示与事实相反或不确定的假设。", "book_anchor": null },
-    { "id": "ch8.imperative", "ch": 8, "name": "祈使句", "brief": "省略主语 you,直接用原形动词发出指令或建议。", "book_anchor": null },
-
-    { "id": "ch9.passive", "ch": 9, "name": "被动语态", "brief": "be+过去分词,把\"被动作影响的对象\"放到主语位置。", "book_anchor": null },
-    { "id": "ch9.pp",    "ch": 9, "name": "过去分词作修饰", "brief": "过去分词单独作形容词/定语,自带\"被动或完成\"含义,如 stolen goods。", "book_anchor": null },
-
-    { "id": "ch10.present-participle", "ch": 10, "name": "现在分词", "brief": "V-ing 作形容词/修饰语,自带\"主动、进行\"含义,如 a developing country。", "book_anchor": null },
-
-    { "id": "ch11.gerund", "ch": 11, "name": "动名词", "brief": "V-ing 当名词用,可作主语/宾语,如 Playing is important。", "book_anchor": null },
-
-    { "id": "ch12.infinitive", "ch": 12, "name": "不定词", "brief": "to+原形动词,表\"要去做/尚未发生\"的事,可作主语、宾语、目的状语等。", "book_anchor": null },
-
-    { "id": "ch13.compound", "ch": 13, "name": "合句(并列句)", "brief": "and/but/or/so 把两个完整句子连成一句,两边地位平等。", "book_anchor": null },
-    { "id": "ch13.parallel", "ch": 13, "name": "并列结构", "brief": "连接词两边的成分要\"同类对称\":动词对动词、短语对短语。", "book_anchor": null },
-
-    { "id": "ch14.noun-clause", "ch": 14, "name": "名词从句", "brief": "that/whether/wh- 引导的句子当名词用,作主语、宾语或同位语。", "book_anchor": null },
-
-    { "id": "ch15.time", "ch": 15, "name": "时间副词从句", "brief": "when/while/as soon as/before/after 引导,交代主句动作的时间。", "book_anchor": null },
-    { "id": "ch15.condition", "ch": 15, "name": "条件副词从句", "brief": "if/unless 引导,\"在…条件下主句才成立\"。", "book_anchor": null },
-    { "id": "ch15.concession", "ch": 15, "name": "让步副词从句", "brief": "although/though/even if 引导,\"虽然…但是…\"的前半段。", "book_anchor": null },
-    { "id": "ch15.reason", "ch": 15, "name": "原因副词从句", "brief": "because/since/as 引导,交代主句的原因。", "book_anchor": null },
-    { "id": "ch15.purpose-result", "ch": 15, "name": "目的/结果副词从句", "brief": "so that/so...that/in order that 引导目的或结果。", "book_anchor": null },
-    { "id": "ch15.manner-comparison", "ch": 15, "name": "方式/比较副词从句", "brief": "as/as if/than 引导,表\"像…那样/比…\"。", "book_anchor": null },
-
-    { "id": "ch16.relative", "ch": 16, "name": "限定性关系从句", "brief": "who/which/that 引导,紧跟名词后面把它\"限定\"清楚,不加逗号。", "book_anchor": null },
-    { "id": "ch16.relative-nonrestrictive", "ch": 16, "name": "非限定性关系从句", "brief": "逗号+which/who,对名词补充说明,拿掉不影响指认对象。", "book_anchor": null },
-    { "id": "ch16.relative-adv", "ch": 16, "name": "关系副词与介词+关代", "brief": "where/when/why 或 in which 等,先行词在从句里作状语。", "book_anchor": null },
-    { "id": "ch16.relative-whose", "ch": 16, "name": "whose 所有格关系词", "brief": "whose+名词,表示\"先行词的…\"。", "book_anchor": null },
-    { "id": "ch16.cleft", "ch": 16, "name": "分裂句(强调句)", "brief": "It is X that... 把要强调的部分单独拎出来。", "book_anchor": null },
-
-    { "id": "ch17.agreement", "ch": 17, "name": "主语动词一致", "brief": "动词单复数跟着真正的主语走,小心中间插入的修饰语干扰。", "book_anchor": null },
-
-    { "id": "ch18.inversion", "ch": 18, "name": "倒装句", "brief": "否定词/only 等提前时,主语动词要倒过来,如 Never have I...。", "book_anchor": null },
-    { "id": "ch18.quote-inversion", "ch": 18, "name": "直接引语倒装", "brief": "引语后 says Dr X / said the author 的主谓倒装写法。", "book_anchor": null },
-
-    { "id": "ch19.reduction", "ch": 19, "name": "从句减化通则", "brief": "把从句里重复/空洞的部分(主语+be)删掉,句子更紧凑——雅思长难句的钥匙。", "book_anchor": null },
-    { "id": "ch20.rel-reduction", "ch": 20, "name": "关系从句减化", "brief": "which is 省略后剩下分词/介词短语/形容词作后置修饰,如 the man (who is) standing there。", "book_anchor": null },
-    { "id": "ch21.noun-reduction", "ch": 21, "name": "名词从句减化", "brief": "名词从句压缩成不定词/动名词短语,如 I hope to win ← I hope that I will win。", "book_anchor": null },
-    { "id": "ch22.adv-reduction", "ch": 22, "name": "副词从句减化(分词构句)", "brief": "副词从句删掉主语和 be,剩分词开头,如 While lying on the couch, ...。", "book_anchor": null }
+    {
+      "id": "ch1.sv",
+      "ch": 1,
+      "name": "句型一:S+V(主语+不及物动词)",
+      "brief": "动词自己就能把话说完,不需要宾语,如 Birds fly。",
+      "book_anchor": "ch1.s7"
+    },
+    {
+      "id": "ch1.svc",
+      "ch": 1,
+      "name": "句型二:S+V+C(主系表)",
+      "brief": "be/look/become 等连缀动词本身没内容,靠补语说明主语是什么、怎么样。",
+      "book_anchor": "ch1.s12"
+    },
+    {
+      "id": "ch1.svo",
+      "ch": 1,
+      "name": "句型三:S+V+O(主谓宾)",
+      "brief": "及物动词后面必须跟\"动作对象\"(宾语),如 build a kingdom。",
+      "book_anchor": "ch1.s7"
+    },
+    {
+      "id": "ch1.svoo",
+      "ch": 1,
+      "name": "句型四:S+V+O+O(双宾语)",
+      "brief": "give/send/tell 类动词带两个宾语:给谁+给什么。",
+      "book_anchor": "ch1.s16"
+    },
+    {
+      "id": "ch1.svoc",
+      "ch": 1,
+      "name": "句型五:S+V+O+C(宾语补语)",
+      "brief": "make/consider/call 等动词的宾语后还要补一块,说明宾语变成/是什么。",
+      "book_anchor": "ch1.s13"
+    },
+    {
+      "id": "ch1.there-be",
+      "ch": 1,
+      "name": "there be 存在句",
+      "brief": "表示\"某处有某物\",真正的主语在 be 动词后面。",
+      "book_anchor": "ch1.s5"
+    },
+    {
+      "id": "ch2.np",
+      "ch": 2,
+      "name": "名词词组",
+      "brief": "限定词+形容词+名词的组合,是句子里当主语/宾语的基本单位。",
+      "book_anchor": "ch2.s2"
+    },
+    {
+      "id": "ch2.det",
+      "ch": 2,
+      "name": "限定词与冠词",
+      "brief": "a/the/this/some 等放在名词词组最前面,交代\"哪一个、多少\"。",
+      "book_anchor": "ch2.s7"
+    },
+    {
+      "id": "ch2.apposition",
+      "ch": 2,
+      "name": "同位语",
+      "brief": "紧跟在名词后面、换个说法再指同一个东西的名词词组,如 Dr Whitebread, a researcher。",
+      "book_anchor": "ch2.s16"
+    },
+    {
+      "id": "ch3.modifier",
+      "ch": 3,
+      "name": "修饰语位置与归属",
+      "brief": "判断一个修饰成分到底修饰谁——离得越近越可能是它的修饰对象。",
+      "book_anchor": "ch3.s11"
+    },
+    {
+      "id": "ch3.prep",
+      "ch": 3,
+      "name": "介词短语作修饰",
+      "brief": "介词+名词词组,既能修饰名词(作定语)也能修饰动词(作状语)。",
+      "book_anchor": "ch5.s2"
+    },
+    {
+      "id": "ch4.adj",
+      "ch": 4,
+      "name": "形容词用法",
+      "brief": "放名词前(定语)或连缀动词后(补语)描述性质状态。",
+      "book_anchor": "ch3.s2"
+    },
+    {
+      "id": "ch4.compound-adj",
+      "ch": 4,
+      "name": "复合形容词",
+      "brief": "用连字符把几个词拼成一个形容词,如 six-year-old、fire-breathing。",
+      "book_anchor": "ch3.s4"
+    },
+    {
+      "id": "ch4.comparison",
+      "ch": 4,
+      "name": "比较句法",
+      "brief": "比较级/最高级/as...as,比较的双方必须是同类东西。",
+      "book_anchor": "ch3.s12"
+    },
+    {
+      "id": "ch5.adv",
+      "ch": 5,
+      "name": "副词",
+      "brief": "修饰动词/形容词/整句,交代方式、程度、频率、态度等。",
+      "book_anchor": "ch4.s1"
+    },
+    {
+      "id": "ch5.adv-phrase",
+      "ch": 5,
+      "name": "短语作状语",
+      "brief": "名词短语/介词短语直接当状语用,如 brick by brick、in the 1800s。",
+      "book_anchor": "ch4.s2"
+    },
+    {
+      "id": "ch6.simple-present",
+      "ch": 6,
+      "name": "现在简单式",
+      "brief": "表常态、习惯、普遍事实——\"平常就这样\"。",
+      "book_anchor": "ch6.s5"
+    },
+    {
+      "id": "ch6.simple-past",
+      "ch": 6,
+      "name": "过去简单式",
+      "brief": "过去某时发生的动作或状态,和现在切断。",
+      "book_anchor": "ch6.s5"
+    },
+    {
+      "id": "ch6.progressive",
+      "ch": 6,
+      "name": "进行式",
+      "brief": "be+V-ing,\"此刻(或那时)正在进行中\"的画面感。",
+      "book_anchor": "ch6.s5"
+    },
+    {
+      "id": "ch6.perfect",
+      "ch": 6,
+      "name": "完成式",
+      "brief": "have+过去分词,强调\"到目前为止已经…\"——影响延续到现在。",
+      "book_anchor": "ch6.s7"
+    },
+    {
+      "id": "ch6.perfect-progressive",
+      "ch": 6,
+      "name": "完成进行式",
+      "brief": "have been V-ing,动作从过去持续到现在还没停。",
+      "book_anchor": "ch6.s7"
+    },
+    {
+      "id": "ch6.future",
+      "ch": 6,
+      "name": "未来表达",
+      "brief": "will/be going to/进行式表将来等多种方式。",
+      "book_anchor": "ch6.s5"
+    },
+    {
+      "id": "ch6.tense-agreement",
+      "ch": 6,
+      "name": "时态呼应",
+      "brief": "主句与从句时态的搭配关系,如主过去从过去。",
+      "book_anchor": "ch6.s6"
+    },
+    {
+      "id": "ch7.modal",
+      "ch": 7,
+      "name": "语气助动词",
+      "brief": "can/may/must/should 等,给动词加上\"可能、必须、应该\"的口气。",
+      "book_anchor": "ch7.s2"
+    },
+    {
+      "id": "ch8.subjunctive",
+      "ch": 8,
+      "name": "假设语气(虚拟)",
+      "brief": "用\"往回退一格\"的时态表示与事实相反或不确定的假设。",
+      "book_anchor": "ch8.s1"
+    },
+    {
+      "id": "ch8.imperative",
+      "ch": 8,
+      "name": "祈使句",
+      "brief": "省略主语 you,直接用原形动词发出指令或建议。",
+      "book_anchor": "ch8.s1"
+    },
+    {
+      "id": "ch9.passive",
+      "ch": 9,
+      "name": "被动语态",
+      "brief": "be+过去分词,把\"被动作影响的对象\"放到主语位置。",
+      "book_anchor": "ch9.s2"
+    },
+    {
+      "id": "ch9.pp",
+      "ch": 9,
+      "name": "过去分词作修饰",
+      "brief": "过去分词单独作形容词/定语,自带\"被动或完成\"含义,如 stolen goods。",
+      "book_anchor": "ch9.s5"
+    },
+    {
+      "id": "ch10.present-participle",
+      "ch": 10,
+      "name": "现在分词",
+      "brief": "V-ing 作形容词/修饰语,自带\"主动、进行\"含义,如 a developing country。",
+      "book_anchor": "ch10.s3"
+    },
+    {
+      "id": "ch11.gerund",
+      "ch": 11,
+      "name": "动名词",
+      "brief": "V-ing 当名词用,可作主语/宾语,如 Playing is important。",
+      "book_anchor": "ch11.s2"
+    },
+    {
+      "id": "ch12.infinitive",
+      "ch": 12,
+      "name": "不定词",
+      "brief": "to+原形动词,表\"要去做/尚未发生\"的事,可作主语、宾语、目的状语等。",
+      "book_anchor": "ch12.s1"
+    },
+    {
+      "id": "ch13.compound",
+      "ch": 13,
+      "name": "合句(并列句)",
+      "brief": "and/but/or/so 把两个完整句子连成一句,两边地位平等。",
+      "book_anchor": "ch13.s3"
+    },
+    {
+      "id": "ch13.parallel",
+      "ch": 13,
+      "name": "并列结构",
+      "brief": "连接词两边的成分要\"同类对称\":动词对动词、短语对短语。",
+      "book_anchor": "ch13.s5"
+    },
+    {
+      "id": "ch14.noun-clause",
+      "ch": 14,
+      "name": "名词从句",
+      "brief": "that/whether/wh- 引导的句子当名词用,作主语、宾语或同位语。",
+      "book_anchor": "ch14.s2"
+    },
+    {
+      "id": "ch15.time",
+      "ch": 15,
+      "name": "时间副词从句",
+      "brief": "when/while/as soon as/before/after 引导,交代主句动作的时间。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch15.condition",
+      "ch": 15,
+      "name": "条件副词从句",
+      "brief": "if/unless 引导,\"在…条件下主句才成立\"。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch15.concession",
+      "ch": 15,
+      "name": "让步副词从句",
+      "brief": "although/though/even if 引导,\"虽然…但是…\"的前半段。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch15.reason",
+      "ch": 15,
+      "name": "原因副词从句",
+      "brief": "because/since/as 引导,交代主句的原因。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch15.purpose-result",
+      "ch": 15,
+      "name": "目的/结果副词从句",
+      "brief": "so that/so...that/in order that 引导目的或结果。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch15.manner-comparison",
+      "ch": 15,
+      "name": "方式/比较副词从句",
+      "brief": "as/as if/than 引导,表\"像…那样/比…\"。",
+      "book_anchor": "ch15.s3"
+    },
+    {
+      "id": "ch16.relative",
+      "ch": 16,
+      "name": "限定性关系从句",
+      "brief": "who/which/that 引导,紧跟名词后面把它\"限定\"清楚,不加逗号。",
+      "book_anchor": "ch16.s1"
+    },
+    {
+      "id": "ch16.relative-nonrestrictive",
+      "ch": 16,
+      "name": "非限定性关系从句",
+      "brief": "逗号+which/who,对名词补充说明,拿掉不影响指认对象。",
+      "book_anchor": "ch16.s2"
+    },
+    {
+      "id": "ch16.relative-adv",
+      "ch": 16,
+      "name": "关系副词与介词+关代",
+      "brief": "where/when/why 或 in which 等,先行词在从句里作状语。",
+      "book_anchor": "ch16.s6"
+    },
+    {
+      "id": "ch16.relative-whose",
+      "ch": 16,
+      "name": "whose 所有格关系词",
+      "brief": "whose+名词,表示\"先行词的…\"。",
+      "book_anchor": "ch16.s6"
+    },
+    {
+      "id": "ch16.cleft",
+      "ch": 16,
+      "name": "分裂句(强调句)",
+      "brief": "It is X that... 把要强调的部分单独拎出来。",
+      "book_anchor": "ch17.s5"
+    },
+    {
+      "id": "ch17.agreement",
+      "ch": 17,
+      "name": "主语动词一致",
+      "brief": "动词单复数跟着真正的主语走,小心中间插入的修饰语干扰。",
+      "book_anchor": "ch17.s1"
+    },
+    {
+      "id": "ch18.inversion",
+      "ch": 18,
+      "name": "倒装句",
+      "brief": "否定词/only 等提前时,主语动词要倒过来,如 Never have I...。",
+      "book_anchor": "ch18.s1"
+    },
+    {
+      "id": "ch18.quote-inversion",
+      "ch": 18,
+      "name": "直接引语倒装",
+      "brief": "引语后 says Dr X / said the author 的主谓倒装写法。",
+      "book_anchor": "ch18.s2"
+    },
+    {
+      "id": "ch19.reduction",
+      "ch": 19,
+      "name": "从句减化通则",
+      "brief": "把从句里重复/空洞的部分(主语+be)删掉,句子更紧凑——雅思长难句的钥匙。",
+      "book_anchor": "ch19.s4"
+    },
+    {
+      "id": "ch20.rel-reduction",
+      "ch": 20,
+      "name": "关系从句减化",
+      "brief": "which is 省略后剩下分词/介词短语/形容词作后置修饰,如 the man (who is) standing there。",
+      "book_anchor": "ch20.s1"
+    },
+    {
+      "id": "ch21.noun-reduction",
+      "ch": 21,
+      "name": "名词从句减化",
+      "brief": "名词从句压缩成不定词/动名词短语,如 I hope to win ← I hope that I will win。",
+      "book_anchor": "ch21.s1"
+    },
+    {
+      "id": "ch22.adv-reduction",
+      "ch": 22,
+      "name": "副词从句减化(分词构句)",
+      "brief": "副词从句删掉主语和 be,剩分词开头,如 While lying on the couch, ...。",
+      "book_anchor": "ch22.s2"
+    }
   ]
 }

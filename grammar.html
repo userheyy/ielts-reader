@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>语法书 · 语法俱乐部</title>
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <link rel="stylesheet" href="css/grammar.css?v=1" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思阅读精读器</h1>
+    <a href="index.html">文章库</a>
+    <a href="listening.html">听力</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="test.html">测试</a>
+    <a href="grammar.html" class="active">语法书</a>
+    <a href="settings.html">设置</a>
+  </header>
+  <div class="container">
+    <div id="grammar-notice"></div>
+    <div class="grammar-mobilebar">
+      <button type="button" id="toc-toggle">📖 目录</button>
+      <span id="grammar-crumb" class="grammar-crumb"></span>
+    </div>
+    <div class="grammar-grid">
+      <nav class="grammar-toc" id="toc" aria-label="目录"></nav>
+      <main class="grammar-content" id="content"></main>
+    </div>
+  </div>
+  <script type="module" src="js/grammar.js?v=1"></script>
+</body>
+</html>
