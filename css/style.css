@@ -53,6 +53,25 @@ header.topbar h1 { font-size: 18px; margin: 0; }
 .card .quality.refined { background: #dff2e2; color: #2f7a3f; }
 .card .quality.draft { background: #fff4d7; color: #9a6a12; }
 
+/* ---- 文章库:按册分组(可折叠) ---- */
+.book-group { margin-bottom: 22px; }
+.book-head {
+  display: flex; align-items: baseline; gap: 12px; width: 100%;
+  margin: 0 0 14px; padding: 6px 4px 10px; border: none;
+  border-bottom: 2px solid #dce8dd; background: none;
+  font: inherit; text-align: left; cursor: pointer; color: inherit;
+}
+.book-head:hover { border-bottom-color: var(--green); }
+.book-head h2 { font-size: 20px; margin: 0; color: var(--text); }
+.book-note { color: var(--muted); font-size: 13px; }
+.book-caret {
+  align-self: center; color: var(--green-dark); font-size: 12px;
+  transition: transform .15s; transform: rotate(90deg);
+}
+.book-group.collapsed .book-caret { transform: rotate(0deg); }
+.book-group.collapsed .book-head { margin-bottom: 0; }
+.book-group.collapsed .card-grid { display: none; }
+
 /* ---- 阅读器 ---- */
 .reader-toolbar { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; flex-wrap: wrap; }
 .reader-toolbar button {
