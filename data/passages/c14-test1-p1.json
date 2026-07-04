@@ -77,7 +77,66 @@
           "pos": "adj.",
           "def": "魔法的；神奇的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            { "role": "S", "text": "Alice", "zh": "爱丽丝" },
+            { "role": "V", "text": "is building", "zh": "正在搭建" },
+            { "role": "O", "text": "a magical kingdom", "zh": "一个魔法王国" }
+          ],
+          "plain": "把所有修饰去掉,这句只剩:Alice is building a kingdom(爱丽丝在搭一个王国)。build(搭建)是及物动词(后面必须跟\"搭什么\"),所以带宾语 a magical kingdom。"
+        },
+        "chunks": [
+          { "text": "Brick by brick", "role": "adv", "zh": "一块砖一块砖地", "note": "名词短语直接当状语用,放在句首是为了强调\"一点一点搭起来\"的画面感;这是雅思常见的\"名词短语作状语\"。", "tag": "ch5.adv-phrase" },
+          { "text": "six-year-old", "role": "attr", "zh": "六岁的", "note": "用连字符把\"数词-名词-形容词\"拼成一个复合形容词修饰 Alice;注意中间的 year 用单数,不加 s。", "tag": "ch4.compound-adj" },
+          { "text": "Alice", "role": "S", "zh": "爱丽丝", "note": "本句真正的主语。" },
+          { "text": "is building", "role": "V", "zh": "正在搭建", "note": "现在进行时 be + 动词-ing,表示\"此刻正在进行\"。", "tag": "ch6.progressive" },
+          { "text": "a magical kingdom", "role": "O", "zh": "一个魔法王国", "note": "动作 build 的对象(宾语)。" }
+        ],
+        "grammar_points": [
+          { "tag": "ch1.svo", "name": "五大句型之三:S + Vt + O", "explain": "英语每句话的骨架都逃不出五种基本句型。判断句型的关键是看动词:build(搭建)这个动作必须有\"搭的东西\",所以它是及物动词(vt.),后面接宾语。看懂长句的第一步,永远是先找主语、动词、宾语这个主干,再把修饰成分一块块挂回去。" },
+          { "tag": "ch6.progressive", "name": "现在进行时", "explain": "结构是 be动词 + 动词的-ing 形式(is building)。它强调\"就在此刻正在发生\",给人一种正在眼前上演的画面感。这里作者用进行时,是为了让读者感觉爱丽丝\"正当场\"搭着城堡。" },
+          { "tag": "ch4.compound-adj", "name": "复合形容词", "explain": "把好几个词用连字符(-)连起来,当成一个形容词用,如 six-year-old(六岁的)。要特别记住:这种结构里的名词用单数——是 six-year-old 不是 six-years-old。" }
+        ],
+        "vocab": [
+          {
+            "w": "building", "lemma": "build", "pos": "v.", "def": "建造;搭建",
+            "aids": {
+              "morphemes": [ { "text": "build", "type": "root", "gloss": "建造" } ],
+              "derivation": "",
+              "family": { "root": "build", "gloss": "建造", "words": [ { "word": "builder", "def": "建筑工人;建造者" }, { "word": "rebuild", "def": "重建(re-=再一次)" }, { "word": "building", "def": "建筑物(名词)" } ] },
+              "mnemonic": "",
+              "forms": [ { "word": "built", "pos": "v.", "def": "build 的过去式/过去分词" } ]
+            },
+            "synonyms": [
+              { "w": "construct", "note": "更正式、更书面,雅思学术阅读里 build 常被替换成 construct" },
+              { "w": "create", "note": "泛指\"创造、造出\",本文第2句 creating 正是它的替换" }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "magical", "lemma": "magical", "pos": "adj.", "def": "魔法的;神奇迷人的",
+            "aids": {
+              "morphemes": [ { "text": "magic", "type": "root", "gloss": "魔法" }, { "text": "al", "type": "suffix", "gloss": "……的(形容词后缀)" } ],
+              "derivation": "magic(魔法)+ -al(形容词后缀)→ 魔法的",
+              "family": { "root": "magic", "gloss": "魔法", "words": [ { "word": "magician", "def": "魔术师(-ian 表示人)" }, { "word": "magically", "def": "神奇地(-ly 变副词)" } ] },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              { "w": "enchanting", "note": "\"迷人的\",本文第2句就用 enchanting 来替换这种奇幻感" }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          { "text": "brick by brick", "zh": "一砖一瓦地;一步一个脚印地", "usage": "写作里可迁移表达\"循序渐进\":You build up your vocabulary brick by brick(你的词汇是一点一点积累起来的)。" }
+        ]
+      }
     },
     {
       "id": 2,
@@ -99,7 +158,65 @@
           "pos": "adj.",
           "def": "英勇的；豪侠的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            { "role": "S", "text": "she", "zh": "她" },
+            { "role": "V", "text": "'s creating", "zh": "正在创造" },
+            { "role": "O", "text": "an enchanting world", "zh": "一个迷人的世界" }
+          ],
+          "plain": "句子很长,但主干只有三个词:she is creating a world(她在创造一个世界)。前面那一大串 Imagining... 都是修饰,交代她\"一边想象一边创造\"。"
+        },
+        "chunks": [
+          { "text": "Imagining fairy-tale turrets and fire-breathing dragons, wicked witches and gallant heroes", "role": "adv", "zh": "想象着童话中的塔楼和喷火的巨龙、邪恶的女巫和英勇的英雄", "note": "这是\"分词构句\"(用 -ing 开头的短语作状语)。它其实是从 As she imagines...(当她想象……时)这个副词从句简化来的——把重复的主语 she 和连词去掉,动词变 -ing。雅思长难句里这种开头极常见,看到句首 -ing 逗号,就知道它是伴随/时间状语,先跳过去找后面的主句。", "tag": "ch22.adv-reduction" },
+          { "text": "she", "role": "S", "zh": "她", "note": "主句真正的主语。" },
+          { "text": "'s creating", "role": "V", "zh": "正在创造", "note": "she is creating 的缩写,现在进行时。", "tag": "ch6.progressive" },
+          { "text": "an enchanting world", "role": "O", "zh": "一个迷人的世界", "note": "create 的对象(宾语)。" }
+        ],
+        "grammar_points": [
+          { "tag": "ch22.adv-reduction", "name": "分词构句(副词从句减化)", "explain": "当从句和主句的主语是同一个人时,副词从句可以\"瘦身\":去掉从句主语、把动词改成-ing,就得到句首的分词短语。本句 Imagining... = As she imagines...(当她想象……时)。破解方法:句首看到 -ing 短语 + 逗号,先在心里补一个主语(通常就是后面主句的主语 she),它多半表示\"一边……一边……\"或\"因为……\"。" },
+          { "tag": "ch13.parallel", "name": "并列结构", "explain": "imagining 的宾语是一长串并列名词:turrets and dragons, witches and heroes(塔楼和龙、女巫和英雄),用 and 两两并联。看到 and,要迅速判断它连接的是哪两个同类成分——这里全是名词短语,地位平等。" }
+        ],
+        "vocab": [
+          {
+            "w": "Imagining", "lemma": "imagine", "pos": "v.", "def": "想象;设想",
+            "aids": {
+              "morphemes": [ { "text": "imag", "type": "root", "gloss": "图像(image)" }, { "text": "ine", "type": "suffix", "gloss": "动词后缀" } ],
+              "derivation": "imag(图像)+ -ine → 在脑子里造出图像 → 想象",
+              "family": { "root": "imag", "gloss": "图像", "words": [ { "word": "image", "def": "图像;形象" }, { "word": "imagination", "def": "想象力(-tion 变名词)" }, { "word": "imaginative", "def": "富有想象力的(-ive 变形容词)" } ] },
+              "mnemonic": "记住 image(图像)这个词根:想象,就是在脑海里\"放图\"。",
+              "forms": [ { "word": "imagination", "pos": "n.", "def": "想象力" }, { "word": "imaginative", "pos": "adj.", "def": "富有想象力的" } ]
+            },
+            "synonyms": [
+              { "w": "envisage", "note": "\"设想、展望\",更正式,雅思写作高分词" },
+              { "w": "picture", "note": "口语里 picture sth 也表示\"在脑中想象某事\"" }
+            ],
+            "confusables": [ { "w": "imaginary", "note": "\"虚构的、想象中的\"(如 imaginary friend),别和 imaginative(有想象力的)搞混" } ]
+          },
+          {
+            "w": "enchanting", "lemma": "enchanting", "pos": "adj.", "def": "迷人的;令人陶醉的",
+            "aids": {
+              "morphemes": [ { "text": "en", "type": "prefix", "gloss": "使……(动词化前缀)" }, { "text": "chant", "type": "root", "gloss": "吟唱" }, { "text": "ing", "type": "suffix", "gloss": "……的" } ],
+              "derivation": "en(使)+ chant(吟唱)→ 用歌声/咒语施法 → 令人着魔的 → 迷人的",
+              "family": { "root": "chant", "gloss": "吟唱", "words": [ { "word": "chant", "def": "吟唱;反复呼喊" }, { "word": "enchant", "def": "使着迷;施魔法" } ] },
+              "mnemonic": "想象女巫\"唱\"(chant)着咒语,把你迷得神魂颠倒——enchanting。",
+              "forms": []
+            },
+            "synonyms": [
+              { "w": "captivating", "note": "\"吸引人的\",capt=抓住,像被抓住注意力一样" },
+              { "w": "charming", "note": "\"有魅力的\",最常见的替换词" }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          { "text": "fire-breathing dragons", "zh": "喷火的巨龙", "usage": "fire-breathing 是\"名词+现在分词\"构成的复合形容词,同类还有 English-speaking(讲英语的)、time-consuming(耗时的),写作里能显得地道。" }
+        ]
+      }
     },
     {
       "id": 3,
@@ -121,7 +238,71 @@
           "pos": "n.",
           "def": "（间接的）影响；反响"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svoc",
+          "label": "S + Vt + O + C(主语 + 及物动词 + 宾语 + 宾语补语)",
+          "tag": "ch1.svoc",
+          "skeleton": [
+            { "role": "S", "text": "this fantasy", "zh": "这种幻想" },
+            { "role": "V", "text": "is helping", "zh": "正帮助" },
+            { "role": "O", "text": "her", "zh": "她" },
+            { "role": "C", "text": "take her first steps...", "zh": "迈出第一步……" }
+          ],
+          "plain": "先别被从句和长尾巴吓到。主句核心是 help sb do sth:this fantasy is helping her take...(这种幻想正帮她去做某事)。help 后面跟\"人(her)+ 做的事(take...)\",这就是 help sb (to) do 结构。"
+        },
+        "chunks": [
+          { "text": "Although she isn't aware of it", "role": "clause", "zh": "尽管她自己并没意识到这一点", "note": "Although 引导让步状语从句,意思是\"虽然……但是\"。注意:英文里用了 Although,后面主句就不能再用 but(中文\"虽然\"配\"但是\",英文只能留一个)。", "tag": "ch15.concession" },
+          { "text": "this fantasy", "role": "S", "zh": "这种幻想", "note": "主句主语,this 回指上文\"搭建魔法王国\"这件事。" },
+          { "text": "is helping", "role": "V", "zh": "正帮助", "note": "现在进行时。", "tag": "ch6.progressive" },
+          { "text": "her", "role": "O", "zh": "她", "note": "help 的宾语——被帮助的人。" },
+          { "text": "take her first steps towards her capacity for creativity", "role": "C", "zh": "迈出通向创造力的第一步", "note": "宾语补语:说明帮她\"做什么\"。help sb do 里 do 用动词原形(take,不加 to),这是 help 的特殊用法。", "tag": "ch1.svoc" },
+          { "text": "and so", "role": "conn", "zh": "因而;所以", "note": "and so 引出结果分句,把前后两个句子并列起来。", "tag": "ch13.compound" },
+          { "text": "it will have important repercussions in her adult life", "role": "clause", "zh": "(这)将对她的成年生活产生重要影响", "note": "结果分句,it 回指前面\"迈向创造力\"这件事;will have 是一般将来时。" }
+        ],
+        "grammar_points": [
+          { "tag": "ch15.concession", "name": "让步状语从句(Although)", "explain": "Although / though / even if 引导\"让步\",相当于中文的\"虽然、尽管\"。最容易踩的坑:英文\"虽然\"和\"但是\"不能同时出现——写了 Although 就不能再写 but。看到句首 Although + 逗号,要知道逗号后面才是作者真正想说的主句。" },
+          { "tag": "ch1.svoc", "name": "help sb (to) do 结构", "explain": "help 后面接\"人 + 动作\":help her take steps(帮她迈出脚步)。特别之处在于,help 后面的动词可以直接用原形(take),不用加 to,这是它区别于大多数动词的地方(比如 want sb TO do 就必须加 to)。" },
+          { "tag": "ch13.compound", "name": "and so 引出结果(合句)", "explain": "and so 把两个完整的句子并成一句,so 在这里表示\"因此、所以\",点明前因后果。合句的两半地位平等,各自都有自己的主语和动词——这里前半主语是 this fantasy,后半主语是 it。" }
+        ],
+        "vocab": [
+          {
+            "w": "repercussions", "lemma": "repercussion", "pos": "n.", "def": "(间接、长远的)影响;反响",
+            "aids": {
+              "morphemes": [ { "text": "re", "type": "prefix", "gloss": "回;向后" }, { "text": "percuss", "type": "root", "gloss": "敲打(如打击乐 percussion)" }, { "text": "ion", "type": "suffix", "gloss": "名词后缀" } ],
+              "derivation": "re(回)+ percuss(敲打)+ -ion → 敲下去后弹回来的震荡 → (事后的)反响、影响",
+              "family": { "root": "percuss", "gloss": "敲打", "words": [ { "word": "percussion", "def": "打击乐器" }, { "word": "concussion", "def": "脑震荡(con-一起猛撞)" } ] },
+              "mnemonic": "想象敲鼓(percussion),声波一圈圈\"回\"(re)荡开——事情造成的连锁\"反响\"就是 repercussions。",
+              "forms": []
+            },
+            "synonyms": [
+              { "w": "consequences", "note": "\"后果\",最常见的替换,雅思阅读里 repercussions ↔ consequences/effects 高频互换" },
+              { "w": "impact", "note": "\"影响、冲击\",常见近义" }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "capacity", "lemma": "capacity", "pos": "n.", "def": "能力;容量",
+            "aids": {
+              "morphemes": [ { "text": "cap", "type": "root", "gloss": "抓取;容纳(拉丁 capere)" }, { "text": "acity", "type": "suffix", "gloss": "名词后缀" } ],
+              "derivation": "cap(容纳)+ -acity → 能容纳(多少)→ 容量;引申为(承载事情的)能力",
+              "family": { "root": "cap", "gloss": "抓取;容纳", "words": [ { "word": "capable", "def": "有能力的(-able)" }, { "word": "capture", "def": "捕获;抓住" }, { "word": "capacious", "def": "宽敞的、容量大的" } ] },
+              "mnemonic": "cap 像个杯子(cup),能\"装\"多少东西 → 容量 / 能耐。",
+              "forms": [ { "word": "capable", "pos": "adj.", "def": "有能力的" } ]
+            },
+            "synonyms": [
+              { "w": "ability", "note": "\"能力\",her capacity for creativity ≈ her ability to be creative,雅思常这样改写" },
+              { "w": "potential", "note": "\"潜力\",语境接近" }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          { "text": "take one's first steps towards ...", "zh": "迈出通向……的第一步", "usage": "很地道的比喻表达,写作可用:take the first steps towards a solution(迈出解决问题的第一步)。" },
+          { "text": "be aware of ...", "zh": "意识到、觉察到……", "usage": "高频搭配,注意介词是 of;反义可说 be unaware of。" }
+        ]
+      }
     },
     {
       "id": 4,
@@ -799,7 +980,16 @@
           "number": 1,
           "prompt": "Uses of children’s play: building a ‘magical kingdom’ may help develop 1 ____",
           "answer": "creativity",
-          "evidence_sentence": 3
+          "evidence_sentence": 3,
+          "paraphrase": {
+            "pairs": [
+              { "q": "building a 'magical kingdom'", "p": "this fantasy", "kind": "para", "note": "题干说\"搭魔法王国\",原文用 this fantasy(这种幻想)回指同一件事——雅思常用代词/概括词回指前文,别指望原词照抄。" },
+              { "q": "may help develop", "p": "is helping her take her first steps towards", "kind": "para", "note": "\"帮助培养\"被改写成\"帮她迈出通向……的第一步\",develop 的意思藏在 take steps towards 里。" },
+              { "q": "creativity", "p": "creativity", "kind": "verbatim", "note": "答案词原样出现在 her capacity for creativity 中——填空题答案往往就是原文里的某个名词。" }
+            ],
+            "trap": "题干出现 magical kingdom,但答案句(句3)里根本没有这两个词;真正的线索是回指词 this fantasy。只盯原词找,会找错句子。",
+            "explain": "定位思路:题干问\"搭王国有助于培养什么\"。先锁定 develop 这个动作,顺着找到句3的 helping...take first steps towards,答案就在其后的 capacity for creativity 里,填 creativity。"
+          }
         },
         {
           "number": 2,

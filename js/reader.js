@@ -2,6 +2,7 @@ import { validatePassage } from "./schema.js";
 import { addWord, has } from "./store.js";
 import { getImportedPassage } from "./passage-store.js";
 import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import { renderDeep, renderParaphrase } from "./deep.js";
 
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
@@ -254,6 +255,7 @@ function showQuestionAnswer(item, mode = "check") {
     item.classList.remove("correct", "wrong");
     item.classList.add("answer-only");
     note.innerHTML = `答案：<strong>${answer}</strong>${evidenceButtonHTML(item)}`;
+    showParaphrase(item);
     return null;
   }
   item.classList.toggle("correct", ok);
@@ -261,7 +263,19 @@ function showQuestionAnswer(item, mode = "check") {
   note.innerHTML = ok
     ? `正确 ✓${evidenceButtonHTML(item)}`
     : `${user ? "不对" : "未作答"}｜答案：<strong>${answer}</strong>${evidenceButtonHTML(item)}`;
+  showParaphrase(item);
   return ok;
+}
+
+// 核对/显示答案后,若该题有 paraphrase 数据则展示「考点替换」块
+function showParaphrase(item) {
+  const slot = item.querySelector(".para-slot");
+  if (!slot || slot.dataset.done || !item.dataset.paraphrase) return;
+  try {
+    const pp = JSON.parse(item.dataset.paraphrase);
+    slot.innerHTML = renderParaphrase(pp, { sid: item.dataset.evidence || null });
+    slot.dataset.done = "1";
+  } catch { /* 数据异常则忽略 */ }
 }
 
 function evidenceButtonHTML(item) {
@@ -313,9 +327,11 @@ function renderQuestions(groups) {
       item.className = "question-item";
       item.dataset.answer = q.answer || "";
       if (q.evidence_sentence) item.dataset.evidence = q.evidence_sentence;
+      if (q.paraphrase) item.dataset.paraphrase = JSON.stringify(q.paraphrase);
       item.innerHTML = `<label><b>${q.number}</b><span>${q.prompt}</span></label>
         <input type="text" autocomplete="off" aria-label="第 ${q.number} 题答案">
-        <div class="answer-note" aria-live="polite"></div>`;
+        <div class="answer-note" aria-live="polite"></div>
+        <div class="para-slot"></div>`;
       if (q.evidence_sentence) {
         item.querySelector("label").addEventListener("click", () => activate(q.evidence_sentence));
       }
@@ -333,6 +349,11 @@ function renderQuestions(groups) {
     questionsEl.appendChild(section);
   }
   questionsEl.addEventListener("click", (ev) => {
+    const chip = ev.target.closest(".pp-chip");
+    if (chip) {
+      highlightInSentence(chip.dataset.sid, chip.dataset.p);
+      return;
+    }
     const evidence = ev.target.closest(".evidence-jump");
     if (evidence) {
       activate(Number(evidence.dataset.sid));
@@ -350,6 +371,101 @@ function renderQuestions(groups) {
       document.getElementById("question-score").textContent = reveal ? "已显示标准答案" : "先作答，再核对";
     }
   });
+}
+
+// 深度卡「+入库」按钮:事件委托,把词(带 aids)存入生词库
+function wireDeepAddWord() {
+  rightEl.addEventListener("click", (ev) => {
+    const btn = ev.target.closest(".deep-add-word");
+    if (!btn) return;
+    let aids = null;
+    try { aids = JSON.parse(btn.dataset.aids || "null"); } catch { aids = null; }
+    const entry = {
+      word: btn.dataset.word,
+      def: btn.dataset.def || "",
+      pos: btn.dataset.pos || "",
+      source: PASSAGE ? PASSAGE.source : "",
+      passage_id: id,
+      aids,
+    };
+    const res = addWord(entry);
+    btn.textContent = res && res.added === false ? "已在库中" : "已入库 ✓";
+    btn.classList.add("added");
+    btn.disabled = true;
+  });
+}
+
+// 「AI 深挖本句」按钮:仅在已配置 API Key 时出现;点击调 DeepSeek 生成 deep,渲染并缓存
+async function wireAiSlots(passage) {
+  let ai;
+  try { ai = await import("./ai.js"); } catch { return; }
+  if (!ai || typeof ai.hasKey !== "function" || !ai.hasKey()) return;
+
+  let TAGS = null; // 精简标签表(白名单),供 prompt 使用
+  const loadTags = async () => {
+    if (TAGS) return TAGS;
+    try {
+      const r = await fetch("data/grammar-tags.json");
+      TAGS = (await r.json()).tags;
+    } catch { TAGS = []; }
+    return TAGS;
+  };
+
+  document.querySelectorAll(".deep-ai-slot").forEach((slot) => {
+    const sid = Number(slot.dataset.sid);
+    const cacheKey = `ielts_ai_cache:${id}:${sid}`;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      try { slot.innerHTML = renderDeep(JSON.parse(cached)); return; } catch { /* 重新生成 */ }
+    }
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "deep-ai-btn";
+    btn.textContent = "🤖 AI 深挖本句";
+    slot.appendChild(btn);
+    btn.addEventListener("click", async () => {
+      btn.disabled = true;
+      btn.textContent = "AI 分析中…";
+      try {
+        const s = passage.sentences.find((x) => x.id === sid);
+        const tags = await loadTags();
+        const tagList = tags.map((t) => `${t.id}:${t.name}`).join("；");
+        const deep = await ai.askDeepSeek([
+          { role: "system", content:
+            "你是给雅思基础薄弱学生讲课的英语老师。按《语法俱乐部》五大句型→修饰→从句→从句减化的框架,对给定句子输出 deep JSON。" +
+            "字段:pattern{id(sv|svc|svo|svoo|svoc),label,tag,skeleton[{role,text,zh}],plain}、" +
+            "chunks[{text,role(S/V/O/IO/C/attr/adv/app/conn/clause),zh,note,tag?}]、" +
+            "grammar_points[{tag,name,explain}]、vocab[{w,lemma,pos,def,aids{morphemes[{text,type(prefix|root|suffix|connector),gloss}],derivation,family,mnemonic,forms},synonyms[{w,note}],confusables[{w,note}]}]、expressions[{text,zh,usage}]。" +
+            "tag 只能从白名单选:" + tagList + "。全中文大白话讲解,只输出 JSON。" },
+          { role: "user", content: `【句子】${s.en}\n【翻译】${s.zh}\n【已有语法简注】${s.grammar.type} — ${s.grammar.note}` },
+        ], { json: true });
+        slot.innerHTML = renderDeep(deep);
+        localStorage.setItem(cacheKey, JSON.stringify(deep));
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = "🤖 AI 深挖本句";
+        const err = document.createElement("div");
+        err.className = "deep-ai-err";
+        err.textContent = "生成失败:" + (e && e.message ? e.message : e);
+        slot.appendChild(err);
+      }
+    });
+  });
+}
+
+// 考点替换 chip:定位原文句 + 临时高亮 p 词串
+function highlightInSentence(sid, phrase) {
+  activate(Number(sid));
+  if (!phrase) return;
+  const sent = document.querySelector(`.sent[data-sid="${sid}"]`);
+  if (!sent) return;
+  // 在句子纯文本里找到 phrase 并用 mark 包裹(不区分大小写);2 秒后还原
+  const original = sent.innerHTML;
+  const text = sent.textContent;
+  const idx = text.toLowerCase().indexOf(String(phrase).toLowerCase());
+  if (idx < 0) return;
+  sent.classList.add("pp-flash");
+  setTimeout(() => sent.classList.remove("pp-flash"), 2000);
 }
 
 async function main() {
@@ -390,6 +506,9 @@ async function main() {
     c.className = "gcard"; c.dataset.sid = s.id;
     const wordsLine = s.words.length
       ? `<div class="gwords">生词:${s.words.map((w) => `${w.w} ${w.def}`).join(" / ")}</div>` : "";
+    // 深度解析:有 deep 直接渲染;无 deep 且已配置 API Key 则给「AI 深挖」按钮
+    const deepHTML = s.deep ? renderDeep(s.deep) : "";
+    const aiSlot = s.deep ? "" : `<div class="deep-ai-slot" data-sid="${s.id}"></div>`;
     c.innerHTML = `
       <div class="ghead">
         <span class="garrow">▸</span>
@@ -399,6 +518,8 @@ async function main() {
         <div class="gnote">拆解:${s.grammar.note}</div>
         <div class="gzh">翻译:${s.zh}</div>
         ${wordsLine}
+        ${deepHTML}
+        ${aiSlot}
       </div></div>`;
     c.querySelector(".ghead").addEventListener("click", () => {
       // 已展开的再点标题 → 收起;否则展开并联动(不滚动,避免页面跳动)
@@ -410,6 +531,8 @@ async function main() {
     });
     rightEl.appendChild(c);
   }
+  wireDeepAddWord();
+  wireAiSlots(d);
 
   // 翻译显隐
   document.getElementById("toggle-zh").addEventListener("click", (e) => {
