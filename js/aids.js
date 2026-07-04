@@ -7,6 +7,7 @@
 //   family:     { root, gloss, words:[{word, def}] }
 //   mnemonic:   "联想句"
 //   forms:      [{word, pos, def}]
+//   synonyms:   [{word|w, def?, note?}]   同义替换(雅思核心);兼容 deep.js 的 {w,note}
 
 function esc(s) {
   return String(s == null ? "" : s)
@@ -21,7 +22,8 @@ export function aidsHasContent(aids) {
   const f = !!(aids.family && Array.isArray(aids.family.words) && aids.family.words.length > 0);
   const n = !!(aids.mnemonic && aids.mnemonic.trim());
   const w = Array.isArray(aids.forms) && aids.forms.length > 0;
-  return m || d || f || n || w;
+  const s = Array.isArray(aids.synonyms) && aids.synonyms.length > 0;
+  return m || d || f || n || w || s;
 }
 
 // ① 词根词缀色块(前缀红/词根蓝/后缀琥珀)。connector 用中性灰。
@@ -63,6 +65,16 @@ export function renderAids(aids, opts = {}) {
   }
   if (aids.mnemonic && aids.mnemonic.trim()) {
     blocks.push(`<div class="aid-block aid-mnemo"><span class="aid-label">联想</span>${esc(aids.mnemonic)}</div>`);
+  }
+  if (Array.isArray(aids.synonyms) && aids.synonyms.length) {
+    const pills = aids.synonyms
+      .map((s) => {
+        const word = s.word || s.w || "";
+        const gloss = s.def || s.note || "";
+        return `<span class="fam-pill syn-pill">${esc(word)}${gloss ? `<i>${esc(gloss)}</i>` : ""}</span>`;
+      })
+      .join("");
+    blocks.push(`<div class="aid-block"><span class="aid-label">同义替换</span><div class="fam-pills">${pills}</div></div>`);
   }
   if (Array.isArray(aids.forms) && aids.forms.length) {
     const items = aids.forms
