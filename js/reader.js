@@ -1,8 +1,9 @@
 import { validatePassage } from "./schema.js";
-import { addWord, has } from "./store.js";
+import { has } from "./store.js";
 import { getImportedPassage } from "./passage-store.js";
 import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
 import { renderDeep, renderParaphrase } from "./deep.js";
+import { openWordPopup } from "./word-popup.js?v=1";
 
 const params = new URLSearchParams(location.search);
 const id = params.get("id");
@@ -19,56 +20,7 @@ initSpeechControls(
   document.getElementById("speech-stop"),
 );
 
-// ---- 内置词典 ----
-let DICT = null; // { word: [phonetic, translation] }
-const dictReady = fetch("data/dict.json")
-  .then((r) => r.json())
-  .then((d) => { DICT = d; })
-  .catch(() => { DICT = {}; });
-
-// 生成一个词的词形还原候选(makers→maker, studies→study, running→run, moved→move...)
-function lemmaCandidates(word) {
-  const w = word.toLowerCase().replace(/['’]s?$/, ""); // 去所有格
-  const out = [w];
-  const push = (x) => { if (x.length >= 2 && !out.includes(x)) out.push(x); };
-  if (w.endsWith("ies")) push(w.slice(0, -3) + "y");
-  if (w.endsWith("es")) push(w.slice(0, -2));
-  if (w.endsWith("s")) push(w.slice(0, -1));
-  if (w.endsWith("ied")) push(w.slice(0, -3) + "y");
-  if (w.endsWith("ed")) { push(w.slice(0, -2)); push(w.slice(0, -1)); }
-  if (w.endsWith("ing")) {
-    push(w.slice(0, -3)); push(w.slice(0, -3) + "e");
-    if (w.length > 4 && w[w.length - 4] === w[w.length - 5]) push(w.slice(0, -4)); // running→run
-  }
-  if (w.endsWith("er")) { push(w.slice(0, -2)); push(w.slice(0, -1)); }
-  if (w.endsWith("est")) { push(w.slice(0, -3)); push(w.slice(0, -2)); }
-  return out;
-}
-
-// 逐级查词:本句精选 → 词典(均带词形还原)。返回 {pos, def, phonetic, w} 或 null
-function lookupWord(word, wordDefs) {
-  const exact = wordDefs.get(word.toLowerCase());
-  if (exact) return { w: exact.w, pos: exact.pos, def: exact.def, phonetic: "" };
-  // 多词短语不做词形还原，避免 New Zealand 被拆成 new / zealand。
-  if (/\s/.test(word)) return null;
-  for (const c of lemmaCandidates(word)) {
-    const d = wordDefs.get(c);
-    if (d) return { w: d.w, pos: d.pos, def: d.def, phonetic: "" };
-  }
-  if (DICT) {
-    for (const c of lemmaCandidates(word)) {
-      const d = DICT[c];
-      if (d) return { w: c, pos: "", def: d[1], phonetic: d[0] };
-    }
-  }
-  return null;
-}
-
-let popup = null;
-function closePopup() { if (popup) { popup.remove(); popup = null; } }
-document.addEventListener("click", (e) => {
-  if (popup && !popup.contains(e.target) && !e.target.classList.contains("word")) closePopup();
-});
+// 词典 + 弹窗查词 + 入库 都由 js/word-popup.js 统一处理(reader 与 listening 共用)。
 
 // 把一句话渲染成可点单词的 span 序列;单词保留标点分离
 function renderSentenceEN(s) {
@@ -112,7 +64,10 @@ function renderSentenceEN(s) {
       w.addEventListener("click", (ev) => {
         ev.stopPropagation();
         activate(s.id); // 点单词同时联动右侧
-        openWordPopup(ev, part, wordDefs, s);
+        openWordPopup({
+          event: ev, word: part, wordDefs, sentence: s,
+          source: PASSAGE.source, passageId: PASSAGE.id,
+        });
       });
       span.appendChild(w);
     } else {
@@ -122,58 +77,6 @@ function renderSentenceEN(s) {
   // 点句子本身(非单词处)→ 联动
   span.addEventListener("click", () => activate(s.id));
   return span;
-}
-
-async function openWordPopup(ev, word, wordDefs, sentence) {
-  closePopup();
-  await dictReady; // 首次点击时词典可能还没加载完
-  const def = lookupWord(word, wordDefs);
-  popup = document.createElement("div");
-  popup.className = "popup";
-  const defHtml = def
-    ? `<div><span class="pw">${def.w}</span><span class="ppos">${def.pos || def.phonetic}</span></div><div class="pdef">${def.def}</div>`
-    : `<div><span class="pw">${word}</span></div><div style="color:#999">未收录释义</div>`;
-  popup.innerHTML = defHtml;
-  const actions = document.createElement("div");
-  actions.className = "popup-actions";
-  const speakBtn = document.createElement("button");
-  speakBtn.type = "button";
-  speakBtn.className = "speak-word";
-  speakBtn.textContent = "🔊 发音";
-  speakBtn.disabled = !speechSupported();
-  speakBtn.addEventListener("click", (e) => {
-    e.stopPropagation();
-    speakEnglish(word);
-  });
-  const btn = document.createElement("button");
-  const saveWord = def ? def.w : word;
-  const already = has(saveWord) || has(word);
-  btn.textContent = already ? "已入库" : "+ 入库";
-  btn.disabled = already;
-  btn.addEventListener("click", () => {
-    addWord({
-      word: saveWord,
-      def: def ? def.def : "",
-      pos: def ? def.pos : "",
-      sentence_en: sentence.en,
-      sentence_zh: sentence.zh,
-      source: PASSAGE.source,
-      passage_id: PASSAGE.id,
-      sentence_id: sentence.id,
-    });
-    btn.textContent = "已入库"; btn.disabled = true;
-    // 高亮原文中该词的所有词形变体
-    const cands = lemmaCandidates(word);
-    document.querySelectorAll(".word").forEach((el) => {
-      if (lemmaCandidates(el.textContent).some((c) => cands.includes(c))) el.classList.add("saved");
-    });
-  });
-  actions.append(speakBtn, btn);
-  popup.appendChild(actions);
-  document.body.appendChild(popup);
-  const r = ev.target.getBoundingClientRect();
-  popup.style.left = Math.min(window.scrollX + r.left, window.scrollX + document.documentElement.clientWidth - 280) + "px";
-  popup.style.top = (window.scrollY + r.bottom + 4) + "px";
 }
 
 // 联动:左句高亮并滚动定位 + 右侧手风琴展开对应卡片并滚动定位
