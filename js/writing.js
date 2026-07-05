@@ -23,7 +23,7 @@ function countWords(text) {
 
 // ---- 题库加载 + 选题 ----
 async function loadTasks() {
-  const r = await fetch("data/writing/tasks.json");
+  const r = await fetch("data/writing/tasks.json", { cache: "no-store" });
   const d = await r.json();
   TASKS.task1 = d.task1 || [];
   TASKS.task2 = d.task2 || [];
@@ -35,14 +35,44 @@ async function loadTasks() {
 
 function fillPicker(kind) {
   const sel = document.getElementById(`${kind}-pick`);
+  const diffSel = document.getElementById(`${kind}-diff`);
+  const diff = diffSel ? diffSel.value : "";
+  const filtered = TASKS[kind].filter((t) => !diff || t.difficulty === diff);
   sel.innerHTML = "";
-  for (const t of TASKS[kind]) {
+  if (!filtered.length) {
     const opt = document.createElement("option");
-    opt.value = t.id;
-    opt.textContent = `${t.source} — ${(t.type || t.topic || "").toUpperCase()}`;
+    opt.textContent = "(该难度下暂无题目)";
+    opt.disabled = true;
     sel.appendChild(opt);
+    return;
   }
-  sel.addEventListener("change", () => renderTask(kind));
+  // 按 source 分组(optgroup),便于识别是热身题还是剑 xx 真题
+  const byGroup = {};
+  for (const t of filtered) {
+    const g = t.source || "其他";
+    (byGroup[g] = byGroup[g] || []).push(t);
+  }
+  for (const [group, arr] of Object.entries(byGroup)) {
+    const og = document.createElement("optgroup");
+    og.label = group;
+    for (const t of arr) {
+      const opt = document.createElement("option");
+      opt.value = t.id;
+      const diffTag = t.difficulty ? `[${t.difficulty}] ` : "";
+      const typeTag = (t.type || t.topic || "").toUpperCase();
+      opt.textContent = `${diffTag}${typeTag}`;
+      og.appendChild(opt);
+    }
+    sel.appendChild(og);
+  }
+  if (!sel._pickBound) {
+    sel.addEventListener("change", () => renderTask(kind));
+    sel._pickBound = true;
+  }
+  if (diffSel && !diffSel._diffBound) {
+    diffSel.addEventListener("change", () => { fillPicker(kind); renderTask(kind); });
+    diffSel._diffBound = true;
+  }
 }
 
 function currentTask(kind) {

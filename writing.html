@@ -92,8 +92,15 @@
 
     <section class="task-section" data-section="task1">
       <div class="task-picker">
-        <label>选题:</label>
-        <select id="task1-pick"></select>
+        <label>难度:</label>
+        <select id="task1-diff">
+          <option value="">全部</option>
+          <option value="入门">入门 · 单图/单一数据</option>
+          <option value="进阶">进阶 · 多图/表格比较</option>
+          <option value="冲刺">冲刺 · process/map</option>
+        </select>
+        <label style="margin-left:12px">选题:</label>
+        <select id="task1-pick" style="min-width:280px"></select>
       </div>
       <div class="task-prompt" id="task1-prompt"></div>
       <div class="task-hint" id="task1-hint"></div>
@@ -107,8 +114,15 @@
 
     <section class="task-section hidden" data-section="task2">
       <div class="task-picker">
-        <label>选题:</label>
-        <select id="task2-pick"></select>
+        <label>难度:</label>
+        <select id="task2-diff">
+          <option value="">全部</option>
+          <option value="入门">入门 · agree/disagree</option>
+          <option value="进阶">进阶 · discuss both views</option>
+          <option value="冲刺">冲刺 · problems+solutions</option>
+        </select>
+        <label style="margin-left:12px">选题:</label>
+        <select id="task2-pick" style="min-width:280px"></select>
       </div>
       <div class="task-prompt" id="task2-prompt"></div>
       <div class="task-hint" id="task2-hint"></div>
@@ -125,6 +139,6 @@
       <div id="history-list"></div>
     </details>
   </div>
-  <script type="module" src="js/writing.js?v=1"></script>
+  <script type="module" src="js/writing.js?v=2"></script>
 </body>
 </html>

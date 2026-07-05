@@ -1,49 +1,65 @@
 {
   "meta": {
-    "note": "占位题库,后续用 tools/extract_writing_from_pdf.py 从剑 14-19 PDF 全量抽取(每 test 2 道 = 48 道)。当前 6 道:Task 1 三道 + Task 2 三道。",
-    "target_words": { "task1": 150, "task2": 250 }
+    "note": "热身题库(6 道)。全量剑 14-19 真题(48 道)通过 tools/extract_writing_from_pdf.py 抽取 + --merge + --grade-only 打级后合并进 task1[] / task2[]。每道 difficulty 入门/进阶/冲刺;UI 支持按难度筛选 + 按 source 分组。",
+    "target_words": { "task1": 150, "task2": 250 },
+    "difficulty_scale": {
+      "task1": { "入门": "line graph / bar chart 单组数据", "进阶": "table / pie / multi-chart 多组比较", "冲刺": "process / map 无数字靠语言表达" },
+      "task2": { "入门": "agree/disagree 单一观点", "进阶": "discuss both views + opinion 双面", "冲刺": "problems+solutions 或 causes+effects 多要求" }
+    }
   },
   "task1": [
     {
       "id": "warmup-t1-linegraph",
-      "source": "热身题 · line graph",
+      "source": "热身题",
+      "book_ref": "",
+      "difficulty": "入门",
       "type": "line graph",
       "prompt": "The line graph below shows the number of visitors (in thousands) to a museum from 2010 to 2020, split by adult and children categories.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
       "image_hint": "Adults line: starts at 120k in 2010, climbs steadily to 220k by 2015, then dips to 180k in 2018 before recovering to 210k in 2020. Children line: 60k in 2010, sharp rise to 140k in 2015, plateaus around 130-150k afterwards, ending at 150k in 2020. The gap between adults and children narrows from 60k in 2010 to 60k by 2020, with the smallest gap (30k) around 2018."
     },
     {
-      "id": "warmup-t1-process",
-      "source": "热身题 · process diagram",
-      "type": "process",
-      "prompt": "The diagram below shows how recycled paper is produced.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
-      "image_hint": "Steps: (1) used paper collected and delivered to plant; (2) paper shredded into small pieces; (3) pieces mixed with warm water and chemicals in a large tank to form pulp; (4) pulp passed through screens to remove impurities like ink and staples; (5) cleaned pulp bleached (optional) and rolled into thin sheets; (6) sheets dried in heated cylinders; (7) finished paper wound onto large rolls ready for cutting. The whole cycle takes about 24 hours."
-    },
-    {
       "id": "warmup-t1-table",
-      "source": "热身题 · table",
+      "source": "热身题",
+      "book_ref": "",
+      "difficulty": "进阶",
       "type": "table",
       "prompt": "The table below shows the percentage of household expenditure spent on five categories (food, housing, transport, leisure, others) in three countries (Japan, Brazil, Sweden) in 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
       "image_hint": "Japan: food 22%, housing 25%, transport 15%, leisure 20%, others 18%. Brazil: food 34%, housing 20%, transport 18%, leisure 12%, others 16%. Sweden: food 15%, housing 28%, transport 14%, leisure 25%, others 18%. Brazil highest on food, Sweden highest on leisure and housing, Japan mid-range across all."
+    },
+    {
+      "id": "warmup-t1-process",
+      "source": "热身题",
+      "book_ref": "",
+      "difficulty": "冲刺",
+      "type": "process",
+      "prompt": "The diagram below shows how recycled paper is produced.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "image_hint": "Steps: (1) used paper collected and delivered to plant; (2) paper shredded into small pieces; (3) pieces mixed with warm water and chemicals in a large tank to form pulp; (4) pulp passed through screens to remove impurities like ink and staples; (5) cleaned pulp bleached (optional) and rolled into thin sheets; (6) sheets dried in heated cylinders; (7) finished paper wound onto large rolls ready for cutting. The whole cycle takes about 24 hours."
     }
   ],
   "task2": [
     {
       "id": "warmup-t2-community",
       "source": "剑桥雅思 14 · Test 1(改编)",
+      "book_ref": "剑桥雅思 14 · Test 1 · Writing Task 2",
+      "difficulty": "入门",
       "topic": "education",
       "prompt": "Some people believe that unpaid community service should be a compulsory part of high school programmes (for example working for a charity, improving the neighbourhood or teaching sports to younger children).\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
     },
     {
-      "id": "warmup-t2-tech",
-      "source": "热身题 · technology",
-      "topic": "technology",
-      "prompt": "In many countries, the use of mobile phones and computers is causing serious problems with young people's reading and writing skills.\n\nWhat problems does this cause? What measures can be taken to solve these problems?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
-    },
-    {
       "id": "warmup-t2-env",
-      "source": "热身题 · environment",
+      "source": "热身题",
+      "book_ref": "",
+      "difficulty": "入门",
       "topic": "environment",
       "prompt": "Some people believe that individuals can do very little to save the environment. Only governments and big companies can make a real difference.\n\nTo what extent do you agree or disagree?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+    },
+    {
+      "id": "warmup-t2-tech",
+      "source": "热身题",
+      "book_ref": "",
+      "difficulty": "冲刺",
+      "topic": "technology",
+      "prompt": "In many countries, the use of mobile phones and computers is causing serious problems with young people's reading and writing skills.\n\nWhat problems does this cause? What measures can be taken to solve these problems?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
     }
   ]
 }
