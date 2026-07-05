@@ -1,10 +1,21 @@
 {
   "meta": {
     "note": "热身题库(6 道)。全量剑 14-19 真题(48 道)通过 tools/extract_writing_from_pdf.py 抽取 + --merge + --grade-only 打级后合并进 task1[] / task2[]。每道 difficulty 入门/进阶/冲刺;UI 支持按难度筛选 + 按 source 分组。",
-    "target_words": { "task1": 150, "task2": 250 },
+    "target_words": {
+      "task1": 150,
+      "task2": 250
+    },
     "difficulty_scale": {
-      "task1": { "入门": "line graph / bar chart 单组数据", "进阶": "table / pie / multi-chart 多组比较", "冲刺": "process / map 无数字靠语言表达" },
-      "task2": { "入门": "agree/disagree 单一观点", "进阶": "discuss both views + opinion 双面", "冲刺": "problems+solutions 或 causes+effects 多要求" }
+      "task1": {
+        "入门": "line graph / bar chart 单组数据",
+        "进阶": "table / pie / multi-chart 多组比较",
+        "冲刺": "process / map 无数字靠语言表达"
+      },
+      "task2": {
+        "入门": "agree/disagree 单一观点",
+        "进阶": "discuss both views + opinion 双面",
+        "冲刺": "problems+solutions 或 causes+effects 多要求"
+      }
     }
   },
   "task1": [
@@ -34,6 +45,206 @@
       "type": "process",
       "prompt": "The diagram below shows how recycled paper is produced.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
       "image_hint": "Steps: (1) used paper collected and delivered to plant; (2) paper shredded into small pieces; (3) pieces mixed with warm water and chemicals in a large tank to form pulp; (4) pulp passed through screens to remove impurities like ink and staples; (5) cleaned pulp bleached (optional) and rolled into thin sheets; (6) sheets dried in heated cylinders; (7) finished paper wound onto large rolls ready for cutting. The whole cycle takes about 24 hours."
+    },
+    {
+      "id": "c14-test1-t1",
+      "source": "剑桥雅思14 · Test 1",
+      "book_ref": "剑桥雅思14真题 Test 1 Writing Task 1",
+      "type": "multiple charts",
+      "prompt": "The charts below show the average percentages in typical meals of three types of nutrients, all of which may be unhealthy if eaten too much.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "进阶",
+      "image_hint": "The image contains three pie charts showing the average percentages of sodium, saturated fats, and added sugars in typical meals consumed in the USA. Each chart is divided into four meal categories: Breakfast (shaded with crosshatch), Lunch (shaded with diagonal lines), Dinner (solid black), and Snacks (white).\n\nFor sodium: Breakfast accounts for 14%, Lunch for 29%, Dinner for 43%, and Snacks for 14%.\n\nFor saturated fat: Breakfast accounts for 16%, Lunch for 26%, Dinner for 37%, and Snacks for 21%.\n\nFor added sugar: Breakfast accounts for 16%, Lunch for 19%, Dinner for 23%, and Snacks for 42%.\n\nKey observations: Dinner is the highest contributor to sodium and saturated fat intake, while snacks contribute the most to added sugar consumption. Lunch has the highest percentage of sodium among meals other than dinner. Snacks have the largest share of added sugar, significantly higher than any other meal type.",
+      "_diff_reason": "包含多个图表（饼图），需要比较三种营养素在四餐中的分布，数据组较多，但结构清晰。"
+    },
+    {
+      "id": "c14-test2-t1",
+      "source": "剑桥雅思14 · Test 2",
+      "book_ref": "剑桥雅思14真题 Test 2 Writing Task 1",
+      "type": "bar chart",
+      "prompt": "The chart below shows the value of one country's exports in various categories during 2015 and 2016. The table shows the percentage change in each category of exports in 2016 compared with 2015.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "进阶",
+      "image_hint": "The bar chart displays export earnings in billions of dollars for five product categories: Petroleum products, Engineered goods, Gems and jewellery, Agricultural products, and Textiles. In 2015, Petroleum products had the highest value at approximately 60 billion dollars, followed by Engineered goods at about 57 billion, Gems and jewellery at around 42 billion, Agricultural products at roughly 30 billion, and Textiles at about 25 billion. In 2016, all categories increased except Gems and jewellery, which decreased slightly. Petroleum products remained stable at around 61 billion, Engineered goods rose to about 60 billion, Gems and jewellery dropped to approximately 40 billion, Agricultural products increased slightly to about 31 billion, and Textiles rose significantly to around 31 billion.\n\nThe table shows percentage changes from 2015 to 2016: Petroleum products increased by 3%, Engineered goods by 8.5%, Gems and jewellery decreased by 5.18%, Agricultural products increased by 0.81%, and Textiles increased by 15.24%. The largest growth was in Textiles, while Gems and jewellery showed the only decline.",
+      "_diff_reason": "包含bar chart和table两种图表，需要比较2组数据（2015和2016年）及百分比变化，属于多数据比较。"
+    },
+    {
+      "id": "c14-test3-t1",
+      "source": "剑桥雅思14 · Test 3",
+      "book_ref": "剑桥雅思14真题 Test 3 Writing Task 1",
+      "type": "process",
+      "prompt": "The diagram below shows how electricity is generated in a hydroelectric power station.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "冲刺",
+      "image_hint": "The diagram illustrates the process of electricity generation in a hydroelectric power station. Water from a river flows into a high-level reservoir behind a dam. During the day, water is released from the high-level reservoir through an intake (open during the day, closed at night) to flow down to the power station, where it passes through reversible turbines to generate electricity. The generator converts this mechanical energy into electrical energy, which is then transmitted via power lines to the national grid. At night, when electricity demand is lower, the system reverses: water from the low-level reservoir is pumped back up to the high-level reservoir using the same turbines operating in reverse mode. This cycle allows for efficient energy storage and usage based on daily demand patterns. Key components include the dam, high-level and low-level reservoirs, intake valve, power station with generator and reversible turbines, and connections to the national grid.",
+      "_diff_reason": "无数字，需描述流程步骤，依赖语言表达"
+    },
+    {
+      "id": "c14-test4-t1",
+      "source": "剑桥雅思14 · Test 4",
+      "book_ref": "剑桥雅思14真题 Test 4 Writing Task 1",
+      "type": "map",
+      "prompt": "The plans below show a public park when it first opened in 1920 and the same park today.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\nWrite at least 150 words.",
+      "difficulty": "冲刺",
+      "image_hint": "The image shows two maps of Grange Park: one from 1920 and one from today. In 1920, the park featured a central fountain, a stage for musicians, three rose gardens (one on each side and one at the bottom), a pond for water plants, a glasshouse, multiple seating areas, and entrances along Arnold Avenue and Eldon Street. Today's layout includes an amphitheatre for concerts replacing the stage, a café, a children's play area, a water feature, and an entrance to an underground car park. The rose garden has been reduced to one, and the pond for water plants is no longer present. The glasshouse is gone, and new facilities like the café and play area have been added. Entrances remain along both streets, but the overall design has shifted toward recreational and family-oriented features.",
+      "_diff_reason": "地图题无数字，需描述变化和对比，对语言表达要求高"
+    },
+    {
+      "id": "c15-test4-t1",
+      "source": "剑桥雅思15 · Test 4",
+      "book_ref": "剑桥雅思15真题 Test 4 Writing Task 1",
+      "type": "multiple charts",
+      "prompt": "The chart below shows what Anthropology graduates from one university did after finishing their undergraduate degree course. The table shows the salaries of the anthropologists in work after five years.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "进阶",
+      "image_hint": "The pie chart shows the destination of Anthropology graduates from one university after completing their degree. 52% entered full-time work, 15% engaged in part-time work, 12% pursued full-time postgraduate study, 8% were unemployed, 8% did part-time work combined with postgraduate study, and 5% had unknown destinations.\n\nThe table presents the salaries of these graduates after five years of work, categorized by employment type. For freelance consultants: 5% earned $25,000–49,999, 15% earned $50,000–74,999, 40% earned $75,000–99,999, and 40% earned $100,000+. For government sector employees: 5% earned $25,000–49,999, 15% earned $50,000–74,999, 30% earned $75,000–99,999, and 50% earned $100,000+. For private companies: 10% earned $25,000–49,999, 35% earned $50,000–74,999, 25% earned $75,000–99,999, and 30% earned $100,000+.",
+      "_diff_reason": "包含多个图表（饼图和表格），需要比较两组数据，属于进阶难度。"
+    },
+    {
+      "id": "c15-test3-t1",
+      "source": "剑桥雅思15 · Test 3",
+      "book_ref": "剑桥雅思15真题 Test 3 Writing Task 1",
+      "type": "process",
+      "prompt": "The given scheme explains the process of instant noodles production. Moreover it reveals how this product appears on super market shelves. In general, there are eight stages of manufacturing before the final product is being delivered to the store.",
+      "difficulty": "冲刺",
+      "image_hint": "The process involves eight stages: (1) flour is put into storage silos; (2) flour is mixed with other ingredients into dough in a special machine; (3) the substance is stretched into sheets; (4) sheets are cut into thin strips; (5) strips are formed into discs; (6) round-shaped figures are cooked in oil and dried; (7) product is placed into cups with vegetables and spices added; (8) packaging includes adding freshly printed labels and sealing the cups. Finally, the product is shipped to a shopping facility.",
+      "_diff_reason": "process diagram无数字，需用语言描述步骤和流程，对表达连贯性和逻辑性要求高。"
+    },
+    {
+      "id": "c16-test1-t1",
+      "source": "剑桥雅思16 · Test 1",
+      "book_ref": "剑桥雅思16真题 Test 1 Writing Task 1",
+      "type": "multiple charts",
+      "prompt": "The charts below show the changes in ownership of electrical appliances and amount of time spent doing housework in households in one country between 1920 and 2019.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "difficulty": "进阶",
+      "image_hint": "The first chart shows the percentage of households owning three electrical appliances—washing machines, refrigerators, and vacuum cleaners—from 1920 to 2019. In 1920, washing machine ownership was around 40%, rising steadily to about 70% by 2019. Refrigerator ownership started at nearly 0% in 1920, increased rapidly after 1940, reaching over 90% by 1980 and stabilizing near 100% by 2019. Vacuum cleaner ownership began at about 10% in 1920, rose sharply to around 60% by 1960, then continued increasing to reach approximately 100% by 2019.\n\nThe second chart displays the number of hours of housework per household per week from 1920 to 2019. In 1920, households spent about 50 hours per week on housework. This declined gradually to around 35 hours by 1940, then dropped more steeply to about 20 hours by 1960. From 1960 onward, the time spent decreased slowly, reaching approximately 10 hours per week by 2019.",
+      "_diff_reason": "包含多个图表（电器拥有量变化和家务时间），需要比较2-3组数据，属于进阶难度。"
+    },
+    {
+      "id": "c16-test4-t1",
+      "source": "剑桥雅思16 · Test 4",
+      "book_ref": "剑桥雅思16真题 Test 4 Writing Task 1",
+      "type": "process",
+      "prompt": "The diagram below shows the process for recycling plastic bottles.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\nWrite at least 150 words.",
+      "difficulty": "冲刺",
+      "image_hint": "The diagram illustrates the step-by-step process of recycling plastic bottles. It begins with a person placing used plastic bottles into a collection bin (Step 1). A garbage truck collects these bottles and transports them to a recycling center (Step 2). At the recycling center, the bottles are sorted (Step 3), then compressed into blocks (Step 4). These blocks are crushed into smaller pieces (Step 5) and washed to remove contaminants. The cleaned plastic is then processed into plastic pellets (Step 6). These pellets are heated to form raw material (Step 7), which is stored in large blocks (Step 8). Finally, this raw material is used to produce new end products such as bottles, clothing, bags, and writing instruments (Step 9). The process emphasizes reusing plastic waste to create new items, reducing environmental impact.",
+      "_diff_reason": "过程图无数字，需用语言描述步骤和逻辑关系，对表达连贯性和词汇要求高。"
+    },
+    {
+      "id": "c17-test1-t1",
+      "source": "剑桥雅思17 · Test 1",
+      "book_ref": "剑桥雅思17真题 Test 1 Writing Task 1",
+      "type": "map",
+      "prompt": "The two maps illustrate the Norbiton area in the present days, as well as, the planned development.\nOverall, the Norbiton industrial area is located at the east side of the town, with a river on the north, separating the farmland from the industrial area, which is located in the center of the map, represented by a few factory buildings and roads, followed by the main road at the extreme south of the map.\nThe planned development shows a substantially growth and modifications of the overall infrastructure of the area between the farmland and the main road.\nFirstly, the planned development of the Norbiton area replaces what once were factories for housings.\nMoreover, the roads have been developed to accommodate all the new buildings that have been planned for the area, which are, a school and a playground to the east side of the roundabout located in the center of the map, as well as shops and a medical center around the round about.\nSecondly, a bridge is planned for the north of the map to cross the river and provide access to the housing that will be located in farmland.",
+      "difficulty": "冲刺",
+      "image_hint": "The current map shows the Norbiton area with an industrial zone in the center, bordered by farmland to the west and a river to the north. A main road runs along the southern edge. The industrial area includes several factory buildings and roads. The planned development involves replacing factories with housing, adding a school and playground to the east of the central roundabout, shops and a medical center around the roundabout, and constructing a bridge over the river to connect the new housing in the farmland to the rest of the area.",
+      "_diff_reason": "Task 1 地图题无数字，需描述位置变化和规划，语言表达要求高。"
+    },
+    {
+      "id": "c17-test2-t1",
+      "source": "剑桥雅思17 · Test 2",
+      "book_ref": "剑桥雅思17真题 Test 2 Writing Task 1",
+      "type": "table",
+      "prompt": "The table illustrates the data on the police budget in which the money came from and the two pie charts describe the distribution of the amount of money in the two of year 2017 and 2018 in an area of Britain. Overall, there was an upward trend in all three different sources while the money spent on salaries was always the majority of contribution.",
+      "difficulty": "进阶",
+      "image_hint": "The data is presented in a table and two pie charts showing police budget information for 2017 and 2018 in a region of Britain. The table shows the sources of funding: 'National Government' contributed 175.5 million pounds in 2017 and increased to 177.8 million pounds in 2018; 'Local Taxes' contributed 91.2 million pounds in 2017 and rose significantly to 102.3 million pounds in 2018. The pie charts show how the budget was spent: salaries accounted for 75% in 2017 and dropped slightly to 69% in 2018; 'Buildings and transport' remained constant at 17% each year; 'Technology' increased from 8% in 2017 to 14% in 2018, which was the lowest category during the period but showed the sharpest rise.",
+      "_diff_reason": "包含表格和两个饼图，需要比较2017和2018年的数据，涉及多组数据对比。"
+    },
+    {
+      "id": "c17-test3-t1",
+      "source": "剑桥雅思17 · Test 3",
+      "book_ref": "剑桥雅思17真题 Test 3 Writing Task 1",
+      "type": "bar chart",
+      "prompt": "The chart below gives information about how families in one country spent their weekly income in 1968 and in 2018.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "入门",
+      "image_hint": "The bar chart compares the average weekly spending by families in one country in 1968 and 2018, expressed as a percentage of weekly income across eight categories: Food, Housing, Fuel and power, Clothing and footwear, Household goods, Personal goods, Transport, and Leisure.\n\nIn 1968, food accounted for the largest share at approximately 35% of income, while housing was around 10%. By 2018, food spending dropped to about 15%, and housing increased significantly to roughly 20%. Fuel and power decreased from about 7% to less than 5%. Clothing and footwear declined from around 10% to about 6%. Household goods remained relatively stable at about 8-9%. Personal goods fell from about 9% to under 5%. Transport rose from around 9% to about 15%. Leisure increased from about 9% to over 20%, becoming the second-largest category after housing in 2018. Overall, there was a shift from essential spending (especially food) to housing and leisure over the 50-year period.",
+      "_diff_reason": "单一 bar chart，仅比较两个年份的支出数据，无需复杂对比或描述流程。"
+    },
+    {
+      "id": "c17-test4-t1",
+      "source": "剑桥雅思17 · Test 4",
+      "book_ref": "剑桥雅思17真题 Test 4 Writing Task 1",
+      "type": "line graph",
+      "prompt": "The graph below shows the number of shops that closed and the number of new shops that opened in one country between 2011 and 2018.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "入门",
+      "image_hint": "The line graph shows the number of shop closures and openings from 2011 to 2018. The solid line represents closures, and the dashed line represents openings. In 2011, approximately 8,500 shops closed and about 8,000 opened. Closures peaked at around 7,200 in 2013 and dropped sharply to just over 500 in 2015 before rising again to about 5,200 in 2016 and stabilizing around 5,000–5,200 from 2017 to 2018. Openings started at around 8,000 in 2011, dropped to about 4,000 in 2012, then gradually increased to around 6,000 in 2014 before declining to about 4,000 in 2015 and remaining relatively stable until 2018, ending at around 3,000. Overall, closures were higher than openings in most years except 2015 and 2018, with a significant dip in closures in 2015.",
+      "_diff_reason": "单一折线图，只有两组数据（关闭和开业店铺数量），无需复杂比较。"
+    },
+    {
+      "id": "c18-test1-t1",
+      "source": "剑桥雅思18 · Test 1",
+      "book_ref": "剑桥雅思18真题 Test 1 Writing Task 1",
+      "type": "line graph",
+      "prompt": "The graph below gives information about the percentage of the population in four Asian countries living in cities from 1970 to 2020, with predictions for 2030 and 2040.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "入门",
+      "image_hint": "The line graph shows the percentage of the population living in cities in four Asian countries—Philippines, Malaysia, Thailand, and Indonesia—from 1970 to 2020, with projections up to 2040. In 1970, Malaysia had the highest urban population percentage at around 32%, followed by the Philippines at approximately 30%. Thailand and Indonesia started at lower levels, around 20% and 15% respectively. From 1970 to 1990, all four countries saw an increase in urbanization, with Malaysia rising sharply to about 45% and the Philippines reaching nearly 50%. After 1990, Malaysia continued to grow steadily, surpassing 80% by 2020 and projected to reach over 85% by 2040. The Philippines' urban population peaked around 1990 at about 50%, then declined slightly before stabilizing and increasing again to around 55% by 2020, with a projected rise to about 60% by 2040. Thailand's urban population grew gradually from 20% in 1970 to about 30% in 2000, then increased more rapidly to around 45% by 2020, with a projection of 50% by 2040. Indonesia showed the slowest initial growth but accelerated after 2000, rising from about 15% in 1970 to roughly 40% in 2020, and is expected to reach around 65% by 2040. Overall, Malaysia has the highest urbanization rate, while Indonesia shows the most significant projected growth.",
+      "_diff_reason": "单一折线图，展示四个国家城市人口比例变化，只有一组主要数据（百分比），无需复杂比较。"
+    },
+    {
+      "id": "c18-test2-t1",
+      "source": "剑桥雅思18 · Test 2",
+      "book_ref": "剑桥雅思18真题 Test 2 Writing Task 1",
+      "type": "bar chart",
+      "prompt": "The chart below shows the number of households in the US by their annual income in 2007, 2011 and 2015.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\nWrite at least 150 words.",
+      "difficulty": "入门",
+      "image_hint": "The bar chart displays the number of US households (in millions) categorized by annual income across three years: 2007, 2011, and 2015. The income brackets are: less than $25,000, $25,000–$49,999, $50,000–$74,999, $75,000–$99,999, and $100,000 or more.\n\nIn 2007: \n- Less than $25,000: ~25 million\n- $25,000–$49,999: ~27 million\n- $50,000–$74,999: ~21 million\n- $75,000–$99,999: ~15 million\n- $100,000 or more: ~30 million\n\nIn 2011:\n- Less than $25,000: ~29 million\n- $25,000–$49,999: ~30 million\n- $50,000–$74,999: ~21 million\n- $75,000–$99,999: ~14 million\n- $100,000 or more: ~28 million\n\nIn 2015:\n- Less than $25,000: ~28 million\n- $25,000–$49,999: ~29 million\n- $50,000–$74,999: ~21 million\n- $75,000–$99,999: ~15 million\n- $100,000 or more: ~33 million\n\nKey trends: The highest number of households consistently falls in the $100,000 or more bracket, increasing from 30 million in 2007 to 33 million in 2015. The lowest-income group (less than $25,000) increased from 25 million in 2007 to 29 million in 2011, then slightly decreased to 28 million in 2015. The middle-income groups ($25,000–$74,999) show relatively stable numbers with minor fluctuations. The $75,000–$99,999 group remained around 14–15 million throughout. Overall, there is a general upward trend in higher-income households, especially those earning $100,000 or more.",
+      "_diff_reason": "单一柱状图，仅展示美国不同收入家庭数量在三个年份的变化，数据组单一，无需复杂比较。"
+    },
+    {
+      "id": "c18-test3-t1",
+      "source": "剑桥雅思18 · Test 3",
+      "book_ref": "剑桥雅思18真题 Test 3 Writing Task 1",
+      "type": "map",
+      "prompt": "The diagram below shows the floor plan of a public library 20 years ago and how it looks now.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "冲刺",
+      "image_hint": "The image shows two floor plans of the Central Library: one from 20 years ago and one from today. In the past, the layout included sections for CDs, videos, and computer games; children's books; adult fiction books; adult non-fiction books; a reading room with newspapers and magazines; tables and chairs; and an enquiry desk for tickets and book returns. The entrance was centrally located. Today, the layout has changed significantly: there is now a storytelling events area with sofas; children's fiction books; all reference books; a computer room; a lecture room; adult fiction books; an information desk; self-service machines; and a café. The entrance remains central, but the space has been reorganized to include modern facilities like computers, self-service machines, and a café. The children's section has expanded, and the adult fiction section has moved to a different location. The old reading room and enquiry desk have been replaced with new functional areas.",
+      "_diff_reason": "地图题无数字数据，需描述布局变化，依赖语言表达，属于冲刺级别。"
+    },
+    {
+      "id": "c18-test4-t1",
+      "source": "剑桥雅思18 · Test 4",
+      "book_ref": "剑桥雅思18真题 Test 4 Writing Task 1",
+      "type": "line graph",
+      "prompt": "From the line graph, we can see the average monthly rise or fall in how much copper, nickel and zinc cost throughout 2014.\nOverall, nickel started with the highest percentage change of the three but ended with the lowest. Zinc started with the smallest change and ended with the highest, and copper prices fluctuated. Prices for all three metals dipped in June.\nIn January the price of nickel was up six per cent, but this dropped to negative three percent in June, ending the year with a one percent increase in both November and December. Copper began the year with an increase of two percent and by May, the price was dropping (by slightly less than one per cent). It rose again, increasing by a percentage point in July, August and September. Zinc saw its most dramatic increase in February, with three per cent and the price fell in June (a one percent decrease). The change was negative until October/November when it began to rise.",
+      "difficulty": "入门",
+      "image_hint": "The line graph shows the average monthly percentage change in the prices of copper, nickel, and zinc throughout 2014. The data spans from January to December. Nickel started at +6% in January, dropped to -3% in June, and ended the year with +1% in both November and December. Copper began with a +2% increase, declined slightly to below +1% by May, then rose gradually by +1% each month from July to September. Zinc had its largest increase in February (+3%), fell to -1% in June, remained negative until October/November, and then began rising again. All three metals experienced a dip in June. Overall trends: nickel started high but ended low; zinc started low but ended high; copper showed fluctuations with a slight upward trend after September.",
+      "_diff_reason": "单一line graph，仅展示2014年三种金属价格变化，数据组数少，描述趋势和比较简单。"
+    },
+    {
+      "id": "c19-test1-t1",
+      "source": "剑桥雅思19 · Test 1",
+      "book_ref": "剑桥雅思19真题 Test 1 Writing Task 1",
+      "type": "line graph",
+      "prompt": "The graph below gives information on the numbers of participants for different activities at one social centre in Melbourne, Australia for the period 2000 to 2020.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "入门",
+      "image_hint": "The line graph shows the number of participants in five different activities at a social centre in Melbourne from 2000 to 2020. The activities are: Film club (solid line with circles), Martial arts (dashed line with triangles), Amateur dramatics (dotted line with diamonds), Table tennis (dash-dot line with squares), and Musical performances (dashed line with crosses).\n\nIn 2000, the Film club had the highest participation at around 65 people, followed by Martial arts at about 38, Amateur dramatics at approximately 25, Table tennis at around 15, and Musical performances at zero.\n\nFrom 2000 to 2005, Film club slightly decreased to about 62, Martial arts dropped to around 32, Amateur dramatics increased to about 28, Table tennis rose to around 20, and Musical performances remained at zero.\n\nBetween 2005 and 2010, Film club declined further to about 60, Martial arts increased to around 38, Amateur dramatics dropped to about 20, Table tennis stayed around 20, and Musical performances began at about 10.\n\nFrom 2010 to 2015, Film club rose to about 64, Martial arts decreased to around 35, Amateur dramatics fell to about 15, Table tennis increased to about 35, and Musical performances rose to about 15.\n\nBy 2020, Film club reached its peak at around 67, Martial arts stabilized at about 36, Amateur dramatics dropped to about 6, Table tennis surged to about 54, and Musical performances reached about 19.\n\nOverall, Film club maintained high participation throughout, while Table tennis showed significant growth. Amateur dramatics declined steadily, and Musical performances started late but grew gradually.",
+      "_diff_reason": "单一折线图，一组主要数据，描述随时间变化的趋势，结构简单。"
+    },
+    {
+      "id": "c19-test2-t1",
+      "source": "剑桥雅思19 · Test 2",
+      "book_ref": "剑桥雅思19真题 Test 2 Writing Task 1",
+      "type": "map",
+      "prompt": "The plans below show a harbour in 2000 and how it looks today.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\nWrite at least 150 words.",
+      "difficulty": "冲刺",
+      "image_hint": "The image shows two maps of Porth Harbour: one from 2000 and one from today. In 2000, the harbour included a public beach, a dock with passenger ferries, a marina for private yachts, fishing boats, a lifeboat station, a disused castle, car parks, showers and toilets, and a road connecting to the main road. The public beach was accessible from both sides of the harbour. Today, the layout has changed significantly: the public beach on the southern side has been replaced by a private beach for a hotel, which is now located on the peninsula where the castle used to be. A new café and shops have been added near the lifeboat station. The marina and fishing boats remain, but the number of boats appears similar. The dock and passenger ferries are still present. The car park has expanded slightly, and there are now two shower and toilet facilities. The road network remains largely unchanged.",
+      "_diff_reason": "地图题无数字，需描述位置变化和特征对比，对语言表达要求高。"
+    },
+    {
+      "id": "c19-test3-t1",
+      "source": "剑桥雅思19 · Test 3",
+      "book_ref": "剑桥雅思19真题 Test 3 Writing Task 1",
+      "type": "process",
+      "prompt": "The given diagram illustrates the various stages in the process of producing ethanol, a kind of biofuel. Overall, there are about 9 main phrases in the ethanol production, starting with growing plants and tress, and finishing with supplying ethanol for transportation and gas mission.",
+      "difficulty": "冲刺",
+      "image_hint": "The process begins with growing trees and plants using sunlight and carbon dioxide. Once mature, they are harvested by machine and processed into cellulose. This cellulose is then taken to a factory where sugars are extracted and microbes are added to produce ethanol. The ethanol is used as fuel for transportation such as cars, trucks, and airplanes. Finally, carbon dioxide released into the air is reused by plants and trees through photosynthesis, completing the cycle.",
+      "_diff_reason": "Task 1 流程图，无数字，需用语言描述步骤和逻辑关系。"
+    },
+    {
+      "id": "c19-test4-t1",
+      "source": "剑桥雅思19 · Test 4",
+      "book_ref": "剑桥雅思19真题 Test 4 Writing Task 1",
+      "type": "multiple charts",
+      "prompt": "The charts below give information on the location and types of dance classes young people in a town in Australia are currently attending.\n\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nWrite at least 150 words.",
+      "difficulty": "进阶",
+      "image_hint": "The first chart is a pie chart showing the location of dance classes attended by young people. Private studios account for 48%, school halls (after-school) for 24%, community halls & other for 18%, and college-based studios for 10%.\n\nThe second chart is a bar chart showing the types of dance classes by age group. For ballet, under 11 students number around 300, while 11–16 students number approximately 450. For tap dancing, under 11 students number about 450, and 11–16 students number around 400. For modern dance, under 11 students number roughly 300, and 11–16 students number about 500. The highest number of students is in the 11–16 age group for all three dance types, with modern dance being the most popular among this group.",
+      "_diff_reason": "包含多个图表（位置和类型），需要比较2-3组数据，属于进阶难度。"
     }
   ],
   "task2": [
@@ -60,6 +271,195 @@
       "difficulty": "冲刺",
       "topic": "technology",
       "prompt": "In many countries, the use of mobile phones and computers is causing serious problems with young people's reading and writing skills.\n\nWhat problems does this cause? What measures can be taken to solve these problems?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words."
+    },
+    {
+      "id": "c14-test1-t2",
+      "source": "剑桥雅思14 · Test 1",
+      "book_ref": "剑桥雅思14真题 Test 1 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Some people believe that it is best to accept a bad situation, such as an unsatisfactory job or shortage of money. Others argue that it is better to try and improve such situations.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "进阶",
+      "_diff_reason": "双面讨论题，需要分别阐述两种观点并给出个人意见，结构要求较高。"
+    },
+    {
+      "id": "c14-test2-t2",
+      "source": "剑桥雅思14 · Test 2",
+      "book_ref": "剑桥雅思14真题 Test 2 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Some people consider that the loss of individual species of plants and animals is the main environmental problem of our time. Attempts to preserve rare or dying species are carried out in zoos or other specialist plant and animal facilities, through breeding programmes, preservation orders and other forms of protection and there was genuine sadness among many when the last surviving white rhino died earlier this year. However, whether saving individual species should be the main focus of environmental protection is debatable. Climate change and excessive use of plastic are just two other major problems that deserve our attention.",
+      "difficulty": "进阶",
+      "_diff_reason": "题目要求讨论双方观点并给出个人意见，属于双面讨论题型，需要平衡论述两个立场。"
+    },
+    {
+      "id": "c14-test3-t2",
+      "source": "剑桥雅思14 · Test 3",
+      "book_ref": "剑桥雅思14真题 Test 3 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "Some people say that music is a good way of bringing people of different cultures and ages together.\n\nTo what extent do you agree or disagree with this opinion?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "单一观点 agree/disagree 题型，结构简单，只需论证一个立场。"
+    },
+    {
+      "id": "c14-test4-t2",
+      "source": "剑桥雅思14 · Test 4",
+      "book_ref": "剑桥雅思14真题 Test 4 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Nowadays many people choose to be self-employed, rather than to work for a company or organisation.\nWhy might this be the case?\nWhat could be the disadvantages of being self-employed?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.",
+      "difficulty": "冲刺",
+      "_diff_reason": "题目要求同时讨论原因和缺点，属于多要求+多段结构，需要全面分析并举例，难度较高。"
+    },
+    {
+      "id": "c15-test3-t2",
+      "source": "剑桥雅思15 · Test 3",
+      "book_ref": "剑桥雅思15真题 Test 3 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Advertisement has always been a crucial part in the world of marketing. Throughout the decade, we have seen a significant increase in the amount of advertisements, whether it is on the media like television or widespread through social network platforms. The goal of advertisements is to get consumers to buy a targeted product, and while this method has been proven considerably successful generally, some people view it as too prevalent to catch the consumers' attention any more.",
+      "difficulty": "进阶",
+      "_diff_reason": "题目要求讨论双方观点并给出个人意见，属于双面讨论题型，需要平衡论述，难度适中。"
+    },
+    {
+      "id": "c15-test4-t2",
+      "source": "剑桥雅思15 · Test 4",
+      "book_ref": "剑桥雅思15真题 Test 4 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "In some cultures, children are often told that they can achieve anything if they try hard enough.\n\nWhat are the advantages and disadvantages of giving children this message?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "进阶",
+      "_diff_reason": "题目要求讨论双面观点（advantages and disadvantages），属于Task 2的进阶难度。"
+    },
+    {
+      "id": "c16-test1-t2",
+      "source": "剑桥雅思16 · Test 1",
+      "book_ref": "剑桥雅思16真题 Test 1 Writing Task 2",
+      "topic": "problem/solution",
+      "prompt": "In some countries, more and more people are becoming interested in finding out about the history of the house or building they live in.\n\nWhat are the reasons for this?\n\nHow can people research this?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "冲刺",
+      "_diff_reason": "题目要求分析原因并提出研究方法，属于多要求+多段结构，需要同时处理两个问题，对逻辑和内容组织要求高。"
+    },
+    {
+      "id": "c16-test3-t2",
+      "source": "剑桥雅思16 · Test 3",
+      "book_ref": "剑桥雅思16真题 Test 3 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "Many manufactured food and drink products contain high levels of sugar, which causes many health problems. Sugary products should be made more expensive to encourage people to consume less sugar.\nDo you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点agree/disagree，结构简单，只需表达立场并论证，无需双面讨论或多要求。"
+    },
+    {
+      "id": "c16-test4-t2",
+      "source": "剑桥雅思16 · Test 4",
+      "book_ref": "剑桥雅思16真题 Test 4 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "In the future all cars, buses and trucks will be driverless. The only people travelling inside these vehicles will be passengers.\nDo you think the advantages of driverless vehicles outweigh the disadvantages?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一的agree/disagree题型，只需讨论利弊并给出观点，结构简单，适合入门级别。"
+    },
+    {
+      "id": "c17-test2-t2",
+      "source": "剑桥雅思17 · Test 2",
+      "book_ref": "剑桥雅思17真题 Test 2 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "Mobile phones, nowadays, contains essential features with entertainment also. There has been a large growth seen in usage hours of smartphones among youngsters. There are several reasons behind this situation and I find this development more beneficial than negative. Both the reasons and my view is elaborated further.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为agree/disagree单一观点题型，结构简单，只需表达个人立场并论证。"
+    },
+    {
+      "id": "c17-test4-t2",
+      "source": "剑桥雅思17 · Test 4",
+      "book_ref": "剑桥雅思17真题 Test 4 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "Nowadays, a growing number of people with health problems are trying alternative medicines and treatments instead of visiting their usual doctor.\n\nDo you think this is a positive or a negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点的agree/disagree题型，结构简单，只需讨论一个方面，属于Task 2中最基础的题型。"
+    },
+    {
+      "id": "c17-test1-t2",
+      "source": "剑桥雅思17 · Test 1",
+      "book_ref": "剑桥雅思17真题 Test 1 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "It is said that taking risks brings a lot of benefits. However, it also gives us some drawbacks.\nFirst of all, it is obvious that taking risks will cause a great loss if people do it and fail. In personal life, this loss might not be so harmful. However, it will be really harmful in professional life, because people take a responsibility not only for themselves but also others such as colleagues, customers and their families. It will even damage the society from the economic point.\nOn the other hand, we can receive huge benefits by taking risks. Firstly, we can learn how to prepare for one goal through this process. In order to achieve the aim, people will make all the efforts to think about it and try to find more efficient way. If they do this in the professional circumstances, they will recognise the responsibility and importance of cooperation.\nAlso, it will be completely meaningful even though people can't achieve the goal after taking risks. They will learn the reason why they have failed and how to change it. The failure will enable them to improve their skills and to achieve their object next time.\nAs I mentioned, it is true that taking risks give us both advantages and disadvantages. However, it can be argued that the benefits outweighed the drawbacks in that we can obtain advantages not only from the result but also from the process of taking risks.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点agree/disagree，结构简单，只需讨论利弊并给出个人立场。"
+    },
+    {
+      "id": "c17-test3-t2",
+      "source": "剑桥雅思17 · Test 3",
+      "book_ref": "剑桥雅思17真题 Test 3 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "As the number of professionals working abroad increases, it is often discussed whether they should stay where hey did their trainings or they should be free to move to another country if they desired to. While I believe theat a person should be free to migrate, I agree that it has negative effects on the country of training.",
+      "difficulty": "进阶",
+      "_diff_reason": "题目要求讨论双方观点并给出个人意见，属于双面讨论题型，需要平衡论述，难度中等。"
+    },
+    {
+      "id": "c18-test1-t2",
+      "source": "剑桥雅思18 · Test 1",
+      "book_ref": "剑桥雅思18真题 Test 1 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "The most important aim of science should be to improve people’s lives.\n\nTo what extent do you agree or disagree with this statement?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "Task 2 agree/disagree 题型，单一观点讨论，结构简单，适合入门级别。"
+    },
+    {
+      "id": "c18-test2-t2",
+      "source": "剑桥雅思18 · Test 2",
+      "book_ref": "剑桥雅思18真题 Test 2 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Some university students want to learn about other subjects in addition to their main subjects. Others believe it is more important to give all their time and attention to studying for a qualification.\nDiscuss both these views and give your own opinion.\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.",
+      "difficulty": "进阶",
+      "_diff_reason": "题目要求讨论双方观点并给出个人意见，属于双面讨论题型，需要平衡论述和清晰立场。"
+    },
+    {
+      "id": "c18-test3-t2",
+      "source": "剑桥雅思18 · Test 3",
+      "book_ref": "剑桥雅思18真题 Test 3 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "In many countries around the world, rural people are moving to cities, so the population in the countryside is decreasing.\n\nDo you think this is a positive or a negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点（positive or negative），结构简单，只需表达立场并论证，属于Task 2入门级别。"
+    },
+    {
+      "id": "c18-test4-t2",
+      "source": "剑桥雅思18 · Test 4",
+      "book_ref": "剑桥雅思18真题 Test 4 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "In many countries, people are now living longer than ever before. Some people say an ageing population creates problems for governments. Other people think there are benefits if society has more elderly people.\n\nTo what extent do the advantages of having an ageing population outweigh the disadvantages?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "进阶",
+      "_diff_reason": "双面讨论题，需要平衡分析利弊并给出个人观点，结构要求较高。"
+    },
+    {
+      "id": "c19-test1-t2",
+      "source": "剑桥雅思19 · Test 1",
+      "book_ref": "剑桥雅思19真题 Test 1 Writing Task 2",
+      "topic": "discuss both views",
+      "prompt": "Some people think that competition at work, at school and in daily life is a good thing. Others believe that we should try to cooperate more, rather than competing against each other.\n\nDiscuss both these views and give your own opinion.\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "进阶",
+      "_diff_reason": "双面讨论题，要求讨论竞争与合作两种观点并给出个人意见，结构复杂，需要平衡论述。"
+    },
+    {
+      "id": "c19-test2-t2",
+      "source": "剑桥雅思19 · Test 2",
+      "book_ref": "剑桥雅思19真题 Test 2 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "The working week should be shorter and workers should have a longer weekend.\nDo you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点agree/disagree，结构简单，只需表达立场并论证，属于Task 2入门级。"
+    },
+    {
+      "id": "c19-test3-t2",
+      "source": "剑桥雅思19 · Test 3",
+      "book_ref": "剑桥雅思19真题 Test 3 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "Saving money for the future is always a very good idea. First of all money is something that is needed in almost all areas in life. Whether you are young or old you need money to buy everyday things like food, clothing, etc. living etc.\n\nYoung people are usually often full of enthusiasm about life their future. They are looking forward to their first job, to meeting new people or to getting to know as much of the world as they can. Many tend to live in the present rather than in the future so that they don't always plan ahead.\n\nWhen you people get older and settle down they realize that buying a house, starting a family or caring for your health takes up a good considerable amount of money and everybody who began saving money in younger years is glad to have done so. However, saving money is not always possible when you are young. Sometimes unforeseen expenses cannot be avoided, life situations are suddenly changing or there is never even enough money available even for the most necessary things. So So how could you save money for the future in this case? In general, you have to ask yourself what your priorities in life are. What are the things you cherish most? Is it more important for you to plan ahead or do you prefer to just enjoy the moment that you live in?\n\nEverybody has to make own choices and to consider what is really essential for him or herself.\n\nIn any age taking a moment to f reflect on your life and looking back at the choices-you things you have already done is always a good thing to do.\n\nIf you know yourself well and alt about all the things that really make you happy you will be able to make the right decisions in financial issues as well as life other areas in life.\n\nIn what way money plays an important role will be easy to be found out then. Perhaps you need less than you first thought years ago.",
+      "difficulty": "入门",
+      "_diff_reason": "题目为单一观点agree/disagree，结构简单，适合基础写作"
+    },
+    {
+      "id": "c19-test4-t2",
+      "source": "剑桥雅思19 · Test 4",
+      "book_ref": "剑桥雅思19真题 Test 4 Writing Task 2",
+      "topic": "agree/disagree",
+      "prompt": "In many countries nowadays, consumers can go to a supermarket and buy food produced all over the world.\n\nDo you think this is a positive or negative development?\n\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.\n\nWrite at least 250 words.",
+      "difficulty": "入门",
+      "_diff_reason": "Task 2 agree/disagree 题型，单一观点讨论，结构简单，适合入门级别。"
     }
   ]
 }
