@@ -94,6 +94,14 @@
 }
 .seg .seg-play { margin-left: auto; color: var(--green-dark); font-size: 11px; opacity: .55; }
 .seg:hover .seg-play { opacity: 1; }
+.seg .seg-hint-lv {
+  margin-left: auto; color: var(--muted); font-size: 11px;
+  padding: 1px 8px; border-radius: 999px; background: var(--accent-soft);
+  color: var(--accent-hover); font-weight: 500;
+}
+.seg.lv1 .seg-en, .seg.lv2 .seg-en {
+  font-family: var(--font-mono); letter-spacing: 0.02em; color: #555;
+}
 .seg .seg-en { font-size: 16px; line-height: 1.55; }
 .seg .seg-zh { margin-top: 2px; color: #556058; font-size: 13px; }
 .seg.playing { border-color: var(--green); background: #eef8ef; box-shadow: 0 0 0 1px var(--green) inset; }

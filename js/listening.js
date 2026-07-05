@@ -93,7 +93,10 @@ let PART = null;
 let segs = [];          // 全部句子(契约顺序)
 let timed = [];         // 有 start 的句子,按 start 升序
 let allItems = [];      // 拍平的所有题目 item
-let revealed = new Set();     // 已揭示英文的句 id
+let revealed = new Set();     // 兼容别名:hintLevels[sid] >= 3 时 revealed.has(sid) === true
+                              // 保留供 dictation / jumpToSegment 等旧逻辑用
+let hintLevels = new Map();   // sid → 0|1|2|3|4:每句的渐进提示级数(N2)
+                              // 0=锁定 / 1=首字母 / 2=前5词+首字母 / 3=完整英文 / 4=完整英文+中文
 let followScroll = true;      // 列表是否跟随播放
 
 let audio = null;
@@ -399,6 +402,20 @@ function renderEnHTML(s) {
   return html + wrapWords(s.en.slice(pos), s.words);
 }
 
+// 首字母模板:把英文文本变成 "T__ p___" 形式(前 keepFirstN 个词完整,其余打码)
+// 标点保留原样,数字保留原样;字母词按 "首字母 + 剩余长度个 _" 打码。
+function maskEn(en, keepFirstN) {
+  const parts = String(en || "").split(/([A-Za-z][A-Za-z'\-]*)/);
+  let wordCount = 0;
+  return parts.map((tok) => {
+    if (!/^[A-Za-z]/.test(tok)) return tok;
+    wordCount++;
+    if (wordCount <= keepFirstN) return tok;
+    const rest = Math.max(1, tok.replace(/['\-]/g, "").length - 1);
+    return tok[0] + "_".repeat(rest);
+  }).join("");
+}
+
 function segRowHTML(s) {
   const i = segs.indexOf(s);
   if (ANNOTATE) {
@@ -417,18 +434,37 @@ function segRowHTML(s) {
   const ansBadge = Array.isArray(s.answers) && s.answers.length
     ? `<span class="seg-ans">题${s.answers.join(",")}</span>` : "";
   const playing = s.id === curSegId ? " playing" : "";
-  if (!revealed.has(s.id)) {
+  const level = hintLevels.get(s.id) || 0;
+
+  // Level 0:锁定,只显示句号 + 时间 + 提示按钮
+  if (level === 0) {
     return `<div class="seg locked${playing}" data-sid="${s.id}">
       <span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      <span class="seg-lock">🔒 点击揭示 + 跳播</span>${ansBadge}
+      <span class="seg-lock">🔒 点击提示 + 跳播</span>${ansBadge}
     </div>`;
   }
-  return `<div class="seg open${playing}" data-sid="${s.id}">
+
+  // Level 1-4:根据 level 决定英文渲染 + 是否显示中文
+  let enHtml;
+  if (level === 1) {
+    enHtml = esc(maskEn(s.en, 0));                              // 全首字母
+  } else if (level === 2) {
+    enHtml = esc(maskEn(s.en, 5));                              // 前 5 词 + 首字母
+  } else {
+    enHtml = renderEnHTML(s);                                    // Level 3/4:完整英文(带 wtip + para-hl)
+  }
+  const showZh = level >= 4;
+
+  const nextTip = level < 4
+    ? `<span class="seg-hint-lv">💡 提示 ${level}/4 · 再点${["", "关键词", "完整英文", "中文", ""][level]}</span>`
+    : `<span class="seg-hint-lv">✓ 全部揭示 · 再点跳播</span>`;
+
+  return `<div class="seg open lv${level}${playing}" data-sid="${s.id}">
     <div class="seg-meta"><span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
       ${s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}${ansBadge}
-      <span class="seg-play">▶ 点击跳播</span></div>
-    <div class="seg-en">${renderEnHTML(s)}</div>
-    <div class="seg-zh">${esc(s.zh || "")}</div>
+      ${nextTip}</div>
+    <div class="seg-en">${enHtml}</div>
+    ${showZh ? `<div class="seg-zh">${esc(s.zh || "")}</div>` : ""}
   </div>`;
 }
 
@@ -443,7 +479,7 @@ function renderTranscript() {
         <span>逐句转写 · 共 ${segs.length} 句</span>
         <span>
           <label class="tr-follow"><input type="checkbox" id="tr-follow" ${followScroll ? "checked" : ""}>跟随播放</label>
-          <button type="button" id="tr-all">${revealed.size >= segs.length ? "全部遮住" : "全部揭示"}</button>
+          <button type="button" id="tr-all">${allFullyRevealed() ? "全部收起" : "全部揭示"}</button>
         </span>
       </div>`;
   transcriptEl.innerHTML = bar + segs.map(segRowHTML).join("");
@@ -459,10 +495,15 @@ function rerenderRow(sid) {
 }
 
 function jumpToSegment(sid) {
-  if (!revealed.has(sid) && !ANNOTATE) {
-    revealed.add(sid);
-    rerenderRow(sid);
-    refreshTrAllBtn();
+  // 从题目跳过来 → 直接推到 Level 4(完整英文 + 中文)方便看答案
+  if (!ANNOTATE) {
+    const cur = hintLevels.get(sid) || 0;
+    if (cur < 4) {
+      hintLevels.set(sid, 4);
+      revealed.add(sid);
+      rerenderRow(sid);
+      refreshTrAllBtn();
+    }
   }
   const row = transcriptEl.querySelector(`.seg[data-sid="${sid}"]`);
   if (!row) return;
@@ -471,15 +512,26 @@ function jumpToSegment(sid) {
   requestAnimationFrame(() => row.classList.add("pulse"));
 }
 
+function allFullyRevealed() {
+  return segs.length > 0 && segs.every((s) => (hintLevels.get(s.id) || 0) >= 4);
+}
+
 function refreshTrAllBtn() {
   const btn = document.getElementById("tr-all");
-  if (btn) btn.textContent = revealed.size >= segs.length ? "全部遮住" : "全部揭示";
+  if (btn) btn.textContent = allFullyRevealed() ? "全部收起" : "全部揭示";
 }
 
 transcriptEl.addEventListener("click", (ev) => {
   if (ev.target.id === "tr-all") {
-    if (revealed.size >= segs.length) revealed.clear();
-    else segs.forEach((s) => revealed.add(s.id));
+    if (allFullyRevealed()) {
+      hintLevels.clear();
+      revealed.clear();
+    } else {
+      segs.forEach((s) => {
+        hintLevels.set(s.id, 4);
+        revealed.add(s.id);
+      });
+    }
     renderTranscript();
     return;
   }
@@ -518,13 +570,14 @@ transcriptEl.addEventListener("click", (ev) => {
     refreshAnnPanel();
     return;
   }
-  // 单次点击:揭示中文(如未揭示)+ 跳到该句起点播放。
-  // 未打点/音频缺失时 playSegment 内部会静默忽略。
-  if (!revealed.has(sid)) {
-    revealed.add(sid);
-    rerenderRow(sid);
-    refreshTrAllBtn();
-  }
+  // N2:4 级渐进提示。每次点句:hintLevel 累加 (0→1→2→3→4) + 跳播。
+  // Level ≥ 3 时同步维护 revealed set 兼容旧代码(dictation 判分等)。
+  const cur = hintLevels.get(sid) || 0;
+  const next = Math.min(4, cur + 1);
+  hintLevels.set(sid, next);
+  if (next >= 3) revealed.add(sid); else revealed.delete(sid);
+  rerenderRow(sid);
+  refreshTrAllBtn();
   playSegment(s);
 });
 
