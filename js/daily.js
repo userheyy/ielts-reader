@@ -2,7 +2,7 @@
 import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
 import { gradeReview } from "./store.js?v=6";
 import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=1";
-import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import {
   ensureTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
@@ -20,7 +20,7 @@ let queue = [];           // 待过的词队列: [{entry, kind:'review'|'new', o
 let currentItem = null;
 let seedIndex = new Map();
 
-initSpeechControls($("speech-voice"), $("speech-rate"), $("speech-stop"));
+/* 朗读控件已迁移到 settings.html(F5) */
 
 // ---- 热力图 ----
 function renderHeatmap() {

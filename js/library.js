@@ -1,7 +1,7 @@
 // 词库页:展示内置雅思核心词,支持"按词根成组 / 按词频列表"两视图、搜索、加入复习、朗读。
 import { renderAids, aidsHasContent } from "./aids.js?v=1";
 import { loadSeed, getSeedMeta, isSeedAdded, setSeedAdded, seedAddedCount, groupSeedByRoot } from "./seed.js?v=1";
-import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import {speakEnglish, speechSupported} from "./speech.js?v=6";
 
 const bodyEl = document.getElementById("lib-body");
 const emptyEl = document.getElementById("lib-empty");
@@ -11,11 +11,7 @@ const searchEl = document.getElementById("lib-search");
 let allWords = [];
 let view = "root"; // 'root' | 'list'
 
-initSpeechControls(
-  document.getElementById("speech-voice"),
-  document.getElementById("speech-rate"),
-  document.getElementById("speech-stop"),
-);
+/* 朗读控件已迁移到 settings.html(F5) */
 
 function esc(s) {
   return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");

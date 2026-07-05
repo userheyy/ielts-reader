@@ -1,6 +1,6 @@
 import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStats } from "./store.js?v=6";
 import { bindProfileBackupUI } from "./profile-backup.js";
-import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
 import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=1";
 
@@ -65,11 +65,7 @@ function poolWeight(entry, now = new Date()) {
   return Math.max(0.15, dueScore + newScore + difficultyScore + levelScore);
 }
 
-initSpeechControls(
-  document.getElementById("speech-voice"),
-  document.getElementById("speech-rate"),
-  document.getElementById("speech-stop"),
-);
+/* 朗读控件已迁移到 settings.html(F5) */
 
 function speakWord(word, button) {
   if (!word) return;

@@ -1,7 +1,7 @@
 import { validatePassage } from "./schema.js";
 import { has } from "./store.js";
 import { getImportedPassage } from "./passage-store.js";
-import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { renderDeep, renderParaphrase } from "./deep.js";
 import { openWordPopup } from "./word-popup.js?v=1";
 
@@ -14,11 +14,7 @@ const rightEl = document.getElementById("right");
 const questionsEl = document.getElementById("questions");
 const srcEl = document.getElementById("src");
 
-initSpeechControls(
-  document.getElementById("speech-voice"),
-  document.getElementById("speech-rate"),
-  document.getElementById("speech-stop"),
-);
+/* 朗读控件已迁移到 settings.html(F5) */
 
 // 词典 + 弹窗查词 + 入库 都由 js/word-popup.js 统一处理(reader 与 listening 共用)。
 

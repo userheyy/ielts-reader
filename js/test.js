@@ -5,7 +5,7 @@
 
 import { ensureDict, lookup } from "./dict.js?v=1";
 import { recordResult, wrongWords, wrongCount, summary } from "./test-store.js?v=1";
-import { initSpeechControls, speakEnglish, speechSupported } from "./speech.js?v=6";
+import {speakEnglish, speechSupported} from "./speech.js?v=6";
 
 const GROUP_SIZE = 10;
 const BANK_URL = "data/quiz-bank.json";
@@ -28,11 +28,7 @@ const optionsEl = document.getElementById("q-options");
 const explainEl = document.getElementById("q-explain");
 const nextBtn = document.getElementById("q-next");
 
-initSpeechControls(
-  document.getElementById("speech-voice"),
-  document.getElementById("speech-rate"),
-  document.getElementById("speech-stop"),
-);
+/* 朗读控件已迁移到 settings.html(F5) */
 
 // ---- 状态 ----
 let BANK = [];            // 题库 [{word,pos,sentence,sentence_zh,explain}]

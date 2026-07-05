@@ -31,16 +31,7 @@
       <button class="lib-tab" data-view="list">按词频列表</button>
     </div>
     <input type="text" class="lib-search" id="lib-search" placeholder="搜索单词或释义…" />
-    <div class="speech-controls" style="margin:0 0 14px;display:inline-flex" aria-label="单词朗读设置">
-      <span>发音</span>
-      <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
-      <select id="speech-rate" aria-label="朗读速度">
-        <option value="0.7">慢速 0.7×</option>
-        <option value="0.9">清晰 0.9×</option>
-        <option value="1" selected>正常 1×</option>
-      </select>
-      <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
-    </div>
+    <!-- 朗读控件统一在 settings.html 配置 -->
     <div id="lib-body"></div>
     <p class="lib-empty" id="lib-empty" hidden>词库还没有数据。第一批词生成后会出现在这里。</p>
   </div>

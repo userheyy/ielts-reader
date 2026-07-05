@@ -54,8 +54,27 @@
     <div class="card set-card">
       <h3>朗读设置</h3>
       <p class="set-desc">
-        朗读的发音人和语速不在这里设置:阅读器、词库、生词库页面里都有「发音」工具条,
-        在那里选好发音人和语速,会自动记住,下次打开还是你选的。
+        英语发音人 + 语速统一在这里设置,全站朗读(阅读句子、词库单词、复习卡)都用你选的音色和语速。
+        用的是浏览器自带的 speechSynthesis,不联网、不上传。
+      </p>
+      <div class="set-row">
+        <label for="speech-voice">发音人</label>
+        <select id="speech-voice" style="max-width:340px"><option>加载中…</option></select>
+      </div>
+      <div class="set-row">
+        <label for="speech-rate">语速</label>
+        <select id="speech-rate">
+          <option value="0.7">慢速 0.7×</option>
+          <option value="0.9">清晰 0.9×</option>
+          <option value="1">正常 1×</option>
+        </select>
+      </div>
+      <div class="set-actions">
+        <button type="button" id="speech-test" class="ghostbtn set-btn">试听一句</button>
+        <button type="button" id="speech-stop" class="ghostbtn set-btn">停止朗读</button>
+      </div>
+      <p class="set-warn" style="color:var(--muted)">
+        找不到英语音色?到系统「语音 / 语言与地区」里添加英语语言包后刷新本页。
       </p>
     </div>
 

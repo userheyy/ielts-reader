@@ -1,5 +1,17 @@
-// 设置页逻辑:DeepSeek API Key / 模型名的保存、清除、显示切换、测试连接。
+// 设置页逻辑:DeepSeek API Key / 模型名 + 全站朗读(voice/rate)统一入口。
 // key 存 localStorage 'ielts_ds_key',模型存 'ielts_ds_model'(与 js/ai.js 约定一致)。
+// 朗读 voice/rate 存 localStorage 'ielts_speech_voice' / 'ielts_speech_rate'(见 js/speech.js)。
+import { initSpeechControls, speakEnglish, stopSpeaking } from "./speech.js?v=6";
+
+// ---- 朗读控件挂载(voice/rate 存 localStorage,全站朗读读同一份) ----
+initSpeechControls(
+  document.getElementById("speech-voice"),
+  document.getElementById("speech-rate"),
+  document.getElementById("speech-stop"),
+);
+document.getElementById("speech-test").addEventListener("click", () => {
+  speakEnglish("The quick brown fox jumps over the lazy dog. IELTS is a test of English proficiency.");
+});
 
 const KEY_LS = "ielts_ds_key";
 const MODEL_LS = "ielts_ds_model";
