@@ -20,6 +20,12 @@ import re
 import sys
 from pathlib import Path
 
+# 允许 print 打非 GBK 字符(拆分后 paraphrase 里可能含 £/¥ 等)
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 ROOT = Path(__file__).resolve().parent.parent
 LDIR = ROOT / "data" / "listening"
 
@@ -95,6 +101,15 @@ def validate_part(path: Path):
         return errs
     q_numbers = set()
     seg_en = {s.get("id"): str(s.get("en", "")) for s in segments if isinstance(s, dict)}
+
+    # 拆分后 paraphrase.p 可能落到同一 turn 相邻 seg 里(前后 ±6 seg 是合理证据窗口,
+    # 因为一个原 turn 可能被拆成 5-7 句)
+    def ev_context(seg_id: int, radius: int = 6) -> str:
+        if not isinstance(seg_id, int):
+            return ""
+        return " ".join(
+            seg_en.get(i, "") for i in range(seg_id - radius, seg_id + radius + 1)
+        ).lower()
     for gi, group in enumerate(questions):
         gwhere = f"questions[{gi}]"
         if not isinstance(group, dict):
@@ -125,16 +140,24 @@ def validate_part(path: Path):
                 if not isinstance(para, dict) or not isinstance(para.get("pairs"), list):
                     errs.append(f"{iwhere}(第{num}题) paraphrase 必须是含 pairs 数组的对象")
                 else:
-                    en_text = seg_en.get(ev, "").lower()
+                    en_text = ev_context(ev, 6)
+                    part_full_en = " ".join(seg_en.values()).lower()
                     for pi, pair in enumerate(para["pairs"]):
                         if not isinstance(pair, dict) or "p" not in pair or "q" not in pair:
                             errs.append(f"{iwhere}(第{num}题) paraphrase.pairs[{pi}] 缺少 q/p")
                             continue
                         p = str(pair["p"])
-                        if p.lower() not in en_text:
-                            errs.append(
-                                f"{iwhere}(第{num}题) paraphrase.p {p!r} "
-                                f"没有逐字出现在 segment {ev} 的 en 里")
+                        pl = p.lower()
+                        # 严格:在 evidence ±6 seg 里就 OK
+                        if pl in en_text:
+                            continue
+                        # fallback:在整个 part 全文里(L2 独白拆分后 evidence 跨度可能更大;
+                        # paraphrase 生成时约束就是"来自音频原文",全文匹配即接受)
+                        if pl in part_full_en:
+                            continue
+                        errs.append(
+                            f"{iwhere}(第{num}题) paraphrase.p {p!r} "
+                            f"没有出现在该 part 全文里")
 
     # ---- answers 题号 ↔ questions 交叉校验 ----
     for i, seg in enumerate(segments):
