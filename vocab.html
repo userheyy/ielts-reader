@@ -3,82 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>生词库</title>
-  <link rel="stylesheet" href="css/style.css?v=5" />
+  <title>雅思备考 · 生词</title>
+  <link rel="stylesheet" href="css/style.css?v=8" />
+  <style>
+    /* 生词页 4 tab 壳(今日/复习/词库/测试)。原 daily/library/test 页复用 iframe 嵌入。 */
+    .vocab-tabs { display: flex; gap: 6px; border-bottom: 1px solid #ddd; margin: 12px 0 16px; }
+    .vocab-tabs .tab {
+      padding: 8px 16px; background: #f6f6f6; border: 1px solid #ddd; border-bottom: none;
+      border-radius: 6px 6px 0 0; cursor: pointer; font-size: 14px;
+    }
+    .vocab-tabs .tab.active { background: #fff; border-color: #ddd; font-weight: 600; color: #2b6cb0; }
+    .vocab-tab-content { display: none; }
+    .vocab-tab-content.active { display: block; }
+    .vocab-iframe {
+      width: 100%; min-height: calc(100vh - 200px);
+      border: none; background: #fff;
+    }
+  </style>
 </head>
 <body>
   <header class="topbar">
     <h1>雅思备考</h1>
     <a href="index.html">文章库</a>
     <a href="listening.html">听力</a>
-    <a href="daily.html">每日</a>
-    <a href="vocab.html">生词库</a>
-    <a href="library.html">词库</a>
-    <a href="test.html">测试</a>
+    <a href="writing.html">写作</a>
+    <a href="speaking.html">口语</a>
+    <a href="vocab.html" class="active">生词</a>
     <a href="grammar.html">语法书</a>
     <a href="settings.html">设置</a>
   </header>
   <div class="container">
-    <section class="review-studio" id="review-studio">
-      <div class="review-intro">
-        <span class="eyebrow">MEMORY LOOP</span>
-        <h2>随机复习</h2>
-        <p>错得越多，出现得越频繁；记得越牢，再见面的间隔越长。</p>
-        <div class="review-stats" id="review-stats"></div>
-        <div class="review-buttons">
-          <button id="start-review">开始抽词</button>
-          <div class="speech-controls vocab-speech-controls" aria-label="单词朗读设置">
-            <span>发音</span>
-            <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
-            <select id="speech-rate" aria-label="朗读速度">
-              <option value="0.7">慢速 0.7×</option>
-              <option value="0.9">清晰 0.9×</option>
-              <option value="1">正常 1×</option>
-            </select>
-            <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
+    <div class="vocab-tabs">
+      <button class="tab" data-tab="daily" type="button">今日</button>
+      <button class="tab active" data-tab="review" type="button">复习</button>
+      <button class="tab" data-tab="library" type="button">词库</button>
+      <button class="tab" data-tab="test" type="button">测试</button>
+    </div>
+
+    <!-- 今日 tab:懒加载 daily.html?embed=1 -->
+    <div class="vocab-tab-content" data-content="daily">
+      <iframe class="vocab-iframe" data-src="daily.html?embed=1" title="今日任务"></iframe>
+    </div>
+
+    <!-- 复习 tab:原生复习卡 + 生词表(vocab.js 直接操作) -->
+    <div class="vocab-tab-content active" data-content="review">
+      <section class="review-studio" id="review-studio">
+        <div class="review-intro">
+          <span class="eyebrow">MEMORY LOOP</span>
+          <h2>随机复习</h2>
+          <p>错得越多，出现得越频繁；记得越牢，再见面的间隔越长。</p>
+          <div class="review-stats" id="review-stats"></div>
+          <div class="review-buttons">
+            <button id="start-review">开始抽词</button>
+            <div class="speech-controls vocab-speech-controls" aria-label="单词朗读设置">
+              <span>发音</span>
+              <select id="speech-voice" aria-label="英语发音人"><option>加载语音…</option></select>
+              <select id="speech-rate" aria-label="朗读速度">
+                <option value="0.7">慢速 0.7×</option>
+                <option value="0.9">清晰 0.9×</option>
+                <option value="1">正常 1×</option>
+              </select>
+              <button id="speech-stop" class="speech-stop" title="停止朗读">■</button>
+            </div>
           </div>
         </div>
+        <div class="review-card idle" id="review-card">
+          <div class="review-progress" id="review-progress">等待开始</div>
+          <div class="review-word-line">
+            <div class="review-word" id="review-word">Ready?</div>
+            <button class="speak-review-word" id="speak-review-word" title="朗读当前单词" disabled>🔊</button>
+          </div>
+          <div class="review-pos" id="review-pos"></div>
+          <div class="review-hint" id="review-hint" hidden>
+            <div id="review-hint-morph"></div>
+            <span class="hint-tip">先看词根，试着推出词义，再翻答案 —— 主动回忆更牢</span>
+          </div>
+          <div class="review-answer" id="review-answer">
+            <strong id="review-def"></strong>
+            <p id="review-example"></p>
+            <div id="review-aids"></div>
+          </div>
+          <button class="reveal" id="reveal-answer" disabled>显示释义 + 记忆法</button>
+          <div class="review-actions" id="review-actions" hidden>
+            <button data-rating="forgot">忘记了 <small>很快再来</small></button>
+            <button data-rating="fuzzy">有点模糊 <small>明天复习</small></button>
+            <button data-rating="remembered">记住了 <small>拉长间隔</small></button>
+          </div>
+        </div>
+      </section>
+      <div class="vocab-tools">
+        <input type="text" id="search" placeholder="搜索单词或出处…" />
+        <button id="export">备份生词</button>
+        <label class="filebtn">恢复生词备份<input type="file" id="import" accept="application/json" hidden /></label>
+        <button id="profile-export" class="ghostbtn">全量备份</button>
+        <label class="filebtn ghostfile">恢复全量备份<input type="file" id="profile-import" accept="application/json" hidden /></label>
+        <span class="vocab-count" id="count"></span>
       </div>
-      <div class="review-card idle" id="review-card">
-        <div class="review-progress" id="review-progress">等待开始</div>
-        <div class="review-word-line">
-          <div class="review-word" id="review-word">Ready?</div>
-          <button class="speak-review-word" id="speak-review-word" title="朗读当前单词" disabled>🔊</button>
-        </div>
-        <div class="review-pos" id="review-pos"></div>
-        <div class="review-hint" id="review-hint" hidden>
-          <div id="review-hint-morph"></div>
-          <span class="hint-tip">先看词根，试着推出词义，再翻答案 —— 主动回忆更牢</span>
-        </div>
-        <div class="review-answer" id="review-answer">
-          <strong id="review-def"></strong>
-          <p id="review-example"></p>
-          <div id="review-aids"></div>
-        </div>
-        <button class="reveal" id="reveal-answer" disabled>显示释义 + 记忆法</button>
-        <div class="review-actions" id="review-actions" hidden>
-          <button data-rating="forgot">忘记了 <small>很快再来</small></button>
-          <button data-rating="fuzzy">有点模糊 <small>明天复习</small></button>
-          <button data-rating="remembered">记住了 <small>拉长间隔</small></button>
-        </div>
-      </div>
-    </section>
-    <div class="vocab-tools">
-      <input type="text" id="search" placeholder="搜索单词或出处…" />
-      <button id="export">备份生词</button>
-      <label class="filebtn">恢复生词备份<input type="file" id="import" accept="application/json" hidden /></label>
-      <button id="profile-export" class="ghostbtn">全量备份</button>
-      <label class="filebtn ghostfile">恢复全量备份<input type="file" id="profile-import" accept="application/json" hidden /></label>
-      <span class="vocab-count" id="count"></span>
+      <table class="vocab">
+        <thead>
+          <tr><th>单词</th><th>释义</th><th>记忆法</th><th>出处</th><th>时间</th><th></th></tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p id="empty" style="display:none;color:var(--muted);margin-top:16px">生词库还是空的。去阅读文章时点单词入库吧。</p>
     </div>
-    <table class="vocab">
-      <thead>
-        <tr><th>单词</th><th>释义</th><th>记忆法</th><th>出处</th><th>时间</th><th></th></tr>
-      </thead>
-      <tbody id="rows"></tbody>
-    </table>
-    <p id="empty" style="display:none;color:var(--muted);margin-top:16px">生词库还是空的。去阅读文章时点单词入库吧。</p>
+
+    <!-- 词库 tab:懒加载 library.html?embed=1 -->
+    <div class="vocab-tab-content" data-content="library">
+      <iframe class="vocab-iframe" data-src="library.html?embed=1" title="词库"></iframe>
+    </div>
+
+    <!-- 测试 tab:懒加载 test.html?embed=1 -->
+    <div class="vocab-tab-content" data-content="test">
+      <iframe class="vocab-iframe" data-src="test.html?embed=1" title="单词测试"></iframe>
+    </div>
   </div>
+
+  <script>
+    // Tab 切换 + URL hash 记忆当前 tab。原生复习内容默认可见,其他 3 个 tab 用 iframe 懒加载。
+    (function () {
+      const tabs = document.querySelectorAll('.vocab-tabs .tab');
+      const panels = document.querySelectorAll('.vocab-tab-content');
+      function activate(name) {
+        tabs.forEach((b) => b.classList.toggle('active', b.dataset.tab === name));
+        panels.forEach((p) => {
+          const on = p.dataset.content === name;
+          p.classList.toggle('active', on);
+          if (on) {
+            const iframe = p.querySelector('.vocab-iframe');
+            if (iframe && !iframe.src && iframe.dataset.src) iframe.src = iframe.dataset.src;
+          }
+        });
+        const newHash = name === 'review' ? '' : '#' + name;
+        if (location.hash !== newHash) history.replaceState(null, '', location.pathname + newHash);
+      }
+      tabs.forEach((btn) => btn.addEventListener('click', () => activate(btn.dataset.tab)));
+      window.addEventListener('hashchange', () => activate((location.hash || '#review').slice(1) || 'review'));
+      const initial = (location.hash || '#review').slice(1) || 'review';
+      activate(initial);
+    })();
+  </script>
   <script type="module" src="js/vocab.js?v=8"></script>
 </body>
 </html>

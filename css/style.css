@@ -1,3 +1,9 @@
+/* embed 模式:被 vocab.html iframe 引入的子页(daily/library/test)加 ?embed=1
+   会由页头脚本给 <html> 加 .embed 类,这里统一隐藏顶栏留出内容区。 */
+html.embed .topbar { display: none !important; }
+html.embed body { padding-top: 0; margin: 0; }
+html.embed .container { padding-top: 8px; }
+
 :root {
   --green: #7bc47f;
   --green-dark: #4a9d5b;
