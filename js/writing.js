@@ -56,7 +56,7 @@ function renderTask(kind) {
   document.getElementById(`${kind}-prompt`).textContent = t.prompt || "";
   const hintEl = document.getElementById(`${kind}-hint`);
   hintEl.innerHTML = t.image_hint
-    ? `<b>图表/流程要点(替代图片,供你练笔时参考):</b><br>${esc(t.image_hint)}`
+    ? `<b>📊 数据要点(该真题原为图表,这里以文字描述数据代替,请按此写作):</b><br>${esc(t.image_hint)}`
     : "";
   // 切换选题时清空作文和结果,避免混淆
   document.getElementById(`${kind}-essay`).value = "";

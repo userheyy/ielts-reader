@@ -4,18 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>每日单词</title>
-  <link rel="stylesheet" href="css/style.css?v=8" />
+  <link rel="stylesheet" href="css/style.css?v=9" />
   <script>if(new URLSearchParams(location.search).get("embed")==="1")document.documentElement.classList.add("embed");</script>
 </head>
 <body>
   <header class="topbar">
     <h1>雅思备考</h1>
-    <a href="index.html">文章库</a>
+    <a href="index.html">阅读</a>
     <a href="listening.html">听力</a>
     <a href="writing.html">写作</a>
     <a href="speaking.html">口语</a>
     <a href="vocab.html">生词</a>
-    <a href="grammar.html">语法书</a>
+    <a href="grammar.html">语法</a>
     <a href="settings.html">设置</a>
   </header>
   <div class="container">
@@ -49,7 +49,7 @@
       </div>
       <div class="today-buttons">
         <button class="start-btn" id="start-btn">开始今日任务 →</button>
-        <button class="pace-btn" id="pace-btn">⚙️ 节奏设置</button>
+        <button class="pace-btn" id="pace-btn">⚙️ 任务设置</button>
       </div>
       <div class="mini-note" id="mini-note">全部清完，今天的格子就会点亮；到期复习词会自动回到任务里。</div>
     </section>
@@ -104,10 +104,10 @@
     </section>
   </div>
 
-  <!-- 节奏设置弹层 -->
+  <!-- 任务设置弹层 -->
   <div class="pace-modal" id="pace-modal" hidden>
     <div class="pace-panel">
-      <h3>每日节奏</h3>
+      <h3>每日任务安排</h3>
       <p class="pace-hint">复习词到期尽量全过（不欠债），你调的是每天学多少新词。</p>
       <div class="pace-list" id="pace-list">
         <button class="pace-opt" data-new="20">🐢 轻松 · <b>20</b> 新词/天</button>
