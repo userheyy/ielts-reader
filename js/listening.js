@@ -416,13 +416,13 @@ function segRowHTML(s) {
   if (!revealed.has(s.id)) {
     return `<div class="seg locked${playing}" data-sid="${s.id}">
       <span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      <span class="seg-lock">🔒 点击揭示英文</span>${ansBadge}
+      <span class="seg-lock">🔒 点击揭示 + 跳播</span>${ansBadge}
     </div>`;
   }
   return `<div class="seg open${playing}" data-sid="${s.id}">
     <div class="seg-meta"><span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
       ${s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}${ansBadge}
-      <span class="seg-play">▶ 再点跳播</span></div>
+      <span class="seg-play">▶ 点击跳播</span></div>
     <div class="seg-en">${renderEnHTML(s)}</div>
     <div class="seg-zh">${esc(s.zh || "")}</div>
   </div>`;
@@ -494,13 +494,14 @@ transcriptEl.addEventListener("click", (ev) => {
     refreshAnnPanel();
     return;
   }
-  if (!revealed.has(sid)) { // 第一次点:揭示
+  // 单次点击:揭示中文(如未揭示)+ 跳到该句起点播放。
+  // 未打点/音频缺失时 playSegment 内部会静默忽略。
+  if (!revealed.has(sid)) {
     revealed.add(sid);
     rerenderRow(sid);
     refreshTrAllBtn();
-    return;
   }
-  playSegment(s); // 再点:跳播(未打点/无音频时静默忽略)
+  playSegment(s);
 });
 
 // ============================================================
