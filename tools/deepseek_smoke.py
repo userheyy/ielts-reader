@@ -28,7 +28,7 @@ def main():
     print(f"[2/2] JSON 模式 ({time.time()-t0:.1f}s): {obj}")
 
     print(client.report())
-    print("冒烟测试通过 ✔")
+    print("冒烟测试通过")
 
 
 if __name__ == "__main__":

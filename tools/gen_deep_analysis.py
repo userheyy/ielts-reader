@@ -237,7 +237,7 @@ def main():
         with open(err_path, "w", encoding="utf-8") as f:
             for sid, errs in fails:
                 f.write(f"句{sid}:\n" + "\n".join("  - " + e for e in errs) + "\n")
-        print(f"⚠ {len(fails)} 句未通过校验 → {err_path}")
+        print(f"[!] {len(fails)} 句未通过校验 → {err_path}")
     print(f"完成:成功 {len(out['sentences'])} 句,失败 {len(fails)} 句")
     print(client.report())
 

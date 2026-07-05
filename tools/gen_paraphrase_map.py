@@ -118,7 +118,7 @@ def main():
         with open(err_path, "w", encoding="utf-8") as f:
             for num, errs in fails:
                 f.write(f"第{num}题:\n" + "\n".join("  - " + e for e in errs) + "\n")
-        print(f"⚠ {len(fails)} 题未通过 → {err_path}")
+        print(f"[!] {len(fails)} 题未通过 → {err_path}")
     print(f"完成:成功 {len(out['items'])} 题,失败 {len(fails)} 题")
     print(client.report())
 

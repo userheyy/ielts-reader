@@ -43,7 +43,7 @@ def main():
         for sid_str, deep in draft["sentences"].items():
             sid = int(sid_str)
             if sid not in id2sentence:
-                print(f"  ⚠ 草稿句{sid} 不存在于文章,跳过")
+                print(f"  [!] 草稿句{sid} 不存在于文章,跳过")
                 continue
             id2sentence[sid]["deep"] = deep
             n_deep += 1
@@ -60,7 +60,7 @@ def main():
         for num_str, para in draft["items"].items():
             num = int(num_str)
             if num not in num2item:
-                print(f"  ⚠ 草稿第{num}题不存在于文章,跳过")
+                print(f"  [!] 草稿第{num}题不存在于文章,跳过")
                 continue
             num2item[num]["paraphrase"] = para
             n_para += 1

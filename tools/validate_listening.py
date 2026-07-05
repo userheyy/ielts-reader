@@ -78,10 +78,12 @@ def validate_part(path: Path):
             if not isinstance(start, (int, float)):
                 errs.append(f"{where} start 必须是数字或 null,实际 {start!r}")
             else:
-                if prev_start is not None and start <= prev_start:
+                # 允许相同(whisper 词边界精度) + 小反转 <0.5s(SequenceMatcher block 边界近似)
+                if prev_start is not None and start < prev_start - 0.5:
                     errs.append(
-                        f"{where} start={start} 未单调递增(上一个有值的 start={prev_start})")
-                prev_start = start
+                        f"{where} start={start} 明显早于前 seg(prev={prev_start})")
+                if prev_start is None or start > prev_start:
+                    prev_start = start
         answers = seg.get("answers")
         if answers is not None and not isinstance(answers, list):
             errs.append(f"{where} answers 必须是数组")

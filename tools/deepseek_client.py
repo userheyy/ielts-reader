@@ -133,4 +133,4 @@ class DeepSeekClient:
                 + self.total_completion * PRICE_OUT) / 1_000_000
         return (f"[usage] 请求 {self.requests} 次 | 输入 {self.total_prompt} tok"
                 f"(缓存命中 {self.total_prompt_hit}) | 输出 {self.total_completion} tok"
-                f" | 估价 ≈ ¥{cost:.3f}")
+                f" | 估价 ≈ {cost:.3f} 元")
