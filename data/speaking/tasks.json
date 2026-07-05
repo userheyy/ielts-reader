@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "note": "口语题库(占位版)。后续可从剑桥雅思真题 Speaking Part 或题库网站扩充。所有题干为通用类型,与真机考话题相同分布。",
+    "part_targets": { "part1": "30-45s / 题", "part2": "1-2 min 单独讲述", "part3": "45-60s / 题" }
+  },
+  "part1": [
+    {
+      "id": "p1-work-study",
+      "topic": "Work / Study",
+      "questions": [
+        "What do you do? Do you work or study?",
+        "Why did you choose that subject / job?",
+        "What do you enjoy most about it?",
+        "What are you future plans in this field?"
+      ]
+    },
+    {
+      "id": "p1-hometown",
+      "topic": "Hometown",
+      "questions": [
+        "Where is your hometown?",
+        "Do you like your hometown? Why?",
+        "How has your hometown changed in recent years?",
+        "Would you recommend visitors to go there?"
+      ]
+    },
+    {
+      "id": "p1-hobbies",
+      "topic": "Hobbies & Free time",
+      "questions": [
+        "What do you usually do in your free time?",
+        "When did you start this hobby?",
+        "Do you prefer doing it alone or with others?",
+        "Do you think hobbies are important for people? Why?"
+      ]
+    },
+    {
+      "id": "p1-food",
+      "topic": "Food & Cooking",
+      "questions": [
+        "What kind of food do you like?",
+        "Do you cook at home? Why or why not?",
+        "Is fast food popular in your country?",
+        "Has your diet changed over the last few years?"
+      ]
+    }
+  ],
+  "part2": [
+    {
+      "id": "p2-place-visit",
+      "topic": "A place you would like to visit",
+      "cue": "You should say:\n- where it is\n- how you first heard about it\n- what you would do there\n- and explain why you would like to visit this place."
+    },
+    {
+      "id": "p2-useful-skill",
+      "topic": "A useful skill you learned",
+      "cue": "You should say:\n- what the skill is\n- when and how you learned it\n- who taught you (if anyone)\n- and explain why this skill is useful for you."
+    },
+    {
+      "id": "p2-important-decision",
+      "topic": "An important decision you made",
+      "cue": "You should say:\n- what the decision was\n- when you made it\n- why you made this decision\n- and explain how this decision has affected your life."
+    },
+    {
+      "id": "p2-old-object",
+      "topic": "An old thing your family has kept for a long time",
+      "cue": "You should say:\n- what it is\n- who it belongs to\n- how long your family has had it\n- and explain why it is important to your family."
+    }
+  ],
+  "part3": [
+    {
+      "id": "p3-travel",
+      "topic": "Travel & Places",
+      "related_to": "p2-place-visit",
+      "questions": [
+        "Why do young people and old people travel for different reasons?",
+        "How has the way people travel changed in the last 30 years?",
+        "Do you think travelling is important for personal development? Why?",
+        "Some people say international tourism does more harm than good — do you agree?"
+      ]
+    },
+    {
+      "id": "p3-learning",
+      "topic": "Skills & Learning",
+      "related_to": "p2-useful-skill",
+      "questions": [
+        "Which skills do you think today's children should learn at school?",
+        "Is it easier to learn new skills when you are young? Why?",
+        "How has the internet changed the way people learn new skills?",
+        "Do you think traditional skills like handwriting or cooking are still important today?"
+      ]
+    },
+    {
+      "id": "p3-decisions",
+      "topic": "Decision-making",
+      "related_to": "p2-important-decision",
+      "questions": [
+        "Do you think young people are good at making important decisions?",
+        "Should parents make big decisions for their children? Why or why not?",
+        "How do people usually deal with regret after a bad decision?",
+        "Is it better to make decisions quickly or take a lot of time?"
+      ]
+    }
+  ]
+}

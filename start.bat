@@ -68,10 +68,13 @@ start "" powershell -NoProfile -WindowStyle Hidden -Command "Start-Sleep -Second
 
 :RUN_SERVER
 echo.
-echo 阅读器运行期间请保留本窗口。
-echo 关闭本窗口后，本地服务随之停止；文章和生词数据不会因此被删除。
+echo 运行期间请保留本窗口。关闭本窗口后本地服务随之停止；生词和作业记录不会因此被删除。
+echo 服务同时支持:静态文件(阅读/听力/写作)+ 口语录音转写(POST /whisper)。
 echo.
-%PYTHON_CMD% -m http.server %PORT% --bind 127.0.0.1
+rem faster-whisper 需要装它的那个 Python;PYTHON_CMD 默认取 py -3(可能是 3.14,cgi/faster-whisper 未装)。
+rem 优先用 python 命令(通常指向 3.11 装了 faster-whisper 的解释器)。
+where python >nul 2>nul && set "PYTHON_CMD=python"
+%PYTHON_CMD% tools\speaking_server.py --port %PORT%
 echo.
 echo 本地服务已停止。
 pause

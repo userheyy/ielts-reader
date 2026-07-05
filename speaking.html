@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雅思备考 · 口语</title>
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <style>
+    .speaking-page { max-width: 900px; margin: 0 auto; padding: 16px; }
+    .speaking-page .hint { color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+    .speaking-tabs { display: flex; gap: 6px; border-bottom: 1px solid #ddd; margin: 12px 0 16px; }
+    .speaking-tabs .tab {
+      padding: 8px 16px; background: #f6f6f6; border: 1px solid #ddd; border-bottom: none;
+      border-radius: 6px 6px 0 0; cursor: pointer; font-size: 14px;
+    }
+    .speaking-tabs .tab.active { background: #fff; border-color: #ddd; font-weight: 600; color: #2b6cb0; }
+    .sp-section { padding: 16px; background: #fff; border: 1px solid #eee; border-radius: 8px; margin-bottom: 16px; }
+    .sp-section.hidden { display: none; }
+    .sp-picker { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
+    .sp-picker select { padding: 6px 8px; font-size: 14px; }
+    .sp-topic { font-size: 18px; font-weight: 600; margin: 8px 0 4px; color: #111; }
+    .sp-related { font-size: 12px; color: #888; margin-bottom: 6px; }
+    .sp-cue { background: #f9fafb; border-left: 3px solid #3b82f6; padding: 12px; border-radius: 4px; line-height: 1.7; white-space: pre-wrap; font-size: 14px; }
+    .sp-questions { padding: 0; margin: 0 0 0 20px; }
+    .sp-questions li { margin: 6px 0; line-height: 1.6; font-size: 14px; }
+    .sp-current-q { background: #eff6ff; border-left: 3px solid #3b82f6; padding: 10px 14px; margin: 10px 0; font-size: 15px; font-weight: 500; }
+    .sp-recorder { display: flex; align-items: center; gap: 12px; margin: 16px 0; padding: 12px; background: #fef2f2; border-radius: 6px; border: 1px solid #fecaca; }
+    .sp-recorder.recording { background: #fee2e2; border-color: #ef4444; }
+    .sp-recorder button.rec-btn {
+      width: 56px; height: 56px; border-radius: 50%; background: #ef4444; color: #fff;
+      border: none; font-size: 26px; cursor: pointer;
+    }
+    .sp-recorder button.rec-btn.recording { background: #991b1b; }
+    .sp-recorder .timer { font-family: monospace; font-size: 20px; color: #555; min-width: 60px; }
+    .sp-recorder .status { color: #666; font-size: 13px; }
+    .sp-transcript { margin: 12px 0; padding: 10px 12px; background: #f8fafc; border-radius: 4px; }
+    .sp-transcript h4 { margin: 0 0 6px; font-size: 13px; color: #666; }
+    .sp-transcript p { margin: 0; line-height: 1.7; font-family: Georgia, serif; }
+    .sp-result:empty { display: none; }
+    .sp-result { margin-top: 12px; padding: 14px; background: #f0fdf4; border-radius: 6px; }
+    .score-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 8px 0 12px; }
+    .score-cell { text-align: center; padding: 10px 6px; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; }
+    .score-cell .label { font-size: 11px; color: #666; }
+    .score-cell .val { font-size: 22px; font-weight: 700; color: #2b6cb0; margin-top: 4px; }
+    .score-cell.overall .val { color: #16a34a; font-size: 26px; }
+    .sp-note { padding: 10px; background: #fff; border-left: 3px solid #10b981; border-radius: 4px; margin: 6px 0; font-size: 13px; line-height: 1.6; }
+    .banner { padding: 10px 12px; background: #fef2f2; color: #b91c1c; border-radius: 4px; margin: 8px 0; font-size: 13px; }
+    .loading { color: #666; font-style: italic; padding: 10px; }
+    .pron-caveat { font-size: 11px; color: #999; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思备考</h1>
+    <a href="index.html">文章库</a>
+    <a href="listening.html">听力</a>
+    <a href="writing.html">写作</a>
+    <a href="speaking.html" class="active">口语</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="test.html">测试</a>
+    <a href="grammar.html">语法书</a>
+    <a href="settings.html">设置</a>
+  </header>
+  <div class="container speaking-page">
+    <h2>雅思口语陪练</h2>
+    <p class="hint">
+      按 IELTS Speaking 官方评分标准四项(<b>FC</b> Fluency &amp; Coherence · <b>LR</b> Lexical Resource · <b>GRA</b> Grammatical Range &amp; Accuracy · <b>PR</b> Pronunciation)打分。
+      <br>录音本地转写(faster-whisper),不上传外网;DeepSeek 只看转写文本做评分和建议。
+      <span class="pron-caveat">发音项基于文本节奏 heuristic,精评仍需真人考官。</span>
+    </p>
+
+    <div class="speaking-tabs">
+      <button class="tab active" data-tab="part1" type="button">Part 1 · 常见话题</button>
+      <button class="tab" data-tab="part2" type="button">Part 2 · Cue Card(1-2 min)</button>
+      <button class="tab" data-tab="part3" type="button">Part 3 · 深入讨论</button>
+    </div>
+
+    <!-- Part 1 -->
+    <section class="sp-section" data-section="part1">
+      <div class="sp-picker">
+        <label>话题:</label>
+        <select id="part1-pick"></select>
+      </div>
+      <div class="sp-topic" id="part1-topic"></div>
+      <ul class="sp-questions" id="part1-questions"></ul>
+      <div class="sp-current-q" id="part1-current"></div>
+      <div class="sp-recorder" id="part1-recorder">
+        <button class="rec-btn" id="part1-rec" type="button" title="开始录音">🎙️</button>
+        <span class="timer" id="part1-timer">0:00</span>
+        <span class="status" id="part1-status">点录音按钮开始</span>
+      </div>
+      <div class="sp-transcript" id="part1-transcript" style="display:none">
+        <h4>你的回答(转写)</h4>
+        <p id="part1-transcript-text"></p>
+      </div>
+      <div class="sp-result" id="part1-result"></div>
+    </section>
+
+    <!-- Part 2 -->
+    <section class="sp-section hidden" data-section="part2">
+      <div class="sp-picker">
+        <label>题目:</label>
+        <select id="part2-pick"></select>
+      </div>
+      <div class="sp-topic" id="part2-topic"></div>
+      <div class="sp-cue" id="part2-cue"></div>
+      <div class="sp-recorder" id="part2-recorder">
+        <button class="rec-btn" id="part2-rec" type="button" title="开始录音">🎙️</button>
+        <span class="timer" id="part2-timer">0:00</span>
+        <span class="status" id="part2-status">1 分钟准备后再录 1-2 分钟</span>
+      </div>
+      <div class="sp-transcript" id="part2-transcript" style="display:none">
+        <h4>你的回答(转写)</h4>
+        <p id="part2-transcript-text"></p>
+      </div>
+      <div class="sp-result" id="part2-result"></div>
+    </section>
+
+    <!-- Part 3 -->
+    <section class="sp-section hidden" data-section="part3">
+      <div class="sp-picker">
+        <label>主题:</label>
+        <select id="part3-pick"></select>
+      </div>
+      <div class="sp-topic" id="part3-topic"></div>
+      <div class="sp-related" id="part3-related"></div>
+      <ul class="sp-questions" id="part3-questions"></ul>
+      <div class="sp-current-q" id="part3-current"></div>
+      <div class="sp-recorder" id="part3-recorder">
+        <button class="rec-btn" id="part3-rec" type="button" title="开始录音">🎙️</button>
+        <span class="timer" id="part3-timer">0:00</span>
+        <span class="status" id="part3-status">点录音按钮开始</span>
+      </div>
+      <div class="sp-transcript" id="part3-transcript" style="display:none">
+        <h4>你的回答(转写)</h4>
+        <p id="part3-transcript-text"></p>
+      </div>
+      <div class="sp-result" id="part3-result"></div>
+    </section>
+  </div>
+  <script type="module" src="js/speaking.js?v=1"></script>
+</body>
+</html>
