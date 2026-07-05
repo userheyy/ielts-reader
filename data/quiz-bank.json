@@ -1,9 +1,9 @@
 {
   "meta": {
     "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
-    "generated_batches": 16,
+    "generated_batches": 17,
     "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
-    "count": 652
+    "count": 692
   },
   "questions": [
     {
@@ -5221,6 +5221,326 @@
       "sentence": "Fresh ___ are the secret to a really good soup.",
       "sentence_zh": "新鲜的食材是做出一锅真正美味汤的秘诀。",
       "explain": "烹饪配料或组成要素，用 ingredient。element 侧重抽象“要素”、component 是部件、instrument 是仪器，都不合“(烹饪)原料、配料”这个意思。"
+    },
+    {
+      "word": "announce",
+      "pos": "v.",
+      "def": "宣布，宣告；预告",
+      "sentence": "The company plans to ___ its new phone at a big event next week.",
+      "sentence_zh": "公司计划在下周的一场大型活动上发布它的新手机。",
+      "explain": "公开宣布、宣告，用 announce。declare 侧重“正式声明”、acknowledge 是承认、pronounce 是发音，都不合“公开发布消息”这个语境。"
+    },
+    {
+      "word": "declare",
+      "pos": "v.",
+      "def": "宣布，声明；申报",
+      "sentence": "Travellers must ___ any goods that are worth more than the limit.",
+      "sentence_zh": "旅客必须申报任何价值超过限额的物品。",
+      "explain": "正式声明、申报，用 declare。announce 侧重“公布消息”、acknowledge 是承认、deny 是否认，都不合“(海关)申报、郑重声明”这个语境。"
+    },
+    {
+      "word": "acknowledge",
+      "pos": "v.",
+      "def": "承认；告知收悉；答谢",
+      "sentence": "She was willing to ___ that she had made a mistake.",
+      "sentence_zh": "她愿意承认自己犯了错误。",
+      "explain": "承认(事实)，用 acknowledge。announce 是公布、declare 是声明、apologise 是道歉，都不合“承认(自己有错)”这个意思。"
+    },
+    {
+      "word": "cite",
+      "pos": "v.",
+      "def": "引用，引证；举例；传讯",
+      "sentence": "The writer ___ several studies to support her argument.",
+      "sentence_zh": "作者引用了几项研究来支持自己的论点。",
+      "explain": "引用(来源/例证)，用 cite。quote 侧重“逐字引述原话”、site 是地点、recite 是背诵，都不合“援引研究、举证”这个语境。"
+    },
+    {
+      "word": "quote",
+      "pos": "v./n.",
+      "def": "引用，引述；报价",
+      "sentence": "In her speech she liked to ___ the exact words of famous writers.",
+      "sentence_zh": "在演讲中，她喜欢引述名作家的原话。",
+      "explain": "逐字引述原话，用 quote。cite 侧重“援引来源出处”、note 是记录、quota 是配额，都不合“引述原话”这个意思。"
+    },
+    {
+      "word": "deny",
+      "pos": "v.",
+      "def": "否认；拒绝给予",
+      "sentence": "He continued to ___ that he had anything to do with the theft.",
+      "sentence_zh": "他一直否认自己与这起盗窃案有任何关系。",
+      "explain": "否认(某事)，用 deny。acknowledge 意思相反（承认）、declare 是声明、defy 是违抗，都不合“否认”这个意思。"
+    },
+    {
+      "word": "claim",
+      "pos": "v./n.",
+      "def": "声称；索要，认领",
+      "sentence": "The advertisement ___ that the cream can make skin look younger.",
+      "sentence_zh": "这则广告声称这款面霜能让皮肤显得更年轻。",
+      "explain": "(未必有据地)声称，用 claim。declare 是正式声明、announce 是公布、blame 是责怪，都不合“声称、宣称”这个语境。"
+    },
+    {
+      "word": "grab",
+      "pos": "v./n.",
+      "def": "抓住，攫取；抢",
+      "sentence": "She managed to ___ the railing just before she fell.",
+      "sentence_zh": "就在摔倒前，她设法抓住了栏杆。",
+      "explain": "突然抓住、抓取，用 grab。squeeze 是挤压、grasp 近义但不在选项、grip 是紧握，都不合“猛地抓住”这个具体动作。"
+    },
+    {
+      "word": "squeeze",
+      "pos": "v./n.",
+      "def": "挤，压榨；紧握；(经济)紧缩",
+      "sentence": "You need to ___ the tube to get the last bit of toothpaste out.",
+      "sentence_zh": "你需要挤压这个管子才能把最后一点牙膏挤出来。",
+      "explain": "用力挤压，用 squeeze。grab 是抓住、stretch 是伸展、freeze 是冻结，形近或近义但都不合“挤压”这个动作。"
+    },
+    {
+      "word": "fold",
+      "pos": "v./n.",
+      "def": "折叠；交叉(手臂)；(企业)倒闭；褶",
+      "sentence": "Please ___ the letter neatly before putting it in the envelope.",
+      "sentence_zh": "请把信整齐地折好，然后放进信封。",
+      "explain": "对折、折叠，用 fold。hold 是握住、bend 是弯曲、fold 与 field 不同，都不合“折叠”这个动作。"
+    },
+    {
+      "word": "pour",
+      "pos": "v.",
+      "def": "倒，灌；倾泻；涌",
+      "sentence": "She began to ___ the hot water slowly over the coffee.",
+      "sentence_zh": "她开始把热水缓缓地倒在咖啡上。",
+      "explain": "(液体)倾倒，用 pour。stir 是搅拌、spill 是洒出、pour 与 pore 不同，都不合“倒、灌”这个动作。"
+    },
+    {
+      "word": "stir",
+      "pos": "v./n.",
+      "def": "搅拌；激起；骚动",
+      "sentence": "___ the soup gently so that it does not stick to the pot.",
+      "sentence_zh": "轻轻搅拌汤，这样它就不会粘锅。",
+      "explain": "搅拌、搅动，用 stir。pour 是倒、shake 是摇、stare 是凝视，都不合“搅拌”这个动作。"
+    },
+    {
+      "word": "slide",
+      "pos": "v./n.",
+      "def": "滑动，下滑；滑梯；幻灯片",
+      "sentence": "The children love to ___ down the snowy hill on a sledge.",
+      "sentence_zh": "孩子们喜欢乘雪橇从雪山上滑下来。",
+      "explain": "滑动、下滑，用 slide。slip 侧重“失足滑倒”、slice 是切片、glide 是滑翔，都不合“滑行下滑”这个动作。"
+    },
+    {
+      "word": "swing",
+      "pos": "v./n.",
+      "def": "摇摆，摆动；秋千；(意见)转变",
+      "sentence": "The gate began to ___ back and forth in the strong wind.",
+      "sentence_zh": "在强风中，大门开始来回摆动。",
+      "explain": "来回摆动、摇摆，用 swing。spin 是旋转、sway 近义但不在选项、string 是细绳，都不合“来回摆动”这个动作。"
+    },
+    {
+      "word": "detect",
+      "pos": "v.",
+      "def": "察觉，发现；检测",
+      "sentence": "The device can ___ even a tiny amount of smoke in the air.",
+      "sentence_zh": "这个装置能检测出空气中即使极微量的烟。",
+      "explain": "察觉、检测出，用 detect。distinguish 侧重“区分”、protect 是保护、reject 是拒绝，都不合“检测、察觉”这个意思。"
+    },
+    {
+      "word": "distinguish",
+      "pos": "v.",
+      "def": "区分，辨别；使杰出",
+      "sentence": "Young babies soon learn to ___ their mother's voice from others.",
+      "sentence_zh": "婴儿很快就学会把母亲的声音与其他声音区分开来。",
+      "explain": "区分、辨别，用 distinguish。detect 侧重“察觉存在”、extinguish 是熄灭、distribute 是分发，都不合“区分开来”这个意思。"
+    },
+    {
+      "word": "investigate",
+      "pos": "v.",
+      "def": "调查，研究",
+      "sentence": "The police were called in to ___ the cause of the fire.",
+      "sentence_zh": "警方被召来调查火灾的起因。",
+      "explain": "系统地调查，用 investigate。explore 侧重“探索未知”、instigate 是煽动、investment 是投资，都不合“调查(事件)”这个意思。"
+    },
+    {
+      "word": "monitor",
+      "pos": "v./n.",
+      "def": "监控，监测；显示器；班长",
+      "sentence": "Nurses ___ the patient's heart rate throughout the night.",
+      "sentence_zh": "护士们整夜监测病人的心率。",
+      "explain": "持续监测、监控，用 monitor。investigate 侧重“一次性调查”、maintain 是维持、mentor 是导师，都不合“持续监测”这个意思。"
+    },
+    {
+      "word": "explore",
+      "pos": "v.",
+      "def": "探索，勘探；探究",
+      "sentence": "The team set out to ___ a part of the cave no one had seen before.",
+      "sentence_zh": "这支队伍出发去探索一处从未有人见过的洞穴。",
+      "explain": "探索、勘探(未知)，用 explore。investigate 侧重“查案”、explode 是爆炸、export 是出口，都不合“探索未知领域”这个意思。"
+    },
+    {
+      "word": "reveal",
+      "pos": "v.",
+      "def": "揭示，透露；显示",
+      "sentence": "The test results ___ that the water was not safe to drink.",
+      "sentence_zh": "检测结果显示这水不宜饮用。",
+      "explain": "揭示、透露(出真相)，用 reveal。conceal 意思相反（隐藏）、reverse 是颠倒、reflect 是反映，都不合“揭示、显示出”这个意思。"
+    },
+    {
+      "word": "crucial",
+      "pos": "adj.",
+      "def": "至关重要的，决定性的",
+      "sentence": "The next few days will be ___ to the success of the mission.",
+      "sentence_zh": "接下来的几天对任务的成败至关重要。",
+      "explain": "决定性、至关重要的，用 crucial。casual 是随意的、cruel 是残忍的、social 是社会的，形近但都不表示“至关重要”。"
+    },
+    {
+      "word": "adequate",
+      "pos": "adj.",
+      "def": "足够的，适当的",
+      "sentence": "The old heating system is no longer ___ for such a large building.",
+      "sentence_zh": "旧的供暖系统已不再能满足这么大的建筑。",
+      "explain": "足够、适当的，用 adequate。accurate 是准确的、adopt 是采用、advocate 是提倡，形近但都不表示“足够、适当”。"
+    },
+    {
+      "word": "distinct",
+      "pos": "adj.",
+      "def": "截然不同的；清晰的，明显的",
+      "sentence": "The two languages are ___ but share a few similar words.",
+      "sentence_zh": "这两种语言截然不同，但共有几个相似的词。",
+      "explain": "截然不同、明显的，用 distinct。distant 是遥远的、instinct 是本能、extinct 是灭绝的，形近但都不表示“截然不同、清晰”。"
+    },
+    {
+      "word": "subtle",
+      "pos": "adj.",
+      "def": "微妙的，细微的；精巧的",
+      "sentence": "There is a ___ difference in taste between the two teas.",
+      "sentence_zh": "这两种茶在口味上有细微的差别。",
+      "explain": "微妙、不易察觉的，用 subtle。simple 是简单的、gentle 是温和的、settle 是解决，都不合“微妙、细微”这个意思。"
+    },
+    {
+      "word": "harsh",
+      "pos": "adj.",
+      "def": "严厉的，苛刻的；刺耳的；(环境)恶劣的",
+      "sentence": "Few plants can survive in the ___ conditions of the desert.",
+      "sentence_zh": "很少有植物能在沙漠恶劣的环境中存活。",
+      "explain": "严酷、恶劣的，用 harsh。harm 是伤害、hush 是安静、rash 是轻率的，都不合“严酷、恶劣”这个意思。"
+    },
+    {
+      "word": "tough",
+      "pos": "adj.",
+      "def": "艰难的；坚韧的；强硬的",
+      "sentence": "Making the final decision was a ___ choice for the whole team.",
+      "sentence_zh": "做出最终决定对整个团队来说是个艰难的选择。",
+      "explain": "艰难、棘手的，用 tough。rough 是粗糙的、though 是“虽然”、touch 是触摸，形近但都不表示“艰难、棘手”。"
+    },
+    {
+      "word": "vast",
+      "pos": "adj.",
+      "def": "广阔的，巨大的",
+      "sentence": "The explorers crossed a ___ area of empty desert.",
+      "sentence_zh": "探险者们穿越了一片广阔空旷的沙漠。",
+      "explain": "广阔、庞大的，用 vast。fast 是快的、last 是最后的、past 是过去，形近但都不表示“广阔、巨大”。"
+    },
+    {
+      "word": "extreme",
+      "pos": "adj./n.",
+      "def": "极端的，极度的；极端",
+      "sentence": "Climbers must be ready for ___ cold near the top of the mountain.",
+      "sentence_zh": "登山者必须为山顶附近的极度寒冷做好准备。",
+      "explain": "极端、极度的，用 extreme。supreme 是至高的、extent 是程度、express 是表达，都不合“极端、极度”这个意思。"
+    },
+    {
+      "word": "loose",
+      "pos": "adj.",
+      "def": "松的，宽松的；松散的；不精确的",
+      "sentence": "The screw had come ___ and the handle was about to fall off.",
+      "sentence_zh": "螺丝松了，把手快要掉下来了。",
+      "explain": "松动、宽松的，用 loose。lose 是“丢失”（动词，形近易混）、close 是关闭、choose 是选择，都不合“松的、松动的”这个意思。"
+    },
+    {
+      "word": "smooth",
+      "pos": "adj./v.",
+      "def": "光滑的；平稳的，顺畅的；使平滑",
+      "sentence": "The road was newly built and wonderfully ___ to drive on.",
+      "sentence_zh": "这条路是新修的，开起来平坦顺畅极了。",
+      "explain": "光滑、平顺的，用 smooth。smoke 是烟、smell 是气味、soft 是柔软的，都不合“光滑、平顺”这个意思。"
+    },
+    {
+      "word": "steady",
+      "pos": "adj./v.",
+      "def": "稳定的，平稳的；沉着的",
+      "sentence": "The company has seen ___ growth in sales over the last five years.",
+      "sentence_zh": "过去五年里，公司的销售额稳步增长。",
+      "explain": "稳定、平稳的，用 steady。ready 是准备好的、steadily 是副词、study 是学习，形近但都不表示“稳定、平稳”。"
+    },
+    {
+      "word": "remote",
+      "pos": "adj.",
+      "def": "遥远的，偏远的；疏远的；遥控的",
+      "sentence": "The village is in a ___ area far from the nearest town.",
+      "sentence_zh": "这个村庄地处偏远，远离最近的城镇。",
+      "explain": "偏远、遥远的，用 remote。remove 是移除、remind 是提醒、promote 是促进，形近但都不表示“偏远、遥远”。"
+    },
+    {
+      "word": "vital",
+      "pos": "adj.",
+      "def": "至关重要的；生命的，有活力的",
+      "sentence": "Clean water is ___ for the health of the whole community.",
+      "sentence_zh": "清洁的水对整个社区的健康至关重要。",
+      "explain": "至关重要、性命攸关的，用 vital。vivid 是生动的、vertical 是垂直的、initial 是最初的，都不合“至关重要”这个意思。"
+    },
+    {
+      "word": "genuine",
+      "pos": "adj.",
+      "def": "真正的，真实的；真诚的",
+      "sentence": "The painting was proved to be a ___ work by the famous artist.",
+      "sentence_zh": "这幅画被证明是那位著名艺术家的真迹。",
+      "explain": "真正、真实不假的，用 genuine。generous 是慷慨的、general 是普遍的、genius 是天才，形近但都不表示“真正、真实”。"
+    },
+    {
+      "word": "superior",
+      "pos": "adj./n.",
+      "def": "(更)优越的，上级的；上级",
+      "sentence": "This model is ___ to the older one in almost every way.",
+      "sentence_zh": "这款型号在几乎各个方面都优于旧款。",
+      "explain": "更优越、更高级的，用 superior。inferior 意思相反（较差的）、senior 是资深的、exterior 是外部的，都不合“更优越”这个意思。"
+    },
+    {
+      "word": "upset",
+      "pos": "adj./v.",
+      "def": "心烦的，难过的；打乱；弄翻",
+      "sentence": "She was very ___ when she heard the sad news.",
+      "sentence_zh": "听到这个悲伤的消息时，她非常难过。",
+      "explain": "心烦、难过的，用 upset。upright 是直立的、update 是更新、upper 是上面的，形近但都不表示“心烦、难过”。"
+    },
+    {
+      "word": "guilty",
+      "pos": "adj.",
+      "def": "有罪的；内疚的",
+      "sentence": "The court found him ___ of stealing the money.",
+      "sentence_zh": "法庭判定他犯有盗窃钱财罪。",
+      "explain": "有罪、内疚的，用 guilty。innocent 意思相反（无辜的）、guiding 是引导的、gently 是温和地，都不合“有罪、内疚”这个意思。"
+    },
+    {
+      "word": "innocent",
+      "pos": "adj.",
+      "def": "无辜的，清白的；天真的",
+      "sentence": "He insisted that he was ___ and had not committed the crime.",
+      "sentence_zh": "他坚称自己是清白的，没有犯罪。",
+      "explain": "无辜、清白的，用 innocent。guilty 意思相反（有罪的）、ignorant 是无知的、intelligent 是聪明的，都不合“无辜、清白”这个意思。"
+    },
+    {
+      "word": "willing",
+      "pos": "adj.",
+      "def": "愿意的，乐意的",
+      "sentence": "Volunteers were ___ to give up their weekends to help.",
+      "sentence_zh": "志愿者们愿意牺牲周末时间来帮忙。",
+      "explain": "乐意、愿意的，用 willing。unwilling 意思相反（不愿的）、willingly 是副词、winning 是获胜的，都不合“愿意、乐意”这个意思。"
+    },
+    {
+      "word": "aware",
+      "pos": "adj.",
+      "def": "意识到的，知道的",
+      "sentence": "Drivers should be ___ of cyclists when turning at junctions.",
+      "sentence_zh": "司机在路口转弯时应当留意骑车的人。",
+      "explain": "意识到、注意到的，用 aware。award 是奖项、beware 是当心、aware 与 wary 不同，都不合“意识到、知道”这个意思。"
     }
   ]
 }
