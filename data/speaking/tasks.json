@@ -1,22 +1,25 @@
 {
   "meta": {
-    "note": "口语题库(占位版)。后续可从剑桥雅思真题 Speaking Part 或题库网站扩充。所有题干为通用类型,与真机考话题相同分布。",
-    "part_targets": { "part1": "30-45s / 题", "part2": "1-2 min 单独讲述", "part3": "45-60s / 题" }
+    "note": "口语题库(2026 版铺量)。Part 1 12 话题 · Part 2 15 cue card · Part 3 15 深入主题(与 P2 一一对应或按 2026 热题独立)。每题 book_ref 字段留空,供后续标注书籍/来源(如《雅思口语王陆真题》某章),支持从用户上传书籍 PDF 用 Qwen-VL 批量填充。",
+    "part_targets": { "part1": "30-45s / 题", "part2": "1-2 min 单独讲述", "part3": "45-60s / 题" },
+    "hot_topics_2026": ["AI in daily life", "climate anxiety", "hybrid work", "digital privacy"]
   },
   "part1": [
     {
       "id": "p1-work-study",
       "topic": "Work / Study",
+      "book_ref": "",
       "questions": [
         "What do you do? Do you work or study?",
         "Why did you choose that subject / job?",
         "What do you enjoy most about it?",
-        "What are you future plans in this field?"
+        "What are your future plans in this field?"
       ]
     },
     {
       "id": "p1-hometown",
       "topic": "Hometown",
+      "book_ref": "",
       "questions": [
         "Where is your hometown?",
         "Do you like your hometown? Why?",
@@ -27,6 +30,7 @@
     {
       "id": "p1-hobbies",
       "topic": "Hobbies & Free time",
+      "book_ref": "",
       "questions": [
         "What do you usually do in your free time?",
         "When did you start this hobby?",
@@ -37,11 +41,100 @@
     {
       "id": "p1-food",
       "topic": "Food & Cooking",
+      "book_ref": "",
       "questions": [
         "What kind of food do you like?",
         "Do you cook at home? Why or why not?",
         "Is fast food popular in your country?",
         "Has your diet changed over the last few years?"
+      ]
+    },
+    {
+      "id": "p1-weather",
+      "topic": "Weather",
+      "book_ref": "",
+      "questions": [
+        "What's the weather like in your city?",
+        "Which season do you enjoy most?",
+        "Does the weather affect your mood or plans?",
+        "Has the climate changed since you were a child?"
+      ]
+    },
+    {
+      "id": "p1-travel",
+      "topic": "Travel",
+      "book_ref": "",
+      "questions": [
+        "Do you like travelling? Why?",
+        "Where was the last place you visited?",
+        "Do you prefer travelling alone or with others?",
+        "Would you rather travel by train, plane or car? Why?"
+      ]
+    },
+    {
+      "id": "p1-technology",
+      "topic": "Technology",
+      "book_ref": "",
+      "questions": [
+        "How often do you use your smartphone?",
+        "Which app do you use the most?",
+        "Do you think people rely too much on technology?",
+        "Has AI changed your daily life this year?"
+      ]
+    },
+    {
+      "id": "p1-family",
+      "topic": "Family",
+      "book_ref": "",
+      "questions": [
+        "Do you live with your family?",
+        "Who are you closest to in your family?",
+        "Do families in your country spend enough time together?",
+        "How has family life changed compared with your parents' generation?"
+      ]
+    },
+    {
+      "id": "p1-sports",
+      "topic": "Sports & Exercise",
+      "book_ref": "",
+      "questions": [
+        "Do you play any sport or exercise regularly?",
+        "Did you enjoy sports at school?",
+        "Do you prefer team sports or individual ones?",
+        "Are sports popular among young people in your country?"
+      ]
+    },
+    {
+      "id": "p1-music",
+      "topic": "Music",
+      "book_ref": "",
+      "questions": [
+        "What kind of music do you enjoy?",
+        "When do you usually listen to music?",
+        "Have you ever learned a musical instrument?",
+        "Is music important in your culture?"
+      ]
+    },
+    {
+      "id": "p1-books",
+      "topic": "Books & Reading",
+      "book_ref": "",
+      "questions": [
+        "Do you read for pleasure?",
+        "What kind of books do you prefer?",
+        "Do you read paper books or e-books more?",
+        "Do you think reading habits have changed since smartphones became common?"
+      ]
+    },
+    {
+      "id": "p1-health",
+      "topic": "Health & Sleep",
+      "book_ref": "",
+      "questions": [
+        "Do you usually get enough sleep?",
+        "What do you do to stay healthy?",
+        "Has your diet changed in the last few years?",
+        "Do people in your country worry about their health enough?"
       ]
     }
   ],
@@ -49,22 +142,92 @@
     {
       "id": "p2-place-visit",
       "topic": "A place you would like to visit",
+      "book_ref": "",
       "cue": "You should say:\n- where it is\n- how you first heard about it\n- what you would do there\n- and explain why you would like to visit this place."
     },
     {
       "id": "p2-useful-skill",
       "topic": "A useful skill you learned",
+      "book_ref": "",
       "cue": "You should say:\n- what the skill is\n- when and how you learned it\n- who taught you (if anyone)\n- and explain why this skill is useful for you."
     },
     {
       "id": "p2-important-decision",
       "topic": "An important decision you made",
+      "book_ref": "",
       "cue": "You should say:\n- what the decision was\n- when you made it\n- why you made this decision\n- and explain how this decision has affected your life."
     },
     {
       "id": "p2-old-object",
       "topic": "An old thing your family has kept for a long time",
+      "book_ref": "",
       "cue": "You should say:\n- what it is\n- who it belongs to\n- how long your family has had it\n- and explain why it is important to your family."
+    },
+    {
+      "id": "p2-memorable-meal",
+      "topic": "A memorable meal you had",
+      "book_ref": "",
+      "cue": "You should say:\n- when and where you had it\n- who you had it with\n- what you ate\n- and explain why the meal was memorable."
+    },
+    {
+      "id": "p2-creative-person",
+      "topic": "A creative person you admire",
+      "book_ref": "",
+      "cue": "You should say:\n- who the person is\n- how you know about them\n- what they have created\n- and explain why you think they are creative."
+    },
+    {
+      "id": "p2-helpful-stranger",
+      "topic": "A time a stranger helped you",
+      "book_ref": "",
+      "cue": "You should say:\n- when and where it happened\n- who the stranger was\n- what they did\n- and explain how you felt afterwards."
+    },
+    {
+      "id": "p2-new-hobby",
+      "topic": "A new hobby you would like to try",
+      "book_ref": "",
+      "cue": "You should say:\n- what the hobby is\n- when you first heard about it\n- what you would need to start\n- and explain why you would like to try it."
+    },
+    {
+      "id": "p2-childhood-teacher",
+      "topic": "A teacher who influenced you when you were a child",
+      "book_ref": "",
+      "cue": "You should say:\n- who the teacher was\n- what subject they taught\n- what they were like\n- and explain how they influenced you."
+    },
+    {
+      "id": "p2-rainy-day",
+      "topic": "Something you enjoy doing on a rainy day",
+      "book_ref": "",
+      "cue": "You should say:\n- what the activity is\n- when you started doing it on rainy days\n- who you usually do it with\n- and explain why you enjoy it on rainy days."
+    },
+    {
+      "id": "p2-gift-you-gave",
+      "topic": "A gift you gave to someone",
+      "book_ref": "",
+      "cue": "You should say:\n- what the gift was\n- who you gave it to\n- why you chose that gift\n- and explain how the person reacted."
+    },
+    {
+      "id": "p2-small-business",
+      "topic": "A small business you would like to start",
+      "book_ref": "",
+      "cue": "You should say:\n- what the business would be\n- where you would set it up\n- who your customers would be\n- and explain why you think it would succeed."
+    },
+    {
+      "id": "p2-traditional-festival",
+      "topic": "A traditional festival in your country",
+      "book_ref": "",
+      "cue": "You should say:\n- what the festival is\n- when it is celebrated\n- what people usually do\n- and explain why it is important to your culture."
+    },
+    {
+      "id": "p2-historical-building",
+      "topic": "A historical building you have visited",
+      "book_ref": "",
+      "cue": "You should say:\n- what and where the building is\n- when you visited it\n- what you saw or learned there\n- and explain why the building is historically important."
+    },
+    {
+      "id": "p2-online-course",
+      "topic": "An online course you took (or would like to take)",
+      "book_ref": "",
+      "cue": "You should say:\n- what the course is (or would be) about\n- where you found it\n- how long it lasted (or will last)\n- and explain what you gained (or hope to gain) from it."
     }
   ],
   "part3": [
@@ -72,8 +235,9 @@
       "id": "p3-travel",
       "topic": "Travel & Places",
       "related_to": "p2-place-visit",
+      "book_ref": "",
       "questions": [
-        "Why do young people and old people travel for different reasons?",
+        "Why do young people and older people travel for different reasons?",
         "How has the way people travel changed in the last 30 years?",
         "Do you think travelling is important for personal development? Why?",
         "Some people say international tourism does more harm than good — do you agree?"
@@ -83,6 +247,7 @@
       "id": "p3-learning",
       "topic": "Skills & Learning",
       "related_to": "p2-useful-skill",
+      "book_ref": "",
       "questions": [
         "Which skills do you think today's children should learn at school?",
         "Is it easier to learn new skills when you are young? Why?",
@@ -94,11 +259,156 @@
       "id": "p3-decisions",
       "topic": "Decision-making",
       "related_to": "p2-important-decision",
+      "book_ref": "",
       "questions": [
         "Do you think young people are good at making important decisions?",
         "Should parents make big decisions for their children? Why or why not?",
         "How do people usually deal with regret after a bad decision?",
         "Is it better to make decisions quickly or take a lot of time?"
+      ]
+    },
+    {
+      "id": "p3-heritage",
+      "topic": "Heritage & Family Objects",
+      "related_to": "p2-old-object",
+      "book_ref": "",
+      "questions": [
+        "Why do some families keep old things for generations?",
+        "Do you think museums are important? Why?",
+        "Is it worth spending money to preserve old buildings and cities?",
+        "How does modern life affect people's connection with traditions?"
+      ]
+    },
+    {
+      "id": "p3-food-culture",
+      "topic": "Food & Culture",
+      "related_to": "p2-memorable-meal",
+      "book_ref": "",
+      "questions": [
+        "How do eating habits differ between your country and Western countries?",
+        "Do you think fast food is changing traditional cuisine?",
+        "Is it important for families to eat meals together? Why?",
+        "How is food connected with culture in your country?"
+      ]
+    },
+    {
+      "id": "p3-creativity-ai",
+      "topic": "Creativity in the AI era",
+      "related_to": "p2-creative-person",
+      "book_ref": "",
+      "questions": [
+        "What makes a person creative?",
+        "Can creativity be taught, or is it something you're born with?",
+        "How has AI changed creative work like art, music or writing?",
+        "Do you think AI-generated content should be labelled as such? Why?"
+      ]
+    },
+    {
+      "id": "p3-community-kindness",
+      "topic": "Community & Kindness",
+      "related_to": "p2-helpful-stranger",
+      "book_ref": "",
+      "questions": [
+        "Are people in your country generally willing to help strangers?",
+        "Why do some people avoid helping strangers?",
+        "How can we encourage more kindness in cities?",
+        "Do you think social media makes people more or less connected in real life?"
+      ]
+    },
+    {
+      "id": "p3-hobbies-leisure",
+      "topic": "Hobbies & Leisure",
+      "related_to": "p2-new-hobby",
+      "book_ref": "",
+      "questions": [
+        "Why is it important for adults to have hobbies?",
+        "How have hobbies changed compared with 20 years ago?",
+        "Do children today have enough time for hobbies? Why?",
+        "What are the benefits of picking up a new hobby as an adult?"
+      ]
+    },
+    {
+      "id": "p3-education",
+      "topic": "Education",
+      "related_to": "p2-childhood-teacher",
+      "book_ref": "",
+      "questions": [
+        "What makes a good teacher?",
+        "Should teachers be paid more? Why?",
+        "How is online learning different from classroom learning?",
+        "Do parents or teachers have a bigger influence on children? Why?"
+      ]
+    },
+    {
+      "id": "p3-weather-climate",
+      "topic": "Weather & Climate Anxiety (2026 hot)",
+      "related_to": "p2-rainy-day",
+      "book_ref": "",
+      "questions": [
+        "How does weather affect people's daily lives?",
+        "Do you think climate change is affecting weather patterns where you live?",
+        "Young people around the world talk about \"climate anxiety\" — what do you think of that?",
+        "What can ordinary people do to slow down climate change?"
+      ]
+    },
+    {
+      "id": "p3-gift-giving",
+      "topic": "Gift-giving culture",
+      "related_to": "p2-gift-you-gave",
+      "book_ref": "",
+      "questions": [
+        "In your culture, when do people give gifts?",
+        "Do you think it's the thought that counts, or the price of the gift?",
+        "How has online shopping changed the way people choose gifts?",
+        "Are handmade gifts still valued today? Why?"
+      ]
+    },
+    {
+      "id": "p3-work-business",
+      "topic": "Work, small businesses & hybrid work (2026 hot)",
+      "related_to": "p2-small-business",
+      "book_ref": "",
+      "questions": [
+        "Why do some people prefer running a small business to working for a big company?",
+        "What difficulties do young entrepreneurs face today?",
+        "Has \"hybrid work\" (mixing office + home) changed how people think about jobs?",
+        "Do you think most people will change careers several times in their life?"
+      ]
+    },
+    {
+      "id": "p3-tradition-modern",
+      "topic": "Tradition vs. modern life",
+      "related_to": "p2-traditional-festival",
+      "book_ref": "",
+      "questions": [
+        "Why is it important to keep traditional festivals alive?",
+        "How do young people in your country view traditional culture?",
+        "Do you think globalisation is making cultures more similar? Is that a problem?",
+        "How can traditional culture be presented to attract younger generations?"
+      ]
+    },
+    {
+      "id": "p3-history-preservation",
+      "topic": "History & Preservation",
+      "related_to": "p2-historical-building",
+      "book_ref": "",
+      "questions": [
+        "Should governments spend a lot of money on protecting old buildings?",
+        "Why do people enjoy visiting historical sites?",
+        "How can technology help preserve history?",
+        "Do you think studying history is useful for young people today? Why?"
+      ]
+    },
+    {
+      "id": "p3-online-learning-privacy",
+      "topic": "Online learning & digital privacy (2026 hot)",
+      "related_to": "p2-online-course",
+      "book_ref": "",
+      "questions": [
+        "How has online learning changed education in the past few years?",
+        "Are online courses as effective as traditional ones? Why?",
+        "Should learning platforms be allowed to collect student data? Why or why not?",
+        "How can people protect their digital privacy while studying online?"
       ]
     }
   ]
