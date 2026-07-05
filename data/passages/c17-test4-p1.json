@@ -25,7 +25,290 @@
           "pos": "n.",
           "def": "捕食嗡鸣"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Rocha and his team",
+              "zh": "罗查和他的团队"
+            },
+            {
+              "role": "V",
+              "text": "used",
+              "zh": "使用"
+            },
+            {
+              "role": "O",
+              "text": "state-of-the-art ultrasonic recorders",
+              "zh": "最先进的超声波记录仪"
+            }
+          ],
+          "plain": "去掉所有修饰和目的状语，这句主干是：Rocha and his team used recorders (罗查和他的团队使用了记录仪)。used是及物动词，后面必须跟宾语。"
+        },
+        "chunks": [
+          {
+            "text": "Rocha and his team",
+            "role": "S",
+            "zh": "罗查和他的团队",
+            "note": "主语，由并列名词短语构成。"
+          },
+          {
+            "text": "used",
+            "role": "V",
+            "zh": "使用",
+            "note": "及物动词，过去式。"
+          },
+          {
+            "text": "state-of-the-art ultrasonic recorders",
+            "role": "O",
+            "zh": "最先进的超声波记录仪",
+            "note": "宾语，名词短语。state-of-the-art是复合形容词。"
+          },
+          {
+            "text": "to record over a thousand bat ‘feeding buzzes’",
+            "role": "adv",
+            "zh": "录制了一千多段蝙蝠的“捕食嗡鸣”",
+            "note": "不定式短语作目的状语，说明使用记录仪的目的。",
+            "tag": "ch12.infinitive"
+          },
+          {
+            "text": "(echolocation sequences used by bats to target their prey)",
+            "role": "app",
+            "zh": "（即蝙蝠用来锁定猎物的回声定位声）",
+            "note": "同位语，对'feeding buzzes'进行解释说明。",
+            "tag": "ch2.apposition"
+          },
+          {
+            "text": "at 54 sites",
+            "role": "adv",
+            "zh": "在54个地点",
+            "note": "介词短语作地点状语，修饰record。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "in order to identify the favourite feeding spots of the bats",
+            "role": "adv",
+            "zh": "为了确定蝙蝠最青睐的觅食地点",
+            "note": "目的状语，说明整个录音行为的目的。",
+            "tag": "ch15.purpose-result"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式作目的状语",
+            "explain": "不定式（to + 动词原形）放在句子里可以表示“为了做某事”。这里to record...说明使用记录仪的目的。雅思阅读中经常用不定式表达目的，写作时也可以用to do来替换in order to，更简洁。"
+          },
+          {
+            "tag": "ch2.apposition",
+            "name": "同位语",
+            "explain": "同位语就是跟在名词后面，用另一个名词或名词短语来解释它。括号里的部分是对'feeding buzzes'的补充说明，告诉读者它是什么。阅读时遇到括号或逗号隔开的同位语，可以先跳过，不影响主干理解。"
+          },
+          {
+            "tag": "ch4.compound-adj",
+            "name": "复合形容词",
+            "explain": "state-of-the-art是由多个词用连字符连起来作形容词，意思是“最先进的”。注意这种结构里的名词用单数，且连字符不能丢。雅思阅读中常见类似结构，如well-known、high-quality。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "state-of-the-art",
+            "lemma": "state-of-the-art",
+            "pos": "adj.",
+            "def": "最先进的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "state",
+                  "type": "root",
+                  "gloss": "状态"
+                },
+                {
+                  "text": "of",
+                  "type": "connector",
+                  "gloss": "的"
+                },
+                {
+                  "text": "the",
+                  "type": "connector",
+                  "gloss": "这个"
+                },
+                {
+                  "text": "art",
+                  "type": "root",
+                  "gloss": "艺术/技术"
+                }
+              ],
+              "derivation": "字面意思“技术的最新状态”，引申为“最先进的”。",
+              "family": null,
+              "mnemonic": "想象一个艺术(state of the art)展览，展出的都是最新科技。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "cutting-edge",
+                "note": "同样表示“前沿的”，雅思阅读中常替换使用。"
+              },
+              {
+                "w": "advanced",
+                "note": "更常见的词，但不如state-of-the-art具体。"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "ultrasonic",
+            "lemma": "ultrasonic",
+            "pos": "adj.",
+            "def": "超声波的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "ultra",
+                  "type": "prefix",
+                  "gloss": "超"
+                },
+                {
+                  "text": "son",
+                  "type": "root",
+                  "gloss": "声音"
+                },
+                {
+                  "text": "ic",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "ultra(超) + son(声音) + ic(形容词后缀) → 超声波的",
+              "family": {
+                "root": "son",
+                "gloss": "声音",
+                "words": [
+                  {
+                    "word": "sonic",
+                    "def": "声音的"
+                  },
+                  {
+                    "word": "supersonic",
+                    "def": "超音速的"
+                  }
+                ]
+              },
+              "mnemonic": "ultra像“奥特曼”，son像“声”，奥特曼发出超声波。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "sound-wave",
+                "note": "声波的，但ultrasonic特指超声波。"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "feeding buzzes",
+            "lemma": "feeding buzz",
+            "pos": "n.",
+            "def": "捕食嗡鸣",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "feed",
+                  "type": "root",
+                  "gloss": "喂养"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "动名词后缀"
+                },
+                {
+                  "text": "buzz",
+                  "type": "root",
+                  "gloss": "嗡嗡声"
+                },
+                {
+                  "text": "es",
+                  "type": "suffix",
+                  "gloss": "复数"
+                }
+              ],
+              "derivation": "feeding(捕食的) + buzzes(嗡嗡声) → 捕食时发出的嗡嗡声",
+              "family": null,
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "echolocation calls",
+                "note": "回声定位叫声，更学术的说法。"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "echolocation",
+            "lemma": "echolocation",
+            "pos": "n.",
+            "def": "回声定位",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "echo",
+                  "type": "root",
+                  "gloss": "回声"
+                },
+                {
+                  "text": "location",
+                  "type": "root",
+                  "gloss": "定位"
+                }
+              ],
+              "derivation": "echo(回声) + location(定位) → 通过回声定位",
+              "family": {
+                "root": "echo",
+                "gloss": "回声",
+                "words": [
+                  {
+                    "word": "echo",
+                    "def": "回声"
+                  },
+                  {
+                    "word": "echoic",
+                    "def": "回声的"
+                  }
+                ]
+              },
+              "mnemonic": "echo(回声) + location(位置) → 用回声找位置。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "sonar",
+                "note": "声纳，类似技术，但多用于水下。"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "in order to",
+            "zh": "为了",
+            "usage": "写作中可以用in order to引出目的，比to do更正式。例如：In order to improve your score, you need to practice daily."
+          },
+          {
+            "text": "favourite feeding spots",
+            "zh": "最青睐的觅食地点",
+            "usage": "可用于描述动物行为或人类偏好，如：The study identified the favourite feeding spots of the birds."
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -47,7 +330,309 @@
           "pos": "n.",
           "def": "DNA 条形码技术"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "They",
+              "zh": "他们"
+            },
+            {
+              "role": "V",
+              "text": "used",
+              "zh": "使用"
+            },
+            {
+              "role": "O",
+              "text": "DNA barcoding techniques",
+              "zh": "DNA 条形码技术"
+            }
+          ],
+          "plain": "去掉修饰后这句只剩：They used DNA barcoding techniques（他们使用了DNA条形码技术）。used是及物动词，后面必须跟宾语。"
+        },
+        "chunks": [
+          {
+            "text": "They",
+            "role": "S",
+            "zh": "他们",
+            "note": "主语，指代前文提到的Rocha和他的团队。"
+          },
+          {
+            "text": "next",
+            "role": "adv",
+            "zh": "接下来",
+            "note": "时间副词，表示动作发生的顺序。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": "used",
+            "role": "V",
+            "zh": "使用",
+            "note": "及物动词，过去式，表示过去发生的动作。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "DNA barcoding techniques",
+            "role": "O",
+            "zh": "DNA 条形码技术",
+            "note": "宾语，是used这个动作的对象。"
+          },
+          {
+            "text": "to analyse droppings",
+            "role": "adv",
+            "zh": "来分析粪便",
+            "note": "不定式短语作目的状语，说明使用技术的目的。",
+            "tag": "ch12.infinitive"
+          },
+          {
+            "text": "collected from bats at the different sites",
+            "role": "attr",
+            "zh": "从不同地点的蝙蝠身上采集的",
+            "note": "过去分词短语作后置定语，修饰droppings，相当于which were collected from bats at the different sites。",
+            "tag": "ch9.pp"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "英语句子最核心的结构就是主语+动词+宾语。这里动词used（使用）是及物动词，后面必须跟“使用什么”，所以DNA barcoding techniques就是宾语。找主干时，先把修饰成分（如next、to analyse...、collected...）去掉，剩下的就是骨架。"
+          },
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式作目的状语",
+            "explain": "to + 动词原形可以表示目的，意思是“为了做某事”。这里to analyse droppings说明使用DNA条形码技术的目的。在雅思阅读中，不定式作目的状语非常常见，常用来解释某个动作的意图。"
+          },
+          {
+            "tag": "ch9.pp",
+            "name": "过去分词短语作后置定语",
+            "explain": "过去分词（collected）可以像形容词一样放在名词后面修饰它，表示被动或完成。这里collected from bats...修饰droppings，意思是“被采集的粪便”。它相当于一个省略了which were的定语从句（which were collected from bats...）。这种结构在雅思阅读中大量出现，能帮你把长句拆短。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "used",
+            "lemma": "use",
+            "pos": "v.",
+            "def": "使用",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "use",
+                  "type": "root",
+                  "gloss": "使用"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "use",
+                "gloss": "使用",
+                "words": [
+                  {
+                    "word": "useful",
+                    "def": "有用的"
+                  },
+                  {
+                    "word": "useless",
+                    "def": "无用的"
+                  },
+                  {
+                    "word": "reuse",
+                    "def": "重复使用"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "using",
+                  "pos": "v.",
+                  "def": "use的现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "employed",
+                "note": "更正式，雅思学术阅读中常替换use"
+              },
+              {
+                "w": "applied",
+                "note": "强调应用，常见于技术类文章"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "techniques",
+            "lemma": "technique",
+            "pos": "n.",
+            "def": "技术；方法",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "techn",
+                  "type": "root",
+                  "gloss": "技术"
+                },
+                {
+                  "text": "ique",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "techn（技术）+ ique（名词后缀）→ 技术",
+              "family": {
+                "root": "techn",
+                "gloss": "技术",
+                "words": [
+                  {
+                    "word": "technology",
+                    "def": "技术（总称）"
+                  },
+                  {
+                    "word": "technical",
+                    "def": "技术的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "methods",
+                "note": "更通用，常替换technique"
+              },
+              {
+                "w": "approaches",
+                "note": "强调处理方式，学术写作常用"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "analyse",
+            "lemma": "analyse",
+            "pos": "v.",
+            "def": "分析",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "ana",
+                  "type": "prefix",
+                  "gloss": "分开"
+                },
+                {
+                  "text": "lyse",
+                  "type": "root",
+                  "gloss": "解开"
+                }
+              ],
+              "derivation": "ana（分开）+ lyse（解开）→ 分析（把整体拆开看）",
+              "family": {
+                "root": "lyse",
+                "gloss": "解开",
+                "words": [
+                  {
+                    "word": "analysis",
+                    "def": "分析（名词）"
+                  },
+                  {
+                    "word": "analyst",
+                    "def": "分析者"
+                  }
+                ]
+              },
+              "mnemonic": "想象“安娜（Ana）在解（lyse）谜题”",
+              "forms": [
+                {
+                  "word": "analysis",
+                  "pos": "n.",
+                  "def": "分析"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "examine",
+                "note": "更常用，雅思阅读中常替换analyse"
+              },
+              {
+                "w": "investigate",
+                "note": "强调深入调查，学术场景常见"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "collected",
+            "lemma": "collect",
+            "pos": "v.",
+            "def": "收集",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "col",
+                  "type": "prefix",
+                  "gloss": "一起"
+                },
+                {
+                  "text": "lect",
+                  "type": "root",
+                  "gloss": "选择、收集"
+                }
+              ],
+              "derivation": "col（一起）+ lect（收集）→ 收集到一起",
+              "family": {
+                "root": "lect",
+                "gloss": "收集",
+                "words": [
+                  {
+                    "word": "collection",
+                    "def": "收藏品；收集"
+                  },
+                  {
+                    "word": "collector",
+                    "def": "收藏家"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "collecting",
+                  "pos": "v.",
+                  "def": "collect的现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "gathered",
+                "note": "更口语化，但雅思阅读中常见"
+              },
+              {
+                "w": "obtained",
+                "note": "更正式，强调获取"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "DNA barcoding techniques",
+            "zh": "DNA 条形码技术",
+            "usage": "这是一个专业术语，在雅思阅读中常出现在生物、环境类文章。写作中可以用类似结构：... barcoding techniques（条形码技术）或... sequencing techniques（测序技术）。"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -69,7 +654,263 @@
           "pos": "v.",
           "def": "觅食"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The recordings",
+              "zh": "录音"
+            },
+            {
+              "role": "V",
+              "text": "revealed",
+              "zh": "显示"
+            },
+            {
+              "role": "O",
+              "text": "that bat activity over rice fields was much higher than it was in continuous forest – seven times higher over rice fields which were on flat ground, and sixteen times higher over fields on the sides of hills – leaving no doubt that the animals are preferentially foraging in these man-made ecosystems",
+              "zh": "稻田上空的蝙蝠活动远远高于连绵森林中——平地稻田上空高出七倍，山坡田地上空高出十六倍——这毫无疑问地表明，这些动物更偏爱在这些人造生态系统中觅食"
+            }
+          ],
+          "plain": "去掉所有修饰和从句，主干是 The recordings revealed that...（录音显示……）。revealed（显示）是及物动词，后面跟一个宾语从句（that...）作为整个宾语。"
+        },
+        "chunks": [
+          {
+            "text": "The recordings",
+            "role": "S",
+            "zh": "录音",
+            "note": "主语，指代前文提到的录音数据。"
+          },
+          {
+            "text": "revealed",
+            "role": "V",
+            "zh": "显示",
+            "note": "及物动词，后面跟宾语从句。"
+          },
+          {
+            "text": "that bat activity over rice fields was much higher than it was in continuous forest",
+            "role": "O",
+            "zh": "稻田上空的蝙蝠活动远远高于连绵森林中",
+            "note": "宾语从句，由 that 引导，说明录音显示的具体内容。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "– seven times higher over rice fields which were on flat ground, and sixteen times higher over fields on the sides of hills –",
+            "role": "app",
+            "zh": "——平地稻田上空高出七倍，山坡田地上空高出十六倍——",
+            "note": "破折号插入的补充说明，具体解释倍数差异，包含两个并列的名词短语。",
+            "tag": "ch2.apposition"
+          },
+          {
+            "text": "leaving no doubt that the animals are preferentially foraging in these man-made ecosystems",
+            "role": "adv",
+            "zh": "这毫无疑问地表明，这些动物更偏爱在这些人造生态系统中觅食",
+            "note": "现在分词短语作结果状语，表示前面整个主句带来的结果。",
+            "tag": "ch22.adv-reduction"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（宾语从句）",
+            "explain": "名词从句就是整个句子当名词用。这里 that 引导的从句整个充当 revealed 的宾语，说明“显示”了什么。that 在从句中不充当成分，只起连接作用。"
+          },
+          {
+            "tag": "ch22.adv-reduction",
+            "name": "副词从句减化（分词构句）",
+            "explain": "当从句的主语和主句主语一致时，可以把从句减化为分词短语。这里 leaving no doubt... 相当于 which leaves no doubt...，是结果状语，表示自然而然的结果。"
+          },
+          {
+            "tag": "ch4.comparison",
+            "name": "比较句法",
+            "explain": "much higher than 是比较结构，表示“比……高得多”。比较的双方是 bat activity over rice fields 和 bat activity in continuous forest，注意 than 后面用 it was 代替重复的 bat activity。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "revealed",
+            "lemma": "reveal",
+            "pos": "v.",
+            "def": "揭示；显示",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "向后；再次"
+                },
+                {
+                  "text": "veal",
+                  "type": "root",
+                  "gloss": "遮盖"
+                }
+              ],
+              "derivation": "re-（向后）+ veal（遮盖）→ 揭开遮盖 → 揭示",
+              "family": {
+                "root": "veal",
+                "gloss": "遮盖",
+                "words": [
+                  {
+                    "word": "veil",
+                    "def": "面纱；遮盖物"
+                  },
+                  {
+                    "word": "revelation",
+                    "def": "揭示；启示"
+                  }
+                ]
+              },
+              "mnemonic": "re（再）+ veal（小牛肉）→ 再给你看小牛肉，揭示真相",
+              "forms": [
+                {
+                  "word": "revealing",
+                  "pos": "adj.",
+                  "def": "有启发性的；揭露真相的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "show",
+                "note": "更口语化，雅思阅读中 reveal 常被替换为 show 或 indicate"
+              },
+              {
+                "w": "indicate",
+                "note": "更正式，常用于学术写作"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "revel",
+                "note": "revel 意为“狂欢”，与 reveal 拼写相近但意思不同"
+              }
+            ]
+          },
+          {
+            "w": "preferentially",
+            "lemma": "preferentially",
+            "pos": "adv.",
+            "def": "优先地；偏爱地",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pre",
+                  "type": "prefix",
+                  "gloss": "前；先"
+                },
+                {
+                  "text": "fer",
+                  "type": "root",
+                  "gloss": "带；拿"
+                },
+                {
+                  "text": "ent",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                },
+                {
+                  "text": "ial",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                },
+                {
+                  "text": "ly",
+                  "type": "suffix",
+                  "gloss": "副词后缀"
+                }
+              ],
+              "derivation": "pre-（先）+ fer（拿）+ -ent + -ial + -ly → 先拿的 → 优先地",
+              "family": {
+                "root": "fer",
+                "gloss": "带；拿",
+                "words": [
+                  {
+                    "word": "prefer",
+                    "def": "更喜欢"
+                  },
+                  {
+                    "word": "preference",
+                    "def": "偏好"
+                  }
+                ]
+              },
+              "mnemonic": "pre（提前）+ fer（带来）→ 提前带来 → 优先",
+              "forms": [
+                {
+                  "word": "preferential",
+                  "pos": "adj.",
+                  "def": "优先的；优待的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "preferably",
+                "note": "意思相近，但 preferentially 更强调“有偏向地”，常用于科学语境"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "foraging",
+            "lemma": "forage",
+            "pos": "v.",
+            "def": "觅食",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "forag",
+                  "type": "root",
+                  "gloss": "饲料；觅食"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "现在分词后缀"
+                }
+              ],
+              "derivation": "forage（觅食）+ -ing（分词）",
+              "family": {
+                "root": "forag",
+                "gloss": "饲料",
+                "words": [
+                  {
+                    "word": "forager",
+                    "def": "觅食者"
+                  }
+                ]
+              },
+              "mnemonic": "for（为了）+ age（年龄）→ 为了年龄而觅食？不，联想：动物在森林里 forage（觅食）",
+              "forms": [
+                {
+                  "word": "foraged",
+                  "pos": "v.",
+                  "def": "觅食（过去式）"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "search for food",
+                "note": "更直白的表达，雅思阅读中可能用 feed 或 hunt 替换"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "leave no doubt that...",
+            "zh": "毫无疑问地表明……",
+            "usage": "写作中用于强调结论，例如：The data leave no doubt that the policy is effective.（数据毫无疑问地表明该政策有效。）"
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -91,7 +932,237 @@
           "pos": "n.",
           "def": "（害虫等的）侵扰、大量滋生"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The researchers",
+              "zh": "研究人员"
+            },
+            {
+              "role": "V",
+              "text": "suggest",
+              "zh": "认为"
+            },
+            {
+              "role": "O",
+              "text": "that the bats favour these fields because lack of water and nutrient run-off make these crops more susceptible to insect pest infestations",
+              "zh": "蝙蝠偏爱这些田地，因为缺水和养分流失使这些作物更容易遭受虫害"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：The researchers suggest that ...（研究人员认为……）。suggest是及物动词，后面跟一个名词从句作宾语。"
+        },
+        "chunks": [
+          {
+            "text": "The researchers",
+            "role": "S",
+            "zh": "研究人员",
+            "note": "句子的主语，指代前文提到的研究团队。"
+          },
+          {
+            "text": "suggest",
+            "role": "V",
+            "zh": "认为",
+            "note": "及物动词，后面跟宾语从句。suggest在这里表示“提出看法”，不是“建议”。",
+            "tag": "ch1.svo"
+          },
+          {
+            "text": "that the bats favour these fields",
+            "role": "O",
+            "zh": "蝙蝠偏爱这些田地",
+            "note": "that引导的名词从句，作suggest的宾语。从句内部是SVO结构：the bats（主语）favour（及物动词）these fields（宾语）。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "because lack of water and nutrient run-off make these crops more susceptible to insect pest infestations",
+            "role": "adv",
+            "zh": "因为缺水和养分流失使这些作物更容易遭受虫害",
+            "note": "because引导的原因状语从句，解释蝙蝠偏爱的原因。从句内部是SVOC结构：lack of water and nutrient run-off（并列主语）make（使役动词）these crops（宾语）more susceptible（宾语补语）。",
+            "tag": "ch15.reason"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句作宾语",
+            "explain": "名词从句就是用一个完整的句子来充当名词的角色。这里that the bats favour these fields整个句子作suggest的宾语。that在从句中不充当成分，只起连接作用，可以省略吗？在suggest后面，that通常不省略，尤其是正式写作中。"
+          },
+          {
+            "tag": "ch15.reason",
+            "name": "because原因状语从句",
+            "explain": "because引导的从句说明主句动作发生的原因。这里because...解释了为什么蝙蝠偏爱这些田地。注意：because从句是状语，修饰主句的动词favour。"
+          },
+          {
+            "tag": "ch1.svoc",
+            "name": "使役动词make + 宾语 + 补语",
+            "explain": "make是使役动词，意思是“使得”。结构是：make + 宾语 + 宾语补语。这里make these crops more susceptible，these crops是宾语，more susceptible是形容词短语作补语，说明宾语的状态。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "favour",
+            "lemma": "favour",
+            "pos": "v.",
+            "def": "偏爱；有利于",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "favour",
+                  "type": "root",
+                  "gloss": "好感"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "favour",
+                "gloss": "好感",
+                "words": [
+                  {
+                    "word": "favourite",
+                    "def": "最喜欢的"
+                  },
+                  {
+                    "word": "favourable",
+                    "def": "有利的；赞成的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "favoured",
+                  "pos": "adj.",
+                  "def": "受偏爱的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "prefer",
+                "note": "更常用，雅思阅读中常替换favour"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "susceptible",
+            "lemma": "susceptible",
+            "pos": "adj.",
+            "def": "易受影响的；易感染的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sus",
+                  "type": "prefix",
+                  "gloss": "在下面"
+                },
+                {
+                  "text": "cept",
+                  "type": "root",
+                  "gloss": "拿"
+                },
+                {
+                  "text": "ible",
+                  "type": "suffix",
+                  "gloss": "能……的"
+                }
+              ],
+              "derivation": "sus-（在下面）+ cept（拿）+ -ible（能……的）→ 能在下面被拿住的 → 易受影响的",
+              "family": {
+                "root": "cept",
+                "gloss": "拿",
+                "words": [
+                  {
+                    "word": "accept",
+                    "def": "接受"
+                  },
+                  {
+                    "word": "concept",
+                    "def": "概念"
+                  }
+                ]
+              },
+              "mnemonic": "sus（下面）+ cept（拿）+ ible（能）→ 能被拿下的 → 易受影响的",
+              "forms": [
+                {
+                  "word": "susceptibility",
+                  "pos": "n.",
+                  "def": "易感性"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "vulnerable",
+                "note": "更常见，雅思阅读中常替换susceptible"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "infestation",
+            "lemma": "infestation",
+            "pos": "n.",
+            "def": "（害虫等的）侵扰、大量滋生",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "in",
+                  "type": "prefix",
+                  "gloss": "进入"
+                },
+                {
+                  "text": "fest",
+                  "type": "root",
+                  "gloss": "打击"
+                },
+                {
+                  "text": "ation",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "in-（进入）+ fest（打击）+ -ation（名词）→ 打击进入 → 侵扰",
+              "family": {
+                "root": "fest",
+                "gloss": "打击",
+                "words": [
+                  {
+                    "word": "infest",
+                    "def": "侵扰（动词）"
+                  }
+                ]
+              },
+              "mnemonic": "in（进入）+ fest（节日）→ 害虫进入节日一样大量出现 → 侵扰",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "plague",
+                "note": "更强烈，指瘟疫般的侵扰"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "lack of water and nutrient run-off",
+            "zh": "缺水和养分流失",
+            "usage": "写作中可用来描述农业或环境问题，例如：Lack of water and nutrient run-off can lead to poor crop yields."
+          },
+          {
+            "text": "make ... more susceptible to",
+            "zh": "使……更容易受到……的影响",
+            "usage": "常用搭配，例如：Pollution makes plants more susceptible to disease."
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -113,7 +1184,249 @@
           "pos": "phr.",
           "def": "以……为食"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "DNA analysis",
+              "zh": "DNA分析"
+            },
+            {
+              "role": "V",
+              "text": "showed",
+              "zh": "表明"
+            },
+            {
+              "role": "O",
+              "text": "that all six species of bat had fed on economically important insect pests",
+              "zh": "全部六种蝙蝠都取食过在经济上重要的害虫"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：DNA analysis showed that ... (DNA分析表明……)。showed是及物动词，后面跟了一个that引导的宾语从句作宾语。"
+        },
+        "chunks": [
+          {
+            "text": "DNA analysis",
+            "role": "S",
+            "zh": "DNA分析",
+            "note": "名词短语作主语，analysis是核心名词，DNA是修饰语。"
+          },
+          {
+            "text": "showed",
+            "role": "V",
+            "zh": "表明",
+            "note": "及物动词，后面接宾语从句。"
+          },
+          {
+            "text": "that",
+            "role": "conn",
+            "zh": "（引导宾语从句）",
+            "note": "连接词，引导名词从句作宾语，本身无意义。"
+          },
+          {
+            "text": "all six species of bat",
+            "role": "S",
+            "zh": "全部六种蝙蝠",
+            "note": "宾语从句中的主语，all six species of bat是名词短语。"
+          },
+          {
+            "text": "had fed on",
+            "role": "V",
+            "zh": "曾以……为食",
+            "note": "过去完成时，表示取食发生在DNA分析之前。feed on是固定短语，意为“以……为食”。",
+            "tag": "ch6.perfect"
+          },
+          {
+            "text": "economically important insect pests",
+            "role": "O",
+            "zh": "在经济上重要的害虫",
+            "note": "宾语从句中的宾语，economically是副词修饰形容词important，整个短语修饰insect pests。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（宾语从句）",
+            "explain": "that引导的从句在这里作动词showed的宾语，整个从句相当于一个名词。这种从句在雅思阅读中非常常见，通常跟在show、indicate、suggest等动词后面。理解时，先把主句主干（DNA analysis showed）找到，再把从句当作一个整体来理解。"
+          },
+          {
+            "tag": "ch6.perfect",
+            "name": "过去完成时",
+            "explain": "结构是had + 过去分词（had fed）。它表示“过去的过去”，即这个动作发生在另一个过去动作（showed）之前。这里蝙蝠取食害虫发生在DNA分析之前，所以用过去完成时。在雅思阅读中，过去完成时常用于描述研究结果之前的背景。"
+          },
+          {
+            "tag": "ch3.modifier",
+            "name": "修饰语位置",
+            "explain": "economically是副词，修饰形容词important；important又修饰名词pests。这种“副词+形容词+名词”的修饰链在雅思阅读中很常见，比如environmentally friendly products。注意修饰语要紧紧挨着被修饰的词。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "species",
+            "lemma": "species",
+            "pos": "n.",
+            "def": "物种",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "species",
+                  "type": "root",
+                  "gloss": "种类"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "和special（特别的）同源，每个物种都是特别的种类。",
+              "forms": [
+                {
+                  "word": "species",
+                  "pos": "n.",
+                  "def": "单复数同形"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "type",
+                "note": "更通用，但species是生物学术语，阅读中常出现"
+              },
+              {
+                "w": "kind",
+                "note": "口语化，雅思阅读中较少用"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "specie",
+                "note": "specie是硬币，注意拼写差异"
+              }
+            ]
+          },
+          {
+            "w": "economically",
+            "lemma": "economically",
+            "pos": "adv.",
+            "def": "在经济上",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "eco",
+                  "type": "root",
+                  "gloss": "经济"
+                },
+                {
+                  "text": "nom",
+                  "type": "root",
+                  "gloss": "管理"
+                },
+                {
+                  "text": "ic",
+                  "type": "suffix",
+                  "gloss": "……的"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "……的"
+                },
+                {
+                  "text": "ly",
+                  "type": "suffix",
+                  "gloss": "……地（副词后缀）"
+                }
+              ],
+              "derivation": "economy（经济）+ -ic + -al + -ly → 在经济上",
+              "family": {
+                "root": "eco",
+                "gloss": "经济",
+                "words": [
+                  {
+                    "word": "economy",
+                    "def": "经济"
+                  },
+                  {
+                    "word": "economic",
+                    "def": "经济的"
+                  },
+                  {
+                    "word": "economics",
+                    "def": "经济学"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "financially",
+                "note": "更侧重财务，雅思阅读中可替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "pests",
+            "lemma": "pest",
+            "pos": "n.",
+            "def": "害虫",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pest",
+                  "type": "root",
+                  "gloss": "害虫"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "pest",
+                "gloss": "害虫",
+                "words": [
+                  {
+                    "word": "pesticide",
+                    "def": "杀虫剂（-cide杀死）"
+                  },
+                  {
+                    "word": "pestilence",
+                    "def": "瘟疫"
+                  }
+                ]
+              },
+              "mnemonic": "谐音“拍死它”，看到害虫就要拍死。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "insect",
+                "note": "insect是昆虫，pest特指有害的昆虫"
+              },
+              {
+                "w": "vermin",
+                "note": "更广义的害兽，阅读中较少见"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "feed on",
+            "zh": "以……为食",
+            "usage": "写作中可用来描述动物食性，如：These birds feed on seeds and insects.（这些鸟以种子和昆虫为食。）"
+          },
+          {
+            "text": "economically important",
+            "zh": "在经济上重要的",
+            "usage": "雅思写作中可用来描述某事物对经济的影响，如：Tourism is an economically important industry.（旅游业是经济上重要的产业。）"
+          }
+        ]
+      }
     },
     {
       "id": 6,
@@ -135,7 +1448,339 @@
           "pos": "v.",
           "def": "（害虫等）大量出没、侵扰"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "the scientists",
+              "zh": "科学家们"
+            },
+            {
+              "role": "V",
+              "text": "found",
+              "zh": "发现"
+            },
+            {
+              "role": "O",
+              "text": "indications",
+              "zh": "迹象"
+            }
+          ],
+          "plain": "去掉所有修饰和从句，主句只剩：the scientists found indications（科学家们发现了迹象）。found 是及物动词，后面跟宾语 indications。"
+        },
+        "chunks": [
+          {
+            "text": "While the findings indicated that rice farming benefits most from the bats",
+            "role": "adv",
+            "zh": "虽然研究结果显示水稻种植从蝙蝠身上获益最大",
+            "note": "While 引导让步状语从句，表示“虽然……但是……”。从句中又包含一个 that 引导的名词从句作 indicated 的宾语。",
+            "tag": "ch15.concession"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号分隔从句和主句。"
+          },
+          {
+            "text": "the scientists",
+            "role": "S",
+            "zh": "科学家们",
+            "note": "主句的主语。"
+          },
+          {
+            "text": "also",
+            "role": "adv",
+            "zh": "也",
+            "note": "副词，修饰 found。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": "found",
+            "role": "V",
+            "zh": "发现",
+            "note": "主句的谓语动词，过去式。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "indications",
+            "role": "O",
+            "zh": "迹象",
+            "note": "主句的宾语。"
+          },
+          {
+            "text": "that the bats were consuming pests of other crops",
+            "role": "app",
+            "zh": "蝙蝠正在取食其他作物的害虫",
+            "note": "that 引导的同位语从句，具体说明 indications 的内容。从句中用了过去进行时 were consuming，表示过去一段时间正在进行的动作。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号分隔同位语从句和后面的列举。"
+          },
+          {
+            "text": "including the black twig borer (which infests coffee plants), the sugarcane cicada, the macadamia nut-borer, and the sober tabby (a pest of citrus fruits)",
+            "role": "attr",
+            "zh": "包括黑枝小蠹（侵害咖啡树）、甘蔗蝉、澳洲坚果蛀虫，以及清醒虎斑虫（一种柑橘类害虫）",
+            "note": "including 引导的介词短语作后置定语，修饰 pests。括号内是关系从句或同位语，补充说明每种害虫的危害对象。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch15.concession",
+            "name": "让步状语从句",
+            "explain": "While 在这里不是“当……时”，而是“虽然”的意思，引导让步状语从句。它表达一种转折关系：虽然 A 成立，但是 B 也成立。阅读中看到 while 在句首，先判断是时间还是让步，通常看上下文逻辑。"
+          },
+          {
+            "tag": "ch14.noun-clause",
+            "name": "同位语从句",
+            "explain": "indications 后面跟了一个 that 从句，这个从句不是修饰 indications 的定语，而是说明 indications 的具体内容，所以叫同位语从句。判断方法：that 在从句中不充当任何成分（不像关系从句中 that 作主语或宾语），而且前面的名词通常是 fact, idea, indication 等抽象名词。"
+          },
+          {
+            "tag": "ch6.progressive",
+            "name": "过去进行时",
+            "explain": "were consuming 是过去进行时，表示在过去某个时间段内正在进行的动作。这里暗示蝙蝠取食害虫是一个持续的过程，而不是一次性动作。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "findings",
+            "lemma": "finding",
+            "pos": "n.",
+            "def": "研究结果；发现",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "find",
+                  "type": "root",
+                  "gloss": "找到"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "动名词/名词化"
+                },
+                {
+                  "text": "s",
+                  "type": "suffix",
+                  "gloss": "复数"
+                }
+              ],
+              "derivation": "find(找到) + -ing(名词化) → 找到的东西 → 发现；再加 s 表复数",
+              "family": {
+                "root": "find",
+                "gloss": "找到",
+                "words": [
+                  {
+                    "word": "find",
+                    "def": "找到"
+                  },
+                  {
+                    "word": "finder",
+                    "def": "发现者"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "results",
+                "note": "在学术语境中常替换 findings，如 research results"
+              },
+              {
+                "w": "discoveries",
+                "note": "更强调新发现，但不如 findings 正式"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "indications",
+            "lemma": "indication",
+            "pos": "n.",
+            "def": "迹象；表明",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "indic",
+                  "type": "root",
+                  "gloss": "指出"
+                },
+                {
+                  "text": "ation",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                },
+                {
+                  "text": "s",
+                  "type": "suffix",
+                  "gloss": "复数"
+                }
+              ],
+              "derivation": "indic(指出) + -ation(名词) → 指出的东西 → 迹象",
+              "family": {
+                "root": "dic",
+                "gloss": "说/指出",
+                "words": [
+                  {
+                    "word": "indicate",
+                    "def": "表明（动词）"
+                  },
+                  {
+                    "word": "indicator",
+                    "def": "指示器；指标"
+                  },
+                  {
+                    "word": "dictate",
+                    "def": "口述；命令"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "signs",
+                "note": "更常见，但 indication 更正式，常用于学术写作"
+              },
+              {
+                "w": "evidence",
+                "note": "证据，比 indication 更强"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "consuming",
+            "lemma": "consume",
+            "pos": "v.",
+            "def": "吃掉；消耗",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "con",
+                  "type": "prefix",
+                  "gloss": "完全"
+                },
+                {
+                  "text": "sum",
+                  "type": "root",
+                  "gloss": "拿取"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "现在分词"
+                }
+              ],
+              "derivation": "con(完全) + sum(拿取) → 完全拿走 → 消耗；吃掉",
+              "family": {
+                "root": "sum",
+                "gloss": "拿取",
+                "words": [
+                  {
+                    "word": "consumer",
+                    "def": "消费者"
+                  },
+                  {
+                    "word": "consumption",
+                    "def": "消费；消耗"
+                  },
+                  {
+                    "word": "assume",
+                    "def": "假设（as-加强 + sum 拿 → 拿过来当作）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "eat",
+                "note": "更口语化，consume 更正式，常用于科学描述"
+              },
+              {
+                "w": "devour",
+                "note": "狼吞虎咽，语气更强"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "infests",
+            "lemma": "infest",
+            "pos": "v.",
+            "def": "（害虫等）大量出没、侵扰",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "in",
+                  "type": "prefix",
+                  "gloss": "进入"
+                },
+                {
+                  "text": "fest",
+                  "type": "root",
+                  "gloss": "打击"
+                }
+              ],
+              "derivation": "in(进入) + fest(打击) → 进入并打击 → 侵扰",
+              "family": {
+                "root": "fest",
+                "gloss": "打击",
+                "words": [
+                  {
+                    "word": "infestation",
+                    "def": "侵扰（名词）"
+                  },
+                  {
+                    "word": "manifest",
+                    "def": "明显的（mani-手 + fest 打击 → 用手打击 → 明显的）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "plague",
+                "note": "使受灾，语气更强，如 plague of locusts"
+              },
+              {
+                "w": "overrun",
+                "note": "泛滥，强调数量多"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "benefit most from",
+            "zh": "从……获益最大",
+            "usage": "写作中可用来表达某事物从另一事物中获得最大好处，如：Small businesses benefit most from tax cuts."
+          },
+          {
+            "text": "pests of other crops",
+            "zh": "其他作物的害虫",
+            "usage": "学术写作中描述害虫时常用，如：The study identified pests of major crops."
+          }
+        ]
+      }
     },
     {
       "id": 7,
@@ -157,7 +1802,246 @@
           "pos": "n.",
           "def": "害虫防治者"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "O",
+              "text": "The effectiveness of bats as pest controllers has already been proven in the USA and Catalonia",
+              "zh": "蝙蝠作为害虫防治者的成效已经在美国和加泰罗尼亚得到证实"
+            },
+            {
+              "role": "V",
+              "text": "said",
+              "zh": "说"
+            },
+            {
+              "role": "S",
+              "text": "co-author James Kemp",
+              "zh": "合著者詹姆斯·肯普"
+            }
+          ],
+          "plain": "去掉修饰后，这句主干是：said co-author James Kemp（合著者詹姆斯·肯普说）。前面整个引语是 said 的宾语（说话的内容），后面 from the University of Lisbon 是修饰 James Kemp 的介词短语。"
+        },
+        "chunks": [
+          {
+            "text": "‘The effectiveness of bats as pest controllers has already been proven in the USA and Catalonia,’",
+            "role": "O",
+            "zh": "“蝙蝠作为害虫防治者的成效已经在美国和加泰罗尼亚得到证实，”",
+            "note": "直接引语，整个句子作 said 的宾语。引语内部是现在完成时的被动语态。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "said",
+            "role": "V",
+            "zh": "说",
+            "note": "及物动词，后面接直接引语作宾语。"
+          },
+          {
+            "text": "co-author James Kemp",
+            "role": "S",
+            "zh": "合著者詹姆斯·肯普",
+            "note": "主语，放在动词后面是因为直接引语倒装。"
+          },
+          {
+            "text": ", from the University of Lisbon",
+            "role": "attr",
+            "zh": "来自里斯本大学",
+            "note": "介词短语作后置定语，修饰 James Kemp，说明他的所属机构。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch18.quote-inversion",
+            "name": "直接引语倒装",
+            "explain": "当直接引语放在句首时，主语和动词的顺序可以颠倒，即动词在前、主语在后，如 said co-author James Kemp。这种倒装是英语写作中常见的修辞手法，让引语更突出。注意：如果主语是代词（如 he said），则不能倒装。"
+          },
+          {
+            "tag": "ch9.passive",
+            "name": "现在完成时的被动语态",
+            "explain": "结构是 has/have been + 过去分词。这里 has already been proven 表示“已经被证实”，强调动作已经完成且对现在有影响。被动语态把动作的承受者（effectiveness）放在主语位置，而动作的执行者（谁证明的）被省略了，因为不重要。"
+          },
+          {
+            "tag": "ch3.prep",
+            "name": "介词短语作后置定语",
+            "explain": "介词短语 from the University of Lisbon 跟在名词 James Kemp 后面，修饰它，说明“来自里斯本大学的”詹姆斯·肯普。这种结构在雅思阅读中很常见，用来补充人物的身份或地点。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "effectiveness",
+            "lemma": "effectiveness",
+            "pos": "n.",
+            "def": "有效性；成效",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "effect",
+                  "type": "root",
+                  "gloss": "效果"
+                },
+                {
+                  "text": "ive",
+                  "type": "suffix",
+                  "gloss": "有……性质的"
+                },
+                {
+                  "text": "ness",
+                  "type": "suffix",
+                  "gloss": "名词后缀，表示性质或状态"
+                }
+              ],
+              "derivation": "effect（效果）+ -ive（形容词后缀）→ effective（有效的）+ -ness（名词后缀）→ effectiveness（有效性）",
+              "family": {
+                "root": "effect",
+                "gloss": "效果",
+                "words": [
+                  {
+                    "word": "effective",
+                    "def": "有效的"
+                  },
+                  {
+                    "word": "effectively",
+                    "def": "有效地"
+                  },
+                  {
+                    "word": "ineffective",
+                    "def": "无效的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "efficacy",
+                "note": "更正式，常用于学术写作，表示“功效”"
+              },
+              {
+                "w": "efficiency",
+                "note": "强调效率，但有时可互换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "pest controller",
+            "lemma": "pest controller",
+            "pos": "n.",
+            "def": "害虫防治者",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pest",
+                  "type": "root",
+                  "gloss": "害虫"
+                },
+                {
+                  "text": "control",
+                  "type": "root",
+                  "gloss": "控制"
+                },
+                {
+                  "text": "er",
+                  "type": "suffix",
+                  "gloss": "……的人"
+                }
+              ],
+              "derivation": "pest（害虫）+ control（控制）+ -er（人）→ 控制害虫的人",
+              "family": {
+                "root": "pest",
+                "gloss": "害虫",
+                "words": [
+                  {
+                    "word": "pesticide",
+                    "def": "杀虫剂"
+                  },
+                  {
+                    "word": "pestilence",
+                    "def": "瘟疫"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "pest manager",
+                "note": "更现代的说法，强调管理而非控制"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "proven",
+            "lemma": "prove",
+            "pos": "v.",
+            "def": "证明（过去分词）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "prove",
+                  "type": "root",
+                  "gloss": "证明"
+                },
+                {
+                  "text": "en",
+                  "type": "suffix",
+                  "gloss": "过去分词后缀（不规则）"
+                }
+              ],
+              "derivation": "prove 的过去分词形式，不规则变化",
+              "family": {
+                "root": "prove",
+                "gloss": "证明",
+                "words": [
+                  {
+                    "word": "proof",
+                    "def": "证据（名词）"
+                  },
+                  {
+                    "word": "disprove",
+                    "def": "反驳"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "proved",
+                  "pos": "v.",
+                  "def": "prove 的过去式"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "demonstrated",
+                "note": "更正式，常用于学术语境"
+              },
+              {
+                "w": "established",
+                "note": "强调已被确立的事实"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "has already been proven",
+            "zh": "已经被证实",
+            "usage": "写作中可用于强调某个事实已被验证，如：The benefits of exercise have already been proven.（锻炼的好处已被证实。）"
+          }
+        ]
+      }
     },
     {
       "id": 8,
@@ -201,7 +2085,231 @@
           "pos": "phr.",
           "def": "不仅……而且……"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Rocha and his team",
+              "zh": "罗查和他的团队"
+            },
+            {
+              "role": "V",
+              "text": "found",
+              "zh": "发现"
+            },
+            {
+              "role": "O",
+              "text": "evidence",
+              "zh": "证据"
+            }
+          ],
+          "plain": "去掉所有修饰和从句，主句只剩：Rocha and his team found evidence（罗查和他的团队发现了证据）。found 是及物动词，后面必须跟“发现什么”，所以带宾语 evidence。"
+        },
+        "chunks": [
+          {
+            "text": "While the animal is often associated with spreading disease",
+            "role": "adv",
+            "zh": "尽管这种动物常被认为会传播疾病",
+            "note": "While 引导的让步副词从句，表示“虽然……但是……”，放在句首修饰整个主句。",
+            "tag": "ch15.concession"
+          },
+          {
+            "text": "Rocha and his team",
+            "role": "S",
+            "zh": "罗查和他的团队",
+            "note": "主句的主语，由两个名词并列组成。"
+          },
+          {
+            "text": "found",
+            "role": "V",
+            "zh": "发现",
+            "note": "主句的谓语动词，过去式。"
+          },
+          {
+            "text": "evidence",
+            "role": "O",
+            "zh": "证据",
+            "note": "主句的宾语，后面跟了一个同位语从句具体说明证据内容。"
+          },
+          {
+            "text": "that Malagasy bats feed not just on crop pests but also on mosquitoes – carriers of malaria, Rift Valley fever virus and elephantiasis – as well as blackflies, which spread river blindness",
+            "role": "app",
+            "zh": "即马达加斯加的蝙蝠不仅取食农作物害虫，还捕食蚊子（疟疾、裂谷热病毒和象皮病的传播媒介），以及传播河盲症的黑蝇",
+            "note": "that 引导的同位语从句，对 evidence 进行解释说明。从句内部用 not just...but also... 并列，破折号之间是插入语，补充说明 mosquitoes，句尾 which 引导非限定性关系从句修饰 blackflies。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch15.concession",
+            "name": "让步副词从句",
+            "explain": "While 在这里不是“当……时候”，而是“虽然、尽管”，引导让步从句。它表示主句的内容和从句的内容形成对比：虽然蝙蝠常被认为传播疾病，但研究发现它们其实有益。阅读中看到 While 在句首，先判断是时间还是让步，通常根据上下文：如果前后有转折关系，就是让步。"
+          },
+          {
+            "tag": "ch14.noun-clause",
+            "name": "同位语从句",
+            "explain": "that 从句跟在 evidence 后面，不是修饰 evidence（那不是关系从句），而是说明 evidence 的具体内容——即“证据是什么”。这种从句叫同位语从句，that 在从句中不充当成分，只起连接作用。判断方法：名词（如 evidence, fact, idea）后接 that 完整句子，就是同位语从句。"
+          },
+          {
+            "tag": "ch16.relative-nonrestrictive",
+            "name": "非限定性关系从句",
+            "explain": "which spread river blindness 前面有逗号，说明它是非限定性关系从句，对 blackflies 补充说明“黑蝇会传播河盲症”。去掉这个从句，句子意思仍然完整。阅读中遇到逗号+which，要知道它只是额外信息，不是限定哪个黑蝇。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "associated",
+            "lemma": "associate",
+            "pos": "v.",
+            "def": "关联；联系",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "as",
+                  "type": "prefix",
+                  "gloss": "朝向"
+                },
+                {
+                  "text": "soci",
+                  "type": "root",
+                  "gloss": "同伴、社会"
+                },
+                {
+                  "text": "ate",
+                  "type": "suffix",
+                  "gloss": "动词后缀"
+                }
+              ],
+              "derivation": "as(朝向) + soci(同伴) + ate(动词) → 使成为同伴 → 关联",
+              "family": {
+                "root": "soci",
+                "gloss": "同伴、社会",
+                "words": [
+                  {
+                    "word": "society",
+                    "def": "社会"
+                  },
+                  {
+                    "word": "social",
+                    "def": "社会的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "association",
+                  "pos": "n.",
+                  "def": "协会；关联"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "linked",
+                "note": "阅读中常替换 associate，如 be linked to"
+              },
+              {
+                "w": "connected",
+                "note": "同样表示“联系”，常见于学术文章"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "pests",
+            "lemma": "pest",
+            "pos": "n.",
+            "def": "害虫；有害生物",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pest",
+                  "type": "root",
+                  "gloss": "害虫"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "pest",
+                "gloss": "害虫",
+                "words": [
+                  {
+                    "word": "pesticide",
+                    "def": "杀虫剂"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "insects",
+                "note": "更宽泛的词，但阅读中 pest 常指 harmful insects"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "carriers",
+            "lemma": "carrier",
+            "pos": "n.",
+            "def": "携带者；传播媒介",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "carry",
+                  "type": "root",
+                  "gloss": "携带"
+                },
+                {
+                  "text": "er",
+                  "type": "suffix",
+                  "gloss": "……的人或物"
+                }
+              ],
+              "derivation": "carry(携带) + er(者) → 携带者",
+              "family": {
+                "root": "carry",
+                "gloss": "携带",
+                "words": [
+                  {
+                    "word": "carry",
+                    "def": "携带"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "vectors",
+                "note": "医学/生物学中更专业的词，指传播疾病的媒介，阅读中常见"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "not just ... but also ...",
+            "zh": "不仅……而且……",
+            "usage": "写作中用来连接两个并列成分，强调后者。例如：The project not just creates jobs but also improves the environment."
+          },
+          {
+            "text": "as well as",
+            "zh": "以及；也",
+            "usage": "相当于 and，但更强调前者。注意：A as well as B 重点在 A。例如：He plays the piano as well as the guitar."
+          }
+        ]
+      }
     },
     {
       "id": 10,
@@ -223,7 +2331,201 @@
           "pos": "adj.",
           "def": "复杂的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Rocha",
+              "zh": "罗查"
+            },
+            {
+              "role": "V",
+              "text": "points out",
+              "zh": "指出"
+            },
+            {
+              "role": "O",
+              "text": "that the relationship is complicated",
+              "zh": "这种关系很复杂"
+            }
+          ],
+          "plain": "去掉修饰后只剩：Rocha points out that the relationship is complicated（罗查指出这种关系很复杂）。points out 是及物动词短语，后面跟一个 that 引导的宾语从句。"
+        },
+        "chunks": [
+          {
+            "text": "Rocha",
+            "role": "S",
+            "zh": "罗查",
+            "note": "主语，指代前文提到的研究者。"
+          },
+          {
+            "text": "points out",
+            "role": "V",
+            "zh": "指出",
+            "note": "及物动词短语，后面必须跟宾语。"
+          },
+          {
+            "text": "that the relationship is complicated",
+            "role": "O",
+            "zh": "这种关系很复杂",
+            "note": "that 引导的宾语从句，整个从句作 points out 的宾语。从句内部是主系表结构：the relationship (主语) + is (系动词) + complicated (表语)。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（宾语从句）",
+            "explain": "that 引导的句子可以整个当名词用，这里它作动词短语 points out 的宾语。简单说，就是用一个完整的句子来充当“指出”的内容。注意 that 在从句中不充当成分，只起连接作用，口语中常省略，但写作中建议保留。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "主系表结构（在从句内）",
+            "explain": "宾语从句内部是 S + V + C 句型：the relationship（主语）+ is（系动词）+ complicated（表语）。系动词 is 没有实际动作，只是把主语和表语连起来，说明主语“是什么”或“怎么样”。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "points out",
+            "lemma": "point out",
+            "pos": "phr.",
+            "def": "指出",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "point",
+                  "type": "root",
+                  "gloss": "点、指向"
+                },
+                {
+                  "text": "out",
+                  "type": "suffix",
+                  "gloss": "向外"
+                }
+              ],
+              "derivation": "point（指向）+ out（向外）→ 把手指向外指出→ 引申为“指出”",
+              "family": {
+                "root": "point",
+                "gloss": "点、指向",
+                "words": [
+                  {
+                    "word": "point",
+                    "def": "点；观点"
+                  },
+                  {
+                    "word": "pointer",
+                    "def": "指示器；指针"
+                  }
+                ]
+              },
+              "mnemonic": "想象用手指向外点出某个东西，就是“指出”。",
+              "forms": [
+                {
+                  "word": "pointed out",
+                  "pos": "phr.",
+                  "def": "过去式/过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "indicate",
+                "note": "更正式，雅思阅读中常替换 point out"
+              },
+              {
+                "w": "note",
+                "note": "表示“指出、注意到”，常见于学术写作"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "complicated",
+            "lemma": "complicated",
+            "pos": "adj.",
+            "def": "复杂的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "com",
+                  "type": "prefix",
+                  "gloss": "一起"
+                },
+                {
+                  "text": "plic",
+                  "type": "root",
+                  "gloss": "折叠"
+                },
+                {
+                  "text": "ated",
+                  "type": "suffix",
+                  "gloss": "……的（形容词后缀）"
+                }
+              ],
+              "derivation": "com（一起）+ plic（折叠）+ ated（的）→ 折叠在一起的→ 复杂的",
+              "family": {
+                "root": "plic",
+                "gloss": "折叠",
+                "words": [
+                  {
+                    "word": "complicate",
+                    "def": "使复杂（动词）"
+                  },
+                  {
+                    "word": "complication",
+                    "def": "复杂情况（名词）"
+                  },
+                  {
+                    "word": "explicate",
+                    "def": "解释（ex-向外+plic→展开）"
+                  }
+                ]
+              },
+              "mnemonic": "com（一起）+ plic（折叠）→ 很多层叠在一起，自然就复杂了。",
+              "forms": [
+                {
+                  "word": "complicate",
+                  "pos": "v.",
+                  "def": "使复杂"
+                },
+                {
+                  "word": "complication",
+                  "pos": "n.",
+                  "def": "复杂情况"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "complex",
+                "note": "同义，但 complex 更强调“由多个部分组成”，complicated 更强调“难理解”。雅思阅读中两者常互换。"
+              },
+              {
+                "w": "intricate",
+                "note": "强调细节繁多、错综复杂，更正式"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "complicit",
+                "note": "形近，但意为“同谋的”，注意区分"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "point out that",
+            "zh": "指出……",
+            "usage": "写作中引出观点或事实的常用结构，例如：The author points out that the problem is more serious than expected."
+          }
+        ]
+      }
     },
     {
       "id": 11,
@@ -245,7 +2547,247 @@
           "pos": "adj.",
           "def": "至关重要的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "bats",
+              "zh": "蝙蝠"
+            },
+            {
+              "role": "V",
+              "text": "become",
+              "zh": "成为"
+            },
+            {
+              "role": "C",
+              "text": "a crucial source of protein for local people",
+              "zh": "当地人的一个重要蛋白质来源"
+            }
+          ],
+          "plain": "去掉修饰后只剩：bats become a source of protein（蝙蝠成为蛋白质来源）。become 是连缀动词，后面跟补语说明主语变成什么。"
+        },
+        "chunks": [
+          {
+            "text": "When food is scarce",
+            "role": "adv",
+            "zh": "当食物匮乏时",
+            "note": "时间状语从句，修饰主句，交代条件。",
+            "tag": "ch15.time"
+          },
+          {
+            "text": "bats",
+            "role": "S",
+            "zh": "蝙蝠",
+            "note": "主句主语"
+          },
+          {
+            "text": "become",
+            "role": "V",
+            "zh": "成为",
+            "note": "连缀动词，后面跟补语"
+          },
+          {
+            "text": "a crucial source of protein for local people",
+            "role": "C",
+            "zh": "当地人的一个重要蛋白质来源",
+            "note": "主语补语，说明蝙蝠变成什么。a source of protein 是名词词组，crucial 修饰 source，for local people 是介词短语修饰 source。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svc",
+            "name": "句型二：S + V + C（主系表）",
+            "explain": "become 是连缀动词，它本身没有完整的意思，需要后面跟一个补语（说明主语变成什么）才能把话说清楚。这里补语是 a crucial source of protein，说明蝙蝠变成了什么。判断句型时，看到 become、be、look 这类动词，就要想到可能是 SVC 句型。"
+          },
+          {
+            "tag": "ch15.time",
+            "name": "时间状语从句",
+            "explain": "When food is scarce 是一个时间状语从句，由 when 引导，表示主句动作发生的时间条件。从句本身是一个完整的句子（food is scarce），但整体充当主句的状语。在雅思阅读中，时间状语从句常用来给出背景条件，答案往往在主句里。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "scarce",
+            "lemma": "scarce",
+            "pos": "adj.",
+            "def": "稀缺的；匮乏的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "scarc",
+                  "type": "root",
+                  "gloss": "缺少"
+                },
+                {
+                  "text": "e",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "scarc",
+                "gloss": "缺少",
+                "words": [
+                  {
+                    "word": "scarcity",
+                    "def": "稀缺（名词）"
+                  },
+                  {
+                    "word": "scarcely",
+                    "def": "几乎不（副词）"
+                  }
+                ]
+              },
+              "mnemonic": "scarce 音似“死磕死”，资源稀缺时只能死磕。",
+              "forms": [
+                {
+                  "word": "scarcer",
+                  "pos": "adj.",
+                  "def": "更稀缺的（比较级）"
+                },
+                {
+                  "word": "scarcest",
+                  "pos": "adj.",
+                  "def": "最稀缺的（最高级）"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "limited",
+                "note": "雅思阅读中常替换 scarce，如 limited resources"
+              },
+              {
+                "w": "insufficient",
+                "note": "更正式，表示不足，如 insufficient food"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "scare",
+                "note": "scare 是动词“惊吓”，拼写差一个字母"
+              }
+            ]
+          },
+          {
+            "w": "crucial",
+            "lemma": "crucial",
+            "pos": "adj.",
+            "def": "至关重要的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "cruc",
+                  "type": "root",
+                  "gloss": "十字架；关键"
+                },
+                {
+                  "text": "ial",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "cruc（十字路口，关键点）+ ial → 关键的",
+              "family": {
+                "root": "cruc",
+                "gloss": "十字",
+                "words": [
+                  {
+                    "word": "crucify",
+                    "def": "钉在十字架上"
+                  },
+                  {
+                    "word": "crucifix",
+                    "def": "十字架"
+                  }
+                ]
+              },
+              "mnemonic": "crucial 音似“哭手哦”，关键时刻哭手也没用。",
+              "forms": [
+                {
+                  "word": "crucially",
+                  "pos": "adv.",
+                  "def": "关键地"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "vital",
+                "note": "雅思阅读中常替换 crucial，如 vital role"
+              },
+              {
+                "w": "essential",
+                "note": "更常见，如 essential source"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "source",
+            "lemma": "source",
+            "pos": "n.",
+            "def": "来源；源头",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sourc",
+                  "type": "root",
+                  "gloss": "升起；来源"
+                },
+                {
+                  "text": "e",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "sourc",
+                "gloss": "来源",
+                "words": [
+                  {
+                    "word": "resource",
+                    "def": "资源（re-再，反复）"
+                  }
+                ]
+              },
+              "mnemonic": "source 音似“搜死”，搜索到死也要找到来源。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "origin",
+                "note": "更强调起源，如 the origin of protein"
+              },
+              {
+                "w": "supply",
+                "note": "强调供应，如 protein supply"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "sauce",
+                "note": "sauce 是酱料，拼写差一个字母"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "a source of protein",
+            "zh": "蛋白质来源",
+            "usage": "写作中可迁移：a source of energy / a source of income，表示“某物的来源”。"
+          }
+        ]
+      }
     },
     {
       "id": 12,
@@ -267,7 +2809,166 @@
           "pos": "adv.",
           "def": "甚至（表强调）"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "the children",
+              "zh": "孩子们"
+            },
+            {
+              "role": "V",
+              "text": "will hunt",
+              "zh": "会捕猎"
+            },
+            {
+              "role": "O",
+              "text": "them",
+              "zh": "它们"
+            }
+          ],
+          "plain": "去掉修饰后只剩：the children will hunt them（孩子们会捕猎它们）。hunt（捕猎）是及物动词，后面必须跟被猎的对象，所以带宾语 them。"
+        },
+        "chunks": [
+          {
+            "text": "Even",
+            "role": "adv",
+            "zh": "甚至",
+            "note": "副词，放在句首强调“连……都”，暗示出乎意料或程度深。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": "the children",
+            "role": "S",
+            "zh": "孩子们",
+            "note": "主语，前面有定冠词 the，特指当地的孩子。"
+          },
+          {
+            "text": "will hunt",
+            "role": "V",
+            "zh": "会捕猎",
+            "note": "一般将来时 will + 动词原形，表示将来发生的动作。",
+            "tag": "ch6.future"
+          },
+          {
+            "text": "them",
+            "role": "O",
+            "zh": "它们",
+            "note": "宾语，指代前一句的 bats（蝙蝠）。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "英语句子最核心的结构就是主语+动词+宾语。这里的动词 hunt（捕猎）是及物动词，必须有一个被猎的对象，所以后面跟了宾语 them。理解长难句时，先找到这个主干，其他修饰成分就好办了。"
+          },
+          {
+            "tag": "ch6.future",
+            "name": "一般将来时",
+            "explain": "结构是 will + 动词原形（will hunt），表示“将要”发生的动作。这里用将来时，说明捕猎蝙蝠在当地是一种习惯性行为，并非只在过去发生。"
+          },
+          {
+            "tag": "ch5.adv",
+            "name": "副词 even 的强调用法",
+            "explain": "Even 放在句首或所强调的词前面，表示“甚至”，用来突出某个极端情况。这里 even 强调“连孩子都去捕猎”，暗示捕猎蝙蝠在当地非常普遍，连小孩都参与。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "hunt",
+            "lemma": "hunt",
+            "pos": "v.",
+            "def": "捕猎；追捕",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "hunt",
+                  "type": "root",
+                  "gloss": "追捕"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "hunt",
+                "gloss": "追捕",
+                "words": [
+                  {
+                    "word": "hunter",
+                    "def": "猎人"
+                  },
+                  {
+                    "word": "hunting",
+                    "def": "打猎（名词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "hunted",
+                  "pos": "v.",
+                  "def": "hunt 的过去式/过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "chase",
+                "note": "更强调“追逐”，在雅思阅读中可能替换 hunt"
+              },
+              {
+                "w": "catch",
+                "note": "更通用，强调“抓住”，但不如 hunt 有“捕猎”的意味"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "even",
+            "lemma": "even",
+            "pos": "adv.",
+            "def": "甚至（表强调）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "even",
+                  "type": "root",
+                  "gloss": "甚至"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "including",
+                "note": "介词，表示“包括”，在列举时可能替换 even，但语气较弱"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "evening",
+                "note": "意思是“晚上”，拼写相近但意思完全不同"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "Even the children will hunt them.",
+            "zh": "就连孩子们也会去捕猎它们。",
+            "usage": "写作中可以用 Even + 主语 + will + 动词 的结构来强调某个群体也参与某事，例如：Even the elderly will use smartphones nowadays.（如今连老年人也会用智能手机。）"
+          }
+        ]
+      }
     },
     {
       "id": 13,
@@ -289,7 +2990,275 @@
           "pos": "adj.",
           "def": "不洁的；肮脏的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "the bats",
+              "zh": "蝙蝠"
+            },
+            {
+              "role": "V",
+              "text": "roost",
+              "zh": "栖息"
+            },
+            {
+              "role": "O",
+              "text": "in buildings",
+              "zh": "在建筑物里"
+            }
+          ],
+          "plain": "去掉所有修饰和从句，这句的主干是：the bats roost in buildings（蝙蝠栖息在建筑物里）。roost 是不及物动词，所以后面跟介词短语 in buildings 作状语，不是宾语。但整体句型仍是 S+V，因为动词后面没有直接宾语。"
+        },
+        "chunks": [
+          {
+            "text": "And",
+            "role": "conn",
+            "zh": "而且",
+            "note": "连接词，连接上一句。"
+          },
+          {
+            "text": "as well as roosting in trees",
+            "role": "adv",
+            "zh": "除了栖息在树上",
+            "note": "介词短语作状语，as well as 表示“除了……还”，后面接动名词 roosting。",
+            "tag": "ch5.adv-phrase"
+          },
+          {
+            "text": "the bats",
+            "role": "S",
+            "zh": "蝙蝠",
+            "note": "主语。"
+          },
+          {
+            "text": "sometimes",
+            "role": "adv",
+            "zh": "有时",
+            "note": "频率副词。"
+          },
+          {
+            "text": "roost",
+            "role": "V",
+            "zh": "栖息",
+            "note": "不及物动词。"
+          },
+          {
+            "text": "in buildings",
+            "role": "adv",
+            "zh": "在建筑物里",
+            "note": "介词短语作地点状语。"
+          },
+          {
+            "text": "but",
+            "role": "conn",
+            "zh": "但是",
+            "note": "转折连词，连接两个并列分句。"
+          },
+          {
+            "text": "are not welcomed",
+            "role": "V",
+            "zh": "不受欢迎",
+            "note": "被动语态，主语仍是 the bats。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "there",
+            "role": "adv",
+            "zh": "在那里",
+            "note": "地点副词，指代 in buildings。"
+          },
+          {
+            "text": "because",
+            "role": "conn",
+            "zh": "因为",
+            "note": "引导原因状语从句。"
+          },
+          {
+            "text": "they",
+            "role": "S",
+            "zh": "它们",
+            "note": "指蝙蝠。"
+          },
+          {
+            "text": "make",
+            "role": "V",
+            "zh": "使得",
+            "note": "使役动词。"
+          },
+          {
+            "text": "them",
+            "role": "O",
+            "zh": "它们",
+            "note": "指建筑物。"
+          },
+          {
+            "text": "unclean",
+            "role": "C",
+            "zh": "不洁的",
+            "note": "宾语补足语，说明 make 的结果。",
+            "tag": "ch1.svoc"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svoc",
+            "name": "句型五：S + V + O + C（主语+动词+宾语+补语）",
+            "explain": "make 是使役动词，后面跟宾语 them（建筑物）和补语 unclean（不洁的），表示“使它们变得不洁”。补语说明宾语的状态或结果。这种结构在雅思阅读中很常见，比如 make it difficult, find it interesting 等。"
+          },
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "are not welcomed 是被动语态，结构是 be + 过去分词。主语 the bats 是“被欢迎”的对象，而不是主动欢迎别人。被动语态在学术写作中很常用，用来强调动作的承受者。"
+          },
+          {
+            "tag": "ch5.adv-phrase",
+            "name": "介词短语作状语",
+            "explain": "as well as roosting in trees 是一个介词短语，as well as 是复合介词，后面接动名词短语 roosting in trees，整体作状语，表示“除了……之外还”。这种结构在雅思阅读中常用来列举附加信息。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "roost",
+            "lemma": "roost",
+            "pos": "v.",
+            "def": "栖息",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "roost",
+                  "type": "root",
+                  "gloss": "栖息"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "想象鸟在 roost（栖息）在树枝上，和 rest（休息）发音相似。",
+              "forms": [
+                {
+                  "word": "roosts",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "roosted",
+                  "pos": "v.",
+                  "def": "过去式"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "perch",
+                "note": "更常用于鸟类，雅思阅读中可能替换 roost"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "unclean",
+            "lemma": "unclean",
+            "pos": "adj.",
+            "def": "不洁的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "un",
+                  "type": "prefix",
+                  "gloss": "不"
+                },
+                {
+                  "text": "clean",
+                  "type": "root",
+                  "gloss": "干净的"
+                }
+              ],
+              "derivation": "un-（否定前缀）+ clean（干净的）→ 不干净的",
+              "family": {
+                "root": "clean",
+                "gloss": "干净的",
+                "words": [
+                  {
+                    "word": "cleanliness",
+                    "def": "清洁"
+                  },
+                  {
+                    "word": "cleaner",
+                    "def": "清洁工"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "dirty",
+                "note": "更常用，但 unclean 更正式，雅思阅读中可能用 dirty 替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "welcomed",
+            "lemma": "welcome",
+            "pos": "v.",
+            "def": "欢迎",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "wel",
+                  "type": "root",
+                  "gloss": "好"
+                },
+                {
+                  "text": "come",
+                  "type": "root",
+                  "gloss": "来"
+                }
+              ],
+              "derivation": "wel（好）+ come（来）→ 欢迎",
+              "family": null,
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "welcomes",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "welcoming",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "accepted",
+                "note": "雅思阅读中可能替换 welcomed，表示被接受"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "as well as",
+            "zh": "除了……还",
+            "usage": "写作中可用来列举附加信息，例如：The course covers grammar as well as vocabulary.（这门课涵盖语法和词汇。）"
+          },
+          {
+            "text": "make them unclean",
+            "zh": "使它们变脏",
+            "usage": "make + 宾语 + 形容词 结构，写作中可用来表达“使……变得……”，例如：The pollution makes the river unclean.（污染使河流变脏。）"
+          }
+        ]
+      }
     },
     {
       "id": 14,
@@ -311,7 +3280,337 @@
           "pos": "adj.",
           "def": "重要的；意义重大的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "they",
+              "zh": "它们(蝙蝠)"
+            },
+            {
+              "role": "V",
+              "text": "are associated with",
+              "zh": "与……联系在一起"
+            },
+            {
+              "role": "O",
+              "text": "sacred caves and the ancestors",
+              "zh": "神圣的洞穴和祖先"
+            }
+          ],
+          "plain": "去掉修饰和从句，这句主干是：they are associated with sacred caves and the ancestors（它们与神圣的洞穴和祖先联系在一起）。are associated with 是及物动词短语，后面接宾语。"
+        },
+        "chunks": [
+          {
+            "text": "At the same time, however,",
+            "role": "adv",
+            "zh": "然而与此同时",
+            "note": "副词短语作状语，表示转折和时间。",
+            "tag": "ch5.adv-phrase"
+          },
+          {
+            "text": "they",
+            "role": "S",
+            "zh": "它们(蝙蝠)",
+            "note": "主语，指代前文的 bats。"
+          },
+          {
+            "text": "are associated with",
+            "role": "V",
+            "zh": "与……联系在一起",
+            "note": "被动语态，be + 过去分词 + with，表示“被关联”。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "sacred caves and the ancestors",
+            "role": "O",
+            "zh": "神圣的洞穴和祖先",
+            "note": "介词 with 的宾语。"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "",
+            "note": "逗号连接两个并列分句。"
+          },
+          {
+            "text": "so",
+            "role": "conn",
+            "zh": "因此",
+            "note": "并列连词，表示结果。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "they",
+            "role": "S",
+            "zh": "它们",
+            "note": "第二个分句的主语。"
+          },
+          {
+            "text": "can be viewed as",
+            "role": "V",
+            "zh": "可以被视为",
+            "note": "情态动词 can + 被动语态 be viewed as，表示“可以被看作”。",
+            "tag": "ch7.modal"
+          },
+          {
+            "text": "beings between worlds",
+            "role": "C",
+            "zh": "游走于两个世界之间的生灵",
+            "note": "主语补足语，说明主语被看作什么。",
+            "tag": "ch1.svc"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "",
+            "note": "逗号引出非限制性定语从句。"
+          },
+          {
+            "text": "which",
+            "role": "clause",
+            "zh": "这",
+            "note": "关系代词，指代前面整个主句的内容。",
+            "tag": "ch16.relative-nonrestrictive"
+          },
+          {
+            "text": "makes",
+            "role": "V",
+            "zh": "使得",
+            "note": "及物动词，带宾语和补语。"
+          },
+          {
+            "text": "them",
+            "role": "O",
+            "zh": "它们",
+            "note": "宾语。"
+          },
+          {
+            "text": "very significant",
+            "role": "C",
+            "zh": "非常重要",
+            "note": "宾语补足语，说明宾语的状态。",
+            "tag": "ch1.svoc"
+          },
+          {
+            "text": "in the culture of the people",
+            "role": "adv",
+            "zh": "在当地人的文化中",
+            "note": "介词短语作状语，修饰 makes。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch16.relative-nonrestrictive",
+            "name": "非限制性定语从句",
+            "explain": "which 引导的定语从句前面有逗号，说明它不是用来限定哪个名词，而是对整个主句的内容做补充说明。这里的 which 指代前面整句话“they are associated with... so they can be viewed as beings between worlds”这件事，意思是“这件事使得它们在文化中很重要”。这种从句在雅思阅读里经常出现，用来补充额外信息，去掉也不影响句子主干。"
+          },
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "are associated with 和 can be viewed as 都是被动结构。被动语态由 be + 过去分词构成，强调主语是动作的承受者。这里“蝙蝠被与洞穴和祖先联系在一起”、“蝙蝠被视为生灵”，主语蝙蝠是“被关联”、“被看待”的对象。被动语态在学术英语中很常见，因为往往不强调动作的执行者。"
+          },
+          {
+            "tag": "ch7.modal",
+            "name": "情态动词 can",
+            "explain": "can 表示“可能”或“能够”，这里 can be viewed as 意思是“可以被视为”，表达一种客观的可能性。情态动词后面必须跟动词原形，这里 be viewed 是被动语态的原形。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "associated",
+            "lemma": "associate",
+            "pos": "v.",
+            "def": "关联；联系",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "as",
+                  "type": "prefix",
+                  "gloss": "朝向"
+                },
+                {
+                  "text": "soci",
+                  "type": "root",
+                  "gloss": "同伴；社会"
+                },
+                {
+                  "text": "ate",
+                  "type": "suffix",
+                  "gloss": "动词后缀"
+                }
+              ],
+              "derivation": "as(朝向) + soci(同伴) + ate(动词) → 使成为同伴 → 关联",
+              "family": {
+                "root": "soci",
+                "gloss": "同伴；社会",
+                "words": [
+                  {
+                    "word": "society",
+                    "def": "社会"
+                  },
+                  {
+                    "word": "social",
+                    "def": "社会的"
+                  },
+                  {
+                    "word": "association",
+                    "def": "协会；关联"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "association",
+                  "pos": "n.",
+                  "def": "协会；关联"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "linked",
+                "note": "雅思阅读中常替换 associate，如 be linked to"
+              },
+              {
+                "w": "connected",
+                "note": "同样表示“连接”，常见于学术文章"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "sacred",
+            "lemma": "sacred",
+            "pos": "adj.",
+            "def": "神圣的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sacr",
+                  "type": "root",
+                  "gloss": "神圣"
+                },
+                {
+                  "text": "ed",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "sacr(神圣) + ed(形容词) → 神圣的",
+              "family": {
+                "root": "sacr",
+                "gloss": "神圣",
+                "words": [
+                  {
+                    "word": "sacrifice",
+                    "def": "牺牲"
+                  },
+                  {
+                    "word": "sacrament",
+                    "def": "圣礼"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "holy",
+                "note": "更常见的同义词，如 holy place"
+              },
+              {
+                "w": "divine",
+                "note": "更正式，如 divine power"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "significant",
+            "lemma": "significant",
+            "pos": "adj.",
+            "def": "重要的；意义重大的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sign",
+                  "type": "root",
+                  "gloss": "标记；意义"
+                },
+                {
+                  "text": "ific",
+                  "type": "suffix",
+                  "gloss": "使成为"
+                },
+                {
+                  "text": "ant",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "sign(标记) + ific(使成为) + ant(形容词) → 有标记的 → 重要的",
+              "family": {
+                "root": "sign",
+                "gloss": "标记；意义",
+                "words": [
+                  {
+                    "word": "sign",
+                    "def": "标志；迹象"
+                  },
+                  {
+                    "word": "signify",
+                    "def": "表示；意味着"
+                  },
+                  {
+                    "word": "significance",
+                    "def": "重要性；意义"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "significance",
+                  "pos": "n.",
+                  "def": "重要性"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "important",
+                "note": "最常用，但 significant 更正式"
+              },
+              {
+                "w": "crucial",
+                "note": "强调关键性，如 crucial role"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "be viewed as",
+            "zh": "被视为",
+            "usage": "写作中可替换 be seen as / be considered as，表示“被看作”。例如：Education is viewed as a key to success."
+          },
+          {
+            "text": "between worlds",
+            "zh": "在两个世界之间",
+            "usage": "可用于描述跨界或中间状态，如 a bridge between worlds（连接两个世界的桥梁）。"
+          }
+        ]
+      }
     },
     {
       "id": 15,
@@ -333,7 +3632,230 @@
           "pos": "adj.",
           "def": "长期的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 系动词 + 补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "one potential problem",
+              "zh": "一个潜在问题"
+            },
+            {
+              "role": "V",
+              "text": "is",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "that while these bats are benefiting from farming, at the same time deforestation is reducing the places where they can roost, which could have long-term effects on their numbers",
+              "zh": "尽管这些蝙蝠正从农业中获益，但与此同时，森林砍伐正在减少它们可供栖息的场所，这可能对其种群数量产生长期影响"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：one potential problem is that ...（一个潜在问题是……）。is 是系动词，后面 that 从句作补语（说明问题是什么）。"
+        },
+        "chunks": [
+          {
+            "text": "And",
+            "role": "conn",
+            "zh": "并且",
+            "note": "连接词，表示与前一句的并列关系。"
+          },
+          {
+            "text": "one potential problem",
+            "role": "S",
+            "zh": "一个潜在问题",
+            "note": "主语，名词词组。"
+          },
+          {
+            "text": "is",
+            "role": "V",
+            "zh": "是",
+            "note": "系动词。"
+          },
+          {
+            "text": "that while these bats are benefiting from farming, at the same time deforestation is reducing the places where they can roost, which could have long-term effects on their numbers",
+            "role": "C",
+            "zh": "尽管这些蝙蝠正从农业中获益，但与此同时，森林砍伐正在减少它们可供栖息的场所，这可能对其种群数量产生长期影响",
+            "note": "表语从句，整个从句作补语。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（表语从句）",
+            "explain": "that 引导的从句放在系动词 is 后面，充当补语（也叫表语），说明主语“one potential problem”是什么。整个从句相当于一个名词，所以叫名词从句。"
+          },
+          {
+            "tag": "ch15.concession",
+            "name": "让步状语从句",
+            "explain": "while 在这里表示“虽然、尽管”，引导让步状语从句。它告诉我们：尽管蝙蝠从农业中获益（好的一面），但另一方面森林砍伐带来了坏影响。while 从句和主句形成对比。"
+          },
+          {
+            "tag": "ch16.relative",
+            "name": "限定性关系从句",
+            "explain": "where they can roost 是关系从句，修饰先行词 the places。where 相当于 in which，表示“在这些地方它们可以栖息”。这个从句限定是哪些地方——不是所有地方，而是它们能栖息的地方。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "potential",
+            "lemma": "potential",
+            "pos": "adj.",
+            "def": "潜在的；可能的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "potent",
+                  "type": "root",
+                  "gloss": "力量、能力"
+                },
+                {
+                  "text": "ial",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "potent（力量）+ -ial（形容词后缀）→ 有潜在力量的 → 潜在的",
+              "family": {
+                "root": "potent",
+                "gloss": "力量",
+                "words": [
+                  {
+                    "word": "potency",
+                    "def": "潜力；效力"
+                  },
+                  {
+                    "word": "potentate",
+                    "def": "统治者；有权势的人"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "potentially",
+                  "pos": "adv.",
+                  "def": "潜在地"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "possible",
+                "note": "更常用，但 potential 强调“有变成现实的可能”，雅思阅读中常替换使用"
+              },
+              {
+                "w": "likely",
+                "note": "表示可能性大，potential 更中性"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "benefiting",
+            "lemma": "benefit",
+            "pos": "v.",
+            "def": "受益；获益",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "bene",
+                  "type": "prefix",
+                  "gloss": "好"
+                },
+                {
+                  "text": "fit",
+                  "type": "root",
+                  "gloss": "做"
+                }
+              ],
+              "derivation": "bene（好）+ fit（做）→ 做好事 → 受益",
+              "family": {
+                "root": "fit",
+                "gloss": "做",
+                "words": [
+                  {
+                    "word": "beneficial",
+                    "def": "有益的"
+                  },
+                  {
+                    "word": "benefactor",
+                    "def": "捐助者；恩人"
+                  }
+                ]
+              },
+              "mnemonic": "bene（好）+ fit（做）→ 做得好就受益",
+              "forms": [
+                {
+                  "word": "benefit",
+                  "pos": "n.",
+                  "def": "利益；好处"
+                },
+                {
+                  "word": "benefited",
+                  "pos": "v.",
+                  "def": "过去式/过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "gain",
+                "note": "更口语化，benefit 更正式，雅思写作常用 benefit from"
+              },
+              {
+                "w": "profit",
+                "note": "强调经济上的获利，benefit 更广泛"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "roost",
+            "lemma": "roost",
+            "pos": "v.",
+            "def": "栖息；歇息",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "roost",
+                  "type": "root",
+                  "gloss": "栖息"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "roost 像 room（房间）+ nest（巢）→ 鸟的房间 → 栖息",
+              "forms": [
+                {
+                  "word": "roost",
+                  "pos": "n.",
+                  "def": "栖息处"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "perch",
+                "note": "更具体指鸟停在树枝上，roost 常指睡觉休息"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "have long-term effects on",
+            "zh": "对……产生长期影响",
+            "usage": "写作中常用，例如：Pollution can have long-term effects on human health.（污染会对人类健康产生长期影响。）"
+          }
+        ]
+      }
     },
     {
       "id": 16,
@@ -355,7 +3877,271 @@
           "pos": "adj.",
           "def": "可持续的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C (主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Rocha",
+              "zh": "罗查"
+            },
+            {
+              "role": "V",
+              "text": "says",
+              "zh": "说"
+            },
+            {
+              "role": "C",
+              "text": "‘With the right help, we hope that farmers can promote this mutually beneficial relationship by installing bat houses.’",
+              "zh": "“只要给予恰当的扶持，我们希望农民能通过安装蝙蝠屋来促进这种互利关系。”"
+            }
+          ],
+          "plain": "去掉修饰后，第一句主干是 Rocha says + 直接引语（作补语）。第二句主干是 Rocha and his colleagues believe + that 宾语从句。"
+        },
+        "chunks": [
+          {
+            "text": "Rocha says, ‘With the right help, we hope that farmers can promote this mutually beneficial relationship by installing bat houses.’",
+            "role": "S",
+            "zh": "罗查说：“只要给予恰当的扶持，我们希望农民能通过安装蝙蝠屋来促进这种互利关系。”",
+            "note": "整个直接引语作为 says 的补语。",
+            "tag": "ch1.svc"
+          },
+          {
+            "text": "Rocha and his colleagues believe that maximising bat populations can help to boost crop yields and promote sustainable livelihoods.",
+            "role": "S",
+            "zh": "罗查和同事们相信，尽可能扩大蝙蝠种群，有助于提高作物产量、促进可持续的生计。",
+            "note": "第二句主干，believe 后接 that 宾语从句。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch11.gerund",
+            "name": "动名词作主语",
+            "explain": "动名词（V-ing）可以当名词用，放在主语位置。比如 maximising bat populations 就是“最大化蝙蝠种群”这件事作主语。动名词作主语时，谓语动词用单数（这里 can help 是情态动词，没有单复数变化）。"
+          },
+          {
+            "tag": "ch14.noun-clause",
+            "name": "that 名词从句",
+            "explain": "that 引导的句子可以当名词用，放在动词后面作宾语。比如 believe that...，that 后面是一个完整的句子，整个从句就是 believe 的宾语。注意 that 在口语中常省略，但写作中保留更清晰。"
+          },
+          {
+            "tag": "ch22.adv-reduction",
+            "name": "副词从句减化（介词短语作条件状语）",
+            "explain": "With the right help 是一个介词短语，相当于一个条件副词从句 if we give the right help。这种减化让句子更简洁，雅思阅读中常见。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "mutually",
+            "lemma": "mutually",
+            "pos": "adv.",
+            "def": "相互地",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "mutu",
+                  "type": "root",
+                  "gloss": "相互"
+                },
+                {
+                  "text": "ally",
+                  "type": "suffix",
+                  "gloss": "……地（副词后缀）"
+                }
+              ],
+              "derivation": "mutual（相互的）+ -ly → 相互地",
+              "family": {
+                "root": "mutu",
+                "gloss": "相互",
+                "words": [
+                  {
+                    "word": "mutual",
+                    "def": "相互的"
+                  },
+                  {
+                    "word": "mutuality",
+                    "def": "相互关系"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "reciprocally",
+                "note": "更正式，学术写作中可替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "beneficial",
+            "lemma": "beneficial",
+            "pos": "adj.",
+            "def": "有益的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "bene",
+                  "type": "prefix",
+                  "gloss": "好"
+                },
+                {
+                  "text": "fic",
+                  "type": "root",
+                  "gloss": "做"
+                },
+                {
+                  "text": "ial",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "bene（好）+ fic（做）+ ial → 做好事的 → 有益的",
+              "family": {
+                "root": "fic",
+                "gloss": "做",
+                "words": [
+                  {
+                    "word": "benefit",
+                    "def": "利益；好处"
+                  },
+                  {
+                    "word": "benefactor",
+                    "def": "恩人（bene+fact做+or人）"
+                  }
+                ]
+              },
+              "mnemonic": "bene（好）+ ficial → 好的 → 有益的",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "advantageous",
+                "note": "更正式，常用于学术语境"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "maximising",
+            "lemma": "maximise",
+            "pos": "v.",
+            "def": "最大化",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "maxim",
+                  "type": "root",
+                  "gloss": "最大"
+                },
+                {
+                  "text": "ise",
+                  "type": "suffix",
+                  "gloss": "使……（动词后缀）"
+                }
+              ],
+              "derivation": "maxim（最大）+ ise → 使最大 → 最大化",
+              "family": {
+                "root": "maxim",
+                "gloss": "最大",
+                "words": [
+                  {
+                    "word": "maximum",
+                    "def": "最大值"
+                  },
+                  {
+                    "word": "maximal",
+                    "def": "最大的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "maximised",
+                  "pos": "v.",
+                  "def": "过去式/过去分词"
+                },
+                {
+                  "word": "maximisation",
+                  "pos": "n.",
+                  "def": "最大化"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "increase",
+                "note": "更常用，但不如 maximise 精确"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "livelihoods",
+            "lemma": "livelihood",
+            "pos": "n.",
+            "def": "生计；谋生方式",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "live",
+                  "type": "root",
+                  "gloss": "生活"
+                },
+                {
+                  "text": "lihood",
+                  "type": "suffix",
+                  "gloss": "状态（名词后缀）"
+                }
+              ],
+              "derivation": "live（生活）+ lihood → 生活状态 → 生计",
+              "family": {
+                "root": "live",
+                "gloss": "生活",
+                "words": [
+                  {
+                    "word": "live",
+                    "def": "生活；活着"
+                  },
+                  {
+                    "word": "lively",
+                    "def": "活泼的"
+                  }
+                ]
+              },
+              "mnemonic": "live（生活）+ hood（状态）→ 生计",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "means of living",
+                "note": "更正式的表达"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "promote this mutually beneficial relationship",
+            "zh": "促进这种互利关系",
+            "usage": "写作中可用于描述合作共赢，如 promote a mutually beneficial partnership between companies。"
+          },
+          {
+            "text": "boost crop yields",
+            "zh": "提高作物产量",
+            "usage": "农业类话题常用，如 New farming techniques can boost crop yields。"
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -377,7 +4163,180 @@
           "pos": "v.",
           "def": "量化；用数据说明"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The team",
+              "zh": "研究团队"
+            },
+            {
+              "role": "V",
+              "text": "is calling for",
+              "zh": "正在呼吁"
+            },
+            {
+              "role": "O",
+              "text": "further research",
+              "zh": "进一步研究"
+            }
+          ],
+          "plain": "去掉修饰后只剩：The team is calling for research（团队在呼吁研究）。call for 是及物动词短语，后面必须跟宾语（呼吁什么），所以是 S+V+O 句型。"
+        },
+        "chunks": [
+          {
+            "text": "The team",
+            "role": "S",
+            "zh": "研究团队",
+            "note": "主语，指代前文提到的研究团队。"
+          },
+          {
+            "text": "is now calling for",
+            "role": "V",
+            "zh": "正在呼吁",
+            "note": "现在进行时，强调当下正在进行的动作；call for 是固定短语，意为“呼吁、要求”。",
+            "tag": "ch6.progressive"
+          },
+          {
+            "text": "further research",
+            "role": "O",
+            "zh": "进一步研究",
+            "note": "宾语，是 call for 的对象。"
+          },
+          {
+            "text": "to quantify this contribution",
+            "role": "adv",
+            "zh": "以量化这一贡献",
+            "note": "不定式短语作目的状语，说明呼吁研究的目的。",
+            "tag": "ch12.infinitive"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "英语句子最核心的结构就是主语+动词+宾语。这里的动词是 call for（呼吁），它必须跟一个宾语（呼吁什么），所以是 S+V+O 句型。看懂长句时，先找到这三个部分，其他修饰成分都是挂上去的。"
+          },
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式作目的状语",
+            "explain": "不定式 to + 动词原形可以放在句尾，表示“为了……”。比如这里 to quantify this contribution 就是“为了量化这一贡献”。在雅思写作中，用不定式表达目的非常常见，比说 in order to 更简洁。"
+          },
+          {
+            "tag": "ch6.progressive",
+            "name": "现在进行时",
+            "explain": "结构是 be + 动词-ing。这里 is calling for 表示“正在呼吁”，强调动作正在进行中。在学术文章中，现在进行时用来描述当前正在进行的行动或趋势。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "calling for",
+            "lemma": "call for",
+            "pos": "phr.",
+            "def": "呼吁；要求",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "call",
+                  "type": "root",
+                  "gloss": "喊叫"
+                },
+                {
+                  "text": "for",
+                  "type": "suffix",
+                  "gloss": "为了"
+                }
+              ],
+              "derivation": "call（喊）+ for（为了）→ 为了某事而喊 → 呼吁",
+              "family": null,
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "demand",
+                "note": "更强烈的“要求”，在阅读中常替换 call for"
+              },
+              {
+                "w": "advocate",
+                "note": "“倡导”，更正式，常用于学术文章"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "quantify",
+            "lemma": "quantify",
+            "pos": "v.",
+            "def": "量化；用数据说明",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "quant",
+                  "type": "root",
+                  "gloss": "数量"
+                },
+                {
+                  "text": "ify",
+                  "type": "suffix",
+                  "gloss": "使成为"
+                }
+              ],
+              "derivation": "quant（数量）+ ify（使成为）→ 使成为数量 → 量化",
+              "family": {
+                "root": "quant",
+                "gloss": "数量",
+                "words": [
+                  {
+                    "word": "quantity",
+                    "def": "数量（名词）"
+                  },
+                  {
+                    "word": "quantitative",
+                    "def": "定量的（形容词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "quantification",
+                  "pos": "n.",
+                  "def": "量化"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "measure",
+                "note": "“测量”，在雅思阅读中常替换 quantify"
+              },
+              {
+                "w": "calculate",
+                "note": "“计算”，更具体"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "call for further research",
+            "zh": "呼吁进一步研究",
+            "usage": "雅思写作中常用，表示需要更多研究。例如：The study calls for further research into the effects of climate change."
+          },
+          {
+            "text": "quantify the contribution",
+            "zh": "量化贡献",
+            "usage": "学术表达，用于说明用数据衡量某事物的作用。例如：It is difficult to quantify the contribution of social media to brand awareness."
+          }
+        ]
+      }
     },
     {
       "id": 18,
@@ -394,7 +4353,127 @@
           "pos": "adj.",
           "def": "乐观的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "I",
+              "zh": "我"
+            },
+            {
+              "role": "V",
+              "text": "'m",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "very optimistic",
+              "zh": "非常乐观"
+            }
+          ],
+          "plain": "引号内的句子去掉修饰后只剩：I am optimistic（我是乐观的）。am是连缀动词，后面跟形容词optimistic作补语，说明主语的状态。"
+        },
+        "chunks": [
+          {
+            "text": "‘I’m very optimistic,’",
+            "role": "clause",
+            "zh": "“我非常乐观，”",
+            "note": "直接引语，是完整的句子，作says的宾语。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "says",
+            "role": "V",
+            "zh": "说",
+            "note": "动词，放在主语前形成倒装。"
+          },
+          {
+            "text": "Rocha",
+            "role": "S",
+            "zh": "罗查",
+            "note": "主语，放在动词后。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch18.quote-inversion",
+            "name": "直接引语倒装",
+            "explain": "当直接引语放在句首时，引述动词（如says）和主语（如Rocha）常常倒装，即动词在前、主语在后。这是英语写作中常见的修辞手法，让引语更突出。注意：如果主语是代词，则不倒装，比如‘I’m optimistic,’ he said。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "主系表结构",
+            "explain": "I'm very optimistic 是主系表结构：I是主语，'m（am）是连缀动词，very optimistic是主语补语（表语），说明主语的状态。连缀动词本身没有具体动作，而是连接主语和补语。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "optimistic",
+            "lemma": "optimistic",
+            "pos": "adj.",
+            "def": "乐观的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "optim",
+                  "type": "root",
+                  "gloss": "最佳"
+                },
+                {
+                  "text": "istic",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "optim（最佳）+ istic（形容词后缀）→ 认为事情会往最好方向发展的，即乐观的",
+              "family": {
+                "root": "optim",
+                "gloss": "最佳",
+                "words": [
+                  {
+                    "word": "optimism",
+                    "def": "乐观主义"
+                  },
+                  {
+                    "word": "optimist",
+                    "def": "乐观主义者"
+                  }
+                ]
+              },
+              "mnemonic": "optimistic 听起来像“哦，提姆是踢球的？”——想象一个乐观的人总是说“哦，提姆是踢球的，肯定能赢！”",
+              "forms": [
+                {
+                  "word": "optimistically",
+                  "pos": "adv.",
+                  "def": "乐观地"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "positive",
+                "note": "更常用，在雅思阅读中常替换optimistic，如positive outlook"
+              },
+              {
+                "w": "hopeful",
+                "note": "强调充满希望，如hopeful about the future"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "pessimistic",
+                "note": "反义词，悲观的"
+              }
+            ]
+          }
+        ],
+        "expressions": []
+      }
     },
     {
       "id": 19,
@@ -416,7 +4495,230 @@
           "pos": "n.",
           "def": "再生；（生态的）恢复"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svoo",
+          "label": "S + Vt + O + O(主语 + 及物动词 + 间接宾语 + 直接宾语)",
+          "tag": "ch1.svoo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "we",
+              "zh": "我们"
+            },
+            {
+              "role": "V",
+              "text": "give",
+              "zh": "给予"
+            },
+            {
+              "role": "IO",
+              "text": "nature",
+              "zh": "大自然"
+            },
+            {
+              "role": "O",
+              "text": "a hand",
+              "zh": "一只手（帮助）"
+            }
+          ],
+          "plain": "主句去掉修饰后只剩：we give nature a hand（我们给大自然一只手）。give 是双宾语动词，后面跟两个宾语：间接宾语 nature（给谁）和直接宾语 a hand（给什么）。"
+        },
+        "chunks": [
+          {
+            "text": "If we give nature a hand",
+            "role": "clause",
+            "zh": "如果我们帮大自然一把",
+            "note": "If 引导的条件状语从句，表示主句发生的条件。从句本身是 S+V+O+O 结构。",
+            "tag": "ch15.condition"
+          },
+          {
+            "text": "we can speed up the process of regeneration",
+            "role": "clause",
+            "zh": "我们就能加快再生过程",
+            "note": "主句，情态动词 can + 动词原形 speed up。",
+            "tag": "ch7.modal"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svoo",
+            "name": "双宾语结构",
+            "explain": "有些动词如 give, send, tell 后面可以跟两个宾语：一个表示“给谁”（间接宾语），一个表示“给什么”（直接宾语）。这里 give nature a hand，nature 是间接宾语，a hand 是直接宾语。注意间接宾语通常放在直接宾语前面。"
+          },
+          {
+            "tag": "ch15.condition",
+            "name": "条件状语从句",
+            "explain": "If 引导的从句表示“如果……”，说明主句发生的前提条件。从句用一般现在时（give），主句用情态动词 can + 动词原形（can speed up），这是真实条件句的典型时态搭配。"
+          },
+          {
+            "tag": "ch7.modal",
+            "name": "情态动词 can",
+            "explain": "can 表示“能够、可以”，这里表达“有能力做到”。情态动词后面必须跟动词原形，所以是 can speed up，不能加 to 或 -ing。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "give ... a hand",
+            "lemma": "give a hand",
+            "pos": "phr.",
+            "def": "帮……一把",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "give",
+                  "type": "root",
+                  "gloss": "给予"
+                },
+                {
+                  "text": "a hand",
+                  "type": "root",
+                  "gloss": "一只手（帮助）"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "想象伸出手去帮忙的样子",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "help",
+                "note": "更常见的同义表达，在雅思写作中可替换使用"
+              },
+              {
+                "w": "assist",
+                "note": "更正式，常用于学术语境"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "speed up",
+            "lemma": "speed up",
+            "pos": "phr.",
+            "def": "加速",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "speed",
+                  "type": "root",
+                  "gloss": "速度"
+                },
+                {
+                  "text": "up",
+                  "type": "suffix",
+                  "gloss": "向上（表示增加）"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "speed",
+                "gloss": "速度",
+                "words": [
+                  {
+                    "word": "speedy",
+                    "def": "迅速的"
+                  },
+                  {
+                    "word": "speedily",
+                    "def": "迅速地"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "accelerate",
+                "note": "更正式的学术词汇，雅思阅读中常出现"
+              },
+              {
+                "w": "hasten",
+                "note": "书面语，强调加快进程"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "regeneration",
+            "lemma": "regeneration",
+            "pos": "n.",
+            "def": "再生；恢复",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "再次"
+                },
+                {
+                  "text": "gener",
+                  "type": "root",
+                  "gloss": "产生"
+                },
+                {
+                  "text": "ation",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "re（再次）+ gener（产生）+ ation（名词后缀）→ 再次产生 → 再生",
+              "family": {
+                "root": "gener",
+                "gloss": "产生",
+                "words": [
+                  {
+                    "word": "generate",
+                    "def": "产生"
+                  },
+                  {
+                    "word": "generation",
+                    "def": "一代；产生"
+                  },
+                  {
+                    "word": "regenerate",
+                    "def": "使再生"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "regenerate",
+                  "pos": "v.",
+                  "def": "使再生"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "recovery",
+                "note": "强调恢复原状，在生态语境中常替换"
+              },
+              {
+                "w": "restoration",
+                "note": "更正式，指修复到原来状态"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "give nature a hand",
+            "zh": "帮助大自然",
+            "usage": "写作中可灵活使用 give ... a hand 表示“帮助……”，如 give the environment a hand（帮助环境）。"
+          },
+          {
+            "text": "speed up the process of",
+            "zh": "加快……的进程",
+            "usage": "常用搭配，如 speed up the process of development（加快发展进程）。"
+          }
+        ]
+      }
     }
   ],
   "questions": [
@@ -432,19 +4734,67 @@
           "number": 1,
           "prompt": "Many Madagascan forests are being destroyed by attacks from insects.",
           "answer": "FALSE",
-          "evidence_sentence": 14
+          "evidence_sentence": 14,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Many Madagascan forests are being destroyed by attacks from insects",
+                "p": "they are associated with sacred caves and the ancestors",
+                "kind": "neg",
+                "note": "题干说森林被昆虫破坏，但原文讲蝙蝠与洞穴和祖先有关，完全无关，因此是FALSE。"
+              }
+            ],
+            "trap": "题干中的'Madagascan forests'和'insects'可能误导学生去原文找森林或昆虫，但原文根本没有提到这些内容。",
+            "explain": "先抓题干关键词'Madagascan forests'和'insects'，到原文发现没有提及森林或昆虫，而是讲蝙蝠的文化意义，因此答案为FALSE。"
+          }
         },
         {
           "number": 2,
           "prompt": "Loss of habitat has badly affected insectivorous bats in Madagascar.",
           "answer": "FALSE",
-          "evidence_sentence": 1
+          "evidence_sentence": 1,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Loss of habitat has badly affected insectivorous bats in Madagascar",
+                "p": "identify the favourite feeding spots of the bats",
+                "kind": "neg",
+                "note": "题干说栖息地丧失严重影响蝙蝠，但原文只提到研究蝙蝠的觅食地点，未提及栖息地丧失的影响，因此题干与原文矛盾。"
+              }
+            ],
+            "trap": "可能误以为题干内容在原文中有对应，但原文并未提及栖息地丧失的影响。",
+            "explain": "先抓题干关键词'Loss of habitat'和'badly affected'，到原文找相关表述，发现原文只讲研究觅食地点，未提栖息地丧失，因此判断为FALSE。"
+          }
         },
         {
           "number": 3,
           "prompt": "Ricardo Rocha has carried out studies of bats in different parts of the world.",
           "answer": "NOT GIVEN",
-          "evidence_sentence": 1
+          "evidence_sentence": 1,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Ricardo Rocha",
+                "p": "Rocha",
+                "kind": "syn",
+                "note": "题干全名，原文用姓氏，是同一个人。"
+              },
+              {
+                "q": "carried out studies of bats",
+                "p": "used state-of-the-art ultrasonic recorders to record over a thousand bat ‘feeding buzzes’",
+                "kind": "para",
+                "note": "题干说‘进行研究’，原文具体描述了研究方法，是概括与具体的替换。"
+              },
+              {
+                "q": "in different parts of the world",
+                "p": "at 54 sites",
+                "kind": "syn",
+                "note": "题干‘世界不同地方’对应原文‘54个地点’，但原文未说明这些地点是否分布在世界各地。"
+              }
+            ],
+            "trap": "题干说‘在世界不同地方’，原文只提到‘54个地点’，未明确是否涵盖全球，因此无法判断，选NOT GIVEN。",
+            "explain": "先抓题干关键词‘Ricardo Rocha’、‘studies of bats’和‘different parts of the world’。到原文找到‘Rocha’和具体研究内容，但原文未提及研究地点是否分布在世界各地，因此信息不足，选NOT GIVEN。"
+          }
         },
         {
           "number": 4,
@@ -456,25 +4806,103 @@
           "number": 5,
           "prompt": "The Malagasy mouse-eared bat is more common than other indigenous bat species in Madagascar.",
           "answer": "NOT GIVEN",
-          "evidence_sentence": 3
+          "evidence_sentence": 3,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "The Malagasy mouse-eared bat",
+                "p": "the animals",
+                "kind": "syn",
+                "note": "题干中的具体蝙蝠名称被原文中的泛指词'the animals'替代。"
+              },
+              {
+                "q": "more common than other indigenous bat species",
+                "p": "preferentially foraging in these man-made ecosystems",
+                "kind": "para",
+                "note": "题干说更常见，原文说更偏爱在稻田觅食，但未比较与其他物种的常见程度。"
+              }
+            ],
+            "trap": "原文提到蝙蝠在稻田活动比森林高，但未比较不同蝙蝠物种的数量或常见性，容易误判为TRUE。",
+            "explain": "先抓题干关键词'Malagasy mouse-eared bat'和'more common than other indigenous bat species'，到原文找对应。原文只提到'the animals'（指代蝙蝠）在稻田觅食更活跃，未提及其他本土蝙蝠物种，更未比较常见程度，因此信息未给出。"
+          }
         },
         {
           "number": 6,
           "prompt": "Bats may feed on paddy swarming caterpillars and grass webworms.",
           "answer": "TRUE",
-          "evidence_sentence": 1
+          "evidence_sentence": 1,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "feed on",
+                "p": "feeding",
+                "kind": "syn",
+                "note": "feed on 与 feeding 是同义替换，都表示‘捕食’"
+              },
+              {
+                "q": "paddy swarming caterpillars and grass webworms",
+                "p": "their prey",
+                "kind": "syn",
+                "note": "题干中的具体害虫被替换为‘their prey’（它们的猎物），属于上下义替换"
+              }
+            ],
+            "trap": "题干中提到的具体害虫名称在原文中并未出现，但通过‘their prey’概括了蝙蝠捕食的对象，因此答案为TRUE。如果学生纠结于具体害虫名称未出现，可能会误选NOT GIVEN。",
+            "explain": "先抓题干关键词‘feed on’和‘paddy swarming caterpillars and grass webworms’，到原文找对应的‘feeding’和‘their prey’，发现原文说蝙蝠捕食猎物，而题干中的害虫属于猎物，因此信息一致，答案为TRUE。"
+          }
         },
         {
           "number": 7,
           "prompt": "Method: DNA analysis of bat ___",
           "answer": "droppings",
-          "evidence_sentence": 2
+          "evidence_sentence": 2,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "DNA analysis",
+                "p": "DNA barcoding techniques",
+                "kind": "syn",
+                "note": "DNA分析对应DNA条形码技术，属于同义替换。"
+              },
+              {
+                "q": "bat",
+                "p": "bats",
+                "kind": "verbatim",
+                "note": "bat和bats是单复数变化，原词复现。"
+              },
+              {
+                "q": "droppings",
+                "p": "droppings",
+                "kind": "verbatim",
+                "note": "droppings原词复现，是定位关键词。"
+              }
+            ],
+            "trap": "可能误填guano（蝙蝠粪便的另一个词），但原文用的是droppings。",
+            "explain": "先抓题干中的DNA analysis和bat droppings，到原文找DNA barcoding techniques和droppings collected from bats，即可定位答案。"
+          }
         },
         {
           "number": 8,
           "prompt": "Findings: the bats ate pests of rice, ___, sugarcane, nuts and fruit",
           "answer": "coffee",
-          "evidence_sentence": 6
+          "evidence_sentence": 6,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "pests of rice",
+                "p": "pests of other crops",
+                "kind": "para",
+                "note": "题干说'水稻害虫'，原文说'其他作物害虫'，但通过列举包含水稻，属于概括与具体的关系。"
+              },
+              {
+                "q": "coffee",
+                "p": "coffee plants",
+                "kind": "syn",
+                "note": "题干'coffee'对应原文'coffee plants'，植物名替换。"
+              }
+            ],
+            "trap": "题干中'pests of rice'可能误导学生去原文找'rice pests'，但原文是'pests of other crops'，需注意列举中包含了水稻。",
+            "explain": "先抓题干中的'pests of rice'和'coffee'，到原文找'pests of other crops'和'coffee plants'，通过列举匹配答案。"
+          }
         },
         {
           "number": 9,
@@ -486,25 +4914,109 @@
           "number": 10,
           "prompt": "Local attitudes: bats provide food rich in ___",
           "answer": "protein",
-          "evidence_sentence": 11
+          "evidence_sentence": 11,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "provide food rich in",
+                "p": "source of protein",
+                "kind": "para",
+                "note": "题干说'提供富含...的食物'，原文说'蛋白质的来源'，意思相同，但表达方式不同。"
+              },
+              {
+                "q": "bats",
+                "p": "bats",
+                "kind": "verbatim",
+                "note": "原词复现，直接定位。"
+              },
+              {
+                "q": "local attitudes",
+                "p": "local people",
+                "kind": "syn",
+                "note": "题干中的'local attitudes'对应原文中的'local people'，都是指当地人。"
+              }
+            ],
+            "trap": "注意题干中的'rich in'可能误导学生去找'rich'这个词，但原文没有直接出现，而是用'source of'表达。",
+            "explain": "先抓题干关键词'bats'和'provide food rich in'，到原文找'bats'和表示'提供蛋白质'的表述，即'source of protein'。"
+          }
         },
         {
           "number": 11,
           "prompt": "Local attitudes: the buildings where they roost become ___",
           "answer": "unclean",
-          "evidence_sentence": 13
+          "evidence_sentence": 13,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "the buildings where they roost become",
+                "p": "make them unclean",
+                "kind": "para",
+                "note": "题干说建筑物变得怎样，原文说蝙蝠使它们不干净，意思相同。"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'the buildings where they roost become'，到原文找对应，发现原文说'make them unclean'，其中'them'指代建筑物，'unclean'就是答案。"
+          }
         },
         {
           "number": 12,
           "prompt": "Local attitudes: they play an important role in local ___",
           "answer": "culture",
-          "evidence_sentence": 14
+          "evidence_sentence": 14,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "local attitudes",
+                "p": "the culture of the people",
+                "kind": "para",
+                "note": "题干说'当地态度'，原文用'the culture of the people'（当地人的文化）来替换，都是指当地人的观念。"
+              },
+              {
+                "q": "play an important role",
+                "p": "very significant",
+                "kind": "syn",
+                "note": "'play an important role'（扮演重要角色）被替换为'very significant'（非常重要），意思相同。"
+              },
+              {
+                "q": "local",
+                "p": "the people",
+                "kind": "syn",
+                "note": "'local'（当地的）替换为'the people'（人们），结合上下文指当地人。"
+              }
+            ],
+            "trap": "注意题干中'local attitudes'可能误导你去找'attitudes'这个词，但原文没有直接出现，而是用'culture'来体现态度。",
+            "explain": "先抓题干关键词'local attitudes'和'important role'，到原文找表达当地观念和重要性的词，发现'the culture of the people'和'very significant'对应，从而定位答案'culture'。"
+          }
         },
         {
           "number": 13,
           "prompt": "Recommendation: farmers should provide special ___ to support the bat population",
           "answer": "houses",
-          "evidence_sentence": 16
+          "evidence_sentence": 16,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "special",
+                "p": "right",
+                "kind": "syn",
+                "note": "special 和 right 都表示‘合适的、恰当的’"
+              },
+              {
+                "q": "provide",
+                "p": "installing",
+                "kind": "para",
+                "note": "题干用 provide（提供），原文用 installing（安装），动作一致"
+              },
+              {
+                "q": "support the bat population",
+                "p": "promote this mutually beneficial relationship",
+                "kind": "para",
+                "note": "题干说‘支持蝙蝠种群’，原文说‘促进这种互利关系’，意思相同"
+              }
+            ],
+            "trap": "注意题干中的 special 可能误导学生去找‘特殊的’一词，但原文用的是 right，属于同义替换。",
+            "explain": "先抓题干关键词 provide 和 special，到原文找对应的 installing 和 right，再确认 bat houses 即为答案。"
+          }
         }
       ]
     }

@@ -25,7 +25,298 @@
           "pos": "adj.",
           "def": "拥堵的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C (主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "London's population",
+              "zh": "伦敦的人口"
+            },
+            {
+              "role": "V",
+              "text": "grew",
+              "zh": "增长"
+            },
+            {
+              "role": "S",
+              "text": "the central area",
+              "zh": "中心城区"
+            },
+            {
+              "role": "V",
+              "text": "became",
+              "zh": "变得"
+            },
+            {
+              "role": "C",
+              "text": "congested",
+              "zh": "拥堵"
+            }
+          ],
+          "plain": "去掉修饰后，这句是：London's population grew, and the central area became congested. 但句型判定以最外层主句为准，这里两个分句都是主谓结构，第二个分句是SVC（became是连缀动词）。"
+        },
+        "chunks": [
+          {
+            "text": "In the first half of the 1800s",
+            "role": "adv",
+            "zh": "在19世纪上半叶",
+            "note": "介词短语作时间状语",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "London's population",
+            "role": "S",
+            "zh": "伦敦的人口",
+            "note": "第一个分句的主语",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "grew",
+            "role": "V",
+            "zh": "增长",
+            "note": "不及物动词",
+            "tag": "ch1.sv"
+          },
+          {
+            "text": "at an astonishing rate",
+            "role": "adv",
+            "zh": "以惊人的速度",
+            "note": "介词短语作方式状语",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "并列连词",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "the central area",
+            "role": "S",
+            "zh": "中心城区",
+            "note": "第二个分句的主语",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "became",
+            "role": "V",
+            "zh": "变得",
+            "note": "连缀动词",
+            "tag": "ch1.svc"
+          },
+          {
+            "text": "increasingly congested",
+            "role": "C",
+            "zh": "越来越拥堵",
+            "note": "形容词词组作主语补语",
+            "tag": "ch4.adj"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svc",
+            "name": "句型二：S+V+C（主系表）",
+            "explain": "became是连缀动词，本身没有完整意思，必须跟补语说明主语变成什么样。这里congested就是补语，说明中心城区变得拥堵。"
+          },
+          {
+            "tag": "ch13.compound",
+            "name": "合句（并列句）",
+            "explain": "and连接两个独立分句，每个分句都有自己的主语和动词。阅读时先找到and，然后分别理解前后两个句子。"
+          },
+          {
+            "tag": "ch5.adv",
+            "name": "副词修饰语",
+            "explain": "increasingly是副词，修饰形容词congested，表示程度逐步加深。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "astonishing",
+            "lemma": "astonishing",
+            "pos": "adj.",
+            "def": "惊人的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "astonish",
+                  "type": "root",
+                  "gloss": "使惊讶"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "形容词后缀"
+                }
+              ],
+              "derivation": "astonish + ing → 令人惊讶的",
+              "family": {
+                "root": "astonish",
+                "gloss": "使惊讶",
+                "words": [
+                  {
+                    "word": "astonished",
+                    "def": "感到惊讶的"
+                  },
+                  {
+                    "word": "astonishment",
+                    "def": "惊讶"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "remarkable",
+                "note": "雅思阅读中常替换astonishing"
+              },
+              {
+                "w": "striking",
+                "note": "表示引人注目的"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "congested",
+            "lemma": "congested",
+            "pos": "adj.",
+            "def": "拥堵的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "con",
+                  "type": "prefix",
+                  "gloss": "共同"
+                },
+                {
+                  "text": "gest",
+                  "type": "root",
+                  "gloss": "运送"
+                },
+                {
+                  "text": "ed",
+                  "type": "suffix",
+                  "gloss": "被…的"
+                }
+              ],
+              "derivation": "con + gest + ed → 被一起运送来的 → 拥堵的",
+              "family": {
+                "root": "gest",
+                "gloss": "运送",
+                "words": [
+                  {
+                    "word": "digest",
+                    "def": "消化"
+                  },
+                  {
+                    "word": "suggest",
+                    "def": "建议"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "congestion",
+                  "pos": "n.",
+                  "def": "拥堵"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "crowded",
+                "note": "更口语化，雅思阅读常见"
+              },
+              {
+                "w": "jammed",
+                "note": "强调堵塞不动"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "increasingly",
+            "lemma": "increasingly",
+            "pos": "adv.",
+            "def": "越来越",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "in",
+                  "type": "prefix",
+                  "gloss": "加强"
+                },
+                {
+                  "text": "creas",
+                  "type": "root",
+                  "gloss": "增长"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "正在"
+                },
+                {
+                  "text": "ly",
+                  "type": "suffix",
+                  "gloss": "副词后缀"
+                }
+              ],
+              "derivation": "in + creas + ing + ly → 正在增长地 → 越来越",
+              "family": {
+                "root": "creas",
+                "gloss": "增长",
+                "words": [
+                  {
+                    "word": "increase",
+                    "def": "增加"
+                  },
+                  {
+                    "word": "decrease",
+                    "def": "减少"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "increase",
+                  "pos": "v./n.",
+                  "def": "增加"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "more and more",
+                "note": "口语化表达，写作中可用increasingly替换"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "at an astonishing rate",
+            "zh": "以惊人的速度",
+            "usage": "写作中描述变化快时可用，如：Technology is developing at an astonishing rate."
+          },
+          {
+            "text": "become increasingly + adj.",
+            "zh": "变得越来越…",
+            "usage": "表示程度逐渐加深，如：The situation became increasingly complex."
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -47,7 +338,241 @@
           "pos": "phr.",
           "def": "导致"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "the expansion of the overground railway network",
+              "zh": "地上铁路网络的扩张"
+            },
+            {
+              "role": "V",
+              "text": "resulted in",
+              "zh": "导致"
+            },
+            {
+              "role": "O",
+              "text": "more and more passengers arriving in the capital",
+              "zh": "越来越多的乘客抵达首都"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：The expansion resulted in passengers arriving in the capital（扩张导致乘客抵达首都）。resulted in 是及物动词短语，后面跟宾语（导致的结果）。"
+        },
+        "chunks": [
+          {
+            "text": "In addition",
+            "role": "conn",
+            "zh": "此外",
+            "note": "连接副词，表示与上一句的递进关系。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "the expansion of the overground railway network",
+            "role": "S",
+            "zh": "地上铁路网络的扩张",
+            "note": "名词短语作主语，核心词是 expansion，后面 of 介词短语修饰它。",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "resulted in",
+            "role": "V",
+            "zh": "导致",
+            "note": "及物动词短语，后面接宾语。",
+            "tag": "ch1.svo"
+          },
+          {
+            "text": "more and more passengers arriving in the capital",
+            "role": "O",
+            "zh": "越来越多的乘客抵达首都",
+            "note": "宾语部分：核心是 passengers，后面 arriving in the capital 是现在分词短语作后置修饰，相当于关系从句 who arrived in the capital 的减化。",
+            "tag": "ch20.rel-reduction"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "result in 是及物动词短语，意思是“导致”，后面必须跟宾语（导致的结果）。本句的宾语是“more and more passengers arriving in the capital”这个整体。判断句型时，先找动词，再看它是否需要宾语。"
+          },
+          {
+            "tag": "ch20.rel-reduction",
+            "name": "关系从句减化为分词短语",
+            "explain": "arriving in the capital 是现在分词短语，修饰前面的 passengers。它原本是一个关系从句：who arrived in the capital。当关系从句的主语是关系代词（who/which/that）且动词是主动态时，可以省略关系代词，把动词变成现在分词形式。这样句子更简洁，雅思阅读中很常见。"
+          },
+          {
+            "tag": "ch2.np",
+            "name": "名词短语作主语",
+            "explain": "主语是 the expansion of the overground railway network，核心名词是 expansion，后面跟了很长的修饰语。这种“名词 + of + 名词”的结构在学术英语里非常常见，用来表达抽象概念。理解时，先抓住核心名词 expansion，再理解它和后面名词的关系。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "expansion",
+            "lemma": "expansion",
+            "pos": "n.",
+            "def": "扩张；扩大",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "ex",
+                  "type": "prefix",
+                  "gloss": "向外"
+                },
+                {
+                  "text": "pans",
+                  "type": "root",
+                  "gloss": "伸展"
+                },
+                {
+                  "text": "ion",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "ex-（向外）+ pans（伸展）+ -ion（名词后缀）→ 向外伸展 → 扩张",
+              "family": {
+                "root": "pans",
+                "gloss": "伸展",
+                "words": [
+                  {
+                    "word": "expand",
+                    "def": "v. 扩张"
+                  },
+                  {
+                    "word": "expansive",
+                    "def": "adj. 广阔的；扩张性的"
+                  }
+                ]
+              },
+              "mnemonic": "ex（向外）+ pans（像“盘子”向外摊开）→ 扩张",
+              "forms": [
+                {
+                  "word": "expand",
+                  "pos": "v.",
+                  "def": "扩张"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "growth",
+                "note": "更常用，指数量或规模的增加，雅思阅读中常替换 expansion"
+              },
+              {
+                "w": "increase",
+                "note": "泛指增加，可替换 expansion 表示扩大"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "expense",
+                "note": "费用，拼写相似但意思不同"
+              }
+            ]
+          },
+          {
+            "w": "resulted in",
+            "lemma": "result in",
+            "pos": "phr.",
+            "def": "导致",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "result",
+                  "type": "root",
+                  "gloss": "结果"
+                },
+                {
+                  "text": "in",
+                  "type": "suffix",
+                  "gloss": "在……里"
+                }
+              ],
+              "derivation": "result（结果）+ in（在……里）→ 结果在……里 → 导致",
+              "family": null,
+              "mnemonic": "result 是结果，in 是“在”，结果在某个东西里 → 导致那个东西发生",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "lead to",
+                "note": "同义短语，雅思阅读中常见替换"
+              },
+              {
+                "w": "cause",
+                "note": "更直接的动词，表示“引起”"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "overground",
+            "lemma": "overground",
+            "pos": "adj.",
+            "def": "地上的（与 underground 相对）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "over",
+                  "type": "prefix",
+                  "gloss": "在……之上"
+                },
+                {
+                  "text": "ground",
+                  "type": "root",
+                  "gloss": "地面"
+                }
+              ],
+              "derivation": "over（在……之上）+ ground（地面）→ 地面之上的 → 地上的",
+              "family": {
+                "root": "ground",
+                "gloss": "地面",
+                "words": [
+                  {
+                    "word": "underground",
+                    "def": "地下的"
+                  },
+                  {
+                    "word": "groundwork",
+                    "def": "基础工作"
+                  }
+                ]
+              },
+              "mnemonic": "over 是“上面”，ground 是“地面”，合起来就是“地上的”",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "aboveground",
+                "note": "同义词，但 overground 更常见于铁路语境"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "underground",
+                "note": "地下的，反义词"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "result in",
+            "zh": "导致",
+            "usage": "写作中常用 result in 表示因果关系，比 cause 更正式。例如：The increase in traffic resulted in longer commute times.（交通增加导致通勤时间更长。）"
+          },
+          {
+            "text": "more and more",
+            "zh": "越来越多",
+            "usage": "表示数量递增，口语和写作都很常用。例如：More and more people are choosing to work from home.（越来越多的人选择在家工作。）"
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -69,7 +594,181 @@
           "pos": "adj.",
           "def": "历史悠久的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "a Royal Commission",
+              "zh": "一个皇家委员会"
+            },
+            {
+              "role": "V",
+              "text": "decided",
+              "zh": "决定"
+            },
+            {
+              "role": "O",
+              "text": "that the railways should not be allowed to enter the City",
+              "zh": "铁路不应被允许进入伦敦城"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：a Royal Commission decided that the railways should not be allowed to enter the City（一个皇家委员会决定铁路不应被允许进入伦敦城）。decided（决定）是及物动词，后面跟了一个 that 引导的宾语从句作宾语。"
+        },
+        "chunks": [
+          {
+            "text": "However",
+            "role": "conn",
+            "zh": "然而",
+            "note": "转折连接词，表示与上一句相反。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "in 1846",
+            "role": "adv",
+            "zh": "在1846年",
+            "note": "时间状语，修饰整个句子。",
+            "tag": "ch5.adv-phrase"
+          },
+          {
+            "text": "a Royal Commission",
+            "role": "S",
+            "zh": "一个皇家委员会",
+            "note": "主语，Royal Commission 是专有名词，指皇家委员会。"
+          },
+          {
+            "text": "decided",
+            "role": "V",
+            "zh": "决定",
+            "note": "谓语动词，过去式。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "that the railways should not be allowed to enter the City",
+            "role": "O",
+            "zh": "铁路不应被允许进入伦敦城",
+            "note": "that 引导的宾语从句，作 decided 的宾语。从句中使用了被动语态 should not be allowed。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": ", the capital’s historic and business centre",
+            "role": "app",
+            "zh": "，这个首都的历史与商业中心",
+            "note": "同位语，解释说明 the City 是什么。逗号是同位语的一部分。",
+            "tag": "ch2.apposition"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（宾语从句）",
+            "explain": "名词从句就是用一个完整的句子来充当名词的角色。这里 that the railways should not be allowed to enter the City 整个从句做了动词 decided 的宾语，相当于“决定了一件事”。that 是引导词，在从句中不充当成分，只起连接作用。"
+          },
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "被动语态的结构是 be + 过去分词，表示主语是动作的承受者。这里 should not be allowed，意思是“不应该被允许”。主动语态是“某人允许铁路”，被动后变成“铁路被允许”。在雅思阅读中，被动语态很常见，常用来强调动作的对象。"
+          },
+          {
+            "tag": "ch2.apposition",
+            "name": "同位语",
+            "explain": "同位语就是在一个名词后面再跟一个名词或名词短语，用来说明前一个名词的具体内容。这里 the capital’s historic and business centre 跟在 the City 后面，用逗号隔开，解释 the City 就是首都的历史和商业中心。同位语可以拿掉，句子仍然完整。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "Royal Commission",
+            "lemma": "Royal Commission",
+            "pos": "n.",
+            "def": "皇家委员会",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "Royal",
+                  "type": "root",
+                  "gloss": "皇家的"
+                },
+                {
+                  "text": "Commission",
+                  "type": "root",
+                  "gloss": "委员会"
+                }
+              ],
+              "derivation": "Royal（皇家的）+ Commission（委员会）→ 皇家委员会",
+              "family": null,
+              "mnemonic": "Royal 是“皇家的”，Commission 是“委员会”，合起来就是皇家任命的调查或决策机构。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "government committee",
+                "note": "在雅思阅读中，Royal Commission 可能被替换为 government committee（政府委员会）"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "historic",
+            "lemma": "historic",
+            "pos": "adj.",
+            "def": "历史悠久的；有历史意义的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "histor",
+                  "type": "root",
+                  "gloss": "历史"
+                },
+                {
+                  "text": "ic",
+                  "type": "suffix",
+                  "gloss": "……的（形容词后缀）"
+                }
+              ],
+              "derivation": "histor（历史）+ ic（形容词后缀）→ 历史的",
+              "family": {
+                "root": "histor",
+                "gloss": "历史",
+                "words": [
+                  {
+                    "word": "history",
+                    "def": "历史"
+                  },
+                  {
+                    "word": "historical",
+                    "def": "历史的（常与 historic 互换，但 historic 更强调重要性）"
+                  }
+                ]
+              },
+              "mnemonic": "historic 和 historical 容易混淆：historic 指“有历史意义的”，如 historic event；historical 指“与历史有关的”，如 historical novel。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "historical",
+                "note": "在雅思阅读中，historic 有时被替换为 historical，但注意细微差别"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "historical",
+                "note": "historical 更强调“与历史相关的”，而 historic 强调“具有重要历史意义的”"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "should not be allowed to",
+            "zh": "不应该被允许做某事",
+            "usage": "写作中表达禁止或反对时可用：Students should not be allowed to use phones in class.（学生不应该被允许在课堂上使用手机。）"
+          }
+        ]
+      }
     },
     {
       "id": 4,
@@ -91,7 +790,240 @@
           "pos": "n.",
           "def": "环；圈"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 系动词 + 补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The result",
+              "zh": "结果"
+            },
+            {
+              "role": "V",
+              "text": "was",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "that the overground railway stations formed a ring around the City",
+              "zh": "地上铁路车站在伦敦城周围形成了一个环"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：The result was that...（结果是……）。was 是系动词，后面跟一个句子作补语，说明结果是什么。"
+        },
+        "chunks": [
+          {
+            "text": "The result",
+            "role": "S",
+            "zh": "结果",
+            "note": "主语，指上一句决定带来的结果。"
+          },
+          {
+            "text": "was",
+            "role": "V",
+            "zh": "是",
+            "note": "系动词，连接主语和补语。"
+          },
+          {
+            "text": "that the overground railway stations formed a ring around the City",
+            "role": "C",
+            "zh": "地上铁路车站在伦敦城周围形成了一个环",
+            "note": "表语从句，由 that 引导，说明结果的具体内容。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "that",
+            "role": "conn",
+            "zh": "（引导词）",
+            "note": "连接词，引导名词从句，本身无意义。"
+          },
+          {
+            "text": "the overground railway stations",
+            "role": "S",
+            "zh": "地上铁路车站",
+            "note": "从句的主语。"
+          },
+          {
+            "text": "formed",
+            "role": "V",
+            "zh": "形成",
+            "note": "从句的谓语动词，及物动词。",
+            "tag": "ch1.svo"
+          },
+          {
+            "text": "a ring",
+            "role": "O",
+            "zh": "一个环",
+            "note": "从句的宾语，formed 的动作对象。"
+          },
+          {
+            "text": "around the City",
+            "role": "adv",
+            "zh": "在伦敦城周围",
+            "note": "介词短语作状语，修饰 formed，说明环的位置。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句（表语从句）",
+            "explain": "名词从句可以放在 be 动词后面作表语，说明主语是什么。这里 that 引导的整个句子就是表语从句，它相当于一个名词，回答“结果是什么”。这种结构在雅思阅读中很常见，用来引出解释或结果。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "五大句型之二：S + V + C（主系表）",
+            "explain": "was 是系动词，它本身没有完整意思，需要补语来补充说明主语。这里的补语是一个完整的句子（表语从句），但整体上还是主系表结构。判断句型时，先看动词：如果动词是 be 或类似词，后面跟的是补语，就是主系表。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "overground",
+            "lemma": "overground",
+            "pos": "adj.",
+            "def": "地上的（相对于地下）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "over",
+                  "type": "prefix",
+                  "gloss": "在……之上"
+                },
+                {
+                  "text": "ground",
+                  "type": "root",
+                  "gloss": "地面"
+                }
+              ],
+              "derivation": "over（在……之上）+ ground（地面）→ 地上的",
+              "family": {
+                "root": "ground",
+                "gloss": "地面",
+                "words": [
+                  {
+                    "word": "underground",
+                    "def": "地下的（under- 在……之下）"
+                  },
+                  {
+                    "word": "groundwater",
+                    "def": "地下水"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "aboveground",
+                "note": "同义，但 overground 更常用在铁路语境"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "formed",
+            "lemma": "form",
+            "pos": "v.",
+            "def": "形成",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "form",
+                  "type": "root",
+                  "gloss": "形状；形成"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "form",
+                "gloss": "形状；形成",
+                "words": [
+                  {
+                    "word": "formation",
+                    "def": "形成；结构（-ation 名词后缀）"
+                  },
+                  {
+                    "word": "reform",
+                    "def": "改革（re- 再次）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "forms",
+                  "pos": "v.",
+                  "def": "第三人称单数形式"
+                },
+                {
+                  "word": "forming",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "create",
+                "note": "更强调“创造”，在写作中可替换 form"
+              },
+              {
+                "w": "make up",
+                "note": "口语化，表示“组成”"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "ring",
+            "lemma": "ring",
+            "pos": "n.",
+            "def": "环；圈",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "ring",
+                  "type": "root",
+                  "gloss": "环"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "戒指也是环，记住 ring 有“环”的意思。",
+              "forms": [
+                {
+                  "word": "rings",
+                  "pos": "n.",
+                  "def": "复数形式"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "circle",
+                "note": "更常用，在描述形状时可互换"
+              },
+              {
+                "w": "loop",
+                "note": "强调环形路线"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "form a ring around",
+            "zh": "在……周围形成一个环",
+            "usage": "描述布局或包围时可用：The mountains form a ring around the valley.（群山在峡谷周围形成一个环。）"
+          }
+        ]
+      }
     },
     {
       "id": 5,
@@ -113,7 +1045,248 @@
           "pos": "adj.",
           "def": "过度拥挤的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The area within",
+              "zh": "环内区域"
+            },
+            {
+              "role": "V",
+              "text": "consisted of",
+              "zh": "由……组成"
+            },
+            {
+              "role": "O",
+              "text": "poorly built, overcrowded slums",
+              "zh": "建筑质量差、拥挤不堪的贫民窟"
+            }
+          ],
+          "plain": "去掉修饰后，第一分句是：The area consisted of slums（该区域由贫民窟组成）；第二分句是：the streets were full of traffic（街道上满是交通）。但以最外层主句为准，本句是并列句，每个分句各自有句型。这里以第一个分句的句型作为主句型。"
+        },
+        "chunks": [
+          {
+            "text": "The area within",
+            "role": "S",
+            "zh": "环内区域",
+            "note": "within 是副词，修饰 area，意为“内部的”",
+            "tag": "ch3.modifier"
+          },
+          {
+            "text": "consisted of",
+            "role": "V",
+            "zh": "由……组成",
+            "note": "固定短语动词，相当于 be made up of",
+            "tag": "ch1.svo"
+          },
+          {
+            "text": "poorly built, overcrowded slums",
+            "role": "O",
+            "zh": "建筑质量差、拥挤不堪的贫民窟",
+            "note": "poorly built 和 overcrowded 是并列的形容词短语，修饰 slums",
+            "tag": "ch4.adj"
+          },
+          {
+            "text": "and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "连接两个并列分句",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "the streets",
+            "role": "S",
+            "zh": "街道",
+            "note": "第二分句的主语"
+          },
+          {
+            "text": "were full of",
+            "role": "V",
+            "zh": "充满",
+            "note": "系动词 + 形容词短语，表示状态",
+            "tag": "ch1.svc"
+          },
+          {
+            "text": "horse-drawn traffic",
+            "role": "C",
+            "zh": "马车交通",
+            "note": "full of 的宾语，horse-drawn 是复合形容词",
+            "tag": "ch4.compound-adj"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "S + Vt + O 句型",
+            "explain": "第一分句 consist of 是及物动词短语，后面必须跟宾语（由什么组成）。slums 就是宾语。注意 consist of 没有被动语态，不能说 is consisted of。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "S + V + C 句型",
+            "explain": "第二分句 were full of 是系动词加形容词短语，full of 整体作补语，说明主语 the streets 的状态。"
+          },
+          {
+            "tag": "ch4.compound-adj",
+            "name": "复合形容词",
+            "explain": "horse-drawn 由名词 horse + 过去分词 drawn 用连字符连接，修饰 traffic，意为“由马拉的”。这种结构在雅思阅读中很常见，如 man-made（人造的）、well-known（著名的）。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "consisted of",
+            "lemma": "consist of",
+            "pos": "phr.",
+            "def": "由……组成",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "consist",
+                  "type": "root",
+                  "gloss": "由……组成"
+                },
+                {
+                  "text": "of",
+                  "type": "connector",
+                  "gloss": "介词"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "sist",
+                "gloss": "站立",
+                "words": [
+                  {
+                    "word": "assist",
+                    "def": "帮助（as-朝向 + sist → 站在旁边）"
+                  },
+                  {
+                    "word": "resist",
+                    "def": "抵抗（re-反 + sist → 站在对面）"
+                  },
+                  {
+                    "word": "persist",
+                    "def": "坚持（per-贯穿 + sist → 一直站着）"
+                  }
+                ]
+              },
+              "mnemonic": "consist 可以拆成 con（一起）+ sist（站）→ 站在一起 → 组成",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "be composed of",
+                "note": "更正式，常用于学术写作"
+              },
+              {
+                "w": "comprise",
+                "note": "正式用语，注意 comprise 主动表被动"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "insist",
+                "note": "insist on 坚持，与 consist 形近但意思不同"
+              }
+            ]
+          },
+          {
+            "w": "slums",
+            "lemma": "slum",
+            "pos": "n.",
+            "def": "贫民窟",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "slum",
+                  "type": "root",
+                  "gloss": "贫民窟"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "slum 像 slump（暴跌），贫民窟是经济暴跌的地方",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "shantytown",
+                "note": "更具体，指棚户区"
+              },
+              {
+                "w": "ghetto",
+                "note": "常指少数民族聚居的贫民区"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "horse-drawn",
+            "lemma": "horse-drawn",
+            "pos": "adj.",
+            "def": "马拉的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "horse",
+                  "type": "root",
+                  "gloss": "马"
+                },
+                {
+                  "text": "drawn",
+                  "type": "root",
+                  "gloss": "拉（draw 的过去分词）"
+                }
+              ],
+              "derivation": "horse（马）+ drawn（拉）→ 马拉的",
+              "family": {
+                "root": "draw",
+                "gloss": "拉",
+                "words": [
+                  {
+                    "word": "draw",
+                    "def": "拉；画"
+                  },
+                  {
+                    "word": "withdraw",
+                    "def": "撤回（with-向后 + draw）"
+                  },
+                  {
+                    "word": "drawback",
+                    "def": "缺点（draw + back → 拉后腿的东西）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "horse-drawn vehicle",
+                "note": "更具体，指马车"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "consist of",
+            "zh": "由……组成",
+            "usage": "写作中描述构成时常用，如 The team consists of five members."
+          },
+          {
+            "text": "be full of",
+            "zh": "充满",
+            "usage": "描述状态，如 The room was full of smoke."
+          }
+        ]
+      }
     },
     {
       "id": 6,
@@ -130,7 +1303,160 @@
           "pos": "n.",
           "def": "噩梦；极糟的经历"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 连缀动词 + 补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Crossing the City",
+              "zh": "穿过伦敦城"
+            },
+            {
+              "role": "V",
+              "text": "became",
+              "zh": "变成了"
+            },
+            {
+              "role": "C",
+              "text": "a nightmare",
+              "zh": "一场噩梦"
+            }
+          ],
+          "plain": "去掉修饰后只剩：Crossing the City became a nightmare（穿过伦敦城变成了一场噩梦）。become 是连缀动词（本身不完整，需要补语说明主语变成什么），所以是主系表结构。"
+        },
+        "chunks": [
+          {
+            "text": "Crossing the City",
+            "role": "S",
+            "zh": "穿过伦敦城",
+            "note": "动名词短语作主语，表示一个动作或一件事。",
+            "tag": "ch11.gerund"
+          },
+          {
+            "text": "became",
+            "role": "V",
+            "zh": "变成了",
+            "note": "过去简单式，表示过去发生的变化。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "a nightmare",
+            "role": "C",
+            "zh": "一场噩梦",
+            "note": "名词短语作主语补语，说明主语是什么。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch11.gerund",
+            "name": "动名词作主语",
+            "explain": "动名词就是动词加-ing变成名词，比如cross变成crossing。动名词短语可以像名词一样放在主语位置，表示一个动作或事件。这里Crossing the City整个当主语，意思是“穿过伦敦城这件事”。雅思阅读里经常用动名词作主语来概括一个行为。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "主系表结构",
+            "explain": "become是连缀动词，后面必须跟补语（也叫表语）来说明主语变成什么。这里a nightmare就是补语，说明穿过伦敦城变成了一件糟糕的事。判断句型时，如果动词是be、become、look、seem这类，后面跟的是补语而不是宾语。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "Crossing",
+            "lemma": "cross",
+            "pos": "v.",
+            "def": "穿过；横穿",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "cross",
+                  "type": "root",
+                  "gloss": "穿过"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "动名词后缀"
+                }
+              ],
+              "derivation": "cross(穿过)+ -ing(动名词后缀)→ 穿过(这件事)",
+              "family": {
+                "root": "cross",
+                "gloss": "穿过",
+                "words": [
+                  {
+                    "word": "across",
+                    "def": "穿过(介词)"
+                  },
+                  {
+                    "word": "crossing",
+                    "def": "十字路口(名词)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "crossed",
+                  "pos": "v.",
+                  "def": "cross的过去式/过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "traverse",
+                "note": "更正式的学术词汇，雅思阅读中常替换cross"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "nightmare",
+            "lemma": "nightmare",
+            "pos": "n.",
+            "def": "噩梦；极糟的经历",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "night",
+                  "type": "root",
+                  "gloss": "夜晚"
+                },
+                {
+                  "text": "mare",
+                  "type": "root",
+                  "gloss": "梦魇（古英语）"
+                }
+              ],
+              "derivation": "night(夜晚)+ mare(梦魇)→ 噩梦",
+              "family": null,
+              "mnemonic": "night(夜晚)+ mare(母马)→ 晚上梦见母马？其实是噩梦。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "horror",
+                "note": "强调恐怖，如horror story"
+              },
+              {
+                "w": "ordeal",
+                "note": "强调痛苦的经历，雅思阅读中可能替换nightmare"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "become a nightmare",
+            "zh": "变成一场噩梦/变得极其糟糕",
+            "usage": "写作中可用来描述情况恶化：The traffic became a nightmare during rush hour.（高峰时段交通变得极其糟糕。）"
+          }
+        ]
+      }
     },
     {
       "id": 7,
@@ -152,7 +1478,229 @@
           "pos": "adj.",
           "def": "马拉的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "It",
+              "zh": "它(形式主语)"
+            },
+            {
+              "role": "V",
+              "text": "could take",
+              "zh": "可能需要花费"
+            },
+            {
+              "role": "O",
+              "text": "an hour and a half",
+              "zh": "一个半小时"
+            }
+          ],
+          "plain": "去掉修饰后只剩:It could take an hour and a half(它可能需要一个半小时)。这里的It是形式主语,真正的主语是后面的不定式短语to travel 8 km by horse-drawn carriage or bus。"
+        },
+        "chunks": [
+          {
+            "text": "It",
+            "role": "S",
+            "zh": "它(形式主语)",
+            "note": "It是形式主语,真正的主语是后面的to travel...。英语里为了避免头重脚轻,常用It放在句首代替真正的主语。"
+          },
+          {
+            "text": "could take",
+            "role": "V",
+            "zh": "可能需要花费",
+            "note": "情态动词could + 动词原形take,表示可能性或推测,语气比can委婉。take在这里是及物动词,表示“花费(时间)”。"
+          },
+          {
+            "text": "an hour and a half",
+            "role": "O",
+            "zh": "一个半小时",
+            "note": "时间名词短语,作take的宾语。"
+          },
+          {
+            "text": "to travel 8 km",
+            "role": "clause",
+            "zh": "旅行8公里",
+            "note": "不定式短语,是句子的真正主语。It...to do...句型中,to do部分是逻辑主语。"
+          },
+          {
+            "text": "by horse-drawn carriage or bus",
+            "role": "adv",
+            "zh": "乘马车或公共马车",
+            "note": "介词短语作方式状语,修饰travel,说明旅行方式。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式作真正主语",
+            "explain": "英语里,如果主语是一个动作(比如“旅行8公里”),通常用不定式(to travel)来表达。但不定式太长时,会把它放到句子后面,前面用It代替它当形式主语。所以It...to do...这个句型里,It只是占个位置,真正的主语是后面的to do部分。"
+          },
+          {
+            "tag": "ch7.modal",
+            "name": "情态动词could表推测",
+            "explain": "could在这里不是can的过去式,而是表示“可能、也许”,语气比can更委婉、不确定。比如It could take an hour意思是“可能需要一个小时”,不是肯定需要。雅思阅读里常用could表示一种可能性。"
+          },
+          {
+            "tag": "ch3.prep",
+            "name": "介词短语by表方式",
+            "explain": "by + 交通工具表示“通过……方式”,比如by bus(乘公交)、by car(开车)。注意by后面直接跟交通工具,不加冠词。这里by horse-drawn carriage or bus就是“乘马车或公共马车”。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "take",
+            "lemma": "take",
+            "pos": "v.",
+            "def": "花费(时间)",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "take",
+                  "type": "root",
+                  "gloss": "拿、花费"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "take",
+                "gloss": "拿、花费",
+                "words": [
+                  {
+                    "word": "overtake",
+                    "def": "超过(overtake)"
+                  },
+                  {
+                    "word": "undertake",
+                    "def": "承担(undertake)"
+                  }
+                ]
+              },
+              "mnemonic": "take time 花费时间,可以联想“take a break(休息一下)”的take,但这里意思是“消耗”。",
+              "forms": [
+                {
+                  "word": "took",
+                  "pos": "v.",
+                  "def": "过去式"
+                },
+                {
+                  "word": "taken",
+                  "pos": "v.",
+                  "def": "过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "require",
+                "note": "更正式,雅思阅读中常替换take表示“需要时间”"
+              },
+              {
+                "w": "need",
+                "note": "口语化,也可替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "travel",
+            "lemma": "travel",
+            "pos": "v.",
+            "def": "旅行;行进",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "travel",
+                  "type": "root",
+                  "gloss": "旅行"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "travel",
+                "gloss": "旅行",
+                "words": [
+                  {
+                    "word": "traveler",
+                    "def": "旅行者"
+                  },
+                  {
+                    "word": "traveling",
+                    "def": "旅行(现在分词)"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "traveled",
+                  "pos": "v.",
+                  "def": "过去式/过去分词(美式)"
+                },
+                {
+                  "word": "travelled",
+                  "pos": "v.",
+                  "def": "过去式/过去分词(英式)"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "journey",
+                "note": "名词,但雅思阅读中travel常被替换为make a journey"
+              },
+              {
+                "w": "move",
+                "note": "更宽泛,但可替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "horse-drawn",
+            "lemma": "horse-drawn",
+            "pos": "adj.",
+            "def": "马拉的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "horse",
+                  "type": "root",
+                  "gloss": "马"
+                },
+                {
+                  "text": "drawn",
+                  "type": "root",
+                  "gloss": "拉(draw的过去分词)"
+                }
+              ],
+              "derivation": "horse(马) + drawn(被拉) → 被马拉的,复合形容词",
+              "family": null,
+              "mnemonic": "想象一匹马在拉车(horse-drawn carriage)。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "horse-pulled",
+                "note": "同义,但horse-drawn更常见"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "It takes time to do something",
+            "zh": "做某事花费时间",
+            "usage": "写作中常用句型,例如:It takes patience to learn a language. (学语言需要耐心。)"
+          }
+        ]
+      }
     },
     {
       "id": 8,
@@ -174,7 +1722,328 @@
           "pos": "v.",
           "def": "解决"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Numerous schemes",
+              "zh": "许多方案"
+            },
+            {
+              "role": "V",
+              "text": "were proposed",
+              "zh": "被提出"
+            },
+            {
+              "role": "O",
+              "text": "to resolve these problems",
+              "zh": "来解决这些问题"
+            }
+          ],
+          "plain": "去掉修饰后，主句是：Numerous schemes were proposed (许多方案被提出)。但注意，这里to resolve...是目的状语，不是宾语；被动语态中，原宾语变成了主语。"
+        },
+        "chunks": [
+          {
+            "text": "Numerous schemes",
+            "role": "S",
+            "zh": "许多方案",
+            "note": "名词短语作主语，numerous 是形容词“许多的”。",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "were proposed",
+            "role": "V",
+            "zh": "被提出",
+            "note": "被动语态：be + 过去分词，表示“被提出”。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "to resolve these problems",
+            "role": "adv",
+            "zh": "为了解决这些问题",
+            "note": "不定词短语作目的状语，说明提出方案的目的。",
+            "tag": "ch12.infinitive"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号连接两个并列分句。"
+          },
+          {
+            "text": "but",
+            "role": "conn",
+            "zh": "但是",
+            "note": "并列连词，表示转折。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "few",
+            "role": "S",
+            "zh": "很少（方案）",
+            "note": "代词作主语，指代 few schemes。",
+            "tag": "ch2.np"
+          },
+          {
+            "text": "succeeded",
+            "role": "V",
+            "zh": "成功",
+            "note": "不及物动词，后面不接宾语。",
+            "tag": "ch1.sv"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "被动语态的结构是 be + 过去分词。这里 were proposed 表示“方案被提出”，强调动作的承受者（方案）而不是执行者（谁提出）。在雅思阅读中，被动语态很常见，用来让句子更客观或突出受动者。"
+          },
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定词短语作目的状语",
+            "explain": "to + 动词原形可以表示目的，相当于 in order to。这里 to resolve these problems 说明提出方案是为了解决这些问题。在写作中，可以用 to do 来表达目的，简洁明了。"
+          },
+          {
+            "tag": "ch13.compound",
+            "name": "合句（并列句）",
+            "explain": "用 but 连接两个独立的分句，形成转折关系。前句说很多方案被提出，后句说很少成功，形成对比。这种结构在雅思写作中可以用来表达转折观点。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "numerous",
+            "lemma": "numerous",
+            "pos": "adj.",
+            "def": "许多的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "numer",
+                  "type": "root",
+                  "gloss": "数"
+                },
+                {
+                  "text": "ous",
+                  "type": "suffix",
+                  "gloss": "充满……的"
+                }
+              ],
+              "derivation": "numer（数）+ ous（充满）→ 数量多的",
+              "family": {
+                "root": "numer",
+                "gloss": "数",
+                "words": [
+                  {
+                    "word": "number",
+                    "def": "数字"
+                  },
+                  {
+                    "word": "numerical",
+                    "def": "数字的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "many",
+                "note": "更常用，但numerous更正式，常用于学术写作"
+              },
+              {
+                "w": "a large number of",
+                "note": "同义短语，雅思阅读中常替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "proposed",
+            "lemma": "propose",
+            "pos": "v.",
+            "def": "提议；提出",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pro",
+                  "type": "prefix",
+                  "gloss": "向前"
+                },
+                {
+                  "text": "pos",
+                  "type": "root",
+                  "gloss": "放置"
+                }
+              ],
+              "derivation": "pro（向前）+ pos（放置）+ e → 放在前面 → 提出",
+              "family": {
+                "root": "pos",
+                "gloss": "放置",
+                "words": [
+                  {
+                    "word": "position",
+                    "def": "位置"
+                  },
+                  {
+                    "word": "proposal",
+                    "def": "提议（名词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "proposal",
+                  "pos": "n.",
+                  "def": "提议"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "suggest",
+                "note": "更口语化，propose更正式"
+              },
+              {
+                "w": "put forward",
+                "note": "短语动词，雅思阅读中常见替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "resolve",
+            "lemma": "resolve",
+            "pos": "v.",
+            "def": "解决",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "再次"
+                },
+                {
+                  "text": "solv",
+                  "type": "root",
+                  "gloss": "解开"
+                }
+              ],
+              "derivation": "re（再次）+ solv（解开）+ e → 再次解开 → 解决",
+              "family": {
+                "root": "solv",
+                "gloss": "解开",
+                "words": [
+                  {
+                    "word": "solution",
+                    "def": "解决方案"
+                  },
+                  {
+                    "word": "solve",
+                    "def": "解决"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "resolution",
+                  "pos": "n.",
+                  "def": "解决；决议"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "solve",
+                "note": "更常用，resolve更正式，强调决心解决"
+              },
+              {
+                "w": "tackle",
+                "note": "处理，雅思阅读中常见"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "succeeded",
+            "lemma": "succeed",
+            "pos": "v.",
+            "def": "成功",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "suc",
+                  "type": "prefix",
+                  "gloss": "下面/跟随"
+                },
+                {
+                  "text": "ceed",
+                  "type": "root",
+                  "gloss": "走"
+                }
+              ],
+              "derivation": "suc（跟随）+ ceed（走）→ 跟着走 → 成功（达到目标）",
+              "family": {
+                "root": "ceed",
+                "gloss": "走",
+                "words": [
+                  {
+                    "word": "proceed",
+                    "def": "前进"
+                  },
+                  {
+                    "word": "success",
+                    "def": "成功（名词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "success",
+                  "pos": "n.",
+                  "def": "成功"
+                },
+                {
+                  "word": "successful",
+                  "pos": "adj.",
+                  "def": "成功的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "achieve success",
+                "note": "更正式的说法"
+              },
+              {
+                "w": "work out",
+                "note": "口语化，但雅思阅读中可能用"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "numerous schemes were proposed",
+            "zh": "提出了许多方案",
+            "usage": "写作中可以用被动语态来强调方案本身，如：Numerous solutions were proposed to address the issue."
+          },
+          {
+            "text": "but few succeeded",
+            "zh": "但很少成功",
+            "usage": "表示转折对比，可用于写作中表达努力与结果的反差，如：Many attempts were made, but few succeeded."
+          }
+        ]
+      }
     },
     {
       "id": 9,
@@ -196,7 +2065,235 @@
           "pos": "n.",
           "def": "事务律师"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "C",
+              "text": "Amongst the most vocal advocates for a solution to London’s traffic problems",
+              "zh": "在解决伦敦交通问题的最积极倡导者中"
+            },
+            {
+              "role": "V",
+              "text": "was",
+              "zh": "是"
+            },
+            {
+              "role": "S",
+              "text": "Charles Pearson",
+              "zh": "查尔斯·皮尔逊"
+            }
+          ],
+          "plain": "去掉修饰和定语从句，主干是 Amongst...was Charles Pearson，这是一个倒装的 SVC 句型，正常语序是 Charles Pearson was amongst...，主语是 Charles Pearson，补语是 amongst...。"
+        },
+        "chunks": [
+          {
+            "text": "Amongst the most vocal advocates for a solution to London’s traffic problems",
+            "role": "C",
+            "zh": "在解决伦敦交通问题的最积极倡导者中",
+            "note": "介词短语作主语补语，放在句首引起倒装。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "was",
+            "role": "V",
+            "zh": "是",
+            "note": "be动词，连接主语和补语。",
+            "tag": "ch1.svc"
+          },
+          {
+            "text": "Charles Pearson",
+            "role": "S",
+            "zh": "查尔斯·皮尔逊",
+            "note": "句子的主语，因为倒装放在了动词后面。"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号分隔非限制性定语从句。"
+          },
+          {
+            "text": "who worked as a solicitor for the City of London",
+            "role": "clause",
+            "zh": "他是伦敦城的一名律师",
+            "note": "非限制性关系从句，补充说明 Charles Pearson 的身份。",
+            "tag": "ch16.relative-nonrestrictive"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch18.inversion",
+            "name": "倒装句",
+            "explain": "当表示地点的介词短语放在句首时，主语和动词常常倒装，即动词在前，主语在后。这里 Amongst... 是地点状语，正常语序是 Charles Pearson was amongst...，但为了强调或衔接，把地点状语提前，主语和动词交换位置。这种倒装在雅思阅读中很常见，看到介词短语开头，要小心主语在后面。"
+          },
+          {
+            "tag": "ch16.relative-nonrestrictive",
+            "name": "非限制性关系从句",
+            "explain": "用逗号隔开的关系从句，对前面的名词进行补充说明，但去掉后不影响句子的核心意思。这里 who worked as a solicitor... 补充 Charles Pearson 的职业，不是限定哪个 Charles Pearson，而是额外信息。非限制性关系从句不能用 that 引导，只能用 who/which。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "vocal",
+            "lemma": "vocal",
+            "pos": "adj.",
+            "def": "直言不讳的；大声表达的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "voc",
+                  "type": "root",
+                  "gloss": "声音"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "voc（声音）+ al（形容词后缀）→ 与声音有关的 → 直言不讳的",
+              "family": {
+                "root": "voc",
+                "gloss": "声音",
+                "words": [
+                  {
+                    "word": "voice",
+                    "def": "声音"
+                  },
+                  {
+                    "word": "vocalize",
+                    "def": "发声"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "outspoken",
+                "note": "更强调说话直接、坦率，雅思阅读中常与 vocal 互换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "advocate",
+            "lemma": "advocate",
+            "pos": "n.",
+            "def": "倡导者；拥护者",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "ad",
+                  "type": "prefix",
+                  "gloss": "朝向"
+                },
+                {
+                  "text": "voc",
+                  "type": "root",
+                  "gloss": "声音"
+                },
+                {
+                  "text": "ate",
+                  "type": "suffix",
+                  "gloss": "人"
+                }
+              ],
+              "derivation": "ad（朝向）+ voc（声音）+ ate（人）→ 朝着别人发声的人 → 倡导者",
+              "family": {
+                "root": "voc",
+                "gloss": "声音",
+                "words": [
+                  {
+                    "word": "advocacy",
+                    "def": "倡导；支持"
+                  },
+                  {
+                    "word": "vocation",
+                    "def": "职业（召唤）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "advocate",
+                  "pos": "v.",
+                  "def": "倡导"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "supporter",
+                "note": "更普通，advocate 更正式，常用于学术语境"
+              },
+              {
+                "w": "proponent",
+                "note": "正式，常出现在议论文中"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "solicitor",
+            "lemma": "solicitor",
+            "pos": "n.",
+            "def": "事务律师（英国）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "solicit",
+                  "type": "root",
+                  "gloss": "恳求；招揽"
+                },
+                {
+                  "text": "or",
+                  "type": "suffix",
+                  "gloss": "人"
+                }
+              ],
+              "derivation": "solicit（恳求）+ or（人）→ 为案件恳求的人 → 律师",
+              "family": {
+                "root": "solicit",
+                "gloss": "恳求",
+                "words": [
+                  {
+                    "word": "solicit",
+                    "def": "恳求；招揽"
+                  },
+                  {
+                    "word": "solicitation",
+                    "def": "恳求；招揽"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "lawyer",
+                "note": "更通用，solicitor 特指英国的事务律师，与 barrister（出庭律师）相对"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "amongst the most vocal advocates",
+            "zh": "在最直言不讳的倡导者中",
+            "usage": "写作中可用来引出某领域的重要人物：Amongst the most vocal advocates for environmental protection was Dr. Smith."
+          }
+        ]
+      }
     },
     {
       "id": 10,
@@ -218,7 +2315,307 @@
           "pos": "v.",
           "def": "清除；清理"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "He",
+              "zh": "他"
+            },
+            {
+              "role": "V",
+              "text": "saw",
+              "zh": "看到"
+            },
+            {
+              "role": "O",
+              "text": "both social and economic advantages in building an underground railway that would link the overground railway stations together and clear London slums at the same time",
+              "zh": "修建一条连接地上火车站并同时清理伦敦贫民窟的地下铁路所带来的社会和经济双重好处"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：He saw advantages（他看到了好处）。saw（看到）是及物动词，后面跟宾语 advantages；in building... 是介词短语作状语，说明在哪方面看到好处。"
+        },
+        "chunks": [
+          {
+            "text": "He",
+            "role": "S",
+            "zh": "他",
+            "note": "主语，指代前文的 Charles Pearson。"
+          },
+          {
+            "text": "saw",
+            "role": "V",
+            "zh": "看到",
+            "note": "及物动词，后面必须跟宾语。"
+          },
+          {
+            "text": "both social and economic advantages",
+            "role": "O",
+            "zh": "社会和经济两方面的好处",
+            "note": "宾语，说明看到的内容。both...and... 连接两个并列的形容词。"
+          },
+          {
+            "text": "in building an underground railway",
+            "role": "adv",
+            "zh": "在修建一条地下铁路方面",
+            "note": "介词短语作状语，修饰 saw，说明在哪方面看到好处。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "that would link the overground railway stations together and clear London slums at the same time",
+            "role": "attr",
+            "zh": "这条铁路将连接地上的火车站并同时清理伦敦的贫民窟",
+            "note": "关系从句，修饰 underground railway，说明它的功能。",
+            "tag": "ch16.relative"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "英语句子最核心的结构就是主语+动词+宾语。这里动词 saw 是及物动词，后面必须跟一个宾语（动作的对象）。宾语是 both social and economic advantages，而 in building... 是介词短语作状语，不是宾语的一部分。理解长句时，先抓主谓宾，再处理修饰成分。"
+          },
+          {
+            "tag": "ch16.relative",
+            "name": "限定性关系从句",
+            "explain": "关系从句由 that 引导，修饰前面的名词 underground railway。that 在从句中作主语，从句的谓语是 would link...and clear...。这种从句用来限定先行词，告诉我们这是怎样的一条铁路。注意关系从句的动词时态（would）表示过去将来，因为主句是过去时。"
+          },
+          {
+            "tag": "ch13.parallel",
+            "name": "并列结构",
+            "explain": "关系从句中，would link...and clear... 是两个并列的动词短语，由 and 连接。注意并列结构要求两边形式一致：都是 would + 动词原形。这种结构在雅思阅读中很常见，可以帮助你快速理解多个动作。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "saw",
+            "lemma": "see",
+            "pos": "v.",
+            "def": "看到；认识到",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "see",
+                  "type": "root",
+                  "gloss": "看"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "see",
+                "gloss": "看",
+                "words": [
+                  {
+                    "word": "sight",
+                    "def": "视力；景象"
+                  },
+                  {
+                    "word": "foresee",
+                    "def": "预见（fore- 提前）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "seen",
+                  "pos": "v.",
+                  "def": "see 的过去分词"
+                },
+                {
+                  "word": "seeing",
+                  "pos": "v.",
+                  "def": "see 的现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "recognize",
+                "note": "更强调“认识到、意识到”，在学术阅读中常替换 see"
+              },
+              {
+                "w": "perceive",
+                "note": "正式用语，表示“察觉、理解”，雅思阅读中常见"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "advantages",
+            "lemma": "advantage",
+            "pos": "n.",
+            "def": "优势；好处",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "advant",
+                  "type": "root",
+                  "gloss": "前面、优势"
+                },
+                {
+                  "text": "age",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "advant（前面）+ -age（名词）→ 领先的状态 → 优势",
+              "family": {
+                "root": "advant",
+                "gloss": "前面",
+                "words": [
+                  {
+                    "word": "disadvantage",
+                    "def": "劣势（dis- 否定）"
+                  },
+                  {
+                    "word": "advantageous",
+                    "def": "有利的（-ous 形容词后缀）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "benefit",
+                "note": "更常用，雅思阅读中常与 advantage 互换"
+              },
+              {
+                "w": "merit",
+                "note": "正式，表示“优点、价值”，常见于议论文"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "link",
+            "lemma": "link",
+            "pos": "v.",
+            "def": "连接",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "link",
+                  "type": "root",
+                  "gloss": "连接"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "link",
+                "gloss": "连接",
+                "words": [
+                  {
+                    "word": "linkage",
+                    "def": "连接；联系（-age 名词）"
+                  },
+                  {
+                    "word": "interlink",
+                    "def": "互相连接（inter- 相互）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "linked",
+                  "pos": "v.",
+                  "def": "link 的过去式/过去分词"
+                },
+                {
+                  "word": "linking",
+                  "pos": "v.",
+                  "def": "link 的现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "connect",
+                "note": "最常用同义词，雅思阅读中 link 常被替换为 connect"
+              },
+              {
+                "w": "join",
+                "note": "更具体，表示“连接在一起”"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "clear",
+            "lemma": "clear",
+            "pos": "v.",
+            "def": "清除；清理",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "clear",
+                  "type": "root",
+                  "gloss": "清楚、干净"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "clear",
+                "gloss": "清楚",
+                "words": [
+                  {
+                    "word": "clearly",
+                    "def": "清楚地（-ly 副词）"
+                  },
+                  {
+                    "word": "clearance",
+                    "def": "清除；许可（-ance 名词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "cleared",
+                  "pos": "v.",
+                  "def": "clear 的过去式/过去分词"
+                },
+                {
+                  "word": "clearing",
+                  "pos": "v.",
+                  "def": "clear 的现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "remove",
+                "note": "更正式，雅思阅读中 clear 常被替换为 remove"
+              },
+              {
+                "w": "eliminate",
+                "note": "强调“彻底消除”，学术词汇"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "see advantages in doing sth.",
+            "zh": "看到做某事的好处",
+            "usage": "写作中可用于表达观点：Many people see advantages in working from home.（很多人看到在家工作的好处。）"
+          },
+          {
+            "text": "at the same time",
+            "zh": "同时",
+            "usage": "常用连接词，表示两个动作同时发生或并列：The project will create jobs and at the same time improve the environment.（这个项目将创造就业，同时改善环境。）"
+          }
+        ]
+      }
     },
     {
       "id": 11,
@@ -240,7 +2637,266 @@
           "pos": "n.",
           "def": "郊区"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 系动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "His idea",
+              "zh": "他的想法"
+            },
+            {
+              "role": "V",
+              "text": "was",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "to relocate the poor workers who lived in the inner-city slums to newly constructed suburbs, and to provide cheap rail travel for them to get to work",
+              "zh": "把住在内城贫民窟的贫困工人迁到新建郊区，并为他们提供廉价铁路交通去上班"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：His idea was to relocate workers and to provide travel（他的想法是迁移工人并提供交通）。was 是系动词，后面两个不定式短语作主语补语，说明“想法”的具体内容。"
+        },
+        "chunks": [
+          {
+            "text": "His idea",
+            "role": "S",
+            "zh": "他的想法",
+            "note": "主语，由限定词 His + 名词 idea 构成名词词组。"
+          },
+          {
+            "text": "was",
+            "role": "V",
+            "zh": "是",
+            "note": "系动词，连接主语和补语。"
+          },
+          {
+            "text": "to relocate the poor workers who lived in the inner-city slums to newly constructed suburbs",
+            "role": "C",
+            "zh": "把住在内城贫民窟的贫困工人迁到新建郊区",
+            "note": "第一个不定式短语作主语补语，其中包含一个关系从句 who lived in the inner-city slums 修饰 workers。"
+          },
+          {
+            "text": ", and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "并列连词，连接两个不定式短语。"
+          },
+          {
+            "text": "to provide cheap rail travel for them to get to work",
+            "role": "C",
+            "zh": "为他们提供廉价铁路交通去上班",
+            "note": "第二个不定式短语作主语补语，与前面的不定式并列。"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svc",
+            "name": "句型二：S + V + C（主系表）",
+            "explain": "这个句子的主干是 His idea was...，was 是系动词，后面跟的是主语补语（也叫表语），用来补充说明主语是什么。这里补语是两个并列的不定式短语，具体说明“他的想法”的内容。判断句型的关键是看动词：was 本身没有动作，只是连接主语和补语。"
+          },
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式短语作主语补语",
+            "explain": "不定式是 to + 动词原形，可以当名词、形容词或副词用。这里 to relocate... 和 to provide... 两个不定式短语跟在系动词 was 后面，说明主语 His idea 是什么，所以是主语补语。注意不定式表示“尚未发生的动作”，这里表达的是计划或意图。"
+          },
+          {
+            "tag": "ch16.relative",
+            "name": "限定性关系从句",
+            "explain": "who lived in the inner-city slums 是一个关系从句，修饰前面的名词 the poor workers。who 是关系代词，指人，在从句中作主语。这个从句限定说明是“哪些工人”——住在内城贫民窟的那些，没有它句子意思就不完整。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "relocate",
+            "lemma": "relocate",
+            "pos": "v.",
+            "def": "迁移；重新安置",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "再次"
+                },
+                {
+                  "text": "loc",
+                  "type": "root",
+                  "gloss": "地方"
+                },
+                {
+                  "text": "ate",
+                  "type": "suffix",
+                  "gloss": "动词后缀"
+                }
+              ],
+              "derivation": "re-（再次）+ loc（地方）+ -ate（动词）→ 重新安置地方 → 迁移",
+              "family": {
+                "root": "loc",
+                "gloss": "地方",
+                "words": [
+                  {
+                    "word": "location",
+                    "def": "位置"
+                  },
+                  {
+                    "word": "local",
+                    "def": "当地的"
+                  }
+                ]
+              },
+              "mnemonic": "re（再）+ locate（定位）→ 重新定位 → 迁移",
+              "forms": [
+                {
+                  "word": "relocation",
+                  "pos": "n.",
+                  "def": "迁移；重新安置"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "move",
+                "note": "更通用，雅思阅读中 relocate 常被替换为 move"
+              },
+              {
+                "w": "transfer",
+                "note": "强调转移，常用于人员或物品的调动"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "suburbs",
+            "lemma": "suburb",
+            "pos": "n.",
+            "def": "郊区",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sub",
+                  "type": "prefix",
+                  "gloss": "下面；次要"
+                },
+                {
+                  "text": "urb",
+                  "type": "root",
+                  "gloss": "城市"
+                },
+                {
+                  "text": "s",
+                  "type": "suffix",
+                  "gloss": "复数"
+                }
+              ],
+              "derivation": "sub-（下面）+ urb（城市）+ s → 城市下面的区域 → 郊区",
+              "family": {
+                "root": "urb",
+                "gloss": "城市",
+                "words": [
+                  {
+                    "word": "urban",
+                    "def": "城市的"
+                  },
+                  {
+                    "word": "urbanization",
+                    "def": "城市化"
+                  }
+                ]
+              },
+              "mnemonic": "sub（在…之下）+ urban（城市的）→ 城市边缘 → 郊区",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "outskirts",
+                "note": "强调城市外围，常与 of 连用"
+              },
+              {
+                "w": "commuter belt",
+                "note": "通勤带，指郊区居住区"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "constructed",
+            "lemma": "construct",
+            "pos": "v.",
+            "def": "建造；建设",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "con",
+                  "type": "prefix",
+                  "gloss": "共同"
+                },
+                {
+                  "text": "struct",
+                  "type": "root",
+                  "gloss": "建造"
+                },
+                {
+                  "text": "ed",
+                  "type": "suffix",
+                  "gloss": "过去分词"
+                }
+              ],
+              "derivation": "con-（共同）+ struct（建造）+ -ed（过去分词）→ 共同建造的 → 建造的",
+              "family": {
+                "root": "struct",
+                "gloss": "建造",
+                "words": [
+                  {
+                    "word": "structure",
+                    "def": "结构"
+                  },
+                  {
+                    "word": "destruction",
+                    "def": "破坏（de- 相反）"
+                  }
+                ]
+              },
+              "mnemonic": "con（一起）+ struct（建造）→ 建在一起 → 建造",
+              "forms": [
+                {
+                  "word": "construction",
+                  "pos": "n.",
+                  "def": "建设"
+                },
+                {
+                  "word": "constructive",
+                  "pos": "adj.",
+                  "def": "建设性的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "built",
+                "note": "更口语化，雅思阅读中 construct 常替换为 build"
+              },
+              {
+                "w": "erected",
+                "note": "更正式，强调竖立起来"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "provide cheap rail travel for them to get to work",
+            "zh": "为他们提供廉价铁路交通去上班",
+            "usage": "写作中可迁移：provide affordable transportation for people to commute（为人们提供负担得起的通勤交通）。"
+          }
+        ]
+      }
     },
     {
       "id": 12,
@@ -262,7 +2918,327 @@
           "pos": "n.",
           "def": "议会"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Pearson's ideas",
+              "zh": "皮尔逊的想法"
+            },
+            {
+              "role": "V",
+              "text": "gained",
+              "zh": "获得"
+            },
+            {
+              "role": "O",
+              "text": "support",
+              "zh": "支持"
+            }
+          ],
+          "plain": "去掉修饰后，第一分句只剩 Pearson's ideas gained support（皮尔逊的想法获得了支持）。gain 是及物动词，后面必须跟宾语 support。"
+        },
+        "chunks": [
+          {
+            "text": "Pearson's ideas",
+            "role": "S",
+            "zh": "皮尔逊的想法",
+            "note": "名词词组作主语，所有格 Pearson's 表示“皮尔逊的”。"
+          },
+          {
+            "text": "gained",
+            "role": "V",
+            "zh": "获得",
+            "note": "及物动词，过去式，表示过去发生的动作。"
+          },
+          {
+            "text": "support",
+            "role": "O",
+            "zh": "支持",
+            "note": "名词，作宾语，是 gain 的对象。"
+          },
+          {
+            "text": "amongst some businessmen",
+            "role": "adv",
+            "zh": "在一些商人中",
+            "note": "介词短语作状语，修饰 gained，说明支持来自哪些人。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "并列连词，连接两个并列谓语。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "in 1851",
+            "role": "adv",
+            "zh": "在1851年",
+            "note": "介词短语作时间状语，修饰 submitted。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "he",
+            "role": "S",
+            "zh": "他",
+            "note": "代词，指代 Pearson。"
+          },
+          {
+            "text": "submitted",
+            "role": "V",
+            "zh": "提交",
+            "note": "及物动词，过去式。"
+          },
+          {
+            "text": "a plan",
+            "role": "O",
+            "zh": "一份计划",
+            "note": "名词词组，作宾语。"
+          },
+          {
+            "text": "to Parliament",
+            "role": "adv",
+            "zh": "向议会",
+            "note": "介词短语作状语，表示提交的对象。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch13.compound",
+            "name": "并列句（合句）",
+            "explain": "这句话由 and 连接两个并列的谓语（gained support 和 submitted a plan），共享同一个主语 Pearson's ideas / he。注意第二个分句的主语 he 指代 Pearson，这是英语中常见的代词指代。"
+          },
+          {
+            "tag": "ch6.simple-past",
+            "name": "过去简单式",
+            "explain": "两个动词 gained 和 submitted 都是过去式，表示过去发生的动作。在叙述历史事件时，雅思阅读中常用过去简单式。"
+          },
+          {
+            "tag": "ch3.prep",
+            "name": "介词短语作状语",
+            "explain": "amongst some businessmen 和 in 1851 都是介词短语，分别作地点状语和时间状语，修饰动词。介词短语在句中位置灵活，可以放在句首或句末。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "gained",
+            "lemma": "gain",
+            "pos": "v.",
+            "def": "获得，赢得",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "gain",
+                  "type": "root",
+                  "gloss": "获得"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "gain",
+                "gloss": "获得",
+                "words": [
+                  {
+                    "word": "gainful",
+                    "def": "有收益的"
+                  },
+                  {
+                    "word": "regain",
+                    "def": "重新获得"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "gains",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "gaining",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "obtain",
+                "note": "更正式，雅思阅读中常替换 gain"
+              },
+              {
+                "w": "win",
+                "note": "强调通过努力获得"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "support",
+            "lemma": "support",
+            "pos": "n.",
+            "def": "支持",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "support",
+                  "type": "root",
+                  "gloss": "支持"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "support",
+                "gloss": "支持",
+                "words": [
+                  {
+                    "word": "supporter",
+                    "def": "支持者"
+                  },
+                  {
+                    "word": "supportive",
+                    "def": "支持的"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "supports",
+                  "pos": "n.",
+                  "def": "复数"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "backing",
+                "note": "更口语化，但雅思阅读中也常见"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "submitted",
+            "lemma": "submit",
+            "pos": "v.",
+            "def": "提交，呈递",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sub",
+                  "type": "prefix",
+                  "gloss": "向下"
+                },
+                {
+                  "text": "mit",
+                  "type": "root",
+                  "gloss": "送，派"
+                }
+              ],
+              "derivation": "sub-（向下）+ mit（送）→ 向下送 → 提交",
+              "family": {
+                "root": "mit",
+                "gloss": "送",
+                "words": [
+                  {
+                    "word": "admit",
+                    "def": "承认（ad-向 + mit → 送进去 → 承认）"
+                  },
+                  {
+                    "word": "permit",
+                    "def": "允许（per-通过 + mit → 放行）"
+                  }
+                ]
+              },
+              "mnemonic": "sub（下面）+ mit（送）→ 把文件送到下面的人手里 → 提交",
+              "forms": [
+                {
+                  "word": "submits",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "submitting",
+                  "pos": "v.",
+                  "def": "现在分词"
+                },
+                {
+                  "word": "submission",
+                  "pos": "n.",
+                  "def": "提交；屈服"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "present",
+                "note": "present a plan 也是常见搭配，更正式"
+              },
+              {
+                "w": "propose",
+                "note": "强调提出建议，如 propose a plan"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "Parliament",
+            "lemma": "Parliament",
+            "pos": "n.",
+            "def": "议会，国会",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "parlia",
+                  "type": "root",
+                  "gloss": "说话"
+                },
+                {
+                  "text": "ment",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "parlia（说话）+ ment → 说话的地方 → 议会",
+              "family": null,
+              "mnemonic": "parlia 听起来像“拍啦”，议员们拍桌子说话的地方 → 议会",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "government",
+                "note": "范围更广，但有时可替换"
+              },
+              {
+                "w": "congress",
+                "note": "美国用词，英国用 Parliament"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "gain support amongst",
+            "zh": "在……中获得支持",
+            "usage": "写作中可用来描述观点或政策得到某群体的支持，例如：The proposal gained support amongst environmentalists."
+          },
+          {
+            "text": "submit a plan to",
+            "zh": "向……提交计划",
+            "usage": "常用于正式场合，如提交计划给委员会、议会等。"
+          }
+        ]
+      }
     },
     {
       "id": 13,
@@ -284,7 +3260,366 @@
           "pos": "phr.",
           "def": "与……同时发生"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "It",
+              "zh": "它（指代上一句的plan）"
+            },
+            {
+              "role": "V",
+              "text": "was rejected",
+              "zh": "被否决了"
+            },
+            {
+              "role": "O",
+              "text": "",
+              "zh": ""
+            }
+          ],
+          "plain": "去掉修饰后，前半句只剩：It was rejected（它被否决了）。这是被动语态，主语是动作的承受者。后半句主干是：it coincided with a proposal（它恰好与一个方案同时出现）。"
+        },
+        "chunks": [
+          {
+            "text": "It",
+            "role": "S",
+            "zh": "它",
+            "note": "指代上一句的plan（计划）。"
+          },
+          {
+            "text": "was rejected",
+            "role": "V",
+            "zh": "被否决了",
+            "note": "被动语态，be + 过去分词，表示主语是动作的承受者。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号连接两个并列分句。"
+          },
+          {
+            "text": "but",
+            "role": "conn",
+            "zh": "但是",
+            "note": "并列连词，表示转折。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "coincided with",
+            "role": "V",
+            "zh": "与……同时发生",
+            "note": "不及物动词短语，后面接宾语。",
+            "tag": "ch1.sv"
+          },
+          {
+            "text": "a proposal",
+            "role": "O",
+            "zh": "一个方案",
+            "note": "coincide with 的宾语。"
+          },
+          {
+            "text": "from another group",
+            "role": "attr",
+            "zh": "来自另一个团体的",
+            "note": "介词短语作后置定语，修饰 proposal。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "for an underground connecting line",
+            "role": "attr",
+            "zh": "关于一条地下连接线的",
+            "note": "介词短语作后置定语，修饰 proposal。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号分隔非限定性定语从句。"
+          },
+          {
+            "text": "which Parliament passed",
+            "role": "clause",
+            "zh": "议会通过了这个方案",
+            "note": "非限定性定语从句，修饰 a proposal；which 作 passed 的宾语。",
+            "tag": "ch16.relative-nonrestrictive"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "被动语态的结构是 be + 过去分词，表示主语是动作的承受者。这里 It was rejected 意思是“它被否决了”，强调计划是被否决的，而不是主动否决别人。在雅思阅读中，被动语态很常见，尤其是当动作的执行者不重要或未知时。"
+          },
+          {
+            "tag": "ch16.relative-nonrestrictive",
+            "name": "非限定性定语从句",
+            "explain": "非限定性定语从句用逗号与主句隔开，对先行词进行补充说明，去掉后不影响句子的主要意思。这里 which Parliament passed 修饰 a proposal，意思是“议会通过了这个方案”。注意：which 在从句中作宾语，所以可以省略（但通常不省）。"
+          },
+          {
+            "tag": "ch13.compound",
+            "name": "并列句（合句）",
+            "explain": "并列句由并列连词（如 and, but, or）连接两个或更多独立分句。这里 but 连接了两个分句：It was rejected 和 it coincided with a proposal...，表示转折关系。阅读时要注意连词，它提示了前后分句的逻辑关系。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "rejected",
+            "lemma": "reject",
+            "pos": "v.",
+            "def": "拒绝；否决",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "回；向后"
+                },
+                {
+                  "text": "ject",
+                  "type": "root",
+                  "gloss": "投掷"
+                }
+              ],
+              "derivation": "re-（回）+ ject（投掷）→ 扔回去 → 拒绝",
+              "family": {
+                "root": "ject",
+                "gloss": "投掷",
+                "words": [
+                  {
+                    "word": "project",
+                    "def": "项目（pro-向前 + ject → 向前投掷 → 计划）"
+                  },
+                  {
+                    "word": "inject",
+                    "def": "注射（in-进入 + ject → 投入）"
+                  },
+                  {
+                    "word": "subject",
+                    "def": "主题；使服从（sub-下 + ject → 投于之下 → 服从）"
+                  }
+                ]
+              },
+              "mnemonic": "re（阿姨）+ ject（接客）→ 阿姨拒绝接客",
+              "forms": [
+                {
+                  "word": "rejection",
+                  "pos": "n.",
+                  "def": "拒绝"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "turn down",
+                "note": "口语常用，雅思听力中可能出现"
+              },
+              {
+                "w": "decline",
+                "note": "更正式，常用于拒绝邀请或提议"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "refuse",
+                "note": "refuse 语气更强，常指坚决拒绝；reject 更正式，常用于官方否决"
+              }
+            ]
+          },
+          {
+            "w": "coincided with",
+            "lemma": "coincide with",
+            "pos": "phr.",
+            "def": "与……同时发生",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "co",
+                  "type": "prefix",
+                  "gloss": "共同"
+                },
+                {
+                  "text": "in",
+                  "type": "prefix",
+                  "gloss": "进入"
+                },
+                {
+                  "text": "cid",
+                  "type": "root",
+                  "gloss": "落下"
+                }
+              ],
+              "derivation": "co-（共同）+ in-（进入）+ cid（落下）→ 共同落下 → 同时发生",
+              "family": {
+                "root": "cid",
+                "gloss": "落下",
+                "words": [
+                  {
+                    "word": "accident",
+                    "def": "事故（ac-向 + cid + ent → 突然落下的事）"
+                  },
+                  {
+                    "word": "incident",
+                    "def": "事件（in-进入 + cid + ent → 落入的事件）"
+                  }
+                ]
+              },
+              "mnemonic": "co（一起）+ in（里面）+ cide（side边）→ 一起在边上 → 同时发生",
+              "forms": [
+                {
+                  "word": "coincidence",
+                  "pos": "n.",
+                  "def": "巧合"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "occur at the same time as",
+                "note": "更正式的解释性表达"
+              },
+              {
+                "w": "happen simultaneously with",
+                "note": "学术写作常用"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "proposal",
+            "lemma": "proposal",
+            "pos": "n.",
+            "def": "方案；提议",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pro",
+                  "type": "prefix",
+                  "gloss": "向前"
+                },
+                {
+                  "text": "pos",
+                  "type": "root",
+                  "gloss": "放置"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "pro-（向前）+ pos（放置）+ al（名词）→ 向前放置的东西 → 提议",
+              "family": {
+                "root": "pos",
+                "gloss": "放置",
+                "words": [
+                  {
+                    "word": "position",
+                    "def": "位置"
+                  },
+                  {
+                    "word": "compose",
+                    "def": "组成（com-一起 + pose → 放在一起）"
+                  }
+                ]
+              },
+              "mnemonic": "pro（专业）+ pos（pose姿势）+ al（all）→ 专业摆姿势给所有人看 → 方案",
+              "forms": [
+                {
+                  "word": "propose",
+                  "pos": "v.",
+                  "def": "提议"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "plan",
+                "note": "更通用，本文前一句就用plan"
+              },
+              {
+                "w": "scheme",
+                "note": "常指有计划的方案，有时带贬义"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "proposition",
+                "note": "proposition 更强调论点或主张，proposal 更强调建议或方案"
+              }
+            ]
+          },
+          {
+            "w": "passed",
+            "lemma": "pass",
+            "pos": "v.",
+            "def": "通过（法案、提案等）",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "pass",
+                  "type": "root",
+                  "gloss": "通过；经过"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "pass",
+                "gloss": "通过",
+                "words": [
+                  {
+                    "word": "passage",
+                    "def": "通道；段落"
+                  },
+                  {
+                    "word": "passenger",
+                    "def": "乘客"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "passing",
+                  "pos": "adj.",
+                  "def": "经过的；短暂的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "approve",
+                "note": "正式批准，如 approve a plan"
+              },
+              {
+                "w": "adopt",
+                "note": "采纳，如 adopt a proposal"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "past",
+                "note": "past 是形容词/名词/介词，表示“过去的”；pass 是动词"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "coincide with",
+            "zh": "与……同时发生",
+            "usage": "写作中可用来描述两件事同时发生：The discovery coincided with a major shift in public opinion.（这一发现恰逢公众舆论的重大转变。）"
+          }
+        ]
+      }
     },
     {
       "id": 14,
@@ -306,7 +3641,223 @@
           "pos": "v.",
           "def": "建立"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The two groups",
+              "zh": "这两个团体"
+            },
+            {
+              "role": "V",
+              "text": "merged and established",
+              "zh": "合并并成立"
+            },
+            {
+              "role": "O",
+              "text": "the Metropolitan Railway Company",
+              "zh": "大都会铁路公司"
+            }
+          ],
+          "plain": "去掉修饰后只剩：The two groups merged and established the Metropolitan Railway Company（这两个团体合并并成立了大都会铁路公司）。merged（合并）是不及物动词，后面不接宾语；established（建立）是及物动词，后面接宾语 the Metropolitan Railway Company。"
+        },
+        "chunks": [
+          {
+            "text": "The two groups",
+            "role": "S",
+            "zh": "这两个团体",
+            "note": "主语，指代前文提到的两个团体。"
+          },
+          {
+            "text": "merged",
+            "role": "V",
+            "zh": "合并",
+            "note": "第一个谓语动词，不及物，后面不接宾语。"
+          },
+          {
+            "text": "and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "并列连词，连接两个并列的谓语动词。"
+          },
+          {
+            "text": "established",
+            "role": "V",
+            "zh": "成立",
+            "note": "第二个谓语动词，及物，后面接宾语。"
+          },
+          {
+            "text": "the Metropolitan Railway Company",
+            "role": "O",
+            "zh": "大都会铁路公司",
+            "note": "宾语，是 established 这个动作的对象。"
+          },
+          {
+            "text": "in August 1854",
+            "role": "adv",
+            "zh": "在1854年8月",
+            "note": "时间状语，修饰整个谓语部分。",
+            "tag": "ch5.adv-phrase"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch13.compound",
+            "name": "合句（并列句）",
+            "explain": "本句用 and 连接两个谓语动词 merged 和 established，表示两个动作先后发生。注意：这里不是两个完整的句子并列，而是两个动词短语并列，属于并列结构的一种。"
+          },
+          {
+            "tag": "ch6.simple-past",
+            "name": "过去简单式",
+            "explain": "merged 和 established 都是过去式，表示过去某个时间（1854年8月）发生的动作。雅思阅读中，叙述历史事件常用过去简单式。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "merged",
+            "lemma": "merge",
+            "pos": "v.",
+            "def": "合并",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "merg",
+                  "type": "root",
+                  "gloss": "沉没、合并"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "merg",
+                "gloss": "沉没、合并",
+                "words": [
+                  {
+                    "word": "merger",
+                    "def": "合并（名词）"
+                  },
+                  {
+                    "word": "emerge",
+                    "def": "浮现（e-向外 + merge → 从合并中出来）"
+                  },
+                  {
+                    "word": "submerge",
+                    "def": "淹没（sub-向下 + merge）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "merges",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "merging",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "combine",
+                "note": "更通用的“合并”，雅思阅读中常替换 merge"
+              },
+              {
+                "w": "unite",
+                "note": "强调联合、统一，常用于组织或团体"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "established",
+            "lemma": "establish",
+            "pos": "v.",
+            "def": "建立",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "e",
+                  "type": "prefix",
+                  "gloss": "出、向外"
+                },
+                {
+                  "text": "stabl",
+                  "type": "root",
+                  "gloss": "站立、稳定"
+                },
+                {
+                  "text": "ish",
+                  "type": "suffix",
+                  "gloss": "使……（动词后缀）"
+                }
+              ],
+              "derivation": "e-（出）+ stabl（站立）+ -ish（使）→ 使稳固地站立起来 → 建立",
+              "family": {
+                "root": "stabl",
+                "gloss": "站立、稳定",
+                "words": [
+                  {
+                    "word": "stable",
+                    "def": "稳定的（形容词）"
+                  },
+                  {
+                    "word": "stability",
+                    "def": "稳定性（名词）"
+                  },
+                  {
+                    "word": "unstable",
+                    "def": "不稳定的（un-否定）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "establishes",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "establishing",
+                  "pos": "v.",
+                  "def": "现在分词"
+                },
+                {
+                  "word": "establishment",
+                  "pos": "n.",
+                  "def": "建立；机构"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "found",
+                "note": "正式用语，常指“创办”机构或组织"
+              },
+              {
+                "w": "set up",
+                "note": "更口语化，雅思写作中可用"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "merge and establish",
+            "zh": "合并并成立",
+            "usage": "写作中描述组织形成时可用，如：The two companies merged and established a new joint venture."
+          }
+        ]
+      }
     },
     {
       "id": 15,
@@ -328,7 +3879,270 @@
           "pos": "n.",
           "def": "边缘"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 系动词 + 补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The company's plan",
+              "zh": "公司的计划"
+            },
+            {
+              "role": "V",
+              "text": "was",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "to construct an underground railway line from the Great Western Railway's station at Paddington to the edge of the City at Farringdon Street - a distance of almost 5 km",
+              "zh": "修建一条地下铁路线，从帕丁顿的大西部铁路车站到伦敦城边缘的法灵顿街——将近5公里的距离"
+            }
+          ],
+          "plain": "去掉所有修饰，这句只剩：The plan was to construct a line（计划是修建一条线路）。was是系动词，后面不定式短语作补语说明计划的内容。"
+        },
+        "chunks": [
+          {
+            "text": "The company's plan",
+            "role": "S",
+            "zh": "公司的计划",
+            "note": "名词短语作主语，company's是所有格。"
+          },
+          {
+            "text": "was",
+            "role": "V",
+            "zh": "是",
+            "note": "系动词，连接主语和补语。"
+          },
+          {
+            "text": "to construct an underground railway line",
+            "role": "C",
+            "zh": "修建一条地下铁路线",
+            "note": "不定式短语作补语，说明计划的具体内容。",
+            "tag": "ch12.infinitive"
+          },
+          {
+            "text": "from the Great Western Railway's station at Paddington",
+            "role": "adv",
+            "zh": "从帕丁顿的大西部铁路车站",
+            "note": "介词短语作状语，说明起点。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "to the edge of the City at Farringdon Street",
+            "role": "adv",
+            "zh": "到伦敦城边缘的法灵顿街",
+            "note": "介词短语作状语，说明终点。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "- a distance of almost 5 km",
+            "role": "app",
+            "zh": "——将近5公里的距离",
+            "note": "破折号引出同位语，补充说明距离。",
+            "tag": "ch2.apposition"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svc",
+            "name": "五大句型之二：S + V + C（主系表）",
+            "explain": "这个句子的动词是was，它本身没有具体动作，只是把主语和补语连起来。补语（to construct...）说明主语（plan）是什么内容。判断句型时，如果动词是be、become、look这类“连缀动词”，后面跟的就是补语，不是宾语。"
+          },
+          {
+            "tag": "ch12.infinitive",
+            "name": "不定式作补语",
+            "explain": "不定式to construct在这里不是表示目的，而是跟在系动词was后面作补语，说明plan的内容。不定式作补语很常见，比如My dream is to travel（我的梦想是旅行）。"
+          },
+          {
+            "tag": "ch2.apposition",
+            "name": "同位语",
+            "explain": "破折号后面的a distance of almost 5 km是对前面整条线路的补充说明，和前面的内容指同一个东西。同位语可以是一个名词短语，用逗号、破折号或冒号引出。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "construct",
+            "lemma": "construct",
+            "pos": "v.",
+            "def": "修建，建造",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "con",
+                  "type": "prefix",
+                  "gloss": "一起"
+                },
+                {
+                  "text": "struct",
+                  "type": "root",
+                  "gloss": "建造"
+                }
+              ],
+              "derivation": "con（一起）+ struct（建造）→ 把材料建在一起→建造",
+              "family": {
+                "root": "struct",
+                "gloss": "建造",
+                "words": [
+                  {
+                    "word": "structure",
+                    "def": "结构，建筑物"
+                  },
+                  {
+                    "word": "destruction",
+                    "def": "破坏（de-去掉）"
+                  },
+                  {
+                    "word": "instruct",
+                    "def": "指导（in-进入，建造知识）"
+                  }
+                ]
+              },
+              "mnemonic": "con（一起）+ struct（建造）→ 一起建造",
+              "forms": [
+                {
+                  "word": "construction",
+                  "pos": "n.",
+                  "def": "建造，施工"
+                },
+                {
+                  "word": "constructive",
+                  "pos": "adj.",
+                  "def": "建设性的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "build",
+                "note": "更常用，口语和写作中可互换"
+              },
+              {
+                "w": "erect",
+                "note": "更正式，强调竖立起来，如erect a building"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "edge",
+            "lemma": "edge",
+            "pos": "n.",
+            "def": "边缘",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "edge",
+                  "type": "root",
+                  "gloss": "边缘"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "edge",
+                "gloss": "边缘",
+                "words": [
+                  {
+                    "word": "edgy",
+                    "def": "紧张的，前卫的"
+                  }
+                ]
+              },
+              "mnemonic": "edge像“挨着”，挨着边界就是边缘",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "border",
+                "note": "强调边界线，如the border of the city"
+              },
+              {
+                "w": "boundary",
+                "note": "更正式，指分界线"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "distance",
+            "lemma": "distance",
+            "pos": "n.",
+            "def": "距离",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "di",
+                  "type": "prefix",
+                  "gloss": "分开"
+                },
+                {
+                  "text": "st",
+                  "type": "root",
+                  "gloss": "站立"
+                },
+                {
+                  "text": "ance",
+                  "type": "suffix",
+                  "gloss": "名词后缀"
+                }
+              ],
+              "derivation": "di（分开）+ st（站立）+ ance（名词）→ 分开站着的距离→距离",
+              "family": {
+                "root": "st",
+                "gloss": "站立",
+                "words": [
+                  {
+                    "word": "stand",
+                    "def": "站立"
+                  },
+                  {
+                    "word": "station",
+                    "def": "车站，位置"
+                  },
+                  {
+                    "word": "constant",
+                    "def": "不变的（con一起，站在一起）"
+                  }
+                ]
+              },
+              "mnemonic": "di（两个）+ st（站）→ 两个点站开→距离",
+              "forms": [
+                {
+                  "word": "distant",
+                  "pos": "adj.",
+                  "def": "遥远的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "length",
+                "note": "强调长度，如the length of the line"
+              },
+              {
+                "w": "span",
+                "note": "强调跨度，如a span of 5 km"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "from ... to ...",
+            "zh": "从……到……",
+            "usage": "描述范围或路线时非常常用，写作中可用来连接两个地点或时间点。"
+          },
+          {
+            "text": "a distance of",
+            "zh": "……的距离",
+            "usage": "用于精确描述长度，如a distance of 10 km，比直接说10 km更正式。"
+          }
+        ]
+      }
     },
     {
       "id": 16,
@@ -350,7 +4164,297 @@
           "pos": "adj.",
           "def": "激进的；彻底的"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The organisation",
+              "zh": "该组织"
+            },
+            {
+              "role": "V",
+              "text": "had",
+              "zh": "有"
+            },
+            {
+              "role": "O",
+              "text": "difficulty",
+              "zh": "困难"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：The organisation had difficulty（该组织有困难）。had 是及物动词，后面跟宾语 difficulty。"
+        },
+        "chunks": [
+          {
+            "text": "The organisation",
+            "role": "S",
+            "zh": "该组织",
+            "note": "主语，指代前文提到的某个组织。"
+          },
+          {
+            "text": "had difficulty in raising the funding for such a radical and expensive scheme",
+            "role": "O",
+            "zh": "在为一个如此激进且昂贵的方案筹集资金方面有困难",
+            "note": "整个短语作宾语，核心是 difficulty，后面 in raising... 是介词短语修饰 difficulty，说明困难的具体内容。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "in raising the funding",
+            "role": "attr",
+            "zh": "在筹集资金方面",
+            "note": "介词短语作后置定语，修饰 difficulty，说明是“在筹集资金方面的困难”。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": "for such a radical and expensive scheme",
+            "role": "attr",
+            "zh": "为这样一个激进且昂贵的方案",
+            "note": "介词短语修饰 funding，说明资金是用于这个方案的。",
+            "tag": "ch3.prep"
+          },
+          {
+            "text": ", not least because of the critical articles printed by the press",
+            "role": "adv",
+            "zh": "尤其是因为报刊刊登的批评文章",
+            "note": "副词性短语，作原因状语，解释为什么筹集资金困难。",
+            "tag": "ch15.reason"
+          },
+          {
+            "text": "not least",
+            "role": "adv",
+            "zh": "尤其是",
+            "note": "固定短语，强调后面原因是重要因素。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": "because of the critical articles printed by the press",
+            "role": "adv",
+            "zh": "因为报刊刊登的批评文章",
+            "note": "介词短语作原因状语，其中 printed by the press 是过去分词短语作后置定语修饰 articles。",
+            "tag": "ch9.pp"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svo",
+            "name": "五大句型之三：S + Vt + O",
+            "explain": "这个句子的主干是 The organisation had difficulty。had 是及物动词，后面必须跟宾语 difficulty。其他部分都是修饰语，去掉后句子依然完整。"
+          },
+          {
+            "tag": "ch3.prep",
+            "name": "介词短语作修饰",
+            "explain": "介词短语（in raising...）可以放在名词后面作定语，说明这个名词的具体内容。这里 in raising the funding 修饰 difficulty，告诉我们是什么样的困难。"
+          },
+          {
+            "tag": "ch9.pp",
+            "name": "过去分词作后置定语",
+            "explain": "过去分词短语 printed by the press 放在名词 articles 后面，相当于一个省略了 which were 的定语从句，表示“被报刊刊登的文章”。过去分词有被动含义。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "raising",
+            "lemma": "raise",
+            "pos": "v.",
+            "def": "筹集",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "rais",
+                  "type": "root",
+                  "gloss": "升起；筹集"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "动名词后缀"
+                }
+              ],
+              "derivation": "raise（筹集）+ -ing → 筹集（动名词形式）",
+              "family": {
+                "root": "rais",
+                "gloss": "升起；筹集",
+                "words": [
+                  {
+                    "word": "raise",
+                    "def": "提高；筹集"
+                  },
+                  {
+                    "word": "raiser",
+                    "def": "筹集者"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "raised",
+                  "pos": "v.",
+                  "def": "raise 的过去式/过去分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "collect",
+                "note": "更口语化，雅思阅读中常替换 raise，如 collect funds"
+              },
+              {
+                "w": "obtain",
+                "note": "更正式，表示获得资金"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "radical",
+            "lemma": "radical",
+            "pos": "adj.",
+            "def": "激进的；彻底的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "radic",
+                  "type": "root",
+                  "gloss": "根"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "radic（根）+ -al → 从根上来的 → 激进的",
+              "family": {
+                "root": "radic",
+                "gloss": "根",
+                "words": [
+                  {
+                    "word": "radically",
+                    "def": "根本上；激进地"
+                  },
+                  {
+                    "word": "eradicate",
+                    "def": "根除（e- 出 + radic + -ate）"
+                  }
+                ]
+              },
+              "mnemonic": "radical 像“radish（萝卜）”，萝卜是根茎，所以 radical 和“根”有关。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "drastic",
+                "note": "表示“剧烈的”，常用于描述重大变化"
+              },
+              {
+                "w": "extreme",
+                "note": "表示“极端的”，语气更强"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "scheme",
+            "lemma": "scheme",
+            "pos": "n.",
+            "def": "方案；计划",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "scheme",
+                  "type": "root",
+                  "gloss": "计划"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "scheme 和“schema（纲要）”同源，都是计划的意思。",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "plan",
+                "note": "最常用替换，雅思阅读中 scheme 常被替换为 plan"
+              },
+              {
+                "w": "project",
+                "note": "指具体项目，如 construction project"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "critical",
+            "lemma": "critical",
+            "pos": "adj.",
+            "def": "批评的；关键的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "critic",
+                  "type": "root",
+                  "gloss": "批评"
+                },
+                {
+                  "text": "al",
+                  "type": "suffix",
+                  "gloss": "……的"
+                }
+              ],
+              "derivation": "critic（批评）+ -al → 批评的",
+              "family": {
+                "root": "critic",
+                "gloss": "批评",
+                "words": [
+                  {
+                    "word": "critic",
+                    "def": "批评家"
+                  },
+                  {
+                    "word": "criticism",
+                    "def": "批评"
+                  },
+                  {
+                    "word": "criticize",
+                    "def": "批评"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "disapproving",
+                "note": "表示“不赞成的”，更具体地表达批评态度"
+              },
+              {
+                "w": "negative",
+                "note": "表示“负面的”，常用于评论"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "have difficulty in doing something",
+            "zh": "做某事有困难",
+            "usage": "写作中常用，如：Students often have difficulty in understanding complex sentences."
+          },
+          {
+            "text": "not least because",
+            "zh": "尤其是因为",
+            "usage": "用于强调原因，如：The project failed, not least because of lack of funding."
+          }
+        ]
+      }
     },
     {
       "id": 17,
@@ -372,7 +4476,283 @@
           "pos": "n.",
           "def": "排放物"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Objectors",
+              "zh": "反对者"
+            },
+            {
+              "role": "V",
+              "text": "argued",
+              "zh": "声称"
+            },
+            {
+              "role": "O",
+              "text": "that the tunnels would collapse under the weight of traffic overhead, buildings would be shaken and passengers would be poisoned by the emissions from the train engines",
+              "zh": "隧道会在上方交通重量下坍塌，建筑会被震动，乘客会被火车发动机排放的废气毒害"
+            }
+          ],
+          "plain": "去掉修饰后，这句只剩：Objectors argued that...（反对者声称……）。argue（声称）是及物动词，后面跟一个宾语从句（that引导的整个句子）。"
+        },
+        "chunks": [
+          {
+            "text": "Objectors",
+            "role": "S",
+            "zh": "反对者",
+            "note": "主语，指提出反对意见的人。"
+          },
+          {
+            "text": "argued",
+            "role": "V",
+            "zh": "声称",
+            "note": "及物动词，后面接宾语从句。"
+          },
+          {
+            "text": "that",
+            "role": "conn",
+            "zh": "（引导宾语从句）",
+            "note": "连接词，引导名词从句作宾语，本身无实义。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "the tunnels would collapse under the weight of traffic overhead",
+            "role": "clause",
+            "zh": "隧道会在上方交通重量下坍塌",
+            "note": "宾语从句中的第一个并列分句。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "，",
+            "note": "逗号分隔并列分句。"
+          },
+          {
+            "text": "buildings would be shaken",
+            "role": "clause",
+            "zh": "建筑会被震动",
+            "note": "宾语从句中的第二个并列分句。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "and",
+            "role": "conn",
+            "zh": "并且",
+            "note": "并列连词，连接第三个分句。"
+          },
+          {
+            "text": "passengers would be poisoned by the emissions from the train engines",
+            "role": "clause",
+            "zh": "乘客会被火车发动机排放的废气毒害",
+            "note": "宾语从句中的第三个并列分句。",
+            "tag": "ch14.noun-clause"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句作宾语",
+            "explain": "动词argue后面跟了一个that引导的从句，这个从句整体充当argue的宾语（动作的对象）。也就是说，反对者“声称”的不是一个词，而是一整句话。这种结构在雅思阅读里非常常见，看到that就要想到它可能引导一个名词从句。"
+          },
+          {
+            "tag": "ch13.parallel",
+            "name": "并列结构",
+            "explain": "宾语从句里包含了三个并列的句子，用逗号和and连接：tunnels would collapse, buildings would be shaken, passengers would be poisoned。这三个句子结构相同（主语+would+动词），形成平行结构，让反对的理由显得很有条理。写作时也可以这样用三个并列句来增强说服力。"
+          },
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "第二、三个分句用了被动语态：buildings would be shaken（建筑被震动），passengers would be poisoned（乘客被毒害）。被动语态强调动作的承受者（建筑、乘客）而不是动作的执行者。这里作者想突出建筑和乘客受到的影响，所以用被动。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "Objectors",
+            "lemma": "objector",
+            "pos": "n.",
+            "def": "反对者",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "object",
+                  "type": "root",
+                  "gloss": "反对"
+                },
+                {
+                  "text": "or",
+                  "type": "suffix",
+                  "gloss": "……的人"
+                }
+              ],
+              "derivation": "object（反对）+ -or（人）→ 反对的人",
+              "family": {
+                "root": "object",
+                "gloss": "反对",
+                "words": [
+                  {
+                    "word": "objection",
+                    "def": "反对（名词）"
+                  },
+                  {
+                    "word": "objective",
+                    "def": "客观的；目标"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "opponent",
+                "note": "更正式，雅思阅读中常替换objector"
+              },
+              {
+                "w": "critic",
+                "note": "批评者，强调负面评价"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "collapse",
+            "lemma": "collapse",
+            "pos": "v.",
+            "def": "坍塌；崩溃",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "col",
+                  "type": "prefix",
+                  "gloss": "一起"
+                },
+                {
+                  "text": "lapse",
+                  "type": "root",
+                  "gloss": "滑落"
+                }
+              ],
+              "derivation": "col-（一起）+ lapse（滑落）→ 一起滑落 → 坍塌",
+              "family": {
+                "root": "lapse",
+                "gloss": "滑落",
+                "words": [
+                  {
+                    "word": "lapse",
+                    "def": "失误；流逝"
+                  },
+                  {
+                    "word": "relapse",
+                    "def": "复发（re-再）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "collapsed",
+                  "pos": "v.",
+                  "def": "过去式/过去分词"
+                },
+                {
+                  "word": "collapsing",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "fall down",
+                "note": "更口语化，雅思阅读中可能用cave in"
+              },
+              {
+                "w": "crumble",
+                "note": "强调碎裂成小块"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "emissions",
+            "lemma": "emission",
+            "pos": "n.",
+            "def": "排放物",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "e",
+                  "type": "prefix",
+                  "gloss": "向外"
+                },
+                {
+                  "text": "miss",
+                  "type": "root",
+                  "gloss": "发送"
+                },
+                {
+                  "text": "ion",
+                  "type": "suffix",
+                  "gloss": "行为/结果"
+                }
+              ],
+              "derivation": "e-（向外）+ miss（发送）+ -ion（名词后缀）→ 向外发送的东西 → 排放物",
+              "family": {
+                "root": "miss",
+                "gloss": "发送",
+                "words": [
+                  {
+                    "word": "missile",
+                    "def": "导弹（发送的东西）"
+                  },
+                  {
+                    "word": "mission",
+                    "def": "任务（被派遣）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "emit",
+                  "pos": "v.",
+                  "def": "排放"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "discharge",
+                "note": "更正式，常用于工业排放"
+              },
+              {
+                "w": "pollutants",
+                "note": "污染物，强调有害性"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "under the weight of",
+            "zh": "在……的重量下",
+            "usage": "写作中可用来描述压力或负担：The bridge collapsed under the weight of the truck.（桥在卡车的重量下坍塌了。）"
+          },
+          {
+            "text": "be poisoned by",
+            "zh": "被……毒害",
+            "usage": "可用于环境话题：The river was poisoned by industrial waste.（河流被工业废料毒害。）"
+          }
+        ]
+      }
     },
     {
       "id": 18,
@@ -389,7 +4769,186 @@
           "pos": "v.",
           "def": "坚持"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "sv",
+          "label": "S + V(主语 + 不及物动词)",
+          "tag": "ch1.sv",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Pearson and his partners",
+              "zh": "皮尔逊和他的伙伴们"
+            },
+            {
+              "role": "V",
+              "text": "persisted",
+              "zh": "坚持了下来"
+            }
+          ],
+          "plain": "去掉修饰后只剩：Pearson and his partners persisted（皮尔逊和他的伙伴们坚持了）。persist 是不及物动词，后面不需要宾语，话已经说完整了。"
+        },
+        "chunks": [
+          {
+            "text": "However",
+            "role": "conn",
+            "zh": "然而",
+            "note": "转折连接词，放在句首表示与上一句的反对意见形成对比。",
+            "tag": "ch13.compound"
+          },
+          {
+            "text": "Pearson and his partners",
+            "role": "S",
+            "zh": "皮尔逊和他的伙伴们",
+            "note": "并列名词短语作主语，由 and 连接两个名词。"
+          },
+          {
+            "text": "persisted",
+            "role": "V",
+            "zh": "坚持了下来",
+            "note": "不及物动词，表示“持续存在或继续做某事”，这里指他们继续推进计划。",
+            "tag": "ch6.simple-past"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.sv",
+            "name": "五大句型之一：S + V",
+            "explain": "英语句子最基本的骨架就是主语加动词。如果动词是不及物动词（后面不需要跟宾语），句子就已经完整了。比如这里的 persist（坚持），你不需要说“坚持什么”，因为坚持本身就是完整的动作。判断句型时，先看动词是否需要宾语，不需要就是 S+V 句型。"
+          },
+          {
+            "tag": "ch13.compound",
+            "name": "合句中的转折连接词",
+            "explain": "However 是典型的转折连接词，它把本句和上一句连接起来，表示前后意思相反。注意 however 后面通常跟逗号，它不像 but 那样直接连接两个分句，而是独立放在句首或句中。在雅思写作中，用 however 可以让段落逻辑更清晰。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "persisted",
+            "lemma": "persist",
+            "pos": "v.",
+            "def": "坚持；持续存在",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "per",
+                  "type": "prefix",
+                  "gloss": "贯穿"
+                },
+                {
+                  "text": "sist",
+                  "type": "root",
+                  "gloss": "站立"
+                }
+              ],
+              "derivation": "per-（贯穿）+ sist（站立）→ 一直站着 → 坚持",
+              "family": {
+                "root": "sist",
+                "gloss": "站立",
+                "words": [
+                  {
+                    "word": "resist",
+                    "def": "抵抗（re- 往回 + sist → 站回去）"
+                  },
+                  {
+                    "word": "assist",
+                    "def": "帮助（as- 朝向 + sist → 站在旁边）"
+                  },
+                  {
+                    "word": "consist",
+                    "def": "由……组成（con- 一起 + sist → 站在一起）"
+                  }
+                ]
+              },
+              "mnemonic": "per（每个）+ sist（站）→ 每个时刻都站着 → 坚持",
+              "forms": [
+                {
+                  "word": "persistence",
+                  "pos": "n.",
+                  "def": "坚持；持续"
+                },
+                {
+                  "word": "persistent",
+                  "pos": "adj.",
+                  "def": "坚持不懈的"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "continue",
+                "note": "更通用，雅思阅读中常替换 persist，如 continue with the plan"
+              },
+              {
+                "w": "carry on",
+                "note": "口语化表达，写作中也可用，如 carry on with the work"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "insist",
+                "note": "insist 是“坚持说/要求”，后面常跟 on 或 that 从句；persist 是“坚持做”，后面常跟 in 或 with。"
+              }
+            ]
+          },
+          {
+            "w": "partners",
+            "lemma": "partner",
+            "pos": "n.",
+            "def": "伙伴；合伙人",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "part",
+                  "type": "root",
+                  "gloss": "部分"
+                },
+                {
+                  "text": "ner",
+                  "type": "suffix",
+                  "gloss": "做……的人"
+                }
+              ],
+              "derivation": "part（部分）+ ner（人）→ 一起做事的人 → 伙伴",
+              "family": {
+                "root": "part",
+                "gloss": "部分",
+                "words": [
+                  {
+                    "word": "apart",
+                    "def": "分开地（a- 朝向 + part → 朝向部分 → 分开）"
+                  },
+                  {
+                    "word": "depart",
+                    "def": "离开（de- 离开 + part → 离开部分）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "colleague",
+                "note": "同事，更正式，常用于职场"
+              },
+              {
+                "w": "associate",
+                "note": "合伙人，商业伙伴，雅思阅读中常见"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "persist in/with",
+            "zh": "坚持做某事",
+            "usage": "写作中可用：They persisted with their plan despite the opposition.（尽管反对，他们仍坚持计划。）"
+          }
+        ]
+      }
     },
     {
       "id": 19,
@@ -411,7 +4970,252 @@
           "pos": "v.",
           "def": "投资"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svo",
+          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
+          "tag": "ch1.svo",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "The GWR",
+              "zh": "大西部铁路公司"
+            },
+            {
+              "role": "V",
+              "text": "invested",
+              "zh": "投资"
+            },
+            {
+              "role": "O",
+              "text": "almost £250,000",
+              "zh": "近25万英镑"
+            }
+          ],
+          "plain": "去掉所有修饰，这句只剩：The GWR invested almost £250,000（大西部铁路公司投资了近25万英镑）。invest（投资）是及物动词，后面跟投资金额作宾语。"
+        },
+        "chunks": [
+          {
+            "text": "The GWR",
+            "role": "S",
+            "zh": "大西部铁路公司",
+            "note": "主语，专有名词。"
+          },
+          {
+            "text": "aware that the new line would finally enable them to run trains into the heart of the City",
+            "role": "attr",
+            "zh": "意识到新线路最终会让他们把火车开进伦敦城中心",
+            "note": "形容词短语作插入状语，修饰主语 The GWR，说明其状态。aware 是形容词，后面跟 that 引导的名词从句作宾语。",
+            "tag": "ch14.noun-clause"
+          },
+          {
+            "text": "invested",
+            "role": "V",
+            "zh": "投资",
+            "note": "谓语动词，过去式。",
+            "tag": "ch6.simple-past"
+          },
+          {
+            "text": "almost £250,000",
+            "role": "O",
+            "zh": "近25万英镑",
+            "note": "宾语，投资金额。"
+          },
+          {
+            "text": "in the scheme",
+            "role": "adv",
+            "zh": "在该方案中",
+            "note": "介词短语作状语，修饰 invested，说明投资的对象。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch14.noun-clause",
+            "name": "名词从句",
+            "explain": "that 引导的从句 that the new line would finally enable them to run trains into the heart of the City 在这里作形容词 aware 的宾语，说明意识到什么内容。名词从句可以当主语、宾语、补语或同位语，这里就是当宾语用。"
+          },
+          {
+            "tag": "ch19.reduction",
+            "name": "从句减化通则",
+            "explain": "aware that... 其实是 who was aware that... 的减化形式。关系从句 who was aware 被压缩成形容词短语 aware that...，让句子更紧凑。雅思阅读里这种减化很常见，看到形容词短语插在主语和动词之间，要能还原成关系从句。"
+          },
+          {
+            "tag": "ch6.simple-past",
+            "name": "过去简单式",
+            "explain": "invested 是过去式，表示过去发生的投资动作。这里用过去式，因为整件事发生在过去，和现在没有直接关联。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "enable",
+            "lemma": "enable",
+            "pos": "v.",
+            "def": "使能够",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "en",
+                  "type": "prefix",
+                  "gloss": "使……"
+                },
+                {
+                  "text": "able",
+                  "type": "root",
+                  "gloss": "能够"
+                }
+              ],
+              "derivation": "en-（使）+ able（能够）→ 使能够",
+              "family": {
+                "root": "able",
+                "gloss": "能够",
+                "words": [
+                  {
+                    "word": "ability",
+                    "def": "能力"
+                  },
+                  {
+                    "word": "disable",
+                    "def": "使丧失能力"
+                  }
+                ]
+              },
+              "mnemonic": "en（使） + able（能够）→ 让某人能够做某事",
+              "forms": [
+                {
+                  "word": "enabled",
+                  "pos": "v.",
+                  "def": "过去式/过去分词"
+                },
+                {
+                  "word": "enabling",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "allow",
+                "note": "更常用，语气较 enable 弱，雅思阅读中常替换"
+              },
+              {
+                "w": "permit",
+                "note": "正式，表示允许，常出现在学术文章中"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "able",
+                "note": "enable 是动词，able 是形容词"
+              }
+            ]
+          },
+          {
+            "w": "invested",
+            "lemma": "invest",
+            "pos": "v.",
+            "def": "投资",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "invest",
+                  "type": "root",
+                  "gloss": "投资"
+                }
+              ],
+              "derivation": "",
+              "family": {
+                "root": "invest",
+                "gloss": "投资",
+                "words": [
+                  {
+                    "word": "investment",
+                    "def": "投资（名词）"
+                  },
+                  {
+                    "word": "investor",
+                    "def": "投资者"
+                  }
+                ]
+              },
+              "mnemonic": "in（进入）+ vest（衣服）→ 把钱放进衣服里→投资",
+              "forms": [
+                {
+                  "word": "invest",
+                  "pos": "v.",
+                  "def": "原形"
+                },
+                {
+                  "word": "investing",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "put money into",
+                "note": "口语化表达，雅思听力可能出现"
+              },
+              {
+                "w": "fund",
+                "note": "动词，资助，更正式"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "scheme",
+            "lemma": "scheme",
+            "pos": "n.",
+            "def": "方案；计划",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "scheme",
+                  "type": "root",
+                  "gloss": "计划"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "谐音“四给母”→ 给母亲四个方案",
+              "forms": [
+                {
+                  "word": "schemes",
+                  "pos": "n.",
+                  "def": "复数"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "plan",
+                "note": "最常用替换，雅思阅读中 scheme 常被替换为 plan"
+              },
+              {
+                "w": "project",
+                "note": "项目，更具体"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "theme",
+                "note": "主题，拼写相似但意思不同"
+              }
+            ]
+          }
+        ],
+        "expressions": [
+          {
+            "text": "run trains into the heart of the City",
+            "zh": "把火车开进伦敦城中心",
+            "usage": "写作中可迁移：run buses into the heart of the city（把公交车开进市中心），表达交通线路直达核心区域。"
+          }
+        ]
+      }
     },
     {
       "id": 20,
@@ -1028,37 +5832,169 @@
           "number": 1,
           "prompt": "The ___ of London increased rapidly between 1800 and 1850.",
           "answer": "population",
-          "evidence_sentence": 1
+          "evidence_sentence": 1,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "increased rapidly",
+                "p": "grew at an astonishing rate",
+                "kind": "syn",
+                "note": "题干说'快速增长'，原文说'以惊人速度增长'，意思相同。"
+              },
+              {
+                "q": "between 1800 and 1850",
+                "p": "in the first half of the 1800s",
+                "kind": "syn",
+                "note": "题干的时间范围是1800-1850年，原文说'19世纪上半叶'，时间一致。"
+              },
+              {
+                "q": "The ___ of London",
+                "p": "London’s population",
+                "kind": "syn",
+                "note": "题干缺的词是'人口'，原文直接出现'London’s population'。"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'increased rapidly'和'between 1800 and 1850'，到原文找对应表达'grew at an astonishing rate'和'in the first half of the 1800s'，从而定位到'London’s population'，答案就是population。"
+          }
         },
         {
           "number": 2,
           "prompt": "Building the railway would make it possible to move people to better housing in the ___.",
           "answer": "suburbs",
-          "evidence_sentence": 11
+          "evidence_sentence": 11,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "move people to better housing",
+                "p": "relocate the poor workers who lived in the inner-city slums to newly constructed suburbs",
+                "kind": "para",
+                "note": "题干说‘把人们搬到更好的住房’，原文说‘把住在内城贫民窟的贫困工人迁到新建郊区’，意思一致，但表达方式不同。"
+              },
+              {
+                "q": "better housing",
+                "p": "newly constructed suburbs",
+                "kind": "syn",
+                "note": "题干中的‘更好的住房’对应原文的‘新建郊区’，郊区的新房子就是更好的住房。"
+              },
+              {
+                "q": "in the ___",
+                "p": "suburbs",
+                "kind": "verbatim",
+                "note": "题干填空处对应原文的‘suburbs’，原词复现。"
+              }
+            ],
+            "trap": "注意不要填‘inner-city slums’，因为那是要搬离的地方，不是搬去的地方。",
+            "explain": "先抓题干关键词‘move people to better housing’，到原文找‘relocate...to...suburbs’，发现‘suburbs’就是答案。"
+          }
         },
         {
           "number": 3,
           "prompt": "A number of ___ agreed with Pearson’s idea.",
           "answer": "businessmen",
-          "evidence_sentence": 12
+          "evidence_sentence": 12,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "agreed with Pearson’s idea",
+                "p": "gained support amongst",
+                "kind": "syn",
+                "note": "题干中的‘同意’替换为原文的‘获得支持’"
+              },
+              {
+                "q": "a number of",
+                "p": "some",
+                "kind": "syn",
+                "note": "题干中的‘许多’替换为原文的‘一些’"
+              },
+              {
+                "q": "___",
+                "p": "businessmen",
+                "kind": "verbatim",
+                "note": "答案词‘businessmen’在原文中直接出现"
+              }
+            ],
+            "trap": "注意题干中‘a number of’可能误导学生找复数名词，但原文‘some businessmen’就是复数，答案正确。",
+            "explain": "先抓题干关键词‘agreed with’和‘Pearson’s idea’，到原文找对应表达‘gained support amongst’和‘Pearson’s ideas’，然后找到支持者‘businessmen’即为答案。"
+          }
         },
         {
           "number": 4,
           "prompt": "The company initially had problems getting the ___ needed for the project.",
           "answer": "funding",
-          "evidence_sentence": 16
+          "evidence_sentence": 16,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "initially had problems getting",
+                "p": "had difficulty in raising",
+                "kind": "syn",
+                "note": "'had problems getting' 被替换为 'had difficulty in raising'，意思相同。"
+              },
+              {
+                "q": "the ___ needed for the project",
+                "p": "the funding for such a radical and expensive scheme",
+                "kind": "syn",
+                "note": "'needed for the project' 对应 'for such a radical and expensive scheme'，而空格答案 'funding' 在原文中直接出现。"
+              }
+            ],
+            "trap": "注意题干中的 'initially' 在原文中没有直接对应词，但 'had difficulty' 暗示了最初的问题。",
+            "explain": "先抓题干关键词 'problems getting' 和 'funding'，到原文找 'difficulty in raising' 和 'funding'，即可定位答案。"
+          }
         },
         {
           "number": 5,
           "prompt": "Negative articles about the project appeared in the ___.",
           "answer": "press",
-          "evidence_sentence": 16
+          "evidence_sentence": 16,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Negative articles",
+                "p": "critical articles",
+                "kind": "syn",
+                "note": "negative（负面的）替换为critical（批评的）"
+              },
+              {
+                "q": "appeared in the ___",
+                "p": "printed by the press",
+                "kind": "para",
+                "note": "appeared in（出现在……中）替换为printed by（由……印刷），press对应空格"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词Negative articles和appeared in，到原文找critical articles和printed by the press，press即为答案。"
+          }
         },
         {
           "number": 6,
           "prompt": "With the completion of the brick arch, the tunnel was covered with ___.",
           "answer": "soil",
-          "evidence_sentence": 26
+          "evidence_sentence": 26,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "covered with",
+                "p": "laid on top of",
+                "kind": "syn",
+                "note": "题干说'被覆盖'，原文说'被铺在...上面'，意思相同。"
+              },
+              {
+                "q": "tunnel",
+                "p": "tunnel",
+                "kind": "verbatim",
+                "note": "原词复现，直接定位。"
+              },
+              {
+                "q": "soil",
+                "p": "soil",
+                "kind": "verbatim",
+                "note": "答案词原词复现。"
+              }
+            ],
+            "trap": "注意题干问的是隧道被什么覆盖，原文中'layer of soil'是覆盖物，不要误写成'road'或'rebuilt'。",
+            "explain": "先抓题干关键词'covered with'和'tunnel'，到原文找'laid on top of the tunnel'，发现'layer of soil'就是覆盖物，答案填'soil'。"
+          }
         }
       ]
     },
@@ -1073,43 +6009,151 @@
           "number": 7,
           "prompt": "Other countries had built underground railways before the Metropolitan line opened.",
           "answer": "FALSE",
-          "evidence_sentence": 27
+          "evidence_sentence": 27,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Other countries had built underground railways before the Metropolitan line opened",
+                "p": "was the world’s first underground railway",
+                "kind": "neg",
+                "note": "原文说大都会线是‘世界上第一条’，意味着没有其他国家在此之前建成，与题干相反。"
+              }
+            ],
+            "trap": "题干中的‘other countries’可能误导考生认为原文会提到其他国家，但原文直接断言它是世界第一，因此是FALSE。",
+            "explain": "先抓题干‘before the Metropolitan line opened’和‘other countries had built’，到原文找时间或比较信息，发现原文说它是‘世界第一条’，直接否定题干。"
+          }
         },
         {
           "number": 8,
           "prompt": "More people than predicted travelled on the Metropolitan line on the first day.",
           "answer": "NOT GIVEN",
-          "evidence_sentence": 28
+          "evidence_sentence": 28,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "More people than predicted",
+                "p": "almost 40,000 passengers",
+                "kind": "verbatim",
+                "note": "原文只给出了具体人数，没有与预测人数进行比较，因此无法判断是否多于预测。"
+              },
+              {
+                "q": "travelled on the Metropolitan line on the first day",
+                "p": "On its first day, almost 40,000 passengers were carried",
+                "kind": "para",
+                "note": "题干说'traveled'，原文说'were carried'，意思相同，都是指乘客被运送。"
+              }
+            ],
+            "trap": "题干中的'More people than predicted'（比预测更多的人）在原文中没有提及任何预测数据，因此不能判断为TRUE或FALSE，只能选NOT GIVEN。",
+            "explain": "先抓题干关键词'first day'和'predicted'，到原文找第一天的信息，发现只有具体人数，没有预测数据，所以无法判断。"
+          }
         },
         {
           "number": 9,
           "prompt": "The use of ventilation shafts failed to prevent pollution in the tunnels.",
           "answer": "TRUE",
-          "evidence_sentence": 32
+          "evidence_sentence": 32,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "ventilation shafts",
+                "p": "specially designed locomotives",
+                "kind": "neg",
+                "note": "题干说通风井失败，原文说改用特殊机车，说明通风井确实无效，属于反向表达。"
+              },
+              {
+                "q": "failed to prevent pollution",
+                "p": "Instead",
+                "kind": "neg",
+                "note": "Instead表示转折，暗示原方法（通风井）无效，与题干一致。"
+              }
+            ],
+            "trap": "题干提到pollution，但原文没有直接出现pollution一词，容易误判为NOT GIVEN。",
+            "explain": "先抓题干关键词'ventilation shafts'和'failed'，到原文找对应。原文用'Instead'引出替代方案，说明通风井未起作用，因此选TRUE。"
+          }
         },
         {
           "number": 10,
           "prompt": "A different approach from the ‘cut and cover’ technique was required in London’s central area.",
           "answer": "TRUE",
-          "evidence_sentence": 35
+          "evidence_sentence": 35,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "A different approach from the ‘cut and cover’ technique",
+                "p": "did not cross the capital’s centre",
+                "kind": "neg",
+                "note": "题干说需要不同方法，原文说现有线路没有穿过中心，暗示需要新方法，属于反向表达。"
+              },
+              {
+                "q": "London’s central area",
+                "p": "the capital’s centre",
+                "kind": "syn",
+                "note": "‘London’s central area’和‘the capital’s centre’都是指伦敦市中心。"
+              }
+            ],
+            "trap": "可能误以为题干提到‘cut and cover’而原文未提及，但实际通过‘did not cross’暗示需要新方法。",
+            "explain": "先抓题干关键词‘different approach’和‘central area’，到原文找对应，发现原文说现有线路没有穿过市中心，暗示需要新方法，因此答案为TRUE。"
+          }
         },
         {
           "number": 11,
           "prompt": "The windows on City & South London trains were at eye level.",
           "answer": "FALSE",
-          "evidence_sentence": 40
+          "evidence_sentence": 40,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "windows on City & South London trains",
+                "p": "The line",
+                "kind": "para",
+                "note": "题干中的'City & South London trains'被替换为原文中的'The line'，指代同一线路。"
+              },
+              {
+                "q": "were at eye level",
+                "p": "opened in 1890, and ran from the City to Stockwell",
+                "kind": "neg",
+                "note": "题干说窗户在视线高度，但原文只提到线路开通和运行区间，未提及窗户位置，因此信息缺失，答案为FALSE。"
+              }
+            ],
+            "trap": "可能误以为'City & South London'是火车名称，但原文用'The line'指代，需注意指代关系。",
+            "explain": "先抓题干关键词'windows'和'eye level'，到原文找对应，发现原文只描述线路开通和走向，未提及窗户，因此判断为FALSE。"
+          }
         },
         {
           "number": 12,
           "prompt": "The City & South London Railway was a financial success.",
           "answer": "FALSE",
-          "evidence_sentence": 42
+          "evidence_sentence": 42,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "financial success",
+                "p": "narrow and had tiny windows",
+                "kind": "neg",
+                "note": "题干说财务成功，原文描述车厢窄小窗户，暗示不成功，反向替换"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'financial success'，到原文找对应，发现原文描述车厢窄小窗户，暗示不成功，因此选FALSE"
+          }
         },
         {
           "number": 13,
           "prompt": "Trains on the ‘Tuppenny Tube’ nearly always ran on time.",
           "answer": "NOT GIVEN",
-          "evidence_sentence": 43
+          "evidence_sentence": 43,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Trains on the ‘Tuppenny Tube’ nearly always ran on time",
+                "p": "The line was not without its problems, mainly caused by an unreliable power supply",
+                "kind": "neg",
+                "note": "题干说‘几乎总是准时’，原文说‘并非没有问题，主要因为供电不可靠’，暗示可能不准时，但未直接提及准时性，因此无对应信息。"
+              }
+            ],
+            "trap": "题干中的‘nearly always ran on time’与原文‘not without its problems’看似矛盾，但原文未明确讨论准时性，因此不能选FALSE。",
+            "explain": "先抓题干关键词‘ran on time’，到原文找‘problems’和‘unreliable power supply’，发现原文未提及准时性，故为NOT GIVEN。"
+          }
         }
       ]
     }

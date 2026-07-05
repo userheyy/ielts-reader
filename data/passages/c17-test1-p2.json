@@ -25,7 +25,262 @@
           "pos": "n.",
           "def": "天际线"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 系动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "Stadiums",
+              "zh": "体育场"
+            },
+            {
+              "role": "V",
+              "text": "are",
+              "zh": "是"
+            },
+            {
+              "role": "C",
+              "text": "among the oldest forms of urban architecture",
+              "zh": "是最古老的城市建筑形式之一"
+            }
+          ],
+          "plain": "去掉所有修饰，主句只剩：Stadiums are among the oldest forms of urban architecture（体育场是最古老的城市建筑形式之一）。are 是系动词，后面跟补语说明主语是什么。"
+        },
+        "chunks": [
+          {
+            "text": "Stadiums",
+            "role": "S",
+            "zh": "体育场",
+            "note": "本句主语，复数形式。"
+          },
+          {
+            "text": "are among the oldest forms of urban architecture",
+            "role": "C",
+            "zh": "是最古老的城市建筑形式之一",
+            "note": "系动词 are 后的主语补语，说明主语的性质。"
+          },
+          {
+            "text": ":",
+            "role": "conn",
+            "zh": "冒号",
+            "note": "冒号表示后面是对前面内容的解释说明。"
+          },
+          {
+            "text": "vast stadiums where the public could watch sporting events",
+            "role": "app",
+            "zh": "大型体育场，公众可以在那里观看体育赛事",
+            "note": "冒号后的同位语，具体说明 stadiums。其中 where 引导定语从句修饰 stadiums。",
+            "tag": "ch2.apposition"
+          },
+          {
+            "text": "were at the centre of western city life",
+            "role": "V",
+            "zh": "是西方城市生活的中心",
+            "note": "这是冒号后主句的谓语部分，were 是系动词，at the centre... 是补语。"
+          },
+          {
+            "text": "as far back as the ancient Greek and Roman Empires",
+            "role": "adv",
+            "zh": "早在古希腊和古罗马帝国时期",
+            "note": "时间状语，修饰 were。",
+            "tag": "ch5.adv-phrase"
+          },
+          {
+            "text": "well before the construction of the great medieval cathedrals and the grand 19th- and 20th-century railway stations which dominated urban skylines in later eras",
+            "role": "adv",
+            "zh": "远早于中世纪大教堂以及后来主导城市天际线的19、20世纪宏伟火车站的建造",
+            "note": "时间状语，进一步说明时间对比。其中 which 引导定语从句修饰 railway stations。",
+            "tag": "ch5.adv-phrase"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch1.svc",
+            "name": "五大句型之二：S + V + C（主系表）",
+            "explain": "系动词（如 are）本身没有具体动作，它像等号一样把主语和补语连起来。补语可以是名词、形容词或介词短语，用来描述主语是什么或怎么样。本句中补语是介词短语 among the oldest forms...，说明体育场属于哪一类。"
+          },
+          {
+            "tag": "ch16.relative",
+            "name": "限定性关系从句（定语从句）",
+            "explain": "关系从句跟在名词后面，用 who/which/that 等词引导，用来限定这个名词的范围。本句有两个：where 修饰 stadiums，which 修饰 railway stations。注意 where 是关系副词，相当于 in which，表示地点。"
+          },
+          {
+            "tag": "ch2.apposition",
+            "name": "同位语",
+            "explain": "同位语是紧跟在名词后面的另一个名词词组，用来说明前一个名词的具体内容。本句中冒号后的 vast stadiums... 就是 stadiums 的同位语，相当于把 stadiums 重新说了一遍，但更详细。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "stadiums",
+            "lemma": "stadium",
+            "pos": "n.",
+            "def": "体育场",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "stadium",
+                  "type": "root",
+                  "gloss": "体育场"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "stadium",
+                  "pos": "n.",
+                  "def": "体育场（单数）"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "arena",
+                "note": "常指室内或圆形竞技场，雅思阅读中可替换"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "vast",
+            "lemma": "vast",
+            "pos": "adj.",
+            "def": "巨大的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "vast",
+                  "type": "root",
+                  "gloss": "巨大的"
+                }
+              ],
+              "derivation": "",
+              "family": null,
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "huge",
+                "note": "更口语化，vast 更正式"
+              },
+              {
+                "w": "immense",
+                "note": "强调大得无边，雅思阅读常见"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "skyline",
+            "lemma": "skyline",
+            "pos": "n.",
+            "def": "天际线",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sky",
+                  "type": "root",
+                  "gloss": "天空"
+                },
+                {
+                  "text": "line",
+                  "type": "root",
+                  "gloss": "线"
+                }
+              ],
+              "derivation": "sky（天空）+ line（线）→ 天空的轮廓线，即天际线",
+              "family": null,
+              "mnemonic": "",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "horizon",
+                "note": "地平线，但 skyline 特指城市建筑轮廓"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "dominated",
+            "lemma": "dominate",
+            "pos": "v.",
+            "def": "主导；占据主要位置",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "domin",
+                  "type": "root",
+                  "gloss": "统治"
+                },
+                {
+                  "text": "ate",
+                  "type": "suffix",
+                  "gloss": "动词后缀"
+                }
+              ],
+              "derivation": "domin（统治）+ -ate（动词）→ 统治，主导",
+              "family": {
+                "root": "domin",
+                "gloss": "统治",
+                "words": [
+                  {
+                    "word": "dominant",
+                    "def": "主导的（形容词）"
+                  },
+                  {
+                    "word": "dominance",
+                    "def": "主导地位（名词）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "dominates",
+                  "pos": "v.",
+                  "def": "第三人称单数"
+                },
+                {
+                  "word": "dominating",
+                  "pos": "v.",
+                  "def": "现在分词"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "prevail",
+                "note": "盛行，强调普遍性"
+              },
+              {
+                "w": "overshadow",
+                "note": "使相形见绌，强调压倒性"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "as far back as",
+            "zh": "早在……的时候",
+            "usage": "用于强调时间久远，写作中可用来引出历史背景：As far back as the 18th century, ..."
+          },
+          {
+            "text": "well before",
+            "zh": "远在……之前",
+            "usage": "强调时间上的先后，比 before 语气更强：This invention existed well before the industrial revolution."
+          }
+        ]
+      }
     },
     {
       "id": 2,
@@ -42,7 +297,290 @@
           "pos": "n.",
           "def": "怀疑态度"
         }
-      ]
+      ],
+      "deep": {
+        "pattern": {
+          "id": "svc",
+          "label": "S + V + C(主语 + 连缀动词 + 主语补语)",
+          "tag": "ch1.svc",
+          "skeleton": [
+            {
+              "role": "S",
+              "text": "stadiums",
+              "zh": "体育场"
+            },
+            {
+              "role": "V",
+              "text": "are regarded",
+              "zh": "被看待"
+            },
+            {
+              "role": "C",
+              "text": "with growing scepticism",
+              "zh": "以越来越多的怀疑"
+            }
+          ],
+          "plain": "去掉修饰后只剩：stadiums are regarded with scepticism（体育场被以怀疑看待）。regard 是及物动词，这里用被动语态，后面接 with 短语作主语补语，说明被看待的方式。"
+        },
+        "chunks": [
+          {
+            "text": "Today",
+            "role": "adv",
+            "zh": "如今",
+            "note": "时间副词，放在句首交代背景时间。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "",
+            "note": "逗号分隔插入语。"
+          },
+          {
+            "text": "however",
+            "role": "adv",
+            "zh": "然而",
+            "note": "转折副词，表示与上一句对比。",
+            "tag": "ch5.adv"
+          },
+          {
+            "text": ",",
+            "role": "conn",
+            "zh": "",
+            "note": "逗号分隔插入语。"
+          },
+          {
+            "text": "stadiums",
+            "role": "S",
+            "zh": "体育场",
+            "note": "主语，复数名词。"
+          },
+          {
+            "text": "are regarded",
+            "role": "V",
+            "zh": "被看待",
+            "note": "被动语态，be + 过去分词，表示“被……看待”。",
+            "tag": "ch9.passive"
+          },
+          {
+            "text": "with growing scepticism",
+            "role": "C",
+            "zh": "以越来越多的怀疑",
+            "note": "介词短语作主语补语，说明被看待的方式。",
+            "tag": "ch3.prep"
+          }
+        ],
+        "grammar_points": [
+          {
+            "tag": "ch9.passive",
+            "name": "被动语态",
+            "explain": "被动语态的结构是 be + 过去分词(are regarded)。当动作的执行者不重要或不想提时，就用被动。这里“人们看待体育场”变成了“体育场被看待”，把体育场放在主语位置，强调它被对待的方式。"
+          },
+          {
+            "tag": "ch1.svc",
+            "name": "五大句型之二：S + V + C",
+            "explain": "regard 是及物动词，但在被动语态中，后面接的 with 短语不是宾语，而是主语补语，补充说明主语被看待的状态。所以这句属于 S + V + C 句型。"
+          },
+          {
+            "tag": "ch5.adv",
+            "name": "副词的位置",
+            "explain": "however 是转折副词，放在句首或句中，用逗号隔开。它连接前后两句，表示对比。这里放在句首，强调与上一句的转折关系。"
+          }
+        ],
+        "vocab": [
+          {
+            "w": "regarded",
+            "lemma": "regard",
+            "pos": "v.",
+            "def": "看待；认为",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "re",
+                  "type": "prefix",
+                  "gloss": "再；反复"
+                },
+                {
+                  "text": "gard",
+                  "type": "root",
+                  "gloss": "看；注视"
+                }
+              ],
+              "derivation": "re-（反复）+ gard（看）→ 反复看 → 看待",
+              "family": {
+                "root": "gard",
+                "gloss": "看",
+                "words": [
+                  {
+                    "word": "regard",
+                    "def": "看待；尊重"
+                  },
+                  {
+                    "word": "regardless",
+                    "def": "不管怎样（-less 没有）"
+                  },
+                  {
+                    "word": "disregard",
+                    "def": "忽视（dis- 不）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "regards",
+                  "pos": "v.",
+                  "def": "第三人称单数形式"
+                },
+                {
+                  "word": "regarding",
+                  "pos": "prep.",
+                  "def": "关于"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "view",
+                "note": "更常用，雅思阅读中常替换 regard，如 be viewed as"
+              },
+              {
+                "w": "consider",
+                "note": "正式，常与 as 连用"
+              }
+            ],
+            "confusables": []
+          },
+          {
+            "w": "scepticism",
+            "lemma": "scepticism",
+            "pos": "n.",
+            "def": "怀疑态度",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "sceptic",
+                  "type": "root",
+                  "gloss": "怀疑"
+                },
+                {
+                  "text": "ism",
+                  "type": "suffix",
+                  "gloss": "……主义/态度"
+                }
+              ],
+              "derivation": "sceptic（怀疑者）+ -ism（态度）→ 怀疑态度",
+              "family": {
+                "root": "sceptic",
+                "gloss": "怀疑",
+                "words": [
+                  {
+                    "word": "sceptical",
+                    "def": "怀疑的（-ical 形容词后缀）"
+                  },
+                  {
+                    "word": "sceptically",
+                    "def": "怀疑地（-ly 副词后缀）"
+                  }
+                ]
+              },
+              "mnemonic": "sceptic 像“seeptic” → 看什么都挑刺 → 怀疑",
+              "forms": []
+            },
+            "synonyms": [
+              {
+                "w": "doubt",
+                "note": "更口语化，雅思阅读中 scepticism 常被替换为 doubt 或 uncertainty"
+              },
+              {
+                "w": "distrust",
+                "note": "强调不信任，语气更强"
+              }
+            ],
+            "confusables": [
+              {
+                "w": "skepticism",
+                "note": "美式拼写，意思相同"
+              }
+            ]
+          },
+          {
+            "w": "growing",
+            "lemma": "grow",
+            "pos": "adj.",
+            "def": "增长的；越来越多的",
+            "aids": {
+              "morphemes": [
+                {
+                  "text": "grow",
+                  "type": "root",
+                  "gloss": "生长"
+                },
+                {
+                  "text": "ing",
+                  "type": "suffix",
+                  "gloss": "正在……的（形容词化）"
+                }
+              ],
+              "derivation": "grow（生长）+ -ing（……的）→ 正在生长的 → 增长的",
+              "family": {
+                "root": "grow",
+                "gloss": "生长",
+                "words": [
+                  {
+                    "word": "growth",
+                    "def": "增长（名词）"
+                  },
+                  {
+                    "word": "grown",
+                    "def": "成年的（过去分词作形容词）"
+                  },
+                  {
+                    "word": "outgrow",
+                    "def": "长得太大而不适合（out- 超出）"
+                  }
+                ]
+              },
+              "mnemonic": "",
+              "forms": [
+                {
+                  "word": "grow",
+                  "pos": "v.",
+                  "def": "生长"
+                },
+                {
+                  "word": "grew",
+                  "pos": "v.",
+                  "def": "过去式"
+                }
+              ]
+            },
+            "synonyms": [
+              {
+                "w": "increasing",
+                "note": "更正式，雅思写作中常用 increasing 替换 growing"
+              },
+              {
+                "w": "rising",
+                "note": "强调上升趋势，如 rising concern"
+              }
+            ],
+            "confusables": []
+          }
+        ],
+        "expressions": [
+          {
+            "text": "regard with scepticism",
+            "zh": "以怀疑态度看待",
+            "usage": "写作中可用来表达对某事物的负面看法：Many people regard the new policy with scepticism."
+          },
+          {
+            "text": "growing scepticism",
+            "zh": "越来越多的怀疑",
+            "usage": "描述趋势：There is growing scepticism about the effectiveness of the treatment."
+          }
+        ]
+      }
     },
     {
       "id": 3,
@@ -742,25 +1280,103 @@
           "number": 14,
           "prompt": "a mention of negative attitudes towards stadium building projects",
           "answer": "A",
-          "evidence_sentence": 3
+          "evidence_sentence": 3,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "negative attitudes",
+                "p": "fallen into disuse and disrepair",
+                "kind": "syn",
+                "note": "负面态度对应原文的‘闲置和失修’，暗示批评态度。"
+              },
+              {
+                "q": "stadium building projects",
+                "p": "stadiums finished for major events such as the Olympic Games or the FIFA World Cup",
+                "kind": "syn",
+                "note": "题干中的体育场建设项目对应原文中为大型赛事完工的体育场。"
+              }
+            ],
+            "trap": "注意题干是‘negative attitudes’，不是直接说反对，而是通过描述后果（闲置、失修）来体现负面态度。",
+            "explain": "先抓题干关键词‘negative attitudes’和‘stadium building projects’，到原文找表达负面含义的词组，如‘fallen into disuse and disrepair’，以及具体指代体育场项目的短语。"
+          }
         },
         {
           "number": 15,
           "prompt": "figures demonstrating the environmental benefits of a certain stadium",
           "answer": "F",
-          "evidence_sentence": 27
+          "evidence_sentence": 27,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "environmental benefits",
+                "p": "photovoltaic panels",
+                "kind": "syn",
+                "note": "光伏板是环保技术，代表环境效益"
+              },
+              {
+                "q": "environmental benefits",
+                "p": "micro wind turbines",
+                "kind": "syn",
+                "note": "微型风力涡轮机也是环保技术"
+              },
+              {
+                "q": "stadium",
+                "p": "Stadiums",
+                "kind": "verbatim",
+                "note": "原词复现，定位词"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'stadium'和'environmental benefits'，到原文找'Stadiums'和表示环保技术的'photovoltaic panels'、'micro wind turbines'。"
+          }
         },
         {
           "number": 16,
           "prompt": "examples of the wide range of facilities available at some new stadiums",
           "answer": "E",
-          "evidence_sentence": 21
+          "evidence_sentence": 21,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "wide range of facilities",
+                "p": "two",
+                "kind": "para",
+                "note": "题干说'广泛的设施'，原文用'two'具体指两种策略，属于概括与具体的替换。"
+              },
+              {
+                "q": "available at some new stadiums",
+                "p": "stadium as an urban hub, and as a power plant",
+                "kind": "para",
+                "note": "题干说'新体育场可用的设施'，原文具体列出'城市枢纽和发电厂'两种设施。"
+              }
+            ],
+            "trap": "注意题干是'examples of facilities'，原文是'strategies'，但策略本身包含设施功能。",
+            "explain": "先抓题干关键词'wide range of facilities'和'new stadiums'，到原文找对应设施或策略，发现'two'和'stadium as...'匹配。"
+          }
         },
         {
           "number": 17,
           "prompt": "reference to the disadvantages of the stadiums built during a certain era",
           "answer": "D",
-          "evidence_sentence": 17
+          "evidence_sentence": 17,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "disadvantages",
+                "p": "flexibility was lost",
+                "kind": "syn",
+                "note": "题干中的'缺点'对应原文中'灵活性丧失'，这是对缺点的具体描述。"
+              },
+              {
+                "q": "built during a certain era",
+                "p": "at the beginning of the 20th century",
+                "kind": "syn",
+                "note": "题干中的'某个时代'对应原文中的'20世纪初'，明确了时间范围。"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'disadvantages'和'certain era'，到原文找表示缺点的表达（如flexibility was lost）和时代（at the beginning of the 20th century）。"
+          }
         }
       ]
     },
@@ -776,31 +1392,121 @@
           "number": 18,
           "prompt": "The amphitheatre of Arles was converted first into a ___.",
           "answer": "fortress",
-          "evidence_sentence": 8
+          "evidence_sentence": 8,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "converted first into",
+                "p": "became a fortress",
+                "kind": "para",
+                "note": "题干用'converted first into'（首先转变为），原文用'became'（变成），是句式改写。"
+              }
+            ],
+            "trap": "注意题干问的是'first'（首先），原文中'became a fortress'之后还有'transformed into a village'，但'first'对应的是'fortress'。",
+            "explain": "先抓题干关键词'converted first into'，到原文找表示转变的词，如'became'，然后找到转变后的第一个结果'fortress'。"
+          }
         },
         {
           "number": 19,
           "prompt": "It finally became an arena where spectators could watch ___.",
           "answer": "bullfights",
-          "evidence_sentence": 9
+          "evidence_sentence": 9,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "arena where spectators could watch",
+                "p": "arena for the staging of bullfights",
+                "kind": "para",
+                "note": "题干说‘观众可以观看的竞技场’，原文说‘用于举办斗牛的竞技场’，意思相同，只是表达方式不同。"
+              },
+              {
+                "q": "watch",
+                "p": "spectacles",
+                "kind": "syn",
+                "note": "题干中的‘watch’对应原文的‘spectacles’（观赏活动），是同义替换。"
+              }
+            ],
+            "trap": "注意题干中的‘finally’和原文的‘converted back’对应，但答案不是‘converted back’，而是‘bullfights’。",
+            "explain": "先抓题干关键词‘arena’和‘watch’，到原文找‘arena’和‘spectacles’，发现‘arena for the staging of bullfights’与题干‘arena where spectators could watch’对应，答案就是‘bullfights’。"
+          }
         },
         {
           "number": 20,
           "prompt": "The arena in Verona is famous today as a venue where ___ is performed.",
           "answer": "opera",
-          "evidence_sentence": 11
+          "evidence_sentence": 11,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "venue where ___ is performed",
+                "p": "sites for opera",
+                "kind": "syn",
+                "note": "题干说'场地表演什么'，原文说'歌剧场地'，'sites'对应'venue'，'opera'就是答案。"
+              }
+            ],
+            "trap": "",
+            "explain": "先抓题干关键词'venue'和'performed'，到原文找对应词'sites'和'for'，发现'opera'直接匹配答案。"
+          }
         },
         {
           "number": 21,
           "prompt": "Lucca’s amphitheatre was used for the storage of ___.",
           "answer": "salt",
-          "evidence_sentence": 13
+          "evidence_sentence": 13,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "storage",
+                "p": "depot",
+                "kind": "syn",
+                "note": "storage（存储）和depot（仓库）是同义词替换。"
+              },
+              {
+                "q": "salt",
+                "p": "salt",
+                "kind": "verbatim",
+                "note": "salt（盐）在题干和原文中完全一致，是定位关键词。"
+              }
+            ],
+            "trap": "题干问的是‘存储什么’，答案应为‘salt’，但原文中还有‘houses’和‘prison’等其他用途，注意不要混淆。",
+            "explain": "先抓题干关键词‘storage’和‘salt’，到原文找对应词‘depot’和‘salt’，即可定位答案。"
+          }
         },
         {
           "number": 22,
           "prompt": "It is now a market square with ___ and homes incorporated into the remains.",
           "answer": "shops",
-          "evidence_sentence": 15
+          "evidence_sentence": 15,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "market square",
+                "p": "public square",
+                "kind": "syn",
+                "note": "market square 和 public square 都指公共广场，是同义替换。"
+              },
+              {
+                "q": "homes",
+                "p": "residences",
+                "kind": "syn",
+                "note": "homes 和 residences 都表示住宅，是同义词。"
+              },
+              {
+                "q": "shops",
+                "p": "shops",
+                "kind": "verbatim",
+                "note": "shops 原词复现，是定位的关键词。"
+              },
+              {
+                "q": "incorporated into the remains",
+                "p": "embedded in the various shops and residences surrounding the public square",
+                "kind": "para",
+                "note": "题干中的 incorporated into the remains 对应原文中的 embedded in ... surrounding the public square，句式改写但意思一致。"
+              }
+            ],
+            "trap": "注意题干中的 remains 可能误导你去找 ruins，但答案定位在 shops 和 residences。",
+            "explain": "先抓题干中的 shops 和 homes，到原文找对应词 shops 和 residences，同时 market square 对应 public square，从而定位答案 shops。"
+          }
         }
       ]
     },
@@ -815,25 +1521,121 @@
           "number": 23,
           "prompt": "Negative feature of twentieth-century stadiums mentioned in Section D.",
           "answer": "C",
-          "evidence_sentence": 17
+          "evidence_sentence": 17,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Negative feature",
+                "p": "flexibility was lost",
+                "kind": "syn",
+                "note": "题干问负面特征，原文说灵活性丧失，是负面特征的体现。"
+              },
+              {
+                "q": "twentieth-century stadiums",
+                "p": "at the beginning of the 20th century",
+                "kind": "syn",
+                "note": "题干说20世纪，原文说20世纪初，时间范围一致。"
+              },
+              {
+                "q": "mentioned in Section D",
+                "p": "But some of the flexibility was lost",
+                "kind": "verbatim",
+                "note": "题干要求Section D，原文句首But提示这是D段内容。"
+              }
+            ],
+            "trap": "可能误选其他选项如使用新材料或灯光，但题干问的是负面特征，原文明确说灵活性丧失是负面。",
+            "explain": "先抓题干关键词Negative feature（负面特征），到原文找负面表述，发现flexibility was lost（灵活性丧失）即为负面特征。"
+          }
         },
         {
           "number": 24,
           "prompt": "Negative feature of twentieth-century stadiums mentioned in Section D.",
           "answer": "D",
-          "evidence_sentence": 16
+          "evidence_sentence": 16,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Negative feature",
+                "p": "similarities",
+                "kind": "neg",
+                "note": "题干问负面特征，但原文说相似之处，通过否定反向定位。"
+              },
+              {
+                "q": "twentieth-century stadiums",
+                "p": "modern stadiums",
+                "kind": "syn",
+                "note": "'twentieth-century' 与 'modern' 同义替换。"
+              },
+              {
+                "q": "mentioned in Section D",
+                "p": "There are many similarities between modern stadiums and the ancient amphitheatres intended for games.",
+                "kind": "verbatim",
+                "note": "题干要求Section D，原文直接对应。"
+              }
+            ],
+            "trap": "注意题干问负面特征，但原文讲相似之处，需理解反向替换。",
+            "explain": "先抓题干关键词'Negative feature'和'twentieth-century stadiums'，到原文找否定或反向表达，发现'similarities'与'negative'相反，从而定位。"
+          }
         },
         {
           "number": 25,
           "prompt": "Advantage of modern stadium design mentioned by the writer.",
           "answer": "B",
-          "evidence_sentence": 22
+          "evidence_sentence": 22,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "modern stadium design",
+                "p": "stadiums to be equipped with",
+                "kind": "syn",
+                "note": "题干中的'现代体育场设计'对应原文的'体育场配备'，都是指体育场的设施配置。"
+              },
+              {
+                "q": "advantage",
+                "p": "serve a function beyond sport",
+                "kind": "syn",
+                "note": "题干中的'优势'对应原文的'承担体育之外的功能'，即多功能带来的好处。"
+              },
+              {
+                "q": "public spaces and services",
+                "p": "public spaces and services",
+                "kind": "verbatim",
+                "note": "题干中的'公共空间和服务'在原文中完全复现，是定位关键词。"
+              }
+            ],
+            "trap": "可能误选其他选项，如'improved spectator experience'，但原文未提及观众体验，而是强调多功能。",
+            "explain": "先抓题干关键词'advantage'和'public spaces and services'，到原文找对应，发现'public spaces and services'原词复现，且'serve a function beyond sport'说明优势。"
+          }
         },
         {
           "number": 26,
           "prompt": "Advantage of modern stadium design mentioned by the writer.",
           "answer": "E",
-          "evidence_sentence": 25
+          "evidence_sentence": 25,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "modern stadium design",
+                "p": "stadiums",
+                "kind": "syn",
+                "note": "题干中的'现代体育场设计'在原文中简化为'体育场'，属于同义替换。"
+              },
+              {
+                "q": "advantage",
+                "p": "blueprint",
+                "kind": "syn",
+                "note": "题干中的'优势'对应原文中的'蓝图'，暗示其作为典范的优势。"
+              },
+              {
+                "q": "mentioned by the writer",
+                "p": "There have been many examples of this in the UK",
+                "kind": "para",
+                "note": "题干说'作者提到'，原文用'英国已有许多这样的例子'来引出，是句式改写。"
+              }
+            ],
+            "trap": "可能误选其他选项，如'混合用途设施'本身不是优势，而是设计特点。",
+            "explain": "先抓题干关键词'advantage'和'modern stadium design'，到原文找对应，发现'blueprint'和'stadiums'，定位到该句。"
+          }
         }
       ]
     }
