@@ -1,9 +1,9 @@
 {
   "meta": {
     "note": "单词测试(完形填空)题库。每题：目标词挖空(___) + 句子翻译 + 为什么选它 + 答案词精炼释义(def)。四个选项由网页运行时从本题库随机抽干扰项生成，不在此存储；干扰词释义运行时查 dict.json。",
-    "generated_batches": 14,
+    "generated_batches": 15,
     "source": "目标词取自 data/vocab-seed.json；考试句为雅思学术语境专门撰写；def 为精炼中文释义",
-    "count": 572
+    "count": 612
   },
   "questions": [
     {
@@ -4581,6 +4581,326 @@
       "sentence": "Students have free ___ to the library's online resources.",
       "sentence_zh": "学生可以免费使用图书馆的在线资源。",
       "explain": "进入或使用的权利，用 access。assess 是评估（形近易混）、excess 是过量、success 是成功，都不合“通道、使用权”这个意思。"
+    },
+    {
+      "word": "definition",
+      "pos": "n.",
+      "def": "定义；清晰度",
+      "sentence": "The dictionary gives a clear ___ of every word.",
+      "sentence_zh": "这本词典为每个单词都给出了清晰的定义。",
+      "explain": "对词义的界定、定义，用 definition。exhibition 是展览、addition 是增加、tradition 是传统，形近但都不表示“定义”。"
+    },
+    {
+      "word": "exhibition",
+      "pos": "n.",
+      "def": "展览，展览会；表现",
+      "sentence": "The museum is holding an ___ of ancient Egyptian art.",
+      "sentence_zh": "博物馆正在举办一场古埃及艺术展览。",
+      "explain": "公开的展览、展出，用 exhibition。definition 是定义、expedition 是远征、exhibition 与 edition 不同，形近但都不表示“展览”。"
+    },
+    {
+      "word": "tradition",
+      "pos": "n.",
+      "def": "传统，惯例",
+      "sentence": "It is a family ___ to have a big meal together at New Year.",
+      "sentence_zh": "新年时全家一起吃一顿大餐是一个家庭传统。",
+      "explain": "世代相传的传统、惯例，用 tradition。transition 是过渡、definition 是定义、addition 是增加，形近但都不表示“传统”。"
+    },
+    {
+      "word": "transition",
+      "pos": "n.",
+      "def": "过渡，转变",
+      "sentence": "The ___ from school to university can be difficult for some students.",
+      "sentence_zh": "从中学到大学的过渡对某些学生来说可能很艰难。",
+      "explain": "从一种状态到另一种的过渡，用 transition。tradition 是传统、transaction 是交易、translation 是翻译，形近但都不表示“过渡、转变”。"
+    },
+    {
+      "word": "addition",
+      "pos": "n.",
+      "def": "增加，添加；加法",
+      "sentence": "The new wing was a welcome ___ to the old hospital.",
+      "sentence_zh": "新翼楼是这座老医院一个受欢迎的增建部分。",
+      "explain": "增加、添加，用 addition。edition 是版本、audition 是试演、tradition 是传统，形近但都不表示“增加、添加”。"
+    },
+    {
+      "word": "depression",
+      "pos": "n.",
+      "def": "抑郁；萧条；洼地",
+      "sentence": "Many people suffered from ___ during the long economic crisis.",
+      "sentence_zh": "在漫长的经济危机期间，许多人饱受抑郁之苦。",
+      "explain": "抑郁或经济萧条，用 depression。impression 是印象、expression 是表达、oppression 是压迫，形近但都不表示“抑郁、萧条”。"
+    },
+    {
+      "word": "invasion",
+      "pos": "n.",
+      "def": "入侵，侵略；侵犯",
+      "sentence": "The country prepared its army to resist a possible ___.",
+      "sentence_zh": "这个国家整备军队以抵抗可能的入侵。",
+      "explain": "武力入侵、侵略，用 invasion。invention 是发明、evasion 是逃避、invitation 是邀请，形近但都不表示“入侵、侵略”。"
+    },
+    {
+      "word": "occasion",
+      "pos": "n.",
+      "def": "场合，时刻；时机",
+      "sentence": "A wedding is a special ___ that calls for smart clothes.",
+      "sentence_zh": "婚礼是一个需要穿着得体的特殊场合。",
+      "explain": "特定的场合、时刻，用 occasion。occupation 是职业、occasion 与 collision 不同、invasion 是入侵，形近但都不表示“场合”。"
+    },
+    {
+      "word": "provision",
+      "pos": "n.",
+      "def": "供应，提供；条款；预备",
+      "sentence": "The government is responsible for the ___ of clean water.",
+      "sentence_zh": "政府负责清洁水的供应。",
+      "explain": "供应、提供，用 provision。provide 是动词、precision 是精确、decision 是决定，形近但都不合“供应、提供”这个名词位置。"
+    },
+    {
+      "word": "recession",
+      "pos": "n.",
+      "def": "(经济)衰退，萧条；后退",
+      "sentence": "Many small businesses closed during the ___.",
+      "sentence_zh": "在经济衰退期间，许多小企业倒闭了。",
+      "explain": "经济衰退，用 recession。procession 是队列、profession 是职业、recreation 是娱乐，形近但都不表示“(经济)衰退”。"
+    },
+    {
+      "word": "intelligence",
+      "pos": "n.",
+      "def": "智力，才智；情报",
+      "sentence": "The test is designed to measure a child's ___.",
+      "sentence_zh": "这项测试旨在测量儿童的智力。",
+      "explain": "智力或情报，用 intelligence。intelligent 是形容词、interference 是干扰、independence 是独立，都不合“智力、才智”这个名词位置。"
+    },
+    {
+      "word": "interest",
+      "pos": "n./v.",
+      "def": "兴趣；利益；利息",
+      "sentence": "She has a strong ___ in ancient history.",
+      "sentence_zh": "她对古代历史有浓厚的兴趣。",
+      "explain": "兴趣、利益，用 interest。interval 是间隔、internet 是互联网、interior 是内部，形近但都不表示“兴趣、利益”。"
+    },
+    {
+      "word": "intervention",
+      "pos": "n.",
+      "def": "干预，介入；调停",
+      "sentence": "Early ___ can stop a small problem from becoming a big one.",
+      "sentence_zh": "及早干预可以防止小问题变成大问题。",
+      "explain": "介入、干预，用 intervention。invention 是发明、interview 是采访、intention 是意图，形近但都不表示“干预、介入”。"
+    },
+    {
+      "word": "interview",
+      "pos": "n./v.",
+      "def": "面试；采访",
+      "sentence": "She felt nervous before the job ___ this morning.",
+      "sentence_zh": "今天早上求职面试前，她感到很紧张。",
+      "explain": "面试或采访，用 interview。interval 是间隔、overview 是概览、intervention 是干预，形近但都不表示“面试、采访”。"
+    },
+    {
+      "word": "contact",
+      "pos": "n./v.",
+      "def": "联系，接触",
+      "sentence": "Please ___ the office if you have any questions.",
+      "sentence_zh": "如果你有任何问题，请联系办公室。",
+      "explain": "取得联系、接触，用 contact。content 是内容、context 是语境、compact 是紧凑的，形近但都不表示“联系、接触”。"
+    },
+    {
+      "word": "content",
+      "pos": "n.",
+      "def": "内容；含量",
+      "sentence": "The ___ of the book is more interesting than its cover.",
+      "sentence_zh": "这本书的内容比它的封面更有趣。",
+      "explain": "内容、含量，用 content。context 是语境、contact 是联系、contest 是竞赛，形近但都不表示“内容、含量”。"
+    },
+    {
+      "word": "context",
+      "pos": "n.",
+      "def": "上下文；背景，语境",
+      "sentence": "You can often guess a word's meaning from its ___.",
+      "sentence_zh": "你常常可以根据上下文猜出一个单词的意思。",
+      "explain": "上下文、语境，用 context。content 是内容、contact 是联系、contract 是合同，形近但都不表示“上下文、语境”。"
+    },
+    {
+      "word": "cope",
+      "pos": "v.",
+      "def": "(成功)应对，处理",
+      "sentence": "It can be hard to ___ with so much work at once.",
+      "sentence_zh": "一下子应付这么多工作可能很难。",
+      "explain": "应对、处理（常搭配 with），用 cope。scope 是范围、hope 是希望、copy 是复制，形近但都不表示“应对、处理”。"
+    },
+    {
+      "word": "scope",
+      "pos": "n.",
+      "def": "范围，余地；机会",
+      "sentence": "The ___ of the project grew far beyond what was first planned.",
+      "sentence_zh": "这个项目的范围远远超出了最初的计划。",
+      "explain": "涉及的范围、余地，用 scope。cope 是应对、slope 是斜坡、scoop 是勺子，形近但都不表示“范围、余地”。"
+    },
+    {
+      "word": "telescope",
+      "pos": "n.",
+      "def": "望远镜",
+      "sentence": "Through the ___, we could clearly see the rings of Saturn.",
+      "sentence_zh": "通过望远镜，我们能清楚地看到土星的光环。",
+      "explain": "观察远处的望远镜，用 telescope。microscope 是显微镜、telephone 是电话、periscope 是潜望镜，都不合“望远镜”这个意思。"
+    },
+    {
+      "word": "criterion",
+      "pos": "n.",
+      "def": "标准，准则",
+      "sentence": "Price is just one ___ to consider when buying a car.",
+      "sentence_zh": "价格只是买车时要考虑的一个标准。",
+      "explain": "评判的标准、准则，用 criterion。criticism 是批评、critic 是批评家、criteria 是其复数，都不合“(单个)标准”这个意思。"
+    },
+    {
+      "word": "critic",
+      "pos": "n.",
+      "def": "批评家，评论家",
+      "sentence": "The film was praised by every ___ who saw it.",
+      "sentence_zh": "这部电影受到了每一位观看过它的评论家的赞扬。",
+      "explain": "评论家、批评者，用 critic。critical 是形容词、criticism 是名词“批评”、criterion 是标准，都不合“批评家(人)”这个意思。"
+    },
+    {
+      "word": "criticise",
+      "pos": "v.",
+      "def": "批评，指责；评论",
+      "sentence": "It is easy to ___ others but harder to do better yourself.",
+      "sentence_zh": "批评别人很容易，但自己做得更好却更难。",
+      "explain": "提出批评、指责，用 criticise。critic 是名词“批评家”、criticism 是名词“批评”、critical 是形容词，都不合这个“批评”的动词位置。"
+    },
+    {
+      "word": "deliver",
+      "pos": "v.",
+      "def": "递送，交付；发表；接生",
+      "sentence": "The company promises to ___ all orders within two days.",
+      "sentence_zh": "公司承诺在两天内送达所有订单。",
+      "explain": "递送、交付，用 deliver。delivery 是名词、deliberate 是故意的、diver 是潜水员，形近但都不合“递送”这个动词位置。"
+    },
+    {
+      "word": "delivery",
+      "pos": "n.",
+      "def": "递送，交付；分娩",
+      "sentence": "Free ___ is offered on all orders over fifty dollars.",
+      "sentence_zh": "所有满五十美元的订单均可享受免费配送。",
+      "explain": "递送、配送（名词），用 delivery。deliver 是动词、discovery 是发现、recovery 是恢复，形近但都不合“递送”这个名词位置。"
+    },
+    {
+      "word": "receiver",
+      "pos": "n.",
+      "def": "接收器，听筒；接受者",
+      "sentence": "She picked up the ___ and dialled the number.",
+      "sentence_zh": "她拿起听筒拨了号码。",
+      "explain": "接收装置或接受者，用 receiver。receipt 是收据、receptive 是善于接受的、deceiver 是骗子，都不合“接收器、听筒”这个意思。"
+    },
+    {
+      "word": "detail",
+      "pos": "n./v.",
+      "def": "细节，详情；详述",
+      "sentence": "Please describe exactly what happened in as much ___ as possible.",
+      "sentence_zh": "请尽可能详细地描述究竟发生了什么。",
+      "explain": "细节、详情，用 detail。retail 是零售、detain 是拘留、entail 是牵涉，形近但都不表示“细节、详情”。"
+    },
+    {
+      "word": "retail",
+      "pos": "n./adj./v.",
+      "def": "零售(的)；零售",
+      "sentence": "The ___ price of the product is much higher than its cost.",
+      "sentence_zh": "这件产品的零售价比它的成本高得多。",
+      "explain": "零售，用 retail。detail 是细节、retain 是保留、retreat 是撤退，形近但都不表示“零售”。"
+    },
+    {
+      "word": "retain",
+      "pos": "v.",
+      "def": "保持，保留；记住",
+      "sentence": "The soil is able to ___ water for a long time.",
+      "sentence_zh": "这种土壤能够长时间保持水分。",
+      "explain": "保持、保留，用 retain。retail 是零售、detain 是拘留、remain 是仍然，形近但都不表示“保持、保留”。"
+    },
+    {
+      "word": "exceed",
+      "pos": "v.",
+      "def": "超过，超出",
+      "sentence": "The total cost must not ___ the money we have available.",
+      "sentence_zh": "总费用不得超过我们现有的资金。",
+      "explain": "超出、超过，用 exceed。proceed 是继续、succeed 是成功、excel 是擅长，形近但都不表示“超过、超出”。"
+    },
+    {
+      "word": "proceed",
+      "pos": "v.",
+      "def": "继续进行；行进",
+      "sentence": "Once the payment is confirmed, we will ___ with the order.",
+      "sentence_zh": "一旦付款得到确认，我们就会继续处理订单。",
+      "explain": "继续进行、行进，用 proceed。exceed 是超过、succeed 是成功、precede 是先于，形近但都不表示“继续进行”。"
+    },
+    {
+      "word": "succeed",
+      "pos": "v.",
+      "def": "成功；继承，接替",
+      "sentence": "With hard work and a little luck, she is sure to ___.",
+      "sentence_zh": "凭借努力和一点运气，她一定会成功。",
+      "explain": "取得成功或接替，用 succeed。exceed 是超过、proceed 是继续、succeed 与 secede 不同，形近但都不表示“成功”。"
+    },
+    {
+      "word": "combat",
+      "pos": "n./v.",
+      "def": "战斗，搏斗；与…作斗争",
+      "sentence": "New measures were introduced to ___ the spread of the disease.",
+      "sentence_zh": "出台了新措施来对抗疾病的传播。",
+      "explain": "与某事作斗争、对抗，用 combat。combine 是结合、combination 是组合、compact 是紧凑的，形近但都不合“战斗、对抗”这个意思。"
+    },
+    {
+      "word": "combination",
+      "pos": "n.",
+      "def": "结合，组合",
+      "sentence": "Success is usually a ___ of talent and hard work.",
+      "sentence_zh": "成功通常是天赋与努力的结合。",
+      "explain": "结合、组合（名词），用 combination。combine 是动词、combat 是战斗、coordination 是协调，都不合“结合、组合”这个名词位置。"
+    },
+    {
+      "word": "combine",
+      "pos": "v.",
+      "def": "结合，联合",
+      "sentence": "The recipe asks you to ___ the flour and sugar first.",
+      "sentence_zh": "这份食谱要求你先把面粉和糖混合在一起。",
+      "explain": "使结合、联合，用 combine。combat 是战斗、combination 是名词、confine 是限制，形近但都不合“结合、联合”这个动词位置。"
+    },
+    {
+      "word": "climate",
+      "pos": "n.",
+      "def": "气候；风气，氛围",
+      "sentence": "The region has a warm ___ with plenty of sunshine.",
+      "sentence_zh": "这个地区气候温暖，阳光充足。",
+      "explain": "长期的气候，用 climate。climax 是高潮、weather 侧重“(某天)天气”、climb 是攀登，都不合“气候”这个意思。"
+    },
+    {
+      "word": "material",
+      "pos": "n./adj.",
+      "def": "材料，原料；物质的",
+      "sentence": "Wood is a natural ___ used to make many kinds of furniture.",
+      "sentence_zh": "木材是一种用于制造多种家具的天然材料。",
+      "explain": "制造用的材料、原料，用 material。materal 系拼写错误、mineral 是矿物、maternal 是母亲的，形近但都不合“材料、原料”这个意思。"
+    },
+    {
+      "word": "ultimate",
+      "pos": "adj./n.",
+      "def": "最终的，根本的；终极",
+      "sentence": "Their ___ goal is to find a cure for the disease.",
+      "sentence_zh": "他们的最终目标是找到治愈这种疾病的方法。",
+      "explain": "最终的、根本的，用 ultimate。intimate 是亲密的、estimate 是估计、ultimatum 是最后通牒，形近但都不表示“最终的、根本的”。"
+    },
+    {
+      "word": "determine",
+      "pos": "v.",
+      "def": "决定；查明；下决心",
+      "sentence": "Scientists tried to ___ the exact age of the fossil.",
+      "sentence_zh": "科学家试图查明这块化石的确切年代。",
+      "explain": "查明、决定，用 determine。terminate 是终止、examine 是检查、determined 是分词，形近但都不合“查明、决定”这个动词位置。"
+    },
+    {
+      "word": "examine",
+      "pos": "v.",
+      "def": "检查，仔细观察；考核",
+      "sentence": "The doctor will ___ you carefully before making a diagnosis.",
+      "sentence_zh": "医生在做出诊断前会仔细检查你。",
+      "explain": "仔细检查、审查，用 examine。example 是例子、determine 是查明、examiner 是主考人，形近但都不合“检查、审查”这个动词位置。"
     }
   ]
 }
