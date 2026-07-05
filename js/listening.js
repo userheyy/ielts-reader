@@ -5,6 +5,8 @@
 // 四条降级路径:①无 id → 落地页;②part 数据缺失 → 提示卡+回落地页;
 // ③音频 404 → 提示卡,转写/做题当文本精读用;④句子未打点(start 全 null)→ 顺序列表模式。
 import { scoreDictation } from "./dictation.js?v=1";
+import { has as wordStoreHas } from "./store.js";
+import { openWordPopup } from "./word-popup.js?v=1";
 
 const params = new URLSearchParams(location.search);
 const partId = params.get("id");
@@ -342,7 +344,7 @@ function findRanges(text, needles) {
     const f = String(nd.find || "").toLowerCase();
     if (!f) continue;
     const i = lower.indexOf(f);
-    if (i >= 0) out.push({ a: i, b: i + f.length, title: nd.title, cls: nd.cls });
+    if (i >= 0) out.push({ ...nd, a: i, b: i + f.length });
   }
   out.sort((x, y) => x.a - y.a || y.b - x.b);
   const res = [];
@@ -352,13 +354,16 @@ function findRanges(text, needles) {
   return res;
 }
 
-// 给一段纯文本包生词气泡(简单 title 提示)
+// 给一段纯文本包生词气泡(点击可弹 word-popup 入生词库)
 function wrapWords(text, words) {
   if (!text) return "";
   if (!Array.isArray(words) || !words.length) return esc(text);
   const needles = words.map((w) => ({
     find: w.w,
     title: `${w.pos ? w.pos + " " : ""}${w.def || ""}`.trim(),
+    word: w.w,
+    pos: w.pos || "",
+    def: w.def || "",
     cls: "wtip",
   }));
   const ranges = findRanges(text, needles);
@@ -366,10 +371,15 @@ function wrapWords(text, words) {
   let pos = 0;
   for (const r of ranges) {
     html += esc(text.slice(pos, r.a));
-    html += `<span class="wtip" title="${esc(r.title)}">${esc(text.slice(r.a, r.b))}</span>`;
+    const savedCls = wordSavedInStore(r.word) ? " saved" : "";
+    html += `<span class="wtip${savedCls}" title="${esc(r.title)}" data-word="${esc(r.word || "")}" data-pos="${esc(r.pos || "")}" data-def="${esc(r.def || "")}">${esc(text.slice(r.a, r.b))}</span>`;
     pos = r.b;
   }
   return html + esc(text.slice(pos));
+}
+
+function wordSavedInStore(w) {
+  try { return !!(w && wordStoreHas(w)); } catch { return false; }
 }
 
 // 句子英文 HTML:同义替换(paraphrase.p)波浪线在外层,生词气泡在内层
@@ -482,6 +492,26 @@ transcriptEl.addEventListener("click", (ev) => {
   if (ev.target.id === "tr-follow") {
     followScroll = ev.target.checked;
     return;
+  }
+  // 点 .wtip 生词 → 弹词汇 popup 入生词库(不触发揭示/跳播);annotate 模式跳过
+  if (!ANNOTATE) {
+    const wtip = ev.target.closest(".wtip");
+    if (wtip) {
+      ev.stopPropagation();
+      const parentSeg = wtip.closest(".seg");
+      const s = parentSeg && segs.find((x) => x.id === Number(parentSeg.dataset.sid));
+      if (s) {
+        const wordText = wtip.dataset.word || wtip.textContent;
+        const wordDefs = new Map(
+          (s.words || []).map((w) => [w.w.toLowerCase(), w]),
+        );
+        openWordPopup({
+          event: ev, word: wordText, wordDefs, sentence: s,
+          source: PART.source, passageId: PART.id,
+        });
+      }
+      return;
+    }
   }
   const row = ev.target.closest(".seg");
   if (!row) return;
