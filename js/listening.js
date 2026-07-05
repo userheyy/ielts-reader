@@ -267,12 +267,15 @@ function onTick() {
     }
   } else if (mode === "ab" && abA != null && abB != null) {
     if (t >= abB - 0.02) audio.currentTime = abA;
-  } else if (mode === "dictation" && dictEndTime != null) {
+  } else if (dictEndTime != null) {
+    // normal / dictation:playSegment 设了 dictEndTime,到时间自动 pause,不流到下句
     if (t >= dictEndTime - 0.02) {
       audio.pause();
       dictEndTime = null;
-      const inp = document.getElementById("dict-input");
-      if (inp) inp.focus();
+      if (mode === "dictation") {
+        const inp = document.getElementById("dict-input");
+        if (inp) inp.focus();
+      }
     }
   }
 
@@ -301,13 +304,15 @@ function setPlayingSeg(segId) {
   }
 }
 
-// 跳播某句(听写模式播完即停;单句模式把循环点切过来)
+// 跳播某句。默认播完本句自动暂停(用户预期"点哪句只播那句,不往下流")。
+// 例外:sentence 模式由自己的循环边界 handle;ab 模式在 [A,B] 内循环。
 function playSegment(s, forDictation = false) {
   if (!canPlay() || !s || typeof s.start !== "number") return false;
   const ti = timedIndexOfSeg(s);
   if (mode === "sentence" && !forDictation) { loopIdx = ti; repeatDone = 0; refreshModePanel(); }
-  if (forDictation || mode === "dictation") dictEndTime = segEnd(ti);
-  else dictEndTime = null;
+  // sentence / ab 由 onTick 里的 mode 分支自己 handle 边界,dictEndTime 保持 null
+  if (mode === "sentence" || mode === "ab") dictEndTime = null;
+  else dictEndTime = segEnd(ti); // normal / dictation:播完该句自动 pause
   audio.currentTime = s.start;
   audio.play();
   return true;
