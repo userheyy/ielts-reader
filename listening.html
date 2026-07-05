@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思听力精听</title>
   <link rel="stylesheet" href="css/style.css?v=9" />
-  <link rel="stylesheet" href="css/listening.css?v=1" />
+  <link rel="stylesheet" href="css/listening.css?v=2" />
 </head>
 <body>
   <header class="topbar">
@@ -25,21 +25,24 @@
     <div id="landing" hidden>
       <div class="lsn-head">
         <h2>雅思听力精听</h2>
-        <p>逐句遮罩精听(先听后看)→ 听写判分 → 真题演练。选一个 Part 开始;句子没打时间点的篇目可进"打点模式"边听边补。</p>
+        <p>逐句遮罩精听(先听后看)→ 4 级渐进提示 → 听写判分 → 真题演练。选一个 Part 开始。</p>
       </div>
       <div id="landing-list"></div>
     </div>
 
-    <!-- 精听三栏(?id=xxx 时显示) -->
+    <!-- 精听页(?id=xxx 时显示):顶部 sticky 播放器 + 2 栏(转写 + 题目/听写) -->
     <div id="player-view" hidden>
       <div class="listen-toolbar">
         <span class="src" id="lsn-src"></span>
-        <a class="lsn-annotate-link" id="annotate-link" href="#" hidden>打点模式</a>
+        <a class="lsn-annotate-link" id="annotate-link" href="#" hidden>退出打点</a>
       </div>
+      <div class="pl-sticky" id="lsn-player-bar"></div>
       <div class="listen-grid">
         <div class="pane lsn-left" id="transcript"></div>
-        <aside class="pane questions" id="lsn-questions"></aside>
-        <div class="lsn-side" id="lsn-side"></div>
+        <div class="lsn-right">
+          <aside class="pane questions" id="lsn-questions"></aside>
+          <div class="lsn-side" id="lsn-side"></div>
+        </div>
       </div>
     </div>
   </div>

@@ -21,6 +21,7 @@ const annotateLinkEl = document.getElementById("annotate-link");
 const transcriptEl = document.getElementById("transcript");
 const questionsEl = document.getElementById("lsn-questions");
 const sideEl = document.getElementById("lsn-side");
+const playerBarEl = document.getElementById("lsn-player-bar");
 
 function esc(s) {
   return String(s == null ? "" : s)
@@ -71,7 +72,6 @@ async function renderLanding() {
             <div class="title">${esc(p.title || "Part " + p.part)}</div>
             <div class="count lsn-card-foot">
               <span>精听 / 听写 / 做题</span>
-              <span class="lsn-ann" data-ann="listening.html?id=${encodeURIComponent(p.id)}&annotate=1">打点 ›</span>
             </div>
           </a>`).join("")}
       </div>
@@ -147,22 +147,16 @@ async function renderPart(id) {
   viewEl.hidden = false;
   srcEl.textContent = `${d.source || ""}${d.title ? " — " + d.title : ""}`;
   document.title = (d.title || id) + " · 听力精听";
-  annotateLinkEl.hidden = false;
+  // 打点入口只在 ?annotate=1 时可见(N4:普通用户看不到)
   if (ANNOTATE) {
-    annotateLinkEl.textContent = "退出打点模式";
+    annotateLinkEl.hidden = false;
+    annotateLinkEl.textContent = "退出打点";
     annotateLinkEl.href = `listening.html?id=${encodeURIComponent(id)}`;
-  } else {
-    annotateLinkEl.textContent = "打点模式";
-    annotateLinkEl.href = `listening.html?id=${encodeURIComponent(id)}&annotate=1`;
-  }
-
-  if (ANNOTATE) {
     annStarts = segs.map((s) => (typeof s.start === "number" ? s.start : null));
     annIdx = annStarts.indexOf(null);
     if (annIdx < 0) annIdx = 0; // 全部已打 → 从头开始重打
-  } else if (!timed.length && segs.length) {
-    notice(`本篇还没打时间点(句子缺 start),已退化为顺序列表模式:揭示句子、做题、听写判分都能用,` +
-      `但不能按句跳播/循环。可进入 <a href="listening.html?id=${encodeURIComponent(id)}&annotate=1">打点模式</a> 边听边补时间点。`);
+  } else {
+    annotateLinkEl.hidden = true;
   }
 
   loadDictProgress();
@@ -703,29 +697,34 @@ function renderSide() {
     `<button type="button" class="chip${v === 1 ? " on" : ""}" data-speed="${v}">${v}×</button>`).join("");
   const modeChips = MODES.map(([v, label]) => {
     const needTimed = v !== "normal" && v !== "dictation";
-    const dis = needTimed && !timed.length ? " disabled title=\"本篇未打点,不能按句循环\"" : "";
+    const dis = needTimed && !timed.length ? " disabled title=\"本篇未对齐时间戳,不能按句循环\"" : "";
     return `<button type="button" class="chip${v === mode ? " on" : ""}" data-mode="${v}"${dis}>${label}</button>`;
   }).join("");
-  sideEl.innerHTML = `
-    <div class="pl-card">
-      <div class="pl-time"><span id="pl-cur">0:00</span>
-        <input type="range" id="pl-seek" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
-        <span id="pl-dur">--:--</span></div>
-      <div class="pl-main">
-        <button type="button" id="pl-back" title="后退 5 秒">−5s</button>
-        <button type="button" id="pl-toggle" class="pl-play">▶ 播放</button>
-        <button type="button" id="pl-fwd" title="前进 5 秒">+5s</button>
-      </div>
-      <div class="pl-row"><span class="pl-label">语速</span><div class="chiprow" id="pl-speeds">${speedChips}</div></div>
-      ${ANNOTATE ? "" : `<div class="pl-row"><span class="pl-label">模式</span><div class="chiprow" id="pl-modes">${modeChips}</div></div>
-      <div class="mode-panel" id="mode-panel"></div>`}
-      <div class="pl-kbd">${ANNOTATE
-        ? "快捷键:Space 给当前句打点 · P 播/停"
-        : "快捷键:Space 播/停 · ← → 上/下句 · R 重复本句(输入框内不生效)"}</div>
+  // 播放器条(sticky top,不占用侧栏空间;annotate 时不显示模式 chip)
+  playerBarEl.innerHTML = `
+    <div class="pl-main">
+      <button type="button" id="pl-back" title="后退 5 秒">−5s</button>
+      <button type="button" id="pl-toggle" class="pl-play">▶ 播放</button>
+      <button type="button" id="pl-fwd" title="前进 5 秒">+5s</button>
     </div>
+    <div class="pl-time-inline">
+      <span id="pl-cur">0:00</span>
+      <input type="range" id="pl-seek" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
+      <span id="pl-dur">--:--</span>
+    </div>
+    <div class="pl-inline-row"><span class="pl-label">语速</span><div class="chiprow" id="pl-speeds">${speedChips}</div></div>
+    ${ANNOTATE ? "" : `<div class="pl-inline-row"><span class="pl-label">模式</span><div class="chiprow" id="pl-modes">${modeChips}</div></div>`}
+  `;
+  // 侧栏(题目下方):模式面板 + 听写卡 +(annotate 时)打点面板
+  sideEl.innerHTML = `
+    ${ANNOTATE ? "" : `<div class="pl-card mode-panel-card" id="mode-panel-wrap"><div class="mode-panel" id="mode-panel"></div>
+      <div class="pl-kbd">快捷键:Space 播/停 · ← → 上/下句 · R 重复本句(输入框内不生效)</div></div>`}
     ${ANNOTATE ? annPanelHTML() : ""}
+    ${ANNOTATE ? `<div class="pl-card"><div class="pl-kbd">快捷键:Space 给当前句打点 · P 播/停</div></div>` : ""}
     <div class="pl-card dict-card" id="dict-panel" hidden></div>`;
 
+  // 事件监听器:播放器条上的点击(seek/speed/mode)+ 侧栏点击(模式面板 detail)
+  playerBarEl.addEventListener("click", onSideClick);
   sideEl.addEventListener("click", onSideClick);
   const seek = document.getElementById("pl-seek");
   seek.addEventListener("input", () => {
