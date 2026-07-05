@@ -78,6 +78,31 @@ small, .type-caption { font-size: var(--text-sm); color: var(--muted); line-heig
   letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
 }
 code, kbd, .type-mono { font-family: var(--font-mono); font-size: 0.92em; }
+
+/* ---- Band Descriptors 面板(writing / speaking 共用)---- */
+.bd-panel { margin: 12px 0 16px; padding: 8px 14px; border: 1px solid var(--border); border-radius: 8px; background: var(--card); }
+.bd-panel[open] { padding-bottom: 14px; }
+.bd-heading { cursor: pointer; font-weight: 600; color: var(--text-soft); font-size: var(--text-sm); padding: 4px 0; user-select: none; }
+.bd-heading:hover { color: var(--accent-hover); }
+.bd-body { padding-top: 10px; font-size: var(--text-sm); line-height: var(--lh-normal); }
+.bd-criteria { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px 16px; margin-bottom: 12px; }
+.bd-criterion { color: var(--text-soft); }
+.bd-criterion b { color: var(--accent-hover); font-family: var(--font-mono); font-size: var(--text-sm); margin-right: 4px; }
+.bd-criterion .bd-cn { color: var(--text); font-weight: 500; margin-right: 4px; }
+.bd-criterion .bd-desc { color: var(--muted); }
+.bd-levels { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+.bd-level { border-left: 2px solid var(--border); padding: 4px 10px; }
+.bd-level summary { cursor: pointer; font-weight: 500; color: var(--text-soft); user-select: none; }
+.bd-level summary b { color: var(--accent); font-family: var(--font-mono); }
+.bd-level ul { margin: 6px 0 4px 20px; padding: 0; color: var(--text-soft); }
+.bd-level li { margin: 2px 0; }
+.bd-level li b { color: var(--accent-hover); font-family: var(--font-mono); font-size: var(--text-xs); margin-right: 4px; }
+.bd-level .bd-target { display: inline; margin-left: 8px; font-size: var(--text-xs); color: var(--warn); font-weight: 500; }
+.bd-tips { padding-top: 8px; border-top: 1px dashed var(--border); }
+.bd-tips h4 { font-size: var(--text-sm); margin: 0 0 4px; color: var(--text-soft); }
+.bd-tips ul { margin: 0 0 0 18px; padding: 0; color: var(--muted); font-size: var(--text-sm); }
+.bd-tips li { margin: 3px 0; }
+@media (max-width: 640px) { .bd-criteria { grid-template-columns: 1fr; } }
 header.topbar {
   background: var(--card); color: var(--text);
   padding: 10px 32px;

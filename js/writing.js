@@ -4,6 +4,11 @@
 // 依赖:js/ai.js(askDeepSeek);data/writing/tasks.json(题库)。
 
 import { askDeepSeek, hasKey } from "./ai.js?v=1";
+import { renderBandPanel, promptSnippet } from "./band-descriptors.js?v=1";
+
+// Band Descriptors 面板挂到页面顶部
+const bandPanelEl = document.getElementById("band-panel");
+if (bandPanelEl) renderBandPanel(bandPanelEl, "writing");
 
 const HISTORY_KEY = "ielts_writing_history";
 const HISTORY_MAX = 50;
@@ -105,7 +110,9 @@ function updateWc(kind) {
 }
 
 // ---- 批改 ----
-const SYSTEM_PROMPT = `你是雅思 8 分 IELTS Writing examiner。给学生的作文按 IELTS Writing Band Descriptors 打分:
+const SYSTEM_PROMPT = promptSnippet("writing") + `
+
+你是雅思 8 分 IELTS Writing examiner。给学生的作文按 IELTS Writing Band Descriptors 打分(严格对齐上面的锚点):
 - TR(Task Response / Task Achievement):对题目要求的回应程度、观点清晰度、论据充分性
 - CC(Coherence & Cohesion):段落结构、逻辑衔接、指代与替换手段
 - LR(Lexical Resource):词汇丰富度、准确性、地道搭配

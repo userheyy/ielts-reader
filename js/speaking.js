@@ -5,6 +5,10 @@
 // 若 POST /whisper 返回 404,提示用户改用 speaking_server.py 启动。
 
 import { askDeepSeek, hasKey } from "./ai.js?v=1";
+import { renderBandPanel, promptSnippet } from "./band-descriptors.js?v=1";
+
+const bandPanelEl = document.getElementById("band-panel");
+if (bandPanelEl) renderBandPanel(bandPanelEl, "speaking");
 
 const TASKS = { part1: [], part2: [], part3: [] };
 const state = {
@@ -200,7 +204,9 @@ async function handleRecordingDone(kind, blob) {
   }
 }
 
-const SYSTEM_PROMPT = `你是雅思 8 分口语 examiner。根据学生朗读/回答的转写文本,按 IELTS Speaking Band Descriptors 四项打分:
+const SYSTEM_PROMPT = promptSnippet("speaking") + `
+
+你是雅思 8 分口语 examiner。根据学生朗读/回答的转写文本,按 IELTS Speaking Band Descriptors 四项打分(严格对齐上面的锚点):
 - FC(Fluency & Coherence):语流是否连贯,有无过多重复、犹豫填充词
 - LR(Lexical Resource):词汇丰富度、准确性、地道搭配
 - GRA(Grammatical Range & Accuracy):句式多样性、语法正确率
