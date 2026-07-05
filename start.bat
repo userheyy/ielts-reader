@@ -1,7 +1,7 @@
 ﻿@echo off
 setlocal EnableExtensions
 chcp 65001 >nul
-title 雅思阅读精读器
+title 雅思备考
 cd /d "%~dp0"
 
 set "PORT=8000"
@@ -10,7 +10,7 @@ set "APP_URL=http://127.0.0.1:%PORT%/index.html"
 
 echo.
 echo  ========================================
-echo          雅思阅读精读器 · 一键启动
+echo          雅思备考 · 一键启动
 echo  ========================================
 echo.
 
