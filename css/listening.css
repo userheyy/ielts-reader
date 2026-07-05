@@ -48,7 +48,29 @@
   display: flex; align-items: center; gap: 8px;
   font-variant-numeric: tabular-nums; color: var(--muted); font-size: 12px;
 }
-.pl-sticky .pl-time-inline input[type="range"] { flex: 1; accent-color: var(--accent); }
+.pl-sticky .pl-time-inline input[type="range"] {
+  flex: 1; accent-color: var(--accent);
+  -webkit-appearance: none; appearance: none;
+  height: 6px; background: var(--border); border-radius: 999px;
+  cursor: pointer; outline: none; margin: 0 4px;
+}
+.pl-sticky .pl-time-inline input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--accent); border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25); cursor: grab;
+  transition: transform .12s;
+}
+.pl-sticky .pl-time-inline input[type="range"]::-webkit-slider-thumb:hover,
+.pl-sticky .pl-time-inline input[type="range"]:active::-webkit-slider-thumb { transform: scale(1.25); cursor: grabbing; }
+.pl-sticky .pl-time-inline input[type="range"]::-moz-range-thumb {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--accent); border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.25); cursor: grab;
+}
+.pl-sticky .pl-time-inline input[type="range"]::-moz-range-track {
+  height: 6px; background: var(--border); border-radius: 999px;
+}
 .pl-sticky .pl-inline-row { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
 .pl-sticky .chiprow { gap: 4px; }
 .pl-sticky .chip { padding: 2px 8px; font-size: 11px; }
