@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>雅思备考 · 写作</title>
+  <link rel="stylesheet" href="css/style.css?v=5" />
+  <style>
+    /* 写作页专用样式(内联,避免新增 css 文件) */
+    .writing-page { max-width: 900px; margin: 0 auto; padding: 16px; }
+    .writing-page .hint { color: #666; font-size: 14px; line-height: 1.6; margin-bottom: 12px; }
+    .writing-tabs { display: flex; gap: 6px; border-bottom: 1px solid #ddd; margin: 12px 0 16px; }
+    .writing-tabs .tab {
+      padding: 8px 16px; background: #f6f6f6; border: 1px solid #ddd; border-bottom: none;
+      border-radius: 6px 6px 0 0; cursor: pointer; font-size: 14px;
+    }
+    .writing-tabs .tab.active { background: #fff; border-color: #ddd; font-weight: 600; color: #2b6cb0; }
+    .task-section { padding: 16px; background: #fff; border: 1px solid #eee; border-radius: 8px; margin-bottom: 16px; }
+    .task-section.hidden { display: none; }
+    .task-picker { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .task-picker select { padding: 6px 8px; font-size: 14px; }
+    .task-prompt {
+      background: #f9fafb; border-left: 3px solid #3b82f6; padding: 12px;
+      border-radius: 4px; line-height: 1.7; white-space: pre-wrap; font-size: 14px;
+    }
+    .task-hint {
+      background: #fef9e7; border-left: 3px solid #eab308; padding: 10px;
+      border-radius: 4px; margin-top: 8px; font-size: 13px; color: #666; line-height: 1.6;
+    }
+    .task-hint:empty { display: none; }
+    .task-section textarea {
+      width: 100%; margin-top: 12px; padding: 10px; font-family: Georgia, serif;
+      font-size: 15px; line-height: 1.7; border: 1px solid #ccc; border-radius: 6px;
+      box-sizing: border-box; resize: vertical;
+    }
+    .task-actions { display: flex; justify-content: space-between; align-items: center; margin: 12px 0; gap: 12px; }
+    .task-actions .wc { color: #666; font-size: 13px; }
+    .task-actions .wc.ok { color: #16a34a; font-weight: 600; }
+    .task-actions button {
+      padding: 8px 20px; background: #3b82f6; color: #fff; border: none;
+      border-radius: 6px; cursor: pointer; font-size: 14px;
+    }
+    .task-actions button:disabled { background: #ccc; cursor: not-allowed; }
+    .task-result:empty { display: none; }
+    .task-result { margin-top: 16px; padding: 16px; background: #f8fafc; border-radius: 6px; }
+    .score-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 8px 0 16px; }
+    .score-cell { text-align: center; padding: 10px 6px; background: #fff; border: 1px solid #e5e7eb; border-radius: 6px; }
+    .score-cell .label { font-size: 12px; color: #666; }
+    .score-cell .val { font-size: 22px; font-weight: 700; color: #2b6cb0; margin-top: 4px; }
+    .score-cell.overall .val { color: #16a34a; font-size: 26px; }
+    .rewrite-item { margin: 10px 0; padding: 10px; background: #fff; border-left: 3px solid #10b981; border-radius: 4px; }
+    .rewrite-item .role { font-weight: 600; font-size: 12px; color: #666; }
+    .rewrite-item .orig { color: #999; font-style: italic; margin: 4px 0; text-decoration: line-through; }
+    .rewrite-item .imp { color: #111; margin: 4px 0; }
+    .rewrite-item .note { color: #555; font-size: 13px; margin-top: 4px; }
+    .summary-box { padding: 10px; background: #fef2f2; border-left: 3px solid #ef4444; border-radius: 4px; }
+    .history { margin: 24px 0; }
+    .history summary { cursor: pointer; padding: 8px 0; font-weight: 600; color: #555; }
+    .history-item {
+      padding: 10px; margin: 8px 0; background: #f9fafb; border-radius: 4px;
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .history-item .meta { flex: 1; font-size: 13px; color: #666; }
+    .history-item .meta b { color: #111; }
+    .history-item button { padding: 4px 10px; background: #fff; border: 1px solid #ddd; border-radius: 4px; cursor: pointer; font-size: 12px; }
+    .banner { padding: 10px 12px; background: #fef2f2; color: #b91c1c; border-radius: 4px; margin: 8px 0; font-size: 13px; }
+    .loading { color: #666; font-style: italic; padding: 12px; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <h1>雅思备考</h1>
+    <a href="index.html">文章库</a>
+    <a href="listening.html">听力</a>
+    <a href="writing.html" class="active">写作</a>
+    <a href="daily.html">每日</a>
+    <a href="vocab.html">生词库</a>
+    <a href="library.html">词库</a>
+    <a href="test.html">测试</a>
+    <a href="grammar.html">语法书</a>
+    <a href="settings.html">设置</a>
+  </header>
+  <div class="container writing-page">
+    <h2>雅思写作陪练</h2>
+    <p class="hint">
+      DeepSeek AI 按 IELTS Writing Band Descriptors 四项打分(<b>TR</b> Task Response / <b>CC</b> Coherence &amp; Cohesion / <b>LR</b> Lexical Resource / <b>GRA</b> Grammatical Range &amp; Accuracy),
+      给出逐段改写建议 + 总评。先到 <a href="settings.html">设置</a> 配好 DeepSeek API Key。
+    </p>
+
+    <div class="writing-tabs">
+      <button class="tab active" data-tab="task1" type="button">Task 1(≥ 150 words)</button>
+      <button class="tab" data-tab="task2" type="button">Task 2(≥ 250 words)</button>
+    </div>
+
+    <section class="task-section" data-section="task1">
+      <div class="task-picker">
+        <label>选题:</label>
+        <select id="task1-pick"></select>
+      </div>
+      <div class="task-prompt" id="task1-prompt"></div>
+      <div class="task-hint" id="task1-hint"></div>
+      <textarea id="task1-essay" placeholder="Write your Task 1 response here …" rows="14"></textarea>
+      <div class="task-actions">
+        <span class="wc" id="task1-wc">0 words / 目标 ≥ 150</span>
+        <button id="task1-submit" type="button">提交批改</button>
+      </div>
+      <div class="task-result" id="task1-result"></div>
+    </section>
+
+    <section class="task-section hidden" data-section="task2">
+      <div class="task-picker">
+        <label>选题:</label>
+        <select id="task2-pick"></select>
+      </div>
+      <div class="task-prompt" id="task2-prompt"></div>
+      <div class="task-hint" id="task2-hint"></div>
+      <textarea id="task2-essay" placeholder="Write your Task 2 essay here …" rows="18"></textarea>
+      <div class="task-actions">
+        <span class="wc" id="task2-wc">0 words / 目标 ≥ 250</span>
+        <button id="task2-submit" type="button">提交批改</button>
+      </div>
+      <div class="task-result" id="task2-result"></div>
+    </section>
+
+    <details class="history">
+      <summary>历史批改记录</summary>
+      <div id="history-list"></div>
+    </details>
+  </div>
+  <script type="module" src="js/writing.js?v=1"></script>
+</body>
+</html>
