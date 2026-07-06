@@ -24,3 +24,6 @@ tools/out/
 # 语法书提取内容(版权,仅本地个人学习)
 data/local/
 # 注:音频(用户自制)与听力 JSON 已按用户决定上线,不再 gitignore
+# 但 rename 时的备份和冲突暂存不入库
+media/audio_backup/
+media/audio/_conflicts/
