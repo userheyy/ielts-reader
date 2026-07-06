@@ -23,9 +23,4 @@ tools/config.local.json
 tools/out/
 # 语法书提取内容(版权,仅本地个人学习)
 data/local/
-# 剑桥听力音频(版权,仅本地;保留目录说明)
-media/audio/**
-!media/audio/README.md
-# 剑桥听力逐句转写(版权,仅本地;index.json 仅结构元数据可提交)
-data/listening/*.json
-!data/listening/index.json
+# 注:音频(用户自制)与听力 JSON 已按用户决定上线,不再 gitignore
