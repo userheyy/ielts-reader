@@ -4,9 +4,9 @@ import { gradeReview } from "./store.js?v=6";
 import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=1";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import {
-  ensureTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
+  ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=1";
+} from "./daily-store.js?v=2";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -256,8 +256,8 @@ $("pace-save").addEventListener("click", () => {
   const n = Math.max(0, Number($("pace-custom-new").value) || 0);
   updateSettings({ new_per_day: n });
   paceModal.hidden = true;
-  // 若今天还没开始(done==0),重建今日任务以套用新配额
-  reloadTask();
+  // 若今天还没开始(done==0),重建今日任务以套用新配额;已开始则不冲掉进度。
+  reloadTask({ rebuild: true });
 });
 
 // ---- 生词库缓存(过词卡取生词用) ----
@@ -268,8 +268,9 @@ function refreshVocabCache() {
 }
 
 // ---- 初始化 / 刷新 ----
-async function reloadTask() {
-  task = await ensureTodayTask();
+// rebuild=true:套用最新任务设置重排当天(仅未开始时真正换词);默认复原,保持幂等。
+async function reloadTask({ rebuild = false } = {}) {
+  task = rebuild ? await rebuildTodayTask() : await ensureTodayTask();
   renderTodayOverview();
   renderHeatmap();
 }
