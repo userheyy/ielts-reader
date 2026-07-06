@@ -230,5 +230,9 @@
 .ann-btns button:disabled { opacity: .45; cursor: default; }
 .ann-btns .ann-mark { border: 0; background: #d7a53b; color: #fff; font-weight: 700; }
 .ann-btns .ann-mark:hover { background: #c2932f; }
+.ann-btns .ann-mark.ann-mark-paused { background: #b0b0b0; }
+.ann-btns .ann-mark.ann-mark-paused:hover { background: #a0a0a0; }
 .ann-btns .ann-export { border-color: var(--green-dark); color: var(--green-dark); font-weight: 600; }
 .ann-hint { margin-top: 8px; color: #8a958c; font-size: 12px; line-height: 1.6; }
+.ann-warn { padding: 8px 10px; margin-bottom: 8px; background: #fff3cd; color: #7a5b00; border-left: 3px solid #d7a53b; border-radius: 4px; font-size: 13px; font-weight: 600; }
+.ann-flow { padding: 6px 10px; margin-bottom: 10px; background: #f2f8ee; color: #3c5a2b; border-radius: 4px; font-size: 13px; line-height: 1.6; }

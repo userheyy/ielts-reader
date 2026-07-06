@@ -191,8 +191,8 @@ function initAudio() {
     if (seek) seek.max = duration;
   });
   audio.addEventListener("timeupdate", onTick);
-  audio.addEventListener("play", refreshPlayBtn);
-  audio.addEventListener("pause", refreshPlayBtn);
+  audio.addEventListener("play", () => { refreshPlayBtn(); if (ANNOTATE) refreshAnnPanel(); });
+  audio.addEventListener("pause", () => { refreshPlayBtn(); if (ANNOTATE) refreshAnnPanel(); });
   audio.addEventListener("ended", refreshPlayBtn);
 }
 
@@ -971,25 +971,42 @@ function annPanelHTML() {
   return '<div class="pl-card ann-card" id="ann-panel"></div>';
 }
 
+function flashAnnHint(msg) {
+  const panel = document.getElementById("ann-panel");
+  if (!panel) return;
+  let hint = panel.querySelector(".ann-warn");
+  if (!hint) {
+    hint = document.createElement("div");
+    hint.className = "ann-warn";
+    panel.prepend(hint);
+  }
+  hint.textContent = msg;
+  clearTimeout(hint._t);
+  hint._t = setTimeout(() => hint.remove(), 2500);
+}
+
 function refreshAnnPanel() {
   const panel = document.getElementById("ann-panel");
   if (!panel) return;
   const done = annStarts.filter((x) => x != null).length;
   const cur = segs[annIdx];
   const last = annLast >= 0 ? segs[annLast] : null;
+  const paused = !audio || audio.paused;
+  const markLabel = !audio || audioFailed ? "音频缺失" : paused ? "先按 ▶ 播放" : "打点(Space)";
+  const markCls = "ann-mark" + (paused ? " ann-mark-paused" : "");
   panel.innerHTML = `
     <div class="ann-prog">打点进度 ${done}/${segs.length}</div>
+    <div class="ann-flow">第一步 <b>按 ▶ 播放音频</b>;第二步 听到"当前待打点句"开口的瞬间按 <b>Space</b>。</div>
     ${cur ? `<div class="ann-cur-en"><b>待打点 · 第 ${cur.id} 句</b><br>${esc(cur.en)}</div>`
           : '<div class="ann-cur-en">全部句子都打完点了,可以导出。</div>'}
     <div class="ann-btns">
-      <button type="button" id="ann-mark" class="ann-mark"${audio && !audioFailed ? "" : " disabled"}>打点(Space)</button>
+      <button type="button" id="ann-mark" class="${markCls}"${audio && !audioFailed ? "" : " disabled"}>${markLabel}</button>
       <button type="button" id="ann-minus"${last ? "" : " disabled"}>−0.2s</button>
       <button type="button" id="ann-plus"${last ? "" : " disabled"}>+0.2s</button>
       <button type="button" id="ann-export" class="ann-export">导出 JSON</button>
     </div>
     ${last ? `<div class="ann-hint">最近打点:第 ${last.id} 句 = ${annStarts[annLast].toFixed(1)}s(±0.2s 微调它并回跳试听)</div>` : ""}
-    <div class="ann-hint">流程:播放音频,听到"当前待打点句"开口的瞬间按 Space,自动推进到下一句;
-      点左侧任意句可选中重打;导出的 JSON 覆盖 <code>data/listening/${esc(partId)}.json</code> 即完成打点。</div>`;
+    <div class="ann-hint">点左侧任意句可选中重打;导出的 JSON 覆盖 <code>data/listening/${esc(partId)}.json</code> 即完成打点。</div>`;
 }
 
 // 打点比普通播放宽松:audio 对象存在、没触发 error 就允许记录 currentTime。
@@ -1001,6 +1018,11 @@ function refreshAnnPanel() {
 function annMark() {
   if (!audio || audioFailed || annIdx >= segs.length || annIdx < 0) return;
   const t = Number(audio.currentTime);
+  // 音频没在播放且几乎在起点 → 用户还没开播,阻止把所有句子打成 0 秒
+  if (audio.paused && (!isFinite(t) || t < 0.5)) {
+    flashAnnHint("请先按 ▶ 播放音频,再按 Space 打点");
+    return;
+  }
   annStarts[annIdx] = Math.round((isFinite(t) ? t : 0) * 10) / 10;
   annLast = annIdx;
   // 依次推进:找下一个未打点的句;都打过就顺延+1
