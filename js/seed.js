@@ -4,7 +4,7 @@
 //   避免污染 seed 文件,也避免与生词库互相干扰。
 // - 复习池 = localStorage 生词 ∪ 已加入复习的内置词;同名去重,生词优先(见 spec §5.4)。
 
-import { loadAll as loadVocab } from "./store.js?v=6";
+import { loadAll as loadVocab } from "./store.js?v=7";
 
 const SEED_URL = "data/vocab-seed.json";
 const ADDED_KEY = "ielts_vocab_seed_added";   // 已加入复习的内置词: { [word]: true }

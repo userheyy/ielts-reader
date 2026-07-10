@@ -1,4 +1,6 @@
 // 生词库存储层。浏览器用 localStorage;无 localStorage(如 Node)时退回内存,便于测试。
+import { schedule } from "./srs.js?v=1";
+
 const KEY = "ielts_vocab";
 
 const mem = { v: null }; // Node 退回存储(模块级共享;测试文件开头需调用 __resetMem() 隔离)
@@ -124,25 +126,12 @@ export function gradeReview(word, rating, now = new Date()) {
   const list = loadAll();
   const idx = list.findIndex((e) => e.word.toLowerCase() === word.toLowerCase());
   if (idx < 0) throw new Error("生词不存在");
-  const r = reviewState(list[idx]);
-  const day = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  let interval = 0;
-  if (rating === "forgot") {
-    r.wrong += 1; r.lapses += 1; r.streak = 0; r.level = Math.max(0, r.level - 2);
-  } else if (rating === "fuzzy") {
-    r.fuzzy += 1; r.streak = 0; r.level = Math.max(0, r.level - 1); interval = 1;
-  } else if (rating === "remembered") {
-    r.correct += 1; r.streak += 1; r.level = Math.min(7, r.level + 1);
-    interval = [0, 1, 3, 7, 14, 30, 60, 120][r.level];
-  } else throw new Error("未知评分");
-  day.setDate(day.getDate() + interval);
-  r.next_due = localDateKey(day);
-  r.history.push({ date: now.toISOString(), rating, level: r.level, interval });
-  if (r.history.length > 100) r.history = r.history.slice(-100);
-  list[idx].review = r;
-  list[idx].status = r.level >= 5 && r.streak >= 3 ? "mastered" : "learning";
+  // 调度交给共享 SRS(默认 FSRS,可设置回退梯度);next_due/level/统计等由其维护。
+  const { review, interval } = schedule(list[idx].review, rating, now);
+  list[idx].review = review;
+  list[idx].status = review.level >= 5 && review.streak >= 3 ? "mastered" : "learning";
   saveAll(list);
-  return { review: r, interval, status: list[idx].status };
+  return { review, interval, status: list[idx].status };
 }
 
 export function getReviewStats() {

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思备考 · 生词</title>
-  <link rel="stylesheet" href="css/style.css?v=10" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
   <style>
     /* 生词页 4 tab 壳(今日/复习/词库/测试)。原 daily/library/test 页复用 iframe 嵌入。 */
     .vocab-tabs { display: flex; gap: 6px; border-bottom: 1px solid #ddd; margin: 12px 0 16px; }
@@ -53,6 +53,10 @@
           <h2>随机复习</h2>
           <p>错得越多，出现得越频繁；记得越牢，再见面的间隔越长。</p>
           <div class="review-stats" id="review-stats"></div>
+          <div class="review-mode" id="review-mode" role="group" aria-label="复习方式">
+            <button type="button" data-mode="spell" class="active">✍️ 拼写</button>
+            <button type="button" data-mode="recall">👁 认词</button>
+          </div>
           <div class="review-buttons">
             <button id="start-review">开始抽词</button>
             <!-- 朗读控件统一在 settings.html 配置 -->
@@ -68,6 +72,16 @@
           <div class="review-hint" id="review-hint" hidden>
             <div id="review-hint-morph"></div>
             <span class="hint-tip">先看词根，试着推出词义，再翻答案 —— 主动回忆更牢</span>
+          </div>
+          <!-- 拼写(主动回忆)面板:拼写模式下先给中文释义+挖空例句,让你打出单词 -->
+          <div class="review-cloze" id="review-cloze" hidden>
+            <div class="cloze-def" id="review-cloze-def"></div>
+            <div class="cloze-sentence" id="review-cloze-sentence" hidden></div>
+            <div class="cloze-input-row">
+              <input type="text" id="review-input" placeholder="拼出这个英文词…" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" />
+              <button type="button" id="review-submit">提交</button>
+            </div>
+            <div class="cloze-feedback" id="review-feedback" hidden></div>
           </div>
           <div class="review-answer" id="review-answer">
             <strong id="review-def"></strong>
@@ -134,6 +148,6 @@
       activate(initial);
     })();
   </script>
-  <script type="module" src="js/vocab.js?v=8"></script>
+  <script type="module" src="js/vocab.js?v=10"></script>
 </body>
 </html>

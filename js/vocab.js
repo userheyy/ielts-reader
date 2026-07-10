@@ -1,8 +1,10 @@
-import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStats } from "./store.js?v=6";
+import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStats } from "./store.js?v=7";
 import { bindProfileBackupUI } from "./profile-backup.js";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
-import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=1";
+import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=2";
+import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
+import { schedule } from "./srs.js?v=1";
 
 const rowsEl = document.getElementById("rows");
 const countEl = document.getElementById("count");
@@ -21,11 +23,36 @@ const speakReviewButton = document.getElementById("speak-review-word");
 const reviewHint = document.getElementById("review-hint");
 const reviewHintMorph = document.getElementById("review-hint-morph");
 const reviewAids = document.getElementById("review-aids");
+const reviewWordLine = reviewCard.querySelector(".review-word-line");
+const reviewModeEl = document.getElementById("review-mode");
+const reviewCloze = document.getElementById("review-cloze");
+const reviewClozeDef = document.getElementById("review-cloze-def");
+const reviewClozeSentence = document.getElementById("review-cloze-sentence");
+const reviewInput = document.getElementById("review-input");
+const reviewSubmit = document.getElementById("review-submit");
+const reviewFeedback = document.getElementById("review-feedback");
 let currentReviewWord = null;
 let sessionReviewed = 0;
 let sessionRemembered = 0;
 let rolling = false;
 let reviewPool = []; // 复习池:生词 ∪ 已加入的内置词(异步构建)
+let suggestedRating = null; // 拼写判分给出的建议评分
+
+// 复习方式:'spell'(拼写/主动回忆,默认) | 'recall'(认词)。存 localStorage。
+const MODE_KEY = "ielts_review_mode";
+let spellMode = (localStorage.getItem(MODE_KEY) || "spell") === "spell";
+function applyModeUI() {
+  reviewModeEl?.querySelectorAll("button").forEach((b) =>
+    b.classList.toggle("active", (b.dataset.mode === "spell") === spellMode));
+}
+function clearRatingSuggestion() {
+  reviewActions.querySelectorAll("button").forEach((b) => b.classList.remove("suggested"));
+}
+function highlightRating(rating) {
+  clearRatingSuggestion();
+  const b = rating && reviewActions.querySelector(`button[data-rating="${rating}"]`);
+  if (b) b.classList.add("suggested");
+}
 
 async function refreshReviewPool() {
   reviewPool = await buildReviewPool();
@@ -90,6 +117,7 @@ function renderReviewStats() {
 
 function showReviewWord(entry) {
   currentReviewWord = entry;
+  suggestedRating = null;
   reviewCard.classList.remove("idle", "rolling", "revealed");
   reviewWord.textContent = entry.word;
   reviewPos.textContent = entry.pos || "";
@@ -109,11 +137,53 @@ function showReviewWord(entry) {
     : "";
   reviewAnswer.hidden = true;
   reviewActions.hidden = true;
-  revealButton.hidden = false;
-  revealButton.disabled = false;
-  revealButton.textContent = morphHTML ? "显示释义 + 记忆法" : "显示释义";
-  speakReviewButton.disabled = !speechSupported();
+  clearRatingSuggestion();
+
+  if (spellMode) {
+    // 拼写模式:藏单词,给中文释义 + 挖空例句,让你打出这个词(主动产出更牢)
+    reviewWordLine.hidden = true;
+    revealButton.hidden = true;
+    reviewCloze.hidden = false;
+    reviewClozeDef.textContent = entry.def || "（凭词根/例句拼出这个词）";
+    const bl = blankSentence(entry.sentence_en, entry.word);
+    reviewClozeSentence.hidden = !bl.ok;
+    if (bl.ok) reviewClozeSentence.innerHTML = bl.html;
+    reviewFeedback.hidden = true;
+    reviewFeedback.className = "cloze-feedback";
+    reviewInput.value = "";
+    reviewInput.disabled = false;
+    reviewSubmit.disabled = false;
+    speakReviewButton.disabled = true; // 别用发音泄露拼写
+    setTimeout(() => reviewInput.focus(), 30);
+  } else {
+    // 认词模式(原行为):亮单词,点"显示"翻答案
+    reviewWordLine.hidden = false;
+    reviewCloze.hidden = true;
+    revealButton.hidden = false;
+    revealButton.disabled = false;
+    revealButton.textContent = morphHTML ? "显示释义 + 记忆法" : "显示释义";
+    speakReviewButton.disabled = !speechSupported();
+  }
   reviewProgress.textContent = `本轮 ${sessionReviewed} 词 · 记住 ${sessionRemembered} 词`;
+}
+
+// 拼写模式提交:判分 → 反馈 → 亮答案 + 预选建议评分(用户仍可改)
+function submitSpelling() {
+  if (!currentReviewWord || reviewCard.classList.contains("revealed")) return;
+  const result = judgeSpelling(reviewInput.value, currentReviewWord.word);
+  suggestedRating = ratingFromResult(result);
+  const fb = feedbackFor(result, currentReviewWord.word);
+  reviewFeedback.innerHTML = fb.text;
+  reviewFeedback.className = "cloze-feedback " + fb.cls;
+  reviewFeedback.hidden = false;
+  reviewInput.disabled = true;
+  reviewSubmit.disabled = true;
+  reviewCard.classList.add("revealed");
+  reviewWordLine.hidden = false; // 现在把正确单词亮出来
+  reviewAnswer.hidden = false;
+  reviewActions.hidden = false;
+  highlightRating(suggestedRating);
+  speakReviewButton.disabled = !speechSupported();
 }
 
 async function rollNext() {
@@ -133,6 +203,9 @@ async function rollNext() {
   reviewActions.hidden = true;
   reviewAnswer.hidden = true;
   reviewHint.hidden = true;
+  reviewCloze.hidden = true;      // 抽词动画期间收起拼写面板
+  reviewWordLine.hidden = false;  // 露出单词行做"老虎机"滚动
+  clearRatingSuggestion();
   revealButton.disabled = true;
   speakReviewButton.disabled = true;
   let tick = 0;
@@ -159,6 +232,26 @@ revealButton.addEventListener("click", () => {
   reviewActions.hidden = false;
   revealButton.hidden = true;
 });
+
+// 拼写模式:提交 / 回车提交
+reviewSubmit.addEventListener("click", submitSpelling);
+reviewInput.addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter") { ev.preventDefault(); submitSpelling(); }
+});
+// 复习方式切换(拼写 / 认词);切换后若正在出题(未翻答案)则按新模式重出
+reviewModeEl.addEventListener("click", (ev) => {
+  const b = ev.target.closest("button[data-mode]");
+  if (!b) return;
+  const next = b.dataset.mode === "spell";
+  if (next === spellMode) return;
+  spellMode = next;
+  localStorage.setItem(MODE_KEY, spellMode ? "spell" : "recall");
+  applyModeUI();
+  if (currentReviewWord && !rolling && !reviewCard.classList.contains("revealed")) {
+    showReviewWord(currentReviewWord);
+  }
+});
+applyModeUI();
 reviewActions.addEventListener("click", (ev) => {
   const button = ev.target.closest("button[data-rating]");
   if (!button || !currentReviewWord) return;
@@ -176,41 +269,10 @@ function gradePoolWord(entry, rating) {
   if (entry._origin === "vocab") {
     gradeReview(entry.word, rating);
   } else {
-    // 内置词:用同一套评分算法算出新的 review,存到 seed_review
-    const cur = getSeedReview(entry.word) || { level: 0, next_due: null, history: [] };
-    const next = computeReview(cur, rating);
-    setSeedReview(entry.word, next);
+    // 内置词:同一套调度(FSRS/梯度),结果存到 seed_review 独立存储
+    const { review } = schedule(getSeedReview(entry.word), rating);
+    setSeedReview(entry.word, review);
   }
-}
-
-// 复刻 store.gradeReview 的记忆曲线计算(不依赖 localStorage 生词库),供内置词用。
-function computeReview(review, rating, now = new Date()) {
-  const r = {
-    level: Number(review.level) || 0,
-    next_due: review.next_due || null,
-    history: Array.isArray(review.history) ? review.history.slice() : [],
-    correct: Number(review.correct) || 0,
-    wrong: Number(review.wrong) || 0,
-    fuzzy: Number(review.fuzzy) || 0,
-    streak: Number(review.streak) || 0,
-    lapses: Number(review.lapses) || 0,
-  };
-  const day = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  let interval = 0;
-  if (rating === "forgot") {
-    r.wrong += 1; r.lapses += 1; r.streak = 0; r.level = Math.max(0, r.level - 2);
-  } else if (rating === "fuzzy") {
-    r.fuzzy += 1; r.streak = 0; r.level = Math.max(0, r.level - 1); interval = 1;
-  } else if (rating === "remembered") {
-    r.correct += 1; r.streak += 1; r.level = Math.min(7, r.level + 1);
-    interval = [0, 1, 3, 7, 14, 30, 60, 120][r.level];
-  }
-  day.setDate(day.getDate() + interval);
-  const y = day.getFullYear(), m = String(day.getMonth() + 1).padStart(2, "0"), d = String(day.getDate()).padStart(2, "0");
-  r.next_due = `${y}-${m}-${d}`;
-  r.history.push({ date: now.toISOString(), rating, level: r.level, interval });
-  if (r.history.length > 100) r.history = r.history.slice(-100);
-  return r;
 }
 
 function render(filter = "") {

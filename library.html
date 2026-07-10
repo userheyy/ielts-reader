@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思核心词库</title>
-  <link rel="stylesheet" href="css/style.css?v=10" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
   <script>if(new URLSearchParams(location.search).get("embed")==="1")document.documentElement.classList.add("embed");</script>
 </head>
 <body>
@@ -32,9 +32,12 @@
     </div>
     <input type="text" class="lib-search" id="lib-search" placeholder="搜索单词或释义…" />
     <!-- 朗读控件统一在 settings.html 配置 -->
+    <div class="lib-cefr-filter" id="lib-cefr-filter" aria-label="按 CEFR 难度筛选"></div>
+    <div class="lib-pager" id="lib-pager-top"></div>
     <div id="lib-body"></div>
+    <div class="lib-pager bottom" id="lib-pager-bottom"></div>
     <p class="lib-empty" id="lib-empty" hidden>词库还没有数据。第一批词生成后会出现在这里。</p>
   </div>
-  <script type="module" src="js/library.js?v=3"></script>
+  <script type="module" src="js/library.js?v=8"></script>
 </body>
 </html>

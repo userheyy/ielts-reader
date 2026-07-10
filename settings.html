@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>设置</title>
-  <link rel="stylesheet" href="css/style.css?v=10" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
   <link rel="stylesheet" href="css/settings.css?v=1" />
 </head>
 <body>
@@ -79,6 +79,33 @@
     </div>
 
     <div class="card set-card">
+      <h3>复习算法</h3>
+      <p class="set-desc">
+        决定「复习 / 今日」里每个词多久后再出现。默认用 <b>FSRS</b>(自适应记忆模型,按你的对错动态排间隔,
+        比固定梯度更省复习次数);也可切回简单的固定梯度。设置对全站复习/今日任务生效。
+      </p>
+      <div class="set-row">
+        <label for="srs-algo">调度算法</label>
+        <select id="srs-algo" style="max-width:340px">
+          <option value="fsrs">FSRS · 智能自适应间隔（推荐）</option>
+          <option value="ladder">固定梯度 · 1/3/7/14/30/60/120 天</option>
+        </select>
+      </div>
+      <div class="set-row" id="srs-retention-row">
+        <label for="srs-retention">目标记忆率</label>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+          <input type="range" id="srs-retention" min="80" max="95" step="1" value="90" style="width:220px" />
+          <b id="srs-retention-val" style="min-width:44px">90%</b>
+        </div>
+      </div>
+      <p class="set-warn" style="color:var(--muted)">
+        记忆率越高 → 间隔越短、复习越勤、记得越牢；越低 → 间隔越长、复习越少。90% 是通用推荐。
+        仅 FSRS 生效；改动只影响之后的复习安排，不会重排已排好的词。
+      </p>
+      <div id="srs-status" class="set-status" aria-live="polite"></div>
+    </div>
+
+    <div class="card set-card">
       <h3>数据</h3>
       <p class="set-desc">
         生词、导入的文章、朗读设置等数据都存在本浏览器里,换电脑或清浏览器缓存会丢。
@@ -87,6 +114,6 @@
       </p>
     </div>
   </div>
-  <script type="module" src="js/settings.js?v=1"></script>
+  <script type="module" src="js/settings.js?v=2"></script>
 </body>
 </html>

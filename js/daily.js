@@ -1,12 +1,14 @@
 // 每日单词页控制器:日历热力图 + 今日任务卡 + 过词(B交互) + 节奏设置。
 import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
-import { gradeReview } from "./store.js?v=6";
-import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=1";
+import { gradeReview } from "./store.js?v=7";
+import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=2";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
+import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
+import { schedule } from "./srs.js?v=1";
 import {
   ensureTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=1";
+} from "./daily-store.js?v=2";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -19,6 +21,20 @@ let task = null;          // { date, review:[], newWords:[], day }
 let queue = [];           // 待过的词队列: [{entry, kind:'review'|'new', origin}]
 let currentItem = null;
 let seedIndex = new Map();
+let studySuggestedRating = null;
+
+// 复习方式与「复习」页共用同一开关(localStorage);默认拼写。
+// 拼写(主动回忆)只对复习词生效;新词是初见,始终走认词。
+const MODE_KEY = "ielts_review_mode";
+function isSpellMode() { return (localStorage.getItem(MODE_KEY) || "spell") === "spell"; }
+function clearStudySuggestion() {
+  $("study-actions").querySelectorAll("button").forEach((b) => b.classList.remove("suggested"));
+}
+function highlightStudyRating(rating) {
+  clearStudySuggestion();
+  const b = rating && $("study-actions").querySelector(`button[data-rating="${rating}"]`);
+  if (b) b.classList.add("suggested");
+}
 
 /* 朗读控件已迁移到 settings.html(F5) */
 
@@ -113,6 +129,9 @@ function showStudyCard() {
   studyWrap.hidden = false;
   todayCard.hidden = true;
   doneCard.hidden = true;
+  $("study-card").classList.remove("revealed");
+  studySuggestedRating = null;
+  clearStudySuggestion();
 
   const rec = task.day;
   const done = rec.reviewed_done + rec.new_done;
@@ -136,8 +155,50 @@ function showStudyCard() {
     ? renderAids(entry.aids, { skipMorphemes: true }) : "";
   $("study-answer").hidden = true;
   $("study-actions").hidden = true;
-  $("study-reveal").hidden = false;
-  $("study-reveal").textContent = morphHTML ? "显示释义 + 记忆法" : "显示释义";
+
+  // 拼写(主动回忆):仅复习词 + 拼写模式;新词初见走认词
+  const useSpell = currentItem.kind === "review" && isSpellMode() && !!(entry.def || entry.sentence_en);
+  const wordLine = $("study-card").querySelector(".review-word-line");
+  if (useSpell) {
+    wordLine.hidden = true;
+    $("study-reveal").hidden = true;
+    $("study-cloze").hidden = false;
+    $("study-cloze-def").textContent = entry.def || "（凭词根/例句拼出这个词）";
+    const bl = blankSentence(entry.sentence_en, entry.word);
+    $("study-cloze-sentence").hidden = !bl.ok;
+    if (bl.ok) $("study-cloze-sentence").innerHTML = bl.html;
+    $("study-feedback").hidden = true;
+    $("study-feedback").className = "cloze-feedback";
+    $("study-input").value = "";
+    $("study-input").disabled = false;
+    $("study-submit").disabled = false;
+    $("study-speak").disabled = true; // 别用发音泄露拼写
+    setTimeout(() => $("study-input").focus(), 30);
+  } else {
+    wordLine.hidden = false;
+    $("study-cloze").hidden = true;
+    $("study-reveal").hidden = false;
+    $("study-reveal").textContent = morphHTML ? "显示释义 + 记忆法" : "显示释义";
+    $("study-speak").disabled = !speechSupported();
+  }
+}
+
+// 拼写模式提交(今日过词):判分 → 反馈 → 亮答案 + 预选建议评分
+function submitStudySpelling() {
+  if (!currentItem || $("study-card").classList.contains("revealed")) return;
+  const result = judgeSpelling($("study-input").value, currentItem.entry.word);
+  studySuggestedRating = ratingFromResult(result);
+  const fb = feedbackFor(result, currentItem.entry.word);
+  $("study-feedback").innerHTML = fb.text;
+  $("study-feedback").className = "cloze-feedback " + fb.cls;
+  $("study-feedback").hidden = false;
+  $("study-input").disabled = true;
+  $("study-submit").disabled = true;
+  $("study-card").classList.add("revealed");
+  $("study-card").querySelector(".review-word-line").hidden = false;
+  $("study-answer").hidden = false;
+  $("study-actions").hidden = false;
+  highlightStudyRating(studySuggestedRating);
   $("study-speak").disabled = !speechSupported();
 }
 
@@ -145,6 +206,12 @@ $("study-reveal").addEventListener("click", () => {
   $("study-answer").hidden = false;
   $("study-actions").hidden = false;
   $("study-reveal").hidden = true;
+});
+
+// 拼写模式:提交 / 回车提交
+$("study-submit").addEventListener("click", submitStudySpelling);
+$("study-input").addEventListener("keydown", (ev) => {
+  if (ev.key === "Enter") { ev.preventDefault(); submitStudySpelling(); }
 });
 
 $("study-speak").addEventListener("click", () => {
@@ -170,36 +237,15 @@ $("study-actions").addEventListener("click", (ev) => {
   showStudyCard(); // 下一词(或结束)
 });
 
-// 评分路由:生词走 store.gradeReview;内置词走独立 SRS(computeReview + setSeedReview)
+// 评分路由:生词走 store.gradeReview;内置词走独立 SRS(共享 schedule + setSeedReview)
 function gradeItem(item, rating) {
   const w = item.entry.word;
   if (item.origin === "vocab") {
     try { gradeReview(w, rating); } catch { /* 万一不在生词库,忽略 */ }
   } else {
-    const cur = getSeedReview(w) || { level: 0, next_due: null, history: [] };
-    setSeedReview(w, computeReview(cur, rating));
+    const { review } = schedule(getSeedReview(w), rating);
+    setSeedReview(w, review);
   }
-}
-
-// 与 store.gradeReview 同款记忆曲线(不依赖 localStorage 生词库),供内置词用
-function computeReview(review, rating, now = new Date()) {
-  const r = {
-    level: Number(review.level) || 0, next_due: review.next_due || null,
-    history: Array.isArray(review.history) ? review.history.slice() : [],
-    correct: Number(review.correct) || 0, wrong: Number(review.wrong) || 0,
-    fuzzy: Number(review.fuzzy) || 0, streak: Number(review.streak) || 0,
-    lapses: Number(review.lapses) || 0,
-  };
-  const day = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  let interval = 0;
-  if (rating === "forgot") { r.wrong += 1; r.lapses += 1; r.streak = 0; r.level = Math.max(0, r.level - 2); }
-  else if (rating === "fuzzy") { r.fuzzy += 1; r.streak = 0; r.level = Math.max(0, r.level - 1); interval = 1; }
-  else if (rating === "remembered") { r.correct += 1; r.streak += 1; r.level = Math.min(7, r.level + 1); interval = [0,1,3,7,14,30,60,120][r.level]; }
-  day.setDate(day.getDate() + interval);
-  r.next_due = dateKey(day);
-  r.history.push({ date: now.toISOString(), rating, level: r.level, interval });
-  if (r.history.length > 100) r.history = r.history.slice(-100);
-  return r;
 }
 
 function finishStudy() {

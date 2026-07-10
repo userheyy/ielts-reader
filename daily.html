@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>每日单词</title>
-  <link rel="stylesheet" href="css/style.css?v=10" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
   <script>if(new URLSearchParams(location.search).get("embed")==="1")document.documentElement.classList.add("embed");</script>
 </head>
 <body>
@@ -68,6 +68,16 @@
           <div id="study-hint-morph"></div>
           <span class="hint-tip">先看词根，试着推出词义，再翻答案 —— 主动回忆更牢</span>
         </div>
+        <!-- 拼写(主动回忆)面板:仅复习词用;新词是初见,不考拼写 -->
+        <div class="review-cloze" id="study-cloze" hidden>
+          <div class="cloze-def" id="study-cloze-def"></div>
+          <div class="cloze-sentence" id="study-cloze-sentence" hidden></div>
+          <div class="cloze-input-row">
+            <input type="text" id="study-input" placeholder="拼出这个英文词…" autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" />
+            <button type="button" id="study-submit">提交</button>
+          </div>
+          <div class="cloze-feedback" id="study-feedback" hidden></div>
+        </div>
         <div class="review-answer" id="study-answer" hidden>
           <strong id="study-def"></strong>
           <p id="study-example"></p>
@@ -115,6 +125,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/daily.js?v=2"></script>
+  <script type="module" src="js/daily.js?v=4"></script>
 </body>
 </html>

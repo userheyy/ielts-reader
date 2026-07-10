@@ -94,9 +94,15 @@ function bankReady() {
 
 // ---- 组卷 ----
 function buildQuestion(q) {
-  // 干扰项：题库里其它词随机抽 3 个(按 word 去重)
+  // 干扰项：优先同词性(更贴近真实考法、更难靠词性一眼排除),不足再用其它词补足。
   const pool = BANK.filter((x) => x.word.toLowerCase() !== q.word.toLowerCase());
-  const distractors = sample(pool, 3).map((x) => x.word);
+  const samePos = q.pos ? pool.filter((x) => x.pos === q.pos) : [];
+  const picked = sample(samePos, 3);
+  if (picked.length < 3) {
+    const chosen = new Set(picked.map((x) => x.word));
+    picked.push(...sample(pool.filter((x) => !chosen.has(x.word)), 3 - picked.length));
+  }
+  const distractors = picked.slice(0, 3).map((x) => x.word);
   const options = shuffle([q.word, ...distractors]);
   return { q, options, answered: false, picked: null };
 }

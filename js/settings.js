@@ -2,6 +2,7 @@
 // key 存 localStorage 'ielts_ds_key',模型存 'ielts_ds_model'(与 js/ai.js 约定一致)。
 // 朗读 voice/rate 存 localStorage 'ielts_speech_voice' / 'ielts_speech_rate'(见 js/speech.js)。
 import { initSpeechControls, speakEnglish, stopSpeaking } from "./speech.js?v=6";
+import { getSrsSettings, setSrsSettings } from "./srs.js?v=1";
 
 // ---- 朗读控件挂载(voice/rate 存 localStorage,全站朗读读同一份) ----
 initSpeechControls(
@@ -122,6 +123,34 @@ testEl.addEventListener("click", async () => {
     testEl.disabled = false;
   }
 });
+
+// ---- 复习算法(FSRS / 梯度 + 目标记忆率)----
+const algoEl = document.getElementById("srs-algo");
+const retRow = document.getElementById("srs-retention-row");
+const retEl = document.getElementById("srs-retention");
+const retVal = document.getElementById("srs-retention-val");
+const srsStatus = document.getElementById("srs-status");
+function renderSrs() {
+  const s = getSrsSettings();
+  algoEl.value = s.algo;
+  const pct = Math.round(s.retention * 100);
+  retEl.value = String(pct);
+  retVal.textContent = pct + "%";
+  retRow.style.display = s.algo === "fsrs" ? "" : "none";
+}
+if (algoEl) {
+  algoEl.addEventListener("change", () => {
+    const s = setSrsSettings({ algo: algoEl.value });
+    renderSrs();
+    setStatus(srsStatus, s.algo === "fsrs" ? "已切到 FSRS 智能间隔" : "已切到固定梯度", "ok");
+  });
+  retEl.addEventListener("input", () => { retVal.textContent = retEl.value + "%"; });
+  retEl.addEventListener("change", () => {
+    const s = setSrsSettings({ retention: Number(retEl.value) / 100 });
+    setStatus(srsStatus, "目标记忆率已设为 " + Math.round(s.retention * 100) + "%", "ok");
+  });
+  renderSrs();
+}
 
 // 初始化
 modelEl.value = lsGet(MODEL_LS) || DEFAULT_MODEL;

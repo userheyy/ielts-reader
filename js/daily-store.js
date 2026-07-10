@@ -9,8 +9,8 @@
 // 关键约束:新词只放"已在 vocab-seed.json 生成了 aids 的词"(当前批次),
 // 游标不越过已生成边界;未生成 aids 的词不放出(等后续批次)。
 
-import { loadAll as loadVocab } from "./store.js?v=6";
-import { loadSeed, getSeedReview } from "./seed.js?v=1";
+import { loadAll as loadVocab } from "./store.js?v=7";
+import { loadSeed, getSeedReview } from "./seed.js?v=2";
 
 const KEY = "ielts_daily";
 const WORDLIST_URL = "tools/seed_wordlist.json";
