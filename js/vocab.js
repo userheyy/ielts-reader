@@ -1,8 +1,8 @@
 import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStats } from "./store.js?v=7";
 import { bindProfileBackupUI } from "./profile-backup.js";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
-import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
-import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=2";
+import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=2";
+import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=3";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
 
@@ -132,9 +132,9 @@ function showReviewWord(entry) {
     reviewHint.hidden = true;
   }
   // 显示区(释义 + 完整记忆法)先隐藏,点"显示"才亮
-  reviewAids.innerHTML = aidsHasContent(entry.aids)
+  reviewAids.innerHTML = (aidsHasContent(entry.aids)
     ? renderAids(entry.aids, { skipMorphemes: true }) // 词根已在提示区,正文跳过避免重复
-    : "";
+    : "") + renderCollocations(entry.collocations);
   reviewAnswer.hidden = true;
   reviewActions.hidden = true;
   clearRatingSuggestion();

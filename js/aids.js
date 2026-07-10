@@ -84,3 +84,19 @@ export function renderAids(aids, opts = {}) {
   }
   return `<div class="aids">${blocks.join("")}</div>`;
 }
+
+// 高频搭配(collocations):顶层字段 [{en, zh}],与 aids 平行。返回一个独立 aid-block 或 ""。
+export function renderCollocations(cols) {
+  const list = Array.isArray(cols) ? cols : [];
+  const pills = list
+    .map((c) => {
+      const en = esc(c && (c.en || c.phrase) || "");
+      if (!en) return "";
+      const zh = c.zh ? `<i>${esc(c.zh)}</i>` : "";
+      return `<span class="colloc-pill">${en}${zh}</span>`;
+    })
+    .filter(Boolean)
+    .join("");
+  if (!pills) return "";
+  return `<div class="aids"><div class="aid-block"><span class="aid-label">搭配</span><div class="colloc-pills">${pills}</div></div></div>`;
+}

@@ -457,6 +457,14 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
   color: #2563EB; border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 600;
 }
 .fam-pill i { color: #7a837c; font-style: normal; font-weight: 400; font-size: 11.5px; }
+/* 高频搭配 chips(青绿,区别于蓝色词族) */
+.colloc-pills { display: inline-flex; gap: 7px; flex-wrap: wrap; margin-top: 5px; }
+.colloc-pill {
+  display: inline-flex; align-items: baseline; gap: 5px;
+  background: rgba(16,185,129,.08); border: 1px solid rgba(16,185,129,.22);
+  color: #0f7a5a; border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 600;
+}
+.colloc-pill i { color: #6a8578; font-style: normal; font-weight: 400; font-size: 11.5px; }
 .aid-mnemo { color: #6a4a1e; background: rgba(245,158,11,.07); border-radius: 7px; padding: 7px 11px; }
 .form-list { display: inline-flex; gap: 12px; flex-wrap: wrap; margin-top: 3px; }
 .form-item { font-size: 12.5px; color: #56605a; }

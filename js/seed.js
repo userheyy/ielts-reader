@@ -93,17 +93,21 @@ export async function buildReviewPool() {
       passage_id: "",
       sentence_id: null,
       aids: s.aids || null,
+      collocations: s.collocations || null,
       review: getSeedReview(s.word) || { level: 0, next_due: null, history: [] },
       _origin: "seed",
     });
   }
-  // 再放生词,同名覆盖(生词优先);若生词 aids 空而 seed 有,则借用
+  // 再放生词,同名覆盖(生词优先);若生词 aids/搭配 空而 seed 有,则借用
   for (const v of vocab) {
     const w = (v.word || "").toLowerCase();
     const seedHit = byWord.get(w);
     const merged = { ...v, _origin: "vocab" };
     if ((!merged.aids || !hasAids(merged.aids)) && seedHit && seedHit.aids) {
       merged.aids = seedHit.aids;
+    }
+    if ((!merged.collocations || !merged.collocations.length) && seedHit && seedHit.collocations) {
+      merged.collocations = seedHit.collocations;
     }
     byWord.set(w, merged);
   }

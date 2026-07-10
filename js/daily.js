@@ -1,14 +1,14 @@
 // 每日单词页控制器:日历热力图 + 今日任务卡 + 过词(B交互) + 节奏设置。
-import { renderAids, renderMorphemes, aidsHasContent } from "./aids.js?v=1";
+import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=2";
 import { gradeReview } from "./store.js?v=7";
-import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=2";
+import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=3";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=2";
+} from "./daily-store.js?v=3";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -151,8 +151,8 @@ function showStudyCard() {
   // 释义 + 完整 aids(先隐藏)
   $("study-def").textContent = entry.def || "暂无释义";
   $("study-example").textContent = entry.sentence_en || "";
-  $("study-aids").innerHTML = aidsHasContent(entry.aids)
-    ? renderAids(entry.aids, { skipMorphemes: true }) : "";
+  $("study-aids").innerHTML = (aidsHasContent(entry.aids)
+    ? renderAids(entry.aids, { skipMorphemes: true }) : "") + renderCollocations(entry.collocations);
   $("study-answer").hidden = true;
   $("study-actions").hidden = true;
 

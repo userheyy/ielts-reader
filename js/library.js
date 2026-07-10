@@ -1,8 +1,8 @@
 // 词库页:展示内置雅思核心词,支持"按词根成组 / 按词频列表"两视图、搜索、加入复习、朗读。
 // 渲染方式:分组成一个个「List」(每组固定词数),配翻页器。每页整块渲染,不做无限滚动懒加载
 // —— 规避之前 IntersectionObserver 哨兵在 iframe 内滚到中途卡住、不再追加的问题。
-import { renderAids, aidsHasContent } from "./aids.js?v=1";
-import { loadSeed, getSeedMeta, isSeedAdded, setSeedAdded, seedAddedCount, groupSeedByRoot } from "./seed.js?v=2";
+import { renderAids, aidsHasContent, renderCollocations } from "./aids.js?v=2";
+import { loadSeed, getSeedMeta, isSeedAdded, setSeedAdded, seedAddedCount, groupSeedByRoot } from "./seed.js?v=3";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 
 const bodyEl = document.getElementById("lib-body");
@@ -50,6 +50,7 @@ function wordCardHTML(w) {
       </div>
       <div class="lib-def">${esc(w.def || "")}</div>
       ${aidsHasContent(w.aids) ? renderAids(w.aids) : '<div class="aid-block" style="color:#9aa39c">（记忆法生成中）</div>'}
+      ${renderCollocations(w.collocations)}
       <div style="margin-top:11px">${addBtn}</div>
     </div>`;
 }
