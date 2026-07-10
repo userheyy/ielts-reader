@@ -144,25 +144,19 @@ function queuedNewWords(d, todayKey) {
 }
 
 // ---------- 今日任务生成 ----------
-// 幂等:同一天重复调用返回已缓存的当天任务(不重排、不换词)。
-// 返回 { date, review:[...], newWords:[...], day: <days[date] 记录> }
-export async function ensureTodayTask(now = new Date()) {
-  const todayKey = dateKey(now);
-  const d = loadDaily();
-  const seedIndex = await getSeedIndex();
-  const wordlist = await getWordlist();
+// 复原已存在的当天任务:词表用当天存的 new_words + 当前到期复习。
+function restoreDay(d, seedIndex, todayKey) {
+  const rec = d.days[todayKey];
+  const review = reviewDue(seedIndex, todayKey);
+  const newWords = (rec.new_words || [])
+    .map((w) => seedIndex.get(w.toLowerCase()))
+    .filter(Boolean);
+  return { date: todayKey, review, newWords, day: rec };
+}
 
-  // 已有当天记录 → 直接复原任务(词表用当天存的 new_words + 当前到期复习)
-  if (d.days[todayKey]) {
-    const rec = d.days[todayKey];
-    const review = reviewDue(seedIndex, todayKey);
-    const newWords = (rec.new_words || [])
-      .map((w) => seedIndex.get(w.toLowerCase()))
-      .filter(Boolean);
-    return { date: todayKey, review, newWords, day: rec };
-  }
-
-  // 生成新的一天
+// 生成(或重排)当天任务:按当前 settings 现取现排复习词与新词,落盘并返回。
+// 调用前请确保这是"该重排"的时机(新建当天,或未开始时套用新配额)。
+function generateDay(d, seedIndex, wordlist, todayKey) {
   const review = reviewDue(seedIndex, todayKey);
   const reviewCap = d.settings.review_cap;
   const reviewList = reviewCap != null ? review.slice(0, reviewCap) : review;
@@ -199,6 +193,33 @@ export async function ensureTodayTask(now = new Date()) {
   d.new_word_cursor = cursorCount;
   saveDaily(d);
   return { date: todayKey, review: reviewList, newWords, day: rec };
+}
+
+// 幂等:同一天重复调用返回已缓存的当天任务(不重排、不换词)。
+// 返回 { date, review:[...], newWords:[...], day: <days[date] 记录> }
+export async function ensureTodayTask(now = new Date()) {
+  const todayKey = dateKey(now);
+  const d = loadDaily();
+  const seedIndex = await getSeedIndex();
+  const wordlist = await getWordlist();
+
+  if (d.days[todayKey]) return restoreDay(d, seedIndex, todayKey);
+  return generateDay(d, seedIndex, wordlist, todayKey);
+}
+
+// 重排当天任务以套用最新设置(new_per_day 等)。
+// 仅当今天"还没开始"(reviewed_done + new_done === 0)时才真正重排——避免把
+// 用户已过的词/进度冲掉;已开始则原样复原(等价于 ensureTodayTask)。
+export async function rebuildTodayTask(now = new Date()) {
+  const todayKey = dateKey(now);
+  const d = loadDaily();
+  const seedIndex = await getSeedIndex();
+  const wordlist = await getWordlist();
+
+  const rec = d.days[todayKey];
+  const started = rec && (rec.reviewed_done + rec.new_done) > 0;
+  if (rec && started) return restoreDay(d, seedIndex, todayKey);
+  return generateDay(d, seedIndex, wordlist, todayKey);
 }
 
 // 记录一次"过词"完成(复习或新词),更新当天进度与完成态。
@@ -260,3 +281,9 @@ export function totalWordsDone() {
 
 // 供测试重置
 export function __reset() { if (backend._mem) backend._mem.v = null; _wordlistCache = null; _seedIndexCache = null; }
+
+// 供测试注入词表 / 内置词索引,绕过 fetch(Node 下相对路径 fetch 拿不到文件)。
+export function __setCachesForTest({ wordlist, seedIndex } = {}) {
+  if (wordlist) _wordlistCache = wordlist;
+  if (seedIndex) _seedIndexCache = seedIndex;
+}
