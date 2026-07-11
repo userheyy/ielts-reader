@@ -1,6 +1,6 @@
 // test-pool.js 单测：词池收集 + 组卷。注入内存依赖，绕过 fetch/localStorage。
 import assert from "node:assert";
-import { buildTestPool } from "./test-pool.js";
+import { buildTestPool, buildOneQuestion, buildQuestions } from "./test-pool.js";
 
 // 造一个假 seedIndex：Map<wordLower, {word, def, pos, sentence_en, sentence_zh, phonetic}>
 function fakeSeed(words) {
@@ -47,6 +47,55 @@ const SEED = fakeSeed([
   const pool = buildTestPool({ seedIndex: SEED, seedReview, vocab });
   assert.equal(pool.length, 1, "同名应去重为 1 条");
   assert.equal(pool[0].def, "预测(生词版)", "同名时生词优先");
+}
+
+// 固定 random 工厂：给一串 [0,1) 值，按序返回，用尽后回 0。便于确定性断言。
+function seqRandom(vals) {
+  let i = 0;
+  return () => (i < vals.length ? vals[i++] : 0);
+}
+
+const FULL_REVIEW = { predict: 1, reduce: 1, benefit: 1, ancient: 1, verdict: 1 };
+
+// ---- 2) buildOneQuestion：zh2en 方向 ----
+{
+  const pool = buildTestPool({ seedIndex: SEED, seedReview: FULL_REVIEW, vocab: [] });
+  const target = pool.find((p) => p.word === "predict");
+  // direction 由第一个 random 决定：<0.5 => zh2en
+  const q = buildOneQuestion(target, pool, seqRandom([0.1, 0.2, 0.4, 0.6]));
+  assert.equal(q.direction, "zh2en", "random<0.5 应为 zh2en");
+  assert.equal(q.stem, "预测", "zh2en 题干应是中文释义");
+  assert.equal(q.options.length, 4, "应有 4 个选项");
+  const correct = q.options.filter((o) => o.correct);
+  assert.equal(correct.length, 1, "恰好 1 个正确项");
+  assert.equal(correct[0].text, "predict", "zh2en 正确项文本应是英文词");
+  assert.equal(new Set(q.options.map((o) => o.text)).size, 4, "选项文本不重复");
+  const poolWords = new Set(pool.map((p) => p.word));
+  assert.ok(q.options.every((o) => poolWords.has(o.text)), "zh2en 选项都应来自池内英文词");
+}
+
+// ---- 3) buildOneQuestion：en2zh 方向 ----
+{
+  const pool = buildTestPool({ seedIndex: SEED, seedReview: FULL_REVIEW, vocab: [] });
+  const target = pool.find((p) => p.word === "predict");
+  const q = buildOneQuestion(target, pool, seqRandom([0.9, 0.2, 0.4, 0.6]));
+  assert.equal(q.direction, "en2zh", "random>=0.5 应为 en2zh");
+  assert.equal(q.stem, "predict", "en2zh 题干应是英文词");
+  const correct = q.options.filter((o) => o.correct);
+  assert.equal(correct[0].text, "预测", "en2zh 正确项文本应是中文释义");
+  const poolDefs = new Set(pool.map((p) => p.def));
+  assert.ok(q.options.every((o) => poolDefs.has(o.text)), "en2zh 选项都应来自池内中文释义");
+}
+
+// ---- 4) buildQuestions：题数 = min(count, poolSize)，每题唯一考点 ----
+{
+  const pool = buildTestPool({ seedIndex: SEED, seedReview: FULL_REVIEW, vocab: [] });
+  const qs = buildQuestions(pool, 100, { random: () => 0.3 });
+  assert.equal(qs.length, 5, "池只有 5 词，应出 5 题(上限 100)");
+  const targets = qs.map((q) => q.word.toLowerCase());
+  assert.equal(new Set(targets).size, 5, "每题考点词应互不相同");
+  const qs3 = buildQuestions(pool, 3, { random: () => 0.3 });
+  assert.equal(qs3.length, 3, "count=3 应出 3 题");
 }
 
 console.log("test-pool.js 全部断言通过 ✅");

@@ -67,3 +67,65 @@ export function buildTestPool(deps) {
 export async function loadTestPool() {
   return buildTestPool(await defaultDeps());
 }
+
+// --- 组卷工具 ---
+function shuffle(arr, random = Math.random) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// 从 pool 里排除若干词后随机取 n 个（用于抽考点/干扰）。
+function sampleExcept(pool, excludeWordsLower, n, random) {
+  const cand = pool.filter((p) => !excludeWordsLower.has(p.word.toLowerCase()));
+  return shuffle(cand, random).slice(0, n);
+}
+
+// 生成一道题。random 省略用 Math.random。
+// 返回 { word, direction:'zh2en'|'en2zh', stem, options:[{text,correct}],
+//        target:{word,def,pos,phonetic,sentence_en,sentence_zh} }
+export function buildOneQuestion(target, pool, random = Math.random) {
+  const direction = random() < 0.5 ? "zh2en" : "en2zh";
+  const textOf = (p) => (direction === "zh2en" ? p.word : p.def);
+  const correctText = textOf(target);
+
+  // 干扰项：从池内排除 target 随机抽，按「显示文本」去重（防同义 def 撞车），补到 3 个。
+  const chosen = [];
+  const usedText = new Set([correctText]);
+  const excluded = new Set([target.word.toLowerCase()]);
+  const cands = sampleExcept(pool, excluded, pool.length, random);
+  for (const c of cands) {
+    if (chosen.length >= 3) break;
+    const t = textOf(c);
+    if (usedText.has(t)) continue; // 显示文本去重
+    usedText.add(t);
+    chosen.push(c);
+  }
+  const optionObjs = [
+    { text: correctText, correct: true },
+    ...chosen.map((c) => ({ text: textOf(c), correct: false })),
+  ];
+  const options = shuffle(optionObjs, random);
+
+  return {
+    word: target.word,
+    direction,
+    stem: direction === "zh2en" ? target.def : target.word,
+    options,
+    target: {
+      word: target.word, def: target.def, pos: target.pos || "",
+      phonetic: target.phonetic || "",
+      sentence_en: target.sentence_en || "", sentence_zh: target.sentence_zh || "",
+    },
+  };
+}
+
+// 从 pool 抽 min(count, poolSize) 个考点词，各出一题。opts.random 可注入。
+export function buildQuestions(pool, count = 100, opts = {}) {
+  const random = opts.random || Math.random;
+  const picked = shuffle(pool, random).slice(0, Math.min(count, pool.length));
+  return picked.map((t) => buildOneQuestion(t, pool, random));
+}
