@@ -706,6 +706,14 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 .q-speak { margin-top: 10px; }
 .q-speak-btn { background: #eef4ef; border: 1px solid #d3e0d5; color: #2d6940; border-radius: 7px; padding: 5px 12px; font-size: 12px; cursor: pointer; }
 .q-speak-btn:disabled { opacity: .5; cursor: not-allowed; }
+/* 中英互选:题干方向徽标 + 提示词 + 答案行 */
+.q-dir { display: inline-block; font: 700 12px Georgia, serif; letter-spacing: .06em; color: var(--green-dark); background: #eef4ef; border: 1px solid #d3e0d5; border-radius: 999px; padding: 3px 12px; margin-bottom: 14px; }
+.q-prompt { font-size: 27px; font-weight: 700; line-height: 1.4; color: #1f2d24; }
+.q-answer-line { font-size: 18px; color: #1f2d24; margin-bottom: 12px; }
+.q-answer-line .q-fill { color: #1f7a3a; font-weight: 700; }
+.q-ph { color: #7d8c82; font-weight: 400; font-size: 15px; }
+.q-pos { color: #9bb3a1; font-size: 14px; margin: 0 4px; }
+.q-answer-line .q-def { font-weight: 600; }
 .q-why { margin-bottom: 15px; }
 .q-why-label { font: 700 12px Georgia, serif; letter-spacing: .04em; color: var(--green-dark); margin-bottom: 5px; }
 .q-why-text { font-size: 14px; color: #37453b; line-height: 1.7; }

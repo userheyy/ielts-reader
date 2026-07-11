@@ -1,14 +1,14 @@
-// 单词测试(完形填空)主逻辑。
-// 一组 10 题。每题：题库句挖空 + 4 选项(正确词 + 题库随机 3 干扰词，运行时抽、打乱)。
-// 选完→解析(完整句/翻译/为什么选它/四词释义)。题干非空词悬停查 dict.json。
+// 单词测试(中英互选)主逻辑。
+// 题目从「打卡过的词」现场组卷(test-pool.js)：每次最多 100 题。
+// 每题随机方向：看中文选英文 / 看英文选中文；正确词 + 池内随机 3 干扰词，运行时抽、打乱。
+// 选完看答案词的音标/词性/释义/例句，可朗读。
 // 对错记入独立错题本(test-store.js)，可只考错题、连续 2 次答对移出。
 
-import { ensureDict, lookup } from "./dict.js?v=1";
 import { recordResult, wrongWords, wrongCount, summary } from "./test-store.js?v=1";
-import {speakEnglish, speechSupported} from "./speech.js?v=6";
+import { speakEnglish, speechSupported } from "./speech.js?v=6";
+import { loadTestPool, buildQuestions, buildOneQuestion } from "./test-pool.js?v=1";
 
-const GROUP_SIZE = 10;
-const BANK_URL = "data/quiz-bank.json";
+const TEST_SIZE = 100; // 每次测试题量上限
 
 // ---- DOM ----
 const setupEl = document.getElementById("setup");
@@ -31,59 +31,48 @@ const nextBtn = document.getElementById("q-next");
 /* 朗读控件已迁移到 settings.html(F5) */
 
 // ---- 状态 ----
-let BANK = [];            // 题库 [{word,pos,sentence,sentence_zh,explain}]
-let bankByWord = new Map();
+let POOL = [];            // 打卡词池 [{word,def,pos,sentence_en,sentence_zh,phonetic}]
 let session = null;       // { items:[题], idx, right, wrong, mode:'normal'|'wrong', missed:[] }
 
 // ---- 工具 ----
-function shuffle(arr) {
-  const a = arr.slice();
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-function sample(arr, n) { return shuffle(arr).slice(0, n); }
 function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 }
 
-// ---- 加载题库 ----
-async function loadBank() {
-  try {
-    const res = await fetch(BANK_URL, { cache: "no-cache" });
-    if (!res.ok) throw new Error("no bank");
-    const data = await res.json();
-    BANK = Array.isArray(data.questions) ? data.questions : [];
-  } catch {
-    BANK = [];
-  }
-  bankByWord = new Map(BANK.map((q) => [q.word.toLowerCase(), q]));
+// ---- 加载打卡词池 ----
+async function loadPool() {
+  try { POOL = await loadTestPool(); }
+  catch { POOL = []; }
 }
 
 // ---- 首页统计 + 按钮态 ----
 function renderSetup() {
   const s = summary();
-  statSummaryEl.innerHTML = s.testedWords
-    ? `累计考过 <b>${s.testedWords}</b> 词 · 正确率 <b>${s.accuracy == null ? "—" : Math.round(s.accuracy * 100) + "%"}</b> · 错题本 <b>${s.wrongCount}</b> 词`
-    : `还没有测试记录，开始第一组吧。`;
+  const poolN = POOL.length;
+  const testN = Math.min(TEST_SIZE, poolN);
+  const parts = [`打卡词库共 <b>${poolN}</b> 词`];
+  if (s.testedWords) {
+    parts.push(`累计考过 <b>${s.testedWords}</b> 词`);
+    parts.push(`正确率 <b>${s.accuracy == null ? "—" : Math.round(s.accuracy * 100) + "%"}</b>`);
+  }
+  statSummaryEl.innerHTML = parts.join(" · ");
+  startBtn.textContent = testN > 0 ? `开始测试（${testN} 题）` : "开始测试";
   const wc = wrongCount();
   startWrongBtn.disabled = wc === 0;
   startWrongBtn.textContent = wc ? `重做错题（${wc}）` : "重做错题（0）";
 }
 
-// 题库不可用时的提示；返回 true 表示可以出题
-function bankReady() {
-  if (BANK.length === 0) {
+// 词池就绪判断；返回 true 表示可出题
+function poolReady() {
+  if (POOL.length === 0) {
     noticeEl.hidden = false;
-    noticeEl.textContent = "题库准备中。生成 data/quiz-bank.json 后即可开始测试。";
+    noticeEl.textContent = "还没有打卡过的词。先去『今日』学几个词，再回来测试。";
     startBtn.disabled = true;
     return false;
   }
-  if (BANK.length < 4) {
+  if (POOL.length < 4) {
     noticeEl.hidden = false;
-    noticeEl.textContent = `题库当前只有 ${BANK.length} 题，凑不齐四个选项，暂无法测试。`;
+    noticeEl.textContent = `打卡词只有 ${POOL.length} 个，凑不齐四个选项，先多学几个词。`;
     startBtn.disabled = true;
     return false;
   }
@@ -92,96 +81,28 @@ function bankReady() {
   return true;
 }
 
-// ---- 组卷 ----
-function buildQuestion(q) {
-  // 干扰项：优先同词性(更贴近真实考法、更难靠词性一眼排除),不足再用其它词补足。
-  const pool = BANK.filter((x) => x.word.toLowerCase() !== q.word.toLowerCase());
-  const samePos = q.pos ? pool.filter((x) => x.pos === q.pos) : [];
-  const picked = sample(samePos, 3);
-  if (picked.length < 3) {
-    const chosen = new Set(picked.map((x) => x.word));
-    picked.push(...sample(pool.filter((x) => !chosen.has(x.word)), 3 - picked.length));
-  }
-  const distractors = picked.slice(0, 3).map((x) => x.word);
-  const options = shuffle([q.word, ...distractors]);
-  return { q, options, answered: false, picked: null };
-}
-
+// ---- 组卷 / 开始 ----
 function startSession(mode) {
-  let words;
+  let items;
   if (mode === "wrong") {
-    const ww = wrongWords().map((w) => w.toLowerCase());
-    words = BANK.filter((q) => ww.includes(q.word.toLowerCase()));
-    words = shuffle(words).slice(0, GROUP_SIZE);
-    if (words.length === 0) return; // 保险：错题本空
+    const ww = new Set(wrongWords().map((w) => w.toLowerCase()));
+    const wrongPool = POOL.filter((p) => ww.has(p.word.toLowerCase()));
+    if (wrongPool.length === 0) return; // 错题本空
+    // 错题也用相同题型：每个错题词出一题，干扰项仍从整池抽(选项更多样)
+    items = wrongPool.map((t) => buildOneQuestion(t, POOL));
   } else {
-    words = sample(BANK, Math.min(GROUP_SIZE, BANK.length));
+    items = buildQuestions(POOL, TEST_SIZE);
   }
-  session = {
-    items: words.map(buildQuestion),
-    idx: 0,
-    right: 0,
-    wrong: 0,
-    mode,
-    missed: [],
-  };
+  session = { items, idx: 0, right: 0, wrong: 0, mode, missed: [] };
   setupEl.hidden = true;
   resultEl.hidden = true;
   quizEl.hidden = false;
-  ensureDict(); // 预热词典，供题干悬停
   renderQuestion();
 }
 
-// ---- 渲染题干(挖空 + 非空词悬停查词) ----
-function renderStem(sentence) {
-  stemEl.innerHTML = "";
-  // 按 ___ 切分，空位用下划线块；其余按词包 <span> 以便悬停
-  const parts = sentence.split(/(_{2,})/g);
-  for (const part of parts) {
-    if (/^_{2,}$/.test(part)) {
-      const blank = document.createElement("span");
-      blank.className = "q-blank";
-      blank.textContent = "";
-      stemEl.appendChild(blank);
-    } else {
-      // 把普通文本按"词 / 非词"切，词加悬停
-      const tokens = part.split(/([A-Za-z][A-Za-z'’-]*)/g);
-      for (const tk of tokens) {
-        if (/^[A-Za-z]/.test(tk)) {
-          const w = document.createElement("span");
-          w.className = "q-word";
-          w.textContent = tk;
-          attachHover(w, tk);
-          stemEl.appendChild(w);
-        } else if (tk) {
-          stemEl.appendChild(document.createTextNode(tk));
-        }
-      }
-    }
-  }
-}
-
-let hoverTip = null;
-function closeHover() { if (hoverTip) { hoverTip.remove(); hoverTip = null; } }
-function attachHover(el, word) {
-  el.addEventListener("mouseenter", async () => {
-    await ensureDict();
-    const def = lookup(word);
-    closeHover();
-    hoverTip = document.createElement("div");
-    hoverTip.className = "q-tip";
-    hoverTip.innerHTML = def
-      ? `<span class="q-tip-w">${esc(def.w)}</span>${def.phonetic ? `<span class="q-tip-ph">/${esc(def.phonetic)}/</span>` : ""}<div class="q-tip-def">${esc(def.def)}</div>`
-      : `<span class="q-tip-w">${esc(word)}</span><div class="q-tip-def" style="color:#999">暂无释义</div>`;
-    document.body.appendChild(hoverTip);
-    const r = el.getBoundingClientRect();
-    hoverTip.style.left = Math.min(window.scrollX + r.left, window.scrollX + document.documentElement.clientWidth - 260) + "px";
-    hoverTip.style.top = (window.scrollY + r.bottom + 4) + "px";
-  });
-  el.addEventListener("mouseleave", closeHover);
-}
-
 // ---- 渲染当前题 ----
+const DIR_LABEL = { zh2en: "看中文 · 选英文", en2zh: "看英文 · 选中文" };
+
 function renderQuestion() {
   const item = session.items[session.idx];
   const total = session.items.length;
@@ -189,78 +110,64 @@ function renderQuestion() {
   scoreEl.textContent = `✅ ${session.right}　❌ ${session.wrong}`;
   barEl.style.width = `${(session.idx / total) * 100}%`;
 
-  renderStem(item.q.sentence);
+  // 题干：方向徽标 + stem
+  stemEl.innerHTML = `<span class="q-dir">${DIR_LABEL[item.direction]}</span><div class="q-prompt">${esc(item.stem)}</div>`;
+
   explainEl.hidden = true;
   explainEl.innerHTML = "";
   nextBtn.hidden = true;
 
   optionsEl.innerHTML = "";
-  item.options.forEach((word, i) => {
+  item.options.forEach((opt, i) => {
     const letter = "ABCD"[i];
     const btn = document.createElement("button");
     btn.className = "q-option";
-    btn.innerHTML = `<b>${letter}</b><span>${esc(word)}</span>`;
-    btn.addEventListener("click", () => pick(item, word, btn));
+    btn.innerHTML = `<b>${letter}</b><span>${esc(opt.text)}</span>`;
+    btn.addEventListener("click", () => pick(item, opt, btn));
     optionsEl.appendChild(btn);
   });
 }
 
 // ---- 作答 ----
-async function pick(item, word, btn) {
+function pick(item, opt, btn) {
   if (item.answered) return;
   item.answered = true;
-  item.picked = word;
-  const correct = word.toLowerCase() === item.q.word.toLowerCase();
-  if (correct) session.right += 1; else { session.wrong += 1; session.missed.push(item.q); }
-  recordResult(item.q.word, correct, session.mode === "wrong");
+  item.picked = opt.text;
+  const correct = !!opt.correct;
+  if (correct) session.right += 1; else { session.wrong += 1; session.missed.push(item); }
+  recordResult(item.word, correct, session.mode === "wrong");
   scoreEl.textContent = `✅ ${session.right}　❌ ${session.wrong}`;
 
   // 标记选项对错
   Array.from(optionsEl.children).forEach((b) => {
-    const w = b.querySelector("span").textContent;
+    const t = b.querySelector("span").textContent;
     b.classList.add("locked");
-    if (w.toLowerCase() === item.q.word.toLowerCase()) b.classList.add("right");
-    else if (w === word) b.classList.add("wrong");
+    const isCorrectOpt = item.options.find((o) => o.text === t)?.correct;
+    if (isCorrectOpt) b.classList.add("right");
+    else if (t === opt.text) b.classList.add("wrong");
     else b.classList.add("dim");
   });
 
-  await renderExplain(item);
+  renderExplain(item);
   nextBtn.hidden = false;
   nextBtn.textContent = session.idx === session.items.length - 1 ? "查看结果 →" : "下一题 →";
 }
 
-async function renderExplain(item) {
-  await ensureDict();
-  const q = item.q;
-  // 完整句(填回正确词并高亮)
-  const filled = q.sentence.replace(/_{2,}/, `<b class="q-fill">${esc(q.word)}</b>`);
-  // 四词释义：答案词优先用题库精炼释义(def)，带词性；查不到回退 dict。干扰词用 dict。
-  const defs = item.options.map((w) => {
-    const isAns = w.toLowerCase() === q.word.toLowerCase();
-    const d = lookup(w);
-    let text;
-    if (isAns && q.def) {
-      text = (q.pos ? q.pos + " " : "") + q.def;
-    } else {
-      text = d ? d.def : "暂无释义";
-    }
-    return `<div class="${isAns ? "q-def-ans" : ""}"><b>${esc(w)}</b> ${esc(text)}</div>`;
-  }).join("");
+function renderExplain(item) {
+  const t = item.target;
+  const ph = t.phonetic ? ` <span class="q-ph">/${esc(t.phonetic)}/</span>` : "";
+  const posTxt = t.pos ? `<span class="q-pos">${esc(t.pos)}</span>` : "";
+  const example = t.sentence_en
+    ? `<div class="q-sentence"><div class="q-en">${esc(t.sentence_en)}</div><div class="q-zh">${esc(t.sentence_zh || "")}</div></div>`
+    : "";
 
   explainEl.innerHTML = `
-    <div class="q-sentence">
-      <div class="q-en">${filled}</div>
-      <div class="q-zh">${esc(q.sentence_zh || "")}</div>
-    </div>
-    <div class="q-why">
-      <div class="q-why-label">为什么选 ${esc(q.word)}</div>
-      <div class="q-why-text">${esc(q.explain || "")}</div>
-    </div>
-    <div class="q-defs">${defs}</div>
+    <div class="q-answer-line"><b class="q-fill">${esc(t.word)}</b>${ph} ${posTxt} <span class="q-def">${esc(t.def)}</span></div>
+    ${example}
   `;
   explainEl.hidden = false;
 
-  // 让完整句里的正确词也能发音
+  // 读单词
   const speakWrap = document.createElement("div");
   speakWrap.className = "q-speak";
   const sb = document.createElement("button");
@@ -268,14 +175,13 @@ async function renderExplain(item) {
   sb.className = "q-speak-btn";
   sb.textContent = "🔊 读单词";
   sb.disabled = !speechSupported();
-  sb.addEventListener("click", () => speakEnglish(q.word));
+  sb.addEventListener("click", () => speakEnglish(t.word));
   speakWrap.appendChild(sb);
-  explainEl.querySelector(".q-sentence").appendChild(speakWrap);
+  explainEl.appendChild(speakWrap);
 }
 
 // ---- 下一题 / 结果 ----
 nextBtn.addEventListener("click", () => {
-  closeHover();
   if (session.idx < session.items.length - 1) {
     session.idx += 1;
     renderQuestion();
@@ -288,11 +194,11 @@ function showResult() {
   quizEl.hidden = true;
   resultEl.hidden = false;
   const total = session.items.length;
-  const pct = Math.round((session.right / total) * 100);
+  const pct = total ? Math.round((session.right / total) * 100) : 0;
   const missedHtml = session.missed.length
-    ? session.missed.map((q) => {
-        const d = lookup(q.word);
-        return `<li><b>${esc(q.word)}</b> <span>${esc(d ? d.def : (q.pos || ""))}</span></li>`;
+    ? session.missed.map((it) => {
+        const t = it.target;
+        return `<li><b>${esc(t.word)}</b> <span>${esc(t.def || t.pos || "")}</span></li>`;
       }).join("")
     : `<li class="q-none">全对，没有错题 🎉</li>`;
 
@@ -317,12 +223,12 @@ resultEl.querySelector("#r-back").addEventListener("click", () => {
 });
 
 // ---- 首页按钮 ----
-startBtn.addEventListener("click", () => { if (BANK.length >= 4) startSession("normal"); });
+startBtn.addEventListener("click", () => { if (POOL.length >= 4) startSession("normal"); });
 startWrongBtn.addEventListener("click", () => { if (wrongCount()) startSession("wrong"); });
 
 // ---- 初始化 ----
 (async function init() {
-  await loadBank();
-  bankReady();
+  await loadPool();
+  poolReady();
   renderSetup();
 })();
