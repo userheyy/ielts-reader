@@ -23,10 +23,6 @@ let currentItem = null;
 let seedIndex = new Map();
 let studySuggestedRating = null;
 
-// 复习方式与「复习」页共用同一开关(localStorage);默认拼写。
-// 拼写(主动回忆)只对复习词生效;新词是初见,始终走认词。
-const MODE_KEY = "ielts_review_mode";
-function isSpellMode() { return (localStorage.getItem(MODE_KEY) || "spell") === "spell"; }
 function clearStudySuggestion() {
   $("study-actions").querySelectorAll("button").forEach((b) => b.classList.remove("suggested"));
 }
@@ -156,8 +152,9 @@ function showStudyCard() {
   $("study-answer").hidden = true;
   $("study-actions").hidden = true;
 
-  // 拼写(主动回忆):仅复习词 + 拼写模式;新词初见走认词
-  const useSpell = currentItem.kind === "review" && isSpellMode() && !!(entry.def || entry.sentence_en);
+  // 今日过词固定走「认词」流程(显示释义 + 记忆法 → 自评),不出拼写测试。
+  // 拼写主动回忆仍保留在「复习」页(vocab.html 的 拼写/认词 切换)。
+  const useSpell = false;
   const wordLine = $("study-card").querySelector(".review-word-line");
   if (useSpell) {
     wordLine.hidden = true;
