@@ -5,6 +5,7 @@ import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=3";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
+import { buildQueue } from "./daily-queue.js?v=1";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
@@ -52,26 +53,33 @@ function renderHeatmap() {
 // ---- 今日任务概览 ----
 function renderTodayOverview() {
   const rec = task.day;
-  const reviewN = task.review.length;
-  const newN = task.newWords.length;
+  const reviewN = task.review.length;      // 当前仍到期的复习词(现算,会随完成/在别处复习而减少)
+  const newDone = Math.max(0, rec.new_done || 0);
+  const newLeft = Math.max(0, task.newWords.length - newDone); // 还没学的新词
   const done = rec.reviewed_done + rec.new_done;
   const planned = rec.planned;
+  // “还能学的”= 现存到期复习 + 未学新词。这才是点“继续”后队列真正的长度,
+  // 用它驱动按钮,避免出现“还剩 N 但点了没反应”(复习词在别处/今天已过,自过滤没了)。
+  const studiable = reviewN + newLeft;
   $("today-date").textContent = formatDate(task.date);
   $("review-count").textContent = reviewN;
-  $("new-count").textContent = newN;
+  $("new-count").textContent = newLeft;
   $("prog-fill").style.width = planned ? `${Math.round((done / planned) * 100)}%` : "0%";
   $("prog-txt").textContent = `今日已完成 ${done} / ${planned} 词`;
   const startBtn = $("start-btn");
-  if (planned === 0) {
+  if (studiable === 0) {
+    // 没有可学的词了。区分“今天做过” vs “本就无词”。
     startBtn.disabled = true;
-    startBtn.textContent = "今日无待学词 ✓";
-    $("mini-note").textContent = "没有到期复习，新词也已学完当前批次。可去「词库」浏览，或等更多词上线。";
-  } else if (done >= planned) {
-    startBtn.disabled = false;
-    startBtn.textContent = "今日已完成，再过一遍 →";
+    if (done > 0) {
+      startBtn.textContent = "今日已完成 ✓";
+      $("mini-note").textContent = "今天到期的复习和新词都过完了，格子已点亮。明天到期的复习会自动回来。";
+    } else {
+      startBtn.textContent = "今日无待学词 ✓";
+      $("mini-note").textContent = "没有到期复习，新词也已学完当前批次。可去「词库」浏览，或等更多词上线。";
+    }
   } else if (done > 0) {
     startBtn.disabled = false;
-    startBtn.textContent = `继续今日任务（还剩 ${planned - done}）→`;
+    startBtn.textContent = `继续今日任务（还剩 ${studiable}）→`;
   } else {
     startBtn.disabled = false;
     startBtn.textContent = "开始今日任务 →";
@@ -83,26 +91,6 @@ function formatDate(key) {
   const dt = new Date(y, m - 1, d);
   const wk = "日一二三四五六"[dt.getDay()];
   return `${m}月${d}日 · 周${wk}`;
-}
-
-// ---- 构建过词队列(复习优先) ----
-function buildQueue() {
-  const rec = task.day;
-  const q = [];
-  // 复习词:从当前到期列表里,取"还没在今天完成计数覆盖"的。
-  // 简化:每次进入学习都按 (planned - done) 现取现排;复习先、新词后。
-  // 复习项
-  for (const r of task.review) {
-    const entry = wrapReviewEntry(r);
-    if (entry) q.push({ entry, kind: "review", origin: r.origin });
-  }
-  // 新词项
-  for (const s of task.newWords) {
-    q.push({ entry: s, kind: "new", origin: "seed" });
-  }
-  // 跳过已完成的数量(reviewed_done + new_done),让"继续"从断点开始
-  const skip = rec.reviewed_done + rec.new_done;
-  return q.slice(skip);
 }
 
 // 复习项可能来自生词库或内置词,统一取出展示所需字段
@@ -271,7 +259,7 @@ $("done-back").addEventListener("click", () => {
 // ---- 开始/继续 ----
 $("start-btn").addEventListener("click", () => {
   refreshVocabCache();
-  queue = buildQueue();
+  queue = buildQueue(task, wrapReviewEntry);
   if (!queue.length) { finishStudy(); return; }
   showStudyCard();
 });
