@@ -16,6 +16,19 @@
 //   task        { review:[{word, origin}], newWords:[seedEntry], day:{new_done, ...} }
 //   wrapReview  (r) => 展示用词条 | null   —— 把复习项解析成完整词条(取不到则跳过)
 // 返回:[{ entry, kind:'review'|'new', origin }]
+// 过完一个词后同步会话内 task:复习词要从 task.review 移除。
+// reviewDue 的"自过滤"只在重新进页时发生;会话内不移除的话,回总览再点
+// "继续"会把刚复习完的词原样再入队 → done 无限涨、突破 planned(可以一直记)。
+// 按 词(小写) + origin 精确匹配,同名不同源的另一条不受影响;新词不动(靠 new_done 跳过)。
+export function noteItemDone(task, item) {
+  if (!item || item.kind !== "review") return;
+  const wl = String(item.entry.word || "").toLowerCase();
+  const i = task.review.findIndex(
+    (r) => String(r.word || "").toLowerCase() === wl && r.origin === item.origin,
+  );
+  if (i >= 0) task.review.splice(i, 1);
+}
+
 export function buildQueue(task, wrapReview) {
   const rec = task.day;
   const q = [];
