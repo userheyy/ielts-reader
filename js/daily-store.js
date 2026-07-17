@@ -99,19 +99,25 @@ async function getSeedIndex() {
 
 // ---------- 复习词:扫描所有已学词,挑到期的 ----------
 // 返回 [{word, origin:'vocab'|'seed', due}]
+// 同一个词可能同时存在于生词库和内置词 SRS(先读文章加了生词,后来又在今日学到
+// 同名内置词)——只出一条,生词记录优先裁决(对齐 seed.js 复习池"同名去重,生词优先"),
+// 否则同词双计:planned 多算一个、一天要过两遍。
 function reviewDue(seedIndex, todayKey) {
   const out = [];
+  const vocabOwned = new Set(); // 有复习历史的生词(小写):这些词以生词记录为准
   // 生词库
   for (const v of loadVocab()) {
     const r = v.review || {};
     const total = (Number(r.correct) || 0) + (Number(r.wrong) || 0) + (Number(r.fuzzy) || 0);
     if (total === 0) continue; // 从没复习过的生词不算"到期复习"(它们靠阅读入库,另计)
+    vocabOwned.add(String(v.word || "").toLowerCase());
     if (!r.next_due || r.next_due <= todayKey) {
       out.push({ word: v.word, origin: "vocab", due: r.next_due || todayKey });
     }
   }
-  // 内置词(已学过的,即有 seed_review 记录)
+  // 内置词(已学过的,即有 seed_review 记录);生词已接管的同名词跳过
   for (const [wl, s] of seedIndex) {
+    if (vocabOwned.has(wl)) continue;
     const r = getSeedReview(s.word);
     if (!r) continue; // 没学过的内置词由"新词"部分放出,不在这
     if (!r.next_due || r.next_due <= todayKey) {
@@ -143,11 +149,22 @@ function queuedNewWords(d, todayKey) {
   return s;
 }
 
+// review_cap 归一化:null/非法 → null(不限);否则非负整数
+function normalizedReviewCap(settings) {
+  if (settings.review_cap == null) return null;
+  const n = Number(settings.review_cap);
+  return Number.isFinite(n) ? Math.max(0, Math.floor(n)) : null;
+}
+
 // ---------- 今日任务生成 ----------
 // 复原已存在的当天任务:词表用当天存的 new_words + 当前到期复习。
+// 复习也要按"剩余额度"(cap - 已复习)截断,与 generateDay 的 cap 语义一致——
+// 否则设了 cap 后刷新一次页面就能超量复习。
 function restoreDay(d, seedIndex, todayKey) {
   const rec = d.days[todayKey];
-  const review = reviewDue(seedIndex, todayKey);
+  let review = reviewDue(seedIndex, todayKey);
+  const cap = normalizedReviewCap(d.settings);
+  if (cap != null) review = review.slice(0, Math.max(0, cap - (Number(rec.reviewed_done) || 0)));
   const newWords = (rec.new_words || [])
     .map((w) => seedIndex.get(w.toLowerCase()))
     .filter(Boolean);
@@ -158,17 +175,19 @@ function restoreDay(d, seedIndex, todayKey) {
 // 调用前请确保这是"该重排"的时机(新建当天,或未开始时套用新配额)。
 function generateDay(d, seedIndex, wordlist, todayKey) {
   const review = reviewDue(seedIndex, todayKey);
-  const reviewCap = d.settings.review_cap;
+  const reviewCap = normalizedReviewCap(d.settings);
   const reviewList = reviewCap != null ? review.slice(0, reviewCap) : review;
 
   // 新词选取(纯过滤,不用游标——因 aids 词在词频序里稀疏散布,游标会错):
   // 取词频最高的、满足以下全部条件的词,补足新词配额:
   //   (a) 已在 vocab-seed.json 生成了 aids(在 seedIndex 中)
   //   (b) 没学过(无 seed_review 记录)
-  //   (c) 没在过去某天已放出过但还没评分(new_words 里出现过——防重复放出)
+  // 注意:过去放出过但没评分的词【必须】能再次放出(设计§5"不重不漏")——
+  // 它们没有 seed_review、也不在复习列表,若跳过就永久丢失(曾是真 bug)。
+  // 因词表按词频排序,昨天没学完的词天然排最前,今天自动"接着学"。
+  // 同一天内不重复靠 ensureTodayTask 的复原分支,与此处无关。
   const learned = learnedSeedSet(seedIndex);
-  const alreadyQueued = queuedNewWords(d, todayKey); // 过去各天 new_words 的并集(小写)
-  const quota = d.settings.new_per_day;
+  const quota = Math.max(0, Number(d.settings.new_per_day) || 0); // 防损坏配额放出无限词
   const newWords = [];
   for (const cand of wordlist) {
     if (newWords.length >= quota) break;
@@ -176,11 +195,12 @@ function generateDay(d, seedIndex, wordlist, todayKey) {
     const seedEntry = seedIndex.get(wl);
     if (!seedEntry) continue;        // 还没生成 aids
     if (learned.has(wl)) continue;   // 已学过
-    if (alreadyQueued.has(wl)) continue; // 之前放出过、待评分,避免今天重复
     newWords.push(seedEntry);
   }
-  // new_word_cursor 保留为"已学过+已放出"的计数,仅作展示/进度参考(不再驱动选词)
-  const cursorCount = learned.size + alreadyQueued.size + newWords.length;
+  // new_word_cursor 保留为"已学过 ∪ 曾放出"的去重计数,仅作展示/进度参考(不驱动选词)
+  const cursorUnion = new Set([...learned, ...queuedNewWords(d, todayKey)]);
+  for (const w of newWords) cursorUnion.add(w.word.toLowerCase());
+  const cursorCount = cursorUnion.size;
 
   const rec = {
     planned: reviewList.length + newWords.length,

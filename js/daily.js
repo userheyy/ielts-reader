@@ -5,11 +5,11 @@ import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=3";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
-import { buildQueue } from "./daily-queue.js?v=1";
+import { buildQueue, noteItemDone } from "./daily-queue.js?v=2";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=3";
+} from "./daily-store.js?v=4";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -217,6 +217,8 @@ $("study-actions").addEventListener("click", (ev) => {
   // markWordDone 返回更新后的当天记录;同步回 task.day,避免用陈旧引用算进度
   const updated = markWordDone(currentItem.kind === "review" ? "review" : "new");
   if (updated) task.day = updated;
+  // 复习词过完要从会话内 task.review 移除,否则回总览再点"继续"会重复入队(突破上限)
+  noteItemDone(task, currentItem);
   queue.shift();
   refreshVocabCache();
   showStudyCard(); // 下一词(或结束)
