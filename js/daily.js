@@ -9,7 +9,7 @@ import { buildQueue, noteItemDone } from "./daily-queue.js?v=2";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=3";
+} from "./daily-store.js?v=4";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);

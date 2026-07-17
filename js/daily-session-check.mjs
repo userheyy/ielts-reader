@@ -24,6 +24,7 @@ globalThis.localStorage = {
 const { buildQueue, noteItemDone } = await import("./daily-queue.js");
 const { schedule } = await import("./srs.js");
 const { getSeedReview, setSeedReview } = await import("./seed.js");
+const { gradeReview } = await import("./store.js");
 const {
   ensureTodayTask, markWordDone, totalWordsDone, dateKey,
   __reset, __setCachesForTest,
@@ -56,19 +57,28 @@ function setup({ total = 40, dueN = 10, newPerDay = 30 } = {}) {
   return { seedIndex };
 }
 
-// 模拟 daily.js 的 wrapReviewEntry(seed 词直接查索引;本测试无 vocab 生词)
-const wrap = (seedIndex) => (r) => seedIndex.get(r.word.toLowerCase()) || null;
+// 模拟 daily.js 的 wrapReviewEntry:seed 查索引,vocab 查生词库
+const wrap = (seedIndex) => (r) => {
+  if (r.origin === "seed") return seedIndex.get(r.word.toLowerCase()) || null;
+  const vocab = JSON.parse(localStorage.getItem("ielts_vocab") || "[]");
+  return vocab.find((x) => x.word.toLowerCase() === r.word.toLowerCase()) || null;
+};
 
 // 模拟一次完整过词会话:把当前队列全部过完(评分 rating),返回过词数。
-// 与 daily.js 的评分处理器逐行对应:gradeItem → markWordDone → noteItemDone → shift。
-function studyAll(task, seedIndex, rating = "remembered") {
+// 与 daily.js 的评分处理器逐行对应:gradeItem(按 origin 路由) → markWordDone →
+// noteItemDone → shift。now 可指定,用于跨午夜等时间场景。
+function studyAll(task, seedIndex, rating = "remembered", now = NOW) {
   const queue = buildQueue(task, wrap(seedIndex));
   for (const item of queue) {
-    const { review } = schedule(getSeedReview(item.entry.word), rating, NOW);
-    setSeedReview(item.entry.word, review);
-    const updated = markWordDone(item.kind === "review" ? "review" : "new", NOW);
+    if (item.origin === "vocab") {
+      gradeReview(item.entry.word, rating, now);
+    } else {
+      const { review } = schedule(getSeedReview(item.entry.word), rating, now);
+      setSeedReview(item.entry.word, review);
+    }
+    const updated = markWordDone(item.kind === "review" ? "review" : "new", now);
     if (updated) task.day = updated;
-    noteItemDone(task, item); // ← 本次修复的核心:会话内同步移除已过的复习词
+    noteItemDone(task, item); // ← 无限刷修复的核心:会话内同步移除已过的复习词
   }
   return queue.length;
 }
@@ -169,6 +179,55 @@ function studyAll(task, seedIndex, rating = "remembered") {
   );
   noteItemDone(task, { entry: { word: "gamma" }, kind: "new", origin: "seed" });
   assert.equal(task.review.length, 2, "新词过完不动 task.review");
+}
+
+// ---- 8) 生词来源的复习词:评分走 store.gradeReview,同样不能重复入队 ----
+{
+  const { seedIndex } = setup({ total: 40, dueN: 2, newPerDay: 2 }); // 2 个 seed 复习 + 2 新词
+  // 再加 2 个到期的生词(词名与 seed 词表不同,避免同名去重介入)
+  localStorage.setItem("ielts_vocab", JSON.stringify([
+    { word: "vword1", def: "生词1", review: { level: 1, next_due: YESTERDAY, history: [], correct: 1, wrong: 0, fuzzy: 0, streak: 1, lapses: 0 } },
+    { word: "vword2", def: "生词2", review: { level: 1, next_due: YESTERDAY, history: [], correct: 1, wrong: 0, fuzzy: 0, streak: 1, lapses: 0 } },
+  ]));
+  const task = await ensureTodayTask(NOW);
+  assert.equal(task.review.length, 4, "复习应为 2 生词 + 2 内置词");
+  assert.equal(task.day.planned, 6, "planned = 4 复习 + 2 新词");
+  const n = studyAll(task, seedIndex);
+  assert.equal(n, 6, "混合来源一次会话应过 6 词");
+  assert.equal(task.review.length, 0, "vocab 来源的复习词也应被 noteItemDone 移除");
+  for (let i = 0; i < 20; i++) studyAll(task, seedIndex);
+  assert.equal(task.day.reviewed_done + task.day.new_done, 6, "混合来源狂点重进也不能突破上限");
+  const vocab = JSON.parse(localStorage.getItem("ielts_vocab"));
+  for (const v of vocab) {
+    assert.ok(v.review.next_due > dateKey(NOW), `生词 ${v.word} 评分后 next_due 应推到未来`);
+  }
+}
+
+// ---- 9) 空态:无到期复习 + 配额 0,不崩、队列空、planned 0 ----
+{
+  const { seedIndex } = setup({ total: 10, dueN: 0, newPerDay: 0 });
+  const task = await ensureTodayTask(NOW);
+  assert.equal(task.day.planned, 0, "无复习无新词:planned 0");
+  assert.equal(buildQueue(task, wrap(seedIndex)).length, 0, "队列应为空");
+  const again = await ensureTodayTask(NOW);
+  assert.equal(again.day.planned, 0, "幂等:再进一次仍是 0");
+}
+
+// ---- 10) 跨午夜:23:59 开始,00:01 评分 —— 不崩,SRS 生效,第二天正常 ----
+{
+  const { seedIndex } = setup({ total: 10, dueN: 2, newPerDay: 0 });
+  const day1 = new Date("2026-07-16T23:59:00");
+  const day2 = new Date("2026-07-17T00:01:00");
+  const task = await ensureTodayTask(day1);
+  assert.equal(task.day.planned, 2, "day1 应有 2 个复习");
+  // 队列在 day1 建好,评分动作发生在 day2 凌晨(markWordDone 找不到 day2 记录返回 null)
+  const n = studyAll(task, seedIndex, "remembered", day2);
+  assert.equal(n, 2, "跨午夜过词不崩,2 个都能过完");
+  const d = JSON.parse(localStorage.getItem("ielts_daily"));
+  assert.equal(d.days["2026-07-16"].reviewed_done, 0, "跨午夜的进度记不到前一天(已知取舍,别崩就行)");
+  const t2 = await ensureTodayTask(day2);
+  assert.equal(t2.review.length, 0, "SRS 已生效:day2 不再到期");
+  assert.equal(t2.day.planned, 0, "day2 新一天正常生成");
 }
 
 console.log("daily-session-check.mjs 全部断言通过 ✅");
