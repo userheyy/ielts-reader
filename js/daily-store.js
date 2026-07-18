@@ -288,7 +288,9 @@ export function currentStreak(now = new Date()) {
   return streak;
 }
 
-// 累计学习词数(所有天 done 之和)
+// 累计学习词数(所有天 done 之和)。
+// 注意:这是"操作次数"求和——同一个词今天新学、明天复习会被重复计,并非不同词数。
+// 展示用的去重口径请用 progressStats();此函数仅保留给旧测试/内部参考。
 export function totalWordsDone() {
   const d = loadDaily();
   let n = 0;
@@ -297,6 +299,56 @@ export function totalWordsDone() {
     n += (rec.reviewed_done || 0) + (rec.new_done || 0);
   }
   return n;
+}
+
+// 某 review 对象是否达"已掌握":复用 store.js 的口径(level>=5 且连续答对>=3),
+// 不另立标准,保证生词库页与每日页对"掌握"的判定一致。
+function isMastered(r) {
+  return !!r && (Number(r.level) || 0) >= 5 && (Number(r.streak) || 0) >= 3;
+}
+
+// 去重后的学习进度统计,供顶部胶囊与总进度条使用。
+//   learned   —— 学过的不同单词数(有过复习历史即算):
+//                 生词库中复习过的词 ∪ 内置词 SRS 有记录的词。按小写去重,
+//                 同名词以生词库记录为准(与 reviewDue 的去重规则一致)。
+//   mastered  —— 上述词里达"已掌握"口径(isMastered)的不同词数。
+//   total     —— 核心词库词数(内置词库当前词数,随批次上线增长)。
+//   remaining —— total - learned(下限 0)。
+// 说明:仅"入库但从没复习过"的生词不计入 learned(口径更实,与"到期复习"排除
+// total===0 的规则统一);它们靠阅读入库,尚未真正学过。
+export async function progressStats() {
+  const seedIndex = await getSeedIndex();
+  const learnedSet = new Set();   // 小写去重
+  const masteredSet = new Set();
+
+  // 生词库:有复习历史(correct/wrong/fuzzy 之和 > 0)才算学过
+  for (const v of loadVocab()) {
+    const r = v.review || {};
+    const total = (Number(r.correct) || 0) + (Number(r.wrong) || 0) + (Number(r.fuzzy) || 0);
+    if (total === 0) continue;
+    const wl = String(v.word || "").toLowerCase();
+    if (!wl) continue;
+    learnedSet.add(wl);
+    if (isMastered(r)) masteredSet.add(wl);
+  }
+
+  // 内置词 SRS:有记录即学过;同名词已被生词库接管则跳过(生词优先,避免双计)
+  for (const [wl, s] of seedIndex) {
+    if (learnedSet.has(wl)) continue;
+    const r = getSeedReview(s.word);
+    if (!r) continue;
+    learnedSet.add(wl);
+    if (isMastered(r)) masteredSet.add(wl);
+  }
+
+  const total = seedIndex.size;
+  const learned = learnedSet.size;
+  return {
+    learned,
+    mastered: masteredSet.size,
+    total,
+    remaining: Math.max(0, total - learned),
+  };
 }
 
 // 供测试重置
