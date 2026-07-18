@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>每日单词</title>
-  <link rel="stylesheet" href="css/style.css?v=14" />
+  <link rel="stylesheet" href="css/style.css?v=15" />
   <script>if(new URLSearchParams(location.search).get("embed")==="1")document.documentElement.classList.add("embed");</script>
 </head>
 <body>
@@ -24,7 +24,16 @@
     <section class="cal-card">
       <div class="cal-top">
         <h3>📅 记忆痕迹</h3>
-        <div class="cal-streak">连续打卡 <b id="streak-days">0</b> 天 · 累计 <b id="total-words">0</b> 词</div>
+        <div class="cal-streak">连续打卡 <b id="streak-days">0</b> 天 · 学过 <b id="learned-words">0</b> 词 · 已掌握 <b id="mastered-words">0</b> 词</div>
+      </div>
+      <!-- 核心词库总进度 -->
+      <div class="corpus-prog">
+        <div class="corpus-prog-top">
+          <span class="corpus-prog-label">核心词库进度</span>
+          <span class="corpus-prog-num" id="corpus-prog-num">0 / 0</span>
+        </div>
+        <div class="corpus-bar"><div class="corpus-fill" id="corpus-fill" style="width:0%"></div></div>
+        <div class="corpus-prog-sub" id="corpus-prog-sub">还剩 0 词</div>
       </div>
       <div class="heat" id="heatmap"></div>
       <div class="cal-legend">少
@@ -125,6 +134,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/daily.js?v=9"></script>
+  <script type="module" src="js/daily.js?v=10"></script>
 </body>
 </html>

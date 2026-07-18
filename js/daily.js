@@ -7,9 +7,9 @@ import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./c
 import { schedule } from "./srs.js?v=1";
 import { buildQueue, noteItemDone } from "./daily-queue.js?v=2";
 import {
-  ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
+  ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, progressStats,
   getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=4";
+} from "./daily-store.js?v=5";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -36,6 +36,7 @@ function highlightStudyRating(rating) {
 /* 朗读控件已迁移到 settings.html(F5) */
 
 // ---- 热力图 ----
+// 网格与打卡天数是同步数据,立即渲染;学习进度(去重)走异步统计,拿到后回填。
 function renderHeatmap() {
   const cells = heatmapCells(18);
   // 颜色分档:按当天完成词数
@@ -47,7 +48,19 @@ function renderHeatmap() {
     return `<div class="${cls}" title="${title}"></div>`;
   }).join("");
   $("streak-days").textContent = currentStreak();
-  $("total-words").textContent = totalWordsDone();
+  renderProgress();
+}
+
+// 去重后的学习进度:学过/已掌握 胶囊数字 + 核心词库总进度条。
+async function renderProgress() {
+  const { learned, mastered, total, remaining } = await progressStats();
+  $("learned-words").textContent = learned;
+  $("mastered-words").textContent = mastered;
+  const pct = total ? (learned / total) * 100 : 0;
+  $("corpus-fill").style.width = `${Math.min(100, pct)}%`;
+  $("corpus-prog-num").textContent = `${learned} / ${total}`;
+  const pctTxt = total ? (pct >= 0.1 || learned === 0 ? pct.toFixed(1) : "<0.1") : "0";
+  $("corpus-prog-sub").textContent = `已学 ${pctTxt}% · 还剩 ${remaining} 词`;
 }
 
 // ---- 今日任务概览 ----
