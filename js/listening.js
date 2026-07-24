@@ -114,6 +114,10 @@ let dictEndTime = null; // 听写模式:播完本句自动停的时间点
 let curTimedIdx = -1;   // 当前播放到的 timed 下标
 let curSegId = null;    // 当前播放句的 id(用于渲染高亮)
 
+let snippetAudio = null;
+let snippetEndTime = null;
+let snippetPlayingSid = null;
+
 // 听写状态(进度按句存 localStorage)
 const DICT_KEY = "ielts_dict:" + partId;
 let dictIdx = 0;
@@ -287,16 +291,25 @@ function onTick() {
   }
 }
 
+function findSegEl(sid) {
+  const direct = transcriptEl.querySelector(`.seg[data-sid="${sid}"]`);
+  if (direct) return direct;
+  for (const g of transcriptEl.querySelectorAll(".seg[data-turn-sids]")) {
+    if (g.dataset.turnSids.split(",").includes(String(sid))) return g;
+  }
+  return null;
+}
+
 function setPlayingSeg(segId) {
   if (curSegId === segId) return;
   const prev = curSegId;
   curSegId = segId;
   if (prev != null) {
-    const el = transcriptEl.querySelector(`.seg[data-sid="${prev}"]`);
+    const el = findSegEl(prev);
     if (el) el.classList.remove("playing");
   }
   if (segId != null) {
-    const el = transcriptEl.querySelector(`.seg[data-sid="${segId}"]`);
+    const el = findSegEl(segId);
     if (el) {
       el.classList.add("playing");
       if (followScroll && mode !== "dictation") el.scrollIntoView({ behavior: "smooth", block: "nearest" });
@@ -316,6 +329,47 @@ function playSegment(s, forDictation = false) {
   audio.currentTime = s.start;
   audio.play();
   return true;
+}
+
+function playSnippet(s, endSeg) {
+  if (!PART.audio || typeof s.start !== "number") return;
+  if (!snippetAudio) {
+    snippetAudio = new Audio(PART.audio);
+    snippetAudio.addEventListener("timeupdate", onSnippetTick);
+    snippetAudio.addEventListener("ended", stopSnippet);
+  }
+  stopSnippet();
+  const endTi = timedIndexOfSeg(endSeg || s);
+  snippetEndTime = segEnd(endTi);
+  snippetPlayingSid = s.id;
+  snippetAudio.currentTime = s.start;
+  snippetAudio.play();
+  updateSnippetHighlight();
+}
+
+function onSnippetTick() {
+  if (snippetEndTime != null && snippetAudio.currentTime >= snippetEndTime - 0.05) {
+    stopSnippet();
+  }
+}
+
+function stopSnippet() {
+  if (snippetAudio && !snippetAudio.paused) snippetAudio.pause();
+  const prevSid = snippetPlayingSid;
+  snippetPlayingSid = null;
+  snippetEndTime = null;
+  if (prevSid != null) updateSnippetHighlight(prevSid);
+}
+
+function updateSnippetHighlight(clearSid) {
+  if (clearSid != null) {
+    const el = findSegEl(clearSid);
+    if (el) el.classList.remove("snippet-playing");
+  }
+  if (snippetPlayingSid != null) {
+    const el = findSegEl(snippetPlayingSid);
+    if (el) el.classList.add("snippet-playing");
+  }
 }
 
 function stepSentence(d) {
@@ -421,7 +475,21 @@ function maskEn(en, keepFirstN) {
   }).join("");
 }
 
-function segRowHTML(s) {
+function groupByTurn(segs) {
+  const turns = [];
+  let cur = null;
+  for (const s of segs) {
+    if (!cur || s.speaker !== cur.speaker) {
+      cur = { speaker: s.speaker, segs: [s] };
+      turns.push(cur);
+    } else {
+      cur.segs.push(s);
+    }
+  }
+  return turns;
+}
+
+function segRowHTML(s, hideSpeaker) {
   const i = segs.indexOf(s);
   if (ANNOTATE) {
     const st = annStarts[i];
@@ -430,7 +498,7 @@ function segRowHTML(s) {
       : `<span class="seg-time unset">未打点</span>`;
     return `<div class="seg ann${i === annIdx ? " ann-cur" : ""}" data-sid="${s.id}">
       <div class="seg-meta"><span class="seg-no">${s.id}</span>${tHtml}
-        ${s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}</div>
+        ${!hideSpeaker && s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}</div>
       <div class="seg-en">${esc(s.en)}</div>
       <div class="seg-zh">${esc(s.zh || "")}</div>
     </div>`;
@@ -441,11 +509,14 @@ function segRowHTML(s) {
   const playing = s.id === curSegId ? " playing" : "";
   const level = hintLevels.get(s.id) || 0;
 
-  // Level 0:锁定,只显示句号 + 时间 + 提示按钮
+  const snippetPlaying = s.id === snippetPlayingSid ? " snippet-playing" : "";
+
+  // Level 0:锁定,只显示句号 + 时间 + 播放按钮 + 提示
   if (level === 0) {
-    return `<div class="seg locked${playing}" data-sid="${s.id}">
+    return `<div class="seg locked${playing}${snippetPlaying}" data-sid="${s.id}">
       <span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      <span class="seg-lock">🔒 点击提示 + 跳播</span>${ansBadge}
+      <button class="seg-play-btn" data-play-sid="${s.id}">▶</button>
+      <span class="seg-lock">🔒 点击揭示</span>${ansBadge}
     </div>`;
   }
 
@@ -462,15 +533,66 @@ function segRowHTML(s) {
 
   const nextTip = level < 4
     ? `<span class="seg-hint-lv">💡 提示 ${level}/4 · 再点${["", "关键词", "完整英文", "中文", ""][level]}</span>`
-    : `<span class="seg-hint-lv">✓ 全部揭示 · 再点跳播</span>`;
+    : `<span class="seg-hint-lv">✓ 全部揭示</span>`;
 
-  return `<div class="seg open lv${level}${playing}" data-sid="${s.id}">
+  return `<div class="seg open lv${level}${playing}${snippetPlaying}" data-sid="${s.id}">
     <div class="seg-meta"><span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      ${s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}${ansBadge}
+      <button class="seg-play-btn" data-play-sid="${s.id}">▶</button>
+      ${!hideSpeaker && s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}${ansBadge}
       ${nextTip}</div>
     <div class="seg-en">${enHtml}</div>
     ${showZh ? `<div class="seg-zh">${esc(s.zh || "")}</div>` : ""}
   </div>`;
+}
+
+function turnBlockHTML(turn, ti) {
+  const sids = turn.segs.map(s => s.id);
+  const spk = turn.speaker || "";
+  const firstSeg = turn.segs[0];
+  const lastSeg = turn.segs[turn.segs.length - 1];
+  const t = typeof firstSeg.start === "number" ? fmtTime(firstSeg.start) : "--:--";
+  const level = Math.min(...turn.segs.map(s => hintLevels.get(s.id) || 0));
+  const playing = turn.segs.some(s => s.id === curSegId) ? " playing" : "";
+  const snippetPlaying = turn.segs.some(s => s.id === snippetPlayingSid) ? " snippet-playing" : "";
+
+  const ansBadges = turn.segs
+    .filter(s => Array.isArray(s.answers) && s.answers.length)
+    .map(s => `<span class="seg-ans">题${s.answers.join(",")}</span>`).join("");
+
+  if (level === 0) {
+    return `<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
+      <div class="turn-speaker">${esc(spk)}</div>
+      <div class="turn-segs"><div class="seg locked${playing}${snippetPlaying}" data-turn-sids="${sids.join(",")}" data-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">
+        <span class="seg-time">${t}</span>
+        <button class="seg-play-btn" data-play-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">▶</button>
+        <span class="seg-lock">🔒 点击揭示</span>${ansBadges}
+      </div></div></div>`;
+  }
+
+  let enHtml;
+  if (level === 1) {
+    enHtml = turn.segs.map(s => esc(maskEn(s.en, 0))).join(" ");
+  } else if (level === 2) {
+    enHtml = turn.segs.map(s => esc(maskEn(s.en, 5))).join(" ");
+  } else {
+    enHtml = turn.segs.map(s => renderEnHTML(s)).join(" ");
+  }
+  const showZh = level >= 4;
+  const zhHtml = showZh ? turn.segs.map(s => esc(s.zh || "")).filter(Boolean).join(" ") : "";
+
+  const nextTip = level < 4
+    ? `<span class="seg-hint-lv">💡 提示 ${level}/4 · 再点${["", "关键词", "完整英文", "中文", ""][level]}</span>`
+    : `<span class="seg-hint-lv">✓ 全部揭示</span>`;
+
+  return `<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
+    <div class="turn-speaker">${esc(spk)}</div>
+    <div class="turn-segs"><div class="seg open lv${level}${playing}${snippetPlaying}" data-turn-sids="${sids.join(",")}" data-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">
+      <div class="seg-meta"><span class="seg-time">${t}</span>
+        <button class="seg-play-btn" data-play-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">▶</button>
+        ${ansBadges}${nextTip}</div>
+      <div class="seg-en">${enHtml}</div>
+      ${showZh ? `<div class="seg-zh">${zhHtml}</div>` : ""}
+    </div></div></div>`;
 }
 
 function renderTranscript() {
@@ -487,30 +609,51 @@ function renderTranscript() {
           <button type="button" id="tr-all">${allFullyRevealed() ? "全部收起" : "全部揭示"}</button>
         </span>
       </div>`;
-  transcriptEl.innerHTML = bar + segs.map(segRowHTML).join("");
+
+  const uniqueSpeakers = new Set(segs.map(s => s.speaker).filter(Boolean));
+  const isDialogue = !ANNOTATE && uniqueSpeakers.size >= 2;
+
+  let body;
+  if (isDialogue) {
+    const turns = groupByTurn(segs);
+    body = turns.map((turn, ti) => turnBlockHTML(turn, ti)).join("");
+  } else {
+    body = segs.map(s => segRowHTML(s)).join("");
+  }
+
+  transcriptEl.innerHTML = bar + body;
 }
 
 function rerenderRow(sid) {
   const el = transcriptEl.querySelector(`.seg[data-sid="${sid}"]`);
   const s = segs.find((x) => x.id === sid);
   if (!el || !s) return;
+  const inTurn = !!el.closest(".turn");
   const tmp = document.createElement("div");
-  tmp.innerHTML = segRowHTML(s);
+  tmp.innerHTML = segRowHTML(s, inTurn);
   el.replaceWith(tmp.firstElementChild);
 }
 
 function jumpToSegment(sid) {
-  // 从题目跳过来 → 直接推到 Level 4(完整英文 + 中文)方便看答案
   if (!ANNOTATE) {
     const cur = hintLevels.get(sid) || 0;
     if (cur < 4) {
       hintLevels.set(sid, 4);
       revealed.add(sid);
-      rerenderRow(sid);
+      const el = findSegEl(sid);
+      if (el && el.dataset.turnSids) {
+        el.dataset.turnSids.split(",").map(Number).forEach(id => {
+          hintLevels.set(id, 4);
+          revealed.add(id);
+        });
+        renderTranscript();
+      } else {
+        rerenderRow(sid);
+      }
       refreshTrAllBtn();
     }
   }
-  const row = transcriptEl.querySelector(`.seg[data-sid="${sid}"]`);
+  const row = findSegEl(sid);
   if (!row) return;
   row.scrollIntoView({ behavior: "smooth", block: "center" });
   row.classList.remove("pulse");
@@ -564,26 +707,51 @@ transcriptEl.addEventListener("click", (ev) => {
       return;
     }
   }
+  const playBtn = ev.target.closest(".seg-play-btn");
+  if (playBtn) {
+    ev.stopPropagation();
+    const sid = Number(playBtn.dataset.playSid);
+    const s = segs.find(x => x.id === sid);
+    if (s) {
+      const endSid = playBtn.dataset.playEndSid;
+      const endSeg = endSid ? segs.find(x => x.id === Number(endSid)) : null;
+      playSnippet(s, endSeg);
+    }
+    return;
+  }
+
   const row = ev.target.closest(".seg");
   if (!row) return;
   const sid = Number(row.dataset.sid);
   const s = segs.find((x) => x.id === sid);
   if (!s) return;
-  if (ANNOTATE) { // 打点模式:点句 = 选中该句为"当前待打点"(重打)
+  if (ANNOTATE) {
     annIdx = segs.indexOf(s);
     renderTranscript();
     refreshAnnPanel();
     return;
   }
-  // N2:4 级渐进提示。每次点句:hintLevel 累加 (0→1→2→3→4) + 跳播。
-  // Level ≥ 3 时同步维护 revealed set 兼容旧代码(dictation 判分等)。
+
+  const turnSidsAttr = row.dataset.turnSids;
+  if (turnSidsAttr) {
+    const turnSids = turnSidsAttr.split(",").map(Number);
+    const cur = Math.min(...turnSids.map(id => hintLevels.get(id) || 0));
+    const next = Math.min(4, cur + 1);
+    turnSids.forEach(id => {
+      hintLevels.set(id, next);
+      if (next >= 3) revealed.add(id); else revealed.delete(id);
+    });
+    renderTranscript();
+    refreshTrAllBtn();
+    return;
+  }
+
   const cur = hintLevels.get(sid) || 0;
   const next = Math.min(4, cur + 1);
   hintLevels.set(sid, next);
   if (next >= 3) revealed.add(sid); else revealed.delete(sid);
   rerenderRow(sid);
   refreshTrAllBtn();
-  playSegment(s);
 });
 
 // ============================================================

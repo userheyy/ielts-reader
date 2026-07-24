@@ -37,6 +37,8 @@ let sessionRemembered = 0;
 let rolling = false;
 let reviewPool = []; // 复习池:生词 ∪ 已加入的内置词(异步构建)
 let suggestedRating = null; // 拼写判分给出的建议评分
+let reviewHistory = [];
+let historyIndex = -1;
 
 // 复习方式:'spell'(拼写/主动回忆,默认) | 'recall'(认词)。存 localStorage。
 const MODE_KEY = "ielts_review_mode";
@@ -115,9 +117,15 @@ function renderReviewStats() {
     <span><b>${s.total}</b> 总词数</span>`;
 }
 
-function showReviewWord(entry) {
+function showReviewWord(entry, fromHistory = false) {
   currentReviewWord = entry;
   suggestedRating = null;
+  if (!fromHistory) {
+    reviewHistory = reviewHistory.slice(0, historyIndex + 1);
+    reviewHistory.push(entry);
+    if (reviewHistory.length > 50) reviewHistory.shift();
+    historyIndex = reviewHistory.length - 1;
+  }
   reviewCard.classList.remove("idle", "rolling", "revealed");
   reviewWord.textContent = entry.word;
   reviewPos.textContent = entry.pos || "";
@@ -367,6 +375,44 @@ bindProfileBackupUI({
   exportButtonId: "profile-export",
   importInputId: "profile-import",
   onRestored: () => render(searchEl.value),
+});
+
+document.addEventListener("keydown", (ev) => {
+  if (ev.target.matches("input:not(:disabled), textarea, select")) return;
+  if (!document.querySelector('.vocab-tab-content[data-content="review"]')?.classList.contains("active")) return;
+  if (reviewCard.classList.contains("idle") || rolling) return;
+
+  switch (ev.key) {
+    case " ":
+      if (!currentReviewWord) return;
+      ev.preventDefault();
+      if (!reviewCard.classList.contains("revealed")) {
+        if (spellMode) {
+          submitSpelling();
+        } else {
+          reviewCard.classList.add("revealed");
+          reviewAnswer.hidden = false;
+          reviewActions.hidden = false;
+          revealButton.hidden = true;
+        }
+      }
+      break;
+    case "ArrowDown":
+      ev.preventDefault();
+      if (historyIndex < reviewHistory.length - 1) {
+        historyIndex++;
+        showReviewWord(reviewHistory[historyIndex], true);
+      } else {
+        rollNext();
+      }
+      break;
+    case "ArrowUp":
+      if (historyIndex <= 0) return;
+      ev.preventDefault();
+      historyIndex--;
+      showReviewWord(reviewHistory[historyIndex], true);
+      break;
+  }
 });
 
 render();

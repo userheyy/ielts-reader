@@ -2,7 +2,7 @@ import { validatePassage } from "./schema.js";
 import { has } from "./store.js";
 import { getImportedPassage } from "./passage-store.js";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
-import { renderDeep, renderParaphrase } from "./deep.js";
+import { renderDeep, renderParaphrase } from "./deep.js?v=3";
 import { openWordPopup } from "./word-popup.js?v=1";
 
 const params = new URLSearchParams(location.search);
@@ -79,25 +79,43 @@ function renderSentenceEN(s) {
 function activate(sid, scroll = true) {
   document.querySelectorAll(".sent").forEach((el) =>
     el.classList.toggle("active", el.dataset.sid == sid));
-  document.querySelectorAll(".gcard").forEach((el) => {
-    const on = el.dataset.sid == sid;
-    el.classList.toggle("active", on);
-    el.classList.toggle("open", on); // 手风琴:只展开当前卡片
-  });
+  if (phase === "analysis") {
+    document.querySelectorAll(".gcard").forEach((el) => {
+      const on = el.dataset.sid == sid;
+      el.classList.toggle("active", on);
+      el.classList.toggle("open", on);
+    });
+  }
   if (scroll) {
     const sent = document.querySelector(`.sent[data-sid="${sid}"]`);
-    const g = document.querySelector(`.gcard[data-sid="${sid}"]`);
     if (sent) {
       sent.scrollIntoView({ behavior: "smooth", block: "center" });
       sent.classList.remove("pulse");
       requestAnimationFrame(() => sent.classList.add("pulse"));
     }
-    // 等折叠动画走完再定位,避免滚动位置漂移
-    if (g) setTimeout(() => g.scrollIntoView({ behavior: "smooth", block: "center" }), 300);
+    if (phase === "analysis") {
+      const g = document.querySelector(`.gcard[data-sid="${sid}"]`);
+      if (g) setTimeout(() => g.scrollIntoView({ behavior: "smooth", block: "center" }), 300);
+    }
   }
 }
 
 let PASSAGE = null;
+let phase = "practice";
+const phaseTabs = document.querySelector(".phase-tabs");
+const toggleZhBtn = document.getElementById("toggle-zh");
+
+function setPhase(p) {
+  phase = p;
+  document.querySelector(".reader-grid").dataset.phase = p;
+  phaseTabs.querySelectorAll(".phase-tab").forEach(t =>
+    t.classList.toggle("active", t.dataset.phase === p));
+  toggleZhBtn.hidden = p !== "analysis";
+}
+phaseTabs.addEventListener("click", (ev) => {
+  const tab = ev.target.closest(".phase-tab");
+  if (tab && tab.dataset.phase !== phase) setPhase(tab.dataset.phase);
+});
 
 function expandSentenceDetails(passage) {
   if (!passage.sentences.some((s) => Array.isArray(s.details))) return passage;
@@ -261,6 +279,11 @@ function renderQuestions(groups) {
     if (ev.target.id === "check-all-answers") {
       const { total, correct } = checkQuestionScope(questionsEl);
       document.getElementById("question-score").textContent = `总分 ${correct}/${total}`;
+      if (phase === "practice") {
+        const aTab = phaseTabs.querySelector('[data-phase="analysis"]');
+        aTab.classList.remove("pulse-hint");
+        requestAnimationFrame(() => aTab.classList.add("pulse-hint"));
+      }
       return;
     }
     if (ev.target.id === "reveal-all-answers") {
@@ -404,7 +427,7 @@ async function main() {
     const c = document.createElement("div");
     c.className = "gcard"; c.dataset.sid = s.id;
     const wordsLine = s.words.length
-      ? `<div class="gwords">生词:${s.words.map((w) => `${w.w} ${w.def}`).join(" / ")}</div>` : "";
+      ? `<div class="gwords"><span class="glabel">生词</span>${s.words.map((w) => `${w.w} ${w.def}`).join(" / ")}</div>` : "";
     // 深度解析:有 deep 直接渲染;无 deep 且已配置 API Key 则给「AI 深挖」按钮
     const deepHTML = s.deep ? renderDeep(s.deep) : "";
     const aiSlot = s.deep ? "" : `<div class="deep-ai-slot" data-sid="${s.id}"></div>`;
@@ -414,8 +437,8 @@ async function main() {
         <span class="gtype">【${d.analysis_unit === "paragraph" ? "段" : "句"}${s.id}】${s.grammar.type}</span>
       </div>
       <div class="gbody"><div class="gbody-inner">
-        <div class="gnote">拆解:${s.grammar.note}</div>
-        <div class="gzh">翻译:${s.zh}</div>
+        <div class="gnote"><span class="glabel">拆解</span>${s.grammar.note}</div>
+        <div class="gzh"><span class="glabel">翻译</span>${s.zh}</div>
         ${wordsLine}
         ${deepHTML}
         ${aiSlot}
@@ -439,7 +462,10 @@ async function main() {
     e.target.textContent = document.body.classList.contains("hide-zh") ? "显示翻译" : "隐藏翻译";
   });
 
-  // 从生词库跳转带 sentence 参数 → 自动定位
-  if (jumpSentence) activate(Number(jumpSentence));
+  // 从生词库跳转带 sentence 参数 → 自动进入精读并定位
+  if (jumpSentence) {
+    setPhase("analysis");
+    activate(Number(jumpSentence));
+  }
 }
 main();

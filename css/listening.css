@@ -127,6 +127,17 @@
 .seg .seg-en { font-size: 16px; line-height: 1.55; }
 .seg .seg-zh { margin-top: 2px; color: #556058; font-size: 13px; }
 .seg.playing { border-color: var(--green); background: #eef8ef; box-shadow: 0 0 0 1px var(--green) inset; }
+.seg.snippet-playing { border-color: #6a9fd8; background: #eef4fb; box-shadow: 0 0 0 1px #6a9fd8 inset; }
+
+/* 逐句播放按钮 */
+.seg-play-btn {
+  border: none; background: none; cursor: pointer;
+  color: var(--green-dark); font-size: 13px;
+  padding: 2px 6px; border-radius: 4px;
+  opacity: .6; transition: opacity .15s;
+}
+.seg-play-btn:hover { opacity: 1; background: var(--accent-soft); }
+.seg.snippet-playing .seg-play-btn { opacity: 1; color: #4a7ec0; }
 .seg.pulse { animation: seg-pulse 1.15s ease-out; }
 @keyframes seg-pulse {
   0% { box-shadow: 0 0 0 0 rgba(74, 157, 91, .55); }
@@ -142,6 +153,21 @@
 /* 打点模式的行 */
 .seg.ann .seg-time.unset { color: #c08b2d; }
 .seg.ann-cur { border-color: #d7a53b; background: #fffaef; box-shadow: 0 0 0 1px #e5c988 inset; }
+
+/* ---- 对话轮次分组 ---- */
+.turn {
+  display: grid; grid-template-columns: 72px 1fr; gap: 0 8px;
+  margin-bottom: 4px; padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+.turn-speaker {
+  grid-row: 1 / -1; padding-top: 8px;
+  font-size: var(--text-xs); font-weight: 700;
+  color: var(--accent-hover); letter-spacing: .04em;
+  text-transform: uppercase; position: sticky; top: 56px; align-self: start;
+}
+.turn-alt .turn-speaker { color: #4560c0; }
+.turn-segs .seg { margin-bottom: 2px; }
 
 /* ---- 中栏:多选题选项(填空复用 style.css 的 .question-item) ---- */
 .mc-opts { display: flex; flex-direction: column; gap: 6px; margin-top: 9px; }

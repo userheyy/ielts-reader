@@ -1,28 +1,33 @@
 /* 深度句子解析卡样式(js/deep.js 渲染)。独立文件,不动 css/style.css。
    配色沿用设计系统:--green #7bc47f / --green-dark #4a9d5b,色块参照 .mchip 的做法。 */
 
-.deep { margin-top: 8px; border-top: 1px dashed #dfe4df; padding-top: 6px; }
+.deep {
+  margin-top: 8px; border-top: 1px dashed #dfe4df; padding-top: 6px;
+  font-family: "Avenir Next", "Avenir", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+  line-height: 2;
+}
 
 /* ---- 折叠小节 ---- */
 .deep-sec { border: 1px solid #e3ebe4; border-radius: 8px; margin: 6px 0; background: #fff; }
 .deep-sec summary {
-  cursor: pointer; padding: 6px 10px; font-size: 13px; font-weight: 600;
+  cursor: pointer; padding: 6px 10px; font-size: 15px; font-weight: 600;
   color: var(--green-dark); user-select: none;
 }
 .deep-sec summary:hover { background: #f6faf6; border-radius: 8px; }
 .deep-sec[open] > summary { border-bottom: 1px dashed #e3ebe4; }
-.deep-sec-body { padding: 8px 10px; font-size: 13.5px; line-height: 1.6; }
+.deep-sec-body { padding: 8px 10px; font-size: 16px; line-height: 2; }
 
-/* ---- ① 句型主干:role 彩色块 ---- */
-.deep-pattern-label { font-size: 12.5px; margin-bottom: 6px; }
-.deep-skel { display: flex; flex-wrap: wrap; gap: 6px; align-items: stretch; }
+/* ---- 句型骨架 ---- */
+.deep-pattern-label { font-size: 15px; margin-bottom: 8px; }
+.deep-skel { display: flex; flex-wrap: wrap; gap: 8px; align-items: stretch;
+  background: #f5f8f5; border-radius: 12px; padding: 12px 14px; }
 .skel {
-  display: inline-flex; flex-direction: column; padding: 4px 10px;
-  border-radius: 7px; font-size: 13px; line-height: 1.35;
+  display: inline-flex; flex-direction: column; padding: 8px 16px;
+  border-radius: 8px; font-size: 16px; line-height: 1.4;
 }
-.skel i { font-style: normal; font-size: 10px; opacity: .75; }
-.skel small { font-size: 11px; opacity: .85; font-weight: 400; }
-.skel-plus { align-self: center; color: #b6bdb7; }
+.skel i { font-style: normal; font-size: 13px; letter-spacing: .04em; }
+.skel small { font-size: 14px; opacity: .85; font-weight: 400; }
+.skel-plus { align-self: center; color: #b6bdb7; font-size: 15px; }
 
 .role-s { background: rgba(74,157,91,.10); color: #2f7a3f; border: 1px solid rgba(74,157,91,.35); }
 .role-v { background: rgba(239,68,68,.10); color: #d43c3c; border: 1px solid rgba(239,68,68,.30); }
@@ -31,76 +36,92 @@
 .role-m { background: #f0f2f0; color: #6d766f; border: 1px solid #dfe4df; }
 
 .deep-plain {
-  margin-top: 8px; background: #f6faf6; border-left: 3px solid var(--green);
-  padding: 6px 9px; border-radius: 0 6px 6px 0; color: #37453b; font-size: 13px;
+  margin-top: 10px; background: #f6faf6; border-left: 3px solid var(--green);
+  padding: 8px 12px; border-radius: 0 6px 6px 0; color: #37453b; font-size: 16px; line-height: 2;
 }
 
 .deep-taglink { color: var(--green-dark); text-decoration: none; border-bottom: 1px dashed #9fcea3; }
 .deep-taglink:hover { color: #2f7a3f; border-bottom-style: solid; }
 
-/* ---- ② 成分拆解 ---- */
+/* ---- 分组折叠 ---- */
+.deep-tier { border: 1px solid #e3ebe4; border-radius: 10px; margin: 8px 0; background: #fff; }
+.deep-tier summary {
+  cursor: pointer; padding: 10px 14px; font-size: 17px; font-weight: 600;
+  color: var(--green-dark); user-select: none; list-style: none;
+  display: flex; align-items: baseline; gap: 6px;
+}
+.deep-tier summary::-webkit-details-marker { display: none; }
+.deep-tier summary::before { content: "▸"; font-size: 13px; color: var(--green-dark); transition: transform .2s; }
+.deep-tier[open] > summary::before { transform: rotate(90deg); }
+.deep-tier summary:hover { background: #f6faf6; border-radius: 10px; }
+.deep-tier[open] > summary { border-bottom: 1px dashed #e3ebe4; }
+.deep-tier summary small { font-weight: 400; color: #8a958c; font-size: 14px; margin-left: 4px; }
+.tier-icon { font-size: 15px; }
+.deep-tier-body { padding: 12px 14px; font-size: 16px; line-height: 2; }
+
+/* ---- 成分拆解 ---- */
 .chunk { margin-bottom: 7px; }
 .chunk-row { display: flex; flex-wrap: wrap; gap: 7px; align-items: baseline; }
-.chunk-en { padding: 1px 8px; border-radius: 6px; font-size: 13px; }
-.chunk-role { font-size: 10.5px; color: #7a837c; white-space: nowrap; }
-.chunk-zh { color: #444; font-size: 12.5px; }
+.chunk-en { padding: 2px 10px; border-radius: 6px; font-size: 16px; }
+.chunk-role { font-size: 13px; color: #7a837c; white-space: nowrap; }
+.chunk-zh { color: #444; font-size: 15px; }
 .chunk-note {
-  font-size: 12px; color: #5d6a60; margin: 2px 0 0 4px;
+  font-size: 14px; color: #5d6a60; margin: 2px 0 0 4px;
   padding-left: 8px; border-left: 2px solid #e6ede7;
 }
 
-/* ---- ③ 语法点 ---- */
+/* ---- 语法点 ---- */
 .gp { margin-bottom: 8px; }
-.gp-name { font-weight: 600; font-size: 13px; }
-.gp-explain { font-size: 12.5px; color: #3c463f; margin-top: 2px; }
+.gp-name { font-weight: 600; font-size: 16px; }
+.gp-explain { font-size: 15px; color: #3c463f; margin-top: 2px; }
 
-/* ---- ④ 词汇深挖 ---- */
+/* ---- 词汇深挖 ---- */
 .deep-word {
   border: 1px solid #edf1ed; border-radius: 8px; padding: 7px 9px;
   margin: 6px 0; background: #fcfefc;
 }
 .deep-word-head { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
-.dw-w { font-size: 15px; color: #2d3a31; }
-.dw-pos { color: #7a837c; font-size: 12px; }
-.dw-def { font-size: 13px; color: #444; }
+.dw-w { font-size: 18px; color: #2d3a31; }
+.dw-pos { color: #7a837c; font-size: 14px; }
+.dw-def { font-size: 15px; color: #444; }
 .deep-add-word {
   margin-left: auto; border: 1px solid #acd5b1; background: #fff; color: var(--green-dark);
-  border-radius: 6px; font-size: 12px; padding: 2px 9px; cursor: pointer; white-space: nowrap;
+  border-radius: 6px; font-size: 14px; padding: 2px 9px; cursor: pointer; white-space: nowrap;
 }
 .deep-add-word:hover { background: #eef8ef; }
 .deep-add-word:disabled { color: #9aa59c; border-color: #dfe4df; background: #f6f7f6; cursor: default; }
-.dw-line { margin-top: 6px; font-size: 12.5px; }
+.dw-line { margin-top: 6px; font-size: 14px; }
 .dw-pills { display: inline-flex; gap: 6px; flex-wrap: wrap; vertical-align: middle; }
 
 .syn-pill, .conf-pill {
   display: inline-flex; align-items: baseline; gap: 5px;
-  border-radius: 999px; padding: 1px 9px; font-size: 12.5px;
+  border-radius: 999px; padding: 1px 9px; font-size: 14px;
 }
 .syn-pill { background: rgba(74,157,91,.08); border: 1px solid rgba(74,157,91,.28); color: #2f7a3f; }
 .conf-pill { background: rgba(245,158,11,.08); border: 1px solid rgba(245,158,11,.30); color: #a06f10; }
-.syn-pill i, .conf-pill i { font-style: normal; color: #6b7f70; font-size: 11px; }
+.syn-pill i, .conf-pill i { font-style: normal; color: #6b7f70; font-size: 13px; }
 .conf-pill i { color: #8a7b56; }
 
-/* ---- ⑤ 同义替换汇总 ---- */
+/* ---- 同义替换汇总 ---- */
 .syn-agg-row { margin-bottom: 6px; }
 .syn-agg-row > b { color: #2d3a31; }
 .syn-agg-eq { color: var(--green-dark); margin: 0 6px; }
 
-/* ---- ⑥ 表达积累 ---- */
+/* ---- 表达积累 ---- */
 .expr { margin-bottom: 8px; }
 .expr-head { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
 .expr-text { color: #2d3a31; }
-.expr-zh { color: #666; font-size: 12.5px; }
-.expr-usage { font-size: 12.5px; color: #5d6a60; margin-top: 1px; }
+.expr-zh { color: #666; font-size: 14px; }
+.expr-usage { font-size: 14px; color: #5d6a60; margin-top: 1px; }
 
 /* ---- AI 深挖按钮 / 状态 ---- */
 .deep-ai-btn {
   margin-top: 8px; border: 1px dashed #acd5b1; background: #f6fbf7; color: var(--green-dark);
-  border-radius: 7px; font-size: 13px; padding: 5px 12px; cursor: pointer;
+  border-radius: 7px; font-size: 15px; padding: 5px 12px; cursor: pointer;
 }
 .deep-ai-btn:hover { background: #eef8ef; border-style: solid; }
 .deep-ai-btn:disabled { color: #8a958c; border-color: #d3dcd4; background: #f4f6f4; cursor: wait; }
-.deep-ai-err { color: #d43c3c; font-size: 12.5px; margin-top: 5px; }
+.deep-ai-err { color: #d43c3c; font-size: 14px; margin-top: 5px; }
 
 /* ---- 考点替换(题目区) ---- */
 .para-wrap { margin-top: 6px; }
@@ -108,23 +129,23 @@
 .pp-chip {
   display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px;
   border: 1px solid #dce8dd; background: #fff; border-radius: 8px;
-  padding: 4px 9px; cursor: pointer; text-align: left; font-size: 12.5px; font-family: inherit;
+  padding: 4px 9px; cursor: pointer; text-align: left; font-size: 14px; font-family: inherit;
 }
 .pp-chip:hover { background: #f3faf4; border-color: var(--green); }
 .pp-q { color: #444; font-weight: 600; }
 .pp-arrow { color: var(--green-dark); }
 .pp-p { color: #2f6fd0; font-weight: 600; }
-.pp-kind { border-radius: 999px; padding: 0 7px; font-size: 10.5px; line-height: 1.7; }
+.pp-kind { border-radius: 999px; padding: 0 7px; font-size: 12px; line-height: 1.7; }
 .kind-syn      { background: rgba(74,157,91,.12);  color: #2f7a3f; }
 .kind-verbatim { background: rgba(59,130,246,.12); color: #2f6fd0; }
 .kind-para     { background: rgba(245,158,11,.14); color: #a06f10; }
 .kind-neg      { background: rgba(239,68,68,.12);  color: #d43c3c; }
-.pp-note { font-size: 12px; color: #5d6a60; margin: 2px 0 0 4px; padding-left: 8px; border-left: 2px solid #e6ede7; }
+.pp-note { font-size: 14px; color: #5d6a60; margin: 2px 0 0 4px; padding-left: 8px; border-left: 2px solid #e6ede7; }
 .pp-trap {
   margin-top: 6px; background: #fff8e8; border: 1px solid #f0dfae; border-radius: 7px;
-  padding: 5px 9px; font-size: 12.5px; color: #7a5c12;
+  padding: 5px 9px; font-size: 14px; color: #7a5c12;
 }
-.pp-explain { margin-top: 6px; font-size: 12.5px; color: #37453b; }
+.pp-explain { margin-top: 6px; font-size: 14px; color: #37453b; }
 
 /* 点击考点替换 chip 后,原文对应词串的临时高亮(2 秒) */
 .word.deep-flash { background: #ffd54f; border-radius: 3px; box-shadow: 0 0 0 2px #ffd54f; }

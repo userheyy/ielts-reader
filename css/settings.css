@@ -13,7 +13,7 @@
 .set-row input {
   flex: 1; min-width: 220px; padding: 8px 10px;
   border: 1px solid #cbd4cd; border-radius: 6px; font-size: 14px;
-  font-family: Consolas, "Courier New", monospace;
+  font-family: var(--font-mono);
 }
 .set-row input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 2px #d7f0d9; }
 .set-key-wrap { display: flex; flex: 1; gap: 8px; min-width: 220px; }

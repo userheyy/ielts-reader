@@ -42,7 +42,7 @@ function renderPattern(p) {
   if (!p || typeof p !== "object" || !Array.isArray(p.skeleton) || !p.skeleton.length) return "";
   const chips = p.skeleton.map((k) =>
     `<span class="skel ${roleCls(k.role)}"><i>${esc(roleZh(k.role))}</i><b>${esc(k.text)}</b><small>${esc(k.zh)}</small></span>`,
-  ).join('<span class="skel-plus">+</span>');
+  ).join('<span class="skel-plus">→</span>');
   const label = p.label
     ? `<div class="deep-pattern-label">${p.tag ? tagLink(p.tag, p.label) : esc(p.label)}</div>` : "";
   const plain = p.plain ? `<div class="deep-plain">${esc(p.plain)}</div>` : "";
@@ -111,19 +111,29 @@ function renderExpressions(exprs) {
       ${e.usage ? `<div class="expr-usage">${esc(e.usage)}</div>` : ""}</div>`).join("");
 }
 
-// 主入口:deep 对象 → 6 个折叠小节(前两节默认展开)。deep 为空返回 ""。
+// 主入口:deep 对象 → 两层渐进展示。语法拆解(默认展开) + 词汇深挖(默认折叠)。
 export function renderDeep(deep) {
   if (!deep || typeof deep !== "object") return "";
-  const secs = [
-    section("① 句型主干", renderPattern(deep.pattern), true),
-    section("② 成分拆解", renderChunks(deep.chunks), true),
-    section("③ 语法点", renderGrammarPoints(deep.grammar_points), false),
-    section("④ 词汇深挖", renderVocab(deep.vocab), false),
-    section("⑤ 同义替换汇总", renderSynAgg(deep.vocab), false),
-    section("⑥ 表达积累", renderExpressions(deep.expressions), false),
-  ].filter(Boolean);
-  if (!secs.length) return "";
-  return `<div class="deep">${secs.join("")}</div>`;
+
+  // 语法拆解:骨架 + 成分拆解 + 语法点(合为一体,默认展开)
+  const grammarBody = [
+    renderPattern(deep.pattern),
+    renderChunks(deep.chunks),
+    renderGrammarPoints(deep.grammar_points),
+  ].filter(Boolean).join("");
+  const grammar = grammarBody
+    ? `<details class="deep-tier" open><summary>语法拆解</summary><div class="deep-tier-body">${grammarBody}</div></details>`
+    : "";
+
+  // 词汇深挖
+  const vocabBody = [renderVocab(deep.vocab), renderSynAgg(deep.vocab), renderExpressions(deep.expressions)].filter(Boolean).join("");
+  const vocab = vocabBody
+    ? `<details class="deep-tier"><summary>词汇深挖<small>重点词 · 同义替换 · 好表达</small></summary><div class="deep-tier-body">${vocabBody}</div></details>`
+    : "";
+
+  const parts = [grammar, vocab].filter(Boolean);
+  if (!parts.length) return "";
+  return `<div class="deep">${parts.join("")}</div>`;
 }
 
 // 「考点替换」折叠块:题干词 ⇄ 原文词 chips + kind 徽标 + 陷阱/解题讲解。

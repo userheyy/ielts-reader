@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思备考 · 精读</title>
-  <link rel="stylesheet" href="css/style.css?v=14" />
-  <link rel="stylesheet" href="css/deep.css?v=1" />
+  <link rel="stylesheet" href="css/style.css?v=16" />
+  <link rel="stylesheet" href="css/deep.css?v=3" />
 </head>
 <body>
   <header class="topbar">
@@ -21,15 +21,19 @@
   <div class="container">
     <div class="reader-toolbar">
       <span class="src" id="src"></span>
-      <button id="toggle-zh">隐藏翻译</button>
+      <div class="phase-tabs">
+        <button class="phase-tab active" data-phase="practice">答题</button>
+        <button class="phase-tab" data-phase="analysis">精读</button>
+      </div>
+      <button id="toggle-zh" class="toolbar-btn" hidden>隐藏翻译</button>
       <!-- 朗读控件统一在 settings.html 配置 -->
     </div>
-    <div class="reader-grid">
+    <div class="reader-grid" data-phase="practice">
       <div class="pane left" id="left"></div>
       <aside class="pane questions" id="questions"></aside>
       <div class="pane right" id="right"></div>
     </div>
   </div>
-  <script type="module" src="js/reader.js?v=10"></script>
+  <script type="module" src="js/reader.js?v=12"></script>
 </body>
 </html>
