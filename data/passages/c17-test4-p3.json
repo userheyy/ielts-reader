@@ -13157,24 +13157,36 @@
           "number": 29,
           "prompt": "a claim that Gareyev’s skill is limited to chess",
           "answer": "F",
-          "evidence_sentence": 42
+          "evidence_sentence": 42,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "skill is limited to chess",
+                "p": "didn’t find anything other than playing chess that he seems to be supremely gifted at",
+                "kind": "para",
+                "note": "other than playing chess 表明未发现他在其他标准任务上有同等天赋。"
+              }
+            ],
+            "trap": "not exceptional on standard tests 是前句概括，后句更直接限定其突出天赋只在国际象棋。",
+            "explain": "F 段研究者说除下棋外没有发现他特别擅长的事，答案为 F。"
+          }
         },
         {
           "number": 30,
           "prompt": "why Gareyev’s skill is of interest to scientists",
           "answer": "B",
-          "evidence_sentence": 11,
+          "evidence_sentence": 12,
           "paraphrase": {
             "pairs": [
               {
                 "q": "why Gareyev’s skill is of interest to scientists",
-                "p": "Gareyev’s prowess has drawn interest from beyond the chess-playing community",
+                "p": "In the hope of understanding how he and others like him can perform such mental feats",
                 "kind": "para",
-                "note": "题干问科学家为何感兴趣，原文说他的才能吸引了象棋圈以外的人，科学家属于圈外人，所以是句式改写。"
+                "note": "科学家研究他，是为了理解这种非凡脑力表现如何实现。"
               }
             ],
-            "trap": "",
-            "explain": "先抓题干关键词'interest to scientists'，到原文找'interest from beyond the chess-playing community'，科学家是圈外人，所以匹配。"
+            "trap": "beyond the chess-playing community 只说明兴趣超出棋坛，下一句才交代科学研究目的。",
+            "explain": "B 段说明 UCLA 研究者希望理解这种 mental feats 的机制，所以答案为 B。"
           }
         },
         {
@@ -13314,7 +13326,19 @@
           "number": 36,
           "prompt": "Good chess players are likely to be able to play blindfold chess.",
           "answer": "TRUE",
-          "evidence_sentence": 14
+          "evidence_sentence": 14,
+          "paraphrase": {
+            "pairs": [
+              {
+                "q": "Good chess players are likely to be able to play blindfold chess",
+                "p": "not a far reach for most accomplished players",
+                "kind": "para",
+                "note": "not a far reach 表示对大多数高水平棋手并非难以企及。"
+              }
+            ],
+            "trap": "题干的 likely 并非说人人一定能做到，而是概括 most accomplished players。",
+            "explain": "原文明确说闭眼下棋对多数高水平棋手并非遥不可及，题干一致，选 TRUE。"
+          }
         }
       ]
     },

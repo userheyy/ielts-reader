@@ -8,197 +8,6 @@
     {
       "id": 1,
       "para": 1,
-      "en": "Does education fuel economic growth?",
-      "zh": "教育能否推动经济增长？",
-      "grammar": {
-        "type": "标题设问",
-        "note": "全文标题，用一般疑问句形式提出核心议题：education（教育）与 economic growth（经济增长）之间是否存在推动关系；fuel 在此作动词，表“助长、驱动”。"
-      },
-      "words": [
-        {
-          "w": "fuel",
-          "pos": "v.",
-          "def": "助长；驱动"
-        },
-        {
-          "w": "economic growth",
-          "pos": "n.",
-          "def": "经济增长"
-        }
-      ],
-      "deep": {
-        "pattern": {
-          "id": "svo",
-          "label": "S + Vt + O(主语 + 及物动词 + 宾语)",
-          "tag": "ch1.svo",
-          "skeleton": [
-            {
-              "role": "S",
-              "text": "education",
-              "zh": "教育"
-            },
-            {
-              "role": "V",
-              "text": "fuel",
-              "zh": "推动"
-            },
-            {
-              "role": "O",
-              "text": "economic growth",
-              "zh": "经济增长"
-            }
-          ],
-          "plain": "去掉疑问词 does 和问号，主干是 education fuel economic growth（教育推动经济增长）。fuel 是及物动词，后面必须跟宾语 economic growth。"
-        },
-        "chunks": [
-          {
-            "text": "Does",
-            "role": "V",
-            "zh": "助动词",
-            "note": "构成一般疑问句的助动词，放在句首，表示提问。这里与后面的 fuel 共同构成动词短语，但为了简化，将 Does 单独列为动词部分。",
-            "tag": "ch6.simple-present"
-          },
-          {
-            "text": "education",
-            "role": "S",
-            "zh": "教育",
-            "note": "句子的主语，是动作的发出者。"
-          },
-          {
-            "text": "fuel",
-            "role": "V",
-            "zh": "推动",
-            "note": "及物动词，原形，因为前面有 does，所以用原形。",
-            "tag": "ch6.simple-present"
-          },
-          {
-            "text": "economic growth",
-            "role": "O",
-            "zh": "经济增长",
-            "note": "动词 fuel 的宾语，表示被推动的对象。"
-          }
-        ],
-        "grammar_points": [
-          {
-            "tag": "ch1.svo",
-            "name": "五大句型之三：S + Vt + O",
-            "explain": "这个句子的主干是“主语 + 及物动词 + 宾语”。及物动词（如 fuel）后面必须跟一个宾语，动作才能完整。这里 education 是主语，fuel 是动词，economic growth 是宾语。理解长难句时，先找到这三个部分，其他修饰成分就好办了。"
-          },
-          {
-            "tag": "ch6.simple-present",
-            "name": "一般现在时与疑问句",
-            "explain": "一般现在时表示常态或普遍事实。这里用 does 帮助构成一般疑问句，动词 fuel 用原形。注意：当主语是第三人称单数时，一般现在时的肯定句动词要加 -s，但疑问句和否定句用 does 后动词恢复原形。"
-          }
-        ],
-        "vocab": [
-          {
-            "w": "fuel",
-            "lemma": "fuel",
-            "pos": "v.",
-            "def": "助长；驱动",
-            "aids": {
-              "morphemes": [
-                {
-                  "text": "fuel",
-                  "type": "root",
-                  "gloss": "燃料；推动"
-                }
-              ],
-              "derivation": "",
-              "family": null,
-              "mnemonic": "fuel 本义是“燃料”，动词化后表示“像加燃料一样推动”。",
-              "forms": [
-                {
-                  "word": "fuels",
-                  "pos": "v.",
-                  "def": "第三人称单数形式"
-                },
-                {
-                  "word": "fueled",
-                  "pos": "v.",
-                  "def": "过去式/过去分词"
-                }
-              ]
-            },
-            "synonyms": [
-              {
-                "w": "drive",
-                "note": "更常见的替换，如 drive economic growth"
-              },
-              {
-                "w": "boost",
-                "note": "雅思阅读中常用来替换 fuel，表示“促进”"
-              }
-            ],
-            "confusables": []
-          },
-          {
-            "w": "economic growth",
-            "lemma": "economic growth",
-            "pos": "n.",
-            "def": "经济增长",
-            "aids": {
-              "morphemes": [
-                {
-                  "text": "eco",
-                  "type": "root",
-                  "gloss": "经济"
-                },
-                {
-                  "text": "nom",
-                  "type": "root",
-                  "gloss": "管理"
-                },
-                {
-                  "text": "ic",
-                  "type": "suffix",
-                  "gloss": "……的"
-                },
-                {
-                  "text": "growth",
-                  "type": "root",
-                  "gloss": "增长"
-                }
-              ],
-              "derivation": "economic 来自 economy（经济）+ -ic（形容词后缀），growth 是 grow 的名词形式。",
-              "family": {
-                "root": "econom",
-                "gloss": "经济",
-                "words": [
-                  {
-                    "word": "economy",
-                    "def": "经济"
-                  },
-                  {
-                    "word": "economist",
-                    "def": "经济学家"
-                  }
-                ]
-              },
-              "mnemonic": "",
-              "forms": []
-            },
-            "synonyms": [
-              {
-                "w": "economic development",
-                "note": "更宏观的替换，雅思阅读中常见"
-              }
-            ],
-            "confusables": []
-          }
-        ],
-        "expressions": [
-          {
-            "text": "fuel economic growth",
-            "zh": "推动经济增长",
-            "usage": "写作中可用来讨论因果关系，如：Investment in education can fuel economic growth.（教育投资能推动经济增长。）"
-          }
-        ]
-      }
-    },
-    {
-      "id": 2,
-      "para": 1,
       "en": "Over the last decade, a huge database about the lives of southwest German villagers between 1600 and 1900 has been compiled by a team led by Professor Sheilagh Ogilvie at Cambridge University’s Faculty of Economics.",
       "zh": "过去十年间，剑桥大学经济学院希拉·奥格尔维（Sheilagh Ogilvie）教授领衔的团队，编制了一个关于 1600 至 1900 年间德国西南部村民生活的庞大数据库。",
       "grammar": {
@@ -466,7 +275,7 @@
       }
     },
     {
-      "id": 3,
+      "id": 2,
       "para": 1,
       "en": "It includes court records, guild ledgers, parish registers, village censuses, tax lists and – the most recent addition – 9,000 handwritten inventories listing over a million personal possessions belonging to ordinary women and men across three centuries.",
       "zh": "它包括法庭记录、行会账簿、教区登记册、村庄人口普查、纳税清单，以及最新增补的 9,000 份手写清单——这些清单列出了三个世纪以来普通男女所拥有的逾百万件个人物品。",
@@ -829,7 +638,7 @@
       }
     },
     {
-      "id": 4,
+      "id": 3,
       "para": 1,
       "en": "Ogilvie, who discovered the inventories in the archives of two German communities 30 years ago, believes they may hold the answer to a conundrum that has long puzzled economists: the lack of evidence for a causal link between education and a country’s economic growth.",
       "zh": "奥格尔维 30 年前在两个德国社区的档案里发现了这些清单，她相信这些清单或许能解答一个长期困扰经济学家的难题：教育与一国经济增长之间缺乏因果关系的证据。",
@@ -1075,8 +884,8 @@
       }
     },
     {
-      "id": 5,
-      "para": 1,
+      "id": 4,
+      "para": 2,
       "en": "As Ogilvie explains, ‘Education helps us to work more productively, invent better technology, and earn more … surely it must be critical for economic growth?",
       "zh": "正如奥格尔维所解释的：“教育帮助我们更高效地工作、发明更好的技术、赚得更多……它对经济增长想必是至关重要的吧？",
       "grammar": {
@@ -1348,13 +1157,13 @@
       }
     },
     {
-      "id": 6,
-      "para": 1,
-      "en": "But, if you look back through history, there’s no evidence that having a high literacy rate made a country industrialise earlier.’ Between 1600 and 1900, England had only mediocre literacy rates by European standards, yet its economy grew fast and it was the first country to industrialise.",
-      "zh": "但是，如果你回顾历史，就会发现没有任何证据表明高识字率能让一个国家更早实现工业化。”1600 至 1900 年间，按欧洲标准衡量，英国的识字率仅属中等，其经济却增长迅速，还成为第一个实现工业化的国家。",
+      "id": 5,
+      "para": 2,
+      "en": "But, if you look back through history, there’s no evidence that having a high literacy rate made a country industrialise earlier.’",
+      "zh": "但如果回顾历史，就会发现没有证据表明高识字率能使一个国家更早实现工业化。”",
       "grammar": {
-        "type": "条件状语从句 + 让步转折（yet）",
-        "note": "引语部分主干是 there's no evidence that...，that 引导同位语从句解释 evidence 的内容，其中 having a high literacy rate 是动名词作主语；引语结束后另起一句，主干是 England had... literacy rates，yet 引出转折——识字率中等，经济却增长快、工业化早。"
+        "type": "条件状语从句 + There be + 同位语从句",
+        "note": "if 引导条件状语从句；主句是 there is no evidence；that 引导同位语从句，说明 evidence 的具体内容。"
       },
       "words": [
         {
@@ -1363,321 +1172,33 @@
           "def": "识字率"
         },
         {
+          "w": "industrialise",
+          "pos": "v.",
+          "def": "实现工业化"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 2,
+      "en": "Between 1600 and 1900, England had only mediocre literacy rates by European standards, yet its economy grew fast and it was the first country to industrialise.",
+      "zh": "1600 至 1900 年间，按欧洲标准衡量，英格兰的识字率只能算一般，但其经济增长迅速，而且是第一个实现工业化的国家。",
+      "grammar": {
+        "type": "转折并列句 + 不定式定语",
+        "note": "yet 连接识字率一般与经济增长迅速的反差；and 再并列 it was the first country；to industrialise 修饰 country。"
+      },
+      "words": [
+        {
           "w": "mediocre",
           "pos": "adj.",
-          "def": "平庸的；中等的"
-        }
-      ],
-      "deep": {
-        "pattern": {
-          "id": "svc",
-          "label": "S + V + C (主语 + 系动词 + 主语补语)",
-          "tag": "ch1.svc",
-          "skeleton": [
-            {
-              "role": "S",
-              "text": "there",
-              "zh": "（形式主语）"
-            },
-            {
-              "role": "V",
-              "text": "is",
-              "zh": "是"
-            },
-            {
-              "role": "C",
-              "text": "no evidence",
-              "zh": "没有证据"
-            }
-          ],
-          "plain": "去掉修饰后，主句是 there is no evidence（没有证据）。这是一个 there be 存在句，真正的主语是 no evidence。"
+          "def": "平庸的；一般的"
         },
-        "chunks": [
-          {
-            "text": "But",
-            "role": "conn",
-            "zh": "但是",
-            "note": "表示转折，连接前文。",
-            "tag": "ch13.compound"
-          },
-          {
-            "text": "if you look back through history",
-            "role": "adv",
-            "zh": "如果你回顾历史",
-            "note": "条件状语从句，if 引导，修饰主句。",
-            "tag": "ch15.condition"
-          },
-          {
-            "text": "there's no evidence",
-            "role": "V",
-            "zh": "没有证据",
-            "note": "there be 句型，表示存在。",
-            "tag": "ch1.there-be"
-          },
-          {
-            "text": "that having a high literacy rate made a country industrialise earlier",
-            "role": "app",
-            "zh": "高识字率让一个国家更早工业化",
-            "note": "that 引导的同位语从句，解释 evidence 的内容。从句中 having a high literacy rate 是动名词短语作主语。",
-            "tag": "ch14.noun-clause"
-          },
-          {
-            "text": ". Between 1600 and 1900",
-            "role": "adv",
-            "zh": "在1600到1900年间",
-            "note": "时间状语，包含句号。",
-            "tag": "ch5.adv-phrase"
-          },
-          {
-            "text": "England",
-            "role": "S",
-            "zh": "英格兰",
-            "note": "主语。"
-          },
-          {
-            "text": "had",
-            "role": "V",
-            "zh": "有",
-            "note": "及物动词。",
-            "tag": "ch1.svo"
-          },
-          {
-            "text": "only mediocre literacy rates",
-            "role": "O",
-            "zh": "仅中等的识字率",
-            "note": "宾语。",
-            "tag": "ch2.np"
-          },
-          {
-            "text": "by European standards",
-            "role": "adv",
-            "zh": "按欧洲标准",
-            "note": "方式状语。",
-            "tag": "ch3.prep"
-          },
-          {
-            "text": ", yet",
-            "role": "conn",
-            "zh": "然而",
-            "note": "表示转折，包含逗号。",
-            "tag": "ch13.compound"
-          },
-          {
-            "text": "its economy grew fast",
-            "role": "clause",
-            "zh": "其经济快速增长",
-            "note": "并列句的第一个分句，主语 its economy，谓语 grew fast。",
-            "tag": "ch1.sv"
-          },
-          {
-            "text": "and",
-            "role": "conn",
-            "zh": "并且",
-            "note": "并列连接词。",
-            "tag": "ch13.compound"
-          },
-          {
-            "text": "it was the first country to industrialise",
-            "role": "clause",
-            "zh": "它是第一个工业化的国家",
-            "note": "并列句的第二个分句，主语 it，系动词 was，表语 the first country，不定式 to industrialise 作定语修饰 country。",
-            "tag": "ch1.svc"
-          },
-          {
-            "text": ".",
-            "role": "adv",
-            "zh": "句号",
-            "note": "句末标点，归入最后一个修饰成分。",
-            "tag": "ch5.adv"
-          }
-        ],
-        "grammar_points": [
-          {
-            "tag": "ch14.noun-clause",
-            "name": "同位语从句",
-            "explain": "that 引导的从句跟在名词 evidence 后面，说明 evidence 的具体内容，这就是同位语从句。注意区分：同位语从句的 that 在从句中不充当成分，而关系从句的 that 要充当主语或宾语。这里 that 不充当成分，所以是同位语从句。"
-          },
-          {
-            "tag": "ch11.gerund",
-            "name": "动名词短语作主语",
-            "explain": "having a high literacy rate 是动名词短语，在 that 从句中作主语。动名词就是把动词加 -ing 变成名词用，可以像名词一样作主语、宾语。这里 having 是“拥有”的意思，整个短语作主语，谓语是 made。"
-          },
-          {
-            "tag": "ch13.compound",
-            "name": "并列句（yet）",
-            "explain": "yet 是表示转折的并列连词，连接两个并列分句。前一分句说英国识字率中等，后一分句用 yet 转折，说经济却增长快、工业化早。这种“虽然……但是……”的逻辑在雅思阅读中很常见。"
-          }
-        ],
-        "vocab": [
-          {
-            "w": "literacy",
-            "lemma": "literacy",
-            "pos": "n.",
-            "def": "读写能力；识字",
-            "aids": {
-              "morphemes": [
-                {
-                  "text": "liter",
-                  "type": "root",
-                  "gloss": "文字"
-                },
-                {
-                  "text": "acy",
-                  "type": "suffix",
-                  "gloss": "状态"
-                }
-              ],
-              "derivation": "liter（文字）+ acy（状态）→ 识字的状态",
-              "family": {
-                "root": "liter",
-                "gloss": "文字",
-                "words": [
-                  {
-                    "word": "literate",
-                    "def": "有读写能力的"
-                  },
-                  {
-                    "word": "illiterate",
-                    "def": "文盲的"
-                  },
-                  {
-                    "word": "literature",
-                    "def": "文学"
-                  }
-                ]
-              },
-              "mnemonic": "",
-              "forms": []
-            },
-            "synonyms": [
-              {
-                "w": "reading and writing ability",
-                "note": "更直白的表达，在雅思写作中可替换使用"
-              }
-            ],
-            "confusables": []
-          },
-          {
-            "w": "mediocre",
-            "lemma": "mediocre",
-            "pos": "adj.",
-            "def": "平庸的；中等的",
-            "aids": {
-              "morphemes": [
-                {
-                  "text": "medi",
-                  "type": "root",
-                  "gloss": "中间"
-                },
-                {
-                  "text": "ocre",
-                  "type": "suffix",
-                  "gloss": "……的"
-                }
-              ],
-              "derivation": "medi（中间）+ ocre → 在中间的，即平庸的",
-              "family": {
-                "root": "medi",
-                "gloss": "中间",
-                "words": [
-                  {
-                    "word": "medium",
-                    "def": "中等的；媒介"
-                  },
-                  {
-                    "word": "median",
-                    "def": "中位数"
-                  }
-                ]
-              },
-              "mnemonic": "",
-              "forms": []
-            },
-            "synonyms": [
-              {
-                "w": "average",
-                "note": "更常用，在雅思阅读中常替换 mediocre"
-              },
-              {
-                "w": "ordinary",
-                "note": "普通的，也可替换"
-              }
-            ],
-            "confusables": []
-          },
-          {
-            "w": "industrialise",
-            "lemma": "industrialise",
-            "pos": "v.",
-            "def": "工业化",
-            "aids": {
-              "morphemes": [
-                {
-                  "text": "industr",
-                  "type": "root",
-                  "gloss": "工业"
-                },
-                {
-                  "text": "ial",
-                  "type": "suffix",
-                  "gloss": "……的"
-                },
-                {
-                  "text": "ise",
-                  "type": "suffix",
-                  "gloss": "使……化"
-                }
-              ],
-              "derivation": "industr（工业）+ ial（形容词后缀）+ ise（动词后缀）→ 使工业化",
-              "family": {
-                "root": "industr",
-                "gloss": "工业",
-                "words": [
-                  {
-                    "word": "industry",
-                    "def": "工业"
-                  },
-                  {
-                    "word": "industrial",
-                    "def": "工业的"
-                  },
-                  {
-                    "word": "industrialisation",
-                    "def": "工业化（名词）"
-                  }
-                ]
-              },
-              "mnemonic": "",
-              "forms": [
-                {
-                  "word": "industrialised",
-                  "pos": "adj.",
-                  "def": "工业化的"
-                }
-              ]
-            },
-            "synonyms": [
-              {
-                "w": "become industrialised",
-                "note": "更完整的表达，在写作中可用"
-              }
-            ],
-            "confusables": []
-          }
-        ],
-        "expressions": [
-          {
-            "text": "look back through history",
-            "zh": "回顾历史",
-            "usage": "写作中可用于引出历史例证，如：If we look back through history, we can see many examples of...（如果我们回顾历史，可以看到许多……的例子。）"
-          },
-          {
-            "text": "by ... standards",
-            "zh": "按照……的标准",
-            "usage": "常用于比较，如：by modern standards（按照现代标准），by any standards（无论如何）。"
-          }
-        ]
-      }
+        {
+          "w": "by ... standards",
+          "pos": "phr.",
+          "def": "按……标准"
+        }
+      ]
     },
     {
       "id": 7,
@@ -2241,7 +1762,7 @@
     },
     {
       "id": 9,
-      "para": 2,
+      "para": 3,
       "en": "In the handwritten inventories that Ogilvie is analysing are the belongings of women and men at marriage, remarriage and death.",
       "zh": "在奥格尔维正在分析的这些手写清单中，记录着人们在结婚、再婚和离世时所拥有的财产。",
       "grammar": {
@@ -2486,7 +2007,7 @@
     },
     {
       "id": 10,
-      "para": 2,
+      "para": 3,
       "en": "From badger skins to Bibles, sewing machines to scarlet bodices – the villagers’ entire worldly goods are included.",
       "zh": "从獾皮到《圣经》，从缝纫机到猩红色的紧身胸衣——村民们全部的世俗家当都被囊括其中。",
       "grammar": {
@@ -2679,8 +2200,8 @@
     },
     {
       "id": 11,
-      "para": 2,
-      "en": "Inventories of agricultural equipment and craft tools reveal economic activities; ownership of books and education- related objects like pens and slates suggests how people learned.",
+      "para": 3,
+      "en": "Inventories of agricultural equipment and craft tools reveal economic activities; ownership of books and education-related objects like pens and slates suggests how people learned.",
       "zh": "农具和手工工具的清单揭示了经济活动；书籍以及钢笔、石板等与教育相关的物品的拥有情况，则暗示了人们的学习方式。",
       "grammar": {
         "type": "分号并列的两个分句",
@@ -3006,7 +2527,7 @@
     },
     {
       "id": 12,
-      "para": 2,
+      "para": 3,
       "en": "In addition, the tax lists included in the database record the value of farms, workshops, assets and debts; signatures and people’s estimates of their age indicate literacy and numeracy levels; and court records reveal obstacles (such as the activities of the guilds*) that stifled industry.",
       "zh": "此外，数据库中收录的纳税清单记录了农场、作坊、资产与债务的价值；签名以及人们对自己年龄的估算，反映出识字与算术水平；法庭记录则揭示了扼杀工业发展的种种障碍（如行会*的活动）。",
       "grammar": {
@@ -3951,19 +3472,36 @@
     },
     {
       "id": 15,
-      "para": 3,
-      "en": "Ogilvie and her team have been building the vast database of material possessions on top of their full demographic reconstruction of the people who lived in these two German communities. ‘We can follow the same people – and their descendants – across 300 years of educational and economic change,’ she says.",
-      "zh": "奥格尔维和她的团队在对这两个德国社区居民所做的完整人口重建之上，进一步构建了这个庞大的物质财产数据库。她说：“我们能够追踪同一批人——以及他们的后代——跨越 300 年的教育与经济变迁。”",
+      "para": 4,
+      "en": "Ogilvie and her team have been building the vast database of material possessions on top of their full demographic reconstruction of the people who lived in these two German communities.",
+      "zh": "奥格尔维及其团队在完整重建这两个德国社区人口资料的基础上，一直在建立庞大的物质财产数据库。",
       "grammar": {
-        "type": "现在完成进行时 + 直接引语",
-        "note": "第一句主干是 Ogilvie and her team have been building the vast database（现在完成进行时，强调持续进行的工作），on top of... 表“在……的基础之上”，who lived in... 修饰 the people；第二句为直接引语，两处破折号之间 and their descendants 是插入补充，与题目考点 descendants 对应。"
+        "type": "现在完成进行时 + 定语从句",
+        "note": "主干是 Ogilvie and her team have been building the database；on top of 表示“在……基础上”；who lived ... 修饰 people。"
       },
       "words": [
         {
-          "w": "demographic reconstruction",
-          "pos": "n.",
-          "def": "人口重建"
+          "w": "demographic",
+          "pos": "adj.",
+          "def": "人口统计的"
         },
+        {
+          "w": "reconstruction",
+          "pos": "n.",
+          "def": "重建；复原"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 4,
+      "en": "‘We can follow the same people – and their descendants – across 300 years of educational and economic change,’ she says.",
+      "zh": "“我们可以追踪同一批人及其后代，了解他们经历的 300 年教育与经济变迁，”她说。",
+      "grammar": {
+        "type": "直接引语 + 破折号插入",
+        "note": "引语主干是 We can follow the same people；破折号中的 and their descendants 补充追踪对象；across 300 years 交代时间跨度。"
+      },
+      "words": [
         {
           "w": "descendant",
           "pos": "n.",
@@ -3972,8 +3510,8 @@
       ]
     },
     {
-      "id": 16,
-      "para": 3,
+      "id": 17,
+      "para": 4,
       "en": "Individual lives have unfolded before their eyes.",
       "zh": "一个个鲜活的人生就这样在他们眼前徐徐展开。",
       "grammar": {
@@ -4180,8 +3718,8 @@
       }
     },
     {
-      "id": 17,
-      "para": 3,
+      "id": 18,
+      "para": 4,
       "en": "Stories like that of the 24-year-olds Ana Regina and Magdalena Riethmüllerin, who were chastised in 1707 for reading books in church instead of listening to the sermon.",
       "zh": "比如那两位 24 岁的姑娘安娜·雷吉娜（Ana Regina）和玛格达莱娜·里特米勒林（Magdalena Riethmüllerin）的故事——她们在 1707 年因在教堂里看书、而非聆听布道，遭到了训诫。",
       "grammar": {
@@ -4395,8 +3933,8 @@
       }
     },
     {
-      "id": 18,
-      "para": 3,
+      "id": 19,
+      "para": 4,
       "en": "‘This tells us they were continuing to develop their reading skills at least a decade after leaving school,’ explains Ogilvie.",
       "zh": "“这说明她们在离校之后至少又坚持提升了十年的阅读能力，”奥格尔维解释道。",
       "grammar": {
@@ -4728,7 +4266,7 @@
       }
     },
     {
-      "id": 19,
+      "id": 20,
       "para": 4,
       "en": "The database also reveals the case of Juliana Schweickherdt, a 50-year-old spinster living in the small Black Forest community of Wildberg, who was reprimanded in 1752 by the local weavers’ guild for ‘weaving cloth and combing wool, counter to the guild ordinance’.",
       "zh": "数据库还披露了朱莉安娜·施韦克赫特（Juliana Schweickherdt）的案例：她是住在黑森林小镇维尔德贝格（Wildberg）的一位 50 岁未婚女子，1752 年被当地织工行会申斥，罪名是“违反行会条例织布、梳理羊毛”。",
@@ -5005,7 +4543,7 @@
       }
     },
     {
-      "id": 20,
+      "id": 21,
       "para": 4,
       "en": "When Juliana continued taking jobs reserved for male guild members, she was summoned before the guild court and told to pay a fine equivalent to one third of a servant’s annual wage.",
       "zh": "当朱莉安娜继续承接那些专属于男性行会成员的活计时，她被传唤到行会法庭，并被勒令缴纳一笔相当于仆人年薪三分之一的罚款。",
@@ -5279,7 +4817,7 @@
       }
     },
     {
-      "id": 21,
+      "id": 22,
       "para": 4,
       "en": "It was a small act of defiance by today’s standards, but it reflects a time when laws in Germany and elsewhere regulated people’s access to labour markets.",
       "zh": "以今天的标准看，这不过是小小的一次抗命，却折射出一个时代——在德国乃至别处，法律都限制着人们进入劳动力市场。",
@@ -5564,7 +5102,7 @@
       }
     },
     {
-      "id": 22,
+      "id": 23,
       "para": 4,
       "en": "The dominance of guilds not only prevented people from using their skills, but also held back even the simplest industrial innovation.",
       "zh": "行会的垄断地位不仅使人们无法施展技能，甚至连最简单的工业创新也横加阻挠。",
@@ -5825,8 +5363,8 @@
       }
     },
     {
-      "id": 23,
-      "para": 4,
+      "id": 24,
+      "para": 5,
       "en": "The data-gathering phase of the project has been completed and now, according to Ogilvie, it is time ‘to ask the big questions’.",
       "zh": "奥格尔维表示，项目的数据采集阶段已经完成，如今“是时候提出那些重大问题了”。",
       "grammar": {
@@ -6093,8 +5631,8 @@
       }
     },
     {
-      "id": 24,
-      "para": 4,
+      "id": 25,
+      "para": 5,
       "en": "One way to look at whether education causes economic growth is to ‘hold wealth constant’.",
       "zh": "考察教育是否促进经济增长的一种方法，是“把财富水平固定下来”。",
       "grammar": {
@@ -6361,7 +5899,7 @@
       }
     },
     {
-      "id": 25,
+      "id": 26,
       "para": 5,
       "en": "This involves following the lives of different people with the same level of wealth over a period of time.",
       "zh": "这意味着要在一段时间内，追踪一批财富水平相同的不同人的人生轨迹。",
@@ -6635,7 +6173,7 @@
       }
     },
     {
-      "id": 26,
+      "id": 27,
       "para": 5,
       "en": "If wealth is constant, it is possible to discover whether education was, for example, linked to the cultivation of new crops, or to the adoption of industrial innovations like sewing machines.",
       "zh": "一旦财富保持恒定，就有可能查明教育是否与某些行为有关，比如种植新作物，或采用缝纫机之类的工业创新。",
@@ -6937,7 +6475,7 @@
       }
     },
     {
-      "id": 27,
+      "id": 28,
       "para": 5,
       "en": "The team will also ask what aspect of education helped people engage more with productive and innovative activities.",
       "zh": "团队还将追问：究竟是教育的哪个方面，促使人们更多地投身于生产性与创新性的活动。",
@@ -7207,7 +6745,7 @@
       }
     },
     {
-      "id": 28,
+      "id": 29,
       "para": 5,
       "en": "Was it, for instance, literacy, numeracy, book ownership, years of schooling?",
       "zh": "比如说，起作用的到底是识字能力、算术能力、藏书量，还是受教育的年限？",
@@ -7229,7 +6767,7 @@
       ]
     },
     {
-      "id": 29,
+      "id": 30,
       "para": 5,
       "en": "Was there a threshold level – a tipping point – that needed to be reached to affect economic performance?",
       "zh": "是否存在一个必须跨过的门槛值——一个引爆点——达到之后才会影响经济表现？",
@@ -7464,8 +7002,8 @@
       }
     },
     {
-      "id": 30,
-      "para": 5,
+      "id": 31,
+      "para": 6,
       "en": "Ogilvie hopes to start finding answers to these questions over the next few years.",
       "zh": "奥格尔维希望在未来几年里，开始为这些问题找到答案。",
       "grammar": {
@@ -7710,7 +7248,7 @@
       }
     },
     {
-      "id": 31,
+      "id": 32,
       "para": 6,
       "en": "One thing is already clear, she says: the relationship between education and economic growth is far from straightforward.",
       "zh": "她说，有一点已经很清楚：教育与经济增长之间的关系，远非简单明了。",
@@ -7999,7 +7537,7 @@
       }
     },
     {
-      "id": 32,
+      "id": 33,
       "para": 6,
       "en": "‘German-speaking central Europe is an excellent laboratory for testing theories of economic growth,’ she explains.",
       "zh": "“说德语的中欧地区，是检验经济增长理论的绝佳实验室，”她解释道。",
@@ -8275,7 +7813,7 @@
       }
     },
     {
-      "id": 33,
+      "id": 34,
       "para": 6,
       "en": "Between 1600 and 1900, literacy rates and book ownership were high and yet the region remained poor.",
       "zh": "1600 至 1900 年间，那里的识字率和藏书量都很高，可这一地区却始终贫穷。",
@@ -8556,7 +8094,7 @@
       }
     },
     {
-      "id": 34,
+      "id": 35,
       "para": 6,
       "en": "It was also the case that local guilds and merchant associations were extremely powerful and legislated against anything that undermined their monopolies.",
       "zh": "还有一个情况是：当地行会和商人协会势力极大，会立法抵制一切损害其垄断利益的事物。",
@@ -8847,7 +8385,7 @@
       }
     },
     {
-      "id": 35,
+      "id": 36,
       "para": 6,
       "en": "In villages throughout the region, guilds blocked labour migration and resisted changes that might reduce their influence.",
       "zh": "在这一地区的各个村庄里，行会阻断劳动力流动，并抵制任何可能削弱自身影响力的变革。",
@@ -9170,7 +8708,7 @@
       }
     },
     {
-      "id": 36,
+      "id": 37,
       "para": 6,
       "en": "‘Early findings suggest that the potential benefits of education for the economy can be held back by other barriers, and this has implications for today,’ says Ogilvie.",
       "zh": "“早期研究结果表明，教育对经济的潜在益处，可能被其他障碍所压制，而这对当今也具有借鉴意义，”奥格尔维说。",
@@ -9438,8 +8976,8 @@
       }
     },
     {
-      "id": 37,
-      "para": 7,
+      "id": 38,
+      "para": 6,
       "en": "‘Huge amounts are spent improving education in developing countries, but this spending can fail to deliver economic growth if restrictions block people – especially women and the poor – from using their education in economically productive ways.",
       "zh": "“如今人们在发展中国家投入巨资改善教育，但假如种种限制阻止人们——尤其是妇女和穷人——以经济上有产出的方式运用所受的教育，这笔投入就可能无法转化为经济增长。",
       "grammar": {
@@ -9797,8 +9335,8 @@
       }
     },
     {
-      "id": 38,
-      "para": 7,
+      "id": 39,
+      "para": 6,
       "en": "If economic institutions are poorly set up, for instance, education can’t lead to growth.’",
       "zh": "举例来说，如果经济制度建设得不健全，教育就无法带来增长。”",
       "grammar": {
@@ -10035,24 +9573,18 @@
           "number": 14,
           "prompt": "an explanation of the need for research to focus on individuals with a fairly consistent income",
           "answer": "E",
-          "evidence_sentence": 14,
+          "evidence_sentence": 26,
           "paraphrase": {
             "pairs": [
               {
-                "q": "research to focus on individuals",
-                "p": "analyse links between literacy, numeracy, wealth, and industriousness, for individual women and men",
+                "q": "individuals with a fairly consistent income",
+                "p": "different people with the same level of wealth over a period of time",
                 "kind": "para",
-                "note": "题干说研究聚焦于个体，原文说分析个体男女之间的关联，是句式改写。"
-              },
-              {
-                "q": "fairly consistent income",
-                "p": "wealth",
-                "kind": "syn",
-                "note": "题干中'相当稳定的收入'与原文'财富'是同义替换。"
+                "note": "consistent income 被研究设计中的 same level of wealth 概括。"
               }
             ],
-            "trap": "题干中'need for research'可能误导学生去找'need'或'require'等词，但原文没有直接对应，而是通过'provides multiple indicators...making it possible'间接表达研究需求。",
-            "explain": "先抓题干关键词'individuals'和'consistent income'，到原文找对应词'individual women and men'和'wealth'，即可定位到E段。"
+            "trap": "题目用 income，原文用更宽泛的 wealth，并以 hold wealth constant 描述方法。",
+            "explain": "E 段解释要控制财富水平不变，再追踪不同个体，正是题干所述研究需要，答案为 E。"
           }
         },
         {
@@ -10063,278 +9595,218 @@
           "paraphrase": {
             "pairs": [
               {
-                "q": "examples of the sources",
-                "p": "a huge database about the lives of southwest German villagers",
+                "q": "sources the database has been compiled from",
+                "p": "court records, guild ledgers, parish registers, village censuses, tax lists",
                 "kind": "para",
-                "note": "题干问数据库来源的例子，原文说数据库是关于村民生活的，但未列出具体来源，因此定位句不直接对应，需结合上下文找来源例子。"
-              },
-              {
-                "q": "the database has been compiled from",
-                "p": "has been compiled by",
-                "kind": "verbatim",
-                "note": "题干和原文都用了'compiled'，是原词复现，帮助定位。"
+                "note": "原文连续列出数据库所用档案来源。"
               }
             ],
-            "trap": "题干问'sources'（来源），但定位句只说了数据库内容（村民生活），未提及来源，容易误以为定位句就是答案。实际答案需在原文前后找具体来源例子。",
-            "explain": "先抓题干关键词'database compiled'，到原文找到'compiled'所在句，但该句未给出来源例子，需继续读下文找具体来源。"
+            "trap": "不要把后文的 possessions 当作数据库来源；那是某类清单里的内容。",
+            "explain": "A 段列举 court records、guild ledgers、parish registers 等资料来源，答案为 A。"
           }
         },
         {
           "number": 16,
           "prompt": "an account of one individual’s refusal to obey an order",
           "answer": "D",
-          "evidence_sentence": 14,
+          "evidence_sentence": 21,
           "paraphrase": {
             "pairs": [
               {
-                "q": "one individual’s refusal to obey an order",
-                "p": "individual women and men",
-                "kind": "syn",
-                "note": "题干中的'one individual'对应原文中的'individual women and men'，都是指单个的人。"
+                "q": "refusal to obey an order",
+                "p": "continued taking jobs reserved for male guild members",
+                "kind": "para",
+                "note": "continued 表明 Juliana 在受斥责后仍继续违反行会规定。"
               }
             ],
-            "trap": "题干中的'refusal to obey an order'在定位句中并未出现，可能误以为需要找到拒绝命令的具体例子，但实际定位句只提到了个体。",
-            "explain": "先抓题干关键词'one individual'，到原文找'individual'相关的表达，发现原文有'individual women and men'，从而定位到D选项。"
+            "trap": "关键不是第一次被 reprimanded，而是之后 continued，体现拒绝服从。",
+            "explain": "D 段叙述 Juliana 被斥责后仍继续接只留给男性会员的工作，答案为 D。"
           }
         },
         {
           "number": 17,
           "prompt": "a reference to a region being particularly suited to research into the link between education and economic growth",
           "answer": "F",
-          "evidence_sentence": 1,
+          "evidence_sentence": 33,
           "paraphrase": {
             "pairs": [
               {
-                "q": "link between education and economic growth",
-                "p": "education fuel economic growth",
-                "kind": "syn",
-                "note": "题干中的'link between...and...'被替换为动词'fuel'，表示教育推动经济增长的关系。"
+                "q": "a region being particularly suited to research",
+                "p": "German-speaking central Europe is an excellent laboratory for testing theories of economic growth",
+                "kind": "para",
+                "note": "excellent laboratory 表示该地区特别适合用来检验理论。"
               }
             ],
-            "trap": "题干中的'region'在定位句中未出现，但该句是段落标题，实际对应段落内容涉及地区。",
-            "explain": "先抓题干关键词'education'和'economic growth'，到原文找包含这两个词的句子，发现定位句以疑问形式表达相同关系。"
+            "trap": "laboratory 在这里是比喻，不是实际实验室。",
+            "explain": "F 段明确称德语区中欧是检验经济增长理论的 excellent laboratory，答案为 F。"
           }
         },
         {
           "number": 18,
           "prompt": "examples of the items included in a list of personal possessions",
           "answer": "C",
-          "evidence_sentence": 3,
+          "evidence_sentence": 10,
           "paraphrase": {
             "pairs": [
               {
-                "q": "examples of the items included in a list of personal possessions",
-                "p": "personal possessions",
-                "kind": "verbatim",
-                "note": "题干中的'personal possessions'在原文中完全复现，是定位的关键词。"
-              },
-              {
-                "q": "examples",
-                "p": "court records, guild ledgers, parish registers, village censuses, tax lists",
-                "kind": "verbatim",
-                "note": "题干问'examples'，原文直接列举了这些例子，是原词复现。"
+                "q": "items included in a list of personal possessions",
+                "p": "badger skins to Bibles, sewing machines to scarlet bodices",
+                "kind": "para",
+                "note": "原文列举个人财产清单中的具体物品。"
               }
             ],
-            "trap": "注意题干问的是'list of personal possessions'中的例子，而原文中'court records'等是其他列表的例子，并非'personal possessions'列表中的例子。真正的例子是'inventories'中的'personal possessions'。",
-            "explain": "先抓题干关键词'personal possessions'，到原文找到该词，然后定位到列举的具体例子。"
+            "trap": "A 段列的是档案种类；C 段才列个人物品。",
+            "explain": "C 段列出獾皮、圣经、缝纫机和猩红色紧身胸衣，答案为 C。"
           }
         },
         {
           "number": 19,
           "prompt": "The database that Ogilvie and her team has compiled sheds light on the lives of a range of individuals, as well as those of their ___, over a 300-year period.",
           "answer": "descendants",
-          "evidence_sentence": 15,
+          "evidence_sentence": 16,
           "paraphrase": {
             "pairs": [
               {
-                "q": "their ___",
+                "q": "as well as those of their ___",
                 "p": "their descendants",
                 "kind": "verbatim",
-                "note": "题干中的'their ___'对应原文中的'their descendants'，'descendants'是原词复现。"
-              },
-              {
-                "q": "sheds light on the lives of a range of individuals, as well as those of their ___",
-                "p": "follow the same people – and their descendants",
-                "kind": "para",
-                "note": "题干说'揭示了一群人的生活以及他们___的生活'，原文说'追踪同一批人以及他们的后代'，意思相同，句式不同。"
+                "note": "their descendants 直接对应空格。"
               },
               {
                 "q": "over a 300-year period",
                 "p": "across 300 years",
                 "kind": "syn",
-                "note": "'over a 300-year period'与'across 300 years'同义替换。"
+                "note": "时间范围同义改写。"
               }
             ],
-            "trap": "注意题干中'as well as those of their ___'容易误填'people'，但原文明确是'descendants'。",
-            "explain": "先抓题干关键词'database'和'descendants'，到原文找同一个人群和后代，定位到'follow the same people – and their descendants'，答案就是'descendants'。"
+            "trap": "same people 与 descendants 是两组并列追踪对象，空格填后者。",
+            "explain": "原文是 follow the same people – and their descendants – across 300 years，故填 descendants。"
           }
         },
         {
           "number": 20,
           "prompt": "Ana Regina and Magdalena Riethmüllerin were reprimanded for reading while they should have been paying attention to a ___.",
           "answer": "sermon",
-          "evidence_sentence": 17,
+          "evidence_sentence": 18,
           "paraphrase": {
             "pairs": [
               {
-                "q": "reprimanded",
-                "p": "chastised",
-                "kind": "syn",
-                "note": "reprimanded（训斥）和chastised（惩戒）是同义词替换。"
-              },
-              {
-                "q": "paying attention to a ___",
-                "p": "listening to the sermon",
+                "q": "reprimanded for reading",
+                "p": "chastised in 1707 for reading books in church instead of listening to the sermon",
                 "kind": "para",
-                "note": "题干说'本应专心听___'，原文说'没有听布道'，所以空格填sermon。"
+                "note": "reprimanded 对应 chastised，paying attention 对应 listening。"
               }
             ],
-            "trap": "",
-            "explain": "先抓题干关键词reprimanded和paying attention to，到原文找chastised和listening to，从而定位到sermon。"
+            "trap": "church 是地点，题目问她们本该听什么。",
+            "explain": "原文说她们读书而没有听 sermon，因此填 sermon。"
           }
         },
         {
           "number": 21,
           "prompt": "Juliana Schweickherdt was later given a ___ as a punishment.",
           "answer": "fine",
-          "evidence_sentence": 20,
+          "evidence_sentence": 21,
           "paraphrase": {
             "pairs": [
               {
-                "q": "punishment",
-                "p": "fine",
-                "kind": "syn",
-                "note": "惩罚的具体形式是罚款，fine对应punishment。"
-              },
-              {
-                "q": "was later given",
-                "p": "was summoned before the guild court and told to pay",
+                "q": "given a ___ as a punishment",
+                "p": "told to pay a fine",
                 "kind": "para",
-                "note": "题干说‘后来被给予’，原文描述为‘被传唤并被告知支付’，是动作的改写。"
+                "note": "惩罚方式是缴纳罚款。"
               }
             ],
-            "trap": "可能误选‘servant’或‘wage’，但题干问的是惩罚形式，fine才是答案。",
-            "explain": "先抓题干关键词‘punishment’，到原文找惩罚的具体内容，发现‘pay a fine’就是惩罚，fine是答案。"
+            "trap": "one third of a servant’s annual wage 是罚款额度，不是答案。",
+            "explain": "原文明确 told to pay a fine，限填一词，答案为 fine。"
           }
         },
         {
           "number": 22,
           "prompt": "Cases like this illustrate how the guilds could prevent ___ and stop skilled people from working.",
           "answer": "innovation",
-          "evidence_sentence": 22,
+          "evidence_sentence": 23,
           "paraphrase": {
             "pairs": [
               {
-                "q": "prevent",
-                "p": "prevented",
-                "kind": "verbatim",
-                "note": "原词复现，直接对应"
-              },
-              {
-                "q": "stop skilled people from working",
-                "p": "prevented people from using their skills",
+                "q": "prevent ___",
+                "p": "held back even the simplest industrial innovation",
                 "kind": "para",
-                "note": "题干说'阻止有技能的人工作'，原文说'阻止人们使用他们的技能'，意思一致"
-              },
-              {
-                "q": "innovation",
-                "p": "innovation",
-                "kind": "verbatim",
-                "note": "原词复现，答案直接出现在原文"
+                "note": "prevent 对应 held back，空格对应 innovation。"
               }
             ],
-            "trap": "题干中'prevent ___ and stop skilled people from working'可能让人误以为空格是'people'或'skills'，但原文结构是'prevented people from using their skills, but also held back...innovation'，空格对应'innovation'",
-            "explain": "先抓题干关键词'prevent'和'stop skilled people from working'，到原文找对应表达'prevented people from using their skills'，发现后面并列的'held back...innovation'，从而定位答案'innovation'"
+            "trap": "同句前半部分 already 对应 stop skilled people from working；空格应取后半部分。",
+            "explain": "行会既阻止人们使用技能，也阻碍 industrial innovation，故填 innovation。"
           }
         },
         {
           "number": 23,
           "prompt": "Which TWO of the following statements does the writer make about literacy rates in Section B?<br>A Very little research has been done into the link between high literacy rates and improved earnings.<br>B Literacy rates in Germany between 1600 and 1900 were very good.<br>C There is strong evidence that high literacy rates in the modern world result in economic growth.<br>D England is a good example of how high literacy rates helped a country industrialise.<br>E Economic growth can help to improve literacy rates.",
           "answer": "B",
-          "evidence_sentence": 6,
+          "evidence_sentence": 7,
           "paraphrase": {
             "pairs": [
               {
-                "q": "literacy rates in Germany between 1600 and 1900 were very good",
-                "p": "England had only mediocre literacy rates by European standards",
-                "kind": "neg",
-                "note": "题干说德国识字率很好，原文说英国识字率中等，暗示德国可能更好，但原文未直接提德国，而是通过对比暗示德国更好。"
-              },
-              {
-                "q": "literacy rates in Germany between 1600 and 1900 were very good",
-                "p": "Between 1600 and 1900",
-                "kind": "verbatim",
-                "note": "时间范围原词复现，帮助定位。"
+                "q": "literacy rates in Germany ... were very good",
+                "p": "Germany and Scandinavia had excellent literacy rates",
+                "kind": "para",
+                "note": "very good 对应 excellent。"
               }
             ],
-            "trap": "选项D（英国例子）是干扰项，因为原文提到英国识字率中等但工业化早，与选项D相反。",
-            "explain": "先抓题干关键词'Germany'和'1600 to 1900'，到原文找时间范围，发现原文说的是英国，但通过'mediocre'（中等）暗示德国可能更好，属于反向替换。"
+            "trap": "题目问作者在 B 段作出的陈述，不是问识字率是否带来增长。",
+            "explain": "B 段明确说德国和斯堪的纳维亚识字率 excellent，所以选 B。"
           }
         },
         {
           "number": 24,
           "prompt": "Which TWO of the following statements does the writer make about literacy rates in Section B?<br>A Very little research has been done into the link between high literacy rates and improved earnings.<br>B Literacy rates in Germany between 1600 and 1900 were very good.<br>C There is strong evidence that high literacy rates in the modern world result in economic growth.<br>D England is a good example of how high literacy rates helped a country industrialise.<br>E Economic growth can help to improve literacy rates.",
           "answer": "E",
-          "evidence_sentence": 5,
+          "evidence_sentence": 8,
           "paraphrase": {
             "pairs": [
               {
-                "q": "literacy rates",
-                "p": "Education",
-                "kind": "syn",
-                "note": "题干中的'literacy rates'（识字率）在原文中被替换为'Education'（教育），两者概念相关但不等同，需注意上下文。"
-              },
-              {
-                "q": "economic growth",
-                "p": "economic growth",
-                "kind": "verbatim",
-                "note": "题干中的'economic growth'在原文中原词复现，是定位的关键词。"
-              },
-              {
-                "q": "help to improve",
-                "p": "helps us to work more productively, invent better technology, and earn more",
+                "q": "Economic growth can help to improve literacy rates",
+                "p": "growth increases education",
                 "kind": "para",
-                "note": "题干中的'help to improve'（帮助提高）在原文中被具体化为'helps us to work more productively, invent better technology, and earn more'（帮助我们更高效地工作、发明更好的技术、赚得更多），这是对'improve'的具体解释。"
+                "note": "improve literacy rates 是 increases education 的具体化表达。"
               }
             ],
-            "trap": "选项D（England is a good example...）可能被误选，但原文并未提及England作为例子。选项C（strong evidence）与原文的疑问语气（surely it must be critical?）不符，原文并非肯定陈述。",
-            "explain": "先抓题干关键词'literacy rates'和'economic growth'，到原文找对应。原文中'Education'对应'literacy rates'，'economic growth'原词出现，且句子结构（...helps...earn more...surely it must be critical for economic growth?）暗示教育对经济增长有促进作用，与选项E（Economic growth can help to improve literacy rates）方向一致（教育促进经济增长，反过来经济增长也可能促进教育，但这里强调的是教育对经济的作用，选项E是经济对教育，但原文逻辑是教育促进经济，所以E是反向表述，但注意：题干问的是writer's statements，原文中Ogilvie的观点是教育对经济重要，但选项E是经济帮助提高识字率，方向相反。实际上，根据定位句，writer并没有直接说经济帮助提高识字率，而是说教育对经济重要。因此，正确选项应该是C？但标准答案是E，需要重新分析。实际上，原文中'Education helps us to work more productively...surely it must be critical for economic growth?'表明教育对经济增长重要，但选项C说'strong evidence that high literacy rates in the modern world result in economic growth'，原文是疑问语气，不是strong evidence。而选项E说'Economic growth can help to improve literacy rates'，原文没有直接说，但可能从上下文推断？实际上，Section B可能还有其他内容。但根据给出的定位句，只有这一句。标准答案是E，可能因为原文中'Education helps us...'暗示了教育对经济的作用，而选项E是经济对教育，但题目是'which TWO'，这里只给了一个答案E，可能另一个是C？但题目要求输出一个答案E。所以，我们按标准答案E来解析。实际上，定位句并没有直接支持E，但可能在其他地方。这里我们只根据给出的定位句，所以解释要合理。"
+            "trap": "注意因果方向：原文否定“教育导致增长”的证据充分，却说“增长促进教育”的证据很多。",
+            "explain": "B 段明确写 there is plenty of evidence that growth increases education，所以选 E。"
           }
         },
         {
           "number": 25,
           "prompt": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?<br>A They helped young people to learn a skill.<br>B They were opposed to people moving to an area for work.<br>C They kept better records than guilds in other parts of the world.<br>D They opposed practices that threatened their control over a trade.<br>E They predominantly consisted of wealthy merchants.",
           "answer": "B",
-          "evidence_sentence": 35,
+          "evidence_sentence": 36,
           "paraphrase": {
             "pairs": [
               {
                 "q": "opposed to people moving to an area for work",
                 "p": "blocked labour migration",
-                "kind": "syn",
-                "note": "题干说反对人们迁入工作，原文说阻断劳动力迁移，意思相同。"
+                "kind": "para",
+                "note": "people moving for work 对应 labour migration，opposed 对应 blocked。"
               }
             ],
-            "trap": "选项D（反对威胁其行业控制的做法）与原文'resisted changes that might reduce their influence'相似，但题干问的是Section F中关于行会的陈述，且B更直接对应原文。",
-            "explain": "先抓题干关键词'opposed to people moving'，到原文找'blocked labour migration'，即可定位答案。"
+            "trap": "migration 在这里是劳动力流动，不只是跨国移民。",
+            "explain": "F 段说行会 blocked labour migration，因此选 B。"
           }
         },
         {
           "number": 26,
           "prompt": "Which TWO of the following statements does the writer make in Section F about guilds in German-speaking Central Europe between 1600 and 1900?<br>A They helped young people to learn a skill.<br>B They were opposed to people moving to an area for work.<br>C They kept better records than guilds in other parts of the world.<br>D They opposed practices that threatened their control over a trade.<br>E They predominantly consisted of wealthy merchants.",
           "answer": "D",
-          "evidence_sentence": 38,
+          "evidence_sentence": 35,
           "paraphrase": {
             "pairs": [
               {
                 "q": "opposed practices that threatened their control over a trade",
-                "p": "poorly set up",
-                "kind": "neg",
-                "note": "题干说行会反对威胁其行业控制的做法，原文说经济制度设置不当，通过否定表达替换。"
+                "p": "legislated against anything that undermined their monopolies",
+                "kind": "para",
+                "note": "threatened control 对应 undermined monopolies。"
               }
             ],
-            "trap": "题干问的是关于德语区中欧行会（1600-1900）的陈述，但定位句讨论的是经济制度与教育的关系，未直接提及行会，因此可能误选。",
-            "explain": "先抓题干关键词'guilds in German-speaking Central Europe between 1600 and 1900'，但原文定位句未出现这些词，而是通过'economic institutions poorly set up'反向对应行会反对威胁控制的做法。"
+            "trap": "merchant associations 与 guilds 并列，但题目概括的是它们维护垄断控制的共同做法。",
+            "explain": "F 段说明行会和商人协会立法反对任何削弱其垄断的事物，因此选 D。"
           }
         }
       ]
