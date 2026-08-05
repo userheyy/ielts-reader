@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>每日单词</title>
-  <link rel="stylesheet" href="css/style.css?v=15" />
+  <link rel="stylesheet" href="css/style.css?v=16" />
   <script>if(new URLSearchParams(location.search).get("embed")==="1")document.documentElement.classList.add("embed");</script>
 </head>
 <body>
@@ -92,7 +92,18 @@
       </div>
       <div class="study-controls">
         <button class="study-quit" id="study-quit">暂停，回到今日概览</button>
+        <button class="study-remove" id="study-remove">移出记忆队列</button>
         <!-- 朗读控件统一在 settings.html 配置 -->
+      </div>
+      <div class="study-remove-confirm" id="study-remove-confirm" hidden>
+        <div>
+          <strong>确定移出 <span id="study-remove-word"></span>？</strong>
+          <p>它不会再进入每日新词或到期复习，但词条仍会保留。</p>
+        </div>
+        <div class="study-remove-actions">
+          <button type="button" id="study-remove-cancel">取消</button>
+          <button type="button" class="danger" id="study-remove-ok">确认移出</button>
+        </div>
       </div>
     </section>
 
@@ -118,6 +129,15 @@
       <div class="pace-custom">
         <label>自定义每天新词：<input type="number" id="pace-custom-new" min="0" max="200" /></label>
       </div>
+      <div class="excluded-manager">
+        <div class="excluded-manager-head">
+          <strong>已移出记忆队列</strong>
+          <span id="excluded-count">0 个</span>
+        </div>
+        <p>这些词不会再进入每日任务。需要时可单独恢复。</p>
+        <div class="excluded-list" id="excluded-list"></div>
+        <div class="excluded-feedback" id="excluded-feedback" aria-live="polite"></div>
+      </div>
       <div class="pace-actions">
         <button class="pace-cancel" id="pace-cancel">取消</button>
         <button class="pace-save" id="pace-save">保存</button>
@@ -125,6 +145,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/daily.js?v=7"></script>
+  <script type="module" src="js/daily.js?v=8"></script>
 </body>
 </html>

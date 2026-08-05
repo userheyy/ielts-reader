@@ -6,6 +6,7 @@ import assert from "node:assert";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone,
   getSettings, updateSettings, loadDaily, dateKey,
+  getExcludedWords, removeWordFromMemoryQueue, restoreWordToMemoryQueue,
   __reset, __setCachesForTest,
 } from "./daily-store.js";
 
@@ -61,5 +62,37 @@ task = await rebuildTodayTask(NOW);
 assert.equal(task.newWords.length, 30, "已开始(done>0)时 rebuild 不应换词");
 assert.equal(task.day.new_done, 1, "已完成计数应保留");
 assert.equal(task.day.planned, 30, "planned 不应被改小");
+
+// ---- 6) 移出当前新词:不计完成、今日总数减一、后续队列不再出现 ----
+reset();
+task = await ensureTodayTask(NOW);
+const removedWord = task.newWords[0].word;
+let removed = removeWordFromMemoryQueue(removedWord, "new", NOW);
+assert.equal(removed.day.planned, 29, "移出 1 个新词后 planned 应减一");
+assert.equal(removed.day.new_done, 0, "移出不是学会,不能增加完成数");
+task = await ensureTodayTask(NOW);
+assert.equal(task.newWords.length, 29, "今日新词列表应少 1 个");
+assert.ok(!task.newWords.some((w) => w.word === removedWord), "被移出的词不应仍在今日列表");
+assert.equal(getExcludedWords()[0].word, removedWord, "移出记录应持久化并可供设置页管理");
+
+// ---- 7) 重复移出幂等:不能重复扣 planned ----
+removeWordFromMemoryQueue(removedWord, "new", NOW);
+assert.equal(loadDaily().days[dateKey(NOW)].planned, 29, "重复移出不能重复扣今日总数");
+
+// ---- 8) 当天恢复:回到今日任务,planned 也恢复 ----
+restoreWordToMemoryQueue(removedWord, NOW);
+task = await ensureTodayTask(NOW);
+assert.equal(task.day.planned, 30, "当天恢复后 planned 应加回");
+assert.ok(task.newWords.some((w) => w.word === removedWord), "当天恢复后词应重新进入今日任务");
+assert.equal(getExcludedWords().length, 0, "恢复后应从已移出列表消失");
+
+// ---- 9) 跨天保持排除:被移出的词不会被下一天重新选作新词 ----
+reset();
+task = await ensureTodayTask(NOW);
+const excludedTomorrow = task.newWords[0].word;
+removeWordFromMemoryQueue(excludedTomorrow, "new", NOW);
+const TOMORROW = new Date("2026-07-07T09:00:00");
+task = await ensureTodayTask(TOMORROW);
+assert.ok(!task.newWords.some((w) => w.word === excludedTomorrow), "被移出的词次日也不应重新进入任务");
 
 console.log("daily-store.js 全部断言通过 ✅");

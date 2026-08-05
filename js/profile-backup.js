@@ -131,6 +131,7 @@ export function restoreProfileBackup(text) {
       settings: { ...(cur.settings || {}), ...(data.daily.settings || {}) },
       new_word_cursor: Math.max(Number(cur.new_word_cursor) || 0, Number(data.daily.new_word_cursor) || 0),
       days: { ...(cur.days || {}), ...(data.daily.days || {}) },
+      excluded_words: { ...(cur.excluded_words || {}), ...(data.daily.excluded_words || {}) },
     };
     storage().setItem(DAILY_KEY, JSON.stringify(merged));
   }

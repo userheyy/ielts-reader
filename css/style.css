@@ -687,6 +687,15 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 .study-controls { display: flex; align-items: center; gap: 12px; margin-top: 14px; flex-wrap: wrap; }
 .study-quit { background: #fff; color: #8a938c; border: 1px solid #d9ded7; border-radius: 8px; padding: 8px 14px; cursor: pointer; font-size: 13px; }
 .study-quit:hover { background: #f4f6f4; }
+.study-remove { margin-left: auto; background: transparent; color: #a16b61; border: 1px solid transparent; border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 13px; }
+.study-remove:hover { color: #9b3f35; background: #fff5f3; border-color: #f0d7d3; }
+.study-remove-confirm { margin-top: 10px; padding: 13px 14px; border: 1px solid #efd5d0; border-radius: 11px; background: #fff8f6; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.study-remove-confirm strong { color: #69352f; font-size: 14px; }
+.study-remove-confirm p { margin: 3px 0 0; color: #8b6b66; font-size: 12px; }
+.study-remove-actions { display: flex; gap: 8px; flex: none; }
+.study-remove-actions button { border: 1px solid #dccbc8; background: #fff; color: #735b57; border-radius: 7px; padding: 7px 11px; cursor: pointer; white-space: nowrap; }
+.study-remove-actions .danger { border-color: #a8493f; background: #a8493f; color: #fff; }
+.study-remove-actions .danger:hover { background: #903b33; }
 
 /* 完成卡 */
 .done-card { background: #fff; border: 1px solid #cfe8d4; border-radius: 16px; padding: 34px 24px; text-align: center; box-shadow: 0 4px 16px rgba(0,0,0,.05); }
@@ -696,7 +705,7 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 
 /* 节奏设置弹层 */
 .pace-modal { position: fixed; inset: 0; background: rgba(20,32,25,.45); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 20px; }
-.pace-panel { background: #fff; border-radius: 16px; padding: 24px; max-width: 400px; width: 100%; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
+.pace-panel { background: #fff; border-radius: 16px; padding: 24px; max-width: 440px; width: 100%; max-height: calc(100vh - 40px); overflow-y: auto; box-shadow: 0 20px 50px rgba(0,0,0,.3); }
 .pace-panel h3 { margin: 0 0 6px; font-size: var(--text-lg); font-weight: var(--w-bold); color: var(--text); }
 .pace-hint { color: #6a7a6e; font-size: 13px; margin: 0 0 16px; }
 .pace-list { display: flex; flex-direction: column; gap: 9px; margin-bottom: 14px; }
@@ -707,12 +716,26 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 .pace-custom { margin-bottom: 18px; }
 .pace-custom label { font-size: 14px; color: #37453b; }
 .pace-custom input { width: 72px; padding: 6px 8px; border: 1px solid #cbd4cd; border-radius: 6px; text-align: center; font-size: 14px; margin-left: 6px; }
+.excluded-manager { border-top: 1px solid #e7ece8; padding-top: 16px; margin: 2px 0 18px; }
+.excluded-manager-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #37453b; font-size: 14px; }
+.excluded-manager-head span { border-radius: 999px; padding: 2px 8px; background: #f0f3f1; color: #768179; font-size: 12px; }
+.excluded-manager > p { margin: 5px 0 10px; color: #89928b; font-size: 12px; }
+.excluded-list { display: flex; flex-direction: column; gap: 7px; max-height: 168px; overflow-y: auto; }
+.excluded-empty { padding: 10px 12px; border-radius: 8px; background: #f7f9f7; color: #9aa39c; font-size: 12px; text-align: center; }
+.excluded-item { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 10px; border: 1px solid #e5e9e6; border-radius: 9px; }
+.excluded-word { min-width: 0; color: #344139; font-size: 14px; font-weight: 650; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.excluded-kind { margin-left: 6px; color: #939c95; font-size: 11px; font-weight: 400; }
+.excluded-restore { flex: none; border: 1px solid #b8d5be; background: #fff; color: #397649; border-radius: 7px; padding: 5px 9px; cursor: pointer; font-size: 12px; }
+.excluded-restore:hover { background: #eef8ef; }
+.excluded-feedback { min-height: 17px; margin-top: 5px; color: #397649; font-size: 12px; }
 .pace-actions { display: flex; justify-content: flex-end; gap: 10px; }
 .pace-cancel { background: #fff; color: #6a7a6e; border: 1px solid #d9ded7; border-radius: 8px; padding: 9px 16px; cursor: pointer; }
 .pace-save { background: #243b2e; color: #fff; border: none; border-radius: 8px; padding: 9px 18px; cursor: pointer; font-weight: 600; }
 @media (max-width: 760px) {
   .heat { grid-template-columns: repeat(14, 1fr); }
   .today-card .split { flex-direction: column; }
+  .study-remove-confirm { align-items: stretch; flex-direction: column; }
+  .study-remove-actions { justify-content: flex-end; }
 }
 
 /* ============ 单词测试(完形填空) ============ */

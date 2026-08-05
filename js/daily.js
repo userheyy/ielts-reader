@@ -8,8 +8,9 @@ import { schedule } from "./srs.js?v=1";
 import { buildQueue } from "./daily-queue.js?v=1";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
-  getSettings, updateSettings, dateKey,
-} from "./daily-store.js?v=3";
+  getSettings, updateSettings, dateKey, getExcludedWords,
+  removeWordFromMemoryQueue, restoreWordToMemoryQueue,
+} from "./daily-store.js?v=4";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -114,6 +115,7 @@ function showStudyCard() {
   todayCard.hidden = true;
   doneCard.hidden = true;
   $("study-card").classList.remove("revealed");
+  $("study-remove-confirm").hidden = true;
   studySuggestedRating = null;
   clearStudySuggestion();
 
@@ -248,8 +250,30 @@ function finishStudy() {
 }
 
 $("study-quit").addEventListener("click", () => {
+  $("study-remove-confirm").hidden = true;
   studyWrap.hidden = true; todayCard.hidden = false;
   renderTodayOverview(); renderHeatmap();
+});
+
+$("study-remove").addEventListener("click", () => {
+  if (!currentItem) return;
+  $("study-remove-word").textContent = currentItem.entry.word;
+  $("study-remove-confirm").hidden = false;
+});
+$("study-remove-cancel").addEventListener("click", () => {
+  $("study-remove-confirm").hidden = true;
+});
+$("study-remove-ok").addEventListener("click", async () => {
+  if (!currentItem) return;
+  const btn = $("study-remove-ok");
+  btn.disabled = true;
+  removeWordFromMemoryQueue(currentItem.entry.word, currentItem.kind);
+  $("study-remove-confirm").hidden = true;
+  await reloadTask();
+  queue = buildQueue(task, wrapReviewEntry);
+  btn.disabled = false;
+  if (queue.length) showStudyCard();
+  else finishStudy();
 });
 $("done-back").addEventListener("click", () => {
   doneCard.hidden = true; todayCard.hidden = false;
@@ -270,6 +294,8 @@ $("pace-btn").addEventListener("click", () => {
   const s = getSettings();
   $("pace-custom-new").value = s.new_per_day;
   highlightPacePreset(s.new_per_day);
+  $("excluded-feedback").textContent = "";
+  renderExcludedWords();
   paceModal.hidden = false;
 });
 $("pace-cancel").addEventListener("click", () => { paceModal.hidden = true; });
@@ -289,6 +315,50 @@ $("pace-save").addEventListener("click", () => {
   paceModal.hidden = true;
   // 若今天还没开始(done==0),重建今日任务以套用新配额;已开始则不冲掉进度。
   reloadTask({ rebuild: true });
+});
+
+function renderExcludedWords() {
+  const items = getExcludedWords();
+  const list = $("excluded-list");
+  $("excluded-count").textContent = `${items.length} 个`;
+  list.replaceChildren();
+  if (!items.length) {
+    const empty = document.createElement("div");
+    empty.className = "excluded-empty";
+    empty.textContent = "暂时没有移出的词";
+    list.appendChild(empty);
+    return;
+  }
+
+  for (const item of items) {
+    const row = document.createElement("div");
+    row.className = "excluded-item";
+    const label = document.createElement("div");
+    label.className = "excluded-word";
+    label.textContent = item.word;
+    const kind = document.createElement("span");
+    kind.className = "excluded-kind";
+    kind.textContent = item.kind === "new" ? "原为新词" : "原为复习词";
+    label.appendChild(kind);
+    const restore = document.createElement("button");
+    restore.type = "button";
+    restore.className = "excluded-restore";
+    restore.dataset.word = item.word;
+    restore.textContent = "恢复";
+    row.append(label, restore);
+    list.appendChild(row);
+  }
+}
+
+$("excluded-list").addEventListener("click", async (ev) => {
+  const btn = ev.target.closest(".excluded-restore");
+  if (!btn) return;
+  const word = btn.dataset.word;
+  btn.disabled = true;
+  restoreWordToMemoryQueue(word);
+  await reloadTask();
+  renderExcludedWords();
+  $("excluded-feedback").textContent = `${word} 已恢复到记忆队列。`;
 });
 
 // ---- 生词库缓存(过词卡取生词用) ----

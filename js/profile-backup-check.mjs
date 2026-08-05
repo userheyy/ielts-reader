@@ -25,6 +25,13 @@ bag.set("ielts_vocab", JSON.stringify([{ word: "delta", def: "三角洲", review
 bag.set("ielts_imported_passages", JSON.stringify({ "tmp-p1": passage }));
 bag.set("ielts_speech_voice", "Microsoft Ada Multilingual Online");
 bag.set("ielts_speech_rate", "0.9");
+bag.set("ielts_daily", JSON.stringify({
+  settings: { new_per_day: 20 },
+  days: {},
+  excluded_words: {
+    delta: { word: "delta", kind: "review", removed_on: "2026-08-05" },
+  },
+}));
 
 const exported = exportProfileJSON();
 const parsed = JSON.parse(exported);
@@ -33,10 +40,17 @@ assert.equal(parsed.summary.imported_passage_count, 1);
 
 bag.clear();
 bag.set("ielts_vocab", JSON.stringify([{ word: "airport", def: "机场" }]));
+bag.set("ielts_daily", JSON.stringify({
+  days: {},
+  excluded_words: { airport: { word: "airport", kind: "review", removed_on: "2026-08-04" } },
+}));
 const result = restoreProfileBackup(exported);
 assert.equal(result.total_vocab, 2);
 assert.equal(result.total_imported_passages, 1);
 assert.equal(bag.get("ielts_speech_voice"), "Microsoft Ada Multilingual Online");
+const restoredDaily = JSON.parse(bag.get("ielts_daily"));
+assert.equal(restoredDaily.excluded_words.delta.word, "delta");
+assert.equal(restoredDaily.excluded_words.airport.word, "airport");
 
 const vocab = JSON.parse(bag.get("ielts_vocab"));
 assert.ok(vocab.some((entry) => entry.word === "delta"));

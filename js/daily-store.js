@@ -37,11 +37,100 @@ export function loadDaily() {
     settings: { ...DEFAULTS, ...(d.settings || {}) },
     new_word_cursor: Number(d.new_word_cursor) || 0,
     days: d.days && typeof d.days === "object" ? d.days : {},
+    excluded_words: d.excluded_words && typeof d.excluded_words === "object" && !Array.isArray(d.excluded_words)
+      ? d.excluded_words : {},
   };
 }
 
 function saveDaily(d) {
   backend().setItem(KEY, JSON.stringify(d));
+}
+
+function wordKey(word) {
+  return String(word || "").trim().toLowerCase();
+}
+
+function completedAfterEdit(rec) {
+  const done = (Number(rec.reviewed_done) || 0) + (Number(rec.new_done) || 0);
+  rec.planned = Math.max(done, Number(rec.planned) || 0);
+  rec.completed = done > 0 && done >= rec.planned;
+}
+
+// ---------- 记忆队列排除 / 恢复 ----------
+// “移出记忆队列”只暂停每日安排，不删除生词或内置词本身。
+// 元数据同时记录本次对今日 planned 的调整，便于当天从设置里无损恢复。
+export function getExcludedWords() {
+  return Object.values(loadDaily().excluded_words)
+    .filter((item) => item && item.word)
+    .sort((a, b) => String(b.removed_at || "").localeCompare(String(a.removed_at || "")));
+}
+
+export function removeWordFromMemoryQueue(word, kind = "review", now = new Date()) {
+  const key = wordKey(word);
+  if (!key) return null;
+
+  const d = loadDaily();
+  if (d.excluded_words[key]) return { day: d.days[dateKey(now)] || null, item: d.excluded_words[key] };
+
+  const todayKey = dateKey(now);
+  const rec = d.days[todayKey];
+  const normalizedKind = kind === "new" ? "new" : "review";
+  let adjustedToday = false;
+
+  if (rec) {
+    if (normalizedKind === "new") {
+      const index = (rec.new_words || []).findIndex((item) => wordKey(item) === key);
+      const done = Number(rec.new_done) || 0;
+      if (index >= done) {
+        rec.new_words.splice(index, 1);
+        rec.planned = Math.max(0, (Number(rec.planned) || 0) - 1);
+        adjustedToday = true;
+      }
+    } else {
+      const done = (Number(rec.reviewed_done) || 0) + (Number(rec.new_done) || 0);
+      if ((Number(rec.planned) || 0) > done) {
+        rec.planned -= 1;
+        adjustedToday = true;
+      }
+    }
+    completedAfterEdit(rec);
+  }
+
+  const item = {
+    word: String(word).trim(),
+    kind: normalizedKind,
+    removed_on: todayKey,
+    removed_at: now.toISOString(),
+    adjusted_today: adjustedToday,
+  };
+  d.excluded_words[key] = item;
+  saveDaily(d);
+  return { day: rec || null, item };
+}
+
+export function restoreWordToMemoryQueue(word, now = new Date()) {
+  const key = wordKey(word);
+  if (!key) return null;
+
+  const d = loadDaily();
+  const item = d.excluded_words[key];
+  if (!item) return { day: d.days[dateKey(now)] || null, item: null };
+
+  const todayKey = dateKey(now);
+  const rec = d.days[todayKey];
+  if (rec && item.removed_on === todayKey && item.adjusted_today) {
+    if (item.kind === "new") {
+      if (!Array.isArray(rec.new_words)) rec.new_words = [];
+      const exists = rec.new_words.some((queued) => wordKey(queued) === key);
+      if (!exists) rec.new_words.push(item.word);
+    }
+    rec.planned = (Number(rec.planned) || 0) + 1;
+    completedAfterEdit(rec);
+  }
+
+  delete d.excluded_words[key];
+  saveDaily(d);
+  return { day: rec || null, item };
 }
 
 // ---------- 日期工具 ----------
@@ -99,10 +188,11 @@ async function getSeedIndex() {
 
 // ---------- 复习词:扫描所有已学词,挑到期的 ----------
 // 返回 [{word, origin:'vocab'|'seed', due}]
-function reviewDue(seedIndex, todayKey) {
+function reviewDue(seedIndex, todayKey, excluded = new Set()) {
   const out = [];
   // 生词库
   for (const v of loadVocab()) {
+    if (excluded.has(wordKey(v.word))) continue;
     const r = v.review || {};
     const total = (Number(r.correct) || 0) + (Number(r.wrong) || 0) + (Number(r.fuzzy) || 0);
     if (total === 0) continue; // 从没复习过的生词不算"到期复习"(它们靠阅读入库,另计)
@@ -112,6 +202,7 @@ function reviewDue(seedIndex, todayKey) {
   }
   // 内置词(已学过的,即有 seed_review 记录)
   for (const [wl, s] of seedIndex) {
+    if (excluded.has(wl)) continue;
     const r = getSeedReview(s.word);
     if (!r) continue; // 没学过的内置词由"新词"部分放出,不在这
     if (!r.next_due || r.next_due <= todayKey) {
@@ -147,8 +238,10 @@ function queuedNewWords(d, todayKey) {
 // 复原已存在的当天任务:词表用当天存的 new_words + 当前到期复习。
 function restoreDay(d, seedIndex, todayKey) {
   const rec = d.days[todayKey];
-  const review = reviewDue(seedIndex, todayKey);
+  const excluded = new Set(Object.keys(d.excluded_words || {}));
+  const review = reviewDue(seedIndex, todayKey, excluded);
   const newWords = (rec.new_words || [])
+    .filter((w) => !excluded.has(wordKey(w)))
     .map((w) => seedIndex.get(w.toLowerCase()))
     .filter(Boolean);
   return { date: todayKey, review, newWords, day: rec };
@@ -157,7 +250,8 @@ function restoreDay(d, seedIndex, todayKey) {
 // 生成(或重排)当天任务:按当前 settings 现取现排复习词与新词,落盘并返回。
 // 调用前请确保这是"该重排"的时机(新建当天,或未开始时套用新配额)。
 function generateDay(d, seedIndex, wordlist, todayKey) {
-  const review = reviewDue(seedIndex, todayKey);
+  const excluded = new Set(Object.keys(d.excluded_words || {}));
+  const review = reviewDue(seedIndex, todayKey, excluded);
   const reviewCap = d.settings.review_cap;
   const reviewList = reviewCap != null ? review.slice(0, reviewCap) : review;
 
@@ -175,6 +269,7 @@ function generateDay(d, seedIndex, wordlist, todayKey) {
     const wl = (cand.word || "").toLowerCase();
     const seedEntry = seedIndex.get(wl);
     if (!seedEntry) continue;        // 还没生成 aids
+    if (excluded.has(wl)) continue;  // 用户已移出记忆队列
     if (learned.has(wl)) continue;   // 已学过
     if (alreadyQueued.has(wl)) continue; // 之前放出过、待评分,避免今天重复
     newWords.push(seedEntry);
