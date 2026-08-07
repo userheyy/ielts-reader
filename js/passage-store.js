@@ -12,12 +12,20 @@ function saveMap(map) {
 }
 
 export function listImportedPassages() {
-  return Object.values(loadMap()).map((p) => ({
+  return Object.values(loadMap()).filter((p) => (
+    p && typeof p === "object" &&
+    typeof p.id === "string" && p.id &&
+    typeof p.source === "string" &&
+    typeof p.title === "string" &&
+    Array.isArray(p.sentences)
+  )).map((p) => ({
     id: p.id,
     source: p.source,
     title: p.title,
     sentence_count: p.sentences.length,
-    question_count: (p.questions || []).reduce((n, g) => n + g.items.length, 0),
+    question_count: Array.isArray(p.questions)
+      ? p.questions.reduce((n, g) => n + (Array.isArray(g?.items) ? g.items.length : 0), 0)
+      : 0,
     imported: true,
   }));
 }

@@ -1,0 +1,903 @@
+{
+  "id": "c7-test1-p1",
+  "source": "剑桥雅思7 · Test 1 · Passage 1",
+  "title": "Let's Go Bats",
+  "quality": "generated_reviewed",
+  "analysis_unit": "sentence",
+  "phrases": [
+    {
+      "w": "facial vision",
+      "pos": "phr.",
+      "def": "面部视力"
+    },
+    {
+      "w": "find their way",
+      "pos": "phr.",
+      "def": "寻找他们的出路"
+    },
+    {
+      "w": "natural selection",
+      "pos": "phr.",
+      "def": "自然选择"
+    },
+    {
+      "w": "amount of energy",
+      "pos": "phr.",
+      "def": "能源量"
+    },
+    {
+      "w": "daytime economy",
+      "pos": "phr.",
+      "def": "日间经济经济"
+    },
+    {
+      "w": "Sonar and Radar",
+      "pos": "phr.",
+      "def": "声纳和雷达"
+    },
+    {
+      "w": "Deep-sea fish",
+      "pos": "phr.",
+      "def": "深海鱼类"
+    },
+    {
+      "w": "light to find",
+      "pos": "phr.",
+      "def": "寻找光线"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "A Bats have a problem: how to find their way around in the dark.",
+      "zh": "蝙蝠有一个问题:如何在黑暗中找到它们。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "problem",
+          "pos": "word",
+          "def": "问题"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "They hunt at night, and cannot use light to help them find prey and avoid obstacles.",
+      "zh": "他们晚上打猎,不能使用光来帮助他们找到猎物,避免障碍。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "obstacles",
+          "pos": "word",
+          "def": "障碍障碍"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "You might say that this is a problem of their own making, one that they could avoid simply by changing their habits and hunting by day.",
+      "zh": "你可以说这是他们自己制造的问题, 他们可以简单地通过改变习惯和白天打猎来避免。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "problem",
+          "pos": "word",
+          "def": "问题"
+        },
+        {
+          "w": "changing",
+          "pos": "word",
+          "def": "变化变化"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "But the daytime economy is already heavily exploited by other creatures such as birds.",
+      "zh": "但白天的经济已经被鸟类等其它生物严重剥削了",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "daytime",
+          "pos": "word",
+          "def": "白天时间"
+        },
+        {
+          "w": "economy",
+          "pos": "word",
+          "def": "经济经济经济"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "Given that there is a living to be made at night, and given that alternative daytime trades are thoroughly occupied, natural selection has favoured bats that make a go of the night-hunting trade.",
+      "zh": "鉴于夜间有谋生之道,而且考虑到其他白天的行业被彻底占用,自然选择有利于能够从事夜间狩猎行业的蝙蝠。",
+      "grammar": {
+        "type": "被动语态 + 不定式结构",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "alternative",
+          "pos": "adj.",
+          "def": "替代"
+        },
+        {
+          "w": "daytime",
+          "pos": "word",
+          "def": "白天时间"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 1,
+      "en": "It is probable that the nocturnal trades go way back in the ancestry of all mammals.",
+      "zh": "夜行很可能追溯到所有哺乳动物的祖先。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "probable",
+          "pos": "adj.",
+          "def": "可能"
+        },
+        {
+          "w": "nocturnal",
+          "pos": "adj.",
+          "def": "夜间"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 1,
+      "en": "In the time when the dinosaurs dominated the daytime economy, our mammalian ancestors probably only managed to survive at all because they found ways of scraping a living at night.",
+      "zh": "在恐龙统治白天经济的时候我们的哺乳动物祖先可能只能靠找到办法消磨夜生活来生存",
+      "grammar": {
+        "type": "状语从句 + 不定式结构",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "dinosaurs",
+          "pos": "word",
+          "def": "恐龙"
+        },
+        {
+          "w": "dominated",
+          "pos": "word",
+          "def": "以支配"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 1,
+      "en": "Only after the mysterious mass extinction of the dinosaurs about 65 million years ago were our ancestors able to emerge into the daylight in any substantial numbers.",
+      "zh": "恐龙在大约6500万年前神秘的大规模灭绝之后才能让祖先大量地进入白天",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "mysterious",
+          "pos": "adj.",
+          "def": "神秘"
+        },
+        {
+          "w": "extinction",
+          "pos": "n.",
+          "def": "灭绝"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 2,
+      "en": "B Bats have an engineering problem: how to find their way and find their prey in the absence of light.",
+      "zh": "B蝙蝠有工程问题:如何在光线不见的情况下找到自己的路和猎物。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "engineering",
+          "pos": "word",
+          "def": "工程工程工程"
+        },
+        {
+          "w": "problem",
+          "pos": "word",
+          "def": "问题"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 2,
+      "en": "Bats are not the only creatures to face this difficulty today.",
+      "zh": "蝙蝠不是今天面对这种困难的唯一生物。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "creatures",
+          "pos": "word",
+          "def": "生物生物"
+        },
+        {
+          "w": "difficulty",
+          "pos": "word",
+          "def": "困难"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 2,
+      "en": "Obviously the night-flying insects that they prey on must find their way about somehow.",
+      "zh": "显然,他们猎食的夜飞昆虫一定能找到办法",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "night-flying",
+          "pos": "word",
+          "def": "夜间飞行"
+        },
+        {
+          "w": "insects",
+          "pos": "word",
+          "def": "昆虫"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 2,
+      "en": "Deep-sea fish and whales have little or no light by day or by night.",
+      "zh": "深海鱼类和鲸鱼白天或晚上都很少或没有光线。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": []
+    },
+    {
+      "id": 13,
+      "para": 2,
+      "en": "Fish and dolphins that live in extremely muddy water cannot see because, although there is light, it is obstructed and scattered by the dirt in the water.",
+      "zh": "生活在极其泥土的水中的鱼类和海豚看不见,因为尽管有光线,但水中的泥土阻塞和散落。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "dolphins",
+          "pos": "word",
+          "def": "海豚"
+        },
+        {
+          "w": "extremely",
+          "pos": "word",
+          "def": "极极"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 2,
+      "en": "Plenty of other modern animals make their living in conditions where seeing is difficult or impossible.",
+      "zh": "许多其他现代动物在难以或不可能看到的条件下生活。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "animals",
+          "pos": "word",
+          "def": "动物"
+        },
+        {
+          "w": "conditions",
+          "pos": "word",
+          "def": "条件条件条件"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 3,
+      "en": "C Given the questions of how to manoeuvre in the dark, what solutions might an engineer consider?",
+      "zh": "C 鉴于如何在黑暗中操纵的问题,工程师可以考虑什么解决办法?",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "questions",
+          "pos": "word",
+          "def": "问题问题问题"
+        },
+        {
+          "w": "manoeuvre",
+          "pos": "word",
+          "def": "机动机动机动"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 3,
+      "en": "The first one that might occur to him is to manufacture light, to use a lantern or a searchlight.",
+      "zh": "他可能首先想到的是制造光,使用灯笼或探照灯。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "manufacture",
+          "pos": "word",
+          "def": "制造制造"
+        },
+        {
+          "w": "lantern",
+          "pos": "word",
+          "def": "灯笼"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 3,
+      "en": "Fireflies and some fish (usually with the help of bacteria) have the power to manufacture their own light, but the process seems to consume a large amount of energy.",
+      "zh": "萤火虫和一些鱼类(通常在细菌的帮助下)有能力制造自己的光,但这一过程似乎消耗了大量能量。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "usually",
+          "pos": "word",
+          "def": "通常通常"
+        },
+        {
+          "w": "bacteria",
+          "pos": "word",
+          "def": "细菌"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 3,
+      "en": "Fireflies use their light for attracting mates.",
+      "zh": "萤火虫用光来吸引伴侣",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "attracting",
+          "pos": "word",
+          "def": "吸引吸引"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 3,
+      "en": "This doesn’t require a prohibitive amount of energy: a male’s tiny pinprick of light can be seen by a female from some distance on a dark night, since her eyes are exposed directly to the light source itself.",
+      "zh": "男性的小针刺可以在黑暗的夜晚被女性从某处看到, 因为她的眼睛直接暴露在光源本身面前。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "require",
+          "pos": "word",
+          "def": "需要"
+        },
+        {
+          "w": "prohibitive",
+          "pos": "adj.",
+          "def": "高特高特"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 3,
+      "en": "However using light to find one’s own way around requires vastly more energy, since the eyes have to detect the tiny fraction of the light that bounces off each part of the scene.",
+      "zh": "光线必须探测出每一片光线的一小部分, 才能在现场各处反弹。",
+      "grammar": {
+        "type": "状语从句 + 不定式结构",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "requires",
+          "pos": "word",
+          "def": "需要"
+        },
+        {
+          "w": "fraction",
+          "pos": "n.",
+          "def": "分数分数"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 4,
+      "en": "The light source must therefore be immensely brighter if it is to be used as a headlight to illuminate the path, than if it is to be used as a signal to others.",
+      "zh": "因此,光源必须更加亮亮,才能用作亮路灯,而不是用作向他人发出的信号。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "therefore",
+          "pos": "word",
+          "def": "因此,"
+        },
+        {
+          "w": "immensely",
+          "pos": "word",
+          "def": "十分巨大"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 4,
+      "en": "In any event, whether or not the reason is the energy expense, it seems to be the case that, with the possible exception of some weird deep-sea fish, no animal apart from man uses manufactured light to find its way about.",
+      "zh": "无论如何,无论能源费用是否合理,似乎都存在这样一种情况,即除了一些奇怪的深海鱼类外,除了人以外,没有任何动物使用人工照明来寻找出路。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "whether",
+          "pos": "word",
+          "def": "是否"
+        },
+        {
+          "w": "expense",
+          "pos": "word",
+          "def": "支出支出支出支出支出"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 5,
+      "en": "D What else might the engineer think of?",
+      "zh": "工程师还能想到什么?",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "engineer",
+          "pos": "word",
+          "def": "工程工程师"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 5,
+      "en": "Well, blind humans sometimes seem to have an uncanny sense of obstacles in their path.",
+      "zh": "盲人有时在路上似乎有种不可思議的障碍感",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "sometimes",
+          "pos": "word",
+          "def": "有时有时"
+        },
+        {
+          "w": "uncanny",
+          "pos": "word",
+          "def": "无法扫描"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 5,
+      "en": "It has been given the name ‘facial vision’, because blind people have reported that it feels a bit like the sense of touch, on the face.",
+      "zh": "盲人也报导说, 感觉有点像触摸感, 脸上有触感。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "because",
+          "pos": "word",
+          "def": "原因原因"
+        },
+        {
+          "w": "reported",
+          "pos": "word",
+          "def": "已报告"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 5,
+      "en": "One report tells of a totally blind boy who could ride his tricycle at good speed round the block near his home, using facial vision.",
+      "zh": "一份报告说,一个完全盲目男孩,他可以用面部视力,在离家近的街区内,以良好的速度骑着三轮车。",
+      "grammar": {
+        "type": "定语从句 + 分词结构",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；分词短语压缩了背景或附加动作。"
+      },
+      "words": [
+        {
+          "w": "totally",
+          "pos": "word",
+          "def": "完全"
+        },
+        {
+          "w": "tricycle",
+          "pos": "word",
+          "def": "三轮三轮"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 5,
+      "en": "Experiments showed that, in fact, facial vision is nothing to do with touch or the front of the face, although the sensation may be referred to the front of the face, like the referred pain in a phantom limb.",
+      "zh": "实验显示,事实上,面部视觉与触摸或面部前部无关,尽管感觉可能指向面部前部,例如幻肢中的疼痛。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "nothing",
+          "pos": "word",
+          "def": "无"
+        },
+        {
+          "w": "although",
+          "pos": "word",
+          "def": "尽管"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 5,
+      "en": "The sensation of facial vision, it turns out, really goes in through the ears.",
+      "zh": "面部视觉的感觉, 事实证明, 真的进入耳朵。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "sensation",
+          "pos": "n.",
+          "def": "感知"
+        },
+        {
+          "w": "through",
+          "pos": "word",
+          "def": "中中"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 5,
+      "en": "Blind people, without even being aware of the fact, are actually using echoes of their own footsteps and of other sounds, to sense the presence of obstacles.",
+      "zh": "盲人甚至不知道这一事实,实际上正在利用自己脚步和其他声音的回声来感受障碍的存在。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "without",
+          "pos": "word",
+          "def": "无"
+        },
+        {
+          "w": "actually",
+          "pos": "word",
+          "def": "实际"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 5,
+      "en": "Before this was discovered, engineers had already built instruments to exploit the principle, for example to measure the depth of the sea under a ship.",
+      "zh": "在此之前,工程师已经建立了利用这一原则的工具,例如测量船舶海底海洋深度的工具。",
+      "grammar": {
+        "type": "被动语态 + 不定式结构",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "discovered",
+          "pos": "word",
+          "def": "发现"
+        },
+        {
+          "w": "engineers",
+          "pos": "word",
+          "def": "工程师工程师"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 5,
+      "en": "After this technique had been invented, it was only a matter of time before weapons designers adapted it for the detection of submarines.",
+      "zh": "在发明了这一技术之后,武器设计师为探测潜艇而调整技术只是时间问题。",
+      "grammar": {
+        "type": "被动语态",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "technique",
+          "pos": "word",
+          "def": "技术技术"
+        },
+        {
+          "w": "invented",
+          "pos": "word",
+          "def": "发明的"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 5,
+      "en": "Both sides in the Second World War relied heavily on these devices, under such codenames as Asdic (British) and Sonar (American), as well as Radar (American) or RDF (British), which uses radio echoes rather than sound echoes.",
+      "zh": "第二次世界大战双方严重依赖这些装置,其代号为Asdic(英国)和Sonar(美国),以及Radar(美国)或RDF(英国),它们使用无线电回声,而不是声音回声。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "heavily",
+          "pos": "word",
+          "def": "重重"
+        },
+        {
+          "w": "devices",
+          "pos": "word",
+          "def": "设备"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 6,
+      "en": "E The Sonar and Radar pioneers didn’t know it then, but all the world now knows that bats, or rather natural selection working on bats, had perfected the system tens of millions of years earlier, and their radar achieves feats of detection and navigation that would strike an engineer dumb with admiration.",
+      "zh": "那时,E Sonar和Radar先驱并不知情,但现在全世界都知道蝙蝠或者说自然选择蝙蝠,在数千万年前就完善了这个系统,他们的雷达实现了探测和导航的功能,这会使工程师感到迷惑和钦佩。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "pioneers",
+          "pos": "word",
+          "def": "先驱者"
+        },
+        {
+          "w": "natural",
+          "pos": "adj.",
+          "def": "天然"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 6,
+      "en": "It is technically incorrect to talk about bat ‘radar’, since they do not use radio waves.",
+      "zh": "谈论蝙蝠`雷达'在技术上是不正确的,",
+      "grammar": {
+        "type": "状语从句 + 不定式结构",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "technically",
+          "pos": "word",
+          "def": "技术上"
+        },
+        {
+          "w": "incorrect",
+          "pos": "word",
+          "def": "不正确"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 6,
+      "en": "It is sonar but the underlying mathematical theories of radar and sonar are very similar and much of our scientific understanding of the details of what bats are doing has come from applying radar theory to them.",
+      "zh": "它是声纳,但雷达和声纳的基本数学理论非常相似,我们对于蝙蝠所从事工作的细节的科学理解大多来自对蝙蝠应用雷达理论。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "underlying",
+          "pos": "word",
+          "def": "基础"
+        },
+        {
+          "w": "mathematical",
+          "pos": "adj.",
+          "def": "数学数学"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 6,
+      "en": "The American zoologist Donald Griffin, who was largely responsible for the discovery of sonar in bats, coined the term ‘echolocation’ to cover both sonar and radar, whether used by animals or by human instruments.",
+      "zh": "美国动物学家Donald Griffin(主要负责蝙蝠中声纳的发现)创造了“分离”一词,既包括声纳,也包括雷达,无论是动物还是人类工具。",
+      "grammar": {
+        "type": "定语从句 + 不定式结构",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "zoologist",
+          "pos": "word",
+          "def": "动物学家"
+        },
+        {
+          "w": "largely",
+          "pos": "word",
+          "def": "大致主要"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 1-13",
+      "type": "cambridge_reading",
+      "instructions": [
+        "Questions 1-5 Which paragraph contains the following information",
+        "Questions 6-9 Complete the summary",
+        "Questions 10-13"
+      ],
+      "items": [
+        {
+          "number": 1,
+          "prompt": "examples of wildlife other than bats which do not rely on vision to navigate by",
+          "answer": "B",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 2,
+          "prompt": "How early mammals avoided dying out",
+          "answer": "A",
+          "evidence_sentence": 6
+        },
+        {
+          "number": 3,
+          "prompt": "Why bats hunt in the dark",
+          "answer": "A",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 4,
+          "prompt": "How a particular discovery has helped our understanding of bats",
+          "answer": "E",
+          "evidence_sentence": 35
+        },
+        {
+          "number": 5,
+          "prompt": "Early military uses of echolocation",
+          "answer": "D",
+          "evidence_sentence": 22
+        },
+        {
+          "number": 6,
+          "prompt": "In fact, the sensation is more similar to the way in which pain from a ….arm or leg might be felt.",
+          "answer": "phantom",
+          "evidence_sentence": 27
+        },
+        {
+          "number": 7,
+          "prompt": "The ability actually comes from perceiving … through ears.",
+          "answer": "echoes",
+          "evidence_sentence": 29
+        },
+        {
+          "number": 8,
+          "prompt": "However, even before this was understood, the principle has been applied in the design of instruments which calculated the… of the seabed.",
+          "answer": "depth",
+          "evidence_sentence": 30
+        },
+        {
+          "number": 9,
+          "prompt": "This was followed by a wartime application in devices for finding …",
+          "answer": "submarines",
+          "evidence_sentence": 31
+        },
+        {
+          "number": 10,
+          "prompt": "Long before the invention of radar,…. had resulted in a sophisticated radar-like system in bats.",
+          "answer": "natural selection",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 11,
+          "prompt": "Radar is an inaccurate term when referring to bats because … are not used in their navigation system.",
+          "answer": "radio waves",
+          "evidence_sentence": 34
+        },
+        {
+          "number": 12,
+          "prompt": "Radar and sonar are based on similar….",
+          "answer": "mathematical theories",
+          "evidence_sentence": 35
+        },
+        {
+          "number": 13,
+          "prompt": "The word ” echolocation ” was first used by someone working as a …",
+          "answer": "zoologist",
+          "evidence_sentence": 36
+        }
+      ]
+    }
+  ]
+}
