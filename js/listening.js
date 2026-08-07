@@ -614,7 +614,8 @@ function renderTranscript() {
     return;
   }
   const uniqueSpeakers = new Set(segs.map(s => s.speaker).filter(Boolean));
-  const dialoguePart = PART && (PART.practice_unit === "speaker_turn" || /-l[13]$/.test(PART.id || ""));
+  // practice_unit 是唯一依据；单人材料即使编号是 Part 1/3，也不能套用对话轮次合并。
+  const dialoguePart = PART && PART.practice_unit === "speaker_turn";
   const isDialogue = !ANNOTATE && dialoguePart && uniqueSpeakers.size >= 2;
   const unitLabel = isDialogue ? "轮完整发言" : "句";
   const bar = ANNOTATE

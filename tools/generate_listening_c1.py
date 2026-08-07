@@ -188,7 +188,11 @@ def build_part(doc, test, part, transcript):
     return {"id": pid, "source": f"剑桥雅思1 · Test {test} · Part {part}",
             "title": TESTS[test]["titles"][part],
             "audio": f"media/audio/c1-test{test}-part{part}.mp3",
-            "practice_unit": "speaker_turn" if part in (1, 3) else "sentence",
+            "practice_unit": (
+                "speaker_turn"
+                if part in (1, 3) and len({s.get("speaker") for s in segments if s.get("speaker")}) >= 2
+                else "sentence"
+            ),
             "segments": segments,
             "questions": [{"title": f"Questions {first}–{last}", "type": "mixed",
                            "instructions": ["Complete the original Cambridge IELTS listening questions below."],

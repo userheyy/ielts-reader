@@ -42,7 +42,12 @@ def check_part(pid):
     segments = data.get("segments") or []
     if not segments:
         errors.append(f"{pid}: no segments")
-    expected_unit = "speaker_turn" if part in (1, 3) else "sentence"
+    speakers = {
+        str(segment.get("speaker") or "").strip()
+        for segment in segments
+        if str(segment.get("speaker") or "").strip()
+    }
+    expected_unit = "speaker_turn" if part in (1, 3) and len(speakers) >= 2 else "sentence"
     if data.get("practice_unit") != expected_unit:
         errors.append(f"{pid}: practice_unit={data.get('practice_unit')!r}")
     ids = [s.get("id") for s in segments]
