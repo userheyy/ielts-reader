@@ -71,9 +71,32 @@
 .pl-sticky .pl-time-inline input[type="range"]::-moz-range-track {
   height: 6px; background: var(--border); border-radius: 999px;
 }
-.pl-sticky .pl-inline-row { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
-.pl-sticky .chiprow { gap: 4px; }
-.pl-sticky .chip { padding: 2px 8px; font-size: 11px; }
+.pl-sticky .pl-inline-row {
+  display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--muted);
+  cursor: pointer;
+}
+.pl-sticky .pl-label { white-space: nowrap; }
+.pl-select-wrap {
+  position: relative; display: inline-flex; align-items: center;
+}
+.pl-select-wrap::after {
+  content: ""; position: absolute; right: 10px; width: 6px; height: 6px;
+  border-right: 1.5px solid #5e6d63; border-bottom: 1.5px solid #5e6d63;
+  transform: translateY(-2px) rotate(45deg); pointer-events: none;
+}
+.pl-sticky .pl-select {
+  appearance: none; min-width: 78px; height: 32px; padding: 0 30px 0 12px;
+  border: 1px solid #cfd8d1; border-radius: 8px; background: #fbfdfb;
+  color: var(--text-soft); font: inherit; font-size: 12px; line-height: 30px;
+  cursor: pointer; outline: none;
+  transition: border-color .15s, box-shadow .15s, background .15s;
+}
+.pl-sticky .pl-mode-select .pl-select { min-width: 112px; }
+.pl-sticky .pl-select:hover { border-color: var(--accent); background: var(--accent-soft); }
+.pl-sticky .pl-select:focus-visible {
+  border-color: var(--accent); box-shadow: 0 0 0 3px rgba(17, 148, 112, .14);
+}
+.pl-sticky .pl-select option:disabled { color: #9da8a0; }
 
 .listen-grid {
   display: grid; gap: 16px; align-items: start;
@@ -87,6 +110,8 @@
   .listen-grid { grid-template-columns: 1fr; }
   .listen-grid .pane, .lsn-side { max-height: none; }
   .pl-sticky { position: relative; top: auto; flex-direction: column; align-items: stretch; gap: 10px; }
+  .pl-sticky .pl-inline-row { justify-content: space-between; }
+  .pl-sticky .pl-select { min-width: 140px; }
 }
 
 /* ---- 左栏:逐句转写 ---- */

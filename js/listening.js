@@ -936,14 +936,14 @@ const MODES = [
 ];
 
 function renderSide() {
-  const speedChips = SPEEDS.map((v) =>
-    `<button type="button" class="chip${v === 1 ? " on" : ""}" data-speed="${v}">${v}×</button>`).join("");
-  const modeChips = MODES.map(([v, label]) => {
+  const speedOptions = SPEEDS.map((v) =>
+    `<option value="${v}"${v === 1 ? " selected" : ""}>${v}×</option>`).join("");
+  const modeOptions = MODES.map(([v, label]) => {
     const needTimed = v !== "normal" && v !== "dictation";
-    const dis = needTimed && !timed.length ? " disabled title=\"本篇未对齐时间戳,不能按句循环\"" : "";
-    return `<button type="button" class="chip${v === mode ? " on" : ""}" data-mode="${v}"${dis}>${label}</button>`;
+    const dis = needTimed && !timed.length ? " disabled" : "";
+    return `<option value="${v}"${v === mode ? " selected" : ""}${dis}>${label}</option>`;
   }).join("");
-  // 播放器条(sticky top,不占用侧栏空间;annotate 时不显示模式 chip)
+  // 播放器条(sticky top,不占用侧栏空间;annotate 时不显示模式选择)
   playerBarEl.innerHTML = `
     <div class="pl-main">
       <button type="button" id="pl-back" title="后退 5 秒">−5s</button>
@@ -955,8 +955,8 @@ function renderSide() {
       <input type="range" id="pl-seek" min="0" max="100" step="0.1" value="0" aria-label="播放进度">
       <span id="pl-dur">--:--</span>
     </div>
-    <div class="pl-inline-row"><span class="pl-label">语速</span><div class="chiprow" id="pl-speeds">${speedChips}</div></div>
-    ${ANNOTATE ? "" : `<div class="pl-inline-row"><span class="pl-label">模式</span><div class="chiprow" id="pl-modes">${modeChips}</div></div>`}
+    <label class="pl-inline-row" for="pl-speed"><span class="pl-label">语速</span><span class="pl-select-wrap"><select class="pl-select" id="pl-speed" aria-label="播放语速">${speedOptions}</select></span></label>
+    ${ANNOTATE ? "" : `<label class="pl-inline-row" for="pl-mode"><span class="pl-label">模式</span><span class="pl-select-wrap pl-mode-select"><select class="pl-select" id="pl-mode" aria-label="练习模式">${modeOptions}</select></span></label>`}
   `;
   // 侧栏(题目下方):模式面板 + 听写卡 +(annotate 时)打点面板
   sideEl.innerHTML = `
@@ -966,8 +966,9 @@ function renderSide() {
     ${ANNOTATE ? `<div class="pl-card"><div class="pl-kbd">快捷键:Space 给当前句打点 · P 播/停</div></div>` : ""}
     <div class="pl-card dict-card" id="dict-panel" hidden></div>`;
 
-  // 事件监听器:播放器条上的点击(seek/speed/mode)+ 侧栏点击(模式面板 detail)
+  // 事件监听器:播放器按钮/进度、下拉选择 + 侧栏模式详情
   playerBarEl.addEventListener("click", onSideClick);
+  playerBarEl.addEventListener("change", onPlayerChange);
   sideEl.addEventListener("click", onSideClick);
   const seek = document.getElementById("pl-seek");
   seek.addEventListener("input", () => {
@@ -985,6 +986,15 @@ function renderSide() {
   else refreshAnnPanel();
 }
 
+function onPlayerChange(ev) {
+  const t = ev.target;
+  if (t.id === "pl-speed") {
+    if (audio) audio.playbackRate = Number(t.value);
+    return;
+  }
+  if (t.id === "pl-mode") switchMode(t.value);
+}
+
 function onSideClick(ev) {
   const t = ev.target;
   if (t.id === "pl-toggle") { togglePlay(); return; }
@@ -992,12 +1002,6 @@ function onSideClick(ev) {
     if (canPlay()) audio.currentTime = Math.max(0, audio.currentTime + (t.id === "pl-back" ? -5 : 5));
     return;
   }
-  if (t.dataset.speed) {
-    if (audio) audio.playbackRate = Number(t.dataset.speed);
-    document.querySelectorAll("#pl-speeds .chip").forEach((c) => c.classList.toggle("on", c === t));
-    return;
-  }
-  if (t.dataset.mode) { switchMode(t.dataset.mode); return; }
   if (t.id === "rep-count") return; // select 交给 change
   // 模式面板里的按钮
   if (t.id === "ab-mark") { abMark(); return; }
@@ -1018,8 +1022,8 @@ function switchMode(m) {
   loopIdx = -1;
   repeatDone = 0;
   dictEndTime = null;
-  document.querySelectorAll("#pl-modes .chip").forEach((c) =>
-    c.classList.toggle("on", c.dataset.mode === m));
+  const modeSelect = document.getElementById("pl-mode");
+  if (modeSelect) modeSelect.value = m;
   transcriptEl.classList.toggle("shadow-mode", m === "shadow");
   transcriptEl.querySelectorAll(".seg.shadow-cue").forEach((el) => el.classList.remove("shadow-cue"));
   if (m === "sentence" && timed.length) {
