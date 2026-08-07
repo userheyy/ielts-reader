@@ -9,11 +9,15 @@ function parseId(id) {
 }
 
 function renderCard(p) {
+  const meta = parseId(p.id);
   const a = document.createElement("a");
   a.className = "card";
   a.href = `reader.html?id=${encodeURIComponent(p.id)}`;
+  a.dataset.search = `${p.source || ""} ${p.title || ""}`.toLowerCase();
   const q = p.question_count ? `<span>${p.question_count} 题</span>` : "";
+  const order = meta.book == null ? "本地文章" : `TEST ${meta.test} · PASSAGE ${meta.passage}`;
   a.innerHTML = `
+    <div class="card-topline"><span class="card-order">${order}</span><span class="card-arrow">↗</span></div>
     <div class="src">${p.source}${p.imported ? " · 本地导入" : ""}</div>
     <div class="title">${p.title}</div>
     <div class="count"><span>${p.sentence_count} 个精读单元</span>${q}</div>`;
@@ -47,17 +51,30 @@ function groupPassages(passages) {
 }
 
 function renderGroups(listEl, groups) {
-  for (const g of groups) {
+  groups.forEach((g, index) => {
     const section = document.createElement("section");
     section.className = "book-group collapsed"; // 默认收起
+    section.dataset.search = `${g.title} ${g.items.map(({ p }) => p.title).join(" ")}`.toLowerCase();
     const head = document.createElement("button");
     head.type = "button";
     head.className = "book-head";
     head.setAttribute("aria-expanded", "false");
-    const note = `${g.items.length} 篇`;
-    head.innerHTML = `<span class="book-caret" aria-hidden="true">▶</span><h2>${g.title}</h2><span class="book-note">${note}</span>`;
+    const number = g.book == null ? "LOCAL" : String(g.book).padStart(2, "0");
+    head.innerHTML = `
+      <span class="book-number">${number}</span>
+      <span class="book-title-block"><small>CAMBRIDGE IELTS</small><h2>${g.title}</h2></span>
+      <span class="book-count"><strong>${g.items.length}</strong><small>篇文章</small></span>
+      <span class="book-action"><span>查看篇目</span><b class="book-caret" aria-hidden="true">↘</b></span>`;
     head.addEventListener("click", () => {
-      const collapsed = section.classList.toggle("collapsed");
+      const willOpen = section.classList.contains("collapsed");
+      listEl.querySelectorAll(".book-group:not(.collapsed)").forEach((open) => {
+        if (open !== section) {
+          open.classList.add("collapsed");
+          open.querySelector(".book-head").setAttribute("aria-expanded", "false");
+        }
+      });
+      section.classList.toggle("collapsed", !willOpen);
+      const collapsed = !willOpen;
       head.setAttribute("aria-expanded", collapsed ? "false" : "true");
     });
     section.appendChild(head);
@@ -65,8 +82,38 @@ function renderGroups(listEl, groups) {
     grid.className = "card-grid";
     for (const { p } of g.items) grid.appendChild(renderCard(p));
     section.appendChild(grid);
+    section.style.setProperty("--book-order", index);
     listEl.appendChild(section);
-  }
+  });
+}
+
+function bindSearch(listEl, emptyEl) {
+  const input = document.getElementById("library-search");
+  if (!input) return;
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLowerCase();
+    let visibleGroups = 0;
+    listEl.querySelectorAll(".book-group").forEach((section) => {
+      const groupMatch = section.querySelector(".book-title-block h2").textContent.toLowerCase().includes(query);
+      let visibleCards = 0;
+      section.querySelectorAll(".card").forEach((card) => {
+        const show = !query || groupMatch || card.dataset.search.includes(query);
+        card.hidden = !show;
+        if (show) visibleCards++;
+      });
+      section.hidden = visibleCards === 0;
+      if (!section.hidden) visibleGroups++;
+      if (query && !section.hidden) {
+        section.classList.remove("collapsed");
+        section.querySelector(".book-head").setAttribute("aria-expanded", "true");
+      } else if (!query) {
+        section.classList.add("collapsed");
+        section.querySelector(".book-head").setAttribute("aria-expanded", "false");
+      }
+    });
+    emptyEl.textContent = "没有找到匹配的书或文章。";
+    emptyEl.style.display = query && visibleGroups === 0 ? "block" : "none";
+  });
 }
 
 async function main() {
@@ -86,7 +133,11 @@ async function main() {
   const builtIn = idx.passages || [];
   const passages = [...imported, ...builtIn.filter((p) => !importedIds.has(p.id))];
   if (passages.length === 0) { emptyEl.style.display = "block"; return; }
-  renderGroups(listEl, groupPassages(passages));
+  const groups = groupPassages(passages);
+  document.getElementById("book-total").textContent = groups.filter((g) => g.book != null).length;
+  document.getElementById("passage-total").textContent = passages.length;
+  renderGroups(listEl, groups);
+  bindSearch(listEl, emptyEl);
 }
 main().catch((error) => {
   console.error("阅读首页加载失败", error);

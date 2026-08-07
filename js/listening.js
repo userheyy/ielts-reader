@@ -62,28 +62,89 @@ async function renderLanding() {
     notice("听力库还没有测试数据。");
     return;
   }
-  landingListEl.innerHTML = tests.map((t) => `
-    <section class="book-group">
-      <div class="book-head"><h2>${esc(t.source || t.id)}</h2><span class="book-note">逐句精听 · 听写 · 真题演练</span></div>
-      <div class="card-grid">
-        ${(t.parts || []).map((p) => `
-          <a class="card" href="listening.html?id=${encodeURIComponent(p.id)}">
-            <div class="src">Part ${esc(p.part)} · 第 ${esc(p.question_range || "")} 题</div>
-            <div class="title">${esc(p.title || "Part " + p.part)}</div>
-            <div class="count lsn-card-foot">
-              <span>精听 / 听写 / 做题</span>
+  const books = new Map();
+  for (const test of tests) {
+    const match = /^c(\d+)-test(\d+)$/i.exec(test.id || "");
+    const book = match ? Number(match[1]) : 0;
+    const testNo = match ? Number(match[2]) : 0;
+    if (!books.has(book)) books.set(book, []);
+    books.get(book).push({ ...test, testNo });
+  }
+  const orderedBooks = [...books.entries()].sort((a, b) => a[0] - b[0]);
+  const partTotal = tests.reduce((sum, test) => sum + (test.parts || []).length, 0);
+  document.getElementById("lsn-book-total").textContent = orderedBooks.length;
+  document.getElementById("lsn-test-total").textContent = tests.length;
+  document.getElementById("lsn-part-total").textContent = partTotal;
+
+  landingListEl.innerHTML = orderedBooks.map(([book, bookTests], index) => `
+    <section class="lsn-book-group collapsed" style="--book-order:${index}">
+      <button type="button" class="lsn-book-head" aria-expanded="false">
+        <span class="book-number">${String(book).padStart(2, "0")}</span>
+        <span class="book-title-block"><small>CAMBRIDGE IELTS</small><h2>剑桥雅思${book}</h2></span>
+        <span class="book-count"><strong>${bookTests.length * 4}</strong><small>个 Part</small></span>
+        <span class="book-action"><span>进入训练</span><b class="book-caret" aria-hidden="true">↘</b></span>
+      </button>
+      <div class="lsn-tests-grid">
+        ${bookTests.sort((a, b) => a.testNo - b.testNo).map((test) => `
+          <article class="lsn-test-card">
+            <div class="lsn-test-head"><strong>TEST ${test.testNo}</strong><span>4 PARTS</span></div>
+            <div class="lsn-part-list">
+              ${(test.parts || []).map((p) => {
+                const method = Number(p.part) % 2 ? "对话逐轮" : "独白逐句";
+                return `<a class="lsn-part-card" href="listening.html?id=${encodeURIComponent(p.id)}">
+                  <span class="lsn-part-number">P${esc(p.part)}</span>
+                  <span class="lsn-part-copy"><small>${method} · Q ${esc(p.question_range || "")}</small><b>${esc(p.title || "Part " + p.part)}</b></span>
+                  <span class="lsn-part-go" aria-hidden="true">→</span>
+                </a>`;
+              }).join("")}
             </div>
-          </a>`).join("")}
+          </article>`).join("")}
       </div>
     </section>`).join("");
-  // 卡片右下角的「打点」是卡片(<a>)里的小入口,单独拦截跳转
+
   landingListEl.addEventListener("click", (ev) => {
-    const ann = ev.target.closest(".lsn-ann");
-    if (ann) {
-      ev.preventDefault();
-      location.href = ann.dataset.ann;
-    }
+    const head = ev.target.closest(".lsn-book-head");
+    if (!head) return;
+    const section = head.closest(".lsn-book-group");
+    const willOpen = section.classList.contains("collapsed");
+    landingListEl.querySelectorAll(".lsn-book-group:not(.collapsed)").forEach((open) => {
+      if (open !== section) {
+        open.classList.add("collapsed");
+        open.querySelector(".lsn-book-head").setAttribute("aria-expanded", "false");
+      }
+    });
+    section.classList.toggle("collapsed", !willOpen);
+    head.setAttribute("aria-expanded", willOpen ? "true" : "false");
   });
+}
+
+function topicFromQuestionSource(data) {
+  const source = (data.questions || []).map((group) => group.source_text || "").join("\n");
+  const ignored = /^(?:SECTION|PART)\s+\d|^Questions?\s*\d|^(?:Complete|Choose|Write|Label|Which|What)\b|^(?:Template|Items|Options|Count|Q Num|Text|Id|Map):?/i;
+  for (const raw of source.split(/\r?\n/)) {
+    const line = raw.trim().replace(/^\*+|\*+$/g, "").trim();
+    if (!line || line.length < 5 || line.length > 90 || ignored.test(line)) continue;
+    const letters = line.match(/[A-Za-z]/g) || [];
+    const upper = line.match(/[A-Z]/g) || [];
+    if (letters.length >= 4 && upper.length / letters.length >= .82) {
+      return line.toLowerCase().replace(/\b\w/g, (char) => char.toUpperCase());
+    }
+  }
+  return data.title || data.id;
+}
+
+async function topicTitleFor(id, data) {
+  const fallback = topicFromQuestionSource(data);
+  try {
+    const res = await fetch("data/listening/index.json", { cache: "no-store" });
+    if (!res.ok) return fallback;
+    const idx = await res.json();
+    for (const test of idx.tests || []) {
+      const part = (test.parts || []).find((item) => item.id === id);
+      if (part && part.title && !/^Listening Part \d$/i.test(part.title)) return part.title;
+    }
+  } catch { /* 索引不可用时继续使用 Part 标题 */ }
+  return fallback;
 }
 
 // ============================================================
@@ -145,6 +206,7 @@ async function renderPart(id) {
     return;
   }
   PART = d;
+  const displayTitle = await topicTitleFor(id, d);
   segs = Array.isArray(d.segments) ? d.segments : [];
   timed = segs.filter((s) => typeof s.start === "number").slice().sort((a, b) => a.start - b.start);
   allItems = [];
@@ -153,8 +215,8 @@ async function renderPart(id) {
   }
 
   viewEl.hidden = false;
-  srcEl.textContent = `${d.source || ""}${d.title ? " — " + d.title : ""}`;
-  document.title = (d.title || id) + " · 听力精听";
+  srcEl.textContent = `${d.source || ""}${displayTitle ? " — " + displayTitle : ""}`;
+  document.title = displayTitle + " · 听力精听";
   // 打点入口只在 ?annotate=1 时可见(N4:普通用户看不到)
   if (ANNOTATE) {
     annotateLinkEl.hidden = false;

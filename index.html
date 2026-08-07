@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思备考 · 阅读</title>
-  <link rel="stylesheet" href="css/style.css?v=17" />
+  <link rel="stylesheet" href="css/style.css?v=18" />
 </head>
-<body>
+<body class="library-page reading-library">
   <header class="topbar">
     <h1>雅思备考</h1>
-    <a href="index.html">阅读</a>
+    <a href="index.html" class="active">阅读</a>
     <a href="listening.html">听力</a>
     <a href="writing.html">写作</a>
     <a href="speaking.html">口语</a>
@@ -17,10 +17,32 @@
     <a href="grammar.html">语法</a>
     <a href="settings.html">设置</a>
   </header>
-  <div class="container">
-    <div id="list"></div>
+  <main class="container library-shell">
+    <section class="library-hero reading-hero">
+      <div class="library-hero-copy">
+        <span class="library-eyebrow">CAMBRIDGE IELTS · READING</span>
+        <h2>阅读真题库</h2>
+        <p>按原书顺序收录剑桥雅思阅读。先选一本书，再进入 Test 与 Passage 开始精读。</p>
+      </div>
+      <div class="library-stats" aria-label="阅读题库统计">
+        <div><strong id="book-total">—</strong><span>册真题</span></div>
+        <div><strong id="passage-total">—</strong><span>篇文章</span></div>
+        <div><strong>3</strong><span>阶段精读</span></div>
+      </div>
+    </section>
+    <div class="library-toolbar">
+      <div>
+        <span class="library-toolbar-label">选择一本开始</span>
+        <small>点击书卡展开篇目，再次点击收起</small>
+      </div>
+      <label class="library-search">
+        <span aria-hidden="true">⌕</span>
+        <input id="library-search" type="search" placeholder="搜索书名或文章标题" autocomplete="off" />
+      </label>
+    </div>
+    <div id="list" class="book-shelf"></div>
     <p id="empty" style="display:none;color:var(--muted)">还没有文章。请先用预处理流程生成。</p>
-  </div>
-  <script type="module" src="js/index.js?v=8"></script>
+  </main>
+  <script type="module" src="js/index.js?v=9"></script>
 </body>
 </html>

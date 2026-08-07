@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>雅思听力精听</title>
-  <link rel="stylesheet" href="css/style.css?v=15" />
-  <link rel="stylesheet" href="css/listening.css?v=9" />
+  <link rel="stylesheet" href="css/style.css?v=18" />
+  <link rel="stylesheet" href="css/listening.css?v=10" />
 </head>
-<body>
+<body class="listening-page">
   <header class="topbar">
     <h1>雅思备考</h1>
     <a href="index.html">阅读</a>
@@ -23,16 +23,29 @@
 
     <!-- 落地页:测试卡列表(无 ?id 时显示) -->
     <div id="landing" hidden>
-      <div class="lsn-head">
-        <h2>雅思听力精听</h2>
-        <p>影子跟读 → 对话逐轮 / 独白逐句跟读 → 4 级渐进提示 → 听写判分 → 真题演练。选一个 Part 开始。</p>
+      <section class="library-hero listening-hero">
+        <div class="library-hero-copy">
+          <span class="library-eyebrow">CAMBRIDGE IELTS · LISTENING</span>
+          <h2>听力训练室</h2>
+          <p>从完整真题进入精听：对话按发言轮次，独白按完整句子，配合影子跟读与听写训练。</p>
+        </div>
+        <div class="library-stats" aria-label="听力题库统计">
+          <div><strong id="lsn-book-total">—</strong><span>册真题</span></div>
+          <div><strong id="lsn-test-total">—</strong><span>套测试</span></div>
+          <div><strong id="lsn-part-total">—</strong><span>个 Part</span></div>
+        </div>
+      </section>
+      <div class="library-toolbar lsn-library-toolbar">
+        <div><span class="library-toolbar-label">选择训练册</span><small>展开后按 Test 和 Part 进入练习</small></div>
+        <div class="method-legend"><span>对话逐轮</span><span>独白逐句</span><span>影子跟读</span></div>
       </div>
-      <div id="landing-list"></div>
+      <div id="landing-list" class="lsn-book-shelf"></div>
     </div>
 
     <!-- 精听页(?id=xxx 时显示):顶部 sticky 播放器 + 2 栏(转写 + 题目/听写) -->
     <div id="player-view" hidden>
       <div class="listen-toolbar">
+        <a class="listen-back" href="listening.html">← 返回听力题库</a>
         <span class="src" id="lsn-src"></span>
         <a class="lsn-annotate-link" id="annotate-link" href="#" hidden>退出打点</a>
       </div>
@@ -46,6 +59,6 @@
       </div>
     </div>
   </div>
-  <script type="module" src="js/listening.js?v=9"></script>
+  <script type="module" src="js/listening.js?v=12"></script>
 </body>
 </html>
