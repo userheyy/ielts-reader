@@ -1,5 +1,4 @@
-import { importPassageJSON, listImportedPassages } from "./passage-store.js";
-import { bindProfileBackupUI } from "./profile-backup.js";
+import { listImportedPassages } from "./passage-store.js";
 
 // 从 id(如 c14-test3-p2)解析册号/Test/Passage,用于分组与排序。
 // 解析不出册号的(如本地导入的自定义 id)归到 book=null。
@@ -26,7 +25,7 @@ function renderCard(p) {
   return a;
 }
 
-// 把文章按册归为多个组,册号从小到大(剑14→…→19→…),组内按 Test/Passage 原书顺序。
+// 把文章按册归为多个组,册号从小到大(剑10→…→19),组内按 Test/Passage 原书顺序。
 // 本地导入(book=null)单独归到最上面一组。
 function groupPassages(passages) {
   const byBook = new Map();
@@ -60,12 +59,7 @@ function renderGroups(listEl, groups) {
     head.type = "button";
     head.className = "book-head";
     head.setAttribute("aria-expanded", "false");
-    const refined = g.items.filter((x) => x.p.quality === "teacher_refined").length;
-    const note = g.book == null
-      ? `${g.items.length} 篇`
-      : refined === g.items.length
-        ? `${g.items.length} 篇 · 全部老师精修`
-        : `${g.items.length} 篇`;
+    const note = `${g.items.length} 篇`;
     head.innerHTML = `<span class="book-caret" aria-hidden="true">▶</span><h2>${g.title}</h2><span class="book-note">${note}</span>`;
     head.addEventListener("click", () => {
       const collapsed = section.classList.toggle("collapsed");
@@ -83,7 +77,6 @@ function renderGroups(listEl, groups) {
 async function main() {
   const listEl = document.getElementById("list");
   const emptyEl = document.getElementById("empty");
-  const statsEl = document.getElementById("library-stats");
   let idx;
   try {
     const res = await fetch("data/index.json", { cache: "no-store" });
@@ -97,28 +90,12 @@ async function main() {
   const importedIds = new Set(imported.map((p) => p.id));
   const builtIn = idx.passages || [];
   const passages = [...imported, ...builtIn.filter((p) => !importedIds.has(p.id))];
-  if (statsEl) {
-    statsEl.textContent = `当前显示 ${passages.length} 篇：内置 ${builtIn.length} 篇，本地导入 ${imported.length} 篇`;
-  }
   if (passages.length === 0) { emptyEl.style.display = "block"; return; }
   renderGroups(listEl, groupPassages(passages));
 }
-
-document.getElementById("passage-import").addEventListener("change", async (ev) => {
-  const file = ev.target.files[0];
-  if (!file) return;
-  try {
-    const { passage, replaced } = importPassageJSON(await file.text());
-    alert(`${replaced ? "已更新" : "已导入"}《${passage.title}》，即将打开。`);
-    location.href = `reader.html?id=${encodeURIComponent(passage.id)}`;
-  } catch (e) {
-    alert("文章导入失败：" + e.message);
-    ev.target.value = "";
-  }
+main().catch((error) => {
+  console.error("阅读首页加载失败", error);
+  const emptyEl = document.getElementById("empty");
+  emptyEl.textContent = "文章列表加载失败，请刷新页面重试。";
+  emptyEl.style.display = "block";
 });
-bindProfileBackupUI({
-  exportButtonId: "profile-export",
-  importInputId: "profile-import",
-  onRestored: () => location.reload(),
-});
-main();

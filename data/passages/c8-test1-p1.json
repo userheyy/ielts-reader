@@ -1,0 +1,934 @@
+{
+  "id": "c8-test1-p1",
+  "source": "剑桥雅思8 · Test 1 · Passage 1",
+  "title": "A Chronicle of Timekeeping",
+  "quality": "generated_reviewed",
+  "analysis_unit": "sentence",
+  "phrases": [
+    {
+      "w": "temporal hours",
+      "pos": "phr.",
+      "def": "时时时时"
+    },
+    {
+      "w": "solar year",
+      "pos": "phr.",
+      "def": "太阳年"
+    },
+    {
+      "w": "Roman Empire",
+      "pos": "phr.",
+      "def": "罗马帝国"
+    },
+    {
+      "w": "anchor escapement",
+      "pos": "phr.",
+      "def": "锚锚逃逸"
+    },
+    {
+      "w": "varied according",
+      "pos": "phr.",
+      "def": "不同依"
+    },
+    {
+      "w": "mechanical clock",
+      "pos": "phr.",
+      "def": "机械钟"
+    },
+    {
+      "w": "each interval",
+      "pos": "phr.",
+      "def": "每个间隔"
+    },
+    {
+      "w": "became known",
+      "pos": "phr.",
+      "def": "已知"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "A According to archaeological evidence, at least 5,000 years ago, and long before the advent of the Roman Empire, the Babylonians began to measure time, introducing calendars to co-ordinate communal activities, to plan the shipment of goods and, in particular, to regulate planting and harvesting.",
+      "zh": "根据至少5 000年前的考古证据,早在罗马帝国诞生之前,巴比伦人就开始测量时间,采用日历来协调社区活动,规划货物运输,特别是管制种植和收获。",
+      "grammar": {
+        "type": "分词结构 + 不定式结构",
+        "note": "先抓主句主干；分词短语压缩了背景或附加动作；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "archaeological",
+          "pos": "adj.",
+          "def": "考古考古"
+        },
+        {
+          "w": "evidence",
+          "pos": "n.",
+          "def": "证据证据证据证据"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "They based their calendars on three natural cycles: the solar day, marked by the successive periods of light and darkness as the earth rotates on its axis; the lunar month, following the phases of the moon as it orbits the earth; and the solar year, defined by the changing seasons that accompany our planet’s revolution around the sun.",
+      "zh": "他们以三个自然周期为基础日历:太阳日,以地球在轴心上旋转时的光和黑暗相交而为标志的太阳日;月月月,以月球各阶段为依托,环绕地球;太阳年,以伴随地球围绕太阳革命而来的变化季节为定义。",
+      "grammar": {
+        "type": "分词结构",
+        "note": "先抓主句主干；分词短语压缩了背景或附加动作。"
+      },
+      "words": [
+        {
+          "w": "calendars",
+          "pos": "word",
+          "def": "日历日历"
+        },
+        {
+          "w": "natural",
+          "pos": "adj.",
+          "def": "天然"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 2,
+      "en": "B Before the invention of artificial light, the moon had greater social impact.",
+      "zh": "B 在人工光线发明之前月亮的社会影响更大",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "invention",
+          "pos": "n.",
+          "def": "发明"
+        },
+        {
+          "w": "artificial",
+          "pos": "adj.",
+          "def": "人工人工造"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 2,
+      "en": "And, for those living near the equator in particular, its waxing and waning was more conspicuous than the passing of the seasons.",
+      "zh": "特别是对于居住在赤道附近的人来说, 赤道的蜡和消减比季节的过往更加明显。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "equator",
+          "pos": "word",
+          "def": "赤道"
+        },
+        {
+          "w": "particular",
+          "pos": "word",
+          "def": "特别特别特别特别"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 2,
+      "en": "Hence, the calendars that were developed at the lower latitudes were influenced more by the lunar cycle than by the solar year.",
+      "zh": "因此,低纬度所开发的日历受月球周期的影响大于太阳年。",
+      "grammar": {
+        "type": "被动语态",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "calendars",
+          "pos": "word",
+          "def": "日历日历"
+        },
+        {
+          "w": "developed",
+          "pos": "word",
+          "def": "开发"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 2,
+      "en": "In more northern climes, however, where seasonal agriculture was practised, the solar year became more crucial.",
+      "zh": "然而,在较北端的气候中,在季节性农业的地方,太阳年变得更加重要。",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "northern",
+          "pos": "word",
+          "def": "北部北部"
+        },
+        {
+          "w": "however",
+          "pos": "word",
+          "def": "不过,"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 2,
+      "en": "As the Roman Empire expanded northward, it organised its activity chart for the most part around the solar year.",
+      "zh": "随着罗马帝国向北扩张,它组织活动图大部分围绕太阳年",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "expanded",
+          "pos": "word",
+          "def": "扩大"
+        },
+        {
+          "w": "northward",
+          "pos": "word",
+          "def": "向北"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 3,
+      "en": "C Centuries before the Roman Empire, the Egyptians had formulated a municipal calendar having 12 months of 30 days, with five days added to approximate the solar year.",
+      "zh": "埃及人制定了一个市政日历,历时12个月,30天,加上大约太阳年的5天。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "formulated",
+          "pos": "word",
+          "def": "以制剂"
+        },
+        {
+          "w": "municipal",
+          "pos": "adj.",
+          "def": "市市市"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 3,
+      "en": "Each period of ten days was marked by the appearance of special groups of stars called decans.",
+      "zh": "每十天,都有特殊星群出现,称为十大星群。",
+      "grammar": {
+        "type": "被动语态",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "appearance",
+          "pos": "n.",
+          "def": "外貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌貌外貌外貌外貌"
+        },
+        {
+          "w": "special",
+          "pos": "adj.",
+          "def": "特别特别特别"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 3,
+      "en": "At the rise of the star Sirius just before sunrise, which occurred around the all-important annual flooding of the Nile, 12 decans could be seen spanning the heavens.",
+      "zh": "天狼星在日出前升起发生在尼罗河每年一次的至关重要的洪水中 12个十几分的天狼星横穿了天上",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "sunrise",
+          "pos": "v.",
+          "def": "日出"
+        },
+        {
+          "w": "occurred",
+          "pos": "word",
+          "def": "发生"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 3,
+      "en": "The cosmic significance the Egyptians placed in the 12 decans led them to develop a system in which each interval of darkness (and later, each interval of daylight) was divided into a dozen equal parts.",
+      "zh": "埃及人对12个十分地的宇宙意义使他们形成了一个系统将每一个黑暗的间隔(以及以后的每一日光的间隔) 分成十几个相等的部分。",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "significance",
+          "pos": "n.",
+          "def": "意义"
+        },
+        {
+          "w": "develop",
+          "pos": "word",
+          "def": "开发开发"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 3,
+      "en": "These periods became known as temporal hours because their duration varied according to the changing length of days and nights with the passing of the seasons.",
+      "zh": "这些时段被称为时时,因为它们的时段因季节的过后日夜的长短变化而变化。",
+      "grammar": {
+        "type": "状语从句 + 不定式结构",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "periods",
+          "pos": "word",
+          "def": "期数"
+        },
+        {
+          "w": "temporal",
+          "pos": "adj.",
+          "def": "时间"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 3,
+      "en": "Summer hours were long, winter ones short; only at the spring and autumn equinoxes were the hours of daylight and darkness equal.",
+      "zh": "夏假时间长,冬季时间短;只有春秋春,白天和黑暗的时间相等。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "equinoxes",
+          "pos": "word",
+          "def": "春分"
+        },
+        {
+          "w": "daylight",
+          "pos": "word",
+          "def": "日光光"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 3,
+      "en": "Temporal hours, which were first adopted by the Greeks and then the Romans, who disseminated them through Europe, remained in use for more than 2,500 years.",
+      "zh": "希腊人首先采用时空,然后通过欧洲传播时空的罗马人则采用时空,使用时间超过2 500年。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "adopted",
+          "pos": "word",
+          "def": "通过通过通过"
+        },
+        {
+          "w": "disseminated",
+          "pos": "word",
+          "def": "传播传播"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 4,
+      "en": "D In order to track temporal hours during the day, inventors created sundials, which indicate time by the length or direction of the sun’s shadow.",
+      "zh": "为了跟踪白天的时间时数,发明者创造了日记,根据太阳阴影的长度或方向标明时间。",
+      "grammar": {
+        "type": "定语从句 + 不定式结构",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "temporal",
+          "pos": "adj.",
+          "def": "时间"
+        },
+        {
+          "w": "inventors",
+          "pos": "word",
+          "def": "发明者"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 4,
+      "en": "The sundial’s counterpart, the water clock, was designed to measure temporal hours at night.",
+      "zh": "日记的对口单位水时表的设计是为了测量夜间的时间小时。",
+      "grammar": {
+        "type": "被动语态 + 不定式结构",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "sundial",
+          "pos": "adj.",
+          "def": "日日日日"
+        },
+        {
+          "w": "counterpart",
+          "pos": "word",
+          "def": "对应对应对"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 4,
+      "en": "One of the first water clocks was a basin with a small hole near the bottom through which the water dripped out.",
+      "zh": "第一批水钟中有一个是盆地,底部附近有一个小洞,水滴出。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "through",
+          "pos": "word",
+          "def": "中中"
+        },
+        {
+          "w": "dripped",
+          "pos": "word",
+          "def": "滴滴"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 4,
+      "en": "The falling water level denoted the passing hour as it dipped below hour lines inscribed on the inner surface.",
+      "zh": "水位下降表示时间流逝当它沉降到内表面的时线下",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "falling",
+          "pos": "word",
+          "def": "下降"
+        },
+        {
+          "w": "denoted",
+          "pos": "word",
+          "def": "指"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 4,
+      "en": "Although these devices performed satisfactorily around the Mediterranean, they could not always be depended on in the cloudy and often freezing weather of northern Europe.",
+      "zh": "虽然这些装置在地中海周围运行令人满意,但在北欧多云和经常寒冷的天气中,它们并不总是能够依赖。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "devices",
+          "pos": "word",
+          "def": "设备"
+        },
+        {
+          "w": "performed",
+          "pos": "word",
+          "def": "完成"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 5,
+      "en": "E The advent of the mechanical clock meant that although it could be adjusted to maintain temporal hours, it was naturally suited to keeping equal ones.",
+      "zh": "机械时钟的出现意味着,虽然可以调整它以保持时钟,但自然适合保持等时。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "mechanical",
+          "pos": "adj.",
+          "def": "机械机械"
+        },
+        {
+          "w": "although",
+          "pos": "word",
+          "def": "尽管"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 5,
+      "en": "With these, however, arose the question of when to begin counting, and so, in the early 14th century, a number of systems evolved.",
+      "zh": "然而,随着这些变化,产生了何时开始计算的问题,因此,在14世纪初,一些系统演变了。",
+      "grammar": {
+        "type": "状语从句 + 不定式结构",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "however",
+          "pos": "word",
+          "def": "不过,"
+        },
+        {
+          "w": "question",
+          "pos": "n.",
+          "def": "问问问问问"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 5,
+      "en": "The schemes that divided the day into 24 equal parts varied according to the start of the count: Italian hours began at sunset, Babylonian hours at sunrise, astronomical hours at midday and ‘great clock’ hours, used for some large public clocks in Germany, at midnight.",
+      "zh": "将白天分成24个同等部分的计划依计数的起始时间而不同:意大利时从日落开始,巴比伦时从日出开始,天文时从中午开始, \" 大钟 \" 时数在午夜开始,德国一些大型公共钟点使用。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "schemes",
+          "pos": "word",
+          "def": "计划"
+        },
+        {
+          "w": "divided",
+          "pos": "word",
+          "def": "除和"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 5,
+      "en": "Eventually these were superseded by ‘small clock’, or French, hours, which split the day into two 12-hour periods commencing at midnight.",
+      "zh": "最终被“小钟”或法语时段取代, 每天分成两段12小时,",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "superseded",
+          "pos": "word",
+          "def": "替换已替换"
+        },
+        {
+          "w": "periods",
+          "pos": "word",
+          "def": "期数"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 6,
+      "en": "F The earliest recorded weight-driven mechanical clock was built in 1283 in Bedfordshire in England.",
+      "zh": "F 最早记录的重量驱动机械钟建于1283年,位于英格兰的贝德福德郡。",
+      "grammar": {
+        "type": "被动语态",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "earliest",
+          "pos": "word",
+          "def": "最早最早"
+        },
+        {
+          "w": "recorded",
+          "pos": "word",
+          "def": "记录"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 6,
+      "en": "The revolutionary aspect of this new timekeeper was neither the descending weight that provided its motive force nor the gear wheels (which had been around for at least 1,300 years) that transferred the power; it was the part called the escapement.",
+      "zh": "这一新时间看守的革命性方面既不是提供动力力的下限重量,也不是转移权力的轮子(至少已经大约1 300年),而是所谓的越狱。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "revolutionary",
+          "pos": "word",
+          "def": "革命革命"
+        },
+        {
+          "w": "timekeeper",
+          "pos": "word",
+          "def": "记时时记时员"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 6,
+      "en": "In the early 1400s came the invention of the coiled spring or fusee which maintained constant force to the gear wheels of the timekeeper despite the changing tension of its mainspring.",
+      "zh": "1400年代初期,出现了循环的弹簧或引信,尽管主要弹簧的紧张状态在变化,但这种弹簧或引信一直对计时器的轮轮轮保持恒定的威力。",
+      "grammar": {
+        "type": "定语从句 + 不定式结构",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "invention",
+          "pos": "n.",
+          "def": "发明"
+        },
+        {
+          "w": "maintained",
+          "pos": "word",
+          "def": "维持维持"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 6,
+      "en": "By the 16th century, a pendulum clock had been devised, but the pendulum swung in a large arc and thus was not very efficient.",
+      "zh": "到16世纪,已经设计了一个钟表,但钟表在大弧形中摇摆,因此效率不高。",
+      "grammar": {
+        "type": "被动语态",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "century",
+          "pos": "word",
+          "def": "世纪世纪"
+        },
+        {
+          "w": "pendulum",
+          "pos": "word",
+          "def": "钟钟"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 7,
+      "en": "G To address this, a variation on the original escapement was invented in 1670, in England.",
+      "zh": "为了解决这个问题,英国1670年发明了一种关于最初逃跑的变异。",
+      "grammar": {
+        "type": "被动语态 + 不定式结构",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "address",
+          "pos": "word",
+          "def": "地址地址地址地址地址地址地址"
+        },
+        {
+          "w": "variation",
+          "pos": "n.",
+          "def": "变化变化"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 7,
+      "en": "It was called the anchor escapement, which was a lever-based device shaped like a ship’s anchor.",
+      "zh": "其形状像船锚一样的杠杆装置。",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "escapement",
+          "pos": "n.",
+          "def": "逃出"
+        },
+        {
+          "w": "lever-based",
+          "pos": "word",
+          "def": "以杠杆为基础的"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 7,
+      "en": "The motion of a pendulum rocks this device so that it catches and then releases each tooth of the escape wheel, in turn allowing it to turn a precise amount.",
+      "zh": "弹钟的动作使这个装置能抓住然后释放出逃跑轮的每一个牙齿反过来又让它能转动精确的数量",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "pendulum",
+          "pos": "word",
+          "def": "钟钟"
+        },
+        {
+          "w": "catches",
+          "pos": "word",
+          "def": "渔渔渔渔量"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 7,
+      "en": "Unlike the original form used in early pendulum clocks, the anchor escapement permitted the pendulum to travel in a very small arc.",
+      "zh": "与早期钟表使用的原表不同,锚离场使钟表得以用很小的弧形飞行。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "original",
+          "pos": "adj.",
+          "def": "原创"
+        },
+        {
+          "w": "pendulum",
+          "pos": "word",
+          "def": "钟钟"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 7,
+      "en": "Moreover, this invention allowed the use of a long pendulum which could beat once a second and thus led to the development of a new floor standing case design, which became known as the grandfather clock.",
+      "zh": "此外,这一发明还允许使用一个长的钟表,它可能一秒钟打一打,从而导致开发一个新的楼层常备案设计,即被称为祖父钟。",
+      "grammar": {
+        "type": "定语从句 + 不定式结构",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "invention",
+          "pos": "n.",
+          "def": "发明"
+        },
+        {
+          "w": "allowed",
+          "pos": "word",
+          "def": "允许"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 8,
+      "en": "H Today, highly accurate timekeeping instruments set the beat for most electronic devices.",
+      "zh": "H 今天,非常精确的时间保存文书为大多数电子设备设定了节拍。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "accurate",
+          "pos": "v.",
+          "def": "准确准确"
+        },
+        {
+          "w": "timekeeping",
+          "pos": "word",
+          "def": "计时"
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "para": 8,
+      "en": "Nearly all computers contain a quartz-crystal clock to regulate their operation.",
+      "zh": "几乎所有计算机都装有石英晶体钟来调节其运行。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "computers",
+          "pos": "word",
+          "def": "计算机"
+        },
+        {
+          "w": "contain",
+          "pos": "word",
+          "def": "包含"
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "para": 8,
+      "en": "Moreover, not only do time signals beamed down from Global Positioning System satellites calibrate the functions of precision navigation equipment, they do so as well for mobile phones, instant stock-trading systems and nationwide power-distribution grids.",
+      "zh": "此外,不仅从全球定位系统卫星上调低时间信号,校准精确导航设备功能,而且移动电话、即时库存交易系统和全国电力分配网也使用时间信号。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "signals",
+          "pos": "word",
+          "def": "信号信号信号信号"
+        },
+        {
+          "w": "satellites",
+          "pos": "word",
+          "def": "卫星卫星卫星"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "para": 8,
+      "en": "So integral have these time-based technologies become to day-to-day existence that our dependency on them is recognised only when they fail to work.",
+      "zh": "这些时间技术如此不可或缺,已变成日常存在,以至于我们对于这些技术的依赖只有在它们不能发挥作用时才得到承认。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "integral",
+          "pos": "adj.",
+          "def": "内积"
+        },
+        {
+          "w": "time-based",
+          "pos": "word",
+          "def": "时间基"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 1-13",
+      "type": "cambridge_reading",
+      "instructions": [
+        "Questions 1-4: Reading Passage has eight paragraphs, A-H .",
+        "Questions 5-8: Look at the following events (Questions 5-8 ) and the list of nationalities below.",
+        "Questions 9-13: Label the diagram below."
+      ],
+      "items": [
+        {
+          "number": 1,
+          "prompt": "a description of an early timekeeping invention affected by cold temperatures.",
+          "answer": "D",
+          "evidence_sentence": 26
+        },
+        {
+          "number": 2,
+          "prompt": "an explanation of the importance of geography in the development of the calendar in farming communities.",
+          "answer": "B",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 3,
+          "prompt": "a description of the origins of the pendulum clock",
+          "answer": "F",
+          "evidence_sentence": 27
+        },
+        {
+          "number": 4,
+          "prompt": "details of the simultaneous efforts of different societies to calculate time using uniform hours.",
+          "answer": "E",
+          "evidence_sentence": 15
+        },
+        {
+          "number": 5,
+          "prompt": "They devised a civil calendar in which the months were equal in length.",
+          "answer": "B",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 6,
+          "prompt": "They divided the day into two equal halves",
+          "answer": "F",
+          "evidence_sentence": 23
+        },
+        {
+          "number": 7,
+          "prompt": "They developed a new cabinet shape for a type of timekeeper.",
+          "answer": "D",
+          "evidence_sentence": 5
+        },
+        {
+          "number": 8,
+          "prompt": "They created a calendar to organize public events and work schedules.",
+          "answer": "A",
+          "evidence_sentence": 15
+        },
+        {
+          "number": 9,
+          "prompt": "How the 1670 lever-based device worked",
+          "answer": "(ships’s) anchor",
+          "evidence_sentence": 29
+        },
+        {
+          "number": 10,
+          "prompt": "How the 1670 lever-based device worked",
+          "answer": "(escape) wheel",
+          "evidence_sentence": 29
+        },
+        {
+          "number": 11,
+          "prompt": "How the 1670 lever-based device worked",
+          "answer": "tooth",
+          "evidence_sentence": 30
+        },
+        {
+          "number": 12,
+          "prompt": "How the 1670 lever-based device worked",
+          "answer": "(long) pendulum",
+          "evidence_sentence": 30
+        },
+        {
+          "number": 13,
+          "prompt": "How the 1670 lever-based device worked",
+          "answer": "second",
+          "evidence_sentence": 32
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "id": "c9-test3-p3",
+  "source": "剑桥雅思9 · Test 3 · Passage 3",
+  "title": "Information Theory - the Big Idea",
+  "quality": "generated_reviewed",
+  "analysis_unit": "sentence",
+  "phrases": [
+    {
+      "w": "Shannon showed",
+      "pos": "phr.",
+      "def": "珊农显示"
+    },
+    {
+      "w": "information theory",
+      "pos": "phr.",
+      "def": "信息理论"
+    },
+    {
+      "w": "maximum rate",
+      "pos": "phr.",
+      "def": "最高最高利率"
+    },
+    {
+      "w": "deep space",
+      "pos": "phr.",
+      "def": "深空深空深空"
+    },
+    {
+      "w": "information-carrying capacity bandwidth",
+      "pos": "phr.",
+      "def": "信息携带能力带宽"
+    },
+    {
+      "w": "prestigious Massachusetts Institute",
+      "pos": "phr.",
+      "def": "著名的马萨诸塞研究所"
+    },
+    {
+      "w": "American communications engineer",
+      "pos": "phr.",
+      "def": "美国通信工程师"
+    },
+    {
+      "w": "discovered something surprising",
+      "pos": "phr.",
+      "def": "发现一件令人惊讶的事"
+    }
+  ],
+  "sentences": [
+    {
+      "id": 1,
+      "para": 1,
+      "en": "A In April 2002 an event took place which demonstrated one of the many applications of information theory.",
+      "zh": "2002年4月,开展了一项活动,展示了信息理论的许多应用之一。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "demonstrated",
+          "pos": "word",
+          "def": "演示演示"
+        },
+        {
+          "w": "applications",
+          "pos": "word",
+          "def": "申请"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "para": 1,
+      "en": "The space probe, Voyager I, launched in 1977, had sent back spectacular images of Jupiter and Saturn and then soared out of the Solar System on a one-way mission to the stars.",
+      "zh": "1977年发射的太空探测器 \" 旅行者一号 \" 将木星和土星的壮观图像送回,然后在单向飞行任务中飞出太阳系,飞向恒星。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "launched",
+          "pos": "word",
+          "def": "启动"
+        },
+        {
+          "w": "spectacular",
+          "pos": "word",
+          "def": "壮观"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "para": 1,
+      "en": "After 25 years of exposure to the freezing temperatures of deep space, the probe was beginning to show its age.",
+      "zh": "深空温度冰冻25年后探测器开始显示它的老化",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "exposure",
+          "pos": "word",
+          "def": "接触接触接触"
+        },
+        {
+          "w": "freezing",
+          "pos": "word",
+          "def": "冻结冻结"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "para": 1,
+      "en": "Sensors and circuits were on the brink of failing and NASA experts realised that they had to do something or lose contact with their probe forever.",
+      "zh": "传感器和电路濒临崩溃,美国航天局专家意识到,他们必须做些什么,否则将永远失去与探测器的接触。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "circuits",
+          "pos": "word",
+          "def": "电路"
+        },
+        {
+          "w": "failing",
+          "pos": "word",
+          "def": "失败失败"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "para": 1,
+      "en": "The solution was to get a message to Voyager I to instruct it to use spares to change the failing parts.",
+      "zh": "解决办法是给旅行者我发个信息指示他们用零件来改变故障零件",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "solution",
+          "pos": "n.",
+          "def": "解决方案"
+        },
+        {
+          "w": "message",
+          "pos": "word",
+          "def": "消息消息"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "para": 1,
+      "en": "With the probe 12 billion kilometres from Earth, this was not an easy task.",
+      "zh": "离地球120亿公里的探测器并不是一件容易的事",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "billion",
+          "pos": "word",
+          "def": "10亿"
+        },
+        {
+          "w": "kilometres",
+          "pos": "word",
+          "def": "千公里"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "para": 1,
+      "en": "By means of a radio dish belonging to NASA’s Deep Space Network, the message was sent out into the depths of space.",
+      "zh": "信息通过属于美国航天局深空网络的无线电天线传送,传送到空间的深度。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "belonging",
+          "pos": "word",
+          "def": "属于"
+        },
+        {
+          "w": "message",
+          "pos": "word",
+          "def": "消息消息"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "para": 1,
+      "en": "Even travelling at the speed of light, it took over 11 hours to reach its target, far beyond the orbit of Pluto.",
+      "zh": "即使以光速飞行,它也花了11小时达到目标,远在冥王星轨道之外。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "travelling",
+          "pos": "word",
+          "def": "旅行旅费"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "para": 1,
+      "en": "Yet, incredibly, the little probe managed to hear the faint call from its home planet, and successfully made the switchover.",
+      "zh": "然而,令人难以置信的是, 小型探测器成功地听到从地球发出微弱的呼声成功地实现了转变。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "incredibly",
+          "pos": "word",
+          "def": "难以置信"
+        },
+        {
+          "w": "managed",
+          "pos": "word",
+          "def": "管理管理"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "para": 2,
+      "en": "B It was the longest-distance repair job in history, and a triumph for the NASA engineers.",
+      "zh": "这是历史上最远的修复工作也是美国航天局工程师的胜利",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "longest-distance",
+          "pos": "n.",
+          "def": "最长距离"
+        },
+        {
+          "w": "history",
+          "pos": "word",
+          "def": "历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史历史"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "para": 2,
+      "en": "But it also highlighted the astonishing power of the techniques developed by American communications engineer Claude Shannon, who had died just a year earlier.",
+      "zh": "但也突显出美国通讯工程师克洛德·香农开发的技术的惊人力量, 克洛德·香农刚刚去世了,",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "highlighted",
+          "pos": "word",
+          "def": "突出突出突出"
+        },
+        {
+          "w": "astonishing",
+          "pos": "word",
+          "def": "惊人"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "para": 2,
+      "en": "Born in 1916 in Petoskey, Michigan, Shannon showed an early talent for maths and for building gadgets, and made breakthroughs in the foundations of computer technology when still a student.",
+      "zh": "香农于1916年出生于密歇根州Petoskey, 早期就表现出数学和建造小玩意的天赋, 并在学生仍为学生时, 在计算机技术基础上取得了突破。",
+      "grammar": {
+        "type": "状语从句",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "building",
+          "pos": "word",
+          "def": "建筑"
+        },
+        {
+          "w": "gadgets",
+          "pos": "word",
+          "def": "技术设备"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "para": 2,
+      "en": "While at Bell Laboratories, Shannon developed information theory, but shunned the resulting acclaim.",
+      "zh": "香农在贝尔实验室开发信息理论, 但却回避了由此产生的赞誉。",
+      "grammar": {
+        "type": "状语从句",
+        "note": "先抓主句主干；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "developed",
+          "pos": "word",
+          "def": "开发"
+        },
+        {
+          "w": "information",
+          "pos": "n.",
+          "def": "信息信息信息信息信息信息信息"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "para": 2,
+      "en": "In the 1940s, he single-handedly created an entire science of communication which has since inveigled its way into a host of applications, from DVDs to satellite communications to bar codes – any area, in short, where data has to be conveyed rapidly yet accurately.",
+      "zh": "1940年代,他单枪匹马地创造了整个通信科学,从那时起,它就逐渐进入了从DVD到卫星通信到条形码等一系列应用领域 — — 简言之,任何领域的数据必须迅速而准确地传递。",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "single-handedly",
+          "pos": "word",
+          "def": "单单"
+        },
+        {
+          "w": "created",
+          "pos": "word",
+          "def": "创建创建创建"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "para": 3,
+      "en": "C This all seems light years away from the down-to-earth uses Shannon originally had for his work, which began when he was a 22-year-old graduate engineering student at the prestigious Massachusetts Institute of Technology in 1939.",
+      "zh": "这一切似乎都距离香农最初用于他工作的地到地的用途只有光年之遥, 始于他于1939年在著名的麻省理工学院成为一名22岁的研究生工程系学生。",
+      "grammar": {
+        "type": "定语从句 + 状语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "down-to-earth",
+          "pos": "word",
+          "def": "下到土"
+        },
+        {
+          "w": "originally",
+          "pos": "word",
+          "def": "最初"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "para": 3,
+      "en": "He set out with an apparently simple aim: to pin down the precise meaning of the concept of ‘information’.",
+      "zh": "他提出目的显然很简单:确定`信息 ' 概念的确切含义。",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "apparently",
+          "pos": "word",
+          "def": "明显"
+        },
+        {
+          "w": "precise",
+          "pos": "v.",
+          "def": "精确精确"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "para": 3,
+      "en": "The most basic form of information, Shannon argued, is whether something is true or false – which can be captured in the binary unit, or ‘bit’, of the form 1 or 0.",
+      "zh": "香农认为, 最基本的信息形式是, 究竟是真实还是虚假 — — 可以在表1或表0的二元单位中捕捉到,",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "information",
+          "pos": "n.",
+          "def": "信息信息信息信息信息信息信息"
+        },
+        {
+          "w": "whether",
+          "pos": "word",
+          "def": "是否"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "para": 3,
+      "en": "Having identified this fundamental unit, Shannon set about defining otherwise vague ideas about information and how to transmit it from place to place.",
+      "zh": "香农在确定了这一基本单位之后,着手界定关于信息以及如何从地方到地方传递信息的模糊概念。",
+      "grammar": {
+        "type": "分词结构 + 不定式结构",
+        "note": "先抓主句主干；分词短语压缩了背景或附加动作；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "identified",
+          "pos": "word",
+          "def": "已查明"
+        },
+        {
+          "w": "fundamental",
+          "pos": "adj.",
+          "def": "基础基础"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "para": 3,
+      "en": "In the process he discovered something surprising: it is always possible to guarantee information will get through random interference – ‘noise’ – intact.",
+      "zh": "保证信息通过随机干扰(即 \" 噪音 \" )获得,",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "process",
+          "pos": "word",
+          "def": "进程进程"
+        },
+        {
+          "w": "discovered",
+          "pos": "word",
+          "def": "发现"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "para": 4,
+      "en": "D Noise usually means unwanted sounds which interfere with genuine information.",
+      "zh": "D噪音通常是指干扰真实信息的不受欢迎的声音。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "usually",
+          "pos": "word",
+          "def": "通常通常"
+        },
+        {
+          "w": "unwanted",
+          "pos": "word",
+          "def": "意外"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "para": 4,
+      "en": "Information theory generalises this idea via theorems that capture the effects of noise with mathematical precision.",
+      "zh": "信息理论通过数学精确度捕捉噪音影响的理论理论,概括了这一想法。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "generalises",
+          "pos": "word",
+          "def": "普通一般"
+        },
+        {
+          "w": "theorems",
+          "pos": "word",
+          "def": "理数"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "para": 4,
+      "en": "In particular, Shannon showed that noise sets a limit on the rate at which information can pass along communication channels while remaining error-free.",
+      "zh": "香农特别表明,噪音限制了信息在保持无误状态的同时能够通过通信渠道传递的速度。",
+      "grammar": {
+        "type": "定语从句 + 状语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "particular",
+          "pos": "word",
+          "def": "特别特别特别特别"
+        },
+        {
+          "w": "information",
+          "pos": "n.",
+          "def": "信息信息信息信息信息信息信息"
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "para": 4,
+      "en": "This rate depends on the relative strengths of the signal and noise travelling down the communication channel, and on its capacity (its ‘bandwidth’).",
+      "zh": "其速度取决于信号和噪音在通信频道中的相对强度及其能力( \" 带宽 \" )。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "depends",
+          "pos": "word",
+          "def": "取决于"
+        },
+        {
+          "w": "relative",
+          "pos": "adj.",
+          "def": "相对相对"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "para": 4,
+      "en": "The resulting limit, given in units of bits per second, is the absolute maximum rate of error-free communication given signal strength and noise level.",
+      "zh": "由此得出的限值,以每秒位数单位表示,是信号强度和噪音水平下无误通信的绝对最大速率。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "resulting",
+          "pos": "word",
+          "def": "导致结果"
+        },
+        {
+          "w": "absolute",
+          "pos": "word",
+          "def": "绝对绝对数"
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "para": 4,
+      "en": "The trick, Shannon showed, is to find ways of packaging up – ‘coding’ – information to cope with the ravages of noise, while staying within the information-carrying capacity – ‘bandwidth’ – of the communication system being used.",
+      "zh": "香农展示的技巧是寻找方法将信息包装起来 — — `编码 ' — — 以应对噪音的破坏,同时保持使用通信系统的信息载体能力 — — 即 \" 带宽 \" 。",
+      "grammar": {
+        "type": "被动语态 + 状语从句",
+        "note": "先抓主句主干；“be + 过去分词”强调动作的承受者；连词引出时间、原因、条件或让步关系。"
+      },
+      "words": [
+        {
+          "w": "packaging",
+          "pos": "word",
+          "def": "包装包装"
+        },
+        {
+          "w": "information",
+          "pos": "n.",
+          "def": "信息信息信息信息信息信息信息"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "para": 5,
+      "en": "E Over the years scientists have devised many such coding methods, and they have proved crucial in many technological feats.",
+      "zh": "多年来,科学家们设计了许多这样的编码方法,这些方法在许多技术成就中证明至关重要。",
+      "grammar": {
+        "type": "主干结构",
+        "note": "先抓主句主干；按主语、谓语和宾语／表语的顺序先抓句子主干。"
+      },
+      "words": [
+        {
+          "w": "scientists",
+          "pos": "word",
+          "def": "科学家"
+        },
+        {
+          "w": "devised",
+          "pos": "word",
+          "def": "设计设计"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "para": 5,
+      "en": "The Voyager spacecraft transmitted data using codes which added one extra bit for every single bit of information; the result was an error rate of just one bit in 10,000 – and stunningly clear pictures of the planets.",
+      "zh": "旅行者航天器使用代码传输数据,代码为每部分信息添加一个额外位数;结果差错率只有一万分之一,行星的图片也非常清晰。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "spacecraft",
+          "pos": "word",
+          "def": "航天器"
+        },
+        {
+          "w": "transmitted",
+          "pos": "word",
+          "def": "转发"
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "para": 5,
+      "en": "Other codes have become part of everyday life – such as the Universal Product Code, or bar code, which uses a simple error-detecting system that ensures supermarket check-out lasers can read the price even on, say, a crumpled bag of crisps.",
+      "zh": "其他守则也已成为日常生活的一部分 — — 例如《通用产品守则》或条码,它们使用简单的错误探测系统,确保超市检查激光能够读出价格,甚至连一块堆积的薯条包也读得出来。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "everyday",
+          "pos": "word",
+          "def": "每天每天"
+        },
+        {
+          "w": "error-detecting",
+          "pos": "word",
+          "def": "错误探测"
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "para": 5,
+      "en": "As recently as 1993, engineers made a major breakthrough by discovering so-called turbo codes – which come very close to Shannon’s ultimate limit for the maximum rate that data can be transmitted reliably, and now play a key role in the mobile videophone revolution.",
+      "zh": "工程师们发现所谓的涡轮代码,从而取得了重大突破 — — 这条代码非常接近香农对数据可靠传输最高速度的最终限制,现在在移动视频电话革命中扮演着关键角色。",
+      "grammar": {
+        "type": "定语从句 + 被动语态",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词；“be + 过去分词”强调动作的承受者。"
+      },
+      "words": [
+        {
+          "w": "recently",
+          "pos": "word",
+          "def": "最近"
+        },
+        {
+          "w": "engineers",
+          "pos": "word",
+          "def": "工程师工程师"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "para": 6,
+      "en": "F Shannon also laid the foundations of more efficient ways of storing information, by stripping out superfluous (‘redundant’) bits from data which contributed little real information.",
+      "zh": "F Shannon也为更有效的信息储存方法奠定了基础,从很少提供真实信息的数据中剔除多余( \" 多余 \" )的零位。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "foundations",
+          "pos": "word",
+          "def": "基础基础基础"
+        },
+        {
+          "w": "efficient",
+          "pos": "word",
+          "def": "高效"
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "para": 6,
+      "en": "As mobile phone text messages like ‘I CN C U’ show, it is often possible to leave out a lot of data without losing much meaning.",
+      "zh": "手机短信如「I CN CU」, 通常可以忽略许多数据,",
+      "grammar": {
+        "type": "不定式结构",
+        "note": "先抓主句主干；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "messages",
+          "pos": "word",
+          "def": "电文"
+        },
+        {
+          "w": "possible",
+          "pos": "adj.",
+          "def": "可能(可能)"
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "para": 6,
+      "en": "As with error correction, however, there’s a limit beyond which messages become too ambiguous.",
+      "zh": "与错误更正一样, 信息在一定限度内变得过于模糊。",
+      "grammar": {
+        "type": "定语从句",
+        "note": "先抓主句主干；which/who/where 引导的部分用来补充说明前面的名词。"
+      },
+      "words": [
+        {
+          "w": "correction",
+          "pos": "n.",
+          "def": "更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正更正"
+        },
+        {
+          "w": "however",
+          "pos": "word",
+          "def": "不过,"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "para": 6,
+      "en": "Shannon showed how to calculate this limit, opening the way to the design of compression methods that cram maximum information into the minimum space.",
+      "zh": "香农展示了如何计算这个极限, 从而打开了设计压缩方法的通道, 将最大信息集中到最小的空间。",
+      "grammar": {
+        "type": "分词结构 + 不定式结构",
+        "note": "先抓主句主干；分词短语压缩了背景或附加动作；to do 常表示目的、结果或对前面内容的补充。"
+      },
+      "words": [
+        {
+          "w": "calculate",
+          "pos": "v.",
+          "def": "计算计算"
+        },
+        {
+          "w": "opening",
+          "pos": "word",
+          "def": "打开"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "title": "Questions 27-40",
+      "type": "cambridge_reading",
+      "instructions": [
+        "Questions 23-26 : Label the diagram below.",
+        "Questions 38-40 : Do the following statements agree with the information given in Reading Passage 3"
+      ],
+      "items": [
+        {
+          "number": 27,
+          "prompt": "an explanation of the factors affecting the transmission of information.",
+          "answer": "B",
+          "evidence_sentence": 13
+        },
+        {
+          "number": 28,
+          "prompt": "an example of how unnecessary information can be omitted.",
+          "answer": "F",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 29,
+          "prompt": "a reference to Shannon‟s attitude to fame",
+          "answer": "I",
+          "evidence_sentence": 13
+        },
+        {
+          "number": 30,
+          "prompt": "details of a machine capable of interpreting incomplete information.",
+          "answer": "G",
+          "evidence_sentence": 28
+        },
+        {
+          "number": 31,
+          "prompt": "a detailed account of an incident involving information theory.",
+          "answer": "D",
+          "evidence_sentence": 1
+        },
+        {
+          "number": 32,
+          "prompt": "a reference to what Shannon initially intended to achieve in his research.",
+          "answer": "C",
+          "evidence_sentence": 11
+        },
+        {
+          "number": 33,
+          "prompt": "The probe transmitted pictures of both 33…..and….., then left the 34…..",
+          "answer": "A",
+          "evidence_sentence": 2
+        },
+        {
+          "number": 34,
+          "prompt": "The probe transmitted pictures of both 33…..and….., then left the 34…..",
+          "answer": "D",
+          "evidence_sentence": 2
+        },
+        {
+          "number": 35,
+          "prompt": "Scientists feared that both the 35…..and…..were about to stop working.",
+          "answer": "C",
+          "evidence_sentence": 4
+        },
+        {
+          "number": 36,
+          "prompt": "The only hope was to tell the probe to replace them with 36…..-but distance made communication with the probe difficult.",
+          "answer": "NO",
+          "evidence_sentence": 22
+        },
+        {
+          "number": 37,
+          "prompt": "A…..was used to transmit the message at the speed of light.",
+          "answer": "YES",
+          "evidence_sentence": 8
+        },
+        {
+          "number": 38,
+          "prompt": "The concept of describing something as true or false was the starting point for Shannon in his attempt to send messages over distance.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 17
+        },
+        {
+          "number": 39,
+          "prompt": "The amount of information that can be sent in a given time period is determined with reference to the signal strength and noise level.",
+          "answer": "YES",
+          "evidence_sentence": 24
+        },
+        {
+          "number": 40,
+          "prompt": "Products have now been developed which can convey more information than Shannon had anticipated as possible.",
+          "answer": "NOT GIVEN",
+          "evidence_sentence": 13
+        }
+      ]
+    }
+  ]
+}
