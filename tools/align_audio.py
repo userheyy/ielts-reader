@@ -10,6 +10,8 @@
 用法:
     py -3 tools/align_audio.py c19-test1-l1                     # 单篇
     py -3 tools/align_audio.py --all                            # 全库
+    py -3 tools/align_audio.py --books c1                       # 指定册数
+    py -3 tools/align_audio.py --books c2,c3,c4,c5              # 多册
     py -3 tools/align_audio.py c19-test1-l1 --model base        # 指定模型
     py -3 tools/align_audio.py c19-test1-l1 --dry-run           # 只报告,不写回
 
@@ -242,7 +244,7 @@ def process_one(model, pid: str, dry_run=False):
         if ns is not None:
             s["start"] = ns
     save_json(pid, data)
-    print(f"    写回 {pid}.json ✔")
+    print(f"    写回 {pid}.json [OK]")
     return {"hit": hit, "total": len(segs)}
 
 
@@ -250,14 +252,22 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("pid", nargs="?", help="part id, e.g. c19-test1-l1")
     ap.add_argument("--all", action="store_true", help="跑全库")
+    ap.add_argument(
+        "--books",
+        help="只处理指定册数，逗号分隔，如 c1 或 c2,c3,c4,c5",
+    )
     ap.add_argument("--model", default="small", help="whisper 模型 (tiny/base/small/medium)")
     ap.add_argument("--dry-run", action="store_true", help="只报告,不写回")
     ap.add_argument("--device", default="cpu", help="cpu 或 cuda")
     ap.add_argument("--compute-type", default="int8", help="int8(默认,CPU)/ float16(GPU)")
     args = ap.parse_args()
 
-    if not args.pid and not args.all:
-        ap.error("必须给 pid 或 --all")
+    if not args.pid and not args.all and not args.books:
+        ap.error("必须给 pid、--all 或 --books")
+    if args.pid and (args.all or args.books):
+        ap.error("pid、--all 和 --books 只能选择一种")
+    if args.all and args.books:
+        ap.error("--all 和 --books 只能选择一种")
 
     from faster_whisper import WhisperModel
 
@@ -270,9 +280,23 @@ def main():
         process_one(model, args.pid, dry_run=args.dry_run)
         return
 
-    # --all
+    # --all / --books
     import glob
     files = sorted(Path(p).stem for p in glob.glob(str(DATA_DIR / "c*-test*-l*.json")))
+    if args.books:
+        books = set()
+        for raw in args.books.split(","):
+            value = raw.strip().lower()
+            if not value:
+                continue
+            if value.isdigit():
+                value = f"c{value}"
+            if not re.fullmatch(r"c\d+", value):
+                ap.error(f"无效册数: {raw!r}，示例: c1,c2")
+            books.add(value)
+        files = [pid for pid in files if pid.split("-", 1)[0] in books]
+        if not files:
+            ap.error(f"未找到指定册数的数据: {args.books}")
     print(f"处理 {len(files)} 篇")
     stats = []
     for i, pid in enumerate(files, 1):

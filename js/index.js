@@ -13,19 +13,14 @@ function renderCard(p) {
   a.className = "card";
   a.href = `reader.html?id=${encodeURIComponent(p.id)}`;
   const q = p.question_count ? `<span>${p.question_count} 题</span>` : "";
-  const quality = p.quality === "teacher_refined"
-    ? `<span class="quality refined">老师精修</span>`
-    : p.quality === "draft_raw"
-      ? `<span class="quality draft">待精修</span>`
-      : "";
   a.innerHTML = `
     <div class="src">${p.source}${p.imported ? " · 本地导入" : ""}</div>
     <div class="title">${p.title}</div>
-    <div class="count"><span>${p.sentence_count} 个精读单元</span>${q}${quality}</div>`;
+    <div class="count"><span>${p.sentence_count} 个精读单元</span>${q}</div>`;
   return a;
 }
 
-// 把文章按册归为多个组,册号从小到大(剑10→…→19),组内按 Test/Passage 原书顺序。
+// 把文章按册归为多个组,册号从小到大,组内按 Test/Passage 原书顺序。
 // 本地导入(book=null)单独归到最上面一组。
 function groupPassages(passages) {
   const byBook = new Map();

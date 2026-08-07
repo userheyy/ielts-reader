@@ -129,6 +129,22 @@
 .seg.playing { border-color: var(--green); background: #eef8ef; box-shadow: 0 0 0 1px var(--green) inset; }
 .seg.snippet-playing { border-color: #6a9fd8; background: #eef4fb; box-shadow: 0 0 0 1px #6a9fd8 inset; }
 
+/* 影子跟读:先保持听觉注意力，延迟后只给开口提示；需要文字时仍可点段落逐级揭示。 */
+.shadow-mode .seg-en,
+.shadow-mode .seg-zh {
+  filter: blur(6px); opacity: .62; user-select: none;
+  transition: filter .18s ease, opacity .18s ease;
+}
+.shadow-mode .seg:hover .seg-en,
+.shadow-mode .seg:hover .seg-zh { filter: blur(3px); opacity: .78; }
+.seg.shadow-cue { border-color: #d59a35; background: #fff8e8; }
+.seg.shadow-cue .seg-meta::after,
+.seg.shadow-cue.locked::after {
+  content: "现在跟读"; margin-left: auto; border-radius: 999px;
+  padding: 2px 9px; background: #d59a35; color: #fff;
+  font-size: 11px; font-weight: 700; letter-spacing: .03em;
+}
+
 /* 逐句播放按钮 */
 .seg-play-btn {
   border: none; background: none; cursor: pointer;
@@ -178,6 +194,19 @@
 .mc-opt b { color: var(--green-dark); margin-right: 6px; }
 .mc-opt:hover { border-color: #9fbea5; background: #f6fbf7; }
 .mc-opt.sel { border-color: var(--green-dark); background: #e8f6ea; box-shadow: 0 0 0 1px var(--green-dark) inset; }
+.q-source {
+  margin: 10px 0 14px; border: 1px solid #d9e1da; border-radius: 8px;
+  background: #fbfcfa; overflow: hidden;
+}
+.q-source summary {
+  padding: 8px 11px; cursor: pointer; color: var(--green-dark);
+  font-size: 12px; font-weight: 700;
+}
+.q-source pre {
+  margin: 0; padding: 11px 13px; border-top: 1px solid #e5eae5;
+  white-space: pre-wrap; font: 12px/1.65 Georgia, "Times New Roman", serif;
+  color: #38443d; background: #fff;
+}
 
 /* ---- 右栏:播放器卡片 ---- */
 .pl-card {
@@ -211,6 +240,8 @@
 .mode-panel { margin-top: 9px; padding-top: 9px; border-top: 1px dashed #e0e7e1; color: #556058; }
 .mode-panel select { border: 1px solid #cbd4cd; border-radius: 6px; padding: 2px 6px; background: #fff; }
 .mode-panel .hint { color: #8a958c; font-size: 12px; margin-top: 5px; }
+.shadow-title { font-weight: 700; color: #294435; }
+.shadow-steps { margin: 8px 0 0; padding-left: 20px; color: #68766d; line-height: 1.7; font-size: 12px; }
 .mode-panel .ab-times { font-variant-numeric: tabular-nums; }
 .pl-kbd { margin-top: 10px; padding-top: 9px; border-top: 1px dashed #e0e7e1; color: #9aa39c; font-size: 11px; }
 

@@ -1,203 +1,71 @@
 {
   "id": "c19-test1-l1",
   "source": "剑桥雅思19 · Test 1 · Part 1",
-  "title": "",
+  "title": "Listening Part 1",
   "audio": "media/audio/c19-test1-part1.mp3",
+  "practice_unit": "speaker_turn",
   "segments": [
     {
       "id": 1,
-      "start": 0.0,
+      "start": 105.0,
       "speaker": "SALLY",
-      "en": "Good morning.",
-      "zh": "早上好。这里是欣钦布鲁克乡村公园，我是萨莉，一名护林员。",
-      "words": [
-        {
-          "w": "ranger",
-          "pos": "n.",
-          "def": "护林员；管理员"
-        }
-      ],
+      "en": "Good morning. Hinchingbrooke Country Park, Sally speaking. I’m one of the rangers.",
+      "zh": "",
+      "words": [],
       "answers": []
     },
     {
       "id": 2,
-      "start": 5.6,
-      "speaker": "SALLY",
-      "en": "Hinchinbrooke Country Park, Sally speaking.",
+      "start": 111.0,
+      "speaker": "JOHN",
+      "en": "Oh hello. My name’s John Chapman, and I’m a teaching assistant at a local primary school. I’ve been asked to arrange a visit to the park for two of our classes.",
       "zh": "",
       "words": [],
       "answers": []
     },
     {
       "id": 3,
-      "start": 11.6,
+      "start": 117.0,
       "speaker": "SALLY",
-      "en": "I'm one of the rangers.",
+      "en": "OK. What would you like to know?",
       "zh": "",
       "words": [],
       "answers": []
     },
     {
       "id": 4,
-      "start": 26.7,
+      "start": 123.0,
       "speaker": "JOHN",
-      "en": "Oh hello.",
-      "zh": "你好。我叫约翰·查普曼，是当地一所小学的教学助理。学校让我安排两个班级来公园参观。",
-      "words": [
-        {
-          "w": "teaching assistant",
-          "pos": "n.",
-          "def": "教学助理"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 5,
-      "start": 41.8,
-      "speaker": "JOHN",
-      "en": "My name's John Chapman, and I'm a teaching assistant at a local primary school.",
+      "en": "Well, I’m new to this area, so perhaps you could tell me something about the park first, please.",
       "zh": "",
       "words": [],
       "answers": []
     },
     {
+      "id": 5,
+      "start": 130.2,
+      "speaker": "SALLY",
+      "en": "Of course. Altogether the park covers 170 acres, that’s 69 hectares. There are three main types of habitat: wetland, grassland and woodland. The woods are well established and varied, with an oak plantation, and other areas of mixed species.",
+      "zh": "",
+      "words": [],
+      "answers": [
+        1
+      ]
+    },
+    {
       "id": 6,
-      "start": 57.0,
+      "start": 199.1,
       "speaker": "JOHN",
-      "en": "I've been asked to arrange a visit to the park for two of our classes.",
+      "en": "Right.",
       "zh": "",
       "words": [],
       "answers": []
     },
     {
       "id": 7,
-      "start": 72.2,
+      "start": 200.3,
       "speaker": "SALLY",
-      "en": "OK.",
-      "zh": "好的。您想了解什么？",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 8,
-      "start": 87.3,
-      "speaker": "SALLY",
-      "en": "What would you like to know?",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 9,
-      "start": 102.4,
-      "speaker": "JOHN",
-      "en": "Well, I'm new to this area, so perhaps you could tell me something about the park first, please.",
-      "zh": "嗯，我刚来这个地区，所以您能先给我介绍一下公园吗？",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 10,
-      "start": 117.6,
-      "speaker": "SALLY",
-      "en": "Of course.",
-      "zh": "当然。公园总面积170英亩，也就是69公顷。主要有三种栖息地：湿地、草地和林地。林地非常成熟且多样化，有一片橡树林，还有其他混合树种区域。",
-      "words": [
-        {
-          "w": "habitat",
-          "pos": "n.",
-          "def": "栖息地"
-        },
-        {
-          "w": "plantation",
-          "pos": "n.",
-          "def": "种植园；人工林"
-        }
-      ],
-      "answers": [
-        1
-      ]
-    },
-    {
-      "id": 11,
-      "start": 124.5,
-      "speaker": "SALLY",
-      "en": "Altogether the park covers 170 acres, that's 69 hectares.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 12,
-      "start": 131.4,
-      "speaker": "SALLY",
-      "en": "There are three main types of habitat: wetland, grassland and woodland.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 13,
-      "start": 138.2,
-      "speaker": "SALLY",
-      "en": "The woods are well established and varied, with an oak plantation, and other areas of mixed species.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 14,
-      "start": 145.1,
-      "speaker": "JOHN",
-      "en": "Right.",
-      "zh": "好的。",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 15,
-      "start": 153.3,
-      "speaker": "SALLY",
-      "en": "The wetland is quite varied, too.",
-      "zh": "湿地也很多样。大约40年前，原来的农田被挖开提取砾石。工程完成后，砾石坑里充满了水，形成了两个大湖。还有几个小湖、池塘和一条流经公园的小溪。",
-      "words": [
-        {
-          "w": "gravel",
-          "pos": "n.",
-          "def": "砾石；碎石"
-        },
-        {
-          "w": "extract",
-          "pos": "v.",
-          "def": "提取；开采"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 16,
-      "start": 156.1,
-      "speaker": "SALLY",
-      "en": "The original farmland was dug up around 40 years ago to extract gravel.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 17,
-      "start": 162.2,
-      "speaker": "SALLY",
-      "en": "Once this work was completed, the gravel pits filled with water, forming the two large lakes.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 18,
-      "start": 169.9,
-      "speaker": "SALLY",
-      "en": "There are also several smaller ones, ponds and a stream that flows through the park.",
+      "en": "The wetland is quite varied, too. The original farmland was dug up around 40 years ago to extract gravel. Once this work was completed, the gravel pits filled with water, forming the two large lakes. There are also several smaller ones, ponds and a stream that flows through the park.",
       "zh": "",
       "words": [],
       "answers": [
@@ -205,103 +73,55 @@
       ]
     },
     {
-      "id": 19,
-      "start": 176.8,
+      "id": 8,
+      "start": 201.6,
       "speaker": "JOHN",
-      "en": "OK, so I suppose with these different habitats there's quite a variety of wildlife.",
-      "zh": "好的，我想这些不同的栖息地应该有很多野生动物吧。",
-      "words": [
-        {
-          "w": "wildlife",
-          "pos": "n.",
-          "def": "野生动物"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 20,
-      "start": 183.8,
-      "speaker": "SALLY",
-      "en": "There certainly is – a lot of different species of birds and insects, and also animals like deer and rabbits.",
-      "zh": "当然有——很多不同种类的鸟和昆虫，还有像鹿和兔子这样的动物。",
-      "words": [
-        {
-          "w": "species",
-          "pos": "n.",
-          "def": "物种"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 21,
-      "start": 193.1,
-      "speaker": "JOHN",
-      "en": "And I understand you organise educational visits for school parties.",
-      "zh": "我知道你们还为学校团体组织教育参观。",
-      "words": [
-        {
-          "w": "educational visits",
-          "pos": "n.",
-          "def": "教育参观"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 22,
-      "start": 199.1,
-      "speaker": "SALLY",
-      "en": "That's right.",
-      "zh": "没错。我们可以组织各种各样的活动，并根据不同年龄进行调整。",
-      "words": [
-        {
-          "w": "adapt",
-          "pos": "v.",
-          "def": "调整；适应"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 23,
-      "start": 200.2,
-      "speaker": "SALLY",
-      "en": "We can organise a wide range of activities and adapt them to suit all ages.",
+      "en": "OK, so I suppose with these different habitats there’s quite a variety of wildlife.",
       "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 24,
-      "start": 206.2,
-      "speaker": "JOHN",
-      "en": "Can you give me some examples of the activities?",
-      "zh": "能给我举一些活动的例子吗？",
+      "id": 9,
+      "start": 202.8,
+      "speaker": "SALLY",
+      "en": "There certainly is – a lot of different species of birds and insects, and also animals like deer and rabbits.",
+      "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 25,
-      "start": 210.3,
-      "speaker": "SALLY",
-      "en": "Well, one focus is on science, where we help children to discover and study plants, trees and insects.",
-      "zh": "嗯，一个重点是科学，我们帮助孩子们发现和研究植物、树木和昆虫。他们还收集并分析所看到的东西的数据。",
-      "words": [
-        {
-          "w": "analyse",
-          "pos": "v.",
-          "def": "分析"
-        }
-      ],
+      "id": 10,
+      "start": 204.1,
+      "speaker": "JOHN",
+      "en": "And I understand you organise educational visits for school parties.",
+      "zh": "",
+      "words": [],
       "answers": []
     },
     {
-      "id": 26,
-      "start": 218.0,
+      "id": 11,
+      "start": 205.3,
       "speaker": "SALLY",
-      "en": "They also collect and analyse data about the things they see.",
+      "en": "That’s right. We can organise a wide range of activities and adapt them to suit all ages.",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 12,
+      "start": 206.6,
+      "speaker": "JOHN",
+      "en": "Can you give me some examples of the activities?",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 13,
+      "start": 209.7,
+      "speaker": "SALLY",
+      "en": "Well, one focus is on science, where we help children to discover and study plants, trees and insects. They also collect and analyse data about the things they see.",
       "zh": "",
       "words": [],
       "answers": [
@@ -309,39 +129,19 @@
       ]
     },
     {
-      "id": 27,
-      "start": 225.0,
+      "id": 14,
+      "start": 216.9,
       "speaker": "JOHN",
       "en": "Uhuh.",
-      "zh": "嗯嗯。",
+      "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 28,
-      "start": 232.0,
+      "id": 15,
+      "start": 224.2,
       "speaker": "SALLY",
-      "en": "Another focus is on geography.",
-      "zh": "另一个重点是地理。公园是一个很好的环境，可以学习和练习看地图以及用指南针在公园里导航。",
-      "words": [
-        {
-          "w": "compass",
-          "pos": "n.",
-          "def": "指南针"
-        },
-        {
-          "w": "navigate",
-          "pos": "v.",
-          "def": "导航；确定方向"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 29,
-      "start": 239.0,
-      "speaker": "SALLY",
-      "en": "The park is a great environment to learn and practise reading a map and using a compass to navigate around the park.",
+      "en": "Another focus is on geography. The park is a great environment to learn and practice reading a map and using a compass to navigate around the park.",
       "zh": "",
       "words": [],
       "answers": [
@@ -349,108 +149,39 @@
       ]
     },
     {
-      "id": 30,
-      "start": 246.0,
+      "id": 16,
+      "start": 237.2,
       "speaker": "JOHN",
       "en": "Do you do anything connected with history?",
-      "zh": "你们有和历史相关的活动吗？",
+      "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 31,
-      "start": 253.0,
+      "id": 17,
+      "start": 240.0,
       "speaker": "SALLY",
-      "en": "Yes, we do.",
-      "zh": "是的，我们有。比如，孩子们可以探索土地的使用是如何随时间变化的。还有休闲和旅游。",
-      "words": [
-        {
-          "w": "explore",
-          "pos": "v.",
-          "def": "探索；考察"
-        },
-        {
-          "w": "leisure",
-          "pos": "n.",
-          "def": "休闲；闲暇"
-        }
-      ],
+      "en": "Yes, we do. For instance, the children can explore how the use of the land has changed over time. Then there’s leisure and tourism.",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 18,
+      "start": 251.1,
+      "speaker": "JOHN",
+      "en": "That focuses on your visitors, I would imagine.",
+      "zh": "",
+      "words": [],
       "answers": [
         5
       ]
     },
     {
-      "id": 32,
-      "start": 260.0,
+      "id": 19,
+      "start": 254.1,
       "speaker": "SALLY",
-      "en": "For instance, the children can explore how the use of the land has changed over time.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 33,
-      "start": 267.0,
-      "speaker": "SALLY",
-      "en": "Then there's leisure and tourism.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 34,
-      "start": 274.0,
-      "speaker": "JOHN",
-      "en": "That focuses on your visitors, I would imagine.",
-      "zh": "我想那主要是针对你们的游客吧。",
-      "words": [
-        {
-          "w": "focus on",
-          "pos": "phr.",
-          "def": "集中于；以……为重点"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 35,
-      "start": 281.0,
-      "speaker": "SALLY",
-      "en": "Yes, mostly.",
-      "zh": "是的，大部分是。孩子们了解他们，他们的需求，他们可能造成的问题以及我们如何管理这些。我们涉及的另一个主题是音乐：在这里，孩子们用天然材料实验，创造声音，探索节奏和速度。",
-      "words": [
-        {
-          "w": "requirement",
-          "pos": "n.",
-          "def": "要求；需求"
-        },
-        {
-          "w": "rhythm",
-          "pos": "n.",
-          "def": "节奏；韵律"
-        },
-        {
-          "w": "tempo",
-          "pos": "n.",
-          "def": "速度；节奏"
-        }
-      ],
-      "answers": []
-    },
-    {
-      "id": 36,
-      "start": 287.9,
-      "speaker": "SALLY",
-      "en": "The children find out about them, their requirements, the problems they may cause and how we manage these.",
-      "zh": "",
-      "words": [],
-      "answers": []
-    },
-    {
-      "id": 37,
-      "start": 294.9,
-      "speaker": "SALLY",
-      "en": "And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo.",
+      "en": "Yes, mostly. The children find out about them, their requirements, the problems they may cause and how we manage these. And another subject we cover is music: here the children experiment with natural materials to create sounds and explore rhythm and tempo.",
       "zh": "",
       "words": [],
       "answers": [
@@ -458,48 +189,98 @@
       ]
     },
     {
-      "id": 38,
-      "start": 301.9,
+      "id": 20,
+      "start": 276.0,
       "speaker": "JOHN",
       "en": "That must be fun!",
-      "zh": "那一定很有趣！",
+      "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 39,
-      "start": 308.8,
+      "id": 21,
+      "start": 277.7,
       "speaker": "SALLY",
       "en": "Most children really enjoy it.",
-      "zh": "大多数孩子真的很喜欢。",
+      "zh": "",
       "words": [],
       "answers": []
     },
     {
-      "id": 40,
-      "start": 315.7,
+      "id": 22,
+      "start": 316.7,
       "speaker": "SALLY",
-      "en": "And of course, all the activities are educational, too.",
-      "zh": "当然，所有的活动也都有教育意义。在课堂外学习鼓励孩子们变得有创造力，并自己去探索和发现。",
-      "words": [
-        {
-          "w": "educational",
-          "pos": "adj.",
-          "def": "教育的；有教育意义的"
-        },
-        {
-          "w": "creative",
-          "pos": "adj.",
-          "def": "创造性的；有创意的"
-        }
-      ],
+      "en": "And of course, all the activities are educational, too. Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
+      "zh": "",
+      "words": [],
       "answers": []
     },
     {
-      "id": 41,
-      "start": 320.3,
+      "id": 23,
+      "start": 330.2,
+      "speaker": "JOHN",
+      "en": "I would imagine they get a sense of freedom that might not be a normal part of their lives.",
+      "zh": "",
+      "words": [],
+      "answers": [
+        7
+      ]
+    },
+    {
+      "id": 24,
+      "start": 339.6,
       "speaker": "SALLY",
-      "en": "Learning outside the classroom encourages children to be creative, and to explore and discover for themselves.",
+      "en": "That’s right. And very often the children discover that they can do things they didn’t know they could do, and they develop new skills. This gives them greater self-confidence.",
+      "zh": "",
+      "words": [],
+      "answers": [
+        8
+      ]
+    },
+    {
+      "id": 25,
+      "start": 349.0,
+      "speaker": "JOHN",
+      "en": "It sounds great. So, what about the practical side of it? How much does it cost for a full-day visit? We would expect to bring between 30 and 40 children.",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 26,
+      "start": 363.2,
+      "speaker": "SALLY",
+      "en": "If there are over 30, it costs £4.95 for each child who attends on the day. We invoice you afterwards, so you don’t pay for children who can’t come because of sickness, for example. There’s no charge for leaders and other adults – as many as you want to bring.",
+      "zh": "",
+      "words": [],
+      "answers": [
+        9,
+        10
+      ]
+    },
+    {
+      "id": 27,
+      "start": 385.5,
+      "speaker": "JOHN",
+      "en": "That sounds very fair. Well, thanks for all the information. I’ll need to discuss it with my colleagues, and I hope to get back to you soon to make a booking.",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 28,
+      "start": 392.4,
+      "speaker": "SALLY",
+      "en": "We’ll look forward to hearing from you. Goodbye.",
+      "zh": "",
+      "words": [],
+      "answers": []
+    },
+    {
+      "id": 29,
+      "start": 399.3,
+      "speaker": "JOHN",
+      "en": "Goodbye, and thank you.",
       "zh": "",
       "words": [],
       "answers": []
@@ -508,161 +289,80 @@
   "questions": [
     {
       "title": "Questions 1–10",
-      "type": "form",
-      "instructions": [],
+      "type": "mixed",
+      "instructions": [
+        "Complete the original Cambridge IELTS listening questions below."
+      ],
+      "source_text": "SECTION 1\nQuestions 1-10\nHINCHINGBROOKE COUNTRY PARK\nHinchingbrooke Country Park\nComplete the notes below. Write ONE WORD AND/OR A NUMBER for each answer.\nTemplate:\n  The park\n  Area: [1] __________ hectares\n  Habitats: wetland, grassland and woodland\n  Wetland: lakes, ponds and a [2] __________\n  Wildlife includes birds, insects and animals\n  Subjects studied in educational visits include\n  Science: Children look at [3] __________ about plants, etc.\n  Geography: includes learning to use a [4] __________ and compass\n  History: changes in land use\n  Leisure and tourism: mostly concentrates on the park's [5] __________\n  Music: Children make [6] __________ with natural materials, and experiment with rhythm and speed.\n  Benefits of outdoor educational visits\n  They give children a feeling of [7] __________ that they may not have elsewhere.\n  Children learn new [8] __________ and gain self-confidence.\n  Practical issues\n  Cost per child: £[9] __________\n  Adults, such as [10] __________, free",
       "items": [
         {
           "number": 1,
-          "prompt": "Area: 1 …………………… hectares",
-          "answer": "69 / sixty-nine",
-          "evidence_segment": 10,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "hectares",
-                "p": "hectares",
-                "kind": "verbatim",
-                "note": "题干和原文中都是hectares，直接对应。"
-              },
-              {
-                "q": "Area",
-                "p": "covers",
-                "kind": "syn",
-                "note": "题干中的Area（面积）被原文中的covers（覆盖）替换，意思相同。"
-              }
-            ],
-            "explain": "定位句提到'covers 170 acres, that's 69 hectares'，其中'69 hectares'直接对应题干中的面积和单位，因此答案就是69。"
-          }
+          "prompt": "The park Area: [1] __________ hectares Habitats: wetland, grassland and woodland Wetland: lakes, ponds and a [2] __________ Wildlife includes birds, insects and animals Subjects studied in educational visits include",
+          "answer": "69",
+          "evidence_segment": 5,
+          "paraphrase": null
         },
         {
           "number": 2,
-          "prompt": "Wetland: lakes, ponds and a 2 ……………………",
+          "prompt": "Habitats: wetland, grassland and woodland Wetland: lakes, ponds and a [2] __________ Wildlife includes birds, insects and animals Subjects studied in educational visits include Science: Children look at [3] __________ about plants, etc. Geography: includes learning to use a [4] __________ and compass",
           "answer": "stream",
-          "evidence_segment": 18,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "lakes, ponds and a",
-                "p": "ponds and a stream",
-                "kind": "verbatim",
-                "note": "原文直接出现'ponds and a stream'，与题干结构一致，stream即为答案。"
-              }
-            ],
-            "explain": "题干列举了湿地中的湖泊、池塘和一条...，原文在提到两个大湖后，接着说'ponds and a stream'，因此stream是缺失的答案。"
-          }
+          "evidence_segment": 7,
+          "paraphrase": null
         },
         {
           "number": 3,
-          "prompt": "Science: Children look at 3 …………………… about plants, etc.",
+          "prompt": "Subjects studied in educational visits include Science: Children look at [3] __________ about plants, etc. Geography: includes learning to use a [4] __________ and compass History: changes in land use Leisure and tourism: mostly concentrates on the park's [5] __________ Music: Children make [6] __________ with natural materials, and experiment with rhythm and speed.",
           "answer": "data",
-          "evidence_segment": 26,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "look at",
-                "p": "collect and analyse",
-                "kind": "para",
-                "note": "原文用'收集和分析'替换了'看'，表示更具体的科学活动。"
-              },
-              {
-                "q": "about plants, etc.",
-                "p": "about the things they see",
-                "kind": "para",
-                "note": "原文用'他们看到的东西'替换了'植物等'，范围更广但意思一致。"
-              }
-            ],
-            "explain": "题干问孩子们看关于植物等的什么，原文说他们收集和分析关于所见事物的数据，因此答案应为'data'。"
-          }
+          "evidence_segment": 13,
+          "paraphrase": null
         },
         {
           "number": 4,
-          "prompt": "Geography: includes learning to use a 4 …………………… and compass",
+          "prompt": "Science: Children look at [3] __________ about plants, etc. Geography: includes learning to use a [4] __________ and compass History: changes in land use Leisure and tourism: mostly concentrates on the park's [5] __________ Music: Children make [6] __________ with natural materials, and experiment with rhythm and speed. Benefits of outdoor educational visits",
           "answer": "map",
-          "evidence_segment": 29,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "learning to use a",
-                "p": "learn and practise reading a",
-                "kind": "para",
-                "note": "题干说'学习使用'，原文说'学习和练习阅读'，意思相同，但表达方式不同。"
-              },
-              {
-                "q": "map",
-                "p": "map",
-                "kind": "verbatim",
-                "note": "题干和原文都直接出现'map'，完全一致。"
-              }
-            ],
-            "explain": "题干问'包括学习使用一个4...和指南针'，定位句提到'学习和练习阅读地图和使用指南针'，其中'map'直接对应答案，且'learning to use'被替换为'learn and practise reading'。"
-          }
+          "evidence_segment": 15,
+          "paraphrase": null
         },
         {
           "number": 5,
-          "prompt": "Leisure and tourism: mostly concentrates on the park's 5 ……………………",
+          "prompt": "History: changes in land use Leisure and tourism: mostly concentrates on the park's [5] __________ Music: Children make [6] __________ with natural materials, and experiment with rhythm and speed. Benefits of outdoor educational visits They give children a feeling of [7] __________ that they may not have elsewhere. Children learn new [8] __________ and gain self-confidence.",
           "answer": "visitors",
-          "evidence_segment": 31,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "concentrates on the park's",
-                "p": "leisure and tourism",
-                "kind": "para",
-                "note": "题干说'集中于公园的...'，原文直接说'休闲旅游'，是同一概念的不同表达。"
-              }
-            ],
-            "explain": "题干问休闲旅游主要关注公园的什么，原文在提到休闲旅游后直接给出了答案'visitors'，因此定位到'leisure and tourism'即可找到答案。"
-          }
+          "evidence_segment": 18,
+          "paraphrase": null
         },
         {
           "number": 6,
-          "prompt": "Music: Children make 6 …………………… with natural materials, and experiment with rhythm and speed.",
+          "prompt": "Leisure and tourism: mostly concentrates on the park's [5] __________ Music: Children make [6] __________ with natural materials, and experiment with rhythm and speed. Benefits of outdoor educational visits They give children a feeling of [7] __________ that they may not have elsewhere. Children learn new [8] __________ and gain self-confidence. Practical issues",
           "answer": "sounds",
-          "evidence_segment": 37,
-          "paraphrase": {
-            "pairs": [
-              {
-                "q": "make",
-                "p": "create",
-                "kind": "syn",
-                "note": "make 和 create 同义，都表示'制作'"
-              },
-              {
-                "q": "natural materials",
-                "p": "natural materials",
-                "kind": "verbatim",
-                "note": "完全相同的短语，直接定位"
-              }
-            ],
-            "explain": "题干中的 make 对应原文的 create，natural materials 完全一致，experiment with 和 explore 同义，speed 替换为 tempo。定位到音乐主题句即可找到答案 sounds。"
-          }
+          "evidence_segment": 19,
+          "paraphrase": null
         },
         {
           "number": 7,
-          "prompt": "They give children a feeling of 7 …………………… that they may not have elsewhere.",
+          "prompt": "Benefits of outdoor educational visits They give children a feeling of [7] __________ that they may not have elsewhere. Children learn new [8] __________ and gain self-confidence. Practical issues Cost per child: £[9] __________ Adults, such as [10] __________, free",
           "answer": "freedom",
-          "evidence_segment": null,
+          "evidence_segment": 23,
           "paraphrase": null
         },
         {
           "number": 8,
-          "prompt": "Children learn new 8 …………………… and gain self-confidence.",
+          "prompt": "They give children a feeling of [7] __________ that they may not have elsewhere. Children learn new [8] __________ and gain self-confidence. Practical issues Cost per child: £[9] __________ Adults, such as [10] __________, free",
           "answer": "skills",
-          "evidence_segment": null,
+          "evidence_segment": 24,
           "paraphrase": null
         },
         {
           "number": 9,
-          "prompt": "Cost per child: 9 £ ……………………",
+          "prompt": "Practical issues Cost per child: £[9] __________ Adults, such as [10] __________, free",
           "answer": "4.95",
-          "evidence_segment": null,
+          "evidence_segment": 26,
           "paraphrase": null
         },
         {
           "number": 10,
-          "prompt": "Adults, such as 10 …………………… , free",
+          "prompt": "Cost per child: £[9] __________ Adults, such as [10] __________, free",
           "answer": "leaders",
-          "evidence_segment": null,
+          "evidence_segment": 26,
           "paraphrase": null
         }
       ]

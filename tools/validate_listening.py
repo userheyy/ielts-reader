@@ -56,7 +56,10 @@ def validate_part(path: Path):
 
     # ---- audio 路径格式 ----
     audio = data.get("audio", "")
-    if not isinstance(audio, str) or not AUDIO_RE.match(audio):
+    audio_issue = data.get("audio_issue")
+    if audio is None and isinstance(audio_issue, str) and audio_issue.strip():
+        pass
+    elif not isinstance(audio, str) or not AUDIO_RE.match(audio):
         errs.append(f"audio 路径格式不对(应为 media/audio/*.mp3): {audio!r}")
 
     # ---- segments ----

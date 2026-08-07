@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""把 data/listening/*.json 里"一 seg 多句"的 segments 拆成"一句一 seg"。
+"""把独白型听力里"一 seg 多句"的 segments 拆成"一句一 seg"。
 
-问题:56% 的 seg(1069/1895)是一整个 speaker turn 合成的段落,如
-"Good morning. What can I do for you?"—— 精听逐句体验要求每句独立。
+对话型 Part 不按标点拆分。对话应以一位说话人一次完整发言为训练单元，
+请先运行 normalize_listening_segments.py 合并历史数据里的碎片。
 
 拆分流程(每 part 一遍):
 1) backup 原文件到 tools/out/listening/{part}.pre-split.json
@@ -172,6 +172,15 @@ def process_part(part_id, dry_run=False, log=print):
     if not old_segs:
         log(f"  跳过 {part_id}:无 segments")
         return None
+
+    speakers = {
+        str(s.get("speaker") or "").strip().upper()
+        for s in old_segs if str(s.get("speaker") or "").strip()
+    }
+    is_dialogue_part = part_id.endswith("-l1") or part_id.endswith("-l3")
+    if is_dialogue_part and len(speakers) >= 2:
+        log(f"  跳过 {part_id}:检测为对话({len(speakers)} 位说话人)，按完整发言切割，不按标点拆句")
+        return {"old_count": len(old_segs), "new_count": len(old_segs), "splits": 0, "growth": 0}
 
     # 备份
     if not dry_run:

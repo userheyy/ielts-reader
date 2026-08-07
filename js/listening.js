@@ -106,6 +106,7 @@ let seekDragging = false;
 
 let mode = "normal";    // normal | sentence | ab | dictation
 let repeatN = 2;        // 单句循环次数(1-5)
+let shadowDelay = 1.5;  // 影子跟读提示延迟(秒)
 let repeatDone = 0;
 let loopIdx = -1;       // sentence 模式正在循环的 timed 下标
 let abA = null;
@@ -202,8 +203,10 @@ function initAudio() {
 
 function showAudioMissing() {
   if (document.getElementById("audio-missing-note")) return;
-  const n = notice(`未找到音频文件。请把对应 mp3 命名为 <code>${esc(PART.audio || "media/audio/….mp3")}</code> ` +
-    `放入项目后刷新本页。在此之前,转写和题目仍可当<b>文本精读</b>用:揭示句子、看同义替换、做题核对都不需要音频。`, "err");
+  const detail = PART.audio_issue
+    ? esc(PART.audio_issue)
+    : `未找到音频文件：<code>${esc(PART.audio || "media/audio/….mp3")}</code>`;
+  const n = notice(`${detail} 当前仍可查看原文、题目和答案。`, "err");
   n.id = "audio-missing-note";
 }
 
@@ -289,6 +292,16 @@ function onTick() {
     curTimedIdx = ti;
     setPlayingSeg(ti >= 0 ? timed[ti].id : null);
   }
+  updateShadowCue(t, ti);
+}
+
+function updateShadowCue(t, ti) {
+  transcriptEl.querySelectorAll(".seg.shadow-cue").forEach((el) => el.classList.remove("shadow-cue"));
+  if (mode !== "shadow" || ti < 0) return;
+  const s = timed[ti];
+  if (t < s.start + shadowDelay) return;
+  const el = findSegEl(s.id);
+  if (el) el.classList.add("shadow-cue");
 }
 
 function findSegEl(sid) {
@@ -324,7 +337,7 @@ function playSegment(s, forDictation = false) {
   const ti = timedIndexOfSeg(s);
   if (mode === "sentence" && !forDictation) { loopIdx = ti; repeatDone = 0; refreshModePanel(); }
   // sentence / ab 由 onTick 里的 mode 分支自己 handle 边界,dictEndTime 保持 null
-  if (mode === "sentence" || mode === "ab") dictEndTime = null;
+  if (mode === "sentence" || mode === "ab" || mode === "shadow") dictEndTime = null;
   else dictEndTime = segEnd(ti); // normal / dictation:播完该句自动 pause
   audio.currentTime = s.start;
   audio.play();
@@ -600,18 +613,19 @@ function renderTranscript() {
     transcriptEl.innerHTML = '<p style="color:var(--muted)">这一篇没有句子数据。</p>';
     return;
   }
+  const uniqueSpeakers = new Set(segs.map(s => s.speaker).filter(Boolean));
+  const dialoguePart = PART && (PART.practice_unit === "speaker_turn" || /-l[13]$/.test(PART.id || ""));
+  const isDialogue = !ANNOTATE && dialoguePart && uniqueSpeakers.size >= 2;
+  const unitLabel = isDialogue ? "轮完整发言" : "句";
   const bar = ANNOTATE
     ? `<div class="tr-bar"><span>打点模式:点句可选中重打(共 ${segs.length} 句)</span></div>`
     : `<div class="tr-bar">
-        <span>逐句转写 · 共 ${segs.length} 句</span>
+        <span>${isDialogue ? "对话逐轮" : "逐句转写"} · 共 ${segs.length} ${unitLabel}</span>
         <span>
           <label class="tr-follow"><input type="checkbox" id="tr-follow" ${followScroll ? "checked" : ""}>跟随播放</label>
           <button type="button" id="tr-all">${allFullyRevealed() ? "全部收起" : "全部揭示"}</button>
         </span>
       </div>`;
-
-  const uniqueSpeakers = new Set(segs.map(s => s.speaker).filter(Boolean));
-  const isDialogue = !ANNOTATE && uniqueSpeakers.size >= 2;
 
   let body;
   if (isDialogue) {
@@ -622,6 +636,7 @@ function renderTranscript() {
   }
 
   transcriptEl.innerHTML = bar + body;
+  transcriptEl.classList.toggle("shadow-mode", mode === "shadow");
 }
 
 function rerenderRow(sid) {
@@ -864,7 +879,8 @@ function renderQuestions(groups) {
     const section = document.createElement("section");
     section.className = "question-group";
     section.innerHTML = `<h2>${esc(group.title || "")}</h2>
-      ${(group.instructions || []).map((l) => `<p class="instruction">${esc(l)}</p>`).join("")}`;
+      ${(group.instructions || []).map((l) => `<p class="instruction">${esc(l)}</p>`).join("")}
+      ${group.source_text ? `<details class="q-source" open><summary>原书题目</summary><pre>${esc(group.source_text)}</pre></details>` : ""}`;
     for (const q of group.items || []) section.appendChild(questionItemEl(group, q));
     const check = document.createElement("button");
     check.className = "check-answers";
@@ -913,7 +929,8 @@ function renderQuestions(groups) {
 const SPEEDS = [0.5, 0.75, 0.9, 1, 1.25, 1.5];
 const MODES = [
   ["normal", "顺序"],
-  ["sentence", "单句循环"],
+  ["shadow", "影子跟读"],
+  ["sentence", "逐句跟读"],
   ["ab", "AB复读"],
   ["dictation", "听写"],
 ];
@@ -1003,6 +1020,8 @@ function switchMode(m) {
   dictEndTime = null;
   document.querySelectorAll("#pl-modes .chip").forEach((c) =>
     c.classList.toggle("on", c.dataset.mode === m));
+  transcriptEl.classList.toggle("shadow-mode", m === "shadow");
+  transcriptEl.querySelectorAll(".seg.shadow-cue").forEach((el) => el.classList.remove("shadow-cue"));
   if (m === "sentence" && timed.length) {
     loopIdx = curTimedIdx >= 0 ? curTimedIdx : 0;
   }
@@ -1019,12 +1038,24 @@ function refreshModePanel() {
   if (!panel) return;
   if (mode === "normal") {
     panel.innerHTML = '<div class="hint">顺序播放。点击左侧已揭示的句子可跳播。</div>';
+  } else if (mode === "shadow") {
+    const delays = [1, 1.5, 2].map((n) =>
+      `<option value="${n}"${n === shadowDelay ? " selected" : ""}>${n} 秒</option>`).join("");
+    panel.innerHTML = `<div class="shadow-title">影子跟读:声音开始后延迟 <select id="shadow-delay">${delays}</select> 开口</div>
+      <ol class="shadow-steps">
+        <li>先听当前完整发言，不暂停音频。</li>
+        <li>看到“现在跟读”后，落后原声一小段同步复述。</li>
+        <li>原文默认模糊；卡住时点击该段逐级揭示。</li>
+      </ol>`;
+    panel.querySelector("#shadow-delay").addEventListener("change", (e) => {
+      shadowDelay = Number(e.target.value);
+    });
   } else if (mode === "sentence") {
     const opts = [1, 2, 3, 4, 5].map((n) =>
       `<option value="${n}"${n === repeatN ? " selected" : ""}>${n} 次</option>`).join("");
-    const cur = loopIdx >= 0 ? `当前循环第 <b>${timed[loopIdx].id}</b> 句` : "点左侧句子开始循环";
-    panel.innerHTML = `每句重复 <select id="rep-count">${opts}</select> 遍后自动进下一句 · ${cur}
-      <div class="hint">播完设定遍数自动切到下一句继续循环,适合逐句磨耳朵。</div>`;
+    const cur = loopIdx >= 0 ? `当前训练单元 <b>${timed[loopIdx].id}</b>` : "点左侧内容开始循环";
+    panel.innerHTML = `每个训练单元重复 <select id="rep-count">${opts}</select> 遍后自动进入下一条 · ${cur}
+      <div class="hint">对话按说话人的一次完整发言循环；独白按完整句子循环。</div>`;
     panel.querySelector("#rep-count").addEventListener("change", (e) => {
       repeatN = Number(e.target.value);
       repeatDone = 0;
