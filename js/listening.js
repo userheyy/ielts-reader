@@ -48,6 +48,8 @@ function notice(html, type = "warn") {
 // ============================================================
 async function renderLanding() {
   landingEl.hidden = false;
+  viewEl.hidden = true;
+  landingListEl.replaceChildren();
   let idx;
   try {
     const res = await fetch("data/listening/index.json", { cache: "no-store" });
@@ -102,7 +104,7 @@ async function renderLanding() {
       </div>
     </section>`).join("");
 
-  landingListEl.addEventListener("click", (ev) => {
+  landingListEl.onclick = (ev) => {
     const head = ev.target.closest(".lsn-book-head");
     if (!head) return;
     const section = head.closest(".lsn-book-group");
@@ -115,7 +117,7 @@ async function renderLanding() {
     });
     section.classList.toggle("collapsed", !willOpen);
     head.setAttribute("aria-expanded", willOpen ? "true" : "false");
-  });
+  };
 }
 
 function topicFromQuestionSource(data) {
@@ -194,6 +196,8 @@ let annLast = -1;       // 最近一次打点的下标(±0.2s 微调对象)
 // 数据加载
 // ============================================================
 async function renderPart(id) {
+  landingEl.hidden = true;
+  viewEl.hidden = true;
   let d;
   try {
     const res = await fetch(`data/listening/${id}.json`, { cache: "no-store" });
@@ -929,8 +933,8 @@ function renderQuestions(groups) {
   questionsEl.innerHTML = `<div class="questions-title">
     <span>Questions</span>
     <div class="question-actions">
-      <small id="lsn-score">先作答,再核对</small>
-      <button type="button" id="lsn-check-all">核对全部</button>
+      <small id="lsn-score">先作答，再核对答案</small>
+      <button type="button" id="lsn-check-all">核对答案</button>
       <button type="button" id="lsn-reveal-all">显示答案</button>
     </div>
   </div>`;
@@ -941,10 +945,20 @@ function renderQuestions(groups) {
   for (const group of groups) {
     const section = document.createElement("section");
     section.className = "question-group";
+    const sourceTab = group.source_text ? `
+      <button type="button" class="question-tab" role="tab" aria-selected="false" data-qtab="source">原书题目</button>` : "";
     section.innerHTML = `<h2>${esc(group.title || "")}</h2>
-      ${(group.instructions || []).map((l) => `<p class="instruction">${esc(l)}</p>`).join("")}
-      ${group.source_text ? `<details class="q-source" open><summary>原书题目</summary><pre>${esc(group.source_text)}</pre></details>` : ""}`;
-    for (const q of group.items || []) section.appendChild(questionItemEl(group, q));
+      <div class="question-tabs" role="tablist" aria-label="题目视图">
+        <button type="button" class="question-tab is-active" role="tab" aria-selected="true" data-qtab="practice">题目与作答</button>
+        ${sourceTab}
+      </div>
+      <div class="question-panel is-active" data-qpanel="practice">
+        <div class="question-instructions">${(group.instructions || []).map((l) => `<p class="instruction">${esc(l)}</p>`).join("")}</div>
+        <div class="question-items"></div>
+      </div>
+      ${group.source_text ? `<div class="question-panel" data-qpanel="source" role="tabpanel" hidden><div class="q-source q-source-panel"><div class="q-source-heading">原书题目</div><pre>${esc(group.source_text)}</pre></div></div>` : ""}`;
+    const itemsEl = section.querySelector(".question-items");
+    for (const q of group.items || []) itemsEl.appendChild(questionItemEl(group, q));
     const check = document.createElement("button");
     check.className = "check-answers";
     check.textContent = "核对本组答案";
@@ -953,7 +967,7 @@ function renderQuestions(groups) {
       const sc = document.getElementById("lsn-score");
       if (sc) sc.textContent = `本组 ${correct}/${total}`;
     });
-    section.appendChild(check);
+    section.querySelector(".question-panel[data-qpanel='practice']").appendChild(check);
     questionsEl.appendChild(section);
   }
   questionsEl.addEventListener("click", (ev) => {
@@ -966,8 +980,28 @@ function renderQuestions(groups) {
     }
     const evd = ev.target.closest(".evidence-jump");
     if (evd) { jumpToSegment(Number(evd.dataset.sid)); return; }
+    const tab = ev.target.closest(".question-tab");
+    if (tab) {
+      const section = tab.closest(".question-group");
+      const target = tab.dataset.qtab;
+      section.querySelectorAll(".question-tab").forEach((button) => {
+        const active = button === tab;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-selected", active ? "true" : "false");
+      });
+      section.querySelectorAll(".question-panel").forEach((panel) => {
+        const active = panel.dataset.qpanel === target;
+        panel.classList.toggle("is-active", active);
+        panel.hidden = !active;
+      });
+      return;
+    }
     if (ev.target.id === "lsn-check-all") {
       const { total, correct } = checkScope(questionsEl);
+      questionsEl.querySelectorAll(".question-group").forEach((section) => {
+        const practiceTab = section.querySelector(".question-tab[data-qtab='practice']");
+        if (practiceTab) practiceTab.click();
+      });
       document.getElementById("lsn-score").textContent = `总分 ${correct}/${total}`;
       return;
     }
@@ -981,7 +1015,7 @@ function renderQuestions(groups) {
         }
       });
       ev.target.textContent = reveal ? "隐藏答案" : "显示答案";
-      document.getElementById("lsn-score").textContent = reveal ? "已显示标准答案" : "先作答,再核对";
+      document.getElementById("lsn-score").textContent = reveal ? "已显示标准答案" : "先作答，再核对答案";
     }
   });
 }
@@ -1349,5 +1383,11 @@ function bindKeyboard() {
 // ============================================================
 // 入口
 // ============================================================
-if (!partId) renderLanding();
-else renderPart(partId);
+if (!partId) {
+  viewEl.hidden = true;
+  landingEl.hidden = false;
+  renderLanding();
+} else {
+  landingEl.hidden = true;
+  renderPart(partId);
+}

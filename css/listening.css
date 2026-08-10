@@ -147,10 +147,10 @@
   height: 6px; background: var(--border); border-radius: 999px;
 }
 .pl-sticky .pl-inline-row {
-  display: flex; align-items: center; gap: 7px; font-size: 11px; color: rgba(255,255,255,.58);
+  display: flex; align-items: center; gap: 8px; font-size: 13px; color: #fff;
   cursor: pointer;
 }
-.pl-sticky .pl-label { white-space: nowrap; }
+.pl-sticky .pl-label { white-space: nowrap; color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .03em; }
 .pl-select-wrap {
   position: relative; display: inline-flex; align-items: center;
 }
@@ -160,14 +160,15 @@
   transform: translateY(-2px) rotate(45deg); pointer-events: none;
 }
 .pl-sticky .pl-select {
-  appearance: none; min-width: 78px; height: 32px; padding: 0 30px 0 12px;
-  border: 1px solid rgba(255,255,255,.2); border-radius: 8px; background: rgba(255,255,255,.08);
-  color: #fff; font: inherit; font-size: 11px; line-height: 30px;
+  appearance: none; min-width: 92px; height: 36px; padding: 0 34px 0 13px;
+  border: 1px solid rgba(255,255,255,.35); border-radius: 10px; background: rgba(255,255,255,.14);
+  color: #fff; font: inherit; font-size: 13px; font-weight: 800; line-height: 34px;
+  text-shadow: 0 1px 1px rgba(0,0,0,.18);
   cursor: pointer; outline: none;
-  transition: border-color .15s, box-shadow .15s, background .15s;
+  transition: border-color .15s, box-shadow .15s, background .15s, transform .15s;
 }
-.pl-sticky .pl-mode-select .pl-select { min-width: 112px; }
-.pl-sticky .pl-select:hover { border-color: rgba(255,255,255,.42); background: rgba(255,255,255,.14); }
+.pl-sticky .pl-mode-select .pl-select { min-width: 138px; }
+.pl-sticky .pl-select:hover { border-color: rgba(255,255,255,.72); background: rgba(255,255,255,.22); transform: translateY(-1px); }
 .pl-sticky .pl-select:focus-visible {
   border-color: var(--accent); box-shadow: 0 0 0 3px rgba(17, 148, 112, .14);
 }
@@ -178,6 +179,7 @@
   display: grid; gap: 20px; align-items: start;
   grid-template-columns: minmax(430px, 1.15fr) minmax(380px, .85fr);
 }
+.listen-grid > *, .listen-grid .pane, .lsn-right, .questions { min-width: 0; }
 .listen-grid .pane {
   max-height: calc(100vh - 218px); overflow-y: auto; scrollbar-gutter: stable;
   border: 1px solid rgba(31,67,52,.09); border-radius: 18px;
@@ -278,16 +280,17 @@
 
 /* ---- 对话轮次分组 ---- */
 .turn {
-  display: grid; grid-template-columns: 72px 1fr; gap: 0 8px;
+  display: grid; grid-template-columns: max-content minmax(0,1fr); gap: 0 12px;
   margin-bottom: 4px; padding: 6px 0;
   border-bottom: 1px solid var(--border);
 }
 .turn-speaker {
-  grid-row: 1 / -1; padding-top: 8px;
+  grid-row: 1 / -1; min-width: 92px; padding: 8px 4px 0 0;
   font-size: var(--text-xs); font-weight: 700;
   color: var(--accent-hover); letter-spacing: .04em;
-  text-transform: uppercase; position: sticky; top: 56px; align-self: start;
+  text-transform: uppercase; white-space: nowrap; position: sticky; top: 56px; align-self: start;
 }
+.turn-segs { min-width: 0; }
 .turn-alt .turn-speaker { color: #4560c0; }
 .turn-segs .seg { margin-bottom: 2px; }
 
@@ -313,6 +316,33 @@
   white-space: pre-wrap; font: 12px/1.65 Georgia, "Times New Roman", serif;
   color: #38443d; background: #fff;
 }
+
+/* ---- 题目视图切换与核对结果 ---- */
+.question-tabs {
+  display: flex; gap: 6px; margin: 12px 0 14px; padding: 4px;
+  border: 1px solid #dce6de; border-radius: 12px; background: #f1f6f2;
+}
+.question-tab {
+  border: 0; border-radius: 8px; padding: 8px 13px; background: transparent;
+  color: #6b786f; cursor: pointer; font-size: 12px; font-weight: 700;
+  transition: background .16s, color .16s, box-shadow .16s;
+}
+.question-tab:hover { color: var(--green-dark); background: rgba(255,255,255,.75); }
+.question-tab.is-active {
+  color: #1f553c; background: #fff; box-shadow: 0 2px 7px rgba(33,74,52,.12);
+}
+.question-panel[hidden] { display: none; }
+.question-instructions { margin-bottom: 6px; }
+.q-source-panel { margin: 0; border: 0; border-radius: 12px; box-shadow: inset 0 0 0 1px #e0e8e1; }
+.q-source-heading { padding: 11px 13px; color: #285b42; background: #f1f7f2; font-size: 12px; font-weight: 800; }
+.q-source-panel pre { max-height: 520px; overflow: auto; }
+.question-item .answer-note {
+  margin-top: 10px; padding: 7px 9px; border-radius: 7px; background: rgba(255,255,255,.68);
+  font-size: 12px; line-height: 1.5; font-weight: 600;
+}
+.question-item.correct .answer-note { background: #e6f5e8; }
+.question-item.wrong .answer-note { background: #fff0ee; }
+.question-item.answer-only .answer-note { background: #e8f3ea; }
 
 /* ---- 右栏:播放器卡片 ---- */
 .pl-card {
@@ -461,4 +491,6 @@
   }
   .pl-sticky .pl-inline-row { min-width: 0; align-items: stretch; flex-direction: column; gap: 5px; }
   .pl-sticky .pl-select-wrap, .pl-sticky .pl-select { width: 100%; min-width: 0; }
+  .turn { grid-template-columns: max-content minmax(0,1fr); gap: 0 8px; }
+  .turn-speaker { min-width: 0; padding-right: 2px; font-size: 10px; }
 }
