@@ -29,11 +29,25 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "listening"
 AUDIO_DIR = ROOT / "media" / "audio"
 
+# Very short acknowledgements can be omitted by ASR even when the waveform is
+# present. Keep the two verified anchors for the repaired C19T1P1 recording so
+# a future alignment run does not move them into the adjacent sentence.
+MANUAL_START_OVERRIDES = {
+    "c19-test1-l1": {3: 120.0, 14: 222.0},
+}
+
 _PUNCT_RE = re.compile(r"[.,!?;:\"'()\[\]{}…—–\-]+")
 
 
 def norm(word: str) -> str:
-    return _PUNCT_RE.sub("", (word or "").strip().lower())
+    text = (word or "").strip().lower()
+    # Transcript overrides often use typographic apostrophes (that’s) while
+    # ASR emits ASCII ones (that's); normalize both before token matching.
+    text = text.replace("’", "'").replace("‘", "'")
+    text = _PUNCT_RE.sub("", text)
+    # Short acknowledgements are routinely transcribed as "okay" even when
+    # the audioscript writes "OK". Treat them as the same anchor token.
+    return "okay" if text == "ok" else text
 
 
 def load_json(pid: str) -> dict:
@@ -151,6 +165,55 @@ def align_segments(tape_segments, whisper_words, verbose=False):
     return result
 
 
+def _full_target_tokens(seg):
+    """返回句子的完整可匹配词序列。"""
+    return [norm(t) for t in (seg.get("en", "") or "").split() if norm(t)]
+
+
+def match_segment_end(seg, whisper_words, start_time, next_start=None):
+    """用词级时间戳寻找句尾，避免直接被下一句 start 截断。
+
+    起点已经由 anchor 对齐得到；这里从起点附近开始，按原文词序做宽松
+    匹配，取最后一个命中词的 end，并留出约 0.25 秒尾音余量。短回应或
+    ASR 漏词时返回 None，由前端回退到下一句起点。
+    """
+    if start_time is None or not whisper_words:
+        return None
+    target = _full_target_tokens(seg)
+    if not target:
+        return None
+    start_idx = min(
+        range(len(whisper_words)),
+        key=lambda i: abs(float(whisper_words[i].get("start", 0.0)) - float(start_time)),
+    )
+    # 从句首往后给足空间，允许 ASR 漏词，但不要跨越整段录音。
+    limit = min(len(whisper_words), start_idx + max(28, len(target) * 3))
+    pos = start_idx
+    matched = []
+    for token in target:
+        found = None
+        for j in range(pos, limit):
+            if norm(whisper_words[j].get("w", "")) == token:
+                found = j
+                break
+        if found is None:
+            continue
+        matched.append(found)
+        pos = found + 1
+    # 长句允许少量漏词；只有一个命中词的句子不够可靠。
+    minimum = 1 if len(target) <= 2 else max(2, min(4, round(len(target) * 0.25)))
+    if len(matched) < minimum:
+        return None
+    end = float(whisper_words[matched[-1]].get("end", 0.0)) + 0.25
+    if end <= float(start_time):
+        return None
+    # 不让一个句子的尾巴吞掉下一句的起点；若两句存在重叠，至少保留
+    # 当前句的真实词尾，避免再次出现“还没读完就切掉”。
+    if next_start is not None and next_start > float(start_time):
+        end = min(end, max(float(start_time) + 0.35, float(next_start) - 0.05))
+    return round(end, 1)
+
+
 def interp_missing(starts, audio_duration=None):
     """用前后邻居 + 边界推算补齐 None。
 
@@ -232,6 +295,21 @@ def process_one(model, pid: str, dry_run=False):
     interp = sum(1 for x, a in zip(new_starts, aligned) if x is not None and a is None)
     print(f"    对齐: {hit}/{len(segs)} 段直接命中 + {interp} 推算 (用时 {time.time()-t1:.2f}s)")
 
+    # 先应用人工锚点，再用词级时间戳估计每句真正的结束时间。
+    effective_starts = []
+    for s, ns in zip(segs, new_starts):
+        override = MANUAL_START_OVERRIDES.get(pid, {}).get(s.get("id"))
+        effective_starts.append(override if override is not None else ns)
+    new_ends = []
+    end_hits = 0
+    for i, (s, start) in enumerate(zip(segs, effective_starts)):
+        next_start = effective_starts[i + 1] if i + 1 < len(effective_starts) else dur
+        end = match_segment_end(s, whisper_words, start, next_start)
+        new_ends.append(end)
+        if end is not None:
+            end_hits += 1
+    print(f"    句尾: {end_hits}/{len(segs)} 段使用词级结束点")
+
     if dry_run:
         # 展示前 8 段的对比
         print(f"    ── 对比前 8 段(dry-run) ──")
@@ -240,9 +318,11 @@ def process_one(model, pid: str, dry_run=False):
         return {"hit": hit, "total": len(segs)}
 
     # 写回
-    for s, ns in zip(segs, new_starts):
+    for s, ns, end in zip(segs, effective_starts, new_ends):
         if ns is not None:
             s["start"] = ns
+        if end is not None and ns is not None and end > ns:
+            s["end"] = end
     save_json(pid, data)
     print(f"    写回 {pid}.json [OK]")
     return {"hit": hit, "total": len(segs)}

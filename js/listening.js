@@ -181,6 +181,14 @@ let curSegId = null;    // 当前播放句的 id(用于渲染高亮)
 let snippetAudio = null;
 let snippetEndTime = null;
 let snippetPlayingSid = null;
+// 音频文件在本地修复后，避免浏览器继续复用旧的无声缓存。
+const AUDIO_CACHE_VERSION = "20260810-2";
+
+function audioUrl() {
+  const raw = String(PART && PART.audio || "");
+  if (!raw) return raw;
+  return raw + (raw.includes("?") ? "&" : "?") + "v=" + AUDIO_CACHE_VERSION;
+}
 
 // 听写状态(进度按句存 localStorage)
 const DICT_KEY = "ielts_dict:" + partId;
@@ -246,7 +254,7 @@ async function renderPart(id) {
 // ============================================================
 function initAudio() {
   if (!PART.audio) { showAudioMissing(); return; }
-  audio = new Audio(PART.audio);
+  audio = new Audio(audioUrl());
   audio.preload = "metadata";
   audio.addEventListener("error", () => {
     audioFailed = true;
@@ -308,6 +316,11 @@ function findTimedIndex(t) {
 
 function segEnd(ti) {
   if (ti < 0) return Infinity;
+  const explicitEnd = Number(timed[ti] && timed[ti].end);
+  const currentStart = Number(timed[ti] && timed[ti].start);
+  if (Number.isFinite(explicitEnd) && Number.isFinite(currentStart) && explicitEnd > currentStart + 0.15) {
+    return explicitEnd;
+  }
   return ti + 1 < timed.length ? timed[ti + 1].start : (isFinite(duration) ? duration : Infinity);
 }
 
@@ -413,16 +426,27 @@ function playSegment(s, forDictation = false) {
 function playSnippet(s, endSeg) {
   if (!PART.audio || typeof s.start !== "number") return;
   if (!snippetAudio) {
-    snippetAudio = new Audio(PART.audio);
+    snippetAudio = new Audio(audioUrl());
     snippetAudio.addEventListener("timeupdate", onSnippetTick);
     snippetAudio.addEventListener("ended", stopSnippet);
+    snippetAudio.addEventListener("play", refreshSnippetButtons);
+    snippetAudio.addEventListener("pause", refreshSnippetButtons);
+  }
+  if (snippetPlayingSid === s.id) {
+    if (snippetAudio.paused) {
+      snippetAudio.play().catch(() => stopSnippet());
+      refreshSnippetButtons();
+    } else {
+      stopSnippet();
+    }
+    return;
   }
   stopSnippet();
   const endTi = timedIndexOfSeg(endSeg || s);
   snippetEndTime = segEnd(endTi);
   snippetPlayingSid = s.id;
   snippetAudio.currentTime = s.start;
-  snippetAudio.play();
+  snippetAudio.play().catch(() => stopSnippet());
   updateSnippetHighlight();
 }
 
@@ -449,6 +473,18 @@ function updateSnippetHighlight(clearSid) {
     const el = findSegEl(snippetPlayingSid);
     if (el) el.classList.add("snippet-playing");
   }
+  refreshSnippetButtons();
+}
+
+function refreshSnippetButtons() {
+  const activeSid = snippetPlayingSid != null && snippetAudio && !snippetAudio.paused
+    ? String(snippetPlayingSid) : null;
+  transcriptEl.querySelectorAll(".seg-play-btn").forEach((btn) => {
+    const active = btn.dataset.playSid === activeSid;
+    btn.textContent = active ? "⏸" : "▶";
+    btn.setAttribute("aria-label", active ? "暂停本句" : "播放本句");
+    btn.setAttribute("title", active ? "暂停本句" : "播放本句");
+  });
 }
 
 function stepSentence(d) {
@@ -557,15 +593,31 @@ function maskEn(en, keepFirstN) {
 function groupByTurn(segs) {
   const turns = [];
   let cur = null;
+  let prev = null;
   for (const s of segs) {
-    if (!cur || s.speaker !== cur.speaker) {
-      cur = { speaker: s.speaker, segs: [s] };
+    const gap = prev && typeof prev.start === "number" && typeof s.start === "number"
+      ? s.start - prev.start : 0;
+    const sameSpeakerPause = !!prev && s.speaker === prev.speaker && gap >= 12;
+    if (!cur || s.speaker !== cur.speaker || sameSpeakerPause) {
+      cur = { speaker: s.speaker, segs: [s], pauseBefore: sameSpeakerPause ? gap : 0 };
       turns.push(cur);
     } else {
       cur.segs.push(s);
     }
+    prev = s;
   }
   return turns;
+}
+
+function snippetButtonHTML(sid, endSid = null) {
+  const active = snippetPlayingSid === sid && snippetAudio && !snippetAudio.paused;
+  const endAttr = endSid != null ? ` data-play-end-sid="${endSid}"` : "";
+  return `<button class="seg-play-btn" data-play-sid="${sid}"${endAttr} aria-label="${active ? "暂停本句" : "播放本句"}" title="${active ? "暂停本句" : "播放本句"}">${active ? "⏸" : "▶"}</button>`;
+}
+
+function pauseNoticeHTML(seconds) {
+  if (!seconds || seconds < 12) return "";
+  return `<div class="seg-gap" role="note">官方读题停顿 · 约 ${Math.round(seconds)} 秒后继续</div>`;
 }
 
 function segRowHTML(s, hideSpeaker) {
@@ -594,7 +646,7 @@ function segRowHTML(s, hideSpeaker) {
   if (level === 0) {
     return `<div class="seg locked${playing}${snippetPlaying}" data-sid="${s.id}">
       <span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      <button class="seg-play-btn" data-play-sid="${s.id}">▶</button>
+      ${snippetButtonHTML(s.id)}
       <span class="seg-lock">🔒 点击揭示</span>${ansBadge}
     </div>`;
   }
@@ -616,7 +668,7 @@ function segRowHTML(s, hideSpeaker) {
 
   return `<div class="seg open lv${level}${playing}${snippetPlaying}" data-sid="${s.id}">
     <div class="seg-meta"><span class="seg-no">${s.id}</span><span class="seg-time">${t}</span>
-      <button class="seg-play-btn" data-play-sid="${s.id}">▶</button>
+      ${snippetButtonHTML(s.id)}
       ${!hideSpeaker && s.speaker ? `<span class="seg-spk">${esc(s.speaker)}</span>` : ""}${ansBadge}
       ${nextTip}</div>
     <div class="seg-en">${enHtml}</div>
@@ -639,11 +691,11 @@ function turnBlockHTML(turn, ti) {
     .map(s => `<span class="seg-ans">题${s.answers.join(",")}</span>`).join("");
 
   if (level === 0) {
-    return `<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
+    return `${pauseNoticeHTML(turn.pauseBefore)}<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
       <div class="turn-speaker">${esc(spk)}</div>
       <div class="turn-segs"><div class="seg locked${playing}${snippetPlaying}" data-turn-sids="${sids.join(",")}" data-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">
         <span class="seg-time">${t}</span>
-        <button class="seg-play-btn" data-play-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">▶</button>
+        ${snippetButtonHTML(firstSeg.id, lastSeg.id)}
         <span class="seg-lock">🔒 点击揭示</span>${ansBadges}
       </div></div></div>`;
   }
@@ -663,11 +715,11 @@ function turnBlockHTML(turn, ti) {
     ? `<span class="seg-hint-lv">💡 提示 ${level}/4 · 再点${["", "关键词", "完整英文", "中文", ""][level]}</span>`
     : `<span class="seg-hint-lv">✓ 全部揭示</span>`;
 
-  return `<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
+  return `${pauseNoticeHTML(turn.pauseBefore)}<div class="turn${ti % 2 ? " turn-alt" : ""}" data-speaker="${esc(spk)}">
     <div class="turn-speaker">${esc(spk)}</div>
     <div class="turn-segs"><div class="seg open lv${level}${playing}${snippetPlaying}" data-turn-sids="${sids.join(",")}" data-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">
       <div class="seg-meta"><span class="seg-time">${t}</span>
-        <button class="seg-play-btn" data-play-sid="${firstSeg.id}" data-play-end-sid="${lastSeg.id}">▶</button>
+        ${snippetButtonHTML(firstSeg.id, lastSeg.id)}
         ${ansBadges}${nextTip}</div>
       <div class="seg-en">${enHtml}</div>
       ${showZh ? `<div class="seg-zh">${zhHtml}</div>` : ""}
@@ -699,7 +751,13 @@ function renderTranscript() {
     const turns = groupByTurn(segs);
     body = turns.map((turn, ti) => turnBlockHTML(turn, ti)).join("");
   } else {
-    body = segs.map(s => segRowHTML(s)).join("");
+    body = segs.map((s, i) => {
+      const prev = i ? segs[i - 1] : null;
+      const gap = prev && typeof prev.start === "number" && typeof s.start === "number"
+        ? s.start - prev.start : 0;
+      const sameSpeakerPause = prev && s.speaker === prev.speaker && gap >= 12;
+      return pauseNoticeHTML(sameSpeakerPause ? gap : 0) + segRowHTML(s);
+    }).join("");
   }
 
   transcriptEl.innerHTML = bar + body;
@@ -889,10 +947,13 @@ function showAnswer(item, m = "check") {
   }
   const ok = !!user && answerAccepts(answer).includes(user);
   item.classList.toggle("correct", ok);
-  item.classList.toggle("wrong", !ok);
+  item.classList.toggle("wrong", !!user && !ok);
+  item.classList.toggle("unanswered", !user);
   note.innerHTML = ok
     ? `正确 ✓${evidenceBtnHTML(item)}`
-    : `${user ? "不对" : "未作答"}｜答案:<strong>${esc(answer)}</strong>${evidenceBtnHTML(item)}`;
+    : user
+      ? `不正确${evidenceBtnHTML(item)}`
+      : "未作答";
   return ok;
 }
 
@@ -906,22 +967,92 @@ function checkScope(scope) {
   return { total, correct };
 }
 
+function itemNumber(item) {
+  return item.querySelector("label b")?.textContent?.trim() || "";
+}
+
+function clearAnswerState(item) {
+  item.classList.remove("correct", "wrong", "unanswered", "answer-only");
+  const note = item.querySelector(".answer-note");
+  if (note) note.textContent = "";
+}
+
+function refreshSingleRevealButton(item) {
+  const button = item.querySelector(".question-reveal-one");
+  if (!button) return;
+  const visible = item.classList.contains("answer-only");
+  button.textContent = visible ? "隐藏答案" : "显示答案";
+  button.setAttribute("aria-pressed", visible ? "true" : "false");
+}
+
+function refreshScoreSummary(message = "") {
+  const scoreEl = document.getElementById("lsn-score");
+  if (!scoreEl) return;
+  let total = 0;
+  let correct = 0;
+  questionsEl.querySelectorAll(".question-item").forEach((item) => {
+    if (!item.dataset.answer) return;
+    total += 1;
+    if (item.classList.contains("correct")) correct += 1;
+  });
+  scoreEl.textContent = message || `总分 ${correct}/${total}`;
+}
+
+const QUESTION_BLANK_RE = /(?:\[(\d+)\]|\((\d{1,2})\))\s*(?:_{2,}|[.…]{3,})/g;
+
+function promptLineForQuestion(group, number) {
+  const source = String(group.source_text || "");
+  const re = new RegExp(`(?:\\[${number}\\]|\\(${number}\\))\\s*(?:_{2,}|[.…]{3,})`);
+  return source.split(/\r?\n/).find((line) => re.test(line)) || "";
+}
+
+function isolateQuestionBlank(text, number) {
+  const raw = String(text || "").replace(/\s+/g, " ").trim();
+  if (!raw) return "";
+  QUESTION_BLANK_RE.lastIndex = 0;
+  const output = raw.replace(QUESTION_BLANK_RE, (match, square, paren) => {
+    const n = Number(square || paren);
+    return n === Number(number) ? `[${number}] __________` : "";
+  });
+  return output.replace(/\s{2,}/g, " ").replace(/\s+([,.;:)])/g, "$1").trim();
+}
+
+function displayQuestionPrompt(group, q) {
+  const number = Number(q.number);
+  const sourceLine = promptLineForQuestion(group, number);
+  if (sourceLine) return isolateQuestionBlank(sourceLine, number);
+  const prompt = String(q.prompt || "");
+  if (QUESTION_BLANK_RE.test(prompt)) {
+    QUESTION_BLANK_RE.lastIndex = 0;
+    return isolateQuestionBlank(prompt, number);
+  }
+  QUESTION_BLANK_RE.lastIndex = 0;
+  return prompt || `Question ${number}`;
+}
+
 function questionItemEl(group, q) {
   const item = document.createElement("div");
   const isMC = group.type === "multiple_choice" || Array.isArray(q.options);
   item.className = "question-item" + (isMC ? " mc" : "");
   item.dataset.answer = q.answer || "";
   if (q.evidence_segment != null) item.dataset.evidence = q.evidence_segment;
-  const label = `<label><b>${esc(q.number)}</b><span>${esc(q.prompt || "")}</span></label>`;
+  const label = `<label><b>${esc(q.number)}</b><span>${esc(displayQuestionPrompt(group, q))}</span></label>`;
   if (isMC) {
     const opts = (q.options || []).map((o, i) => {
       const { val, text } = normalizeOption(o, i);
       return `<button type="button" class="mc-opt" data-val="${esc(val)}"><b>${esc(val)}</b>${esc(text)}</button>`;
     }).join("");
-    item.innerHTML = `${label}<div class="mc-opts">${opts}</div><div class="answer-note" aria-live="polite"></div>`;
+    item.innerHTML = `${label}<div class="mc-opts">${opts}</div>
+      <div class="question-item-controls">
+        <button type="button" class="question-check-one">核对本题</button>
+        <button type="button" class="question-reveal-one" aria-pressed="false">显示答案</button>
+      </div><div class="answer-note" aria-live="polite"></div>`;
   } else {
     item.innerHTML = `${label}<input type="text" autocomplete="off" aria-label="第 ${esc(q.number)} 题答案">
-      <div class="answer-note" aria-live="polite"></div>`;
+      <div class="question-item-controls">
+        <button type="button" class="question-check-one">核对本题</button>
+        <button type="button" class="question-reveal-one" aria-pressed="false">显示答案</button>
+      </div><div class="answer-note" aria-live="polite"></div>`;
   }
   if (q.evidence_segment != null) {
     item.querySelector("label").addEventListener("click", () => jumpToSegment(Number(q.evidence_segment)));
@@ -996,6 +1127,27 @@ function renderQuestions(groups) {
       });
       return;
     }
+    const oneCheck = ev.target.closest(".question-check-one");
+    if (oneCheck) {
+      const item = oneCheck.closest(".question-item");
+      const ok = showAnswer(item, "check");
+      refreshScoreSummary(`第 ${itemNumber(item)} 题：${ok ? "正确" : "已核对"}`);
+      return;
+    }
+    const oneReveal = ev.target.closest(".question-reveal-one");
+    if (oneReveal) {
+      const item = oneReveal.closest(".question-item");
+      if (item.classList.contains("answer-only")) {
+        clearAnswerState(item);
+      } else {
+        showAnswer(item, "reveal");
+      }
+      refreshSingleRevealButton(item);
+      refreshScoreSummary(item.classList.contains("answer-only")
+        ? `第 ${itemNumber(item)} 题：已显示答案`
+        : `第 ${itemNumber(item)} 题：答案已隐藏`);
+      return;
+    }
     if (ev.target.id === "lsn-check-all") {
       const { total, correct } = checkScope(questionsEl);
       questionsEl.querySelectorAll(".question-group").forEach((section) => {
@@ -1009,10 +1161,8 @@ function renderQuestions(groups) {
       const reveal = ev.target.textContent === "显示答案";
       questionsEl.querySelectorAll(".question-item").forEach((item) => {
         if (reveal) showAnswer(item, "reveal");
-        else {
-          item.classList.remove("correct", "wrong", "unanswered", "answer-only");
-          item.querySelector(".answer-note").textContent = "";
-        }
+        else clearAnswerState(item);
+        refreshSingleRevealButton(item);
       });
       ev.target.textContent = reveal ? "隐藏答案" : "显示答案";
       document.getElementById("lsn-score").textContent = reveal ? "已显示标准答案" : "先作答，再核对答案";

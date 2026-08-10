@@ -262,6 +262,7 @@
 }
 .seg-play-btn:hover { opacity: 1; background: var(--accent-soft); }
 .seg.snippet-playing .seg-play-btn { opacity: 1; color: #4a7ec0; }
+.seg-play-btn[aria-label="暂停本句"] { opacity: 1; color: #c37b2a; }
 .seg.pulse { animation: seg-pulse 1.15s ease-out; }
 @keyframes seg-pulse {
   0% { box-shadow: 0 0 0 0 rgba(74, 157, 91, .55); }
@@ -293,6 +294,12 @@
 .turn-segs { min-width: 0; }
 .turn-alt .turn-speaker { color: #4560c0; }
 .turn-segs .seg { margin-bottom: 2px; }
+.seg-gap {
+  display: flex; align-items: center; gap: 10px; margin: 9px 0 8px; padding: 7px 11px;
+  border: 1px dashed #d9c38a; border-radius: 9px; background: #fffaf0;
+  color: #8a6d31; font-size: 11px; line-height: 1.45;
+}
+.seg-gap::before { content: "⏱"; font-size: 13px; }
 
 /* ---- 中栏:多选题选项(填空复用 style.css 的 .question-item) ---- */
 .mc-opts { display: flex; flex-direction: column; gap: 6px; margin-top: 9px; }
@@ -340,6 +347,21 @@
   margin-top: 10px; padding: 7px 9px; border-radius: 7px; background: rgba(255,255,255,.68);
   font-size: 12px; line-height: 1.5; font-weight: 600;
 }
+.question-item .answer-note:empty { display: none; }
+.question-item-controls {
+  display: flex; justify-content: flex-end; gap: 7px; margin-top: 10px; padding-top: 9px;
+  border-top: 1px solid rgba(50, 92, 67, .10);
+}
+.question-item-controls button {
+  border: 1px solid #b9d2c0; border-radius: 999px; padding: 5px 11px;
+  background: #fff; color: #2f6848; cursor: pointer; font-size: 11px; font-weight: 700;
+  transition: background .16s, border-color .16s, color .16s, transform .16s;
+}
+.question-item-controls button:hover { background: #eaf6ed; border-color: #77ae88; transform: translateY(-1px); }
+.question-item-controls button:focus-visible { outline: 2px solid #5d9c73; outline-offset: 2px; }
+.question-item-controls .question-check-one { background: #2f6848; color: #fff; border-color: #2f6848; }
+.question-item-controls .question-check-one:hover { background: #24563a; border-color: #24563a; }
+.question-item-controls .question-reveal-one[aria-pressed="true"] { background: #fff7e7; border-color: #d9b56d; color: #916a2a; }
 .question-item.correct .answer-note { background: #e6f5e8; }
 .question-item.wrong .answer-note { background: #fff0ee; }
 .question-item.answer-only .answer-note { background: #e8f3ea; }
