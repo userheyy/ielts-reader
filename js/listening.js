@@ -264,6 +264,13 @@ function initAudio() {
   });
   audio.addEventListener("loadedmetadata", () => {
     duration = audio.duration;
+    // 某些 Cambridge 音频文件从考试引导语开始，而精听正文从
+    // practice_start 开始；打开页面时直接定位到正文，避免播放器先
+    // 播放一段不在转写列表里的说明音频。
+    const practiceStart = Number(PART && PART.practice_start);
+    if (Number.isFinite(practiceStart) && practiceStart > 0 && audio.currentTime < practiceStart - 0.1) {
+      audio.currentTime = practiceStart;
+    }
     const durEl = document.getElementById("pl-dur");
     const seek = document.getElementById("pl-seek");
     if (durEl) durEl.textContent = fmtTime(duration);
@@ -288,7 +295,13 @@ function canPlay() { return !!audio && !audioFailed; }
 
 function togglePlay() {
   if (!canPlay()) return;
-  if (audio.paused) audio.play();
+  if (audio.paused) {
+    const practiceStart = Number(PART && PART.practice_start);
+    if (Number.isFinite(practiceStart) && practiceStart > 0 && audio.currentTime < 0.1) {
+      audio.currentTime = practiceStart;
+    }
+    audio.play();
+  }
   else audio.pause();
 }
 
@@ -321,7 +334,11 @@ function segEnd(ti) {
   if (Number.isFinite(explicitEnd) && Number.isFinite(currentStart) && explicitEnd > currentStart + 0.15) {
     return explicitEnd;
   }
-  return ti + 1 < timed.length ? timed[ti + 1].start : (isFinite(duration) ? duration : Infinity);
+  // 某些旧音频的末尾句首会重复在同一时间点；跳过重复时间，避免
+  // 单句播放立即结束。若没有更晚的句首，则播放到音频结尾。
+  let next = ti + 1;
+  while (next < timed.length && timed[next].start <= currentStart + 0.05) next += 1;
+  return next < timed.length ? timed[next].start : (isFinite(duration) ? duration : Infinity);
 }
 
 function timedIndexOfSeg(s) {

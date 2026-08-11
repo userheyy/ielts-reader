@@ -93,6 +93,28 @@ def validate_part(path: Path):
                         f"{where} start={start} 明显早于前 seg(prev={prev_start})")
                 if prev_start is None or start > prev_start:
                     prev_start = start
+        end = seg.get("end")
+        if end is not None:
+            if not isinstance(end, (int, float)):
+                errs.append(f"{where} end 必须是数字或省略,实际 {end!r}")
+            elif isinstance(start, (int, float)) and end <= start + 0.15:
+                errs.append(f"{where} end={end} 没有晚于 start={start}")
+            elif isinstance(start, (int, float)):
+                # 跳过重复句首，只用下一个更晚的时间检查是否吞到下一句。
+                next_start = next(
+                    (
+                        nxt.get("start")
+                        for nxt in segments[i + 1 :]
+                        if isinstance(nxt, dict)
+                        and isinstance(nxt.get("start"), (int, float))
+                        and nxt.get("start") > start + 0.05
+                    ),
+                    None,
+                )
+                if next_start is not None and end > next_start + 0.02:
+                    errs.append(
+                        f"{where} end={end} 晚于下一句 start={next_start}"
+                    )
         answers = seg.get("answers")
         if answers is not None and not isinstance(answers, list):
             errs.append(f"{where} answers 必须是数组")

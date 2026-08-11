@@ -21,6 +21,7 @@ import argparse
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 from pathlib import Path
@@ -34,9 +35,13 @@ AUDIO_DIR = ROOT / "media" / "audio"
 # a future alignment run does not move them into the adjacent sentence.
 MANUAL_START_OVERRIDES = {
     "c19-test1-l1": {3: 120.0, 14: 222.0},
+    # base.en 将 Hearst 误识别为 "Herst"，导致这一轮被插值到上一句
+    # 中间；按原声的首词时间固定锚点，避免上一句被 next_start 截断。
+    "c10-test1-l1": {27: 274.6},
 }
 
 _PUNCT_RE = re.compile(r"[.,!?;:\"'()\[\]{}…—–\-]+")
+_TOKEN_RE = re.compile(r"[A-Za-z]+(?:['’][A-Za-z]+)?|\d+")
 
 
 def norm(word: str) -> str:
@@ -48,6 +53,16 @@ def norm(word: str) -> str:
     # Short acknowledgements are routinely transcribed as "okay" even when
     # the audioscript writes "OK". Treat them as the same anchor token.
     return "okay" if text == "ok" else text
+
+
+def tokenize(text: str):
+    """把原文拆成可用于词级对齐的 token。
+
+    不能直接用 ``str.split``：像 ``self-drive``、``A-R-D-L-E-I-G-H``
+    会在 Whisper 中被拆成多个词，直接比较会让匹配指针漂移到下一句。
+    """
+    text = (text or "").replace("’", "'").replace("‘", "'")
+    return [norm(t) for t in _TOKEN_RE.findall(text) if norm(t)]
 
 
 def load_json(pid: str) -> dict:
@@ -88,6 +103,58 @@ def transcribe(model, mp3: Path):
     return words, float(info.duration or 0.0)
 
 
+def decode_pcm(mp3: Path, sample_rate=16000):
+    """把整段音频解成单声道 PCM，供句尾能量检测使用。"""
+    try:
+        import numpy as np
+
+        raw = subprocess.check_output([
+            "ffmpeg", "-hide_banner", "-loglevel", "error", "-i", str(mp3),
+            "-ac", "1", "-ar", str(sample_rate), "-f", "s16le", "-",
+        ])
+        return np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0, sample_rate
+    except Exception as exc:
+        print(f"    能量检测跳过: {exc}")
+        return None, sample_rate
+
+
+def extend_end_by_energy(end, start_time, next_start, pcm, sample_rate=16000):
+    """用波形尾部能量补齐 ASR 偏短的句尾。
+
+    Whisper 的词尾通常比真实发音短 0.1–0.3 秒（尤其是 /d/、/s/、/t/
+    的释放音）。在当前句候选尾点附近扫描 20ms 能量帧，向后延到最后一
+    个有声帧后的短保护区；同时严格留在下一句首词之前，避免把下一句
+    的开头吞进来。
+    """
+    if end is None or pcm is None or start_time is None:
+        return end
+    # 即使下一句很远（中间可能夹着官方读题音频），也只在当前词尾
+    # 附近扫描；不能把被省略的读题音频当成当前句的尾音。
+    cap = float(end) + 0.8
+    if next_start is not None and next_start > start_time:
+        cap = min(cap, float(next_start) - 0.05)
+    if cap <= float(end):
+        return end
+    import numpy as np
+
+    frame = max(1, round(sample_rate * 0.02))
+    hop = max(1, round(sample_rate * 0.01))
+    lo = max(0, int((float(end) - 0.4) * sample_rate))
+    hi = min(len(pcm), int(cap * sample_rate))
+    if hi <= lo + frame:
+        return end
+    values = pcm[lo:hi]
+    starts = np.arange(0, len(values) - frame + 1, hop)
+    rms = np.sqrt(np.mean(values[starts[:, None] + np.arange(frame)] ** 2, axis=1))
+    # 低于 0.008 的通常是编码底噪/呼吸尾巴；保留到有声帧后约 0.1s。
+    active = np.flatnonzero(rms >= 0.008)
+    if active.size == 0:
+        return end
+    last_frame_end = (lo + int(active[-1]) * hop + frame) / sample_rate
+    extended = min(cap, last_frame_end + 0.10)
+    return round(max(float(end), extended), 1)
+
+
 def _seg_anchor(seg):
     """seg 的锚点词序列(去掉停用词后前几个实词)。"""
     STOP = {"a","an","the","and","or","but","so","of","to","in","on","at","for","is","are","was","were","be","been","being","i","you","he","she","it","we","they","this","that","these","those","have","has","had","do","does","did","will","would","can","could","'s","'re","'ve","'ll","'d","'m","'t"}
@@ -121,9 +188,13 @@ def _match_score(w_toks, j, anchor, window=8):
 
 
 def align_segments(tape_segments, whisper_words, verbose=False):
-    """全局搜索每段 anchor 在 whisper 里的最佳位置(要求单调推进)。
+    """全局搜索每段原文在 Whisper 词序列中的最佳位置。
 
-    对每段:在 [ptr, N) 范围内找 anchor 匹配分最高的位置;分不够就 None,不推进 ptr。
+    旧版只匹配去掉停用词后的 ``anchor``，遇到 ``Good morning`` 这类
+    重复开头时，首个词稍微偏移就可能跳到下一轮发言；之后句尾也会
+    跟着错位，出现“吞首词/留上一句尾音”。现在优先用原文第一词做
+    候选，再在一个很小的窗口内顺序核对整句；只有首词漏识别时才退回
+    旧的实词 anchor。
     """
     w_toks = [norm(x["w"]) for x in whisper_words]
     w_starts = [x["start"] for x in whisper_words]
@@ -132,42 +203,69 @@ def align_segments(tape_segments, whisper_words, verbose=False):
     result = []
     ptr = 0
     for i, seg in enumerate(tape_segments):
-        anchor = _seg_anchor(seg)
-        if not anchor:
+        target = tokenize(seg.get("en", ""))
+        if not target:
             result.append(None)
             continue
 
+        # 首词候选：每个目标词最多向后容忍 4 个 ASR 词，避免跨到下一轮。
         best_j = -1
-        best_score = 0
-        best_first = -1
-        # 全序列搜索(允许 whisper 漏识别导致 tape 与 whisper 不同步)
-        SEARCH_LIMIT = min(ptr + 300, N)  # 不搜太远
+        best_hits = -1
+        best_skips = 10**9
+        SEARCH_LIMIT = min(ptr + 300, N)
         for j in range(ptr, SEARCH_LIMIT):
-            if w_toks[j] != anchor[0]:
-                continue  # 快速跳过:首词不匹配的位置
-            score, first_pos = _match_score(w_toks, j, anchor)
-            if score > best_score:
-                best_score = score
-                best_j = j
-                best_first = first_pos
-                if score == len(anchor):
+            if w_toks[j] != target[0]:
+                continue
+            pos = j
+            hits = 0
+            skips = 0
+            for token in target:
+                found = None
+                for kk in range(pos, min(pos + 5, N)):
+                    if w_toks[kk] == token:
+                        found = kk
+                        break
+                if found is None:
+                    skips += 1
+                    continue
+                hits += 1
+                pos = found + 1
+            if (hits > best_hits) or (hits == best_hits and skips < best_skips):
+                best_j, best_hits, best_skips = j, hits, skips
+                if hits == len(target):
                     break
 
-        # 需要至少匹配 3 个词(或 anchor 全部,如果 anchor 更短)
-        threshold = min(3, len(anchor))
-        if best_first >= 0 and best_score >= threshold:
-            result.append(round(w_starts[best_first], 1))
-            ptr = best_first + 1
+        # 首词漏识别时，退回原来的实词 anchor 搜索。
+        if best_j < 0 or best_hits < min(2, len(target)):
+            anchor = _seg_anchor(seg)
+            fallback_j = -1
+            fallback_score = 0
+            fallback_first = -1
+            for j in range(ptr, SEARCH_LIMIT):
+                if not anchor or w_toks[j] != anchor[0]:
+                    continue
+                score, first_pos = _match_score(w_toks, j, anchor)
+                if score > fallback_score:
+                    fallback_score, fallback_j, fallback_first = score, j, first_pos
+                    if score == len(anchor):
+                        break
+            if fallback_first >= 0 and fallback_score >= min(3, len(anchor)):
+                best_j, best_hits = fallback_first, fallback_score
+
+        threshold = 1 if len(target) <= 2 else max(2, min(4, round(len(target) * 0.25)))
+        if best_j >= 0 and best_hits >= threshold:
+            result.append(round(w_starts[best_j], 1))
+            ptr = best_j + 1
         else:
             result.append(None)
             if verbose:
-                print(f"  [miss] seg{i+1}: anchor={anchor} best_score={best_score}")
+                print(f"  [miss] seg{i+1}: first={target[0] if target else ''} best_score={best_hits}")
     return result
 
 
 def _full_target_tokens(seg):
     """返回句子的完整可匹配词序列。"""
-    return [norm(t) for t in (seg.get("en", "") or "").split() if norm(t)]
+    return tokenize(seg.get("en", "") or "")
 
 
 def match_segment_end(seg, whisper_words, start_time, next_start=None):
@@ -182,24 +280,50 @@ def match_segment_end(seg, whisper_words, start_time, next_start=None):
     target = _full_target_tokens(seg)
     if not target:
         return None
-    start_idx = min(
-        range(len(whisper_words)),
-        key=lambda i: abs(float(whisper_words[i].get("start", 0.0)) - float(start_time)),
-    )
-    # 从句首往后给足空间，允许 ASR 漏词，但不要跨越整段录音。
-    limit = min(len(whisper_words), start_idx + max(28, len(target) * 3))
-    pos = start_idx
-    matched = []
-    for token in target:
-        found = None
-        for j in range(pos, limit):
-            if norm(whisper_words[j].get("w", "")) == token:
-                found = j
-                break
-        if found is None:
+    # 起点是旧数据时，可能落在首词的中间（例如 Good 的 start 被写成
+    # morning 的 start）。向前回看约 1 秒，确保首词仍能参与匹配。
+    start_idx = 0
+    for i, word in enumerate(whisper_words):
+        if float(word.get("end", 0.0)) >= float(start_time) - 1.0:
+            start_idx = i
+            break
+
+    # 句尾不能跨入下一句。留出极小余量给词尾，避免把下一句的首词
+    # 当作当前句的尾巴。
+    limit = len(whisper_words)
+    if next_start is not None and next_start > float(start_time):
+        limit = min(limit, next((i for i, w in enumerate(whisper_words)
+                                 if float(w.get("start", 0.0)) >= float(next_start) + 0.08), limit))
+    limit = min(limit, start_idx + max(32, len(target) * 4))
+
+    # 在起点附近寻找“首词 + 顺序词列”的最佳候选。每个目标词最多
+    # 向后容忍 4 个 ASR 词，既能跨过漏识别，也不会漂到下一轮发言。
+    best = None
+    for candidate in range(start_idx, min(limit, start_idx + 10)):
+        if norm(whisper_words[candidate].get("w", "")) != target[0]:
             continue
-        matched.append(found)
-        pos = found + 1
+        pos = candidate
+        matched = []
+        skips = 0
+        for token in target:
+            found = None
+            for j in range(pos, min(pos + 5, limit)):
+                if norm(whisper_words[j].get("w", "")) == token:
+                    found = j
+                    break
+            if found is None:
+                skips += 1
+                continue
+            matched.append(found)
+            pos = found + 1
+        score = len(matched)
+        # 同样命中数时取更早的候选；录音里常有“题目示例/回放说明”
+        # 重复复述，取后一个会把句尾拖到说明音频里。
+        candidate_score = (score, -skips, -candidate)
+        if best is None or candidate_score > best[0]:
+            best = (candidate_score, matched)
+
+    matched = best[1] if best else []
     # 长句允许少量漏词；只有一个命中词的句子不够可靠。
     minimum = 1 if len(target) <= 2 else max(2, min(4, round(len(target) * 0.25)))
     if len(matched) < minimum:
@@ -211,6 +335,8 @@ def match_segment_end(seg, whisper_words, start_time, next_start=None):
     # 当前句的真实词尾，避免再次出现“还没读完就切掉”。
     if next_start is not None and next_start > float(start_time):
         end = min(end, max(float(start_time) + 0.35, float(next_start) - 0.05))
+    if end <= float(start_time) + 0.15:
+        return None
     return round(end, 1)
 
 
@@ -271,7 +397,7 @@ def interp_missing(starts, audio_duration=None):
     return out
 
 
-def process_one(model, pid: str, dry_run=False):
+def process_one(model, pid: str, dry_run=False, ends_only=False):
     data = load_json(pid)
     segs = data.get("segments", [])
     if not segs:
@@ -287,45 +413,107 @@ def process_one(model, pid: str, dry_run=False):
     whisper_words, dur = transcribe(model, mp3)
     t_asr = time.time() - t0
     print(f"    whisper: {len(whisper_words)} 词 / 音频 {dur:.1f}s / 用时 {t_asr:.1f}s")
+    pcm, pcm_rate = decode_pcm(mp3)
 
-    t1 = time.time()
-    aligned = align_segments(segs, whisper_words)
-    hit = sum(1 for x in aligned if x is not None)
-    new_starts = interp_missing(aligned, audio_duration=dur)
-    interp = sum(1 for x, a in zip(new_starts, aligned) if x is not None and a is None)
-    print(f"    对齐: {hit}/{len(segs)} 段直接命中 + {interp} 推算 (用时 {time.time()-t1:.2f}s)")
+    if ends_only:
+        # 批量优化已存在的句首时间，不重新对齐 start，避免低型号 ASR
+        # 把已经人工校准过的句首拖偏。
+        aligned = [s.get("start") if isinstance(s.get("start"), (int, float)) else None for s in segs]
+        hit = sum(1 for x in aligned if x is not None)
+        new_starts = list(aligned)
+        print(f"    句首: 保留现有时间 {hit}/{len(segs)} 段")
+    else:
+        t1 = time.time()
+        aligned = align_segments(segs, whisper_words)
+        hit = sum(1 for x in aligned if x is not None)
+        new_starts = interp_missing(aligned, audio_duration=dur)
+        interp = sum(1 for x, a in zip(new_starts, aligned) if x is not None and a is None)
+        print(f"    对齐: {hit}/{len(segs)} 段直接命中 + {interp} 推算 (用时 {time.time()-t1:.2f}s)")
 
     # 先应用人工锚点，再用词级时间戳估计每句真正的结束时间。
     effective_starts = []
     for s, ns in zip(segs, new_starts):
         override = MANUAL_START_OVERRIDES.get(pid, {}).get(s.get("id"))
+        # 即使是 --ends-only，句尾计算也必须使用人工锚点；否则一个
+        # 已知的首词误识别仍会把上一句的尾音截到错误位置。
         effective_starts.append(override if override is not None else ns)
     new_ends = []
     end_hits = 0
     for i, (s, start) in enumerate(zip(segs, effective_starts)):
-        next_start = effective_starts[i + 1] if i + 1 < len(effective_starts) else dur
+        old_end = s.get("end")
+        # 重复/不递增的句首是旧数据里常见的尾部异常；找下一个真正
+        # 更晚的句首作为上限，避免能量扫描被卡在同一时间点。
+        next_start = dur
+        if start is not None:
+            for candidate in effective_starts[i + 1:]:
+                if candidate is not None and candidate > float(start) + 0.05:
+                    next_start = candidate
+                    break
         end = match_segment_end(s, whisper_words, start, next_start)
+        end = extend_end_by_energy(end, start, next_start, pcm, pcm_rate)
+        # 如果本次 ASR 没有找到对应词，保留已有的人工/历史句尾，
+        # 仍然让下面的统一边界保护对它生效；不能因为一次未命中
+        # 就把原本可播放的句尾悄悄留成旧的越界值。
+        if end is None and isinstance(s.get("end"), (int, float)):
+            end = float(s["end"])
+        # 所有时间统一保留 1 位小数；句尾最多到下一句的起点，
+        # 这样不会吞入下一句，同时不会因 ``next_start - 0.05``
+        # 的四舍五入把上一句错误地缩短一整格。
+        if end is not None and next_start is not None and next_start > float(start or 0):
+            safe_end = round(float(next_start), 1)
+            end = min(float(end), safe_end)
+            end = round(end, 1)
+            # 极短回应可能和下一轮的旧句首落在同一百毫秒内。
+            # 此时优先保留已有的完整句尾，稍后统一把下一句句首
+            # 推到这里，避免为了满足旧句首而吞掉尾音。
+            if (
+                isinstance(old_end, (int, float))
+                and end <= float(start or 0) + 0.15
+                and float(old_end) > end
+            ):
+                end = round(float(old_end), 1)
         new_ends.append(end)
         if end is not None:
             end_hits += 1
+
+    # 旧数据中偶尔会出现连续短回应的句首互相挤压。保持句首单调，
+    # 并在上一句已有可靠句尾时把下一句推到该句尾；这只会调整冲突
+    # 的边界，不会改变正常段落的人工校准时间。
+    normalized_starts = list(effective_starts)
+    for i in range(1, len(normalized_starts)):
+        cur = normalized_starts[i]
+        if cur is None:
+            continue
+        floor_start = normalized_starts[i - 1]
+        prev_end = new_ends[i - 1]
+        if isinstance(prev_end, (int, float)):
+            floor_start = max(float(floor_start), float(prev_end)) if isinstance(floor_start, (int, float)) else float(prev_end)
+        if isinstance(floor_start, (int, float)) and float(cur) < float(floor_start):
+            normalized_starts[i] = round(float(floor_start), 1)
     print(f"    句尾: {end_hits}/{len(segs)} 段使用词级结束点")
 
     if dry_run:
         # 展示前 8 段的对比
         print(f"    ── 对比前 8 段(dry-run) ──")
-        for i, (s, ns) in enumerate(zip(segs[:8], new_starts[:8])):
-            print(f"    seg{i+1}: old={s.get('start')} → new={ns}  |  {s.get('en','')[:60]}")
-        return {"hit": hit, "total": len(segs)}
+        for i, (s, ns, end) in enumerate(zip(segs[:8], effective_starts[:8], new_ends[:8])):
+            print(f"    seg{i+1}: start={ns} → end={end}  |  {s.get('en','')[:60]}")
+        return {"hit": hit, "total": len(segs), "end_hits": end_hits}
 
     # 写回
-    for s, ns, end in zip(segs, effective_starts, new_ends):
-        if ns is not None:
+    for s, ns, end in zip(segs, normalized_starts, new_ends):
+        original_start = s.get("start")
+        changed_conflict_start = (
+            isinstance(original_start, (int, float))
+            and isinstance(ns, (int, float))
+            and abs(float(original_start) - float(ns)) >= 0.05
+        )
+        if ns is not None and (not ends_only or changed_conflict_start):
             s["start"] = ns
-        if end is not None and ns is not None and end > ns:
+        if end is not None and ns is not None and end > ns + 0.15:
             s["end"] = end
     save_json(pid, data)
     print(f"    写回 {pid}.json [OK]")
-    return {"hit": hit, "total": len(segs)}
+    return {"hit": hit, "total": len(segs), "end_hits": end_hits}
 
 
 def main():
@@ -338,6 +526,11 @@ def main():
     )
     ap.add_argument("--model", default="small", help="whisper 模型 (tiny/base/small/medium)")
     ap.add_argument("--dry-run", action="store_true", help="只报告,不写回")
+    ap.add_argument(
+        "--ends-only",
+        action="store_true",
+        help="只根据词级时间戳重算 end，保留 JSON 中已有的 start",
+    )
     ap.add_argument("--device", default="cpu", help="cpu 或 cuda")
     ap.add_argument("--compute-type", default="int8", help="int8(默认,CPU)/ float16(GPU)")
     args = ap.parse_args()
@@ -357,7 +550,7 @@ def main():
     print(f"  模型加载 {time.time()-t0:.1f}s")
 
     if args.pid:
-        process_one(model, args.pid, dry_run=args.dry_run)
+        process_one(model, args.pid, dry_run=args.dry_run, ends_only=args.ends_only)
         return
 
     # --all / --books
@@ -382,7 +575,7 @@ def main():
     for i, pid in enumerate(files, 1):
         print(f"\n[{i}/{len(files)}] {pid}")
         try:
-            r = process_one(model, pid, dry_run=args.dry_run)
+            r = process_one(model, pid, dry_run=args.dry_run, ends_only=args.ends_only)
             if r: stats.append((pid, r))
         except Exception as e:
             print(f"  [ERR] {e}")
@@ -391,6 +584,8 @@ def main():
     total_hit = sum(x[1]["hit"] for x in stats)
     total_seg = sum(x[1]["total"] for x in stats)
     print(f"总命中: {total_hit}/{total_seg} = {100*total_hit/max(1,total_seg):.1f}%")
+    total_end = sum(x[1].get("end_hits", 0) for x in stats)
+    print(f"句尾命中: {total_end}/{total_seg} = {100*total_end/max(1,total_seg):.1f}%")
 
 
 if __name__ == "__main__":
