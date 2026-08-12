@@ -1,2180 +1,2806 @@
 {
-  "id": "c1-test1-l2",
-  "source": "剑桥雅思1 · Test 1 · Part 2",
-  "title": "News headlines",
-  "audio": "media/audio/c1-test1-part2.mp3",
-  "practice_unit": "sentence",
-  "segments": [
+ "id": "c1-test1-l2",
+ "source": "剑桥雅思1 · Test 1 · Part 2",
+ "title": "News headlines",
+ "audio": "media/audio/c1-test1-part2.mp3",
+ "practice_unit": "sentence",
+ "segments": [
+  {
+   "id": 1,
+   "start": 0.224,
+   "speaker": "NEWSREADER",
+   "en": "This is the 6 o’clock news for Tuesday 25 November.",
+   "zh": "",
+   "words": [
     {
-      "id": 1,
-      "start": 0.66,
-      "speaker": "NEWSREADER",
-      "en": "This is the 6 o’clock news for Tuesday 25 November.",
-      "zh": "",
-      "words": [
-        {
-          "word": "this",
-          "start": 0.66,
-          "end": 0.84
-        },
-        {
-          "word": "is",
-          "start": 0.84,
-          "end": 0.92
-        },
-        {
-          "word": "the",
-          "start": 0.92,
-          "end": 0.98
-        },
-        {
-          "word": "<unk>",
-          "start": 0.98,
-          "end": 1.22
-        },
-        {
-          "word": "o'clock",
-          "start": 1.55,
-          "end": 1.73
-        },
-        {
-          "word": "news",
-          "start": 1.73,
-          "end": 1.96
-        },
-        {
-          "word": "for",
-          "start": 2.09,
-          "end": 2.15
-        },
-        {
-          "word": "tuesday",
-          "start": 2.15,
-          "end": 2.76
-        },
-        {
-          "word": "<unk>",
-          "start": 2.76,
-          "end": 3.46
-        },
-        {
-          "word": "november",
-          "start": 3.46,
-          "end": 4.01
-        }
-      ],
-      "answers": [],
-      "end": 4.01
+     "word": "This",
+     "start": 0.674,
+     "end": 0.787,
+     "confidence": 0.4064,
+     "speaker": "A"
     },
     {
-      "id": 2,
-      "start": 4.5,
-      "speaker": "NEWSREADER",
-      "en": "And first the headlines: The Prime Minister has promised to help the drought stricken farmers in the northern part of the country who haven’t seen rain for nearly two years.",
-      "zh": "",
-      "words": [
-        {
-          "word": "and",
-          "start": 4.5,
-          "end": 4.66
-        },
-        {
-          "word": "first",
-          "start": 4.66,
-          "end": 5.02
-        },
-        {
-          "word": "the",
-          "start": 5.02,
-          "end": 5.12
-        },
-        {
-          "word": "headlines",
-          "start": 5.12,
-          "end": 5.72
-        },
-        {
-          "word": "the",
-          "start": 6.39,
-          "end": 6.47
-        },
-        {
-          "word": "prime",
-          "start": 6.47,
-          "end": 6.71
-        },
-        {
-          "word": "minister",
-          "start": 6.71,
-          "end": 7.05
-        },
-        {
-          "word": "has",
-          "start": 7.05,
-          "end": 7.17
-        },
-        {
-          "word": "promised",
-          "start": 7.17,
-          "end": 7.55
-        },
-        {
-          "word": "to",
-          "start": 7.55,
-          "end": 7.63
-        },
-        {
-          "word": "help",
-          "start": 7.63,
-          "end": 7.93
-        },
-        {
-          "word": "the",
-          "start": 7.93,
-          "end": 8.03
-        },
-        {
-          "word": "drought",
-          "start": 8.03,
-          "end": 8.4
-        },
-        {
-          "word": "stricken",
-          "start": 8.4,
-          "end": 8.82
-        },
-        {
-          "word": "farmers",
-          "start": 8.82,
-          "end": 9.31
-        },
-        {
-          "word": "in",
-          "start": 9.31,
-          "end": 9.6
-        },
-        {
-          "word": "the",
-          "start": 9.6,
-          "end": 9.7
-        },
-        {
-          "word": "northern",
-          "start": 9.7,
-          "end": 9.91
-        },
-        {
-          "word": "part",
-          "start": 9.91,
-          "end": 10.16
-        },
-        {
-          "word": "of",
-          "start": 10.16,
-          "end": 10.24
-        },
-        {
-          "word": "the",
-          "start": 10.24,
-          "end": 10.3
-        },
-        {
-          "word": "country",
-          "start": 10.3,
-          "end": 10.87
-        },
-        {
-          "word": "who",
-          "start": 10.94,
-          "end": 11.03
-        },
-        {
-          "word": "haven't",
-          "start": 11.03,
-          "end": 11.29
-        },
-        {
-          "word": "seen",
-          "start": 11.29,
-          "end": 11.56
-        },
-        {
-          "word": "rain",
-          "start": 11.56,
-          "end": 11.85
-        },
-        {
-          "word": "for",
-          "start": 11.85,
-          "end": 11.98
-        },
-        {
-          "word": "nearly",
-          "start": 11.98,
-          "end": 12.32
-        },
-        {
-          "word": "two",
-          "start": 12.42,
-          "end": 12.62
-        },
-        {
-          "word": "years",
-          "start": 12.62,
-          "end": 13.08
-        }
-      ],
-      "answers": [],
-      "end": 13.08
+     "word": "is",
+     "start": 0.899,
+     "end": 0.963,
+     "confidence": 0.9833,
+     "speaker": "A"
     },
     {
-      "id": 3,
-      "start": 13.93,
-      "speaker": "NEWSREADER",
-      "en": "And in Sydney a group of school children are successfully rescued from a plane which landed in the sea shortly after take-off.",
-      "zh": "",
-      "words": [
-        {
-          "word": "and",
-          "start": 13.93,
-          "end": 14.02
-        },
-        {
-          "word": "in",
-          "start": 14.02,
-          "end": 14.21
-        },
-        {
-          "word": "sydney",
-          "start": 14.28,
-          "end": 14.62
-        },
-        {
-          "word": "a",
-          "start": 14.84,
-          "end": 14.89
-        },
-        {
-          "word": "group",
-          "start": 14.89,
-          "end": 15.15
-        },
-        {
-          "word": "of",
-          "start": 15.15,
-          "end": 15.24
-        },
-        {
-          "word": "school",
-          "start": 15.24,
-          "end": 15.49
-        },
-        {
-          "word": "children",
-          "start": 15.49,
-          "end": 16.049999
-        },
-        {
-          "word": "are",
-          "start": 16.24,
-          "end": 16.34
-        },
-        {
-          "word": "successfully",
-          "start": 16.6,
-          "end": 16.969999
-        },
-        {
-          "word": "rescued",
-          "start": 16.969999,
-          "end": 17.4
-        },
-        {
-          "word": "from",
-          "start": 17.4,
-          "end": 17.559999
-        },
-        {
-          "word": "a",
-          "start": 17.559999,
-          "end": 17.620001
-        },
-        {
-          "word": "plane",
-          "start": 17.620001,
-          "end": 18.110001
-        },
-        {
-          "word": "which",
-          "start": 18.26,
-          "end": 18.450001
-        },
-        {
-          "word": "landed",
-          "start": 18.450001,
-          "end": 18.82
-        },
-        {
-          "word": "in",
-          "start": 18.82,
-          "end": 18.889999
-        },
-        {
-          "word": "the",
-          "start": 18.889999,
-          "end": 18.99
-        },
-        {
-          "word": "sea",
-          "start": 18.99,
-          "end": 19.32
-        },
-        {
-          "word": "shortly",
-          "start": 19.32,
-          "end": 19.76
-        },
-        {
-          "word": "after",
-          "start": 19.76,
-          "end": 20.0
-        },
-        {
-          "word": "take",
-          "start": 20.0,
-          "end": 20.280001
-        },
-        {
-          "word": "off",
-          "start": 20.280001,
-          "end": 20.440001
-        }
-      ],
-      "answers": [
-        17
-      ],
-      "end": 20.440001
+     "word": "the",
+     "start": 1.06,
+     "end": 1.172,
+     "confidence": 0.975,
+     "speaker": "A"
     },
     {
-      "id": 4,
-      "start": 21.68,
-      "speaker": "NEWSREADER",
-      "en": "Transport workers are on strike in Melbourne over a pay claim and the strike looks set to spread to other states.",
-      "zh": "",
-      "words": [
-        {
-          "word": "transport",
-          "start": 21.68,
-          "end": 22.209999
-        },
-        {
-          "word": "workers",
-          "start": 22.209999,
-          "end": 22.51
-        },
-        {
-          "word": "are",
-          "start": 22.51,
-          "end": 22.610001
-        },
-        {
-          "word": "on",
-          "start": 22.610001,
-          "end": 22.76
-        },
-        {
-          "word": "strike",
-          "start": 22.76,
-          "end": 23.15
-        },
-        {
-          "word": "in",
-          "start": 23.15,
-          "end": 23.290001
-        },
-        {
-          "word": "melbourne",
-          "start": 23.290001,
-          "end": 23.690001
-        },
-        {
-          "word": "over",
-          "start": 23.959999,
-          "end": 24.200001
-        },
-        {
-          "word": "a",
-          "start": 24.200001,
-          "end": 24.25
-        },
-        {
-          "word": "pay",
-          "start": 24.25,
-          "end": 24.540001
-        },
-        {
-          "word": "claim",
-          "start": 24.540001,
-          "end": 25.0
-        },
-        {
-          "word": "and",
-          "start": 25.030001,
-          "end": 25.129999
-        },
-        {
-          "word": "the",
-          "start": 25.129999,
-          "end": 25.219999
-        },
-        {
-          "word": "strike",
-          "start": 25.219999,
-          "end": 25.65
-        },
-        {
-          "word": "looks",
-          "start": 25.65,
-          "end": 25.879999
-        },
-        {
-          "word": "set",
-          "start": 26.01,
-          "end": 26.18
-        },
-        {
-          "word": "to",
-          "start": 26.18,
-          "end": 26.360001
-        },
-        {
-          "word": "spread",
-          "start": 26.360001,
-          "end": 26.879999
-        },
-        {
-          "word": "to",
-          "start": 26.879999,
-          "end": 27.030001
-        },
-        {
-          "word": "other",
-          "start": 27.030001,
-          "end": 27.17
-        },
-        {
-          "word": "states",
-          "start": 27.280001,
-          "end": 27.559999
-        }
-      ],
-      "answers": [],
-      "end": 27.559999
+     "word": "6",
+     "start": 1.172,
+     "end": 1.477,
+     "confidence": 0.9987,
+     "speaker": "A"
     },
     {
-      "id": 5,
-      "start": 28.790001,
-      "speaker": "NEWSREADER",
-      "en": "And on a fashionable note, there s to be a new look for the staff of QANTAS, Australia’s national airline.",
-      "zh": "",
-      "words": [
-        {
-          "word": "and",
-          "start": 28.790001,
-          "end": 28.969999
-        },
-        {
-          "word": "on",
-          "start": 28.969999,
-          "end": 29.059999
-        },
-        {
-          "word": "a",
-          "start": 29.059999,
-          "end": 29.1
-        },
-        {
-          "word": "fashionable",
-          "start": 29.1,
-          "end": 29.6
-        },
-        {
-          "word": "note",
-          "start": 29.6,
-          "end": 29.9
-        },
-        {
-          "word": "there",
-          "start": 30.290001,
-          "end": 30.389999
-        },
-        {
-          "word": "'s",
-          "start": 30.389999,
-          "end": 30.43
-        },
-        {
-          "word": "to",
-          "start": 30.43,
-          "end": 30.57
-        },
-        {
-          "word": "be",
-          "start": 30.57,
-          "end": 30.700001
-        },
-        {
-          "word": "a",
-          "start": 30.700001,
-          "end": 30.73
-        },
-        {
-          "word": "new",
-          "start": 30.73,
-          "end": 31.01
-        },
-        {
-          "word": "look",
-          "start": 31.01,
-          "end": 31.280001
-        },
-        {
-          "word": "for",
-          "start": 31.280001,
-          "end": 31.35
-        },
-        {
-          "word": "the",
-          "start": 31.35,
-          "end": 31.83
-        },
-        {
-          "word": "staff",
-          "start": 31.969999,
-          "end": 32.099998
-        },
-        {
-          "word": "of",
-          "start": 32.150002,
-          "end": 32.23
-        },
-        {
-          "word": "qantas",
-          "start": 32.23,
-          "end": 32.759998
-        },
-        {
-          "word": "australia",
-          "start": 32.970001,
-          "end": 33.540001
-        },
-        {
-          "word": "'s",
-          "start": 33.540001,
-          "end": 33.57
-        },
-        {
-          "word": "national",
-          "start": 33.57,
-          "end": 34.07
-        },
-        {
-          "word": "airline",
-          "start": 34.07,
-          "end": 34.540001
-        }
-      ],
-      "answers": [],
-      "end": 34.540001
+     "word": "o'clock",
+     "start": 1.477,
+     "end": 1.718,
+     "confidence": 0.8655,
+     "speaker": "A"
     },
     {
-      "id": 6,
-      "start": 36.610001,
-      "speaker": "NEWSREADER",
-      "en": "The Prime Minister has pledged today that he will make two hundred and fifty million dollars available to help the drought stricken farmers who have not seen rain for years, get through the next five years.",
-      "zh": "",
-      "words": [
-        {
-          "word": "the",
-          "start": 36.610001,
-          "end": 36.689999
-        },
-        {
-          "word": "prime",
-          "start": 36.689999,
-          "end": 36.93
-        },
-        {
-          "word": "minister",
-          "start": 36.959999,
-          "end": 37.310001
-        },
-        {
-          "word": "has",
-          "start": 37.360001,
-          "end": 37.48
-        },
-        {
-          "word": "pledged",
-          "start": 37.48,
-          "end": 37.77
-        },
-        {
-          "word": "today",
-          "start": 37.939999,
-          "end": 38.119999
-        },
-        {
-          "word": "that",
-          "start": 38.119999,
-          "end": 38.32
-        },
-        {
-          "word": "he",
-          "start": 38.32,
-          "end": 38.360001
-        },
-        {
-          "word": "will",
-          "start": 38.360001,
-          "end": 38.509998
-        },
-        {
-          "word": "make",
-          "start": 38.509998,
-          "end": 38.849998
-        },
-        {
-          "word": "two",
-          "start": 38.849998,
-          "end": 39.09
-        },
-        {
-          "word": "hundred",
-          "start": 39.09,
-          "end": 39.380001
-        },
-        {
-          "word": "and",
-          "start": 39.380001,
-          "end": 39.509998
-        },
-        {
-          "word": "fifty",
-          "start": 39.630001,
-          "end": 39.869999
-        },
-        {
-          "word": "million",
-          "start": 39.869999,
-          "end": 40.330002
-        },
-        {
-          "word": "dollars",
-          "start": 40.330002,
-          "end": 40.669998
-        },
-        {
-          "word": "available",
-          "start": 40.84,
-          "end": 41.259998
-        },
-        {
-          "word": "to",
-          "start": 41.259998,
-          "end": 41.380001
-        },
-        {
-          "word": "help",
-          "start": 41.380001,
-          "end": 41.619999
-        },
-        {
-          "word": "the",
-          "start": 41.619999,
-          "end": 41.689999
-        },
-        {
-          "word": "drought",
-          "start": 41.689999,
-          "end": 42.029999
-        },
-        {
-          "word": "stricken",
-          "start": 42.099998,
-          "end": 42.43
-        },
-        {
-          "word": "farmers",
-          "start": 42.43,
-          "end": 42.91
-        },
-        {
-          "word": "who",
-          "start": 42.91,
-          "end": 42.990002
-        },
-        {
-          "word": "have",
-          "start": 42.990002,
-          "end": 43.09
-        },
-        {
-          "word": "not",
-          "start": 43.09,
-          "end": 43.34
-        },
-        {
-          "word": "seen",
-          "start": 43.450001,
-          "end": 43.669998
-        },
-        {
-          "word": "rain",
-          "start": 43.669998,
-          "end": 43.939999
-        },
-        {
-          "word": "for",
-          "start": 43.939999,
-          "end": 44.02
-        },
-        {
-          "word": "years",
-          "start": 44.02,
-          "end": 44.490002
-        },
-        {
-          "word": "get",
-          "start": 44.810001,
-          "end": 45.049999
-        },
-        {
-          "word": "through",
-          "start": 45.049999,
-          "end": 45.259998
-        },
-        {
-          "word": "the",
-          "start": 45.259998,
-          "end": 45.369999
-        },
-        {
-          "word": "next",
-          "start": 45.369999,
-          "end": 45.689999
-        },
-        {
-          "word": "five",
-          "start": 45.84,
-          "end": 46.060001
-        },
-        {
-          "word": "years",
-          "start": 46.060001,
-          "end": 46.470001
-        }
-      ],
-      "answers": [],
-      "end": 46.470001
+     "word": "news",
+     "start": 1.783,
+     "end": 2.007,
+     "confidence": 0.9863,
+     "speaker": "A"
     },
     {
-      "id": 7,
-      "start": 47.220001,
-      "speaker": "NEWSREADER",
-      "en": "Money that was to have been spent on the re-structuring of Sydney’s road system has been re-allocated to what the",
-      "zh": "",
-      "words": [
-        {
-          "word": "money",
-          "start": 47.220001,
-          "end": 47.43
-        },
-        {
-          "word": "that",
-          "start": 47.48,
-          "end": 47.580002
-        },
-        {
-          "word": "was",
-          "start": 47.580002,
-          "end": 47.799999
-        },
-        {
-          "word": "to",
-          "start": 47.900002,
-          "end": 47.970001
-        },
-        {
-          "word": "have",
-          "start": 47.970001,
-          "end": 48.029999
-        },
-        {
-          "word": "been",
-          "start": 48.029999,
-          "end": 48.259998
-        },
-        {
-          "word": "spent",
-          "start": 48.259998,
-          "end": 48.599998
-        },
-        {
-          "word": "on",
-          "start": 48.599998,
-          "end": 48.720001
-        },
-        {
-          "word": "the",
-          "start": 48.720001,
-          "end": 48.82
-        },
-        {
-          "word": "re",
-          "start": 48.82,
-          "end": 49.029999
-        },
-        {
-          "word": "structuring",
-          "start": 49.029999,
-          "end": 49.580002
-        },
-        {
-          "word": "of",
-          "start": 49.580002,
-          "end": 49.669998
-        },
-        {
-          "word": "sydney",
-          "start": 49.810001,
-          "end": 50.080002
-        },
-        {
-          "word": "'s",
-          "start": 50.080002,
-          "end": 50.150002
-        },
-        {
-          "word": "road",
-          "start": 50.150002,
-          "end": 50.470001
-        },
-        {
-          "word": "system",
-          "start": 50.470001,
-          "end": 50.889999
-        },
-        {
-          "word": "has",
-          "start": 51.310001,
-          "end": 51.419998
-        },
-        {
-          "word": "been",
-          "start": 51.419998,
-          "end": 51.580002
-        },
-        {
-          "word": "re",
-          "start": 51.580002,
-          "end": 51.900002
-        },
-        {
-          "word": "allocated",
-          "start": 51.900002,
-          "end": 52.439999
-        },
-        {
-          "word": "to",
-          "start": 52.439999,
-          "end": 52.529999
-        },
-        {
-          "word": "what",
-          "start": 52.529999,
-          "end": 52.73
-        },
-        {
-          "word": "the",
-          "start": 52.73,
-          "end": 52.810001
-        }
-      ],
-      "answers": [
-        15
-      ],
-      "end": 52.810001
+     "word": "for",
+     "start": 2.104,
+     "end": 2.168,
+     "confidence": 0.994,
+     "speaker": "A"
     },
     {
-      "id": 8,
-      "start": 52.810001,
-      "speaker": "P",
-      "en": "Prime Minister described as 'a more worthy cause'.",
-      "zh": "",
-      "words": [
-        {
-          "word": "prime",
-          "start": 52.810001,
-          "end": 53.200001
-        },
-        {
-          "word": "minister",
-          "start": 53.200001,
-          "end": 53.57
-        },
-        {
-          "word": "described",
-          "start": 53.57,
-          "end": 54.290001
-        },
-        {
-          "word": "as",
-          "start": 54.290001,
-          "end": 54.400002
-        },
-        {
-          "word": "a",
-          "start": 54.759998,
-          "end": 54.790001
-        },
-        {
-          "word": "more",
-          "start": 54.790001,
-          "end": 55.119999
-        },
-        {
-          "word": "worthy",
-          "start": 55.119999,
-          "end": 55.490002
-        },
-        {
-          "word": "cause",
-          "start": 55.490002,
-          "end": 56.02
-        }
-      ],
-      "answers": [],
-      "end": 56.02
-    },
-    {
-      "id": 9,
-      "start": 57.09,
-      "speaker": "P",
-      "en": "Farmers are to receive financial assistance to help see them through the worst drought in over 50 years.",
-      "zh": "",
-      "words": [
-        {
-          "word": "farmers",
-          "start": 57.09,
-          "end": 57.5
-        },
-        {
-          "word": "are",
-          "start": 57.5,
-          "end": 57.549999
-        },
-        {
-          "word": "to",
-          "start": 57.549999,
-          "end": 57.650002
-        },
-        {
-          "word": "receive",
-          "start": 57.650002,
-          "end": 58.099998
-        },
-        {
-          "word": "financial",
-          "start": 58.099998,
-          "end": 58.580002
-        },
-        {
-          "word": "assistance",
-          "start": 58.740002,
-          "end": 59.189999
-        },
-        {
-          "word": "to",
-          "start": 59.310001,
-          "end": 59.419998
-        },
-        {
-          "word": "help",
-          "start": 59.419998,
-          "end": 59.639999
-        },
-        {
-          "word": "see",
-          "start": 59.75,
-          "end": 59.889999
-        },
-        {
-          "word": "them",
-          "start": 59.889999,
-          "end": 60.049999
-        },
-        {
-          "word": "through",
-          "start": 60.049999,
-          "end": 60.240002
-        },
-        {
-          "word": "the",
-          "start": 60.240002,
-          "end": 60.349998
-        },
-        {
-          "word": "worst",
-          "start": 60.349998,
-          "end": 60.650002
-        },
-        {
-          "word": "drought",
-          "start": 60.810001,
-          "end": 61.060001
-        },
-        {
-          "word": "in",
-          "start": 61.09,
-          "end": 61.290001
-        },
-        {
-          "word": "over",
-          "start": 61.290001,
-          "end": 61.41
-        },
-        {
-          "word": "<unk>",
-          "start": 61.41,
-          "end": 62.0
-        },
-        {
-          "word": "years",
-          "start": 62.0,
-          "end": 62.369999
-        }
-      ],
-      "answers": [],
-      "end": 62.369999
-    },
-    {
-      "id": 10,
-      "start": 63.389999,
-      "speaker": "P",
-      "en": "Many farmers feel that while the money is welcome it has come too late to save them and their farms from financial ruin and are angry that the government did not act sooner.",
-      "zh": "",
-      "words": [
-        {
-          "word": "many",
-          "start": 63.389999,
-          "end": 63.669998
-        },
-        {
-          "word": "farmers",
-          "start": 63.669998,
-          "end": 64.040001
-        },
-        {
-          "word": "feel",
-          "start": 64.040001,
-          "end": 64.290001
-        },
-        {
-          "word": "that",
-          "start": 64.290001,
-          "end": 64.400002
-        },
-        {
-          "word": "while",
-          "start": 64.400002,
-          "end": 64.550003
-        },
-        {
-          "word": "the",
-          "start": 64.550003,
-          "end": 64.629997
-        },
-        {
-          "word": "money",
-          "start": 64.629997,
-          "end": 64.940002
-        },
-        {
-          "word": "is",
-          "start": 64.940002,
-          "end": 65.07
-        },
-        {
-          "word": "welcome",
-          "start": 65.07,
-          "end": 65.540001
-        },
-        {
-          "word": "it",
-          "start": 65.720001,
-          "end": 65.830002
-        },
-        {
-          "word": "has",
-          "start": 65.830002,
-          "end": 65.919998
-        },
-        {
-          "word": "come",
-          "start": 65.919998,
-          "end": 66.209999
-        },
-        {
-          "word": "too",
-          "start": 66.209999,
-          "end": 66.410004
-        },
-        {
-          "word": "late",
-          "start": 66.410004,
-          "end": 66.68
-        },
-        {
-          "word": "to",
-          "start": 66.68,
-          "end": 66.769997
-        },
-        {
-          "word": "save",
-          "start": 66.919998,
-          "end": 67.07
-        },
-        {
-          "word": "them",
-          "start": 67.07,
-          "end": 67.330002
-        },
-        {
-          "word": "and",
-          "start": 67.379997,
-          "end": 67.550003
-        },
-        {
-          "word": "their",
-          "start": 67.550003,
-          "end": 67.669998
-        },
-        {
-          "word": "farms",
-          "start": 67.949997,
-          "end": 68.169998
-        },
-        {
-          "word": "from",
-          "start": 68.269997,
-          "end": 68.379997
-        },
-        {
-          "word": "financial",
-          "start": 68.379997,
-          "end": 68.959999
-        },
-        {
-          "word": "ruin",
-          "start": 68.959999,
-          "end": 69.330002
-        },
-        {
-          "word": "and",
-          "start": 69.889999,
-          "end": 69.959999
-        },
-        {
-          "word": "are",
-          "start": 69.959999,
-          "end": 69.989998
-        },
-        {
-          "word": "angry",
-          "start": 69.989998,
-          "end": 70.260002
-        },
-        {
-          "word": "that",
-          "start": 70.260002,
-          "end": 70.410004
-        },
-        {
-          "word": "the",
-          "start": 70.410004,
-          "end": 70.480003
-        },
-        {
-          "word": "government",
-          "start": 70.480003,
-          "end": 70.989998
-        },
-        {
-          "word": "did",
-          "start": 70.989998,
-          "end": 71.120003
-        },
-        {
-          "word": "not",
-          "start": 71.120003,
-          "end": 71.400002
-        },
-        {
-          "word": "act",
-          "start": 71.459999,
-          "end": 71.709999
-        },
-        {
-          "word": "sooner",
-          "start": 71.790001,
-          "end": 72.040001
-        }
-      ],
-      "answers": [
-        16
-      ],
-      "end": 72.040001
-    },
-    {
-      "id": 11,
-      "start": 72.040001,
-      "speaker": "P",
-      "en": "A group of school children who were travelling in a privately chartered aeroplane from Sydney to Queensland to take part in a musical concert found themselves swimming for the shore when their aeroplane had to land in the sea just three minutes after taking off from Sydney airport.",
-      "zh": "",
-      "words": [
-        {
-          "word": "a",
-          "start": 72.040001,
-          "end": 72.18
-        },
-        {
-          "word": "group",
-          "start": 73.82,
-          "end": 73.989998
-        },
-        {
-          "word": "of",
-          "start": 73.989998,
-          "end": 74.120003
-        },
-        {
-          "word": "school",
-          "start": 74.120003,
-          "end": 74.440002
-        },
-        {
-          "word": "children",
-          "start": 74.440002,
-          "end": 75.050003
-        },
-        {
-          "word": "who",
-          "start": 75.099998,
-          "end": 75.18
-        },
-        {
-          "word": "were",
-          "start": 75.330002,
-          "end": 75.389999
-        },
-        {
-          "word": "travelling",
-          "start": 75.389999,
-          "end": 75.739998
-        },
-        {
-          "word": "in",
-          "start": 75.739998,
-          "end": 75.830002
-        },
-        {
-          "word": "a",
-          "start": 75.830002,
-          "end": 75.860001
-        },
-        {
-          "word": "privately",
-          "start": 75.860001,
-          "end": 76.400002
-        },
-        {
-          "word": "chartered",
-          "start": 76.400002,
-          "end": 76.82
-        },
-        {
-          "word": "aeroplane",
-          "start": 76.82,
-          "end": 77.260002
-        },
-        {
-          "word": "from",
-          "start": 77.260002,
-          "end": 77.449997
-        },
-        {
-          "word": "sydney",
-          "start": 77.449997,
-          "end": 77.82
-        },
-        {
-          "word": "to",
-          "start": 77.82,
-          "end": 77.900002
-        },
-        {
-          "word": "queensland",
-          "start": 77.900002,
-          "end": 78.599998
-        },
-        {
-          "word": "to",
-          "start": 78.599998,
-          "end": 78.690002
-        },
-        {
-          "word": "take",
-          "start": 78.690002,
-          "end": 78.970001
-        },
-        {
-          "word": "part",
-          "start": 78.970001,
-          "end": 79.309998
-        },
-        {
-          "word": "in",
-          "start": 79.309998,
-          "end": 79.410004
-        },
-        {
-          "word": "a",
-          "start": 79.410004,
-          "end": 79.459999
-        },
-        {
-          "word": "musical",
-          "start": 79.459999,
-          "end": 79.949997
-        },
-        {
-          "word": "concert",
-          "start": 79.949997,
-          "end": 80.389999
-        },
-        {
-          "word": "found",
-          "start": 80.790001,
-          "end": 81.010002
-        },
-        {
-          "word": "themselves",
-          "start": 81.010002,
-          "end": 81.470001
-        },
-        {
-          "word": "swimming",
-          "start": 81.550003,
-          "end": 81.889999
-        },
-        {
-          "word": "for",
-          "start": 81.889999,
-          "end": 82.010002
-        },
-        {
-          "word": "the",
-          "start": 82.010002,
-          "end": 82.120003
-        },
-        {
-          "word": "shore",
-          "start": 82.120003,
-          "end": 82.599998
-        },
-        {
-          "word": "when",
-          "start": 82.75,
-          "end": 82.970001
-        },
-        {
-          "word": "their",
-          "start": 82.970001,
-          "end": 83.160004
-        },
-        {
-          "word": "aeroplane",
-          "start": 83.160004,
-          "end": 83.589996
-        },
-        {
-          "word": "had",
-          "start": 83.589996,
-          "end": 83.790001
-        },
-        {
-          "word": "to",
-          "start": 83.790001,
-          "end": 83.879997
-        },
-        {
-          "word": "land",
-          "start": 83.879997,
-          "end": 84.230003
-        },
-        {
-          "word": "in",
-          "start": 84.230003,
-          "end": 84.32
-        },
-        {
-          "word": "the",
-          "start": 84.32,
-          "end": 84.43
-        },
-        {
-          "word": "sea",
-          "start": 84.43,
-          "end": 84.790001
-        },
-        {
-          "word": "just",
-          "start": 85.0,
-          "end": 85.269997
-        },
-        {
-          "word": "three",
-          "start": 85.269997,
-          "end": 85.5
-        },
-        {
-          "word": "minutes",
-          "start": 85.5,
-          "end": 85.870003
-        },
-        {
-          "word": "after",
-          "start": 85.870003,
-          "end": 86.120003
-        },
-        {
-          "word": "taking",
-          "start": 86.120003,
-          "end": 86.5
-        },
-        {
-          "word": "off",
-          "start": 86.5,
-          "end": 86.709999
-        },
-        {
-          "word": "from",
-          "start": 86.889999,
-          "end": 87.040001
-        },
-        {
-          "word": "sydney",
-          "start": 87.040001,
-          "end": 87.449997
-        },
-        {
-          "word": "airport",
-          "start": 87.449997,
-          "end": 87.889999
-        }
-      ],
-      "answers": [],
-      "end": 87.889999
-    },
-    {
-      "id": 12,
-      "start": 88.779999,
-      "speaker": "P",
-      "en": "The pilot managed to bring the aircraft and its 50 passengers down safely in the calm waters of Botany Bay where boats and pleasurecraft were able to come to the rescue of the boys.",
-      "zh": "",
-      "words": [
-        {
-          "word": "the",
-          "start": 88.779999,
-          "end": 88.849998
-        },
-        {
-          "word": "pilot",
-          "start": 88.849998,
-          "end": 89.190002
-        },
-        {
-          "word": "managed",
-          "start": 89.190002,
-          "end": 89.550003
-        },
-        {
-          "word": "to",
-          "start": 89.550003,
-          "end": 89.610001
-        },
-        {
-          "word": "bring",
-          "start": 89.610001,
-          "end": 89.870003
-        },
-        {
-          "word": "the",
-          "start": 89.870003,
-          "end": 90.010002
-        },
-        {
-          "word": "aircraft",
-          "start": 90.010002,
-          "end": 90.410004
-        },
-        {
-          "word": "and",
-          "start": 90.410004,
-          "end": 90.489998
-        },
-        {
-          "word": "its",
-          "start": 90.489998,
-          "end": 90.650002
-        },
-        {
-          "word": "<unk>",
-          "start": 90.650002,
-          "end": 91.139999
-        },
-        {
-          "word": "passengers",
-          "start": 91.139999,
-          "end": 91.620003
-        },
-        {
-          "word": "down",
-          "start": 91.620003,
-          "end": 91.919998
-        },
-        {
-          "word": "safely",
-          "start": 92.019997,
-          "end": 92.440002
-        },
-        {
-          "word": "in",
-          "start": 92.440002,
-          "end": 92.559998
-        },
-        {
-          "word": "the",
-          "start": 92.559998,
-          "end": 92.660004
-        },
-        {
-          "word": "calm",
-          "start": 92.660004,
-          "end": 93.059998
-        },
-        {
-          "word": "waters",
-          "start": 93.059998,
-          "end": 93.370003
-        },
-        {
-          "word": "of",
-          "start": 93.370003,
-          "end": 93.519997
-        },
-        {
-          "word": "botany",
-          "start": 93.519997,
-          "end": 93.860001
-        },
-        {
-          "word": "bay",
-          "start": 93.860001,
-          "end": 94.25
-        },
-        {
-          "word": "where",
-          "start": 94.669998,
-          "end": 94.830002
-        },
-        {
-          "word": "boats",
-          "start": 94.830002,
-          "end": 95.169998
-        },
-        {
-          "word": "and",
-          "start": 95.400002,
-          "end": 95.580002
-        },
-        {
-          "word": "pleasurecraft",
-          "start": 95.580002,
-          "end": 96.339996
-        },
-        {
-          "word": "were",
-          "start": 96.580002,
-          "end": 96.709999
-        },
-        {
-          "word": "able",
-          "start": 96.709999,
-          "end": 96.940002
-        },
-        {
-          "word": "to",
-          "start": 96.940002,
-          "end": 97.059998
-        },
-        {
-          "word": "come",
-          "start": 97.059998,
-          "end": 97.379997
-        },
-        {
-          "word": "to",
-          "start": 97.379997,
-          "end": 97.459999
-        },
-        {
-          "word": "the",
-          "start": 97.459999,
-          "end": 97.57
-        },
-        {
-          "word": "rescue",
-          "start": 97.57,
-          "end": 97.910004
-        },
-        {
-          "word": "of",
-          "start": 97.940002,
-          "end": 98.040001
-        },
-        {
-          "word": "the",
-          "start": 98.040001,
-          "end": 98.120003
-        },
-        {
-          "word": "boys",
-          "start": 98.120003,
-          "end": 98.589996
-        }
-      ],
-      "answers": [
-        19,
-        20
-      ],
-      "end": 98.589996
-    },
-    {
-      "id": 13,
-      "start": 99.480003,
-      "speaker": "P",
-      "en": "The fact that it was a weekend meant that there were hundreds of boats in the bay enjoying the good weather and this undoubtedly helped the rescue operation.",
-      "zh": "",
-      "words": [
-        {
-          "word": "the",
-          "start": 99.480003,
-          "end": 99.580002
-        },
-        {
-          "word": "fact",
-          "start": 99.580002,
-          "end": 99.900002
-        },
-        {
-          "word": "that",
-          "start": 99.900002,
-          "end": 99.93
-        },
-        {
-          "word": "it",
-          "start": 99.93,
-          "end": 99.989998
-        },
-        {
-          "word": "was",
-          "start": 99.989998,
-          "end": 100.160004
-        },
-        {
-          "word": "a",
-          "start": 100.160004,
-          "end": 100.190002
-        },
-        {
-          "word": "weekend",
-          "start": 100.190002,
-          "end": 100.760002
-        },
-        {
-          "word": "meant",
-          "start": 100.949997,
-          "end": 101.089996
-        },
-        {
-          "word": "that",
-          "start": 101.089996,
-          "end": 101.199997
-        },
-        {
-          "word": "there",
-          "start": 101.199997,
-          "end": 101.269997
-        },
-        {
-          "word": "were",
-          "start": 101.269997,
-          "end": 101.330002
-        },
-        {
-          "word": "hundreds",
-          "start": 101.400002,
-          "end": 101.959999
-        },
-        {
-          "word": "of",
-          "start": 101.959999,
-          "end": 102.050003
-        },
-        {
-          "word": "boats",
-          "start": 102.050003,
-          "end": 102.349998
-        },
-        {
-          "word": "in",
-          "start": 102.349998,
-          "end": 102.43
-        },
-        {
-          "word": "the",
-          "start": 102.43,
-          "end": 102.889999
-        },
-        {
-          "word": "bay",
-          "start": 102.889999,
-          "end": 103.010002
-        },
-        {
-          "word": "enjoying",
-          "start": 103.010002,
-          "end": 103.440002
-        },
-        {
-          "word": "the",
-          "start": 103.440002,
-          "end": 103.510002
-        },
-        {
-          "word": "good",
-          "start": 103.510002,
-          "end": 103.860001
-        },
-        {
-          "word": "weather",
-          "start": 103.860001,
-          "end": 104.190002
-        },
-        {
-          "word": "and",
-          "start": 104.709999,
-          "end": 104.849998
-        },
-        {
-          "word": "this",
-          "start": 104.849998,
-          "end": 105.18
-        },
-        {
-          "word": "undoubtedly",
-          "start": 105.18,
-          "end": 105.669998
-        },
-        {
-          "word": "helped",
-          "start": 105.669998,
-          "end": 105.93
-        },
-        {
-          "word": "the",
-          "start": 105.93,
-          "end": 106.029999
-        },
-        {
-          "word": "rescue",
-          "start": 106.029999,
-          "end": 106.370003
-        },
-        {
-          "word": "operation",
-          "start": 106.370003,
-          "end": 106.989998
-        }
-      ],
-      "answers": [],
-      "end": 106.989998
-    },
-    {
-      "id": 14,
-      "start": 107.879997,
-      "speaker": "P",
-      "en": "'We owe our lives to the skill of the pilot,' said one of the boys, but the pilot replied modestly that it was 'all part of a day’s work'.",
-      "zh": "",
-      "words": [
-        {
-          "word": "we",
-          "start": 107.879997,
-          "end": 108.129997
-        },
-        {
-          "word": "owe",
-          "start": 108.129997,
-          "end": 108.290001
-        },
-        {
-          "word": "our",
-          "start": 108.290001,
-          "end": 108.43
-        },
-        {
-          "word": "lives",
-          "start": 108.43,
-          "end": 108.830002
-        },
-        {
-          "word": "to",
-          "start": 108.830002,
-          "end": 108.93
-        },
-        {
-          "word": "the",
-          "start": 108.93,
-          "end": 109.07
-        },
-        {
-          "word": "skill",
-          "start": 109.260002,
-          "end": 109.440002
-        },
-        {
-          "word": "of",
-          "start": 109.440002,
-          "end": 109.5
-        },
-        {
-          "word": "the",
-          "start": 109.5,
-          "end": 109.57
-        },
-        {
-          "word": "pilot",
-          "start": 109.57,
-          "end": 109.980003
-        },
-        {
-          "word": "said",
-          "start": 110.25,
-          "end": 110.370003
-        },
-        {
-          "word": "one",
-          "start": 110.370003,
-          "end": 110.519997
-        },
-        {
-          "word": "of",
-          "start": 110.519997,
-          "end": 110.599998
-        },
-        {
-          "word": "the",
-          "start": 110.599998,
-          "end": 110.68
-        },
-        {
-          "word": "boys",
-          "start": 110.68,
-          "end": 111.050003
-        },
-        {
-          "word": "but",
-          "start": 111.400002,
-          "end": 111.519997
-        },
-        {
-          "word": "the",
-          "start": 111.519997,
-          "end": 111.580002
-        },
-        {
-          "word": "pilot",
-          "start": 111.580002,
-          "end": 112.0
-        },
-        {
-          "word": "replied",
-          "start": 112.0,
-          "end": 112.349998
-        },
-        {
-          "word": "modestly",
-          "start": 112.349998,
-          "end": 112.889999
-        },
-        {
-          "word": "that",
-          "start": 113.080002,
-          "end": 113.209999
-        },
-        {
-          "word": "it",
-          "start": 113.209999,
-          "end": 113.269997
-        },
-        {
-          "word": "was",
-          "start": 113.269997,
-          "end": 113.480003
-        },
-        {
-          "word": "all",
-          "start": 113.599998,
-          "end": 113.849998
-        },
-        {
-          "word": "part",
-          "start": 113.849998,
-          "end": 114.169998
-        },
-        {
-          "word": "of",
-          "start": 114.169998,
-          "end": 114.269997
-        },
-        {
-          "word": "a",
-          "start": 114.269997,
-          "end": 114.339996
-        },
-        {
-          "word": "day",
-          "start": 114.339996,
-          "end": 114.610001
-        },
-        {
-          "word": "'s",
-          "start": 114.610001,
-          "end": 114.650002
-        },
-        {
-          "word": "work",
-          "start": 114.650002,
-          "end": 115.059998
-        }
-      ],
-      "answers": [],
-      "end": 115.059998
-    },
-    {
-      "id": 15,
-      "start": 115.68,
-      "speaker": "P",
-      "en": "However, all their musical instruments were lost and they never got to play at their concert.",
-      "zh": "",
-      "words": [
-        {
-          "word": "however",
-          "start": 115.68,
-          "end": 115.949997
-        },
-        {
-          "word": "all",
-          "start": 116.339996,
-          "end": 116.459999
-        },
-        {
-          "word": "their",
-          "start": 116.459999,
-          "end": 116.720001
-        },
-        {
-          "word": "musical",
-          "start": 116.720001,
-          "end": 117.169998
-        },
-        {
-          "word": "instruments",
-          "start": 117.169998,
-          "end": 117.610001
-        },
-        {
-          "word": "were",
-          "start": 117.760002,
-          "end": 117.879997
-        },
-        {
-          "word": "lost",
-          "start": 117.879997,
-          "end": 118.150002
-        },
-        {
-          "word": "and",
-          "start": 118.459999,
-          "end": 118.610001
-        },
-        {
-          "word": "they",
-          "start": 118.610001,
-          "end": 118.690002
-        },
-        {
-          "word": "never",
-          "start": 118.690002,
-          "end": 118.879997
-        },
-        {
-          "word": "got",
-          "start": 118.879997,
-          "end": 119.089996
-        },
-        {
-          "word": "to",
-          "start": 119.089996,
-          "end": 119.160004
-        },
-        {
-          "word": "play",
-          "start": 119.160004,
-          "end": 119.5
-        },
-        {
-          "word": "at",
-          "start": 119.5,
-          "end": 119.639999
-        },
-        {
-          "word": "their",
-          "start": 119.639999,
-          "end": 119.709999
-        },
-        {
-          "word": "concert",
-          "start": 119.709999,
-          "end": 120.199997
-        }
-      ],
-      "answers": [
-        21
-      ],
-      "end": 120.199997
+     "word": "Tuesday,",
+     "start": 2.264,
+     "end": 2.666,
+     "confidence": 0.7624,
+     "speaker": "A"
     }
-  ],
-  "questions": [
+   ],
+   "answers": [],
+   "end": 3.516
+  },
+  {
+   "id": 2,
+   "start": 3.663,
+   "speaker": "NEWSREADER",
+   "en": "And first the headlines: The Prime Minister has promised to help the drought stricken farmers in the northern part of the country who haven’t seen rain for nearly two years.",
+   "zh": "",
+   "words": [
     {
-      "title": "Questions 11–21",
-      "type": "mixed",
-      "instructions": [
-        "Complete the original Cambridge IELTS listening questions below."
-      ],
-      "source_text": "Example\nB\nMoney promised for drought victims\nSECTION 2 Questions 11-21\nQuestions 11-13\nTick the THREE other items which are mentioned in the news headlines.\nNEWS HEADLINES\nA\nRivers flood in the north\nC\nNurses on strike in Melbourne\nD\nPassengers rescued from ship\nE\nPassengers rescued from plane\nF\nBus and train drivers national strike threat\nG\nTeachers demand more pay\nH\nNew uniform for QANTAS staff\nI\nNational airports under new management\nü\nQuestions 14-21\nComplete the notes below by writing NO MORE THAN THREE WORDS in the spaces\nprovided.\nThe Government plans to give (14) $ ................................................ to assist the\nfarmers. This money was to be spent on improving Sydney’s\n(15) ........................................................................ but has now been re-allocated.\nAustralia has experienced its worst drought in over fifty years.\nFarmers say that the money will not help them because it is\n(16) ............................................................. .\nAn aeroplane which was carrying a group of (17) ..................................................\nwas forced to land just (18) ................................................. minutes after take-off.\nThe passengers were rescued by (19) ............................................................ . The\noperation was helped because of the good weather. The passengers\nthanked the (20) ............................................................... for saving their lives but\nunfortunately they lost their (21) .................................................................. .",
-      "items": [
-        {
-          "number": 11,
-          "prompt": "Question 11（请根据上方原书题目作答）",
-          "answer": "E",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 12,
-          "prompt": "Question 12（请根据上方原书题目作答）",
-          "answer": "F",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 13,
-          "prompt": "Question 13（请根据上方原书题目作答）",
-          "answer": "H",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 14,
-          "prompt": "otes below by writing NO MORE THAN THREE WORDS in the spaces provided. The Government plans to give (14) $ ................................................ to assist the farmers. This money was to be spent on improving Sydney’s (15) ...................................................",
-          "answer": "$250 million",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 15,
-          "prompt": "(15) ........................................................................ but has now been re-allocated. Australia has experienced its worst drought in over fifty years. Farmers say that the money will not help them because it is (16) ............................................................. . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers",
-          "answer": "roads / road system",
-          "evidence_segment": 7,
-          "paraphrase": null
-        },
-        {
-          "number": 16,
-          "prompt": "(16) ............................................................. . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers thanked the (20) ............................................................... for saving their lives but unfortunately they lost their (21) .................................................................. .",
-          "answer": "too late",
-          "evidence_segment": 10,
-          "paraphrase": null
-        },
-        {
-          "number": 17,
-          "prompt": "...................................................... . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescu",
-          "answer": "school children / boys",
-          "evidence_segment": 3,
-          "paraphrase": null
-        },
-        {
-          "number": 18,
-          "prompt": "carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The op",
-          "answer": "3",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 19,
-          "prompt": "............................................ minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers thanked the (20) ..............................",
-          "answer": "boats / pleasure craft",
-          "evidence_segment": 12,
-          "paraphrase": null
-        },
-        {
-          "number": 20,
-          "prompt": "................ . The operation was helped because of the good weather. The passengers thanked the (20) ............................................................... for saving their lives but unfortunately they lost their (21) .....................................................",
-          "answer": "pilot",
-          "evidence_segment": 12,
-          "paraphrase": null
-        },
-        {
-          "number": 21,
-          "prompt": ".......................................... for saving their lives but unfortunately they lost their (21) .................................................................. .",
-          "answer": "musical instruments",
-          "evidence_segment": 15,
-          "paraphrase": null
-        }
-      ]
+     "word": "and",
+     "start": 4.513,
+     "end": 4.69,
+     "confidence": 0.9944,
+     "speaker": "A"
+    },
+    {
+     "word": "first",
+     "start": 4.754,
+     "end": 5.027,
+     "confidence": 0.9875,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 5.027,
+     "end": 5.156,
+     "confidence": 0.6282,
+     "speaker": "A"
+    },
+    {
+     "word": "headlines.",
+     "start": 5.156,
+     "end": 5.622,
+     "confidence": 0.9262,
+     "speaker": "A"
+    },
+    {
+     "word": "The",
+     "start": 6.441,
+     "end": 6.521,
+     "confidence": 0.9886,
+     "speaker": "A"
+    },
+    {
+     "word": "Prime",
+     "start": 6.521,
+     "end": 6.714,
+     "confidence": 0.8696,
+     "speaker": "A"
+    },
+    {
+     "word": "Minister",
+     "start": 6.714,
+     "end": 7.019,
+     "confidence": 0.9951,
+     "speaker": "A"
+    },
+    {
+     "word": "has",
+     "start": 7.035,
+     "end": 7.148,
+     "confidence": 0.9909,
+     "speaker": "A"
+    },
+    {
+     "word": "promised",
+     "start": 7.244,
+     "end": 7.565,
+     "confidence": 0.989,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 7.565,
+     "end": 7.63,
+     "confidence": 0.9869,
+     "speaker": "A"
+    },
+    {
+     "word": "help",
+     "start": 7.662,
+     "end": 7.983,
+     "confidence": 0.9927,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 7.983,
+     "end": 8.063,
+     "confidence": 0.9908,
+     "speaker": "A"
+    },
+    {
+     "word": "drought-stricken",
+     "start": 8.144,
+     "end": 8.77,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "farmers",
+     "start": 8.866,
+     "end": 9.316,
+     "confidence": 0.9937,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 9.429,
+     "end": 9.509,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 9.509,
+     "end": 9.589,
+     "confidence": 0.99,
+     "speaker": "A"
+    },
+    {
+     "word": "northern",
+     "start": 9.589,
+     "end": 9.975,
+     "confidence": 0.9873,
+     "speaker": "A"
+    },
+    {
+     "word": "part",
+     "start": 9.975,
+     "end": 10.216,
+     "confidence": 0.9982,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 10.216,
+     "end": 10.296,
+     "confidence": 0.9865,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 10.296,
+     "end": 10.376,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "country",
+     "start": 10.376,
+     "end": 10.842,
+     "confidence": 0.9924,
+     "speaker": "A"
+    },
+    {
+     "word": "who",
+     "start": 11.019,
+     "end": 11.099,
+     "confidence": 0.7874,
+     "speaker": "A"
+    },
+    {
+     "word": "haven't",
+     "start": 11.099,
+     "end": 11.421,
+     "confidence": 0.9943,
+     "speaker": "A"
+    },
+    {
+     "word": "seen",
+     "start": 11.421,
+     "end": 11.485,
+     "confidence": 0.9925,
+     "speaker": "A"
+    },
+    {
+     "word": "rain",
+     "start": 11.581,
+     "end": 11.806,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "for",
+     "start": 11.902,
+     "end": 12.031,
+     "confidence": 0.9949,
+     "speaker": "A"
+    },
+    {
+     "word": "nearly",
+     "start": 12.031,
+     "end": 12.288,
+     "confidence": 0.9919,
+     "speaker": "A"
+    },
+    {
+     "word": "2",
+     "start": 12.4,
+     "end": 12.529,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "years.",
+     "start": 12.706,
+     "end": 12.995,
+     "confidence": 0.956,
+     "speaker": "A"
     }
-  ],
-  "alignment": {
-    "engine": "montreal-forced-aligner",
-    "model": "MontrealCorpusTools/english_mfa",
-    "granularity": "word+phone",
-    "fixed_transcript": true,
-    "transcript_corrections_for_dictionary": [
-      "ram -> rain",
-      "rime Minister -> Prime Minister",
-      "there s -> there's"
-    ]
+   ],
+   "answers": [],
+   "end": 13.845
+  },
+  {
+   "id": 3,
+   "start": 13.46,
+   "speaker": "NEWSREADER",
+   "en": "And in Sydney a group of school children are successfully rescued from a plane which landed in the sea shortly after take-off.",
+   "zh": "",
+   "words": [
+    {
+     "word": "And",
+     "start": 13.91,
+     "end": 14.087,
+     "confidence": 0.9866,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 14.087,
+     "end": 14.183,
+     "confidence": 0.955,
+     "speaker": "A"
+    },
+    {
+     "word": "Sydney,",
+     "start": 14.183,
+     "end": 14.569,
+     "confidence": 0.9853,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 14.89,
+     "end": 15.035,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "group",
+     "start": 15.035,
+     "end": 15.212,
+     "confidence": 0.9744,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 15.212,
+     "end": 15.292,
+     "confidence": 0.9536,
+     "speaker": "A"
+    },
+    {
+     "word": "school",
+     "start": 15.292,
+     "end": 15.565,
+     "confidence": 0.961,
+     "speaker": "A"
+    },
+    {
+     "word": "children",
+     "start": 15.677,
+     "end": 16.031,
+     "confidence": 0.5577,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 16.336,
+     "end": 16.4,
+     "confidence": 0.9607,
+     "speaker": "A"
+    },
+    {
+     "word": "successfully",
+     "start": 16.4,
+     "end": 17.027,
+     "confidence": 0.9245,
+     "speaker": "A"
+    },
+    {
+     "word": "rescued",
+     "start": 17.059,
+     "end": 17.46,
+     "confidence": 0.9756,
+     "speaker": "A"
+    },
+    {
+     "word": "from",
+     "start": 17.46,
+     "end": 17.589,
+     "confidence": 0.9851,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 17.621,
+     "end": 17.766,
+     "confidence": 0.9894,
+     "speaker": "A"
+    },
+    {
+     "word": "plane",
+     "start": 17.766,
+     "end": 17.991,
+     "confidence": 0.983,
+     "speaker": "A"
+    },
+    {
+     "word": "which",
+     "start": 18.344,
+     "end": 18.456,
+     "confidence": 0.9658,
+     "speaker": "A"
+    },
+    {
+     "word": "landed",
+     "start": 18.585,
+     "end": 18.89,
+     "confidence": 0.9926,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 18.89,
+     "end": 18.954,
+     "confidence": 0.9951,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 18.97,
+     "end": 19.003,
+     "confidence": 0.9873,
+     "speaker": "A"
+    },
+    {
+     "word": "sea",
+     "start": 19.003,
+     "end": 19.388,
+     "confidence": 0.9943,
+     "speaker": "A"
+    },
+    {
+     "word": "shortly",
+     "start": 19.388,
+     "end": 19.87,
+     "confidence": 0.9922,
+     "speaker": "A"
+    },
+    {
+     "word": "after",
+     "start": 19.87,
+     "end": 20.095,
+     "confidence": 0.9898,
+     "speaker": "A"
+    },
+    {
+     "word": "takeoff.",
+     "start": 20.095,
+     "end": 20.464,
+     "confidence": 0.9427,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    17
+   ],
+   "end": 20.914
+  },
+  {
+   "id": 4,
+   "start": 21.331,
+   "speaker": "NEWSREADER",
+   "en": "Transport workers are on strike in Melbourne over a pay claim and the strike looks set to spread to other states.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Transport",
+     "start": 21.781,
+     "end": 22.279,
+     "confidence": 0.988,
+     "speaker": "A"
+    },
+    {
+     "word": "workers",
+     "start": 22.279,
+     "end": 22.617,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 22.617,
+     "end": 22.745,
+     "confidence": 0.9819,
+     "speaker": "A"
+    },
+    {
+     "word": "on",
+     "start": 22.745,
+     "end": 22.842,
+     "confidence": 0.9727,
+     "speaker": "A"
+    },
+    {
+     "word": "strike",
+     "start": 22.842,
+     "end": 23.243,
+     "confidence": 0.9917,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 23.243,
+     "end": 23.291,
+     "confidence": 0.9914,
+     "speaker": "A"
+    },
+    {
+     "word": "Melbourne",
+     "start": 23.324,
+     "end": 23.773,
+     "confidence": 0.948,
+     "speaker": "A"
+    },
+    {
+     "word": "over",
+     "start": 24.111,
+     "end": 24.287,
+     "confidence": 0.9864,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 24.287,
+     "end": 24.432,
+     "confidence": 0.9817,
+     "speaker": "A"
+    },
+    {
+     "word": "pay",
+     "start": 24.432,
+     "end": 24.689,
+     "confidence": 0.9928,
+     "speaker": "A"
+    },
+    {
+     "word": "claim,",
+     "start": 24.689,
+     "end": 24.978,
+     "confidence": 0.8709,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 25.155,
+     "end": 25.235,
+     "confidence": 0.999,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 25.235,
+     "end": 25.315,
+     "confidence": 0.9676,
+     "speaker": "A"
+    },
+    {
+     "word": "strike",
+     "start": 25.315,
+     "end": 25.797,
+     "confidence": 0.9919,
+     "speaker": "A"
+    },
+    {
+     "word": "looks",
+     "start": 25.797,
+     "end": 26.038,
+     "confidence": 0.9891,
+     "speaker": "A"
+    },
+    {
+     "word": "set",
+     "start": 26.038,
+     "end": 26.295,
+     "confidence": 0.9858,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 26.295,
+     "end": 26.376,
+     "confidence": 0.9696,
+     "speaker": "A"
+    },
+    {
+     "word": "spread",
+     "start": 26.376,
+     "end": 26.874,
+     "confidence": 0.9876,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 27.002,
+     "end": 27.098,
+     "confidence": 0.9654,
+     "speaker": "A"
+    },
+    {
+     "word": "other",
+     "start": 27.098,
+     "end": 27.259,
+     "confidence": 0.9895,
+     "speaker": "A"
+    },
+    {
+     "word": "states.",
+     "start": 27.259,
+     "end": 27.661,
+     "confidence": 0.9859,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 28.111
+  },
+  {
+   "id": 5,
+   "start": 28.364,
+   "speaker": "NEWSREADER",
+   "en": "And on a fashionable note, there’s to be a new look for the staff of QANTAS, Australia’s national airline.",
+   "zh": "",
+   "words": [
+    {
+     "word": "And",
+     "start": 28.814,
+     "end": 28.976,
+     "confidence": 0.4746,
+     "speaker": "A"
+    },
+    {
+     "word": "on",
+     "start": 28.976,
+     "end": 29.074,
+     "confidence": 0.9362,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 29.074,
+     "end": 29.155,
+     "confidence": 0.9876,
+     "speaker": "A"
+    },
+    {
+     "word": "fashionable",
+     "start": 29.155,
+     "end": 29.594,
+     "confidence": 0.9794,
+     "speaker": "A"
+    },
+    {
+     "word": "note,",
+     "start": 29.594,
+     "end": 29.854,
+     "confidence": 0.9707,
+     "speaker": "A"
+    },
+    {
+     "word": "there's",
+     "start": 30.358,
+     "end": 30.488,
+     "confidence": 0.92,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 30.537,
+     "end": 30.618,
+     "confidence": 0.9856,
+     "speaker": "A"
+    },
+    {
+     "word": "be",
+     "start": 30.618,
+     "end": 30.7,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 30.7,
+     "end": 30.781,
+     "confidence": 0.9947,
+     "speaker": "A"
+    },
+    {
+     "word": "new",
+     "start": 30.781,
+     "end": 30.992,
+     "confidence": 0.9948,
+     "speaker": "A"
+    },
+    {
+     "word": "look",
+     "start": 31.106,
+     "end": 31.334,
+     "confidence": 0.9955,
+     "speaker": "A"
+    },
+    {
+     "word": "for",
+     "start": 31.334,
+     "end": 31.415,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 31.415,
+     "end": 31.512,
+     "confidence": 0.9947,
+     "speaker": "A"
+    },
+    {
+     "word": "staff",
+     "start": 31.512,
+     "end": 31.903,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 32.082,
+     "end": 32.179,
+     "confidence": 0.9916,
+     "speaker": "A"
+    },
+    {
+     "word": "Qantas,",
+     "start": 32.228,
+     "end": 32.618,
+     "confidence": 0.9886,
+     "speaker": "A"
+    },
+    {
+     "word": "Australia's",
+     "start": 33.057,
+     "end": 33.626,
+     "confidence": 0.999,
+     "speaker": "A"
+    },
+    {
+     "word": "national",
+     "start": 33.707,
+     "end": 34.228,
+     "confidence": 0.9834,
+     "speaker": "A"
+    },
+    {
+     "word": "airline.",
+     "start": 34.26,
+     "end": 34.488,
+     "confidence": 0.9969,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 34.938
+  },
+  {
+   "id": 6,
+   "start": 35.84,
+   "speaker": "NEWSREADER",
+   "en": "The Prime Minister has pledged today that he will make two hundred and fifty million dollars available to help the drought stricken farmers who have not seen rain for years, get through the next five years.",
+   "zh": "",
+   "words": [
+    {
+     "word": "The",
+     "start": 36.69,
+     "end": 36.722,
+     "confidence": 0.973,
+     "speaker": "A"
+    },
+    {
+     "word": "Prime",
+     "start": 36.722,
+     "end": 36.963,
+     "confidence": 0.9172,
+     "speaker": "A"
+    },
+    {
+     "word": "Minister",
+     "start": 36.963,
+     "end": 37.348,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "has",
+     "start": 37.348,
+     "end": 37.413,
+     "confidence": 0.9887,
+     "speaker": "A"
+    },
+    {
+     "word": "pledged",
+     "start": 37.525,
+     "end": 37.831,
+     "confidence": 0.9919,
+     "speaker": "A"
+    },
+    {
+     "word": "today",
+     "start": 37.831,
+     "end": 38.104,
+     "confidence": 0.9967,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 38.104,
+     "end": 38.248,
+     "confidence": 0.9926,
+     "speaker": "A"
+    },
+    {
+     "word": "he",
+     "start": 38.248,
+     "end": 38.393,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "will",
+     "start": 38.393,
+     "end": 38.457,
+     "confidence": 0.9946,
+     "speaker": "A"
+    },
+    {
+     "word": "make",
+     "start": 38.506,
+     "end": 38.875,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "$250",
+     "start": 38.875,
+     "end": 39.872,
+     "confidence": 0.9581,
+     "speaker": "A"
+    },
+    {
+     "word": "million",
+     "start": 39.872,
+     "end": 40.45,
+     "confidence": 0.9558,
+     "speaker": "A"
+    },
+    {
+     "word": "available",
+     "start": 40.82,
+     "end": 41.254,
+     "confidence": 0.9729,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 41.302,
+     "end": 41.43,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "help",
+     "start": 41.446,
+     "end": 41.623,
+     "confidence": 0.9969,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 41.623,
+     "end": 41.768,
+     "confidence": 0.9859,
+     "speaker": "A"
+    },
+    {
+     "word": "drought-stricken",
+     "start": 41.768,
+     "end": 42.475,
+     "confidence": 0.9975,
+     "speaker": "A"
+    },
+    {
+     "word": "farmers",
+     "start": 42.507,
+     "end": 42.925,
+     "confidence": 0.9963,
+     "speaker": "A"
+    },
+    {
+     "word": "who",
+     "start": 42.925,
+     "end": 43.005,
+     "confidence": 0.9215,
+     "speaker": "A"
+    },
+    {
+     "word": "have",
+     "start": 43.005,
+     "end": 43.15,
+     "confidence": 0.9779,
+     "speaker": "A"
+    },
+    {
+     "word": "not",
+     "start": 43.15,
+     "end": 43.327,
+     "confidence": 0.9927,
+     "speaker": "A"
+    },
+    {
+     "word": "seen",
+     "start": 43.375,
+     "end": 43.536,
+     "confidence": 0.9908,
+     "speaker": "A"
+    },
+    {
+     "word": "rain",
+     "start": 43.696,
+     "end": 43.921,
+     "confidence": 0.9905,
+     "speaker": "A"
+    },
+    {
+     "word": "for",
+     "start": 44.018,
+     "end": 44.114,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "years",
+     "start": 44.114,
+     "end": 44.484,
+     "confidence": 0.9866,
+     "speaker": "A"
+    },
+    {
+     "word": "get",
+     "start": 44.902,
+     "end": 45.095,
+     "confidence": 0.9258,
+     "speaker": "A"
+    },
+    {
+     "word": "through",
+     "start": 45.143,
+     "end": 45.32,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 45.32,
+     "end": 45.4,
+     "confidence": 0.9944,
+     "speaker": "A"
+    },
+    {
+     "word": "next",
+     "start": 45.4,
+     "end": 45.77,
+     "confidence": 0.9864,
+     "speaker": "A"
+    },
+    {
+     "word": "5",
+     "start": 45.77,
+     "end": 46.108,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "years.",
+     "start": 46.108,
+     "end": 46.333,
+     "confidence": 0.9898,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 47.183
+  },
+  {
+   "id": 7,
+   "start": 46.802,
+   "speaker": "NEWSREADER",
+   "en": "Money that was to have been spent on the re-structuring of Sydney’s road system has been re-allocated to what the Prime Minister described as 'a more worthy cause'.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Money",
+     "start": 47.252,
+     "end": 47.477,
+     "confidence": 0.99,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 47.477,
+     "end": 47.59,
+     "confidence": 0.9934,
+     "speaker": "A"
+    },
+    {
+     "word": "was",
+     "start": 47.654,
+     "end": 47.864,
+     "confidence": 0.9762,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 47.88,
+     "end": 47.96,
+     "confidence": 0.9858,
+     "speaker": "A"
+    },
+    {
+     "word": "have",
+     "start": 47.96,
+     "end": 48.122,
+     "confidence": 0.9912,
+     "speaker": "A"
+    },
+    {
+     "word": "been",
+     "start": 48.122,
+     "end": 48.234,
+     "confidence": 0.9927,
+     "speaker": "A"
+    },
+    {
+     "word": "spent",
+     "start": 48.283,
+     "end": 48.621,
+     "confidence": 0.9985,
+     "speaker": "A"
+    },
+    {
+     "word": "on",
+     "start": 48.621,
+     "end": 48.718,
+     "confidence": 0.9965,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 48.766,
+     "end": 48.798,
+     "confidence": 0.9912,
+     "speaker": "A"
+    },
+    {
+     "word": "restructuring",
+     "start": 48.863,
+     "end": 49.555,
+     "confidence": 0.9786,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 49.604,
+     "end": 49.684,
+     "confidence": 0.9888,
+     "speaker": "A"
+    },
+    {
+     "word": "Sydney's",
+     "start": 49.684,
+     "end": 50.216,
+     "confidence": 0.9973,
+     "speaker": "A"
+    },
+    {
+     "word": "road",
+     "start": 50.216,
+     "end": 50.474,
+     "confidence": 0.9969,
+     "speaker": "A"
+    },
+    {
+     "word": "system",
+     "start": 50.474,
+     "end": 50.893,
+     "confidence": 0.9973,
+     "speaker": "A"
+    },
+    {
+     "word": "has",
+     "start": 51.36,
+     "end": 51.489,
+     "confidence": 0.9864,
+     "speaker": "A"
+    },
+    {
+     "word": "been",
+     "start": 51.521,
+     "end": 51.634,
+     "confidence": 0.9811,
+     "speaker": "A"
+    },
+    {
+     "word": "reallocated",
+     "start": 51.762,
+     "end": 52.439,
+     "confidence": 0.9383,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 52.487,
+     "end": 52.568,
+     "confidence": 0.9835,
+     "speaker": "A"
+    },
+    {
+     "word": "what",
+     "start": 52.568,
+     "end": 52.697,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 52.793,
+     "end": 52.955,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "Prime",
+     "start": 52.955,
+     "end": 53.18,
+     "confidence": 0.992,
+     "speaker": "A"
+    },
+    {
+     "word": "Minister",
+     "start": 53.277,
+     "end": 53.518,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "described",
+     "start": 53.518,
+     "end": 53.696,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "as—",
+     "start": 53.696,
+     "end": 53.792,
+     "confidence": 0.873,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    15
+   ],
+   "end": 54.642
+  },
+  {
+   "id": 8,
+   "start": 56.72,
+   "speaker": "P",
+   "en": "Farmers are to receive financial assistance to help see them through the worst drought in over 50 years.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Farmers",
+     "start": 57.17,
+     "end": 57.47,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 57.47,
+     "end": 57.69,
+     "confidence": 0.9773,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 57.69,
+     "end": 57.85,
+     "confidence": 0.9781,
+     "speaker": "A"
+    },
+    {
+     "word": "receive",
+     "start": 57.85,
+     "end": 58.11,
+     "confidence": 0.9939,
+     "speaker": "A"
+    },
+    {
+     "word": "financial",
+     "start": 58.11,
+     "end": 58.57,
+     "confidence": 0.991,
+     "speaker": "A"
+    },
+    {
+     "word": "assistance",
+     "start": 58.57,
+     "end": 59.17,
+     "confidence": 0.9955,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 59.17,
+     "end": 59.45,
+     "confidence": 0.971,
+     "speaker": "A"
+    },
+    {
+     "word": "help",
+     "start": 59.45,
+     "end": 59.73,
+     "confidence": 0.9893,
+     "speaker": "A"
+    },
+    {
+     "word": "see",
+     "start": 59.73,
+     "end": 59.91,
+     "confidence": 0.9815,
+     "speaker": "A"
+    },
+    {
+     "word": "them",
+     "start": 59.91,
+     "end": 60.05,
+     "confidence": 0.9926,
+     "speaker": "A"
+    },
+    {
+     "word": "through",
+     "start": 60.05,
+     "end": 60.27,
+     "confidence": 0.9961,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 60.27,
+     "end": 60.43,
+     "confidence": 0.9853,
+     "speaker": "A"
+    },
+    {
+     "word": "worst",
+     "start": 60.43,
+     "end": 60.75,
+     "confidence": 0.993,
+     "speaker": "A"
+    },
+    {
+     "word": "drought",
+     "start": 60.75,
+     "end": 61.07,
+     "confidence": 0.9934,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 61.07,
+     "end": 61.23,
+     "confidence": 0.9788,
+     "speaker": "A"
+    },
+    {
+     "word": "over",
+     "start": 61.23,
+     "end": 61.47,
+     "confidence": 0.9811,
+     "speaker": "A"
+    },
+    {
+     "word": "50",
+     "start": 61.47,
+     "end": 61.87,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "years.",
+     "start": 61.87,
+     "end": 62.47,
+     "confidence": 0.994,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 62.92
+  },
+  {
+   "id": 9,
+   "start": 63.06,
+   "speaker": "P",
+   "en": "Many farmers feel that while the money is welcome it has come too late to save them and their farms from financial ruin and are angry that the government did not act sooner.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Many",
+     "start": 63.51,
+     "end": 63.67,
+     "confidence": 0.9948,
+     "speaker": "A"
+    },
+    {
+     "word": "farmers",
+     "start": 63.67,
+     "end": 64.03,
+     "confidence": 0.981,
+     "speaker": "A"
+    },
+    {
+     "word": "feel",
+     "start": 64.03,
+     "end": 64.31,
+     "confidence": 0.9961,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 64.31,
+     "end": 64.45,
+     "confidence": 0.9945,
+     "speaker": "A"
+    },
+    {
+     "word": "while",
+     "start": 64.45,
+     "end": 64.57,
+     "confidence": 0.9334,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 64.57,
+     "end": 64.73,
+     "confidence": 0.9758,
+     "speaker": "A"
+    },
+    {
+     "word": "money",
+     "start": 64.73,
+     "end": 64.93,
+     "confidence": 0.9765,
+     "speaker": "A"
+    },
+    {
+     "word": "is",
+     "start": 64.93,
+     "end": 65.11,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "welcome,",
+     "start": 65.11,
+     "end": 65.56,
+     "confidence": 0.9596,
+     "speaker": "A"
+    },
+    {
+     "word": "it",
+     "start": 65.79,
+     "end": 65.81,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "has",
+     "start": 65.81,
+     "end": 65.97,
+     "confidence": 0.9488,
+     "speaker": "A"
+    },
+    {
+     "word": "come",
+     "start": 65.97,
+     "end": 66.25,
+     "confidence": 0.993,
+     "speaker": "A"
+    },
+    {
+     "word": "too",
+     "start": 66.25,
+     "end": 66.51,
+     "confidence": 0.9813,
+     "speaker": "A"
+    },
+    {
+     "word": "late",
+     "start": 66.51,
+     "end": 66.65,
+     "confidence": 0.978,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 66.65,
+     "end": 66.81,
+     "confidence": 0.996,
+     "speaker": "A"
+    },
+    {
+     "word": "save",
+     "start": 66.81,
+     "end": 67.07,
+     "confidence": 0.9947,
+     "speaker": "A"
+    },
+    {
+     "word": "them",
+     "start": 67.07,
+     "end": 67.29,
+     "confidence": 0.9954,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 67.29,
+     "end": 67.57,
+     "confidence": 0.9411,
+     "speaker": "A"
+    },
+    {
+     "word": "their",
+     "start": 67.57,
+     "end": 67.77,
+     "confidence": 0.9502,
+     "speaker": "A"
+    },
+    {
+     "word": "farms",
+     "start": 67.77,
+     "end": 68.15,
+     "confidence": 0.9895,
+     "speaker": "A"
+    },
+    {
+     "word": "from",
+     "start": 68.15,
+     "end": 68.41,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "financial",
+     "start": 68.41,
+     "end": 68.93,
+     "confidence": 0.9833,
+     "speaker": "A"
+    },
+    {
+     "word": "ruin,",
+     "start": 68.93,
+     "end": 69.69,
+     "confidence": 0.7465,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 69.69,
+     "end": 69.79,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 69.79,
+     "end": 69.97,
+     "confidence": 0.9033,
+     "speaker": "A"
+    },
+    {
+     "word": "angry",
+     "start": 69.97,
+     "end": 70.27,
+     "confidence": 0.9701,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 70.27,
+     "end": 70.43,
+     "confidence": 0.9867,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 70.43,
+     "end": 70.51,
+     "confidence": 0.9848,
+     "speaker": "A"
+    },
+    {
+     "word": "government",
+     "start": 70.51,
+     "end": 70.89,
+     "confidence": 0.9722,
+     "speaker": "A"
+    },
+    {
+     "word": "did",
+     "start": 70.89,
+     "end": 71.17,
+     "confidence": 0.9921,
+     "speaker": "A"
+    },
+    {
+     "word": "not",
+     "start": 71.17,
+     "end": 71.39,
+     "confidence": 0.9869,
+     "speaker": "A"
+    },
+    {
+     "word": "act",
+     "start": 71.39,
+     "end": 71.73,
+     "confidence": 0.995,
+     "speaker": "A"
+    },
+    {
+     "word": "sooner.",
+     "start": 71.73,
+     "end": 72.43,
+     "confidence": 0.9948,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    16
+   ],
+   "end": 72.88
+  },
+  {
+   "id": 10,
+   "start": 73.34,
+   "speaker": "P",
+   "en": "A group of school children who were travelling in a privately chartered aeroplane from Sydney to Queensland to take part in a musical concert found themselves swimming for the shore when their aeroplane had to land in the sea just three minutes after taking off from Sydney airport.",
+   "zh": "",
+   "words": [
+    {
+     "word": "A",
+     "start": 73.79,
+     "end": 73.85,
+     "confidence": 0.9399,
+     "speaker": "A"
+    },
+    {
+     "word": "group",
+     "start": 73.85,
+     "end": 73.99,
+     "confidence": 0.9832,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 73.99,
+     "end": 74.25,
+     "confidence": 0.9777,
+     "speaker": "A"
+    },
+    {
+     "word": "school",
+     "start": 74.25,
+     "end": 74.51,
+     "confidence": 0.9823,
+     "speaker": "A"
+    },
+    {
+     "word": "children",
+     "start": 74.51,
+     "end": 74.99,
+     "confidence": 0.5225,
+     "speaker": "A"
+    },
+    {
+     "word": "who",
+     "start": 74.99,
+     "end": 75.23,
+     "confidence": 0.9228,
+     "speaker": "A"
+    },
+    {
+     "word": "were",
+     "start": 75.23,
+     "end": 75.43,
+     "confidence": 0.9845,
+     "speaker": "A"
+    },
+    {
+     "word": "travelling",
+     "start": 75.43,
+     "end": 75.69,
+     "confidence": 0.8373,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 75.69,
+     "end": 75.87,
+     "confidence": 0.9908,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 75.87,
+     "end": 76.05,
+     "confidence": 0.9923,
+     "speaker": "A"
+    },
+    {
+     "word": "privately",
+     "start": 76.05,
+     "end": 76.39,
+     "confidence": 0.9823,
+     "speaker": "A"
+    },
+    {
+     "word": "chartered",
+     "start": 76.39,
+     "end": 76.87,
+     "confidence": 0.9015,
+     "speaker": "A"
+    },
+    {
+     "word": "aeroplane",
+     "start": 76.87,
+     "end": 77.23,
+     "confidence": 0.9816,
+     "speaker": "A"
+    },
+    {
+     "word": "from",
+     "start": 77.23,
+     "end": 77.47,
+     "confidence": 0.993,
+     "speaker": "A"
+    },
+    {
+     "word": "Sydney",
+     "start": 77.47,
+     "end": 77.79,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 77.79,
+     "end": 77.97,
+     "confidence": 0.9958,
+     "speaker": "A"
+    },
+    {
+     "word": "Queensland",
+     "start": 77.97,
+     "end": 78.51,
+     "confidence": 0.9916,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 78.51,
+     "end": 78.75,
+     "confidence": 0.9679,
+     "speaker": "A"
+    },
+    {
+     "word": "take",
+     "start": 78.75,
+     "end": 78.95,
+     "confidence": 0.9672,
+     "speaker": "A"
+    },
+    {
+     "word": "part",
+     "start": 78.95,
+     "end": 79.29,
+     "confidence": 0.9719,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 79.29,
+     "end": 79.41,
+     "confidence": 0.9923,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 79.41,
+     "end": 79.55,
+     "confidence": 0.9651,
+     "speaker": "A"
+    },
+    {
+     "word": "musical",
+     "start": 79.55,
+     "end": 79.93,
+     "confidence": 0.9891,
+     "speaker": "A"
+    },
+    {
+     "word": "concert",
+     "start": 79.93,
+     "end": 80.35,
+     "confidence": 0.9848,
+     "speaker": "A"
+    },
+    {
+     "word": "found",
+     "start": 80.772,
+     "end": 81.013,
+     "confidence": 0.7464,
+     "speaker": "A"
+    },
+    {
+     "word": "themselves",
+     "start": 81.013,
+     "end": 81.431,
+     "confidence": 0.992,
+     "speaker": "A"
+    },
+    {
+     "word": "swimming",
+     "start": 81.431,
+     "end": 81.864,
+     "confidence": 0.9847,
+     "speaker": "A"
+    },
+    {
+     "word": "for",
+     "start": 81.896,
+     "end": 82.041,
+     "confidence": 0.9949,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 82.041,
+     "end": 82.137,
+     "confidence": 0.9903,
+     "speaker": "A"
+    },
+    {
+     "word": "shore",
+     "start": 82.137,
+     "end": 82.41,
+     "confidence": 0.9878,
+     "speaker": "A"
+    },
+    {
+     "word": "when",
+     "start": 82.78,
+     "end": 82.892,
+     "confidence": 0.9544,
+     "speaker": "A"
+    },
+    {
+     "word": "their",
+     "start": 82.924,
+     "end": 83.165,
+     "confidence": 0.9377,
+     "speaker": "A"
+    },
+    {
+     "word": "aeroplane",
+     "start": 83.165,
+     "end": 83.551,
+     "confidence": 0.9603,
+     "speaker": "A"
+    },
+    {
+     "word": "had",
+     "start": 83.647,
+     "end": 83.808,
+     "confidence": 0.964,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 83.808,
+     "end": 83.968,
+     "confidence": 0.9838,
+     "speaker": "A"
+    },
+    {
+     "word": "land",
+     "start": 83.984,
+     "end": 84.241,
+     "confidence": 0.986,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 84.241,
+     "end": 84.322,
+     "confidence": 0.9864,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 84.322,
+     "end": 84.402,
+     "confidence": 0.9891,
+     "speaker": "A"
+    },
+    {
+     "word": "sea",
+     "start": 84.402,
+     "end": 84.771,
+     "confidence": 0.9944,
+     "speaker": "A"
+    },
+    {
+     "word": "just",
+     "start": 85.028,
+     "end": 85.333,
+     "confidence": 0.9132,
+     "speaker": "A"
+    },
+    {
+     "word": "3",
+     "start": 85.333,
+     "end": 85.574,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "minutes",
+     "start": 85.574,
+     "end": 85.976,
+     "confidence": 0.9877,
+     "speaker": "A"
+    },
+    {
+     "word": "after",
+     "start": 85.976,
+     "end": 86.152,
+     "confidence": 0.9805,
+     "speaker": "A"
+    },
+    {
+     "word": "taking",
+     "start": 86.152,
+     "end": 86.538,
+     "confidence": 0.9801,
+     "speaker": "A"
+    },
+    {
+     "word": "off",
+     "start": 86.538,
+     "end": 86.811,
+     "confidence": 0.987,
+     "speaker": "A"
+    },
+    {
+     "word": "from",
+     "start": 86.939,
+     "end": 87.052,
+     "confidence": 0.976,
+     "speaker": "A"
+    },
+    {
+     "word": "Sydney",
+     "start": 87.052,
+     "end": 87.421,
+     "confidence": 0.9914,
+     "speaker": "A"
+    },
+    {
+     "word": "Airport.",
+     "start": 87.421,
+     "end": 87.903,
+     "confidence": 0.8529,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 88.753
+  },
+  {
+   "id": 11,
+   "start": 87.952,
+   "speaker": "P",
+   "en": "The pilot managed to bring the aircraft and its 50 passengers down safely in the calm waters of Botany Bay where boats and pleasurecraft were able to come to the rescue of the boys.",
+   "zh": "",
+   "words": [
+    {
+     "word": "The",
+     "start": 88.802,
+     "end": 88.883,
+     "confidence": 0.9963,
+     "speaker": "A"
+    },
+    {
+     "word": "pilot",
+     "start": 88.883,
+     "end": 89.204,
+     "confidence": 0.9739,
+     "speaker": "A"
+    },
+    {
+     "word": "managed",
+     "start": 89.204,
+     "end": 89.589,
+     "confidence": 0.9947,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 89.589,
+     "end": 89.67,
+     "confidence": 0.9906,
+     "speaker": "A"
+    },
+    {
+     "word": "bring",
+     "start": 89.67,
+     "end": 89.814,
+     "confidence": 0.9922,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 89.846,
+     "end": 90.007,
+     "confidence": 0.9915,
+     "speaker": "A"
+    },
+    {
+     "word": "aircraft",
+     "start": 90.007,
+     "end": 90.425,
+     "confidence": 0.9912,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 90.553,
+     "end": 90.649,
+     "confidence": 0.9706,
+     "speaker": "A"
+    },
+    {
+     "word": "its",
+     "start": 90.649,
+     "end": 90.81,
+     "confidence": 0.9907,
+     "speaker": "A"
+    },
+    {
+     "word": "50",
+     "start": 90.81,
+     "end": 91.131,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "passengers",
+     "start": 91.211,
+     "end": 91.661,
+     "confidence": 0.9824,
+     "speaker": "A"
+    },
+    {
+     "word": "down",
+     "start": 91.693,
+     "end": 91.934,
+     "confidence": 0.9939,
+     "speaker": "A"
+    },
+    {
+     "word": "safely",
+     "start": 91.934,
+     "end": 92.464,
+     "confidence": 0.9872,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 92.496,
+     "end": 92.577,
+     "confidence": 0.9898,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 92.577,
+     "end": 92.801,
+     "confidence": 0.9861,
+     "speaker": "A"
+    },
+    {
+     "word": "calm",
+     "start": 92.801,
+     "end": 93.026,
+     "confidence": 0.9783,
+     "speaker": "A"
+    },
+    {
+     "word": "waters",
+     "start": 93.123,
+     "end": 93.444,
+     "confidence": 0.991,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 93.444,
+     "end": 93.508,
+     "confidence": 0.9935,
+     "speaker": "A"
+    },
+    {
+     "word": "Botany",
+     "start": 93.54,
+     "end": 93.91,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "Bay,",
+     "start": 93.942,
+     "end": 94.183,
+     "confidence": 0.807,
+     "speaker": "A"
+    },
+    {
+     "word": "where",
+     "start": 94.745,
+     "end": 94.954,
+     "confidence": 0.9977,
+     "speaker": "A"
+    },
+    {
+     "word": "boats",
+     "start": 94.97,
+     "end": 95.307,
+     "confidence": 0.9851,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 95.468,
+     "end": 95.532,
+     "confidence": 0.8533,
+     "speaker": "A"
+    },
+    {
+     "word": "pleasure",
+     "start": 95.628,
+     "end": 95.949,
+     "confidence": 0.9815,
+     "speaker": "A"
+    },
+    {
+     "word": "craft",
+     "start": 95.949,
+     "end": 96.399,
+     "confidence": 0.9064,
+     "speaker": "A"
+    },
+    {
+     "word": "were",
+     "start": 96.592,
+     "end": 96.736,
+     "confidence": 0.9776,
+     "speaker": "A"
+    },
+    {
+     "word": "able",
+     "start": 96.752,
+     "end": 96.977,
+     "confidence": 0.9921,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 96.993,
+     "end": 97.09,
+     "confidence": 0.9813,
+     "speaker": "A"
+    },
+    {
+     "word": "come",
+     "start": 97.154,
+     "end": 97.363,
+     "confidence": 0.9888,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 97.459,
+     "end": 97.539,
+     "confidence": 0.9845,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 97.539,
+     "end": 97.62,
+     "confidence": 0.9911,
+     "speaker": "A"
+    },
+    {
+     "word": "rescue",
+     "start": 97.636,
+     "end": 98.021,
+     "confidence": 0.9571,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 98.021,
+     "end": 98.117,
+     "confidence": 0.9875,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 98.117,
+     "end": 98.198,
+     "confidence": 0.988,
+     "speaker": "A"
+    },
+    {
+     "word": "boys.",
+     "start": 98.198,
+     "end": 98.487,
+     "confidence": 0.9899,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    19,
+    20
+   ],
+   "end": 99.337
+  },
+  {
+   "id": 12,
+   "start": 99.113,
+   "speaker": "P",
+   "en": "The fact that it was a weekend meant that there were hundreds of boats in the bay enjoying the good weather and this undoubtedly helped the rescue operation.",
+   "zh": "",
+   "words": [
+    {
+     "word": "The",
+     "start": 99.563,
+     "end": 99.643,
+     "confidence": 0.9906,
+     "speaker": "A"
+    },
+    {
+     "word": "fact",
+     "start": 99.643,
+     "end": 99.868,
+     "confidence": 0.9733,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 99.868,
+     "end": 99.98,
+     "confidence": 0.9916,
+     "speaker": "A"
+    },
+    {
+     "word": "it",
+     "start": 99.98,
+     "end": 100.045,
+     "confidence": 0.9894,
+     "speaker": "A"
+    },
+    {
+     "word": "was",
+     "start": 100.045,
+     "end": 100.173,
+     "confidence": 0.9931,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 100.189,
+     "end": 100.27,
+     "confidence": 0.9905,
+     "speaker": "A"
+    },
+    {
+     "word": "weekend",
+     "start": 100.286,
+     "end": 100.655,
+     "confidence": 0.9931,
+     "speaker": "A"
+    },
+    {
+     "word": "meant",
+     "start": 101.008,
+     "end": 101.169,
+     "confidence": 0.9801,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 101.169,
+     "end": 101.249,
+     "confidence": 0.9546,
+     "speaker": "A"
+    },
+    {
+     "word": "there",
+     "start": 101.249,
+     "end": 101.394,
+     "confidence": 0.9889,
+     "speaker": "A"
+    },
+    {
+     "word": "were",
+     "start": 101.394,
+     "end": 101.49,
+     "confidence": 0.995,
+     "speaker": "A"
+    },
+    {
+     "word": "hundreds",
+     "start": 101.49,
+     "end": 101.988,
+     "confidence": 0.9845,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 101.988,
+     "end": 102.1,
+     "confidence": 0.9938,
+     "speaker": "A"
+    },
+    {
+     "word": "boats",
+     "start": 102.133,
+     "end": 102.454,
+     "confidence": 0.998,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 102.454,
+     "end": 102.582,
+     "confidence": 0.9967,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 102.598,
+     "end": 102.695,
+     "confidence": 0.9785,
+     "speaker": "A"
+    },
+    {
+     "word": "bay",
+     "start": 102.695,
+     "end": 103.016,
+     "confidence": 0.9961,
+     "speaker": "A"
+    },
+    {
+     "word": "enjoying",
+     "start": 103.096,
+     "end": 103.45,
+     "confidence": 0.9392,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 103.498,
+     "end": 103.642,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "good",
+     "start": 103.658,
+     "end": 103.867,
+     "confidence": 0.9897,
+     "speaker": "A"
+    },
+    {
+     "word": "weather,",
+     "start": 103.899,
+     "end": 104.269,
+     "confidence": 0.8884,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 104.847,
+     "end": 104.911,
+     "confidence": 0.9948,
+     "speaker": "A"
+    },
+    {
+     "word": "this",
+     "start": 104.927,
+     "end": 105.136,
+     "confidence": 0.9814,
+     "speaker": "A"
+    },
+    {
+     "word": "undoubtedly",
+     "start": 105.168,
+     "end": 105.794,
+     "confidence": 0.9764,
+     "speaker": "A"
+    },
+    {
+     "word": "helped",
+     "start": 105.81,
+     "end": 106.051,
+     "confidence": 0.9858,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 106.051,
+     "end": 106.148,
+     "confidence": 0.9802,
+     "speaker": "A"
+    },
+    {
+     "word": "rescue",
+     "start": 106.148,
+     "end": 106.469,
+     "confidence": 0.9739,
+     "speaker": "A"
+    },
+    {
+     "word": "operation.",
+     "start": 106.469,
+     "end": 106.999,
+     "confidence": 0.9731,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 107.449
+  },
+  {
+   "id": 13,
+   "start": 107.468,
+   "speaker": "P",
+   "en": "'We owe our lives to the skill of the pilot,' said one of the boys, but the pilot replied modestly that it was 'all part of a day’s work'.",
+   "zh": "",
+   "words": [
+    {
+     "word": "\"We",
+     "start": 107.918,
+     "end": 108.143,
+     "confidence": 0.6481,
+     "speaker": "A"
+    },
+    {
+     "word": "owe",
+     "start": 108.143,
+     "end": 108.224,
+     "confidence": 0.9588,
+     "speaker": "A"
+    },
+    {
+     "word": "our",
+     "start": 108.305,
+     "end": 108.482,
+     "confidence": 0.9928,
+     "speaker": "A"
+    },
+    {
+     "word": "lives",
+     "start": 108.482,
+     "end": 108.853,
+     "confidence": 0.9716,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 108.869,
+     "end": 108.95,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 108.95,
+     "end": 109.047,
+     "confidence": 0.9905,
+     "speaker": "A"
+    },
+    {
+     "word": "skill",
+     "start": 109.047,
+     "end": 109.434,
+     "confidence": 0.9531,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 109.434,
+     "end": 109.515,
+     "confidence": 0.9907,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 109.515,
+     "end": 109.611,
+     "confidence": 0.9941,
+     "speaker": "A"
+    },
+    {
+     "word": "pilot,\"",
+     "start": 109.611,
+     "end": 109.966,
+     "confidence": 0.934,
+     "speaker": "A"
+    },
+    {
+     "word": "said",
+     "start": 110.24,
+     "end": 110.418,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "one",
+     "start": 110.418,
+     "end": 110.563,
+     "confidence": 0.9879,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 110.563,
+     "end": 110.644,
+     "confidence": 0.9922,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 110.644,
+     "end": 110.74,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "boys,",
+     "start": 110.74,
+     "end": 111.031,
+     "confidence": 0.9038,
+     "speaker": "A"
+    },
+    {
+     "word": "but",
+     "start": 111.45,
+     "end": 111.547,
+     "confidence": 0.95,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 111.547,
+     "end": 111.628,
+     "confidence": 0.9762,
+     "speaker": "A"
+    },
+    {
+     "word": "pilot",
+     "start": 111.628,
+     "end": 111.982,
+     "confidence": 0.9937,
+     "speaker": "A"
+    },
+    {
+     "word": "replied",
+     "start": 112.015,
+     "end": 112.37,
+     "confidence": 0.9941,
+     "speaker": "A"
+    },
+    {
+     "word": "modestly",
+     "start": 112.418,
+     "end": 112.886,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 113.144,
+     "end": 113.257,
+     "confidence": 0.9817,
+     "speaker": "A"
+    },
+    {
+     "word": "it",
+     "start": 113.257,
+     "end": 113.321,
+     "confidence": 0.9888,
+     "speaker": "A"
+    },
+    {
+     "word": "was",
+     "start": 113.321,
+     "end": 113.45,
+     "confidence": 0.9912,
+     "speaker": "A"
+    },
+    {
+     "word": "all",
+     "start": 113.789,
+     "end": 113.837,
+     "confidence": 0.8649,
+     "speaker": "A"
+    },
+    {
+     "word": "part",
+     "start": 113.95,
+     "end": 114.225,
+     "confidence": 0.9144,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 114.225,
+     "end": 114.305,
+     "confidence": 0.9822,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 114.305,
+     "end": 114.45,
+     "confidence": 0.9767,
+     "speaker": "A"
+    },
+    {
+     "word": "day's",
+     "start": 114.45,
+     "end": 114.709,
+     "confidence": 0.9896,
+     "speaker": "A"
+    },
+    {
+     "word": "work.",
+     "start": 114.757,
+     "end": 114.999,
+     "confidence": 0.9919,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 115.449
+  },
+  {
+   "id": 14,
+   "start": 115.355,
+   "speaker": "P",
+   "en": "However, all their musical instruments were lost and they never got to play at their concert.",
+   "zh": "",
+   "words": [
+    {
+     "word": "However,",
+     "start": 115.805,
+     "end": 116.144,
+     "confidence": 0.993,
+     "speaker": "A"
+    },
+    {
+     "word": "all",
+     "start": 116.531,
+     "end": 116.58,
+     "confidence": 0.9975,
+     "speaker": "A"
+    },
+    {
+     "word": "their",
+     "start": 116.628,
+     "end": 116.789,
+     "confidence": 0.9921,
+     "speaker": "A"
+    },
+    {
+     "word": "musical",
+     "start": 116.789,
+     "end": 117.209,
+     "confidence": 0.9952,
+     "speaker": "A"
+    },
+    {
+     "word": "instruments",
+     "start": 117.209,
+     "end": 117.773,
+     "confidence": 0.9837,
+     "speaker": "A"
+    },
+    {
+     "word": "were",
+     "start": 117.902,
+     "end": 117.983,
+     "confidence": 0.9959,
+     "speaker": "A"
+    },
+    {
+     "word": "lost",
+     "start": 117.983,
+     "end": 118.37,
+     "confidence": 0.997,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 118.564,
+     "end": 118.628,
+     "confidence": 0.6491,
+     "speaker": "A"
+    },
+    {
+     "word": "they",
+     "start": 118.644,
+     "end": 118.725,
+     "confidence": 0.9941,
+     "speaker": "A"
+    },
+    {
+     "word": "never",
+     "start": 118.741,
+     "end": 119.048,
+     "confidence": 0.9918,
+     "speaker": "A"
+    },
+    {
+     "word": "got",
+     "start": 119.048,
+     "end": 119.193,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 119.193,
+     "end": 119.29,
+     "confidence": 0.9956,
+     "speaker": "A"
+    },
+    {
+     "word": "play",
+     "start": 119.29,
+     "end": 119.612,
+     "confidence": 0.9871,
+     "speaker": "A"
+    },
+    {
+     "word": "at",
+     "start": 119.693,
+     "end": 119.741,
+     "confidence": 0.9946,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 119.757,
+     "end": 119.854,
+     "confidence": 0.9899,
+     "speaker": "A"
+    },
+    {
+     "word": "concert.",
+     "start": 119.854,
+     "end": 120.177,
+     "confidence": 0.9876,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    21
+   ],
+   "end": 120.627
   }
+ ],
+ "questions": [
+  {
+   "title": "Questions 11–21",
+   "type": "mixed",
+   "instructions": [
+    "Complete the original Cambridge IELTS listening questions below."
+   ],
+   "source_text": "Example\nB\nMoney promised for drought victims\nSECTION 2 Questions 11-21\nQuestions 11-13\nTick the THREE other items which are mentioned in the news headlines.\nNEWS HEADLINES\nA\nRivers flood in the north\nC\nNurses on strike in Melbourne\nD\nPassengers rescued from ship\nE\nPassengers rescued from plane\nF\nBus and train drivers national strike threat\nG\nTeachers demand more pay\nH\nNew uniform for QANTAS staff\nI\nNational airports under new management\nü\nQuestions 14-21\nComplete the notes below by writing NO MORE THAN THREE WORDS in the spaces\nprovided.\nThe Government plans to give (14) $ ................................................ to assist the\nfarmers. This money was to be spent on improving Sydney’s\n(15) ........................................................................ but has now been re-allocated.\nAustralia has experienced its worst drought in over fifty years.\nFarmers say that the money will not help them because it is\n(16) ............................................................. .\nAn aeroplane which was carrying a group of (17) ..................................................\nwas forced to land just (18) ................................................. minutes after take-off.\nThe passengers were rescued by (19) ............................................................ . The\noperation was helped because of the good weather. The passengers\nthanked the (20) ............................................................... for saving their lives but\nunfortunately they lost their (21) .................................................................. .",
+   "items": [
+    {
+     "number": 11,
+     "prompt": "Question 11（请根据上方原书题目作答）",
+     "answer": "E",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 12,
+     "prompt": "Question 12（请根据上方原书题目作答）",
+     "answer": "F",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 13,
+     "prompt": "Question 13（请根据上方原书题目作答）",
+     "answer": "H",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 14,
+     "prompt": "otes below by writing NO MORE THAN THREE WORDS in the spaces provided. The Government plans to give (14) $ ................................................ to assist the farmers. This money was to be spent on improving Sydney’s (15) ...................................................",
+     "answer": "$250 million",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 15,
+     "prompt": "(15) ........................................................................ but has now been re-allocated. Australia has experienced its worst drought in over fifty years. Farmers say that the money will not help them because it is (16) ............................................................. . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers",
+     "answer": "roads / road system",
+     "evidence_segment": 7,
+     "paraphrase": null
+    },
+    {
+     "number": 16,
+     "prompt": "(16) ............................................................. . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers thanked the (20) ............................................................... for saving their lives but unfortunately they lost their (21) .................................................................. .",
+     "answer": "too late",
+     "evidence_segment": 9,
+     "paraphrase": null
+    },
+    {
+     "number": 17,
+     "prompt": "...................................................... . An aeroplane which was carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescu",
+     "answer": "school children / boys",
+     "evidence_segment": 3,
+     "paraphrase": null
+    },
+    {
+     "number": 18,
+     "prompt": "carrying a group of (17) .................................................. was forced to land just (18) ................................................. minutes after take-off. The passengers were rescued by (19) ............................................................ . The op",
+     "answer": "3",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 19,
+     "prompt": "............................................ minutes after take-off. The passengers were rescued by (19) ............................................................ . The operation was helped because of the good weather. The passengers thanked the (20) ..............................",
+     "answer": "boats / pleasure craft",
+     "evidence_segment": 11,
+     "paraphrase": null
+    },
+    {
+     "number": 20,
+     "prompt": "................ . The operation was helped because of the good weather. The passengers thanked the (20) ............................................................... for saving their lives but unfortunately they lost their (21) .....................................................",
+     "answer": "pilot",
+     "evidence_segment": 11,
+     "paraphrase": null
+    },
+    {
+     "number": 21,
+     "prompt": ".......................................... for saving their lives but unfortunately they lost their (21) .................................................................. .",
+     "answer": "musical instruments",
+     "evidence_segment": 14,
+     "paraphrase": null
+    }
+   ]
+  }
+ ],
+ "alignment": {
+  "engine": "assemblyai",
+  "model": "universal-3-pro",
+  "granularity": "word",
+  "fixed_transcript": true,
+  "source_word_count": 372,
+  "assemblyai_word_count": 376,
+  "matched_segment_count": 14,
+  "unmatched_segment_count": 0,
+  "low_confidence_segment_count": 0,
+  "edge_warning_segment_count": 6,
+  "fallback_segment_count": 0,
+  "audio_duration_seconds": 121,
+  "prompted_verbatim": true,
+  "window_policy": "0.45s normal padding; 0.85s when ASR edge is incomplete; 0.10s neighbor overlap"
+ }
 }

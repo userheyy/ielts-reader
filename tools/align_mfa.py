@@ -11,6 +11,7 @@ MFA isolated from the app's other speech-recognition environments.
 
 import argparse
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -50,6 +51,11 @@ def run(command):
     subprocess.run(command, check=True)
 
 
+def hf_offline_args():
+    """Use the mounted Hugging Face cache without a network check when requested."""
+    return ["-e", "HF_HUB_OFFLINE=1"] if os.environ.get("MFA_HF_OFFLINE") == "1" else []
+
+
 def align_source(source, audio, beam=100, retry_beam=400, num_jobs=4,
                  trim_padding=2.0, mfa_root="/mfa"):
     """Align the complete article once, trimming only leading silence.
@@ -87,6 +93,7 @@ def align_source(source, audio, beam=100, retry_beam=400, num_jobs=4,
             "-e", "HF_HOME=/home/mfauser/.cache/huggingface",
             "-e", "HF_HUB_CACHE=/home/mfauser/.cache/huggingface/hub",
             "-e", "HUGGINGFACE_HUB_CACHE=/home/mfauser/.cache/huggingface/hub",
+            *hf_offline_args(),
             IMAGE, "mfa", "align_one_hf",
             "/data/audio.wav", "/data/transcript.lab", MODEL_ID, "/data/alignment",
             "--config_path", "/data/mfa-config.yaml",
@@ -220,6 +227,7 @@ def _align_source_clip(source, audio, clip_start, clip_end, beam, retry_beam,
             "-e", "HF_HOME=/home/mfauser/.cache/huggingface",
             "-e", "HF_HUB_CACHE=/home/mfauser/.cache/huggingface/hub",
             "-e", "HUGGINGFACE_HUB_CACHE=/home/mfauser/.cache/huggingface/hub",
+            *hf_offline_args(),
             IMAGE, "mfa", "align_one_hf",
             "/data/audio.wav", "/data/transcript.lab", MODEL_ID, "/data/alignment",
             "--config_path", "/data/mfa-config.yaml",

@@ -1,3562 +1,4749 @@
 {
-  "id": "c1-test2-l1",
-  "source": "剑桥雅思1 · Test 2 · Part 1",
-  "title": "Student accommodation",
-  "audio": "media/audio/c1-test2-part1.mp3",
-  "practice_unit": "speaker_turn",
-  "segments": [
+ "id": "c1-test2-l1",
+ "source": "剑桥雅思1 · Test 2 · Part 1",
+ "title": "Student accommodation",
+ "audio": "media/audio/c1-test2-part1.mp3",
+ "practice_unit": "speaker_turn",
+ "segments": [
+  {
+   "id": 1,
+   "start": 7.245,
+   "speaker": "COUNSELLOR",
+   "en": "Hi there, Kate. Come on in. How are you today?",
+   "zh": "",
+   "words": [
     {
-      "id": 1,
-      "start": 7.67,
-      "speaker": "COUNSELLOR",
-      "en": "Hi there, Kate. Come on in. How are you today?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Hi",
-          "start": 7.67,
-          "end": 7.75
-        },
-        {
-          "word": "there",
-          "start": 7.75,
-          "end": 8.12
-        },
-        {
-          "word": "Kate",
-          "start": 8.12,
-          "end": 8.47
-        },
-        {
-          "word": "Come",
-          "start": 8.55,
-          "end": 8.73
-        },
-        {
-          "word": "on",
-          "start": 8.73,
-          "end": 8.87
-        },
-        {
-          "word": "in",
-          "start": 8.87,
-          "end": 9.27
-        },
-        {
-          "word": "How",
-          "start": 9.45,
-          "end": 9.54
-        },
-        {
-          "word": "are",
-          "start": 9.54,
-          "end": 9.63
-        },
-        {
-          "word": "you",
-          "start": 9.66,
-          "end": 9.82
-        },
-        {
-          "word": "today",
-          "start": 9.82,
-          "end": 10.28
-        }
-      ],
-      "answers": [],
-      "end": 10.28
+     "word": "Hi",
+     "start": 7.695,
+     "end": 7.905,
+     "confidence": 0.7939,
+     "speaker": "A"
     },
     {
-      "id": 2,
-      "start": 10.55,
-      "speaker": "KATE",
-      "en": "Fine thanks.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Fine",
-          "start": 10.55,
-          "end": 10.86
-        },
-        {
-          "word": "thanks",
-          "start": 10.86,
-          "end": 11.23
-        }
-      ],
-      "answers": [],
-      "end": 11.23
+     "word": "there,",
+     "start": 7.921,
+     "end": 8.163,
+     "confidence": 0.9713,
+     "speaker": "A"
     },
     {
-      "id": 3,
-      "start": 11.64,
-      "speaker": "COUNSELLOR",
-      "en": "Hi, Luki. How's things?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Hi",
-          "start": 11.64,
-          "end": 11.87
-        },
-        {
-          "word": "Luki",
-          "start": 11.9,
-          "end": 12.25
-        },
-        {
-          "word": "How",
-          "start": 12.25,
-          "end": 12.38
-        },
-        {
-          "word": "'s",
-          "start": 12.25,
-          "end": 12.38
-        },
-        {
-          "word": "things",
-          "start": 12.38,
-          "end": 12.95
-        }
-      ],
-      "answers": [],
-      "end": 12.95
+     "word": "Kate,",
+     "start": 8.179,
+     "end": 8.502,
+     "confidence": 0.7793,
+     "speaker": "A"
     },
     {
-      "id": 4,
-      "start": 13.0,
-      "speaker": "LUKI",
-      "en": "OK.",
-      "zh": "",
-      "words": [
-        {
-          "word": "OK",
-          "start": 13.0,
-          "end": 13.48
-        }
-      ],
-      "answers": [],
-      "end": 13.48
+     "word": "come",
+     "start": 8.566,
+     "end": 8.711,
+     "confidence": 0.9987,
+     "speaker": "A"
     },
     {
-      "id": 5,
-      "start": 13.99,
-      "speaker": "COUNSELLOR",
-      "en": "Well, as I explained on the phone, I'm a Counsellor here at the Student Services section of the university and I'm interviewing overseas students to help me draw up a guide for new students so I'd be grateful if you could tell me a little about your time since you've been here in Cambridge.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 13.99,
-          "end": 14.44
-        },
-        {
-          "word": "as",
-          "start": 14.54,
-          "end": 14.68
-        },
-        {
-          "word": "I",
-          "start": 14.9,
-          "end": 14.95
-        },
-        {
-          "word": "explained",
-          "start": 14.95,
-          "end": 15.38
-        },
-        {
-          "word": "on",
-          "start": 15.38,
-          "end": 15.55
-        },
-        {
-          "word": "the",
-          "start": 15.55,
-          "end": 15.62
-        },
-        {
-          "word": "phone",
-          "start": 15.62,
-          "end": 16.1
-        },
-        {
-          "word": "I",
-          "start": 16.1,
-          "end": 16.379999
-        },
-        {
-          "word": "'m",
-          "start": 16.1,
-          "end": 16.379999
-        },
-        {
-          "word": "a",
-          "start": 16.379999,
-          "end": 16.450001
-        },
-        {
-          "word": "Counsellor",
-          "start": 16.450001,
-          "end": 16.799999
-        },
-        {
-          "word": "here",
-          "start": 16.799999,
-          "end": 17.309999
-        },
-        {
-          "word": "at",
-          "start": 17.309999,
-          "end": 17.42
-        },
-        {
-          "word": "the",
-          "start": 17.42,
-          "end": 17.58
-        },
-        {
-          "word": "Student",
-          "start": 17.58,
-          "end": 18.049999
-        },
-        {
-          "word": "Services",
-          "start": 18.049999,
-          "end": 18.450001
-        },
-        {
-          "word": "section",
-          "start": 18.530001,
-          "end": 18.860001
-        },
-        {
-          "word": "of",
-          "start": 18.860001,
-          "end": 18.969999
-        },
-        {
-          "word": "the",
-          "start": 18.969999,
-          "end": 19.030001
-        },
-        {
-          "word": "university",
-          "start": 19.030001,
-          "end": 19.73
-        },
-        {
-          "word": "and",
-          "start": 19.76,
-          "end": 20.0
-        },
-        {
-          "word": "I",
-          "start": 20.52,
-          "end": 20.74
-        },
-        {
-          "word": "'m",
-          "start": 20.52,
-          "end": 20.74
-        },
-        {
-          "word": "interviewing",
-          "start": 21.34,
-          "end": 21.719999
-        },
-        {
-          "word": "overseas",
-          "start": 21.93,
-          "end": 22.360001
-        },
-        {
-          "word": "students",
-          "start": 22.469999,
-          "end": 23.01
-        },
-        {
-          "word": "to",
-          "start": 23.01,
-          "end": 23.129999
-        },
-        {
-          "word": "help",
-          "start": 23.129999,
-          "end": 23.33
-        },
-        {
-          "word": "me",
-          "start": 23.33,
-          "end": 23.43
-        },
-        {
-          "word": "draw",
-          "start": 23.43,
-          "end": 23.68
-        },
-        {
-          "word": "up",
-          "start": 23.68,
-          "end": 23.870001
-        },
-        {
-          "word": "a",
-          "start": 23.870001,
-          "end": 23.950001
-        },
-        {
-          "word": "guide",
-          "start": 23.950001,
-          "end": 24.309999
-        },
-        {
-          "word": "for",
-          "start": 24.309999,
-          "end": 24.41
-        },
-        {
-          "word": "new",
-          "start": 24.41,
-          "end": 24.65
-        },
-        {
-          "word": "students",
-          "start": 24.65,
-          "end": 25.26
-        },
-        {
-          "word": "so",
-          "start": 25.93,
-          "end": 25.99
-        },
-        {
-          "word": "I",
-          "start": 26.440001,
-          "end": 26.549999
-        },
-        {
-          "word": "'d",
-          "start": 26.549999,
-          "end": 26.6
-        },
-        {
-          "word": "be",
-          "start": 26.6,
-          "end": 26.709999
-        },
-        {
-          "word": "grateful",
-          "start": 26.709999,
-          "end": 27.139999
-        },
-        {
-          "word": "if",
-          "start": 27.139999,
-          "end": 27.290001
-        },
-        {
-          "word": "you",
-          "start": 27.290001,
-          "end": 27.35
-        },
-        {
-          "word": "could",
-          "start": 27.35,
-          "end": 27.52
-        },
-        {
-          "word": "tell",
-          "start": 27.52,
-          "end": 27.709999
-        },
-        {
-          "word": "me",
-          "start": 27.709999,
-          "end": 27.860001
-        },
-        {
-          "word": "a",
-          "start": 27.860001,
-          "end": 27.889999
-        },
-        {
-          "word": "little",
-          "start": 27.889999,
-          "end": 28.17
-        },
-        {
-          "word": "about",
-          "start": 28.17,
-          "end": 28.4
-        },
-        {
-          "word": "your",
-          "start": 28.4,
-          "end": 28.49
-        },
-        {
-          "word": "time",
-          "start": 28.49,
-          "end": 29.01
-        },
-        {
-          "word": "since",
-          "start": 29.040001,
-          "end": 29.219999
-        },
-        {
-          "word": "you",
-          "start": 29.219999,
-          "end": 29.33
-        },
-        {
-          "word": "'ve",
-          "start": 29.219999,
-          "end": 29.33
-        },
-        {
-          "word": "been",
-          "start": 29.33,
-          "end": 29.469999
-        },
-        {
-          "word": "here",
-          "start": 29.469999,
-          "end": 29.629999
-        },
-        {
-          "word": "in",
-          "start": 29.629999,
-          "end": 29.77
-        },
-        {
-          "word": "Cambridge",
-          "start": 29.77,
-          "end": 30.280001
-        }
-      ],
-      "answers": [],
-      "end": 30.280001
+     "word": "on",
+     "start": 8.808,
+     "end": 8.889,
+     "confidence": 0.9837,
+     "speaker": "A"
     },
     {
-      "id": 6,
-      "start": 30.549999,
-      "speaker": "KATE",
-      "en": "Right.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Right",
-          "start": 30.549999,
-          "end": 30.65
-        }
-      ],
-      "answers": [],
-      "end": 30.65
+     "word": "in.",
+     "start": 8.889,
+     "end": 9.115,
+     "confidence": 0.8726,
+     "speaker": "A"
     },
     {
-      "id": 7,
-      "start": 30.65,
-      "speaker": "LUKI",
-      "en": "Good idea.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Good",
-          "start": 30.65,
-          "end": 30.84
-        },
-        {
-          "word": "idea",
-          "start": 30.84,
-          "end": 31.129999
-        }
-      ],
-      "answers": [],
-      "end": 31.129999
+     "word": "How",
+     "start": 9.389,
+     "end": 9.518,
+     "confidence": 0.9912,
+     "speaker": "A"
     },
     {
-      "id": 8,
-      "start": 31.83,
-      "speaker": "COUNSELLOR",
-      "en": "Now, Kate let's start with you. OK, um this is your second semester isn't It? Could you tell us something about your first impressions of the town when you arrived?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Now",
-          "start": 31.83,
-          "end": 31.9
-        },
-        {
-          "word": "Kate",
-          "start": 31.9,
-          "end": 32.290001
-        },
-        {
-          "word": "let",
-          "start": 32.290001,
-          "end": 32.490002
-        },
-        {
-          "word": "'s",
-          "start": 32.290001,
-          "end": 32.490002
-        },
-        {
-          "word": "start",
-          "start": 32.490002,
-          "end": 32.740002
-        },
-        {
-          "word": "with",
-          "start": 32.740002,
-          "end": 32.950001
-        },
-        {
-          "word": "you",
-          "start": 32.950001,
-          "end": 33.259998
-        },
-        {
-          "word": "OK",
-          "start": 34.040001,
-          "end": 34.560001
-        },
-        {
-          "word": "um",
-          "start": 34.880001,
-          "end": 34.889999
-        },
-        {
-          "word": "this",
-          "start": 34.889999,
-          "end": 36.049999
-        },
-        {
-          "word": "is",
-          "start": 36.049999,
-          "end": 36.119999
-        },
-        {
-          "word": "your",
-          "start": 36.119999,
-          "end": 36.369999
-        },
-        {
-          "word": "second",
-          "start": 36.57,
-          "end": 36.98
-        },
-        {
-          "word": "semester",
-          "start": 37.02,
-          "end": 37.34
-        },
-        {
-          "word": "is",
-          "start": 37.380001,
-          "end": 37.540001
-        },
-        {
-          "word": "n't",
-          "start": 37.380001,
-          "end": 37.540001
-        },
-        {
-          "word": "It",
-          "start": 37.540001,
-          "end": 37.639999
-        },
-        {
-          "word": "Could",
-          "start": 37.639999,
-          "end": 37.75
-        },
-        {
-          "word": "you",
-          "start": 37.75,
-          "end": 37.919998
-        },
-        {
-          "word": "tell",
-          "start": 39.060001,
-          "end": 39.16
-        },
-        {
-          "word": "us",
-          "start": 39.16,
-          "end": 39.299999
-        },
-        {
-          "word": "something",
-          "start": 39.380001,
-          "end": 39.759998
-        },
-        {
-          "word": "about",
-          "start": 39.759998,
-          "end": 39.959999
-        },
-        {
-          "word": "your",
-          "start": 39.959999,
-          "end": 40.080002
-        },
-        {
-          "word": "first",
-          "start": 40.080002,
-          "end": 40.419998
-        },
-        {
-          "word": "impressions",
-          "start": 40.419998,
-          "end": 40.950001
-        },
-        {
-          "word": "of",
-          "start": 40.950001,
-          "end": 41.040001
-        },
-        {
-          "word": "the",
-          "start": 41.040001,
-          "end": 41.119999
-        },
-        {
-          "word": "town",
-          "start": 41.119999,
-          "end": 41.509998
-        },
-        {
-          "word": "when",
-          "start": 41.509998,
-          "end": 41.66
-        },
-        {
-          "word": "you",
-          "start": 41.66,
-          "end": 41.759998
-        },
-        {
-          "word": "arrived",
-          "start": 41.759998,
-          "end": 42.130001
-        }
-      ],
-      "answers": [],
-      "end": 42.130001
+     "word": "are",
+     "start": 9.534,
+     "end": 9.728,
+     "confidence": 0.9864,
+     "speaker": "A"
     },
     {
-      "id": 9,
-      "start": 43.23,
-      "speaker": "KATE",
-      "en": "Yeah well first of all I was struck by how quiet it is here in the evening",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yeah",
-          "start": 43.23,
-          "end": 43.48
-        },
-        {
-          "word": "well",
-          "start": 43.48,
-          "end": 43.75
-        },
-        {
-          "word": "first",
-          "start": 44.900002,
-          "end": 45.130001
-        },
-        {
-          "word": "of",
-          "start": 45.130001,
-          "end": 45.27
-        },
-        {
-          "word": "all",
-          "start": 45.27,
-          "end": 45.509998
-        },
-        {
-          "word": "I",
-          "start": 45.509998,
-          "end": 45.610001
-        },
-        {
-          "word": "was",
-          "start": 45.610001,
-          "end": 45.799999
-        },
-        {
-          "word": "struck",
-          "start": 45.799999,
-          "end": 46.119999
-        },
-        {
-          "word": "by",
-          "start": 46.189999,
-          "end": 46.389999
-        },
-        {
-          "word": "how",
-          "start": 46.389999,
-          "end": 46.650002
-        },
-        {
-          "word": "quiet",
-          "start": 46.709999,
-          "end": 47.240002
-        },
-        {
-          "word": "it",
-          "start": 47.240002,
-          "end": 47.349998
-        },
-        {
-          "word": "is",
-          "start": 47.349998,
-          "end": 47.630001
-        },
-        {
-          "word": "here",
-          "start": 47.630001,
-          "end": 47.830002
-        },
-        {
-          "word": "in",
-          "start": 47.830002,
-          "end": 47.950001
-        },
-        {
-          "word": "the",
-          "start": 47.950001,
-          "end": 48.02
-        },
-        {
-          "word": "evening",
-          "start": 48.02,
-          "end": 48.57
-        }
-      ],
-      "answers": [],
-      "end": 48.57
+     "word": "you",
+     "start": 9.776,
+     "end": 9.873,
+     "confidence": 0.9744,
+     "speaker": "A"
     },
     {
-      "id": 10,
-      "start": 49.049999,
-      "speaker": "COUNSELLOR",
-      "en": "Yes, I suppose Cambridge is a quiet place. Where did you live when you first arrived?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yes",
-          "start": 49.049999,
-          "end": 49.470001
-        },
-        {
-          "word": "I",
-          "start": 49.869999,
-          "end": 50.0
-        },
-        {
-          "word": "suppose",
-          "start": 50.0,
-          "end": 50.130001
-        },
-        {
-          "word": "Cambridge",
-          "start": 50.130001,
-          "end": 50.439999
-        },
-        {
-          "word": "is",
-          "start": 50.82,
-          "end": 50.950001
-        },
-        {
-          "word": "a",
-          "start": 50.950001,
-          "end": 51.09
-        },
-        {
-          "word": "quiet",
-          "start": 51.09,
-          "end": 51.57
-        },
-        {
-          "word": "place",
-          "start": 51.57,
-          "end": 51.689999
-        },
-        {
-          "word": "Where",
-          "start": 51.689999,
-          "end": 51.759998
-        },
-        {
-          "word": "did",
-          "start": 51.759998,
-          "end": 51.959999
-        },
-        {
-          "word": "you",
-          "start": 53.360001,
-          "end": 53.48
-        },
-        {
-          "word": "live",
-          "start": 53.939999,
-          "end": 54.27
-        },
-        {
-          "word": "when",
-          "start": 54.27,
-          "end": 54.41
-        },
-        {
-          "word": "you",
-          "start": 54.41,
-          "end": 54.52
-        },
-        {
-          "word": "first",
-          "start": 54.52,
-          "end": 54.860001
-        },
-        {
-          "word": "arrived",
-          "start": 54.860001,
-          "end": 55.34
-        }
-      ],
-      "answers": [],
-      "end": 55.34
-    },
-    {
-      "id": 11,
-      "start": 55.919998,
-      "speaker": "KATE",
-      "en": "Well, I went straight into student accommodation; it was a kind of student hostel.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 55.919998,
-          "end": 56.200001
-        },
-        {
-          "word": "I",
-          "start": 56.82,
-          "end": 56.950001
-        },
-        {
-          "word": "went",
-          "start": 56.950001,
-          "end": 57.16
-        },
-        {
-          "word": "straight",
-          "start": 57.16,
-          "end": 57.52
-        },
-        {
-          "word": "into",
-          "start": 57.52,
-          "end": 57.669998
-        },
-        {
-          "word": "student",
-          "start": 57.669998,
-          "end": 58.07
-        },
-        {
-          "word": "accommodation",
-          "start": 58.07,
-          "end": 58.950001
-        },
-        {
-          "word": "it",
-          "start": 59.470001,
-          "end": 59.700001
-        },
-        {
-          "word": "was",
-          "start": 59.700001,
-          "end": 59.91
-        },
-        {
-          "word": "a",
-          "start": 59.91,
-          "end": 59.970001
-        },
-        {
-          "word": "kind",
-          "start": 59.970001,
-          "end": 60.23
-        },
-        {
-          "word": "of",
-          "start": 60.23,
-          "end": 60.310001
-        },
-        {
-          "word": "student",
-          "start": 60.560001,
-          "end": 60.830002
-        },
-        {
-          "word": "hostel",
-          "start": 60.830002,
-          "end": 61.41
-        }
-      ],
-      "answers": [
-        1
-      ],
-      "end": 61.41
-    },
-    {
-      "id": 12,
-      "start": 61.66,
-      "speaker": "COUNSELLOR",
-      "en": "Ah right, so you didn't have to worry about doing your own cooking or anything like that?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Ah",
-          "start": 61.66,
-          "end": 61.720001
-        },
-        {
-          "word": "right",
-          "start": 61.720001,
-          "end": 61.98
-        },
-        {
-          "word": "so",
-          "start": 61.98,
-          "end": 62.060001
-        },
-        {
-          "word": "you",
-          "start": 62.060001,
-          "end": 62.360001
-        },
-        {
-          "word": "did",
-          "start": 62.5,
-          "end": 63.669998
-        },
-        {
-          "word": "n't",
-          "start": 62.5,
-          "end": 63.669998
-        },
-        {
-          "word": "have",
-          "start": 63.669998,
-          "end": 63.700001
-        },
-        {
-          "word": "to",
-          "start": 63.700001,
-          "end": 63.82
-        },
-        {
-          "word": "worry",
-          "start": 63.82,
-          "end": 64.160004
-        },
-        {
-          "word": "about",
-          "start": 64.160004,
-          "end": 64.339996
-        },
-        {
-          "word": "doing",
-          "start": 64.339996,
-          "end": 64.68
-        },
-        {
-          "word": "your",
-          "start": 64.68,
-          "end": 64.809998
-        },
-        {
-          "word": "own",
-          "start": 64.809998,
-          "end": 64.989998
-        },
-        {
-          "word": "cooking",
-          "start": 64.989998,
-          "end": 65.599998
-        },
-        {
-          "word": "or",
-          "start": 65.599998,
-          "end": 65.809998
-        },
-        {
-          "word": "anything",
-          "start": 65.839996,
-          "end": 66.190002
-        },
-        {
-          "word": "like",
-          "start": 66.190002,
-          "end": 66.419998
-        },
-        {
-          "word": "that",
-          "start": 66.419998,
-          "end": 66.68
-        }
-      ],
-      "answers": [],
-      "end": 66.68
-    },
-    {
-      "id": 13,
-      "start": 66.75,
-      "speaker": "KATE",
-      "en": "No, but sometimes I wished I had! The food at the hostel was awful.",
-      "zh": "",
-      "words": [
-        {
-          "word": "No",
-          "start": 66.75,
-          "end": 66.910004
-        },
-        {
-          "word": "but",
-          "start": 67.730003,
-          "end": 67.910004
-        },
-        {
-          "word": "sometimes",
-          "start": 67.989998,
-          "end": 68.32
-        },
-        {
-          "word": "I",
-          "start": 68.360001,
-          "end": 68.589996
-        },
-        {
-          "word": "wished",
-          "start": 68.589996,
-          "end": 68.830002
-        },
-        {
-          "word": "I",
-          "start": 68.830002,
-          "end": 68.949997
-        },
-        {
-          "word": "had",
-          "start": 68.949997,
-          "end": 69.449997
-        },
-        {
-          "word": "The",
-          "start": 70.190002,
-          "end": 70.290001
-        },
-        {
-          "word": "food",
-          "start": 70.290001,
-          "end": 70.559998
-        },
-        {
-          "word": "at",
-          "start": 70.559998,
-          "end": 70.639999
-        },
-        {
-          "word": "the",
-          "start": 70.639999,
-          "end": 70.699997
-        },
-        {
-          "word": "hostel",
-          "start": 70.699997,
-          "end": 71.129997
-        },
-        {
-          "word": "was",
-          "start": 71.129997,
-          "end": 71.25
-        },
-        {
-          "word": "awful",
-          "start": 71.25,
-          "end": 71.43
-        }
-      ],
-      "answers": [],
-      "end": 71.43
-    },
-    {
-      "id": 14,
-      "start": 71.629997,
-      "speaker": "COUNSELLOR",
-      "en": "Oh dear. But how were the other students?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Oh",
-          "start": 71.629997,
-          "end": 71.75
-        },
-        {
-          "word": "dear",
-          "start": 71.93,
-          "end": 72.279999
-        },
-        {
-          "word": "But",
-          "start": 72.510002,
-          "end": 72.849998
-        },
-        {
-          "word": "how",
-          "start": 72.849998,
-          "end": 73.220001
-        },
-        {
-          "word": "were",
-          "start": 73.220001,
-          "end": 73.379997
-        },
-        {
-          "word": "the",
-          "start": 73.879997,
-          "end": 73.970001
-        },
-        {
-          "word": "other",
-          "start": 73.970001,
-          "end": 74.110001
-        },
-        {
-          "word": "students",
-          "start": 74.699997,
-          "end": 75.25
-        }
-      ],
-      "answers": [],
-      "end": 75.25
-    },
-    {
-      "id": 15,
-      "start": 76.260002,
-      "speaker": "KATE",
-      "en": "To be honest I haven’t managed to make many friends even though the place is full. People seem to keep to themselves; they’re not really very friendly.",
-      "zh": "",
-      "words": [
-        {
-          "word": "To",
-          "start": 76.260002,
-          "end": 76.339996
-        },
-        {
-          "word": "be",
-          "start": 76.339996,
-          "end": 76.5
-        },
-        {
-          "word": "honest",
-          "start": 76.5,
-          "end": 76.82
-        },
-        {
-          "word": "I",
-          "start": 77.43,
-          "end": 77.730003
-        },
-        {
-          "word": "have",
-          "start": 77.839996,
-          "end": 78.110001
-        },
-        {
-          "word": "n't",
-          "start": 77.839996,
-          "end": 78.110001
-        },
-        {
-          "word": "managed",
-          "start": 78.279999,
-          "end": 78.790001
-        },
-        {
-          "word": "to",
-          "start": 78.790001,
-          "end": 78.82
-        },
-        {
-          "word": "make",
-          "start": 78.82,
-          "end": 79.07
-        },
-        {
-          "word": "many",
-          "start": 79.07,
-          "end": 79.339996
-        },
-        {
-          "word": "friends",
-          "start": 79.339996,
-          "end": 79.910004
-        },
-        {
-          "word": "even",
-          "start": 80.029999,
-          "end": 80.300003
-        },
-        {
-          "word": "though",
-          "start": 80.300003,
-          "end": 80.43
-        },
-        {
-          "word": "the",
-          "start": 80.43,
-          "end": 80.489998
-        },
-        {
-          "word": "place",
-          "start": 80.489998,
-          "end": 80.809998
-        },
-        {
-          "word": "is",
-          "start": 80.809998,
-          "end": 80.940002
-        },
-        {
-          "word": "full",
-          "start": 80.940002,
-          "end": 81.379997
-        },
-        {
-          "word": "People",
-          "start": 82.300003,
-          "end": 82.580002
-        },
-        {
-          "word": "seem",
-          "start": 82.580002,
-          "end": 82.849998
-        },
-        {
-          "word": "to",
-          "start": 82.849998,
-          "end": 82.919998
-        },
-        {
-          "word": "keep",
-          "start": 82.919998,
-          "end": 83.209999
-        },
-        {
-          "word": "to",
-          "start": 83.209999,
-          "end": 83.279999
-        },
-        {
-          "word": "themselves",
-          "start": 83.279999,
-          "end": 83.57
-        },
-        {
-          "word": "they",
-          "start": 84.239998,
-          "end": 84.32
-        },
-        {
-          "word": "'re",
-          "start": 84.239998,
-          "end": 84.32
-        },
-        {
-          "word": "not",
-          "start": 84.32,
-          "end": 84.68
-        },
-        {
-          "word": "really",
-          "start": 84.82,
-          "end": 85.07
-        },
-        {
-          "word": "very",
-          "start": 85.07,
-          "end": 85.330002
-        },
-        {
-          "word": "friendly",
-          "start": 85.330002,
-          "end": 86.589996
-        }
-      ],
-      "answers": [],
-      "end": 86.589996
-    },
-    {
-      "id": 16,
-      "start": 86.589996,
-      "speaker": "COUNSELLOR",
-      "en": "Oh I’m sorry to hear that. Well, what about the actual course? You’re studying … uh?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Oh",
-          "start": 86.589996,
-          "end": 86.620003
-        },
-        {
-          "word": "I",
-          "start": 86.690002,
-          "end": 86.860001
-        },
-        {
-          "word": "'m",
-          "start": 86.690002,
-          "end": 86.860001
-        },
-        {
-          "word": "sorry",
-          "start": 86.860001,
-          "end": 86.980003
-        },
-        {
-          "word": "to",
-          "start": 86.980003,
-          "end": 87.089996
-        },
-        {
-          "word": "hear",
-          "start": 87.089996,
-          "end": 87.75
-        },
-        {
-          "word": "that",
-          "start": 88.059998,
-          "end": 88.120003
-        },
-        {
-          "word": "Well",
-          "start": 88.120003,
-          "end": 88.449997
-        },
-        {
-          "word": "what",
-          "start": 89.199997,
-          "end": 89.839996
-        },
-        {
-          "word": "about",
-          "start": 89.839996,
-          "end": 89.919998
-        },
-        {
-          "word": "the",
-          "start": 89.919998,
-          "end": 90.239998
-        },
-        {
-          "word": "actual",
-          "start": 90.239998,
-          "end": 90.459999
-        },
-        {
-          "word": "course",
-          "start": 90.459999,
-          "end": 90.959999
-        },
-        {
-          "word": "You",
-          "start": 91.639999,
-          "end": 91.900002
-        },
-        {
-          "word": "'re",
-          "start": 91.639999,
-          "end": 91.900002
-        },
-        {
-          "word": "studying",
-          "start": 91.900002,
-          "end": 92.699997
-        },
-        {
-          "word": "uh",
-          "start": 92.730003,
-          "end": 92.760002
-        }
-      ],
-      "answers": [],
-      "end": 92.760002
-    },
-    {
-      "id": 17,
-      "start": 92.760002,
-      "speaker": "KATE",
-      "en": "I’m doing a Masters by coursework in Environmental Studies.",
-      "zh": "",
-      "words": [
-        {
-          "word": "I",
-          "start": 92.760002,
-          "end": 92.989998
-        },
-        {
-          "word": "'m",
-          "start": 92.760002,
-          "end": 92.989998
-        },
-        {
-          "word": "doing",
-          "start": 92.989998,
-          "end": 93.269997
-        },
-        {
-          "word": "a",
-          "start": 93.650002,
-          "end": 94.25
-        },
-        {
-          "word": "Masters",
-          "start": 94.300003,
-          "end": 94.629997
-        },
-        {
-          "word": "by",
-          "start": 94.75,
-          "end": 94.93
-        },
-        {
-          "word": "coursework",
-          "start": 94.93,
-          "end": 95.550003
-        },
-        {
-          "word": "in",
-          "start": 95.550003,
-          "end": 95.739998
-        },
-        {
-          "word": "Environmental",
-          "start": 95.739998,
-          "end": 96.510002
-        },
-        {
-          "word": "Studies",
-          "start": 96.510002,
-          "end": 96.949997
-        }
-      ],
-      "answers": [],
-      "end": 96.949997
-    },
-    {
-      "id": 18,
-      "start": 97.730003,
-      "speaker": "COUNSELLOR",
-      "en": "Ah, right, and how are you finding that?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Ah",
-          "start": 97.730003,
-          "end": 97.769997
-        },
-        {
-          "word": "right",
-          "start": 97.769997,
-          "end": 97.830002
-        },
-        {
-          "word": "and",
-          "start": 97.830002,
-          "end": 97.889999
-        },
-        {
-          "word": "how",
-          "start": 97.889999,
-          "end": 97.970001
-        },
-        {
-          "word": "are",
-          "start": 97.970001,
-          "end": 98.0
-        },
-        {
-          "word": "you",
-          "start": 98.0,
-          "end": 98.190002
-        },
-        {
-          "word": "finding",
-          "start": 98.239998,
-          "end": 98.480003
-        },
-        {
-          "word": "that",
-          "start": 98.480003,
-          "end": 99.709999
-        }
-      ],
-      "answers": [],
-      "end": 99.709999
-    },
-    {
-      "id": 19,
-      "start": 100.330002,
-      "speaker": "KATE",
-      "en": "Yeah, well, it’s been pretty good really. I’ve enjoyed the course, but I feel there hasn’t been enough contact with the lecturers. They all seem to be incredibly busy. The only chance I’ve really had to talk to them was on the field trip.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yeah",
-          "start": 100.330002,
-          "end": 100.480003
-        },
-        {
-          "word": "well",
-          "start": 100.709999,
-          "end": 100.93
-        },
-        {
-          "word": "it",
-          "start": 101.07,
-          "end": 101.239998
-        },
-        {
-          "word": "'s",
-          "start": 101.07,
-          "end": 101.239998
-        },
-        {
-          "word": "been",
-          "start": 101.5,
-          "end": 101.809998
-        },
-        {
-          "word": "pretty",
-          "start": 101.809998,
-          "end": 102.110001
-        },
-        {
-          "word": "good",
-          "start": 102.110001,
-          "end": 102.419998
-        },
-        {
-          "word": "really",
-          "start": 102.419998,
-          "end": 102.790001
-        },
-        {
-          "word": "I",
-          "start": 102.790001,
-          "end": 102.910004
-        },
-        {
-          "word": "'ve",
-          "start": 102.910004,
-          "end": 103.010002
-        },
-        {
-          "word": "enjoyed",
-          "start": 103.650002,
-          "end": 104.150002
-        },
-        {
-          "word": "the",
-          "start": 104.150002,
-          "end": 104.220001
-        },
-        {
-          "word": "course",
-          "start": 104.220001,
-          "end": 104.709999
-        },
-        {
-          "word": "but",
-          "start": 105.410004,
-          "end": 105.540001
-        },
-        {
-          "word": "I",
-          "start": 105.540001,
-          "end": 105.699997
-        },
-        {
-          "word": "feel",
-          "start": 105.699997,
-          "end": 105.910004
-        },
-        {
-          "word": "there",
-          "start": 105.910004,
-          "end": 106.790001
-        },
-        {
-          "word": "has",
-          "start": 107.050003,
-          "end": 107.269997
-        },
-        {
-          "word": "n't",
-          "start": 107.050003,
-          "end": 107.269997
-        },
-        {
-          "word": "been",
-          "start": 107.269997,
-          "end": 107.379997
-        },
-        {
-          "word": "enough",
-          "start": 107.379997,
-          "end": 107.5
-        },
-        {
-          "word": "contact",
-          "start": 107.5,
-          "end": 107.739998
-        },
-        {
-          "word": "with",
-          "start": 107.739998,
-          "end": 107.849998
-        },
-        {
-          "word": "the",
-          "start": 107.849998,
-          "end": 107.93
-        },
-        {
-          "word": "lecturers",
-          "start": 107.93,
-          "end": 108.540001
-        },
-        {
-          "word": "They",
-          "start": 109.169998,
-          "end": 109.389999
-        },
-        {
-          "word": "all",
-          "start": 109.540001,
-          "end": 109.660004
-        },
-        {
-          "word": "seem",
-          "start": 109.660004,
-          "end": 109.860001
-        },
-        {
-          "word": "to",
-          "start": 109.860001,
-          "end": 109.919998
-        },
-        {
-          "word": "be",
-          "start": 109.919998,
-          "end": 110.010002
-        },
-        {
-          "word": "incredibly",
-          "start": 110.010002,
-          "end": 110.480003
-        },
-        {
-          "word": "busy",
-          "start": 110.480003,
-          "end": 110.910004
-        },
-        {
-          "word": "The",
-          "start": 111.580002,
-          "end": 111.68
-        },
-        {
-          "word": "only",
-          "start": 111.720001,
-          "end": 111.900002
-        },
-        {
-          "word": "chance",
-          "start": 111.900002,
-          "end": 112.239998
-        },
-        {
-          "word": "I",
-          "start": 112.239998,
-          "end": 112.330002
-        },
-        {
-          "word": "'ve",
-          "start": 112.330002,
-          "end": 112.400002
-        },
-        {
-          "word": "really",
-          "start": 112.400002,
-          "end": 112.580002
-        },
-        {
-          "word": "had",
-          "start": 112.580002,
-          "end": 112.860001
-        },
-        {
-          "word": "to",
-          "start": 112.860001,
-          "end": 112.93
-        },
-        {
-          "word": "talk",
-          "start": 112.93,
-          "end": 113.269997
-        },
-        {
-          "word": "to",
-          "start": 113.269997,
-          "end": 113.360001
-        },
-        {
-          "word": "them",
-          "start": 113.360001,
-          "end": 113.739998
-        },
-        {
-          "word": "was",
-          "start": 113.739998,
-          "end": 114.019997
-        },
-        {
-          "word": "on",
-          "start": 114.019997,
-          "end": 114.160004
-        },
-        {
-          "word": "the",
-          "start": 114.160004,
-          "end": 114.230003
-        },
-        {
-          "word": "field",
-          "start": 114.230003,
-          "end": 114.57
-        },
-        {
-          "word": "trip",
-          "start": 114.57,
-          "end": 114.879997
-        }
-      ],
-      "answers": [],
-      "end": 114.879997
-    },
-    {
-      "id": 20,
-      "start": 115.300003,
-      "speaker": "COUNSELLOR",
-      "en": "Well that’s no good. Could anything be done to improve the course in your opinion?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 115.300003,
-          "end": 115.529999
-        },
-        {
-          "word": "that",
-          "start": 115.529999,
-          "end": 116.540001
-        },
-        {
-          "word": "'s",
-          "start": 116.540001,
-          "end": 116.57
-        },
-        {
-          "word": "no",
-          "start": 116.57,
-          "end": 116.900002
-        },
-        {
-          "word": "good",
-          "start": 117.209999,
-          "end": 117.68
-        },
-        {
-          "word": "Could",
-          "start": 118.029999,
-          "end": 118.18
-        },
-        {
-          "word": "anything",
-          "start": 118.18,
-          "end": 118.510002
-        },
-        {
-          "word": "be",
-          "start": 118.510002,
-          "end": 118.599998
-        },
-        {
-          "word": "done",
-          "start": 118.599998,
-          "end": 119.0
-        },
-        {
-          "word": "to",
-          "start": 119.0,
-          "end": 119.150002
-        },
-        {
-          "word": "improve",
-          "start": 119.150002,
-          "end": 119.470001
-        },
-        {
-          "word": "the",
-          "start": 119.470001,
-          "end": 119.559998
-        },
-        {
-          "word": "course",
-          "start": 119.559998,
-          "end": 120.0
-        },
-        {
-          "word": "in",
-          "start": 120.0,
-          "end": 120.099998
-        },
-        {
-          "word": "your",
-          "start": 120.099998,
-          "end": 120.25
-        },
-        {
-          "word": "opinion",
-          "start": 120.25,
-          "end": 120.639999
-        }
-      ],
-      "answers": [],
-      "end": 120.639999
-    },
-    {
-      "id": 21,
-      "start": 121.07,
-      "speaker": "KATE",
-      "en": "Well … I think it would be helpful to have meetings with lecturers on the course. Say once a fortnight — something like that.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 121.07,
-          "end": 121.370003
-        },
-        {
-          "word": "I",
-          "start": 122.25,
-          "end": 122.400002
-        },
-        {
-          "word": "think",
-          "start": 122.400002,
-          "end": 122.629997
-        },
-        {
-          "word": "it",
-          "start": 122.629997,
-          "end": 122.730003
-        },
-        {
-          "word": "would",
-          "start": 122.730003,
-          "end": 122.940002
-        },
-        {
-          "word": "be",
-          "start": 122.940002,
-          "end": 123.110001
-        },
-        {
-          "word": "helpful",
-          "start": 123.110001,
-          "end": 123.610001
-        },
-        {
-          "word": "to",
-          "start": 123.610001,
-          "end": 123.709999
-        },
-        {
-          "word": "have",
-          "start": 123.709999,
-          "end": 124.07
-        },
-        {
-          "word": "meetings",
-          "start": 124.18,
-          "end": 124.809998
-        },
-        {
-          "word": "with",
-          "start": 124.809998,
-          "end": 124.949997
-        },
-        {
-          "word": "lecturers",
-          "start": 124.949997,
-          "end": 125.629997
-        },
-        {
-          "word": "on",
-          "start": 125.629997,
-          "end": 125.779999
-        },
-        {
-          "word": "the",
-          "start": 125.779999,
-          "end": 125.849998
-        },
-        {
-          "word": "course",
-          "start": 125.849998,
-          "end": 126.209999
-        },
-        {
-          "word": "Say",
-          "start": 127.190002,
-          "end": 127.519997
-        },
-        {
-          "word": "once",
-          "start": 127.519997,
-          "end": 127.730003
-        },
-        {
-          "word": "a",
-          "start": 127.879997,
-          "end": 127.910004
-        },
-        {
-          "word": "fortnight",
-          "start": 127.910004,
-          "end": 128.490005
-        },
-        {
-          "word": "something",
-          "start": 128.869995,
-          "end": 129.149994
-        },
-        {
-          "word": "like",
-          "start": 129.149994,
-          "end": 129.309998
-        },
-        {
-          "word": "that",
-          "start": 129.309998,
-          "end": 129.380005
-        }
-      ],
-      "answers": [],
-      "end": 129.380005
-    },
-    {
-      "id": 22,
-      "start": 129.380005,
-      "speaker": "COUNSELLOR",
-      "en": "Regular meetings. Yes that could certainly help. Now Kate, we’ll come back. to you in a minute, but I’d just like to ask Luki some questions.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Regular",
-          "start": 129.380005,
-          "end": 129.660004
-        },
-        {
-          "word": "meetings",
-          "start": 130.119995,
-          "end": 131.339996
-        },
-        {
-          "word": "Yes",
-          "start": 131.919998,
-          "end": 132.100006
-        },
-        {
-          "word": "that",
-          "start": 132.220001,
-          "end": 132.399994
-        },
-        {
-          "word": "could",
-          "start": 132.399994,
-          "end": 132.639999
-        },
-        {
-          "word": "certainly",
-          "start": 132.639999,
-          "end": 133.130005
-        },
-        {
-          "word": "help",
-          "start": 133.130005,
-          "end": 133.360001
-        },
-        {
-          "word": "Now",
-          "start": 134.199997,
-          "end": 134.389999
-        },
-        {
-          "word": "Kate",
-          "start": 134.389999,
-          "end": 134.690002
-        },
-        {
-          "word": "we",
-          "start": 134.690002,
-          "end": 134.800003
-        },
-        {
-          "word": "'ll",
-          "start": 134.690002,
-          "end": 134.800003
-        },
-        {
-          "word": "come",
-          "start": 134.800003,
-          "end": 134.889999
-        },
-        {
-          "word": "back",
-          "start": 135.139999,
-          "end": 135.229996
-        },
-        {
-          "word": "to",
-          "start": 135.229996,
-          "end": 135.320007
-        },
-        {
-          "word": "you",
-          "start": 135.320007,
-          "end": 135.399994
-        },
-        {
-          "word": "in",
-          "start": 135.399994,
-          "end": 135.490005
-        },
-        {
-          "word": "a",
-          "start": 135.490005,
-          "end": 135.529999
-        },
-        {
-          "word": "minute",
-          "start": 135.529999,
-          "end": 135.860001
-        },
-        {
-          "word": "but",
-          "start": 135.860001,
-          "end": 135.960007
-        },
-        {
-          "word": "I",
-          "start": 135.960007,
-          "end": 136.070007
-        },
-        {
-          "word": "'d",
-          "start": 136.070007,
-          "end": 136.110001
-        },
-        {
-          "word": "just",
-          "start": 136.110001,
-          "end": 136.169998
-        },
-        {
-          "word": "like",
-          "start": 136.169998,
-          "end": 136.300003
-        },
-        {
-          "word": "to",
-          "start": 136.300003,
-          "end": 136.5
-        },
-        {
-          "word": "ask",
-          "start": 136.5,
-          "end": 136.679993
-        },
-        {
-          "word": "Luki",
-          "start": 136.770004,
-          "end": 137.210007
-        },
-        {
-          "word": "some",
-          "start": 137.240005,
-          "end": 137.369995
-        },
-        {
-          "word": "questions",
-          "start": 137.369995,
-          "end": 138.059998
-        }
-      ],
-      "answers": [
-        5
-      ],
-      "end": 138.059998
-    },
-    {
-      "id": 23,
-      "start": 139.949997,
-      "speaker": "COUNSELLOR",
-      "en": "Luki, Where are you from?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Luki",
-          "start": 139.949997,
-          "end": 140.369995
-        },
-        {
-          "word": "Where",
-          "start": 140.5,
-          "end": 140.649994
-        },
-        {
-          "word": "are",
-          "start": 140.649994,
-          "end": 140.710007
-        },
-        {
-          "word": "you",
-          "start": 140.820007,
-          "end": 140.979996
-        },
-        {
-          "word": "from",
-          "start": 141.160004,
-          "end": 141.460007
-        }
-      ],
-      "answers": [],
-      "end": 141.460007
-    },
-    {
-      "id": 24,
-      "start": 141.520004,
-      "speaker": "LUKI",
-      "en": "I am from Indonesia.",
-      "zh": "",
-      "words": [
-        {
-          "word": "I",
-          "start": 141.520004,
-          "end": 141.589996
-        },
-        {
-          "word": "am",
-          "start": 141.589996,
-          "end": 141.630005
-        },
-        {
-          "word": "from",
-          "start": 141.630005,
-          "end": 141.820007
-        },
-        {
-          "word": "Indonesia",
-          "start": 142.160004,
-          "end": 142.990005
-        }
-      ],
-      "answers": [],
-      "end": 142.990005
-    },
-    {
-      "id": 25,
-      "start": 143.679993,
-      "speaker": "COUNSELLOR",
-      "en": "And how did you find Cambridge when you first arrived?",
-      "zh": "",
-      "words": [
-        {
-          "word": "And",
-          "start": 143.679993,
-          "end": 143.850006
-        },
-        {
-          "word": "how",
-          "start": 143.850006,
-          "end": 143.940002
-        },
-        {
-          "word": "did",
-          "start": 144.229996,
-          "end": 144.5
-        },
-        {
-          "word": "you",
-          "start": 144.5,
-          "end": 144.559998
-        },
-        {
-          "word": "find",
-          "start": 144.559998,
-          "end": 144.839996
-        },
-        {
-          "word": "Cambridge",
-          "start": 144.839996,
-          "end": 145.330002
-        },
-        {
-          "word": "when",
-          "start": 145.330002,
-          "end": 145.479996
-        },
-        {
-          "word": "you",
-          "start": 145.479996,
-          "end": 145.570007
-        },
-        {
-          "word": "first",
-          "start": 145.570007,
-          "end": 145.899994
-        },
-        {
-          "word": "arrived",
-          "start": 145.899994,
-          "end": 146.429993
-        }
-      ],
-      "answers": [],
-      "end": 146.429993
-    },
-    {
-      "id": 26,
-      "start": 146.470001,
-      "speaker": "LUKI",
-      "en": "Well, I like it here. I think the city is very beautiful.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 146.470001,
-          "end": 146.809998
-        },
-        {
-          "word": "I",
-          "start": 147.169998,
-          "end": 147.199997
-        },
-        {
-          "word": "like",
-          "start": 147.199997,
-          "end": 147.309998
-        },
-        {
-          "word": "it",
-          "start": 147.309998,
-          "end": 147.399994
-        },
-        {
-          "word": "here",
-          "start": 147.399994,
-          "end": 147.75
-        },
-        {
-          "word": "I",
-          "start": 148.139999,
-          "end": 148.240005
-        },
-        {
-          "word": "think",
-          "start": 148.240005,
-          "end": 148.529999
-        },
-        {
-          "word": "the",
-          "start": 148.529999,
-          "end": 148.600006
-        },
-        {
-          "word": "city",
-          "start": 148.600006,
-          "end": 148.899994
-        },
-        {
-          "word": "is",
-          "start": 148.899994,
-          "end": 149.009995
-        },
-        {
-          "word": "very",
-          "start": 149.009995,
-          "end": 149.360001
-        },
-        {
-          "word": "beautiful",
-          "start": 149.360001,
-          "end": 150.029999
-        }
-      ],
-      "answers": [],
-      "end": 150.029999
-    },
-    {
-      "id": 27,
-      "start": 150.619995,
-      "speaker": "COUNSELLOR",
-      "en": "What about your accommodation? Was that OK?",
-      "zh": "",
-      "words": [
-        {
-          "word": "What",
-          "start": 150.619995,
-          "end": 150.830002
-        },
-        {
-          "word": "about",
-          "start": 150.830002,
-          "end": 151.050003
-        },
-        {
-          "word": "your",
-          "start": 151.050003,
-          "end": 151.220001
-        },
-        {
-          "word": "accommodation",
-          "start": 151.220001,
-          "end": 152.259995
-        },
-        {
-          "word": "Was",
-          "start": 152.369995,
-          "end": 152.509995
-        },
-        {
-          "word": "that",
-          "start": 152.509995,
-          "end": 152.710007
-        },
-        {
-          "word": "OK",
-          "start": 152.710007,
-          "end": 152.990005
-        }
-      ],
-      "answers": [],
-      "end": 152.990005
-    },
-    {
-      "id": 28,
-      "start": 153.559998,
-      "speaker": "LUKI",
-      "en": "Yes, OK. At first I stayed with a family for three months. They were very kind to me but they had three young children and I found it difficult to study",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yes",
-          "start": 153.559998,
-          "end": 153.979996
-        },
-        {
-          "word": "OK",
-          "start": 154.110001,
-          "end": 154.789993
-        },
-        {
-          "word": "At",
-          "start": 155.660004,
-          "end": 155.729996
-        },
-        {
-          "word": "first",
-          "start": 155.729996,
-          "end": 155.850006
-        },
-        {
-          "word": "I",
-          "start": 156.610001,
-          "end": 156.690002
-        },
-        {
-          "word": "stayed",
-          "start": 156.690002,
-          "end": 157.050003
-        },
-        {
-          "word": "with",
-          "start": 157.050003,
-          "end": 157.169998
-        },
-        {
-          "word": "a",
-          "start": 157.169998,
-          "end": 157.220001
-        },
-        {
-          "word": "family",
-          "start": 157.220001,
-          "end": 157.740005
-        },
-        {
-          "word": "for",
-          "start": 157.740005,
-          "end": 157.929993
-        },
-        {
-          "word": "three",
-          "start": 157.929993,
-          "end": 158.199997
-        },
-        {
-          "word": "months",
-          "start": 158.199997,
-          "end": 158.539993
-        },
-        {
-          "word": "They",
-          "start": 159.080002,
-          "end": 159.210007
-        },
-        {
-          "word": "were",
-          "start": 159.210007,
-          "end": 159.270004
-        },
-        {
-          "word": "very",
-          "start": 159.330002,
-          "end": 159.660004
-        },
-        {
-          "word": "kind",
-          "start": 159.869995,
-          "end": 160.080002
-        },
-        {
-          "word": "to",
-          "start": 160.080002,
-          "end": 160.240005
-        },
-        {
-          "word": "me",
-          "start": 160.240005,
-          "end": 160.520004
-        },
-        {
-          "word": "but",
-          "start": 160.770004,
-          "end": 160.940002
-        },
-        {
-          "word": "they",
-          "start": 160.970001,
-          "end": 161.080002
-        },
-        {
-          "word": "had",
-          "start": 161.080002,
-          "end": 161.289993
-        },
-        {
-          "word": "three",
-          "start": 161.289993,
-          "end": 161.570007
-        },
-        {
-          "word": "young",
-          "start": 161.639999,
-          "end": 161.800003
-        },
-        {
-          "word": "children",
-          "start": 161.800003,
-          "end": 162.360001
-        },
-        {
-          "word": "and",
-          "start": 162.449997,
-          "end": 162.610001
-        },
-        {
-          "word": "I",
-          "start": 162.639999,
-          "end": 162.759995
-        },
-        {
-          "word": "found",
-          "start": 162.759995,
-          "end": 163.059998
-        },
-        {
-          "word": "it",
-          "start": 163.059998,
-          "end": 163.149994
-        },
-        {
-          "word": "difficult",
-          "start": 163.149994,
-          "end": 163.580002
-        },
-        {
-          "word": "to",
-          "start": 163.580002,
-          "end": 163.679993
-        },
-        {
-          "word": "study",
-          "start": 163.679993,
-          "end": 164.199997
-        }
-      ],
-      "answers": [
-        6,
-        7
-      ],
-      "end": 164.199997
-    },
-    {
-      "id": 29,
-      "start": 164.240005,
-      "speaker": "COUNSELLOR",
-      "en": "Right, I see.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Right",
-          "start": 164.240005,
-          "end": 164.789993
-        },
-        {
-          "word": "I",
-          "start": 165.009995,
-          "end": 165.229996
-        },
-        {
-          "word": "see",
-          "start": 165.330002,
-          "end": 165.710007
-        }
-      ],
-      "answers": [],
-      "end": 165.710007
-    },
-    {
-      "id": 30,
-      "start": 166.199997,
-      "speaker": "LUKI",
-      "en": "So after three months I moved out and now I live with two other students in a student house. It’s much cheaper and we like it there.",
-      "zh": "",
-      "words": [
-        {
-          "word": "So",
-          "start": 166.199997,
-          "end": 166.339996
-        },
-        {
-          "word": "after",
-          "start": 166.5,
-          "end": 166.729996
-        },
-        {
-          "word": "three",
-          "start": 166.729996,
-          "end": 166.990005
-        },
-        {
-          "word": "months",
-          "start": 166.990005,
-          "end": 167.350006
-        },
-        {
-          "word": "I",
-          "start": 167.610001,
-          "end": 167.729996
-        },
-        {
-          "word": "moved",
-          "start": 167.729996,
-          "end": 168.009995
-        },
-        {
-          "word": "out",
-          "start": 168.089996,
-          "end": 168.369995
-        },
-        {
-          "word": "and",
-          "start": 168.949997,
-          "end": 169.139999
-        },
-        {
-          "word": "now",
-          "start": 169.139999,
-          "end": 169.309998
-        },
-        {
-          "word": "I",
-          "start": 169.520004,
-          "end": 169.669998
-        },
-        {
-          "word": "live",
-          "start": 169.669998,
-          "end": 169.910004
-        },
-        {
-          "word": "with",
-          "start": 169.910004,
-          "end": 170.059998
-        },
-        {
-          "word": "two",
-          "start": 170.059998,
-          "end": 170.179993
-        },
-        {
-          "word": "other",
-          "start": 170.339996,
-          "end": 170.520004
-        },
-        {
-          "word": "students",
-          "start": 170.660004,
-          "end": 171.119995
-        },
-        {
-          "word": "in",
-          "start": 171.25,
-          "end": 171.399994
-        },
-        {
-          "word": "a",
-          "start": 171.399994,
-          "end": 171.490005
-        },
-        {
-          "word": "student",
-          "start": 171.490005,
-          "end": 172.020004
-        },
-        {
-          "word": "house",
-          "start": 172.020004,
-          "end": 172.380005
-        },
-        {
-          "word": "It",
-          "start": 172.979996,
-          "end": 173.259995
-        },
-        {
-          "word": "'s",
-          "start": 172.979996,
-          "end": 173.259995
-        },
-        {
-          "word": "much",
-          "start": 173.259995,
-          "end": 173.520004
-        },
-        {
-          "word": "cheaper",
-          "start": 173.720001,
-          "end": 174.039993
-        },
-        {
-          "word": "and",
-          "start": 174.039993,
-          "end": 174.389999
-        },
-        {
-          "word": "we",
-          "start": 174.389999,
-          "end": 174.509995
-        },
-        {
-          "word": "like",
-          "start": 174.619995,
-          "end": 174.789993
-        },
-        {
-          "word": "it",
-          "start": 174.789993,
-          "end": 174.940002
-        },
-        {
-          "word": "there",
-          "start": 174.940002,
-          "end": 175.210007
-        }
-      ],
-      "answers": [
-        8
-      ],
-      "end": 175.210007
-    },
-    {
-      "id": 31,
-      "start": 175.630005,
-      "speaker": "COUNSELLOR",
-      "en": "Good, and what about your studies? What are you studying?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Good",
-          "start": 175.630005,
-          "end": 175.839996
-        },
-        {
-          "word": "and",
-          "start": 175.839996,
-          "end": 176.059998
-        },
-        {
-          "word": "what",
-          "start": 177.449997,
-          "end": 177.899994
-        },
-        {
-          "word": "about",
-          "start": 177.899994,
-          "end": 178.050003
-        },
-        {
-          "word": "your",
-          "start": 178.050003,
-          "end": 178.199997
-        },
-        {
-          "word": "studies",
-          "start": 178.360001,
-          "end": 178.940002
-        },
-        {
-          "word": "What",
-          "start": 179.179993,
-          "end": 179.479996
-        },
-        {
-          "word": "are",
-          "start": 179.479996,
-          "end": 179.509995
-        },
-        {
-          "word": "you",
-          "start": 179.509995,
-          "end": 179.589996
-        },
-        {
-          "word": "studying",
-          "start": 179.740005,
-          "end": 180.399994
-        }
-      ],
-      "answers": [],
-      "end": 180.399994
-    },
-    {
-      "id": 32,
-      "start": 180.429993,
-      "speaker": "LUKI",
-      "en": "I’m doing a Bachelor of Computing.",
-      "zh": "",
-      "words": [
-        {
-          "word": "I",
-          "start": 180.429993,
-          "end": 180.630005
-        },
-        {
-          "word": "'m",
-          "start": 180.429993,
-          "end": 180.630005
-        },
-        {
-          "word": "doing",
-          "start": 180.630005,
-          "end": 180.919998
-        },
-        {
-          "word": "a",
-          "start": 180.949997,
-          "end": 181.020004
-        },
-        {
-          "word": "Bachelor",
-          "start": 181.020004,
-          "end": 181.580002
-        },
-        {
-          "word": "of",
-          "start": 181.729996,
-          "end": 181.820007
-        },
-        {
-          "word": "Computing",
-          "start": 181.820007,
-          "end": 182.460007
-        }
-      ],
-      "answers": [
-        9
-      ],
-      "end": 182.460007
-    },
-    {
-      "id": 33,
-      "start": 182.679993,
-      "speaker": "COUNSELLOR",
-      "en": "Computing. I see. Um, apart from the language difficulties, if you can separate them, how have you found the course?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Computing",
-          "start": 182.679993,
-          "end": 183.830002
-        },
-        {
-          "word": "I",
-          "start": 183.899994,
-          "end": 184.149994
-        },
-        {
-          "word": "see",
-          "start": 184.289993,
-          "end": 184.350006
-        },
-        {
-          "word": "Um",
-          "start": 184.350006,
-          "end": 184.710007
-        },
-        {
-          "word": "apart",
-          "start": 186.460007,
-          "end": 186.770004
-        },
-        {
-          "word": "from",
-          "start": 186.770004,
-          "end": 186.940002
-        },
-        {
-          "word": "the",
-          "start": 186.940002,
-          "end": 187.259995
-        },
-        {
-          "word": "language",
-          "start": 187.259995,
-          "end": 187.639999
-        },
-        {
-          "word": "difficulties",
-          "start": 187.770004,
-          "end": 188.639999
-        },
-        {
-          "word": "if",
-          "start": 189.169998,
-          "end": 189.369995
-        },
-        {
-          "word": "you",
-          "start": 189.369995,
-          "end": 189.490005
-        },
-        {
-          "word": "can",
-          "start": 189.490005,
-          "end": 189.800003
-        },
-        {
-          "word": "separate",
-          "start": 189.800003,
-          "end": 190.389999
-        },
-        {
-          "word": "them",
-          "start": 190.389999,
-          "end": 190.649994
-        },
-        {
-          "word": "how",
-          "start": 191.369995,
-          "end": 191.529999
-        },
-        {
-          "word": "have",
-          "start": 191.529999,
-          "end": 191.850006
-        },
-        {
-          "word": "you",
-          "start": 191.850006,
-          "end": 191.970001
-        },
-        {
-          "word": "found",
-          "start": 191.970001,
-          "end": 192.300003
-        },
-        {
-          "word": "the",
-          "start": 192.300003,
-          "end": 192.369995
-        },
-        {
-          "word": "course",
-          "start": 192.369995,
-          "end": 192.869995
-        }
-      ],
-      "answers": [],
-      "end": 192.869995
-    },
-    {
-      "id": 34,
-      "start": 194.850006,
-      "speaker": "LUKI",
-      "en": "OK, but …",
-      "zh": "",
-      "words": [
-        {
-          "word": "OK",
-          "start": 194.850006,
-          "end": 195.630005
-        },
-        {
-          "word": "but",
-          "start": 195.630005,
-          "end": 195.960007
-        }
-      ],
-      "answers": [],
-      "end": 195.960007
-    },
-    {
-      "id": 35,
-      "start": 196.380005,
-      "speaker": "COUNSELLOR",
-      "en": "Yes, go on.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yes",
-          "start": 196.380005,
-          "end": 196.5
-        },
-        {
-          "word": "go",
-          "start": 196.5,
-          "end": 196.559998
-        },
-        {
-          "word": "on",
-          "start": 196.559998,
-          "end": 196.839996
-        }
-      ],
-      "answers": [],
-      "end": 196.839996
-    },
-    {
-      "id": 36,
-      "start": 197.229996,
-      "speaker": "LUKI",
-      "en": "Well, the main difficulty for me is getting time on the computers in the computer room. It’s always busy and this makes it very hard to do my practical work.",
-      "zh": "",
-      "words": [
-        {
-          "word": "Well",
-          "start": 197.229996,
-          "end": 197.830002
-        },
-        {
-          "word": "the",
-          "start": 198.389999,
-          "end": 198.770004
-        },
-        {
-          "word": "main",
-          "start": 199.300003,
-          "end": 199.740005
-        },
-        {
-          "word": "difficulty",
-          "start": 199.740005,
-          "end": 200.279999
-        },
-        {
-          "word": "for",
-          "start": 200.279999,
-          "end": 200.509995
-        },
-        {
-          "word": "me",
-          "start": 200.509995,
-          "end": 200.970001
-        },
-        {
-          "word": "is",
-          "start": 201.380005,
-          "end": 201.490005
-        },
-        {
-          "word": "getting",
-          "start": 201.490005,
-          "end": 201.979996
-        },
-        {
-          "word": "time",
-          "start": 201.979996,
-          "end": 202.470001
-        },
-        {
-          "word": "on",
-          "start": 202.470001,
-          "end": 202.619995
-        },
-        {
-          "word": "the",
-          "start": 202.619995,
-          "end": 202.699997
-        },
-        {
-          "word": "computers",
-          "start": 202.699997,
-          "end": 203.610001
-        },
-        {
-          "word": "in",
-          "start": 203.610001,
-          "end": 203.800003
-        },
-        {
-          "word": "the",
-          "start": 203.800003,
-          "end": 203.880005
-        },
-        {
-          "word": "computer",
-          "start": 203.880005,
-          "end": 204.460007
-        },
-        {
-          "word": "room",
-          "start": 204.460007,
-          "end": 205.270004
-        },
-        {
-          "word": "It",
-          "start": 205.300003,
-          "end": 205.479996
-        },
-        {
-          "word": "'s",
-          "start": 205.300003,
-          "end": 205.479996
-        },
-        {
-          "word": "always",
-          "start": 205.479996,
-          "end": 205.839996
-        },
-        {
-          "word": "busy",
-          "start": 205.839996,
-          "end": 206.369995
-        },
-        {
-          "word": "and",
-          "start": 206.369995,
-          "end": 206.580002
-        },
-        {
-          "word": "this",
-          "start": 206.580002,
-          "end": 207.050003
-        },
-        {
-          "word": "makes",
-          "start": 207.050003,
-          "end": 207.410004
-        },
-        {
-          "word": "it",
-          "start": 207.410004,
-          "end": 207.589996
-        },
-        {
-          "word": "very",
-          "start": 207.589996,
-          "end": 207.860001
-        },
-        {
-          "word": "hard",
-          "start": 207.860001,
-          "end": 208.149994
-        },
-        {
-          "word": "to",
-          "start": 208.309998,
-          "end": 208.369995
-        },
-        {
-          "word": "do",
-          "start": 208.369995,
-          "end": 208.520004
-        },
-        {
-          "word": "my",
-          "start": 208.520004,
-          "end": 208.679993
-        },
-        {
-          "word": "practical",
-          "start": 208.679993,
-          "end": 209.25
-        },
-        {
-          "word": "work",
-          "start": 209.25,
-          "end": 209.5
-        }
-      ],
-      "answers": [],
-      "end": 209.5
-    },
-    {
-      "id": 37,
-      "start": 209.740005,
-      "speaker": "COUNSELLOR",
-      "en": "Yes, I’m sure it would. Can you reserve time in the computer room?",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yes",
-          "start": 209.740005,
-          "end": 210.119995
-        },
-        {
-          "word": "I",
-          "start": 210.119995,
-          "end": 210.229996
-        },
-        {
-          "word": "'m",
-          "start": 210.119995,
-          "end": 210.229996
-        },
-        {
-          "word": "sure",
-          "start": 210.229996,
-          "end": 210.289993
-        },
-        {
-          "word": "it",
-          "start": 211.220001,
-          "end": 211.289993
-        },
-        {
-          "word": "would",
-          "start": 211.289993,
-          "end": 211.460007
-        },
-        {
-          "word": "Can",
-          "start": 211.460007,
-          "end": 211.520004
-        },
-        {
-          "word": "you",
-          "start": 211.520004,
-          "end": 211.580002
-        },
-        {
-          "word": "reserve",
-          "start": 211.580002,
-          "end": 211.919998
-        },
-        {
-          "word": "time",
-          "start": 211.919998,
-          "end": 212.029999
-        },
-        {
-          "word": "in",
-          "start": 212.740005,
-          "end": 212.850006
-        },
-        {
-          "word": "the",
-          "start": 212.850006,
-          "end": 214.070007
-        },
-        {
-          "word": "computer",
-          "start": 214.070007,
-          "end": 214.679993
-        },
-        {
-          "word": "room",
-          "start": 214.990005,
-          "end": 215.279999
-        }
-      ],
-      "answers": [],
-      "end": 215.279999
-    },
-    {
-      "id": 38,
-      "start": 215.279999,
-      "speaker": "LUKI",
-      "en": "No, you can’t … but it would certainly help if we could reserve computer time.",
-      "zh": "",
-      "words": [
-        {
-          "word": "No",
-          "start": 215.279999,
-          "end": 215.470001
-        },
-        {
-          "word": "you",
-          "start": 215.470001,
-          "end": 215.619995
-        },
-        {
-          "word": "ca",
-          "start": 215.619995,
-          "end": 216.110001
-        },
-        {
-          "word": "n't",
-          "start": 215.619995,
-          "end": 216.110001
-        },
-        {
-          "word": "but",
-          "start": 216.729996,
-          "end": 216.990005
-        },
-        {
-          "word": "it",
-          "start": 217.080002,
-          "end": 217.320007
-        },
-        {
-          "word": "would",
-          "start": 217.320007,
-          "end": 217.460007
-        },
-        {
-          "word": "certainly",
-          "start": 217.460007,
-          "end": 217.929993
-        },
-        {
-          "word": "help",
-          "start": 217.929993,
-          "end": 218.279999
-        },
-        {
-          "word": "if",
-          "start": 218.279999,
-          "end": 218.429993
-        },
-        {
-          "word": "we",
-          "start": 218.429993,
-          "end": 218.570007
-        },
-        {
-          "word": "could",
-          "start": 218.570007,
-          "end": 218.820007
-        },
-        {
-          "word": "reserve",
-          "start": 218.820007,
-          "end": 219.259995
-        },
-        {
-          "word": "computer",
-          "start": 219.259995,
-          "end": 219.789993
-        },
-        {
-          "word": "time",
-          "start": 219.789993,
-          "end": 220.509995
-        }
-      ],
-      "answers": [
-        10
-      ],
-      "end": 220.509995
-    },
-    {
-      "id": 39,
-      "start": 220.509995,
-      "speaker": "COUNSELLOR",
-      "en": "Yes. I’ll look into that and see if something can’t be done to improve things over there. Now let’s go back to Kate...",
-      "zh": "",
-      "words": [
-        {
-          "word": "Yes",
-          "start": 220.509995,
-          "end": 220.610001
-        },
-        {
-          "word": "I",
-          "start": 221.119995,
-          "end": 221.270004
-        },
-        {
-          "word": "'ll",
-          "start": 221.270004,
-          "end": 221.309998
-        },
-        {
-          "word": "look",
-          "start": 221.309998,
-          "end": 221.529999
-        },
-        {
-          "word": "into",
-          "start": 221.529999,
-          "end": 221.660004
-        },
-        {
-          "word": "that",
-          "start": 221.660004,
-          "end": 222.479996
-        },
-        {
-          "word": "and",
-          "start": 222.479996,
-          "end": 222.559998
-        },
-        {
-          "word": "see",
-          "start": 222.559998,
-          "end": 222.649994
-        },
-        {
-          "word": "if",
-          "start": 222.649994,
-          "end": 222.720001
-        },
-        {
-          "word": "something",
-          "start": 222.850006,
-          "end": 223.190002
-        },
-        {
-          "word": "ca",
-          "start": 223.190002,
-          "end": 223.570007
-        },
-        {
-          "word": "n't",
-          "start": 223.190002,
-          "end": 223.570007
-        },
-        {
-          "word": "be",
-          "start": 223.570007,
-          "end": 223.669998
-        },
-        {
-          "word": "done",
-          "start": 223.669998,
-          "end": 223.960007
-        },
-        {
-          "word": "to",
-          "start": 223.960007,
-          "end": 224.039993
-        },
-        {
-          "word": "improve",
-          "start": 224.039993,
-          "end": 224.630005
-        },
-        {
-          "word": "things",
-          "start": 224.630005,
-          "end": 225.0
-        },
-        {
-          "word": "over",
-          "start": 225.0,
-          "end": 225.259995
-        },
-        {
-          "word": "there",
-          "start": 225.259995,
-          "end": 225.389999
-        },
-        {
-          "word": "Now",
-          "start": 225.389999,
-          "end": 225.669998
-        },
-        {
-          "word": "let",
-          "start": 226.539993,
-          "end": 226.809998
-        },
-        {
-          "word": "'s",
-          "start": 226.539993,
-          "end": 226.809998
-        },
-        {
-          "word": "go",
-          "start": 226.809998,
-          "end": 226.899994
-        },
-        {
-          "word": "back",
-          "start": 227.630005,
-          "end": 227.850006
-        },
-        {
-          "word": "to",
-          "start": 227.850006,
-          "end": 227.960007
-        },
-        {
-          "word": "Kate",
-          "start": 227.960007,
-          "end": 228.320007
-        }
-      ],
-      "answers": [],
-      "end": 228.320007
+     "word": "today?",
+     "start": 9.873,
+     "end": 10.196,
+     "confidence": 0.9957,
+     "speaker": "A"
     }
-  ],
-  "questions": [
+   ],
+   "answers": [],
+   "end": 10.646
+  },
+  {
+   "id": 2,
+   "start": 10.149,
+   "speaker": "KATE",
+   "en": "Fine thanks.",
+   "zh": "",
+   "words": [
     {
-      "title": "Questions 1–10",
-      "type": "mixed",
-      "instructions": [
-        "Complete the original Cambridge IELTS listening questions below."
-      ],
-      "source_text": "SECTION 1 Questions 1-10\nComplete the notes. Use NO MORE THAN THREE WORDS for each answer.\nKATE\nHer first impressions of the\ntown\nType of accommodation\nHer feelings about the\naccommodation\nName of course\nDifficulties experienced on the\ncourse\nSuggestions for improving the\ncourse\nExample Quiet\n(1)\n(2)\nEnvironmental Studies\n(4)\n(5)\nHer feelings about the other\nstudents\n(3)\nLUKI\nFirst type of accommodation\nProblem with the first\naccommodation\nName of course\nComments about the\ncourse\nSuggestions for improving the\ncourse\n(6)\n(7)\n(9)\nComputer room busy\n(10)\nSecond type of\naccommodation\n(8)",
-      "items": [
-        {
-          "number": 1,
-          "prompt": "(1) (2) Environmental Studies (4) (5) Her feelings about the other students (3)",
-          "answer": "student accommodation / hostel",
-          "evidence_segment": 11,
-          "paraphrase": null
-        },
-        {
-          "number": 2,
-          "prompt": "(2) Environmental Studies (4) (5) Her feelings about the other students (3) LUKI",
-          "answer": "awful food",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 3,
-          "prompt": "(3) LUKI First type of accommodation Problem with the first accommodation Name of course Comments about the course",
-          "answer": "not friendly / kept to themselves",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 4,
-          "prompt": "(4) (5) Her feelings about the other students (3) LUKI First type of accommodation Problem with the first",
-          "answer": "lecturers too busy",
-          "evidence_segment": null,
-          "paraphrase": null
-        },
-        {
-          "number": 5,
-          "prompt": "(5) Her feelings about the other students (3) LUKI First type of accommodation Problem with the first accommodation",
-          "answer": "regular meetings / meetings with lecturers / fortnightly meetings",
-          "evidence_segment": 22,
-          "paraphrase": null
-        },
-        {
-          "number": 6,
-          "prompt": "(6) (7) (9) Computer room busy (10) Second type of accommodation (8)",
-          "answer": "family / homestay",
-          "evidence_segment": 28,
-          "paraphrase": null
-        },
-        {
-          "number": 7,
-          "prompt": "(7) (9) Computer room busy (10) Second type of accommodation (8)",
-          "answer": "lot of noise / children made noise / difficult to study",
-          "evidence_segment": 28,
-          "paraphrase": null
-        },
-        {
-          "number": 8,
-          "prompt": "(8)",
-          "answer": "student house",
-          "evidence_segment": 30,
-          "paraphrase": null
-        },
-        {
-          "number": 9,
-          "prompt": "(9) Computer room busy (10) Second type of accommodation (8)",
-          "answer": "Bachelor of Computing",
-          "evidence_segment": 32,
-          "paraphrase": null
-        },
-        {
-          "number": 10,
-          "prompt": "(10) Second type of accommodation (8)",
-          "answer": "reserve computer time",
-          "evidence_segment": 38,
-          "paraphrase": null
-        }
-      ]
+     "word": "Fine,",
+     "start": 10.599,
+     "end": 10.809,
+     "confidence": 0.9797,
+     "speaker": "B"
+    },
+    {
+     "word": "thanks.",
+     "start": 10.905,
+     "end": 11.164,
+     "confidence": 0.9888,
+     "speaker": "B"
     }
-  ],
-  "alignment": {
-    "engine": "montreal-forced-aligner",
-    "model": "MontrealCorpusTools/english_mfa",
-    "granularity": "word+phone",
-    "fixed_transcript": true,
-    "source_word_count": 604,
-    "mfa_word_count": 604,
-    "matched_word_count": 604
+   ],
+   "answers": [],
+   "end": 11.614
+  },
+  {
+   "id": 3,
+   "start": 11.262,
+   "speaker": "COUNSELLOR",
+   "en": "Hi, Luki. How's things?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Hi,",
+     "start": 11.712,
+     "end": 11.809,
+     "confidence": 0.9182,
+     "speaker": "A"
+    },
+    {
+     "word": "Lukey,",
+     "start": 11.889,
+     "end": 12.26,
+     "confidence": 0.7049,
+     "speaker": "A"
+    },
+    {
+     "word": "how's",
+     "start": 12.293,
+     "end": 12.68,
+     "confidence": 0.9838,
+     "speaker": "A"
+    },
+    {
+     "word": "things?",
+     "start": 12.68,
+     "end": 12.825,
+     "confidence": 0.9258,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 13.199
+  },
+  {
+   "id": 4,
+   "start": 12.725,
+   "speaker": "LUKI",
+   "en": "OK.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Okay.",
+     "start": 13.099,
+     "end": 13.487,
+     "confidence": 0.9687,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 13.937
+  },
+  {
+   "id": 5,
+   "start": 13.617,
+   "speaker": "COUNSELLOR",
+   "en": "Well, as I explained on the phone, I'm a counsellor here at the Student Services section of the university and I'm interviewing overseas students to help me draw up a guide for new students so I'd be grateful if you could tell me a little about your time since you've been here in Cambridge.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 14.067,
+     "end": 14.293,
+     "confidence": 0.9913,
+     "speaker": "A"
+    },
+    {
+     "word": "as",
+     "start": 14.39,
+     "end": 14.519,
+     "confidence": 0.9732,
+     "speaker": "A"
+    },
+    {
+     "word": "I",
+     "start": 14.696,
+     "end": 14.713,
+     "confidence": 0.9504,
+     "speaker": "A"
+    },
+    {
+     "word": "explained",
+     "start": 14.858,
+     "end": 15.503,
+     "confidence": 0.9627,
+     "speaker": "A"
+    },
+    {
+     "word": "on",
+     "start": 15.503,
+     "end": 15.568,
+     "confidence": 0.9939,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 15.6,
+     "end": 15.681,
+     "confidence": 0.9858,
+     "speaker": "A"
+    },
+    {
+     "word": "phone,",
+     "start": 15.826,
+     "end": 16.052,
+     "confidence": 0.9747,
+     "speaker": "A"
+    },
+    {
+     "word": "I'm",
+     "start": 16.245,
+     "end": 16.487,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 16.713,
+     "end": 16.874,
+     "confidence": 0.9838,
+     "speaker": "A"
+    },
+    {
+     "word": "counsellor",
+     "start": 17.02,
+     "end": 17.181,
+     "confidence": 0.9437,
+     "speaker": "A"
+    },
+    {
+     "word": "here",
+     "start": 17.181,
+     "end": 17.246,
+     "confidence": 0.9975,
+     "speaker": "A"
+    },
+    {
+     "word": "at",
+     "start": 17.295,
+     "end": 17.457,
+     "confidence": 0.9982,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 17.457,
+     "end": 17.522,
+     "confidence": 0.9958,
+     "speaker": "A"
+    },
+    {
+     "word": "student",
+     "start": 17.538,
+     "end": 18.008,
+     "confidence": 0.4951,
+     "speaker": "A"
+    },
+    {
+     "word": "services",
+     "start": 18.008,
+     "end": 18.477,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "section",
+     "start": 18.575,
+     "end": 18.882,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 18.898,
+     "end": 18.963,
+     "confidence": 0.9953,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 18.996,
+     "end": 19.141,
+     "confidence": 0.9971,
+     "speaker": "A"
+    },
+    {
+     "word": "university,",
+     "start": 19.141,
+     "end": 19.935,
+     "confidence": 0.7607,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 20.615,
+     "end": 20.68,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "I'm",
+     "start": 21.085,
+     "end": 21.28,
+     "confidence": 0.9865,
+     "speaker": "A"
+    },
+    {
+     "word": "interviewing",
+     "start": 21.344,
+     "end": 21.879,
+     "confidence": 0.9623,
+     "speaker": "A"
+    },
+    {
+     "word": "overseas",
+     "start": 21.976,
+     "end": 22.365,
+     "confidence": 0.9939,
+     "speaker": "A"
+    },
+    {
+     "word": "students",
+     "start": 22.397,
+     "end": 23.013,
+     "confidence": 0.9949,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 23.11,
+     "end": 23.142,
+     "confidence": 0.9969,
+     "speaker": "A"
+    },
+    {
+     "word": "help",
+     "start": 23.207,
+     "end": 23.385,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "me",
+     "start": 23.434,
+     "end": 23.531,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "draw",
+     "start": 23.531,
+     "end": 23.693,
+     "confidence": 0.9941,
+     "speaker": "A"
+    },
+    {
+     "word": "up",
+     "start": 23.774,
+     "end": 23.952,
+     "confidence": 0.982,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 23.952,
+     "end": 24.082,
+     "confidence": 0.9965,
+     "speaker": "A"
+    },
+    {
+     "word": "guide",
+     "start": 24.082,
+     "end": 24.39,
+     "confidence": 0.9832,
+     "speaker": "A"
+    },
+    {
+     "word": "for",
+     "start": 24.422,
+     "end": 24.503,
+     "confidence": 0.9971,
+     "speaker": "A"
+    },
+    {
+     "word": "new",
+     "start": 24.503,
+     "end": 24.697,
+     "confidence": 0.9943,
+     "speaker": "A"
+    },
+    {
+     "word": "students.",
+     "start": 24.697,
+     "end": 25.135,
+     "confidence": 0.9715,
+     "speaker": "A"
+    },
+    {
+     "word": "So",
+     "start": 25.883,
+     "end": 25.931,
+     "confidence": 0.4873,
+     "speaker": "A"
+    },
+    {
+     "word": "I'd",
+     "start": 25.947,
+     "end": 26.589,
+     "confidence": 0.7629,
+     "speaker": "A"
+    },
+    {
+     "word": "be",
+     "start": 26.589,
+     "end": 26.749,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "grateful",
+     "start": 26.749,
+     "end": 27.166,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "if",
+     "start": 27.166,
+     "end": 27.247,
+     "confidence": 0.9985,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 27.247,
+     "end": 27.391,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "could",
+     "start": 27.391,
+     "end": 27.487,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "tell",
+     "start": 27.487,
+     "end": 27.664,
+     "confidence": 0.998,
+     "speaker": "A"
+    },
+    {
+     "word": "me",
+     "start": 27.664,
+     "end": 27.824,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 27.905,
+     "end": 27.953,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "little",
+     "start": 27.953,
+     "end": 28.129,
+     "confidence": 0.9987,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 28.129,
+     "end": 28.322,
+     "confidence": 0.9929,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 28.434,
+     "end": 28.547,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "time",
+     "start": 28.547,
+     "end": 28.723,
+     "confidence": 0.9193,
+     "speaker": "A"
+    },
+    {
+     "word": "since",
+     "start": 28.723,
+     "end": 28.835,
+     "confidence": 0.9739,
+     "speaker": "A"
+    },
+    {
+     "word": "you've",
+     "start": 29.076,
+     "end": 29.333,
+     "confidence": 0.9969,
+     "speaker": "A"
+    },
+    {
+     "word": "been",
+     "start": 29.333,
+     "end": 29.493,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "here",
+     "start": 29.493,
+     "end": 29.654,
+     "confidence": 0.996,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 29.654,
+     "end": 29.782,
+     "confidence": 0.9891,
+     "speaker": "A"
+    },
+    {
+     "word": "Cambridge.",
+     "start": 29.798,
+     "end": 30.216,
+     "confidence": 0.8855,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 30.396
+  },
+  {
+   "id": 6,
+   "start": 30.116,
+   "speaker": "KATE",
+   "en": "Right.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Right.",
+     "start": 30.296,
+     "end": 30.36,
+     "confidence": 0.8029,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 30.717
+  },
+  {
+   "id": 7,
+   "start": 30.26,
+   "speaker": "LUKI",
+   "en": "Good idea.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Right,",
+     "start": 30.617,
+     "end": 30.922,
+     "confidence": 0.6386,
+     "speaker": "B"
+    },
+    {
+     "word": "yes.",
+     "start": 31.002,
+     "end": 31.098,
+     "confidence": 0.9932,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 31.948
+  },
+  {
+   "id": 8,
+   "start": 31.035,
+   "speaker": "COUNSELLOR",
+   "en": "Now, Kate let's start with you. OK, um, this is your second semester isn't it? Could you tell us something about your first impressions of the town when you arrived?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Now,",
+     "start": 31.885,
+     "end": 32.013,
+     "confidence": 0.7309,
+     "speaker": "A"
+    },
+    {
+     "word": "Kate,",
+     "start": 32.061,
+     "end": 32.286,
+     "confidence": 0.9893,
+     "speaker": "A"
+    },
+    {
+     "word": "let's",
+     "start": 32.366,
+     "end": 32.527,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "start",
+     "start": 32.527,
+     "end": 32.767,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "with",
+     "start": 32.767,
+     "end": 32.96,
+     "confidence": 0.9981,
+     "speaker": "A"
+    },
+    {
+     "word": "you.",
+     "start": 33.008,
+     "end": 33.201,
+     "confidence": 0.9949,
+     "speaker": "A"
+    },
+    {
+     "word": "Okay.",
+     "start": 33.81,
+     "end": 34.147,
+     "confidence": 0.8263,
+     "speaker": "B"
+    },
+    {
+     "word": "Erm,",
+     "start": 34.95,
+     "end": 35.062,
+     "confidence": 0.7473,
+     "speaker": "A"
+    },
+    {
+     "word": "this",
+     "start": 35.816,
+     "end": 35.993,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "is",
+     "start": 35.993,
+     "end": 36.121,
+     "confidence": 0.9914,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 36.137,
+     "end": 36.41,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "second",
+     "start": 36.555,
+     "end": 36.924,
+     "confidence": 0.9272,
+     "speaker": "A"
+    },
+    {
+     "word": "semester,",
+     "start": 37.02,
+     "end": 37.501,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "isn't",
+     "start": 37.582,
+     "end": 38.224,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "it?",
+     "start": 38.336,
+     "end": 38.577,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "Could",
+     "start": 38.866,
+     "end": 38.946,
+     "confidence": 0.9845,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 38.946,
+     "end": 39.042,
+     "confidence": 0.9982,
+     "speaker": "A"
+    },
+    {
+     "word": "tell",
+     "start": 39.042,
+     "end": 39.267,
+     "confidence": 0.9993,
+     "speaker": "A"
+    },
+    {
+     "word": "us",
+     "start": 39.267,
+     "end": 39.427,
+     "confidence": 0.998,
+     "speaker": "A"
+    },
+    {
+     "word": "something",
+     "start": 39.427,
+     "end": 39.732,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 39.764,
+     "end": 39.957,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 40.005,
+     "end": 40.214,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "first",
+     "start": 40.23,
+     "end": 40.486,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "impressions",
+     "start": 40.486,
+     "end": 40.984,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "of",
+     "start": 40.984,
+     "end": 41.112,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 41.112,
+     "end": 41.193,
+     "confidence": 0.9987,
+     "speaker": "A"
+    },
+    {
+     "word": "town",
+     "start": 41.193,
+     "end": 41.594,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "when",
+     "start": 41.594,
+     "end": 41.69,
+     "confidence": 0.9735,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 41.69,
+     "end": 41.786,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "arrived?",
+     "start": 41.834,
+     "end": 42.043,
+     "confidence": 0.9993,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 42.893
+  },
+  {
+   "id": 9,
+   "start": 42.989,
+   "speaker": "KATE",
+   "en": "Yeah well first of all I was struck by how quiet it is here in the evening",
+   "zh": "",
+   "words": [
+    {
+     "word": "yeah,",
+     "start": 43.439,
+     "end": 43.808,
+     "confidence": 0.7239,
+     "speaker": "B"
+    },
+    {
+     "word": "well,",
+     "start": 44.322,
+     "end": 44.45,
+     "confidence": 0.9635,
+     "speaker": "B"
+    },
+    {
+     "word": "first",
+     "start": 44.964,
+     "end": 45.205,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "of",
+     "start": 45.205,
+     "end": 45.365,
+     "confidence": 0.999,
+     "speaker": "B"
+    },
+    {
+     "word": "all,",
+     "start": 45.365,
+     "end": 45.51,
+     "confidence": 0.881,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 45.542,
+     "end": 45.686,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "was",
+     "start": 45.686,
+     "end": 45.83,
+     "confidence": 0.9974,
+     "speaker": "B"
+    },
+    {
+     "word": "struck",
+     "start": 45.927,
+     "end": 46.184,
+     "confidence": 0.9992,
+     "speaker": "B"
+    },
+    {
+     "word": "by",
+     "start": 46.264,
+     "end": 46.488,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "how",
+     "start": 46.488,
+     "end": 46.585,
+     "confidence": 0.9958,
+     "speaker": "B"
+    },
+    {
+     "word": "quiet",
+     "start": 46.809,
+     "end": 47.307,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "it",
+     "start": 47.307,
+     "end": 47.451,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "is",
+     "start": 47.451,
+     "end": 47.676,
+     "confidence": 0.9986,
+     "speaker": "B"
+    },
+    {
+     "word": "here",
+     "start": 47.772,
+     "end": 47.933,
+     "confidence": 0.9972,
+     "speaker": "B"
+    },
+    {
+     "word": "in",
+     "start": 47.933,
+     "end": 47.965,
+     "confidence": 0.9981,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 47.965,
+     "end": 48.029,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "evening.",
+     "start": 48.029,
+     "end": 48.559,
+     "confidence": 0.9954,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 49.009
+  },
+  {
+   "id": 10,
+   "start": 48.459,
+   "speaker": "COUNSELLOR",
+   "en": "Yes, I suppose Cambridge is a quiet place. Where did you live when you first arrived?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yeah,",
+     "start": 49.152,
+     "end": 49.794,
+     "confidence": 0.9011,
+     "speaker": "A"
+    },
+    {
+     "word": "I",
+     "start": 49.955,
+     "end": 49.971,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "suppose",
+     "start": 50.115,
+     "end": 50.484,
+     "confidence": 0.997,
+     "speaker": "A"
+    },
+    {
+     "word": "Cambridge",
+     "start": 50.581,
+     "end": 50.982,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "is",
+     "start": 50.982,
+     "end": 51.094,
+     "confidence": 0.999,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 51.094,
+     "end": 51.223,
+     "confidence": 0.9922,
+     "speaker": "A"
+    },
+    {
+     "word": "quiet",
+     "start": 51.223,
+     "end": 51.463,
+     "confidence": 0.999,
+     "speaker": "A"
+    },
+    {
+     "word": "place.",
+     "start": 51.704,
+     "end": 51.977,
+     "confidence": 0.9605,
+     "speaker": "A"
+    },
+    {
+     "word": "Erm,",
+     "start": 52.683,
+     "end": 52.811,
+     "confidence": 0.7577,
+     "speaker": "A"
+    },
+    {
+     "word": "where",
+     "start": 53.469,
+     "end": 53.646,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "did",
+     "start": 53.646,
+     "end": 53.79,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 53.79,
+     "end": 53.903,
+     "confidence": 0.9985,
+     "speaker": "A"
+    },
+    {
+     "word": "live",
+     "start": 53.967,
+     "end": 54.256,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "when",
+     "start": 54.288,
+     "end": 54.432,
+     "confidence": 0.9972,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 54.432,
+     "end": 54.529,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "first",
+     "start": 54.529,
+     "end": 54.866,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "arrived?",
+     "start": 54.866,
+     "end": 55.171,
+     "confidence": 0.9998,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 56.021
+  },
+  {
+   "id": 11,
+   "start": 55.203,
+   "speaker": "KATE",
+   "en": "Well, I went straight into student accommodation; it was a kind of student hostel.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 56.053,
+     "end": 56.166,
+     "confidence": 0.9922,
+     "speaker": "B"
+    },
+    {
+     "word": "I,",
+     "start": 56.679,
+     "end": 56.76,
+     "confidence": 0.8573,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 56.92,
+     "end": 56.968,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "went",
+     "start": 57.0,
+     "end": 57.113,
+     "confidence": 0.9968,
+     "speaker": "B"
+    },
+    {
+     "word": "straight",
+     "start": 57.113,
+     "end": 57.498,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "into",
+     "start": 57.498,
+     "end": 57.674,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "student",
+     "start": 57.722,
+     "end": 58.076,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "accommodation.",
+     "start": 58.076,
+     "end": 58.894,
+     "confidence": 0.9273,
+     "speaker": "B"
+    },
+    {
+     "word": "It",
+     "start": 59.568,
+     "end": 59.632,
+     "confidence": 0.9983,
+     "speaker": "B"
+    },
+    {
+     "word": "was",
+     "start": 59.745,
+     "end": 59.873,
+     "confidence": 0.999,
+     "speaker": "B"
+    },
+    {
+     "word": "a",
+     "start": 59.921,
+     "end": 59.985,
+     "confidence": 0.9967,
+     "speaker": "B"
+    },
+    {
+     "word": "kind",
+     "start": 59.985,
+     "end": 60.242,
+     "confidence": 0.997,
+     "speaker": "B"
+    },
+    {
+     "word": "of",
+     "start": 60.242,
+     "end": 60.355,
+     "confidence": 0.9994,
+     "speaker": "B"
+    },
+    {
+     "word": "student",
+     "start": 60.531,
+     "end": 60.948,
+     "confidence": 0.9984,
+     "speaker": "B"
+    },
+    {
+     "word": "hostel.",
+     "start": 60.948,
+     "end": 61.366,
+     "confidence": 0.996,
+     "speaker": "B"
+    }
+   ],
+   "answers": [
+    1
+   ],
+   "end": 61.816
+  },
+  {
+   "id": 12,
+   "start": 61.266,
+   "speaker": "COUNSELLOR",
+   "en": "Ah right, so you didn't have to worry about doing your own cooking or anything like that?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Ah,",
+     "start": 61.815,
+     "end": 61.863,
+     "confidence": 0.9085,
+     "speaker": "A"
+    },
+    {
+     "word": "right,",
+     "start": 62.056,
+     "end": 62.473,
+     "confidence": 0.8676,
+     "speaker": "A"
+    },
+    {
+     "word": "so,",
+     "start": 62.537,
+     "end": 62.778,
+     "confidence": 0.6124,
+     "speaker": "A"
+    },
+    {
+     "word": "er,",
+     "start": 62.938,
+     "end": 62.971,
+     "confidence": 0.9698,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 63.179,
+     "end": 63.275,
+     "confidence": 0.9981,
+     "speaker": "A"
+    },
+    {
+     "word": "didn't",
+     "start": 63.275,
+     "end": 63.564,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "have",
+     "start": 63.58,
+     "end": 63.725,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 63.757,
+     "end": 63.901,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "worry",
+     "start": 63.901,
+     "end": 64.126,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 64.174,
+     "end": 64.431,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "doing",
+     "start": 64.479,
+     "end": 64.608,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 64.704,
+     "end": 64.864,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "own",
+     "start": 64.864,
+     "end": 65.009,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "cooking",
+     "start": 65.041,
+     "end": 65.41,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "or",
+     "start": 65.603,
+     "end": 65.908,
+     "confidence": 0.9386,
+     "speaker": "A"
+    },
+    {
+     "word": "anything",
+     "start": 65.908,
+     "end": 66.212,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "like",
+     "start": 66.245,
+     "end": 66.421,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "that?",
+     "start": 66.469,
+     "end": 66.726,
+     "confidence": 0.8596,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 66.97
+  },
+  {
+   "id": 13,
+   "start": 66.626,
+   "speaker": "KATE",
+   "en": "No, but sometimes I wished I had! The food at the hostel was awful.",
+   "zh": "",
+   "words": [
+    {
+     "word": "No,",
+     "start": 66.87,
+     "end": 67.111,
+     "confidence": 0.9464,
+     "speaker": "B"
+    },
+    {
+     "word": "but",
+     "start": 67.769,
+     "end": 68.01,
+     "confidence": 0.9956,
+     "speaker": "B"
+    },
+    {
+     "word": "sometimes",
+     "start": 68.01,
+     "end": 68.556,
+     "confidence": 0.9976,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 68.556,
+     "end": 68.604,
+     "confidence": 0.9886,
+     "speaker": "B"
+    },
+    {
+     "word": "wished",
+     "start": 68.652,
+     "end": 68.893,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 68.893,
+     "end": 68.909,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "had.",
+     "start": 68.973,
+     "end": 69.39,
+     "confidence": 0.8854,
+     "speaker": "B"
+    },
+    {
+     "word": "The",
+     "start": 70.257,
+     "end": 70.401,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "food",
+     "start": 70.417,
+     "end": 70.594,
+     "confidence": 0.9981,
+     "speaker": "B"
+    },
+    {
+     "word": "at",
+     "start": 70.594,
+     "end": 70.722,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 70.722,
+     "end": 70.802,
+     "confidence": 0.9992,
+     "speaker": "B"
+    },
+    {
+     "word": "hostel",
+     "start": 70.802,
+     "end": 71.22,
+     "confidence": 1.0,
+     "speaker": "B"
+    },
+    {
+     "word": "was",
+     "start": 71.22,
+     "end": 71.38,
+     "confidence": 0.9999,
+     "speaker": "B"
+    },
+    {
+     "word": "awful.",
+     "start": 71.38,
+     "end": 71.781,
+     "confidence": 0.9569,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 72.186
+  },
+  {
+   "id": 14,
+   "start": 71.681,
+   "speaker": "COUNSELLOR",
+   "en": "Oh dear. But how were the other students?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Oh,",
+     "start": 72.086,
+     "end": 72.247,
+     "confidence": 0.878,
+     "speaker": "B"
+    },
+    {
+     "word": "dear.",
+     "start": 72.488,
+     "end": 72.809,
+     "confidence": 0.8242,
+     "speaker": "B"
+    },
+    {
+     "word": "But",
+     "start": 73.948,
+     "end": 74.093,
+     "confidence": 0.7228,
+     "speaker": "A"
+    },
+    {
+     "word": "how",
+     "start": 74.093,
+     "end": 74.205,
+     "confidence": 0.9957,
+     "speaker": "A"
+    },
+    {
+     "word": "were",
+     "start": 74.269,
+     "end": 74.349,
+     "confidence": 0.9967,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 74.365,
+     "end": 74.526,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "other",
+     "start": 74.526,
+     "end": 74.67,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "students?",
+     "start": 74.67,
+     "end": 75.216,
+     "confidence": 0.9995,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 75.666
+  },
+  {
+   "id": 15,
+   "start": 75.489,
+   "speaker": "KATE",
+   "en": "To be honest I haven’t managed to make many friends even though the place is full. People seem to keep to themselves; they’re not really very friendly.",
+   "zh": "",
+   "words": [
+    {
+     "word": "To",
+     "start": 76.339,
+     "end": 76.436,
+     "confidence": 0.4897,
+     "speaker": "B"
+    },
+    {
+     "word": "be",
+     "start": 76.436,
+     "end": 76.58,
+     "confidence": 0.9962,
+     "speaker": "B"
+    },
+    {
+     "word": "honest,",
+     "start": 76.58,
+     "end": 77.142,
+     "confidence": 0.9766,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 77.174,
+     "end": 77.238,
+     "confidence": 0.9261,
+     "speaker": "B"
+    },
+    {
+     "word": "haven't",
+     "start": 77.238,
+     "end": 77.639,
+     "confidence": 0.9979,
+     "speaker": "B"
+    },
+    {
+     "word": "met",
+     "start": 77.639,
+     "end": 78.009,
+     "confidence": 0.2641,
+     "speaker": "B"
+    },
+    {
+     "word": "many.",
+     "start": 78.025,
+     "end": 78.105,
+     "confidence": 0.391,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 78.378,
+     "end": 78.41,
+     "confidence": 0.3335,
+     "speaker": "B"
+    },
+    {
+     "word": "haven't",
+     "start": 78.41,
+     "end": 78.57,
+     "confidence": 0.9515,
+     "speaker": "B"
+    },
+    {
+     "word": "managed",
+     "start": 78.57,
+     "end": 78.762,
+     "confidence": 0.9755,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 78.762,
+     "end": 78.81,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "make",
+     "start": 78.81,
+     "end": 79.147,
+     "confidence": 0.9983,
+     "speaker": "B"
+    },
+    {
+     "word": "many",
+     "start": 79.147,
+     "end": 79.371,
+     "confidence": 0.9988,
+     "speaker": "B"
+    },
+    {
+     "word": "friends,",
+     "start": 79.387,
+     "end": 79.9,
+     "confidence": 0.6988,
+     "speaker": "B"
+    },
+    {
+     "word": "even",
+     "start": 80.125,
+     "end": 80.301,
+     "confidence": 0.999,
+     "speaker": "B"
+    },
+    {
+     "word": "though",
+     "start": 80.301,
+     "end": 80.365,
+     "confidence": 0.9988,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 80.429,
+     "end": 80.59,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "place",
+     "start": 80.59,
+     "end": 80.846,
+     "confidence": 0.999,
+     "speaker": "B"
+    },
+    {
+     "word": "is",
+     "start": 80.846,
+     "end": 80.974,
+     "confidence": 0.9972,
+     "speaker": "B"
+    },
+    {
+     "word": "full.",
+     "start": 81.007,
+     "end": 81.199,
+     "confidence": 0.9627,
+     "speaker": "B"
+    },
+    {
+     "word": "People",
+     "start": 82.289,
+     "end": 82.561,
+     "confidence": 0.9965,
+     "speaker": "B"
+    },
+    {
+     "word": "seem",
+     "start": 82.61,
+     "end": 82.85,
+     "confidence": 0.9982,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 82.85,
+     "end": 82.978,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "keep",
+     "start": 83.01,
+     "end": 83.235,
+     "confidence": 0.9983,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 83.235,
+     "end": 83.315,
+     "confidence": 0.9974,
+     "speaker": "B"
+    },
+    {
+     "word": "themselves,",
+     "start": 83.315,
+     "end": 84.02,
+     "confidence": 0.7538,
+     "speaker": "B"
+    },
+    {
+     "word": "they're",
+     "start": 84.277,
+     "end": 84.373,
+     "confidence": 0.9908,
+     "speaker": "B"
+    },
+    {
+     "word": "not",
+     "start": 84.373,
+     "end": 84.597,
+     "confidence": 0.9975,
+     "speaker": "B"
+    },
+    {
+     "word": "really",
+     "start": 84.693,
+     "end": 85.094,
+     "confidence": 0.9841,
+     "speaker": "B"
+    },
+    {
+     "word": "very",
+     "start": 85.094,
+     "end": 85.303,
+     "confidence": 0.9957,
+     "speaker": "B"
+    },
+    {
+     "word": "friendly.",
+     "start": 85.335,
+     "end": 85.816,
+     "confidence": 0.992,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 86.076
+  },
+  {
+   "id": 16,
+   "start": 85.716,
+   "speaker": "COUNSELLOR",
+   "en": "Oh I’m sorry to hear that. Well, what about the actual course? You’re studying … uh?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Oh,",
+     "start": 85.976,
+     "end": 85.992,
+     "confidence": 0.9638,
+     "speaker": "B"
+    },
+    {
+     "word": "I'm",
+     "start": 86.056,
+     "end": 86.601,
+     "confidence": 0.9974,
+     "speaker": "B"
+    },
+    {
+     "word": "sorry",
+     "start": 86.681,
+     "end": 87.018,
+     "confidence": 0.999,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 87.018,
+     "end": 87.178,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "hear",
+     "start": 87.178,
+     "end": 87.451,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "that.",
+     "start": 87.483,
+     "end": 87.819,
+     "confidence": 0.9633,
+     "speaker": "B"
+    },
+    {
+     "word": "Well,",
+     "start": 89.246,
+     "end": 89.374,
+     "confidence": 0.7356,
+     "speaker": "A"
+    },
+    {
+     "word": "what",
+     "start": 89.663,
+     "end": 89.839,
+     "confidence": 0.9952,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 89.839,
+     "end": 90.128,
+     "confidence": 0.9957,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 90.128,
+     "end": 90.176,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "actual",
+     "start": 90.208,
+     "end": 90.432,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "course?",
+     "start": 90.544,
+     "end": 90.945,
+     "confidence": 0.9281,
+     "speaker": "A"
+    },
+    {
+     "word": "You're",
+     "start": 91.731,
+     "end": 91.891,
+     "confidence": 0.861,
+     "speaker": "B"
+    },
+    {
+     "word": "studying—",
+     "start": 91.891,
+     "end": 92.436,
+     "confidence": 0.8091,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 93.286
+  },
+  {
+   "id": 17,
+   "start": 93.124,
+   "speaker": "KATE",
+   "en": "I’m doing a Masters by coursework in Environmental Studies.",
+   "zh": "",
+   "words": [
+    {
+     "word": "I'm",
+     "start": 93.574,
+     "end": 93.879,
+     "confidence": 0.8275,
+     "speaker": "B"
+    },
+    {
+     "word": "doing",
+     "start": 93.911,
+     "end": 94.039,
+     "confidence": 0.8891,
+     "speaker": "B"
+    },
+    {
+     "word": "a",
+     "start": 94.071,
+     "end": 94.087,
+     "confidence": 0.997,
+     "speaker": "B"
+    },
+    {
+     "word": "Master's",
+     "start": 94.087,
+     "end": 94.792,
+     "confidence": 0.7072,
+     "speaker": "B"
+    },
+    {
+     "word": "by",
+     "start": 94.792,
+     "end": 95.017,
+     "confidence": 0.9909,
+     "speaker": "B"
+    },
+    {
+     "word": "coursework",
+     "start": 95.017,
+     "end": 95.578,
+     "confidence": 0.9893,
+     "speaker": "B"
+    },
+    {
+     "word": "in",
+     "start": 95.658,
+     "end": 95.77,
+     "confidence": 0.9941,
+     "speaker": "B"
+    },
+    {
+     "word": "Environmental",
+     "start": 95.77,
+     "end": 96.54,
+     "confidence": 0.8165,
+     "speaker": "B"
+    },
+    {
+     "word": "Studies.",
+     "start": 96.556,
+     "end": 96.973,
+     "confidence": 0.9964,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 97.423
+  },
+  {
+   "id": 18,
+   "start": 97.213,
+   "speaker": "COUNSELLOR",
+   "en": "Ah, right, and how are you finding that?",
+   "zh": "",
+   "words": [
+    {
+     "word": "right,",
+     "start": 98.063,
+     "end": 98.447,
+     "confidence": 0.9521,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 98.479,
+     "end": 98.64,
+     "confidence": 0.9457,
+     "speaker": "A"
+    },
+    {
+     "word": "how",
+     "start": 98.64,
+     "end": 98.688,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 98.72,
+     "end": 98.864,
+     "confidence": 0.9641,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 98.864,
+     "end": 98.96,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "finding",
+     "start": 98.96,
+     "end": 99.329,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "that?",
+     "start": 99.345,
+     "end": 99.666,
+     "confidence": 0.9997,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 100.116
+  },
+  {
+   "id": 19,
+   "start": 99.617,
+   "speaker": "KATE",
+   "en": "Yeah, well, it’s been pretty good really. I’ve enjoyed the course, but I feel there hasn’t been enough contact with the lecturers. They all seem to be incredibly busy. The only chance I’ve really had to talk to them was on the field trip.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yes,",
+     "start": 100.467,
+     "end": 100.708,
+     "confidence": 0.8105,
+     "speaker": "A"
+    },
+    {
+     "word": "well,",
+     "start": 100.788,
+     "end": 100.916,
+     "confidence": 0.7774,
+     "speaker": "A"
+    },
+    {
+     "word": "it's",
+     "start": 101.044,
+     "end": 101.525,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "been",
+     "start": 101.525,
+     "end": 101.733,
+     "confidence": 0.9919,
+     "speaker": "A"
+    },
+    {
+     "word": "pretty",
+     "start": 101.846,
+     "end": 102.086,
+     "confidence": 0.9982,
+     "speaker": "A"
+    },
+    {
+     "word": "good",
+     "start": 102.166,
+     "end": 102.471,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "really.",
+     "start": 102.471,
+     "end": 102.824,
+     "confidence": 0.7169,
+     "speaker": "A"
+    },
+    {
+     "word": "I've",
+     "start": 103.753,
+     "end": 103.849,
+     "confidence": 0.9903,
+     "speaker": "B"
+    },
+    {
+     "word": "enjoyed",
+     "start": 103.849,
+     "end": 104.234,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 104.234,
+     "end": 104.33,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "course.",
+     "start": 104.33,
+     "end": 104.699,
+     "confidence": 0.9397,
+     "speaker": "B"
+    },
+    {
+     "word": "But",
+     "start": 105.436,
+     "end": 105.597,
+     "confidence": 0.5655,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 105.597,
+     "end": 105.693,
+     "confidence": 0.9558,
+     "speaker": "B"
+    },
+    {
+     "word": "feel",
+     "start": 105.693,
+     "end": 105.949,
+     "confidence": 0.9938,
+     "speaker": "B"
+    },
+    {
+     "word": "there",
+     "start": 105.949,
+     "end": 106.094,
+     "confidence": 0.9969,
+     "speaker": "B"
+    },
+    {
+     "word": "hasn't",
+     "start": 106.094,
+     "end": 106.414,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "been",
+     "start": 106.414,
+     "end": 106.559,
+     "confidence": 0.9984,
+     "speaker": "B"
+    },
+    {
+     "word": "enough",
+     "start": 106.559,
+     "end": 106.767,
+     "confidence": 0.9987,
+     "speaker": "B"
+    },
+    {
+     "word": "contact",
+     "start": 106.895,
+     "end": 107.761,
+     "confidence": 0.9979,
+     "speaker": "B"
+    },
+    {
+     "word": "with",
+     "start": 107.761,
+     "end": 107.841,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 107.841,
+     "end": 107.937,
+     "confidence": 0.9922,
+     "speaker": "B"
+    },
+    {
+     "word": "lecturers.",
+     "start": 107.937,
+     "end": 108.466,
+     "confidence": 0.9705,
+     "speaker": "B"
+    },
+    {
+     "word": "Oh,",
+     "start": 108.578,
+     "end": 108.594,
+     "confidence": 0.6768,
+     "speaker": "B"
+    },
+    {
+     "word": "right,",
+     "start": 108.61,
+     "end": 108.707,
+     "confidence": 0.7958,
+     "speaker": "B"
+    },
+    {
+     "word": "yes,",
+     "start": 108.803,
+     "end": 108.883,
+     "confidence": 0.7145,
+     "speaker": "B"
+    },
+    {
+     "word": "no,",
+     "start": 108.899,
+     "end": 108.947,
+     "confidence": 0.8995,
+     "speaker": "B"
+    },
+    {
+     "word": "okay.",
+     "start": 108.979,
+     "end": 109.043,
+     "confidence": 0.8518,
+     "speaker": "B"
+    },
+    {
+     "word": "They,",
+     "start": 109.204,
+     "end": 109.316,
+     "confidence": 0.7053,
+     "speaker": "B"
+    },
+    {
+     "word": "they",
+     "start": 109.38,
+     "end": 109.46,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "all",
+     "start": 109.524,
+     "end": 109.572,
+     "confidence": 0.9977,
+     "speaker": "B"
+    },
+    {
+     "word": "seem",
+     "start": 109.684,
+     "end": 109.829,
+     "confidence": 0.9853,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 109.861,
+     "end": 109.941,
+     "confidence": 0.9986,
+     "speaker": "B"
+    },
+    {
+     "word": "be",
+     "start": 109.941,
+     "end": 110.021,
+     "confidence": 0.9994,
+     "speaker": "B"
+    },
+    {
+     "word": "incredibly",
+     "start": 110.021,
+     "end": 110.502,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "busy.",
+     "start": 110.502,
+     "end": 110.758,
+     "confidence": 0.9896,
+     "speaker": "B"
+    },
+    {
+     "word": "The",
+     "start": 111.688,
+     "end": 111.72,
+     "confidence": 0.9987,
+     "speaker": "B"
+    },
+    {
+     "word": "only",
+     "start": 111.72,
+     "end": 111.929,
+     "confidence": 0.9973,
+     "speaker": "B"
+    },
+    {
+     "word": "chance",
+     "start": 111.929,
+     "end": 112.265,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "I've",
+     "start": 112.265,
+     "end": 112.41,
+     "confidence": 0.9947,
+     "speaker": "B"
+    },
+    {
+     "word": "really",
+     "start": 112.41,
+     "end": 112.634,
+     "confidence": 0.9989,
+     "speaker": "B"
+    },
+    {
+     "word": "had",
+     "start": 112.65,
+     "end": 112.89,
+     "confidence": 0.9997,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 112.89,
+     "end": 112.987,
+     "confidence": 0.9994,
+     "speaker": "B"
+    },
+    {
+     "word": "talk",
+     "start": 112.987,
+     "end": 113.291,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 113.291,
+     "end": 113.323,
+     "confidence": 0.9988,
+     "speaker": "B"
+    },
+    {
+     "word": "them",
+     "start": 113.387,
+     "end": 113.564,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "was",
+     "start": 113.772,
+     "end": 113.916,
+     "confidence": 0.9981,
+     "speaker": "B"
+    },
+    {
+     "word": "on",
+     "start": 114.093,
+     "end": 114.141,
+     "confidence": 0.9953,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 114.189,
+     "end": 114.269,
+     "confidence": 0.9934,
+     "speaker": "B"
+    },
+    {
+     "word": "field",
+     "start": 114.269,
+     "end": 114.574,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "trip.",
+     "start": 114.574,
+     "end": 114.846,
+     "confidence": 0.9961,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 115.475
+  },
+  {
+   "id": 20,
+   "start": 114.746,
+   "speaker": "COUNSELLOR",
+   "en": "Well that’s no good. Could anything be done to improve the course in your opinion?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 115.375,
+     "end": 115.535,
+     "confidence": 0.991,
+     "speaker": "B"
+    },
+    {
+     "word": "that's",
+     "start": 115.616,
+     "end": 115.936,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "no",
+     "start": 115.936,
+     "end": 116.016,
+     "confidence": 0.9983,
+     "speaker": "B"
+    },
+    {
+     "word": "good.",
+     "start": 116.112,
+     "end": 116.257,
+     "confidence": 0.9793,
+     "speaker": "B"
+    },
+    {
+     "word": "Mm-mm.",
+     "start": 116.433,
+     "end": 116.834,
+     "confidence": 0.7163,
+     "speaker": "B"
+    },
+    {
+     "word": "Um,",
+     "start": 117.299,
+     "end": 117.523,
+     "confidence": 0.7146,
+     "speaker": "A"
+    },
+    {
+     "word": "could",
+     "start": 118.036,
+     "end": 118.196,
+     "confidence": 0.9993,
+     "speaker": "A"
+    },
+    {
+     "word": "anything",
+     "start": 118.196,
+     "end": 118.517,
+     "confidence": 0.9993,
+     "speaker": "A"
+    },
+    {
+     "word": "be",
+     "start": 118.517,
+     "end": 118.677,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "done",
+     "start": 118.677,
+     "end": 118.886,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 118.998,
+     "end": 119.158,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "improve",
+     "start": 119.158,
+     "end": 119.543,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 119.543,
+     "end": 119.623,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "course",
+     "start": 119.623,
+     "end": 120.04,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 120.04,
+     "end": 120.12,
+     "confidence": 0.5615,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 120.12,
+     "end": 120.28,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "opinion?",
+     "start": 120.28,
+     "end": 120.569,
+     "confidence": 0.9997,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 121.342
+  },
+  {
+   "id": 21,
+   "start": 120.792,
+   "speaker": "KATE",
+   "en": "Well … I think it would be helpful to have meetings with lecturers on the course. Say once a fortnight — something like that.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 121.242,
+     "end": 121.611,
+     "confidence": 0.9905,
+     "speaker": "B"
+    },
+    {
+     "word": "I",
+     "start": 122.348,
+     "end": 122.38,
+     "confidence": 0.9917,
+     "speaker": "B"
+    },
+    {
+     "word": "think",
+     "start": 122.38,
+     "end": 122.685,
+     "confidence": 0.998,
+     "speaker": "B"
+    },
+    {
+     "word": "it",
+     "start": 122.685,
+     "end": 122.829,
+     "confidence": 0.9987,
+     "speaker": "B"
+    },
+    {
+     "word": "would",
+     "start": 122.829,
+     "end": 122.989,
+     "confidence": 0.9988,
+     "speaker": "B"
+    },
+    {
+     "word": "be",
+     "start": 122.989,
+     "end": 123.15,
+     "confidence": 0.9979,
+     "speaker": "B"
+    },
+    {
+     "word": "helpful",
+     "start": 123.15,
+     "end": 123.55,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "to",
+     "start": 123.647,
+     "end": 123.727,
+     "confidence": 0.9996,
+     "speaker": "B"
+    },
+    {
+     "word": "have",
+     "start": 123.791,
+     "end": 124.031,
+     "confidence": 0.9994,
+     "speaker": "B"
+    },
+    {
+     "word": "meetings",
+     "start": 124.368,
+     "end": 124.817,
+     "confidence": 0.9977,
+     "speaker": "B"
+    },
+    {
+     "word": "with",
+     "start": 124.849,
+     "end": 124.993,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "lecturers",
+     "start": 125.009,
+     "end": 125.618,
+     "confidence": 0.9994,
+     "speaker": "B"
+    },
+    {
+     "word": "on",
+     "start": 125.65,
+     "end": 125.779,
+     "confidence": 0.9991,
+     "speaker": "B"
+    },
+    {
+     "word": "the",
+     "start": 125.811,
+     "end": 125.955,
+     "confidence": 0.9984,
+     "speaker": "B"
+    },
+    {
+     "word": "course,",
+     "start": 125.955,
+     "end": 126.292,
+     "confidence": 0.8153,
+     "speaker": "B"
+    },
+    {
+     "word": "say",
+     "start": 127.157,
+     "end": 127.478,
+     "confidence": 0.9998,
+     "speaker": "B"
+    },
+    {
+     "word": "once",
+     "start": 127.654,
+     "end": 127.895,
+     "confidence": 0.6778,
+     "speaker": "B"
+    },
+    {
+     "word": "a",
+     "start": 127.895,
+     "end": 127.911,
+     "confidence": 0.9973,
+     "speaker": "B"
+    },
+    {
+     "word": "fortnight,",
+     "start": 127.975,
+     "end": 128.408,
+     "confidence": 0.9805,
+     "speaker": "B"
+    },
+    {
+     "word": "something",
+     "start": 128.921,
+     "end": 129.177,
+     "confidence": 0.9995,
+     "speaker": "B"
+    },
+    {
+     "word": "like",
+     "start": 129.177,
+     "end": 129.337,
+     "confidence": 0.9993,
+     "speaker": "B"
+    },
+    {
+     "word": "that.",
+     "start": 129.337,
+     "end": 129.626,
+     "confidence": 0.9698,
+     "speaker": "B"
+    }
+   ],
+   "answers": [],
+   "end": 130.076
+  },
+  {
+   "id": 22,
+   "start": 129.526,
+   "speaker": "COUNSELLOR",
+   "en": "Regular meetings. Yes that could certainly help. Now Kate, we’ll come back to you in a minute, but I’d just like to ask Luki some questions.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Regular",
+     "start": 130.219,
+     "end": 130.62,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "meetings.",
+     "start": 130.62,
+     "end": 131.149,
+     "confidence": 0.6872,
+     "speaker": "A"
+    },
+    {
+     "word": "Uh-huh.",
+     "start": 131.582,
+     "end": 131.759,
+     "confidence": 0.7904,
+     "speaker": "A"
+    },
+    {
+     "word": "Yes,",
+     "start": 131.984,
+     "end": 132.21,
+     "confidence": 0.9912,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 132.226,
+     "end": 132.387,
+     "confidence": 0.9968,
+     "speaker": "A"
+    },
+    {
+     "word": "could",
+     "start": 132.387,
+     "end": 132.516,
+     "confidence": 0.9949,
+     "speaker": "A"
+    },
+    {
+     "word": "certainly",
+     "start": 132.548,
+     "end": 132.999,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "help.",
+     "start": 133.015,
+     "end": 133.353,
+     "confidence": 0.9941,
+     "speaker": "A"
+    },
+    {
+     "word": "Now,",
+     "start": 134.303,
+     "end": 134.399,
+     "confidence": 0.8027,
+     "speaker": "A"
+    },
+    {
+     "word": "Kate,",
+     "start": 134.48,
+     "end": 134.705,
+     "confidence": 0.9779,
+     "speaker": "A"
+    },
+    {
+     "word": "we'll",
+     "start": 134.721,
+     "end": 134.85,
+     "confidence": 0.9961,
+     "speaker": "A"
+    },
+    {
+     "word": "come",
+     "start": 134.866,
+     "end": 135.043,
+     "confidence": 0.9977,
+     "speaker": "A"
+    },
+    {
+     "word": "back",
+     "start": 135.043,
+     "end": 135.156,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 135.156,
+     "end": 135.269,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 135.269,
+     "end": 135.397,
+     "confidence": 0.9984,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 135.446,
+     "end": 135.526,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "a",
+     "start": 135.526,
+     "end": 135.542,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "minute,",
+     "start": 135.542,
+     "end": 135.848,
+     "confidence": 0.958,
+     "speaker": "A"
+    },
+    {
+     "word": "but",
+     "start": 135.913,
+     "end": 136.009,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "I'd",
+     "start": 136.009,
+     "end": 136.09,
+     "confidence": 0.9793,
+     "speaker": "A"
+    },
+    {
+     "word": "just",
+     "start": 136.09,
+     "end": 136.363,
+     "confidence": 0.997,
+     "speaker": "A"
+    },
+    {
+     "word": "like",
+     "start": 136.363,
+     "end": 136.444,
+     "confidence": 0.995,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 136.492,
+     "end": 136.605,
+     "confidence": 0.9957,
+     "speaker": "A"
+    },
+    {
+     "word": "ask",
+     "start": 136.637,
+     "end": 136.879,
+     "confidence": 0.9956,
+     "speaker": "A"
+    },
+    {
+     "word": "Lukey",
+     "start": 136.879,
+     "end": 137.152,
+     "confidence": 0.7868,
+     "speaker": "A"
+    },
+    {
+     "word": "some",
+     "start": 137.281,
+     "end": 137.442,
+     "confidence": 0.995,
+     "speaker": "A"
+    },
+    {
+     "word": "questions.",
+     "start": 137.442,
+     "end": 137.829,
+     "confidence": 0.993,
+     "speaker": "A"
+    }
+   ],
+   "answers": [
+    5
+   ],
+   "end": 138.279
+  },
+  {
+   "id": 23,
+   "start": 139.38,
+   "speaker": "COUNSELLOR",
+   "en": "Luki, where are you from?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Lukey,",
+     "start": 139.83,
+     "end": 140.12,
+     "confidence": 0.9931,
+     "speaker": "A"
+    },
+    {
+     "word": "where",
+     "start": 140.508,
+     "end": 140.653,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 140.653,
+     "end": 140.814,
+     "confidence": 0.9943,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 140.814,
+     "end": 140.879,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "from?",
+     "start": 141.056,
+     "end": 141.331,
+     "confidence": 0.9995,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 141.721
+  },
+  {
+   "id": 24,
+   "start": 141.231,
+   "speaker": "LUKI",
+   "en": "I am from Indonesia.",
+   "zh": "",
+   "words": [
+    {
+     "word": "I",
+     "start": 141.621,
+     "end": 141.702,
+     "confidence": 0.9985,
+     "speaker": "C"
+    },
+    {
+     "word": "am",
+     "start": 141.702,
+     "end": 141.799,
+     "confidence": 0.958,
+     "speaker": "C"
+    },
+    {
+     "word": "from",
+     "start": 141.799,
+     "end": 142.138,
+     "confidence": 0.9974,
+     "speaker": "C"
+    },
+    {
+     "word": "Indonesia.",
+     "start": 142.203,
+     "end": 142.929,
+     "confidence": 0.9916,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 143.379
+  },
+  {
+   "id": 25,
+   "start": 143.351,
+   "speaker": "COUNSELLOR",
+   "en": "And how did you find Cambridge when you first arrived?",
+   "zh": "",
+   "words": [
+    {
+     "word": "And",
+     "start": 143.801,
+     "end": 143.897,
+     "confidence": 0.9976,
+     "speaker": "A"
+    },
+    {
+     "word": "how",
+     "start": 143.897,
+     "end": 144.059,
+     "confidence": 0.9974,
+     "speaker": "A"
+    },
+    {
+     "word": "did",
+     "start": 144.14,
+     "end": 144.285,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 144.285,
+     "end": 144.398,
+     "confidence": 0.9963,
+     "speaker": "A"
+    },
+    {
+     "word": "find",
+     "start": 144.543,
+     "end": 144.931,
+     "confidence": 0.9929,
+     "speaker": "A"
+    },
+    {
+     "word": "Cambridge",
+     "start": 144.931,
+     "end": 145.367,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "when",
+     "start": 145.415,
+     "end": 145.48,
+     "confidence": 0.9985,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 145.496,
+     "end": 145.673,
+     "confidence": 0.9974,
+     "speaker": "A"
+    },
+    {
+     "word": "first",
+     "start": 145.673,
+     "end": 145.932,
+     "confidence": 0.9992,
+     "speaker": "A"
+    },
+    {
+     "word": "arrived?",
+     "start": 145.932,
+     "end": 146.206,
+     "confidence": 0.9993,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 146.656
+  },
+  {
+   "id": 26,
+   "start": 146.111,
+   "speaker": "LUKI",
+   "en": "Well, I like it here. I think the city is very beautiful.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 146.561,
+     "end": 146.69,
+     "confidence": 0.9983,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 146.965,
+     "end": 147.045,
+     "confidence": 0.9988,
+     "speaker": "C"
+    },
+    {
+     "word": "like",
+     "start": 147.11,
+     "end": 147.368,
+     "confidence": 0.9967,
+     "speaker": "C"
+    },
+    {
+     "word": "it",
+     "start": 147.368,
+     "end": 147.449,
+     "confidence": 0.9973,
+     "speaker": "C"
+    },
+    {
+     "word": "here.",
+     "start": 147.449,
+     "end": 147.627,
+     "confidence": 0.9816,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 148.256,
+     "end": 148.272,
+     "confidence": 0.9993,
+     "speaker": "C"
+    },
+    {
+     "word": "think",
+     "start": 148.337,
+     "end": 148.595,
+     "confidence": 0.9874,
+     "speaker": "C"
+    },
+    {
+     "word": "the",
+     "start": 148.644,
+     "end": 148.676,
+     "confidence": 0.9963,
+     "speaker": "C"
+    },
+    {
+     "word": "city",
+     "start": 148.676,
+     "end": 148.821,
+     "confidence": 0.9976,
+     "speaker": "C"
+    },
+    {
+     "word": "is",
+     "start": 148.87,
+     "end": 148.95,
+     "confidence": 0.9767,
+     "speaker": "C"
+    },
+    {
+     "word": "very",
+     "start": 149.063,
+     "end": 149.273,
+     "confidence": 0.9968,
+     "speaker": "C"
+    },
+    {
+     "word": "beautiful.",
+     "start": 149.45,
+     "end": 149.95,
+     "confidence": 0.9943,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 150.4
+  },
+  {
+   "id": 27,
+   "start": 150.21,
+   "speaker": "COUNSELLOR",
+   "en": "What about your accommodation? Was that OK?",
+   "zh": "",
+   "words": [
+    {
+     "word": "What",
+     "start": 150.66,
+     "end": 150.838,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 150.838,
+     "end": 151.063,
+     "confidence": 0.9973,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 151.063,
+     "end": 151.225,
+     "confidence": 0.9992,
+     "speaker": "A"
+    },
+    {
+     "word": "accommodation?",
+     "start": 151.225,
+     "end": 152.031,
+     "confidence": 0.9347,
+     "speaker": "A"
+    },
+    {
+     "word": "Was",
+     "start": 152.435,
+     "end": 152.499,
+     "confidence": 0.9992,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 152.532,
+     "end": 152.774,
+     "confidence": 0.998,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 153.624
+  },
+  {
+   "id": 28,
+   "start": 152.875,
+   "speaker": "LUKI",
+   "en": "Yes, OK. At first I stayed with a family for three months. They were very kind to me but they had three young children and I found it difficult to study",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yes,",
+     "start": 153.725,
+     "end": 153.854,
+     "confidence": 0.8853,
+     "speaker": "C"
+    },
+    {
+     "word": "okay.",
+     "start": 154.209,
+     "end": 154.548,
+     "confidence": 0.962,
+     "speaker": "C"
+    },
+    {
+     "word": "At",
+     "start": 155.677,
+     "end": 155.839,
+     "confidence": 0.976,
+     "speaker": "C"
+    },
+    {
+     "word": "first,",
+     "start": 155.839,
+     "end": 156.339,
+     "confidence": 0.8784,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 156.645,
+     "end": 156.694,
+     "confidence": 0.9987,
+     "speaker": "C"
+    },
+    {
+     "word": "stayed",
+     "start": 156.726,
+     "end": 157.097,
+     "confidence": 0.9972,
+     "speaker": "C"
+    },
+    {
+     "word": "with",
+     "start": 157.113,
+     "end": 157.226,
+     "confidence": 0.9992,
+     "speaker": "C"
+    },
+    {
+     "word": "a",
+     "start": 157.226,
+     "end": 157.291,
+     "confidence": 0.9774,
+     "speaker": "C"
+    },
+    {
+     "word": "family",
+     "start": 157.291,
+     "end": 157.774,
+     "confidence": 0.9881,
+     "speaker": "C"
+    },
+    {
+     "word": "for",
+     "start": 157.839,
+     "end": 158.016,
+     "confidence": 0.9986,
+     "speaker": "C"
+    },
+    {
+     "word": "3",
+     "start": 158.016,
+     "end": 158.258,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "months.",
+     "start": 158.275,
+     "end": 158.565,
+     "confidence": 0.9257,
+     "speaker": "C"
+    },
+    {
+     "word": "They",
+     "start": 159.082,
+     "end": 159.227,
+     "confidence": 0.8781,
+     "speaker": "C"
+    },
+    {
+     "word": "were",
+     "start": 159.227,
+     "end": 159.275,
+     "confidence": 0.9966,
+     "speaker": "C"
+    },
+    {
+     "word": "very",
+     "start": 159.323,
+     "end": 159.531,
+     "confidence": 0.9879,
+     "speaker": "C"
+    },
+    {
+     "word": "kind",
+     "start": 159.644,
+     "end": 160.045,
+     "confidence": 0.9987,
+     "speaker": "C"
+    },
+    {
+     "word": "to",
+     "start": 160.045,
+     "end": 160.269,
+     "confidence": 0.9994,
+     "speaker": "C"
+    },
+    {
+     "word": "me,",
+     "start": 160.269,
+     "end": 160.365,
+     "confidence": 0.8886,
+     "speaker": "C"
+    },
+    {
+     "word": "but",
+     "start": 160.83,
+     "end": 160.991,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "they",
+     "start": 160.991,
+     "end": 161.087,
+     "confidence": 0.9981,
+     "speaker": "C"
+    },
+    {
+     "word": "had",
+     "start": 161.087,
+     "end": 161.247,
+     "confidence": 0.9914,
+     "speaker": "C"
+    },
+    {
+     "word": "3",
+     "start": 161.247,
+     "end": 161.552,
+     "confidence": 1.0,
+     "speaker": "C"
+    },
+    {
+     "word": "young",
+     "start": 161.552,
+     "end": 161.68,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "children",
+     "start": 161.809,
+     "end": 162.338,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "and",
+     "start": 162.434,
+     "end": 162.546,
+     "confidence": 0.6201,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 162.675,
+     "end": 162.771,
+     "confidence": 0.995,
+     "speaker": "C"
+    },
+    {
+     "word": "found",
+     "start": 162.771,
+     "end": 163.075,
+     "confidence": 0.998,
+     "speaker": "C"
+    },
+    {
+     "word": "it",
+     "start": 163.075,
+     "end": 163.172,
+     "confidence": 0.9993,
+     "speaker": "C"
+    },
+    {
+     "word": "difficult",
+     "start": 163.172,
+     "end": 163.637,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "to",
+     "start": 163.637,
+     "end": 163.685,
+     "confidence": 0.9995,
+     "speaker": "C"
+    },
+    {
+     "word": "study.",
+     "start": 163.717,
+     "end": 164.134,
+     "confidence": 0.991,
+     "speaker": "C"
+    }
+   ],
+   "answers": [
+    6,
+    7
+   ],
+   "end": 164.458
+  },
+  {
+   "id": 29,
+   "start": 164.034,
+   "speaker": "COUNSELLOR",
+   "en": "Right, I see.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Right,",
+     "start": 164.358,
+     "end": 164.856,
+     "confidence": 0.9225,
+     "speaker": "A"
+    },
+    {
+     "word": "I",
+     "start": 165.096,
+     "end": 165.112,
+     "confidence": 0.8042,
+     "speaker": "A"
+    },
+    {
+     "word": "see.",
+     "start": 165.112,
+     "end": 165.577,
+     "confidence": 0.9908,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 166.027
+  },
+  {
+   "id": 30,
+   "start": 165.477,
+   "speaker": "LUKI",
+   "en": "So after three months I moved out and now I live with two other students in a student house. It’s much cheaper and we like it there.",
+   "zh": "",
+   "words": [
+    {
+     "word": "So",
+     "start": 166.042,
+     "end": 166.299,
+     "confidence": 0.9865,
+     "speaker": "C"
+    },
+    {
+     "word": "after",
+     "start": 166.443,
+     "end": 166.716,
+     "confidence": 0.8513,
+     "speaker": "C"
+    },
+    {
+     "word": "3",
+     "start": 166.78,
+     "end": 167.02,
+     "confidence": 1.0,
+     "speaker": "C"
+    },
+    {
+     "word": "months,",
+     "start": 167.02,
+     "end": 167.453,
+     "confidence": 0.7283,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 167.646,
+     "end": 167.742,
+     "confidence": 0.9993,
+     "speaker": "C"
+    },
+    {
+     "word": "moved",
+     "start": 167.742,
+     "end": 168.047,
+     "confidence": 0.9969,
+     "speaker": "C"
+    },
+    {
+     "word": "out",
+     "start": 168.127,
+     "end": 168.512,
+     "confidence": 0.9996,
+     "speaker": "C"
+    },
+    {
+     "word": "and",
+     "start": 169.009,
+     "end": 169.089,
+     "confidence": 0.5349,
+     "speaker": "C"
+    },
+    {
+     "word": "now",
+     "start": 169.185,
+     "end": 169.282,
+     "confidence": 0.9888,
+     "speaker": "C"
+    },
+    {
+     "word": "I",
+     "start": 169.65,
+     "end": 169.731,
+     "confidence": 0.9891,
+     "speaker": "C"
+    },
+    {
+     "word": "live",
+     "start": 169.731,
+     "end": 169.907,
+     "confidence": 0.9981,
+     "speaker": "C"
+    },
+    {
+     "word": "with",
+     "start": 169.907,
+     "end": 170.051,
+     "confidence": 0.9989,
+     "speaker": "C"
+    },
+    {
+     "word": "2",
+     "start": 170.067,
+     "end": 170.196,
+     "confidence": 1.0,
+     "speaker": "C"
+    },
+    {
+     "word": "other",
+     "start": 170.372,
+     "end": 170.484,
+     "confidence": 0.9989,
+     "speaker": "C"
+    },
+    {
+     "word": "students",
+     "start": 170.484,
+     "end": 171.27,
+     "confidence": 0.9994,
+     "speaker": "C"
+    },
+    {
+     "word": "in",
+     "start": 171.334,
+     "end": 171.431,
+     "confidence": 0.994,
+     "speaker": "C"
+    },
+    {
+     "word": "a",
+     "start": 171.431,
+     "end": 171.447,
+     "confidence": 0.9976,
+     "speaker": "C"
+    },
+    {
+     "word": "student",
+     "start": 171.511,
+     "end": 172.072,
+     "confidence": 0.9997,
+     "speaker": "C"
+    },
+    {
+     "word": "house.",
+     "start": 172.072,
+     "end": 172.377,
+     "confidence": 0.9911,
+     "speaker": "C"
+    },
+    {
+     "word": "It's",
+     "start": 173.034,
+     "end": 173.291,
+     "confidence": 0.9986,
+     "speaker": "C"
+    },
+    {
+     "word": "much",
+     "start": 173.291,
+     "end": 173.483,
+     "confidence": 0.9977,
+     "speaker": "C"
+    },
+    {
+     "word": "cheaper",
+     "start": 173.676,
+     "end": 174.061,
+     "confidence": 0.9997,
+     "speaker": "C"
+    },
+    {
+     "word": "and",
+     "start": 174.061,
+     "end": 174.333,
+     "confidence": 0.9559,
+     "speaker": "C"
+    },
+    {
+     "word": "we",
+     "start": 174.397,
+     "end": 174.542,
+     "confidence": 0.9957,
+     "speaker": "C"
+    },
+    {
+     "word": "like",
+     "start": 174.558,
+     "end": 174.814,
+     "confidence": 0.9952,
+     "speaker": "C"
+    },
+    {
+     "word": "it",
+     "start": 174.814,
+     "end": 174.959,
+     "confidence": 0.9991,
+     "speaker": "C"
+    },
+    {
+     "word": "there.",
+     "start": 174.959,
+     "end": 175.199,
+     "confidence": 0.9984,
+     "speaker": "C"
+    }
+   ],
+   "answers": [
+    8
+   ],
+   "end": 175.78
+  },
+  {
+   "id": 31,
+   "start": 175.099,
+   "speaker": "COUNSELLOR",
+   "en": "Good, and what about your studies? What are you studying?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Good.",
+     "start": 175.68,
+     "end": 176.049,
+     "confidence": 0.8541,
+     "speaker": "A"
+    },
+    {
+     "word": "And,",
+     "start": 176.723,
+     "end": 177.092,
+     "confidence": 0.9165,
+     "speaker": "A"
+    },
+    {
+     "word": "um,",
+     "start": 177.108,
+     "end": 177.38,
+     "confidence": 0.8942,
+     "speaker": "A"
+    },
+    {
+     "word": "what",
+     "start": 177.589,
+     "end": 177.781,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "about",
+     "start": 177.781,
+     "end": 178.07,
+     "confidence": 0.9962,
+     "speaker": "A"
+    },
+    {
+     "word": "your",
+     "start": 178.07,
+     "end": 178.31,
+     "confidence": 0.9987,
+     "speaker": "A"
+    },
+    {
+     "word": "studies?",
+     "start": 178.31,
+     "end": 178.775,
+     "confidence": 0.9831,
+     "speaker": "A"
+    },
+    {
+     "word": "What",
+     "start": 179.273,
+     "end": 179.417,
+     "confidence": 0.9994,
+     "speaker": "A"
+    },
+    {
+     "word": "are",
+     "start": 179.417,
+     "end": 179.465,
+     "confidence": 0.9895,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 179.513,
+     "end": 179.609,
+     "confidence": 0.9992,
+     "speaker": "A"
+    },
+    {
+     "word": "studying?",
+     "start": 179.609,
+     "end": 180.203,
+     "confidence": 0.9993,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 180.607
+  },
+  {
+   "id": 32,
+   "start": 180.103,
+   "speaker": "LUKI",
+   "en": "I’m doing a Bachelor of Computing.",
+   "zh": "",
+   "words": [
+    {
+     "word": "I'm",
+     "start": 180.507,
+     "end": 180.62,
+     "confidence": 0.9983,
+     "speaker": "C"
+    },
+    {
+     "word": "doing",
+     "start": 180.652,
+     "end": 180.908,
+     "confidence": 0.9988,
+     "speaker": "C"
+    },
+    {
+     "word": "a",
+     "start": 181.037,
+     "end": 181.085,
+     "confidence": 0.9986,
+     "speaker": "C"
+    },
+    {
+     "word": "Bachelor",
+     "start": 181.133,
+     "end": 181.678,
+     "confidence": 0.8799,
+     "speaker": "C"
+    },
+    {
+     "word": "of",
+     "start": 181.758,
+     "end": 181.822,
+     "confidence": 0.9981,
+     "speaker": "C"
+    },
+    {
+     "word": "Computing.",
+     "start": 181.854,
+     "end": 182.432,
+     "confidence": 0.9912,
+     "speaker": "C"
+    }
+   ],
+   "answers": [
+    9
+   ],
+   "end": 182.836
+  },
+  {
+   "id": 33,
+   "start": 182.332,
+   "speaker": "COUNSELLOR",
+   "en": "Computing. I see. Um, apart from the language difficulties, if you can separate them, how have you found the course?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Computing,",
+     "start": 182.736,
+     "end": 183.298,
+     "confidence": 0.8236,
+     "speaker": "A"
+    },
+    {
+     "word": "I",
+     "start": 183.314,
+     "end": 183.362,
+     "confidence": 0.9963,
+     "speaker": "A"
+    },
+    {
+     "word": "see.",
+     "start": 183.362,
+     "end": 183.538,
+     "confidence": 0.9002,
+     "speaker": "A"
+    },
+    {
+     "word": "Oh,",
+     "start": 183.859,
+     "end": 183.875,
+     "confidence": 0.761,
+     "speaker": "B"
+    },
+    {
+     "word": "right,",
+     "start": 183.955,
+     "end": 184.26,
+     "confidence": 0.761,
+     "speaker": "B"
+    },
+    {
+     "word": "yes,",
+     "start": 184.324,
+     "end": 184.404,
+     "confidence": 0.9265,
+     "speaker": "B"
+    },
+    {
+     "word": "no,",
+     "start": 184.42,
+     "end": 184.468,
+     "confidence": 0.9802,
+     "speaker": "B"
+    },
+    {
+     "word": "okay,",
+     "start": 184.517,
+     "end": 184.565,
+     "confidence": 0.9615,
+     "speaker": "B"
+    },
+    {
+     "word": "or",
+     "start": 184.581,
+     "end": 184.613,
+     "confidence": 0.5956,
+     "speaker": "B"
+    },
+    {
+     "word": "pardon.",
+     "start": 184.613,
+     "end": 184.741,
+     "confidence": 0.7929,
+     "speaker": "B"
+    },
+    {
+     "word": "Um,",
+     "start": 185.383,
+     "end": 185.511,
+     "confidence": 0.8734,
+     "speaker": "A"
+    },
+    {
+     "word": "apart",
+     "start": 186.346,
+     "end": 186.811,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "from",
+     "start": 186.811,
+     "end": 186.972,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 186.972,
+     "end": 187.068,
+     "confidence": 0.9968,
+     "speaker": "A"
+    },
+    {
+     "word": "language",
+     "start": 187.068,
+     "end": 187.598,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "difficulties,",
+     "start": 187.79,
+     "end": 188.561,
+     "confidence": 0.9175,
+     "speaker": "A"
+    },
+    {
+     "word": "if",
+     "start": 189.235,
+     "end": 189.331,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 189.379,
+     "end": 189.411,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "can",
+     "start": 189.54,
+     "end": 189.684,
+     "confidence": 0.9998,
+     "speaker": "A"
+    },
+    {
+     "word": "separate",
+     "start": 189.716,
+     "end": 190.358,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "them,",
+     "start": 190.422,
+     "end": 190.567,
+     "confidence": 0.9828,
+     "speaker": "A"
+    },
+    {
+     "word": "how",
+     "start": 191.401,
+     "end": 191.498,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "have",
+     "start": 191.626,
+     "end": 191.755,
+     "confidence": 0.9992,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 191.803,
+     "end": 192.011,
+     "confidence": 0.9996,
+     "speaker": "A"
+    },
+    {
+     "word": "found",
+     "start": 192.027,
+     "end": 192.284,
+     "confidence": 0.9999,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 192.284,
+     "end": 192.445,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "course?",
+     "start": 192.445,
+     "end": 192.814,
+     "confidence": 0.9996,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 193.264
+  },
+  {
+   "id": 34,
+   "start": 192.734,
+   "speaker": "LUKI",
+   "en": "OK, but …",
+   "zh": "",
+   "words": [
+    {
+     "word": "Oh,",
+     "start": 193.584,
+     "end": 193.648,
+     "confidence": 0.887,
+     "speaker": "C"
+    },
+    {
+     "word": "okay,",
+     "start": 194.916,
+     "end": 195.334,
+     "confidence": 0.8237,
+     "speaker": "C"
+    },
+    {
+     "word": "but—",
+     "start": 195.735,
+     "end": 195.927,
+     "confidence": 0.9791,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 196.637
+  },
+  {
+   "id": 35,
+   "start": 196.087,
+   "speaker": "COUNSELLOR",
+   "en": "Yes, go on.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yes,",
+     "start": 196.537,
+     "end": 196.971,
+     "confidence": 0.8621,
+     "speaker": "A"
+    },
+    {
+     "word": "go",
+     "start": 197.259,
+     "end": 197.5,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "on.",
+     "start": 197.5,
+     "end": 197.709,
+     "confidence": 0.978,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 198.159
+  },
+  {
+   "id": 36,
+   "start": 197.613,
+   "speaker": "LUKI",
+   "en": "Well, the main difficulty for me is getting time on the computers in the computer room. It’s always busy and this makes it very hard to do my practical work.",
+   "zh": "",
+   "words": [
+    {
+     "word": "Well,",
+     "start": 198.463,
+     "end": 198.592,
+     "confidence": 0.9979,
+     "speaker": "C"
+    },
+    {
+     "word": "the",
+     "start": 199.41,
+     "end": 199.506,
+     "confidence": 0.9996,
+     "speaker": "C"
+    },
+    {
+     "word": "main",
+     "start": 199.506,
+     "end": 199.763,
+     "confidence": 0.9991,
+     "speaker": "C"
+    },
+    {
+     "word": "difficulty",
+     "start": 199.811,
+     "end": 200.325,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "for",
+     "start": 200.325,
+     "end": 200.566,
+     "confidence": 0.9995,
+     "speaker": "C"
+    },
+    {
+     "word": "me",
+     "start": 200.566,
+     "end": 200.822,
+     "confidence": 1.0,
+     "speaker": "C"
+    },
+    {
+     "word": "is",
+     "start": 201.497,
+     "end": 201.641,
+     "confidence": 0.9982,
+     "speaker": "C"
+    },
+    {
+     "word": "getting",
+     "start": 201.673,
+     "end": 202.042,
+     "confidence": 0.9991,
+     "speaker": "C"
+    },
+    {
+     "word": "time",
+     "start": 202.058,
+     "end": 202.363,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "on",
+     "start": 202.54,
+     "end": 202.684,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "the",
+     "start": 202.7,
+     "end": 202.781,
+     "confidence": 0.9991,
+     "speaker": "C"
+    },
+    {
+     "word": "computers",
+     "start": 202.781,
+     "end": 203.487,
+     "confidence": 0.9997,
+     "speaker": "C"
+    },
+    {
+     "word": "in",
+     "start": 203.744,
+     "end": 203.84,
+     "confidence": 0.9855,
+     "speaker": "C"
+    },
+    {
+     "word": "the",
+     "start": 203.84,
+     "end": 203.984,
+     "confidence": 0.9965,
+     "speaker": "C"
+    },
+    {
+     "word": "computer",
+     "start": 203.984,
+     "end": 204.434,
+     "confidence": 0.9945,
+     "speaker": "C"
+    },
+    {
+     "word": "room.",
+     "start": 204.434,
+     "end": 204.498,
+     "confidence": 0.9845,
+     "speaker": "C"
+    },
+    {
+     "word": "Mm-hmm.",
+     "start": 204.578,
+     "end": 204.931,
+     "confidence": 0.7114,
+     "speaker": "B"
+    },
+    {
+     "word": "It's",
+     "start": 205.381,
+     "end": 205.589,
+     "confidence": 0.998,
+     "speaker": "C"
+    },
+    {
+     "word": "always",
+     "start": 205.669,
+     "end": 205.974,
+     "confidence": 0.9995,
+     "speaker": "C"
+    },
+    {
+     "word": "busy",
+     "start": 206.087,
+     "end": 206.376,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "and,",
+     "start": 206.472,
+     "end": 206.616,
+     "confidence": 0.6943,
+     "speaker": "C"
+    },
+    {
+     "word": "and",
+     "start": 206.729,
+     "end": 206.889,
+     "confidence": 1.0,
+     "speaker": "C"
+    },
+    {
+     "word": "this",
+     "start": 206.889,
+     "end": 207.002,
+     "confidence": 0.9964,
+     "speaker": "C"
+    },
+    {
+     "word": "makes",
+     "start": 207.13,
+     "end": 207.467,
+     "confidence": 0.9997,
+     "speaker": "C"
+    },
+    {
+     "word": "it",
+     "start": 207.467,
+     "end": 207.676,
+     "confidence": 0.9996,
+     "speaker": "C"
+    },
+    {
+     "word": "very",
+     "start": 207.676,
+     "end": 207.981,
+     "confidence": 0.9995,
+     "speaker": "C"
+    },
+    {
+     "word": "hard",
+     "start": 207.997,
+     "end": 208.398,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "to",
+     "start": 208.398,
+     "end": 208.462,
+     "confidence": 0.9999,
+     "speaker": "C"
+    },
+    {
+     "word": "do",
+     "start": 208.478,
+     "end": 208.59,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "my",
+     "start": 208.59,
+     "end": 208.815,
+     "confidence": 0.9998,
+     "speaker": "C"
+    },
+    {
+     "word": "practical",
+     "start": 208.815,
+     "end": 209.329,
+     "confidence": 0.9996,
+     "speaker": "C"
+    },
+    {
+     "word": "work.",
+     "start": 209.361,
+     "end": 209.553,
+     "confidence": 0.9991,
+     "speaker": "C"
+    }
+   ],
+   "answers": [],
+   "end": 209.958
+  },
+  {
+   "id": 37,
+   "start": 209.453,
+   "speaker": "COUNSELLOR",
+   "en": "Yes, I’m sure it would. Can you reserve time in the computer room?",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yes.",
+     "start": 209.858,
+     "end": 210.324,
+     "confidence": 0.7843,
+     "speaker": "A"
+    },
+    {
+     "word": "I'm",
+     "start": 211.046,
+     "end": 211.142,
+     "confidence": 0.7463,
+     "speaker": "A"
+    },
+    {
+     "word": "sure",
+     "start": 211.207,
+     "end": 211.464,
+     "confidence": 0.9942,
+     "speaker": "A"
+    },
+    {
+     "word": "it",
+     "start": 211.464,
+     "end": 211.512,
+     "confidence": 0.9986,
+     "speaker": "A"
+    },
+    {
+     "word": "would.",
+     "start": 211.608,
+     "end": 211.993,
+     "confidence": 0.9903,
+     "speaker": "A"
+    },
+    {
+     "word": "Can",
+     "start": 212.748,
+     "end": 212.957,
+     "confidence": 0.9964,
+     "speaker": "A"
+    },
+    {
+     "word": "you",
+     "start": 212.973,
+     "end": 213.069,
+     "confidence": 0.9932,
+     "speaker": "A"
+    },
+    {
+     "word": "reserve",
+     "start": 213.069,
+     "end": 213.519,
+     "confidence": 0.9934,
+     "speaker": "A"
+    },
+    {
+     "word": "time",
+     "start": 213.551,
+     "end": 213.84,
+     "confidence": 0.9978,
+     "speaker": "A"
+    },
+    {
+     "word": "in",
+     "start": 213.888,
+     "end": 213.968,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "the",
+     "start": 214.016,
+     "end": 214.113,
+     "confidence": 0.9983,
+     "speaker": "A"
+    },
+    {
+     "word": "computer",
+     "start": 214.113,
+     "end": 214.53,
+     "confidence": 0.9981,
+     "speaker": "A"
+    },
+    {
+     "word": "room?",
+     "start": 214.658,
+     "end": 214.803,
+     "confidence": 0.9983,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 215.176
+  },
+  {
+   "id": 38,
+   "start": 214.703,
+   "speaker": "LUKI",
+   "en": "No, you can’t … but it would certainly help if we could reserve computer time.",
+   "zh": "",
+   "words": [
+    {
+     "word": "No,",
+     "start": 215.076,
+     "end": 215.397,
+     "confidence": 0.9949,
+     "speaker": "C"
+    },
+    {
+     "word": "you",
+     "start": 215.557,
+     "end": 215.638,
+     "confidence": 0.9979,
+     "speaker": "C"
+    },
+    {
+     "word": "can't,",
+     "start": 215.638,
+     "end": 216.119,
+     "confidence": 0.8611,
+     "speaker": "C"
+    },
+    {
+     "word": "but",
+     "start": 216.762,
+     "end": 217.018,
+     "confidence": 0.9959,
+     "speaker": "C"
+    },
+    {
+     "word": "it",
+     "start": 217.163,
+     "end": 217.323,
+     "confidence": 0.983,
+     "speaker": "C"
+    },
+    {
+     "word": "would",
+     "start": 217.323,
+     "end": 217.452,
+     "confidence": 0.9863,
+     "speaker": "C"
+    },
+    {
+     "word": "certainly",
+     "start": 217.484,
+     "end": 217.885,
+     "confidence": 0.9971,
+     "speaker": "C"
+    },
+    {
+     "word": "help",
+     "start": 218.03,
+     "end": 218.303,
+     "confidence": 0.9973,
+     "speaker": "C"
+    },
+    {
+     "word": "if",
+     "start": 218.303,
+     "end": 218.447,
+     "confidence": 0.9986,
+     "speaker": "C"
+    },
+    {
+     "word": "we",
+     "start": 218.447,
+     "end": 218.608,
+     "confidence": 0.9942,
+     "speaker": "C"
+    },
+    {
+     "word": "could",
+     "start": 218.608,
+     "end": 218.913,
+     "confidence": 0.9942,
+     "speaker": "C"
+    },
+    {
+     "word": "reserve",
+     "start": 218.913,
+     "end": 219.298,
+     "confidence": 0.9972,
+     "speaker": "C"
+    },
+    {
+     "word": "computer",
+     "start": 219.33,
+     "end": 219.812,
+     "confidence": 0.9778,
+     "speaker": "C"
+    },
+    {
+     "word": "time.",
+     "start": 219.876,
+     "end": 220.181,
+     "confidence": 0.9899,
+     "speaker": "C"
+    }
+   ],
+   "answers": [
+    10
+   ],
+   "end": 220.377
+  },
+  {
+   "id": 39,
+   "start": 220.081,
+   "speaker": "COUNSELLOR",
+   "en": "Yes. I’ll look into that and see if something can’t be done to improve things over there. Now let’s go back to Kate...",
+   "zh": "",
+   "words": [
+    {
+     "word": "Yes,",
+     "start": 220.277,
+     "end": 220.695,
+     "confidence": 0.951,
+     "speaker": "A"
+    },
+    {
+     "word": "I'll",
+     "start": 221.241,
+     "end": 221.417,
+     "confidence": 0.9893,
+     "speaker": "A"
+    },
+    {
+     "word": "look",
+     "start": 221.417,
+     "end": 221.594,
+     "confidence": 0.9841,
+     "speaker": "A"
+    },
+    {
+     "word": "into",
+     "start": 221.658,
+     "end": 221.915,
+     "confidence": 0.998,
+     "speaker": "A"
+    },
+    {
+     "word": "that",
+     "start": 221.963,
+     "end": 222.3,
+     "confidence": 0.9979,
+     "speaker": "A"
+    },
+    {
+     "word": "and",
+     "start": 222.3,
+     "end": 222.445,
+     "confidence": 0.9909,
+     "speaker": "A"
+    },
+    {
+     "word": "see",
+     "start": 222.445,
+     "end": 222.621,
+     "confidence": 0.9989,
+     "speaker": "A"
+    },
+    {
+     "word": "if",
+     "start": 222.621,
+     "end": 222.862,
+     "confidence": 0.99,
+     "speaker": "A"
+    },
+    {
+     "word": "something",
+     "start": 222.862,
+     "end": 223.232,
+     "confidence": 0.998,
+     "speaker": "A"
+    },
+    {
+     "word": "can't",
+     "start": 223.264,
+     "end": 223.649,
+     "confidence": 0.9951,
+     "speaker": "A"
+    },
+    {
+     "word": "be",
+     "start": 223.649,
+     "end": 223.745,
+     "confidence": 0.9935,
+     "speaker": "A"
+    },
+    {
+     "word": "done",
+     "start": 223.745,
+     "end": 223.954,
+     "confidence": 0.999,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 223.986,
+     "end": 224.147,
+     "confidence": 0.9991,
+     "speaker": "A"
+    },
+    {
+     "word": "improve",
+     "start": 224.147,
+     "end": 224.516,
+     "confidence": 0.9988,
+     "speaker": "A"
+    },
+    {
+     "word": "things",
+     "start": 224.709,
+     "end": 225.094,
+     "confidence": 0.9995,
+     "speaker": "A"
+    },
+    {
+     "word": "over",
+     "start": 225.094,
+     "end": 225.335,
+     "confidence": 0.9997,
+     "speaker": "A"
+    },
+    {
+     "word": "there.",
+     "start": 225.335,
+     "end": 225.592,
+     "confidence": 0.9975,
+     "speaker": "A"
+    },
+    {
+     "word": "Now",
+     "start": 226.619,
+     "end": 226.731,
+     "confidence": 0.9877,
+     "speaker": "A"
+    },
+    {
+     "word": "let's",
+     "start": 227.277,
+     "end": 227.502,
+     "confidence": 0.806,
+     "speaker": "A"
+    },
+    {
+     "word": "go",
+     "start": 227.502,
+     "end": 227.679,
+     "confidence": 0.9957,
+     "speaker": "A"
+    },
+    {
+     "word": "back",
+     "start": 227.679,
+     "end": 227.775,
+     "confidence": 0.9982,
+     "speaker": "A"
+    },
+    {
+     "word": "to",
+     "start": 227.775,
+     "end": 228.016,
+     "confidence": 0.9922,
+     "speaker": "A"
+    },
+    {
+     "word": "Kate.",
+     "start": 228.016,
+     "end": 228.289,
+     "confidence": 0.7892,
+     "speaker": "A"
+    }
+   ],
+   "answers": [],
+   "end": 228.739
   }
+ ],
+ "questions": [
+  {
+   "title": "Questions 1–10",
+   "type": "mixed",
+   "instructions": [
+    "Complete the original Cambridge IELTS listening questions below."
+   ],
+   "source_text": "SECTION 1 Questions 1-10\nComplete the notes. Use NO MORE THAN THREE WORDS for each answer.\nKATE\nHer first impressions of the\ntown\nType of accommodation\nHer feelings about the\naccommodation\nName of course\nDifficulties experienced on the\ncourse\nSuggestions for improving the\ncourse\nExample Quiet\n(1)\n(2)\nEnvironmental Studies\n(4)\n(5)\nHer feelings about the other\nstudents\n(3)\nLUKI\nFirst type of accommodation\nProblem with the first\naccommodation\nName of course\nComments about the\ncourse\nSuggestions for improving the\ncourse\n(6)\n(7)\n(9)\nComputer room busy\n(10)\nSecond type of\naccommodation\n(8)",
+   "items": [
+    {
+     "number": 1,
+     "prompt": "(1) (2) Environmental Studies (4) (5) Her feelings about the other students (3)",
+     "answer": "student accommodation / hostel",
+     "evidence_segment": 11,
+     "paraphrase": null
+    },
+    {
+     "number": 2,
+     "prompt": "(2) Environmental Studies (4) (5) Her feelings about the other students (3) LUKI",
+     "answer": "awful food",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 3,
+     "prompt": "(3) LUKI First type of accommodation Problem with the first accommodation Name of course Comments about the course",
+     "answer": "not friendly / kept to themselves",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 4,
+     "prompt": "(4) (5) Her feelings about the other students (3) LUKI First type of accommodation Problem with the first",
+     "answer": "lecturers too busy",
+     "evidence_segment": null,
+     "paraphrase": null
+    },
+    {
+     "number": 5,
+     "prompt": "(5) Her feelings about the other students (3) LUKI First type of accommodation Problem with the first accommodation",
+     "answer": "regular meetings / meetings with lecturers / fortnightly meetings",
+     "evidence_segment": 22,
+     "paraphrase": null
+    },
+    {
+     "number": 6,
+     "prompt": "(6) (7) (9) Computer room busy (10) Second type of accommodation (8)",
+     "answer": "family / homestay",
+     "evidence_segment": 28,
+     "paraphrase": null
+    },
+    {
+     "number": 7,
+     "prompt": "(7) (9) Computer room busy (10) Second type of accommodation (8)",
+     "answer": "lot of noise / children made noise / difficult to study",
+     "evidence_segment": 28,
+     "paraphrase": null
+    },
+    {
+     "number": 8,
+     "prompt": "(8)",
+     "answer": "student house",
+     "evidence_segment": 30,
+     "paraphrase": null
+    },
+    {
+     "number": 9,
+     "prompt": "(9) Computer room busy (10) Second type of accommodation (8)",
+     "answer": "Bachelor of Computing",
+     "evidence_segment": 32,
+     "paraphrase": null
+    },
+    {
+     "number": 10,
+     "prompt": "(10) Second type of accommodation (8)",
+     "answer": "reserve computer time",
+     "evidence_segment": 38,
+     "paraphrase": null
+    }
+   ]
+  }
+ ],
+ "alignment": {
+  "engine": "assemblyai",
+  "model": "universal-3-pro",
+  "granularity": "word",
+  "fixed_transcript": true,
+  "source_word_count": 576,
+  "assemblyai_word_count": 604,
+  "matched_segment_count": 39,
+  "unmatched_segment_count": 0,
+  "low_confidence_segment_count": 0,
+  "edge_warning_segment_count": 18,
+  "fallback_segment_count": 2,
+  "audio_duration_seconds": 230,
+  "prompted_verbatim": true,
+  "window_policy": "0.45s normal padding; 0.85s when ASR edge is incomplete; 0.10s neighbor overlap"
+ }
 }
