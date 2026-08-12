@@ -9,7 +9,7 @@
 //   vocab:          [{w, lemma, pos, def, aids, synonyms:[{w,note}], confusables:[{w,note}]}]
 //                   aids 与 data/vocab-seed.json 同构,直接喂给 aids.js 的 renderAids()
 //   expressions:    [{text, zh, usage}]
-import { renderAids } from "./aids.js";
+import { renderAids } from "./aids.js?v=6";
 
 function esc(s) {
   return String(s == null ? "" : s)
@@ -90,7 +90,7 @@ function renderVocab(vocab) {
         <b class="dw-w">${esc(v.w)}</b><span class="dw-pos">${esc(v.pos)}</span><span class="dw-def">${esc(v.def)}</span>
         <button type="button" class="deep-add-word" data-word="${esc(v.lemma || v.w)}" data-pos="${esc(v.pos)}" data-def="${esc(v.def)}" data-aids="${esc(JSON.stringify(v.aids || null))}">+ 入库</button>
       </div>
-      ${renderAids(v.aids)}${syn}${conf}</div>`;
+      ${renderAids(v.aids, { focusWord: v.lemma || v.w, returnTo: "vocab.html#review" })}${syn}${conf}</div>`;
   }).join("");
 }
 

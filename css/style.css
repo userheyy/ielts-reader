@@ -662,12 +662,25 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
 }
 .aid-deriv { color: #4a6b52; font-style: normal; background: #f4f9f5; border-radius: 7px; padding: 7px 11px; }
 .fam-root { color: #2563EB; margin-right: 4px; font-weight: 700; }
+.aid-family { padding: 9px 11px 10px; border: 1px solid #dce9df; border-radius: 10px; background: linear-gradient(135deg, #f8fcf8 0%, #f2f8f4 100%); }
+.family-head { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; }
+.family-head .aid-label { margin-right: 0; }
+.family-open-link { margin-left: auto; color: #0f7a5a; font-size: 11.5px; font-weight: 800; text-decoration: none; white-space: nowrap; }
+.family-open-link:hover { color: #075b43; text-decoration: underline; }
+.family-count { color: #6d8173; font-size: 11.5px; font-weight: 600; }
+.family-note { margin: 3px 0 1px; color: #7b8a80; font-size: 11.5px; }
 .fam-pills { display: inline-flex; gap: 7px; flex-wrap: wrap; margin-top: 5px; }
 .fam-pill {
   display: inline-flex; align-items: baseline; gap: 5px;
   background: rgba(59,130,246,.07); border: 1px solid rgba(59,130,246,.20);
   color: #2563EB; border-radius: 999px; padding: 3px 10px; font-size: 12.5px; font-weight: 600;
+  text-decoration: none; transition: transform .16s ease, box-shadow .16s ease, background .16s ease;
 }
+.fam-pill[href] { cursor: pointer; }
+.fam-pill[href]::after { content: "↗"; margin-left: 1px; color: currentColor; font-size: 10px; opacity: .65; }
+.fam-pill:hover { transform: translateY(-1px); box-shadow: 0 3px 9px rgba(37,99,235,.16); background: rgba(59,130,246,.14); }
+.fam-pill.current { background: #2563EB; border-color: #2563EB; color: #fff; box-shadow: 0 2px 6px rgba(37,99,235,.2); }
+.fam-pill.current i { color: rgba(255,255,255,.8); }
 .fam-pill i { color: #7a837c; font-style: normal; font-weight: 400; font-size: 11.5px; }
 /* 高频搭配 chips(青绿,区别于蓝色词族) */
 .colloc-pills { display: inline-flex; gap: 7px; flex-wrap: wrap; margin-top: 5px; }
@@ -741,6 +754,49 @@ table.vocab .del { color: #c0392b; cursor: pointer; }
   color: var(--green-dark); cursor: pointer; font-size: 12px;
 }
 .lib-speak:hover, .lib-speak.speaking { background: var(--green); color: #fff; }
+
+/* ==== 词根词族详情页 family.html ==== */
+.family-page-body { background: #f4f7f3; }
+.family-shell { width: min(1080px, calc(100% - 40px)); margin: 0 auto; padding: 30px 0 64px; }
+.family-back { display: inline-flex; align-items: center; color: #4a7660; text-decoration: none; font-size: 13px; margin-bottom: 16px; }
+.family-back:hover { color: #0f7a5a; }
+.family-hero { position: relative; overflow: hidden; padding: 30px 34px 28px; border-radius: 20px; color: #fff; background: linear-gradient(120deg, #123f31 0%, #17664c 58%, #2a7b5b 100%); box-shadow: 0 14px 30px rgba(21,72,51,.18); }
+.family-hero::after { content: ""; position: absolute; width: 240px; height: 240px; right: -60px; top: -90px; border: 1px solid rgba(255,255,255,.18); border-radius: 50%; box-shadow: 0 0 0 28px rgba(255,255,255,.04), 0 0 0 58px rgba(255,255,255,.03); }
+.family-kicker { position: relative; z-index: 1; color: #b4e7ca; font-size: 11px; letter-spacing: .18em; font-weight: 700; }
+.family-hero h2 { position: relative; z-index: 1; margin: 7px 0 5px; color: #fff; font-family: var(--font-serif); font-size: clamp(25px, 4vw, 38px); letter-spacing: -.02em; }
+.family-hero p { position: relative; z-index: 1; max-width: 720px; margin: 0; color: rgba(255,255,255,.78); line-height: 1.7; font-size: 14px; }
+.family-root-line { position: relative; z-index: 1; display: flex; align-items: center; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.family-root-line span { padding: 5px 12px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; color: #e9fff1; font-family: var(--font-mono); font-size: 13px; }
+.family-root-line i { color: #a5d9bb; font-style: normal; }
+.family-explainer { margin: 18px 0 14px; padding: 17px 20px; border: 1px solid #dce9df; border-radius: 14px; background: #fffdf7; box-shadow: 0 3px 12px rgba(29,66,43,.05); }
+.family-explainer-title { margin-bottom: 4px; color: #835d25; font-size: 14px; font-weight: 800; }
+.family-explainer p { margin: 0; color: #69583e; font-size: 13px; line-height: 1.7; }
+.family-toolbar { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 22px 2px 10px; color: #758478; font-size: 12px; }
+.family-toolbar span:first-child { color: #1e5b42; font-weight: 800; }
+.family-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.family-word-card { min-width: 0; padding: 20px 21px 19px; border: 1px solid #e0e9e1; border-radius: 15px; background: #fff; box-shadow: 0 3px 12px rgba(27,62,42,.05); transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+.family-word-card:hover { transform: translateY(-2px); border-color: #b6d6c0; box-shadow: 0 8px 18px rgba(27,62,42,.1); }
+.family-word-card.active { border: 2px solid #1b8a63; padding: 19px 20px 18px; box-shadow: 0 8px 22px rgba(27,118,82,.13); }
+.family-word-top { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; }
+.family-word { color: #173f2f; font-family: var(--font-serif); font-size: 25px; font-weight: 800; text-decoration: none; }
+.family-word:hover { color: #0f8a60; }
+.family-current { padding: 2px 8px; border-radius: 999px; background: #dff5e7; color: #187449; font-size: 11px; font-weight: 800; }
+.family-pos { color: #87948b; font-size: 12px; font-style: italic; }
+.family-def { margin-top: 5px; color: #35493d; font-size: 15px; line-height: 1.55; }
+.family-morphemes { margin-top: 13px; }
+.family-morphemes .mchip { font-size: 14px; padding: 4px 10px; }
+.family-derivation { display: flex; flex-direction: column; gap: 3px; margin-top: 14px; padding: 10px 12px; border-radius: 9px; background: #f4f9f5; color: #4a6b52; font-size: 13px; line-height: 1.65; }
+.family-derivation b { color: #2e6f47; font-size: 11px; letter-spacing: .05em; }
+.family-empty { padding: 55px 20px; text-align: center; border: 1px dashed #cddbd0; border-radius: 16px; background: #fff; }
+.family-empty h2 { margin: 0 0 8px; color: #294a38; font-size: 22px; }
+.family-empty p { color: #7a887e; font-size: 14px; }
+.family-empty a { color: #0f7a5a; font-weight: 700; }
+@media (max-width: 720px) {
+  .family-shell { width: min(100% - 24px, 620px); padding-top: 20px; }
+  .family-hero { padding: 24px 22px; border-radius: 16px; }
+  .family-grid { grid-template-columns: 1fr; }
+  .family-toolbar { align-items: flex-start; flex-direction: column; gap: 4px; }
+}
 
 /* 按词根成组 */
 .lib-root-group { margin-bottom: 26px; }

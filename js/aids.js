@@ -42,9 +42,11 @@ export function renderMorphemes(aids, { showGloss = true } = {}) {
 
 // 完整记忆法卡:词根拆解 + 推导 + 词族 + 联想 + 词形。
 // opts.skipMorphemes: 复习卡里词根已在提示区显示过,正文可跳过避免重复。
+// opts.focusWord: 当前卡片的主词,用于在词族同级词组里高亮当前词。
+// opts.returnTo: 词族详情页返回位置,例如 vocab.html#daily。
 export function renderAids(aids, opts = {}) {
   if (!aidsHasContent(aids)) return "";
-  const { skipMorphemes = false } = opts;
+  const { skipMorphemes = false, focusWord = "", returnTo = "vocab.html#review" } = opts;
   const blocks = [];
 
   if (!skipMorphemes) {
@@ -55,13 +57,42 @@ export function renderAids(aids, opts = {}) {
     blocks.push(`<div class="aid-block aid-deriv">${esc(aids.derivation)}</div>`);
   }
   if (aids.family && Array.isArray(aids.family.words) && aids.family.words.length) {
-    const rootTag = aids.family.root
-      ? `<b class="fam-root">${esc(aids.family.root)}${aids.family.gloss ? "（" + esc(aids.family.gloss) + "）" : ""}</b>`
+    const rootFallback = Array.isArray(aids.morphemes)
+      ? aids.morphemes.filter((m) => m && m.type === "root" && m.text).map((m) => m.text).join("/")
       : "";
-    const pills = aids.family.words
-      .map((w) => `<span class="fam-pill">${esc(w.word)}<i>${esc(w.def)}</i></span>`)
+    const familyRoot = String(aids.family.root || rootFallback).trim();
+    const rootTag = familyRoot
+      ? `<b class="fam-root">${esc(familyRoot)}${aids.family.gloss ? "（" + esc(aids.family.gloss) + "）" : ""}</b>`
+      : "";
+    // 当前词也放进同一组,与词族成员保持同级;去重后避免数据互相引用造成重复。
+    const familyWords = [];
+    const seenFamilyWords = new Set();
+    const addFamilyWord = (word, def = "", current = false) => {
+      const value = String(word || "").trim();
+      if (!value) return;
+      const key = value.toLowerCase();
+      if (seenFamilyWords.has(key)) return;
+      seenFamilyWords.add(key);
+      familyWords.push({ word: value, def: def || "", current });
+    };
+    addFamilyWord(focusWord, "", true);
+    aids.family.words.forEach((w) => addFamilyWord(w && w.word, w && w.def));
+    const focusKey = String(focusWord || "").trim().toLowerCase();
+    const familyHref = (word) => {
+      const params = new URLSearchParams({ root: familyRoot, word, back: returnTo });
+      return `family.html?${params.toString()}`;
+    };
+    const familyTarget = focusWord || (familyWords[0] && familyWords[0].word) || "";
+    const familyOpen = familyTarget
+      ? `<a class="family-open-link" target="_top" href="${esc(familyHref(familyTarget))}">打开完整词族 <span aria-hidden="true">→</span></a>`
+      : "";
+    const pills = familyWords
+      .map((w) => {
+        const active = w.current || (focusKey && w.word.toLowerCase() === focusKey);
+        return `<a class="fam-pill${active ? " current" : ""}" target="_top" href="${esc(familyHref(w.word))}"${active ? ' aria-current="true"' : ""} title="查看 ${esc(w.word)} 所在词根组">${esc(w.word)}${w.def ? `<i>${esc(w.def)}</i>` : ""}</a>`;
+      })
       .join("");
-    blocks.push(`<div class="aid-block"><span class="aid-label">词族</span>${rootTag}<div class="fam-pills">${pills}</div></div>`);
+    blocks.push(`<div class="aid-block aid-family"><div class="family-head"><span class="aid-label">词族同组</span>${rootTag}<span class="family-count">共 ${familyWords.length} 词</span>${familyOpen}</div><div class="family-note">点击词名查看完整词根、词缀和词义变化；当前词已标出</div><div class="fam-pills">${pills}</div></div>`);
   }
   if (aids.mnemonic && aids.mnemonic.trim()) {
     blocks.push(`<div class="aid-block aid-mnemo"><span class="aid-label">联想</span>${esc(aids.mnemonic)}</div>`);

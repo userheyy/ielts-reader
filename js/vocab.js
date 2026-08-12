@@ -1,7 +1,7 @@
 import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStats } from "./store.js?v=7";
 import { bindProfileBackupUI } from "./profile-backup.js";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
-import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=2";
+import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=6";
 import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=3";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
@@ -141,7 +141,7 @@ function showReviewWord(entry, fromHistory = false) {
   }
   // 显示区(释义 + 完整记忆法)先隐藏,点"显示"才亮
   reviewAids.innerHTML = (aidsHasContent(entry.aids)
-    ? renderAids(entry.aids, { skipMorphemes: true }) // 词根已在提示区,正文跳过避免重复
+    ? renderAids(entry.aids, { skipMorphemes: true, focusWord: entry.word, returnTo: "vocab.html#review" }) // 词根已在提示区,正文跳过避免重复
     : "") + renderCollocations(entry.collocations);
   reviewAnswer.hidden = true;
   reviewActions.hidden = true;
@@ -317,7 +317,7 @@ function render(filter = "") {
       const aidsTr = document.createElement("tr");
       aidsTr.className = "vocab-aids-row";
       aidsTr.hidden = true;
-      aidsTr.innerHTML = `<td colspan="6">${renderAids(e.aids)}</td>`;
+      aidsTr.innerHTML = `<td colspan="6">${renderAids(e.aids, { focusWord: e.word, returnTo: "vocab.html#review" })}</td>`;
       const btn = tr.querySelector(".aids-expand-btn");
       btn.addEventListener("click", () => {
         aidsTr.hidden = !aidsTr.hidden;

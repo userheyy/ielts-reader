@@ -1,5 +1,5 @@
 // 每日单词页控制器:日历热力图 + 今日任务卡 + 过词(B交互) + 节奏设置。
-import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=2";
+import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=6";
 import { gradeReview } from "./store.js?v=7";
 import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=3";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
@@ -138,7 +138,7 @@ function showStudyCard() {
   $("study-def").textContent = entry.def || "暂无释义";
   $("study-example").textContent = entry.sentence_en || "";
   $("study-aids").innerHTML = (aidsHasContent(entry.aids)
-    ? renderAids(entry.aids, { skipMorphemes: true }) : "") + renderCollocations(entry.collocations);
+    ? renderAids(entry.aids, { skipMorphemes: true, focusWord: entry.word, returnTo: "vocab.html#daily" }) : "") + renderCollocations(entry.collocations);
   $("study-answer").hidden = true;
   $("study-actions").hidden = true;
 
