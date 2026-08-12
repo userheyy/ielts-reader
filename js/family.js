@@ -1,4 +1,4 @@
-import { loadSeed } from "./seed.js?v=4";
+import { loadSeed } from "./seed.js?v=5";
 import { renderMorphemes } from "./aids.js?v=5";
 
 const $ = (id) => document.getElementById(id);

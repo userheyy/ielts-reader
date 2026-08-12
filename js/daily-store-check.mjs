@@ -53,15 +53,15 @@ task = await rebuildTodayTask(NOW);
 assert.equal(task.newWords.length, 40, "提高到 40 后 rebuild 应放出 40 词");
 assert.equal(task.day.planned, 40, "planned 应为 40");
 
-// ---- 5) 保护已开始的进度:过了词就不该重排/换词 ----
+// ---- 5) 保护已开始的进度:已完成词保留,新配额调整未完成新词 ----
 reset();
 await ensureTodayTask(NOW);            // 默认 30
 markWordDone("new", NOW);              // 学了 1 个新词
 updateSettings({ new_per_day: 5 });
 task = await rebuildTodayTask(NOW);
-assert.equal(task.newWords.length, 30, "已开始(done>0)时 rebuild 不应换词");
+assert.equal(task.newWords.length, 5, "已开始(done>0)时应保留已完成词并套用新配额");
 assert.equal(task.day.new_done, 1, "已完成计数应保留");
-assert.equal(task.day.planned, 30, "planned 不应被改小");
+assert.equal(task.day.planned, 5, "planned 应按新的新词配额更新");
 
 // ---- 6) 移出当前新词:不计完成、今日总数减一、后续队列不再出现 ----
 reset();

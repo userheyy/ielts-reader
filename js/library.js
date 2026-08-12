@@ -2,7 +2,7 @@
 // 渲染方式:分组成一个个「List」(每组固定词数),配翻页器。每页整块渲染,不做无限滚动懒加载
 // —— 规避之前 IntersectionObserver 哨兵在 iframe 内滚到中途卡住、不再追加的问题。
 import { renderAids, aidsHasContent, renderCollocations } from "./aids.js?v=6";
-import { loadSeed, getSeedMeta, isSeedAdded, setSeedAdded, seedAddedCount, groupSeedByRoot } from "./seed.js?v=4";
+import { loadSeed, getSeedMeta, isSeedAdded, setSeedAdded, seedAddedCount, groupSeedByRoot } from "./seed.js?v=5";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 
 const bodyEl = document.getElementById("lib-body");

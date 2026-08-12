@@ -4,16 +4,16 @@
 // 依赖:
 //   - store.js 的生词库(loadAll)与 SRS 结构
 //   - seed.js 的内置词加载/内置词SRS(loadSeed / getSeedReview)
-//   - tools/seed_wordlist.json 通过 fetch 加载(3575词按词频排序,新词来源)
+//   - tools/seed_wordlist-basic.json 通过 fetch 加载(仅含单词和词频,新词来源)
 //
 // 关键约束:新词只放"已在 vocab-seed.json 生成了 aids 的词"(当前批次),
 // 游标不越过已生成边界;未生成 aids 的词不放出(等后续批次)。
 
 import { loadAll as loadVocab } from "./store.js?v=7";
-import { loadSeed, getSeedReviews } from "./seed.js?v=4";
+import { loadSeedBasic, getSeedReviews } from "./seed.js?v=5";
 
 const KEY = "ielts_daily";
-const WORDLIST_URL = "tools/seed_wordlist.json";
+const WORDLIST_URL = "tools/seed_wordlist-basic.json";
 
 const DEFAULTS = { new_per_day: 30, review_cap: null };
 
@@ -169,7 +169,8 @@ async function getWordlist() {
   try {
     // 词表是静态文件,交给浏览器按 HTTP 缓存头处理。
     const res = await fetch(WORDLIST_URL);
-    const arr = res.ok ? await res.json() : [];
+    const payload = res.ok ? await res.json() : [];
+    const arr = Array.isArray(payload) ? payload : (Array.isArray(payload.words) ? payload.words : []);
     _wordlistCache = Array.isArray(arr)
       ? arr.slice().sort((a, b) => (a.freq_rank || 1e9) - (b.freq_rank || 1e9))
       : [];
@@ -179,7 +180,7 @@ async function getWordlist() {
 
 async function getSeedIndex() {
   if (_seedIndexCache) return _seedIndexCache;
-  const seed = await loadSeed();
+  const seed = await loadSeedBasic();
   _seedIndexCache = new Map();
   for (const w of seed.words || []) {
     if (w && w.word) _seedIndexCache.set(w.word.toLowerCase(), w);
@@ -298,20 +299,52 @@ export async function ensureTodayTask(now = new Date()) {
   const d = loadDaily();
   const seedIndexPromise = getSeedIndex();
 
-  // 已有当天任务时只需恢复,不再额外请求 3573 条词频表。
+  // 已有当天任务时只需恢复,不再额外请求词频表。
   if (d.days[todayKey]) {
     const seedIndex = await seedIndexPromise;
     return restoreDay(d, seedIndex, todayKey, getSeedReviews());
   }
 
-  // 新建任务时并行取完整词库和词频表,避免两个大请求串行等待。
+  // 新建任务时并行取轻量词条和词频表,避免两个请求串行等待。
   const [seedIndex, wordlist] = await Promise.all([seedIndexPromise, getWordlist()]);
   return generateDay(d, seedIndex, wordlist, todayKey, getSeedReviews());
 }
 
+// 今天已经开始后调整新词配额:保留已完成的新词,按新配额截断或补足未完成的新词。
+// 降低配额时不需要重新下载词表;提高配额时才按需加载词表。
+async function adjustStartedDay(d, seedIndex, todayKey, seedReviews = getSeedReviews()) {
+  const rec = d.days[todayKey];
+  const oldWords = Array.isArray(rec.new_words) ? rec.new_words.slice() : [];
+  const newDone = Math.max(0, Number(rec.new_done) || 0);
+  const target = Math.max(newDone, Number(d.settings.new_per_day) || 0);
+  const reviewBase = Math.max(0, (Number(rec.planned) || 0) - oldWords.length);
+  const excluded = new Set(Object.keys(d.excluded_words || {}));
+  const nextWords = oldWords.slice(0, target);
+
+  if (target > nextWords.length) {
+    const wordlist = await getWordlist();
+    const learned = learnedSeedSet(seedIndex, seedReviews);
+    const alreadyQueued = queuedNewWords(d, todayKey);
+    const existing = new Set(nextWords.map(wordKey));
+    for (const cand of wordlist) {
+      if (nextWords.length >= target) break;
+      const wl = wordKey(cand.word);
+      if (!wl || existing.has(wl) || excluded.has(wl) || learned.has(wl) || alreadyQueued.has(wl)) continue;
+      if (!seedIndex.has(wl)) continue;
+      nextWords.push(seedIndex.get(wl).word);
+      existing.add(wl);
+    }
+  }
+
+  rec.new_words = nextWords;
+  rec.planned = Math.max(newDone + (Number(rec.reviewed_done) || 0), reviewBase + nextWords.length);
+  d.new_word_cursor = Math.max(Number(d.new_word_cursor) || 0, nextWords.length);
+  saveDaily(d);
+  return restoreDay(d, seedIndex, todayKey, seedReviews);
+}
+
 // 重排当天任务以套用最新设置(new_per_day 等)。
-// 仅当今天"还没开始"(reviewed_done + new_done === 0)时才真正重排——避免把
-// 用户已过的词/进度冲掉;已开始则原样复原(等价于 ensureTodayTask)。
+// 未开始时按新配额重新生成;已开始时保留已完成进度,只截断或补足未完成的新词。
 export async function rebuildTodayTask(now = new Date()) {
   const todayKey = dateKey(now);
   const d = loadDaily();
@@ -321,7 +354,7 @@ export async function rebuildTodayTask(now = new Date()) {
 
   if (rec && started) {
     const seedIndex = await seedIndexPromise;
-    return restoreDay(d, seedIndex, todayKey, getSeedReviews());
+    return adjustStartedDay(d, seedIndex, todayKey, getSeedReviews());
   }
 
   const [seedIndex, wordlist] = await Promise.all([seedIndexPromise, getWordlist()]);

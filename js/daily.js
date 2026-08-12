@@ -1,16 +1,16 @@
 // 每日单词页控制器:日历热力图 + 今日任务卡 + 过词(B交互) + 节奏设置。
 import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=6";
 import { gradeReview } from "./store.js?v=7";
-import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=4";
+import { loadSeed, loadSeedBasic, getSeedReview, setSeedReview } from "./seed.js?v=5";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
 import { buildQueue } from "./daily-queue.js?v=1";
 import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
-  getSettings, updateSettings, dateKey, getExcludedWords,
+  getSettings, updateSettings, loadDaily, dateKey, getExcludedWords,
   removeWordFromMemoryQueue, restoreWordToMemoryQueue,
-} from "./daily-store.js?v=5";
+} from "./daily-store.js?v=6";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -25,6 +25,8 @@ let currentItem = null;
 let seedIndex = new Map();
 let studySuggestedRating = null;
 let appReady = false;
+let fullSeedPromise = null;
+let reloadSerial = 0;
 
 function clearStudySuggestion() {
   $("study-actions").querySelectorAll("button").forEach((b) => b.classList.remove("suggested"));
@@ -53,9 +55,9 @@ function renderHeatmap() {
 }
 
 // ---- 今日任务概览 ----
-function renderTodayOverview() {
+function renderTodayOverview({ reviewNOverride = null } = {}) {
   const rec = task.day;
-  const reviewN = task.review.length;      // 当前仍到期的复习词(现算,会随完成/在别处复习而减少)
+  const reviewN = reviewNOverride == null ? task.review.length : reviewNOverride;
   const newDone = Math.max(0, rec.new_done || 0);
   const newLeft = Math.max(0, task.newWords.length - newDone); // 还没学的新词
   const done = rec.reviewed_done + rec.new_done;
@@ -109,6 +111,19 @@ function wrapReviewEntry(r) {
   // 这里用 seedIndex 兜底不到,直接读生词库
   const v = (window.__vocabCache || []).find((x) => x.word.toLowerCase() === r.word.toLowerCase());
   return v || { word: r.word, def: "", aids: null };
+}
+
+async function ensureFullSeed() {
+  if (!fullSeedPromise) {
+    fullSeedPromise = loadSeed().then((seed) => {
+      seedIndex = new Map((seed.words || []).map((w) => [w.word.toLowerCase(), w]));
+      if (task) {
+        task.newWords = task.newWords.map((entry) => seedIndex.get(entry.word.toLowerCase()) || entry);
+      }
+      return seed;
+    });
+  }
+  return fullSeedPromise;
 }
 
 // ---- 过词卡(B交互) ----
@@ -286,11 +301,22 @@ $("done-back").addEventListener("click", () => {
 });
 
 // ---- 开始/继续 ----
-$("start-btn").addEventListener("click", () => {
+$("start-btn").addEventListener("click", async () => {
+  if (!appReady) return;
+  const startButton = $("start-btn");
+  startButton.disabled = true;
+  startButton.textContent = "正在准备词卡…";
   refreshVocabCache();
-  queue = buildQueue(task, wrapReviewEntry);
-  if (!queue.length) { finishStudy(); return; }
-  showStudyCard();
+  try {
+    await ensureFullSeed();
+    queue = buildQueue(task, wrapReviewEntry);
+    if (!queue.length) { finishStudy(); return; }
+    showStudyCard();
+  } catch {
+    startButton.disabled = false;
+    startButton.textContent = "加载失败，重试 →";
+    $("mini-note").textContent = "词卡加载失败，请检查网络后重试。";
+  }
 });
 
 // ---- 节奏设置 ----
@@ -318,8 +344,13 @@ $("pace-save").addEventListener("click", () => {
   const n = Math.max(0, Number($("pace-custom-new").value) || 0);
   updateSettings({ new_per_day: n });
   paceModal.hidden = true;
-  // 若今天还没开始(done==0),重建今日任务以套用新配额;已开始则不冲掉进度。
-  reloadTask({ rebuild: true });
+  $("mini-note").textContent = `已保存每天 ${n} 个新词，正在更新今日任务…`;
+  // 不阻塞弹窗关闭;任务更新完成后会立即刷新概览。
+  void reloadTask({ rebuild: true }).then(() => {
+    $("mini-note").textContent = "全部清完，今天的格子就会点亮；到期复习词会自动回到任务里。";
+  }).catch(() => {
+    $("mini-note").textContent = "设置已保存，但今日任务更新失败；刷新页面后会重试。";
+  });
 });
 
 function renderExcludedWords() {
@@ -374,20 +405,43 @@ function refreshVocabCache() {
 }
 
 // ---- 初始化 / 刷新 ----
-// rebuild=true:套用最新任务设置重排当天(仅未开始时真正换词);默认复原,保持幂等。
+// rebuild=true:套用最新任务设置;默认复原,保持幂等。
 async function reloadTask({ rebuild = false } = {}) {
-  task = rebuild ? await rebuildTodayTask() : await ensureTodayTask();
-  appReady = true;
-  $("pace-btn").disabled = false;
+  const serial = ++reloadSerial;
+  const nextTask = rebuild ? await rebuildTodayTask() : await ensureTodayTask();
+  if (serial !== reloadSerial) return;
+  task = nextTask;
   renderTodayOverview();
   renderHeatmap();
 }
 
+function renderStoredOverview() {
+  const d = loadDaily();
+  const today = dateKey();
+  const rec = d.days[today];
+  if (!rec) return;
+  const words = Array.isArray(rec.new_words) ? rec.new_words : [];
+  task = {
+    date: today,
+    review: [],
+    newWords: words.map((word) => ({ word })),
+    day: rec,
+  };
+  // 首屏先使用本地任务记录;完整词库加载后由 reloadTask 重新计算。
+  const reviewN = Math.max(0, (Number(rec.planned) || 0) - words.length - (Number(rec.reviewed_done) || 0));
+  renderTodayOverview({ reviewNOverride: reviewN });
+  renderHeatmap();
+}
+
 (async function init() {
-  // daily-store 也需要同一份 seed;并发启动,避免先加载 seed 再进入任务初始化。
-  const seedPromise = loadSeed();
+  renderStoredOverview();
+  $("pace-btn").disabled = false;
+  // 每日任务只加载轻量词条;完整记忆法延迟到点击“开始今日任务”时加载。
+  const seedPromise = loadSeedBasic();
   const taskPromise = reloadTask();
   const [seed] = await Promise.all([seedPromise, taskPromise]);
   seedIndex = new Map((seed.words || []).map((w) => [w.word.toLowerCase(), w]));
   refreshVocabCache();
+  appReady = true;
+  renderTodayOverview();
 })();

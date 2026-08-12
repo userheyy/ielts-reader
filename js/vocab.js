@@ -2,7 +2,7 @@ import { loadAll, removeWord, exportJSON, importJSON, gradeReview, getReviewStat
 import { bindProfileBackupUI } from "./profile-backup.js";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=6";
-import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=4";
+import { buildReviewPool, setSeedReview, getSeedReview } from "./seed.js?v=5";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
 

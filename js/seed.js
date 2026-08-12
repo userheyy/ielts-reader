@@ -7,11 +7,14 @@
 import { loadAll as loadVocab } from "./store.js?v=7";
 
 const SEED_URL = "data/vocab-seed.json";
+const SEED_BASIC_URL = "data/vocab-seed-basic.json";
 const ADDED_KEY = "ielts_vocab_seed_added";   // 已加入复习的内置词: { [word]: true }
 const SEED_REVIEW_KEY = "ielts_vocab_seed_review"; // 内置词的 SRS 状态: { [word]: reviewObj }
 
 let _seedCache = null; // { meta, words: [...] }
 let _seedPromise = null; // 同一页面内并发调用时共用一次请求
+let _seedBasicCache = null;
+let _seedBasicPromise = null;
 const _jsonCache = new Map(); // localStorage 原文未变时复用已解析对象
 
 function readJSON(key, fallback) {
@@ -56,6 +59,25 @@ export function loadSeed() {
     return _seedCache;
   })();
   return _seedPromise;
+}
+
+// 每日任务首屏只需要单词、释义和例句。完整词库(含大量记忆法字段)
+// 延迟到真正开始过词或进入词库/复习页时再加载，避免 6 MB 文件阻塞首屏。
+export function loadSeedBasic() {
+  if (_seedBasicCache) return _seedBasicCache;
+  if (_seedBasicPromise) return _seedBasicPromise;
+  _seedBasicPromise = (async () => {
+    try {
+      const res = await fetch(SEED_BASIC_URL);
+      if (!res.ok) throw new Error("basic seed not found");
+      const data = await res.json();
+      _seedBasicCache = data && Array.isArray(data.words) ? data : { meta: {}, words: [] };
+    } catch {
+      _seedBasicCache = { meta: {}, words: [] };
+    }
+    return _seedBasicCache;
+  })();
+  return _seedBasicPromise;
 }
 
 export function getSeedMeta() {
