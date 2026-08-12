@@ -11,30 +11,51 @@ const ADDED_KEY = "ielts_vocab_seed_added";   // 已加入复习的内置词: { 
 const SEED_REVIEW_KEY = "ielts_vocab_seed_review"; // 内置词的 SRS 状态: { [word]: reviewObj }
 
 let _seedCache = null; // { meta, words: [...] }
+let _seedPromise = null; // 同一页面内并发调用时共用一次请求
+const _jsonCache = new Map(); // localStorage 原文未变时复用已解析对象
 
 function readJSON(key, fallback) {
   if (typeof localStorage === "undefined") return fallback;
-  const raw = localStorage.getItem(key);
-  if (!raw) return fallback;
-  try { return JSON.parse(raw); } catch { return fallback; }
+  const raw = localStorage.getItem(key) || "";
+  const cached = _jsonCache.get(key);
+  if (cached && cached.raw === raw) return cached.value;
+  if (!raw) {
+    _jsonCache.set(key, { raw: "", value: fallback });
+    return fallback;
+  }
+  try {
+    const value = JSON.parse(raw);
+    _jsonCache.set(key, { raw, value });
+    return value;
+  } catch {
+    _jsonCache.set(key, { raw, value: fallback });
+    return fallback;
+  }
 }
 function writeJSON(key, val) {
   if (typeof localStorage === "undefined") return;
-  localStorage.setItem(key, JSON.stringify(val));
+  const raw = JSON.stringify(val);
+  localStorage.setItem(key, raw);
+  _jsonCache.set(key, { raw, value: val });
 }
 
 // 加载内置词库(带缓存)。失败(文件不存在/空)时返回空结构,不抛错。
-export async function loadSeed() {
+export function loadSeed() {
   if (_seedCache) return _seedCache;
-  try {
-    const res = await fetch(SEED_URL, { cache: "no-cache" });
-    if (!res.ok) throw new Error("seed not found");
-    const data = await res.json();
-    _seedCache = data && Array.isArray(data.words) ? data : { meta: {}, words: [] };
-  } catch {
-    _seedCache = { meta: {}, words: [] };
-  }
-  return _seedCache;
+  if (_seedPromise) return _seedPromise;
+  _seedPromise = (async () => {
+    try {
+      // 让浏览器遵守静态文件的 HTTP 缓存头;不再每次打开都强制网络再验证。
+      const res = await fetch(SEED_URL);
+      if (!res.ok) throw new Error("seed not found");
+      const data = await res.json();
+      _seedCache = data && Array.isArray(data.words) ? data : { meta: {}, words: [] };
+    } catch {
+      _seedCache = { meta: {}, words: [] };
+    }
+    return _seedCache;
+  })();
+  return _seedPromise;
 }
 
 export function getSeedMeta() {
@@ -61,11 +82,17 @@ export function seedAddedCount() {
 
 // 内置词的 SRS 状态读写(结构与 store.js 的 review 对象一致)
 export function getSeedReview(word) {
-  const all = readJSON(SEED_REVIEW_KEY, {});
+  const all = getSeedReviews();
   return all[word.toLowerCase()] || null;
 }
+
+// 一次性读取内置词的复习状态,供批量扫描使用。
+export function getSeedReviews() {
+  return readJSON(SEED_REVIEW_KEY, {});
+}
+
 export function setSeedReview(word, review) {
-  const all = readJSON(SEED_REVIEW_KEY, {});
+  const all = getSeedReviews();
   all[word.toLowerCase()] = review;
   writeJSON(SEED_REVIEW_KEY, all);
 }
@@ -76,6 +103,7 @@ export function setSeedReview(word, review) {
 export async function buildReviewPool() {
   const seed = await loadSeed();
   const added = readJSON(ADDED_KEY, {});
+  const seedReviews = getSeedReviews();
   const vocab = loadVocab();
   const byWord = new Map();
 
@@ -94,7 +122,7 @@ export async function buildReviewPool() {
       sentence_id: null,
       aids: s.aids || null,
       collocations: s.collocations || null,
-      review: getSeedReview(s.word) || { level: 0, next_due: null, history: [] },
+      review: seedReviews[w] || { level: 0, next_due: null, history: [] },
       _origin: "seed",
     });
   }

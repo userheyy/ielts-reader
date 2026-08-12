@@ -36,7 +36,7 @@
     <section class="today-card" id="today-card">
       <div class="today-head">
         <h3>今日任务</h3>
-        <span class="today-date" id="today-date"></span>
+        <span class="today-date" id="today-date">正在加载词库…</span>
       </div>
       <p class="today-sub" id="today-sub">系统按记忆曲线为你安排：先复习到期旧词，再学新词。</p>
       <div class="split">
@@ -48,8 +48,8 @@
         <div class="prog-txt" id="prog-txt">今日已完成 0 / 0 词</div>
       </div>
       <div class="today-buttons">
-        <button class="start-btn" id="start-btn">开始今日任务 →</button>
-        <button class="pace-btn" id="pace-btn">⚙️ 任务设置</button>
+        <button class="start-btn" id="start-btn" disabled>开始今日任务 →</button>
+        <button class="pace-btn" id="pace-btn" disabled>⚙️ 任务设置</button>
       </div>
       <div class="mini-note" id="mini-note">全部清完，今天的格子就会点亮；到期复习词会自动回到任务里。</div>
     </section>
@@ -145,6 +145,6 @@
     </div>
   </div>
 
-  <script type="module" src="js/daily.js?v=11"></script>
+  <script type="module" src="js/daily.js?v=13"></script>
 </body>
 </html>

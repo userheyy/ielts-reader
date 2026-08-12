@@ -2,7 +2,7 @@
 // 打卡词 = 有 SRS 记录的词：内置词(ielts_vocab_seed_review) ∪ 复习过的生词(ielts_vocab)。
 // 题型：中英互选，逐题随机方向（zh2en / en2zh），干扰项从池内随机抽。
 import { loadAll as loadVocab } from "./store.js?v=7";
-import { loadSeed } from "./seed.js?v=3";
+import { loadSeed } from "./seed.js?v=4";
 
 const SEED_REVIEW_KEY = "ielts_vocab_seed_review";
 

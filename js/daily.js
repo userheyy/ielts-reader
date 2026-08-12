@@ -1,7 +1,7 @@
 // 每日单词页控制器:日历热力图 + 今日任务卡 + 过词(B交互) + 节奏设置。
 import { renderAids, renderMorphemes, aidsHasContent, renderCollocations } from "./aids.js?v=6";
 import { gradeReview } from "./store.js?v=7";
-import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=3";
+import { loadSeed, getSeedReview, setSeedReview } from "./seed.js?v=4";
 import {speakEnglish, speechSupported} from "./speech.js?v=6";
 import { judgeSpelling, ratingFromResult, blankSentence, feedbackFor } from "./cloze.js?v=1";
 import { schedule } from "./srs.js?v=1";
@@ -10,7 +10,7 @@ import {
   ensureTodayTask, rebuildTodayTask, markWordDone, heatmapCells, currentStreak, totalWordsDone,
   getSettings, updateSettings, dateKey, getExcludedWords,
   removeWordFromMemoryQueue, restoreWordToMemoryQueue,
-} from "./daily-store.js?v=4";
+} from "./daily-store.js?v=5";
 
 // ---- DOM ----
 const $ = (id) => document.getElementById(id);
@@ -24,6 +24,7 @@ let queue = [];           // 待过的词队列: [{entry, kind:'review'|'new', o
 let currentItem = null;
 let seedIndex = new Map();
 let studySuggestedRating = null;
+let appReady = false;
 
 function clearStudySuggestion() {
   $("study-actions").querySelectorAll("button").forEach((b) => b.classList.remove("suggested"));
@@ -68,6 +69,10 @@ function renderTodayOverview() {
   $("prog-fill").style.width = planned ? `${Math.round((done / planned) * 100)}%` : "0%";
   $("prog-txt").textContent = `今日已完成 ${done} / ${planned} 词`;
   const startBtn = $("start-btn");
+  if (!appReady) {
+    startBtn.disabled = true;
+    return;
+  }
   if (studiable === 0) {
     // 没有可学的词了。区分“今天做过” vs “本就无词”。
     startBtn.disabled = true;
@@ -372,13 +377,17 @@ function refreshVocabCache() {
 // rebuild=true:套用最新任务设置重排当天(仅未开始时真正换词);默认复原,保持幂等。
 async function reloadTask({ rebuild = false } = {}) {
   task = rebuild ? await rebuildTodayTask() : await ensureTodayTask();
+  appReady = true;
+  $("pace-btn").disabled = false;
   renderTodayOverview();
   renderHeatmap();
 }
 
 (async function init() {
-  const seed = await loadSeed();
+  // daily-store 也需要同一份 seed;并发启动,避免先加载 seed 再进入任务初始化。
+  const seedPromise = loadSeed();
+  const taskPromise = reloadTask();
+  const [seed] = await Promise.all([seedPromise, taskPromise]);
   seedIndex = new Map((seed.words || []).map((w) => [w.word.toLowerCase(), w]));
   refreshVocabCache();
-  await reloadTask();
 })();

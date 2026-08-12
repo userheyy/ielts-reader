@@ -10,7 +10,7 @@
 // 游标不越过已生成边界;未生成 aids 的词不放出(等后续批次)。
 
 import { loadAll as loadVocab } from "./store.js?v=7";
-import { loadSeed, getSeedReview } from "./seed.js?v=3";
+import { loadSeed, getSeedReviews } from "./seed.js?v=4";
 
 const KEY = "ielts_daily";
 const WORDLIST_URL = "tools/seed_wordlist.json";
@@ -167,7 +167,8 @@ export function updateSettings(patch) {
 async function getWordlist() {
   if (_wordlistCache) return _wordlistCache;
   try {
-    const res = await fetch(WORDLIST_URL, { cache: "no-cache" });
+    // 词表是静态文件,交给浏览器按 HTTP 缓存头处理。
+    const res = await fetch(WORDLIST_URL);
     const arr = res.ok ? await res.json() : [];
     _wordlistCache = Array.isArray(arr)
       ? arr.slice().sort((a, b) => (a.freq_rank || 1e9) - (b.freq_rank || 1e9))
@@ -188,7 +189,7 @@ async function getSeedIndex() {
 
 // ---------- 复习词:扫描所有已学词,挑到期的 ----------
 // 返回 [{word, origin:'vocab'|'seed', due}]
-function reviewDue(seedIndex, todayKey, excluded = new Set()) {
+function reviewDue(seedIndex, todayKey, excluded = new Set(), seedReviews = getSeedReviews()) {
   const out = [];
   // 生词库
   for (const v of loadVocab()) {
@@ -203,7 +204,7 @@ function reviewDue(seedIndex, todayKey, excluded = new Set()) {
   // 内置词(已学过的,即有 seed_review 记录)
   for (const [wl, s] of seedIndex) {
     if (excluded.has(wl)) continue;
-    const r = getSeedReview(s.word);
+    const r = seedReviews[wl] || null;
     if (!r) continue; // 没学过的内置词由"新词"部分放出,不在这
     if (!r.next_due || r.next_due <= todayKey) {
       out.push({ word: s.word, origin: "seed", due: r.next_due || todayKey });
@@ -215,10 +216,10 @@ function reviewDue(seedIndex, todayKey, excluded = new Set()) {
 }
 
 // 已经"学过/见过"的内置词集合(用于新词跳过)
-function learnedSeedSet(seedIndex) {
+function learnedSeedSet(seedIndex, seedReviews = getSeedReviews()) {
   const s = new Set();
   for (const [wl, entry] of seedIndex) {
-    if (getSeedReview(entry.word)) s.add(wl);
+    if (seedReviews[wl]) s.add(wl);
   }
   return s;
 }
@@ -236,10 +237,10 @@ function queuedNewWords(d, todayKey) {
 
 // ---------- 今日任务生成 ----------
 // 复原已存在的当天任务:词表用当天存的 new_words + 当前到期复习。
-function restoreDay(d, seedIndex, todayKey) {
+function restoreDay(d, seedIndex, todayKey, seedReviews = getSeedReviews()) {
   const rec = d.days[todayKey];
   const excluded = new Set(Object.keys(d.excluded_words || {}));
-  const review = reviewDue(seedIndex, todayKey, excluded);
+  const review = reviewDue(seedIndex, todayKey, excluded, seedReviews);
   const newWords = (rec.new_words || [])
     .filter((w) => !excluded.has(wordKey(w)))
     .map((w) => seedIndex.get(w.toLowerCase()))
@@ -249,9 +250,9 @@ function restoreDay(d, seedIndex, todayKey) {
 
 // 生成(或重排)当天任务:按当前 settings 现取现排复习词与新词,落盘并返回。
 // 调用前请确保这是"该重排"的时机(新建当天,或未开始时套用新配额)。
-function generateDay(d, seedIndex, wordlist, todayKey) {
+function generateDay(d, seedIndex, wordlist, todayKey, seedReviews = getSeedReviews()) {
   const excluded = new Set(Object.keys(d.excluded_words || {}));
-  const review = reviewDue(seedIndex, todayKey, excluded);
+  const review = reviewDue(seedIndex, todayKey, excluded, seedReviews);
   const reviewCap = d.settings.review_cap;
   const reviewList = reviewCap != null ? review.slice(0, reviewCap) : review;
 
@@ -260,7 +261,7 @@ function generateDay(d, seedIndex, wordlist, todayKey) {
   //   (a) 已在 vocab-seed.json 生成了 aids(在 seedIndex 中)
   //   (b) 没学过(无 seed_review 记录)
   //   (c) 没在过去某天已放出过但还没评分(new_words 里出现过——防重复放出)
-  const learned = learnedSeedSet(seedIndex);
+  const learned = learnedSeedSet(seedIndex, seedReviews);
   const alreadyQueued = queuedNewWords(d, todayKey); // 过去各天 new_words 的并集(小写)
   const quota = d.settings.new_per_day;
   const newWords = [];
@@ -295,11 +296,17 @@ function generateDay(d, seedIndex, wordlist, todayKey) {
 export async function ensureTodayTask(now = new Date()) {
   const todayKey = dateKey(now);
   const d = loadDaily();
-  const seedIndex = await getSeedIndex();
-  const wordlist = await getWordlist();
+  const seedIndexPromise = getSeedIndex();
 
-  if (d.days[todayKey]) return restoreDay(d, seedIndex, todayKey);
-  return generateDay(d, seedIndex, wordlist, todayKey);
+  // 已有当天任务时只需恢复,不再额外请求 3573 条词频表。
+  if (d.days[todayKey]) {
+    const seedIndex = await seedIndexPromise;
+    return restoreDay(d, seedIndex, todayKey, getSeedReviews());
+  }
+
+  // 新建任务时并行取完整词库和词频表,避免两个大请求串行等待。
+  const [seedIndex, wordlist] = await Promise.all([seedIndexPromise, getWordlist()]);
+  return generateDay(d, seedIndex, wordlist, todayKey, getSeedReviews());
 }
 
 // 重排当天任务以套用最新设置(new_per_day 等)。
@@ -308,13 +315,17 @@ export async function ensureTodayTask(now = new Date()) {
 export async function rebuildTodayTask(now = new Date()) {
   const todayKey = dateKey(now);
   const d = loadDaily();
-  const seedIndex = await getSeedIndex();
-  const wordlist = await getWordlist();
-
   const rec = d.days[todayKey];
   const started = rec && (rec.reviewed_done + rec.new_done) > 0;
-  if (rec && started) return restoreDay(d, seedIndex, todayKey);
-  return generateDay(d, seedIndex, wordlist, todayKey);
+  const seedIndexPromise = getSeedIndex();
+
+  if (rec && started) {
+    const seedIndex = await seedIndexPromise;
+    return restoreDay(d, seedIndex, todayKey, getSeedReviews());
+  }
+
+  const [seedIndex, wordlist] = await Promise.all([seedIndexPromise, getWordlist()]);
+  return generateDay(d, seedIndex, wordlist, todayKey, getSeedReviews());
 }
 
 // 记录一次"过词"完成(复习或新词),更新当天进度与完成态。
