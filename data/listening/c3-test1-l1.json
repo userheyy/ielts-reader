@@ -7,13 +7,24 @@
   "segments": [
     {
       "id": 1,
-      "start": 0.0,
+      "start": 0.57,
       "speaker": "JANICE",
       "en": "Hello ... Flagstone.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hello",
+          "start": 0.57,
+          "end": 0.97
+        },
+        {
+          "word": "Flagstone",
+          "start": 0.97,
+          "end": 1.57
+        }
+      ],
       "answers": [],
-      "end": 1.6
+      "end": 1.57
     },
     {
       "id": 2,
@@ -21,558 +32,3118 @@
       "speaker": "JON",
       "en": "Oh hello; is that Flagstone Properties?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 1.6,
+          "end": 1.69
+        },
+        {
+          "word": "hello",
+          "start": 1.69,
+          "end": 2.19
+        },
+        {
+          "word": "is",
+          "start": 2.74,
+          "end": 2.94
+        },
+        {
+          "word": "that",
+          "start": 2.94,
+          "end": 3.15
+        },
+        {
+          "word": "Flagstone",
+          "start": 3.15,
+          "end": 3.65
+        },
+        {
+          "word": "Properties",
+          "start": 3.65,
+          "end": 4.22
+        }
+      ],
       "answers": [],
-      "end": 4.8
+      "end": 4.22
     },
     {
       "id": 3,
-      "start": 4.8,
+      "start": 4.62,
       "speaker": "JANICE",
       "en": "Yes that’s right. Flagstone here. How can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 4.62,
+          "end": 5.0
+        },
+        {
+          "word": "that",
+          "start": 5.0,
+          "end": 5.15
+        },
+        {
+          "word": "'s",
+          "start": 5.15,
+          "end": 5.23
+        },
+        {
+          "word": "right",
+          "start": 5.23,
+          "end": 5.62
+        },
+        {
+          "word": "Flagstone",
+          "start": 5.8,
+          "end": 6.38
+        },
+        {
+          "word": "here",
+          "start": 6.38,
+          "end": 6.66
+        },
+        {
+          "word": "How",
+          "start": 6.66,
+          "end": 6.85
+        },
+        {
+          "word": "can",
+          "start": 6.85,
+          "end": 7.0
+        },
+        {
+          "word": "I",
+          "start": 7.0,
+          "end": 7.11
+        },
+        {
+          "word": "help",
+          "start": 7.11,
+          "end": 7.43
+        },
+        {
+          "word": "you",
+          "start": 7.43,
+          "end": 7.61
+        }
+      ],
       "answers": [],
-      "end": 7.8
+      "end": 7.61
     },
     {
       "id": 4,
-      "start": 8.1,
+      "start": 8.08,
       "speaker": "JON",
       "en": "Hello. I’m ringing just to make enquiries about renting a house. My name’s Jon Anderson.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hello",
+          "start": 8.08,
+          "end": 8.51
+        },
+        {
+          "word": "I",
+          "start": 8.92,
+          "end": 9.18
+        },
+        {
+          "word": "'m",
+          "start": 8.92,
+          "end": 9.18
+        },
+        {
+          "word": "ringing",
+          "start": 9.18,
+          "end": 9.44
+        },
+        {
+          "word": "just",
+          "start": 9.44,
+          "end": 9.56
+        },
+        {
+          "word": "to",
+          "start": 9.56,
+          "end": 9.66
+        },
+        {
+          "word": "make",
+          "start": 9.66,
+          "end": 9.89
+        },
+        {
+          "word": "enquiries",
+          "start": 9.89,
+          "end": 10.47
+        },
+        {
+          "word": "about",
+          "start": 10.47,
+          "end": 10.7
+        },
+        {
+          "word": "renting",
+          "start": 10.7,
+          "end": 11.02
+        },
+        {
+          "word": "a",
+          "start": 11.02,
+          "end": 11.07
+        },
+        {
+          "word": "house",
+          "start": 11.07,
+          "end": 11.45
+        },
+        {
+          "word": "My",
+          "start": 12.12,
+          "end": 12.38
+        },
+        {
+          "word": "name",
+          "start": 12.38,
+          "end": 12.65
+        },
+        {
+          "word": "'s",
+          "start": 12.65,
+          "end": 12.76
+        },
+        {
+          "word": "Jon",
+          "start": 12.76,
+          "end": 13.2
+        },
+        {
+          "word": "Anderson",
+          "start": 13.23,
+          "end": 13.79
+        }
+      ],
       "answers": [],
-      "end": 13.8
+      "end": 13.79
     },
     {
       "id": 5,
-      "start": 14.3,
+      "start": 14.22,
       "speaker": "JANICE",
       "en": "Yes, Mr Anderson. What sort of thing were you looking for?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 14.22,
+          "end": 14.55
+        },
+        {
+          "word": "Mr",
+          "start": 14.55,
+          "end": 14.85
+        },
+        {
+          "word": "Anderson",
+          "start": 14.85,
+          "end": 15.41
+        },
+        {
+          "word": "What",
+          "start": 15.46,
+          "end": 15.78
+        },
+        {
+          "word": "sort",
+          "start": 15.78,
+          "end": 16.040001
+        },
+        {
+          "word": "of",
+          "start": 16.040001,
+          "end": 16.110001
+        },
+        {
+          "word": "thing",
+          "start": 16.110001,
+          "end": 16.33
+        },
+        {
+          "word": "were",
+          "start": 16.33,
+          "end": 16.4
+        },
+        {
+          "word": "you",
+          "start": 16.4,
+          "end": 16.540001
+        },
+        {
+          "word": "looking",
+          "start": 16.540001,
+          "end": 16.9
+        },
+        {
+          "word": "for",
+          "start": 16.9,
+          "end": 17.26
+        }
+      ],
       "answers": [],
-      "end": 17.8
+      "end": 17.26
     },
     {
       "id": 6,
-      "start": 17.8,
+      "start": 18.459999,
       "speaker": "JON",
       "en": "Two-bedroomed house with garden.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Two",
+          "start": 18.459999,
+          "end": 18.67
+        },
+        {
+          "word": "bedroomed",
+          "start": 18.67,
+          "end": 19.08
+        },
+        {
+          "word": "house",
+          "start": 19.08,
+          "end": 19.48
+        },
+        {
+          "word": "with",
+          "start": 19.549999,
+          "end": 19.950001
+        },
+        {
+          "word": "garden",
+          "start": 19.950001,
+          "end": 20.4
+        }
+      ],
       "answers": [],
-      "end": 20.5
+      "end": 20.4
     },
     {
       "id": 7,
-      "start": 21.3,
+      "start": 21.129999,
       "speaker": "JANICE",
       "en": "Well. .. yes, sir, that shouldn’t be any problem ... just to let you know that our main areas, the main areas we deal with, are the city centre itself...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 21.129999,
+          "end": 21.469999
+        },
+        {
+          "word": "yes",
+          "start": 21.530001,
+          "end": 21.75
+        },
+        {
+          "word": "sir",
+          "start": 21.75,
+          "end": 21.969999
+        },
+        {
+          "word": "that",
+          "start": 21.969999,
+          "end": 22.17
+        },
+        {
+          "word": "should",
+          "start": 22.17,
+          "end": 22.5
+        },
+        {
+          "word": "n't",
+          "start": 22.17,
+          "end": 22.5
+        },
+        {
+          "word": "be",
+          "start": 22.5,
+          "end": 22.629999
+        },
+        {
+          "word": "any",
+          "start": 22.629999,
+          "end": 22.809999
+        },
+        {
+          "word": "problem",
+          "start": 22.809999,
+          "end": 23.299999
+        },
+        {
+          "word": "just",
+          "start": 23.860001,
+          "end": 24.16
+        },
+        {
+          "word": "to",
+          "start": 24.16,
+          "end": 24.24
+        },
+        {
+          "word": "let",
+          "start": 24.24,
+          "end": 24.49
+        },
+        {
+          "word": "you",
+          "start": 24.49,
+          "end": 24.549999
+        },
+        {
+          "word": "know",
+          "start": 24.549999,
+          "end": 24.75
+        },
+        {
+          "word": "that",
+          "start": 24.75,
+          "end": 24.889999
+        },
+        {
+          "word": "our",
+          "start": 24.889999,
+          "end": 25.030001
+        },
+        {
+          "word": "main",
+          "start": 25.030001,
+          "end": 25.389999
+        },
+        {
+          "word": "areas",
+          "start": 25.389999,
+          "end": 26.02
+        },
+        {
+          "word": "the",
+          "start": 26.52,
+          "end": 26.629999
+        },
+        {
+          "word": "main",
+          "start": 26.629999,
+          "end": 26.860001
+        },
+        {
+          "word": "areas",
+          "start": 26.860001,
+          "end": 27.27
+        },
+        {
+          "word": "we",
+          "start": 27.27,
+          "end": 27.370001
+        },
+        {
+          "word": "deal",
+          "start": 27.370001,
+          "end": 27.719999
+        },
+        {
+          "word": "with",
+          "start": 27.719999,
+          "end": 27.950001
+        },
+        {
+          "word": "are",
+          "start": 27.98,
+          "end": 28.26
+        },
+        {
+          "word": "the",
+          "start": 28.26,
+          "end": 28.370001
+        },
+        {
+          "word": "city",
+          "start": 28.370001,
+          "end": 28.690001
+        },
+        {
+          "word": "centre",
+          "start": 28.690001,
+          "end": 29.07
+        },
+        {
+          "word": "itself",
+          "start": 29.07,
+          "end": 29.860001
+        }
+      ],
       "answers": [
         1
       ],
-      "end": 26.6
+      "end": 29.860001
     },
     {
       "id": 8,
-      "start": 26.6,
+      "start": 29.889999,
       "speaker": "JON",
       "en": "City centre ... uh-huh.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "City",
+          "start": 29.889999,
+          "end": 30.26
+        },
+        {
+          "word": "centre",
+          "start": 30.26,
+          "end": 30.639999
+        },
+        {
+          "word": "uh",
+          "start": 30.639999,
+          "end": 30.709999
+        },
+        {
+          "word": "huh",
+          "start": 30.709999,
+          "end": 31.35
+        }
+      ],
       "answers": [],
-      "end": 31.9
+      "end": 31.35
     },
     {
       "id": 9,
-      "start": 32.0,
+      "start": 31.9,
       "speaker": "JANICE",
       "en": "And the north suburbs.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 31.9,
+          "end": 32.34
+        },
+        {
+          "word": "the",
+          "start": 32.34,
+          "end": 32.41
+        },
+        {
+          "word": "north",
+          "start": 32.41,
+          "end": 32.669998
+        },
+        {
+          "word": "suburbs",
+          "start": 32.669998,
+          "end": 33.52
+        }
+      ],
       "answers": [],
-      "end": 33.9
+      "end": 33.52
     },
     {
       "id": 10,
-      "start": 34.0,
+      "start": 33.82,
       "speaker": "JON",
       "en": "Oh well... we were most interested in the Northern areas actually.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 33.82,
+          "end": 34.209999
+        },
+        {
+          "word": "well",
+          "start": 34.25,
+          "end": 34.950001
+        },
+        {
+          "word": "we",
+          "start": 35.34,
+          "end": 35.48
+        },
+        {
+          "word": "were",
+          "start": 35.48,
+          "end": 35.59
+        },
+        {
+          "word": "most",
+          "start": 35.59,
+          "end": 35.869999
+        },
+        {
+          "word": "interested",
+          "start": 35.869999,
+          "end": 36.349998
+        },
+        {
+          "word": "in",
+          "start": 36.349998,
+          "end": 36.450001
+        },
+        {
+          "word": "the",
+          "start": 36.450001,
+          "end": 36.529999
+        },
+        {
+          "word": "Northern",
+          "start": 36.529999,
+          "end": 36.880001
+        },
+        {
+          "word": "areas",
+          "start": 36.880001,
+          "end": 37.259998
+        },
+        {
+          "word": "actually",
+          "start": 37.259998,
+          "end": 37.720001
+        }
+      ],
       "answers": [],
-      "end": 38.4
+      "end": 37.720001
     },
     {
       "id": 11,
-      "start": 38.4,
+      "start": 37.91,
       "speaker": "JANICE",
       "en": "Right... yes... What sort of price were you thinking of?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 37.91,
+          "end": 38.509998
+        },
+        {
+          "word": "yes",
+          "start": 38.540001,
+          "end": 38.849998
+        },
+        {
+          "word": "What",
+          "start": 38.849998,
+          "end": 39.099998
+        },
+        {
+          "word": "sort",
+          "start": 39.099998,
+          "end": 39.360001
+        },
+        {
+          "word": "of",
+          "start": 39.360001,
+          "end": 39.509998
+        },
+        {
+          "word": "price",
+          "start": 39.509998,
+          "end": 39.849998
+        },
+        {
+          "word": "were",
+          "start": 39.849998,
+          "end": 39.91
+        },
+        {
+          "word": "you",
+          "start": 39.91,
+          "end": 39.990002
+        },
+        {
+          "word": "thinking",
+          "start": 39.990002,
+          "end": 40.360001
+        },
+        {
+          "word": "of",
+          "start": 40.360001,
+          "end": 40.669998
+        }
+      ],
       "answers": [],
-      "end": 40.7
+      "end": 40.669998
     },
     {
       "id": 12,
-      "start": 41.0,
+      "start": 40.959999,
       "speaker": "JON",
       "en": "Well... could you give me some idea?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 40.959999,
+          "end": 41.400002
+        },
+        {
+          "word": "could",
+          "start": 42.259998,
+          "end": 42.439999
+        },
+        {
+          "word": "you",
+          "start": 42.439999,
+          "end": 42.509998
+        },
+        {
+          "word": "give",
+          "start": 42.509998,
+          "end": 42.650002
+        },
+        {
+          "word": "me",
+          "start": 42.650002,
+          "end": 42.75
+        },
+        {
+          "word": "some",
+          "start": 42.75,
+          "end": 42.959999
+        },
+        {
+          "word": "idea",
+          "start": 42.959999,
+          "end": 43.490002
+        }
+      ],
       "answers": [],
-      "end": 43.9
+      "end": 43.490002
     },
     {
       "id": 13,
-      "start": 43.9,
+      "start": 43.59,
       "speaker": "JANICE",
       "en": "Certainly. It really ranges from £250 per month.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Certainly",
+          "start": 43.59,
+          "end": 44.200001
+        },
+        {
+          "word": "It",
+          "start": 44.549999,
+          "end": 44.77
+        },
+        {
+          "word": "really",
+          "start": 44.77,
+          "end": 45.080002
+        },
+        {
+          "word": "ranges",
+          "start": 45.080002,
+          "end": 45.630001
+        },
+        {
+          "word": "from",
+          "start": 45.630001,
+          "end": 46.16
+        },
+        {
+          "word": "250",
+          "start": 46.16,
+          "end": 47.470001
+        },
+        {
+          "word": "per",
+          "start": 47.470001,
+          "end": 47.580002
+        },
+        {
+          "word": "month",
+          "start": 47.580002,
+          "end": 48.130001
+        }
+      ],
       "answers": [
         2
       ],
-      "end": 48.2
+      "end": 48.130001
     },
     {
       "id": 14,
-      "start": 48.3,
+      "start": 48.259998,
       "speaker": "JON",
       "en": "Only £250?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Only",
+          "start": 48.259998,
+          "end": 48.52
+        },
+        {
+          "word": "250",
+          "start": 48.52,
+          "end": 49.77
+        }
+      ],
       "answers": [],
-      "end": 49.5
+      "end": 49.77
     },
     {
       "id": 15,
-      "start": 49.9,
+      "start": 49.849998,
       "speaker": "JANICE",
       "en": "Yes, to about £500 depending on a number of different factors.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 49.849998,
+          "end": 50.310001
+        },
+        {
+          "word": "to",
+          "start": 50.68,
+          "end": 51.060001
+        },
+        {
+          "word": "about",
+          "start": 51.110001,
+          "end": 51.66
+        },
+        {
+          "word": "500",
+          "start": 51.66,
+          "end": 53.099998
+        },
+        {
+          "word": "depending",
+          "start": 53.099998,
+          "end": 53.57
+        },
+        {
+          "word": "on",
+          "start": 53.57,
+          "end": 53.700001
+        },
+        {
+          "word": "a",
+          "start": 53.700001,
+          "end": 53.77
+        },
+        {
+          "word": "number",
+          "start": 53.77,
+          "end": 54.09
+        },
+        {
+          "word": "of",
+          "start": 54.09,
+          "end": 54.220001
+        },
+        {
+          "word": "different",
+          "start": 54.220001,
+          "end": 54.610001
+        },
+        {
+          "word": "factors",
+          "start": 54.610001,
+          "end": 55.349998
+        }
+      ],
       "answers": [],
-      "end": 55.7
+      "end": 55.349998
     },
     {
       "id": 16,
-      "start": 55.7,
+      "start": 55.560001,
       "speaker": "JON",
       "en": "What does it depend on?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 55.560001,
+          "end": 55.93
+        },
+        {
+          "word": "does",
+          "start": 56.119999,
+          "end": 56.400002
+        },
+        {
+          "word": "it",
+          "start": 56.400002,
+          "end": 56.5
+        },
+        {
+          "word": "depend",
+          "start": 56.5,
+          "end": 56.869999
+        },
+        {
+          "word": "on",
+          "start": 56.869999,
+          "end": 57.139999
+        }
+      ],
       "answers": [],
-      "end": 57.2
+      "end": 57.139999
     },
     {
       "id": 17,
-      "start": 57.2,
+      "start": 57.669998,
       "speaker": "JANICE",
       "en": "Well, obviously the quality of the area. And then whether there’s a garden.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 57.669998,
+          "end": 58.060001
+        },
+        {
+          "word": "obviously",
+          "start": 58.060001,
+          "end": 58.639999
+        },
+        {
+          "word": "the",
+          "start": 58.639999,
+          "end": 58.720001
+        },
+        {
+          "word": "quality",
+          "start": 58.720001,
+          "end": 59.299999
+        },
+        {
+          "word": "of",
+          "start": 59.299999,
+          "end": 59.400002
+        },
+        {
+          "word": "the",
+          "start": 59.400002,
+          "end": 59.52
+        },
+        {
+          "word": "area",
+          "start": 59.52,
+          "end": 60.099998
+        },
+        {
+          "word": "And",
+          "start": 60.459999,
+          "end": 60.970001
+        },
+        {
+          "word": "then",
+          "start": 60.970001,
+          "end": 61.299999
+        },
+        {
+          "word": "whether",
+          "start": 61.299999,
+          "end": 61.560001
+        },
+        {
+          "word": "there",
+          "start": 61.560001,
+          "end": 61.720001
+        },
+        {
+          "word": "'s",
+          "start": 61.720001,
+          "end": 61.77
+        },
+        {
+          "word": "a",
+          "start": 61.77,
+          "end": 61.82
+        },
+        {
+          "word": "garden",
+          "start": 61.82,
+          "end": 62.25
+        }
+      ],
       "answers": [
         3
       ],
-      "end": 62.6
+      "end": 62.25
     },
     {
       "id": 18,
-      "start": 62.6,
+      "start": 62.709999,
       "speaker": "JON",
       "en": "Well, as I said, we’d want a garden.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 62.709999,
+          "end": 63.029999
+        },
+        {
+          "word": "as",
+          "start": 63.360001,
+          "end": 63.540001
+        },
+        {
+          "word": "I",
+          "start": 63.540001,
+          "end": 63.599998
+        },
+        {
+          "word": "said",
+          "start": 63.599998,
+          "end": 63.959999
+        },
+        {
+          "word": "we",
+          "start": 64.160004,
+          "end": 64.459999
+        },
+        {
+          "word": "'d",
+          "start": 64.459999,
+          "end": 64.5
+        },
+        {
+          "word": "want",
+          "start": 64.5,
+          "end": 64.739998
+        },
+        {
+          "word": "a",
+          "start": 64.739998,
+          "end": 64.790001
+        },
+        {
+          "word": "garden",
+          "start": 64.790001,
+          "end": 65.330002
+        }
+      ],
       "answers": [],
-      "end": 66.0
+      "end": 65.330002
     },
     {
       "id": 19,
-      "start": 66.1,
+      "start": 65.489998,
       "speaker": "JANICE",
       "en": "And a garage pushes up the price.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 65.489998,
+          "end": 65.790001
+        },
+        {
+          "word": "a",
+          "start": 65.82,
+          "end": 65.889999
+        },
+        {
+          "word": "garage",
+          "start": 65.889999,
+          "end": 66.510002
+        },
+        {
+          "word": "pushes",
+          "start": 66.510002,
+          "end": 66.849998
+        },
+        {
+          "word": "up",
+          "start": 66.849998,
+          "end": 67.019997
+        },
+        {
+          "word": "the",
+          "start": 67.019997,
+          "end": 67.089996
+        },
+        {
+          "word": "price",
+          "start": 67.089996,
+          "end": 67.760002
+        }
+      ],
       "answers": [],
-      "end": 67.8
+      "end": 67.760002
     },
     {
       "id": 20,
-      "start": 67.9,
+      "start": 67.830002,
       "speaker": "JON",
       "en": "Right... well, we wouldn’t necessarily need one. I think about £350 a month would be our limit.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 67.830002,
+          "end": 68.480003
+        },
+        {
+          "word": "well",
+          "start": 69.330002,
+          "end": 69.68
+        },
+        {
+          "word": "we",
+          "start": 69.709999,
+          "end": 69.82
+        },
+        {
+          "word": "would",
+          "start": 69.82,
+          "end": 70.040001
+        },
+        {
+          "word": "n't",
+          "start": 69.82,
+          "end": 70.040001
+        },
+        {
+          "word": "necessarily",
+          "start": 70.040001,
+          "end": 70.639999
+        },
+        {
+          "word": "need",
+          "start": 70.639999,
+          "end": 70.93
+        },
+        {
+          "word": "one",
+          "start": 70.93,
+          "end": 71.260002
+        },
+        {
+          "word": "I",
+          "start": 71.830002,
+          "end": 71.980003
+        },
+        {
+          "word": "think",
+          "start": 71.980003,
+          "end": 72.25
+        },
+        {
+          "word": "about",
+          "start": 72.25,
+          "end": 72.599998
+        },
+        {
+          "word": "350",
+          "start": 72.599998,
+          "end": 73.970001
+        },
+        {
+          "word": "a",
+          "start": 73.970001,
+          "end": 74.010002
+        },
+        {
+          "word": "month",
+          "start": 74.010002,
+          "end": 74.379997
+        },
+        {
+          "word": "would",
+          "start": 74.379997,
+          "end": 74.510002
+        },
+        {
+          "word": "be",
+          "start": 74.510002,
+          "end": 74.639999
+        },
+        {
+          "word": "our",
+          "start": 74.639999,
+          "end": 74.849998
+        },
+        {
+          "word": "limit",
+          "start": 74.849998,
+          "end": 75.330002
+        }
+      ],
       "answers": [],
-      "end": 72.7
+      "end": 75.330002
     },
     {
       "id": 21,
-      "start": 72.7,
+      "start": 75.57,
       "speaker": "JANICE",
       "en": "OK. Well.. . would you like to have a look at a couple of properties, sir?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 75.57,
+          "end": 76.059998
+        },
+        {
+          "word": "Well",
+          "start": 76.550003,
+          "end": 76.889999
+        },
+        {
+          "word": "would",
+          "start": 76.919998,
+          "end": 77.230003
+        },
+        {
+          "word": "you",
+          "start": 77.230003,
+          "end": 77.309998
+        },
+        {
+          "word": "like",
+          "start": 77.309998,
+          "end": 77.599998
+        },
+        {
+          "word": "to",
+          "start": 77.599998,
+          "end": 77.709999
+        },
+        {
+          "word": "have",
+          "start": 77.709999,
+          "end": 78.0
+        },
+        {
+          "word": "a",
+          "start": 78.0,
+          "end": 78.059998
+        },
+        {
+          "word": "look",
+          "start": 78.059998,
+          "end": 78.32
+        },
+        {
+          "word": "at",
+          "start": 78.32,
+          "end": 78.440002
+        },
+        {
+          "word": "a",
+          "start": 78.440002,
+          "end": 78.5
+        },
+        {
+          "word": "couple",
+          "start": 78.5,
+          "end": 78.839996
+        },
+        {
+          "word": "of",
+          "start": 78.839996,
+          "end": 78.970001
+        },
+        {
+          "word": "properties",
+          "start": 78.970001,
+          "end": 79.43
+        },
+        {
+          "word": "sir",
+          "start": 79.43,
+          "end": 79.599998
+        }
+      ],
       "answers": [],
-      "end": 77.4
+      "end": 79.599998
     },
     {
       "id": 22,
-      "start": 77.5,
+      "start": 79.879997,
       "speaker": "JON",
       "en": "Yes, that’d be great.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 79.879997,
+          "end": 80.209999
+        },
+        {
+          "word": "that",
+          "start": 80.209999,
+          "end": 80.32
+        },
+        {
+          "word": "'d",
+          "start": 80.32,
+          "end": 80.389999
+        },
+        {
+          "word": "be",
+          "start": 80.389999,
+          "end": 80.489998
+        },
+        {
+          "word": "great",
+          "start": 80.489998,
+          "end": 81.059998
+        }
+      ],
       "answers": [],
-      "end": 80.9
+      "end": 81.059998
     },
     {
       "id": 23,
-      "start": 82.3,
+      "start": 82.290001,
       "speaker": "JANICE",
       "en": "Looking at our files ... I think we’ve got two which might suit you ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Looking",
+          "start": 82.290001,
+          "end": 82.650002
+        },
+        {
+          "word": "at",
+          "start": 82.650002,
+          "end": 82.760002
+        },
+        {
+          "word": "our",
+          "start": 82.760002,
+          "end": 82.900002
+        },
+        {
+          "word": "files",
+          "start": 82.900002,
+          "end": 83.82
+        },
+        {
+          "word": "I",
+          "start": 83.870003,
+          "end": 84.139999
+        },
+        {
+          "word": "think",
+          "start": 84.139999,
+          "end": 84.559998
+        },
+        {
+          "word": "we",
+          "start": 84.559998,
+          "end": 84.690002
+        },
+        {
+          "word": "'ve",
+          "start": 84.559998,
+          "end": 84.690002
+        },
+        {
+          "word": "got",
+          "start": 84.690002,
+          "end": 84.949997
+        },
+        {
+          "word": "two",
+          "start": 84.949997,
+          "end": 85.279999
+        },
+        {
+          "word": "which",
+          "start": 85.279999,
+          "end": 85.57
+        },
+        {
+          "word": "might",
+          "start": 85.57,
+          "end": 85.809998
+        },
+        {
+          "word": "suit",
+          "start": 85.809998,
+          "end": 86.230003
+        },
+        {
+          "word": "you",
+          "start": 86.230003,
+          "end": 86.43
+        }
+      ],
       "answers": [],
-      "end": 86.5
+      "end": 86.43
     },
     {
       "id": 24,
-      "start": 86.5,
+      "start": 86.43,
       "speaker": "JON",
       "en": "Hang on. I’ll just get a pen. Right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hang",
+          "start": 86.43,
+          "end": 86.589996
+        },
+        {
+          "word": "on",
+          "start": 86.589996,
+          "end": 87.190002
+        },
+        {
+          "word": "I",
+          "start": 87.389999,
+          "end": 87.440002
+        },
+        {
+          "word": "'ll",
+          "start": 87.440002,
+          "end": 87.470001
+        },
+        {
+          "word": "just",
+          "start": 87.470001,
+          "end": 87.620003
+        },
+        {
+          "word": "get",
+          "start": 87.620003,
+          "end": 87.980003
+        },
+        {
+          "word": "a",
+          "start": 87.980003,
+          "end": 88.18
+        },
+        {
+          "word": "pen",
+          "start": 88.690002,
+          "end": 89.18
+        },
+        {
+          "word": "Right",
+          "start": 89.720001,
+          "end": 90.519997
+        }
+      ],
       "answers": [],
-      "end": 91.2
+      "end": 90.519997
     },
     {
       "id": 25,
-      "start": 92.0,
+      "start": 90.970001,
       "speaker": "JANICE",
       "en": "OK. Well, there’s one on West Park Road which is £325 a month.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 90.970001,
+          "end": 91.559998
+        },
+        {
+          "word": "Well",
+          "start": 91.559998,
+          "end": 91.940002
+        },
+        {
+          "word": "there",
+          "start": 91.970001,
+          "end": 92.120003
+        },
+        {
+          "word": "'s",
+          "start": 92.120003,
+          "end": 92.199997
+        },
+        {
+          "word": "one",
+          "start": 92.199997,
+          "end": 92.440002
+        },
+        {
+          "word": "on",
+          "start": 92.519997,
+          "end": 92.730003
+        },
+        {
+          "word": "West",
+          "start": 92.730003,
+          "end": 93.18
+        },
+        {
+          "word": "Park",
+          "start": 93.18,
+          "end": 93.620003
+        },
+        {
+          "word": "Road",
+          "start": 93.620003,
+          "end": 94.279999
+        },
+        {
+          "word": "which",
+          "start": 94.279999,
+          "end": 94.610001
+        },
+        {
+          "word": "is",
+          "start": 94.610001,
+          "end": 94.900002
+        },
+        {
+          "word": "325",
+          "start": 94.900002,
+          "end": 97.489998
+        },
+        {
+          "word": "a",
+          "start": 97.709999,
+          "end": 97.739998
+        },
+        {
+          "word": "month",
+          "start": 97.739998,
+          "end": 98.059998
+        }
+      ],
       "answers": [
         4
       ],
-      "end": 97.5
+      "end": 98.059998
     },
     {
       "id": 26,
-      "start": 97.6,
+      "start": 98.089996,
       "speaker": "JON",
       "en": "Are the bills included?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Are",
+          "start": 98.089996,
+          "end": 98.230003
+        },
+        {
+          "word": "the",
+          "start": 98.230003,
+          "end": 98.32
+        },
+        {
+          "word": "bills",
+          "start": 98.32,
+          "end": 98.629997
+        },
+        {
+          "word": "included",
+          "start": 98.629997,
+          "end": 99.209999
+        }
+      ],
       "answers": [],
-      "end": 99.3
+      "end": 99.209999
     },
     {
       "id": 27,
-      "start": 99.8,
+      "start": 99.650002,
       "speaker": "JANICE",
       "en": "Well, that one just includes the water bill.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 99.650002,
+          "end": 100.120003
+        },
+        {
+          "word": "that",
+          "start": 100.120003,
+          "end": 100.379997
+        },
+        {
+          "word": "one",
+          "start": 100.379997,
+          "end": 100.650002
+        },
+        {
+          "word": "just",
+          "start": 100.699997,
+          "end": 101.089996
+        },
+        {
+          "word": "includes",
+          "start": 101.089996,
+          "end": 101.57
+        },
+        {
+          "word": "the",
+          "start": 101.57,
+          "end": 101.660004
+        },
+        {
+          "word": "water",
+          "start": 101.660004,
+          "end": 102.040001
+        },
+        {
+          "word": "bill",
+          "start": 102.040001,
+          "end": 102.470001
+        }
+      ],
       "answers": [
         5
       ],
-      "end": 103.2
+      "end": 102.470001
     },
     {
       "id": 28,
-      "start": 103.3,
+      "start": 102.709999,
       "speaker": "JON",
       "en": "OK, right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 102.709999,
+          "end": 103.660004
+        },
+        {
+          "word": "right",
+          "start": 103.949997,
+          "end": 104.849998
+        }
+      ],
       "answers": [],
-      "end": 104.9
+      "end": 104.849998
     },
     {
       "id": 29,
-      "start": 106.8,
+      "start": 105.760002,
       "speaker": "JANICE",
       "en": "And the second house is in Tithe Road. I’ll just spell that for you ... OK?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 105.760002,
+          "end": 106.190002
+        },
+        {
+          "word": "the",
+          "start": 106.190002,
+          "end": 106.290001
+        },
+        {
+          "word": "second",
+          "start": 106.290001,
+          "end": 106.809998
+        },
+        {
+          "word": "house",
+          "start": 106.809998,
+          "end": 107.260002
+        },
+        {
+          "word": "is",
+          "start": 107.290001,
+          "end": 107.489998
+        },
+        {
+          "word": "in",
+          "start": 107.489998,
+          "end": 107.660004
+        },
+        {
+          "word": "Tithe",
+          "start": 107.660004,
+          "end": 108.260002
+        },
+        {
+          "word": "Road",
+          "start": 108.260002,
+          "end": 108.940002
+        },
+        {
+          "word": "I",
+          "start": 109.370003,
+          "end": 109.470001
+        },
+        {
+          "word": "'ll",
+          "start": 109.470001,
+          "end": 109.5
+        },
+        {
+          "word": "just",
+          "start": 109.5,
+          "end": 109.660004
+        },
+        {
+          "word": "spell",
+          "start": 109.660004,
+          "end": 110.029999
+        },
+        {
+          "word": "that",
+          "start": 110.029999,
+          "end": 110.209999
+        },
+        {
+          "word": "for",
+          "start": 110.209999,
+          "end": 110.459999
+        },
+        {
+          "word": "you",
+          "start": 110.459999,
+          "end": 110.610001
+        },
+        {
+          "word": "OK",
+          "start": 110.610001,
+          "end": 111.150002
+        }
+      ],
       "answers": [],
-      "end": 110.2
+      "end": 111.150002
     },
     {
       "id": 30,
-      "start": 110.2,
+      "start": 111.269997,
       "speaker": "JON",
       "en": "Yep.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Yep",
+          "start": 111.269997,
+          "end": 111.540001
+        }
+      ],
+      "answers": [],
+      "end": 111.540001
     },
     {
       "id": 31,
-      "start": 113.7,
+      "start": 112.099998,
       "speaker": "JANICE",
       "en": "T-I-T-H-E Road.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "T",
+          "start": 112.099998,
+          "end": 112.550003
+        },
+        {
+          "word": "I",
+          "start": 112.660004,
+          "end": 113.25
+        },
+        {
+          "word": "T",
+          "start": 113.389999,
+          "end": 113.730003
+        },
+        {
+          "word": "H",
+          "start": 113.809998,
+          "end": 114.459999
+        },
+        {
+          "word": "E",
+          "start": 114.459999,
+          "end": 114.980003
+        },
+        {
+          "word": "Road",
+          "start": 115.230003,
+          "end": 115.800003
+        }
+      ],
       "answers": [],
-      "end": 116.5
+      "end": 115.800003
     },
     {
       "id": 32,
-      "start": 117.1,
+      "start": 117.07,
       "speaker": "JON",
       "en": "Got that. And how much is that one?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Got",
+          "start": 117.07,
+          "end": 117.239998
+        },
+        {
+          "word": "that",
+          "start": 117.239998,
+          "end": 117.559998
+        },
+        {
+          "word": "And",
+          "start": 118.0,
+          "end": 118.43
+        },
+        {
+          "word": "how",
+          "start": 118.470001,
+          "end": 118.68
+        },
+        {
+          "word": "much",
+          "start": 118.68,
+          "end": 118.940002
+        },
+        {
+          "word": "is",
+          "start": 118.940002,
+          "end": 119.050003
+        },
+        {
+          "word": "that",
+          "start": 119.050003,
+          "end": 119.209999
+        },
+        {
+          "word": "one",
+          "start": 119.209999,
+          "end": 119.5
+        }
+      ],
       "answers": [],
-      "end": 118.9
+      "end": 119.5
     },
     {
       "id": 33,
-      "start": 118.9,
+      "start": 119.949997,
       "speaker": "JANICE",
       "en": "That’s £380.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 119.949997,
+          "end": 120.18
+        },
+        {
+          "word": "'s",
+          "start": 120.18,
+          "end": 120.290001
+        },
+        {
+          "word": "380",
+          "start": 120.290001,
+          "end": 124.419998
+        }
+      ],
       "answers": [],
-      "end": 120.7
+      "end": 124.419998
     },
     {
       "id": 34,
-      "start": 120.7,
+      "start": 125.010002,
       "speaker": "JON",
       "en": "380. Is that including water?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "380",
+          "start": 125.010002,
+          "end": 125.220001
+        },
+        {
+          "word": "Is",
+          "start": 125.330002,
+          "end": 125.470001
+        },
+        {
+          "word": "that",
+          "start": 125.470001,
+          "end": 125.669998
+        },
+        {
+          "word": "including",
+          "start": 125.669998,
+          "end": 126.169998
+        },
+        {
+          "word": "water",
+          "start": 126.169998,
+          "end": 126.610001
+        }
+      ],
       "answers": [],
-      "end": 126.7
+      "end": 126.610001
     },
     {
       "id": 35,
-      "start": 126.9,
+      "start": 126.870003,
       "speaker": "JANICE",
       "en": "No, I’m afraid not, but it does include the telephone rental.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 126.870003,
+          "end": 127.279999
+        },
+        {
+          "word": "I",
+          "start": 127.279999,
+          "end": 127.43
+        },
+        {
+          "word": "'m",
+          "start": 127.279999,
+          "end": 127.43
+        },
+        {
+          "word": "afraid",
+          "start": 127.43,
+          "end": 127.860001
+        },
+        {
+          "word": "not",
+          "start": 127.860001,
+          "end": 128.240005
+        },
+        {
+          "word": "but",
+          "start": 128.589996,
+          "end": 128.800003
+        },
+        {
+          "word": "it",
+          "start": 128.800003,
+          "end": 128.960007
+        },
+        {
+          "word": "does",
+          "start": 128.960007,
+          "end": 129.190002
+        },
+        {
+          "word": "include",
+          "start": 129.190002,
+          "end": 129.529999
+        },
+        {
+          "word": "the",
+          "start": 129.529999,
+          "end": 129.630005
+        },
+        {
+          "word": "telephone",
+          "start": 129.630005,
+          "end": 130.100006
+        },
+        {
+          "word": "rental",
+          "start": 130.100006,
+          "end": 130.539993
+        }
+      ],
       "answers": [
         6
       ],
-      "end": 131.2
+      "end": 130.539993
     },
     {
       "id": 36,
-      "start": 131.3,
+      "start": 130.539993,
       "speaker": "JON",
       "en": "Oh well, that’s not too bad then. So,. ..",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 130.539993,
+          "end": 130.699997
+        },
+        {
+          "word": "well",
+          "start": 131.169998,
+          "end": 131.679993
+        },
+        {
+          "word": "that",
+          "start": 132.009995,
+          "end": 132.110001
+        },
+        {
+          "word": "'s",
+          "start": 132.110001,
+          "end": 132.199997
+        },
+        {
+          "word": "not",
+          "start": 132.199997,
+          "end": 132.380005
+        },
+        {
+          "word": "too",
+          "start": 132.380005,
+          "end": 132.550003
+        },
+        {
+          "word": "bad",
+          "start": 132.550003,
+          "end": 132.789993
+        },
+        {
+          "word": "then",
+          "start": 132.789993,
+          "end": 133.039993
+        },
+        {
+          "word": "So",
+          "start": 133.740005,
+          "end": 134.179993
+        }
+      ],
       "answers": [],
-      "end": 134.7
+      "end": 134.179993
     },
     {
       "id": 37,
-      "start": 137.3,
+      "start": 136.919998,
       "speaker": "JANICE",
       "en": "So, when would you be available to see them?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 136.919998,
+          "end": 137.179993
+        },
+        {
+          "word": "when",
+          "start": 137.179993,
+          "end": 137.300003
+        },
+        {
+          "word": "would",
+          "start": 137.389999,
+          "end": 137.570007
+        },
+        {
+          "word": "you",
+          "start": 137.570007,
+          "end": 137.660004
+        },
+        {
+          "word": "be",
+          "start": 137.660004,
+          "end": 137.809998
+        },
+        {
+          "word": "available",
+          "start": 137.809998,
+          "end": 138.300003
+        },
+        {
+          "word": "to",
+          "start": 138.300003,
+          "end": 138.429993
+        },
+        {
+          "word": "see",
+          "start": 138.429993,
+          "end": 138.740005
+        },
+        {
+          "word": "them",
+          "start": 138.740005,
+          "end": 139.009995
+        }
+      ],
       "answers": [],
-      "end": 139.4
+      "end": 139.009995
     },
     {
       "id": 38,
-      "start": 139.5,
+      "start": 139.389999,
       "speaker": "JON",
       "en": "Well, I’ll be in town next week . . . say . . . Thursday?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 139.389999,
+          "end": 139.850006
+        },
+        {
+          "word": "I",
+          "start": 139.880005,
+          "end": 140.039993
+        },
+        {
+          "word": "'ll",
+          "start": 140.039993,
+          "end": 140.429993
+        },
+        {
+          "word": "be",
+          "start": 140.429993,
+          "end": 140.619995
+        },
+        {
+          "word": "in",
+          "start": 140.619995,
+          "end": 140.759995
+        },
+        {
+          "word": "town",
+          "start": 140.759995,
+          "end": 141.110001
+        },
+        {
+          "word": "next",
+          "start": 141.110001,
+          "end": 141.470001
+        },
+        {
+          "word": "week",
+          "start": 141.470001,
+          "end": 141.809998
+        },
+        {
+          "word": "say",
+          "start": 141.809998,
+          "end": 142.199997
+        },
+        {
+          "word": "Thursday",
+          "start": 142.199997,
+          "end": 143.0
+        }
+      ],
       "answers": [],
-      "end": 142.8
+      "end": 143.0
     },
     {
       "id": 39,
-      "start": 142.9,
+      "start": 143.419998,
       "speaker": "JANICE",
       "en": "No, I’m sorry we don’t have any availability for Thursday. How about Wednesday afternoon?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 143.419998,
+          "end": 144.020004
+        },
+        {
+          "word": "I",
+          "start": 144.080002,
+          "end": 144.360001
+        },
+        {
+          "word": "'m",
+          "start": 144.080002,
+          "end": 144.360001
+        },
+        {
+          "word": "sorry",
+          "start": 144.360001,
+          "end": 144.729996
+        },
+        {
+          "word": "we",
+          "start": 144.729996,
+          "end": 144.850006
+        },
+        {
+          "word": "do",
+          "start": 144.850006,
+          "end": 145.149994
+        },
+        {
+          "word": "n't",
+          "start": 144.850006,
+          "end": 145.149994
+        },
+        {
+          "word": "have",
+          "start": 145.149994,
+          "end": 145.330002
+        },
+        {
+          "word": "any",
+          "start": 145.330002,
+          "end": 145.589996
+        },
+        {
+          "word": "availability",
+          "start": 145.589996,
+          "end": 146.289993
+        },
+        {
+          "word": "for",
+          "start": 146.289993,
+          "end": 146.419998
+        },
+        {
+          "word": "Thursday",
+          "start": 146.419998,
+          "end": 147.25
+        },
+        {
+          "word": "How",
+          "start": 147.940002,
+          "end": 148.149994
+        },
+        {
+          "word": "about",
+          "start": 148.149994,
+          "end": 148.509995
+        },
+        {
+          "word": "Wednesday",
+          "start": 148.509995,
+          "end": 149.110001
+        },
+        {
+          "word": "afternoon",
+          "start": 149.139999,
+          "end": 149.970001
+        }
+      ],
       "answers": [
         7
       ],
-      "end": 148.9
+      "end": 149.970001
     },
     {
       "id": 40,
-      "start": 149.0,
+      "start": 150.830002,
       "speaker": "JON",
       "en": "OK. That’s fine. Would 5.00 be OK?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 150.830002,
+          "end": 151.270004
+        },
+        {
+          "word": "That",
+          "start": 151.509995,
+          "end": 151.800003
+        },
+        {
+          "word": "'s",
+          "start": 151.800003,
+          "end": 151.869995
+        },
+        {
+          "word": "fine",
+          "start": 151.869995,
+          "end": 152.270004
+        },
+        {
+          "word": "Would",
+          "start": 152.630005,
+          "end": 152.820007
+        },
+        {
+          "word": "5",
+          "start": 152.820007,
+          "end": 152.949997
+        },
+        {
+          "word": "00",
+          "start": 152.949997,
+          "end": 153.220001
+        },
+        {
+          "word": "be",
+          "start": 153.220001,
+          "end": 153.369995
+        },
+        {
+          "word": "OK",
+          "start": 153.369995,
+          "end": 153.770004
+        }
+      ],
       "answers": [],
-      "end": 153.8
+      "end": 153.770004
     },
     {
       "id": 41,
-      "start": 155.1,
+      "start": 154.380005,
       "speaker": "JANICE",
       "en": "Yes, fine. 5.00 it is. Just come to the Flagstone Offices.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 154.380005,
+          "end": 155.029999
+        },
+        {
+          "word": "fine",
+          "start": 155.029999,
+          "end": 155.410004
+        },
+        {
+          "word": "5",
+          "start": 155.410004,
+          "end": 155.75
+        },
+        {
+          "word": "00",
+          "start": 156.440002,
+          "end": 156.929993
+        },
+        {
+          "word": "it",
+          "start": 156.929993,
+          "end": 157.039993
+        },
+        {
+          "word": "is",
+          "start": 157.039993,
+          "end": 157.410004
+        },
+        {
+          "word": "Just",
+          "start": 157.699997,
+          "end": 157.949997
+        },
+        {
+          "word": "come",
+          "start": 157.949997,
+          "end": 158.179993
+        },
+        {
+          "word": "to",
+          "start": 158.179993,
+          "end": 158.270004
+        },
+        {
+          "word": "the",
+          "start": 158.270004,
+          "end": 158.339996
+        },
+        {
+          "word": "Flagstone",
+          "start": 158.339996,
+          "end": 158.910004
+        },
+        {
+          "word": "Offices",
+          "start": 158.910004,
+          "end": 159.600006
+        }
+      ],
       "answers": [],
-      "end": 159.9
+      "end": 159.600006
     },
     {
       "id": 42,
-      "start": 160.0,
+      "start": 159.910004,
       "speaker": "JON",
       "en": "Oh, before I forget. What sort of things do I need to get done ... to rent with you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 159.910004,
+          "end": 160.229996
+        },
+        {
+          "word": "before",
+          "start": 160.460007,
+          "end": 160.910004
+        },
+        {
+          "word": "I",
+          "start": 160.910004,
+          "end": 161.029999
+        },
+        {
+          "word": "forget",
+          "start": 161.029999,
+          "end": 161.419998
+        },
+        {
+          "word": "What",
+          "start": 161.929993,
+          "end": 162.190002
+        },
+        {
+          "word": "sort",
+          "start": 162.190002,
+          "end": 162.449997
+        },
+        {
+          "word": "of",
+          "start": 162.449997,
+          "end": 162.520004
+        },
+        {
+          "word": "things",
+          "start": 162.520004,
+          "end": 162.830002
+        },
+        {
+          "word": "do",
+          "start": 162.830002,
+          "end": 162.929993
+        },
+        {
+          "word": "I",
+          "start": 162.960007,
+          "end": 163.029999
+        },
+        {
+          "word": "need",
+          "start": 163.029999,
+          "end": 163.220001
+        },
+        {
+          "word": "to",
+          "start": 163.220001,
+          "end": 163.300003
+        },
+        {
+          "word": "get",
+          "start": 163.300003,
+          "end": 163.520004
+        },
+        {
+          "word": "done",
+          "start": 163.850006,
+          "end": 164.320007
+        },
+        {
+          "word": "to",
+          "start": 164.320007,
+          "end": 164.460007
+        },
+        {
+          "word": "rent",
+          "start": 164.460007,
+          "end": 164.699997
+        },
+        {
+          "word": "with",
+          "start": 164.699997,
+          "end": 164.850006
+        },
+        {
+          "word": "you",
+          "start": 164.850006,
+          "end": 165.080002
+        }
+      ],
       "answers": [],
-      "end": 165.9
+      "end": 165.080002
     },
     {
       "id": 43,
-      "start": 166.0,
+      "start": 165.580002,
       "speaker": "JANICE",
       "en": "Well, the most important thing is a letter from your bank ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 165.580002,
+          "end": 165.910004
+        },
+        {
+          "word": "the",
+          "start": 165.910004,
+          "end": 166.059998
+        },
+        {
+          "word": "most",
+          "start": 166.059998,
+          "end": 166.350006
+        },
+        {
+          "word": "important",
+          "start": 166.350006,
+          "end": 166.910004
+        },
+        {
+          "word": "thing",
+          "start": 166.910004,
+          "end": 167.240005
+        },
+        {
+          "word": "is",
+          "start": 167.240005,
+          "end": 167.419998
+        },
+        {
+          "word": "a",
+          "start": 167.419998,
+          "end": 167.479996
+        },
+        {
+          "word": "letter",
+          "start": 167.479996,
+          "end": 167.800003
+        },
+        {
+          "word": "from",
+          "start": 167.800003,
+          "end": 167.970001
+        },
+        {
+          "word": "your",
+          "start": 167.970001,
+          "end": 168.110001
+        },
+        {
+          "word": "bank",
+          "start": 168.110001,
+          "end": 168.630005
+        }
+      ],
       "answers": [],
-      "end": 168.6
+      "end": 168.630005
     },
     {
       "id": 44,
-      "start": 168.7,
+      "start": 168.660004,
       "speaker": "JON",
       "en": "NO problem . . .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "NO",
+          "start": 168.660004,
+          "end": 168.800003
+        },
+        {
+          "word": "problem",
+          "start": 168.800003,
+          "end": 169.270004
+        }
+      ],
       "answers": [],
-      "end": 169.9
+      "end": 169.270004
     },
     {
       "id": 45,
-      "start": 170.0,
+      "start": 169.669998,
       "speaker": "JANICE",
       "en": "And then a reference letter from your employer.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 169.669998,
+          "end": 169.860001
+        },
+        {
+          "word": "then",
+          "start": 169.860001,
+          "end": 170.179993
+        },
+        {
+          "word": "a",
+          "start": 170.179993,
+          "end": 170.240005
+        },
+        {
+          "word": "reference",
+          "start": 170.240005,
+          "end": 170.820007
+        },
+        {
+          "word": "letter",
+          "start": 170.820007,
+          "end": 171.139999
+        },
+        {
+          "word": "from",
+          "start": 171.139999,
+          "end": 171.330002
+        },
+        {
+          "word": "your",
+          "start": 171.330002,
+          "end": 171.5
+        },
+        {
+          "word": "employer",
+          "start": 171.5,
+          "end": 172.059998
+        }
+      ],
       "answers": [
         8
       ],
-      "end": 172.2
+      "end": 172.059998
     },
     {
       "id": 46,
-      "start": 172.3,
+      "start": 172.179993,
       "speaker": "JON",
       "en": "Yes, that’s OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 172.179993,
+          "end": 172.910004
+        },
+        {
+          "word": "that",
+          "start": 173.190002,
+          "end": 173.320007
+        },
+        {
+          "word": "'s",
+          "start": 173.320007,
+          "end": 173.410004
+        },
+        {
+          "word": "OK",
+          "start": 173.410004,
+          "end": 173.809998
+        }
+      ],
       "answers": [],
-      "end": 174.5
+      "end": 173.809998
     },
     {
       "id": 47,
-      "start": 174.6,
+      "start": 174.020004,
       "speaker": "JANICE",
       "en": "Great, and then we would need you to give 2 weeks’ notice of moving in ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Great",
+          "start": 174.020004,
+          "end": 174.550003
+        },
+        {
+          "word": "and",
+          "start": 174.970001,
+          "end": 175.160004
+        },
+        {
+          "word": "then",
+          "start": 175.160004,
+          "end": 175.490005
+        },
+        {
+          "word": "we",
+          "start": 175.490005,
+          "end": 175.630005
+        },
+        {
+          "word": "would",
+          "start": 175.630005,
+          "end": 176.009995
+        },
+        {
+          "word": "need",
+          "start": 176.009995,
+          "end": 176.350006
+        },
+        {
+          "word": "you",
+          "start": 176.350006,
+          "end": 176.550003
+        },
+        {
+          "word": "to",
+          "start": 176.550003,
+          "end": 176.740005
+        },
+        {
+          "word": "give",
+          "start": 176.740005,
+          "end": 176.970001
+        },
+        {
+          "word": "2",
+          "start": 176.970001,
+          "end": 177.289993
+        },
+        {
+          "word": "weeks",
+          "start": 177.289993,
+          "end": 177.630005
+        },
+        {
+          "word": "notice",
+          "start": 177.630005,
+          "end": 178.070007
+        },
+        {
+          "word": "of",
+          "start": 178.070007,
+          "end": 178.199997
+        },
+        {
+          "word": "moving",
+          "start": 178.199997,
+          "end": 178.570007
+        },
+        {
+          "word": "in",
+          "start": 178.570007,
+          "end": 178.990005
+        }
+      ],
       "answers": [
         9
       ],
-      "end": 179.8
+      "end": 178.990005
     },
     {
       "id": 48,
-      "start": 179.9,
+      "start": 179.190002,
       "speaker": "JON",
       "en": "Right... 2 weeks’ notice. And what about a deposit?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 179.190002,
+          "end": 179.970001
+        },
+        {
+          "word": "2",
+          "start": 180.0,
+          "end": 181.220001
+        },
+        {
+          "word": "weeks",
+          "start": 181.220001,
+          "end": 181.800003
+        },
+        {
+          "word": "notice",
+          "start": 182.520004,
+          "end": 183.339996
+        },
+        {
+          "word": "And",
+          "start": 183.710007,
+          "end": 184.039993
+        },
+        {
+          "word": "what",
+          "start": 184.330002,
+          "end": 184.529999
+        },
+        {
+          "word": "about",
+          "start": 184.529999,
+          "end": 184.809998
+        },
+        {
+          "word": "a",
+          "start": 184.809998,
+          "end": 184.850006
+        },
+        {
+          "word": "deposit",
+          "start": 184.850006,
+          "end": 185.429993
+        }
+      ],
       "answers": [
         10
       ],
-      "end": 184.2
+      "end": 185.429993
     },
     {
       "id": 49,
-      "start": 184.3,
+      "start": 185.559998,
       "speaker": "JANICE",
       "en": "That’s one month’s rent, whatever the amount is.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 185.559998,
+          "end": 185.850006
+        },
+        {
+          "word": "'s",
+          "start": 185.850006,
+          "end": 185.919998
+        },
+        {
+          "word": "one",
+          "start": 185.949997,
+          "end": 186.330002
+        },
+        {
+          "word": "month",
+          "start": 186.330002,
+          "end": 186.570007
+        },
+        {
+          "word": "'s",
+          "start": 186.570007,
+          "end": 186.649994
+        },
+        {
+          "word": "rent",
+          "start": 186.649994,
+          "end": 187.160004
+        },
+        {
+          "word": "whatever",
+          "start": 187.309998,
+          "end": 187.679993
+        },
+        {
+          "word": "the",
+          "start": 187.679993,
+          "end": 187.789993
+        },
+        {
+          "word": "amount",
+          "start": 187.789993,
+          "end": 188.190002
+        },
+        {
+          "word": "is",
+          "start": 188.190002,
+          "end": 188.639999
+        }
+      ],
       "answers": [],
-      "end": 188.7
+      "end": 188.639999
     },
     {
       "id": 50,
-      "start": 188.8,
+      "start": 188.729996,
       "speaker": "JON",
       "en": "OK. One month. Is that it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 188.729996,
+          "end": 189.179993
+        },
+        {
+          "word": "One",
+          "start": 189.759995,
+          "end": 190.270004
+        },
+        {
+          "word": "month",
+          "start": 191.279999,
+          "end": 191.860001
+        },
+        {
+          "word": "Is",
+          "start": 192.110001,
+          "end": 192.270004
+        },
+        {
+          "word": "that",
+          "start": 192.270004,
+          "end": 192.449997
+        },
+        {
+          "word": "it",
+          "start": 192.449997,
+          "end": 192.720001
+        }
+      ],
       "answers": [],
-      "end": 193.1
+      "end": 192.720001
     },
     {
       "id": 51,
-      "start": 193.2,
+      "start": 192.990005,
       "speaker": "JANICE",
       "en": "No, sorry, one more . . . you will have to pay for the contract.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 192.990005,
+          "end": 193.529999
+        },
+        {
+          "word": "sorry",
+          "start": 193.949997,
+          "end": 194.380005
+        },
+        {
+          "word": "one",
+          "start": 194.380005,
+          "end": 194.639999
+        },
+        {
+          "word": "more",
+          "start": 194.639999,
+          "end": 194.979996
+        },
+        {
+          "word": "you",
+          "start": 195.339996,
+          "end": 195.520004
+        },
+        {
+          "word": "will",
+          "start": 195.520004,
+          "end": 195.820007
+        },
+        {
+          "word": "have",
+          "start": 195.820007,
+          "end": 196.039993
+        },
+        {
+          "word": "to",
+          "start": 196.039993,
+          "end": 196.160004
+        },
+        {
+          "word": "pay",
+          "start": 196.160004,
+          "end": 196.399994
+        },
+        {
+          "word": "for",
+          "start": 196.399994,
+          "end": 196.520004
+        },
+        {
+          "word": "the",
+          "start": 196.520004,
+          "end": 196.610001
+        },
+        {
+          "word": "contract",
+          "start": 196.610001,
+          "end": 197.440002
+        }
+      ],
       "answers": [],
-      "end": 197.2
+      "end": 197.440002
     },
     {
       "id": 52,
-      "start": 197.3,
+      "start": 197.440002,
       "speaker": "JON",
       "en": "Oh yes. I’d forgotten about that. OK, fine. So I’ll start arranging those, and I’ll . . .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 197.440002,
+          "end": 197.529999
+        },
+        {
+          "word": "yes",
+          "start": 197.589996,
+          "end": 197.860001
+        },
+        {
+          "word": "I",
+          "start": 198.110001,
+          "end": 198.220001
+        },
+        {
+          "word": "'d",
+          "start": 198.220001,
+          "end": 198.259995
+        },
+        {
+          "word": "forgotten",
+          "start": 198.259995,
+          "end": 198.630005
+        },
+        {
+          "word": "about",
+          "start": 198.630005,
+          "end": 198.910004
+        },
+        {
+          "word": "that",
+          "start": 199.539993,
+          "end": 199.639999
+        },
+        {
+          "word": "OK",
+          "start": 199.639999,
+          "end": 199.970001
+        },
+        {
+          "word": "fine",
+          "start": 199.970001,
+          "end": 200.360001
+        },
+        {
+          "word": "So",
+          "start": 200.639999,
+          "end": 201.029999
+        },
+        {
+          "word": "I",
+          "start": 201.059998,
+          "end": 201.179993
+        },
+        {
+          "word": "'ll",
+          "start": 201.179993,
+          "end": 201.229996
+        },
+        {
+          "word": "start",
+          "start": 201.229996,
+          "end": 201.559998
+        },
+        {
+          "word": "arranging",
+          "start": 201.559998,
+          "end": 201.979996
+        },
+        {
+          "word": "those",
+          "start": 201.979996,
+          "end": 202.330002
+        },
+        {
+          "word": "and",
+          "start": 202.660004,
+          "end": 203.160004
+        },
+        {
+          "word": "I",
+          "start": 203.160004,
+          "end": 203.210007
+        },
+        {
+          "word": "'ll",
+          "start": 203.210007,
+          "end": 203.270004
+        }
+      ],
       "answers": [],
-      "end": 201.1
+      "end": 203.270004
     },
     {
       "id": 53,
-      "start": 201.2,
+      "start": 203.270004,
       "speaker": "JANICE",
       "en": "... I’ll see you next week.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 203.270004,
+          "end": 203.490005
+        },
+        {
+          "word": "'ll",
+          "start": 203.490005,
+          "end": 203.520004
+        },
+        {
+          "word": "see",
+          "start": 203.520004,
+          "end": 203.580002
+        },
+        {
+          "word": "you",
+          "start": 203.580002,
+          "end": 203.639999
+        },
+        {
+          "word": "next",
+          "start": 203.639999,
+          "end": 203.949997
+        },
+        {
+          "word": "week",
+          "start": 203.949997,
+          "end": 204.369995
+        }
+      ],
       "answers": [],
-      "end": 205.0
+      "end": 204.369995
     },
     {
       "id": 54,
-      "start": 205.1,
+      "start": 204.550003,
       "speaker": "JON",
       "en": "Yes. Thanks very much. Bye.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 204.550003,
+          "end": 205.0
+        },
+        {
+          "word": "Thanks",
+          "start": 205.350006,
+          "end": 205.570007
+        },
+        {
+          "word": "very",
+          "start": 205.570007,
+          "end": 205.800003
+        },
+        {
+          "word": "much",
+          "start": 205.800003,
+          "end": 206.190002
+        },
+        {
+          "word": "Bye",
+          "start": 206.330002,
+          "end": 206.699997
+        }
+      ],
       "answers": [],
-      "end": 206.7
+      "end": 206.699997
     },
     {
       "id": 55,
-      "start": 206.8,
+      "start": 206.770004,
       "speaker": "JANICE",
       "en": "Goodbye.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Goodbye",
+          "start": 206.770004,
+          "end": 207.360001
+        }
+      ],
       "answers": [],
-      "end": 207.4
+      "end": 207.360001
     }
   ],
   "questions": [
@@ -656,5 +3227,19 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 503,
+    "mfa_word_count": 503,
+    "matched_word_count": 490,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

@@ -27,3 +27,8 @@ data/local/
 # 但 rename 时的备份和冲突暂存不入库
 media/audio_backup/
 media/audio/_conflicts/
+
+# MFA 本地运行产物与实验输出，不进入正式数据发布
+data/listening/*-mfa.json
+tools/mfa-*.json
+tools/mfa-*.log

@@ -7,13 +7,79 @@
   "segments": [
     {
       "id": 1,
-      "start": 1.1,
+      "start": 1.05,
       "speaker": "SARAH",
       "en": "John, I’ve just had some good news. Susan has had her baby.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "John",
+          "start": 1.05,
+          "end": 1.48
+        },
+        {
+          "word": "I",
+          "start": 2.06,
+          "end": 2.22
+        },
+        {
+          "word": "'ve",
+          "start": 2.22,
+          "end": 2.25
+        },
+        {
+          "word": "just",
+          "start": 2.25,
+          "end": 2.47
+        },
+        {
+          "word": "had",
+          "start": 2.47,
+          "end": 2.68
+        },
+        {
+          "word": "some",
+          "start": 2.68,
+          "end": 2.86
+        },
+        {
+          "word": "good",
+          "start": 2.86,
+          "end": 3.05
+        },
+        {
+          "word": "news",
+          "start": 3.05,
+          "end": 3.48
+        },
+        {
+          "word": "Susan",
+          "start": 3.66,
+          "end": 4.25
+        },
+        {
+          "word": "has",
+          "start": 4.25,
+          "end": 4.39
+        },
+        {
+          "word": "had",
+          "start": 4.39,
+          "end": 4.62
+        },
+        {
+          "word": "her",
+          "start": 4.62,
+          "end": 4.75
+        },
+        {
+          "word": "baby",
+          "start": 4.75,
+          "end": 5.36
+        }
+      ],
       "answers": [],
-      "end": 5.4
+      "end": 5.36
     },
     {
       "id": 2,
@@ -21,437 +87,3249 @@
       "speaker": "JOHN",
       "en": "Do you know when she had it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Do",
+          "start": 5.8,
+          "end": 5.89
+        },
+        {
+          "word": "you",
+          "start": 5.89,
+          "end": 6.0
+        },
+        {
+          "word": "know",
+          "start": 6.0,
+          "end": 6.23
+        },
+        {
+          "word": "when",
+          "start": 6.23,
+          "end": 6.54
+        },
+        {
+          "word": "she",
+          "start": 6.54,
+          "end": 6.69
+        },
+        {
+          "word": "had",
+          "start": 6.69,
+          "end": 6.91
+        },
+        {
+          "word": "it",
+          "start": 6.91,
+          "end": 7.1
+        }
+      ],
       "answers": [],
-      "end": 8.0
+      "end": 7.1
     },
     {
       "id": 3,
-      "start": 8.1,
+      "start": 7.3,
       "speaker": "SARAH",
       "en": "Yesterday. The tenth of August.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yesterday",
+          "start": 7.3,
+          "end": 8.1
+        },
+        {
+          "word": "The",
+          "start": 8.48,
+          "end": 8.58
+        },
+        {
+          "word": "tenth",
+          "start": 8.58,
+          "end": 9.01
+        },
+        {
+          "word": "of",
+          "start": 9.01,
+          "end": 9.12
+        },
+        {
+          "word": "August",
+          "start": 9.12,
+          "end": 9.83
+        }
+      ],
       "answers": [],
-      "end": 10.2
+      "end": 9.83
     },
     {
       "id": 4,
-      "start": 10.3,
+      "start": 10.5,
       "speaker": "JOHN",
       "en": "Oh, my father was born on August the tenth. Give me the details and I’ll make a note for everyone at work.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 10.5,
+          "end": 10.85
+        },
+        {
+          "word": "my",
+          "start": 11.07,
+          "end": 11.31
+        },
+        {
+          "word": "father",
+          "start": 11.31,
+          "end": 11.76
+        },
+        {
+          "word": "was",
+          "start": 11.76,
+          "end": 11.95
+        },
+        {
+          "word": "born",
+          "start": 11.95,
+          "end": 12.3
+        },
+        {
+          "word": "on",
+          "start": 12.3,
+          "end": 12.41
+        },
+        {
+          "word": "August",
+          "start": 12.41,
+          "end": 12.72
+        },
+        {
+          "word": "the",
+          "start": 12.72,
+          "end": 12.85
+        },
+        {
+          "word": "tenth",
+          "start": 12.85,
+          "end": 13.4
+        },
+        {
+          "word": "Give",
+          "start": 13.91,
+          "end": 14.07
+        },
+        {
+          "word": "me",
+          "start": 14.07,
+          "end": 14.18
+        },
+        {
+          "word": "the",
+          "start": 14.18,
+          "end": 14.3
+        },
+        {
+          "word": "details",
+          "start": 14.3,
+          "end": 14.91
+        },
+        {
+          "word": "and",
+          "start": 14.91,
+          "end": 15.05
+        },
+        {
+          "word": "I",
+          "start": 15.05,
+          "end": 15.12
+        },
+        {
+          "word": "'ll",
+          "start": 15.12,
+          "end": 15.16
+        },
+        {
+          "word": "make",
+          "start": 15.16,
+          "end": 15.36
+        },
+        {
+          "word": "a",
+          "start": 15.36,
+          "end": 15.43
+        },
+        {
+          "word": "note",
+          "start": 15.43,
+          "end": 15.76
+        },
+        {
+          "word": "for",
+          "start": 15.76,
+          "end": 15.86
+        },
+        {
+          "word": "everyone",
+          "start": 15.86,
+          "end": 16.27
+        },
+        {
+          "word": "at",
+          "start": 16.27,
+          "end": 16.360001
+        },
+        {
+          "word": "work",
+          "start": 16.360001,
+          "end": 16.719999
+        }
+      ],
       "answers": [],
-      "end": 14.3
+      "end": 16.719999
     },
     {
       "id": 5,
-      "start": 14.4,
+      "start": 17.030001,
       "speaker": "SARAH",
       "en": "OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 17.030001,
+          "end": 17.58
+        }
+      ],
       "answers": [],
-      "end": 17.9
+      "end": 17.58
     },
     {
       "id": 6,
-      "start": 18.5,
+      "start": 18.389999,
       "speaker": "JOHN",
       "en": "Well, was it a boy or a girl?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 18.389999,
+          "end": 18.83
+        },
+        {
+          "word": "was",
+          "start": 18.879999,
+          "end": 19.09
+        },
+        {
+          "word": "it",
+          "start": 19.09,
+          "end": 19.17
+        },
+        {
+          "word": "a",
+          "start": 19.17,
+          "end": 19.26
+        },
+        {
+          "word": "boy",
+          "start": 19.26,
+          "end": 19.809999
+        },
+        {
+          "word": "or",
+          "start": 19.85,
+          "end": 20.040001
+        },
+        {
+          "word": "a",
+          "start": 20.040001,
+          "end": 20.1
+        },
+        {
+          "word": "girl",
+          "start": 20.1,
+          "end": 20.549999
+        }
+      ],
       "answers": [],
-      "end": 20.6
+      "end": 20.549999
     },
     {
       "id": 7,
-      "start": 20.7,
+      "start": 20.82,
       "speaker": "SARAH",
       "en": "It’s a boy.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 20.82,
+          "end": 21.07
+        },
+        {
+          "word": "'s",
+          "start": 20.82,
+          "end": 21.07
+        },
+        {
+          "word": "a",
+          "start": 21.07,
+          "end": 21.139999
+        },
+        {
+          "word": "boy",
+          "start": 21.139999,
+          "end": 21.74
+        }
+      ],
       "answers": [],
-      "end": 22.5
+      "end": 21.74
     },
     {
       "id": 8,
-      "start": 22.9,
+      "start": 22.17,
       "speaker": "JOHN",
       "en": "And what are they going to call him?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 22.17,
+          "end": 22.68
+        },
+        {
+          "word": "what",
+          "start": 22.68,
+          "end": 22.950001
+        },
+        {
+          "word": "are",
+          "start": 22.950001,
+          "end": 22.98
+        },
+        {
+          "word": "they",
+          "start": 22.98,
+          "end": 23.08
+        },
+        {
+          "word": "going",
+          "start": 23.08,
+          "end": 23.200001
+        },
+        {
+          "word": "to",
+          "start": 23.200001,
+          "end": 23.25
+        },
+        {
+          "word": "call",
+          "start": 23.25,
+          "end": 23.530001
+        },
+        {
+          "word": "him",
+          "start": 23.530001,
+          "end": 23.68
+        }
+      ],
       "answers": [],
-      "end": 24.4
+      "end": 23.68
     },
     {
       "id": 9,
-      "start": 24.5,
+      "start": 24.299999,
       "speaker": "SARAH",
       "en": "Tom. Tom Lightfoot. It sounds quite good, don’t you think?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Tom",
+          "start": 24.299999,
+          "end": 24.85
+        },
+        {
+          "word": "Tom",
+          "start": 25.17,
+          "end": 25.49
+        },
+        {
+          "word": "Lightfoot",
+          "start": 25.49,
+          "end": 26.16
+        },
+        {
+          "word": "It",
+          "start": 26.379999,
+          "end": 26.549999
+        },
+        {
+          "word": "sounds",
+          "start": 26.549999,
+          "end": 26.83
+        },
+        {
+          "word": "quite",
+          "start": 26.83,
+          "end": 27.16
+        },
+        {
+          "word": "good",
+          "start": 27.16,
+          "end": 27.379999
+        },
+        {
+          "word": "do",
+          "start": 27.379999,
+          "end": 27.639999
+        },
+        {
+          "word": "n't",
+          "start": 27.379999,
+          "end": 27.639999
+        },
+        {
+          "word": "you",
+          "start": 27.639999,
+          "end": 27.700001
+        },
+        {
+          "word": "think",
+          "start": 27.700001,
+          "end": 28.059999
+        }
+      ],
       "answers": [],
-      "end": 28.1
+      "end": 28.059999
     },
     {
       "id": 10,
-      "start": 28.1,
+      "start": 28.09,
       "speaker": "JOHN",
       "en": "Yes, that has quite a good ring to it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 28.09,
+          "end": 28.889999
+        },
+        {
+          "word": "that",
+          "start": 29.27,
+          "end": 29.42
+        },
+        {
+          "word": "has",
+          "start": 29.459999,
+          "end": 29.559999
+        },
+        {
+          "word": "quite",
+          "start": 29.559999,
+          "end": 29.790001
+        },
+        {
+          "word": "a",
+          "start": 29.790001,
+          "end": 29.85
+        },
+        {
+          "word": "good",
+          "start": 29.85,
+          "end": 30.09
+        },
+        {
+          "word": "ring",
+          "start": 30.09,
+          "end": 30.379999
+        },
+        {
+          "word": "to",
+          "start": 30.379999,
+          "end": 30.6
+        },
+        {
+          "word": "it",
+          "start": 30.6,
+          "end": 30.74
+        }
+      ],
       "answers": [],
-      "end": 31.1
+      "end": 30.74
     },
     {
       "id": 11,
-      "start": 31.2,
+      "start": 31.08,
       "speaker": "SARAH",
       "en": "You know he’s quite a big baby. He weighed four and a quarter kilos when he",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 31.08,
+          "end": 31.219999
+        },
+        {
+          "word": "know",
+          "start": 31.219999,
+          "end": 31.440001
+        },
+        {
+          "word": "he",
+          "start": 31.66,
+          "end": 31.82
+        },
+        {
+          "word": "'s",
+          "start": 31.82,
+          "end": 31.9
+        },
+        {
+          "word": "quite",
+          "start": 31.9,
+          "end": 32.27
+        },
+        {
+          "word": "a",
+          "start": 32.27,
+          "end": 32.349998
+        },
+        {
+          "word": "big",
+          "start": 32.349998,
+          "end": 32.82
+        },
+        {
+          "word": "baby",
+          "start": 32.82,
+          "end": 33.369999
+        },
+        {
+          "word": "He",
+          "start": 33.950001,
+          "end": 34.119999
+        },
+        {
+          "word": "weighed",
+          "start": 34.119999,
+          "end": 34.509998
+        },
+        {
+          "word": "four",
+          "start": 34.509998,
+          "end": 34.82
+        },
+        {
+          "word": "and",
+          "start": 34.82,
+          "end": 34.880001
+        },
+        {
+          "word": "a",
+          "start": 34.880001,
+          "end": 34.93
+        },
+        {
+          "word": "quarter",
+          "start": 34.93,
+          "end": 35.25
+        },
+        {
+          "word": "kilos",
+          "start": 35.25,
+          "end": 35.959999
+        },
+        {
+          "word": "when",
+          "start": 35.959999,
+          "end": 36.099998
+        },
+        {
+          "word": "he",
+          "start": 36.099998,
+          "end": 36.16
+        }
+      ],
       "answers": [
         1
       ],
-      "end": 36.5
+      "end": 36.16
     },
     {
       "id": 12,
-      "start": 36.5,
+      "start": 36.16,
       "speaker": "JOHN",
       "en": "was born. That does sound big, four and a quarter kilos.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "was",
+          "start": 36.16,
+          "end": 36.299999
+        },
+        {
+          "word": "born",
+          "start": 36.299999,
+          "end": 36.880001
+        },
+        {
+          "word": "That",
+          "start": 37.849998,
+          "end": 38.049999
+        },
+        {
+          "word": "does",
+          "start": 38.049999,
+          "end": 38.330002
+        },
+        {
+          "word": "sound",
+          "start": 38.330002,
+          "end": 38.619999
+        },
+        {
+          "word": "big",
+          "start": 38.619999,
+          "end": 38.860001
+        },
+        {
+          "word": "four",
+          "start": 38.860001,
+          "end": 39.150002
+        },
+        {
+          "word": "and",
+          "start": 39.150002,
+          "end": 39.220001
+        },
+        {
+          "word": "a",
+          "start": 39.220001,
+          "end": 39.32
+        },
+        {
+          "word": "quarter",
+          "start": 39.32,
+          "end": 39.759998
+        },
+        {
+          "word": "kilos",
+          "start": 39.759998,
+          "end": 40.490002
+        }
+      ],
       "answers": [],
-      "end": 40.8
+      "end": 40.490002
     },
     {
       "id": 13,
-      "start": 40.8,
+      "start": 40.700001,
       "speaker": "SARAH",
       "en": "And he’s long too, forty-six centimetres.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 40.700001,
+          "end": 40.939999
+        },
+        {
+          "word": "he",
+          "start": 40.939999,
+          "end": 41.060001
+        },
+        {
+          "word": "'s",
+          "start": 41.060001,
+          "end": 41.139999
+        },
+        {
+          "word": "long",
+          "start": 41.139999,
+          "end": 41.639999
+        },
+        {
+          "word": "too",
+          "start": 41.639999,
+          "end": 42.060001
+        },
+        {
+          "word": "forty",
+          "start": 42.259998,
+          "end": 42.57
+        },
+        {
+          "word": "six",
+          "start": 42.57,
+          "end": 42.900002
+        },
+        {
+          "word": "centimetres",
+          "start": 42.900002,
+          "end": 43.759998
+        }
+      ],
       "answers": [
         2
       ],
-      "end": 42.9
+      "end": 43.759998
     },
     {
       "id": 14,
-      "start": 45.1,
+      "start": 43.950001,
       "speaker": "JOHN",
       "en": "Mmmm. Tall parents. He’ll grow up to be over two metres, I’d say.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Mmmm",
+          "start": 43.950001,
+          "end": 44.939999
+        },
+        {
+          "word": "Tall",
+          "start": 45.029999,
+          "end": 45.650002
+        },
+        {
+          "word": "parents",
+          "start": 45.650002,
+          "end": 46.209999
+        },
+        {
+          "word": "He",
+          "start": 46.75,
+          "end": 46.959999
+        },
+        {
+          "word": "'ll",
+          "start": 46.75,
+          "end": 46.959999
+        },
+        {
+          "word": "grow",
+          "start": 46.959999,
+          "end": 47.209999
+        },
+        {
+          "word": "up",
+          "start": 47.209999,
+          "end": 47.290001
+        },
+        {
+          "word": "to",
+          "start": 47.290001,
+          "end": 47.380001
+        },
+        {
+          "word": "be",
+          "start": 47.380001,
+          "end": 47.509998
+        },
+        {
+          "word": "over",
+          "start": 47.509998,
+          "end": 47.82
+        },
+        {
+          "word": "two",
+          "start": 47.82,
+          "end": 48.200001
+        },
+        {
+          "word": "metres",
+          "start": 48.200001,
+          "end": 48.650002
+        },
+        {
+          "word": "I",
+          "start": 48.650002,
+          "end": 48.779999
+        },
+        {
+          "word": "'d",
+          "start": 48.779999,
+          "end": 48.830002
+        },
+        {
+          "word": "say",
+          "start": 48.830002,
+          "end": 49.150002
+        }
+      ],
       "answers": [],
-      "end": 49.4
+      "end": 49.150002
     },
     {
       "id": 15,
-      "start": 49.5,
+      "start": 49.389999,
       "speaker": "SARAH",
       "en": "With masses of black hair, curly black hair. You know, we should go and visit them in hospital. What about tomorrow afternoon at around 1 pm?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "With",
+          "start": 49.389999,
+          "end": 49.599998
+        },
+        {
+          "word": "masses",
+          "start": 49.599998,
+          "end": 50.299999
+        },
+        {
+          "word": "of",
+          "start": 50.299999,
+          "end": 50.490002
+        },
+        {
+          "word": "black",
+          "start": 50.490002,
+          "end": 50.830002
+        },
+        {
+          "word": "hair",
+          "start": 50.830002,
+          "end": 51.32
+        },
+        {
+          "word": "curly",
+          "start": 51.619999,
+          "end": 52.049999
+        },
+        {
+          "word": "black",
+          "start": 52.049999,
+          "end": 52.369999
+        },
+        {
+          "word": "hair",
+          "start": 52.369999,
+          "end": 52.900002
+        },
+        {
+          "word": "You",
+          "start": 53.279999,
+          "end": 53.459999
+        },
+        {
+          "word": "know",
+          "start": 53.459999,
+          "end": 53.529999
+        },
+        {
+          "word": "we",
+          "start": 54.330002,
+          "end": 54.509998
+        },
+        {
+          "word": "should",
+          "start": 54.509998,
+          "end": 54.720001
+        },
+        {
+          "word": "go",
+          "start": 54.720001,
+          "end": 54.889999
+        },
+        {
+          "word": "and",
+          "start": 54.939999,
+          "end": 55.060001
+        },
+        {
+          "word": "visit",
+          "start": 55.060001,
+          "end": 55.400002
+        },
+        {
+          "word": "them",
+          "start": 55.400002,
+          "end": 55.57
+        },
+        {
+          "word": "in",
+          "start": 55.57,
+          "end": 55.66
+        },
+        {
+          "word": "hospital",
+          "start": 55.66,
+          "end": 56.25
+        },
+        {
+          "word": "What",
+          "start": 56.869999,
+          "end": 56.990002
+        },
+        {
+          "word": "about",
+          "start": 56.990002,
+          "end": 57.240002
+        },
+        {
+          "word": "tomorrow",
+          "start": 57.240002,
+          "end": 57.560001
+        },
+        {
+          "word": "afternoon",
+          "start": 57.560001,
+          "end": 58.25
+        },
+        {
+          "word": "at",
+          "start": 58.25,
+          "end": 58.330002
+        },
+        {
+          "word": "around",
+          "start": 58.330002,
+          "end": 58.650002
+        },
+        {
+          "word": "1",
+          "start": 58.650002,
+          "end": 58.939999
+        },
+        {
+          "word": "pm",
+          "start": 58.939999,
+          "end": 59.529999
+        }
+      ],
       "answers": [],
-      "end": 55.0
+      "end": 59.529999
     },
     {
       "id": 16,
-      "start": 55.0,
+      "start": 60.060001,
       "speaker": "JOHN",
       "en": "Yes, OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 60.060001,
+          "end": 60.380001
+        },
+        {
+          "word": "OK",
+          "start": 60.439999,
+          "end": 60.889999
+        }
+      ],
       "answers": [],
-      "end": 60.4
+      "end": 60.889999
     },
     {
       "id": 17,
-      "start": 60.5,
+      "start": 61.099998,
       "speaker": "SARAH",
       "en": "Where should we meet? ... Ah, I could come and pick you up at your house, if you like.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Where",
+          "start": 61.099998,
+          "end": 61.369999
+        },
+        {
+          "word": "should",
+          "start": 61.369999,
+          "end": 61.57
+        },
+        {
+          "word": "we",
+          "start": 61.57,
+          "end": 61.759998
+        },
+        {
+          "word": "meet",
+          "start": 61.759998,
+          "end": 62.25
+        },
+        {
+          "word": "Ah",
+          "start": 62.549999,
+          "end": 62.939999
+        },
+        {
+          "word": "I",
+          "start": 63.220001,
+          "end": 63.5
+        },
+        {
+          "word": "could",
+          "start": 63.5,
+          "end": 63.709999
+        },
+        {
+          "word": "come",
+          "start": 63.709999,
+          "end": 63.900002
+        },
+        {
+          "word": "and",
+          "start": 63.900002,
+          "end": 64.089996
+        },
+        {
+          "word": "pick",
+          "start": 64.089996,
+          "end": 64.330002
+        },
+        {
+          "word": "you",
+          "start": 64.330002,
+          "end": 64.400002
+        },
+        {
+          "word": "up",
+          "start": 64.400002,
+          "end": 64.559998
+        },
+        {
+          "word": "at",
+          "start": 64.559998,
+          "end": 64.660004
+        },
+        {
+          "word": "your",
+          "start": 64.660004,
+          "end": 64.769997
+        },
+        {
+          "word": "house",
+          "start": 64.769997,
+          "end": 65.120003
+        },
+        {
+          "word": "if",
+          "start": 65.120003,
+          "end": 65.239998
+        },
+        {
+          "word": "you",
+          "start": 65.239998,
+          "end": 65.309998
+        },
+        {
+          "word": "like",
+          "start": 65.309998,
+          "end": 65.699997
+        }
+      ],
       "answers": [],
-      "end": 65.8
+      "end": 65.699997
     },
     {
       "id": 18,
-      "start": 65.9,
+      "start": 65.839996,
       "speaker": "JOHN",
       "en": "Yes, that would be wonderful. My car is still off the road.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 65.839996,
+          "end": 66.349998
+        },
+        {
+          "word": "that",
+          "start": 66.349998,
+          "end": 66.489998
+        },
+        {
+          "word": "would",
+          "start": 66.489998,
+          "end": 66.620003
+        },
+        {
+          "word": "be",
+          "start": 66.620003,
+          "end": 66.699997
+        },
+        {
+          "word": "wonderful",
+          "start": 66.699997,
+          "end": 67.260002
+        },
+        {
+          "word": "My",
+          "start": 67.410004,
+          "end": 67.690002
+        },
+        {
+          "word": "car",
+          "start": 67.690002,
+          "end": 68.129997
+        },
+        {
+          "word": "is",
+          "start": 68.129997,
+          "end": 68.269997
+        },
+        {
+          "word": "still",
+          "start": 68.269997,
+          "end": 68.5
+        },
+        {
+          "word": "off",
+          "start": 68.5,
+          "end": 68.699997
+        },
+        {
+          "word": "the",
+          "start": 68.699997,
+          "end": 68.769997
+        },
+        {
+          "word": "road",
+          "start": 68.769997,
+          "end": 69.230003
+        }
+      ],
       "answers": [],
-      "end": 69.3
+      "end": 69.230003
     },
     {
       "id": 19,
-      "start": 69.5,
+      "start": 69.459999,
       "speaker": "SARAH",
       "en": "Just refresh my memory. What’s the address again?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Just",
+          "start": 69.459999,
+          "end": 69.900002
+        },
+        {
+          "word": "refresh",
+          "start": 69.900002,
+          "end": 70.43
+        },
+        {
+          "word": "my",
+          "start": 70.43,
+          "end": 70.650002
+        },
+        {
+          "word": "memory",
+          "start": 70.650002,
+          "end": 71.279999
+        },
+        {
+          "word": "What",
+          "start": 71.589996,
+          "end": 72.010002
+        },
+        {
+          "word": "'s",
+          "start": 71.589996,
+          "end": 72.010002
+        },
+        {
+          "word": "the",
+          "start": 72.010002,
+          "end": 72.169998
+        },
+        {
+          "word": "address",
+          "start": 72.169998,
+          "end": 72.529999
+        },
+        {
+          "word": "again",
+          "start": 72.529999,
+          "end": 72.830002
+        }
+      ],
       "answers": [],
-      "end": 72.5
+      "end": 72.830002
     },
     {
       "id": 20,
-      "start": 72.5,
+      "start": 73.150002,
       "speaker": "JOHN",
       "en": "It’s 15 Chesterfield Road, Paddington.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 73.150002,
+          "end": 73.43
+        },
+        {
+          "word": "'s",
+          "start": 73.150002,
+          "end": 73.43
+        },
+        {
+          "word": "15",
+          "start": 73.599998,
+          "end": 74.290001
+        },
+        {
+          "word": "Chesterfield",
+          "start": 74.290001,
+          "end": 75.019997
+        },
+        {
+          "word": "Road",
+          "start": 75.019997,
+          "end": 75.330002
+        },
+        {
+          "word": "Paddington",
+          "start": 75.330002,
+          "end": 75.940002
+        }
+      ],
       "answers": [],
-      "end": 75.5
+      "end": 75.940002
     },
     {
       "id": 21,
-      "start": 75.5,
+      "start": 76.25,
       "speaker": "SARAH",
       "en": "It’s next to the library, isn’t it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 76.25,
+          "end": 76.739998
+        },
+        {
+          "word": "'s",
+          "start": 76.25,
+          "end": 76.739998
+        },
+        {
+          "word": "next",
+          "start": 76.739998,
+          "end": 77.050003
+        },
+        {
+          "word": "to",
+          "start": 77.050003,
+          "end": 77.300003
+        },
+        {
+          "word": "the",
+          "start": 77.300003,
+          "end": 77.57
+        },
+        {
+          "word": "library",
+          "start": 77.57,
+          "end": 77.910004
+        },
+        {
+          "word": "is",
+          "start": 77.910004,
+          "end": 78.129997
+        },
+        {
+          "word": "n't",
+          "start": 77.910004,
+          "end": 78.129997
+        },
+        {
+          "word": "it",
+          "start": 78.129997,
+          "end": 78.339996
+        }
+      ],
       "answers": [],
-      "end": 78.5
+      "end": 78.339996
     },
     {
       "id": 22,
-      "start": 78.5,
+      "start": 78.339996,
       "speaker": "JOHN",
       "en": "Not exactly. It’s next to a bank. The State Bank actually. The library is opposite / us, on the corner.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Not",
+          "start": 78.339996,
+          "end": 78.879997
+        },
+        {
+          "word": "exactly",
+          "start": 78.879997,
+          "end": 79.5
+        },
+        {
+          "word": "It",
+          "start": 79.5,
+          "end": 79.720001
+        },
+        {
+          "word": "'s",
+          "start": 79.5,
+          "end": 79.720001
+        },
+        {
+          "word": "next",
+          "start": 79.720001,
+          "end": 79.940002
+        },
+        {
+          "word": "to",
+          "start": 79.940002,
+          "end": 80.120003
+        },
+        {
+          "word": "a",
+          "start": 80.120003,
+          "end": 80.150002
+        },
+        {
+          "word": "bank",
+          "start": 80.150002,
+          "end": 80.779999
+        },
+        {
+          "word": "The",
+          "start": 80.93,
+          "end": 81.080002
+        },
+        {
+          "word": "State",
+          "start": 81.080002,
+          "end": 81.519997
+        },
+        {
+          "word": "Bank",
+          "start": 81.519997,
+          "end": 81.849998
+        },
+        {
+          "word": "actually",
+          "start": 81.849998,
+          "end": 82.290001
+        },
+        {
+          "word": "The",
+          "start": 82.879997,
+          "end": 82.989998
+        },
+        {
+          "word": "library",
+          "start": 82.989998,
+          "end": 83.559998
+        },
+        {
+          "word": "is",
+          "start": 83.559998,
+          "end": 83.720001
+        },
+        {
+          "word": "opposite",
+          "start": 83.800003,
+          "end": 84.279999
+        },
+        {
+          "word": "us",
+          "start": 84.279999,
+          "end": 84.559998
+        },
+        {
+          "word": "on",
+          "start": 84.709999,
+          "end": 84.959999
+        },
+        {
+          "word": "the",
+          "start": 84.959999,
+          "end": 85.040001
+        },
+        {
+          "word": "corner",
+          "start": 85.040001,
+          "end": 85.459999
+        }
+      ],
       "answers": [
         3,
         4
       ],
-      "end": 84.9
+      "end": 85.459999
     },
     {
       "id": 23,
-      "start": 84.9,
+      "start": 85.68,
       "speaker": "SARAH",
       "en": "That’s right, and there’s a garage on the other street corner. I remember now.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 85.68,
+          "end": 86.040001
+        },
+        {
+          "word": "'s",
+          "start": 86.040001,
+          "end": 86.18
+        },
+        {
+          "word": "right",
+          "start": 86.18,
+          "end": 86.620003
+        },
+        {
+          "word": "and",
+          "start": 86.910004,
+          "end": 87.220001
+        },
+        {
+          "word": "there",
+          "start": 87.220001,
+          "end": 87.290001
+        },
+        {
+          "word": "'s",
+          "start": 87.290001,
+          "end": 87.389999
+        },
+        {
+          "word": "a",
+          "start": 87.389999,
+          "end": 87.440002
+        },
+        {
+          "word": "garage",
+          "start": 87.440002,
+          "end": 88.099998
+        },
+        {
+          "word": "on",
+          "start": 88.099998,
+          "end": 88.239998
+        },
+        {
+          "word": "the",
+          "start": 88.239998,
+          "end": 88.360001
+        },
+        {
+          "word": "other",
+          "start": 88.360001,
+          "end": 88.510002
+        },
+        {
+          "word": "street",
+          "start": 88.510002,
+          "end": 88.879997
+        },
+        {
+          "word": "corner",
+          "start": 88.879997,
+          "end": 89.300003
+        },
+        {
+          "word": "I",
+          "start": 89.349998,
+          "end": 89.5
+        },
+        {
+          "word": "remember",
+          "start": 89.5,
+          "end": 89.93
+        },
+        {
+          "word": "now",
+          "start": 89.93,
+          "end": 90.349998
+        }
+      ],
       "answers": [
         5
       ],
-      "end": 91.0
+      "end": 90.349998
     },
     {
       "id": 24,
-      "start": 91.3,
+      "start": 91.339996,
       "speaker": "JOHN",
       "en": "So, you’ll pick me up at a quarter to one and we’ll be there at one easily.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 91.339996,
+          "end": 91.5
+        },
+        {
+          "word": "you",
+          "start": 91.580002,
+          "end": 91.699997
+        },
+        {
+          "word": "'ll",
+          "start": 91.699997,
+          "end": 91.800003
+        },
+        {
+          "word": "pick",
+          "start": 91.800003,
+          "end": 92.040001
+        },
+        {
+          "word": "me",
+          "start": 92.040001,
+          "end": 92.160004
+        },
+        {
+          "word": "up",
+          "start": 92.160004,
+          "end": 92.339996
+        },
+        {
+          "word": "at",
+          "start": 92.339996,
+          "end": 92.400002
+        },
+        {
+          "word": "a",
+          "start": 92.400002,
+          "end": 92.449997
+        },
+        {
+          "word": "quarter",
+          "start": 92.449997,
+          "end": 92.790001
+        },
+        {
+          "word": "to",
+          "start": 92.790001,
+          "end": 92.879997
+        },
+        {
+          "word": "one",
+          "start": 92.879997,
+          "end": 93.300003
+        },
+        {
+          "word": "and",
+          "start": 93.529999,
+          "end": 93.809998
+        },
+        {
+          "word": "we",
+          "start": 93.809998,
+          "end": 93.949997
+        },
+        {
+          "word": "'ll",
+          "start": 93.809998,
+          "end": 93.949997
+        },
+        {
+          "word": "be",
+          "start": 93.949997,
+          "end": 94.129997
+        },
+        {
+          "word": "there",
+          "start": 94.129997,
+          "end": 94.32
+        },
+        {
+          "word": "at",
+          "start": 94.32,
+          "end": 94.43
+        },
+        {
+          "word": "one",
+          "start": 94.43,
+          "end": 94.68
+        },
+        {
+          "word": "easily",
+          "start": 94.68,
+          "end": 95.099998
+        }
+      ],
       "answers": [],
-      "end": 95.2
+      "end": 95.099998
     },
     {
       "id": 25,
-      "start": 97.8,
+      "start": 97.690002,
       "speaker": "SARAH",
       "en": "Now what should we take? We must take them something.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 97.690002,
+          "end": 98.120003
+        },
+        {
+          "word": "what",
+          "start": 98.5,
+          "end": 98.669998
+        },
+        {
+          "word": "should",
+          "start": 98.669998,
+          "end": 98.809998
+        },
+        {
+          "word": "we",
+          "start": 98.809998,
+          "end": 98.940002
+        },
+        {
+          "word": "take",
+          "start": 98.940002,
+          "end": 99.580002
+        },
+        {
+          "word": "We",
+          "start": 99.970001,
+          "end": 100.07
+        },
+        {
+          "word": "must",
+          "start": 100.07,
+          "end": 100.260002
+        },
+        {
+          "word": "take",
+          "start": 100.260002,
+          "end": 100.470001
+        },
+        {
+          "word": "them",
+          "start": 100.470001,
+          "end": 100.580002
+        },
+        {
+          "word": "something",
+          "start": 100.580002,
+          "end": 101.230003
+        }
+      ],
       "answers": [],
-      "end": 102.0
+      "end": 101.230003
     },
     {
       "id": 26,
-      "start": 102.2,
+      "start": 101.75,
       "speaker": "JOHN",
       "en": "I always think flowers are good to take to someone in hospital, don’t you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 101.75,
+          "end": 102.120003
+        },
+        {
+          "word": "always",
+          "start": 102.120003,
+          "end": 102.519997
+        },
+        {
+          "word": "think",
+          "start": 102.519997,
+          "end": 102.699997
+        },
+        {
+          "word": "flowers",
+          "start": 102.699997,
+          "end": 103.330002
+        },
+        {
+          "word": "are",
+          "start": 103.330002,
+          "end": 103.389999
+        },
+        {
+          "word": "good",
+          "start": 103.389999,
+          "end": 103.580002
+        },
+        {
+          "word": "to",
+          "start": 103.580002,
+          "end": 103.660004
+        },
+        {
+          "word": "take",
+          "start": 103.660004,
+          "end": 103.93
+        },
+        {
+          "word": "to",
+          "start": 103.93,
+          "end": 104.029999
+        },
+        {
+          "word": "someone",
+          "start": 104.029999,
+          "end": 104.370003
+        },
+        {
+          "word": "in",
+          "start": 104.370003,
+          "end": 104.449997
+        },
+        {
+          "word": "hospital",
+          "start": 104.449997,
+          "end": 104.949997
+        },
+        {
+          "word": "do",
+          "start": 104.949997,
+          "end": 105.220001
+        },
+        {
+          "word": "n't",
+          "start": 104.949997,
+          "end": 105.220001
+        },
+        {
+          "word": "you",
+          "start": 105.220001,
+          "end": 105.440002
+        }
+      ],
       "answers": [],
-      "end": 105.5
+      "end": 105.440002
     },
     {
       "id": 27,
-      "start": 105.9,
+      "start": 105.879997,
       "speaker": "SARAH",
       "en": "Well, not really. Everyone always brings flowers and they don’t last. I think it’s much better to take a pot plant, so she can take it home with her.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 105.879997,
+          "end": 106.269997
+        },
+        {
+          "word": "not",
+          "start": 106.910004,
+          "end": 107.169998
+        },
+        {
+          "word": "really",
+          "start": 107.169998,
+          "end": 107.779999
+        },
+        {
+          "word": "Everyone",
+          "start": 108.379997,
+          "end": 108.82
+        },
+        {
+          "word": "always",
+          "start": 108.82,
+          "end": 109.089996
+        },
+        {
+          "word": "brings",
+          "start": 109.089996,
+          "end": 109.459999
+        },
+        {
+          "word": "flowers",
+          "start": 109.459999,
+          "end": 109.860001
+        },
+        {
+          "word": "and",
+          "start": 109.860001,
+          "end": 109.919998
+        },
+        {
+          "word": "they",
+          "start": 109.919998,
+          "end": 110.029999
+        },
+        {
+          "word": "do",
+          "start": 110.029999,
+          "end": 110.279999
+        },
+        {
+          "word": "n't",
+          "start": 110.029999,
+          "end": 110.279999
+        },
+        {
+          "word": "last",
+          "start": 110.279999,
+          "end": 111.019997
+        },
+        {
+          "word": "I",
+          "start": 111.720001,
+          "end": 111.919998
+        },
+        {
+          "word": "think",
+          "start": 111.919998,
+          "end": 112.25
+        },
+        {
+          "word": "it",
+          "start": 112.25,
+          "end": 112.43
+        },
+        {
+          "word": "'s",
+          "start": 112.25,
+          "end": 112.43
+        },
+        {
+          "word": "much",
+          "start": 112.43,
+          "end": 112.720001
+        },
+        {
+          "word": "better",
+          "start": 112.720001,
+          "end": 112.839996
+        },
+        {
+          "word": "to",
+          "start": 112.839996,
+          "end": 112.93
+        },
+        {
+          "word": "take",
+          "start": 112.93,
+          "end": 113.220001
+        },
+        {
+          "word": "a",
+          "start": 113.220001,
+          "end": 113.260002
+        },
+        {
+          "word": "pot",
+          "start": 113.260002,
+          "end": 113.629997
+        },
+        {
+          "word": "plant",
+          "start": 113.629997,
+          "end": 114.160004
+        },
+        {
+          "word": "so",
+          "start": 114.43,
+          "end": 114.650002
+        },
+        {
+          "word": "she",
+          "start": 114.650002,
+          "end": 114.830002
+        },
+        {
+          "word": "can",
+          "start": 114.830002,
+          "end": 114.989998
+        },
+        {
+          "word": "take",
+          "start": 114.989998,
+          "end": 115.220001
+        },
+        {
+          "word": "it",
+          "start": 115.220001,
+          "end": 115.279999
+        },
+        {
+          "word": "home",
+          "start": 115.279999,
+          "end": 115.559998
+        },
+        {
+          "word": "with",
+          "start": 115.559998,
+          "end": 115.709999
+        },
+        {
+          "word": "her",
+          "start": 115.709999,
+          "end": 115.870003
+        }
+      ],
       "answers": [],
-      "end": 116.2
+      "end": 115.870003
     },
     {
       "id": 28,
-      "start": 116.3,
+      "start": 116.18,
       "speaker": "JOHN",
       "en": "Yes, but then she has to remember to water it. What about a big box of chocolates?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 116.18,
+          "end": 116.599998
+        },
+        {
+          "word": "but",
+          "start": 116.599998,
+          "end": 116.720001
+        },
+        {
+          "word": "then",
+          "start": 116.720001,
+          "end": 116.910004
+        },
+        {
+          "word": "she",
+          "start": 116.910004,
+          "end": 117.029999
+        },
+        {
+          "word": "has",
+          "start": 117.029999,
+          "end": 117.239998
+        },
+        {
+          "word": "to",
+          "start": 117.239998,
+          "end": 117.349998
+        },
+        {
+          "word": "remember",
+          "start": 117.349998,
+          "end": 117.68
+        },
+        {
+          "word": "to",
+          "start": 117.68,
+          "end": 117.730003
+        },
+        {
+          "word": "water",
+          "start": 117.730003,
+          "end": 118.129997
+        },
+        {
+          "word": "it",
+          "start": 118.129997,
+          "end": 118.360001
+        },
+        {
+          "word": "What",
+          "start": 118.82,
+          "end": 119.25
+        },
+        {
+          "word": "about",
+          "start": 119.25,
+          "end": 119.470001
+        },
+        {
+          "word": "a",
+          "start": 119.470001,
+          "end": 119.739998
+        },
+        {
+          "word": "big",
+          "start": 119.739998,
+          "end": 120.120003
+        },
+        {
+          "word": "box",
+          "start": 120.120003,
+          "end": 120.389999
+        },
+        {
+          "word": "of",
+          "start": 120.389999,
+          "end": 120.480003
+        },
+        {
+          "word": "chocolates",
+          "start": 120.480003,
+          "end": 121.169998
+        }
+      ],
       "answers": [],
-      "end": 122.1
+      "end": 121.169998
     },
     {
       "id": 29,
-      "start": 122.2,
+      "start": 122.300003,
       "speaker": "SARAH",
       "en": "OK, chocolates sound fine. We should get something for the baby too. What do you think?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 122.300003,
+          "end": 122.419998
+        },
+        {
+          "word": "chocolates",
+          "start": 122.419998,
+          "end": 123.059998
+        },
+        {
+          "word": "sound",
+          "start": 123.120003,
+          "end": 123.449997
+        },
+        {
+          "word": "fine",
+          "start": 123.449997,
+          "end": 123.949997
+        },
+        {
+          "word": "We",
+          "start": 124.949997,
+          "end": 125.110001
+        },
+        {
+          "word": "should",
+          "start": 125.110001,
+          "end": 125.339996
+        },
+        {
+          "word": "get",
+          "start": 125.339996,
+          "end": 125.510002
+        },
+        {
+          "word": "something",
+          "start": 125.510002,
+          "end": 125.790001
+        },
+        {
+          "word": "for",
+          "start": 125.790001,
+          "end": 125.879997
+        },
+        {
+          "word": "the",
+          "start": 125.879997,
+          "end": 125.980003
+        },
+        {
+          "word": "baby",
+          "start": 125.980003,
+          "end": 126.470001
+        },
+        {
+          "word": "too",
+          "start": 126.470001,
+          "end": 126.910004
+        },
+        {
+          "word": "What",
+          "start": 126.940002,
+          "end": 127.040001
+        },
+        {
+          "word": "do",
+          "start": 127.040001,
+          "end": 127.110001
+        },
+        {
+          "word": "you",
+          "start": 127.110001,
+          "end": 127.18
+        },
+        {
+          "word": "think",
+          "start": 127.18,
+          "end": 127.769997
+        }
+      ],
       "answers": [
         6
       ],
-      "end": 127.7
+      "end": 127.769997
     },
     {
       "id": 30,
-      "start": 128.0,
+      "start": 128.229996,
       "speaker": "JOHN",
       "en": "Yes, you’re right. What do you think of something like baby shampoo or talcum powder?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 128.229996,
+          "end": 128.369995
+        },
+        {
+          "word": "you",
+          "start": 128.369995,
+          "end": 128.479996
+        },
+        {
+          "word": "'re",
+          "start": 128.369995,
+          "end": 128.479996
+        },
+        {
+          "word": "right",
+          "start": 128.479996,
+          "end": 128.789993
+        },
+        {
+          "word": "What",
+          "start": 129.309998,
+          "end": 129.610001
+        },
+        {
+          "word": "do",
+          "start": 129.610001,
+          "end": 129.669998
+        },
+        {
+          "word": "you",
+          "start": 129.669998,
+          "end": 129.75
+        },
+        {
+          "word": "think",
+          "start": 129.75,
+          "end": 129.940002
+        },
+        {
+          "word": "of",
+          "start": 129.940002,
+          "end": 129.990005
+        },
+        {
+          "word": "something",
+          "start": 129.990005,
+          "end": 130.320007
+        },
+        {
+          "word": "like",
+          "start": 130.320007,
+          "end": 130.550003
+        },
+        {
+          "word": "baby",
+          "start": 130.990005,
+          "end": 131.429993
+        },
+        {
+          "word": "shampoo",
+          "start": 131.429993,
+          "end": 131.979996
+        },
+        {
+          "word": "or",
+          "start": 131.979996,
+          "end": 132.059998
+        },
+        {
+          "word": "talcum",
+          "start": 132.059998,
+          "end": 132.479996
+        },
+        {
+          "word": "powder",
+          "start": 132.479996,
+          "end": 132.830002
+        }
+      ],
       "answers": [],
-      "end": 133.7
+      "end": 132.830002
     },
     {
       "id": 31,
-      "start": 134.0,
+      "start": 133.100006,
       "speaker": "SARAH",
       "en": "Or we could get a little hat, or something like that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Or",
+          "start": 133.100006,
+          "end": 133.449997
+        },
+        {
+          "word": "we",
+          "start": 133.449997,
+          "end": 133.630005
+        },
+        {
+          "word": "could",
+          "start": 133.630005,
+          "end": 133.869995
+        },
+        {
+          "word": "get",
+          "start": 133.869995,
+          "end": 133.970001
+        },
+        {
+          "word": "a",
+          "start": 133.970001,
+          "end": 134.25
+        },
+        {
+          "word": "little",
+          "start": 134.25,
+          "end": 134.580002
+        },
+        {
+          "word": "hat",
+          "start": 134.580002,
+          "end": 134.929993
+        },
+        {
+          "word": "or",
+          "start": 134.929993,
+          "end": 135.050003
+        },
+        {
+          "word": "something",
+          "start": 135.050003,
+          "end": 135.320007
+        },
+        {
+          "word": "like",
+          "start": 135.320007,
+          "end": 135.539993
+        },
+        {
+          "word": "that",
+          "start": 135.539993,
+          "end": 135.949997
+        }
+      ],
       "answers": [],
-      "end": 136.8
+      "end": 135.949997
     },
     {
       "id": 32,
-      "start": 136.9,
+      "start": 135.949997,
       "speaker": "JOHN",
       "en": "We don’t know the size, or the right colour, do we?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 135.949997,
+          "end": 136.279999
+        },
+        {
+          "word": "do",
+          "start": 136.279999,
+          "end": 136.399994
+        },
+        {
+          "word": "n't",
+          "start": 136.279999,
+          "end": 136.399994
+        },
+        {
+          "word": "know",
+          "start": 136.399994,
+          "end": 136.550003
+        },
+        {
+          "word": "the",
+          "start": 136.550003,
+          "end": 136.660004
+        },
+        {
+          "word": "size",
+          "start": 136.660004,
+          "end": 137.229996
+        },
+        {
+          "word": "or",
+          "start": 137.259995,
+          "end": 137.5
+        },
+        {
+          "word": "the",
+          "start": 137.5,
+          "end": 137.600006
+        },
+        {
+          "word": "right",
+          "start": 137.600006,
+          "end": 137.839996
+        },
+        {
+          "word": "colour",
+          "start": 137.839996,
+          "end": 138.169998
+        },
+        {
+          "word": "do",
+          "start": 138.169998,
+          "end": 138.320007
+        },
+        {
+          "word": "we",
+          "start": 138.320007,
+          "end": 138.559998
+        }
+      ],
       "answers": [],
-      "end": 139.5
+      "end": 138.559998
     },
     {
       "id": 33,
-      "start": 139.8,
+      "start": 139.339996,
       "speaker": "SARAH",
       "en": "I think we should get something they wouldn’t normally buy. What about a soft toy of some sort?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 139.339996,
+          "end": 139.479996
+        },
+        {
+          "word": "think",
+          "start": 139.639999,
+          "end": 140.020004
+        },
+        {
+          "word": "we",
+          "start": 140.020004,
+          "end": 140.130005
+        },
+        {
+          "word": "should",
+          "start": 140.130005,
+          "end": 140.350006
+        },
+        {
+          "word": "get",
+          "start": 140.350006,
+          "end": 140.559998
+        },
+        {
+          "word": "something",
+          "start": 140.559998,
+          "end": 140.919998
+        },
+        {
+          "word": "they",
+          "start": 140.919998,
+          "end": 141.089996
+        },
+        {
+          "word": "would",
+          "start": 141.089996,
+          "end": 141.449997
+        },
+        {
+          "word": "n't",
+          "start": 141.089996,
+          "end": 141.449997
+        },
+        {
+          "word": "normally",
+          "start": 141.449997,
+          "end": 142.029999
+        },
+        {
+          "word": "buy",
+          "start": 142.029999,
+          "end": 142.529999
+        },
+        {
+          "word": "What",
+          "start": 142.820007,
+          "end": 143.0
+        },
+        {
+          "word": "about",
+          "start": 143.0,
+          "end": 143.160004
+        },
+        {
+          "word": "a",
+          "start": 143.160004,
+          "end": 143.380005
+        },
+        {
+          "word": "soft",
+          "start": 143.410004,
+          "end": 144.139999
+        },
+        {
+          "word": "toy",
+          "start": 144.139999,
+          "end": 144.570007
+        },
+        {
+          "word": "of",
+          "start": 144.570007,
+          "end": 144.649994
+        },
+        {
+          "word": "some",
+          "start": 144.649994,
+          "end": 144.919998
+        },
+        {
+          "word": "sort",
+          "start": 144.919998,
+          "end": 145.330002
+        }
+      ],
       "answers": [],
-      "end": 146.2
+      "end": 145.330002
     },
     {
       "id": 34,
-      "start": 146.3,
+      "start": 145.539993,
       "speaker": "JOHN",
       "en": "Yes, a soft toy.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 145.539993,
+          "end": 146.139999
+        },
+        {
+          "word": "a",
+          "start": 146.309998,
+          "end": 146.429993
+        },
+        {
+          "word": "soft",
+          "start": 146.429993,
+          "end": 146.940002
+        },
+        {
+          "word": "toy",
+          "start": 146.940002,
+          "end": 147.520004
+        }
+      ],
       "answers": [
         7
       ],
-      "end": 147.8
+      "end": 147.520004
     },
     {
       "id": 35,
-      "start": 147.9,
+      "start": 147.800003,
       "speaker": "SARAH",
       "en": "What about a teddy bear?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 147.800003,
+          "end": 148.029999
+        },
+        {
+          "word": "about",
+          "start": 148.029999,
+          "end": 148.240005
+        },
+        {
+          "word": "a",
+          "start": 148.240005,
+          "end": 148.350006
+        },
+        {
+          "word": "teddy",
+          "start": 148.350006,
+          "end": 148.809998
+        },
+        {
+          "word": "bear",
+          "start": 148.809998,
+          "end": 149.210007
+        }
+      ],
       "answers": [],
-      "end": 149.6
+      "end": 149.210007
     },
     {
       "id": 36,
-      "start": 149.7,
+      "start": 149.330002,
       "speaker": "JOHN",
       "en": "I could get one early tomorrow at the market and I could probably get the / chocolates there too.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 149.330002,
+          "end": 149.509995
+        },
+        {
+          "word": "could",
+          "start": 149.509995,
+          "end": 149.649994
+        },
+        {
+          "word": "get",
+          "start": 149.649994,
+          "end": 149.800003
+        },
+        {
+          "word": "one",
+          "start": 149.800003,
+          "end": 149.949997
+        },
+        {
+          "word": "early",
+          "start": 149.949997,
+          "end": 150.259995
+        },
+        {
+          "word": "tomorrow",
+          "start": 150.259995,
+          "end": 150.729996
+        },
+        {
+          "word": "at",
+          "start": 150.729996,
+          "end": 150.809998
+        },
+        {
+          "word": "the",
+          "start": 150.809998,
+          "end": 150.880005
+        },
+        {
+          "word": "market",
+          "start": 150.880005,
+          "end": 151.389999
+        },
+        {
+          "word": "and",
+          "start": 151.639999,
+          "end": 151.839996
+        },
+        {
+          "word": "I",
+          "start": 151.839996,
+          "end": 151.960007
+        },
+        {
+          "word": "could",
+          "start": 151.960007,
+          "end": 152.149994
+        },
+        {
+          "word": "probably",
+          "start": 152.149994,
+          "end": 152.520004
+        },
+        {
+          "word": "get",
+          "start": 152.520004,
+          "end": 152.639999
+        },
+        {
+          "word": "the",
+          "start": 152.639999,
+          "end": 152.710007
+        },
+        {
+          "word": "chocolates",
+          "start": 152.710007,
+          "end": 153.259995
+        },
+        {
+          "word": "there",
+          "start": 153.259995,
+          "end": 153.419998
+        },
+        {
+          "word": "too",
+          "start": 153.419998,
+          "end": 153.729996
+        }
+      ],
       "answers": [
         8,
         9
       ],
-      "end": 153.8
+      "end": 153.729996
     },
     {
       "id": 37,
-      "start": 153.9,
+      "start": 153.820007,
       "speaker": "SARAH",
       "en": "Good.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 153.820007,
+          "end": 154.339996
+        }
+      ],
       "answers": [],
-      "end": 155.0
+      "end": 154.339996
     },
     {
       "id": 38,
-      "start": 156.9,
+      "start": 154.860001,
       "speaker": "JOHN",
       "en": "So you’ll pick me up at a quarter to one at my place and I’ll make sure that I’ve got the presents.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 154.860001,
+          "end": 155.089996
+        },
+        {
+          "word": "you",
+          "start": 155.089996,
+          "end": 155.229996
+        },
+        {
+          "word": "'ll",
+          "start": 155.229996,
+          "end": 155.289993
+        },
+        {
+          "word": "pick",
+          "start": 155.289993,
+          "end": 155.509995
+        },
+        {
+          "word": "me",
+          "start": 155.509995,
+          "end": 155.649994
+        },
+        {
+          "word": "up",
+          "start": 155.649994,
+          "end": 155.860001
+        },
+        {
+          "word": "at",
+          "start": 155.860001,
+          "end": 155.949997
+        },
+        {
+          "word": "a",
+          "start": 155.949997,
+          "end": 155.990005
+        },
+        {
+          "word": "quarter",
+          "start": 155.990005,
+          "end": 156.270004
+        },
+        {
+          "word": "to",
+          "start": 156.270004,
+          "end": 156.360001
+        },
+        {
+          "word": "one",
+          "start": 156.360001,
+          "end": 156.529999
+        },
+        {
+          "word": "at",
+          "start": 156.529999,
+          "end": 156.589996
+        },
+        {
+          "word": "my",
+          "start": 156.589996,
+          "end": 156.820007
+        },
+        {
+          "word": "place",
+          "start": 156.820007,
+          "end": 157.320007
+        },
+        {
+          "word": "and",
+          "start": 157.5,
+          "end": 157.720001
+        },
+        {
+          "word": "I",
+          "start": 157.720001,
+          "end": 157.970001
+        },
+        {
+          "word": "'ll",
+          "start": 157.970001,
+          "end": 158.0
+        },
+        {
+          "word": "make",
+          "start": 158.0,
+          "end": 158.199997
+        },
+        {
+          "word": "sure",
+          "start": 158.199997,
+          "end": 158.509995
+        },
+        {
+          "word": "that",
+          "start": 158.509995,
+          "end": 158.619995
+        },
+        {
+          "word": "I",
+          "start": 158.619995,
+          "end": 158.699997
+        },
+        {
+          "word": "'ve",
+          "start": 158.699997,
+          "end": 158.729996
+        },
+        {
+          "word": "got",
+          "start": 158.729996,
+          "end": 158.899994
+        },
+        {
+          "word": "the",
+          "start": 158.899994,
+          "end": 158.970001
+        },
+        {
+          "word": "presents",
+          "start": 158.970001,
+          "end": 159.470001
+        }
+      ],
       "answers": [],
-      "end": 159.9
+      "end": 159.470001
     },
     {
       "id": 39,
-      "start": 160.0,
+      "start": 159.770004,
       "speaker": "SARAH",
       "en": "You must remember how much you paid for the gifts, so I can pay you back for half. If they’re going to be from both of us, I would like to go shares.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 159.770004,
+          "end": 159.880005
+        },
+        {
+          "word": "must",
+          "start": 159.880005,
+          "end": 160.179993
+        },
+        {
+          "word": "remember",
+          "start": 160.179993,
+          "end": 160.470001
+        },
+        {
+          "word": "how",
+          "start": 160.470001,
+          "end": 160.690002
+        },
+        {
+          "word": "much",
+          "start": 160.690002,
+          "end": 160.970001
+        },
+        {
+          "word": "you",
+          "start": 160.970001,
+          "end": 161.039993
+        },
+        {
+          "word": "paid",
+          "start": 161.039993,
+          "end": 161.369995
+        },
+        {
+          "word": "for",
+          "start": 161.369995,
+          "end": 161.440002
+        },
+        {
+          "word": "the",
+          "start": 161.440002,
+          "end": 161.529999
+        },
+        {
+          "word": "gifts",
+          "start": 161.529999,
+          "end": 161.929993
+        },
+        {
+          "word": "so",
+          "start": 162.25,
+          "end": 162.410004
+        },
+        {
+          "word": "I",
+          "start": 162.410004,
+          "end": 162.580002
+        },
+        {
+          "word": "can",
+          "start": 162.580002,
+          "end": 162.729996
+        },
+        {
+          "word": "pay",
+          "start": 162.729996,
+          "end": 162.919998
+        },
+        {
+          "word": "you",
+          "start": 162.919998,
+          "end": 163.050003
+        },
+        {
+          "word": "back",
+          "start": 163.050003,
+          "end": 163.240005
+        },
+        {
+          "word": "for",
+          "start": 163.240005,
+          "end": 163.339996
+        },
+        {
+          "word": "half",
+          "start": 163.339996,
+          "end": 163.809998
+        },
+        {
+          "word": "If",
+          "start": 164.020004,
+          "end": 164.190002
+        },
+        {
+          "word": "they",
+          "start": 164.190002,
+          "end": 164.320007
+        },
+        {
+          "word": "'re",
+          "start": 164.190002,
+          "end": 164.320007
+        },
+        {
+          "word": "going",
+          "start": 164.320007,
+          "end": 164.619995
+        },
+        {
+          "word": "to",
+          "start": 164.619995,
+          "end": 164.660004
+        },
+        {
+          "word": "be",
+          "start": 164.660004,
+          "end": 164.800003
+        },
+        {
+          "word": "from",
+          "start": 164.800003,
+          "end": 165.029999
+        },
+        {
+          "word": "both",
+          "start": 165.029999,
+          "end": 165.350006
+        },
+        {
+          "word": "of",
+          "start": 165.350006,
+          "end": 165.460007
+        },
+        {
+          "word": "us",
+          "start": 165.460007,
+          "end": 165.720001
+        },
+        {
+          "word": "I",
+          "start": 166.0,
+          "end": 166.110001
+        },
+        {
+          "word": "would",
+          "start": 166.110001,
+          "end": 166.289993
+        },
+        {
+          "word": "like",
+          "start": 166.289993,
+          "end": 166.479996
+        },
+        {
+          "word": "to",
+          "start": 166.479996,
+          "end": 166.570007
+        },
+        {
+          "word": "go",
+          "start": 166.570007,
+          "end": 166.720001
+        },
+        {
+          "word": "shares",
+          "start": 166.720001,
+          "end": 167.320007
+        }
+      ],
       "answers": [],
-      "end": 168.0
+      "end": 167.320007
     },
     {
       "id": 40,
-      "start": 168.7,
+      "start": 167.350006,
       "speaker": "JOHN",
       "en": "OK. I’d say the chocolates would be about $15 for something nice and not too small and the toy would be around $35 or so, I’d think.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 167.350006,
+          "end": 168.029999
+        },
+        {
+          "word": "I",
+          "start": 168.710007,
+          "end": 168.830002
+        },
+        {
+          "word": "'d",
+          "start": 168.830002,
+          "end": 168.860001
+        },
+        {
+          "word": "say",
+          "start": 168.860001,
+          "end": 168.940002
+        },
+        {
+          "word": "the",
+          "start": 168.940002,
+          "end": 169.059998
+        },
+        {
+          "word": "chocolates",
+          "start": 169.059998,
+          "end": 169.580002
+        },
+        {
+          "word": "would",
+          "start": 169.580002,
+          "end": 169.699997
+        },
+        {
+          "word": "be",
+          "start": 169.699997,
+          "end": 169.789993
+        },
+        {
+          "word": "about",
+          "start": 169.789993,
+          "end": 170.059998
+        },
+        {
+          "word": "15",
+          "start": 170.449997,
+          "end": 171.369995
+        },
+        {
+          "word": "for",
+          "start": 171.369995,
+          "end": 171.440002
+        },
+        {
+          "word": "something",
+          "start": 171.440002,
+          "end": 171.75
+        },
+        {
+          "word": "nice",
+          "start": 171.75,
+          "end": 172.059998
+        },
+        {
+          "word": "and",
+          "start": 172.309998,
+          "end": 172.460007
+        },
+        {
+          "word": "not",
+          "start": 172.460007,
+          "end": 172.669998
+        },
+        {
+          "word": "too",
+          "start": 172.669998,
+          "end": 172.850006
+        },
+        {
+          "word": "small",
+          "start": 172.850006,
+          "end": 173.419998
+        },
+        {
+          "word": "and",
+          "start": 173.820007,
+          "end": 174.080002
+        },
+        {
+          "word": "the",
+          "start": 174.080002,
+          "end": 174.190002
+        },
+        {
+          "word": "toy",
+          "start": 174.190002,
+          "end": 174.580002
+        },
+        {
+          "word": "would",
+          "start": 174.580002,
+          "end": 174.770004
+        },
+        {
+          "word": "be",
+          "start": 174.770004,
+          "end": 174.889999
+        },
+        {
+          "word": "around",
+          "start": 174.889999,
+          "end": 175.389999
+        },
+        {
+          "word": "35",
+          "start": 175.389999,
+          "end": 176.160004
+        },
+        {
+          "word": "or",
+          "start": 176.160004,
+          "end": 176.279999
+        },
+        {
+          "word": "so",
+          "start": 176.279999,
+          "end": 176.570007
+        },
+        {
+          "word": "I",
+          "start": 176.570007,
+          "end": 176.679993
+        },
+        {
+          "word": "'d",
+          "start": 176.679993,
+          "end": 176.710007
+        },
+        {
+          "word": "think",
+          "start": 176.710007,
+          "end": 177.0
+        }
+      ],
       "answers": [
         10
       ],
-      "end": 177.3
+      "end": 177.0
     },
     {
       "id": 41,
-      "start": 177.4,
+      "start": 177.279999,
       "speaker": "SARAH",
       "en": "Good, that’ll be fine. About $25 each then. Good, I’ll pick you up then on Sunday at twelve forty-five.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 177.279999,
+          "end": 177.710007
+        },
+        {
+          "word": "that",
+          "start": 177.710007,
+          "end": 177.770004
+        },
+        {
+          "word": "'ll",
+          "start": 177.770004,
+          "end": 177.809998
+        },
+        {
+          "word": "be",
+          "start": 177.809998,
+          "end": 177.929993
+        },
+        {
+          "word": "fine",
+          "start": 177.929993,
+          "end": 178.380005
+        },
+        {
+          "word": "About",
+          "start": 178.380005,
+          "end": 178.639999
+        },
+        {
+          "word": "25",
+          "start": 179.0,
+          "end": 179.899994
+        },
+        {
+          "word": "each",
+          "start": 179.899994,
+          "end": 180.119995
+        },
+        {
+          "word": "then",
+          "start": 180.119995,
+          "end": 180.410004
+        },
+        {
+          "word": "Good",
+          "start": 180.820007,
+          "end": 181.100006
+        },
+        {
+          "word": "I",
+          "start": 181.520004,
+          "end": 181.720001
+        },
+        {
+          "word": "'ll",
+          "start": 181.720001,
+          "end": 181.800003
+        },
+        {
+          "word": "pick",
+          "start": 181.800003,
+          "end": 182.009995
+        },
+        {
+          "word": "you",
+          "start": 182.009995,
+          "end": 182.100006
+        },
+        {
+          "word": "up",
+          "start": 182.100006,
+          "end": 182.259995
+        },
+        {
+          "word": "then",
+          "start": 182.259995,
+          "end": 182.479996
+        },
+        {
+          "word": "on",
+          "start": 182.479996,
+          "end": 182.669998
+        },
+        {
+          "word": "Sunday",
+          "start": 182.669998,
+          "end": 183.339996
+        },
+        {
+          "word": "at",
+          "start": 183.369995,
+          "end": 183.669998
+        },
+        {
+          "word": "twelve",
+          "start": 183.669998,
+          "end": 184.080002
+        },
+        {
+          "word": "forty",
+          "start": 184.080002,
+          "end": 184.289993
+        },
+        {
+          "word": "five",
+          "start": 184.289993,
+          "end": 184.720001
+        }
+      ],
       "answers": [],
-      "end": 181.8
+      "end": 184.720001
     },
     {
       "id": 42,
-      "start": 181.8,
+      "start": 184.929993,
       "speaker": "JOHN",
       "en": "OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 184.929993,
+          "end": 185.350006
+        }
+      ],
       "answers": [],
-      "end": 186.0
+      "end": 185.350006
     },
     {
       "id": 43,
-      "start": 186.2,
+      "start": 185.979996,
       "speaker": "SARAH",
       "en": "See you then. Bye.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "See",
+          "start": 185.979996,
+          "end": 186.240005
+        },
+        {
+          "word": "you",
+          "start": 186.240005,
+          "end": 186.350006
+        },
+        {
+          "word": "then",
+          "start": 186.350006,
+          "end": 186.669998
+        },
+        {
+          "word": "Bye",
+          "start": 187.070007,
+          "end": 187.509995
+        }
+      ],
       "answers": [],
-      "end": 187.6
+      "end": 187.509995
     }
   ],
   "questions": [
@@ -535,5 +3413,19 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 567,
+    "mfa_word_count": 567,
+    "matched_word_count": 562,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

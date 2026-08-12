@@ -7,434 +7,4060 @@
   "segments": [
     {
       "id": 1,
-      "start": 96.5,
+      "start": 96.58,
       "speaker": "RECEPTIONIST",
       "en": "Good afternoon, Dream time Travel. How can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 96.58,
+          "end": 96.72
+        },
+        {
+          "word": "afternoon",
+          "start": 96.72,
+          "end": 97.42
+        },
+        {
+          "word": "Dream",
+          "start": 97.42,
+          "end": 97.68
+        },
+        {
+          "word": "time",
+          "start": 97.68,
+          "end": 97.99
+        },
+        {
+          "word": "Travel",
+          "start": 97.99,
+          "end": 98.61
+        },
+        {
+          "word": "How",
+          "start": 98.91,
+          "end": 99.07
+        },
+        {
+          "word": "can",
+          "start": 99.07,
+          "end": 99.21
+        },
+        {
+          "word": "I",
+          "start": 99.21,
+          "end": 99.31
+        },
+        {
+          "word": "help",
+          "start": 99.31,
+          "end": 99.66
+        },
+        {
+          "word": "you",
+          "start": 99.66,
+          "end": 99.95
+        }
+      ],
       "answers": [],
-      "end": 100.0
+      "end": 99.95
     },
     {
       "id": 2,
-      "start": 100.3,
+      "start": 100.34,
       "speaker": "CUSTOMER",
       "en": "Oh hello. I'm interested in the holidays you otTer along the coast near here.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 100.34,
+          "end": 100.62
+        },
+        {
+          "word": "hello",
+          "start": 100.65,
+          "end": 101.07
+        },
+        {
+          "word": "I",
+          "start": 101.22,
+          "end": 101.57
+        },
+        {
+          "word": "'m",
+          "start": 101.22,
+          "end": 101.57
+        },
+        {
+          "word": "interested",
+          "start": 101.6,
+          "end": 101.97
+        },
+        {
+          "word": "in",
+          "start": 101.97,
+          "end": 102.1
+        },
+        {
+          "word": "the",
+          "start": 102.1,
+          "end": 102.19
+        },
+        {
+          "word": "holidays",
+          "start": 102.19,
+          "end": 102.8
+        },
+        {
+          "word": "you",
+          "start": 102.8,
+          "end": 102.94
+        },
+        {
+          "word": "otTer",
+          "start": 102.94,
+          "end": 103.17
+        },
+        {
+          "word": "along",
+          "start": 103.17,
+          "end": 103.66
+        },
+        {
+          "word": "the",
+          "start": 103.66,
+          "end": 103.73
+        },
+        {
+          "word": "coast",
+          "start": 103.73,
+          "end": 104.23
+        },
+        {
+          "word": "near",
+          "start": 104.23,
+          "end": 104.44
+        },
+        {
+          "word": "here",
+          "start": 104.44,
+          "end": 104.71000000000001
+        }
+      ],
       "answers": [],
-      "end": 105.7
+      "end": 104.71000000000001
     },
     {
       "id": 3,
-      "start": 162.1,
+      "start": 105.43,
       "speaker": "RECEPTIONIST",
       "en": "Yes. We operate several tours up the coast. Where in particular did you want to go?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 105.43,
+          "end": 105.94
+        },
+        {
+          "word": "We",
+          "start": 105.94,
+          "end": 106.08
+        },
+        {
+          "word": "operate",
+          "start": 106.08,
+          "end": 106.58
+        },
+        {
+          "word": "several",
+          "start": 106.58,
+          "end": 106.99
+        },
+        {
+          "word": "tours",
+          "start": 106.99,
+          "end": 107.37
+        },
+        {
+          "word": "up",
+          "start": 107.37,
+          "end": 107.52
+        },
+        {
+          "word": "the",
+          "start": 107.52,
+          "end": 107.61
+        },
+        {
+          "word": "coast",
+          "start": 107.61,
+          "end": 108.12
+        },
+        {
+          "word": "Where",
+          "start": 108.7,
+          "end": 108.99
+        },
+        {
+          "word": "in",
+          "start": 108.99,
+          "end": 109.13
+        },
+        {
+          "word": "particular",
+          "start": 109.13,
+          "end": 109.67
+        },
+        {
+          "word": "did",
+          "start": 109.67,
+          "end": 109.85
+        },
+        {
+          "word": "you",
+          "start": 109.85,
+          "end": 109.92
+        },
+        {
+          "word": "want",
+          "start": 109.92,
+          "end": 110.1
+        },
+        {
+          "word": "to",
+          "start": 110.1,
+          "end": 110.15
+        },
+        {
+          "word": "go",
+          "start": 110.15,
+          "end": 110.540001
+        }
+      ],
       "answers": [],
-      "end": 168.6
+      "end": 110.540001
     },
     {
       "id": 4,
-      "start": 168.7,
+      "start": 111.17,
       "speaker": "CUSTOM ER",
       "en": "Well, I like the sound of the holiday that mentioned whales. Was it 'Whale Watching'?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 111.17,
+          "end": 111.450001
+        },
+        {
+          "word": "I",
+          "start": 111.559999,
+          "end": 111.719999
+        },
+        {
+          "word": "like",
+          "start": 111.719999,
+          "end": 111.959999
+        },
+        {
+          "word": "the",
+          "start": 111.959999,
+          "end": 112.040001
+        },
+        {
+          "word": "sound",
+          "start": 112.040001,
+          "end": 112.309999
+        },
+        {
+          "word": "of",
+          "start": 112.309999,
+          "end": 112.389999
+        },
+        {
+          "word": "the",
+          "start": 112.389999,
+          "end": 112.49
+        },
+        {
+          "word": "holiday",
+          "start": 112.49,
+          "end": 112.92
+        },
+        {
+          "word": "that",
+          "start": 112.92,
+          "end": 113.09
+        },
+        {
+          "word": "mentioned",
+          "start": 113.09,
+          "end": 113.530001
+        },
+        {
+          "word": "whales",
+          "start": 113.530001,
+          "end": 114.290001
+        },
+        {
+          "word": "Was",
+          "start": 114.690001,
+          "end": 114.860001
+        },
+        {
+          "word": "it",
+          "start": 114.860001,
+          "end": 115.09
+        },
+        {
+          "word": "Whale",
+          "start": 115.68,
+          "end": 116.0
+        },
+        {
+          "word": "Watching",
+          "start": 116.030001,
+          "end": 116.530001
+        }
+      ],
       "answers": [],
-      "end": 173.8
+      "end": 116.530001
     },
     {
       "id": 5,
-      "start": 174.3,
+      "start": 117.049999,
       "speaker": "RECEPTIONIST",
       "en": "Oh, that's our Whale Watch Experience. It's very popular and it's based in a lovely little town with nice beaches.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 117.049999,
+          "end": 117.549999
+        },
+        {
+          "word": "that",
+          "start": 117.549999,
+          "end": 117.77
+        },
+        {
+          "word": "'s",
+          "start": 117.77,
+          "end": 117.82
+        },
+        {
+          "word": "our",
+          "start": 117.82,
+          "end": 118.07
+        },
+        {
+          "word": "Whale",
+          "start": 118.07,
+          "end": 118.440001
+        },
+        {
+          "word": "Watch",
+          "start": 118.440001,
+          "end": 118.76
+        },
+        {
+          "word": "Experience",
+          "start": 118.76,
+          "end": 119.639999
+        },
+        {
+          "word": "It",
+          "start": 119.77,
+          "end": 119.950001
+        },
+        {
+          "word": "'s",
+          "start": 119.77,
+          "end": 119.950001
+        },
+        {
+          "word": "very",
+          "start": 119.950001,
+          "end": 120.32
+        },
+        {
+          "word": "popular",
+          "start": 120.32,
+          "end": 120.950001
+        },
+        {
+          "word": "and",
+          "start": 121.280001,
+          "end": 121.469999
+        },
+        {
+          "word": "it",
+          "start": 121.469999,
+          "end": 121.620001
+        },
+        {
+          "word": "'s",
+          "start": 121.469999,
+          "end": 121.620001
+        },
+        {
+          "word": "based",
+          "start": 121.620001,
+          "end": 122.02
+        },
+        {
+          "word": "in",
+          "start": 122.02,
+          "end": 122.129999
+        },
+        {
+          "word": "a",
+          "start": 122.129999,
+          "end": 122.209999
+        },
+        {
+          "word": "lovely",
+          "start": 122.209999,
+          "end": 122.73
+        },
+        {
+          "word": "little",
+          "start": 122.73,
+          "end": 122.969999
+        },
+        {
+          "word": "town",
+          "start": 122.969999,
+          "end": 123.32
+        },
+        {
+          "word": "with",
+          "start": 123.32,
+          "end": 123.450001
+        },
+        {
+          "word": "nice",
+          "start": 123.450001,
+          "end": 123.74
+        },
+        {
+          "word": "beaches",
+          "start": 123.74,
+          "end": 124.290001
+        }
+      ],
       "answers": [],
-      "end": 179.5
+      "end": 124.290001
     },
     {
       "id": 6,
-      "start": 179.6,
+      "start": 127.869999,
       "speaker": "CUSTOMER",
       "en": "Oh right, and how long does it last?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 127.869999,
+          "end": 128.130001
+        },
+        {
+          "word": "right",
+          "start": 128.130001,
+          "end": 128.299999
+        },
+        {
+          "word": "and",
+          "start": 128.299999,
+          "end": 128.799999
+        },
+        {
+          "word": "how",
+          "start": 128.849998,
+          "end": 129.09
+        },
+        {
+          "word": "long",
+          "start": 129.09,
+          "end": 129.18
+        },
+        {
+          "word": "does",
+          "start": 129.18,
+          "end": 129.279999
+        },
+        {
+          "word": "it",
+          "start": 129.59,
+          "end": 129.619999
+        },
+        {
+          "word": "last",
+          "start": 129.619999,
+          "end": 130.220001
+        }
+      ],
       "answers": [],
-      "end": 184.3
+      "end": 130.220001
     },
     {
       "id": 7,
-      "start": 184.8,
+      "start": 130.25,
       "speaker": "RECEPTIONIST",
       "en": "It's two days - that includes four hours' travel time each way from here.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 130.25,
+          "end": 130.349998
+        },
+        {
+          "word": "'s",
+          "start": 130.25,
+          "end": 130.349998
+        },
+        {
+          "word": "two",
+          "start": 130.349998,
+          "end": 130.450001
+        },
+        {
+          "word": "days",
+          "start": 130.450001,
+          "end": 130.610001
+        },
+        {
+          "word": "that",
+          "start": 130.639999,
+          "end": 130.709999
+        },
+        {
+          "word": "includes",
+          "start": 130.709999,
+          "end": 131.32
+        },
+        {
+          "word": "four",
+          "start": 131.98,
+          "end": 132.110001
+        },
+        {
+          "word": "hours",
+          "start": 132.110001,
+          "end": 132.27
+        },
+        {
+          "word": "travel",
+          "start": 132.310001,
+          "end": 132.830002
+        },
+        {
+          "word": "time",
+          "start": 132.830002,
+          "end": 133.009998
+        },
+        {
+          "word": "each",
+          "start": 133.189999,
+          "end": 133.310001
+        },
+        {
+          "word": "way",
+          "start": 133.459999,
+          "end": 133.759998
+        },
+        {
+          "word": "from",
+          "start": 133.759998,
+          "end": 133.950001
+        },
+        {
+          "word": "here",
+          "start": 133.950001,
+          "end": 134.060001
+        }
+      ],
       "answers": [],
-      "end": 190.0
+      "end": 134.060001
     },
     {
       "id": 8,
-      "start": 190.2,
+      "start": 134.439999,
       "speaker": "CUSTOMER",
       "en": "Good, I don't want to be away any longer than that. So is that by coach?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 134.439999,
+          "end": 135.049999
+        },
+        {
+          "word": "I",
+          "start": 135.049999,
+          "end": 135.099998
+        },
+        {
+          "word": "do",
+          "start": 135.099998,
+          "end": 135.470001
+        },
+        {
+          "word": "n't",
+          "start": 135.099998,
+          "end": 135.470001
+        },
+        {
+          "word": "want",
+          "start": 135.470001,
+          "end": 135.869999
+        },
+        {
+          "word": "to",
+          "start": 137.419998,
+          "end": 137.509998
+        },
+        {
+          "word": "be",
+          "start": 137.509998,
+          "end": 137.57
+        },
+        {
+          "word": "away",
+          "start": 137.57,
+          "end": 137.810001
+        },
+        {
+          "word": "any",
+          "start": 137.810001,
+          "end": 137.880001
+        },
+        {
+          "word": "longer",
+          "start": 137.93,
+          "end": 138.150002
+        },
+        {
+          "word": "than",
+          "start": 138.150002,
+          "end": 138.459999
+        },
+        {
+          "word": "that",
+          "start": 138.459999,
+          "end": 138.5
+        },
+        {
+          "word": "So",
+          "start": 138.5,
+          "end": 138.560001
+        },
+        {
+          "word": "is",
+          "start": 139.290001,
+          "end": 139.470001
+        },
+        {
+          "word": "that",
+          "start": 139.529999,
+          "end": 139.68
+        },
+        {
+          "word": "by",
+          "start": 139.68,
+          "end": 139.889999
+        },
+        {
+          "word": "coach",
+          "start": 139.939999,
+          "end": 140.150002
+        }
+      ],
       "answers": [],
-      "end": 196.1
+      "end": 140.150002
     },
     {
       "id": 9,
-      "start": 196.3,
+      "start": 140.18,
       "speaker": "RECEPTIONIST",
       "en": "Actually it's by minibus. We like to keep those tours small and personal so we don't take a whole coachload of people. In fact, we only take up to fifteen people on this tour, although we do run it with just twelve or thirteen.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Actually",
+          "start": 140.18,
+          "end": 140.669998
+        },
+        {
+          "word": "it",
+          "start": 140.669998,
+          "end": 140.790001
+        },
+        {
+          "word": "'s",
+          "start": 140.669998,
+          "end": 140.790001
+        },
+        {
+          "word": "by",
+          "start": 140.790001,
+          "end": 141.009998
+        },
+        {
+          "word": "minibus",
+          "start": 141.009998,
+          "end": 141.490002
+        },
+        {
+          "word": "We",
+          "start": 141.490002,
+          "end": 141.630001
+        },
+        {
+          "word": "like",
+          "start": 141.630001,
+          "end": 141.740002
+        },
+        {
+          "word": "to",
+          "start": 141.740002,
+          "end": 141.799999
+        },
+        {
+          "word": "keep",
+          "start": 142.16,
+          "end": 142.27
+        },
+        {
+          "word": "those",
+          "start": 142.27,
+          "end": 142.470001
+        },
+        {
+          "word": "tours",
+          "start": 142.470001,
+          "end": 142.779999
+        },
+        {
+          "word": "small",
+          "start": 142.779999,
+          "end": 142.939999
+        },
+        {
+          "word": "and",
+          "start": 142.939999,
+          "end": 142.970001
+        },
+        {
+          "word": "personal",
+          "start": 142.970001,
+          "end": 143.25
+        },
+        {
+          "word": "so",
+          "start": 143.25,
+          "end": 143.34
+        },
+        {
+          "word": "we",
+          "start": 143.34,
+          "end": 143.450001
+        },
+        {
+          "word": "do",
+          "start": 143.450001,
+          "end": 143.709999
+        },
+        {
+          "word": "n't",
+          "start": 143.450001,
+          "end": 143.709999
+        },
+        {
+          "word": "take",
+          "start": 143.709999,
+          "end": 143.880001
+        },
+        {
+          "word": "a",
+          "start": 143.990002,
+          "end": 144.049999
+        },
+        {
+          "word": "whole",
+          "start": 144.049999,
+          "end": 144.290001
+        },
+        {
+          "word": "coachload",
+          "start": 144.290001,
+          "end": 144.919998
+        },
+        {
+          "word": "of",
+          "start": 144.919998,
+          "end": 145.029999
+        },
+        {
+          "word": "people",
+          "start": 146.299999,
+          "end": 146.48
+        },
+        {
+          "word": "In",
+          "start": 146.540001,
+          "end": 146.689999
+        },
+        {
+          "word": "fact",
+          "start": 146.689999,
+          "end": 146.959999
+        },
+        {
+          "word": "we",
+          "start": 146.959999,
+          "end": 147.259998
+        },
+        {
+          "word": "only",
+          "start": 147.939999,
+          "end": 148.189999
+        },
+        {
+          "word": "take",
+          "start": 148.189999,
+          "end": 148.330002
+        },
+        {
+          "word": "up",
+          "start": 148.330002,
+          "end": 148.389999
+        },
+        {
+          "word": "to",
+          "start": 148.389999,
+          "end": 148.48
+        },
+        {
+          "word": "fifteen",
+          "start": 148.48,
+          "end": 148.900002
+        },
+        {
+          "word": "people",
+          "start": 149.25,
+          "end": 149.400002
+        },
+        {
+          "word": "on",
+          "start": 149.400002,
+          "end": 149.68
+        },
+        {
+          "word": "this",
+          "start": 149.68,
+          "end": 149.82
+        },
+        {
+          "word": "tour",
+          "start": 149.82,
+          "end": 149.959999
+        },
+        {
+          "word": "although",
+          "start": 149.959999,
+          "end": 150.220001
+        },
+        {
+          "word": "we",
+          "start": 153.830002,
+          "end": 153.919998
+        },
+        {
+          "word": "do",
+          "start": 153.919998,
+          "end": 153.990002
+        },
+        {
+          "word": "run",
+          "start": 153.990002,
+          "end": 154.16
+        },
+        {
+          "word": "it",
+          "start": 154.16,
+          "end": 154.240002
+        },
+        {
+          "word": "with",
+          "start": 154.240002,
+          "end": 155.220001
+        },
+        {
+          "word": "just",
+          "start": 155.220001,
+          "end": 155.299999
+        },
+        {
+          "word": "twelve",
+          "start": 155.299999,
+          "end": 155.57
+        },
+        {
+          "word": "or",
+          "start": 155.57,
+          "end": 155.810001
+        },
+        {
+          "word": "thirteen",
+          "start": 156.16,
+          "end": 157.189999
+        }
+      ],
       "answers": [
         1,
         2
       ],
-      "end": 205.4
+      "end": 157.189999
     },
     {
       "id": 10,
-      "start": 205.5,
+      "start": 157.580002,
       "speaker": "CUSTOMER",
       "en": "Oh, right. So do you run these tours often?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 157.580002,
+          "end": 158.299999
+        },
+        {
+          "word": "right",
+          "start": 158.48,
+          "end": 158.720001
+        },
+        {
+          "word": "So",
+          "start": 158.720001,
+          "end": 158.779999
+        },
+        {
+          "word": "do",
+          "start": 158.779999,
+          "end": 158.849998
+        },
+        {
+          "word": "you",
+          "start": 158.849998,
+          "end": 158.93
+        },
+        {
+          "word": "run",
+          "start": 158.93,
+          "end": 159.029999
+        },
+        {
+          "word": "these",
+          "start": 159.08000199999998,
+          "end": 159.16999800000002
+        },
+        {
+          "word": "tours",
+          "start": 159.16999800000002,
+          "end": 159.360001
+        },
+        {
+          "word": "often",
+          "start": 159.360001,
+          "end": 160.139999
+        }
+      ],
       "answers": [],
-      "end": 214.4
+      "end": 160.139999
     },
     {
       "id": 11,
-      "start": 214.7,
+      "start": 160.139999,
       "speaker": "RECEPTIONIST",
       "en": "Well it depends on the time of year. Of course in peak times like the summer holidays we do them every weekend, but at the moment it's usually once a month at most.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 160.139999,
+          "end": 160.93
+        },
+        {
+          "word": "it",
+          "start": 160.93,
+          "end": 161.010002
+        },
+        {
+          "word": "depends",
+          "start": 161.010002,
+          "end": 161.41000400000001
+        },
+        {
+          "word": "on",
+          "start": 161.449997,
+          "end": 161.91000400000001
+        },
+        {
+          "word": "the",
+          "start": 162.690002,
+          "end": 163.150002
+        },
+        {
+          "word": "time",
+          "start": 163.18,
+          "end": 163.230003
+        },
+        {
+          "word": "of",
+          "start": 163.230003,
+          "end": 163.260002
+        },
+        {
+          "word": "year",
+          "start": 163.260002,
+          "end": 163.360001
+        },
+        {
+          "word": "Of",
+          "start": 163.360001,
+          "end": 163.43
+        },
+        {
+          "word": "course",
+          "start": 163.43,
+          "end": 163.690002
+        },
+        {
+          "word": "in",
+          "start": 163.690002,
+          "end": 163.779999
+        },
+        {
+          "word": "peak",
+          "start": 163.779999,
+          "end": 163.870003
+        },
+        {
+          "word": "times",
+          "start": 163.870003,
+          "end": 164.07
+        },
+        {
+          "word": "like",
+          "start": 164.07,
+          "end": 164.360001
+        },
+        {
+          "word": "the",
+          "start": 164.360001,
+          "end": 164.550003
+        },
+        {
+          "word": "summer",
+          "start": 164.550003,
+          "end": 164.760002
+        },
+        {
+          "word": "holidays",
+          "start": 164.900002,
+          "end": 165.349998
+        },
+        {
+          "word": "we",
+          "start": 165.940002,
+          "end": 166.360001
+        },
+        {
+          "word": "do",
+          "start": 166.360001,
+          "end": 166.620003
+        },
+        {
+          "word": "them",
+          "start": 166.620003,
+          "end": 166.980003
+        },
+        {
+          "word": "every",
+          "start": 166.980003,
+          "end": 167.139999
+        },
+        {
+          "word": "weekend",
+          "start": 167.139999,
+          "end": 167.83000199999998
+        },
+        {
+          "word": "but",
+          "start": 168.41000400000001,
+          "end": 168.68
+        },
+        {
+          "word": "at",
+          "start": 168.809998,
+          "end": 168.95999899999998
+        },
+        {
+          "word": "the",
+          "start": 168.95999899999998,
+          "end": 170.300003
+        },
+        {
+          "word": "moment",
+          "start": 170.300003,
+          "end": 170.550003
+        },
+        {
+          "word": "it",
+          "start": 170.550003,
+          "end": 170.629997
+        },
+        {
+          "word": "'s",
+          "start": 170.550003,
+          "end": 170.629997
+        },
+        {
+          "word": "usually",
+          "start": 170.629997,
+          "end": 171.370003
+        },
+        {
+          "word": "once",
+          "start": 171.93,
+          "end": 172.08000199999998
+        },
+        {
+          "word": "a",
+          "start": 172.08000199999998,
+          "end": 172.110001
+        },
+        {
+          "word": "month",
+          "start": 172.110001,
+          "end": 172.32
+        },
+        {
+          "word": "at",
+          "start": 172.32,
+          "end": 172.449997
+        },
+        {
+          "word": "most",
+          "start": 172.93,
+          "end": 173.550003
+        }
+      ],
       "answers": [],
-      "end": 225.1
+      "end": 173.550003
     },
     {
       "id": 12,
-      "start": 225.3,
+      "start": 173.550003,
       "speaker": "CUSTOMER",
       "en": "And when is the next one going?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 173.550003,
+          "end": 173.629997
+        },
+        {
+          "word": "when",
+          "start": 173.629997,
+          "end": 173.730003
+        },
+        {
+          "word": "is",
+          "start": 173.730003,
+          "end": 173.760002
+        },
+        {
+          "word": "the",
+          "start": 174.300003,
+          "end": 174.779999
+        },
+        {
+          "word": "next",
+          "start": 174.779999,
+          "end": 175.050003
+        },
+        {
+          "word": "one",
+          "start": 175.050003,
+          "end": 175.139999
+        },
+        {
+          "word": "going",
+          "start": 175.139999,
+          "end": 175.29000100000002
+        }
+      ],
       "answers": [],
-      "end": 227.1
+      "end": 175.29000100000002
     },
     {
       "id": 13,
-      "start": 234.3,
+      "start": 175.29000100000002,
       "speaker": "RECEPTIONIST",
       "en": "Mmm, let me see. Urn, there's one in three weeks' time which is April the 18th, and then we don't have another one until June the 2nd.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Mmm",
+          "start": 175.29000100000002,
+          "end": 175.349998
+        },
+        {
+          "word": "let",
+          "start": 175.349998,
+          "end": 175.45999899999998
+        },
+        {
+          "word": "me",
+          "start": 175.45999899999998,
+          "end": 175.519997
+        },
+        {
+          "word": "see",
+          "start": 175.519997,
+          "end": 175.57
+        },
+        {
+          "word": "Urn",
+          "start": 175.57,
+          "end": 175.629997
+        },
+        {
+          "word": "there",
+          "start": 175.629997,
+          "end": 175.66999800000002
+        },
+        {
+          "word": "'s",
+          "start": 175.66999800000002,
+          "end": 175.699997
+        },
+        {
+          "word": "one",
+          "start": 175.699997,
+          "end": 175.889999
+        },
+        {
+          "word": "in",
+          "start": 175.980003,
+          "end": 176.07
+        },
+        {
+          "word": "three",
+          "start": 176.07,
+          "end": 176.70999899999998
+        },
+        {
+          "word": "weeks",
+          "start": 176.70999899999998,
+          "end": 176.860001
+        },
+        {
+          "word": "time",
+          "start": 176.860001,
+          "end": 177.0
+        },
+        {
+          "word": "which",
+          "start": 177.029999,
+          "end": 177.199997
+        },
+        {
+          "word": "is",
+          "start": 177.199997,
+          "end": 177.279999
+        },
+        {
+          "word": "April",
+          "start": 177.279999,
+          "end": 177.82
+        },
+        {
+          "word": "the",
+          "start": 177.82,
+          "end": 178.190002
+        },
+        {
+          "word": "18",
+          "start": 178.529999,
+          "end": 189.699997
+        },
+        {
+          "word": "th",
+          "start": 178.529999,
+          "end": 189.699997
+        },
+        {
+          "word": "and",
+          "start": 189.699997,
+          "end": 189.760002
+        },
+        {
+          "word": "then",
+          "start": 189.760002,
+          "end": 189.889999
+        },
+        {
+          "word": "we",
+          "start": 190.940002,
+          "end": 191.010002
+        },
+        {
+          "word": "do",
+          "start": 191.010002,
+          "end": 191.099998
+        },
+        {
+          "word": "n't",
+          "start": 191.010002,
+          "end": 191.099998
+        },
+        {
+          "word": "have",
+          "start": 191.099998,
+          "end": 191.220001
+        },
+        {
+          "word": "another",
+          "start": 191.220001,
+          "end": 192.050003
+        },
+        {
+          "word": "one",
+          "start": 192.050003,
+          "end": 192.199997
+        },
+        {
+          "word": "until",
+          "start": 192.199997,
+          "end": 192.66000400000001
+        },
+        {
+          "word": "June",
+          "start": 192.66000400000001,
+          "end": 192.779999
+        },
+        {
+          "word": "the",
+          "start": 192.779999,
+          "end": 193.019997
+        },
+        {
+          "word": "2",
+          "start": 194.360001,
+          "end": 224.360001
+        },
+        {
+          "word": "nd",
+          "start": 194.360001,
+          "end": 224.360001
+        }
+      ],
       "answers": [
         3
       ],
-      "end": 243.2
+      "end": 224.360001
     },
     {
       "id": 14,
-      "start": 243.3,
+      "start": 224.919998,
       "speaker": "CUSTOMER",
       "en": "All right, and is April a good time to go?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 224.919998,
+          "end": 225.089996
+        },
+        {
+          "word": "right",
+          "start": 225.089996,
+          "end": 226.270004
+        },
+        {
+          "word": "and",
+          "start": 226.869995,
+          "end": 227.639999
+        },
+        {
+          "word": "is",
+          "start": 228.070007,
+          "end": 228.960007
+        },
+        {
+          "word": "April",
+          "start": 230.289993,
+          "end": 231.0
+        },
+        {
+          "word": "a",
+          "start": 232.080002,
+          "end": 236.5
+        },
+        {
+          "word": "good",
+          "start": 237.529999,
+          "end": 239.520004
+        },
+        {
+          "word": "time",
+          "start": 239.520004,
+          "end": 239.770004
+        },
+        {
+          "word": "to",
+          "start": 239.770004,
+          "end": 240.050003
+        },
+        {
+          "word": "go",
+          "start": 240.050003,
+          "end": 240.449997
+        }
+      ],
       "answers": [],
-      "end": 246.9
+      "end": 240.449997
     },
     {
       "id": 15,
-      "start": 247.4,
+      "start": 241.600006,
       "speaker": "RECEPTIONIST",
       "en": "Pretty good. Though the really good time is later in the year. I have to say though that the whale sighting is only one of the many things ofTered.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Pretty",
+          "start": 241.600006,
+          "end": 242.089996
+        },
+        {
+          "word": "good",
+          "start": 242.089996,
+          "end": 242.740005
+        },
+        {
+          "word": "Though",
+          "start": 243.800003,
+          "end": 244.149994
+        },
+        {
+          "word": "the",
+          "start": 245.169998,
+          "end": 246.830002
+        },
+        {
+          "word": "really",
+          "start": 247.570007,
+          "end": 247.770004
+        },
+        {
+          "word": "good",
+          "start": 247.770004,
+          "end": 248.169998
+        },
+        {
+          "word": "time",
+          "start": 248.470001,
+          "end": 249.0
+        },
+        {
+          "word": "is",
+          "start": 249.0,
+          "end": 249.059998
+        },
+        {
+          "word": "later",
+          "start": 249.089996,
+          "end": 250.910004
+        },
+        {
+          "word": "in",
+          "start": 250.910004,
+          "end": 251.039993
+        },
+        {
+          "word": "the",
+          "start": 251.039993,
+          "end": 251.119995
+        },
+        {
+          "word": "year",
+          "start": 251.119995,
+          "end": 251.580002
+        },
+        {
+          "word": "I",
+          "start": 252.089996,
+          "end": 252.210007
+        },
+        {
+          "word": "have",
+          "start": 252.210007,
+          "end": 252.369995
+        },
+        {
+          "word": "to",
+          "start": 252.369995,
+          "end": 252.460007
+        },
+        {
+          "word": "say",
+          "start": 252.460007,
+          "end": 252.630005
+        },
+        {
+          "word": "though",
+          "start": 252.630005,
+          "end": 253.070007
+        },
+        {
+          "word": "that",
+          "start": 253.070007,
+          "end": 253.350006
+        },
+        {
+          "word": "the",
+          "start": 253.350006,
+          "end": 253.429993
+        },
+        {
+          "word": "whale",
+          "start": 253.429993,
+          "end": 253.919998
+        },
+        {
+          "word": "sighting",
+          "start": 253.919998,
+          "end": 254.479996
+        },
+        {
+          "word": "is",
+          "start": 254.479996,
+          "end": 254.600006
+        },
+        {
+          "word": "only",
+          "start": 254.600006,
+          "end": 254.869995
+        },
+        {
+          "word": "one",
+          "start": 254.869995,
+          "end": 255.229996
+        },
+        {
+          "word": "of",
+          "start": 255.229996,
+          "end": 255.330002
+        },
+        {
+          "word": "the",
+          "start": 255.330002,
+          "end": 255.419998
+        },
+        {
+          "word": "many",
+          "start": 255.419998,
+          "end": 255.710007
+        },
+        {
+          "word": "things",
+          "start": 255.710007,
+          "end": 256.009995
+        },
+        {
+          "word": "ofTered",
+          "start": 256.009995,
+          "end": 256.449997
+        }
+      ],
       "answers": [],
-      "end": 249.3
+      "end": 256.449997
     },
     {
       "id": 16,
-      "start": 249.4,
+      "start": 256.809998,
       "speaker": "CUSTOMER",
       "en": "Really?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Really",
+          "start": 256.809998,
+          "end": 257.25
+        }
+      ],
       "answers": [],
-      "end": 250.4
+      "end": 257.25
     },
     {
       "id": 17,
-      "start": 257.3,
+      "start": 257.610001,
       "speaker": "RECEPTIONIST",
       "en": "Yes. The hotel itself where you stay has great facilities. It's called The Pallisades.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 257.610001,
+          "end": 258.0
+        },
+        {
+          "word": "The",
+          "start": 258.33999600000004,
+          "end": 258.440002
+        },
+        {
+          "word": "hotel",
+          "start": 258.440002,
+          "end": 258.850006
+        },
+        {
+          "word": "itself",
+          "start": 258.850006,
+          "end": 259.449997
+        },
+        {
+          "word": "where",
+          "start": 259.449997,
+          "end": 259.529999
+        },
+        {
+          "word": "you",
+          "start": 259.529999,
+          "end": 259.67999299999997
+        },
+        {
+          "word": "stay",
+          "start": 259.67999299999997,
+          "end": 259.990005
+        },
+        {
+          "word": "has",
+          "start": 259.990005,
+          "end": 260.259995
+        },
+        {
+          "word": "great",
+          "start": 260.259995,
+          "end": 260.729996
+        },
+        {
+          "word": "facilities",
+          "start": 260.729996,
+          "end": 261.380005
+        },
+        {
+          "word": "It",
+          "start": 261.58000200000004,
+          "end": 261.75
+        },
+        {
+          "word": "'s",
+          "start": 261.58000200000004,
+          "end": 261.75
+        },
+        {
+          "word": "called",
+          "start": 261.75,
+          "end": 262.039993
+        },
+        {
+          "word": "The",
+          "start": 262.039993,
+          "end": 262.119995
+        },
+        {
+          "word": "Pallisades",
+          "start": 262.119995,
+          "end": 263.139999
+        }
+      ],
       "answers": [],
-      "end": 261.1
+      "end": 263.139999
     },
     {
       "id": 18,
-      "start": 261.1,
+      "start": 264.07000700000003,
       "speaker": "CUSTOMER",
       "en": "The Paris what?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 264.07000700000003,
+          "end": 264.16999799999996
+        },
+        {
+          "word": "Paris",
+          "start": 264.16999799999996,
+          "end": 264.5
+        },
+        {
+          "word": "what",
+          "start": 264.539993,
+          "end": 264.850006
+        }
+      ],
       "answers": [],
-      "end": 264.9
+      "end": 264.850006
     },
     {
       "id": 19,
-      "start": 265.0,
+      "start": 265.58000200000004,
       "speaker": "RECEPTIONIST",
       "en": "No, it's actually The Pallisades, P-A-L-L-I-S-A-0-E-S. It's right on the main beach there.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 265.58000200000004,
+          "end": 265.82000700000003
+        },
+        {
+          "word": "it",
+          "start": 266.029999,
+          "end": 266.25
+        },
+        {
+          "word": "'s",
+          "start": 266.029999,
+          "end": 266.25
+        },
+        {
+          "word": "actually",
+          "start": 266.25,
+          "end": 266.809998
+        },
+        {
+          "word": "The",
+          "start": 266.83999600000004,
+          "end": 266.979996
+        },
+        {
+          "word": "Pallisades",
+          "start": 266.979996,
+          "end": 268.149994
+        },
+        {
+          "word": "P",
+          "start": 268.779999,
+          "end": 269.220001
+        },
+        {
+          "word": "A",
+          "start": 269.259995,
+          "end": 270.08999600000004
+        },
+        {
+          "word": "L",
+          "start": 270.119995,
+          "end": 270.220001
+        },
+        {
+          "word": "L",
+          "start": 270.220001,
+          "end": 270.66000399999996
+        },
+        {
+          "word": "I",
+          "start": 270.720001,
+          "end": 271.16999799999996
+        },
+        {
+          "word": "S",
+          "start": 271.199997,
+          "end": 271.630005
+        },
+        {
+          "word": "A",
+          "start": 271.779999,
+          "end": 271.869995
+        },
+        {
+          "word": "0",
+          "start": 271.869995,
+          "end": 272.559998
+        },
+        {
+          "word": "E",
+          "start": 272.610001,
+          "end": 272.880005
+        },
+        {
+          "word": "S",
+          "start": 272.91999799999996,
+          "end": 273.289993
+        },
+        {
+          "word": "It",
+          "start": 273.92999299999997,
+          "end": 274.220001
+        },
+        {
+          "word": "'s",
+          "start": 273.92999299999997,
+          "end": 274.220001
+        },
+        {
+          "word": "right",
+          "start": 274.220001,
+          "end": 274.490005
+        },
+        {
+          "word": "on",
+          "start": 274.490005,
+          "end": 274.639999
+        },
+        {
+          "word": "the",
+          "start": 274.639999,
+          "end": 274.699997
+        },
+        {
+          "word": "main",
+          "start": 274.699997,
+          "end": 275.08000200000004
+        },
+        {
+          "word": "beach",
+          "start": 275.08000200000004,
+          "end": 275.42999299999997
+        },
+        {
+          "word": "there",
+          "start": 275.42999299999997,
+          "end": 275.729996
+        }
+      ],
       "answers": [
         4
       ],
-      "end": 275.8
+      "end": 275.729996
     },
     {
       "id": 20,
-      "start": 276.1,
+      "start": 276.059998,
       "speaker": "CUSTOMER",
       "en": "Oh, I see.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 276.059998,
+          "end": 276.309998
+        },
+        {
+          "word": "I",
+          "start": 276.309998,
+          "end": 276.470001
+        },
+        {
+          "word": "see",
+          "start": 276.470001,
+          "end": 276.729996
+        }
+      ],
       "answers": [],
-      "end": 277.3
+      "end": 276.729996
     },
     {
       "id": 21,
-      "start": 277.4,
+      "start": 277.240005,
       "speaker": "RECEPTIONIST",
       "en": "All of the rooms have nice views and the food is really good there too.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 277.240005,
+          "end": 277.520004
+        },
+        {
+          "word": "of",
+          "start": 277.520004,
+          "end": 277.610001
+        },
+        {
+          "word": "the",
+          "start": 277.610001,
+          "end": 277.729996
+        },
+        {
+          "word": "rooms",
+          "start": 277.729996,
+          "end": 278.039993
+        },
+        {
+          "word": "have",
+          "start": 278.039993,
+          "end": 278.240005
+        },
+        {
+          "word": "nice",
+          "start": 278.240005,
+          "end": 278.699997
+        },
+        {
+          "word": "views",
+          "start": 278.699997,
+          "end": 279.020004
+        },
+        {
+          "word": "and",
+          "start": 279.240005,
+          "end": 279.380005
+        },
+        {
+          "word": "the",
+          "start": 279.380005,
+          "end": 279.479996
+        },
+        {
+          "word": "food",
+          "start": 279.479996,
+          "end": 279.960007
+        },
+        {
+          "word": "is",
+          "start": 279.960007,
+          "end": 280.110001
+        },
+        {
+          "word": "really",
+          "start": 280.110001,
+          "end": 280.58000200000004
+        },
+        {
+          "word": "good",
+          "start": 280.58000200000004,
+          "end": 280.82000700000003
+        },
+        {
+          "word": "there",
+          "start": 280.82000700000003,
+          "end": 281.0
+        },
+        {
+          "word": "too",
+          "start": 281.0,
+          "end": 281.369995
+        }
+      ],
       "answers": [],
-      "end": 281.4
+      "end": 281.369995
     },
     {
       "id": 22,
-      "start": 281.8,
+      "start": 281.759995,
       "speaker": "CUSTOMER",
       "en": "Oh right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 281.759995,
+          "end": 281.899994
+        },
+        {
+          "word": "right",
+          "start": 281.92999299999997,
+          "end": 282.33999600000004
+        }
+      ],
       "answers": [],
-      "end": 283.4
+      "end": 282.33999600000004
     },
     {
       "id": 23,
-      "start": 319.6,
+      "start": 286.149994,
       "speaker": "CUSTOMER",
       "en": "And what about the other things? You know, that are included in the pnce.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 286.149994,
+          "end": 286.32000700000003
+        },
+        {
+          "word": "what",
+          "start": 286.32000700000003,
+          "end": 286.869995
+        },
+        {
+          "word": "about",
+          "start": 286.869995,
+          "end": 287.029999
+        },
+        {
+          "word": "the",
+          "start": 287.029999,
+          "end": 288.210007
+        },
+        {
+          "word": "other",
+          "start": 288.58999600000004,
+          "end": 292.059998
+        },
+        {
+          "word": "things",
+          "start": 312.279999,
+          "end": 315.66999799999996
+        },
+        {
+          "word": "You",
+          "start": 319.33000200000004,
+          "end": 319.470001
+        },
+        {
+          "word": "know",
+          "start": 319.470001,
+          "end": 319.759995
+        },
+        {
+          "word": "that",
+          "start": 319.759995,
+          "end": 320.529999
+        },
+        {
+          "word": "are",
+          "start": 321.440002,
+          "end": 322.149994
+        },
+        {
+          "word": "included",
+          "start": 322.149994,
+          "end": 322.610001
+        },
+        {
+          "word": "in",
+          "start": 322.610001,
+          "end": 322.699997
+        },
+        {
+          "word": "the",
+          "start": 322.699997,
+          "end": 322.759995
+        },
+        {
+          "word": "pnce",
+          "start": 322.759995,
+          "end": 323.17999299999997
+        }
+      ],
       "answers": [],
-      "end": 323.2
+      "end": 323.17999299999997
     },
     {
       "id": 24,
-      "start": 333.2,
+      "start": 323.850006,
       "speaker": "RECEPTIONIST",
       "en": "Oh, there are lots of things. If you don't want to do the whale watch cruise, your guide will take anyone who is interested either on a bushwalk through the national park near the hotel, and there's no / extra charge for that, or on a fishing trip. That's an extra $12 I think. And there's also a reptile park in town - that costs more or less the same.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 323.850006,
+          "end": 324.17999299999997
+        },
+        {
+          "word": "there",
+          "start": 324.17999299999997,
+          "end": 324.369995
+        },
+        {
+          "word": "are",
+          "start": 324.369995,
+          "end": 324.440002
+        },
+        {
+          "word": "lots",
+          "start": 324.440002,
+          "end": 324.83999600000004
+        },
+        {
+          "word": "of",
+          "start": 324.83999600000004,
+          "end": 324.940002
+        },
+        {
+          "word": "things",
+          "start": 324.940002,
+          "end": 325.32000700000003
+        },
+        {
+          "word": "If",
+          "start": 325.699997,
+          "end": 325.869995
+        },
+        {
+          "word": "you",
+          "start": 325.869995,
+          "end": 325.979996
+        },
+        {
+          "word": "do",
+          "start": 325.979996,
+          "end": 326.220001
+        },
+        {
+          "word": "n't",
+          "start": 325.979996,
+          "end": 326.220001
+        },
+        {
+          "word": "want",
+          "start": 326.220001,
+          "end": 326.399994
+        },
+        {
+          "word": "to",
+          "start": 326.399994,
+          "end": 326.490005
+        },
+        {
+          "word": "do",
+          "start": 326.490005,
+          "end": 326.710007
+        },
+        {
+          "word": "the",
+          "start": 326.710007,
+          "end": 326.800003
+        },
+        {
+          "word": "whale",
+          "start": 326.800003,
+          "end": 327.100006
+        },
+        {
+          "word": "watch",
+          "start": 327.100006,
+          "end": 327.399994
+        },
+        {
+          "word": "cruise",
+          "start": 327.399994,
+          "end": 327.889999
+        },
+        {
+          "word": "your",
+          "start": 328.17999299999997,
+          "end": 328.32000700000003
+        },
+        {
+          "word": "guide",
+          "start": 328.32000700000003,
+          "end": 328.67999299999997
+        },
+        {
+          "word": "will",
+          "start": 328.67999299999997,
+          "end": 328.789993
+        },
+        {
+          "word": "take",
+          "start": 328.789993,
+          "end": 329.07000700000003
+        },
+        {
+          "word": "anyone",
+          "start": 329.07000700000003,
+          "end": 329.449997
+        },
+        {
+          "word": "who",
+          "start": 329.449997,
+          "end": 329.57000700000003
+        },
+        {
+          "word": "is",
+          "start": 329.57000700000003,
+          "end": 329.699997
+        },
+        {
+          "word": "interested",
+          "start": 329.699997,
+          "end": 330.309998
+        },
+        {
+          "word": "either",
+          "start": 330.33999600000004,
+          "end": 330.759995
+        },
+        {
+          "word": "on",
+          "start": 330.759995,
+          "end": 330.91999799999996
+        },
+        {
+          "word": "a",
+          "start": 330.91999799999996,
+          "end": 331.0
+        },
+        {
+          "word": "bushwalk",
+          "start": 331.0,
+          "end": 331.809998
+        },
+        {
+          "word": "through",
+          "start": 332.110001,
+          "end": 332.360001
+        },
+        {
+          "word": "the",
+          "start": 332.360001,
+          "end": 332.449997
+        },
+        {
+          "word": "national",
+          "start": 332.449997,
+          "end": 332.869995
+        },
+        {
+          "word": "park",
+          "start": 332.869995,
+          "end": 333.350006
+        },
+        {
+          "word": "near",
+          "start": 333.350006,
+          "end": 333.520004
+        },
+        {
+          "word": "the",
+          "start": 333.520004,
+          "end": 333.600006
+        },
+        {
+          "word": "hotel",
+          "start": 333.600006,
+          "end": 334.190002
+        },
+        {
+          "word": "and",
+          "start": 334.66999799999996,
+          "end": 334.940002
+        },
+        {
+          "word": "there",
+          "start": 334.940002,
+          "end": 335.039993
+        },
+        {
+          "word": "'s",
+          "start": 335.039993,
+          "end": 335.100006
+        },
+        {
+          "word": "no",
+          "start": 335.100006,
+          "end": 335.289993
+        },
+        {
+          "word": "extra",
+          "start": 335.289993,
+          "end": 335.600006
+        },
+        {
+          "word": "charge",
+          "start": 335.600006,
+          "end": 335.970001
+        },
+        {
+          "word": "for",
+          "start": 335.970001,
+          "end": 336.039993
+        },
+        {
+          "word": "that",
+          "start": 336.039993,
+          "end": 336.289993
+        },
+        {
+          "word": "or",
+          "start": 336.91000399999996,
+          "end": 337.139999
+        },
+        {
+          "word": "on",
+          "start": 337.139999,
+          "end": 337.279999
+        },
+        {
+          "word": "a",
+          "start": 337.279999,
+          "end": 337.33999600000004
+        },
+        {
+          "word": "fishing",
+          "start": 337.33999600000004,
+          "end": 337.729996
+        },
+        {
+          "word": "trip",
+          "start": 337.729996,
+          "end": 338.020004
+        },
+        {
+          "word": "That",
+          "start": 338.759995,
+          "end": 339.020004
+        },
+        {
+          "word": "'s",
+          "start": 339.020004,
+          "end": 339.08999600000004
+        },
+        {
+          "word": "an",
+          "start": 339.08999600000004,
+          "end": 339.190002
+        },
+        {
+          "word": "extra",
+          "start": 339.190002,
+          "end": 340.0
+        },
+        {
+          "word": "12",
+          "start": 340.199997,
+          "end": 341.110001
+        },
+        {
+          "word": "I",
+          "start": 341.110001,
+          "end": 341.16000399999996
+        },
+        {
+          "word": "think",
+          "start": 341.16000399999996,
+          "end": 341.529999
+        },
+        {
+          "word": "And",
+          "start": 342.110001,
+          "end": 342.309998
+        },
+        {
+          "word": "there",
+          "start": 342.309998,
+          "end": 342.399994
+        },
+        {
+          "word": "'s",
+          "start": 342.399994,
+          "end": 342.460007
+        },
+        {
+          "word": "also",
+          "start": 342.460007,
+          "end": 342.729996
+        },
+        {
+          "word": "a",
+          "start": 342.729996,
+          "end": 342.899994
+        },
+        {
+          "word": "reptile",
+          "start": 342.899994,
+          "end": 343.470001
+        },
+        {
+          "word": "park",
+          "start": 343.470001,
+          "end": 343.850006
+        },
+        {
+          "word": "in",
+          "start": 343.850006,
+          "end": 343.979996
+        },
+        {
+          "word": "town",
+          "start": 343.979996,
+          "end": 344.41999799999996
+        },
+        {
+          "word": "that",
+          "start": 344.610001,
+          "end": 344.869995
+        },
+        {
+          "word": "costs",
+          "start": 344.869995,
+          "end": 345.369995
+        },
+        {
+          "word": "more",
+          "start": 345.369995,
+          "end": 345.559998
+        },
+        {
+          "word": "or",
+          "start": 345.559998,
+          "end": 345.630005
+        },
+        {
+          "word": "less",
+          "start": 345.630005,
+          "end": 345.800003
+        },
+        {
+          "word": "the",
+          "start": 345.800003,
+          "end": 345.899994
+        },
+        {
+          "word": "same",
+          "start": 345.899994,
+          "end": 346.369995
+        }
+      ],
       "answers": [
         5,
         6
       ],
-      "end": 346.7
+      "end": 346.369995
     },
     {
       "id": 25,
-      "start": 346.8,
+      "start": 346.809998,
       "speaker": "CUSTOMER",
       "en": "No, I think I'd prefer whales to snakes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 346.809998,
+          "end": 347.08999600000004
+        },
+        {
+          "word": "I",
+          "start": 347.08999600000004,
+          "end": 347.42999299999997
+        },
+        {
+          "word": "think",
+          "start": 347.42999299999997,
+          "end": 347.639999
+        },
+        {
+          "word": "I",
+          "start": 347.639999,
+          "end": 347.729996
+        },
+        {
+          "word": "'d",
+          "start": 347.729996,
+          "end": 347.770004
+        },
+        {
+          "word": "prefer",
+          "start": 347.770004,
+          "end": 348.059998
+        },
+        {
+          "word": "whales",
+          "start": 348.059998,
+          "end": 348.41999799999996
+        },
+        {
+          "word": "to",
+          "start": 348.41999799999996,
+          "end": 348.520004
+        },
+        {
+          "word": "snakes",
+          "start": 348.520004,
+          "end": 349.08000200000004
+        }
+      ],
       "answers": [],
-      "end": 349.8
+      "end": 349.08000200000004
     },
     {
       "id": 26,
-      "start": 357.8,
+      "start": 349.309998,
       "speaker": "RECEPTIONIST",
       "en": "Yeah. And if you just want to relax you are free to sit by the hotel pool or go down the beach. Oh, and they also have tennis courts at the hotel, but you have to pay for those by the hour. But there are table tennis tables downstairs and they're part of the / accommodation package. Just speak to your guide.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yeah",
+          "start": 349.309998,
+          "end": 349.649994
+        },
+        {
+          "word": "And",
+          "start": 350.449997,
+          "end": 350.73999
+        },
+        {
+          "word": "if",
+          "start": 350.73999,
+          "end": 350.850006
+        },
+        {
+          "word": "you",
+          "start": 350.850006,
+          "end": 350.910004
+        },
+        {
+          "word": "just",
+          "start": 350.910004,
+          "end": 351.149994
+        },
+        {
+          "word": "want",
+          "start": 351.149994,
+          "end": 351.309998
+        },
+        {
+          "word": "to",
+          "start": 351.309998,
+          "end": 351.380005
+        },
+        {
+          "word": "relax",
+          "start": 351.380005,
+          "end": 352.019989
+        },
+        {
+          "word": "you",
+          "start": 352.26001,
+          "end": 352.380005
+        },
+        {
+          "word": "are",
+          "start": 352.380005,
+          "end": 352.410004
+        },
+        {
+          "word": "free",
+          "start": 352.410004,
+          "end": 352.769989
+        },
+        {
+          "word": "to",
+          "start": 352.769989,
+          "end": 352.890015
+        },
+        {
+          "word": "sit",
+          "start": 352.890015,
+          "end": 353.160004
+        },
+        {
+          "word": "by",
+          "start": 353.160004,
+          "end": 353.350006
+        },
+        {
+          "word": "the",
+          "start": 353.350006,
+          "end": 353.429993
+        },
+        {
+          "word": "hotel",
+          "start": 353.429993,
+          "end": 353.850006
+        },
+        {
+          "word": "pool",
+          "start": 353.98999,
+          "end": 354.589996
+        },
+        {
+          "word": "or",
+          "start": 354.589996,
+          "end": 354.660004
+        },
+        {
+          "word": "go",
+          "start": 354.660004,
+          "end": 354.850006
+        },
+        {
+          "word": "down",
+          "start": 354.850006,
+          "end": 355.079987
+        },
+        {
+          "word": "the",
+          "start": 355.079987,
+          "end": 355.140015
+        },
+        {
+          "word": "beach",
+          "start": 355.140015,
+          "end": 355.540009
+        },
+        {
+          "word": "Oh",
+          "start": 356.290009,
+          "end": 356.540009
+        },
+        {
+          "word": "and",
+          "start": 356.98999,
+          "end": 357.100006
+        },
+        {
+          "word": "they",
+          "start": 357.100006,
+          "end": 357.220001
+        },
+        {
+          "word": "also",
+          "start": 357.220001,
+          "end": 357.51001
+        },
+        {
+          "word": "have",
+          "start": 357.51001,
+          "end": 357.829987
+        },
+        {
+          "word": "tennis",
+          "start": 357.829987,
+          "end": 358.230011
+        },
+        {
+          "word": "courts",
+          "start": 358.230011,
+          "end": 358.579987
+        },
+        {
+          "word": "at",
+          "start": 358.579987,
+          "end": 358.660004
+        },
+        {
+          "word": "the",
+          "start": 358.660004,
+          "end": 358.730011
+        },
+        {
+          "word": "hotel",
+          "start": 358.730011,
+          "end": 359.23999
+        },
+        {
+          "word": "but",
+          "start": 359.470001,
+          "end": 359.609985
+        },
+        {
+          "word": "you",
+          "start": 359.609985,
+          "end": 359.670013
+        },
+        {
+          "word": "have",
+          "start": 359.670013,
+          "end": 359.829987
+        },
+        {
+          "word": "to",
+          "start": 359.829987,
+          "end": 359.899994
+        },
+        {
+          "word": "pay",
+          "start": 359.899994,
+          "end": 360.160004
+        },
+        {
+          "word": "for",
+          "start": 360.160004,
+          "end": 360.26001
+        },
+        {
+          "word": "those",
+          "start": 360.26001,
+          "end": 360.529999
+        },
+        {
+          "word": "by",
+          "start": 360.529999,
+          "end": 360.769989
+        },
+        {
+          "word": "the",
+          "start": 360.769989,
+          "end": 360.910004
+        },
+        {
+          "word": "hour",
+          "start": 360.910004,
+          "end": 361.26001
+        },
+        {
+          "word": "But",
+          "start": 362.019989,
+          "end": 362.190002
+        },
+        {
+          "word": "there",
+          "start": 362.190002,
+          "end": 362.329987
+        },
+        {
+          "word": "are",
+          "start": 362.329987,
+          "end": 362.549988
+        },
+        {
+          "word": "table",
+          "start": 362.549988,
+          "end": 362.920013
+        },
+        {
+          "word": "tennis",
+          "start": 362.920013,
+          "end": 363.25
+        },
+        {
+          "word": "tables",
+          "start": 363.25,
+          "end": 363.630005
+        },
+        {
+          "word": "downstairs",
+          "start": 363.630005,
+          "end": 364.279999
+        },
+        {
+          "word": "and",
+          "start": 364.51001,
+          "end": 364.679993
+        },
+        {
+          "word": "they",
+          "start": 364.679993,
+          "end": 364.959991
+        },
+        {
+          "word": "'re",
+          "start": 364.679993,
+          "end": 364.959991
+        },
+        {
+          "word": "part",
+          "start": 364.959991,
+          "end": 365.26001
+        },
+        {
+          "word": "of",
+          "start": 365.26001,
+          "end": 365.369995
+        },
+        {
+          "word": "the",
+          "start": 365.369995,
+          "end": 365.480011
+        },
+        {
+          "word": "accommodation",
+          "start": 365.480011,
+          "end": 366.170013
+        },
+        {
+          "word": "package",
+          "start": 366.170013,
+          "end": 366.679993
+        },
+        {
+          "word": "Just",
+          "start": 366.709991,
+          "end": 367.079987
+        },
+        {
+          "word": "speak",
+          "start": 367.079987,
+          "end": 367.369995
+        },
+        {
+          "word": "to",
+          "start": 367.369995,
+          "end": 367.459991
+        },
+        {
+          "word": "your",
+          "start": 367.459991,
+          "end": 367.549988
+        },
+        {
+          "word": "guide",
+          "start": 367.549988,
+          "end": 368.049988
+        }
+      ],
       "answers": [
         5,
         6
       ],
-      "end": 368.6
+      "end": 368.049988
     },
     {
       "id": 27,
-      "start": 368.7,
+      "start": 368.660004,
       "speaker": "CUSTOMER",
       "en": "Well that sounds good. So how much is the basic tour price?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 368.660004,
+          "end": 368.869995
+        },
+        {
+          "word": "that",
+          "start": 368.869995,
+          "end": 368.970001
+        },
+        {
+          "word": "sounds",
+          "start": 368.970001,
+          "end": 369.200012
+        },
+        {
+          "word": "good",
+          "start": 369.200012,
+          "end": 369.589996
+        },
+        {
+          "word": "So",
+          "start": 370.0,
+          "end": 370.309998
+        },
+        {
+          "word": "how",
+          "start": 370.670013,
+          "end": 370.880005
+        },
+        {
+          "word": "much",
+          "start": 370.880005,
+          "end": 371.070007
+        },
+        {
+          "word": "is",
+          "start": 371.070007,
+          "end": 371.190002
+        },
+        {
+          "word": "the",
+          "start": 371.190002,
+          "end": 371.279999
+        },
+        {
+          "word": "basic",
+          "start": 371.279999,
+          "end": 371.730011
+        },
+        {
+          "word": "tour",
+          "start": 371.730011,
+          "end": 371.950012
+        },
+        {
+          "word": "price",
+          "start": 372.059998,
+          "end": 372.440002
+        }
+      ],
       "answers": [],
-      "end": 373.3
+      "end": 372.440002
     },
     {
       "id": 28,
-      "start": 373.8,
+      "start": 373.049988,
       "speaker": "RECEPTIONIST",
       "en": "At this time of year it's usually around $300 but let me check. Er. .. oh, it's actually $280.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "At",
+          "start": 373.049988,
+          "end": 373.399994
+        },
+        {
+          "word": "this",
+          "start": 373.399994,
+          "end": 373.570007
+        },
+        {
+          "word": "time",
+          "start": 373.700012,
+          "end": 373.959991
+        },
+        {
+          "word": "of",
+          "start": 373.959991,
+          "end": 374.079987
+        },
+        {
+          "word": "year",
+          "start": 374.079987,
+          "end": 374.320007
+        },
+        {
+          "word": "it",
+          "start": 374.320007,
+          "end": 374.5
+        },
+        {
+          "word": "'s",
+          "start": 374.320007,
+          "end": 374.5
+        },
+        {
+          "word": "usually",
+          "start": 374.5,
+          "end": 375.0
+        },
+        {
+          "word": "around",
+          "start": 375.0,
+          "end": 375.649994
+        },
+        {
+          "word": "300",
+          "start": 375.690002,
+          "end": 377.089996
+        },
+        {
+          "word": "but",
+          "start": 377.119995,
+          "end": 377.329987
+        },
+        {
+          "word": "let",
+          "start": 377.75,
+          "end": 377.899994
+        },
+        {
+          "word": "me",
+          "start": 377.899994,
+          "end": 378.0
+        },
+        {
+          "word": "check",
+          "start": 378.0,
+          "end": 378.549988
+        },
+        {
+          "word": "Er",
+          "start": 379.269989,
+          "end": 379.75
+        },
+        {
+          "word": "oh",
+          "start": 380.399994,
+          "end": 380.880005
+        },
+        {
+          "word": "it",
+          "start": 381.26001,
+          "end": 381.440002
+        },
+        {
+          "word": "'s",
+          "start": 381.26001,
+          "end": 381.440002
+        },
+        {
+          "word": "actually",
+          "start": 381.440002,
+          "end": 382.100006
+        },
+        {
+          "word": "280",
+          "start": 382.100006,
+          "end": 383.350006
+        }
+      ],
       "answers": [
         7
       ],
-      "end": 382.8
+      "end": 383.350006
     },
     {
       "id": 29,
-      "start": 384.6,
+      "start": 383.929993,
       "speaker": "CUSTOMER",
       "en": "And the next tour, are there any places on that one?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 383.929993,
+          "end": 384.290009
+        },
+        {
+          "word": "the",
+          "start": 384.410004,
+          "end": 384.5
+        },
+        {
+          "word": "next",
+          "start": 384.5,
+          "end": 384.809998
+        },
+        {
+          "word": "tour",
+          "start": 384.809998,
+          "end": 385.160004
+        },
+        {
+          "word": "are",
+          "start": 385.160004,
+          "end": 385.390015
+        },
+        {
+          "word": "there",
+          "start": 385.390015,
+          "end": 385.589996
+        },
+        {
+          "word": "any",
+          "start": 385.589996,
+          "end": 385.709991
+        },
+        {
+          "word": "places",
+          "start": 385.709991,
+          "end": 386.079987
+        },
+        {
+          "word": "on",
+          "start": 386.079987,
+          "end": 386.190002
+        },
+        {
+          "word": "that",
+          "start": 386.190002,
+          "end": 386.339996
+        },
+        {
+          "word": "one",
+          "start": 386.339996,
+          "end": 386.519989
+        }
+      ],
       "answers": [],
-      "end": 387.3
+      "end": 386.519989
     },
     {
       "id": 30,
-      "start": 387.4,
+      "start": 387.26001,
       "speaker": "RECEPTIONIST",
       "en": "How many people is it for?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "How",
+          "start": 387.26001,
+          "end": 387.549988
+        },
+        {
+          "word": "many",
+          "start": 387.549988,
+          "end": 387.76001
+        },
+        {
+          "word": "people",
+          "start": 387.76001,
+          "end": 388.029999
+        },
+        {
+          "word": "is",
+          "start": 388.029999,
+          "end": 388.140015
+        },
+        {
+          "word": "it",
+          "start": 388.140015,
+          "end": 388.25
+        },
+        {
+          "word": "for",
+          "start": 388.25,
+          "end": 388.670013
+        }
+      ],
       "answers": [],
-      "end": 388.7
+      "end": 388.670013
     },
     {
       "id": 31,
-      "start": 388.9,
+      "start": 389.019989,
       "speaker": "CUSTOMER",
       "en": "There are two of us.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "There",
+          "start": 389.019989,
+          "end": 389.190002
+        },
+        {
+          "word": "are",
+          "start": 389.190002,
+          "end": 389.230011
+        },
+        {
+          "word": "two",
+          "start": 389.230011,
+          "end": 389.369995
+        },
+        {
+          "word": "of",
+          "start": 389.369995,
+          "end": 389.600006
+        },
+        {
+          "word": "us",
+          "start": 389.600006,
+          "end": 389.779999
+        }
+      ],
       "answers": [],
-      "end": 390.6
+      "end": 389.779999
     },
     {
       "id": 32,
-      "start": 390.6,
+      "start": 390.440002,
       "speaker": "RECEPTIONIST",
       "en": "Yes, that should be fine. Can I just mention that we require all bookings to be made at least fourteen days before you travel to avoid cancellations of tours. And if you cancel within seven days of departure you will have to pay 50% of your total booking.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 390.440002,
+          "end": 390.910004
+        },
+        {
+          "word": "that",
+          "start": 390.910004,
+          "end": 391.089996
+        },
+        {
+          "word": "should",
+          "start": 391.089996,
+          "end": 391.220001
+        },
+        {
+          "word": "be",
+          "start": 391.220001,
+          "end": 391.339996
+        },
+        {
+          "word": "fine",
+          "start": 391.339996,
+          "end": 391.950012
+        },
+        {
+          "word": "Can",
+          "start": 392.679993,
+          "end": 392.850006
+        },
+        {
+          "word": "I",
+          "start": 392.850006,
+          "end": 393.019989
+        },
+        {
+          "word": "just",
+          "start": 393.059998,
+          "end": 393.269989
+        },
+        {
+          "word": "mention",
+          "start": 393.269989,
+          "end": 393.76001
+        },
+        {
+          "word": "that",
+          "start": 393.76001,
+          "end": 393.910004
+        },
+        {
+          "word": "we",
+          "start": 393.910004,
+          "end": 394.029999
+        },
+        {
+          "word": "require",
+          "start": 394.029999,
+          "end": 394.570007
+        },
+        {
+          "word": "all",
+          "start": 394.600006,
+          "end": 394.910004
+        },
+        {
+          "word": "bookings",
+          "start": 394.910004,
+          "end": 395.390015
+        },
+        {
+          "word": "to",
+          "start": 395.390015,
+          "end": 395.48999
+        },
+        {
+          "word": "be",
+          "start": 395.48999,
+          "end": 395.600006
+        },
+        {
+          "word": "made",
+          "start": 395.600006,
+          "end": 395.959991
+        },
+        {
+          "word": "at",
+          "start": 396.23999,
+          "end": 396.410004
+        },
+        {
+          "word": "least",
+          "start": 396.410004,
+          "end": 396.730011
+        },
+        {
+          "word": "fourteen",
+          "start": 396.730011,
+          "end": 397.359985
+        },
+        {
+          "word": "days",
+          "start": 397.359985,
+          "end": 397.690002
+        },
+        {
+          "word": "before",
+          "start": 397.690002,
+          "end": 398.01001
+        },
+        {
+          "word": "you",
+          "start": 398.01001,
+          "end": 398.119995
+        },
+        {
+          "word": "travel",
+          "start": 398.119995,
+          "end": 398.649994
+        },
+        {
+          "word": "to",
+          "start": 398.920013,
+          "end": 399.040009
+        },
+        {
+          "word": "avoid",
+          "start": 399.040009,
+          "end": 399.440002
+        },
+        {
+          "word": "cancellations",
+          "start": 399.440002,
+          "end": 400.329987
+        },
+        {
+          "word": "of",
+          "start": 400.329987,
+          "end": 400.429993
+        },
+        {
+          "word": "tours",
+          "start": 400.429993,
+          "end": 400.920013
+        },
+        {
+          "word": "And",
+          "start": 401.519989,
+          "end": 401.790009
+        },
+        {
+          "word": "if",
+          "start": 402.200012,
+          "end": 402.350006
+        },
+        {
+          "word": "you",
+          "start": 402.350006,
+          "end": 402.440002
+        },
+        {
+          "word": "cancel",
+          "start": 402.440002,
+          "end": 403.089996
+        },
+        {
+          "word": "within",
+          "start": 403.089996,
+          "end": 403.470001
+        },
+        {
+          "word": "seven",
+          "start": 403.470001,
+          "end": 403.859985
+        },
+        {
+          "word": "days",
+          "start": 403.859985,
+          "end": 404.160004
+        },
+        {
+          "word": "of",
+          "start": 404.160004,
+          "end": 404.200012
+        },
+        {
+          "word": "departure",
+          "start": 404.200012,
+          "end": 404.880005
+        },
+        {
+          "word": "you",
+          "start": 405.309998,
+          "end": 405.459991
+        },
+        {
+          "word": "will",
+          "start": 405.459991,
+          "end": 405.709991
+        },
+        {
+          "word": "have",
+          "start": 405.709991,
+          "end": 405.959991
+        },
+        {
+          "word": "to",
+          "start": 405.959991,
+          "end": 406.059998
+        },
+        {
+          "word": "pay",
+          "start": 406.059998,
+          "end": 406.190002
+        },
+        {
+          "word": "50",
+          "start": 406.190002,
+          "end": 407.160004
+        },
+        {
+          "word": "of",
+          "start": 407.160004,
+          "end": 407.230011
+        },
+        {
+          "word": "your",
+          "start": 407.230011,
+          "end": 407.329987
+        },
+        {
+          "word": "total",
+          "start": 407.329987,
+          "end": 407.690002
+        },
+        {
+          "word": "booking",
+          "start": 407.690002,
+          "end": 408.119995
+        }
+      ],
       "answers": [
         8
       ],
-      "end": 400.6
+      "end": 408.119995
     },
     {
       "id": 33,
-      "start": 400.6,
+      "start": 408.73999,
       "speaker": "CUSTOMER",
       "en": "OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 408.73999,
+          "end": 408.929993
+        }
+      ],
       "answers": [],
-      "end": 409.2
+      "end": 408.929993
     },
     {
       "id": 34,
-      "start": 410.5,
+      "start": 409.929993,
       "speaker": "RECEPTIONIST",
       "en": "And you also need to pay a 20% deposit at the time of booking.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 409.929993,
+          "end": 410.23999
+        },
+        {
+          "word": "you",
+          "start": 410.23999,
+          "end": 410.359985
+        },
+        {
+          "word": "also",
+          "start": 410.359985,
+          "end": 410.660004
+        },
+        {
+          "word": "need",
+          "start": 410.660004,
+          "end": 410.859985
+        },
+        {
+          "word": "to",
+          "start": 410.859985,
+          "end": 410.920013
+        },
+        {
+          "word": "pay",
+          "start": 410.920013,
+          "end": 411.070007
+        },
+        {
+          "word": "a",
+          "start": 411.070007,
+          "end": 411.100006
+        },
+        {
+          "word": "20",
+          "start": 411.100006,
+          "end": 411.869995
+        },
+        {
+          "word": "deposit",
+          "start": 411.869995,
+          "end": 412.579987
+        },
+        {
+          "word": "at",
+          "start": 413.0,
+          "end": 413.170013
+        },
+        {
+          "word": "the",
+          "start": 413.170013,
+          "end": 413.25
+        },
+        {
+          "word": "time",
+          "start": 413.25,
+          "end": 413.549988
+        },
+        {
+          "word": "of",
+          "start": 413.549988,
+          "end": 413.670013
+        },
+        {
+          "word": "booking",
+          "start": 413.670013,
+          "end": 414.100006
+        }
+      ],
       "answers": [
         9
       ],
-      "end": 414.9
+      "end": 414.100006
     },
     {
       "id": 35,
-      "start": 415.1,
+      "start": 414.670013,
       "speaker": "CUSTOMER",
       "en": "Can I pay that by credit card?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Can",
+          "start": 414.670013,
+          "end": 414.839996
+        },
+        {
+          "word": "I",
+          "start": 414.839996,
+          "end": 414.940002
+        },
+        {
+          "word": "pay",
+          "start": 415.019989,
+          "end": 415.170013
+        },
+        {
+          "word": "that",
+          "start": 415.170013,
+          "end": 415.329987
+        },
+        {
+          "word": "by",
+          "start": 415.329987,
+          "end": 415.470001
+        },
+        {
+          "word": "credit",
+          "start": 415.470001,
+          "end": 415.779999
+        },
+        {
+          "word": "card",
+          "start": 415.779999,
+          "end": 416.100006
+        }
+      ],
       "answers": [],
-      "end": 416.2
+      "end": 416.100006
     },
     {
       "id": 36,
-      "start": 416.5,
+      "start": 416.450012,
       "speaker": "RECEPTIONIST",
       "en": "Yes, you can.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 416.450012,
+          "end": 416.899994
+        },
+        {
+          "word": "you",
+          "start": 416.899994,
+          "end": 416.970001
+        },
+        {
+          "word": "can",
+          "start": 416.970001,
+          "end": 417.380005
+        }
+      ],
       "answers": [],
-      "end": 417.4
+      "end": 417.380005
     },
     {
       "id": 37,
-      "start": 418.1,
+      "start": 418.100006,
       "speaker": "CUSTOMER",
       "en": "All right, what I'll do is I'll talk to my partner and get back to you.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 418.100006,
+          "end": 418.190002
+        },
+        {
+          "word": "right",
+          "start": 418.190002,
+          "end": 418.679993
+        },
+        {
+          "word": "what",
+          "start": 418.679993,
+          "end": 418.809998
+        },
+        {
+          "word": "I",
+          "start": 418.809998,
+          "end": 418.880005
+        },
+        {
+          "word": "'ll",
+          "start": 418.880005,
+          "end": 418.929993
+        },
+        {
+          "word": "do",
+          "start": 418.929993,
+          "end": 419.119995
+        },
+        {
+          "word": "is",
+          "start": 419.119995,
+          "end": 419.23999
+        },
+        {
+          "word": "I",
+          "start": 419.23999,
+          "end": 419.399994
+        },
+        {
+          "word": "'ll",
+          "start": 419.399994,
+          "end": 419.459991
+        },
+        {
+          "word": "talk",
+          "start": 419.459991,
+          "end": 419.700012
+        },
+        {
+          "word": "to",
+          "start": 419.700012,
+          "end": 419.730011
+        },
+        {
+          "word": "my",
+          "start": 419.730011,
+          "end": 419.869995
+        },
+        {
+          "word": "partner",
+          "start": 419.869995,
+          "end": 420.220001
+        },
+        {
+          "word": "and",
+          "start": 420.220001,
+          "end": 420.73999
+        },
+        {
+          "word": "get",
+          "start": 420.73999,
+          "end": 420.880005
+        },
+        {
+          "word": "back",
+          "start": 420.880005,
+          "end": 421.059998
+        },
+        {
+          "word": "to",
+          "start": 421.059998,
+          "end": 421.160004
+        },
+        {
+          "word": "you",
+          "start": 421.160004,
+          "end": 421.279999
+        }
+      ],
       "answers": [],
-      "end": 421.8
+      "end": 421.279999
     },
     {
       "id": 38,
-      "start": 421.9,
+      "start": 421.73999,
       "speaker": "RECEPTIONIST",
       "en": "Fine. So I'll make a provisional booking, shall I? - two for the Whale Watch Experience. Let me issue you with a customer reference number for when you call back. Do you have a pen?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Fine",
+          "start": 421.73999,
+          "end": 422.339996
+        },
+        {
+          "word": "So",
+          "start": 422.910004,
+          "end": 423.579987
+        },
+        {
+          "word": "I",
+          "start": 423.679993,
+          "end": 423.910004
+        },
+        {
+          "word": "'ll",
+          "start": 423.910004,
+          "end": 424.029999
+        },
+        {
+          "word": "make",
+          "start": 424.029999,
+          "end": 424.369995
+        },
+        {
+          "word": "a",
+          "start": 424.369995,
+          "end": 424.5
+        },
+        {
+          "word": "provisional",
+          "start": 424.5,
+          "end": 425.049988
+        },
+        {
+          "word": "booking",
+          "start": 425.049988,
+          "end": 425.390015
+        },
+        {
+          "word": "shall",
+          "start": 425.390015,
+          "end": 425.609985
+        },
+        {
+          "word": "I",
+          "start": 425.609985,
+          "end": 425.850006
+        },
+        {
+          "word": "two",
+          "start": 426.529999,
+          "end": 426.839996
+        },
+        {
+          "word": "for",
+          "start": 426.839996,
+          "end": 427.100006
+        },
+        {
+          "word": "the",
+          "start": 427.100006,
+          "end": 427.290009
+        },
+        {
+          "word": "Whale",
+          "start": 427.290009,
+          "end": 427.570007
+        },
+        {
+          "word": "Watch",
+          "start": 427.570007,
+          "end": 427.820007
+        },
+        {
+          "word": "Experience",
+          "start": 427.820007,
+          "end": 428.519989
+        },
+        {
+          "word": "Let",
+          "start": 428.869995,
+          "end": 429.149994
+        },
+        {
+          "word": "me",
+          "start": 429.149994,
+          "end": 429.299988
+        },
+        {
+          "word": "issue",
+          "start": 429.299988,
+          "end": 429.730011
+        },
+        {
+          "word": "you",
+          "start": 429.730011,
+          "end": 429.929993
+        },
+        {
+          "word": "with",
+          "start": 429.929993,
+          "end": 430.089996
+        },
+        {
+          "word": "a",
+          "start": 430.089996,
+          "end": 430.149994
+        },
+        {
+          "word": "customer",
+          "start": 430.149994,
+          "end": 430.670013
+        },
+        {
+          "word": "reference",
+          "start": 430.670013,
+          "end": 431.299988
+        },
+        {
+          "word": "number",
+          "start": 431.299988,
+          "end": 431.649994
+        },
+        {
+          "word": "for",
+          "start": 431.649994,
+          "end": 431.790009
+        },
+        {
+          "word": "when",
+          "start": 431.790009,
+          "end": 431.940002
+        },
+        {
+          "word": "you",
+          "start": 431.940002,
+          "end": 432.029999
+        },
+        {
+          "word": "call",
+          "start": 432.029999,
+          "end": 432.320007
+        },
+        {
+          "word": "back",
+          "start": 432.320007,
+          "end": 432.700012
+        },
+        {
+          "word": "Do",
+          "start": 433.179993,
+          "end": 433.269989
+        },
+        {
+          "word": "you",
+          "start": 433.269989,
+          "end": 433.329987
+        },
+        {
+          "word": "have",
+          "start": 433.329987,
+          "end": 433.450012
+        },
+        {
+          "word": "a",
+          "start": 433.450012,
+          "end": 433.529999
+        },
+        {
+          "word": "pen",
+          "start": 433.529999,
+          "end": 433.980011
+        }
+      ],
       "answers": [],
-      "end": 430.8
+      "end": 433.980011
     },
     {
       "id": 39,
-      "start": 430.9,
+      "start": 434.320007,
       "speaker": "CUSTOMER",
       "en": "Yes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 434.320007,
+          "end": 434.679993
+        }
+      ],
       "answers": [],
-      "end": 434.8
+      "end": 434.679993
     },
     {
       "id": 40,
-      "start": 439.9,
+      "start": 435.480011,
       "speaker": "RECEPTIONIST",
       "en": "OK, it's three nine seven. four five, T. That's T for tango. When you call back, ask to speak to the Tour Manager, that's me, Tracy.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 435.480011,
+          "end": 436.519989
+        },
+        {
+          "word": "it",
+          "start": 437.089996,
+          "end": 437.670013
+        },
+        {
+          "word": "'s",
+          "start": 437.089996,
+          "end": 437.670013
+        },
+        {
+          "word": "three",
+          "start": 437.709991,
+          "end": 438.049988
+        },
+        {
+          "word": "nine",
+          "start": 438.049988,
+          "end": 438.440002
+        },
+        {
+          "word": "seven",
+          "start": 438.440002,
+          "end": 439.160004
+        },
+        {
+          "word": "four",
+          "start": 439.399994,
+          "end": 439.820007
+        },
+        {
+          "word": "five",
+          "start": 439.820007,
+          "end": 440.399994
+        },
+        {
+          "word": "T",
+          "start": 440.720001,
+          "end": 441.23999
+        },
+        {
+          "word": "That",
+          "start": 441.380005,
+          "end": 441.619995
+        },
+        {
+          "word": "'s",
+          "start": 441.619995,
+          "end": 441.809998
+        },
+        {
+          "word": "T",
+          "start": 441.869995,
+          "end": 442.109985
+        },
+        {
+          "word": "for",
+          "start": 442.109985,
+          "end": 442.220001
+        },
+        {
+          "word": "tango",
+          "start": 442.220001,
+          "end": 442.809998
+        },
+        {
+          "word": "When",
+          "start": 443.570007,
+          "end": 443.720001
+        },
+        {
+          "word": "you",
+          "start": 443.720001,
+          "end": 443.820007
+        },
+        {
+          "word": "call",
+          "start": 443.820007,
+          "end": 444.100006
+        },
+        {
+          "word": "back",
+          "start": 444.100006,
+          "end": 444.470001
+        },
+        {
+          "word": "ask",
+          "start": 444.839996,
+          "end": 445.23999
+        },
+        {
+          "word": "to",
+          "start": 445.23999,
+          "end": 445.339996
+        },
+        {
+          "word": "speak",
+          "start": 445.339996,
+          "end": 445.679993
+        },
+        {
+          "word": "to",
+          "start": 445.679993,
+          "end": 445.790009
+        },
+        {
+          "word": "the",
+          "start": 445.790009,
+          "end": 445.890015
+        },
+        {
+          "word": "Tour",
+          "start": 445.890015,
+          "end": 446.200012
+        },
+        {
+          "word": "Manager",
+          "start": 446.200012,
+          "end": 446.660004
+        },
+        {
+          "word": "that",
+          "start": 446.799988,
+          "end": 447.059998
+        },
+        {
+          "word": "'s",
+          "start": 447.059998,
+          "end": 447.140015
+        },
+        {
+          "word": "me",
+          "start": 447.140015,
+          "end": 447.450012
+        },
+        {
+          "word": "Tracy",
+          "start": 447.450012,
+          "end": 448.040009
+        }
+      ],
       "answers": [
         10
       ],
-      "end": 448.7
+      "end": 448.040009
     },
     {
       "id": 41,
-      "start": 448.8,
+      "start": 448.679993,
       "speaker": "CUSTOMER",
       "en": "Fine, I will.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Fine",
+          "start": 448.679993,
+          "end": 449.01001
+        },
+        {
+          "word": "I",
+          "start": 453.470001,
+          "end": 455.279999
+        },
+        {
+          "word": "will",
+          "start": 456.049988,
+          "end": 458.970001
+        }
+      ],
       "answers": [],
-      "end": 449.6
+      "end": 458.970001
     }
   ],
   "questions": [
@@ -518,5 +4144,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 717,
+    "mfa_word_count": 715,
+    "matched_word_count": 707,
+    "audio_trim_offset": 94.5,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

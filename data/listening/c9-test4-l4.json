@@ -7,219 +7,3534 @@
   "segments": [
     {
       "id": 1,
-      "start": 61.9,
+      "start": 62.339999999999996,
       "speaker": "SPEAKER",
       "en": "Good morning.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 62.339999999999996,
+          "end": 62.489999999999995
+        },
+        {
+          "word": "morning",
+          "start": 62.489999999999995,
+          "end": 62.97
+        }
+      ],
       "answers": [],
-      "end": 63.0
+      "end": 62.97
     },
     {
       "id": 2,
-      "start": 63.3,
+      "start": 63.22,
       "speaker": "SPEAKER",
       "en": "Today I'd like to present the findings of our Year 2 project on wildlife found in gardens throughout our city.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Today",
+          "start": 63.22,
+          "end": 63.53
+        },
+        {
+          "word": "I",
+          "start": 63.53,
+          "end": 63.68
+        },
+        {
+          "word": "'d",
+          "start": 63.68,
+          "end": 63.72
+        },
+        {
+          "word": "like",
+          "start": 63.72,
+          "end": 63.92
+        },
+        {
+          "word": "to",
+          "start": 63.92,
+          "end": 64.02
+        },
+        {
+          "word": "present",
+          "start": 64.02,
+          "end": 64.37
+        },
+        {
+          "word": "the",
+          "start": 64.37,
+          "end": 64.44
+        },
+        {
+          "word": "findings",
+          "start": 64.44,
+          "end": 65.03999999999999
+        },
+        {
+          "word": "of",
+          "start": 65.03999999999999,
+          "end": 65.16
+        },
+        {
+          "word": "our",
+          "start": 65.16,
+          "end": 65.38
+        },
+        {
+          "word": "Year",
+          "start": 65.38,
+          "end": 65.66
+        },
+        {
+          "word": "2",
+          "start": 65.66,
+          "end": 65.96
+        },
+        {
+          "word": "project",
+          "start": 65.96,
+          "end": 66.47
+        },
+        {
+          "word": "on",
+          "start": 66.47,
+          "end": 66.67999999999999
+        },
+        {
+          "word": "wildlife",
+          "start": 66.67999999999999,
+          "end": 67.27
+        },
+        {
+          "word": "found",
+          "start": 67.27,
+          "end": 67.67999999999999
+        },
+        {
+          "word": "in",
+          "start": 67.67999999999999,
+          "end": 67.87
+        },
+        {
+          "word": "gardens",
+          "start": 67.87,
+          "end": 68.42
+        },
+        {
+          "word": "throughout",
+          "start": 68.42,
+          "end": 68.78999999999999
+        },
+        {
+          "word": "our",
+          "start": 68.78999999999999,
+          "end": 68.9
+        },
+        {
+          "word": "city",
+          "start": 68.9,
+          "end": 69.28999999999999
+        }
+      ],
       "answers": [],
-      "end": 70.0
+      "end": 69.28999999999999
     },
     {
       "id": 3,
-      "start": 70.1,
+      "start": 69.99,
       "speaker": "SPEAKER",
       "en": "I'll start by saying something about the background to the project, then talk a little bit about our research techniques, and then indicate some of our interim findings.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 69.99,
+          "end": 70.11
+        },
+        {
+          "word": "'ll",
+          "start": 70.11,
+          "end": 70.15
+        },
+        {
+          "word": "start",
+          "start": 70.15,
+          "end": 70.42
+        },
+        {
+          "word": "by",
+          "start": 70.42,
+          "end": 70.57
+        },
+        {
+          "word": "saying",
+          "start": 70.57,
+          "end": 70.88
+        },
+        {
+          "word": "something",
+          "start": 70.88,
+          "end": 71.24
+        },
+        {
+          "word": "about",
+          "start": 71.24,
+          "end": 71.52
+        },
+        {
+          "word": "the",
+          "start": 71.52,
+          "end": 71.61
+        },
+        {
+          "word": "background",
+          "start": 71.61,
+          "end": 72.22
+        },
+        {
+          "word": "to",
+          "start": 72.22,
+          "end": 72.32
+        },
+        {
+          "word": "the",
+          "start": 72.32,
+          "end": 72.41
+        },
+        {
+          "word": "project",
+          "start": 72.41,
+          "end": 72.95
+        },
+        {
+          "word": "then",
+          "start": 73.28,
+          "end": 73.63
+        },
+        {
+          "word": "talk",
+          "start": 73.63,
+          "end": 73.88
+        },
+        {
+          "word": "a",
+          "start": 73.88,
+          "end": 73.92
+        },
+        {
+          "word": "little",
+          "start": 73.92,
+          "end": 74.15
+        },
+        {
+          "word": "bit",
+          "start": 74.15,
+          "end": 74.3
+        },
+        {
+          "word": "about",
+          "start": 74.3,
+          "end": 74.53
+        },
+        {
+          "word": "our",
+          "start": 74.53,
+          "end": 74.74
+        },
+        {
+          "word": "research",
+          "start": 74.74,
+          "end": 75.2
+        },
+        {
+          "word": "techniques",
+          "start": 75.2,
+          "end": 75.99
+        },
+        {
+          "word": "and",
+          "start": 75.99,
+          "end": 76.22
+        },
+        {
+          "word": "then",
+          "start": 76.22,
+          "end": 76.39
+        },
+        {
+          "word": "indicate",
+          "start": 76.39,
+          "end": 76.92
+        },
+        {
+          "word": "some",
+          "start": 76.92,
+          "end": 77.17
+        },
+        {
+          "word": "of",
+          "start": 77.17,
+          "end": 77.31
+        },
+        {
+          "word": "our",
+          "start": 77.31,
+          "end": 77.440001
+        },
+        {
+          "word": "interim",
+          "start": 77.440001,
+          "end": 77.89
+        },
+        {
+          "word": "findings",
+          "start": 77.89,
+          "end": 78.5
+        }
+      ],
       "answers": [],
-      "end": 78.6
+      "end": 78.5
     },
     {
       "id": 4,
-      "start": 79.6,
+      "start": 79.55,
       "speaker": "SPEAKER",
       "en": "First of all, how did we choose our topic?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "First",
+          "start": 79.55,
+          "end": 79.770001
+        },
+        {
+          "word": "of",
+          "start": 79.770001,
+          "end": 79.840001
+        },
+        {
+          "word": "all",
+          "start": 79.840001,
+          "end": 80.13
+        },
+        {
+          "word": "how",
+          "start": 80.359999,
+          "end": 80.529999
+        },
+        {
+          "word": "did",
+          "start": 80.529999,
+          "end": 80.64
+        },
+        {
+          "word": "we",
+          "start": 80.64,
+          "end": 80.760001
+        },
+        {
+          "word": "choose",
+          "start": 80.760001,
+          "end": 81.07
+        },
+        {
+          "word": "our",
+          "start": 81.07,
+          "end": 81.190001
+        },
+        {
+          "word": "topic",
+          "start": 81.190001,
+          "end": 81.619999
+        }
+      ],
       "answers": [],
-      "end": 81.7
+      "end": 81.619999
     },
     {
       "id": 5,
-      "start": 82.3,
+      "start": 82.190001,
       "speaker": "SPEAKER",
       "en": "Well, there are four of us in the group and one day while we were discussing a possible focus, two of the group mentioned that they had seen yet more sparrow-hawks-one of Britain's most interesting birds of prey - in their own city centre gardens and wondered why they were turning up in these gardens in great numbers. [[ ]] We were all very engaged by the idea of why wild animals would choose to inhabit a city garden.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 82.190001,
+          "end": 82.510001
+        },
+        {
+          "word": "there",
+          "start": 82.510001,
+          "end": 82.770001
+        },
+        {
+          "word": "are",
+          "start": 82.770001,
+          "end": 82.9
+        },
+        {
+          "word": "four",
+          "start": 82.9,
+          "end": 83.22999999999999
+        },
+        {
+          "word": "of",
+          "start": 83.22999999999999,
+          "end": 83.31
+        },
+        {
+          "word": "us",
+          "start": 83.31,
+          "end": 83.529999
+        },
+        {
+          "word": "in",
+          "start": 83.529999,
+          "end": 83.690001
+        },
+        {
+          "word": "the",
+          "start": 83.690001,
+          "end": 83.760001
+        },
+        {
+          "word": "group",
+          "start": 83.760001,
+          "end": 84.22
+        },
+        {
+          "word": "and",
+          "start": 84.22,
+          "end": 84.619999
+        },
+        {
+          "word": "one",
+          "start": 84.619999,
+          "end": 84.9
+        },
+        {
+          "word": "day",
+          "start": 84.9,
+          "end": 85.180001
+        },
+        {
+          "word": "while",
+          "start": 85.180001,
+          "end": 85.430001
+        },
+        {
+          "word": "we",
+          "start": 85.430001,
+          "end": 85.539999
+        },
+        {
+          "word": "were",
+          "start": 85.539999,
+          "end": 85.63
+        },
+        {
+          "word": "discussing",
+          "start": 85.63,
+          "end": 86.190001
+        },
+        {
+          "word": "a",
+          "start": 86.190001,
+          "end": 86.24
+        },
+        {
+          "word": "possible",
+          "start": 86.24,
+          "end": 86.72
+        },
+        {
+          "word": "focus",
+          "start": 86.72,
+          "end": 87.260001
+        },
+        {
+          "word": "two",
+          "start": 87.789999,
+          "end": 87.97999999999999
+        },
+        {
+          "word": "of",
+          "start": 87.97999999999999,
+          "end": 88.05
+        },
+        {
+          "word": "the",
+          "start": 88.05,
+          "end": 88.109999
+        },
+        {
+          "word": "group",
+          "start": 88.109999,
+          "end": 88.35000099999999
+        },
+        {
+          "word": "mentioned",
+          "start": 88.35000099999999,
+          "end": 88.83
+        },
+        {
+          "word": "that",
+          "start": 88.83,
+          "end": 88.99
+        },
+        {
+          "word": "they",
+          "start": 88.99,
+          "end": 89.13
+        },
+        {
+          "word": "had",
+          "start": 89.13,
+          "end": 89.33
+        },
+        {
+          "word": "seen",
+          "start": 89.33,
+          "end": 89.69999899999999
+        },
+        {
+          "word": "yet",
+          "start": 89.69999899999999,
+          "end": 90.020001
+        },
+        {
+          "word": "more",
+          "start": 90.020001,
+          "end": 90.41
+        },
+        {
+          "word": "sparrow",
+          "start": 90.41,
+          "end": 91.039999
+        },
+        {
+          "word": "hawks",
+          "start": 91.039999,
+          "end": 91.66
+        },
+        {
+          "word": "one",
+          "start": 91.66,
+          "end": 91.85000099999999
+        },
+        {
+          "word": "of",
+          "start": 91.85000099999999,
+          "end": 91.99000000000001
+        },
+        {
+          "word": "Britain",
+          "start": 91.99000000000001,
+          "end": 92.280001
+        },
+        {
+          "word": "'s",
+          "start": 92.280001,
+          "end": 92.35000099999999
+        },
+        {
+          "word": "most",
+          "start": 92.35000099999999,
+          "end": 92.730002
+        },
+        {
+          "word": "interesting",
+          "start": 92.789999,
+          "end": 93.26000099999999
+        },
+        {
+          "word": "birds",
+          "start": 93.26000099999999,
+          "end": 93.480002
+        },
+        {
+          "word": "of",
+          "start": 93.480002,
+          "end": 93.569998
+        },
+        {
+          "word": "prey",
+          "start": 93.569998,
+          "end": 93.960001
+        },
+        {
+          "word": "in",
+          "start": 94.359999,
+          "end": 94.480002
+        },
+        {
+          "word": "their",
+          "start": 94.480002,
+          "end": 94.640002
+        },
+        {
+          "word": "own",
+          "start": 94.640002,
+          "end": 94.9
+        },
+        {
+          "word": "city",
+          "start": 94.9,
+          "end": 95.249998
+        },
+        {
+          "word": "centre",
+          "start": 95.249998,
+          "end": 95.589999
+        },
+        {
+          "word": "gardens",
+          "start": 95.589999,
+          "end": 96.269999
+        },
+        {
+          "word": "and",
+          "start": 96.519999,
+          "end": 96.690001
+        },
+        {
+          "word": "wondered",
+          "start": 96.690001,
+          "end": 96.929999
+        },
+        {
+          "word": "why",
+          "start": 96.929999,
+          "end": 97.26000099999999
+        },
+        {
+          "word": "they",
+          "start": 97.26000099999999,
+          "end": 97.409998
+        },
+        {
+          "word": "were",
+          "start": 97.409998,
+          "end": 97.49000000000001
+        },
+        {
+          "word": "turning",
+          "start": 97.49000000000001,
+          "end": 97.940001
+        },
+        {
+          "word": "up",
+          "start": 97.940001,
+          "end": 98.089999
+        },
+        {
+          "word": "in",
+          "start": 98.089999,
+          "end": 98.17
+        },
+        {
+          "word": "these",
+          "start": 98.17,
+          "end": 98.359999
+        },
+        {
+          "word": "gardens",
+          "start": 98.359999,
+          "end": 98.83
+        },
+        {
+          "word": "in",
+          "start": 98.83,
+          "end": 98.940001
+        },
+        {
+          "word": "great",
+          "start": 98.940001,
+          "end": 99.17
+        },
+        {
+          "word": "numbers",
+          "start": 99.17,
+          "end": 99.65
+        },
+        {
+          "word": "We",
+          "start": 100.58,
+          "end": 100.710001
+        },
+        {
+          "word": "were",
+          "start": 100.710001,
+          "end": 100.85000099999999
+        },
+        {
+          "word": "all",
+          "start": 100.85000099999999,
+          "end": 101.050002
+        },
+        {
+          "word": "very",
+          "start": 101.050002,
+          "end": 101.33
+        },
+        {
+          "word": "engaged",
+          "start": 101.33,
+          "end": 101.83
+        },
+        {
+          "word": "by",
+          "start": 101.83,
+          "end": 101.99000000000001
+        },
+        {
+          "word": "the",
+          "start": 101.99000000000001,
+          "end": 102.10000099999999
+        },
+        {
+          "word": "idea",
+          "start": 102.10000099999999,
+          "end": 102.47
+        },
+        {
+          "word": "of",
+          "start": 102.47,
+          "end": 102.539999
+        },
+        {
+          "word": "why",
+          "start": 102.539999,
+          "end": 102.960001
+        },
+        {
+          "word": "wild",
+          "start": 102.960001,
+          "end": 103.42
+        },
+        {
+          "word": "animals",
+          "start": 103.42,
+          "end": 103.909998
+        },
+        {
+          "word": "would",
+          "start": 103.909998,
+          "end": 104.089999
+        },
+        {
+          "word": "choose",
+          "start": 104.089999,
+          "end": 104.409998
+        },
+        {
+          "word": "to",
+          "start": 104.409998,
+          "end": 104.569998
+        },
+        {
+          "word": "inhabit",
+          "start": 104.569998,
+          "end": 104.97
+        },
+        {
+          "word": "a",
+          "start": 104.97,
+          "end": 105.019999
+        },
+        {
+          "word": "city",
+          "start": 105.019999,
+          "end": 105.300002
+        },
+        {
+          "word": "garden",
+          "start": 105.300002,
+          "end": 105.800002
+        }
+      ],
       "answers": [
         31
       ],
-      "end": 105.9
+      "end": 105.800002
     },
     {
       "id": 6,
-      "start": 106.9,
+      "start": 106.789999,
       "speaker": "SPEAKER",
       "en": "Why is it so popular with wildlife when the countryside itself is becoming less so?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Why",
+          "start": 106.789999,
+          "end": 107.08
+        },
+        {
+          "word": "is",
+          "start": 107.08,
+          "end": 107.19999899999999
+        },
+        {
+          "word": "it",
+          "start": 107.19999899999999,
+          "end": 107.319998
+        },
+        {
+          "word": "so",
+          "start": 107.319998,
+          "end": 107.460001
+        },
+        {
+          "word": "popular",
+          "start": 107.609999,
+          "end": 108.120001
+        },
+        {
+          "word": "with",
+          "start": 108.120001,
+          "end": 108.300002
+        },
+        {
+          "word": "wildlife",
+          "start": 108.300002,
+          "end": 109.109999
+        },
+        {
+          "word": "when",
+          "start": 109.159998,
+          "end": 109.4
+        },
+        {
+          "word": "the",
+          "start": 109.4,
+          "end": 109.480002
+        },
+        {
+          "word": "countryside",
+          "start": 109.480002,
+          "end": 110.050002
+        },
+        {
+          "word": "itself",
+          "start": 110.050002,
+          "end": 110.51000099999999
+        },
+        {
+          "word": "is",
+          "start": 110.51000099999999,
+          "end": 110.63
+        },
+        {
+          "word": "becoming",
+          "start": 110.63,
+          "end": 111.06
+        },
+        {
+          "word": "less",
+          "start": 111.06,
+          "end": 111.339999
+        },
+        {
+          "word": "so",
+          "start": 111.339999,
+          "end": 111.589999
+        }
+      ],
       "answers": [],
-      "end": 111.7
+      "end": 111.589999
     },
     {
       "id": 7,
-      "start": 113.1,
+      "start": 112.9,
       "speaker": "SPEAKER",
       "en": "The first thing we did was to establish what proportion of the urban land is taken up by private gardens.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 112.9,
+          "end": 113.01000099999999
+        },
+        {
+          "word": "first",
+          "start": 113.01000099999999,
+          "end": 113.22
+        },
+        {
+          "word": "thing",
+          "start": 113.22,
+          "end": 113.35000099999999
+        },
+        {
+          "word": "we",
+          "start": 113.35000099999999,
+          "end": 113.460001
+        },
+        {
+          "word": "did",
+          "start": 113.460001,
+          "end": 113.730002
+        },
+        {
+          "word": "was",
+          "start": 113.730002,
+          "end": 113.999998
+        },
+        {
+          "word": "to",
+          "start": 113.999998,
+          "end": 114.15
+        },
+        {
+          "word": "establish",
+          "start": 114.15,
+          "end": 114.81
+        },
+        {
+          "word": "what",
+          "start": 114.859999,
+          "end": 115.15
+        },
+        {
+          "word": "proportion",
+          "start": 115.15,
+          "end": 115.749998
+        },
+        {
+          "word": "of",
+          "start": 115.749998,
+          "end": 115.88
+        },
+        {
+          "word": "the",
+          "start": 115.88,
+          "end": 116.089999
+        },
+        {
+          "word": "urban",
+          "start": 116.120001,
+          "end": 116.42
+        },
+        {
+          "word": "land",
+          "start": 116.42,
+          "end": 116.83
+        },
+        {
+          "word": "is",
+          "start": 116.83,
+          "end": 116.94999899999999
+        },
+        {
+          "word": "taken",
+          "start": 116.94999899999999,
+          "end": 117.289999
+        },
+        {
+          "word": "up",
+          "start": 117.289999,
+          "end": 117.4
+        },
+        {
+          "word": "by",
+          "start": 117.4,
+          "end": 117.63
+        },
+        {
+          "word": "private",
+          "start": 117.63,
+          "end": 118.050002
+        },
+        {
+          "word": "gardens",
+          "start": 118.050002,
+          "end": 118.620001
+        }
+      ],
       "answers": [],
-      "end": 118.7
+      "end": 118.620001
     },
     {
       "id": 8,
-      "start": 119.7,
+      "start": 119.409998,
       "speaker": "SPEAKER",
       "en": "We estimated that it was about one fifth, and this was endorsed by looking at large-scale usage maps in the town land survey office - 24% to be precise. [[ ]] Our own informal discussions with neighbours and friends led us to believe that many garden owners had interesting experiences to relate regarding wild animal sightings so we decided to survey garden owners from different areas of the city.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 119.409998,
+          "end": 119.620001
+        },
+        {
+          "word": "estimated",
+          "start": 119.620001,
+          "end": 120.159998
+        },
+        {
+          "word": "that",
+          "start": 120.159998,
+          "end": 120.26000099999999
+        },
+        {
+          "word": "it",
+          "start": 120.26000099999999,
+          "end": 120.319998
+        },
+        {
+          "word": "was",
+          "start": 120.38,
+          "end": 120.56
+        },
+        {
+          "word": "about",
+          "start": 120.56,
+          "end": 120.83
+        },
+        {
+          "word": "one",
+          "start": 120.83,
+          "end": 121.13
+        },
+        {
+          "word": "fifth",
+          "start": 121.13,
+          "end": 121.63
+        },
+        {
+          "word": "and",
+          "start": 121.909998,
+          "end": 122.10000099999999
+        },
+        {
+          "word": "this",
+          "start": 122.10000099999999,
+          "end": 122.300002
+        },
+        {
+          "word": "was",
+          "start": 122.300002,
+          "end": 122.44999899999999
+        },
+        {
+          "word": "endorsed",
+          "start": 122.44999899999999,
+          "end": 122.980002
+        },
+        {
+          "word": "by",
+          "start": 122.980002,
+          "end": 123.230002
+        },
+        {
+          "word": "looking",
+          "start": 123.230002,
+          "end": 123.550002
+        },
+        {
+          "word": "at",
+          "start": 123.550002,
+          "end": 123.640002
+        },
+        {
+          "word": "large",
+          "start": 123.640002,
+          "end": 124.02999700000001
+        },
+        {
+          "word": "scale",
+          "start": 124.02999700000001,
+          "end": 124.4
+        },
+        {
+          "word": "usage",
+          "start": 124.4,
+          "end": 124.88999799999999
+        },
+        {
+          "word": "maps",
+          "start": 124.88999799999999,
+          "end": 125.370001
+        },
+        {
+          "word": "in",
+          "start": 125.370001,
+          "end": 125.63999799999999
+        },
+        {
+          "word": "the",
+          "start": 125.63999799999999,
+          "end": 125.73000199999998
+        },
+        {
+          "word": "town",
+          "start": 125.73000199999998,
+          "end": 126.23000199999998
+        },
+        {
+          "word": "land",
+          "start": 126.23000199999998,
+          "end": 126.56000399999999
+        },
+        {
+          "word": "survey",
+          "start": 126.56000399999999,
+          "end": 126.92999900000001
+        },
+        {
+          "word": "office",
+          "start": 126.92999900000001,
+          "end": 127.349997
+        },
+        {
+          "word": "24",
+          "start": 127.83000000000001,
+          "end": 128.609999
+        },
+        {
+          "word": "to",
+          "start": 128.609999,
+          "end": 128.72
+        },
+        {
+          "word": "be",
+          "start": 128.72,
+          "end": 128.819998
+        },
+        {
+          "word": "precise",
+          "start": 128.819998,
+          "end": 129.33
+        },
+        {
+          "word": "Our",
+          "start": 130.029997,
+          "end": 130.410002
+        },
+        {
+          "word": "own",
+          "start": 130.410002,
+          "end": 130.58
+        },
+        {
+          "word": "informal",
+          "start": 130.58,
+          "end": 131.050002
+        },
+        {
+          "word": "discussions",
+          "start": 131.050002,
+          "end": 131.70999799999998
+        },
+        {
+          "word": "with",
+          "start": 131.70999799999998,
+          "end": 131.870001
+        },
+        {
+          "word": "neighbours",
+          "start": 131.870001,
+          "end": 132.349997
+        },
+        {
+          "word": "and",
+          "start": 132.349997,
+          "end": 132.45999799999998
+        },
+        {
+          "word": "friends",
+          "start": 132.45999799999998,
+          "end": 133.029997
+        },
+        {
+          "word": "led",
+          "start": 133.029997,
+          "end": 133.239996
+        },
+        {
+          "word": "us",
+          "start": 133.239996,
+          "end": 133.359999
+        },
+        {
+          "word": "to",
+          "start": 133.359999,
+          "end": 133.48000199999998
+        },
+        {
+          "word": "believe",
+          "start": 133.48000199999998,
+          "end": 133.849997
+        },
+        {
+          "word": "that",
+          "start": 133.849997,
+          "end": 134.109999
+        },
+        {
+          "word": "many",
+          "start": 134.109999,
+          "end": 134.45999799999998
+        },
+        {
+          "word": "garden",
+          "start": 134.45999799999998,
+          "end": 134.940001
+        },
+        {
+          "word": "owners",
+          "start": 134.940001,
+          "end": 135.47
+        },
+        {
+          "word": "had",
+          "start": 135.47,
+          "end": 135.770003
+        },
+        {
+          "word": "interesting",
+          "start": 135.800002,
+          "end": 136.249998
+        },
+        {
+          "word": "experiences",
+          "start": 136.249998,
+          "end": 137.029997
+        },
+        {
+          "word": "to",
+          "start": 137.029997,
+          "end": 137.169997
+        },
+        {
+          "word": "relate",
+          "start": 137.169997,
+          "end": 137.590002
+        },
+        {
+          "word": "regarding",
+          "start": 137.590002,
+          "end": 138.190001
+        },
+        {
+          "word": "wild",
+          "start": 138.190001,
+          "end": 138.550002
+        },
+        {
+          "word": "animal",
+          "start": 138.550002,
+          "end": 138.840002
+        },
+        {
+          "word": "sightings",
+          "start": 138.840002,
+          "end": 139.419997
+        },
+        {
+          "word": "so",
+          "start": 139.940001,
+          "end": 140.20999799999998
+        },
+        {
+          "word": "we",
+          "start": 140.20999799999998,
+          "end": 140.48000199999998
+        },
+        {
+          "word": "decided",
+          "start": 140.48000199999998,
+          "end": 140.999998
+        },
+        {
+          "word": "to",
+          "start": 140.999998,
+          "end": 141.120001
+        },
+        {
+          "word": "survey",
+          "start": 141.120001,
+          "end": 141.639998
+        },
+        {
+          "word": "garden",
+          "start": 141.639998,
+          "end": 142.139998
+        },
+        {
+          "word": "owners",
+          "start": 142.139998,
+          "end": 142.539999
+        },
+        {
+          "word": "from",
+          "start": 142.539999,
+          "end": 142.929999
+        },
+        {
+          "word": "different",
+          "start": 142.929999,
+          "end": 143.289999
+        },
+        {
+          "word": "areas",
+          "start": 143.289999,
+          "end": 143.789999
+        },
+        {
+          "word": "of",
+          "start": 143.789999,
+          "end": 143.880003
+        },
+        {
+          "word": "the",
+          "start": 143.880003,
+          "end": 143.97
+        },
+        {
+          "word": "city",
+          "start": 143.97,
+          "end": 144.340002
+        }
+      ],
       "answers": [
         32
       ],
-      "end": 145.1
+      "end": 144.340002
     },
     {
       "id": 9,
-      "start": 145.7,
+      "start": 145.20999799999998,
       "speaker": "SPEAKER",
       "en": "Just over 100 of them completed a survey once every two weeks for twelve months - ticking off species they had seen from a pro forma list - and adding the names of any rarer ones. [[ ]] Meanwhile, we were doing our own observations in selected gardens throughout the city.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Just",
+          "start": 145.20999799999998,
+          "end": 145.690001
+        },
+        {
+          "word": "over",
+          "start": 145.690001,
+          "end": 145.919997
+        },
+        {
+          "word": "100",
+          "start": 145.919997,
+          "end": 146.65
+        },
+        {
+          "word": "of",
+          "start": 146.65,
+          "end": 146.70999799999998
+        },
+        {
+          "word": "them",
+          "start": 146.70999799999998,
+          "end": 146.95999799999998
+        },
+        {
+          "word": "completed",
+          "start": 146.95999799999998,
+          "end": 147.419997
+        },
+        {
+          "word": "a",
+          "start": 147.419997,
+          "end": 147.48000199999998
+        },
+        {
+          "word": "survey",
+          "start": 147.48000199999998,
+          "end": 148.060004
+        },
+        {
+          "word": "once",
+          "start": 148.060004,
+          "end": 148.489996
+        },
+        {
+          "word": "every",
+          "start": 148.489996,
+          "end": 148.760001
+        },
+        {
+          "word": "two",
+          "start": 148.760001,
+          "end": 149.039999
+        },
+        {
+          "word": "weeks",
+          "start": 149.039999,
+          "end": 149.410002
+        },
+        {
+          "word": "for",
+          "start": 149.410002,
+          "end": 149.749998
+        },
+        {
+          "word": "twelve",
+          "start": 149.749998,
+          "end": 150.130003
+        },
+        {
+          "word": "months",
+          "start": 150.130003,
+          "end": 150.529997
+        },
+        {
+          "word": "ticking",
+          "start": 150.999998,
+          "end": 151.319998
+        },
+        {
+          "word": "off",
+          "start": 151.319998,
+          "end": 151.510001
+        },
+        {
+          "word": "species",
+          "start": 151.510001,
+          "end": 152.130003
+        },
+        {
+          "word": "they",
+          "start": 152.130003,
+          "end": 152.310004
+        },
+        {
+          "word": "had",
+          "start": 152.310004,
+          "end": 152.45999799999998
+        },
+        {
+          "word": "seen",
+          "start": 152.45999799999998,
+          "end": 152.819998
+        },
+        {
+          "word": "from",
+          "start": 152.819998,
+          "end": 153.020003
+        },
+        {
+          "word": "a",
+          "start": 153.020003,
+          "end": 153.08
+        },
+        {
+          "word": "pro",
+          "start": 153.08,
+          "end": 153.370001
+        },
+        {
+          "word": "forma",
+          "start": 153.370001,
+          "end": 153.70999799999998
+        },
+        {
+          "word": "list",
+          "start": 153.70999799999998,
+          "end": 154.069998
+        },
+        {
+          "word": "and",
+          "start": 154.569998,
+          "end": 154.800002
+        },
+        {
+          "word": "adding",
+          "start": 154.800002,
+          "end": 155.179999
+        },
+        {
+          "word": "the",
+          "start": 155.179999,
+          "end": 155.279997
+        },
+        {
+          "word": "names",
+          "start": 155.279997,
+          "end": 155.800002
+        },
+        {
+          "word": "of",
+          "start": 155.800002,
+          "end": 155.9
+        },
+        {
+          "word": "any",
+          "start": 155.9,
+          "end": 156.109999
+        },
+        {
+          "word": "rarer",
+          "start": 156.109999,
+          "end": 156.450003
+        },
+        {
+          "word": "ones",
+          "start": 156.450003,
+          "end": 156.840002
+        },
+        {
+          "word": "Meanwhile",
+          "start": 157.300002,
+          "end": 157.95999799999998
+        },
+        {
+          "word": "we",
+          "start": 157.95999799999998,
+          "end": 158.090002
+        },
+        {
+          "word": "were",
+          "start": 158.090002,
+          "end": 158.200003
+        },
+        {
+          "word": "doing",
+          "start": 158.200003,
+          "end": 158.489996
+        },
+        {
+          "word": "our",
+          "start": 158.489996,
+          "end": 158.760001
+        },
+        {
+          "word": "own",
+          "start": 158.760001,
+          "end": 158.910002
+        },
+        {
+          "word": "observations",
+          "start": 158.910002,
+          "end": 159.760001
+        },
+        {
+          "word": "in",
+          "start": 159.760001,
+          "end": 159.870001
+        },
+        {
+          "word": "selected",
+          "start": 159.870001,
+          "end": 160.340002
+        },
+        {
+          "word": "gardens",
+          "start": 160.340002,
+          "end": 160.819998
+        },
+        {
+          "word": "throughout",
+          "start": 160.819998,
+          "end": 161.099997
+        },
+        {
+          "word": "the",
+          "start": 161.099997,
+          "end": 161.179999
+        },
+        {
+          "word": "city",
+          "start": 161.179999,
+          "end": 161.560004
+        }
+      ],
       "answers": [
         33
       ],
-      "end": 162.5
+      "end": 161.560004
     },
     {
       "id": 10,
-      "start": 162.7,
+      "start": 162.440001,
       "speaker": "SPEAKER",
       "en": "We deliberately chose smaller ones because they were by far the most typical in the city.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 162.440001,
+          "end": 162.569998
+        },
+        {
+          "word": "deliberately",
+          "start": 162.569998,
+          "end": 163.109999
+        },
+        {
+          "word": "chose",
+          "start": 163.109999,
+          "end": 163.450003
+        },
+        {
+          "word": "smaller",
+          "start": 163.450003,
+          "end": 163.880003
+        },
+        {
+          "word": "ones",
+          "start": 163.880003,
+          "end": 164.22
+        },
+        {
+          "word": "because",
+          "start": 164.22,
+          "end": 164.630003
+        },
+        {
+          "word": "they",
+          "start": 164.630003,
+          "end": 164.789999
+        },
+        {
+          "word": "were",
+          "start": 164.789999,
+          "end": 164.889998
+        },
+        {
+          "word": "by",
+          "start": 164.889998,
+          "end": 165.050002
+        },
+        {
+          "word": "far",
+          "start": 165.050002,
+          "end": 165.300002
+        },
+        {
+          "word": "the",
+          "start": 165.300002,
+          "end": 165.370001
+        },
+        {
+          "word": "most",
+          "start": 165.370001,
+          "end": 165.620001
+        },
+        {
+          "word": "typical",
+          "start": 165.620001,
+          "end": 165.999998
+        },
+        {
+          "word": "in",
+          "start": 165.999998,
+          "end": 166.08
+        },
+        {
+          "word": "the",
+          "start": 166.08,
+          "end": 166.15
+        },
+        {
+          "word": "city",
+          "start": 166.15,
+          "end": 166.47
+        }
+      ],
       "answers": [],
-      "end": 167.3
+      "end": 166.47
     },
     {
       "id": 11,
-      "start": 167.4,
+      "start": 167.270003,
       "speaker": "SPEAKER",
       "en": "The whole point of the project was to look at the norm not the exception. [[ ]] Alongside this primary research on urban gardens, we were studying a lot of books about the decline of wild animals in the countryside [[ ]] and thinking of possible causes for this.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 167.270003,
+          "end": 167.370001
+        },
+        {
+          "word": "whole",
+          "start": 167.370001,
+          "end": 167.550002
+        },
+        {
+          "word": "point",
+          "start": 167.550002,
+          "end": 167.849997
+        },
+        {
+          "word": "of",
+          "start": 167.849997,
+          "end": 167.910002
+        },
+        {
+          "word": "the",
+          "start": 167.910002,
+          "end": 167.98000199999998
+        },
+        {
+          "word": "project",
+          "start": 167.98000199999998,
+          "end": 168.489996
+        },
+        {
+          "word": "was",
+          "start": 168.489996,
+          "end": 168.690001
+        },
+        {
+          "word": "to",
+          "start": 168.690001,
+          "end": 168.819998
+        },
+        {
+          "word": "look",
+          "start": 168.819998,
+          "end": 169.039999
+        },
+        {
+          "word": "at",
+          "start": 169.039999,
+          "end": 169.139998
+        },
+        {
+          "word": "the",
+          "start": 169.139998,
+          "end": 169.20999799999998
+        },
+        {
+          "word": "norm",
+          "start": 169.20999799999998,
+          "end": 169.840002
+        },
+        {
+          "word": "not",
+          "start": 169.840002,
+          "end": 170.050002
+        },
+        {
+          "word": "the",
+          "start": 170.050002,
+          "end": 170.15
+        },
+        {
+          "word": "exception",
+          "start": 170.15,
+          "end": 170.810004
+        },
+        {
+          "word": "Alongside",
+          "start": 171.58,
+          "end": 172.200003
+        },
+        {
+          "word": "this",
+          "start": 172.200003,
+          "end": 172.4
+        },
+        {
+          "word": "primary",
+          "start": 172.4,
+          "end": 172.999998
+        },
+        {
+          "word": "research",
+          "start": 172.999998,
+          "end": 173.47
+        },
+        {
+          "word": "on",
+          "start": 173.47,
+          "end": 173.609999
+        },
+        {
+          "word": "urban",
+          "start": 173.609999,
+          "end": 173.940001
+        },
+        {
+          "word": "gardens",
+          "start": 173.940001,
+          "end": 174.48000199999998
+        },
+        {
+          "word": "we",
+          "start": 174.810004,
+          "end": 175.010001
+        },
+        {
+          "word": "were",
+          "start": 175.010001,
+          "end": 175.130003
+        },
+        {
+          "word": "studying",
+          "start": 175.130003,
+          "end": 175.690001
+        },
+        {
+          "word": "a",
+          "start": 175.690001,
+          "end": 175.760001
+        },
+        {
+          "word": "lot",
+          "start": 175.760001,
+          "end": 176.020003
+        },
+        {
+          "word": "of",
+          "start": 176.020003,
+          "end": 176.200003
+        },
+        {
+          "word": "books",
+          "start": 176.200003,
+          "end": 176.529997
+        },
+        {
+          "word": "about",
+          "start": 176.529997,
+          "end": 176.789999
+        },
+        {
+          "word": "the",
+          "start": 176.789999,
+          "end": 176.870001
+        },
+        {
+          "word": "decline",
+          "start": 176.870001,
+          "end": 177.450003
+        },
+        {
+          "word": "of",
+          "start": 177.450003,
+          "end": 177.560004
+        },
+        {
+          "word": "wild",
+          "start": 177.560004,
+          "end": 177.95999799999998
+        },
+        {
+          "word": "animals",
+          "start": 177.95999799999998,
+          "end": 178.4
+        },
+        {
+          "word": "in",
+          "start": 178.4,
+          "end": 178.47
+        },
+        {
+          "word": "the",
+          "start": 178.47,
+          "end": 178.539999
+        },
+        {
+          "word": "countryside",
+          "start": 178.539999,
+          "end": 179.319998
+        },
+        {
+          "word": "and",
+          "start": 179.739996,
+          "end": 179.940001
+        },
+        {
+          "word": "thinking",
+          "start": 179.940001,
+          "end": 180.300002
+        },
+        {
+          "word": "of",
+          "start": 180.300002,
+          "end": 180.48000199999998
+        },
+        {
+          "word": "possible",
+          "start": 180.48000199999998,
+          "end": 180.940001
+        },
+        {
+          "word": "causes",
+          "start": 180.940001,
+          "end": 181.429999
+        },
+        {
+          "word": "for",
+          "start": 181.429999,
+          "end": 181.550002
+        },
+        {
+          "word": "this",
+          "start": 181.550002,
+          "end": 181.819998
+        }
+      ],
       "answers": [
         34,
         35
       ],
-      "end": 182.6
+      "end": 181.819998
     },
     {
       "id": 12,
-      "start": 182.7,
+      "start": 182.590002,
       "speaker": "SPEAKER",
       "en": "So what did we find?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 182.590002,
+          "end": 182.739996
+        },
+        {
+          "word": "what",
+          "start": 182.739996,
+          "end": 182.929999
+        },
+        {
+          "word": "did",
+          "start": 182.929999,
+          "end": 183.039999
+        },
+        {
+          "word": "we",
+          "start": 183.039999,
+          "end": 183.139998
+        },
+        {
+          "word": "find",
+          "start": 183.139998,
+          "end": 183.520003
+        }
+      ],
       "answers": [],
-      "end": 183.9
+      "end": 183.520003
     },
     {
       "id": 13,
-      "start": 184.0,
+      "start": 183.859999,
       "speaker": "SPEAKER",
       "en": "Well, so much that I just won't have time to tell you about here.If you're interested in reading our more comprehensive findings, we've produced detailed graphic representations on the college web-site and of course any of the group would be happy to talk to you about them.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 183.859999,
+          "end": 184.239996
+        },
+        {
+          "word": "so",
+          "start": 184.510001,
+          "end": 184.739996
+        },
+        {
+          "word": "much",
+          "start": 184.739996,
+          "end": 185.139998
+        },
+        {
+          "word": "that",
+          "start": 185.139998,
+          "end": 185.319998
+        },
+        {
+          "word": "I",
+          "start": 185.319998,
+          "end": 185.440001
+        },
+        {
+          "word": "just",
+          "start": 185.440001,
+          "end": 185.749998
+        },
+        {
+          "word": "wo",
+          "start": 185.749998,
+          "end": 185.910002
+        },
+        {
+          "word": "n't",
+          "start": 185.749998,
+          "end": 185.910002
+        },
+        {
+          "word": "have",
+          "start": 185.910002,
+          "end": 186.08
+        },
+        {
+          "word": "time",
+          "start": 186.08,
+          "end": 186.359999
+        },
+        {
+          "word": "to",
+          "start": 186.359999,
+          "end": 186.429999
+        },
+        {
+          "word": "tell",
+          "start": 186.429999,
+          "end": 186.660002
+        },
+        {
+          "word": "you",
+          "start": 186.660002,
+          "end": 186.800002
+        },
+        {
+          "word": "about",
+          "start": 186.800002,
+          "end": 187.120001
+        },
+        {
+          "word": "here",
+          "start": 187.120001,
+          "end": 187.510001
+        },
+        {
+          "word": "If",
+          "start": 188.099997,
+          "end": 188.289999
+        },
+        {
+          "word": "you",
+          "start": 188.289999,
+          "end": 188.470007
+        },
+        {
+          "word": "'re",
+          "start": 188.289999,
+          "end": 188.470007
+        },
+        {
+          "word": "interested",
+          "start": 188.470007,
+          "end": 188.819998
+        },
+        {
+          "word": "in",
+          "start": 188.819998,
+          "end": 188.970007
+        },
+        {
+          "word": "reading",
+          "start": 188.970007,
+          "end": 189.390005
+        },
+        {
+          "word": "our",
+          "start": 189.420004,
+          "end": 189.640005
+        },
+        {
+          "word": "more",
+          "start": 189.640005,
+          "end": 189.920004
+        },
+        {
+          "word": "comprehensive",
+          "start": 189.920004,
+          "end": 190.65
+        },
+        {
+          "word": "findings",
+          "start": 190.65,
+          "end": 191.28000500000002
+        },
+        {
+          "word": "we",
+          "start": 191.28000500000002,
+          "end": 191.65
+        },
+        {
+          "word": "'ve",
+          "start": 191.28000500000002,
+          "end": 191.65
+        },
+        {
+          "word": "produced",
+          "start": 191.65,
+          "end": 192.110007
+        },
+        {
+          "word": "detailed",
+          "start": 192.110007,
+          "end": 192.629996
+        },
+        {
+          "word": "graphic",
+          "start": 192.629996,
+          "end": 193.069998
+        },
+        {
+          "word": "representations",
+          "start": 193.069998,
+          "end": 194.000006
+        },
+        {
+          "word": "on",
+          "start": 194.000006,
+          "end": 194.18999300000002
+        },
+        {
+          "word": "the",
+          "start": 194.18999300000002,
+          "end": 194.250006
+        },
+        {
+          "word": "college",
+          "start": 194.250006,
+          "end": 194.659995
+        },
+        {
+          "word": "web",
+          "start": 194.659995,
+          "end": 194.920004
+        },
+        {
+          "word": "site",
+          "start": 194.920004,
+          "end": 195.269995
+        },
+        {
+          "word": "and",
+          "start": 195.799994,
+          "end": 196.039999
+        },
+        {
+          "word": "of",
+          "start": 196.039999,
+          "end": 196.120001
+        },
+        {
+          "word": "course",
+          "start": 196.120001,
+          "end": 196.480002
+        },
+        {
+          "word": "any",
+          "start": 196.480002,
+          "end": 196.720007
+        },
+        {
+          "word": "of",
+          "start": 196.720007,
+          "end": 196.799994
+        },
+        {
+          "word": "the",
+          "start": 196.799994,
+          "end": 196.870001
+        },
+        {
+          "word": "group",
+          "start": 196.870001,
+          "end": 197.200003
+        },
+        {
+          "word": "would",
+          "start": 197.200003,
+          "end": 197.390005
+        },
+        {
+          "word": "be",
+          "start": 197.390005,
+          "end": 197.51000100000002
+        },
+        {
+          "word": "happy",
+          "start": 197.51000100000002,
+          "end": 197.860007
+        },
+        {
+          "word": "to",
+          "start": 197.860007,
+          "end": 197.93999300000002
+        },
+        {
+          "word": "talk",
+          "start": 197.93999300000002,
+          "end": 198.250006
+        },
+        {
+          "word": "to",
+          "start": 198.250006,
+          "end": 198.349997
+        },
+        {
+          "word": "you",
+          "start": 198.349997,
+          "end": 198.459998
+        },
+        {
+          "word": "about",
+          "start": 198.459998,
+          "end": 198.750006
+        },
+        {
+          "word": "them",
+          "start": 198.750006,
+          "end": 198.970007
+        }
+      ],
       "answers": [],
-      "end": 199.3
+      "end": 198.970007
     },
     {
       "id": 14,
-      "start": 199.4,
+      "start": 199.289999,
       "speaker": "SPEAKER",
       "en": "Just email us.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Just",
+          "start": 199.289999,
+          "end": 199.519995
+        },
+        {
+          "word": "email",
+          "start": 199.519995,
+          "end": 199.810004
+        },
+        {
+          "word": "us",
+          "start": 199.810004,
+          "end": 200.060004
+        }
+      ],
       "answers": [],
-      "end": 201.0
+      "end": 200.060004
     },
     {
       "id": 15,
-      "start": 201.2,
+      "start": 201.110007,
       "speaker": "SPEAKER",
       "en": "What we've decided to present today is information about just three species - because we felt these gave a good indication of the processes at work in rural and urban settings as a whole. [[ ]] The first species to generate a lot of interesting information was frogs. [[ ]] And there was a clear pattern here - they proliferate where there is suitable water.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 201.110007,
+          "end": 201.310004
+        },
+        {
+          "word": "we",
+          "start": 201.310004,
+          "end": 201.51000100000002
+        },
+        {
+          "word": "'ve",
+          "start": 201.310004,
+          "end": 201.51000100000002
+        },
+        {
+          "word": "decided",
+          "start": 201.51000100000002,
+          "end": 202.019995
+        },
+        {
+          "word": "to",
+          "start": 202.019995,
+          "end": 202.15
+        },
+        {
+          "word": "present",
+          "start": 202.15,
+          "end": 202.560004
+        },
+        {
+          "word": "today",
+          "start": 202.560004,
+          "end": 203.18999300000002
+        },
+        {
+          "word": "is",
+          "start": 203.18999300000002,
+          "end": 203.51000100000002
+        },
+        {
+          "word": "information",
+          "start": 203.51000100000002,
+          "end": 204.060004
+        },
+        {
+          "word": "about",
+          "start": 204.060004,
+          "end": 204.340002
+        },
+        {
+          "word": "just",
+          "start": 204.340002,
+          "end": 204.610007
+        },
+        {
+          "word": "three",
+          "start": 204.610007,
+          "end": 204.93999300000002
+        },
+        {
+          "word": "species",
+          "start": 204.93999300000002,
+          "end": 205.53000500000002
+        },
+        {
+          "word": "because",
+          "start": 205.860007,
+          "end": 206.230002
+        },
+        {
+          "word": "we",
+          "start": 206.230002,
+          "end": 206.319998
+        },
+        {
+          "word": "felt",
+          "start": 206.319998,
+          "end": 206.68999300000002
+        },
+        {
+          "word": "these",
+          "start": 206.68999300000002,
+          "end": 207.019995
+        },
+        {
+          "word": "gave",
+          "start": 207.019995,
+          "end": 207.220007
+        },
+        {
+          "word": "a",
+          "start": 207.220007,
+          "end": 207.289999
+        },
+        {
+          "word": "good",
+          "start": 207.289999,
+          "end": 207.549994
+        },
+        {
+          "word": "indication",
+          "start": 207.549994,
+          "end": 208.179999
+        },
+        {
+          "word": "of",
+          "start": 208.179999,
+          "end": 208.299994
+        },
+        {
+          "word": "the",
+          "start": 208.299994,
+          "end": 208.370001
+        },
+        {
+          "word": "processes",
+          "start": 208.370001,
+          "end": 209.060004
+        },
+        {
+          "word": "at",
+          "start": 209.060004,
+          "end": 209.179999
+        },
+        {
+          "word": "work",
+          "start": 209.179999,
+          "end": 209.51000100000002
+        },
+        {
+          "word": "in",
+          "start": 209.769995,
+          "end": 210.060004
+        },
+        {
+          "word": "rural",
+          "start": 210.060004,
+          "end": 210.579993
+        },
+        {
+          "word": "and",
+          "start": 210.579993,
+          "end": 210.860007
+        },
+        {
+          "word": "urban",
+          "start": 210.860007,
+          "end": 211.049994
+        },
+        {
+          "word": "settings",
+          "start": 211.049994,
+          "end": 211.450003
+        },
+        {
+          "word": "as",
+          "start": 211.450003,
+          "end": 211.579993
+        },
+        {
+          "word": "a",
+          "start": 211.579993,
+          "end": 211.620001
+        },
+        {
+          "word": "whole",
+          "start": 211.620001,
+          "end": 212.039999
+        },
+        {
+          "word": "The",
+          "start": 217.159995,
+          "end": 217.26000100000002
+        },
+        {
+          "word": "first",
+          "start": 217.26000100000002,
+          "end": 217.48999600000002
+        },
+        {
+          "word": "species",
+          "start": 217.48999600000002,
+          "end": 217.929999
+        },
+        {
+          "word": "to",
+          "start": 217.929999,
+          "end": 218.019995
+        },
+        {
+          "word": "generate",
+          "start": 218.019995,
+          "end": 218.409995
+        },
+        {
+          "word": "a",
+          "start": 218.409995,
+          "end": 218.450003
+        },
+        {
+          "word": "lot",
+          "start": 218.450003,
+          "end": 218.68999300000002
+        },
+        {
+          "word": "of",
+          "start": 218.68999300000002,
+          "end": 218.769995
+        },
+        {
+          "word": "interesting",
+          "start": 218.769995,
+          "end": 219.220007
+        },
+        {
+          "word": "information",
+          "start": 219.220007,
+          "end": 219.730002
+        },
+        {
+          "word": "was",
+          "start": 219.730002,
+          "end": 219.870001
+        },
+        {
+          "word": "frogs",
+          "start": 219.870001,
+          "end": 220.519995
+        },
+        {
+          "word": "And",
+          "start": 220.970007,
+          "end": 221.170004
+        },
+        {
+          "word": "there",
+          "start": 221.170004,
+          "end": 221.289999
+        },
+        {
+          "word": "was",
+          "start": 221.289999,
+          "end": 221.450003
+        },
+        {
+          "word": "a",
+          "start": 221.450003,
+          "end": 221.51000100000002
+        },
+        {
+          "word": "clear",
+          "start": 221.51000100000002,
+          "end": 221.93999300000002
+        },
+        {
+          "word": "pattern",
+          "start": 221.93999300000002,
+          "end": 222.319998
+        },
+        {
+          "word": "here",
+          "start": 222.319998,
+          "end": 222.560004
+        },
+        {
+          "word": "they",
+          "start": 222.909995,
+          "end": 223.23999600000002
+        },
+        {
+          "word": "proliferate",
+          "start": 223.23999600000002,
+          "end": 224.099997
+        },
+        {
+          "word": "where",
+          "start": 224.099997,
+          "end": 224.289999
+        },
+        {
+          "word": "there",
+          "start": 224.289999,
+          "end": 224.48999600000002
+        },
+        {
+          "word": "is",
+          "start": 224.48999600000002,
+          "end": 224.610007
+        },
+        {
+          "word": "suitable",
+          "start": 224.610007,
+          "end": 224.98999600000002
+        },
+        {
+          "word": "water",
+          "start": 224.98999600000002,
+          "end": 225.43999300000002
+        }
+      ],
       "answers": [
         36,
         37
       ],
-      "end": 225.9
+      "end": 225.43999300000002
     },
     {
       "id": 16,
-      "start": 226.0,
+      "start": 225.860007,
       "speaker": "SPEAKER",
       "en": "Garden ponds are on the increase, rural ponds are disappearing, leading to massive migration to the towns.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Garden",
+          "start": 225.860007,
+          "end": 226.299994
+        },
+        {
+          "word": "ponds",
+          "start": 226.299994,
+          "end": 226.849997
+        },
+        {
+          "word": "are",
+          "start": 226.849997,
+          "end": 226.950003
+        },
+        {
+          "word": "on",
+          "start": 226.950003,
+          "end": 227.110007
+        },
+        {
+          "word": "the",
+          "start": 227.110007,
+          "end": 227.220007
+        },
+        {
+          "word": "increase",
+          "start": 227.220007,
+          "end": 227.700003
+        },
+        {
+          "word": "rural",
+          "start": 228.049994,
+          "end": 228.450003
+        },
+        {
+          "word": "ponds",
+          "start": 228.450003,
+          "end": 229.03000500000002
+        },
+        {
+          "word": "are",
+          "start": 229.03000500000002,
+          "end": 229.159995
+        },
+        {
+          "word": "disappearing",
+          "start": 229.159995,
+          "end": 229.810004
+        },
+        {
+          "word": "leading",
+          "start": 230.140005,
+          "end": 230.450003
+        },
+        {
+          "word": "to",
+          "start": 230.450003,
+          "end": 230.569998
+        },
+        {
+          "word": "massive",
+          "start": 230.569998,
+          "end": 230.98999600000002
+        },
+        {
+          "word": "migration",
+          "start": 230.98999600000002,
+          "end": 231.629996
+        },
+        {
+          "word": "to",
+          "start": 231.629996,
+          "end": 231.720007
+        },
+        {
+          "word": "the",
+          "start": 231.720007,
+          "end": 231.810004
+        },
+        {
+          "word": "towns",
+          "start": 231.810004,
+          "end": 232.390005
+        }
+      ],
       "answers": [],
-      "end": 233.2
+      "end": 232.390005
     },
     {
       "id": 17,
-      "start": 233.4,
+      "start": 233.28000500000002,
       "speaker": "SPEAKER",
       "en": "Hedgehogs are also finding it easier to live in urban areas - this time because their predators are not finding it quite so attractive to leave their rural environment, so hedgehogs have a better survival rate in cities. [[ ]] We had lots of sightings, so all in all we had no difficulties with our efforts to count their numbers precisely. [[ ]] Our final species is the finest of bird singers, the song thrush.On the decline in the countryside, they are experiencing a resurgence in urban gardens because these days gardeners are buying lots of different plants which means there's an extensive range of seeds around, which is what they feed on. [[ ]] Another factor is the provision of nesting places - which is actually better in gardens than the countryside.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hedgehogs",
+          "start": 233.28000500000002,
+          "end": 233.93999300000002
+        },
+        {
+          "word": "are",
+          "start": 233.93999300000002,
+          "end": 234.079993
+        },
+        {
+          "word": "also",
+          "start": 234.079993,
+          "end": 234.459998
+        },
+        {
+          "word": "finding",
+          "start": 234.459998,
+          "end": 234.829993
+        },
+        {
+          "word": "it",
+          "start": 234.829993,
+          "end": 234.909995
+        },
+        {
+          "word": "easier",
+          "start": 234.909995,
+          "end": 235.269995
+        },
+        {
+          "word": "to",
+          "start": 235.269995,
+          "end": 235.420004
+        },
+        {
+          "word": "live",
+          "start": 235.420004,
+          "end": 235.659995
+        },
+        {
+          "word": "in",
+          "start": 235.659995,
+          "end": 235.750006
+        },
+        {
+          "word": "urban",
+          "start": 235.750006,
+          "end": 236.000006
+        },
+        {
+          "word": "areas",
+          "start": 236.000006,
+          "end": 236.429999
+        },
+        {
+          "word": "this",
+          "start": 236.569998,
+          "end": 236.819998
+        },
+        {
+          "word": "time",
+          "start": 236.819998,
+          "end": 237.090002
+        },
+        {
+          "word": "because",
+          "start": 237.090002,
+          "end": 237.390005
+        },
+        {
+          "word": "their",
+          "start": 237.390005,
+          "end": 237.640005
+        },
+        {
+          "word": "predators",
+          "start": 237.640005,
+          "end": 238.409995
+        },
+        {
+          "word": "are",
+          "start": 238.409995,
+          "end": 238.519995
+        },
+        {
+          "word": "not",
+          "start": 238.519995,
+          "end": 238.810004
+        },
+        {
+          "word": "finding",
+          "start": 238.810004,
+          "end": 239.250006
+        },
+        {
+          "word": "it",
+          "start": 239.250006,
+          "end": 239.4
+        },
+        {
+          "word": "quite",
+          "start": 239.4,
+          "end": 239.709998
+        },
+        {
+          "word": "so",
+          "start": 239.709998,
+          "end": 239.959998
+        },
+        {
+          "word": "attractive",
+          "start": 239.959998,
+          "end": 240.51000100000002
+        },
+        {
+          "word": "to",
+          "start": 240.51000100000002,
+          "end": 240.610007
+        },
+        {
+          "word": "leave",
+          "start": 240.610007,
+          "end": 240.890005
+        },
+        {
+          "word": "their",
+          "start": 240.890005,
+          "end": 241.129996
+        },
+        {
+          "word": "rural",
+          "start": 241.129996,
+          "end": 241.539999
+        },
+        {
+          "word": "environment",
+          "start": 241.539999,
+          "end": 242.099997
+        },
+        {
+          "word": "so",
+          "start": 242.629996,
+          "end": 242.789999
+        },
+        {
+          "word": "hedgehogs",
+          "start": 242.789999,
+          "end": 243.420004
+        },
+        {
+          "word": "have",
+          "start": 243.420004,
+          "end": 243.590002
+        },
+        {
+          "word": "a",
+          "start": 243.590002,
+          "end": 243.640005
+        },
+        {
+          "word": "better",
+          "start": 243.640005,
+          "end": 243.909995
+        },
+        {
+          "word": "survival",
+          "start": 243.909995,
+          "end": 244.43999300000002
+        },
+        {
+          "word": "rate",
+          "start": 244.519995,
+          "end": 244.659995
+        },
+        {
+          "word": "in",
+          "start": 244.659995,
+          "end": 244.76000100000002
+        },
+        {
+          "word": "cities",
+          "start": 244.76000100000002,
+          "end": 245.209998
+        },
+        {
+          "word": "We",
+          "start": 246.000006,
+          "end": 246.120001
+        },
+        {
+          "word": "had",
+          "start": 246.120001,
+          "end": 246.28000500000002
+        },
+        {
+          "word": "lots",
+          "start": 246.28000500000002,
+          "end": 246.579993
+        },
+        {
+          "word": "of",
+          "start": 246.579993,
+          "end": 246.670004
+        },
+        {
+          "word": "sightings",
+          "start": 246.670004,
+          "end": 247.170004
+        },
+        {
+          "word": "so",
+          "start": 247.289999,
+          "end": 247.769995
+        },
+        {
+          "word": "all",
+          "start": 248.039999,
+          "end": 248.289999
+        },
+        {
+          "word": "in",
+          "start": 248.289999,
+          "end": 248.349997
+        },
+        {
+          "word": "all",
+          "start": 248.349997,
+          "end": 248.610007
+        },
+        {
+          "word": "we",
+          "start": 248.610007,
+          "end": 248.709998
+        },
+        {
+          "word": "had",
+          "start": 248.709998,
+          "end": 248.849997
+        },
+        {
+          "word": "no",
+          "start": 248.849997,
+          "end": 249.000006
+        },
+        {
+          "word": "difficulties",
+          "start": 249.000006,
+          "end": 249.769995
+        },
+        {
+          "word": "with",
+          "start": 249.769995,
+          "end": 249.890005
+        },
+        {
+          "word": "our",
+          "start": 249.890005,
+          "end": 250.03000500000002
+        },
+        {
+          "word": "efforts",
+          "start": 250.03000500000002,
+          "end": 250.379996
+        },
+        {
+          "word": "to",
+          "start": 250.379996,
+          "end": 250.500006
+        },
+        {
+          "word": "count",
+          "start": 250.500006,
+          "end": 250.870001
+        },
+        {
+          "word": "their",
+          "start": 250.870001,
+          "end": 251.03000500000002
+        },
+        {
+          "word": "numbers",
+          "start": 251.03000500000002,
+          "end": 251.360007
+        },
+        {
+          "word": "precisely",
+          "start": 251.360007,
+          "end": 252.03000500000002
+        },
+        {
+          "word": "Our",
+          "start": 253.209998,
+          "end": 253.319998
+        },
+        {
+          "word": "final",
+          "start": 253.319998,
+          "end": 253.620001
+        },
+        {
+          "word": "species",
+          "start": 253.620001,
+          "end": 254.26000100000002
+        },
+        {
+          "word": "is",
+          "start": 254.299994,
+          "end": 254.569998
+        },
+        {
+          "word": "the",
+          "start": 254.569998,
+          "end": 254.670004
+        },
+        {
+          "word": "finest",
+          "start": 254.670004,
+          "end": 255.459998
+        },
+        {
+          "word": "of",
+          "start": 255.459998,
+          "end": 255.679999
+        },
+        {
+          "word": "bird",
+          "start": 255.679999,
+          "end": 255.929999
+        },
+        {
+          "word": "singers",
+          "start": 255.929999,
+          "end": 256.489996
+        },
+        {
+          "word": "the",
+          "start": 256.599997,
+          "end": 256.750006
+        },
+        {
+          "word": "song",
+          "start": 256.750006,
+          "end": 257.15
+        },
+        {
+          "word": "thrush",
+          "start": 257.15,
+          "end": 257.610007
+        },
+        {
+          "word": "On",
+          "start": 258.15,
+          "end": 258.349997
+        },
+        {
+          "word": "the",
+          "start": 258.349997,
+          "end": 258.439993
+        },
+        {
+          "word": "decline",
+          "start": 258.439993,
+          "end": 258.970007
+        },
+        {
+          "word": "in",
+          "start": 258.970007,
+          "end": 259.03999899999997
+        },
+        {
+          "word": "the",
+          "start": 259.03999899999997,
+          "end": 259.099997
+        },
+        {
+          "word": "countryside",
+          "start": 259.099997,
+          "end": 259.84000199999997
+        },
+        {
+          "word": "they",
+          "start": 260.370001,
+          "end": 260.579993
+        },
+        {
+          "word": "are",
+          "start": 260.579993,
+          "end": 260.78999899999997
+        },
+        {
+          "word": "experiencing",
+          "start": 260.78999899999997,
+          "end": 261.610007
+        },
+        {
+          "word": "a",
+          "start": 261.610007,
+          "end": 261.689993
+        },
+        {
+          "word": "resurgence",
+          "start": 261.689993,
+          "end": 262.409995
+        },
+        {
+          "word": "in",
+          "start": 262.409995,
+          "end": 262.510001
+        },
+        {
+          "word": "urban",
+          "start": 262.510001,
+          "end": 262.829993
+        },
+        {
+          "word": "gardens",
+          "start": 262.829993,
+          "end": 263.28999899999997
+        },
+        {
+          "word": "because",
+          "start": 263.28999899999997,
+          "end": 263.709998
+        },
+        {
+          "word": "these",
+          "start": 263.709998,
+          "end": 263.920004
+        },
+        {
+          "word": "days",
+          "start": 263.920004,
+          "end": 264.250006
+        },
+        {
+          "word": "gardeners",
+          "start": 264.280005,
+          "end": 264.890005
+        },
+        {
+          "word": "are",
+          "start": 264.890005,
+          "end": 264.959998
+        },
+        {
+          "word": "buying",
+          "start": 264.959998,
+          "end": 265.28999899999997
+        },
+        {
+          "word": "lots",
+          "start": 265.28999899999997,
+          "end": 265.810004
+        },
+        {
+          "word": "of",
+          "start": 265.810004,
+          "end": 266.079993
+        },
+        {
+          "word": "different",
+          "start": 266.079993,
+          "end": 266.489996
+        },
+        {
+          "word": "plants",
+          "start": 266.489996,
+          "end": 267.09000199999997
+        },
+        {
+          "word": "which",
+          "start": 267.09000199999997,
+          "end": 267.329993
+        },
+        {
+          "word": "means",
+          "start": 267.329993,
+          "end": 267.739996
+        },
+        {
+          "word": "there",
+          "start": 268.04999399999997,
+          "end": 268.209998
+        },
+        {
+          "word": "'s",
+          "start": 268.209998,
+          "end": 268.28999899999997
+        },
+        {
+          "word": "an",
+          "start": 268.28999899999997,
+          "end": 268.370001
+        },
+        {
+          "word": "extensive",
+          "start": 268.370001,
+          "end": 268.920004
+        },
+        {
+          "word": "range",
+          "start": 268.920004,
+          "end": 269.250006
+        },
+        {
+          "word": "of",
+          "start": 269.250006,
+          "end": 269.34000199999997
+        },
+        {
+          "word": "seeds",
+          "start": 269.34000199999997,
+          "end": 269.750006
+        },
+        {
+          "word": "around",
+          "start": 269.750006,
+          "end": 270.260001
+        },
+        {
+          "word": "which",
+          "start": 270.489996,
+          "end": 270.689993
+        },
+        {
+          "word": "is",
+          "start": 270.689993,
+          "end": 270.79999399999997
+        },
+        {
+          "word": "what",
+          "start": 270.79999399999997,
+          "end": 270.959998
+        },
+        {
+          "word": "they",
+          "start": 270.959998,
+          "end": 271.069998
+        },
+        {
+          "word": "feed",
+          "start": 271.069998,
+          "end": 271.360007
+        },
+        {
+          "word": "on",
+          "start": 271.360007,
+          "end": 271.560004
+        },
+        {
+          "word": "Another",
+          "start": 272.409995,
+          "end": 272.689993
+        },
+        {
+          "word": "factor",
+          "start": 272.689993,
+          "end": 273.230002
+        },
+        {
+          "word": "is",
+          "start": 273.53999899999997,
+          "end": 273.720007
+        },
+        {
+          "word": "the",
+          "start": 273.720007,
+          "end": 273.829993
+        },
+        {
+          "word": "provision",
+          "start": 273.829993,
+          "end": 274.329993
+        },
+        {
+          "word": "of",
+          "start": 274.329993,
+          "end": 274.429999
+        },
+        {
+          "word": "nesting",
+          "start": 274.429999,
+          "end": 274.939993
+        },
+        {
+          "word": "places",
+          "start": 274.939993,
+          "end": 275.470007
+        },
+        {
+          "word": "which",
+          "start": 275.470007,
+          "end": 275.640005
+        },
+        {
+          "word": "is",
+          "start": 275.640005,
+          "end": 275.769995
+        },
+        {
+          "word": "actually",
+          "start": 275.769995,
+          "end": 276.179999
+        },
+        {
+          "word": "better",
+          "start": 276.179999,
+          "end": 276.629996
+        },
+        {
+          "word": "in",
+          "start": 276.629996,
+          "end": 276.84000199999997
+        },
+        {
+          "word": "gardens",
+          "start": 276.84000199999997,
+          "end": 277.470007
+        },
+        {
+          "word": "than",
+          "start": 277.470007,
+          "end": 277.629996
+        },
+        {
+          "word": "the",
+          "start": 277.629996,
+          "end": 277.689993
+        },
+        {
+          "word": "countryside",
+          "start": 277.689993,
+          "end": 278.360007
+        }
+      ],
       "answers": [
         38,
         39,
         40
       ],
-      "end": 278.8
+      "end": 278.360007
     },
     {
       "id": 18,
-      "start": 278.9,
+      "start": 278.780005,
       "speaker": "SPEAKER",
       "en": "Hard to believe it, but it's true.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hard",
+          "start": 278.780005,
+          "end": 279.030005
+        },
+        {
+          "word": "to",
+          "start": 279.030005,
+          "end": 279.099997
+        },
+        {
+          "word": "believe",
+          "start": 279.099997,
+          "end": 279.409995
+        },
+        {
+          "word": "it",
+          "start": 279.409995,
+          "end": 279.560004
+        },
+        {
+          "word": "but",
+          "start": 279.560004,
+          "end": 279.750006
+        },
+        {
+          "word": "it",
+          "start": 279.750006,
+          "end": 279.909995
+        },
+        {
+          "word": "'s",
+          "start": 279.750006,
+          "end": 279.909995
+        },
+        {
+          "word": "true",
+          "start": 279.909995,
+          "end": 280.319998
+        }
+      ],
       "answers": [],
-      "end": 281.2
+      "end": 280.319998
     },
     {
       "id": 19,
-      "start": 281.3,
+      "start": 281.129996,
       "speaker": "SPEAKER",
       "en": "Incidentally, we discovered that a massive new survey on song thrushes is about to be launched, so you should keep an eye open for that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Incidentally",
+          "start": 281.129996,
+          "end": 281.709998
+        },
+        {
+          "word": "we",
+          "start": 281.709998,
+          "end": 281.879996
+        },
+        {
+          "word": "discovered",
+          "start": 281.879996,
+          "end": 282.349997
+        },
+        {
+          "word": "that",
+          "start": 282.349997,
+          "end": 282.489996
+        },
+        {
+          "word": "a",
+          "start": 282.489996,
+          "end": 282.530005
+        },
+        {
+          "word": "massive",
+          "start": 282.530005,
+          "end": 283.079993
+        },
+        {
+          "word": "new",
+          "start": 283.079993,
+          "end": 283.230002
+        },
+        {
+          "word": "survey",
+          "start": 283.230002,
+          "end": 283.720007
+        },
+        {
+          "word": "on",
+          "start": 283.720007,
+          "end": 283.909995
+        },
+        {
+          "word": "song",
+          "start": 283.909995,
+          "end": 284.250006
+        },
+        {
+          "word": "thrushes",
+          "start": 284.250006,
+          "end": 284.78999899999997
+        },
+        {
+          "word": "is",
+          "start": 284.78999899999997,
+          "end": 284.989996
+        },
+        {
+          "word": "about",
+          "start": 284.989996,
+          "end": 285.260001
+        },
+        {
+          "word": "to",
+          "start": 285.260001,
+          "end": 285.329993
+        },
+        {
+          "word": "be",
+          "start": 285.329993,
+          "end": 285.450003
+        },
+        {
+          "word": "launched",
+          "start": 285.450003,
+          "end": 285.890005
+        },
+        {
+          "word": "so",
+          "start": 286.34000199999997,
+          "end": 286.620001
+        },
+        {
+          "word": "you",
+          "start": 286.620001,
+          "end": 286.780005
+        },
+        {
+          "word": "should",
+          "start": 286.780005,
+          "end": 286.989996
+        },
+        {
+          "word": "keep",
+          "start": 286.989996,
+          "end": 287.159995
+        },
+        {
+          "word": "an",
+          "start": 287.159995,
+          "end": 287.250006
+        },
+        {
+          "word": "eye",
+          "start": 287.250006,
+          "end": 287.470007
+        },
+        {
+          "word": "open",
+          "start": 287.470007,
+          "end": 287.670004
+        },
+        {
+          "word": "for",
+          "start": 287.670004,
+          "end": 287.769995
+        },
+        {
+          "word": "that",
+          "start": 287.769995,
+          "end": 288.000006
+        }
+      ],
       "answers": [],
-      "end": 288.2
+      "end": 288.000006
     },
     {
       "id": 20,
-      "start": 289.0,
+      "start": 288.959998,
       "speaker": "SPEAKER",
       "en": "Now, I'd be happy to answer any questions you may have...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 288.959998,
+          "end": 289.220007
+        },
+        {
+          "word": "I",
+          "start": 289.220007,
+          "end": 289.360007
+        },
+        {
+          "word": "'d",
+          "start": 289.360007,
+          "end": 289.4
+        },
+        {
+          "word": "be",
+          "start": 289.4,
+          "end": 289.510001
+        },
+        {
+          "word": "happy",
+          "start": 289.510001,
+          "end": 289.860007
+        },
+        {
+          "word": "to",
+          "start": 289.860007,
+          "end": 290.010001
+        },
+        {
+          "word": "answer",
+          "start": 290.010001,
+          "end": 290.280005
+        },
+        {
+          "word": "any",
+          "start": 290.280005,
+          "end": 290.599997
+        },
+        {
+          "word": "questions",
+          "start": 290.599997,
+          "end": 291.099997
+        },
+        {
+          "word": "you",
+          "start": 296.679999,
+          "end": 297.069998
+        },
+        {
+          "word": "may",
+          "start": 339.209998,
+          "end": 339.690009
+        },
+        {
+          "word": "have",
+          "start": 340.16001,
+          "end": 343.13001099999997
+        }
+      ],
       "answers": [],
-      "end": 291.8
+      "end": 343.13001099999997
     }
   ],
   "questions": [
@@ -303,5 +3618,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 659,
+    "mfa_word_count": 659,
+    "matched_word_count": 656,
+    "audio_trim_offset": 59.9,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

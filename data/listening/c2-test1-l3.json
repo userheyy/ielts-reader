@@ -7,241 +7,3274 @@
   "segments": [
     {
       "id": 1,
-      "start": 6.1,
+      "start": 4.1,
       "speaker": "SPEAKER",
       "en": "JANE Hi Tim! (Tim: Jane.) How are you? (Tim: Fine.) I'd been wondering when I'd run into you. Have you been here long?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "JANE",
+          "start": 4.1,
+          "end": 4.21
+        },
+        {
+          "word": "Hi",
+          "start": 4.21,
+          "end": 4.29
+        },
+        {
+          "word": "Tim",
+          "start": 4.29,
+          "end": 4.409999999999999
+        },
+        {
+          "word": "Tim",
+          "start": 4.409999999999999,
+          "end": 4.51
+        },
+        {
+          "word": "Jane",
+          "start": 4.51,
+          "end": 4.6499999999999995
+        },
+        {
+          "word": "How",
+          "start": 4.96,
+          "end": 5.039999999999999
+        },
+        {
+          "word": "are",
+          "start": 5.039999999999999,
+          "end": 5.069999999999999
+        },
+        {
+          "word": "you",
+          "start": 5.069999999999999,
+          "end": 5.13
+        },
+        {
+          "word": "Tim",
+          "start": 5.13,
+          "end": 5.2299999999999995
+        },
+        {
+          "word": "Fine",
+          "start": 5.2299999999999995,
+          "end": 5.279999999999999
+        },
+        {
+          "word": "I",
+          "start": 5.279999999999999,
+          "end": 5.289999999999999
+        },
+        {
+          "word": "'d",
+          "start": 5.289999999999999,
+          "end": 5.319999999999999
+        },
+        {
+          "word": "been",
+          "start": 5.319999999999999,
+          "end": 5.39
+        },
+        {
+          "word": "wondering",
+          "start": 5.39,
+          "end": 5.779999999999999
+        },
+        {
+          "word": "when",
+          "start": 5.779999999999999,
+          "end": 5.89
+        },
+        {
+          "word": "I",
+          "start": 5.89,
+          "end": 6.0
+        },
+        {
+          "word": "'d",
+          "start": 6.0,
+          "end": 6.039999999999999
+        },
+        {
+          "word": "run",
+          "start": 6.039999999999999,
+          "end": 6.199999999999999
+        },
+        {
+          "word": "into",
+          "start": 6.199999999999999,
+          "end": 6.47
+        },
+        {
+          "word": "you",
+          "start": 6.47,
+          "end": 6.83
+        },
+        {
+          "word": "Have",
+          "start": 7.369999999999999,
+          "end": 7.42
+        },
+        {
+          "word": "you",
+          "start": 7.42,
+          "end": 7.6499999999999995
+        },
+        {
+          "word": "been",
+          "start": 7.9399999999999995,
+          "end": 8.03
+        },
+        {
+          "word": "here",
+          "start": 8.03,
+          "end": 8.12
+        },
+        {
+          "word": "long",
+          "start": 8.12,
+          "end": 8.21
+        }
+      ],
       "answers": [],
-      "end": 12.0
+      "end": 8.21
     },
     {
       "id": 2,
-      "start": 12.1,
+      "start": 8.21,
       "speaker": "TIM",
       "en": "I arrived yesterday, on Sunday. How about you? JANE I got here a few days ago, on Saturday. No - wait a minute, what's today? - Sorry Friday, not Saturday.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 8.21,
+          "end": 8.26
+        },
+        {
+          "word": "arrived",
+          "start": 8.26,
+          "end": 8.57
+        },
+        {
+          "word": "yesterday",
+          "start": 8.57,
+          "end": 9.12
+        },
+        {
+          "word": "on",
+          "start": 9.29,
+          "end": 9.41
+        },
+        {
+          "word": "Sunday",
+          "start": 9.41,
+          "end": 9.899999999999999
+        },
+        {
+          "word": "How",
+          "start": 9.93,
+          "end": 10.059999999999999
+        },
+        {
+          "word": "about",
+          "start": 10.059999999999999,
+          "end": 10.25
+        },
+        {
+          "word": "you",
+          "start": 10.25,
+          "end": 10.399999999999999
+        },
+        {
+          "word": "JANE",
+          "start": 10.399999999999999,
+          "end": 10.559999999999999
+        },
+        {
+          "word": "I",
+          "start": 10.67,
+          "end": 10.94
+        },
+        {
+          "word": "got",
+          "start": 10.94,
+          "end": 11.1
+        },
+        {
+          "word": "here",
+          "start": 11.1,
+          "end": 11.25
+        },
+        {
+          "word": "a",
+          "start": 11.25,
+          "end": 11.309999999999999
+        },
+        {
+          "word": "few",
+          "start": 11.309999999999999,
+          "end": 11.48
+        },
+        {
+          "word": "days",
+          "start": 11.48,
+          "end": 11.77
+        },
+        {
+          "word": "ago",
+          "start": 11.77,
+          "end": 11.969999999999999
+        },
+        {
+          "word": "on",
+          "start": 12.09,
+          "end": 12.25
+        },
+        {
+          "word": "Saturday",
+          "start": 12.25,
+          "end": 12.76
+        },
+        {
+          "word": "No",
+          "start": 13.51,
+          "end": 13.7
+        },
+        {
+          "word": "wait",
+          "start": 13.7,
+          "end": 13.94
+        },
+        {
+          "word": "a",
+          "start": 13.94,
+          "end": 13.99
+        },
+        {
+          "word": "minute",
+          "start": 13.99,
+          "end": 14.2
+        },
+        {
+          "word": "what",
+          "start": 14.35,
+          "end": 14.65
+        },
+        {
+          "word": "'s",
+          "start": 14.35,
+          "end": 14.65
+        },
+        {
+          "word": "today",
+          "start": 14.81,
+          "end": 15.19
+        },
+        {
+          "word": "Sorry",
+          "start": 15.65,
+          "end": 16.08
+        },
+        {
+          "word": "Friday",
+          "start": 16.14,
+          "end": 16.83
+        },
+        {
+          "word": "not",
+          "start": 16.86,
+          "end": 17.049999999999997
+        },
+        {
+          "word": "Saturday",
+          "start": 17.049999999999997,
+          "end": 17.54
+        }
+      ],
       "answers": [
         21
       ],
-      "end": 18.0
+      "end": 17.54
     },
     {
       "id": 3,
-      "start": 18.1,
+      "start": 17.58,
       "speaker": "TIM",
       "en": "But we didn't have to be here till today. JANE Yes, I know, but I wanted to get my things moved into my room, and just take a look around. So, did you decide to do English in the end?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 17.58,
+          "end": 17.73
+        },
+        {
+          "word": "we",
+          "start": 17.86,
+          "end": 18.1
+        },
+        {
+          "word": "did",
+          "start": 18.1,
+          "end": 18.25
+        },
+        {
+          "word": "n't",
+          "start": 18.1,
+          "end": 18.25
+        },
+        {
+          "word": "have",
+          "start": 18.25,
+          "end": 18.38
+        },
+        {
+          "word": "to",
+          "start": 18.38,
+          "end": 18.46
+        },
+        {
+          "word": "be",
+          "start": 18.46,
+          "end": 18.67
+        },
+        {
+          "word": "here",
+          "start": 18.67,
+          "end": 18.82
+        },
+        {
+          "word": "till",
+          "start": 18.82,
+          "end": 19.03
+        },
+        {
+          "word": "today",
+          "start": 19.03,
+          "end": 19.27
+        },
+        {
+          "word": "JANE",
+          "start": 19.32,
+          "end": 19.5
+        },
+        {
+          "word": "Yes",
+          "start": 19.619999999999997,
+          "end": 19.96
+        },
+        {
+          "word": "I",
+          "start": 19.96,
+          "end": 20.07
+        },
+        {
+          "word": "know",
+          "start": 20.07,
+          "end": 20.35
+        },
+        {
+          "word": "but",
+          "start": 20.509999999999998,
+          "end": 20.649999
+        },
+        {
+          "word": "I",
+          "start": 20.649999,
+          "end": 20.729999
+        },
+        {
+          "word": "wanted",
+          "start": 20.729999,
+          "end": 20.950000000000003
+        },
+        {
+          "word": "to",
+          "start": 20.950000000000003,
+          "end": 21.009999999999998
+        },
+        {
+          "word": "get",
+          "start": 21.009999999999998,
+          "end": 21.159999
+        },
+        {
+          "word": "my",
+          "start": 21.159999,
+          "end": 21.300001
+        },
+        {
+          "word": "things",
+          "start": 21.300001,
+          "end": 21.710001
+        },
+        {
+          "word": "moved",
+          "start": 21.710001,
+          "end": 22.069999000000003
+        },
+        {
+          "word": "into",
+          "start": 22.069999000000003,
+          "end": 22.309998999999998
+        },
+        {
+          "word": "my",
+          "start": 22.309998999999998,
+          "end": 22.53
+        },
+        {
+          "word": "room",
+          "start": 22.53,
+          "end": 22.759999999999998
+        },
+        {
+          "word": "and",
+          "start": 22.759999999999998,
+          "end": 23.020000000000003
+        },
+        {
+          "word": "just",
+          "start": 23.130001,
+          "end": 23.369999999999997
+        },
+        {
+          "word": "take",
+          "start": 23.369999999999997,
+          "end": 23.589999999999996
+        },
+        {
+          "word": "a",
+          "start": 23.589999999999996,
+          "end": 23.640000999999998
+        },
+        {
+          "word": "look",
+          "start": 23.640000999999998,
+          "end": 23.85
+        },
+        {
+          "word": "around",
+          "start": 23.85,
+          "end": 24.450000000000003
+        },
+        {
+          "word": "So",
+          "start": 25.089999999999996,
+          "end": 25.339999999999996
+        },
+        {
+          "word": "did",
+          "start": 25.759999999999998,
+          "end": 25.939999999999998
+        },
+        {
+          "word": "you",
+          "start": 25.939999999999998,
+          "end": 26.130001
+        },
+        {
+          "word": "decide",
+          "start": 26.130001,
+          "end": 26.520000000000003
+        },
+        {
+          "word": "to",
+          "start": 26.520000000000003,
+          "end": 26.58
+        },
+        {
+          "word": "do",
+          "start": 26.58,
+          "end": 26.700000000000003
+        },
+        {
+          "word": "English",
+          "start": 26.700000000000003,
+          "end": 27.119999999999997
+        },
+        {
+          "word": "in",
+          "start": 27.119999999999997,
+          "end": 27.509999999999998
+        },
+        {
+          "word": "the",
+          "start": 27.509999999999998,
+          "end": 27.649999
+        },
+        {
+          "word": "end",
+          "start": 27.649999,
+          "end": 27.710001
+        }
+      ],
       "answers": [],
-      "end": 27.8
+      "end": 27.710001
     },
     {
       "id": 4,
-      "start": 27.9,
+      "start": 27.710001,
       "speaker": "TIM",
       "en": "No, I changed my mind and opted for history instead. And you're doing biology, if remember correctly. JANE Yes, although to start with I couldn't decide between that and geography.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 27.710001,
+          "end": 27.880001
+        },
+        {
+          "word": "I",
+          "start": 27.880001,
+          "end": 28.159999
+        },
+        {
+          "word": "changed",
+          "start": 28.159999,
+          "end": 28.569999000000003
+        },
+        {
+          "word": "my",
+          "start": 28.569999000000003,
+          "end": 28.710001
+        },
+        {
+          "word": "mind",
+          "start": 28.710001,
+          "end": 29.059998999999998
+        },
+        {
+          "word": "and",
+          "start": 29.059998999999998,
+          "end": 29.18
+        },
+        {
+          "word": "opted",
+          "start": 29.18,
+          "end": 29.479999
+        },
+        {
+          "word": "for",
+          "start": 29.479999,
+          "end": 29.569999000000003
+        },
+        {
+          "word": "history",
+          "start": 29.569999000000003,
+          "end": 30.020000000000003
+        },
+        {
+          "word": "instead",
+          "start": 30.020000000000003,
+          "end": 30.869999999999997
+        },
+        {
+          "word": "And",
+          "start": 30.869999999999997,
+          "end": 30.939999999999998
+        },
+        {
+          "word": "you",
+          "start": 31.33,
+          "end": 31.550001
+        },
+        {
+          "word": "'re",
+          "start": 31.33,
+          "end": 31.550001
+        },
+        {
+          "word": "doing",
+          "start": 31.550001,
+          "end": 31.809998999999998
+        },
+        {
+          "word": "biology",
+          "start": 31.809998999999998,
+          "end": 32.309999
+        },
+        {
+          "word": "if",
+          "start": 32.309999,
+          "end": 32.390001
+        },
+        {
+          "word": "remember",
+          "start": 32.390001,
+          "end": 32.839999999999996
+        },
+        {
+          "word": "correctly",
+          "start": 32.839999999999996,
+          "end": 33.27
+        },
+        {
+          "word": "JANE",
+          "start": 33.27,
+          "end": 33.37
+        },
+        {
+          "word": "Yes",
+          "start": 33.69,
+          "end": 34.290001
+        },
+        {
+          "word": "although",
+          "start": 34.52,
+          "end": 34.83
+        },
+        {
+          "word": "to",
+          "start": 34.83,
+          "end": 34.94
+        },
+        {
+          "word": "start",
+          "start": 34.94,
+          "end": 35.27
+        },
+        {
+          "word": "with",
+          "start": 35.27,
+          "end": 35.409999
+        },
+        {
+          "word": "I",
+          "start": 35.409999,
+          "end": 35.52
+        },
+        {
+          "word": "could",
+          "start": 35.67,
+          "end": 35.890001
+        },
+        {
+          "word": "n't",
+          "start": 35.67,
+          "end": 35.890001
+        },
+        {
+          "word": "decide",
+          "start": 35.890001,
+          "end": 36.26
+        },
+        {
+          "word": "between",
+          "start": 36.26,
+          "end": 36.6
+        },
+        {
+          "word": "that",
+          "start": 36.6,
+          "end": 36.769998
+        },
+        {
+          "word": "and",
+          "start": 36.769998,
+          "end": 36.859998000000004
+        },
+        {
+          "word": "geography",
+          "start": 36.859998000000004,
+          "end": 37.53
+        }
+      ],
       "answers": [
         22
       ],
-      "end": 37.6
+      "end": 37.53
     },
     {
       "id": 5,
-      "start": 37.7,
+      "start": 37.67,
       "speaker": "TIM",
       "en": "How much reading have you got? I was given an amazingly long list of books to read. See! JANE Wow, it does look pretty long.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "How",
+          "start": 37.67,
+          "end": 37.840002
+        },
+        {
+          "word": "much",
+          "start": 37.840002,
+          "end": 38.08
+        },
+        {
+          "word": "reading",
+          "start": 38.08,
+          "end": 38.359998000000004
+        },
+        {
+          "word": "have",
+          "start": 38.359998000000004,
+          "end": 38.480001
+        },
+        {
+          "word": "you",
+          "start": 38.480001,
+          "end": 38.550001
+        },
+        {
+          "word": "got",
+          "start": 38.550001,
+          "end": 38.789999
+        },
+        {
+          "word": "I",
+          "start": 39.33,
+          "end": 39.500002
+        },
+        {
+          "word": "was",
+          "start": 39.500002,
+          "end": 39.609998000000004
+        },
+        {
+          "word": "given",
+          "start": 39.609998000000004,
+          "end": 39.840002
+        },
+        {
+          "word": "an",
+          "start": 39.840002,
+          "end": 39.940000000000005
+        },
+        {
+          "word": "amazingly",
+          "start": 39.940000000000005,
+          "end": 40.739999000000005
+        },
+        {
+          "word": "long",
+          "start": 40.739999000000005,
+          "end": 41.109998000000004
+        },
+        {
+          "word": "list",
+          "start": 41.109998000000004,
+          "end": 41.379999
+        },
+        {
+          "word": "of",
+          "start": 41.379999,
+          "end": 41.539999
+        },
+        {
+          "word": "books",
+          "start": 41.539999,
+          "end": 41.800001
+        },
+        {
+          "word": "to",
+          "start": 41.800001,
+          "end": 41.92
+        },
+        {
+          "word": "read",
+          "start": 41.92,
+          "end": 42.250002
+        },
+        {
+          "word": "See",
+          "start": 42.42,
+          "end": 42.640001
+        },
+        {
+          "word": "JANE",
+          "start": 42.640001,
+          "end": 42.809999000000005
+        },
+        {
+          "word": "Wow",
+          "start": 42.960001,
+          "end": 43.120000000000005
+        },
+        {
+          "word": "it",
+          "start": 43.960001,
+          "end": 44.129999
+        },
+        {
+          "word": "does",
+          "start": 44.129999,
+          "end": 44.33
+        },
+        {
+          "word": "look",
+          "start": 44.33,
+          "end": 44.559999000000005
+        },
+        {
+          "word": "pretty",
+          "start": 44.559999000000005,
+          "end": 44.890001
+        },
+        {
+          "word": "long",
+          "start": 44.890001,
+          "end": 45.26
+        }
+      ],
       "answers": [],
-      "end": 45.2
+      "end": 45.26
     },
     {
       "id": 6,
-      "start": 45.3,
+      "start": 45.26,
       "speaker": "TIM",
       "en": "Well, I counted 57.I could hardly believe it! What's your list like? JANE Well, it's not as long as yours, but it's still pretty big. There are 43.I don't know how I'm going to get through them all.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 45.26,
+          "end": 45.53
+        },
+        {
+          "word": "I",
+          "start": 45.53,
+          "end": 45.6
+        },
+        {
+          "word": "counted",
+          "start": 45.6,
+          "end": 46.03
+        },
+        {
+          "word": "57",
+          "start": 46.03,
+          "end": 46.899999
+        },
+        {
+          "word": "I",
+          "start": 47.309999000000005,
+          "end": 47.379999
+        },
+        {
+          "word": "could",
+          "start": 47.379999,
+          "end": 47.469999
+        },
+        {
+          "word": "hardly",
+          "start": 47.469999,
+          "end": 47.800001
+        },
+        {
+          "word": "believe",
+          "start": 47.800001,
+          "end": 48.33
+        },
+        {
+          "word": "it",
+          "start": 48.33,
+          "end": 48.440000000000005
+        },
+        {
+          "word": "What",
+          "start": 49.039999,
+          "end": 49.230001
+        },
+        {
+          "word": "'s",
+          "start": 49.039999,
+          "end": 49.230001
+        },
+        {
+          "word": "your",
+          "start": 49.230001,
+          "end": 49.379999
+        },
+        {
+          "word": "list",
+          "start": 49.379999,
+          "end": 49.629999
+        },
+        {
+          "word": "like",
+          "start": 49.629999,
+          "end": 49.840002
+        },
+        {
+          "word": "JANE",
+          "start": 50.050001,
+          "end": 50.140001
+        },
+        {
+          "word": "Well",
+          "start": 50.140001,
+          "end": 50.680002
+        },
+        {
+          "word": "it",
+          "start": 50.680002,
+          "end": 50.809999000000005
+        },
+        {
+          "word": "'s",
+          "start": 50.680002,
+          "end": 50.809999000000005
+        },
+        {
+          "word": "not",
+          "start": 50.809999000000005,
+          "end": 51.059999000000005
+        },
+        {
+          "word": "as",
+          "start": 51.059999000000005,
+          "end": 51.129999
+        },
+        {
+          "word": "long",
+          "start": 51.129999,
+          "end": 51.309999000000005
+        },
+        {
+          "word": "as",
+          "start": 51.309999000000005,
+          "end": 51.42
+        },
+        {
+          "word": "yours",
+          "start": 51.42,
+          "end": 51.750002
+        },
+        {
+          "word": "but",
+          "start": 51.750002,
+          "end": 51.83
+        },
+        {
+          "word": "it",
+          "start": 51.83,
+          "end": 52.090002
+        },
+        {
+          "word": "'s",
+          "start": 51.83,
+          "end": 52.090002
+        },
+        {
+          "word": "still",
+          "start": 52.35,
+          "end": 52.519998
+        },
+        {
+          "word": "pretty",
+          "start": 52.519998,
+          "end": 52.859998000000004
+        },
+        {
+          "word": "big",
+          "start": 52.859998000000004,
+          "end": 53.160001
+        },
+        {
+          "word": "There",
+          "start": 53.160001,
+          "end": 53.289999
+        },
+        {
+          "word": "are",
+          "start": 53.289999,
+          "end": 53.320001000000005
+        },
+        {
+          "word": "43",
+          "start": 53.320001000000005,
+          "end": 53.930002
+        },
+        {
+          "word": "I",
+          "start": 53.930002,
+          "end": 54.340002
+        },
+        {
+          "word": "do",
+          "start": 55.17,
+          "end": 55.239999000000005
+        },
+        {
+          "word": "n't",
+          "start": 55.17,
+          "end": 55.239999000000005
+        },
+        {
+          "word": "know",
+          "start": 55.239999000000005,
+          "end": 55.33
+        },
+        {
+          "word": "how",
+          "start": 55.33,
+          "end": 55.58
+        },
+        {
+          "word": "I",
+          "start": 55.58,
+          "end": 55.660001
+        },
+        {
+          "word": "'m",
+          "start": 55.58,
+          "end": 55.660001
+        },
+        {
+          "word": "going",
+          "start": 55.660001,
+          "end": 55.800001
+        },
+        {
+          "word": "to",
+          "start": 55.800001,
+          "end": 55.85
+        },
+        {
+          "word": "get",
+          "start": 55.85,
+          "end": 56.01
+        },
+        {
+          "word": "through",
+          "start": 56.01,
+          "end": 56.239999000000005
+        },
+        {
+          "word": "them",
+          "start": 56.239999000000005,
+          "end": 56.379999
+        },
+        {
+          "word": "all",
+          "start": 56.379999,
+          "end": 56.629999
+        }
+      ],
       "answers": [
         23,
         24
       ],
-      "end": 54.4
+      "end": 56.629999
     },
     {
       "id": 7,
-      "start": 56.9,
+      "start": 56.83,
       "speaker": "TIM",
       "en": "Well you don't have to read them all this week! You just have to stay ahead of the lectures and seminars. Have you got your class schedule yet? JANE Yep. It came with the reading list. When's your first lecture?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 56.83,
+          "end": 57.050001
+        },
+        {
+          "word": "you",
+          "start": 57.08,
+          "end": 57.210001
+        },
+        {
+          "word": "do",
+          "start": 57.210001,
+          "end": 57.35
+        },
+        {
+          "word": "n't",
+          "start": 57.210001,
+          "end": 57.35
+        },
+        {
+          "word": "have",
+          "start": 57.35,
+          "end": 57.500002
+        },
+        {
+          "word": "to",
+          "start": 57.500002,
+          "end": 57.620000000000005
+        },
+        {
+          "word": "read",
+          "start": 57.620000000000005,
+          "end": 57.85
+        },
+        {
+          "word": "them",
+          "start": 57.85,
+          "end": 57.989999000000005
+        },
+        {
+          "word": "all",
+          "start": 57.989999000000005,
+          "end": 58.210001
+        },
+        {
+          "word": "this",
+          "start": 58.210001,
+          "end": 58.489999000000005
+        },
+        {
+          "word": "week",
+          "start": 58.489999000000005,
+          "end": 58.750002
+        },
+        {
+          "word": "You",
+          "start": 59.800001,
+          "end": 59.890001
+        },
+        {
+          "word": "just",
+          "start": 59.890001,
+          "end": 60.070001000000005
+        },
+        {
+          "word": "have",
+          "start": 60.070001000000005,
+          "end": 60.210001
+        },
+        {
+          "word": "to",
+          "start": 60.210001,
+          "end": 60.28
+        },
+        {
+          "word": "stay",
+          "start": 60.28,
+          "end": 60.6
+        },
+        {
+          "word": "ahead",
+          "start": 60.6,
+          "end": 60.78
+        },
+        {
+          "word": "of",
+          "start": 60.78,
+          "end": 60.859998000000004
+        },
+        {
+          "word": "the",
+          "start": 60.859998000000004,
+          "end": 60.930002
+        },
+        {
+          "word": "lectures",
+          "start": 60.930002,
+          "end": 61.379999
+        },
+        {
+          "word": "and",
+          "start": 61.379999,
+          "end": 61.480001
+        },
+        {
+          "word": "seminars",
+          "start": 61.480001,
+          "end": 62.109998000000004
+        },
+        {
+          "word": "Have",
+          "start": 62.620000000000005,
+          "end": 62.78
+        },
+        {
+          "word": "you",
+          "start": 62.78,
+          "end": 62.85
+        },
+        {
+          "word": "got",
+          "start": 62.85,
+          "end": 63.000002
+        },
+        {
+          "word": "your",
+          "start": 63.000002,
+          "end": 63.1
+        },
+        {
+          "word": "class",
+          "start": 63.1,
+          "end": 63.460001
+        },
+        {
+          "word": "schedule",
+          "start": 63.460001,
+          "end": 63.859998000000004
+        },
+        {
+          "word": "yet",
+          "start": 63.859998000000004,
+          "end": 63.949998
+        },
+        {
+          "word": "JANE",
+          "start": 64.269998,
+          "end": 64.359998
+        },
+        {
+          "word": "Yep",
+          "start": 64.359998,
+          "end": 64.50999999999999
+        },
+        {
+          "word": "It",
+          "start": 64.75999999999999,
+          "end": 64.92
+        },
+        {
+          "word": "came",
+          "start": 64.92,
+          "end": 65.129999
+        },
+        {
+          "word": "with",
+          "start": 65.129999,
+          "end": 65.250002
+        },
+        {
+          "word": "the",
+          "start": 65.250002,
+          "end": 65.309999
+        },
+        {
+          "word": "reading",
+          "start": 65.309999,
+          "end": 65.67
+        },
+        {
+          "word": "list",
+          "start": 65.67,
+          "end": 65.989999
+        },
+        {
+          "word": "When",
+          "start": 66.649999,
+          "end": 66.87
+        },
+        {
+          "word": "'s",
+          "start": 66.87,
+          "end": 66.899999
+        },
+        {
+          "word": "your",
+          "start": 66.899999,
+          "end": 67.059999
+        },
+        {
+          "word": "first",
+          "start": 67.059999,
+          "end": 67.37
+        },
+        {
+          "word": "lecture",
+          "start": 67.37,
+          "end": 67.820001
+        }
+      ],
       "answers": [],
-      "end": 67.9
+      "end": 67.820001
     },
     {
       "id": 8,
-      "start": 68.7,
+      "start": 68.610002,
       "speaker": "TIM",
       "en": "Tuesday. How about you? JANE The day after. It's my busiest day; I've got two lectures in the morning and one in the afternoon.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Tuesday",
+          "start": 68.610002,
+          "end": 69.089998
+        },
+        {
+          "word": "How",
+          "start": 69.260004,
+          "end": 69.43000199999999
+        },
+        {
+          "word": "about",
+          "start": 69.43000199999999,
+          "end": 69.57000099999999
+        },
+        {
+          "word": "you",
+          "start": 69.57000099999999,
+          "end": 69.729997
+        },
+        {
+          "word": "JANE",
+          "start": 69.729997,
+          "end": 69.90999799999999
+        },
+        {
+          "word": "The",
+          "start": 70.43000199999999,
+          "end": 70.519998
+        },
+        {
+          "word": "day",
+          "start": 70.519998,
+          "end": 70.629999
+        },
+        {
+          "word": "after",
+          "start": 70.629999,
+          "end": 71.189996
+        },
+        {
+          "word": "It",
+          "start": 71.65999799999999,
+          "end": 71.839998
+        },
+        {
+          "word": "'s",
+          "start": 71.65999799999999,
+          "end": 71.839998
+        },
+        {
+          "word": "my",
+          "start": 71.839998,
+          "end": 72.03
+        },
+        {
+          "word": "busiest",
+          "start": 72.03,
+          "end": 72.650003
+        },
+        {
+          "word": "day",
+          "start": 72.650003,
+          "end": 72.72000299999999
+        },
+        {
+          "word": "I",
+          "start": 72.72000299999999,
+          "end": 72.96000099999999
+        },
+        {
+          "word": "'ve",
+          "start": 73.16999999999999,
+          "end": 73.199998
+        },
+        {
+          "word": "got",
+          "start": 73.199998,
+          "end": 73.360002
+        },
+        {
+          "word": "two",
+          "start": 73.629999,
+          "end": 73.790002
+        },
+        {
+          "word": "lectures",
+          "start": 73.790002,
+          "end": 74.339998
+        },
+        {
+          "word": "in",
+          "start": 74.339998,
+          "end": 74.439996
+        },
+        {
+          "word": "the",
+          "start": 74.439996,
+          "end": 74.53
+        },
+        {
+          "word": "morning",
+          "start": 74.53,
+          "end": 74.949998
+        },
+        {
+          "word": "and",
+          "start": 74.979997,
+          "end": 75.229997
+        },
+        {
+          "word": "one",
+          "start": 75.229997,
+          "end": 75.47000299999999
+        },
+        {
+          "word": "in",
+          "start": 75.47000299999999,
+          "end": 75.55999899999999
+        },
+        {
+          "word": "the",
+          "start": 75.55999899999999,
+          "end": 75.65999799999999
+        },
+        {
+          "word": "afternoon",
+          "start": 75.65999799999999,
+          "end": 76.619997
+        }
+      ],
       "answers": [
         25
       ],
-      "end": 76.8
+      "end": 76.619997
     },
     {
       "id": 9,
-      "start": 78.7,
+      "start": 78.860002,
       "speaker": "JANE",
       "en": "It's going to be different from school, isn't it!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 78.860002,
+          "end": 79.05999899999999
+        },
+        {
+          "word": "'s",
+          "start": 78.860002,
+          "end": 79.05999899999999
+        },
+        {
+          "word": "going",
+          "start": 79.05999899999999,
+          "end": 79.22000299999999
+        },
+        {
+          "word": "to",
+          "start": 79.22000299999999,
+          "end": 79.269998
+        },
+        {
+          "word": "be",
+          "start": 79.269998,
+          "end": 79.390001
+        },
+        {
+          "word": "different",
+          "start": 79.390001,
+          "end": 79.72000299999999
+        },
+        {
+          "word": "from",
+          "start": 79.72000299999999,
+          "end": 79.890001
+        },
+        {
+          "word": "school",
+          "start": 79.890001,
+          "end": 80.439996
+        },
+        {
+          "word": "is",
+          "start": 80.439996,
+          "end": 80.689996
+        },
+        {
+          "word": "n't",
+          "start": 80.439996,
+          "end": 80.689996
+        },
+        {
+          "word": "it",
+          "start": 80.689996,
+          "end": 80.85
+        }
+      ],
       "answers": [],
-      "end": 80.9
+      "end": 80.85
     },
     {
       "id": 10,
-      "start": 80.9,
+      "start": 80.85,
       "speaker": "TIM",
       "en": "Yeah, particularly the lectures. Have you got any special strategy for listening to lectures? JANE Well I'm going to use a cassette recorder and record them all.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yeah",
+          "start": 80.85,
+          "end": 81.239999
+        },
+        {
+          "word": "particularly",
+          "start": 81.239999,
+          "end": 81.729997
+        },
+        {
+          "word": "the",
+          "start": 81.729997,
+          "end": 81.80999899999999
+        },
+        {
+          "word": "lectures",
+          "start": 81.80999899999999,
+          "end": 82.369997
+        },
+        {
+          "word": "Have",
+          "start": 82.369997,
+          "end": 82.400003
+        },
+        {
+          "word": "you",
+          "start": 82.400003,
+          "end": 82.79999699999999
+        },
+        {
+          "word": "got",
+          "start": 82.839998,
+          "end": 82.939996
+        },
+        {
+          "word": "any",
+          "start": 82.939996,
+          "end": 83.28
+        },
+        {
+          "word": "special",
+          "start": 83.28,
+          "end": 83.79999699999999
+        },
+        {
+          "word": "strategy",
+          "start": 83.79999699999999,
+          "end": 84.40999799999999
+        },
+        {
+          "word": "for",
+          "start": 84.40999799999999,
+          "end": 84.58000299999999
+        },
+        {
+          "word": "listening",
+          "start": 84.58000299999999,
+          "end": 84.90999799999999
+        },
+        {
+          "word": "to",
+          "start": 84.90999799999999,
+          "end": 85.000002
+        },
+        {
+          "word": "lectures",
+          "start": 85.000002,
+          "end": 85.47000299999999
+        },
+        {
+          "word": "JANE",
+          "start": 85.93000199999999,
+          "end": 86.019998
+        },
+        {
+          "word": "Well",
+          "start": 86.019998,
+          "end": 86.110002
+        },
+        {
+          "word": "I",
+          "start": 86.58000299999999,
+          "end": 86.71000099999999
+        },
+        {
+          "word": "'m",
+          "start": 86.58000299999999,
+          "end": 86.71000099999999
+        },
+        {
+          "word": "going",
+          "start": 86.71000099999999,
+          "end": 86.869997
+        },
+        {
+          "word": "to",
+          "start": 86.869997,
+          "end": 86.900003
+        },
+        {
+          "word": "use",
+          "start": 86.900003,
+          "end": 87.019998
+        },
+        {
+          "word": "a",
+          "start": 87.019998,
+          "end": 87.089998
+        },
+        {
+          "word": "cassette",
+          "start": 87.089998,
+          "end": 87.43000199999999
+        },
+        {
+          "word": "recorder",
+          "start": 87.43000199999999,
+          "end": 87.93000199999999
+        },
+        {
+          "word": "and",
+          "start": 87.93000199999999,
+          "end": 88.019998
+        },
+        {
+          "word": "record",
+          "start": 88.019998,
+          "end": 88.41999999999999
+        },
+        {
+          "word": "them",
+          "start": 88.41999999999999,
+          "end": 88.540002
+        },
+        {
+          "word": "all",
+          "start": 88.540002,
+          "end": 88.839998
+        }
+      ],
       "answers": [
         26
       ],
-      "end": 88.9
+      "end": 88.839998
     },
     {
       "id": 11,
-      "start": 89.5,
+      "start": 88.890001,
       "speaker": "TIM",
       "en": "What! Are you allowed to? JANE Sure. Lots of people do it nowadays. It means you can listen to the lectures all over again later, and make really good notes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 88.890001,
+          "end": 89.199998
+        },
+        {
+          "word": "Are",
+          "start": 89.46000099999999,
+          "end": 89.489999
+        },
+        {
+          "word": "you",
+          "start": 89.489999,
+          "end": 89.619997
+        },
+        {
+          "word": "allowed",
+          "start": 89.619997,
+          "end": 89.90999799999999
+        },
+        {
+          "word": "to",
+          "start": 89.90999799999999,
+          "end": 90.040002
+        },
+        {
+          "word": "JANE",
+          "start": 90.040002,
+          "end": 90.18000199999999
+        },
+        {
+          "word": "Sure",
+          "start": 90.439996,
+          "end": 90.72000299999999
+        },
+        {
+          "word": "Lots",
+          "start": 91.269998,
+          "end": 91.540002
+        },
+        {
+          "word": "of",
+          "start": 91.540002,
+          "end": 91.6
+        },
+        {
+          "word": "people",
+          "start": 91.6,
+          "end": 91.97000299999999
+        },
+        {
+          "word": "do",
+          "start": 91.97000299999999,
+          "end": 92.07000099999999
+        },
+        {
+          "word": "it",
+          "start": 92.07000099999999,
+          "end": 92.21000099999999
+        },
+        {
+          "word": "nowadays",
+          "start": 92.21000099999999,
+          "end": 92.839998
+        },
+        {
+          "word": "It",
+          "start": 93.28,
+          "end": 93.40999799999999
+        },
+        {
+          "word": "means",
+          "start": 93.40999799999999,
+          "end": 93.68000199999999
+        },
+        {
+          "word": "you",
+          "start": 93.68000199999999,
+          "end": 93.760004
+        },
+        {
+          "word": "can",
+          "start": 93.760004,
+          "end": 93.900003
+        },
+        {
+          "word": "listen",
+          "start": 93.900003,
+          "end": 94.189996
+        },
+        {
+          "word": "to",
+          "start": 94.189996,
+          "end": 94.260004
+        },
+        {
+          "word": "the",
+          "start": 94.260004,
+          "end": 94.35
+        },
+        {
+          "word": "lectures",
+          "start": 94.35,
+          "end": 94.790002
+        },
+        {
+          "word": "all",
+          "start": 94.790002,
+          "end": 95.08000299999999
+        },
+        {
+          "word": "over",
+          "start": 95.08000299999999,
+          "end": 95.189996
+        },
+        {
+          "word": "again",
+          "start": 95.189996,
+          "end": 95.46000099999999
+        },
+        {
+          "word": "later",
+          "start": 95.46000099999999,
+          "end": 95.80999899999999
+        },
+        {
+          "word": "and",
+          "start": 95.80999899999999,
+          "end": 95.939996
+        },
+        {
+          "word": "make",
+          "start": 95.939996,
+          "end": 96.110002
+        },
+        {
+          "word": "really",
+          "start": 96.110002,
+          "end": 96.40999799999999
+        },
+        {
+          "word": "good",
+          "start": 96.40999799999999,
+          "end": 96.83000299999999
+        },
+        {
+          "word": "notes",
+          "start": 96.83000299999999,
+          "end": 97.08000299999999
+        }
+      ],
       "answers": [],
-      "end": 97.2
+      "end": 97.08000299999999
     },
     {
       "id": 12,
-      "start": 97.3,
+      "start": 97.110002,
       "speaker": "TIM",
       "en": "I couldn't do that. I like to take notes as I'm listening. I usually find I get all the important points. Reading is different of course. My approach is to skim the book first to see what's important and what isn't. It saves hours of time.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 97.110002,
+          "end": 97.189996
+        },
+        {
+          "word": "could",
+          "start": 97.269998,
+          "end": 97.47000299999999
+        },
+        {
+          "word": "n't",
+          "start": 97.269998,
+          "end": 97.47000299999999
+        },
+        {
+          "word": "do",
+          "start": 97.47000299999999,
+          "end": 97.65999799999999
+        },
+        {
+          "word": "that",
+          "start": 97.65999799999999,
+          "end": 97.979997
+        },
+        {
+          "word": "I",
+          "start": 98.54999699999999,
+          "end": 98.629999
+        },
+        {
+          "word": "like",
+          "start": 98.629999,
+          "end": 98.790002
+        },
+        {
+          "word": "to",
+          "start": 98.790002,
+          "end": 98.869997
+        },
+        {
+          "word": "take",
+          "start": 98.869997,
+          "end": 99.1
+        },
+        {
+          "word": "notes",
+          "start": 99.1,
+          "end": 99.379999
+        },
+        {
+          "word": "as",
+          "start": 99.379999,
+          "end": 99.46000099999999
+        },
+        {
+          "word": "I",
+          "start": 99.46000099999999,
+          "end": 99.610002
+        },
+        {
+          "word": "'m",
+          "start": 99.46000099999999,
+          "end": 99.610002
+        },
+        {
+          "word": "listening",
+          "start": 99.610002,
+          "end": 100.000002
+        },
+        {
+          "word": "I",
+          "start": 100.53,
+          "end": 100.629999
+        },
+        {
+          "word": "usually",
+          "start": 100.629999,
+          "end": 100.989999
+        },
+        {
+          "word": "find",
+          "start": 100.989999,
+          "end": 101.29999699999999
+        },
+        {
+          "word": "I",
+          "start": 101.29999699999999,
+          "end": 101.360002
+        },
+        {
+          "word": "get",
+          "start": 101.360002,
+          "end": 101.519998
+        },
+        {
+          "word": "all",
+          "start": 101.519998,
+          "end": 101.68000199999999
+        },
+        {
+          "word": "the",
+          "start": 101.68000199999999,
+          "end": 101.790002
+        },
+        {
+          "word": "important",
+          "start": 101.790002,
+          "end": 102.30999899999999
+        },
+        {
+          "word": "points",
+          "start": 102.30999899999999,
+          "end": 102.78
+        },
+        {
+          "word": "Reading",
+          "start": 103.339998,
+          "end": 103.640001
+        },
+        {
+          "word": "is",
+          "start": 103.640001,
+          "end": 103.750002
+        },
+        {
+          "word": "different",
+          "start": 103.750002,
+          "end": 104.010004
+        },
+        {
+          "word": "of",
+          "start": 104.010004,
+          "end": 104.119997
+        },
+        {
+          "word": "course",
+          "start": 104.119997,
+          "end": 104.54999699999999
+        },
+        {
+          "word": "My",
+          "start": 104.879999,
+          "end": 105.04999699999999
+        },
+        {
+          "word": "approach",
+          "start": 105.04999699999999,
+          "end": 105.489999
+        },
+        {
+          "word": "is",
+          "start": 105.489999,
+          "end": 105.55999899999999
+        },
+        {
+          "word": "to",
+          "start": 105.55999899999999,
+          "end": 105.689996
+        },
+        {
+          "word": "skim",
+          "start": 105.689996,
+          "end": 106.150003
+        },
+        {
+          "word": "the",
+          "start": 106.150003,
+          "end": 106.21000099999999
+        },
+        {
+          "word": "book",
+          "start": 106.21000099999999,
+          "end": 106.47000299999999
+        },
+        {
+          "word": "first",
+          "start": 106.47000299999999,
+          "end": 106.949998
+        },
+        {
+          "word": "to",
+          "start": 106.949998,
+          "end": 107.05999899999999
+        },
+        {
+          "word": "see",
+          "start": 107.05999899999999,
+          "end": 107.29999699999999
+        },
+        {
+          "word": "what",
+          "start": 107.29999699999999,
+          "end": 107.55999899999999
+        },
+        {
+          "word": "'s",
+          "start": 107.29999699999999,
+          "end": 107.55999899999999
+        },
+        {
+          "word": "important",
+          "start": 107.55999899999999,
+          "end": 108.18000199999999
+        },
+        {
+          "word": "and",
+          "start": 108.21000099999999,
+          "end": 108.30999899999999
+        },
+        {
+          "word": "what",
+          "start": 108.30999899999999,
+          "end": 108.489999
+        },
+        {
+          "word": "is",
+          "start": 108.489999,
+          "end": 108.83000299999999
+        },
+        {
+          "word": "n't",
+          "start": 108.489999,
+          "end": 108.83000299999999
+        },
+        {
+          "word": "It",
+          "start": 109.199998,
+          "end": 109.260004
+        },
+        {
+          "word": "saves",
+          "start": 109.260004,
+          "end": 109.57000099999999
+        },
+        {
+          "word": "hours",
+          "start": 109.57000099999999,
+          "end": 109.900003
+        },
+        {
+          "word": "of",
+          "start": 109.900003,
+          "end": 109.989999
+        },
+        {
+          "word": "time",
+          "start": 109.989999,
+          "end": 110.400003
+        }
+      ],
       "answers": [
         27
       ],
-      "end": 111.2
+      "end": 110.400003
     },
     {
       "id": 13,
-      "start": 111.2,
+      "start": 110.97000299999999,
       "speaker": "JANE",
       "en": "But what if you miss something?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 110.97000299999999,
+          "end": 111.08000299999999
+        },
+        {
+          "word": "what",
+          "start": 111.08000299999999,
+          "end": 111.29999699999999
+        },
+        {
+          "word": "if",
+          "start": 111.29999699999999,
+          "end": 111.360002
+        },
+        {
+          "word": "you",
+          "start": 111.360002,
+          "end": 111.439996
+        },
+        {
+          "word": "miss",
+          "start": 111.439996,
+          "end": 111.57000099999999
+        },
+        {
+          "word": "something",
+          "start": 111.610002,
+          "end": 112.28
+        }
+      ],
       "answers": [],
-      "end": 112.7
+      "end": 112.28
     },
     {
       "id": 14,
-      "start": 112.7,
+      "start": 112.58000299999999,
       "speaker": "TIM",
       "en": "You don't mean you're going to read every word, do you? JANE Well, that's what I usually do.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 112.58000299999999,
+          "end": 112.71000099999999
+        },
+        {
+          "word": "do",
+          "start": 112.71000099999999,
+          "end": 112.93000199999999
+        },
+        {
+          "word": "n't",
+          "start": 112.71000099999999,
+          "end": 112.93000199999999
+        },
+        {
+          "word": "mean",
+          "start": 112.93000199999999,
+          "end": 113.05999899999999
+        },
+        {
+          "word": "you",
+          "start": 113.05999899999999,
+          "end": 113.22000299999999
+        },
+        {
+          "word": "'re",
+          "start": 113.05999899999999,
+          "end": 113.22000299999999
+        },
+        {
+          "word": "going",
+          "start": 113.22000299999999,
+          "end": 113.439996
+        },
+        {
+          "word": "to",
+          "start": 113.439996,
+          "end": 113.54999699999999
+        },
+        {
+          "word": "read",
+          "start": 113.54999699999999,
+          "end": 113.72000299999999
+        },
+        {
+          "word": "every",
+          "start": 113.72000299999999,
+          "end": 114.019998
+        },
+        {
+          "word": "word",
+          "start": 114.019998,
+          "end": 114.40999799999999
+        },
+        {
+          "word": "do",
+          "start": 114.40999799999999,
+          "end": 114.500002
+        },
+        {
+          "word": "you",
+          "start": 114.500002,
+          "end": 114.55999899999999
+        },
+        {
+          "word": "JANE",
+          "start": 114.55999899999999,
+          "end": 114.80999899999999
+        },
+        {
+          "word": "Well",
+          "start": 115.110002,
+          "end": 115.250002
+        },
+        {
+          "word": "that",
+          "start": 115.619997,
+          "end": 115.85
+        },
+        {
+          "word": "'s",
+          "start": 115.85,
+          "end": 115.96000099999999
+        },
+        {
+          "word": "what",
+          "start": 115.96000099999999,
+          "end": 116.04999699999999
+        },
+        {
+          "word": "I",
+          "start": 116.04999699999999,
+          "end": 116.110002
+        },
+        {
+          "word": "usually",
+          "start": 116.110002,
+          "end": 116.55999899999999
+        },
+        {
+          "word": "do",
+          "start": 116.55999899999999,
+          "end": 116.85
+        }
+      ],
       "answers": [],
-      "end": 117.5
+      "end": 116.85
     },
     {
       "id": 15,
-      "start": 117.5,
+      "start": 117.339998,
       "speaker": "TIM",
       "en": "Well, that's up to you, but I think you're crazy! JANE What's your first lecture on, anyway?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 117.339998,
+          "end": 117.610002
+        },
+        {
+          "word": "that",
+          "start": 117.699998,
+          "end": 117.879999
+        },
+        {
+          "word": "'s",
+          "start": 117.879999,
+          "end": 117.91999999999999
+        },
+        {
+          "word": "up",
+          "start": 117.91999999999999,
+          "end": 118.05999899999999
+        },
+        {
+          "word": "to",
+          "start": 118.05999899999999,
+          "end": 118.15999799999999
+        },
+        {
+          "word": "you",
+          "start": 118.15999799999999,
+          "end": 118.30999899999999
+        },
+        {
+          "word": "but",
+          "start": 118.30999899999999,
+          "end": 118.46000099999999
+        },
+        {
+          "word": "I",
+          "start": 118.46000099999999,
+          "end": 118.55999899999999
+        },
+        {
+          "word": "think",
+          "start": 118.55999899999999,
+          "end": 118.739999
+        },
+        {
+          "word": "you",
+          "start": 118.739999,
+          "end": 118.860002
+        },
+        {
+          "word": "'re",
+          "start": 118.739999,
+          "end": 118.860002
+        },
+        {
+          "word": "crazy",
+          "start": 118.860002,
+          "end": 119.379999
+        },
+        {
+          "word": "JANE",
+          "start": 119.790002,
+          "end": 119.900003
+        },
+        {
+          "word": "What",
+          "start": 120.949998,
+          "end": 121.16999999999999
+        },
+        {
+          "word": "'s",
+          "start": 120.949998,
+          "end": 121.16999999999999
+        },
+        {
+          "word": "your",
+          "start": 121.16999999999999,
+          "end": 121.28
+        },
+        {
+          "word": "first",
+          "start": 121.28,
+          "end": 121.54999699999999
+        },
+        {
+          "word": "lecture",
+          "start": 121.54999699999999,
+          "end": 122.000002
+        },
+        {
+          "word": "on",
+          "start": 122.000002,
+          "end": 122.089998
+        },
+        {
+          "word": "anyway",
+          "start": 122.089998,
+          "end": 122.519998
+        }
+      ],
       "answers": [],
-      "end": 123.0
+      "end": 122.519998
     },
     {
       "id": 16,
-      "start": 123.0,
+      "start": 122.79999699999999,
       "speaker": "TIM",
       "en": "Oh, it's a lecture on the French Revolution.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 122.79999699999999,
+          "end": 123.010004
+        },
+        {
+          "word": "it",
+          "start": 123.010004,
+          "end": 123.129999
+        },
+        {
+          "word": "'s",
+          "start": 123.010004,
+          "end": 123.129999
+        },
+        {
+          "word": "a",
+          "start": 123.129999,
+          "end": 123.15999799999999
+        },
+        {
+          "word": "lecture",
+          "start": 123.15999799999999,
+          "end": 123.449998
+        },
+        {
+          "word": "on",
+          "start": 123.449998,
+          "end": 123.519998
+        },
+        {
+          "word": "the",
+          "start": 123.519998,
+          "end": 123.610002
+        },
+        {
+          "word": "French",
+          "start": 123.610002,
+          "end": 124.07000099999999
+        },
+        {
+          "word": "Revolution",
+          "start": 124.07000099999999,
+          "end": 124.629999
+        }
+      ],
       "answers": [
         28
       ],
-      "end": 123.8
+      "end": 124.629999
     },
     {
       "id": 17,
-      "start": 123.8,
+      "start": 124.629999,
       "speaker": "JANE",
       "en": "The French Revolution! How boring!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 124.629999,
+          "end": 124.689996
+        },
+        {
+          "word": "French",
+          "start": 124.900003,
+          "end": 125.1
+        },
+        {
+          "word": "Revolution",
+          "start": 126.510004,
+          "end": 126.900003
+        },
+        {
+          "word": "How",
+          "start": 127.05999899999999,
+          "end": 127.110002
+        },
+        {
+          "word": "boring",
+          "start": 127.110002,
+          "end": 127.91999999999999
+        }
+      ],
       "answers": [],
-      "end": 128.0
+      "end": 127.91999999999999
     },
     {
       "id": 18,
-      "start": 128.1,
+      "start": 127.91999999999999,
       "speaker": "TIM",
       "en": "It's not boring at all! It was an amazing period of history. It changed everything in Europe. So what's your first lecture about? JANE It's about animal behaviour. It sounds really interesting.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 127.91999999999999,
+          "end": 128.110002
+        },
+        {
+          "word": "'s",
+          "start": 127.91999999999999,
+          "end": 128.110002
+        },
+        {
+          "word": "not",
+          "start": 128.110002,
+          "end": 128.29000200000002
+        },
+        {
+          "word": "boring",
+          "start": 128.29000200000002,
+          "end": 128.6
+        },
+        {
+          "word": "at",
+          "start": 128.6,
+          "end": 128.659998
+        },
+        {
+          "word": "all",
+          "start": 128.659998,
+          "end": 128.989999
+        },
+        {
+          "word": "It",
+          "start": 129.299997,
+          "end": 129.379999
+        },
+        {
+          "word": "was",
+          "start": 129.379999,
+          "end": 129.53
+        },
+        {
+          "word": "an",
+          "start": 129.53,
+          "end": 129.610002
+        },
+        {
+          "word": "amazing",
+          "start": 129.610002,
+          "end": 130.119997
+        },
+        {
+          "word": "period",
+          "start": 130.119997,
+          "end": 130.449998
+        },
+        {
+          "word": "of",
+          "start": 130.449998,
+          "end": 130.54000200000002
+        },
+        {
+          "word": "history",
+          "start": 130.54000200000002,
+          "end": 131.01999800000002
+        },
+        {
+          "word": "It",
+          "start": 131.26999800000002,
+          "end": 131.379999
+        },
+        {
+          "word": "changed",
+          "start": 131.379999,
+          "end": 131.78
+        },
+        {
+          "word": "everything",
+          "start": 131.809999,
+          "end": 132.249994
+        },
+        {
+          "word": "in",
+          "start": 132.249994,
+          "end": 132.35
+        },
+        {
+          "word": "Europe",
+          "start": 132.35,
+          "end": 132.680002
+        },
+        {
+          "word": "So",
+          "start": 133.450006,
+          "end": 133.590005
+        },
+        {
+          "word": "what",
+          "start": 133.590005,
+          "end": 133.76000399999998
+        },
+        {
+          "word": "'s",
+          "start": 133.590005,
+          "end": 133.76000399999998
+        },
+        {
+          "word": "your",
+          "start": 133.76000399999998,
+          "end": 133.900003
+        },
+        {
+          "word": "first",
+          "start": 133.900003,
+          "end": 134.150003
+        },
+        {
+          "word": "lecture",
+          "start": 134.150003,
+          "end": 134.430002
+        },
+        {
+          "word": "about",
+          "start": 134.430002,
+          "end": 134.700006
+        },
+        {
+          "word": "JANE",
+          "start": 135.31000699999998,
+          "end": 135.400003
+        },
+        {
+          "word": "It",
+          "start": 135.400003,
+          "end": 135.519998
+        },
+        {
+          "word": "'s",
+          "start": 135.400003,
+          "end": 135.519998
+        },
+        {
+          "word": "about",
+          "start": 135.519998,
+          "end": 135.820001
+        },
+        {
+          "word": "animal",
+          "start": 135.820001,
+          "end": 136.48999899999998
+        },
+        {
+          "word": "behaviour",
+          "start": 136.48999899999998,
+          "end": 136.730005
+        },
+        {
+          "word": "It",
+          "start": 137.150003,
+          "end": 137.290002
+        },
+        {
+          "word": "sounds",
+          "start": 137.290002,
+          "end": 137.570001
+        },
+        {
+          "word": "really",
+          "start": 137.570001,
+          "end": 138.029993
+        },
+        {
+          "word": "interesting",
+          "start": 138.029993,
+          "end": 138.609995
+        }
+      ],
       "answers": [],
-      "end": 137.4
+      "end": 138.609995
     },
     {
       "id": 19,
-      "start": 139.1,
+      "start": 139.040002,
       "speaker": "TIM",
       "en": "Look, I was on my way to the library. I'm going to get some of these books out and start reading for the first essay I've got to write. JANE And what have you got to write about?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Look",
+          "start": 139.040002,
+          "end": 139.23999899999998
+        },
+        {
+          "word": "I",
+          "start": 139.269998,
+          "end": 139.35
+        },
+        {
+          "word": "was",
+          "start": 139.35,
+          "end": 139.549997
+        },
+        {
+          "word": "on",
+          "start": 139.549997,
+          "end": 139.650003
+        },
+        {
+          "word": "my",
+          "start": 139.650003,
+          "end": 139.769998
+        },
+        {
+          "word": "way",
+          "start": 139.769998,
+          "end": 139.939996
+        },
+        {
+          "word": "to",
+          "start": 139.939996,
+          "end": 140.049997
+        },
+        {
+          "word": "the",
+          "start": 140.049997,
+          "end": 140.139993
+        },
+        {
+          "word": "library",
+          "start": 140.139993,
+          "end": 140.6
+        },
+        {
+          "word": "I",
+          "start": 140.71999499999998,
+          "end": 141.129999
+        },
+        {
+          "word": "'m",
+          "start": 140.71999499999998,
+          "end": 141.129999
+        },
+        {
+          "word": "going",
+          "start": 141.200006,
+          "end": 141.370004
+        },
+        {
+          "word": "to",
+          "start": 141.370004,
+          "end": 141.430002
+        },
+        {
+          "word": "get",
+          "start": 141.430002,
+          "end": 141.6
+        },
+        {
+          "word": "some",
+          "start": 141.6,
+          "end": 141.769998
+        },
+        {
+          "word": "of",
+          "start": 141.769998,
+          "end": 141.870004
+        },
+        {
+          "word": "these",
+          "start": 141.870004,
+          "end": 142.070001
+        },
+        {
+          "word": "books",
+          "start": 142.070001,
+          "end": 142.400003
+        },
+        {
+          "word": "out",
+          "start": 142.400003,
+          "end": 142.6
+        },
+        {
+          "word": "and",
+          "start": 142.6,
+          "end": 142.779993
+        },
+        {
+          "word": "start",
+          "start": 142.779993,
+          "end": 143.109995
+        },
+        {
+          "word": "reading",
+          "start": 143.109995,
+          "end": 143.430002
+        },
+        {
+          "word": "for",
+          "start": 143.430002,
+          "end": 143.540002
+        },
+        {
+          "word": "the",
+          "start": 143.540002,
+          "end": 143.639993
+        },
+        {
+          "word": "first",
+          "start": 143.639993,
+          "end": 143.98999899999998
+        },
+        {
+          "word": "essay",
+          "start": 143.98999899999998,
+          "end": 144.269998
+        },
+        {
+          "word": "I",
+          "start": 144.269998,
+          "end": 144.340005
+        },
+        {
+          "word": "'ve",
+          "start": 144.340005,
+          "end": 144.389993
+        },
+        {
+          "word": "got",
+          "start": 144.389993,
+          "end": 144.56000699999998
+        },
+        {
+          "word": "to",
+          "start": 144.56000699999998,
+          "end": 144.659998
+        },
+        {
+          "word": "write",
+          "start": 144.659998,
+          "end": 144.930002
+        },
+        {
+          "word": "JANE",
+          "start": 144.930002,
+          "end": 145.019998
+        },
+        {
+          "word": "And",
+          "start": 145.210001,
+          "end": 145.299997
+        },
+        {
+          "word": "what",
+          "start": 145.299997,
+          "end": 145.460001
+        },
+        {
+          "word": "have",
+          "start": 145.460001,
+          "end": 145.540002
+        },
+        {
+          "word": "you",
+          "start": 145.540002,
+          "end": 145.620004
+        },
+        {
+          "word": "got",
+          "start": 145.620004,
+          "end": 145.790002
+        },
+        {
+          "word": "to",
+          "start": 145.790002,
+          "end": 145.889993
+        },
+        {
+          "word": "write",
+          "start": 145.889993,
+          "end": 146.109995
+        },
+        {
+          "word": "about",
+          "start": 146.109995,
+          "end": 146.279993
+        }
+      ],
       "answers": [],
-      "end": 148.0
+      "end": 146.279993
     },
     {
       "id": 20,
-      "start": 148.1,
+      "start": 146.279993,
       "speaker": "TIM",
       "en": "Well, you'll never believe it, I think our professor must have a sense of humour. He's given us the title \"Why study history?\" JANE That's a good one. When you find the answer, let me know!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 146.279993,
+          "end": 146.499994
+        },
+        {
+          "word": "you",
+          "start": 146.499994,
+          "end": 146.620004
+        },
+        {
+          "word": "'ll",
+          "start": 146.620004,
+          "end": 146.769998
+        },
+        {
+          "word": "never",
+          "start": 146.769998,
+          "end": 147.210001
+        },
+        {
+          "word": "believe",
+          "start": 147.210001,
+          "end": 147.579996
+        },
+        {
+          "word": "it",
+          "start": 147.579996,
+          "end": 147.73999899999998
+        },
+        {
+          "word": "I",
+          "start": 148.120004,
+          "end": 148.200006
+        },
+        {
+          "word": "think",
+          "start": 148.200006,
+          "end": 148.439996
+        },
+        {
+          "word": "our",
+          "start": 148.439996,
+          "end": 148.590005
+        },
+        {
+          "word": "professor",
+          "start": 148.590005,
+          "end": 149.1
+        },
+        {
+          "word": "must",
+          "start": 149.1,
+          "end": 149.31000699999998
+        },
+        {
+          "word": "have",
+          "start": 149.31000699999998,
+          "end": 149.430002
+        },
+        {
+          "word": "a",
+          "start": 149.430002,
+          "end": 149.480005
+        },
+        {
+          "word": "sense",
+          "start": 149.480005,
+          "end": 149.790002
+        },
+        {
+          "word": "of",
+          "start": 149.790002,
+          "end": 149.879999
+        },
+        {
+          "word": "humour",
+          "start": 149.879999,
+          "end": 150.389993
+        },
+        {
+          "word": "He",
+          "start": 150.700006,
+          "end": 150.820001
+        },
+        {
+          "word": "'s",
+          "start": 150.820001,
+          "end": 150.889993
+        },
+        {
+          "word": "given",
+          "start": 150.889993,
+          "end": 151.170007
+        },
+        {
+          "word": "us",
+          "start": 151.170007,
+          "end": 151.299997
+        },
+        {
+          "word": "the",
+          "start": 151.299997,
+          "end": 151.420007
+        },
+        {
+          "word": "title",
+          "start": 151.420007,
+          "end": 151.96999499999998
+        },
+        {
+          "word": "Why",
+          "start": 152.31000699999998,
+          "end": 152.710001
+        },
+        {
+          "word": "study",
+          "start": 152.710001,
+          "end": 153.299997
+        },
+        {
+          "word": "history",
+          "start": 153.359995,
+          "end": 153.920007
+        },
+        {
+          "word": "JANE",
+          "start": 154.170007,
+          "end": 154.26000399999998
+        },
+        {
+          "word": "That",
+          "start": 154.26000399999998,
+          "end": 154.379999
+        },
+        {
+          "word": "'s",
+          "start": 154.379999,
+          "end": 154.409998
+        },
+        {
+          "word": "a",
+          "start": 154.450006,
+          "end": 154.51000399999998
+        },
+        {
+          "word": "good",
+          "start": 154.51000399999998,
+          "end": 155.189996
+        },
+        {
+          "word": "one",
+          "start": 155.189996,
+          "end": 155.460001
+        },
+        {
+          "word": "When",
+          "start": 155.670007,
+          "end": 155.779993
+        },
+        {
+          "word": "you",
+          "start": 155.779993,
+          "end": 155.859995
+        },
+        {
+          "word": "find",
+          "start": 155.859995,
+          "end": 156.070001
+        },
+        {
+          "word": "the",
+          "start": 156.070001,
+          "end": 156.129999
+        },
+        {
+          "word": "answer",
+          "start": 156.129999,
+          "end": 156.529993
+        },
+        {
+          "word": "let",
+          "start": 156.529993,
+          "end": 156.680002
+        },
+        {
+          "word": "me",
+          "start": 156.680002,
+          "end": 156.790002
+        },
+        {
+          "word": "know",
+          "start": 156.790002,
+          "end": 156.900003
+        }
+      ],
       "answers": [
         29
-      ]
+      ],
+      "end": 156.900003
     },
     {
       "id": 21,
-      "start": 157.2,
+      "start": 157.06000699999998,
       "speaker": "TIM",
       "en": "I'm going to enjoy writing it. Have you been given any writing assignments yet? JANE Yes, I've got to write about animal language.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 157.06000699999998,
+          "end": 157.320001
+        },
+        {
+          "word": "'m",
+          "start": 157.06000699999998,
+          "end": 157.320001
+        },
+        {
+          "word": "going",
+          "start": 157.320001,
+          "end": 157.460001
+        },
+        {
+          "word": "to",
+          "start": 157.460001,
+          "end": 157.529993
+        },
+        {
+          "word": "enjoy",
+          "start": 157.529993,
+          "end": 157.870004
+        },
+        {
+          "word": "writing",
+          "start": 157.870004,
+          "end": 158.450006
+        },
+        {
+          "word": "it",
+          "start": 158.480005,
+          "end": 158.609995
+        },
+        {
+          "word": "Have",
+          "start": 158.98999899999998,
+          "end": 159.139993
+        },
+        {
+          "word": "you",
+          "start": 159.139993,
+          "end": 159.230005
+        },
+        {
+          "word": "been",
+          "start": 159.230005,
+          "end": 159.379999
+        },
+        {
+          "word": "given",
+          "start": 159.379999,
+          "end": 159.609995
+        },
+        {
+          "word": "any",
+          "start": 159.609995,
+          "end": 159.909998
+        },
+        {
+          "word": "writing",
+          "start": 159.909998,
+          "end": 160.329996
+        },
+        {
+          "word": "assignments",
+          "start": 160.329996,
+          "end": 160.85
+        },
+        {
+          "word": "yet",
+          "start": 160.85,
+          "end": 161.029993
+        },
+        {
+          "word": "JANE",
+          "start": 161.400003,
+          "end": 161.529993
+        },
+        {
+          "word": "Yes",
+          "start": 161.749994,
+          "end": 161.870004
+        },
+        {
+          "word": "I",
+          "start": 161.98999899999998,
+          "end": 162.150003
+        },
+        {
+          "word": "'ve",
+          "start": 162.150003,
+          "end": 162.180002
+        },
+        {
+          "word": "got",
+          "start": 162.180002,
+          "end": 162.329996
+        },
+        {
+          "word": "to",
+          "start": 162.329996,
+          "end": 162.400003
+        },
+        {
+          "word": "write",
+          "start": 162.400003,
+          "end": 162.620004
+        },
+        {
+          "word": "about",
+          "start": 162.620004,
+          "end": 162.820001
+        },
+        {
+          "word": "animal",
+          "start": 162.820001,
+          "end": 163.120004
+        },
+        {
+          "word": "language",
+          "start": 163.120004,
+          "end": 163.73999899999998
+        }
+      ],
       "answers": [
         30
       ],
-      "end": 163.9
+      "end": 163.73999899999998
     },
     {
       "id": 22,
-      "start": 164.0,
+      "start": 163.769998,
       "speaker": "TIM",
       "en": "Hmm! That sounds a challenge. I suppose you'll be off to the zoo to do field research.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hmm",
+          "start": 163.769998,
+          "end": 164.139993
+        },
+        {
+          "word": "That",
+          "start": 164.139993,
+          "end": 164.290002
+        },
+        {
+          "word": "sounds",
+          "start": 164.290002,
+          "end": 164.549997
+        },
+        {
+          "word": "a",
+          "start": 164.549997,
+          "end": 164.6
+        },
+        {
+          "word": "challenge",
+          "start": 164.6,
+          "end": 165.040002
+        },
+        {
+          "word": "I",
+          "start": 166.21999499999998,
+          "end": 166.279993
+        },
+        {
+          "word": "suppose",
+          "start": 166.279993,
+          "end": 166.570001
+        },
+        {
+          "word": "you",
+          "start": 166.570001,
+          "end": 166.629999
+        },
+        {
+          "word": "'ll",
+          "start": 166.629999,
+          "end": 166.659998
+        },
+        {
+          "word": "be",
+          "start": 166.659998,
+          "end": 166.76000399999998
+        },
+        {
+          "word": "off",
+          "start": 166.76000399999998,
+          "end": 166.870004
+        },
+        {
+          "word": "to",
+          "start": 166.870004,
+          "end": 166.960001
+        },
+        {
+          "word": "the",
+          "start": 166.960001,
+          "end": 167.079996
+        },
+        {
+          "word": "zoo",
+          "start": 167.079996,
+          "end": 167.320001
+        },
+        {
+          "word": "to",
+          "start": 167.320001,
+          "end": 167.430002
+        },
+        {
+          "word": "do",
+          "start": 167.430002,
+          "end": 167.620004
+        },
+        {
+          "word": "field",
+          "start": 167.620004,
+          "end": 167.960001
+        },
+        {
+          "word": "research",
+          "start": 167.960001,
+          "end": 168.420007
+        }
+      ],
       "answers": [],
-      "end": 168.4
+      "end": 168.420007
     }
   ],
   "questions": [
@@ -325,5 +3358,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 602,
+    "mfa_word_count": 602,
+    "matched_word_count": 600,
+    "audio_trim_offset": 4.1,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

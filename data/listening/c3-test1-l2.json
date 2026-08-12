@@ -7,886 +7,5850 @@
   "segments": [
     {
       "id": 1,
-      "start": 0.9,
+      "start": 1.09,
       "speaker": "MRS SMITH",
       "en": "Hello, Mrs Sutton.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hello",
+          "start": 1.09,
+          "end": 1.41
+        },
+        {
+          "word": "Mrs",
+          "start": 1.41,
+          "end": 1.75
+        },
+        {
+          "word": "Sutton",
+          "start": 1.75,
+          "end": 2.21
+        }
+      ],
       "answers": [],
-      "end": 2.5
+      "end": 2.21
     },
     {
       "id": 2,
-      "start": 2.5,
+      "start": 2.47,
       "speaker": "MRS SMITH",
       "en": "Come in.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Come",
+          "start": 2.47,
+          "end": 2.61
+        },
+        {
+          "word": "in",
+          "start": 2.76,
+          "end": 2.96
+        }
+      ],
       "answers": [],
-      "end": 3.1
+      "end": 2.96
     },
     {
       "id": 3,
-      "start": 3.1,
+      "start": 2.96,
       "speaker": "MRS SMITH",
       "en": "How are you settling in next door?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "How",
+          "start": 2.96,
+          "end": 3.14
+        },
+        {
+          "word": "are",
+          "start": 3.14,
+          "end": 3.17
+        },
+        {
+          "word": "you",
+          "start": 3.17,
+          "end": 3.3
+        },
+        {
+          "word": "settling",
+          "start": 3.3,
+          "end": 3.79
+        },
+        {
+          "word": "in",
+          "start": 3.79,
+          "end": 3.91
+        },
+        {
+          "word": "next",
+          "start": 3.91,
+          "end": 4.24
+        },
+        {
+          "word": "door",
+          "start": 4.24,
+          "end": 4.37
+        }
+      ],
       "answers": [],
-      "end": 5.5
+      "end": 4.37
     },
     {
       "id": 4,
-      "start": 5.5,
+      "start": 4.37,
       "speaker": "MRS SMITH",
       "en": "Have all your things from Canada arrived yet?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Have",
+          "start": 4.37,
+          "end": 4.4
+        },
+        {
+          "word": "all",
+          "start": 4.4,
+          "end": 4.73
+        },
+        {
+          "word": "your",
+          "start": 5.58,
+          "end": 5.69
+        },
+        {
+          "word": "things",
+          "start": 5.69,
+          "end": 6.19
+        },
+        {
+          "word": "from",
+          "start": 6.19,
+          "end": 6.39
+        },
+        {
+          "word": "Canada",
+          "start": 6.39,
+          "end": 6.78
+        },
+        {
+          "word": "arrived",
+          "start": 6.78,
+          "end": 7.36
+        },
+        {
+          "word": "yet",
+          "start": 7.36,
+          "end": 7.7
+        }
+      ],
       "answers": [],
-      "end": 8.2
+      "end": 7.7
     },
     {
       "id": 5,
-      "start": 8.3,
+      "start": 8.11,
       "speaker": "MRS SMITH",
       "en": "I thought I saw a removals van outside your house yesterday afternoon.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 8.11,
+          "end": 8.21
+        },
+        {
+          "word": "thought",
+          "start": 8.21,
+          "end": 8.43
+        },
+        {
+          "word": "I",
+          "start": 8.43,
+          "end": 8.48
+        },
+        {
+          "word": "saw",
+          "start": 8.48,
+          "end": 8.6
+        },
+        {
+          "word": "a",
+          "start": 8.6,
+          "end": 8.79
+        },
+        {
+          "word": "removals",
+          "start": 8.79,
+          "end": 9.47
+        },
+        {
+          "word": "van",
+          "start": 9.47,
+          "end": 9.73
+        },
+        {
+          "word": "outside",
+          "start": 9.73,
+          "end": 10.28
+        },
+        {
+          "word": "your",
+          "start": 10.28,
+          "end": 10.43
+        },
+        {
+          "word": "house",
+          "start": 10.43,
+          "end": 10.8
+        },
+        {
+          "word": "yesterday",
+          "start": 10.8,
+          "end": 11.18
+        },
+        {
+          "word": "afternoon",
+          "start": 11.18,
+          "end": 12.06
+        }
+      ],
       "answers": [],
-      "end": 12.1
+      "end": 12.06
     },
     {
       "id": 6,
-      "start": 12.3,
+      "start": 12.24,
       "speaker": "MRS SUTTON",
       "en": "Yes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 12.24,
+          "end": 12.89
+        }
+      ],
       "answers": [],
-      "end": 12.9
+      "end": 12.89
     },
     {
       "id": 7,
-      "start": 13.0,
+      "start": 12.93,
       "speaker": "MRS SUTTON",
       "en": "They came yesterday.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "They",
+          "start": 12.93,
+          "end": 13.2
+        },
+        {
+          "word": "came",
+          "start": 13.2,
+          "end": 13.59
+        },
+        {
+          "word": "yesterday",
+          "start": 13.59,
+          "end": 14.31
+        }
+      ],
       "answers": [],
-      "end": 14.9
+      "end": 14.31
     },
     {
       "id": 8,
-      "start": 15.2,
+      "start": 14.74,
       "speaker": "MRS SUTTON",
       "en": "We spent all day yesterday arranging them.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 14.74,
+          "end": 15.03
+        },
+        {
+          "word": "spent",
+          "start": 15.03,
+          "end": 15.31
+        },
+        {
+          "word": "all",
+          "start": 15.31,
+          "end": 15.61
+        },
+        {
+          "word": "day",
+          "start": 15.61,
+          "end": 15.85
+        },
+        {
+          "word": "yesterday",
+          "start": 15.85,
+          "end": 16.440001
+        },
+        {
+          "word": "arranging",
+          "start": 16.440001,
+          "end": 17.09
+        },
+        {
+          "word": "them",
+          "start": 17.09,
+          "end": 17.34
+        }
+      ],
       "answers": [],
-      "end": 17.4
+      "end": 17.34
     },
     {
       "id": 9,
-      "start": 17.6,
+      "start": 17.879999,
       "speaker": "MRS SUTTON",
       "en": "It’s beginning to feel a bit more like home now.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 17.879999,
+          "end": 18.200001
+        },
+        {
+          "word": "'s",
+          "start": 17.879999,
+          "end": 18.200001
+        },
+        {
+          "word": "beginning",
+          "start": 18.200001,
+          "end": 18.73
+        },
+        {
+          "word": "to",
+          "start": 18.73,
+          "end": 18.809999
+        },
+        {
+          "word": "feel",
+          "start": 18.809999,
+          "end": 19.129999
+        },
+        {
+          "word": "a",
+          "start": 19.129999,
+          "end": 19.34
+        },
+        {
+          "word": "bit",
+          "start": 19.4,
+          "end": 19.59
+        },
+        {
+          "word": "more",
+          "start": 19.59,
+          "end": 19.879999
+        },
+        {
+          "word": "like",
+          "start": 19.879999,
+          "end": 20.120001
+        },
+        {
+          "word": "home",
+          "start": 20.120001,
+          "end": 20.5
+        },
+        {
+          "word": "now",
+          "start": 20.5,
+          "end": 21.120001
+        }
+      ],
       "answers": [],
-      "end": 19.9
+      "end": 21.120001
     },
     {
       "id": 10,
-      "start": 20.0,
+      "start": 21.120001,
       "speaker": "MRS SMITH",
       "en": "That’s good.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 21.120001,
+          "end": 21.299999
+        },
+        {
+          "word": "'s",
+          "start": 21.299999,
+          "end": 21.360001
+        },
+        {
+          "word": "good",
+          "start": 21.360001,
+          "end": 21.66
+        }
+      ],
       "answers": [],
-      "end": 22.2
+      "end": 21.66
     },
     {
       "id": 11,
-      "start": 22.3,
+      "start": 22.129999,
       "speaker": "MRS SMITH",
       "en": "Look, come in and sit down.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Look",
+          "start": 22.129999,
+          "end": 22.389999
+        },
+        {
+          "word": "come",
+          "start": 22.629999,
+          "end": 22.75
+        },
+        {
+          "word": "in",
+          "start": 22.780001,
+          "end": 22.889999
+        },
+        {
+          "word": "and",
+          "start": 22.889999,
+          "end": 23.0
+        },
+        {
+          "word": "sit",
+          "start": 23.0,
+          "end": 23.25
+        },
+        {
+          "word": "down",
+          "start": 23.25,
+          "end": 23.66
+        }
+      ],
       "answers": [],
-      "end": 23.7
+      "end": 23.66
     },
     {
       "id": 12,
-      "start": 24.1,
+      "start": 24.17,
       "speaker": "MRS SMITH",
       "en": "Are you alright?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Are",
+          "start": 24.17,
+          "end": 24.23
+        },
+        {
+          "word": "you",
+          "start": 24.23,
+          "end": 24.33
+        },
+        {
+          "word": "alright",
+          "start": 24.33,
+          "end": 25.139999
+        }
+      ],
       "answers": [],
-      "end": 25.2
+      "end": 25.139999
     },
     {
       "id": 13,
-      "start": 26.0,
+      "start": 25.799999,
       "speaker": "MRS SMITH",
       "en": "You look a bit worried.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 25.799999,
+          "end": 25.91
+        },
+        {
+          "word": "look",
+          "start": 25.91,
+          "end": 26.07
+        },
+        {
+          "word": "a",
+          "start": 26.07,
+          "end": 26.110001
+        },
+        {
+          "word": "bit",
+          "start": 26.110001,
+          "end": 26.280001
+        },
+        {
+          "word": "worried",
+          "start": 26.280001,
+          "end": 26.82
+        }
+      ],
       "answers": [],
-      "end": 26.6
+      "end": 26.82
     },
     {
       "id": 14,
-      "start": 26.7,
+      "start": 27.219999,
       "speaker": "MRS SUTTON",
       "en": "Well, I am a bit.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 27.219999,
+          "end": 27.59
+        },
+        {
+          "word": "I",
+          "start": 27.59,
+          "end": 27.799999
+        },
+        {
+          "word": "am",
+          "start": 27.799999,
+          "end": 28.1
+        },
+        {
+          "word": "a",
+          "start": 28.1,
+          "end": 28.16
+        },
+        {
+          "word": "bit",
+          "start": 28.16,
+          "end": 28.58
+        }
+      ],
       "answers": [],
-      "end": 29.4
+      "end": 28.58
     },
     {
       "id": 15,
-      "start": 30.9,
+      "start": 29.23,
       "speaker": "MRS SUTTON",
       "en": "I’m sorry to bother you so early, Mrs Smith, but I wonder if you could help me.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "I",
+          "start": 29.23,
+          "end": 29.459999
+        },
+        {
+          "word": "'m",
+          "start": 29.23,
+          "end": 29.459999
+        },
+        {
+          "word": "sorry",
+          "start": 29.459999,
+          "end": 29.84
+        },
+        {
+          "word": "to",
+          "start": 29.84,
+          "end": 29.879999
+        },
+        {
+          "word": "bother",
+          "start": 29.879999,
+          "end": 30.24
+        },
+        {
+          "word": "you",
+          "start": 30.24,
+          "end": 30.389999
+        },
+        {
+          "word": "so",
+          "start": 30.389999,
+          "end": 30.59
+        },
+        {
+          "word": "early",
+          "start": 30.639999,
+          "end": 30.969999
+        },
+        {
+          "word": "Mrs",
+          "start": 30.969999,
+          "end": 31.32
+        },
+        {
+          "word": "Smith",
+          "start": 31.32,
+          "end": 31.629999
+        },
+        {
+          "word": "but",
+          "start": 31.629999,
+          "end": 31.83
+        },
+        {
+          "word": "I",
+          "start": 32.299999,
+          "end": 32.509998
+        },
+        {
+          "word": "wonder",
+          "start": 32.509998,
+          "end": 32.830002
+        },
+        {
+          "word": "if",
+          "start": 32.830002,
+          "end": 33.119999
+        },
+        {
+          "word": "you",
+          "start": 33.119999,
+          "end": 33.189999
+        },
+        {
+          "word": "could",
+          "start": 33.189999,
+          "end": 33.330002
+        },
+        {
+          "word": "help",
+          "start": 33.330002,
+          "end": 33.700001
+        },
+        {
+          "word": "me",
+          "start": 33.700001,
+          "end": 33.950001
+        }
+      ],
+      "answers": [],
+      "end": 33.950001
     },
     {
       "id": 16,
-      "start": 35.0,
+      "start": 34.529999,
       "speaker": "MRS SUTTON",
       "en": "Could you tell me how I can get hold of a doctor?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Could",
+          "start": 34.529999,
+          "end": 34.77
+        },
+        {
+          "word": "you",
+          "start": 34.77,
+          "end": 34.869999
+        },
+        {
+          "word": "tell",
+          "start": 34.869999,
+          "end": 35.139999
+        },
+        {
+          "word": "me",
+          "start": 35.139999,
+          "end": 35.450001
+        },
+        {
+          "word": "how",
+          "start": 35.529999,
+          "end": 35.82
+        },
+        {
+          "word": "I",
+          "start": 35.82,
+          "end": 35.950001
+        },
+        {
+          "word": "can",
+          "start": 35.950001,
+          "end": 36.080002
+        },
+        {
+          "word": "get",
+          "start": 36.080002,
+          "end": 36.23
+        },
+        {
+          "word": "hold",
+          "start": 36.23,
+          "end": 36.540001
+        },
+        {
+          "word": "of",
+          "start": 36.540001,
+          "end": 36.630001
+        },
+        {
+          "word": "a",
+          "start": 36.630001,
+          "end": 36.669998
+        },
+        {
+          "word": "doctor",
+          "start": 36.669998,
+          "end": 37.330002
+        }
+      ],
       "answers": [],
-      "end": 37.4
+      "end": 37.330002
     },
     {
       "id": 17,
-      "start": 38.2,
+      "start": 38.009998,
       "speaker": "MRS SUTTON",
       "en": "Our daughter, Anna, isn’t very well this morning and I may have to call somebody out.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Our",
+          "start": 38.009998,
+          "end": 38.200001
+        },
+        {
+          "word": "daughter",
+          "start": 38.200001,
+          "end": 38.889999
+        },
+        {
+          "word": "Anna",
+          "start": 38.98,
+          "end": 39.560001
+        },
+        {
+          "word": "is",
+          "start": 39.720001,
+          "end": 40.009998
+        },
+        {
+          "word": "n't",
+          "start": 39.720001,
+          "end": 40.009998
+        },
+        {
+          "word": "very",
+          "start": 40.009998,
+          "end": 40.259998
+        },
+        {
+          "word": "well",
+          "start": 40.259998,
+          "end": 40.549999
+        },
+        {
+          "word": "this",
+          "start": 40.549999,
+          "end": 40.75
+        },
+        {
+          "word": "morning",
+          "start": 40.75,
+          "end": 41.349998
+        },
+        {
+          "word": "and",
+          "start": 41.490002,
+          "end": 41.580002
+        },
+        {
+          "word": "I",
+          "start": 41.580002,
+          "end": 41.650002
+        },
+        {
+          "word": "may",
+          "start": 41.650002,
+          "end": 41.799999
+        },
+        {
+          "word": "have",
+          "start": 41.799999,
+          "end": 42.009998
+        },
+        {
+          "word": "to",
+          "start": 42.009998,
+          "end": 42.09
+        },
+        {
+          "word": "call",
+          "start": 42.09,
+          "end": 42.349998
+        },
+        {
+          "word": "somebody",
+          "start": 42.349998,
+          "end": 42.77
+        },
+        {
+          "word": "out",
+          "start": 42.77,
+          "end": 43.139999
+        }
+      ],
       "answers": [
         18
       ],
-      "end": 44.0
+      "end": 43.139999
     },
     {
       "id": 18,
-      "start": 44.1,
+      "start": 43.830002,
       "speaker": "MRS SUTTON",
       "en": "She keeps being sick and I am beginning to get a bit worried.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "She",
+          "start": 43.830002,
+          "end": 44.049999
+        },
+        {
+          "word": "keeps",
+          "start": 44.049999,
+          "end": 44.369999
+        },
+        {
+          "word": "being",
+          "start": 44.369999,
+          "end": 44.66
+        },
+        {
+          "word": "sick",
+          "start": 44.66,
+          "end": 45.189999
+        },
+        {
+          "word": "and",
+          "start": 45.189999,
+          "end": 45.48
+        },
+        {
+          "word": "I",
+          "start": 46.23,
+          "end": 46.34
+        },
+        {
+          "word": "am",
+          "start": 46.34,
+          "end": 46.599998
+        },
+        {
+          "word": "beginning",
+          "start": 46.599998,
+          "end": 46.93
+        },
+        {
+          "word": "to",
+          "start": 46.93,
+          "end": 47.0
+        },
+        {
+          "word": "get",
+          "start": 47.0,
+          "end": 47.16
+        },
+        {
+          "word": "a",
+          "start": 47.16,
+          "end": 47.200001
+        },
+        {
+          "word": "bit",
+          "start": 47.200001,
+          "end": 47.389999
+        },
+        {
+          "word": "worried",
+          "start": 47.389999,
+          "end": 47.849998
+        }
+      ],
       "answers": [
         11
       ],
-      "end": 48.6
+      "end": 47.849998
     },
     {
       "id": 19,
-      "start": 48.8,
+      "start": 48.52,
       "speaker": "MRS SUTTON",
       "en": "I just don’t know how the health system works here in England.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 48.52,
+          "end": 48.689999
+        },
+        {
+          "word": "just",
+          "start": 48.689999,
+          "end": 48.869999
+        },
+        {
+          "word": "do",
+          "start": 48.869999,
+          "end": 49.09
+        },
+        {
+          "word": "n't",
+          "start": 48.869999,
+          "end": 49.09
+        },
+        {
+          "word": "know",
+          "start": 49.09,
+          "end": 49.43
+        },
+        {
+          "word": "how",
+          "start": 49.459999,
+          "end": 49.73
+        },
+        {
+          "word": "the",
+          "start": 49.73,
+          "end": 49.810001
+        },
+        {
+          "word": "health",
+          "start": 49.810001,
+          "end": 50.099998
+        },
+        {
+          "word": "system",
+          "start": 50.099998,
+          "end": 50.540001
+        },
+        {
+          "word": "works",
+          "start": 50.540001,
+          "end": 50.860001
+        },
+        {
+          "word": "here",
+          "start": 50.860001,
+          "end": 51.130001
+        },
+        {
+          "word": "in",
+          "start": 51.130001,
+          "end": 51.23
+        },
+        {
+          "word": "England",
+          "start": 51.23,
+          "end": 51.709999
+        }
+      ],
       "answers": [],
-      "end": 51.8
+      "end": 51.709999
     },
     {
       "id": 20,
-      "start": 52.3,
+      "start": 52.299999,
       "speaker": "MRS SUTTON",
       "en": "All I know is that it’s very different from ours back in Canada.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 52.299999,
+          "end": 52.540001
+        },
+        {
+          "word": "I",
+          "start": 52.540001,
+          "end": 52.700001
+        },
+        {
+          "word": "know",
+          "start": 52.700001,
+          "end": 52.970001
+        },
+        {
+          "word": "is",
+          "start": 52.970001,
+          "end": 53.16
+        },
+        {
+          "word": "that",
+          "start": 53.16,
+          "end": 53.279999
+        },
+        {
+          "word": "it",
+          "start": 53.279999,
+          "end": 53.450001
+        },
+        {
+          "word": "'s",
+          "start": 53.279999,
+          "end": 53.450001
+        },
+        {
+          "word": "very",
+          "start": 53.450001,
+          "end": 53.779999
+        },
+        {
+          "word": "different",
+          "start": 53.779999,
+          "end": 54.18
+        },
+        {
+          "word": "from",
+          "start": 54.18,
+          "end": 54.369999
+        },
+        {
+          "word": "ours",
+          "start": 54.369999,
+          "end": 54.77
+        },
+        {
+          "word": "back",
+          "start": 54.77,
+          "end": 55.049999
+        },
+        {
+          "word": "in",
+          "start": 55.049999,
+          "end": 55.139999
+        },
+        {
+          "word": "Canada",
+          "start": 55.139999,
+          "end": 55.73
+        }
+      ],
       "answers": [],
-      "end": 56.5
+      "end": 55.73
     },
     {
       "id": 21,
-      "start": 56.7,
+      "start": 56.43,
       "speaker": "MRS SMITH",
       "en": "Well, I don’t know really where to start.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 56.43,
+          "end": 57.080002
+        },
+        {
+          "word": "I",
+          "start": 57.48,
+          "end": 57.779999
+        },
+        {
+          "word": "do",
+          "start": 57.779999,
+          "end": 57.900002
+        },
+        {
+          "word": "n't",
+          "start": 57.779999,
+          "end": 57.900002
+        },
+        {
+          "word": "know",
+          "start": 57.900002,
+          "end": 58.110001
+        },
+        {
+          "word": "really",
+          "start": 58.110001,
+          "end": 58.41
+        },
+        {
+          "word": "where",
+          "start": 58.41,
+          "end": 58.560001
+        },
+        {
+          "word": "to",
+          "start": 58.560001,
+          "end": 58.700001
+        },
+        {
+          "word": "start",
+          "start": 58.700001,
+          "end": 59.919998
+        }
+      ],
       "answers": [],
-      "end": 60.2
+      "end": 59.919998
     },
     {
       "id": 22,
-      "start": 60.2,
+      "start": 59.919998,
       "speaker": "MRS SMITH",
       "en": "Let me think.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Let",
+          "start": 59.919998,
+          "end": 60.130001
+        },
+        {
+          "word": "me",
+          "start": 60.130001,
+          "end": 60.23
+        },
+        {
+          "word": "think",
+          "start": 60.23,
+          "end": 60.900002
+        }
+      ],
       "answers": [],
-      "end": 60.9
+      "end": 60.900002
     },
     {
       "id": 23,
-      "start": 62.4,
+      "start": 62.18,
       "speaker": "MRS SMITH",
       "en": "Well, the first thing you have to do is find a family doctor - sometimes we call them general Tipescripts practitioners as well - and register with him or her.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 62.18,
+          "end": 62.529999
+        },
+        {
+          "word": "the",
+          "start": 62.810001,
+          "end": 62.939999
+        },
+        {
+          "word": "first",
+          "start": 62.939999,
+          "end": 63.400002
+        },
+        {
+          "word": "thing",
+          "start": 63.400002,
+          "end": 63.580002
+        },
+        {
+          "word": "you",
+          "start": 63.580002,
+          "end": 63.689999
+        },
+        {
+          "word": "have",
+          "start": 63.689999,
+          "end": 63.84
+        },
+        {
+          "word": "to",
+          "start": 63.84,
+          "end": 63.950001
+        },
+        {
+          "word": "do",
+          "start": 63.950001,
+          "end": 64.32
+        },
+        {
+          "word": "is",
+          "start": 64.349998,
+          "end": 64.559998
+        },
+        {
+          "word": "find",
+          "start": 64.559998,
+          "end": 64.900002
+        },
+        {
+          "word": "a",
+          "start": 64.900002,
+          "end": 64.940002
+        },
+        {
+          "word": "family",
+          "start": 64.940002,
+          "end": 65.559998
+        },
+        {
+          "word": "doctor",
+          "start": 65.559998,
+          "end": 66.099998
+        },
+        {
+          "word": "sometimes",
+          "start": 66.959999,
+          "end": 67.559998
+        },
+        {
+          "word": "we",
+          "start": 67.559998,
+          "end": 67.639999
+        },
+        {
+          "word": "call",
+          "start": 67.639999,
+          "end": 67.919998
+        },
+        {
+          "word": "them",
+          "start": 67.919998,
+          "end": 68.279999
+        },
+        {
+          "word": "general",
+          "start": 68.279999,
+          "end": 68.800003
+        },
+        {
+          "word": "Tipescripts",
+          "start": 68.800003,
+          "end": 69.080002
+        },
+        {
+          "word": "practitioners",
+          "start": 69.080002,
+          "end": 69.730003
+        },
+        {
+          "word": "as",
+          "start": 69.730003,
+          "end": 69.870003
+        },
+        {
+          "word": "well",
+          "start": 69.870003,
+          "end": 70.230003
+        },
+        {
+          "word": "and",
+          "start": 71.0,
+          "end": 71.300003
+        },
+        {
+          "word": "register",
+          "start": 71.349998,
+          "end": 72.059998
+        },
+        {
+          "word": "with",
+          "start": 72.089996,
+          "end": 72.279999
+        },
+        {
+          "word": "him",
+          "start": 72.279999,
+          "end": 72.830002
+        },
+        {
+          "word": "or",
+          "start": 72.860001,
+          "end": 73.059998
+        },
+        {
+          "word": "her",
+          "start": 73.059998,
+          "end": 73.480003
+        }
+      ],
       "answers": [],
-      "end": 73.6
+      "end": 73.480003
     },
     {
       "id": 24,
-      "start": 74.1,
+      "start": 74.099998,
       "speaker": "MRS SMITH",
       "en": "If you live here, you’ve got to be on a doctor’s list.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 74.099998,
+          "end": 74.290001
+        },
+        {
+          "word": "you",
+          "start": 74.290001,
+          "end": 74.400002
+        },
+        {
+          "word": "live",
+          "start": 74.400002,
+          "end": 74.620003
+        },
+        {
+          "word": "here",
+          "start": 74.620003,
+          "end": 75.0
+        },
+        {
+          "word": "you",
+          "start": 75.190002,
+          "end": 75.410004
+        },
+        {
+          "word": "'ve",
+          "start": 75.190002,
+          "end": 75.410004
+        },
+        {
+          "word": "got",
+          "start": 75.410004,
+          "end": 75.620003
+        },
+        {
+          "word": "to",
+          "start": 75.620003,
+          "end": 75.730003
+        },
+        {
+          "word": "be",
+          "start": 75.730003,
+          "end": 75.839996
+        },
+        {
+          "word": "on",
+          "start": 75.839996,
+          "end": 75.949997
+        },
+        {
+          "word": "a",
+          "start": 75.949997,
+          "end": 76.010002
+        },
+        {
+          "word": "doctor",
+          "start": 76.010002,
+          "end": 76.489998
+        },
+        {
+          "word": "'s",
+          "start": 76.010002,
+          "end": 76.489998
+        },
+        {
+          "word": "list",
+          "start": 76.489998,
+          "end": 77.080002
+        }
+      ],
       "answers": [],
-      "end": 77.0
+      "end": 77.080002
     },
     {
       "id": 25,
-      "start": 77.1,
+      "start": 77.790001,
       "speaker": "MRS SMITH",
       "en": "If you’re not, things can be a bit difficult.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 77.790001,
+          "end": 77.949997
+        },
+        {
+          "word": "you",
+          "start": 77.949997,
+          "end": 78.029999
+        },
+        {
+          "word": "'re",
+          "start": 77.949997,
+          "end": 78.029999
+        },
+        {
+          "word": "not",
+          "start": 78.029999,
+          "end": 78.470001
+        },
+        {
+          "word": "things",
+          "start": 78.470001,
+          "end": 78.980003
+        },
+        {
+          "word": "can",
+          "start": 78.980003,
+          "end": 79.260002
+        },
+        {
+          "word": "be",
+          "start": 79.260002,
+          "end": 79.470001
+        },
+        {
+          "word": "a",
+          "start": 79.470001,
+          "end": 79.589996
+        },
+        {
+          "word": "bit",
+          "start": 79.589996,
+          "end": 79.830002
+        },
+        {
+          "word": "difficult",
+          "start": 79.830002,
+          "end": 80.57
+        }
+      ],
       "answers": [],
-      "end": 81.2
+      "end": 80.57
     },
     {
       "id": 26,
-      "start": 81.2,
+      "start": 81.110001,
       "speaker": "MRS SMITH",
       "en": "Nobody will come out to you if you’re not registered.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Nobody",
+          "start": 81.110001,
+          "end": 81.510002
+        },
+        {
+          "word": "will",
+          "start": 81.510002,
+          "end": 81.629997
+        },
+        {
+          "word": "come",
+          "start": 81.629997,
+          "end": 81.82
+        },
+        {
+          "word": "out",
+          "start": 81.82,
+          "end": 82.040001
+        },
+        {
+          "word": "to",
+          "start": 82.040001,
+          "end": 82.160004
+        },
+        {
+          "word": "you",
+          "start": 82.160004,
+          "end": 82.300003
+        },
+        {
+          "word": "if",
+          "start": 82.300003,
+          "end": 82.470001
+        },
+        {
+          "word": "you",
+          "start": 82.470001,
+          "end": 82.580002
+        },
+        {
+          "word": "'re",
+          "start": 82.470001,
+          "end": 82.580002
+        },
+        {
+          "word": "not",
+          "start": 82.580002,
+          "end": 82.769997
+        },
+        {
+          "word": "registered",
+          "start": 82.769997,
+          "end": 83.529999
+        }
+      ],
       "answers": [],
-      "end": 84.1
+      "end": 83.529999
     },
     {
       "id": 27,
-      "start": 84.4,
+      "start": 84.190002,
       "speaker": "MRS SMITH",
       "en": "Anyway, they work in things called practices.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Anyway",
+          "start": 84.190002,
+          "end": 84.639999
+        },
+        {
+          "word": "they",
+          "start": 84.889999,
+          "end": 84.970001
+        },
+        {
+          "word": "work",
+          "start": 84.970001,
+          "end": 85.339996
+        },
+        {
+          "word": "in",
+          "start": 85.339996,
+          "end": 85.470001
+        },
+        {
+          "word": "things",
+          "start": 85.470001,
+          "end": 85.809998
+        },
+        {
+          "word": "called",
+          "start": 85.809998,
+          "end": 86.190002
+        },
+        {
+          "word": "practices",
+          "start": 86.190002,
+          "end": 87.440002
+        }
+      ],
       "answers": [],
-      "end": 87.7
+      "end": 87.440002
     },
     {
       "id": 28,
-      "start": 88.2,
+      "start": 87.879997,
       "speaker": "MRS SMITH",
       "en": "Sort of small groups of family doctors all working together in the same building.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sort",
+          "start": 87.879997,
+          "end": 88.239998
+        },
+        {
+          "word": "of",
+          "start": 88.239998,
+          "end": 88.540001
+        },
+        {
+          "word": "small",
+          "start": 88.540001,
+          "end": 89.099998
+        },
+        {
+          "word": "groups",
+          "start": 89.099998,
+          "end": 89.629997
+        },
+        {
+          "word": "of",
+          "start": 89.629997,
+          "end": 89.709999
+        },
+        {
+          "word": "family",
+          "start": 89.709999,
+          "end": 90.110001
+        },
+        {
+          "word": "doctors",
+          "start": 90.110001,
+          "end": 90.529999
+        },
+        {
+          "word": "all",
+          "start": 90.529999,
+          "end": 90.82
+        },
+        {
+          "word": "working",
+          "start": 90.82,
+          "end": 91.300003
+        },
+        {
+          "word": "together",
+          "start": 91.300003,
+          "end": 91.709999
+        },
+        {
+          "word": "in",
+          "start": 91.709999,
+          "end": 91.82
+        },
+        {
+          "word": "the",
+          "start": 91.82,
+          "end": 91.889999
+        },
+        {
+          "word": "same",
+          "start": 91.889999,
+          "end": 92.379997
+        },
+        {
+          "word": "building",
+          "start": 92.379997,
+          "end": 93.0
+        }
+      ],
       "answers": [
         12
       ],
-      "end": 93.2
+      "end": 93.0
     },
     {
       "id": 29,
-      "start": 93.7,
+      "start": 93.550003,
       "speaker": "MRS SMITH",
       "en": "Now what you’ve got to do this morning is register with one of them.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 93.550003,
+          "end": 93.809998
+        },
+        {
+          "word": "what",
+          "start": 93.839996,
+          "end": 94.07
+        },
+        {
+          "word": "you",
+          "start": 94.07,
+          "end": 94.190002
+        },
+        {
+          "word": "'ve",
+          "start": 94.07,
+          "end": 94.190002
+        },
+        {
+          "word": "got",
+          "start": 94.190002,
+          "end": 94.389999
+        },
+        {
+          "word": "to",
+          "start": 94.389999,
+          "end": 94.480003
+        },
+        {
+          "word": "do",
+          "start": 94.480003,
+          "end": 94.629997
+        },
+        {
+          "word": "this",
+          "start": 94.629997,
+          "end": 94.830002
+        },
+        {
+          "word": "morning",
+          "start": 94.830002,
+          "end": 95.230003
+        },
+        {
+          "word": "is",
+          "start": 95.510002,
+          "end": 95.709999
+        },
+        {
+          "word": "register",
+          "start": 95.739998,
+          "end": 96.440002
+        },
+        {
+          "word": "with",
+          "start": 96.440002,
+          "end": 96.629997
+        },
+        {
+          "word": "one",
+          "start": 96.629997,
+          "end": 96.779999
+        },
+        {
+          "word": "of",
+          "start": 96.779999,
+          "end": 96.93
+        },
+        {
+          "word": "them",
+          "start": 96.93,
+          "end": 97.209999
+        }
+      ],
       "answers": [],
-      "end": 98.1
+      "end": 97.209999
     },
     {
       "id": 30,
-      "start": 98.2,
+      "start": 98.110001,
       "speaker": "MRS SMITH",
       "en": "There are two practices near here, so we’re quite well off for doctors in this part of Manchester.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "There",
+          "start": 98.110001,
+          "end": 98.260002
+        },
+        {
+          "word": "are",
+          "start": 98.260002,
+          "end": 98.339996
+        },
+        {
+          "word": "two",
+          "start": 98.339996,
+          "end": 98.730003
+        },
+        {
+          "word": "practices",
+          "start": 98.760002,
+          "end": 99.540001
+        },
+        {
+          "word": "near",
+          "start": 99.599998,
+          "end": 99.970001
+        },
+        {
+          "word": "here",
+          "start": 99.970001,
+          "end": 100.169998
+        },
+        {
+          "word": "so",
+          "start": 100.169998,
+          "end": 100.529999
+        },
+        {
+          "word": "we",
+          "start": 100.529999,
+          "end": 100.779999
+        },
+        {
+          "word": "'re",
+          "start": 100.529999,
+          "end": 100.779999
+        },
+        {
+          "word": "quite",
+          "start": 100.779999,
+          "end": 101.120003
+        },
+        {
+          "word": "well",
+          "start": 101.120003,
+          "end": 101.300003
+        },
+        {
+          "word": "off",
+          "start": 101.300003,
+          "end": 101.470001
+        },
+        {
+          "word": "for",
+          "start": 101.470001,
+          "end": 101.550003
+        },
+        {
+          "word": "doctors",
+          "start": 101.550003,
+          "end": 102.0
+        },
+        {
+          "word": "in",
+          "start": 102.0,
+          "end": 102.099998
+        },
+        {
+          "word": "this",
+          "start": 102.099998,
+          "end": 102.25
+        },
+        {
+          "word": "part",
+          "start": 102.25,
+          "end": 102.540001
+        },
+        {
+          "word": "of",
+          "start": 102.540001,
+          "end": 102.599998
+        },
+        {
+          "word": "Manchester",
+          "start": 102.599998,
+          "end": 103.330002
+        }
+      ],
       "answers": [],
-      "end": 103.4
+      "end": 103.330002
     },
     {
       "id": 31,
-      "start": 104.4,
+      "start": 103.919998,
       "speaker": "MRS SMITH",
       "en": "There’s the Dean End Health Centre about ten minutes’ walk away and there’s another practice in South Hay.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "There",
+          "start": 103.919998,
+          "end": 104.089996
+        },
+        {
+          "word": "'s",
+          "start": 104.089996,
+          "end": 104.269997
+        },
+        {
+          "word": "the",
+          "start": 104.32,
+          "end": 104.480003
+        },
+        {
+          "word": "Dean",
+          "start": 104.480003,
+          "end": 104.809998
+        },
+        {
+          "word": "End",
+          "start": 104.809998,
+          "end": 105.099998
+        },
+        {
+          "word": "Health",
+          "start": 105.099998,
+          "end": 105.339996
+        },
+        {
+          "word": "Centre",
+          "start": 105.339996,
+          "end": 105.910004
+        },
+        {
+          "word": "about",
+          "start": 106.019997,
+          "end": 106.529999
+        },
+        {
+          "word": "ten",
+          "start": 106.730003,
+          "end": 107.190002
+        },
+        {
+          "word": "minutes",
+          "start": 107.449997,
+          "end": 108.040001
+        },
+        {
+          "word": "walk",
+          "start": 108.040001,
+          "end": 108.349998
+        },
+        {
+          "word": "away",
+          "start": 108.349998,
+          "end": 108.639999
+        },
+        {
+          "word": "and",
+          "start": 109.260002,
+          "end": 109.650002
+        },
+        {
+          "word": "there",
+          "start": 109.650002,
+          "end": 109.769997
+        },
+        {
+          "word": "'s",
+          "start": 109.769997,
+          "end": 109.870003
+        },
+        {
+          "word": "another",
+          "start": 109.870003,
+          "end": 110.199997
+        },
+        {
+          "word": "practice",
+          "start": 110.199997,
+          "end": 110.620003
+        },
+        {
+          "word": "in",
+          "start": 110.620003,
+          "end": 110.730003
+        },
+        {
+          "word": "South",
+          "start": 110.730003,
+          "end": 111.139999
+        },
+        {
+          "word": "Hay",
+          "start": 111.139999,
+          "end": 111.629997
+        }
+      ],
       "answers": [],
-      "end": 110.5
+      "end": 111.629997
     },
     {
       "id": 32,
-      "start": 110.6,
+      "start": 112.489998,
       "speaker": "MRS SMITH",
       "en": "That’s about five minutes away going towards the town centre.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 112.489998,
+          "end": 112.839996
+        },
+        {
+          "word": "'s",
+          "start": 112.839996,
+          "end": 112.900002
+        },
+        {
+          "word": "about",
+          "start": 112.900002,
+          "end": 113.389999
+        },
+        {
+          "word": "five",
+          "start": 113.389999,
+          "end": 114.099998
+        },
+        {
+          "word": "minutes",
+          "start": 114.099998,
+          "end": 114.510002
+        },
+        {
+          "word": "away",
+          "start": 114.510002,
+          "end": 114.870003
+        },
+        {
+          "word": "going",
+          "start": 114.870003,
+          "end": 115.220001
+        },
+        {
+          "word": "towards",
+          "start": 115.220001,
+          "end": 115.739998
+        },
+        {
+          "word": "the",
+          "start": 115.739998,
+          "end": 115.849998
+        },
+        {
+          "word": "town",
+          "start": 115.849998,
+          "end": 116.150002
+        },
+        {
+          "word": "centre",
+          "start": 116.150002,
+          "end": 116.790001
+        }
+      ],
       "answers": [],
-      "end": 116.8
+      "end": 116.790001
     },
     {
       "id": 33,
-      "start": 116.8,
+      "start": 117.459999,
       "speaker": "MRS SMITH",
       "en": "We’re registered at the Dean End one, but they’re both OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 117.459999,
+          "end": 117.860001
+        },
+        {
+          "word": "'re",
+          "start": 117.459999,
+          "end": 117.860001
+        },
+        {
+          "word": "registered",
+          "start": 117.860001,
+          "end": 118.449997
+        },
+        {
+          "word": "at",
+          "start": 118.510002,
+          "end": 118.699997
+        },
+        {
+          "word": "the",
+          "start": 118.699997,
+          "end": 118.989998
+        },
+        {
+          "word": "Dean",
+          "start": 118.989998,
+          "end": 119.32
+        },
+        {
+          "word": "End",
+          "start": 119.32,
+          "end": 119.68
+        },
+        {
+          "word": "one",
+          "start": 119.68,
+          "end": 120.040001
+        },
+        {
+          "word": "but",
+          "start": 120.449997,
+          "end": 120.760002
+        },
+        {
+          "word": "they",
+          "start": 120.889999,
+          "end": 121.190002
+        },
+        {
+          "word": "'re",
+          "start": 120.889999,
+          "end": 121.190002
+        },
+        {
+          "word": "both",
+          "start": 121.190002,
+          "end": 121.459999
+        },
+        {
+          "word": "OK",
+          "start": 121.459999,
+          "end": 122.139999
+        }
+      ],
       "answers": [],
-      "end": 122.0
+      "end": 122.139999
     },
     {
       "id": 34,
-      "start": 123.1,
+      "start": 122.900002,
       "speaker": "MRS SMITH",
       "en": "There are about six doctors in our practice and four in the other.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "There",
+          "start": 122.900002,
+          "end": 123.129997
+        },
+        {
+          "word": "are",
+          "start": 123.129997,
+          "end": 123.230003
+        },
+        {
+          "word": "about",
+          "start": 123.230003,
+          "end": 123.699997
+        },
+        {
+          "word": "six",
+          "start": 123.699997,
+          "end": 124.129997
+        },
+        {
+          "word": "doctors",
+          "start": 124.129997,
+          "end": 124.769997
+        },
+        {
+          "word": "in",
+          "start": 124.769997,
+          "end": 124.879997
+        },
+        {
+          "word": "our",
+          "start": 124.879997,
+          "end": 125.099998
+        },
+        {
+          "word": "practice",
+          "start": 125.099998,
+          "end": 125.779999
+        },
+        {
+          "word": "and",
+          "start": 125.779999,
+          "end": 125.959999
+        },
+        {
+          "word": "four",
+          "start": 125.959999,
+          "end": 126.269997
+        },
+        {
+          "word": "in",
+          "start": 126.269997,
+          "end": 126.370003
+        },
+        {
+          "word": "the",
+          "start": 126.370003,
+          "end": 126.489998
+        },
+        {
+          "word": "other",
+          "start": 126.489998,
+          "end": 126.910004
+        }
+      ],
       "answers": [
         13
       ],
-      "end": 127.0
+      "end": 126.910004
     },
     {
       "id": 35,
-      "start": 127.2,
+      "start": 127.360001,
       "speaker": "MRS SMITH",
       "en": "So ours is quite big in comparison.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 127.360001,
+          "end": 127.650002
+        },
+        {
+          "word": "ours",
+          "start": 127.650002,
+          "end": 128.179993
+        },
+        {
+          "word": "is",
+          "start": 128.289993,
+          "end": 128.649994
+        },
+        {
+          "word": "quite",
+          "start": 128.820007,
+          "end": 129.229996
+        },
+        {
+          "word": "big",
+          "start": 129.229996,
+          "end": 129.509995
+        },
+        {
+          "word": "in",
+          "start": 129.509995,
+          "end": 129.619995
+        },
+        {
+          "word": "comparison",
+          "start": 129.619995,
+          "end": 130.429993
+        }
+      ],
       "answers": [],
-      "end": 131.2
+      "end": 130.429993
     },
     {
       "id": 36,
-      "start": 131.3,
+      "start": 130.929993,
       "speaker": "MRS SMITH",
       "en": "And the building and everything’s a bit more modern.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 130.929993,
+          "end": 131.029999
+        },
+        {
+          "word": "the",
+          "start": 131.029999,
+          "end": 131.110001
+        },
+        {
+          "word": "building",
+          "start": 131.110001,
+          "end": 131.589996
+        },
+        {
+          "word": "and",
+          "start": 131.589996,
+          "end": 131.690002
+        },
+        {
+          "word": "everything",
+          "start": 131.690002,
+          "end": 132.080002
+        },
+        {
+          "word": "'s",
+          "start": 132.080002,
+          "end": 132.130005
+        },
+        {
+          "word": "a",
+          "start": 132.130005,
+          "end": 132.179993
+        },
+        {
+          "word": "bit",
+          "start": 132.179993,
+          "end": 132.410004
+        },
+        {
+          "word": "more",
+          "start": 132.410004,
+          "end": 132.960007
+        },
+        {
+          "word": "modern",
+          "start": 132.960007,
+          "end": 133.559998
+        }
+      ],
       "answers": [
         14
       ],
-      "end": 134.2
+      "end": 133.559998
     },
     {
       "id": 37,
-      "start": 134.3,
+      "start": 134.089996,
       "speaker": "MRS SMITH",
       "en": "South Hay is a bit old-fashioned but the doctors are OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "South",
+          "start": 134.089996,
+          "end": 134.460007
+        },
+        {
+          "word": "Hay",
+          "start": 134.460007,
+          "end": 134.809998
+        },
+        {
+          "word": "is",
+          "start": 134.809998,
+          "end": 135.029999
+        },
+        {
+          "word": "a",
+          "start": 135.029999,
+          "end": 135.089996
+        },
+        {
+          "word": "bit",
+          "start": 135.089996,
+          "end": 135.369995
+        },
+        {
+          "word": "old",
+          "start": 135.509995,
+          "end": 135.779999
+        },
+        {
+          "word": "fashioned",
+          "start": 135.779999,
+          "end": 136.570007
+        },
+        {
+          "word": "but",
+          "start": 136.889999,
+          "end": 137.050003
+        },
+        {
+          "word": "the",
+          "start": 137.050003,
+          "end": 137.110001
+        },
+        {
+          "word": "doctors",
+          "start": 137.110001,
+          "end": 137.559998
+        },
+        {
+          "word": "are",
+          "start": 137.559998,
+          "end": 137.729996
+        },
+        {
+          "word": "OK",
+          "start": 137.729996,
+          "end": 138.199997
+        }
+      ],
       "answers": [],
-      "end": 138.8
+      "end": 138.199997
     },
     {
       "id": 38,
-      "start": 138.9,
+      "start": 138.770004,
       "speaker": "MRS SMITH",
       "en": "Their only problem is that they don’t have a proper appointment system.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Their",
+          "start": 138.770004,
+          "end": 138.960007
+        },
+        {
+          "word": "only",
+          "start": 138.960007,
+          "end": 139.210007
+        },
+        {
+          "word": "problem",
+          "start": 139.210007,
+          "end": 139.669998
+        },
+        {
+          "word": "is",
+          "start": 139.669998,
+          "end": 139.990005
+        },
+        {
+          "word": "that",
+          "start": 139.990005,
+          "end": 140.169998
+        },
+        {
+          "word": "they",
+          "start": 140.169998,
+          "end": 140.279999
+        },
+        {
+          "word": "do",
+          "start": 140.279999,
+          "end": 140.550003
+        },
+        {
+          "word": "n't",
+          "start": 140.279999,
+          "end": 140.550003
+        },
+        {
+          "word": "have",
+          "start": 140.550003,
+          "end": 140.75
+        },
+        {
+          "word": "a",
+          "start": 140.75,
+          "end": 140.800003
+        },
+        {
+          "word": "proper",
+          "start": 140.800003,
+          "end": 141.270004
+        },
+        {
+          "word": "appointment",
+          "start": 141.270004,
+          "end": 142.039993
+        },
+        {
+          "word": "system",
+          "start": 142.039993,
+          "end": 142.649994
+        }
+      ],
       "answers": [
         15
       ],
-      "end": 143.4
+      "end": 142.649994
     },
     {
       "id": 39,
-      "start": 143.5,
+      "start": 143.380005,
       "speaker": "MRS SMITH",
       "en": "Sometimes you have to wait for ages there to see someone.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sometimes",
+          "start": 143.380005,
+          "end": 143.919998
+        },
+        {
+          "word": "you",
+          "start": 143.919998,
+          "end": 143.979996
+        },
+        {
+          "word": "have",
+          "start": 143.979996,
+          "end": 144.100006
+        },
+        {
+          "word": "to",
+          "start": 144.100006,
+          "end": 144.190002
+        },
+        {
+          "word": "wait",
+          "start": 144.190002,
+          "end": 144.389999
+        },
+        {
+          "word": "for",
+          "start": 144.389999,
+          "end": 144.539993
+        },
+        {
+          "word": "ages",
+          "start": 144.539993,
+          "end": 145.080002
+        },
+        {
+          "word": "there",
+          "start": 145.080002,
+          "end": 145.289993
+        },
+        {
+          "word": "to",
+          "start": 145.289993,
+          "end": 145.410004
+        },
+        {
+          "word": "see",
+          "start": 145.410004,
+          "end": 145.639999
+        },
+        {
+          "word": "someone",
+          "start": 145.639999,
+          "end": 146.160004
+        }
+      ],
       "answers": [],
-      "end": 146.8
+      "end": 146.160004
     },
     {
       "id": 40,
-      "start": 146.9,
+      "start": 146.740005,
       "speaker": "MRS SMITH",
       "en": "Anyway, you go to the receptionist in whichever health centre and ask her to register you with a doctor there.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Anyway",
+          "start": 146.740005,
+          "end": 147.100006
+        },
+        {
+          "word": "you",
+          "start": 147.220001,
+          "end": 147.339996
+        },
+        {
+          "word": "go",
+          "start": 147.339996,
+          "end": 147.529999
+        },
+        {
+          "word": "to",
+          "start": 147.529999,
+          "end": 147.660004
+        },
+        {
+          "word": "the",
+          "start": 147.660004,
+          "end": 147.75
+        },
+        {
+          "word": "receptionist",
+          "start": 147.75,
+          "end": 148.729996
+        },
+        {
+          "word": "in",
+          "start": 148.940002,
+          "end": 149.210007
+        },
+        {
+          "word": "whichever",
+          "start": 149.210007,
+          "end": 149.550003
+        },
+        {
+          "word": "health",
+          "start": 149.550003,
+          "end": 149.809998
+        },
+        {
+          "word": "centre",
+          "start": 149.809998,
+          "end": 150.320007
+        },
+        {
+          "word": "and",
+          "start": 150.75,
+          "end": 150.919998
+        },
+        {
+          "word": "ask",
+          "start": 150.919998,
+          "end": 151.259995
+        },
+        {
+          "word": "her",
+          "start": 151.259995,
+          "end": 151.429993
+        },
+        {
+          "word": "to",
+          "start": 151.429993,
+          "end": 151.589996
+        },
+        {
+          "word": "register",
+          "start": 151.589996,
+          "end": 152.059998
+        },
+        {
+          "word": "you",
+          "start": 152.059998,
+          "end": 152.369995
+        },
+        {
+          "word": "with",
+          "start": 152.369995,
+          "end": 152.539993
+        },
+        {
+          "word": "a",
+          "start": 152.539993,
+          "end": 152.580002
+        },
+        {
+          "word": "doctor",
+          "start": 152.580002,
+          "end": 153.029999
+        },
+        {
+          "word": "there",
+          "start": 153.029999,
+          "end": 153.350006
+        }
+      ],
       "answers": [],
-      "end": 154.3
+      "end": 153.350006
     },
     {
       "id": 41,
-      "start": 154.4,
+      "start": 153.860001,
       "speaker": "MRS SMITH",
       "en": "You have to fill in a form, but it doesn’t take long.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 153.860001,
+          "end": 153.990005
+        },
+        {
+          "word": "have",
+          "start": 153.990005,
+          "end": 154.119995
+        },
+        {
+          "word": "to",
+          "start": 154.119995,
+          "end": 154.240005
+        },
+        {
+          "word": "fill",
+          "start": 154.240005,
+          "end": 154.440002
+        },
+        {
+          "word": "in",
+          "start": 154.440002,
+          "end": 154.559998
+        },
+        {
+          "word": "a",
+          "start": 154.559998,
+          "end": 154.610001
+        },
+        {
+          "word": "form",
+          "start": 154.610001,
+          "end": 155.199997
+        },
+        {
+          "word": "but",
+          "start": 155.509995,
+          "end": 155.669998
+        },
+        {
+          "word": "it",
+          "start": 155.669998,
+          "end": 155.75
+        },
+        {
+          "word": "does",
+          "start": 155.75,
+          "end": 155.979996
+        },
+        {
+          "word": "n't",
+          "start": 155.75,
+          "end": 155.979996
+        },
+        {
+          "word": "take",
+          "start": 155.979996,
+          "end": 156.289993
+        },
+        {
+          "word": "long",
+          "start": 156.289993,
+          "end": 156.759995
+        }
+      ],
       "answers": [],
-      "end": 157.6
+      "end": 156.759995
     },
     {
       "id": 42,
-      "start": 159.3,
+      "start": 157.350006,
       "speaker": "MRS SMITH",
       "en": "Ours is called Dr Jones and we’ve been going to him for years - ever since we moved here fifteen years ago.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Ours",
+          "start": 157.350006,
+          "end": 157.740005
+        },
+        {
+          "word": "is",
+          "start": 157.740005,
+          "end": 157.869995
+        },
+        {
+          "word": "called",
+          "start": 157.869995,
+          "end": 158.330002
+        },
+        {
+          "word": "Dr",
+          "start": 158.330002,
+          "end": 158.839996
+        },
+        {
+          "word": "Jones",
+          "start": 158.839996,
+          "end": 159.679993
+        },
+        {
+          "word": "and",
+          "start": 160.130005,
+          "end": 160.350006
+        },
+        {
+          "word": "we",
+          "start": 160.350006,
+          "end": 160.490005
+        },
+        {
+          "word": "'ve",
+          "start": 160.350006,
+          "end": 160.490005
+        },
+        {
+          "word": "been",
+          "start": 160.490005,
+          "end": 160.679993
+        },
+        {
+          "word": "going",
+          "start": 160.679993,
+          "end": 160.910004
+        },
+        {
+          "word": "to",
+          "start": 160.910004,
+          "end": 161.119995
+        },
+        {
+          "word": "him",
+          "start": 161.119995,
+          "end": 161.330002
+        },
+        {
+          "word": "for",
+          "start": 161.330002,
+          "end": 161.770004
+        },
+        {
+          "word": "years",
+          "start": 162.179993,
+          "end": 162.979996
+        },
+        {
+          "word": "ever",
+          "start": 163.479996,
+          "end": 163.649994
+        },
+        {
+          "word": "since",
+          "start": 163.649994,
+          "end": 163.889999
+        },
+        {
+          "word": "we",
+          "start": 163.889999,
+          "end": 163.979996
+        },
+        {
+          "word": "moved",
+          "start": 163.979996,
+          "end": 164.360001
+        },
+        {
+          "word": "here",
+          "start": 164.360001,
+          "end": 164.550003
+        },
+        {
+          "word": "fifteen",
+          "start": 164.550003,
+          "end": 164.919998
+        },
+        {
+          "word": "years",
+          "start": 164.919998,
+          "end": 165.259995
+        },
+        {
+          "word": "ago",
+          "start": 165.259995,
+          "end": 165.729996
+        }
+      ],
+      "answers": [],
+      "end": 165.729996
     },
     {
       "id": 43,
-      "start": 164.2,
+      "start": 166.429993,
       "speaker": "MRS SMITH",
       "en": "I wouldn’t say he’s brilliant but I suppose he’s alright really.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 166.429993,
+          "end": 166.580002
+        },
+        {
+          "word": "would",
+          "start": 166.580002,
+          "end": 166.820007
+        },
+        {
+          "word": "n't",
+          "start": 166.580002,
+          "end": 166.820007
+        },
+        {
+          "word": "say",
+          "start": 166.820007,
+          "end": 166.979996
+        },
+        {
+          "word": "he",
+          "start": 166.979996,
+          "end": 167.360001
+        },
+        {
+          "word": "'s",
+          "start": 167.360001,
+          "end": 167.600006
+        },
+        {
+          "word": "brilliant",
+          "start": 167.639999,
+          "end": 168.610001
+        },
+        {
+          "word": "but",
+          "start": 168.639999,
+          "end": 169.009995
+        },
+        {
+          "word": "I",
+          "start": 169.009995,
+          "end": 169.550003
+        },
+        {
+          "word": "suppose",
+          "start": 169.880005,
+          "end": 170.259995
+        },
+        {
+          "word": "he",
+          "start": 170.259995,
+          "end": 170.350006
+        },
+        {
+          "word": "'s",
+          "start": 170.350006,
+          "end": 170.449997
+        },
+        {
+          "word": "alright",
+          "start": 170.449997,
+          "end": 170.860001
+        },
+        {
+          "word": "really",
+          "start": 170.860001,
+          "end": 171.279999
+        }
+      ],
       "answers": [],
-      "end": 169.0
+      "end": 171.279999
     },
     {
       "id": 44,
-      "start": 169.1,
+      "start": 171.990005,
       "speaker": "MRS SMITH",
       "en": "We’re used to him now.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 171.990005,
+          "end": 172.139999
+        },
+        {
+          "word": "'re",
+          "start": 171.990005,
+          "end": 172.139999
+        },
+        {
+          "word": "used",
+          "start": 172.139999,
+          "end": 172.360001
+        },
+        {
+          "word": "to",
+          "start": 172.360001,
+          "end": 172.470001
+        },
+        {
+          "word": "him",
+          "start": 172.470001,
+          "end": 172.559998
+        },
+        {
+          "word": "now",
+          "start": 172.559998,
+          "end": 172.880005
+        }
+      ],
       "answers": [],
-      "end": 173.8
+      "end": 172.880005
     },
     {
       "id": 45,
-      "start": 174.0,
+      "start": 173.699997,
       "speaker": "MRS SMITH",
       "en": "They say he’s very good with elderly people, but he does tend to get a bit impatient with children.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "They",
+          "start": 173.699997,
+          "end": 173.820007
+        },
+        {
+          "word": "say",
+          "start": 173.820007,
+          "end": 173.949997
+        },
+        {
+          "word": "he",
+          "start": 173.949997,
+          "end": 174.029999
+        },
+        {
+          "word": "'s",
+          "start": 174.029999,
+          "end": 174.149994
+        },
+        {
+          "word": "very",
+          "start": 174.149994,
+          "end": 174.389999
+        },
+        {
+          "word": "good",
+          "start": 174.389999,
+          "end": 174.580002
+        },
+        {
+          "word": "with",
+          "start": 174.580002,
+          "end": 174.710007
+        },
+        {
+          "word": "elderly",
+          "start": 174.710007,
+          "end": 175.179993
+        },
+        {
+          "word": "people",
+          "start": 175.179993,
+          "end": 175.710007
+        },
+        {
+          "word": "but",
+          "start": 176.080002,
+          "end": 176.270004
+        },
+        {
+          "word": "he",
+          "start": 176.270004,
+          "end": 176.330002
+        },
+        {
+          "word": "does",
+          "start": 176.330002,
+          "end": 176.600006
+        },
+        {
+          "word": "tend",
+          "start": 176.600006,
+          "end": 176.839996
+        },
+        {
+          "word": "to",
+          "start": 176.839996,
+          "end": 176.979996
+        },
+        {
+          "word": "get",
+          "start": 176.979996,
+          "end": 177.190002
+        },
+        {
+          "word": "a",
+          "start": 177.190002,
+          "end": 177.240005
+        },
+        {
+          "word": "bit",
+          "start": 177.240005,
+          "end": 177.460007
+        },
+        {
+          "word": "impatient",
+          "start": 177.460007,
+          "end": 178.289993
+        },
+        {
+          "word": "with",
+          "start": 178.289993,
+          "end": 178.470001
+        },
+        {
+          "word": "children",
+          "start": 178.470001,
+          "end": 179.059998
+        }
+      ],
       "answers": [
         16
-      ]
+      ],
+      "end": 179.059998
     },
     {
       "id": 46,
-      "start": 180.1,
+      "start": 179.860001,
       "speaker": "MRS SMITH",
       "en": "Listen, the one who’s supposed to be really good with small children is Dr Shaw.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Listen",
+          "start": 179.860001,
+          "end": 180.210007
+        },
+        {
+          "word": "the",
+          "start": 180.580002,
+          "end": 180.699997
+        },
+        {
+          "word": "one",
+          "start": 180.699997,
+          "end": 180.839996
+        },
+        {
+          "word": "who",
+          "start": 180.839996,
+          "end": 180.919998
+        },
+        {
+          "word": "'s",
+          "start": 180.919998,
+          "end": 181.009995
+        },
+        {
+          "word": "supposed",
+          "start": 181.009995,
+          "end": 181.389999
+        },
+        {
+          "word": "to",
+          "start": 181.389999,
+          "end": 181.5
+        },
+        {
+          "word": "be",
+          "start": 181.5,
+          "end": 181.649994
+        },
+        {
+          "word": "really",
+          "start": 181.649994,
+          "end": 182.100006
+        },
+        {
+          "word": "good",
+          "start": 182.100006,
+          "end": 182.490005
+        },
+        {
+          "word": "with",
+          "start": 182.490005,
+          "end": 182.699997
+        },
+        {
+          "word": "small",
+          "start": 182.699997,
+          "end": 183.070007
+        },
+        {
+          "word": "children",
+          "start": 183.070007,
+          "end": 183.669998
+        },
+        {
+          "word": "is",
+          "start": 183.960007,
+          "end": 184.139999
+        },
+        {
+          "word": "Dr",
+          "start": 184.139999,
+          "end": 184.720001
+        },
+        {
+          "word": "Shaw",
+          "start": 184.720001,
+          "end": 185.660004
+        }
+      ],
       "answers": [],
-      "end": 183.9
+      "end": 185.660004
     },
     {
       "id": 47,
-      "start": 184.0,
+      "start": 185.960007,
       "speaker": "MRS SMITH",
       "en": "I’ve heard lots of people say that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 185.960007,
+          "end": 186.039993
+        },
+        {
+          "word": "'ve",
+          "start": 186.039993,
+          "end": 186.080002
+        },
+        {
+          "word": "heard",
+          "start": 186.080002,
+          "end": 186.360001
+        },
+        {
+          "word": "lots",
+          "start": 186.360001,
+          "end": 186.600006
+        },
+        {
+          "word": "of",
+          "start": 186.600006,
+          "end": 186.710007
+        },
+        {
+          "word": "people",
+          "start": 186.710007,
+          "end": 186.979996
+        },
+        {
+          "word": "say",
+          "start": 186.979996,
+          "end": 187.149994
+        },
+        {
+          "word": "that",
+          "start": 187.149994,
+          "end": 187.889999
+        }
+      ],
       "answers": [],
-      "end": 187.8
+      "end": 187.889999
     },
     {
       "id": 48,
-      "start": 187.9,
+      "start": 187.889999,
       "speaker": "MRS SMITH",
       "en": "She’s young and she’s got small children of her own.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "She",
+          "start": 187.889999,
+          "end": 188.009995
+        },
+        {
+          "word": "'s",
+          "start": 188.009995,
+          "end": 188.089996
+        },
+        {
+          "word": "young",
+          "start": 188.089996,
+          "end": 188.509995
+        },
+        {
+          "word": "and",
+          "start": 188.509995,
+          "end": 188.699997
+        },
+        {
+          "word": "she",
+          "start": 188.699997,
+          "end": 188.809998
+        },
+        {
+          "word": "'s",
+          "start": 188.809998,
+          "end": 188.880005
+        },
+        {
+          "word": "got",
+          "start": 188.880005,
+          "end": 189.080002
+        },
+        {
+          "word": "small",
+          "start": 189.080002,
+          "end": 189.419998
+        },
+        {
+          "word": "children",
+          "start": 189.419998,
+          "end": 189.809998
+        },
+        {
+          "word": "of",
+          "start": 189.809998,
+          "end": 189.889999
+        },
+        {
+          "word": "her",
+          "start": 189.889999,
+          "end": 190.029999
+        },
+        {
+          "word": "own",
+          "start": 190.029999,
+          "end": 190.399994
+        }
+      ],
       "answers": [],
-      "end": 191.1
+      "end": 190.399994
     },
     {
       "id": 49,
-      "start": 191.9,
+      "start": 190.679993,
       "speaker": "MRS SMITH",
       "en": "So you could try registering with her.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 190.679993,
+          "end": 191.059998
+        },
+        {
+          "word": "you",
+          "start": 191.360001,
+          "end": 191.470001
+        },
+        {
+          "word": "could",
+          "start": 191.470001,
+          "end": 191.690002
+        },
+        {
+          "word": "try",
+          "start": 191.690002,
+          "end": 192.139999
+        },
+        {
+          "word": "registering",
+          "start": 192.139999,
+          "end": 192.720001
+        },
+        {
+          "word": "with",
+          "start": 192.720001,
+          "end": 192.949997
+        },
+        {
+          "word": "her",
+          "start": 192.949997,
+          "end": 193.289993
+        }
+      ],
       "answers": [],
-      "end": 193.4
+      "end": 193.289993
     },
     {
       "id": 50,
-      "start": 194.5,
+      "start": 194.350006,
       "speaker": "MRS SMITH",
       "en": "And if her list is full, I heard somebody say the other day that there’s a really nice young doctor at South Hay, a Dr Williams.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 194.350006,
+          "end": 194.449997
+        },
+        {
+          "word": "if",
+          "start": 194.449997,
+          "end": 194.550003
+        },
+        {
+          "word": "her",
+          "start": 194.550003,
+          "end": 194.770004
+        },
+        {
+          "word": "list",
+          "start": 194.770004,
+          "end": 195.100006
+        },
+        {
+          "word": "is",
+          "start": 195.100006,
+          "end": 195.259995
+        },
+        {
+          "word": "full",
+          "start": 195.259995,
+          "end": 195.770004
+        },
+        {
+          "word": "I",
+          "start": 196.089996,
+          "end": 196.169998
+        },
+        {
+          "word": "heard",
+          "start": 196.169998,
+          "end": 196.389999
+        },
+        {
+          "word": "somebody",
+          "start": 196.389999,
+          "end": 196.820007
+        },
+        {
+          "word": "say",
+          "start": 196.820007,
+          "end": 197.089996
+        },
+        {
+          "word": "the",
+          "start": 197.089996,
+          "end": 197.259995
+        },
+        {
+          "word": "other",
+          "start": 197.259995,
+          "end": 197.399994
+        },
+        {
+          "word": "day",
+          "start": 197.399994,
+          "end": 197.669998
+        },
+        {
+          "word": "that",
+          "start": 197.669998,
+          "end": 197.820007
+        },
+        {
+          "word": "there",
+          "start": 197.820007,
+          "end": 197.979996
+        },
+        {
+          "word": "'s",
+          "start": 197.979996,
+          "end": 198.100006
+        },
+        {
+          "word": "a",
+          "start": 198.100006,
+          "end": 198.130005
+        },
+        {
+          "word": "really",
+          "start": 198.130005,
+          "end": 198.589996
+        },
+        {
+          "word": "nice",
+          "start": 198.589996,
+          "end": 199.070007
+        },
+        {
+          "word": "young",
+          "start": 199.070007,
+          "end": 199.339996
+        },
+        {
+          "word": "doctor",
+          "start": 199.339996,
+          "end": 199.779999
+        },
+        {
+          "word": "at",
+          "start": 199.779999,
+          "end": 199.880005
+        },
+        {
+          "word": "South",
+          "start": 199.880005,
+          "end": 200.279999
+        },
+        {
+          "word": "Hay",
+          "start": 200.279999,
+          "end": 200.619995
+        },
+        {
+          "word": "a",
+          "start": 200.979996,
+          "end": 201.070007
+        },
+        {
+          "word": "Dr",
+          "start": 201.070007,
+          "end": 201.729996
+        },
+        {
+          "word": "Williams",
+          "start": 201.729996,
+          "end": 202.660004
+        }
+      ],
       "answers": [],
-      "end": 203.0
+      "end": 202.660004
     },
     {
       "id": 51,
-      "start": 203.4,
+      "start": 202.949997,
       "speaker": "MRS SMITH",
       "en": "He holds special clinics for people with back trouble.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "He",
+          "start": 202.949997,
+          "end": 203.270004
+        },
+        {
+          "word": "holds",
+          "start": 203.270004,
+          "end": 203.539993
+        },
+        {
+          "word": "special",
+          "start": 203.539993,
+          "end": 203.919998
+        },
+        {
+          "word": "clinics",
+          "start": 203.919998,
+          "end": 204.419998
+        },
+        {
+          "word": "for",
+          "start": 204.419998,
+          "end": 204.520004
+        },
+        {
+          "word": "people",
+          "start": 204.520004,
+          "end": 204.809998
+        },
+        {
+          "word": "with",
+          "start": 204.809998,
+          "end": 204.970001
+        },
+        {
+          "word": "back",
+          "start": 204.970001,
+          "end": 205.210007
+        },
+        {
+          "word": "trouble",
+          "start": 205.210007,
+          "end": 205.669998
+        }
+      ],
       "answers": [
         17
       ],
-      "end": 206.5
+      "end": 205.669998
     },
     {
       "id": 52,
-      "start": 207.9,
+      "start": 205.910004,
       "speaker": "MRS SMITH",
       "en": "But that’s not really your problem, is it? -------------------------------------------------------------------------------------------------------------",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 205.910004,
+          "end": 206.199997
+        },
+        {
+          "word": "that",
+          "start": 206.199997,
+          "end": 206.229996
+        },
+        {
+          "word": "'s",
+          "start": 206.229996,
+          "end": 206.970001
+        },
+        {
+          "word": "not",
+          "start": 206.970001,
+          "end": 207.160004
+        },
+        {
+          "word": "really",
+          "start": 207.160004,
+          "end": 207.470001
+        },
+        {
+          "word": "your",
+          "start": 207.470001,
+          "end": 207.619995
+        },
+        {
+          "word": "problem",
+          "start": 207.619995,
+          "end": 208.020004
+        },
+        {
+          "word": "is",
+          "start": 208.020004,
+          "end": 208.160004
+        },
+        {
+          "word": "it",
+          "start": 208.160004,
+          "end": 208.320007
+        }
+      ],
       "answers": [],
-      "end": 208.5
+      "end": 208.320007
     },
     {
       "id": 53,
-      "start": 212.4,
+      "start": 212.770004,
       "speaker": "MRS SMITH",
       "en": "If you want a doctor to visit you at home, you have to ask for a home visit.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 212.770004,
+          "end": 212.889999
+        },
+        {
+          "word": "you",
+          "start": 212.889999,
+          "end": 212.990005
+        },
+        {
+          "word": "want",
+          "start": 212.990005,
+          "end": 213.190002
+        },
+        {
+          "word": "a",
+          "start": 213.190002,
+          "end": 213.25
+        },
+        {
+          "word": "doctor",
+          "start": 213.25,
+          "end": 213.660004
+        },
+        {
+          "word": "to",
+          "start": 213.660004,
+          "end": 213.809998
+        },
+        {
+          "word": "visit",
+          "start": 213.809998,
+          "end": 214.080002
+        },
+        {
+          "word": "you",
+          "start": 214.080002,
+          "end": 214.220001
+        },
+        {
+          "word": "at",
+          "start": 214.220001,
+          "end": 214.289993
+        },
+        {
+          "word": "home",
+          "start": 214.289993,
+          "end": 214.770004
+        },
+        {
+          "word": "you",
+          "start": 215.020004,
+          "end": 215.110001
+        },
+        {
+          "word": "have",
+          "start": 215.110001,
+          "end": 215.279999
+        },
+        {
+          "word": "to",
+          "start": 215.279999,
+          "end": 215.380005
+        },
+        {
+          "word": "ask",
+          "start": 215.380005,
+          "end": 215.759995
+        },
+        {
+          "word": "for",
+          "start": 215.759995,
+          "end": 215.929993
+        },
+        {
+          "word": "a",
+          "start": 215.929993,
+          "end": 216.149994
+        },
+        {
+          "word": "home",
+          "start": 216.149994,
+          "end": 216.449997
+        },
+        {
+          "word": "visit",
+          "start": 216.449997,
+          "end": 217.059998
+        }
+      ],
       "answers": [],
-      "end": 217.7
+      "end": 217.059998
     },
     {
       "id": 54,
-      "start": 219.6,
+      "start": 217.529999,
       "speaker": "MRS SMITH",
       "en": "You’re supposed to do that before 10.30 in the morning, but obviously, if it’s an emergency, you can phone at any time, night or day.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "You",
+          "start": 217.529999,
+          "end": 217.649994
+        },
+        {
+          "word": "'re",
+          "start": 217.529999,
+          "end": 217.649994
+        },
+        {
+          "word": "supposed",
+          "start": 217.649994,
+          "end": 218.009995
+        },
+        {
+          "word": "to",
+          "start": 218.009995,
+          "end": 218.210007
+        },
+        {
+          "word": "do",
+          "start": 218.210007,
+          "end": 218.279999
+        },
+        {
+          "word": "that",
+          "start": 218.279999,
+          "end": 218.509995
+        },
+        {
+          "word": "before",
+          "start": 218.509995,
+          "end": 218.860001
+        },
+        {
+          "word": "10",
+          "start": 218.860001,
+          "end": 219.300003
+        },
+        {
+          "word": "30",
+          "start": 219.300003,
+          "end": 219.729996
+        },
+        {
+          "word": "in",
+          "start": 219.729996,
+          "end": 219.850006
+        },
+        {
+          "word": "the",
+          "start": 219.850006,
+          "end": 219.929993
+        },
+        {
+          "word": "morning",
+          "start": 219.929993,
+          "end": 220.479996
+        },
+        {
+          "word": "but",
+          "start": 220.800003,
+          "end": 221.029999
+        },
+        {
+          "word": "obviously",
+          "start": 221.029999,
+          "end": 221.660004
+        },
+        {
+          "word": "if",
+          "start": 221.660004,
+          "end": 221.880005
+        },
+        {
+          "word": "it",
+          "start": 221.880005,
+          "end": 222.160004
+        },
+        {
+          "word": "'s",
+          "start": 221.880005,
+          "end": 222.160004
+        },
+        {
+          "word": "an",
+          "start": 222.160004,
+          "end": 222.229996
+        },
+        {
+          "word": "emergency",
+          "start": 222.229996,
+          "end": 223.089996
+        },
+        {
+          "word": "you",
+          "start": 223.259995,
+          "end": 223.369995
+        },
+        {
+          "word": "can",
+          "start": 223.369995,
+          "end": 223.509995
+        },
+        {
+          "word": "phone",
+          "start": 223.509995,
+          "end": 223.809998
+        },
+        {
+          "word": "at",
+          "start": 223.809998,
+          "end": 223.970001
+        },
+        {
+          "word": "any",
+          "start": 223.970001,
+          "end": 224.149994
+        },
+        {
+          "word": "time",
+          "start": 224.149994,
+          "end": 224.789993
+        },
+        {
+          "word": "night",
+          "start": 224.789993,
+          "end": 225.139999
+        },
+        {
+          "word": "or",
+          "start": 225.139999,
+          "end": 225.270004
+        },
+        {
+          "word": "day",
+          "start": 225.270004,
+          "end": 225.679993
+        }
+      ],
+      "answers": [],
+      "end": 225.679993
     },
     {
       "id": 55,
-      "start": 226.7,
+      "start": 226.270004,
       "speaker": "MRS SMITH",
       "en": "It might not be your doctor that comes, though.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 226.270004,
+          "end": 226.449997
+        },
+        {
+          "word": "might",
+          "start": 226.449997,
+          "end": 226.899994
+        },
+        {
+          "word": "not",
+          "start": 226.899994,
+          "end": 227.360001
+        },
+        {
+          "word": "be",
+          "start": 227.360001,
+          "end": 227.600006
+        },
+        {
+          "word": "your",
+          "start": 227.600006,
+          "end": 227.850006
+        },
+        {
+          "word": "doctor",
+          "start": 227.850006,
+          "end": 228.25
+        },
+        {
+          "word": "that",
+          "start": 228.25,
+          "end": 228.419998
+        },
+        {
+          "word": "comes",
+          "start": 228.419998,
+          "end": 228.770004
+        },
+        {
+          "word": "though",
+          "start": 228.770004,
+          "end": 229.029999
+        }
+      ],
       "answers": [],
-      "end": 229.4
+      "end": 229.029999
     },
     {
       "id": 56,
-      "start": 229.5,
+      "start": 229.220001,
       "speaker": "MRS SMITH",
       "en": "It’s quite often one of the other doctors in the practice.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 229.220001,
+          "end": 229.399994
+        },
+        {
+          "word": "'s",
+          "start": 229.220001,
+          "end": 229.399994
+        },
+        {
+          "word": "quite",
+          "start": 229.399994,
+          "end": 229.649994
+        },
+        {
+          "word": "often",
+          "start": 229.649994,
+          "end": 230.0
+        },
+        {
+          "word": "one",
+          "start": 230.0,
+          "end": 230.149994
+        },
+        {
+          "word": "of",
+          "start": 230.149994,
+          "end": 230.240005
+        },
+        {
+          "word": "the",
+          "start": 230.240005,
+          "end": 230.369995
+        },
+        {
+          "word": "other",
+          "start": 230.369995,
+          "end": 230.550003
+        },
+        {
+          "word": "doctors",
+          "start": 230.550003,
+          "end": 231.029999
+        },
+        {
+          "word": "in",
+          "start": 231.029999,
+          "end": 231.119995
+        },
+        {
+          "word": "the",
+          "start": 231.119995,
+          "end": 231.190002
+        },
+        {
+          "word": "practice",
+          "start": 231.190002,
+          "end": 231.889999
+        }
+      ],
       "answers": [],
-      "end": 232.0
+      "end": 231.889999
     },
     {
       "id": 57,
-      "start": 232.3,
+      "start": 232.339996,
       "speaker": "MRS SMITH",
       "en": "It doesn’t really seem to make much difference.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 232.339996,
+          "end": 232.470001
+        },
+        {
+          "word": "does",
+          "start": 232.470001,
+          "end": 232.720001
+        },
+        {
+          "word": "n't",
+          "start": 232.470001,
+          "end": 232.720001
+        },
+        {
+          "word": "really",
+          "start": 232.720001,
+          "end": 232.919998
+        },
+        {
+          "word": "seem",
+          "start": 232.919998,
+          "end": 233.139999
+        },
+        {
+          "word": "to",
+          "start": 233.139999,
+          "end": 233.259995
+        },
+        {
+          "word": "make",
+          "start": 233.259995,
+          "end": 233.410004
+        },
+        {
+          "word": "much",
+          "start": 233.410004,
+          "end": 233.589996
+        },
+        {
+          "word": "difference",
+          "start": 233.589996,
+          "end": 234.309998
+        }
+      ],
       "answers": [],
-      "end": 234.9
+      "end": 234.309998
     },
     {
       "id": 58,
-      "start": 235.1,
+      "start": 234.970001,
       "speaker": "MRS SMITH",
       "en": "Otherwise you make an appointment to see your doctor at the health centre.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Otherwise",
+          "start": 234.970001,
+          "end": 235.440002
+        },
+        {
+          "word": "you",
+          "start": 235.440002,
+          "end": 235.509995
+        },
+        {
+          "word": "make",
+          "start": 235.509995,
+          "end": 235.690002
+        },
+        {
+          "word": "an",
+          "start": 235.690002,
+          "end": 235.759995
+        },
+        {
+          "word": "appointment",
+          "start": 235.759995,
+          "end": 236.289993
+        },
+        {
+          "word": "to",
+          "start": 236.289993,
+          "end": 236.410004
+        },
+        {
+          "word": "see",
+          "start": 236.410004,
+          "end": 236.600006
+        },
+        {
+          "word": "your",
+          "start": 236.600006,
+          "end": 236.850006
+        },
+        {
+          "word": "doctor",
+          "start": 236.850006,
+          "end": 237.169998
+        },
+        {
+          "word": "at",
+          "start": 237.169998,
+          "end": 237.289993
+        },
+        {
+          "word": "the",
+          "start": 237.289993,
+          "end": 237.360001
+        },
+        {
+          "word": "health",
+          "start": 237.360001,
+          "end": 237.619995
+        },
+        {
+          "word": "centre",
+          "start": 237.619995,
+          "end": 238.160004
+        }
+      ],
       "answers": [],
-      "end": 239.0
+      "end": 238.160004
     },
     {
       "id": 59,
-      "start": 239.3,
+      "start": 238.779999,
       "speaker": "MRS SMITH",
       "en": "You usually get seen the same day.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 238.779999,
+          "end": 238.970001
+        },
+        {
+          "word": "usually",
+          "start": 238.970001,
+          "end": 239.380005
+        },
+        {
+          "word": "get",
+          "start": 239.380005,
+          "end": 239.570007
+        },
+        {
+          "word": "seen",
+          "start": 239.570007,
+          "end": 239.800003
+        },
+        {
+          "word": "the",
+          "start": 239.800003,
+          "end": 239.880005
+        },
+        {
+          "word": "same",
+          "start": 239.880005,
+          "end": 240.240005
+        },
+        {
+          "word": "day",
+          "start": 240.240005,
+          "end": 240.720001
+        }
+      ],
       "answers": [],
-      "end": 241.3
+      "end": 240.720001
     },
     {
       "id": 60,
-      "start": 241.4,
+      "start": 241.199997,
       "speaker": "MRS SMITH",
       "en": "Not always of course, but usually, as I say.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Not",
+          "start": 241.199997,
+          "end": 241.539993
+        },
+        {
+          "word": "always",
+          "start": 241.570007,
+          "end": 242.100006
+        },
+        {
+          "word": "of",
+          "start": 242.100006,
+          "end": 242.190002
+        },
+        {
+          "word": "course",
+          "start": 242.190002,
+          "end": 242.539993
+        },
+        {
+          "word": "but",
+          "start": 242.539993,
+          "end": 242.800003
+        },
+        {
+          "word": "usually",
+          "start": 242.919998,
+          "end": 243.520004
+        },
+        {
+          "word": "as",
+          "start": 243.600006,
+          "end": 243.960007
+        },
+        {
+          "word": "I",
+          "start": 243.960007,
+          "end": 244.160004
+        },
+        {
+          "word": "say",
+          "start": 244.160004,
+          "end": 244.220001
+        }
+      ],
       "answers": [],
-      "end": 245.1
+      "end": 244.220001
     },
     {
       "id": 61,
-      "start": 247.6,
+      "start": 244.779999,
       "speaker": "MRS SMITH",
       "en": "They hold surgeries between 9 and 11.30 every weekday, Q!8 and from 4 to 6.30 Monday to Thursday.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "They",
+          "start": 244.779999,
+          "end": 244.869995
+        },
+        {
+          "word": "hold",
+          "start": 244.869995,
+          "end": 245.139999
+        },
+        {
+          "word": "surgeries",
+          "start": 245.139999,
+          "end": 245.789993
+        },
+        {
+          "word": "between",
+          "start": 245.789993,
+          "end": 246.25
+        },
+        {
+          "word": "9",
+          "start": 246.25,
+          "end": 246.720001
+        },
+        {
+          "word": "and",
+          "start": 246.720001,
+          "end": 246.960007
+        },
+        {
+          "word": "11",
+          "start": 246.960007,
+          "end": 247.380005
+        },
+        {
+          "word": "30",
+          "start": 247.380005,
+          "end": 247.830002
+        },
+        {
+          "word": "every",
+          "start": 247.830002,
+          "end": 248.070007
+        },
+        {
+          "word": "weekday",
+          "start": 248.070007,
+          "end": 248.449997
+        },
+        {
+          "word": "Q",
+          "start": 248.449997,
+          "end": 248.509995
+        },
+        {
+          "word": "8",
+          "start": 248.509995,
+          "end": 248.660004
+        },
+        {
+          "word": "and",
+          "start": 248.990005,
+          "end": 249.210007
+        },
+        {
+          "word": "from",
+          "start": 249.210007,
+          "end": 249.580002
+        },
+        {
+          "word": "4",
+          "start": 249.580002,
+          "end": 250.050003
+        },
+        {
+          "word": "to",
+          "start": 250.050003,
+          "end": 250.110001
+        },
+        {
+          "word": "6",
+          "start": 250.110001,
+          "end": 250.899994
+        },
+        {
+          "word": "30",
+          "start": 250.899994,
+          "end": 251.339996
+        },
+        {
+          "word": "Monday",
+          "start": 251.369995,
+          "end": 251.779999
+        },
+        {
+          "word": "to",
+          "start": 251.779999,
+          "end": 252.080002
+        },
+        {
+          "word": "Thursday",
+          "start": 252.080002,
+          "end": 252.720001
+        }
+      ],
+      "answers": [],
+      "end": 252.720001
     },
     {
       "id": 62,
-      "start": 253.7,
+      "start": 253.320007,
       "speaker": "MRS SMITH",
       "en": "Saturdays are only for emergencies.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Saturdays",
+          "start": 253.320007,
+          "end": 253.850006
+        },
+        {
+          "word": "are",
+          "start": 253.850006,
+          "end": 253.949997
+        },
+        {
+          "word": "only",
+          "start": 253.949997,
+          "end": 254.149994
+        },
+        {
+          "word": "for",
+          "start": 254.149994,
+          "end": 254.289993
+        },
+        {
+          "word": "emergencies",
+          "start": 254.289993,
+          "end": 255.309998
+        }
+      ],
       "answers": [],
-      "end": 255.6
+      "end": 255.309998
     },
     {
       "id": 63,
-      "start": 255.9,
+      "start": 256.209991,
       "speaker": "MRS SMITH",
       "en": "When the doctor sees you, he gives you a prescription.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "When",
+          "start": 256.209991,
+          "end": 256.380005
+        },
+        {
+          "word": "the",
+          "start": 256.380005,
+          "end": 256.459991
+        },
+        {
+          "word": "doctor",
+          "start": 256.459991,
+          "end": 256.769989
+        },
+        {
+          "word": "sees",
+          "start": 256.769989,
+          "end": 257.160004
+        },
+        {
+          "word": "you",
+          "start": 257.160004,
+          "end": 257.339996
+        },
+        {
+          "word": "he",
+          "start": 257.369995,
+          "end": 257.440002
+        },
+        {
+          "word": "gives",
+          "start": 257.440002,
+          "end": 257.679993
+        },
+        {
+          "word": "you",
+          "start": 257.679993,
+          "end": 257.799988
+        },
+        {
+          "word": "a",
+          "start": 257.799988,
+          "end": 258.0
+        },
+        {
+          "word": "prescription",
+          "start": 258.0,
+          "end": 258.929993
+        }
+      ],
       "answers": [],
-      "end": 259.0
+      "end": 258.929993
     },
     {
       "id": 64,
-      "start": 259.7,
+      "start": 259.390015,
       "speaker": "MRS SMITH",
       "en": "He writes what medication you need on it and you take it to a chemist’s shop.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "He",
+          "start": 259.390015,
+          "end": 259.540009
+        },
+        {
+          "word": "writes",
+          "start": 259.540009,
+          "end": 259.910004
+        },
+        {
+          "word": "what",
+          "start": 259.910004,
+          "end": 260.089996
+        },
+        {
+          "word": "medication",
+          "start": 260.089996,
+          "end": 260.700012
+        },
+        {
+          "word": "you",
+          "start": 260.700012,
+          "end": 260.799988
+        },
+        {
+          "word": "need",
+          "start": 260.799988,
+          "end": 261.049988
+        },
+        {
+          "word": "on",
+          "start": 261.049988,
+          "end": 261.209991
+        },
+        {
+          "word": "it",
+          "start": 261.209991,
+          "end": 261.48999
+        },
+        {
+          "word": "and",
+          "start": 261.519989,
+          "end": 261.890015
+        },
+        {
+          "word": "you",
+          "start": 261.890015,
+          "end": 261.950012
+        },
+        {
+          "word": "take",
+          "start": 261.950012,
+          "end": 262.279999
+        },
+        {
+          "word": "it",
+          "start": 262.279999,
+          "end": 262.390015
+        },
+        {
+          "word": "to",
+          "start": 262.390015,
+          "end": 262.529999
+        },
+        {
+          "word": "a",
+          "start": 262.529999,
+          "end": 262.589996
+        },
+        {
+          "word": "chemist",
+          "start": 262.589996,
+          "end": 262.920013
+        },
+        {
+          "word": "'s",
+          "start": 262.920013,
+          "end": 263.029999
+        },
+        {
+          "word": "shop",
+          "start": 263.029999,
+          "end": 263.399994
+        }
+      ],
       "answers": [],
-      "end": 263.1
+      "end": 263.399994
     },
     {
       "id": 65,
-      "start": 263.2,
+      "start": 264.140015,
       "speaker": "MRS SMITH",
       "en": "There’s one opposite the centre.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "There",
+          "start": 264.140015,
+          "end": 264.339996
+        },
+        {
+          "word": "'s",
+          "start": 264.339996,
+          "end": 264.649994
+        },
+        {
+          "word": "one",
+          "start": 264.769989,
+          "end": 264.98999
+        },
+        {
+          "word": "opposite",
+          "start": 264.98999,
+          "end": 265.380005
+        },
+        {
+          "word": "the",
+          "start": 265.380005,
+          "end": 265.450012
+        },
+        {
+          "word": "centre",
+          "start": 265.450012,
+          "end": 266.0
+        }
+      ],
       "answers": [],
-      "end": 266.6
+      "end": 266.0
     },
     {
       "id": 66,
-      "start": 266.7,
+      "start": 266.600006,
       "speaker": "MRS SMITH",
       "en": "If it’s for a child under 16, you don’t have to pay.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 266.600006,
+          "end": 266.779999
+        },
+        {
+          "word": "it",
+          "start": 266.779999,
+          "end": 266.980011
+        },
+        {
+          "word": "'s",
+          "start": 266.779999,
+          "end": 266.980011
+        },
+        {
+          "word": "for",
+          "start": 266.980011,
+          "end": 267.049988
+        },
+        {
+          "word": "a",
+          "start": 267.049988,
+          "end": 267.119995
+        },
+        {
+          "word": "child",
+          "start": 267.119995,
+          "end": 267.48999
+        },
+        {
+          "word": "under",
+          "start": 267.48999,
+          "end": 267.630005
+        },
+        {
+          "word": "16",
+          "start": 267.630005,
+          "end": 268.26001
+        },
+        {
+          "word": "you",
+          "start": 268.26001,
+          "end": 268.369995
+        },
+        {
+          "word": "do",
+          "start": 268.369995,
+          "end": 268.619995
+        },
+        {
+          "word": "n't",
+          "start": 268.369995,
+          "end": 268.619995
+        },
+        {
+          "word": "have",
+          "start": 268.619995,
+          "end": 268.820007
+        },
+        {
+          "word": "to",
+          "start": 268.820007,
+          "end": 268.940002
+        },
+        {
+          "word": "pay",
+          "start": 268.940002,
+          "end": 269.429993
+        }
+      ],
       "answers": [],
-      "end": 269.9
+      "end": 269.429993
     },
     {
       "id": 67,
-      "start": 270.0,
+      "start": 269.720001,
       "speaker": "MRS SMITH",
       "en": "So if it’s for Anna. there’s no problem.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 269.720001,
+          "end": 269.869995
+        },
+        {
+          "word": "if",
+          "start": 269.869995,
+          "end": 269.98999
+        },
+        {
+          "word": "it",
+          "start": 269.98999,
+          "end": 270.160004
+        },
+        {
+          "word": "'s",
+          "start": 269.98999,
+          "end": 270.160004
+        },
+        {
+          "word": "for",
+          "start": 270.160004,
+          "end": 270.299988
+        },
+        {
+          "word": "Anna",
+          "start": 270.299988,
+          "end": 270.709991
+        },
+        {
+          "word": "there",
+          "start": 270.709991,
+          "end": 270.829987
+        },
+        {
+          "word": "'s",
+          "start": 270.829987,
+          "end": 271.070007
+        },
+        {
+          "word": "no",
+          "start": 271.070007,
+          "end": 271.269989
+        },
+        {
+          "word": "problem",
+          "start": 271.269989,
+          "end": 271.869995
+        }
+      ],
       "answers": [],
-      "end": 271.9
+      "end": 271.869995
     },
     {
       "id": 68,
-      "start": 273.3,
+      "start": 273.100006,
       "speaker": "MRS SMITH",
       "en": "The same thing goes if you’re unemployed or retired, or if you’re pregnant.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 273.100006,
+          "end": 273.190002
+        },
+        {
+          "word": "same",
+          "start": 273.190002,
+          "end": 273.48999
+        },
+        {
+          "word": "thing",
+          "start": 273.48999,
+          "end": 273.859985
+        },
+        {
+          "word": "goes",
+          "start": 273.859985,
+          "end": 274.290009
+        },
+        {
+          "word": "if",
+          "start": 274.290009,
+          "end": 274.440002
+        },
+        {
+          "word": "you",
+          "start": 274.440002,
+          "end": 274.619995
+        },
+        {
+          "word": "'re",
+          "start": 274.440002,
+          "end": 274.619995
+        },
+        {
+          "word": "unemployed",
+          "start": 274.619995,
+          "end": 275.359985
+        },
+        {
+          "word": "or",
+          "start": 275.359985,
+          "end": 275.480011
+        },
+        {
+          "word": "retired",
+          "start": 275.480011,
+          "end": 276.109985
+        },
+        {
+          "word": "or",
+          "start": 276.519989,
+          "end": 276.649994
+        },
+        {
+          "word": "if",
+          "start": 276.649994,
+          "end": 276.799988
+        },
+        {
+          "word": "you",
+          "start": 276.799988,
+          "end": 276.869995
+        },
+        {
+          "word": "'re",
+          "start": 276.799988,
+          "end": 276.869995
+        },
+        {
+          "word": "pregnant",
+          "start": 276.869995,
+          "end": 277.600006
+        }
+      ],
       "answers": [
         19
       ],
-      "end": 277.4
+      "end": 277.600006
     },
     {
       "id": 69,
-      "start": 277.5,
+      "start": 278.019989,
       "speaker": "MRS SMITH",
       "en": "Just as well because it’s not cheap.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Just",
+          "start": 278.019989,
+          "end": 278.26001
+        },
+        {
+          "word": "as",
+          "start": 278.26001,
+          "end": 278.369995
+        },
+        {
+          "word": "well",
+          "start": 278.369995,
+          "end": 278.589996
+        },
+        {
+          "word": "because",
+          "start": 278.589996,
+          "end": 278.890015
+        },
+        {
+          "word": "it",
+          "start": 278.890015,
+          "end": 279.100006
+        },
+        {
+          "word": "'s",
+          "start": 278.890015,
+          "end": 279.100006
+        },
+        {
+          "word": "not",
+          "start": 279.100006,
+          "end": 279.359985
+        },
+        {
+          "word": "cheap",
+          "start": 279.359985,
+          "end": 279.899994
+        }
+      ],
       "answers": [],
-      "end": 280.7
+      "end": 279.899994
     },
     {
       "id": 70,
-      "start": 281.0,
+      "start": 280.779999,
       "speaker": "MRS SMITH",
       "en": "You pay the same price for each item the doctor has prescribed.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 280.779999,
+          "end": 280.910004
+        },
+        {
+          "word": "pay",
+          "start": 280.910004,
+          "end": 281.26001
+        },
+        {
+          "word": "the",
+          "start": 281.26001,
+          "end": 281.369995
+        },
+        {
+          "word": "same",
+          "start": 281.369995,
+          "end": 281.679993
+        },
+        {
+          "word": "price",
+          "start": 281.679993,
+          "end": 282.079987
+        },
+        {
+          "word": "for",
+          "start": 282.079987,
+          "end": 282.190002
+        },
+        {
+          "word": "each",
+          "start": 282.190002,
+          "end": 282.380005
+        },
+        {
+          "word": "item",
+          "start": 282.380005,
+          "end": 282.730011
+        },
+        {
+          "word": "the",
+          "start": 282.730011,
+          "end": 282.820007
+        },
+        {
+          "word": "doctor",
+          "start": 282.820007,
+          "end": 283.149994
+        },
+        {
+          "word": "has",
+          "start": 283.149994,
+          "end": 283.320007
+        },
+        {
+          "word": "prescribed",
+          "start": 283.320007,
+          "end": 284.190002
+        }
+      ],
       "answers": [],
-      "end": 284.3
+      "end": 284.190002
     },
     {
       "id": 71,
-      "start": 285.1,
+      "start": 284.73999,
       "speaker": "MRS SMITH",
       "en": "At the moment it’s something like £5 per item.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "At",
+          "start": 284.73999,
+          "end": 284.850006
+        },
+        {
+          "word": "the",
+          "start": 284.850006,
+          "end": 284.910004
+        },
+        {
+          "word": "moment",
+          "start": 284.910004,
+          "end": 285.350006
+        },
+        {
+          "word": "it",
+          "start": 285.350006,
+          "end": 285.480011
+        },
+        {
+          "word": "'s",
+          "start": 285.350006,
+          "end": 285.480011
+        },
+        {
+          "word": "something",
+          "start": 285.480011,
+          "end": 285.970001
+        },
+        {
+          "word": "like",
+          "start": 285.970001,
+          "end": 286.450012
+        },
+        {
+          "word": "5",
+          "start": 286.450012,
+          "end": 287.170013
+        },
+        {
+          "word": "per",
+          "start": 287.170013,
+          "end": 287.279999
+        },
+        {
+          "word": "item",
+          "start": 287.279999,
+          "end": 287.779999
+        }
+      ],
       "answers": [
         20
       ],
-      "end": 288.6
+      "end": 287.779999
     },
     {
       "id": 72,
-      "start": 288.7,
+      "start": 288.23999,
       "speaker": "MRS SMITH",
       "en": "So you pay for the medication but the consultation with the doctor doesn’t cost you anything.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 288.23999,
+          "end": 288.410004
+        },
+        {
+          "word": "you",
+          "start": 288.410004,
+          "end": 288.540009
+        },
+        {
+          "word": "pay",
+          "start": 288.540009,
+          "end": 288.769989
+        },
+        {
+          "word": "for",
+          "start": 288.769989,
+          "end": 288.910004
+        },
+        {
+          "word": "the",
+          "start": 288.910004,
+          "end": 289.049988
+        },
+        {
+          "word": "medication",
+          "start": 289.049988,
+          "end": 289.690002
+        },
+        {
+          "word": "but",
+          "start": 289.690002,
+          "end": 289.869995
+        },
+        {
+          "word": "the",
+          "start": 289.869995,
+          "end": 289.940002
+        },
+        {
+          "word": "consultation",
+          "start": 289.940002,
+          "end": 290.779999
+        },
+        {
+          "word": "with",
+          "start": 290.779999,
+          "end": 290.880005
+        },
+        {
+          "word": "the",
+          "start": 290.880005,
+          "end": 290.959991
+        },
+        {
+          "word": "doctor",
+          "start": 290.959991,
+          "end": 291.380005
+        },
+        {
+          "word": "does",
+          "start": 291.380005,
+          "end": 291.640015
+        },
+        {
+          "word": "n't",
+          "start": 291.380005,
+          "end": 291.640015
+        },
+        {
+          "word": "cost",
+          "start": 291.640015,
+          "end": 291.920013
+        },
+        {
+          "word": "you",
+          "start": 291.920013,
+          "end": 291.980011
+        },
+        {
+          "word": "anything",
+          "start": 291.980011,
+          "end": 292.470001
+        }
+      ],
       "answers": [],
-      "end": 292.6
+      "end": 292.470001
     },
     {
       "id": 73,
-      "start": 292.6,
+      "start": 293.119995,
       "speaker": "MRS SMITH",
       "en": "It’s completely free as long as you’re a resident here.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 293.119995,
+          "end": 293.279999
+        },
+        {
+          "word": "'s",
+          "start": 293.119995,
+          "end": 293.279999
+        },
+        {
+          "word": "completely",
+          "start": 293.279999,
+          "end": 293.75
+        },
+        {
+          "word": "free",
+          "start": 293.75,
+          "end": 294.119995
+        },
+        {
+          "word": "as",
+          "start": 294.119995,
+          "end": 294.429993
+        },
+        {
+          "word": "long",
+          "start": 294.429993,
+          "end": 294.640015
+        },
+        {
+          "word": "as",
+          "start": 294.640015,
+          "end": 294.76001
+        },
+        {
+          "word": "you",
+          "start": 294.76001,
+          "end": 294.929993
+        },
+        {
+          "word": "'re",
+          "start": 294.76001,
+          "end": 294.929993
+        },
+        {
+          "word": "a",
+          "start": 294.929993,
+          "end": 295.019989
+        },
+        {
+          "word": "resident",
+          "start": 295.019989,
+          "end": 296.040009
+        },
+        {
+          "word": "here",
+          "start": 296.040009,
+          "end": 296.320007
+        }
+      ],
       "answers": [],
-      "end": 296.4
+      "end": 296.320007
     },
     {
       "id": 74,
-      "start": 296.5,
+      "start": 296.579987,
       "speaker": "MRS SMITH",
       "en": "You’re going to be here for three years, aren’t you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 296.579987,
+          "end": 297.170013
+        },
+        {
+          "word": "'re",
+          "start": 296.579987,
+          "end": 297.170013
+        },
+        {
+          "word": "going",
+          "start": 297.170013,
+          "end": 297.380005
+        },
+        {
+          "word": "to",
+          "start": 297.380005,
+          "end": 297.480011
+        },
+        {
+          "word": "be",
+          "start": 297.480011,
+          "end": 297.579987
+        },
+        {
+          "word": "here",
+          "start": 297.579987,
+          "end": 297.809998
+        },
+        {
+          "word": "for",
+          "start": 297.809998,
+          "end": 298.190002
+        },
+        {
+          "word": "three",
+          "start": 298.190002,
+          "end": 298.529999
+        },
+        {
+          "word": "years",
+          "start": 298.529999,
+          "end": 299.179993
+        },
+        {
+          "word": "are",
+          "start": 299.179993,
+          "end": 299.380005
+        },
+        {
+          "word": "n't",
+          "start": 299.179993,
+          "end": 299.380005
+        },
+        {
+          "word": "you",
+          "start": 299.380005,
+          "end": 299.920013
+        }
+      ],
       "answers": [],
-      "end": 300.3
+      "end": 299.920013
     },
     {
       "id": 75,
-      "start": 300.4,
+      "start": 300.299988,
       "speaker": "MRS SMITH",
       "en": "So there shouldn’t be any question of you paying anything to see the doctor.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 300.299988,
+          "end": 300.779999
+        },
+        {
+          "word": "there",
+          "start": 300.829987,
+          "end": 300.98999
+        },
+        {
+          "word": "should",
+          "start": 300.98999,
+          "end": 301.26001
+        },
+        {
+          "word": "n't",
+          "start": 300.98999,
+          "end": 301.26001
+        },
+        {
+          "word": "be",
+          "start": 301.26001,
+          "end": 301.390015
+        },
+        {
+          "word": "any",
+          "start": 301.390015,
+          "end": 301.559998
+        },
+        {
+          "word": "question",
+          "start": 301.559998,
+          "end": 301.980011
+        },
+        {
+          "word": "of",
+          "start": 301.980011,
+          "end": 302.070007
+        },
+        {
+          "word": "you",
+          "start": 302.070007,
+          "end": 302.170013
+        },
+        {
+          "word": "paying",
+          "start": 302.170013,
+          "end": 302.470001
+        },
+        {
+          "word": "anything",
+          "start": 302.470001,
+          "end": 302.809998
+        },
+        {
+          "word": "to",
+          "start": 302.809998,
+          "end": 302.880005
+        },
+        {
+          "word": "see",
+          "start": 302.880005,
+          "end": 303.019989
+        },
+        {
+          "word": "the",
+          "start": 303.019989,
+          "end": 303.109985
+        },
+        {
+          "word": "doctor",
+          "start": 303.109985,
+          "end": 303.589996
+        }
+      ],
       "answers": [],
-      "end": 304.3
+      "end": 303.589996
     },
     {
       "id": 76,
-      "start": 304.4,
+      "start": 304.230011,
       "speaker": "MRS SMITH",
       "en": "So that’s one less problem to worry about.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 304.230011,
+          "end": 304.339996
+        },
+        {
+          "word": "that",
+          "start": 304.339996,
+          "end": 304.51001
+        },
+        {
+          "word": "'s",
+          "start": 304.51001,
+          "end": 304.75
+        },
+        {
+          "word": "one",
+          "start": 304.880005,
+          "end": 305.290009
+        },
+        {
+          "word": "less",
+          "start": 305.290009,
+          "end": 305.559998
+        },
+        {
+          "word": "problem",
+          "start": 305.559998,
+          "end": 306.100006
+        },
+        {
+          "word": "to",
+          "start": 306.100006,
+          "end": 306.23999
+        },
+        {
+          "word": "worry",
+          "start": 306.23999,
+          "end": 306.48999
+        },
+        {
+          "word": "about",
+          "start": 306.48999,
+          "end": 306.73999
+        }
+      ],
       "answers": [],
-      "end": 307.5
+      "end": 306.73999
     },
     {
       "id": 77,
-      "start": 308.3,
+      "start": 308.269989,
       "speaker": "MRS SMITH",
       "en": "Look, Mrs Sutton.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Look",
+          "start": 308.269989,
+          "end": 308.480011
+        },
+        {
+          "word": "Mrs",
+          "start": 308.649994,
+          "end": 308.929993
+        },
+        {
+          "word": "Sutton",
+          "start": 308.929993,
+          "end": 309.23999
+        }
+      ],
       "answers": [],
-      "end": 309.2
+      "end": 309.23999
     },
     {
       "id": 78,
-      "start": 309.3,
+      "start": 309.269989,
       "speaker": "MRS SMITH",
       "en": "If you want, I’ll sit with your daughter for half an hour if you want to go down to the health centre to register.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 309.269989,
+          "end": 309.529999
+        },
+        {
+          "word": "you",
+          "start": 309.529999,
+          "end": 309.640015
+        },
+        {
+          "word": "want",
+          "start": 309.640015,
+          "end": 310.140015
+        },
+        {
+          "word": "I",
+          "start": 310.299988,
+          "end": 310.540009
+        },
+        {
+          "word": "'ll",
+          "start": 310.540009,
+          "end": 310.589996
+        },
+        {
+          "word": "sit",
+          "start": 310.589996,
+          "end": 310.839996
+        },
+        {
+          "word": "with",
+          "start": 310.839996,
+          "end": 310.950012
+        },
+        {
+          "word": "your",
+          "start": 310.950012,
+          "end": 311.059998
+        },
+        {
+          "word": "daughter",
+          "start": 311.059998,
+          "end": 311.549988
+        },
+        {
+          "word": "for",
+          "start": 311.549988,
+          "end": 311.670013
+        },
+        {
+          "word": "half",
+          "start": 311.670013,
+          "end": 311.929993
+        },
+        {
+          "word": "an",
+          "start": 311.929993,
+          "end": 312.019989
+        },
+        {
+          "word": "hour",
+          "start": 312.019989,
+          "end": 312.220001
+        },
+        {
+          "word": "if",
+          "start": 312.220001,
+          "end": 312.549988
+        },
+        {
+          "word": "you",
+          "start": 312.549988,
+          "end": 312.630005
+        },
+        {
+          "word": "want",
+          "start": 312.630005,
+          "end": 312.809998
+        },
+        {
+          "word": "to",
+          "start": 312.809998,
+          "end": 312.890015
+        },
+        {
+          "word": "go",
+          "start": 312.890015,
+          "end": 313.059998
+        },
+        {
+          "word": "down",
+          "start": 313.059998,
+          "end": 313.309998
+        },
+        {
+          "word": "to",
+          "start": 313.309998,
+          "end": 313.390015
+        },
+        {
+          "word": "the",
+          "start": 313.390015,
+          "end": 313.48999
+        },
+        {
+          "word": "health",
+          "start": 313.48999,
+          "end": 313.730011
+        },
+        {
+          "word": "centre",
+          "start": 313.730011,
+          "end": 314.019989
+        },
+        {
+          "word": "to",
+          "start": 314.019989,
+          "end": 314.130005
+        },
+        {
+          "word": "register",
+          "start": 314.130005,
+          "end": 314.679993
+        }
+      ],
       "answers": [],
-      "end": 312.8
+      "end": 314.679993
     },
     {
       "id": 79,
-      "start": 312.9,
+      "start": 315.049988,
       "speaker": "MRS SMITH",
       "en": "It’s no trouble really, don’t worry.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 315.049988,
+          "end": 315.380005
+        },
+        {
+          "word": "'s",
+          "start": 315.049988,
+          "end": 315.380005
+        },
+        {
+          "word": "no",
+          "start": 315.380005,
+          "end": 315.549988
+        },
+        {
+          "word": "trouble",
+          "start": 315.549988,
+          "end": 316.0
+        },
+        {
+          "word": "really",
+          "start": 316.0,
+          "end": 316.369995
+        },
+        {
+          "word": "do",
+          "start": 316.369995,
+          "end": 316.609985
+        },
+        {
+          "word": "n't",
+          "start": 316.369995,
+          "end": 316.609985
+        },
+        {
+          "word": "worry",
+          "start": 316.609985,
+          "end": 317.040009
+        }
+      ],
       "answers": [],
-      "end": 316.3
+      "end": 317.040009
     },
     {
       "id": 80,
-      "start": 316.4,
+      "start": 317.420013,
       "speaker": "MRS SUTTON",
       "en": "Are you sure you wouldn’t mind?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Are",
+          "start": 317.420013,
+          "end": 317.51001
+        },
+        {
+          "word": "you",
+          "start": 317.51001,
+          "end": 317.690002
+        },
+        {
+          "word": "sure",
+          "start": 317.690002,
+          "end": 318.0
+        },
+        {
+          "word": "you",
+          "start": 318.0,
+          "end": 318.160004
+        },
+        {
+          "word": "would",
+          "start": 318.160004,
+          "end": 318.470001
+        },
+        {
+          "word": "n't",
+          "start": 318.160004,
+          "end": 318.470001
+        },
+        {
+          "word": "mind",
+          "start": 318.470001,
+          "end": 318.950012
+        }
+      ],
       "answers": [],
-      "end": 319.7
+      "end": 318.950012
     },
     {
       "id": 81,
-      "start": 320.0,
+      "start": 319.329987,
       "speaker": "MRS SUTTON",
       "en": "That would really help me a lot.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 319.329987,
+          "end": 319.630005
+        },
+        {
+          "word": "would",
+          "start": 319.630005,
+          "end": 319.799988
+        },
+        {
+          "word": "really",
+          "start": 319.799988,
+          "end": 320.100006
+        },
+        {
+          "word": "help",
+          "start": 320.100006,
+          "end": 320.390015
+        },
+        {
+          "word": "me",
+          "start": 320.390015,
+          "end": 320.470001
+        },
+        {
+          "word": "a",
+          "start": 320.470001,
+          "end": 320.559998
+        },
+        {
+          "word": "lot",
+          "start": 320.559998,
+          "end": 320.98999
+        }
+      ],
       "answers": [],
-      "end": 321.9
+      "end": 320.98999
     },
     {
       "id": 82,
-      "start": 322.6,
+      "start": 321.369995,
       "speaker": "MRS SUTTON",
       "en": "I’ll ask them if they can send someone round later to see Anna.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "I",
+          "start": 321.369995,
+          "end": 321.529999
+        },
+        {
+          "word": "'ll",
+          "start": 321.529999,
+          "end": 321.670013
+        },
+        {
+          "word": "ask",
+          "start": 321.670013,
+          "end": 321.859985
+        },
+        {
+          "word": "them",
+          "start": 321.859985,
+          "end": 322.0
+        },
+        {
+          "word": "if",
+          "start": 322.0,
+          "end": 322.079987
+        },
+        {
+          "word": "they",
+          "start": 322.079987,
+          "end": 322.200012
+        },
+        {
+          "word": "can",
+          "start": 322.200012,
+          "end": 322.350006
+        },
+        {
+          "word": "send",
+          "start": 322.350006,
+          "end": 322.609985
+        },
+        {
+          "word": "someone",
+          "start": 322.609985,
+          "end": 322.950012
+        },
+        {
+          "word": "round",
+          "start": 322.950012,
+          "end": 323.179993
+        },
+        {
+          "word": "later",
+          "start": 323.179993,
+          "end": 323.540009
+        },
+        {
+          "word": "to",
+          "start": 323.540009,
+          "end": 323.649994
+        },
+        {
+          "word": "see",
+          "start": 323.649994,
+          "end": 323.890015
+        },
+        {
+          "word": "Anna",
+          "start": 323.890015,
+          "end": 324.25
+        }
+      ],
+      "answers": [],
+      "end": 324.25
     },
     {
       "id": 83,
-      "start": 325.3,
+      "start": 324.700012,
       "speaker": "MRS SUTTON",
       "en": "I think I’ll try the Dean End Centre.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 324.700012,
+          "end": 325.059998
+        },
+        {
+          "word": "think",
+          "start": 325.059998,
+          "end": 325.51001
+        },
+        {
+          "word": "I",
+          "start": 325.51001,
+          "end": 325.690002
+        },
+        {
+          "word": "'ll",
+          "start": 325.690002,
+          "end": 325.75
+        },
+        {
+          "word": "try",
+          "start": 325.75,
+          "end": 326.109985
+        },
+        {
+          "word": "the",
+          "start": 326.109985,
+          "end": 326.209991
+        },
+        {
+          "word": "Dean",
+          "start": 326.209991,
+          "end": 326.48999
+        },
+        {
+          "word": "End",
+          "start": 326.48999,
+          "end": 326.899994
+        },
+        {
+          "word": "Centre",
+          "start": 326.899994,
+          "end": 327.369995
+        }
+      ],
       "answers": [],
-      "end": 327.5
+      "end": 327.369995
     },
     {
       "id": 84,
-      "start": 327.6,
+      "start": 327.549988,
       "speaker": "MRS SMITH",
       "en": "Good idea.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 327.549988,
+          "end": 327.709991
+        },
+        {
+          "word": "idea",
+          "start": 327.709991,
+          "end": 328.329987
+        }
+      ],
       "answers": [],
-      "end": 328.9
+      "end": 328.329987
     },
     {
       "id": 85,
-      "start": 329.0,
+      "start": 328.730011,
       "speaker": "MRS SMITH",
       "en": "Don’t worry about Anna.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Do",
+          "start": 328.730011,
+          "end": 328.920013
+        },
+        {
+          "word": "n't",
+          "start": 328.730011,
+          "end": 328.920013
+        },
+        {
+          "word": "worry",
+          "start": 328.920013,
+          "end": 329.109985
+        },
+        {
+          "word": "about",
+          "start": 329.109985,
+          "end": 329.420013
+        },
+        {
+          "word": "Anna",
+          "start": 329.420013,
+          "end": 329.790009
+        }
+      ],
       "answers": [],
-      "end": 330.2
+      "end": 329.790009
     },
     {
       "id": 86,
-      "start": 330.3,
+      "start": 329.98999,
       "speaker": "MRS SUTTON",
       "en": "Right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 329.98999,
+          "end": 330.5
+        }
+      ],
       "answers": [],
-      "end": 330.8
+      "end": 330.5
     },
     {
       "id": 87,
-      "start": 332.4,
+      "start": 330.959991,
       "speaker": "MRS SUTTON",
       "en": "I’ll be back as soon as I can.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "I",
+          "start": 330.959991,
+          "end": 331.269989
+        },
+        {
+          "word": "'ll",
+          "start": 331.269989,
+          "end": 331.299988
+        },
+        {
+          "word": "be",
+          "start": 331.299988,
+          "end": 331.440002
+        },
+        {
+          "word": "back",
+          "start": 331.440002,
+          "end": 331.600006
+        },
+        {
+          "word": "as",
+          "start": 331.730011,
+          "end": 331.829987
+        },
+        {
+          "word": "soon",
+          "start": 331.829987,
+          "end": 331.98999
+        },
+        {
+          "word": "as",
+          "start": 331.98999,
+          "end": 332.089996
+        },
+        {
+          "word": "I",
+          "start": 332.089996,
+          "end": 332.209991
+        },
+        {
+          "word": "can",
+          "start": 332.209991,
+          "end": 332.690002
+        }
+      ],
+      "answers": [],
+      "end": 332.690002
     }
   ],
   "questions": [
@@ -970,5 +5934,19 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 974,
+    "mfa_word_count": 974,
+    "matched_word_count": 963,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

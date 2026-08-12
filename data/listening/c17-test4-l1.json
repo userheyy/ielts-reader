@@ -7,311 +7,3680 @@
   "segments": [
     {
       "id": 1,
-      "start": 81.1,
+      "start": 81.35,
       "speaker": "JACINTA",
       "en": "Hello, Easy Life Cleaning Services, Jacinta speaking.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hello",
+          "start": 81.35,
+          "end": 81.94
+        },
+        {
+          "word": "Easy",
+          "start": 82.02,
+          "end": 82.33999999999999
+        },
+        {
+          "word": "Life",
+          "start": 82.33999999999999,
+          "end": 82.74
+        },
+        {
+          "word": "Cleaning",
+          "start": 82.74,
+          "end": 83.17999999999999
+        },
+        {
+          "word": "Services",
+          "start": 83.17999999999999,
+          "end": 83.94
+        },
+        {
+          "word": "Jacinta",
+          "start": 83.94,
+          "end": 84.44
+        },
+        {
+          "word": "speaking",
+          "start": 84.44,
+          "end": 85.05999999999999
+        }
+      ],
       "answers": [],
-      "end": 85.1
+      "end": 85.05999999999999
     },
     {
       "id": 2,
-      "start": 85.5,
+      "start": 85.44,
       "speaker": "CLIENT",
       "en": "Oh hello. I’m looking for a cleaning service for my apartment - do you do domestic cleaning?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 85.44,
+          "end": 85.58999999999999
+        },
+        {
+          "word": "hello",
+          "start": 85.58999999999999,
+          "end": 86.02
+        },
+        {
+          "word": "I",
+          "start": 86.36999999999999,
+          "end": 86.55999999999999
+        },
+        {
+          "word": "'m",
+          "start": 86.36999999999999,
+          "end": 86.55999999999999
+        },
+        {
+          "word": "looking",
+          "start": 86.55999999999999,
+          "end": 86.92999999999999
+        },
+        {
+          "word": "for",
+          "start": 86.92999999999999,
+          "end": 87.08
+        },
+        {
+          "word": "a",
+          "start": 87.08,
+          "end": 87.13
+        },
+        {
+          "word": "cleaning",
+          "start": 87.13,
+          "end": 87.53999999999999
+        },
+        {
+          "word": "service",
+          "start": 87.53999999999999,
+          "end": 88.03999999999999
+        },
+        {
+          "word": "for",
+          "start": 88.03999999999999,
+          "end": 88.11999999999999
+        },
+        {
+          "word": "my",
+          "start": 88.11999999999999,
+          "end": 88.28
+        },
+        {
+          "word": "apartment",
+          "start": 88.28,
+          "end": 89.19
+        },
+        {
+          "word": "do",
+          "start": 89.25,
+          "end": 89.5
+        },
+        {
+          "word": "you",
+          "start": 89.5,
+          "end": 89.63
+        },
+        {
+          "word": "do",
+          "start": 89.63,
+          "end": 89.89999999999999
+        },
+        {
+          "word": "domestic",
+          "start": 89.89999999999999,
+          "end": 90.46
+        },
+        {
+          "word": "cleaning",
+          "start": 90.46,
+          "end": 90.97
+        }
+      ],
       "answers": [],
-      "end": 91.2
+      "end": 90.97
     },
     {
       "id": 3,
-      "start": 91.3,
+      "start": 91.16999999999999,
       "speaker": "JACINTA",
       "en": "Sure.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sure",
+          "start": 91.16999999999999,
+          "end": 91.75
+        }
+      ],
       "answers": [],
-      "end": 91.8
+      "end": 91.75
     },
     {
       "id": 4,
-      "start": 92.2,
+      "start": 92.1,
       "speaker": "CLIENT",
       "en": "Well, it’s just a one-bedroom flat. Do you have a basic cleaning package?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 92.1,
+          "end": 92.58
+        },
+        {
+          "word": "it",
+          "start": 92.58,
+          "end": 92.88
+        },
+        {
+          "word": "'s",
+          "start": 92.58,
+          "end": 92.88
+        },
+        {
+          "word": "just",
+          "start": 92.88,
+          "end": 93.17999999999999
+        },
+        {
+          "word": "a",
+          "start": 93.17999999999999,
+          "end": 93.24
+        },
+        {
+          "word": "one",
+          "start": 93.24,
+          "end": 93.50999999999999
+        },
+        {
+          "word": "bedroom",
+          "start": 93.50999999999999,
+          "end": 93.86999999999999
+        },
+        {
+          "word": "flat",
+          "start": 93.86999999999999,
+          "end": 94.61999999999999
+        },
+        {
+          "word": "Do",
+          "start": 95.16999999999999,
+          "end": 95.300001
+        },
+        {
+          "word": "you",
+          "start": 95.300001,
+          "end": 95.44
+        },
+        {
+          "word": "have",
+          "start": 95.44,
+          "end": 95.72999899999999
+        },
+        {
+          "word": "a",
+          "start": 95.72999899999999,
+          "end": 95.75999999999999
+        },
+        {
+          "word": "basic",
+          "start": 95.75999999999999,
+          "end": 96.36
+        },
+        {
+          "word": "cleaning",
+          "start": 96.36,
+          "end": 96.72999899999999
+        },
+        {
+          "word": "package",
+          "start": 96.72999899999999,
+          "end": 97.33
+        }
+      ],
       "answers": [],
-      "end": 97.4
+      "end": 97.33
     },
     {
       "id": 5,
-      "start": 97.6,
+      "start": 97.630001,
       "speaker": "JACINTA",
       "en": "Yes. For a one-bedroom flat we’re probably looking at about two hours for a clean. So we’d do a thorough clean of all surfaces in each room, and polish them where necessary. Does your apartment have carpets?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 97.630001,
+          "end": 98.04000099999999
+        },
+        {
+          "word": "For",
+          "start": 98.52,
+          "end": 98.69999999999999
+        },
+        {
+          "word": "a",
+          "start": 98.69999999999999,
+          "end": 98.78
+        },
+        {
+          "word": "one",
+          "start": 98.78,
+          "end": 99.069999
+        },
+        {
+          "word": "bedroom",
+          "start": 99.069999,
+          "end": 99.50999999999999
+        },
+        {
+          "word": "flat",
+          "start": 99.50999999999999,
+          "end": 99.91999999999999
+        },
+        {
+          "word": "we",
+          "start": 100.239999,
+          "end": 100.630001
+        },
+        {
+          "word": "'re",
+          "start": 100.239999,
+          "end": 100.630001
+        },
+        {
+          "word": "probably",
+          "start": 100.630001,
+          "end": 101.159999
+        },
+        {
+          "word": "looking",
+          "start": 101.159999,
+          "end": 101.54000099999999
+        },
+        {
+          "word": "at",
+          "start": 101.54000099999999,
+          "end": 101.61
+        },
+        {
+          "word": "about",
+          "start": 101.61,
+          "end": 102.00999999999999
+        },
+        {
+          "word": "two",
+          "start": 102.00999999999999,
+          "end": 102.25999999999999
+        },
+        {
+          "word": "hours",
+          "start": 102.25999999999999,
+          "end": 102.659999
+        },
+        {
+          "word": "for",
+          "start": 102.659999,
+          "end": 102.79000099999999
+        },
+        {
+          "word": "a",
+          "start": 102.79000099999999,
+          "end": 102.85
+        },
+        {
+          "word": "clean",
+          "start": 102.85,
+          "end": 103.36
+        },
+        {
+          "word": "So",
+          "start": 103.83,
+          "end": 104.16999999999999
+        },
+        {
+          "word": "we",
+          "start": 104.16999999999999,
+          "end": 104.300001
+        },
+        {
+          "word": "'d",
+          "start": 104.300001,
+          "end": 104.35
+        },
+        {
+          "word": "do",
+          "start": 104.35,
+          "end": 104.489999
+        },
+        {
+          "word": "a",
+          "start": 104.489999,
+          "end": 104.550001
+        },
+        {
+          "word": "thorough",
+          "start": 104.550001,
+          "end": 104.94
+        },
+        {
+          "word": "clean",
+          "start": 104.94,
+          "end": 105.28
+        },
+        {
+          "word": "of",
+          "start": 105.28,
+          "end": 105.36999999999999
+        },
+        {
+          "word": "all",
+          "start": 105.36999999999999,
+          "end": 105.489999
+        },
+        {
+          "word": "surfaces",
+          "start": 105.489999,
+          "end": 106.19999999999999
+        },
+        {
+          "word": "in",
+          "start": 106.19999999999999,
+          "end": 106.30999899999999
+        },
+        {
+          "word": "each",
+          "start": 106.30999899999999,
+          "end": 106.55999899999999
+        },
+        {
+          "word": "room",
+          "start": 106.55999899999999,
+          "end": 106.96000099999999
+        },
+        {
+          "word": "and",
+          "start": 107.28,
+          "end": 107.47999899999999
+        },
+        {
+          "word": "polish",
+          "start": 107.47999899999999,
+          "end": 107.92999999999999
+        },
+        {
+          "word": "them",
+          "start": 107.92999999999999,
+          "end": 108.11
+        },
+        {
+          "word": "where",
+          "start": 108.11,
+          "end": 108.25
+        },
+        {
+          "word": "necessary",
+          "start": 108.25,
+          "end": 109.02
+        },
+        {
+          "word": "Does",
+          "start": 109.47999899999999,
+          "end": 109.69
+        },
+        {
+          "word": "your",
+          "start": 109.69,
+          "end": 109.86
+        },
+        {
+          "word": "apartment",
+          "start": 109.86,
+          "end": 110.33
+        },
+        {
+          "word": "have",
+          "start": 110.33,
+          "end": 110.54000099999999
+        },
+        {
+          "word": "carpets",
+          "start": 110.54000099999999,
+          "end": 111.41999999999999
+        }
+      ],
       "answers": [],
-      "end": 112.0
+      "end": 111.41999999999999
     },
     {
       "id": 6,
-      "start": 112.2,
+      "start": 111.64000099999998,
       "speaker": "CLIENT",
       "en": "No, I don't have any, but the floor would need cleaning.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 111.64000099999998,
+          "end": 112.149999
+        },
+        {
+          "word": "I",
+          "start": 112.149999,
+          "end": 112.28
+        },
+        {
+          "word": "do",
+          "start": 112.28,
+          "end": 112.449998
+        },
+        {
+          "word": "n't",
+          "start": 112.28,
+          "end": 112.449998
+        },
+        {
+          "word": "have",
+          "start": 112.449998,
+          "end": 112.660001
+        },
+        {
+          "word": "any",
+          "start": 112.660001,
+          "end": 113.07000099999999
+        },
+        {
+          "word": "but",
+          "start": 113.219999,
+          "end": 113.489999
+        },
+        {
+          "word": "the",
+          "start": 113.489999,
+          "end": 113.57999999999998
+        },
+        {
+          "word": "floor",
+          "start": 113.57999999999998,
+          "end": 114.149999
+        },
+        {
+          "word": "would",
+          "start": 114.149999,
+          "end": 114.309999
+        },
+        {
+          "word": "need",
+          "start": 114.309999,
+          "end": 114.559999
+        },
+        {
+          "word": "cleaning",
+          "start": 114.559999,
+          "end": 115.12
+        }
+      ],
       "answers": [
         1
       ],
-      "end": 115.8
+      "end": 115.12
     },
     {
       "id": 7,
-      "start": 115.8,
+      "start": 115.399999,
       "speaker": "JACINTA",
       "en": "Of course - we’d do that in every room. And we'd do a thorough clean of the kitchen and bathroom.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Of",
+          "start": 115.399999,
+          "end": 115.6
+        },
+        {
+          "word": "course",
+          "start": 115.6,
+          "end": 115.930002
+        },
+        {
+          "word": "we",
+          "start": 116.41999999999999,
+          "end": 116.57999999999998
+        },
+        {
+          "word": "'d",
+          "start": 116.57999999999998,
+          "end": 116.64000099999998
+        },
+        {
+          "word": "do",
+          "start": 116.64000099999998,
+          "end": 116.82999999999998
+        },
+        {
+          "word": "that",
+          "start": 116.82999999999998,
+          "end": 117.00999999999999
+        },
+        {
+          "word": "in",
+          "start": 117.00999999999999,
+          "end": 117.160001
+        },
+        {
+          "word": "every",
+          "start": 117.160001,
+          "end": 117.469999
+        },
+        {
+          "word": "room",
+          "start": 117.469999,
+          "end": 117.91999999999999
+        },
+        {
+          "word": "And",
+          "start": 118.340002,
+          "end": 118.60999799999999
+        },
+        {
+          "word": "we",
+          "start": 118.60999799999999,
+          "end": 118.73000099999999
+        },
+        {
+          "word": "'d",
+          "start": 118.73000099999999,
+          "end": 118.76999799999999
+        },
+        {
+          "word": "do",
+          "start": 118.76999799999999,
+          "end": 118.879999
+        },
+        {
+          "word": "a",
+          "start": 118.879999,
+          "end": 119.000002
+        },
+        {
+          "word": "thorough",
+          "start": 119.000002,
+          "end": 119.39000099999998
+        },
+        {
+          "word": "clean",
+          "start": 119.39000099999998,
+          "end": 119.719999
+        },
+        {
+          "word": "of",
+          "start": 119.719999,
+          "end": 119.82000099999999
+        },
+        {
+          "word": "the",
+          "start": 119.82000099999999,
+          "end": 119.91999999999999
+        },
+        {
+          "word": "kitchen",
+          "start": 119.91999999999999,
+          "end": 120.410001
+        },
+        {
+          "word": "and",
+          "start": 120.410001,
+          "end": 120.539999
+        },
+        {
+          "word": "bathroom",
+          "start": 120.539999,
+          "end": 121.23000099999999
+        }
+      ],
       "answers": [],
-      "end": 118.9
+      "end": 121.23000099999999
     },
     {
       "id": 8,
-      "start": 118.9,
+      "start": 121.46000099999999,
       "speaker": "CLIENT",
       "en": "OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 121.46000099999999,
+          "end": 121.91999999999999
+        }
+      ],
       "answers": [],
-      "end": 122.0
+      "end": 121.91999999999999
     },
     {
       "id": 9,
-      "start": 122.1,
+      "start": 122.07000099999999,
       "speaker": "JACINTA",
       "en": "Then we have some additional services which you can request if you want - so for example, we can clean your oven for you every week.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Then",
+          "start": 122.07000099999999,
+          "end": 122.28
+        },
+        {
+          "word": "we",
+          "start": 122.379999,
+          "end": 122.50999999999999
+        },
+        {
+          "word": "have",
+          "start": 122.50999999999999,
+          "end": 122.789999
+        },
+        {
+          "word": "some",
+          "start": 122.789999,
+          "end": 123.050001
+        },
+        {
+          "word": "additional",
+          "start": 123.050001,
+          "end": 123.550001
+        },
+        {
+          "word": "services",
+          "start": 123.550001,
+          "end": 124.26999799999999
+        },
+        {
+          "word": "which",
+          "start": 124.50999999999999,
+          "end": 124.809999
+        },
+        {
+          "word": "you",
+          "start": 124.809999,
+          "end": 124.91999999999999
+        },
+        {
+          "word": "can",
+          "start": 124.91999999999999,
+          "end": 125.149999
+        },
+        {
+          "word": "request",
+          "start": 125.149999,
+          "end": 125.699998
+        },
+        {
+          "word": "if",
+          "start": 125.699998,
+          "end": 125.85
+        },
+        {
+          "word": "you",
+          "start": 125.85,
+          "end": 125.94
+        },
+        {
+          "word": "want",
+          "start": 125.94,
+          "end": 126.39000099999998
+        },
+        {
+          "word": "so",
+          "start": 126.840002,
+          "end": 127.12
+        },
+        {
+          "word": "for",
+          "start": 127.12,
+          "end": 127.25999999999999
+        },
+        {
+          "word": "example",
+          "start": 127.25999999999999,
+          "end": 127.89000099999998
+        },
+        {
+          "word": "we",
+          "start": 128.109998,
+          "end": 128.300001
+        },
+        {
+          "word": "can",
+          "start": 128.300001,
+          "end": 128.489999
+        },
+        {
+          "word": "clean",
+          "start": 128.489999,
+          "end": 128.78
+        },
+        {
+          "word": "your",
+          "start": 128.78,
+          "end": 128.94
+        },
+        {
+          "word": "oven",
+          "start": 128.969999,
+          "end": 129.309999
+        },
+        {
+          "word": "for",
+          "start": 129.309999,
+          "end": 129.550001
+        },
+        {
+          "word": "you",
+          "start": 129.550001,
+          "end": 129.719999
+        },
+        {
+          "word": "every",
+          "start": 129.789999,
+          "end": 129.969999
+        },
+        {
+          "word": "week",
+          "start": 129.969999,
+          "end": 130.53
+        }
+      ],
       "answers": [],
-      "end": 130.5
+      "end": 130.53
     },
     {
       "id": 10,
-      "start": 130.6,
+      "start": 130.859998,
       "speaker": "CLIENT",
       "en": "Actually, I hardly ever use that, but can you do the fridge?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Actually",
+          "start": 130.859998,
+          "end": 131.570001
+        },
+        {
+          "word": "I",
+          "start": 131.570001,
+          "end": 131.85
+        },
+        {
+          "word": "hardly",
+          "start": 131.85,
+          "end": 132.21000099999998
+        },
+        {
+          "word": "ever",
+          "start": 132.21000099999998,
+          "end": 132.340002
+        },
+        {
+          "word": "use",
+          "start": 132.340002,
+          "end": 132.69
+        },
+        {
+          "word": "that",
+          "start": 132.769998,
+          "end": 133.07999999999998
+        },
+        {
+          "word": "but",
+          "start": 133.340002,
+          "end": 133.69
+        },
+        {
+          "word": "can",
+          "start": 133.750002,
+          "end": 133.94
+        },
+        {
+          "word": "you",
+          "start": 133.94,
+          "end": 134.039999
+        },
+        {
+          "word": "do",
+          "start": 134.039999,
+          "end": 134.199998
+        },
+        {
+          "word": "the",
+          "start": 134.199998,
+          "end": 134.28
+        },
+        {
+          "word": "fridge",
+          "start": 134.28,
+          "end": 134.980001
+        }
+      ],
       "answers": [
         2
       ],
-      "end": 135.3
+      "end": 134.980001
     },
     {
       "id": 11,
-      "start": 135.4,
+      "start": 135.269998,
       "speaker": "JACINTA",
       "en": "Sure. Would you like that done every week?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sure",
+          "start": 135.269998,
+          "end": 135.800001
+        },
+        {
+          "word": "Would",
+          "start": 136.14000099999998,
+          "end": 136.359998
+        },
+        {
+          "word": "you",
+          "start": 136.359998,
+          "end": 136.46000099999998
+        },
+        {
+          "word": "like",
+          "start": 136.46000099999998,
+          "end": 136.739999
+        },
+        {
+          "word": "that",
+          "start": 136.739999,
+          "end": 136.949998
+        },
+        {
+          "word": "done",
+          "start": 136.949998,
+          "end": 137.07999999999998
+        },
+        {
+          "word": "every",
+          "start": 137.129999,
+          "end": 137.42
+        },
+        {
+          "word": "week",
+          "start": 137.42,
+          "end": 137.969999
+        }
+      ],
       "answers": [],
-      "end": 138.3
+      "end": 137.969999
     },
     {
       "id": 12,
-      "start": 138.4,
+      "start": 138.01,
       "speaker": "CLIENT",
       "en": "Yes, definitely. And would ironing clothes be an additional service you can do?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 138.01,
+          "end": 138.379999
+        },
+        {
+          "word": "definitely",
+          "start": 138.42,
+          "end": 139.070001
+        },
+        {
+          "word": "And",
+          "start": 139.820001,
+          "end": 140.199998
+        },
+        {
+          "word": "would",
+          "start": 140.300001,
+          "end": 140.629999
+        },
+        {
+          "word": "ironing",
+          "start": 140.629999,
+          "end": 141.090002
+        },
+        {
+          "word": "clothes",
+          "start": 141.090002,
+          "end": 141.78
+        },
+        {
+          "word": "be",
+          "start": 141.78,
+          "end": 141.980001
+        },
+        {
+          "word": "an",
+          "start": 141.980001,
+          "end": 142.039999
+        },
+        {
+          "word": "additional",
+          "start": 142.039999,
+          "end": 142.489999
+        },
+        {
+          "word": "service",
+          "start": 142.489999,
+          "end": 143.000002
+        },
+        {
+          "word": "you",
+          "start": 143.000002,
+          "end": 143.1
+        },
+        {
+          "word": "can",
+          "start": 143.1,
+          "end": 143.299997
+        },
+        {
+          "word": "do",
+          "start": 143.299997,
+          "end": 143.629999
+        }
+      ],
       "answers": [],
-      "end": 143.7
+      "end": 143.629999
     },
     {
       "id": 13,
-      "start": 144.0,
+      "start": 143.930002,
       "speaker": "JACINTA",
       "en": "Yes, of course.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 143.930002,
+          "end": 144.220003
+        },
+        {
+          "word": "of",
+          "start": 144.220003,
+          "end": 144.320001
+        },
+        {
+          "word": "course",
+          "start": 144.320001,
+          "end": 144.979997
+        }
+      ],
       "answers": [],
-      "end": 145.3
+      "end": 144.979997
     },
     {
       "id": 14,
-      "start": 145.4,
+      "start": 145.189996,
       "speaker": "CLIENT",
       "en": "It wouldn't be much, just mv shirts for work that week.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 145.189996,
+          "end": 145.29000200000002
+        },
+        {
+          "word": "would",
+          "start": 145.29000200000002,
+          "end": 145.54000200000002
+        },
+        {
+          "word": "n't",
+          "start": 145.29000200000002,
+          "end": 145.54000200000002
+        },
+        {
+          "word": "be",
+          "start": 145.54000200000002,
+          "end": 145.680002
+        },
+        {
+          "word": "much",
+          "start": 145.83999799999998,
+          "end": 146.33000299999998
+        },
+        {
+          "word": "just",
+          "start": 146.360002,
+          "end": 146.750002
+        },
+        {
+          "word": "mv",
+          "start": 146.750002,
+          "end": 146.90999799999997
+        },
+        {
+          "word": "shirts",
+          "start": 146.90999799999997,
+          "end": 147.320001
+        },
+        {
+          "word": "for",
+          "start": 147.320001,
+          "end": 147.430002
+        },
+        {
+          "word": "work",
+          "start": 147.430002,
+          "end": 147.820001
+        },
+        {
+          "word": "that",
+          "start": 147.820001,
+          "end": 147.939996
+        },
+        {
+          "word": "week",
+          "start": 148.03,
+          "end": 148.51000399999998
+        }
+      ],
       "answers": [
         3
       ],
-      "end": 149.2
+      "end": 148.51000399999998
     },
     {
       "id": 15,
-      "start": 149.3,
+      "start": 148.699998,
       "speaker": "JACINTA",
       "en": "That’s fine. And we could also clean your microwave if you want.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 148.699998,
+          "end": 148.989999
+        },
+        {
+          "word": "'s",
+          "start": 148.989999,
+          "end": 149.059999
+        },
+        {
+          "word": "fine",
+          "start": 149.059999,
+          "end": 149.54000200000002
+        },
+        {
+          "word": "And",
+          "start": 149.970003,
+          "end": 150.15999799999997
+        },
+        {
+          "word": "we",
+          "start": 150.15999799999997,
+          "end": 150.269998
+        },
+        {
+          "word": "could",
+          "start": 150.269998,
+          "end": 150.42
+        },
+        {
+          "word": "also",
+          "start": 150.42,
+          "end": 150.820001
+        },
+        {
+          "word": "clean",
+          "start": 150.820001,
+          "end": 151.119997
+        },
+        {
+          "word": "your",
+          "start": 151.119997,
+          "end": 151.239999
+        },
+        {
+          "word": "microwave",
+          "start": 151.239999,
+          "end": 151.970003
+        },
+        {
+          "word": "if",
+          "start": 151.970003,
+          "end": 152.14000099999998
+        },
+        {
+          "word": "you",
+          "start": 152.14000099999998,
+          "end": 152.229997
+        },
+        {
+          "word": "want",
+          "start": 152.229997,
+          "end": 152.739999
+        }
+      ],
       "answers": [],
-      "end": 153.1
+      "end": 152.739999
     },
     {
       "id": 16,
-      "start": 153.2,
+      "start": 152.92,
       "speaker": "CLIENT",
       "en": "No, I wipe that out pretty regularly so there's no need for that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 152.92,
+          "end": 153.570001
+        },
+        {
+          "word": "I",
+          "start": 153.67,
+          "end": 153.83000299999998
+        },
+        {
+          "word": "wipe",
+          "start": 153.83000299999998,
+          "end": 154.17
+        },
+        {
+          "word": "that",
+          "start": 154.17,
+          "end": 154.33000299999998
+        },
+        {
+          "word": "out",
+          "start": 154.42,
+          "end": 154.58000299999998
+        },
+        {
+          "word": "pretty",
+          "start": 154.58000299999998,
+          "end": 154.83999799999998
+        },
+        {
+          "word": "regularly",
+          "start": 154.83999799999998,
+          "end": 155.470003
+        },
+        {
+          "word": "so",
+          "start": 155.470003,
+          "end": 155.65999799999997
+        },
+        {
+          "word": "there",
+          "start": 155.65999799999997,
+          "end": 155.930002
+        },
+        {
+          "word": "'s",
+          "start": 155.930002,
+          "end": 156.01000399999998
+        },
+        {
+          "word": "no",
+          "start": 156.01000399999998,
+          "end": 156.119997
+        },
+        {
+          "word": "need",
+          "start": 156.119997,
+          "end": 156.360002
+        },
+        {
+          "word": "for",
+          "start": 156.360002,
+          "end": 156.449998
+        },
+        {
+          "word": "that",
+          "start": 156.449998,
+          "end": 156.820001
+        }
+      ],
       "answers": [],
-      "end": 157.7
+      "end": 156.820001
     },
     {
       "id": 17,
-      "start": 157.8,
+      "start": 157.400003,
       "speaker": "JACINTA",
       "en": "We also offer additional services that you might want a bit less often, say every month. So for example, if the inside of your windows need cleaning, we could do that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 157.400003,
+          "end": 157.58999799999998
+        },
+        {
+          "word": "also",
+          "start": 157.58999799999998,
+          "end": 158.1
+        },
+        {
+          "word": "offer",
+          "start": 158.1,
+          "end": 158.54000200000002
+        },
+        {
+          "word": "additional",
+          "start": 158.54000200000002,
+          "end": 159.119997
+        },
+        {
+          "word": "services",
+          "start": 159.119997,
+          "end": 159.83999799999998
+        },
+        {
+          "word": "that",
+          "start": 159.83999799999998,
+          "end": 160.000002
+        },
+        {
+          "word": "you",
+          "start": 160.000002,
+          "end": 160.150003
+        },
+        {
+          "word": "might",
+          "start": 160.150003,
+          "end": 160.549997
+        },
+        {
+          "word": "want",
+          "start": 160.549997,
+          "end": 160.76000399999998
+        },
+        {
+          "word": "a",
+          "start": 160.76000399999998,
+          "end": 160.799997
+        },
+        {
+          "word": "bit",
+          "start": 160.799997,
+          "end": 161.019998
+        },
+        {
+          "word": "less",
+          "start": 161.019998,
+          "end": 161.320001
+        },
+        {
+          "word": "often",
+          "start": 161.320001,
+          "end": 161.769998
+        },
+        {
+          "word": "say",
+          "start": 162.049997,
+          "end": 162.40999799999997
+        },
+        {
+          "word": "every",
+          "start": 162.40999799999997,
+          "end": 162.689996
+        },
+        {
+          "word": "month",
+          "start": 162.689996,
+          "end": 163.220003
+        },
+        {
+          "word": "So",
+          "start": 163.58000299999998,
+          "end": 163.809999
+        },
+        {
+          "word": "for",
+          "start": 163.809999,
+          "end": 163.939996
+        },
+        {
+          "word": "example",
+          "start": 163.939996,
+          "end": 164.519998
+        },
+        {
+          "word": "if",
+          "start": 164.67,
+          "end": 164.85
+        },
+        {
+          "word": "the",
+          "start": 164.85,
+          "end": 165.049997
+        },
+        {
+          "word": "inside",
+          "start": 165.049997,
+          "end": 165.519998
+        },
+        {
+          "word": "of",
+          "start": 165.519998,
+          "end": 165.610002
+        },
+        {
+          "word": "your",
+          "start": 165.610002,
+          "end": 165.729997
+        },
+        {
+          "word": "windows",
+          "start": 165.729997,
+          "end": 166.33999799999998
+        },
+        {
+          "word": "need",
+          "start": 166.33999799999998,
+          "end": 166.559999
+        },
+        {
+          "word": "cleaning",
+          "start": 166.559999,
+          "end": 167.01000399999998
+        },
+        {
+          "word": "we",
+          "start": 167.01000399999998,
+          "end": 167.119997
+        },
+        {
+          "word": "could",
+          "start": 167.119997,
+          "end": 167.299997
+        },
+        {
+          "word": "do",
+          "start": 167.299997,
+          "end": 167.489999
+        },
+        {
+          "word": "that",
+          "start": 167.489999,
+          "end": 168.019998
+        }
+      ],
       "answers": [
         4
       ],
-      "end": 168.1
+      "end": 168.019998
     },
     {
       "id": 18,
-      "start": 168.2,
+      "start": 168.199998,
       "speaker": "CLIENT",
       "en": "Yes, that’d be good. I’m on the fifteenth floor, so the outside gets done regularly by specialists, but the inside does get a bit grubby.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 168.199998,
+          "end": 168.610002
+        },
+        {
+          "word": "that",
+          "start": 168.610002,
+          "end": 168.76000399999998
+        },
+        {
+          "word": "'d",
+          "start": 168.76000399999998,
+          "end": 168.83999799999998
+        },
+        {
+          "word": "be",
+          "start": 168.83999799999998,
+          "end": 168.939996
+        },
+        {
+          "word": "good",
+          "start": 168.939996,
+          "end": 169.400003
+        },
+        {
+          "word": "I",
+          "start": 169.769998,
+          "end": 169.949998
+        },
+        {
+          "word": "'m",
+          "start": 169.769998,
+          "end": 169.949998
+        },
+        {
+          "word": "on",
+          "start": 169.949998,
+          "end": 170.049997
+        },
+        {
+          "word": "the",
+          "start": 170.049997,
+          "end": 170.129999
+        },
+        {
+          "word": "fifteenth",
+          "start": 170.129999,
+          "end": 170.64000099999998
+        },
+        {
+          "word": "floor",
+          "start": 170.64000099999998,
+          "end": 171.199998
+        },
+        {
+          "word": "so",
+          "start": 171.320001,
+          "end": 171.750002
+        },
+        {
+          "word": "the",
+          "start": 171.750002,
+          "end": 171.89000099999998
+        },
+        {
+          "word": "outside",
+          "start": 171.89000099999998,
+          "end": 172.54000200000002
+        },
+        {
+          "word": "gets",
+          "start": 172.54000200000002,
+          "end": 172.799997
+        },
+        {
+          "word": "done",
+          "start": 172.799997,
+          "end": 173.000002
+        },
+        {
+          "word": "regularly",
+          "start": 173.000002,
+          "end": 173.629999
+        },
+        {
+          "word": "by",
+          "start": 173.629999,
+          "end": 173.879999
+        },
+        {
+          "word": "specialists",
+          "start": 173.879999,
+          "end": 174.90999799999997
+        },
+        {
+          "word": "but",
+          "start": 175.14000099999998,
+          "end": 175.29000200000002
+        },
+        {
+          "word": "the",
+          "start": 175.29000200000002,
+          "end": 175.449998
+        },
+        {
+          "word": "inside",
+          "start": 175.449998,
+          "end": 175.979997
+        },
+        {
+          "word": "does",
+          "start": 176.01000399999998,
+          "end": 176.299997
+        },
+        {
+          "word": "get",
+          "start": 176.299997,
+          "end": 176.479997
+        },
+        {
+          "word": "a",
+          "start": 176.479997,
+          "end": 176.519998
+        },
+        {
+          "word": "bit",
+          "start": 176.519998,
+          "end": 176.689996
+        },
+        {
+          "word": "grubby",
+          "start": 176.689996,
+          "end": 177.21000099999998
+        }
+      ],
       "answers": [],
-      "end": 178.0
+      "end": 177.21000099999998
     },
     {
       "id": 19,
-      "start": 178.5,
+      "start": 177.769998,
       "speaker": "JACINTA",
       "en": "And we could arrange for your curtains to get cleaned if necessary.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 177.769998,
+          "end": 178.03
+        },
+        {
+          "word": "we",
+          "start": 178.059999,
+          "end": 178.189996
+        },
+        {
+          "word": "could",
+          "start": 178.189996,
+          "end": 178.549997
+        },
+        {
+          "word": "arrange",
+          "start": 178.549997,
+          "end": 178.79000200000002
+        },
+        {
+          "word": "for",
+          "start": 178.79000200000002,
+          "end": 178.879999
+        },
+        {
+          "word": "your",
+          "start": 178.879999,
+          "end": 179.000002
+        },
+        {
+          "word": "curtains",
+          "start": 179.000002,
+          "end": 179.470003
+        },
+        {
+          "word": "to",
+          "start": 179.470003,
+          "end": 179.570001
+        },
+        {
+          "word": "get",
+          "start": 179.570001,
+          "end": 179.76000399999998
+        },
+        {
+          "word": "cleaned",
+          "start": 179.76000399999998,
+          "end": 180.08999799999998
+        },
+        {
+          "word": "if",
+          "start": 180.08999799999998,
+          "end": 180.220003
+        },
+        {
+          "word": "necessary",
+          "start": 180.220003,
+          "end": 180.949998
+        }
+      ],
       "answers": [],
-      "end": 181.2
+      "end": 180.949998
     },
     {
       "id": 20,
-      "start": 181.3,
+      "start": 181.110002,
       "speaker": "CLIENT",
       "en": "No, they’re OK. But would you be able to do something about the balcony? It's quite small and I don’t use it much, but it could do with a wash every month or so.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 181.110002,
+          "end": 181.229997
+        },
+        {
+          "word": "they",
+          "start": 181.229997,
+          "end": 181.820001
+        },
+        {
+          "word": "'re",
+          "start": 181.229997,
+          "end": 181.820001
+        },
+        {
+          "word": "OK",
+          "start": 181.820001,
+          "end": 182.320001
+        },
+        {
+          "word": "But",
+          "start": 182.809999,
+          "end": 183.150003
+        },
+        {
+          "word": "would",
+          "start": 183.150003,
+          "end": 183.519998
+        },
+        {
+          "word": "you",
+          "start": 183.519998,
+          "end": 183.619997
+        },
+        {
+          "word": "be",
+          "start": 183.619997,
+          "end": 183.71000099999998
+        },
+        {
+          "word": "able",
+          "start": 183.71000099999998,
+          "end": 184.019998
+        },
+        {
+          "word": "to",
+          "start": 184.019998,
+          "end": 184.150003
+        },
+        {
+          "word": "do",
+          "start": 184.150003,
+          "end": 184.35
+        },
+        {
+          "word": "something",
+          "start": 184.35,
+          "end": 184.769998
+        },
+        {
+          "word": "about",
+          "start": 184.769998,
+          "end": 185.019998
+        },
+        {
+          "word": "the",
+          "start": 185.019998,
+          "end": 185.1
+        },
+        {
+          "word": "balcony",
+          "start": 185.1,
+          "end": 185.809999
+        },
+        {
+          "word": "It",
+          "start": 186.189996,
+          "end": 186.33000299999998
+        },
+        {
+          "word": "'s",
+          "start": 186.189996,
+          "end": 186.33000299999998
+        },
+        {
+          "word": "quite",
+          "start": 186.33000299999998,
+          "end": 186.610002
+        },
+        {
+          "word": "small",
+          "start": 186.610002,
+          "end": 187.320001
+        },
+        {
+          "word": "and",
+          "start": 187.320001,
+          "end": 187.54000200000002
+        },
+        {
+          "word": "I",
+          "start": 187.54000200000002,
+          "end": 187.58999799999998
+        },
+        {
+          "word": "do",
+          "start": 187.58999799999998,
+          "end": 187.799997
+        },
+        {
+          "word": "n't",
+          "start": 187.58999799999998,
+          "end": 187.799997
+        },
+        {
+          "word": "use",
+          "start": 187.799997,
+          "end": 188.1
+        },
+        {
+          "word": "it",
+          "start": 188.1,
+          "end": 188.229997
+        },
+        {
+          "word": "much",
+          "start": 188.229997,
+          "end": 188.83000299999998
+        },
+        {
+          "word": "but",
+          "start": 188.869997,
+          "end": 188.989999
+        },
+        {
+          "word": "it",
+          "start": 188.989999,
+          "end": 189.17
+        },
+        {
+          "word": "could",
+          "start": 189.17,
+          "end": 189.46000099999998
+        },
+        {
+          "word": "do",
+          "start": 189.46000099999998,
+          "end": 189.64000099999998
+        },
+        {
+          "word": "with",
+          "start": 189.64000099999998,
+          "end": 189.78
+        },
+        {
+          "word": "a",
+          "start": 189.78,
+          "end": 189.860002
+        },
+        {
+          "word": "wash",
+          "start": 189.860002,
+          "end": 190.35
+        },
+        {
+          "word": "every",
+          "start": 190.379999,
+          "end": 190.809999
+        },
+        {
+          "word": "month",
+          "start": 190.809999,
+          "end": 191.129999
+        },
+        {
+          "word": "or",
+          "start": 191.129999,
+          "end": 191.199998
+        },
+        {
+          "word": "so",
+          "start": 191.199998,
+          "end": 191.369997
+        }
+      ],
       "answers": [
         5
       ],
-      "end": 191.9
+      "end": 191.369997
     },
     {
       "id": 21,
-      "start": 192.0,
+      "start": 191.90999799999997,
       "speaker": "JACINTA",
       "en": "Yes, we can get the pressure washer onto that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 191.90999799999997,
+          "end": 192.299997
+        },
+        {
+          "word": "we",
+          "start": 192.299997,
+          "end": 192.430002
+        },
+        {
+          "word": "can",
+          "start": 192.430002,
+          "end": 192.570001
+        },
+        {
+          "word": "get",
+          "start": 192.570001,
+          "end": 192.76000399999998
+        },
+        {
+          "word": "the",
+          "start": 192.76000399999998,
+          "end": 192.83999799999998
+        },
+        {
+          "word": "pressure",
+          "start": 192.83999799999998,
+          "end": 193.14000099999998
+        },
+        {
+          "word": "washer",
+          "start": 193.239999,
+          "end": 193.53
+        },
+        {
+          "word": "onto",
+          "start": 193.559999,
+          "end": 193.809999
+        },
+        {
+          "word": "that",
+          "start": 193.809999,
+          "end": 193.83999799999998
+        }
+      ],
       "answers": [],
-      "end": 194.4
+      "end": 193.83999799999998
     },
     {
       "id": 22,
-      "start": 235.9,
+      "start": 193.83999799999998,
       "speaker": "JACINTA",
       "en": "Now if you’re interested, we do offer some other possibilities to do with general maintenance. For example, if you have a problem with water and you need a plumber in a hurry, we can put you in touch with a reliable one who can come out straightaway. And the same thing if you need an electrician.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 193.83999799999998,
+          "end": 194.119997
+        },
+        {
+          "word": "if",
+          "start": 197.76000399999998,
+          "end": 197.92
+        },
+        {
+          "word": "you",
+          "start": 198.129999,
+          "end": 198.559999
+        },
+        {
+          "word": "'re",
+          "start": 198.129999,
+          "end": 198.559999
+        },
+        {
+          "word": "interested",
+          "start": 198.559999,
+          "end": 199.699998
+        },
+        {
+          "word": "we",
+          "start": 199.699998,
+          "end": 200.110002
+        },
+        {
+          "word": "do",
+          "start": 200.430002,
+          "end": 200.64000099999998
+        },
+        {
+          "word": "offer",
+          "start": 200.71000099999998,
+          "end": 200.879999
+        },
+        {
+          "word": "some",
+          "start": 200.879999,
+          "end": 201.110002
+        },
+        {
+          "word": "other",
+          "start": 201.110002,
+          "end": 202.15999799999997
+        },
+        {
+          "word": "possibilities",
+          "start": 202.199998,
+          "end": 203.04000200000002
+        },
+        {
+          "word": "to",
+          "start": 229.06000699999998,
+          "end": 231.019998
+        },
+        {
+          "word": "do",
+          "start": 231.070001,
+          "end": 231.210001
+        },
+        {
+          "word": "with",
+          "start": 231.210001,
+          "end": 232.1
+        },
+        {
+          "word": "general",
+          "start": 232.1,
+          "end": 232.409998
+        },
+        {
+          "word": "maintenance",
+          "start": 235.829996,
+          "end": 241.269998
+        },
+        {
+          "word": "For",
+          "start": 241.519998,
+          "end": 241.670007
+        },
+        {
+          "word": "example",
+          "start": 241.670007,
+          "end": 242.21999499999998
+        },
+        {
+          "word": "if",
+          "start": 242.540002,
+          "end": 242.779993
+        },
+        {
+          "word": "you",
+          "start": 242.779993,
+          "end": 242.879999
+        },
+        {
+          "word": "have",
+          "start": 242.879999,
+          "end": 243.070001
+        },
+        {
+          "word": "a",
+          "start": 243.070001,
+          "end": 243.129999
+        },
+        {
+          "word": "problem",
+          "start": 243.129999,
+          "end": 243.6
+        },
+        {
+          "word": "with",
+          "start": 243.6,
+          "end": 243.790002
+        },
+        {
+          "word": "water",
+          "start": 243.790002,
+          "end": 244.23999899999998
+        },
+        {
+          "word": "and",
+          "start": 244.389993,
+          "end": 244.650003
+        },
+        {
+          "word": "you",
+          "start": 244.650003,
+          "end": 244.749994
+        },
+        {
+          "word": "need",
+          "start": 244.749994,
+          "end": 244.960001
+        },
+        {
+          "word": "a",
+          "start": 244.960001,
+          "end": 245.019998
+        },
+        {
+          "word": "plumber",
+          "start": 245.019998,
+          "end": 245.46999499999998
+        },
+        {
+          "word": "in",
+          "start": 245.46999499999998,
+          "end": 245.650003
+        },
+        {
+          "word": "a",
+          "start": 245.650003,
+          "end": 245.71999499999998
+        },
+        {
+          "word": "hurry",
+          "start": 245.71999499999998,
+          "end": 246.230005
+        },
+        {
+          "word": "we",
+          "start": 246.590005,
+          "end": 246.820001
+        },
+        {
+          "word": "can",
+          "start": 246.820001,
+          "end": 247.01000399999998
+        },
+        {
+          "word": "put",
+          "start": 247.01000399999998,
+          "end": 247.21999499999998
+        },
+        {
+          "word": "you",
+          "start": 247.21999499999998,
+          "end": 247.359995
+        },
+        {
+          "word": "in",
+          "start": 247.359995,
+          "end": 247.46999499999998
+        },
+        {
+          "word": "touch",
+          "start": 247.46999499999998,
+          "end": 247.879999
+        },
+        {
+          "word": "with",
+          "start": 247.879999,
+          "end": 248.01000399999998
+        },
+        {
+          "word": "a",
+          "start": 248.01000399999998,
+          "end": 248.070001
+        },
+        {
+          "word": "reliable",
+          "start": 248.070001,
+          "end": 248.680002
+        },
+        {
+          "word": "one",
+          "start": 248.680002,
+          "end": 249.029993
+        },
+        {
+          "word": "who",
+          "start": 249.200006,
+          "end": 249.31000699999998
+        },
+        {
+          "word": "can",
+          "start": 249.31000699999998,
+          "end": 249.450006
+        },
+        {
+          "word": "come",
+          "start": 249.450006,
+          "end": 249.670007
+        },
+        {
+          "word": "out",
+          "start": 249.670007,
+          "end": 249.879999
+        },
+        {
+          "word": "straightaway",
+          "start": 249.879999,
+          "end": 250.680002
+        },
+        {
+          "word": "And",
+          "start": 251.040002,
+          "end": 251.35
+        },
+        {
+          "word": "the",
+          "start": 251.35,
+          "end": 251.450006
+        },
+        {
+          "word": "same",
+          "start": 251.450006,
+          "end": 251.799997
+        },
+        {
+          "word": "thing",
+          "start": 251.799997,
+          "end": 252.040002
+        },
+        {
+          "word": "if",
+          "start": 252.040002,
+          "end": 252.21999499999998
+        },
+        {
+          "word": "you",
+          "start": 252.21999499999998,
+          "end": 252.340005
+        },
+        {
+          "word": "need",
+          "start": 252.340005,
+          "end": 252.56000699999998
+        },
+        {
+          "word": "an",
+          "start": 252.56000699999998,
+          "end": 252.670007
+        },
+        {
+          "word": "electrician",
+          "start": 252.670007,
+          "end": 253.540002
+        }
+      ],
       "answers": [
         6
       ],
-      "end": 254.0
+      "end": 253.540002
     },
     {
       "id": 23,
-      "start": 254.1,
+      "start": 253.749994,
       "speaker": "CLIENT",
       "en": "Right. That's good to know. I’ve only just moved here so I don’t have any of those sorts of contacts.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 253.749994,
+          "end": 254.46999499999998
+        },
+        {
+          "word": "That",
+          "start": 254.6,
+          "end": 254.76000399999998
+        },
+        {
+          "word": "'s",
+          "start": 254.76000399999998,
+          "end": 254.81000699999998
+        },
+        {
+          "word": "good",
+          "start": 254.81000699999998,
+          "end": 254.96999499999998
+        },
+        {
+          "word": "to",
+          "start": 254.96999499999998,
+          "end": 255.1
+        },
+        {
+          "word": "know",
+          "start": 255.1,
+          "end": 255.26000399999998
+        },
+        {
+          "word": "I",
+          "start": 255.950006,
+          "end": 256.159998
+        },
+        {
+          "word": "'ve",
+          "start": 256.159998,
+          "end": 256.219995
+        },
+        {
+          "word": "only",
+          "start": 256.219995,
+          "end": 256.439996
+        },
+        {
+          "word": "just",
+          "start": 256.439996,
+          "end": 256.739999
+        },
+        {
+          "word": "moved",
+          "start": 256.739999,
+          "end": 257.04000199999996
+        },
+        {
+          "word": "here",
+          "start": 257.04000199999996,
+          "end": 257.389993
+        },
+        {
+          "word": "so",
+          "start": 257.389993,
+          "end": 257.629999
+        },
+        {
+          "word": "I",
+          "start": 257.629999,
+          "end": 257.680002
+        },
+        {
+          "word": "do",
+          "start": 257.680002,
+          "end": 257.739999
+        },
+        {
+          "word": "n't",
+          "start": 257.680002,
+          "end": 257.739999
+        },
+        {
+          "word": "have",
+          "start": 257.739999,
+          "end": 258.590005
+        },
+        {
+          "word": "any",
+          "start": 258.590005,
+          "end": 258.79999699999996
+        },
+        {
+          "word": "of",
+          "start": 258.79999699999996,
+          "end": 258.90000299999997
+        },
+        {
+          "word": "those",
+          "start": 258.90000299999997,
+          "end": 259.109995
+        },
+        {
+          "word": "sorts",
+          "start": 259.109995,
+          "end": 259.529993
+        },
+        {
+          "word": "of",
+          "start": 259.529993,
+          "end": 259.670007
+        },
+        {
+          "word": "contacts",
+          "start": 259.670007,
+          "end": 260.519998
+        }
+      ],
       "answers": [],
-      "end": 260.6
+      "end": 260.519998
     },
     {
       "id": 24,
-      "start": 266.4,
+      "start": 261.329996,
       "speaker": "JACINTA",
       "en": "And I don’t know if this is of interest to you, but we also offer a special vacuum cleaning system which can improve the indoor air quality of your home by capturing up to 99% of all the dust in the air. So if you’re troubled by allergies. this can make a big difference.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 261.329996,
+          "end": 261.439996
+        },
+        {
+          "word": "I",
+          "start": 261.439996,
+          "end": 261.570001
+        },
+        {
+          "word": "do",
+          "start": 261.570001,
+          "end": 261.810007
+        },
+        {
+          "word": "n't",
+          "start": 261.570001,
+          "end": 261.810007
+        },
+        {
+          "word": "know",
+          "start": 261.810007,
+          "end": 261.939996
+        },
+        {
+          "word": "if",
+          "start": 261.939996,
+          "end": 262.139993
+        },
+        {
+          "word": "this",
+          "start": 262.139993,
+          "end": 262.35
+        },
+        {
+          "word": "is",
+          "start": 262.35,
+          "end": 262.439996
+        },
+        {
+          "word": "of",
+          "start": 262.439996,
+          "end": 262.560007
+        },
+        {
+          "word": "interest",
+          "start": 262.560007,
+          "end": 263.04999699999996
+        },
+        {
+          "word": "to",
+          "start": 263.04999699999996,
+          "end": 263.120004
+        },
+        {
+          "word": "you",
+          "start": 263.120004,
+          "end": 263.340005
+        },
+        {
+          "word": "but",
+          "start": 263.739999,
+          "end": 263.870004
+        },
+        {
+          "word": "we",
+          "start": 263.870004,
+          "end": 264.060007
+        },
+        {
+          "word": "also",
+          "start": 264.060007,
+          "end": 264.439996
+        },
+        {
+          "word": "offer",
+          "start": 264.439996,
+          "end": 264.879999
+        },
+        {
+          "word": "a",
+          "start": 264.879999,
+          "end": 264.930002
+        },
+        {
+          "word": "special",
+          "start": 264.930002,
+          "end": 265.40000299999997
+        },
+        {
+          "word": "vacuum",
+          "start": 265.40000299999997,
+          "end": 265.999994
+        },
+        {
+          "word": "cleaning",
+          "start": 265.999994,
+          "end": 266.420007
+        },
+        {
+          "word": "system",
+          "start": 266.420007,
+          "end": 266.920007
+        },
+        {
+          "word": "which",
+          "start": 267.170007,
+          "end": 267.430002
+        },
+        {
+          "word": "can",
+          "start": 267.430002,
+          "end": 267.560007
+        },
+        {
+          "word": "improve",
+          "start": 267.560007,
+          "end": 268.010004
+        },
+        {
+          "word": "the",
+          "start": 268.010004,
+          "end": 268.079996
+        },
+        {
+          "word": "indoor",
+          "start": 268.079996,
+          "end": 268.570001
+        },
+        {
+          "word": "air",
+          "start": 268.639993,
+          "end": 268.870004
+        },
+        {
+          "word": "quality",
+          "start": 268.870004,
+          "end": 269.40000299999997
+        },
+        {
+          "word": "of",
+          "start": 269.40000299999997,
+          "end": 269.489999
+        },
+        {
+          "word": "your",
+          "start": 269.489999,
+          "end": 269.680002
+        },
+        {
+          "word": "home",
+          "start": 269.680002,
+          "end": 270.04000199999996
+        },
+        {
+          "word": "by",
+          "start": 270.29999699999996,
+          "end": 270.46000100000003
+        },
+        {
+          "word": "capturing",
+          "start": 270.46000100000003,
+          "end": 271.04000199999996
+        },
+        {
+          "word": "up",
+          "start": 271.04000199999996,
+          "end": 271.20000600000003
+        },
+        {
+          "word": "to",
+          "start": 271.20000600000003,
+          "end": 271.329996
+        },
+        {
+          "word": "99",
+          "start": 271.329996,
+          "end": 272.46000100000003
+        },
+        {
+          "word": "of",
+          "start": 272.46000100000003,
+          "end": 272.590005
+        },
+        {
+          "word": "all",
+          "start": 272.629999,
+          "end": 272.859995
+        },
+        {
+          "word": "the",
+          "start": 272.859995,
+          "end": 272.980005
+        },
+        {
+          "word": "dust",
+          "start": 272.980005,
+          "end": 273.40000299999997
+        },
+        {
+          "word": "in",
+          "start": 273.40000299999997,
+          "end": 273.489999
+        },
+        {
+          "word": "the",
+          "start": 273.489999,
+          "end": 273.670007
+        },
+        {
+          "word": "air",
+          "start": 273.670007,
+          "end": 274.090005
+        },
+        {
+          "word": "So",
+          "start": 274.46000100000003,
+          "end": 274.730005
+        },
+        {
+          "word": "if",
+          "start": 274.730005,
+          "end": 275.019998
+        },
+        {
+          "word": "you",
+          "start": 275.019998,
+          "end": 275.159998
+        },
+        {
+          "word": "'re",
+          "start": 275.019998,
+          "end": 275.159998
+        },
+        {
+          "word": "troubled",
+          "start": 275.159998,
+          "end": 275.670007
+        },
+        {
+          "word": "by",
+          "start": 275.670007,
+          "end": 275.90000299999997
+        },
+        {
+          "word": "allergies",
+          "start": 275.939996,
+          "end": 276.510004
+        },
+        {
+          "word": "this",
+          "start": 276.510004,
+          "end": 276.70000600000003
+        },
+        {
+          "word": "can",
+          "start": 276.70000600000003,
+          "end": 276.85
+        },
+        {
+          "word": "make",
+          "start": 276.85,
+          "end": 277.070001
+        },
+        {
+          "word": "a",
+          "start": 277.070001,
+          "end": 277.120004
+        },
+        {
+          "word": "big",
+          "start": 277.120004,
+          "end": 277.310007
+        },
+        {
+          "word": "difference",
+          "start": 277.310007,
+          "end": 278.060007
+        }
+      ],
       "answers": [
         7
       ],
-      "end": 278.7
+      "end": 278.060007
     },
     {
       "id": 25,
-      "start": 278.8,
+      "start": 278.320001,
       "speaker": "CLIENT",
       "en": "Right. In fact, I don’t have that sort of problem, but I'll bear it in mind. Now can you tell me a bit about your cleaning staff?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 278.320001,
+          "end": 278.840005
+        },
+        {
+          "word": "In",
+          "start": 278.840005,
+          "end": 279.159998
+        },
+        {
+          "word": "fact",
+          "start": 279.159998,
+          "end": 279.590005
+        },
+        {
+          "word": "I",
+          "start": 279.620004,
+          "end": 279.820001
+        },
+        {
+          "word": "do",
+          "start": 279.820001,
+          "end": 279.920007
+        },
+        {
+          "word": "n't",
+          "start": 279.820001,
+          "end": 279.920007
+        },
+        {
+          "word": "have",
+          "start": 279.920007,
+          "end": 280.139993
+        },
+        {
+          "word": "that",
+          "start": 280.139993,
+          "end": 280.320001
+        },
+        {
+          "word": "sort",
+          "start": 280.320001,
+          "end": 280.6
+        },
+        {
+          "word": "of",
+          "start": 280.6,
+          "end": 280.719995
+        },
+        {
+          "word": "problem",
+          "start": 280.719995,
+          "end": 281.21000100000003
+        },
+        {
+          "word": "but",
+          "start": 281.279993,
+          "end": 281.480005
+        },
+        {
+          "word": "I",
+          "start": 281.480005,
+          "end": 281.609995
+        },
+        {
+          "word": "'ll",
+          "start": 281.609995,
+          "end": 281.659998
+        },
+        {
+          "word": "bear",
+          "start": 281.659998,
+          "end": 281.95000600000003
+        },
+        {
+          "word": "it",
+          "start": 281.95000600000003,
+          "end": 282.04000199999996
+        },
+        {
+          "word": "in",
+          "start": 282.04000199999996,
+          "end": 282.159998
+        },
+        {
+          "word": "mind",
+          "start": 282.159998,
+          "end": 282.609995
+        },
+        {
+          "word": "Now",
+          "start": 283.120004,
+          "end": 283.439996
+        },
+        {
+          "word": "can",
+          "start": 283.54000199999996,
+          "end": 283.730005
+        },
+        {
+          "word": "you",
+          "start": 283.730005,
+          "end": 283.920007
+        },
+        {
+          "word": "tell",
+          "start": 283.920007,
+          "end": 284.189996
+        },
+        {
+          "word": "me",
+          "start": 284.189996,
+          "end": 284.370004
+        },
+        {
+          "word": "a",
+          "start": 284.370004,
+          "end": 284.409998
+        },
+        {
+          "word": "bit",
+          "start": 284.409998,
+          "end": 284.779993
+        },
+        {
+          "word": "about",
+          "start": 284.779993,
+          "end": 285.019998
+        },
+        {
+          "word": "your",
+          "start": 285.019998,
+          "end": 285.170007
+        },
+        {
+          "word": "cleaning",
+          "start": 285.170007,
+          "end": 285.579996
+        },
+        {
+          "word": "staff",
+          "start": 285.579996,
+          "end": 286.159998
+        }
+      ],
       "answers": [],
-      "end": 286.8
+      "end": 286.159998
     },
     {
       "id": 26,
-      "start": 286.9,
+      "start": 286.529993,
       "speaker": "JACINTA",
       "en": "Of course. So all our cleaners are very carefully selected. When they apply to us, they have to undergo a security check with the police to make sure they don’t have any sort of criminal background, and, of course, they have to provide references as well. Then if we think they might be suitable for the job, we give them training for it. That lasts for two weeks so it’s very thorough, and at the end of it, they have a test. If they pass that, we take them on, but we monitor them very carefully - we ask all our clients to complete a review of their performance after every visit and to email it to us. So we can pick up any problems straightaway and deal with them.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Of",
+          "start": 286.529993,
+          "end": 286.71000100000003
+        },
+        {
+          "word": "course",
+          "start": 286.71000100000003,
+          "end": 287.239999
+        },
+        {
+          "word": "So",
+          "start": 287.820001,
+          "end": 288.090005
+        },
+        {
+          "word": "all",
+          "start": 288.090005,
+          "end": 288.499994
+        },
+        {
+          "word": "our",
+          "start": 288.499994,
+          "end": 288.659998
+        },
+        {
+          "word": "cleaners",
+          "start": 288.659998,
+          "end": 289.20000600000003
+        },
+        {
+          "word": "are",
+          "start": 289.20000600000003,
+          "end": 289.260004
+        },
+        {
+          "word": "very",
+          "start": 289.260004,
+          "end": 289.609995
+        },
+        {
+          "word": "carefully",
+          "start": 289.609995,
+          "end": 290.129999
+        },
+        {
+          "word": "selected",
+          "start": 290.129999,
+          "end": 290.79999699999996
+        },
+        {
+          "word": "When",
+          "start": 291.279993,
+          "end": 291.519998
+        },
+        {
+          "word": "they",
+          "start": 291.519998,
+          "end": 291.719995
+        },
+        {
+          "word": "apply",
+          "start": 291.719995,
+          "end": 292.04999699999996
+        },
+        {
+          "word": "to",
+          "start": 292.04999699999996,
+          "end": 292.239999
+        },
+        {
+          "word": "us",
+          "start": 292.239999,
+          "end": 292.40000299999997
+        },
+        {
+          "word": "they",
+          "start": 292.40000299999997,
+          "end": 292.529993
+        },
+        {
+          "word": "have",
+          "start": 292.529993,
+          "end": 292.769998
+        },
+        {
+          "word": "to",
+          "start": 292.769998,
+          "end": 292.870004
+        },
+        {
+          "word": "undergo",
+          "start": 292.870004,
+          "end": 293.269998
+        },
+        {
+          "word": "a",
+          "start": 293.269998,
+          "end": 293.409998
+        },
+        {
+          "word": "security",
+          "start": 293.409998,
+          "end": 294.15000299999997
+        },
+        {
+          "word": "check",
+          "start": 294.15000299999997,
+          "end": 294.439996
+        },
+        {
+          "word": "with",
+          "start": 294.439996,
+          "end": 294.570001
+        },
+        {
+          "word": "the",
+          "start": 294.570001,
+          "end": 294.659998
+        },
+        {
+          "word": "police",
+          "start": 294.659998,
+          "end": 295.230005
+        },
+        {
+          "word": "to",
+          "start": 295.54999699999996,
+          "end": 295.680002
+        },
+        {
+          "word": "make",
+          "start": 295.680002,
+          "end": 295.909998
+        },
+        {
+          "word": "sure",
+          "start": 295.909998,
+          "end": 296.189996
+        },
+        {
+          "word": "they",
+          "start": 296.189996,
+          "end": 296.340005
+        },
+        {
+          "word": "do",
+          "start": 296.340005,
+          "end": 296.590005
+        },
+        {
+          "word": "n't",
+          "start": 296.340005,
+          "end": 296.590005
+        },
+        {
+          "word": "have",
+          "start": 296.590005,
+          "end": 296.840005
+        },
+        {
+          "word": "any",
+          "start": 296.870004,
+          "end": 297.109995
+        },
+        {
+          "word": "sort",
+          "start": 297.109995,
+          "end": 297.35
+        },
+        {
+          "word": "of",
+          "start": 297.35,
+          "end": 297.489999
+        },
+        {
+          "word": "criminal",
+          "start": 297.489999,
+          "end": 297.870004
+        },
+        {
+          "word": "background",
+          "start": 297.870004,
+          "end": 298.6
+        },
+        {
+          "word": "and",
+          "start": 299.04000199999996,
+          "end": 299.230005
+        },
+        {
+          "word": "of",
+          "start": 299.230005,
+          "end": 299.35
+        },
+        {
+          "word": "course",
+          "start": 299.35,
+          "end": 299.79000199999996
+        },
+        {
+          "word": "they",
+          "start": 299.79000199999996,
+          "end": 299.969995
+        },
+        {
+          "word": "have",
+          "start": 299.969995,
+          "end": 300.21000100000003
+        },
+        {
+          "word": "to",
+          "start": 300.21000100000003,
+          "end": 300.320001
+        },
+        {
+          "word": "provide",
+          "start": 300.320001,
+          "end": 300.760004
+        },
+        {
+          "word": "references",
+          "start": 300.760004,
+          "end": 301.370004
+        },
+        {
+          "word": "as",
+          "start": 301.370004,
+          "end": 301.480005
+        },
+        {
+          "word": "well",
+          "start": 301.480005,
+          "end": 301.879999
+        },
+        {
+          "word": "Then",
+          "start": 302.510004,
+          "end": 302.779993
+        },
+        {
+          "word": "if",
+          "start": 302.779993,
+          "end": 302.939996
+        },
+        {
+          "word": "we",
+          "start": 302.939996,
+          "end": 303.04999699999996
+        },
+        {
+          "word": "think",
+          "start": 303.04999699999996,
+          "end": 303.320001
+        },
+        {
+          "word": "they",
+          "start": 303.320001,
+          "end": 303.389993
+        },
+        {
+          "word": "might",
+          "start": 303.46000100000003,
+          "end": 303.719995
+        },
+        {
+          "word": "be",
+          "start": 303.719995,
+          "end": 303.810007
+        },
+        {
+          "word": "suitable",
+          "start": 303.810007,
+          "end": 304.29999699999996
+        },
+        {
+          "word": "for",
+          "start": 304.29999699999996,
+          "end": 304.45000600000003
+        },
+        {
+          "word": "the",
+          "start": 304.45000600000003,
+          "end": 304.570001
+        },
+        {
+          "word": "job",
+          "start": 304.570001,
+          "end": 304.930002
+        },
+        {
+          "word": "we",
+          "start": 305.180002,
+          "end": 305.340005
+        },
+        {
+          "word": "give",
+          "start": 305.340005,
+          "end": 305.54000199999996
+        },
+        {
+          "word": "them",
+          "start": 305.54000199999996,
+          "end": 305.70000600000003
+        },
+        {
+          "word": "training",
+          "start": 305.70000600000003,
+          "end": 306.170007
+        },
+        {
+          "word": "for",
+          "start": 306.170007,
+          "end": 306.420007
+        },
+        {
+          "word": "it",
+          "start": 306.420007,
+          "end": 306.65000299999997
+        },
+        {
+          "word": "That",
+          "start": 307.04999699999996,
+          "end": 307.29000199999996
+        },
+        {
+          "word": "lasts",
+          "start": 307.29000199999996,
+          "end": 307.719995
+        },
+        {
+          "word": "for",
+          "start": 307.719995,
+          "end": 307.810007
+        },
+        {
+          "word": "two",
+          "start": 307.810007,
+          "end": 308.109995
+        },
+        {
+          "word": "weeks",
+          "start": 308.109995,
+          "end": 308.54000199999996
+        },
+        {
+          "word": "so",
+          "start": 308.769998,
+          "end": 308.939996
+        },
+        {
+          "word": "it",
+          "start": 308.939996,
+          "end": 309.109995
+        },
+        {
+          "word": "'s",
+          "start": 308.939996,
+          "end": 309.109995
+        },
+        {
+          "word": "very",
+          "start": 309.109995,
+          "end": 309.389993
+        },
+        {
+          "word": "thorough",
+          "start": 309.389993,
+          "end": 309.859995
+        },
+        {
+          "word": "and",
+          "start": 310.20000600000003,
+          "end": 310.359995
+        },
+        {
+          "word": "at",
+          "start": 310.359995,
+          "end": 310.45000600000003
+        },
+        {
+          "word": "the",
+          "start": 310.45000600000003,
+          "end": 310.6
+        },
+        {
+          "word": "end",
+          "start": 310.6,
+          "end": 310.79999699999996
+        },
+        {
+          "word": "of",
+          "start": 310.79999699999996,
+          "end": 310.889993
+        },
+        {
+          "word": "it",
+          "start": 310.889993,
+          "end": 311.010004
+        },
+        {
+          "word": "they",
+          "start": 311.010004,
+          "end": 311.120004
+        },
+        {
+          "word": "have",
+          "start": 311.120004,
+          "end": 311.21000100000003
+        },
+        {
+          "word": "a",
+          "start": 311.21000100000003,
+          "end": 311.359995
+        },
+        {
+          "word": "test",
+          "start": 311.359995,
+          "end": 311.930002
+        },
+        {
+          "word": "If",
+          "start": 312.46000100000003,
+          "end": 312.629999
+        },
+        {
+          "word": "they",
+          "start": 312.629999,
+          "end": 312.760004
+        },
+        {
+          "word": "pass",
+          "start": 312.760004,
+          "end": 313.129999
+        },
+        {
+          "word": "that",
+          "start": 313.129999,
+          "end": 313.489999
+        },
+        {
+          "word": "we",
+          "start": 313.79999699999996,
+          "end": 313.930002
+        },
+        {
+          "word": "take",
+          "start": 313.930002,
+          "end": 314.219995
+        },
+        {
+          "word": "them",
+          "start": 314.219995,
+          "end": 314.359995
+        },
+        {
+          "word": "on",
+          "start": 314.359995,
+          "end": 314.689996
+        },
+        {
+          "word": "but",
+          "start": 314.95000600000003,
+          "end": 315.129999
+        },
+        {
+          "word": "we",
+          "start": 315.159998,
+          "end": 315.29000199999996
+        },
+        {
+          "word": "monitor",
+          "start": 315.29000199999996,
+          "end": 315.760004
+        },
+        {
+          "word": "them",
+          "start": 315.760004,
+          "end": 315.920007
+        },
+        {
+          "word": "very",
+          "start": 315.920007,
+          "end": 316.249994
+        },
+        {
+          "word": "carefully",
+          "start": 316.249994,
+          "end": 316.909998
+        },
+        {
+          "word": "we",
+          "start": 317.21000100000003,
+          "end": 317.389993
+        },
+        {
+          "word": "ask",
+          "start": 317.420007,
+          "end": 317.769998
+        },
+        {
+          "word": "all",
+          "start": 317.769998,
+          "end": 318.1
+        },
+        {
+          "word": "our",
+          "start": 318.1,
+          "end": 318.21000100000003
+        },
+        {
+          "word": "clients",
+          "start": 318.21000100000003,
+          "end": 318.71000100000003
+        },
+        {
+          "word": "to",
+          "start": 318.71000100000003,
+          "end": 318.829996
+        },
+        {
+          "word": "complete",
+          "start": 318.829996,
+          "end": 319.269998
+        },
+        {
+          "word": "a",
+          "start": 319.269998,
+          "end": 319.340005
+        },
+        {
+          "word": "review",
+          "start": 319.340005,
+          "end": 319.730005
+        },
+        {
+          "word": "of",
+          "start": 319.730005,
+          "end": 319.829996
+        },
+        {
+          "word": "their",
+          "start": 319.829996,
+          "end": 319.989999
+        },
+        {
+          "word": "performance",
+          "start": 319.989999,
+          "end": 320.71000100000003
+        },
+        {
+          "word": "after",
+          "start": 320.769998,
+          "end": 321.070001
+        },
+        {
+          "word": "every",
+          "start": 321.189996,
+          "end": 321.590005
+        },
+        {
+          "word": "visit",
+          "start": 321.590005,
+          "end": 322.019998
+        },
+        {
+          "word": "and",
+          "start": 322.269998,
+          "end": 322.430002
+        },
+        {
+          "word": "to",
+          "start": 322.430002,
+          "end": 322.639993
+        },
+        {
+          "word": "email",
+          "start": 322.639993,
+          "end": 323.029993
+        },
+        {
+          "word": "it",
+          "start": 323.029993,
+          "end": 323.159998
+        },
+        {
+          "word": "to",
+          "start": 323.159998,
+          "end": 323.260004
+        },
+        {
+          "word": "us",
+          "start": 323.359995,
+          "end": 323.609995
+        },
+        {
+          "word": "So",
+          "start": 324.04000199999996,
+          "end": 324.189996
+        },
+        {
+          "word": "we",
+          "start": 324.340005,
+          "end": 324.430002
+        },
+        {
+          "word": "can",
+          "start": 324.430002,
+          "end": 324.570001
+        },
+        {
+          "word": "pick",
+          "start": 324.570001,
+          "end": 324.749994
+        },
+        {
+          "word": "up",
+          "start": 324.749994,
+          "end": 324.90000299999997
+        },
+        {
+          "word": "any",
+          "start": 324.90000299999997,
+          "end": 325.120004
+        },
+        {
+          "word": "problems",
+          "start": 325.120004,
+          "end": 325.65000299999997
+        },
+        {
+          "word": "straightaway",
+          "start": 325.65000299999997,
+          "end": 326.340005
+        },
+        {
+          "word": "and",
+          "start": 326.340005,
+          "end": 326.529993
+        },
+        {
+          "word": "deal",
+          "start": 326.529993,
+          "end": 326.769998
+        },
+        {
+          "word": "with",
+          "start": 326.769998,
+          "end": 326.969995
+        },
+        {
+          "word": "them",
+          "start": 326.969995,
+          "end": 327.219995
+        }
+      ],
       "answers": [
         8,
         9,
         10
       ],
-      "end": 327.3
+      "end": 327.219995
     },
     {
       "id": 27,
-      "start": 327.7,
+      "start": 327.629999,
       "speaker": "CLIENT",
       "en": "OK, well that all sounds good. And will I always have the same cleaner?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 327.629999,
+          "end": 328.189996
+        },
+        {
+          "word": "well",
+          "start": 328.260004,
+          "end": 328.620004
+        },
+        {
+          "word": "that",
+          "start": 328.749994,
+          "end": 329.029993
+        },
+        {
+          "word": "all",
+          "start": 329.029993,
+          "end": 329.170007
+        },
+        {
+          "word": "sounds",
+          "start": 329.170007,
+          "end": 329.54999699999996
+        },
+        {
+          "word": "good",
+          "start": 329.54999699999996,
+          "end": 329.85
+        },
+        {
+          "word": "And",
+          "start": 330.409998,
+          "end": 330.969995
+        },
+        {
+          "word": "will",
+          "start": 330.969995,
+          "end": 331.15000299999997
+        },
+        {
+          "word": "I",
+          "start": 331.15000299999997,
+          "end": 331.29999699999996
+        },
+        {
+          "word": "always",
+          "start": 331.29999699999996,
+          "end": 331.79999699999996
+        },
+        {
+          "word": "have",
+          "start": 331.79999699999996,
+          "end": 332.070001
+        },
+        {
+          "word": "the",
+          "start": 332.070001,
+          "end": 332.180002
+        },
+        {
+          "word": "same",
+          "start": 332.180002,
+          "end": 332.70000600000003
+        },
+        {
+          "word": "cleaner",
+          "start": 332.70000600000003,
+          "end": 333.180002
+        }
+      ],
       "answers": [],
-      "end": 333.2
+      "end": 333.180002
     },
     {
       "id": 28,
-      "start": 333.4,
+      "start": 333.370004,
       "speaker": "JACINTA",
       "en": "Yes, we do our best to organise it that way, and we usually manage it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 333.370004,
+          "end": 333.820001
+        },
+        {
+          "word": "we",
+          "start": 334.21000100000003,
+          "end": 334.379999
+        },
+        {
+          "word": "do",
+          "start": 334.379999,
+          "end": 334.560007
+        },
+        {
+          "word": "our",
+          "start": 334.560007,
+          "end": 334.79999699999996
+        },
+        {
+          "word": "best",
+          "start": 334.79999699999996,
+          "end": 335.029993
+        },
+        {
+          "word": "to",
+          "start": 335.029993,
+          "end": 335.20000600000003
+        },
+        {
+          "word": "organise",
+          "start": 335.20000600000003,
+          "end": 335.70998499999996
+        },
+        {
+          "word": "it",
+          "start": 335.70998499999996,
+          "end": 335.82000100000005
+        },
+        {
+          "word": "that",
+          "start": 335.82000100000005,
+          "end": 336.02001299999995
+        },
+        {
+          "word": "way",
+          "start": 336.02001299999995,
+          "end": 336.36998900000003
+        },
+        {
+          "word": "and",
+          "start": 336.399988,
+          "end": 336.71999500000004
+        },
+        {
+          "word": "we",
+          "start": 336.71999500000004,
+          "end": 336.830011
+        },
+        {
+          "word": "usually",
+          "start": 336.830011,
+          "end": 337.30999099999997
+        },
+        {
+          "word": "manage",
+          "start": 337.30999099999997,
+          "end": 337.70000600000003
+        },
+        {
+          "word": "it",
+          "start": 337.70000600000003,
+          "end": 338.05001200000004
+        }
+      ],
       "answers": [],
-      "end": 338.1
+      "end": 338.05001200000004
     },
     {
       "id": 29,
-      "start": 338.3,
+      "start": 338.179987,
       "speaker": "CLIENT",
       "en": "Good. That's fine. Right, so I’d like to go ahead and ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 338.179987,
+          "end": 338.70000600000003
+        },
+        {
+          "word": "That",
+          "start": 338.77001299999995,
+          "end": 339.02001299999995
+        },
+        {
+          "word": "'s",
+          "start": 339.02001299999995,
+          "end": 339.05999099999997
+        },
+        {
+          "word": "fine",
+          "start": 339.05999099999997,
+          "end": 339.43999599999995
+        },
+        {
+          "word": "Right",
+          "start": 340.11998900000003,
+          "end": 340.68999599999995
+        },
+        {
+          "word": "so",
+          "start": 340.68999599999995,
+          "end": 341.029993
+        },
+        {
+          "word": "I",
+          "start": 341.11001,
+          "end": 341.279993
+        },
+        {
+          "word": "'d",
+          "start": 341.279993,
+          "end": 342.33998999999994
+        },
+        {
+          "word": "like",
+          "start": 342.33998999999994,
+          "end": 342.46999500000004
+        },
+        {
+          "word": "to",
+          "start": 346.57000100000005,
+          "end": 348.39000899999996
+        },
+        {
+          "word": "go",
+          "start": 348.93999599999995,
+          "end": 348.999994
+        },
+        {
+          "word": "ahead",
+          "start": 349.05999099999997,
+          "end": 352.57000100000005
+        },
+        {
+          "word": "and",
+          "start": 352.57000100000005,
+          "end": 352.70998499999996
+        }
+      ],
       "answers": [],
-      "end": 342.9
+      "end": 352.70998499999996
     }
   ],
   "questions": [
@@ -395,5 +3764,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 668,
+    "mfa_word_count": 668,
+    "matched_word_count": 667,
+    "audio_trim_offset": 79.1,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

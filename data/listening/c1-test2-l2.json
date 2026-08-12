@@ -7,229 +7,2531 @@
   "segments": [
     {
       "id": 1,
-      "start": 2.4,
+      "start": 1.32,
       "speaker": "SPEAKER",
       "en": "Radio presenter: Well, last week we talked about buying camping equipment and today I’d like to talk to you about buying a bicycle.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Radio",
+          "start": 1.32,
+          "end": 1.53
+        },
+        {
+          "word": "presenter",
+          "start": 1.71,
+          "end": 1.94
+        },
+        {
+          "word": "Well",
+          "start": 1.94,
+          "end": 2.02
+        },
+        {
+          "word": "last",
+          "start": 2.02,
+          "end": 2.11
+        },
+        {
+          "word": "week",
+          "start": 2.11,
+          "end": 2.34
+        },
+        {
+          "word": "we",
+          "start": 2.34,
+          "end": 2.45
+        },
+        {
+          "word": "talked",
+          "start": 2.45,
+          "end": 2.77
+        },
+        {
+          "word": "about",
+          "start": 2.77,
+          "end": 3.05
+        },
+        {
+          "word": "buying",
+          "start": 3.08,
+          "end": 3.38
+        },
+        {
+          "word": "camping",
+          "start": 3.38,
+          "end": 3.79
+        },
+        {
+          "word": "equipment",
+          "start": 3.79,
+          "end": 4.29
+        },
+        {
+          "word": "and",
+          "start": 4.75,
+          "end": 4.89
+        },
+        {
+          "word": "today",
+          "start": 4.89,
+          "end": 5.29
+        },
+        {
+          "word": "I",
+          "start": 5.36,
+          "end": 5.47
+        },
+        {
+          "word": "'d",
+          "start": 5.47,
+          "end": 5.51
+        },
+        {
+          "word": "like",
+          "start": 5.51,
+          "end": 5.7
+        },
+        {
+          "word": "to",
+          "start": 5.7,
+          "end": 5.76
+        },
+        {
+          "word": "talk",
+          "start": 5.76,
+          "end": 6.05
+        },
+        {
+          "word": "to",
+          "start": 6.05,
+          "end": 6.12
+        },
+        {
+          "word": "you",
+          "start": 6.12,
+          "end": 6.22
+        },
+        {
+          "word": "about",
+          "start": 6.22,
+          "end": 6.53
+        },
+        {
+          "word": "buying",
+          "start": 6.57,
+          "end": 6.89
+        },
+        {
+          "word": "a",
+          "start": 6.89,
+          "end": 6.94
+        },
+        {
+          "word": "bicycle",
+          "start": 6.94,
+          "end": 7.54
+        }
+      ],
+      "answers": [],
+      "end": 7.54
     },
     {
       "id": 2,
-      "start": 8.4,
+      "start": 8.14,
       "speaker": "SPEAKER",
       "en": "A simple enough exercise, you might imagine, but there are lots of things to look out for to make sure you get the best deal for your money.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "A",
+          "start": 8.14,
+          "end": 8.24
+        },
+        {
+          "word": "simple",
+          "start": 8.24,
+          "end": 8.57
+        },
+        {
+          "word": "enough",
+          "start": 8.57,
+          "end": 8.75
+        },
+        {
+          "word": "exercise",
+          "start": 8.75,
+          "end": 9.37
+        },
+        {
+          "word": "you",
+          "start": 9.37,
+          "end": 9.47
+        },
+        {
+          "word": "might",
+          "start": 9.47,
+          "end": 9.66
+        },
+        {
+          "word": "imagine",
+          "start": 9.66,
+          "end": 10.13
+        },
+        {
+          "word": "but",
+          "start": 10.37,
+          "end": 10.5
+        },
+        {
+          "word": "there",
+          "start": 10.5,
+          "end": 10.59
+        },
+        {
+          "word": "are",
+          "start": 10.59,
+          "end": 10.63
+        },
+        {
+          "word": "lots",
+          "start": 10.63,
+          "end": 11.03
+        },
+        {
+          "word": "of",
+          "start": 11.03,
+          "end": 11.16
+        },
+        {
+          "word": "things",
+          "start": 11.16,
+          "end": 11.49
+        },
+        {
+          "word": "to",
+          "start": 11.49,
+          "end": 11.6
+        },
+        {
+          "word": "look",
+          "start": 11.6,
+          "end": 11.79
+        },
+        {
+          "word": "out",
+          "start": 11.85,
+          "end": 12.08
+        },
+        {
+          "word": "for",
+          "start": 12.08,
+          "end": 12.35
+        },
+        {
+          "word": "to",
+          "start": 12.45,
+          "end": 12.55
+        },
+        {
+          "word": "make",
+          "start": 12.55,
+          "end": 12.79
+        },
+        {
+          "word": "sure",
+          "start": 12.79,
+          "end": 13.07
+        },
+        {
+          "word": "you",
+          "start": 13.07,
+          "end": 13.21
+        },
+        {
+          "word": "get",
+          "start": 13.21,
+          "end": 13.4
+        },
+        {
+          "word": "the",
+          "start": 13.4,
+          "end": 13.5
+        },
+        {
+          "word": "best",
+          "start": 13.5,
+          "end": 13.95
+        },
+        {
+          "word": "deal",
+          "start": 13.95,
+          "end": 14.14
+        },
+        {
+          "word": "for",
+          "start": 14.14,
+          "end": 14.28
+        },
+        {
+          "word": "your",
+          "start": 14.28,
+          "end": 14.38
+        },
+        {
+          "word": "money",
+          "start": 14.38,
+          "end": 14.74
+        }
+      ],
       "answers": [],
-      "end": 15.6
+      "end": 14.74
     },
     {
       "id": 3,
-      "start": 15.7,
+      "start": 15.65,
       "speaker": "SPEAKER",
       "en": "Well, the range of bicycles is enormous — there are racing bikes, touring bikes, mountain bikes or just plain ordinary bikes for riding round town.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 15.65,
+          "end": 15.87
+        },
+        {
+          "word": "the",
+          "start": 15.87,
+          "end": 16.17
+        },
+        {
+          "word": "range",
+          "start": 16.17,
+          "end": 16.35
+        },
+        {
+          "word": "of",
+          "start": 16.35,
+          "end": 16.450001
+        },
+        {
+          "word": "bicycles",
+          "start": 16.450001,
+          "end": 17.059999
+        },
+        {
+          "word": "is",
+          "start": 17.059999,
+          "end": 17.18
+        },
+        {
+          "word": "enormous",
+          "start": 17.18,
+          "end": 17.67
+        },
+        {
+          "word": "there",
+          "start": 18.24,
+          "end": 18.34
+        },
+        {
+          "word": "are",
+          "start": 18.34,
+          "end": 18.440001
+        },
+        {
+          "word": "racing",
+          "start": 18.440001,
+          "end": 18.93
+        },
+        {
+          "word": "bikes",
+          "start": 18.93,
+          "end": 19.309999
+        },
+        {
+          "word": "touring",
+          "start": 19.639999,
+          "end": 20.08
+        },
+        {
+          "word": "bikes",
+          "start": 20.08,
+          "end": 20.43
+        },
+        {
+          "word": "mountain",
+          "start": 20.780001,
+          "end": 21.290001
+        },
+        {
+          "word": "bikes",
+          "start": 21.290001,
+          "end": 21.639999
+        },
+        {
+          "word": "or",
+          "start": 22.049999,
+          "end": 22.129999
+        },
+        {
+          "word": "just",
+          "start": 22.17,
+          "end": 22.41
+        },
+        {
+          "word": "plain",
+          "start": 22.41,
+          "end": 22.77
+        },
+        {
+          "word": "ordinary",
+          "start": 22.799999,
+          "end": 23.219999
+        },
+        {
+          "word": "bikes",
+          "start": 23.219999,
+          "end": 23.559999
+        },
+        {
+          "word": "for",
+          "start": 23.73,
+          "end": 23.879999
+        },
+        {
+          "word": "riding",
+          "start": 23.98,
+          "end": 24.209999
+        },
+        {
+          "word": "round",
+          "start": 24.209999,
+          "end": 24.440001
+        },
+        {
+          "word": "town",
+          "start": 24.440001,
+          "end": 24.780001
+        }
+      ],
       "answers": [
         11
       ],
-      "end": 25.7
+      "end": 24.780001
     },
     {
       "id": 4,
-      "start": 25.8,
+      "start": 25.51,
       "speaker": "SPEAKER",
       "en": "They vary enormously in two basic ways: price and quality.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "They",
+          "start": 25.51,
+          "end": 25.860001
+        },
+        {
+          "word": "vary",
+          "start": 25.860001,
+          "end": 26.059999
+        },
+        {
+          "word": "enormously",
+          "start": 26.059999,
+          "end": 26.91
+        },
+        {
+          "word": "in",
+          "start": 26.950001,
+          "end": 27.110001
+        },
+        {
+          "word": "two",
+          "start": 27.139999,
+          "end": 27.450001
+        },
+        {
+          "word": "basic",
+          "start": 27.51,
+          "end": 27.870001
+        },
+        {
+          "word": "ways",
+          "start": 27.870001,
+          "end": 28.190001
+        },
+        {
+          "word": "price",
+          "start": 29.17,
+          "end": 29.51
+        },
+        {
+          "word": "and",
+          "start": 30.07,
+          "end": 30.27
+        },
+        {
+          "word": "quality",
+          "start": 30.27,
+          "end": 30.74
+        }
+      ],
       "answers": [
         12
       ],
-      "end": 30.8
+      "end": 30.74
     },
     {
       "id": 5,
-      "start": 32.3,
+      "start": 32.009998,
       "speaker": "SPEAKER",
       "en": "This means that the choice you make will probably be determined by the amount of money you want to pay, your own personal needs, what is actually available or a compromise of all three things.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "This",
+          "start": 32.009998,
+          "end": 32.240002
+        },
+        {
+          "word": "means",
+          "start": 32.240002,
+          "end": 32.549999
+        },
+        {
+          "word": "that",
+          "start": 32.68,
+          "end": 32.799999
+        },
+        {
+          "word": "the",
+          "start": 32.799999,
+          "end": 32.889999
+        },
+        {
+          "word": "choice",
+          "start": 32.889999,
+          "end": 33.290001
+        },
+        {
+          "word": "you",
+          "start": 33.290001,
+          "end": 33.41
+        },
+        {
+          "word": "make",
+          "start": 33.41,
+          "end": 33.779999
+        },
+        {
+          "word": "will",
+          "start": 33.889999,
+          "end": 34.009998
+        },
+        {
+          "word": "probably",
+          "start": 34.009998,
+          "end": 34.639999
+        },
+        {
+          "word": "be",
+          "start": 34.73,
+          "end": 34.84
+        },
+        {
+          "word": "determined",
+          "start": 34.84,
+          "end": 35.369999
+        },
+        {
+          "word": "by",
+          "start": 35.369999,
+          "end": 35.540001
+        },
+        {
+          "word": "the",
+          "start": 35.540001,
+          "end": 35.66
+        },
+        {
+          "word": "amount",
+          "start": 35.66,
+          "end": 36.040001
+        },
+        {
+          "word": "of",
+          "start": 36.040001,
+          "end": 36.150002
+        },
+        {
+          "word": "money",
+          "start": 36.150002,
+          "end": 36.540001
+        },
+        {
+          "word": "you",
+          "start": 36.59,
+          "end": 36.689999
+        },
+        {
+          "word": "want",
+          "start": 36.689999,
+          "end": 36.919998
+        },
+        {
+          "word": "to",
+          "start": 36.919998,
+          "end": 37.040001
+        },
+        {
+          "word": "pay",
+          "start": 37.040001,
+          "end": 37.41
+        },
+        {
+          "word": "your",
+          "start": 37.900002,
+          "end": 38.110001
+        },
+        {
+          "word": "own",
+          "start": 38.110001,
+          "end": 38.299999
+        },
+        {
+          "word": "personal",
+          "start": 38.299999,
+          "end": 38.77
+        },
+        {
+          "word": "needs",
+          "start": 38.77,
+          "end": 39.139999
+        },
+        {
+          "word": "what",
+          "start": 39.59,
+          "end": 39.799999
+        },
+        {
+          "word": "is",
+          "start": 39.799999,
+          "end": 39.91
+        },
+        {
+          "word": "actually",
+          "start": 40.07,
+          "end": 40.48
+        },
+        {
+          "word": "available",
+          "start": 40.48,
+          "end": 41.07
+        },
+        {
+          "word": "or",
+          "start": 41.150002,
+          "end": 41.310001
+        },
+        {
+          "word": "a",
+          "start": 41.310001,
+          "end": 41.369999
+        },
+        {
+          "word": "compromise",
+          "start": 41.369999,
+          "end": 42.02
+        },
+        {
+          "word": "of",
+          "start": 42.02,
+          "end": 42.18
+        },
+        {
+          "word": "all",
+          "start": 42.18,
+          "end": 42.360001
+        },
+        {
+          "word": "three",
+          "start": 42.360001,
+          "end": 42.619999
+        },
+        {
+          "word": "things",
+          "start": 42.619999,
+          "end": 42.98
+        }
+      ],
       "answers": [],
-      "end": 43.9
+      "end": 42.98
     },
     {
       "id": 6,
-      "start": 44.1,
+      "start": 44.0,
       "speaker": "SPEAKER",
       "en": "However, in broad terms you can spend anything from $50 to $2,000 on a bike so, you’ll need to know what you are looking for.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "However",
+          "start": 44.0,
+          "end": 44.209999
+        },
+        {
+          "word": "in",
+          "start": 44.490002,
+          "end": 44.669998
+        },
+        {
+          "word": "broad",
+          "start": 44.669998,
+          "end": 45.02
+        },
+        {
+          "word": "terms",
+          "start": 45.02,
+          "end": 45.400002
+        },
+        {
+          "word": "you",
+          "start": 45.529999,
+          "end": 45.619999
+        },
+        {
+          "word": "can",
+          "start": 45.619999,
+          "end": 45.779999
+        },
+        {
+          "word": "spend",
+          "start": 45.779999,
+          "end": 46.07
+        },
+        {
+          "word": "anything",
+          "start": 46.07,
+          "end": 46.610001
+        },
+        {
+          "word": "from",
+          "start": 46.610001,
+          "end": 46.849998
+        },
+        {
+          "word": "50",
+          "start": 46.950001,
+          "end": 47.610001
+        },
+        {
+          "word": "to",
+          "start": 47.919998,
+          "end": 48.009998
+        },
+        {
+          "word": "2",
+          "start": 48.009998,
+          "end": 48.32
+        },
+        {
+          "word": "000",
+          "start": 48.380001,
+          "end": 49.099998
+        },
+        {
+          "word": "on",
+          "start": 49.099998,
+          "end": 49.200001
+        },
+        {
+          "word": "a",
+          "start": 49.200001,
+          "end": 49.240002
+        },
+        {
+          "word": "bike",
+          "start": 49.240002,
+          "end": 49.59
+        },
+        {
+          "word": "so",
+          "start": 50.209999,
+          "end": 50.34
+        },
+        {
+          "word": "you",
+          "start": 50.34,
+          "end": 50.400002
+        },
+        {
+          "word": "'ll",
+          "start": 50.400002,
+          "end": 50.490002
+        },
+        {
+          "word": "need",
+          "start": 50.490002,
+          "end": 50.720001
+        },
+        {
+          "word": "to",
+          "start": 50.720001,
+          "end": 50.799999
+        },
+        {
+          "word": "know",
+          "start": 50.799999,
+          "end": 51.16
+        },
+        {
+          "word": "what",
+          "start": 51.290001,
+          "end": 51.610001
+        },
+        {
+          "word": "you",
+          "start": 51.610001,
+          "end": 51.709999
+        },
+        {
+          "word": "are",
+          "start": 51.709999,
+          "end": 51.740002
+        },
+        {
+          "word": "looking",
+          "start": 51.740002,
+          "end": 52.060001
+        },
+        {
+          "word": "for",
+          "start": 52.060001,
+          "end": 52.330002
+        }
+      ],
       "answers": [],
-      "end": 52.5
+      "end": 52.330002
     },
     {
       "id": 7,
-      "start": 53.8,
+      "start": 54.07,
       "speaker": "SPEAKER",
       "en": "Single speed cycles — that is bikes with no gears, are really only suited to short, casual rides.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Single",
+          "start": 54.07,
+          "end": 54.389999
+        },
+        {
+          "word": "speed",
+          "start": 54.389999,
+          "end": 54.740002
+        },
+        {
+          "word": "cycles",
+          "start": 54.740002,
+          "end": 55.220001
+        },
+        {
+          "word": "that",
+          "start": 55.700001,
+          "end": 55.849998
+        },
+        {
+          "word": "is",
+          "start": 55.849998,
+          "end": 56.0
+        },
+        {
+          "word": "bikes",
+          "start": 56.0,
+          "end": 56.34
+        },
+        {
+          "word": "with",
+          "start": 56.34,
+          "end": 56.450001
+        },
+        {
+          "word": "no",
+          "start": 56.450001,
+          "end": 56.619999
+        },
+        {
+          "word": "gears",
+          "start": 56.619999,
+          "end": 57.02
+        },
+        {
+          "word": "are",
+          "start": 57.360001,
+          "end": 57.48
+        },
+        {
+          "word": "really",
+          "start": 57.48,
+          "end": 57.91
+        },
+        {
+          "word": "only",
+          "start": 57.939999,
+          "end": 58.220001
+        },
+        {
+          "word": "suited",
+          "start": 58.220001,
+          "end": 58.549999
+        },
+        {
+          "word": "to",
+          "start": 58.549999,
+          "end": 58.630001
+        },
+        {
+          "word": "short",
+          "start": 58.630001,
+          "end": 59.110001
+        },
+        {
+          "word": "casual",
+          "start": 59.32,
+          "end": 59.77
+        },
+        {
+          "word": "rides",
+          "start": 59.77,
+          "end": 60.139999
+        }
+      ],
       "answers": [
         14
       ],
-      "end": 60.2
+      "end": 60.139999
     },
     {
       "id": 8,
-      "start": 60.9,
+      "start": 60.810001,
       "speaker": "SPEAKER",
       "en": "Their attraction is their simplicity and reliability.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Their",
+          "start": 60.810001,
+          "end": 60.900002
+        },
+        {
+          "word": "attraction",
+          "start": 60.939999,
+          "end": 61.419998
+        },
+        {
+          "word": "is",
+          "start": 61.419998,
+          "end": 61.540001
+        },
+        {
+          "word": "their",
+          "start": 61.540001,
+          "end": 61.720001
+        },
+        {
+          "word": "simplicity",
+          "start": 61.720001,
+          "end": 62.57
+        },
+        {
+          "word": "and",
+          "start": 62.610001,
+          "end": 62.810001
+        },
+        {
+          "word": "reliability",
+          "start": 62.810001,
+          "end": 63.669998
+        }
+      ],
       "answers": [],
-      "end": 63.7
+      "end": 63.669998
     },
     {
       "id": 9,
-      "start": 64.8,
+      "start": 64.849998,
       "speaker": "SPEAKER",
       "en": "After years of neglect they still manage to function, though not always too efficiently.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "After",
+          "start": 64.849998,
+          "end": 65.07
+        },
+        {
+          "word": "years",
+          "start": 65.07,
+          "end": 65.489998
+        },
+        {
+          "word": "of",
+          "start": 65.489998,
+          "end": 65.559998
+        },
+        {
+          "word": "neglect",
+          "start": 65.559998,
+          "end": 65.989998
+        },
+        {
+          "word": "they",
+          "start": 66.099998,
+          "end": 66.269997
+        },
+        {
+          "word": "still",
+          "start": 66.269997,
+          "end": 66.660004
+        },
+        {
+          "word": "manage",
+          "start": 66.660004,
+          "end": 67.059998
+        },
+        {
+          "word": "to",
+          "start": 67.059998,
+          "end": 67.139999
+        },
+        {
+          "word": "function",
+          "start": 67.139999,
+          "end": 67.720001
+        },
+        {
+          "word": "though",
+          "start": 67.849998,
+          "end": 67.980003
+        },
+        {
+          "word": "not",
+          "start": 67.980003,
+          "end": 68.199997
+        },
+        {
+          "word": "always",
+          "start": 68.230003,
+          "end": 68.669998
+        },
+        {
+          "word": "too",
+          "start": 68.669998,
+          "end": 68.849998
+        },
+        {
+          "word": "efficiently",
+          "start": 68.849998,
+          "end": 69.379997
+        }
+      ],
       "answers": [],
-      "end": 70.1
+      "end": 69.379997
     },
     {
       "id": 10,
-      "start": 70.2,
+      "start": 70.150002,
       "speaker": "SPEAKER",
       "en": "If it’s basic transport you’re after then you can’t go wrong.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 70.150002,
+          "end": 70.32
+        },
+        {
+          "word": "it",
+          "start": 70.32,
+          "end": 70.470001
+        },
+        {
+          "word": "'s",
+          "start": 70.32,
+          "end": 70.470001
+        },
+        {
+          "word": "basic",
+          "start": 70.57,
+          "end": 71.0
+        },
+        {
+          "word": "transport",
+          "start": 71.0,
+          "end": 71.470001
+        },
+        {
+          "word": "you",
+          "start": 71.470001,
+          "end": 71.620003
+        },
+        {
+          "word": "'re",
+          "start": 71.470001,
+          "end": 71.620003
+        },
+        {
+          "word": "after",
+          "start": 71.620003,
+          "end": 72.07
+        },
+        {
+          "word": "then",
+          "start": 72.339996,
+          "end": 72.529999
+        },
+        {
+          "word": "you",
+          "start": 72.529999,
+          "end": 72.620003
+        },
+        {
+          "word": "ca",
+          "start": 72.620003,
+          "end": 72.989998
+        },
+        {
+          "word": "n't",
+          "start": 72.620003,
+          "end": 72.989998
+        },
+        {
+          "word": "go",
+          "start": 72.989998,
+          "end": 73.110001
+        },
+        {
+          "word": "wrong",
+          "start": 73.110001,
+          "end": 73.559998
+        }
+      ],
       "answers": [],
-      "end": 73.7
+      "end": 73.559998
     },
     {
       "id": 11,
-      "start": 75.3,
+      "start": 75.25,
       "speaker": "SPEAKER",
       "en": "Three speed cycles on the other hand are all that is really necessary for most town riding, going to the shops and things like that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Three",
+          "start": 75.25,
+          "end": 75.529999
+        },
+        {
+          "word": "speed",
+          "start": 75.529999,
+          "end": 75.870003
+        },
+        {
+          "word": "cycles",
+          "start": 75.870003,
+          "end": 76.349998
+        },
+        {
+          "word": "on",
+          "start": 76.349998,
+          "end": 76.410004
+        },
+        {
+          "word": "the",
+          "start": 76.410004,
+          "end": 76.5
+        },
+        {
+          "word": "other",
+          "start": 76.5,
+          "end": 76.660004
+        },
+        {
+          "word": "hand",
+          "start": 76.660004,
+          "end": 77.019997
+        },
+        {
+          "word": "are",
+          "start": 77.489998,
+          "end": 77.639999
+        },
+        {
+          "word": "all",
+          "start": 77.639999,
+          "end": 77.870003
+        },
+        {
+          "word": "that",
+          "start": 77.870003,
+          "end": 78.019997
+        },
+        {
+          "word": "is",
+          "start": 78.019997,
+          "end": 78.160004
+        },
+        {
+          "word": "really",
+          "start": 78.160004,
+          "end": 78.389999
+        },
+        {
+          "word": "necessary",
+          "start": 78.389999,
+          "end": 79.029999
+        },
+        {
+          "word": "for",
+          "start": 79.029999,
+          "end": 79.150002
+        },
+        {
+          "word": "most",
+          "start": 79.150002,
+          "end": 79.459999
+        },
+        {
+          "word": "town",
+          "start": 79.459999,
+          "end": 79.769997
+        },
+        {
+          "word": "riding",
+          "start": 79.769997,
+          "end": 80.150002
+        },
+        {
+          "word": "going",
+          "start": 80.440002,
+          "end": 80.68
+        },
+        {
+          "word": "to",
+          "start": 80.68,
+          "end": 80.769997
+        },
+        {
+          "word": "the",
+          "start": 80.769997,
+          "end": 80.919998
+        },
+        {
+          "word": "shops",
+          "start": 80.919998,
+          "end": 81.290001
+        },
+        {
+          "word": "and",
+          "start": 81.290001,
+          "end": 81.419998
+        },
+        {
+          "word": "things",
+          "start": 81.419998,
+          "end": 81.660004
+        },
+        {
+          "word": "like",
+          "start": 81.660004,
+          "end": 81.860001
+        },
+        {
+          "word": "that",
+          "start": 81.860001,
+          "end": 82.120003
+        }
+      ],
       "answers": [
         15
       ],
-      "end": 81.7
+      "end": 82.120003
     },
     {
       "id": 12,
-      "start": 81.7,
+      "start": 82.889999,
       "speaker": "SPEAKER",
       "en": "Like the single speed bike they are simple and reliable.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Like",
+          "start": 82.889999,
+          "end": 83.089996
+        },
+        {
+          "word": "the",
+          "start": 83.089996,
+          "end": 83.18
+        },
+        {
+          "word": "single",
+          "start": 83.18,
+          "end": 83.519997
+        },
+        {
+          "word": "speed",
+          "start": 83.519997,
+          "end": 83.82
+        },
+        {
+          "word": "bike",
+          "start": 83.849998,
+          "end": 84.169998
+        },
+        {
+          "word": "they",
+          "start": 84.370003,
+          "end": 84.529999
+        },
+        {
+          "word": "are",
+          "start": 84.529999,
+          "end": 84.57
+        },
+        {
+          "word": "simple",
+          "start": 84.57,
+          "end": 85.050003
+        },
+        {
+          "word": "and",
+          "start": 85.089996,
+          "end": 85.279999
+        },
+        {
+          "word": "reliable",
+          "start": 85.279999,
+          "end": 85.889999
+        }
+      ],
       "answers": [],
-      "end": 86.0
+      "end": 85.889999
     },
     {
       "id": 13,
-      "start": 86.5,
+      "start": 86.57,
       "speaker": "SPEAKER",
       "en": "If you are going to be going up and down lots of hills, then you’ll probably want something more efficient.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 86.57,
+          "end": 86.720001
+        },
+        {
+          "word": "you",
+          "start": 86.720001,
+          "end": 86.800003
+        },
+        {
+          "word": "are",
+          "start": 86.800003,
+          "end": 86.849998
+        },
+        {
+          "word": "going",
+          "start": 86.849998,
+          "end": 87.120003
+        },
+        {
+          "word": "to",
+          "start": 87.120003,
+          "end": 87.199997
+        },
+        {
+          "word": "be",
+          "start": 87.199997,
+          "end": 87.300003
+        },
+        {
+          "word": "going",
+          "start": 87.300003,
+          "end": 87.639999
+        },
+        {
+          "word": "up",
+          "start": 87.639999,
+          "end": 87.760002
+        },
+        {
+          "word": "and",
+          "start": 87.760002,
+          "end": 87.860001
+        },
+        {
+          "word": "down",
+          "start": 87.860001,
+          "end": 88.110001
+        },
+        {
+          "word": "lots",
+          "start": 88.110001,
+          "end": 88.32
+        },
+        {
+          "word": "of",
+          "start": 88.32,
+          "end": 88.410004
+        },
+        {
+          "word": "hills",
+          "start": 88.410004,
+          "end": 88.800003
+        },
+        {
+          "word": "then",
+          "start": 89.120003,
+          "end": 89.279999
+        },
+        {
+          "word": "you",
+          "start": 89.279999,
+          "end": 89.349998
+        },
+        {
+          "word": "'ll",
+          "start": 89.349998,
+          "end": 89.379997
+        },
+        {
+          "word": "probably",
+          "start": 89.379997,
+          "end": 89.849998
+        },
+        {
+          "word": "want",
+          "start": 89.849998,
+          "end": 90.089996
+        },
+        {
+          "word": "something",
+          "start": 90.089996,
+          "end": 90.529999
+        },
+        {
+          "word": "more",
+          "start": 90.529999,
+          "end": 90.75
+        },
+        {
+          "word": "efficient",
+          "start": 90.75,
+          "end": 91.209999
+        }
+      ],
       "answers": [],
-      "end": 91.3
+      "end": 91.209999
     },
     {
       "id": 14,
-      "start": 93.3,
+      "start": 93.290001,
       "speaker": "SPEAKER",
       "en": "Five and ten speed bicycles are best suited to riding over long distances or hilly terrain and to serious touring, so if it’s serious touring you’re interested in, get a five or ten speed bike.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Five",
+          "start": 93.290001,
+          "end": 93.510002
+        },
+        {
+          "word": "and",
+          "start": 93.510002,
+          "end": 93.639999
+        },
+        {
+          "word": "ten",
+          "start": 93.639999,
+          "end": 93.910004
+        },
+        {
+          "word": "speed",
+          "start": 93.910004,
+          "end": 94.199997
+        },
+        {
+          "word": "bicycles",
+          "start": 94.199997,
+          "end": 94.68
+        },
+        {
+          "word": "are",
+          "start": 94.769997,
+          "end": 94.860001
+        },
+        {
+          "word": "best",
+          "start": 94.860001,
+          "end": 95.220001
+        },
+        {
+          "word": "suited",
+          "start": 95.220001,
+          "end": 95.519997
+        },
+        {
+          "word": "to",
+          "start": 95.519997,
+          "end": 95.629997
+        },
+        {
+          "word": "riding",
+          "start": 95.629997,
+          "end": 96.050003
+        },
+        {
+          "word": "over",
+          "start": 96.050003,
+          "end": 96.260002
+        },
+        {
+          "word": "long",
+          "start": 96.260002,
+          "end": 96.610001
+        },
+        {
+          "word": "distances",
+          "start": 96.610001,
+          "end": 97.160004
+        },
+        {
+          "word": "or",
+          "start": 97.220001,
+          "end": 97.389999
+        },
+        {
+          "word": "hilly",
+          "start": 97.389999,
+          "end": 97.610001
+        },
+        {
+          "word": "terrain",
+          "start": 97.610001,
+          "end": 98.110001
+        },
+        {
+          "word": "and",
+          "start": 98.410004,
+          "end": 98.580002
+        },
+        {
+          "word": "to",
+          "start": 98.580002,
+          "end": 98.690002
+        },
+        {
+          "word": "serious",
+          "start": 98.690002,
+          "end": 99.199997
+        },
+        {
+          "word": "touring",
+          "start": 99.239998,
+          "end": 99.650002
+        },
+        {
+          "word": "so",
+          "start": 100.150002,
+          "end": 100.209999
+        },
+        {
+          "word": "if",
+          "start": 100.209999,
+          "end": 100.32
+        },
+        {
+          "word": "it",
+          "start": 100.32,
+          "end": 100.470001
+        },
+        {
+          "word": "'s",
+          "start": 100.32,
+          "end": 100.470001
+        },
+        {
+          "word": "serious",
+          "start": 100.5,
+          "end": 100.910004
+        },
+        {
+          "word": "touring",
+          "start": 100.910004,
+          "end": 101.199997
+        },
+        {
+          "word": "you",
+          "start": 101.199997,
+          "end": 101.370003
+        },
+        {
+          "word": "'re",
+          "start": 101.199997,
+          "end": 101.370003
+        },
+        {
+          "word": "interested",
+          "start": 101.370003,
+          "end": 101.720001
+        },
+        {
+          "word": "in",
+          "start": 101.720001,
+          "end": 101.889999
+        },
+        {
+          "word": "get",
+          "start": 102.239998,
+          "end": 102.419998
+        },
+        {
+          "word": "a",
+          "start": 102.419998,
+          "end": 102.449997
+        },
+        {
+          "word": "five",
+          "start": 102.449997,
+          "end": 102.82
+        },
+        {
+          "word": "or",
+          "start": 102.82,
+          "end": 102.959999
+        },
+        {
+          "word": "ten",
+          "start": 102.959999,
+          "end": 103.260002
+        },
+        {
+          "word": "speed",
+          "start": 103.260002,
+          "end": 103.550003
+        },
+        {
+          "word": "bike",
+          "start": 103.550003,
+          "end": 103.860001
+        }
+      ],
       "answers": [
         16
       ],
-      "end": 104.7
+      "end": 103.860001
     },
     {
       "id": 15,
-      "start": 104.7,
+      "start": 104.639999,
       "speaker": "SPEAKER",
       "en": "However it’s worth remembering that the difference in price between a five and ten speed cycle is usually very little and so it’s well worth paying that little bit extra to get the ten speed one.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "However",
+          "start": 104.639999,
+          "end": 104.809998
+        },
+        {
+          "word": "it",
+          "start": 104.809998,
+          "end": 105.050003
+        },
+        {
+          "word": "'s",
+          "start": 104.809998,
+          "end": 105.050003
+        },
+        {
+          "word": "worth",
+          "start": 105.050003,
+          "end": 105.349998
+        },
+        {
+          "word": "remembering",
+          "start": 105.349998,
+          "end": 105.860001
+        },
+        {
+          "word": "that",
+          "start": 105.959999,
+          "end": 106.089996
+        },
+        {
+          "word": "the",
+          "start": 106.089996,
+          "end": 106.160004
+        },
+        {
+          "word": "difference",
+          "start": 106.160004,
+          "end": 106.589996
+        },
+        {
+          "word": "in",
+          "start": 106.589996,
+          "end": 106.690002
+        },
+        {
+          "word": "price",
+          "start": 106.690002,
+          "end": 106.989998
+        },
+        {
+          "word": "between",
+          "start": 106.989998,
+          "end": 107.339996
+        },
+        {
+          "word": "a",
+          "start": 107.339996,
+          "end": 107.410004
+        },
+        {
+          "word": "five",
+          "start": 107.68,
+          "end": 107.800003
+        },
+        {
+          "word": "and",
+          "start": 107.800003,
+          "end": 107.919998
+        },
+        {
+          "word": "ten",
+          "start": 107.919998,
+          "end": 108.220001
+        },
+        {
+          "word": "speed",
+          "start": 108.220001,
+          "end": 108.510002
+        },
+        {
+          "word": "cycle",
+          "start": 108.510002,
+          "end": 108.949997
+        },
+        {
+          "word": "is",
+          "start": 109.190002,
+          "end": 109.349998
+        },
+        {
+          "word": "usually",
+          "start": 109.349998,
+          "end": 109.82
+        },
+        {
+          "word": "very",
+          "start": 109.82,
+          "end": 110.220001
+        },
+        {
+          "word": "little",
+          "start": 110.220001,
+          "end": 110.580002
+        },
+        {
+          "word": "and",
+          "start": 110.980003,
+          "end": 111.089996
+        },
+        {
+          "word": "so",
+          "start": 111.089996,
+          "end": 111.150002
+        },
+        {
+          "word": "it",
+          "start": 111.32,
+          "end": 111.379997
+        },
+        {
+          "word": "'s",
+          "start": 111.32,
+          "end": 111.379997
+        },
+        {
+          "word": "well",
+          "start": 111.379997,
+          "end": 111.690002
+        },
+        {
+          "word": "worth",
+          "start": 111.690002,
+          "end": 112.080002
+        },
+        {
+          "word": "paying",
+          "start": 112.080002,
+          "end": 112.209999
+        },
+        {
+          "word": "that",
+          "start": 112.209999,
+          "end": 112.389999
+        },
+        {
+          "word": "little",
+          "start": 112.389999,
+          "end": 112.629997
+        },
+        {
+          "word": "bit",
+          "start": 112.629997,
+          "end": 112.779999
+        },
+        {
+          "word": "extra",
+          "start": 112.779999,
+          "end": 113.209999
+        },
+        {
+          "word": "to",
+          "start": 113.400002,
+          "end": 113.470001
+        },
+        {
+          "word": "get",
+          "start": 113.470001,
+          "end": 113.629997
+        },
+        {
+          "word": "the",
+          "start": 113.629997,
+          "end": 113.720001
+        },
+        {
+          "word": "ten",
+          "start": 113.720001,
+          "end": 114.040001
+        },
+        {
+          "word": "speed",
+          "start": 114.040001,
+          "end": 114.330002
+        },
+        {
+          "word": "one",
+          "start": 114.330002,
+          "end": 114.629997
+        }
+      ],
       "answers": [],
-      "end": 115.5
+      "end": 114.629997
     },
     {
       "id": 16,
-      "start": 116.0,
+      "start": 115.470001,
       "speaker": "SPEAKER",
       "en": "So I would tend to recommend the ten speed bike as the price is similar — however you’ll be getting better quality components.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 115.470001,
+          "end": 115.669998
+        },
+        {
+          "word": "I",
+          "start": 115.669998,
+          "end": 115.760002
+        },
+        {
+          "word": "would",
+          "start": 115.800003,
+          "end": 115.919998
+        },
+        {
+          "word": "tend",
+          "start": 115.919998,
+          "end": 116.120003
+        },
+        {
+          "word": "to",
+          "start": 116.120003,
+          "end": 116.239998
+        },
+        {
+          "word": "recommend",
+          "start": 116.239998,
+          "end": 116.660004
+        },
+        {
+          "word": "the",
+          "start": 116.660004,
+          "end": 116.75
+        },
+        {
+          "word": "ten",
+          "start": 116.75,
+          "end": 117.099998
+        },
+        {
+          "word": "speed",
+          "start": 117.099998,
+          "end": 117.400002
+        },
+        {
+          "word": "bike",
+          "start": 117.400002,
+          "end": 117.669998
+        },
+        {
+          "word": "as",
+          "start": 117.75,
+          "end": 117.919998
+        },
+        {
+          "word": "the",
+          "start": 117.919998,
+          "end": 118.0
+        },
+        {
+          "word": "price",
+          "start": 118.0,
+          "end": 118.339996
+        },
+        {
+          "word": "is",
+          "start": 118.339996,
+          "end": 118.470001
+        },
+        {
+          "word": "similar",
+          "start": 118.470001,
+          "end": 118.849998
+        },
+        {
+          "word": "however",
+          "start": 119.279999,
+          "end": 119.660004
+        },
+        {
+          "word": "you",
+          "start": 119.709999,
+          "end": 119.800003
+        },
+        {
+          "word": "'ll",
+          "start": 119.800003,
+          "end": 119.830002
+        },
+        {
+          "word": "be",
+          "start": 119.830002,
+          "end": 119.93
+        },
+        {
+          "word": "getting",
+          "start": 119.93,
+          "end": 120.239998
+        },
+        {
+          "word": "better",
+          "start": 120.239998,
+          "end": 120.620003
+        },
+        {
+          "word": "quality",
+          "start": 120.620003,
+          "end": 121.050003
+        },
+        {
+          "word": "components",
+          "start": 121.050003,
+          "end": 121.639999
+        }
+      ],
       "answers": [
         17,
         18
       ],
-      "end": 121.6
+      "end": 121.639999
     },
     {
       "id": 17,
-      "start": 123.2,
+      "start": 123.110001,
       "speaker": "SPEAKER",
       "en": "Now the next thing we need to look at is size.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 123.110001,
+          "end": 123.279999
+        },
+        {
+          "word": "the",
+          "start": 123.279999,
+          "end": 123.389999
+        },
+        {
+          "word": "next",
+          "start": 123.389999,
+          "end": 123.709999
+        },
+        {
+          "word": "thing",
+          "start": 123.709999,
+          "end": 123.889999
+        },
+        {
+          "word": "we",
+          "start": 123.889999,
+          "end": 123.989998
+        },
+        {
+          "word": "need",
+          "start": 123.989998,
+          "end": 124.160004
+        },
+        {
+          "word": "to",
+          "start": 124.160004,
+          "end": 124.220001
+        },
+        {
+          "word": "look",
+          "start": 124.220001,
+          "end": 124.43
+        },
+        {
+          "word": "at",
+          "start": 124.43,
+          "end": 124.610001
+        },
+        {
+          "word": "is",
+          "start": 124.779999,
+          "end": 124.989998
+        },
+        {
+          "word": "size",
+          "start": 124.989998,
+          "end": 125.410004
+        }
+      ],
       "answers": [],
-      "end": 126.2
+      "end": 125.410004
     },
     {
       "id": 18,
-      "start": 126.3,
+      "start": 126.190002,
       "speaker": "SPEAKER",
       "en": "Buying a cycle is like buying clothes, first of all you find the right size and then you try it on to see if it fits.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Buying",
+          "start": 126.190002,
+          "end": 126.550003
+        },
+        {
+          "word": "a",
+          "start": 126.550003,
+          "end": 126.580002
+        },
+        {
+          "word": "cycle",
+          "start": 126.580002,
+          "end": 126.919998
+        },
+        {
+          "word": "is",
+          "start": 126.919998,
+          "end": 127.0
+        },
+        {
+          "word": "like",
+          "start": 127.0,
+          "end": 127.260002
+        },
+        {
+          "word": "buying",
+          "start": 127.260002,
+          "end": 127.550003
+        },
+        {
+          "word": "clothes",
+          "start": 127.550003,
+          "end": 127.879997
+        },
+        {
+          "word": "first",
+          "start": 128.479996,
+          "end": 128.699997
+        },
+        {
+          "word": "of",
+          "start": 128.699997,
+          "end": 128.839996
+        },
+        {
+          "word": "all",
+          "start": 128.839996,
+          "end": 128.979996
+        },
+        {
+          "word": "you",
+          "start": 128.979996,
+          "end": 129.080002
+        },
+        {
+          "word": "find",
+          "start": 129.080002,
+          "end": 129.350006
+        },
+        {
+          "word": "the",
+          "start": 129.350006,
+          "end": 129.419998
+        },
+        {
+          "word": "right",
+          "start": 129.419998,
+          "end": 129.75
+        },
+        {
+          "word": "size",
+          "start": 129.75,
+          "end": 130.139999
+        },
+        {
+          "word": "and",
+          "start": 130.350006,
+          "end": 130.449997
+        },
+        {
+          "word": "then",
+          "start": 130.449997,
+          "end": 130.580002
+        },
+        {
+          "word": "you",
+          "start": 130.580002,
+          "end": 130.669998
+        },
+        {
+          "word": "try",
+          "start": 130.669998,
+          "end": 130.75
+        },
+        {
+          "word": "it",
+          "start": 130.75,
+          "end": 130.809998
+        },
+        {
+          "word": "on",
+          "start": 130.809998,
+          "end": 131.190002
+        },
+        {
+          "word": "to",
+          "start": 131.190002,
+          "end": 131.300003
+        },
+        {
+          "word": "see",
+          "start": 131.300003,
+          "end": 131.5
+        },
+        {
+          "word": "if",
+          "start": 131.5,
+          "end": 131.610001
+        },
+        {
+          "word": "it",
+          "start": 131.610001,
+          "end": 131.720001
+        },
+        {
+          "word": "fits",
+          "start": 131.720001,
+          "end": 132.020004
+        }
+      ],
       "answers": [
         19
       ],
-      "end": 132.3
+      "end": 132.020004
     },
     {
       "id": 19,
-      "start": 132.4,
+      "start": 132.850006,
       "speaker": "SPEAKER",
       "en": "Contrary to what you might imagine, the size of the cycle is not determined by the size of the wheels (except in children’s cycles), but by the size of the frame.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Contrary",
+          "start": 132.850006,
+          "end": 133.160004
+        },
+        {
+          "word": "to",
+          "start": 133.160004,
+          "end": 133.229996
+        },
+        {
+          "word": "what",
+          "start": 133.229996,
+          "end": 133.369995
+        },
+        {
+          "word": "you",
+          "start": 133.369995,
+          "end": 133.490005
+        },
+        {
+          "word": "might",
+          "start": 133.490005,
+          "end": 133.720001
+        },
+        {
+          "word": "imagine",
+          "start": 133.720001,
+          "end": 134.240005
+        },
+        {
+          "word": "the",
+          "start": 134.479996,
+          "end": 134.600006
+        },
+        {
+          "word": "size",
+          "start": 134.600006,
+          "end": 134.970001
+        },
+        {
+          "word": "of",
+          "start": 134.970001,
+          "end": 135.029999
+        },
+        {
+          "word": "the",
+          "start": 135.029999,
+          "end": 135.130005
+        },
+        {
+          "word": "cycle",
+          "start": 135.130005,
+          "end": 135.610001
+        },
+        {
+          "word": "is",
+          "start": 135.610001,
+          "end": 135.770004
+        },
+        {
+          "word": "not",
+          "start": 135.770004,
+          "end": 135.960007
+        },
+        {
+          "word": "determined",
+          "start": 135.960007,
+          "end": 136.589996
+        },
+        {
+          "word": "by",
+          "start": 136.619995,
+          "end": 136.740005
+        },
+        {
+          "word": "the",
+          "start": 136.740005,
+          "end": 136.850006
+        },
+        {
+          "word": "size",
+          "start": 136.850006,
+          "end": 137.229996
+        },
+        {
+          "word": "of",
+          "start": 137.229996,
+          "end": 137.309998
+        },
+        {
+          "word": "the",
+          "start": 137.309998,
+          "end": 137.380005
+        },
+        {
+          "word": "wheels",
+          "start": 137.380005,
+          "end": 137.839996
+        },
+        {
+          "word": "except",
+          "start": 138.149994,
+          "end": 138.559998
+        },
+        {
+          "word": "in",
+          "start": 138.559998,
+          "end": 138.690002
+        },
+        {
+          "word": "children",
+          "start": 138.690002,
+          "end": 139.080002
+        },
+        {
+          "word": "'s",
+          "start": 139.080002,
+          "end": 139.119995
+        },
+        {
+          "word": "cycles",
+          "start": 139.119995,
+          "end": 139.520004
+        },
+        {
+          "word": "but",
+          "start": 140.259995,
+          "end": 140.410004
+        },
+        {
+          "word": "by",
+          "start": 140.410004,
+          "end": 140.559998
+        },
+        {
+          "word": "the",
+          "start": 140.559998,
+          "end": 140.669998
+        },
+        {
+          "word": "size",
+          "start": 140.669998,
+          "end": 141.149994
+        },
+        {
+          "word": "of",
+          "start": 141.149994,
+          "end": 141.339996
+        },
+        {
+          "word": "the",
+          "start": 141.339996,
+          "end": 141.419998
+        },
+        {
+          "word": "frame",
+          "start": 141.419998,
+          "end": 141.919998
+        }
+      ],
       "answers": [
         20
       ],
-      "end": 140.5
+      "end": 141.919998
     },
     {
       "id": 20,
-      "start": 140.6,
+      "start": 142.649994,
       "speaker": "SPEAKER",
       "en": "So you’ll need to measure the length of your legs and arms to get a frame that is the right size for you.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 142.649994,
+          "end": 142.740005
+        },
+        {
+          "word": "you",
+          "start": 142.740005,
+          "end": 142.820007
+        },
+        {
+          "word": "'ll",
+          "start": 142.820007,
+          "end": 142.850006
+        },
+        {
+          "word": "need",
+          "start": 142.850006,
+          "end": 143.080002
+        },
+        {
+          "word": "to",
+          "start": 143.080002,
+          "end": 143.160004
+        },
+        {
+          "word": "measure",
+          "start": 143.160004,
+          "end": 143.460007
+        },
+        {
+          "word": "the",
+          "start": 143.460007,
+          "end": 143.589996
+        },
+        {
+          "word": "length",
+          "start": 143.589996,
+          "end": 143.889999
+        },
+        {
+          "word": "of",
+          "start": 143.889999,
+          "end": 143.990005
+        },
+        {
+          "word": "your",
+          "start": 143.990005,
+          "end": 144.100006
+        },
+        {
+          "word": "legs",
+          "start": 144.100006,
+          "end": 144.460007
+        },
+        {
+          "word": "and",
+          "start": 144.529999,
+          "end": 144.809998
+        },
+        {
+          "word": "arms",
+          "start": 144.809998,
+          "end": 145.130005
+        },
+        {
+          "word": "to",
+          "start": 145.279999,
+          "end": 145.369995
+        },
+        {
+          "word": "get",
+          "start": 145.369995,
+          "end": 145.630005
+        },
+        {
+          "word": "a",
+          "start": 145.630005,
+          "end": 145.660004
+        },
+        {
+          "word": "frame",
+          "start": 145.660004,
+          "end": 146.089996
+        },
+        {
+          "word": "that",
+          "start": 146.089996,
+          "end": 146.259995
+        },
+        {
+          "word": "is",
+          "start": 146.259995,
+          "end": 146.419998
+        },
+        {
+          "word": "the",
+          "start": 146.419998,
+          "end": 146.509995
+        },
+        {
+          "word": "right",
+          "start": 146.509995,
+          "end": 146.850006
+        },
+        {
+          "word": "size",
+          "start": 146.850006,
+          "end": 147.210007
+        },
+        {
+          "word": "for",
+          "start": 147.210007,
+          "end": 147.320007
+        },
+        {
+          "word": "you",
+          "start": 147.320007,
+          "end": 147.679993
+        }
+      ],
       "answers": [],
-      "end": 147.8
+      "end": 147.679993
     },
     {
       "id": 21,
-      "start": 148.8,
+      "start": 148.770004,
       "speaker": "SPEAKER",
       "en": "Well, that’s all from Helpful Hints for today …",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 148.770004,
+          "end": 149.020004
+        },
+        {
+          "word": "that",
+          "start": 149.279999,
+          "end": 149.460007
+        },
+        {
+          "word": "'s",
+          "start": 149.460007,
+          "end": 149.600006
+        },
+        {
+          "word": "all",
+          "start": 149.600006,
+          "end": 149.660004
+        },
+        {
+          "word": "from",
+          "start": 149.660004,
+          "end": 149.839996
+        },
+        {
+          "word": "Helpful",
+          "start": 149.839996,
+          "end": 150.130005
+        },
+        {
+          "word": "Hints",
+          "start": 150.130005,
+          "end": 150.399994
+        },
+        {
+          "word": "for",
+          "start": 150.479996,
+          "end": 150.580002
+        },
+        {
+          "word": "today",
+          "start": 150.580002,
+          "end": 150.960007
+        }
+      ],
       "answers": [],
-      "end": 151.0
+      "end": 150.960007
     }
   ],
   "questions": [
@@ -313,5 +2615,14 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 456,
+    "mfa_word_count": 456,
+    "matched_word_count": 453
+  }
 }

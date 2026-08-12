@@ -7,464 +7,3080 @@
   "segments": [
     {
       "id": 1,
-      "start": 1.9,
+      "start": 0.14,
       "speaker": "RECEPTIONIST",
       "en": "Good evening, City Police Station. Can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 0.14,
+          "end": 0.61
+        },
+        {
+          "word": "evening",
+          "start": 2.15,
+          "end": 2.65
+        },
+        {
+          "word": "City",
+          "start": 2.7,
+          "end": 2.87
+        },
+        {
+          "word": "Police",
+          "start": 2.87,
+          "end": 3.14
+        },
+        {
+          "word": "Station",
+          "start": 3.14,
+          "end": 3.52
+        },
+        {
+          "word": "Can",
+          "start": 3.52,
+          "end": 3.65
+        },
+        {
+          "word": "I",
+          "start": 3.65,
+          "end": 3.72
+        },
+        {
+          "word": "help",
+          "start": 3.72,
+          "end": 3.99
+        },
+        {
+          "word": "you",
+          "start": 3.99,
+          "end": 4.2
+        }
+      ],
       "answers": [],
-      "end": 4.3
+      "end": 4.2
     },
     {
       "id": 2,
-      "start": 4.9,
+      "start": 5.06,
       "speaker": "WOMAN",
       "en": "Oh hello, I’d like to report a stolen briefcase, please.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 5.06,
+          "end": 5.13
+        },
+        {
+          "word": "hello",
+          "start": 5.13,
+          "end": 5.47
+        },
+        {
+          "word": "I",
+          "start": 6.0,
+          "end": 6.14
+        },
+        {
+          "word": "'d",
+          "start": 6.14,
+          "end": 6.18
+        },
+        {
+          "word": "like",
+          "start": 6.18,
+          "end": 6.38
+        },
+        {
+          "word": "to",
+          "start": 6.38,
+          "end": 6.49
+        },
+        {
+          "word": "report",
+          "start": 6.49,
+          "end": 6.81
+        },
+        {
+          "word": "a",
+          "start": 7.35,
+          "end": 7.39
+        },
+        {
+          "word": "stolen",
+          "start": 7.39,
+          "end": 7.7
+        },
+        {
+          "word": "briefcase",
+          "start": 7.7,
+          "end": 7.97
+        },
+        {
+          "word": "please",
+          "start": 7.97,
+          "end": 8.29
+        }
+      ],
       "answers": [],
-      "end": 8.8
+      "end": 8.29
     },
     {
       "id": 3,
-      "start": 8.9,
+      "start": 8.73,
       "speaker": "RECEPTIONIST",
       "en": "Just a minute and I’ll put you through.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Just",
+          "start": 8.73,
+          "end": 8.96
+        },
+        {
+          "word": "a",
+          "start": 8.96,
+          "end": 8.99
+        },
+        {
+          "word": "minute",
+          "start": 8.99,
+          "end": 9.25
+        },
+        {
+          "word": "and",
+          "start": 9.51,
+          "end": 9.58
+        },
+        {
+          "word": "I",
+          "start": 9.58,
+          "end": 9.74
+        },
+        {
+          "word": "'ll",
+          "start": 9.74,
+          "end": 9.77
+        },
+        {
+          "word": "put",
+          "start": 9.77,
+          "end": 10.11
+        },
+        {
+          "word": "you",
+          "start": 11.72,
+          "end": 12.11
+        },
+        {
+          "word": "through",
+          "start": 12.72,
+          "end": 12.84
+        }
+      ],
       "answers": [],
-      "end": 10.2
+      "end": 12.84
     },
     {
       "id": 4,
-      "start": 14.1,
+      "start": 14.29,
       "speaker": "POLICE OFFICER",
       "en": "Lost property. Can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Lost",
+          "start": 14.29,
+          "end": 14.56
+        },
+        {
+          "word": "property",
+          "start": 14.56,
+          "end": 15.12
+        },
+        {
+          "word": "Can",
+          "start": 15.12,
+          "end": 15.25
+        },
+        {
+          "word": "I",
+          "start": 15.25,
+          "end": 15.36
+        },
+        {
+          "word": "help",
+          "start": 15.36,
+          "end": 15.64
+        },
+        {
+          "word": "you",
+          "start": 15.64,
+          "end": 15.95
+        }
+      ],
       "answers": [],
-      "end": 16.1
+      "end": 15.95
     },
     {
       "id": 5,
-      "start": 16.4,
+      "start": 16.540001,
       "speaker": "WOMAN",
       "en": "Oh, yes. I’ve had my briefcase stolen.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 16.540001,
+          "end": 16.68
+        },
+        {
+          "word": "yes",
+          "start": 16.719999,
+          "end": 17.16
+        },
+        {
+          "word": "I",
+          "start": 17.75,
+          "end": 17.9
+        },
+        {
+          "word": "'ve",
+          "start": 17.9,
+          "end": 17.93
+        },
+        {
+          "word": "had",
+          "start": 17.93,
+          "end": 18.120001
+        },
+        {
+          "word": "my",
+          "start": 18.120001,
+          "end": 18.299999
+        },
+        {
+          "word": "briefcase",
+          "start": 18.299999,
+          "end": 18.85
+        },
+        {
+          "word": "stolen",
+          "start": 18.940001,
+          "end": 19.389999
+        }
+      ],
       "answers": [],
-      "end": 20.2
+      "end": 19.389999
     },
     {
       "id": 6,
-      "start": 20.3,
+      "start": 19.48,
       "speaker": "POLICE OFFICER",
       "en": "OK … I’ll take some details … Tell me what it looks like, first of all.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 19.48,
+          "end": 20.16
+        },
+        {
+          "word": "I",
+          "start": 20.16,
+          "end": 20.57
+        },
+        {
+          "word": "'ll",
+          "start": 20.57,
+          "end": 20.65
+        },
+        {
+          "word": "take",
+          "start": 20.65,
+          "end": 20.950001
+        },
+        {
+          "word": "some",
+          "start": 20.950001,
+          "end": 21.15
+        },
+        {
+          "word": "details",
+          "start": 21.15,
+          "end": 21.780001
+        },
+        {
+          "word": "Tell",
+          "start": 22.549999,
+          "end": 22.639999
+        },
+        {
+          "word": "me",
+          "start": 22.639999,
+          "end": 22.719999
+        },
+        {
+          "word": "what",
+          "start": 22.719999,
+          "end": 22.9
+        },
+        {
+          "word": "it",
+          "start": 22.9,
+          "end": 22.99
+        },
+        {
+          "word": "looks",
+          "start": 22.99,
+          "end": 23.299999
+        },
+        {
+          "word": "like",
+          "start": 23.299999,
+          "end": 23.48
+        },
+        {
+          "word": "first",
+          "start": 23.48,
+          "end": 23.780001
+        },
+        {
+          "word": "of",
+          "start": 23.780001,
+          "end": 23.85
+        },
+        {
+          "word": "all",
+          "start": 23.85,
+          "end": 24.1
+        }
+      ],
       "answers": [],
       "end": 24.1
     },
     {
       "id": 7,
-      "start": 24.2,
+      "start": 24.889999,
       "speaker": "WOMAN",
       "en": "Well … it’s a soft leather one, you know, not a heavy box-type like a man’s.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 24.889999,
+          "end": 25.42
+        },
+        {
+          "word": "it",
+          "start": 26.030001,
+          "end": 26.290001
+        },
+        {
+          "word": "'s",
+          "start": 26.030001,
+          "end": 26.290001
+        },
+        {
+          "word": "a",
+          "start": 26.51,
+          "end": 26.540001
+        },
+        {
+          "word": "soft",
+          "start": 26.540001,
+          "end": 26.74
+        },
+        {
+          "word": "leather",
+          "start": 26.889999,
+          "end": 27.299999
+        },
+        {
+          "word": "one",
+          "start": 27.4,
+          "end": 27.92
+        },
+        {
+          "word": "you",
+          "start": 27.950001,
+          "end": 28.09
+        },
+        {
+          "word": "know",
+          "start": 28.09,
+          "end": 28.18
+        },
+        {
+          "word": "not",
+          "start": 28.809999,
+          "end": 29.07
+        },
+        {
+          "word": "a",
+          "start": 29.07,
+          "end": 29.1
+        },
+        {
+          "word": "heavy",
+          "start": 29.24,
+          "end": 29.58
+        },
+        {
+          "word": "box",
+          "start": 29.950001,
+          "end": 30.129999
+        },
+        {
+          "word": "type",
+          "start": 30.129999,
+          "end": 30.41
+        },
+        {
+          "word": "like",
+          "start": 30.41,
+          "end": 30.6
+        },
+        {
+          "word": "a",
+          "start": 30.6,
+          "end": 30.629999
+        },
+        {
+          "word": "man",
+          "start": 30.629999,
+          "end": 31.129999
+        },
+        {
+          "word": "'s",
+          "start": 31.379999,
+          "end": 31.41
+        }
+      ],
       "answers": [],
-      "end": 29.1
+      "end": 31.41
     },
     {
       "id": 8,
-      "start": 29.2,
+      "start": 31.41,
       "speaker": "POLICE OFFICER",
       "en": "Mmm … and how does it close?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Mmm",
+          "start": 31.41,
+          "end": 31.68
+        },
+        {
+          "word": "and",
+          "start": 32.32,
+          "end": 32.84
+        },
+        {
+          "word": "how",
+          "start": 32.84,
+          "end": 33.23
+        },
+        {
+          "word": "does",
+          "start": 33.23,
+          "end": 33.389999
+        },
+        {
+          "word": "it",
+          "start": 33.389999,
+          "end": 33.560001
+        },
+        {
+          "word": "close",
+          "start": 33.560001,
+          "end": 34.18
+        }
+      ],
       "answers": [],
-      "end": 34.1
+      "end": 34.18
     },
     {
       "id": 9,
-      "start": 34.2,
+      "start": 34.650002,
       "speaker": "WOMAN",
       "en": "It’s got buckles at the front ... two of them They’re gold-plated ones.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 34.650002,
+          "end": 34.939999
+        },
+        {
+          "word": "'s",
+          "start": 34.650002,
+          "end": 34.939999
+        },
+        {
+          "word": "got",
+          "start": 34.939999,
+          "end": 35.029999
+        },
+        {
+          "word": "buckles",
+          "start": 35.029999,
+          "end": 35.259998
+        },
+        {
+          "word": "at",
+          "start": 35.66,
+          "end": 35.720001
+        },
+        {
+          "word": "the",
+          "start": 35.720001,
+          "end": 35.790001
+        },
+        {
+          "word": "front",
+          "start": 35.790001,
+          "end": 36.419998
+        },
+        {
+          "word": "two",
+          "start": 36.68,
+          "end": 36.75
+        },
+        {
+          "word": "of",
+          "start": 36.970001,
+          "end": 37.09
+        },
+        {
+          "word": "them",
+          "start": 37.09,
+          "end": 37.360001
+        },
+        {
+          "word": "They",
+          "start": 37.689999,
+          "end": 37.869999
+        },
+        {
+          "word": "'re",
+          "start": 37.689999,
+          "end": 37.869999
+        },
+        {
+          "word": "gold",
+          "start": 37.869999,
+          "end": 38.259998
+        },
+        {
+          "word": "plated",
+          "start": 38.259998,
+          "end": 38.669998
+        },
+        {
+          "word": "ones",
+          "start": 38.669998,
+          "end": 39.119999
+        }
+      ],
       "answers": [],
-      "end": 39.2
+      "end": 39.119999
     },
     {
       "id": 10,
-      "start": 39.3,
+      "start": 39.32,
       "speaker": "POLICE OFFICER",
       "en": "Fine … Was it locked?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Fine",
+          "start": 39.32,
+          "end": 39.720001
+        },
+        {
+          "word": "Was",
+          "start": 40.919998,
+          "end": 41.110001
+        },
+        {
+          "word": "it",
+          "start": 41.110001,
+          "end": 41.18
+        },
+        {
+          "word": "locked",
+          "start": 41.419998,
+          "end": 41.779999
+        }
+      ],
       "answers": [],
-      "end": 42.2
+      "end": 41.779999
     },
     {
       "id": 11,
-      "start": 42.2,
+      "start": 42.259998,
       "speaker": "WOMAN",
       "en": "No, I’m afraid not.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "No",
+          "start": 42.259998,
+          "end": 42.630001
+        },
+        {
+          "word": "I",
+          "start": 42.82,
+          "end": 42.970001
+        },
+        {
+          "word": "'m",
+          "start": 42.82,
+          "end": 42.970001
+        },
+        {
+          "word": "afraid",
+          "start": 42.970001,
+          "end": 43.349998
+        },
+        {
+          "word": "not",
+          "start": 43.349998,
+          "end": 43.810001
+        }
+      ],
       "answers": [],
-      "end": 43.9
+      "end": 43.810001
     },
     {
       "id": 12,
-      "start": 44.1,
+      "start": 44.080002,
       "speaker": "POLICE OFFICER",
       "en": "Never mind. Any distinguishing features?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Never",
+          "start": 44.080002,
+          "end": 44.299999
+        },
+        {
+          "word": "mind",
+          "start": 44.299999,
+          "end": 44.77
+        },
+        {
+          "word": "Any",
+          "start": 45.419998,
+          "end": 45.68
+        },
+        {
+          "word": "distinguishing",
+          "start": 45.68,
+          "end": 46.380001
+        },
+        {
+          "word": "features",
+          "start": 46.380001,
+          "end": 46.889999
+        }
+      ],
       "answers": [],
-      "end": 47.1
+      "end": 46.889999
     },
     {
       "id": 13,
-      "start": 47.4,
+      "start": 47.849998,
       "speaker": "WOMAN",
       "en": "Pardon?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Pardon",
+          "start": 47.849998,
+          "end": 48.0
+        }
+      ],
       "answers": [],
-      "end": 48.5
+      "end": 48.0
     },
     {
       "id": 14,
-      "start": 48.5,
+      "start": 48.43,
       "speaker": "POLICE OFFICER",
       "en": "Any marks or badges on it that make it stand out?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Any",
+          "start": 48.43,
+          "end": 48.860001
+        },
+        {
+          "word": "marks",
+          "start": 49.049999,
+          "end": 49.41
+        },
+        {
+          "word": "or",
+          "start": 49.41,
+          "end": 49.700001
+        },
+        {
+          "word": "badges",
+          "start": 49.849998,
+          "end": 50.119999
+        },
+        {
+          "word": "on",
+          "start": 50.119999,
+          "end": 50.259998
+        },
+        {
+          "word": "it",
+          "start": 50.259998,
+          "end": 50.369999
+        },
+        {
+          "word": "that",
+          "start": 50.470001,
+          "end": 50.700001
+        },
+        {
+          "word": "make",
+          "start": 50.700001,
+          "end": 50.889999
+        },
+        {
+          "word": "it",
+          "start": 50.889999,
+          "end": 50.990002
+        },
+        {
+          "word": "stand",
+          "start": 50.990002,
+          "end": 51.32
+        },
+        {
+          "word": "out",
+          "start": 51.43,
+          "end": 51.709999
+        }
+      ],
       "answers": [],
-      "end": 52.6
+      "end": 51.709999
     },
     {
       "id": 15,
-      "start": 53.0,
+      "start": 52.310001,
       "speaker": "WOMAN",
       "en": "Only the brand name.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Only",
+          "start": 52.310001,
+          "end": 52.75
+        },
+        {
+          "word": "the",
+          "start": 53.529999,
+          "end": 53.59
+        },
+        {
+          "word": "brand",
+          "start": 53.59,
+          "end": 53.790001
+        },
+        {
+          "word": "name",
+          "start": 54.080002,
+          "end": 54.369999
+        }
+      ],
       "answers": [],
-      "end": 54.9
+      "end": 54.369999
     },
     {
       "id": 16,
-      "start": 58.7,
+      "start": 54.790001,
       "speaker": "POLICE OFFICER",
       "en": "And where’s that?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "And",
+          "start": 54.790001,
+          "end": 55.029999
+        },
+        {
+          "word": "where",
+          "start": 55.029999,
+          "end": 55.220001
+        },
+        {
+          "word": "'s",
+          "start": 55.220001,
+          "end": 55.279999
+        },
+        {
+          "word": "that",
+          "start": 55.279999,
+          "end": 55.580002
+        }
+      ],
+      "answers": [],
+      "end": 55.580002
     },
     {
       "id": 17,
-      "start": 64.4,
+      "start": 55.959999,
       "speaker": "WOMAN",
       "en": "It’s on the back … at the bottom in the left-hand corner. It’s Sagi. Oh and there’s a scratch … it’s quite bad but small … directly above the brand name. I did it recently putting it on my bike.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 55.959999,
+          "end": 56.169998
+        },
+        {
+          "word": "'s",
+          "start": 55.959999,
+          "end": 56.169998
+        },
+        {
+          "word": "on",
+          "start": 56.169998,
+          "end": 56.200001
+        },
+        {
+          "word": "the",
+          "start": 56.200001,
+          "end": 56.709999
+        },
+        {
+          "word": "back",
+          "start": 56.709999,
+          "end": 56.82
+        },
+        {
+          "word": "at",
+          "start": 56.82,
+          "end": 56.880001
+        },
+        {
+          "word": "the",
+          "start": 57.27,
+          "end": 57.5
+        },
+        {
+          "word": "bottom",
+          "start": 57.5,
+          "end": 57.970001
+        },
+        {
+          "word": "in",
+          "start": 57.970001,
+          "end": 58.150002
+        },
+        {
+          "word": "the",
+          "start": 58.150002,
+          "end": 58.330002
+        },
+        {
+          "word": "left",
+          "start": 58.330002,
+          "end": 58.459999
+        },
+        {
+          "word": "hand",
+          "start": 58.509998,
+          "end": 58.73
+        },
+        {
+          "word": "corner",
+          "start": 58.73,
+          "end": 59.240002
+        },
+        {
+          "word": "It",
+          "start": 59.59,
+          "end": 59.799999
+        },
+        {
+          "word": "'s",
+          "start": 59.59,
+          "end": 59.799999
+        },
+        {
+          "word": "Sagi",
+          "start": 60.34,
+          "end": 60.77
+        },
+        {
+          "word": "Oh",
+          "start": 61.610001,
+          "end": 61.689999
+        },
+        {
+          "word": "and",
+          "start": 61.860001,
+          "end": 62.009998
+        },
+        {
+          "word": "there",
+          "start": 62.009998,
+          "end": 62.18
+        },
+        {
+          "word": "'s",
+          "start": 62.18,
+          "end": 62.369999
+        },
+        {
+          "word": "a",
+          "start": 62.400002,
+          "end": 62.470001
+        },
+        {
+          "word": "scratch",
+          "start": 62.470001,
+          "end": 62.75
+        },
+        {
+          "word": "it",
+          "start": 63.209999,
+          "end": 63.41
+        },
+        {
+          "word": "'s",
+          "start": 63.209999,
+          "end": 63.41
+        },
+        {
+          "word": "quite",
+          "start": 63.41,
+          "end": 63.810001
+        },
+        {
+          "word": "bad",
+          "start": 63.810001,
+          "end": 63.889999
+        },
+        {
+          "word": "but",
+          "start": 64.290001,
+          "end": 64.480003
+        },
+        {
+          "word": "small",
+          "start": 64.639999,
+          "end": 65.139999
+        },
+        {
+          "word": "directly",
+          "start": 65.449997,
+          "end": 66.0
+        },
+        {
+          "word": "above",
+          "start": 66.0,
+          "end": 66.220001
+        },
+        {
+          "word": "the",
+          "start": 66.32,
+          "end": 66.43
+        },
+        {
+          "word": "brand",
+          "start": 66.43,
+          "end": 66.830002
+        },
+        {
+          "word": "name",
+          "start": 66.830002,
+          "end": 67.209999
+        },
+        {
+          "word": "I",
+          "start": 67.75,
+          "end": 67.860001
+        },
+        {
+          "word": "did",
+          "start": 67.860001,
+          "end": 68.010002
+        },
+        {
+          "word": "it",
+          "start": 68.010002,
+          "end": 68.099998
+        },
+        {
+          "word": "recently",
+          "start": 68.099998,
+          "end": 68.510002
+        },
+        {
+          "word": "putting",
+          "start": 68.510002,
+          "end": 68.779999
+        },
+        {
+          "word": "it",
+          "start": 68.779999,
+          "end": 68.940002
+        },
+        {
+          "word": "on",
+          "start": 68.940002,
+          "end": 69.019997
+        },
+        {
+          "word": "my",
+          "start": 69.019997,
+          "end": 69.160004
+        },
+        {
+          "word": "bike",
+          "start": 69.160004,
+          "end": 69.510002
+        }
+      ],
       "answers": [],
-      "end": 70.0
+      "end": 69.510002
     },
     {
       "id": 18,
-      "start": 70.1,
+      "start": 69.510002,
       "speaker": "POLICE OFFICER",
       "en": "Right, got that. So, what did you have inside the briefcase?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 69.510002,
+          "end": 69.68
+        },
+        {
+          "word": "got",
+          "start": 70.879997,
+          "end": 71.169998
+        },
+        {
+          "word": "that",
+          "start": 71.169998,
+          "end": 71.260002
+        },
+        {
+          "word": "So",
+          "start": 71.860001,
+          "end": 72.279999
+        },
+        {
+          "word": "what",
+          "start": 72.879997,
+          "end": 73.239998
+        },
+        {
+          "word": "did",
+          "start": 73.239998,
+          "end": 73.379997
+        },
+        {
+          "word": "you",
+          "start": 73.379997,
+          "end": 73.550003
+        },
+        {
+          "word": "have",
+          "start": 73.550003,
+          "end": 73.779999
+        },
+        {
+          "word": "inside",
+          "start": 73.779999,
+          "end": 74.029999
+        },
+        {
+          "word": "the",
+          "start": 74.230003,
+          "end": 74.309998
+        },
+        {
+          "word": "briefcase",
+          "start": 74.309998,
+          "end": 75.160004
+        }
+      ],
       "answers": [],
-      "end": 75.4
+      "end": 75.160004
     },
     {
       "id": 19,
-      "start": 75.8,
+      "start": 75.699997,
       "speaker": "WOMAN",
       "en": "Well all my papers from college. It’s so frustrating but, thank goodness for computers, I haven’t lost them completely!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 75.699997,
+          "end": 76.32
+        },
+        {
+          "word": "all",
+          "start": 76.970001,
+          "end": 77.379997
+        },
+        {
+          "word": "my",
+          "start": 77.379997,
+          "end": 77.540001
+        },
+        {
+          "word": "papers",
+          "start": 77.790001,
+          "end": 78.209999
+        },
+        {
+          "word": "from",
+          "start": 78.209999,
+          "end": 78.379997
+        },
+        {
+          "word": "college",
+          "start": 78.379997,
+          "end": 78.800003
+        },
+        {
+          "word": "It",
+          "start": 78.800003,
+          "end": 78.970001
+        },
+        {
+          "word": "'s",
+          "start": 78.800003,
+          "end": 78.970001
+        },
+        {
+          "word": "so",
+          "start": 79.650002,
+          "end": 79.760002
+        },
+        {
+          "word": "frustrating",
+          "start": 80.410004,
+          "end": 80.959999
+        },
+        {
+          "word": "but",
+          "start": 81.470001,
+          "end": 81.559998
+        },
+        {
+          "word": "thank",
+          "start": 81.559998,
+          "end": 81.769997
+        },
+        {
+          "word": "goodness",
+          "start": 81.769997,
+          "end": 82.010002
+        },
+        {
+          "word": "for",
+          "start": 82.010002,
+          "end": 82.07
+        },
+        {
+          "word": "computers",
+          "start": 82.07,
+          "end": 82.410004
+        },
+        {
+          "word": "I",
+          "start": 82.580002,
+          "end": 82.589996
+        },
+        {
+          "word": "have",
+          "start": 82.589996,
+          "end": 82.860001
+        },
+        {
+          "word": "n't",
+          "start": 82.589996,
+          "end": 82.860001
+        },
+        {
+          "word": "lost",
+          "start": 83.519997,
+          "end": 83.639999
+        },
+        {
+          "word": "them",
+          "start": 83.639999,
+          "end": 83.790001
+        },
+        {
+          "word": "completely",
+          "start": 83.790001,
+          "end": 84.480003
+        }
+      ],
       "answers": [],
-      "end": 81.2
+      "end": 84.480003
     },
     {
       "id": 20,
-      "start": 81.2,
+      "start": 84.68,
       "speaker": "POLICE OFFICER",
       "en": "Yes, you’re lucky.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 84.68,
+          "end": 85.230003
+        },
+        {
+          "word": "you",
+          "start": 85.230003,
+          "end": 85.339996
+        },
+        {
+          "word": "'re",
+          "start": 85.230003,
+          "end": 85.339996
+        },
+        {
+          "word": "lucky",
+          "start": 85.339996,
+          "end": 85.839996
+        }
+      ],
       "answers": [],
-      "end": 86.5
+      "end": 85.839996
     },
     {
       "id": 21,
-      "start": 86.5,
+      "start": 86.0,
       "speaker": "WOMAN",
       "en": "I had my wallet in my pocket so I didn’t lose that but there were also my pens which I got for my birthday and a novel I was planning to read on the train.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 86.0,
+          "end": 86.169998
+        },
+        {
+          "word": "had",
+          "start": 86.330002,
+          "end": 86.449997
+        },
+        {
+          "word": "my",
+          "start": 86.449997,
+          "end": 86.599998
+        },
+        {
+          "word": "wallet",
+          "start": 86.650002,
+          "end": 87.050003
+        },
+        {
+          "word": "in",
+          "start": 87.050003,
+          "end": 87.18
+        },
+        {
+          "word": "my",
+          "start": 87.18,
+          "end": 87.279999
+        },
+        {
+          "word": "pocket",
+          "start": 87.279999,
+          "end": 87.870003
+        },
+        {
+          "word": "so",
+          "start": 87.940002,
+          "end": 88.050003
+        },
+        {
+          "word": "I",
+          "start": 88.050003,
+          "end": 88.129997
+        },
+        {
+          "word": "did",
+          "start": 88.129997,
+          "end": 88.410004
+        },
+        {
+          "word": "n't",
+          "start": 88.129997,
+          "end": 88.410004
+        },
+        {
+          "word": "lose",
+          "start": 88.410004,
+          "end": 88.669998
+        },
+        {
+          "word": "that",
+          "start": 88.709999,
+          "end": 88.839996
+        },
+        {
+          "word": "but",
+          "start": 89.410004,
+          "end": 89.559998
+        },
+        {
+          "word": "there",
+          "start": 89.559998,
+          "end": 89.68
+        },
+        {
+          "word": "were",
+          "start": 89.68,
+          "end": 89.739998
+        },
+        {
+          "word": "also",
+          "start": 89.739998,
+          "end": 90.0
+        },
+        {
+          "word": "my",
+          "start": 90.0,
+          "end": 90.080002
+        },
+        {
+          "word": "pens",
+          "start": 90.57,
+          "end": 90.860001
+        },
+        {
+          "word": "which",
+          "start": 90.860001,
+          "end": 90.980003
+        },
+        {
+          "word": "I",
+          "start": 91.050003,
+          "end": 91.139999
+        },
+        {
+          "word": "got",
+          "start": 91.139999,
+          "end": 91.349998
+        },
+        {
+          "word": "for",
+          "start": 91.349998,
+          "end": 91.410004
+        },
+        {
+          "word": "my",
+          "start": 91.410004,
+          "end": 91.57
+        },
+        {
+          "word": "birthday",
+          "start": 91.57,
+          "end": 92.230003
+        },
+        {
+          "word": "and",
+          "start": 92.839996,
+          "end": 92.900002
+        },
+        {
+          "word": "a",
+          "start": 92.900002,
+          "end": 92.93
+        },
+        {
+          "word": "novel",
+          "start": 92.93,
+          "end": 93.129997
+        },
+        {
+          "word": "I",
+          "start": 93.129997,
+          "end": 93.160004
+        },
+        {
+          "word": "was",
+          "start": 93.360001,
+          "end": 93.489998
+        },
+        {
+          "word": "planning",
+          "start": 93.489998,
+          "end": 93.889999
+        },
+        {
+          "word": "to",
+          "start": 93.889999,
+          "end": 93.989998
+        },
+        {
+          "word": "read",
+          "start": 93.989998,
+          "end": 94.239998
+        },
+        {
+          "word": "on",
+          "start": 94.239998,
+          "end": 94.32
+        },
+        {
+          "word": "the",
+          "start": 94.32,
+          "end": 94.389999
+        },
+        {
+          "word": "train",
+          "start": 94.389999,
+          "end": 94.949997
+        }
+      ],
       "answers": [],
-      "end": 95.5
+      "end": 94.949997
     },
     {
       "id": 22,
-      "start": 95.6,
+      "start": 95.290001,
       "speaker": "POLICE OFFICER",
       "en": "Right. Where exactly did you lose the briefcase?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 95.290001,
+          "end": 96.059998
+        },
+        {
+          "word": "Where",
+          "start": 96.349998,
+          "end": 96.559998
+        },
+        {
+          "word": "exactly",
+          "start": 96.559998,
+          "end": 97.43
+        },
+        {
+          "word": "did",
+          "start": 97.43,
+          "end": 97.639999
+        },
+        {
+          "word": "you",
+          "start": 97.639999,
+          "end": 97.800003
+        },
+        {
+          "word": "lose",
+          "start": 97.800003,
+          "end": 98.099998
+        },
+        {
+          "word": "the",
+          "start": 98.099998,
+          "end": 98.169998
+        },
+        {
+          "word": "briefcase",
+          "start": 98.169998,
+          "end": 98.989998
+        }
+      ],
       "answers": [],
-      "end": 99.7
+      "end": 98.989998
     },
     {
       "id": 23,
-      "start": 99.8,
+      "start": 99.639999,
       "speaker": "WOMAN",
       "en": "Well … I couldn’t believe it. I was standing on the platform … it was right next to me.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 99.639999,
+          "end": 99.959999
+        },
+        {
+          "word": "I",
+          "start": 99.959999,
+          "end": 100.089996
+        },
+        {
+          "word": "could",
+          "start": 100.089996,
+          "end": 100.18
+        },
+        {
+          "word": "n't",
+          "start": 100.089996,
+          "end": 100.18
+        },
+        {
+          "word": "believe",
+          "start": 100.18,
+          "end": 100.330002
+        },
+        {
+          "word": "it",
+          "start": 101.050003,
+          "end": 101.099998
+        },
+        {
+          "word": "I",
+          "start": 101.099998,
+          "end": 101.220001
+        },
+        {
+          "word": "was",
+          "start": 101.220001,
+          "end": 101.309998
+        },
+        {
+          "word": "standing",
+          "start": 101.589996,
+          "end": 102.349998
+        },
+        {
+          "word": "on",
+          "start": 102.989998,
+          "end": 103.050003
+        },
+        {
+          "word": "the",
+          "start": 103.050003,
+          "end": 103.870003
+        },
+        {
+          "word": "platform",
+          "start": 103.870003,
+          "end": 104.550003
+        },
+        {
+          "word": "it",
+          "start": 105.199997,
+          "end": 105.290001
+        },
+        {
+          "word": "was",
+          "start": 105.290001,
+          "end": 105.389999
+        },
+        {
+          "word": "right",
+          "start": 105.870003,
+          "end": 105.949997
+        },
+        {
+          "word": "next",
+          "start": 105.949997,
+          "end": 106.089996
+        },
+        {
+          "word": "to",
+          "start": 106.089996,
+          "end": 106.220001
+        },
+        {
+          "word": "me",
+          "start": 106.220001,
+          "end": 106.529999
+        }
+      ],
       "answers": [],
-      "end": 106.6
+      "end": 106.529999
     },
     {
       "id": 24,
-      "start": 107.0,
+      "start": 106.980003,
       "speaker": "POLICE OFFICER",
       "en": "You were holding it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 106.980003,
+          "end": 107.120003
+        },
+        {
+          "word": "were",
+          "start": 107.120003,
+          "end": 107.18
+        },
+        {
+          "word": "holding",
+          "start": 107.269997,
+          "end": 107.720001
+        },
+        {
+          "word": "it",
+          "start": 107.75,
+          "end": 107.900002
+        }
+      ],
       "answers": [],
-      "end": 108.8
+      "end": 107.900002
     },
     {
       "id": 25,
-      "start": 113.7,
+      "start": 108.360001,
       "speaker": "WOMAN",
       "en": "I’d just put it down on the floor but I could almost feel it beside me. I was watching for my tram because sometimes it comes early and then next time I looked, my briefcase wasn’t there.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 108.360001,
+          "end": 108.489998
+        },
+        {
+          "word": "'d",
+          "start": 108.489998,
+          "end": 108.550003
+        },
+        {
+          "word": "just",
+          "start": 108.550003,
+          "end": 108.68
+        },
+        {
+          "word": "put",
+          "start": 108.839996,
+          "end": 109.059998
+        },
+        {
+          "word": "it",
+          "start": 109.059998,
+          "end": 109.150002
+        },
+        {
+          "word": "down",
+          "start": 109.150002,
+          "end": 109.309998
+        },
+        {
+          "word": "on",
+          "start": 109.309998,
+          "end": 109.370003
+        },
+        {
+          "word": "the",
+          "start": 109.370003,
+          "end": 109.620003
+        },
+        {
+          "word": "floor",
+          "start": 109.620003,
+          "end": 110.089996
+        },
+        {
+          "word": "but",
+          "start": 110.279999,
+          "end": 110.519997
+        },
+        {
+          "word": "I",
+          "start": 111.150002,
+          "end": 111.199997
+        },
+        {
+          "word": "could",
+          "start": 111.199997,
+          "end": 111.290001
+        },
+        {
+          "word": "almost",
+          "start": 111.290001,
+          "end": 111.410004
+        },
+        {
+          "word": "feel",
+          "start": 111.410004,
+          "end": 111.629997
+        },
+        {
+          "word": "it",
+          "start": 111.629997,
+          "end": 111.739998
+        },
+        {
+          "word": "beside",
+          "start": 111.739998,
+          "end": 112.239998
+        },
+        {
+          "word": "me",
+          "start": 112.239998,
+          "end": 112.510002
+        },
+        {
+          "word": "I",
+          "start": 113.080002,
+          "end": 113.18
+        },
+        {
+          "word": "was",
+          "start": 113.18,
+          "end": 113.32
+        },
+        {
+          "word": "watching",
+          "start": 113.480003,
+          "end": 113.68
+        },
+        {
+          "word": "for",
+          "start": 113.68,
+          "end": 113.739998
+        },
+        {
+          "word": "my",
+          "start": 113.739998,
+          "end": 113.879997
+        },
+        {
+          "word": "tram",
+          "start": 113.879997,
+          "end": 114.360001
+        },
+        {
+          "word": "because",
+          "start": 114.360001,
+          "end": 114.629997
+        },
+        {
+          "word": "sometimes",
+          "start": 114.660004,
+          "end": 115.099998
+        },
+        {
+          "word": "it",
+          "start": 115.099998,
+          "end": 115.209999
+        },
+        {
+          "word": "comes",
+          "start": 115.209999,
+          "end": 115.660004
+        },
+        {
+          "word": "early",
+          "start": 115.699997,
+          "end": 115.940002
+        },
+        {
+          "word": "and",
+          "start": 116.410004,
+          "end": 116.480003
+        },
+        {
+          "word": "then",
+          "start": 116.480003,
+          "end": 116.849998
+        },
+        {
+          "word": "next",
+          "start": 116.93,
+          "end": 117.349998
+        },
+        {
+          "word": "time",
+          "start": 117.349998,
+          "end": 117.440002
+        },
+        {
+          "word": "I",
+          "start": 117.440002,
+          "end": 117.540001
+        },
+        {
+          "word": "looked",
+          "start": 117.540001,
+          "end": 117.730003
+        },
+        {
+          "word": "my",
+          "start": 117.730003,
+          "end": 117.769997
+        },
+        {
+          "word": "briefcase",
+          "start": 117.769997,
+          "end": 117.980003
+        },
+        {
+          "word": "was",
+          "start": 118.290001,
+          "end": 118.510002
+        },
+        {
+          "word": "n't",
+          "start": 118.290001,
+          "end": 118.510002
+        },
+        {
+          "word": "there",
+          "start": 118.510002,
+          "end": 119.68
+        }
+      ],
       "answers": [],
-      "end": 120.2
+      "end": 119.68
     },
     {
       "id": 26,
-      "start": 120.3,
+      "start": 120.269997,
       "speaker": "POLICE OFFICER",
       "en": "And what time was this?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 120.269997,
+          "end": 120.690002
+        },
+        {
+          "word": "what",
+          "start": 120.919998,
+          "end": 121.120003
+        },
+        {
+          "word": "time",
+          "start": 121.120003,
+          "end": 121.410004
+        },
+        {
+          "word": "was",
+          "start": 121.410004,
+          "end": 121.57
+        },
+        {
+          "word": "this",
+          "start": 121.57,
+          "end": 121.769997
+        }
+      ],
       "answers": [],
-      "end": 122.8
+      "end": 121.769997
     },
     {
       "id": 27,
-      "start": 130.1,
+      "start": 122.510002,
       "speaker": "WOMAN",
       "en": "Ah … it was … it must have been about 5.20 … no a bit later. I’d say 5.30 because it was just getting crowded and the train normally comes at about twenty-five to six.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Ah",
+          "start": 122.510002,
+          "end": 123.029999
+        },
+        {
+          "word": "it",
+          "start": 123.400002,
+          "end": 123.559998
+        },
+        {
+          "word": "was",
+          "start": 123.559998,
+          "end": 123.949997
+        },
+        {
+          "word": "it",
+          "start": 125.559998,
+          "end": 125.769997
+        },
+        {
+          "word": "must",
+          "start": 125.769997,
+          "end": 125.900002
+        },
+        {
+          "word": "have",
+          "start": 125.900002,
+          "end": 125.940002
+        },
+        {
+          "word": "been",
+          "start": 125.940002,
+          "end": 126.029999
+        },
+        {
+          "word": "about",
+          "start": 126.029999,
+          "end": 126.110001
+        },
+        {
+          "word": "5",
+          "start": 126.110001,
+          "end": 126.620003
+        },
+        {
+          "word": "20",
+          "start": 126.760002,
+          "end": 127.07
+        },
+        {
+          "word": "no",
+          "start": 127.309998,
+          "end": 127.480003
+        },
+        {
+          "word": "a",
+          "start": 127.480003,
+          "end": 127.510002
+        },
+        {
+          "word": "bit",
+          "start": 127.510002,
+          "end": 127.650002
+        },
+        {
+          "word": "later",
+          "start": 127.650002,
+          "end": 127.870003
+        },
+        {
+          "word": "I",
+          "start": 128.449997,
+          "end": 128.520004
+        },
+        {
+          "word": "'d",
+          "start": 128.520004,
+          "end": 128.589996
+        },
+        {
+          "word": "say",
+          "start": 128.589996,
+          "end": 128.660004
+        },
+        {
+          "word": "5",
+          "start": 128.660004,
+          "end": 129.419998
+        },
+        {
+          "word": "30",
+          "start": 129.850006,
+          "end": 131.25
+        },
+        {
+          "word": "because",
+          "start": 131.25,
+          "end": 131.490005
+        },
+        {
+          "word": "it",
+          "start": 131.490005,
+          "end": 131.600006
+        },
+        {
+          "word": "was",
+          "start": 131.600006,
+          "end": 131.789993
+        },
+        {
+          "word": "just",
+          "start": 131.919998,
+          "end": 132.039993
+        },
+        {
+          "word": "getting",
+          "start": 132.039993,
+          "end": 132.289993
+        },
+        {
+          "word": "crowded",
+          "start": 132.289993,
+          "end": 132.910004
+        },
+        {
+          "word": "and",
+          "start": 133.179993,
+          "end": 133.320007
+        },
+        {
+          "word": "the",
+          "start": 133.320007,
+          "end": 133.389999
+        },
+        {
+          "word": "train",
+          "start": 133.389999,
+          "end": 133.729996
+        },
+        {
+          "word": "normally",
+          "start": 133.729996,
+          "end": 134.029999
+        },
+        {
+          "word": "comes",
+          "start": 134.029999,
+          "end": 134.460007
+        },
+        {
+          "word": "at",
+          "start": 134.460007,
+          "end": 134.520004
+        },
+        {
+          "word": "about",
+          "start": 134.520004,
+          "end": 134.889999
+        },
+        {
+          "word": "twenty",
+          "start": 135.0,
+          "end": 135.350006
+        },
+        {
+          "word": "five",
+          "start": 135.440002,
+          "end": 135.570007
+        },
+        {
+          "word": "to",
+          "start": 135.570007,
+          "end": 135.649994
+        },
+        {
+          "word": "six",
+          "start": 135.649994,
+          "end": 136.139999
+        }
+      ],
       "answers": [],
-      "end": 139.8
+      "end": 136.139999
     },
     {
       "id": 28,
-      "start": 139.9,
+      "start": 140.149994,
       "speaker": "POLICE OFFICER",
       "en": "Right, if you’ll just give me some personal details ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 140.149994,
+          "end": 140.330002
+        },
+        {
+          "word": "if",
+          "start": 140.589996,
+          "end": 140.880005
+        },
+        {
+          "word": "you",
+          "start": 140.880005,
+          "end": 141.100006
+        },
+        {
+          "word": "'ll",
+          "start": 141.100006,
+          "end": 141.169998
+        },
+        {
+          "word": "just",
+          "start": 141.169998,
+          "end": 141.449997
+        },
+        {
+          "word": "give",
+          "start": 141.449997,
+          "end": 141.690002
+        },
+        {
+          "word": "me",
+          "start": 141.690002,
+          "end": 141.820007
+        },
+        {
+          "word": "some",
+          "start": 141.820007,
+          "end": 142.160004
+        },
+        {
+          "word": "personal",
+          "start": 142.309998,
+          "end": 142.690002
+        },
+        {
+          "word": "details",
+          "start": 142.690002,
+          "end": 143.460007
+        }
+      ],
       "answers": [],
-      "end": 143.8
+      "end": 143.460007
     },
     {
       "id": 29,
-      "start": 143.9,
+      "start": 143.789993,
       "speaker": "WOMAN",
       "en": "Yes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 143.789993,
+          "end": 144.0
+        }
+      ],
       "answers": [],
-      "end": 144.8
+      "end": 144.0
     },
     {
       "id": 30,
-      "start": 144.8,
+      "start": 144.639999,
       "speaker": "POLICE OFFICER",
       "en": "What name is it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 144.639999,
+          "end": 144.910004
+        },
+        {
+          "word": "name",
+          "start": 144.910004,
+          "end": 145.130005
+        },
+        {
+          "word": "is",
+          "start": 145.130005,
+          "end": 145.279999
+        },
+        {
+          "word": "it",
+          "start": 145.279999,
+          "end": 145.550003
+        }
+      ],
       "answers": [],
-      "end": 146.3
+      "end": 145.550003
     },
     {
       "id": 31,
-      "start": 146.4,
+      "start": 145.929993,
       "speaker": "WOMAN",
       "en": "I’m Mary Prescott.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 145.929993,
+          "end": 146.399994
+        },
+        {
+          "word": "'m",
+          "start": 145.929993,
+          "end": 146.399994
+        },
+        {
+          "word": "Mary",
+          "start": 146.399994,
+          "end": 146.800003
+        },
+        {
+          "word": "Prescott",
+          "start": 146.800003,
+          "end": 147.490005
+        }
+      ],
       "answers": [
         6
       ],
-      "end": 147.7
+      "end": 147.490005
     },
     {
       "id": 32,
-      "start": 148.0,
+      "start": 148.179993,
       "speaker": "POLICE OFFICER",
       "en": "Can you spell that?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Can",
+          "start": 148.179993,
+          "end": 148.320007
+        },
+        {
+          "word": "you",
+          "start": 148.320007,
+          "end": 148.419998
+        },
+        {
+          "word": "spell",
+          "start": 148.419998,
+          "end": 148.779999
+        },
+        {
+          "word": "that",
+          "start": 148.779999,
+          "end": 149.119995
+        }
+      ],
       "answers": [],
-      "end": 150.0
+      "end": 149.119995
     },
     {
       "id": 33,
-      "start": 152.4,
+      "start": 149.660004,
       "speaker": "WOMAN",
       "en": "Yes, it’s P-R E-S-C-O-T-T.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Yes",
+          "start": 149.660004,
+          "end": 149.899994
+        },
+        {
+          "word": "it",
+          "start": 150.229996,
+          "end": 150.350006
+        },
+        {
+          "word": "'s",
+          "start": 150.229996,
+          "end": 150.350006
+        },
+        {
+          "word": "P",
+          "start": 150.949997,
+          "end": 151.559998
+        },
+        {
+          "word": "R",
+          "start": 151.75,
+          "end": 152.380005
+        },
+        {
+          "word": "E",
+          "start": 152.5,
+          "end": 153.009995
+        },
+        {
+          "word": "S",
+          "start": 153.440002,
+          "end": 153.899994
+        },
+        {
+          "word": "C",
+          "start": 154.449997,
+          "end": 154.940002
+        },
+        {
+          "word": "O",
+          "start": 155.259995,
+          "end": 155.669998
+        },
+        {
+          "word": "T",
+          "start": 155.669998,
+          "end": 155.75
+        },
+        {
+          "word": "T",
+          "start": 156.330002,
+          "end": 156.699997
+        }
+      ],
+      "answers": [],
+      "end": 156.699997
     },
     {
       "id": 34,
-      "start": 156.8,
+      "start": 157.220001,
       "speaker": "POLICE OFFICER",
       "en": "And your address?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 157.220001,
+          "end": 157.820007
+        },
+        {
+          "word": "your",
+          "start": 157.820007,
+          "end": 158.070007
+        },
+        {
+          "word": "address",
+          "start": 158.070007,
+          "end": 158.610001
+        }
+      ],
       "answers": [],
-      "end": 159.4
+      "end": 158.610001
     },
     {
       "id": 35,
-      "start": 159.5,
+      "start": 159.039993,
       "speaker": "WOMAN",
       "en": "Flat 2, 41, Fountain Road, Canterbury.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Flat",
+          "start": 159.039993,
+          "end": 159.169998
+        },
+        {
+          "word": "2",
+          "start": 159.169998,
+          "end": 159.880005
+        },
+        {
+          "word": "41",
+          "start": 160.479996,
+          "end": 161.289993
+        },
+        {
+          "word": "Fountain",
+          "start": 161.479996,
+          "end": 162.240005
+        },
+        {
+          "word": "Road",
+          "start": 162.240005,
+          "end": 162.479996
+        },
+        {
+          "word": "Canterbury",
+          "start": 162.889999,
+          "end": 163.580002
+        }
+      ],
       "answers": [
         8
       ],
-      "end": 161.1
+      "end": 163.580002
     },
     {
       "id": 36,
-      "start": 161.2,
+      "start": 164.300003,
       "speaker": "POLICE OFFICER",
       "en": "Fountain Road.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Fountain",
+          "start": 164.300003,
+          "end": 164.759995
+        },
+        {
+          "word": "Road",
+          "start": 164.759995,
+          "end": 165.240005
+        }
+      ],
       "answers": [],
-      "end": 163.2
+      "end": 165.240005
     },
     {
       "id": 37,
-      "start": 165.9,
+      "start": 165.789993,
       "speaker": "WOMAN",
       "en": "Yes, number 41.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 165.789993,
+          "end": 166.130005
+        },
+        {
+          "word": "number",
+          "start": 166.539993,
+          "end": 166.830002
+        },
+        {
+          "word": "41",
+          "start": 166.830002,
+          "end": 167.610001
+        }
+      ],
       "answers": [],
-      "end": 167.7
+      "end": 167.610001
     },
     {
       "id": 38,
-      "start": 169.1,
+      "start": 168.119995,
       "speaker": "POLICE OFFICER",
       "en": "And have you got a contact telephone number?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 168.119995,
+          "end": 168.550003
+        },
+        {
+          "word": "have",
+          "start": 168.550003,
+          "end": 168.639999
+        },
+        {
+          "word": "you",
+          "start": 168.889999,
+          "end": 168.970001
+        },
+        {
+          "word": "got",
+          "start": 168.970001,
+          "end": 169.119995
+        },
+        {
+          "word": "a",
+          "start": 169.119995,
+          "end": 169.169998
+        },
+        {
+          "word": "contact",
+          "start": 169.169998,
+          "end": 169.820007
+        },
+        {
+          "word": "telephone",
+          "start": 169.880005,
+          "end": 170.320007
+        },
+        {
+          "word": "number",
+          "start": 170.320007,
+          "end": 170.720001
+        }
+      ],
       "answers": [],
-      "end": 171.6
+      "end": 170.720001
     },
     {
       "id": 39,
-      "start": 175.9,
+      "start": 171.479996,
       "speaker": "WOMAN",
       "en": "Yes, it’s 7-5 double 2-3-9.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Yes",
+          "start": 171.479996,
+          "end": 171.720001
+        },
+        {
+          "word": "it",
+          "start": 172.399994,
+          "end": 172.5
+        },
+        {
+          "word": "'s",
+          "start": 172.399994,
+          "end": 172.5
+        },
+        {
+          "word": "7",
+          "start": 172.5,
+          "end": 172.619995
+        },
+        {
+          "word": "5",
+          "start": 173.460007,
+          "end": 174.490005
+        },
+        {
+          "word": "double",
+          "start": 174.660004,
+          "end": 175.0
+        },
+        {
+          "word": "2",
+          "start": 175.0,
+          "end": 175.559998
+        },
+        {
+          "word": "3",
+          "start": 176.229996,
+          "end": 176.710007
+        },
+        {
+          "word": "9",
+          "start": 176.800003,
+          "end": 177.139999
+        }
+      ],
+      "answers": [],
+      "end": 177.139999
     },
     {
       "id": 40,
-      "start": 182.8,
+      "start": 177.729996,
       "speaker": "POLICE OFFICER",
       "en": "7-5-double 239. Fine. One last question — what would you say the value of your briefcase is?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "7",
+          "start": 177.729996,
+          "end": 178.179993
+        },
+        {
+          "word": "5",
+          "start": 178.350006,
+          "end": 178.940002
+        },
+        {
+          "word": "double",
+          "start": 179.220001,
+          "end": 179.520004
+        },
+        {
+          "word": "239",
+          "start": 179.520004,
+          "end": 180.029999
+        },
+        {
+          "word": "Fine",
+          "start": 180.690002,
+          "end": 181.190002
+        },
+        {
+          "word": "One",
+          "start": 183.720001,
+          "end": 183.990005
+        },
+        {
+          "word": "last",
+          "start": 183.990005,
+          "end": 184.259995
+        },
+        {
+          "word": "question",
+          "start": 184.460007,
+          "end": 184.929993
+        },
+        {
+          "word": "what",
+          "start": 185.529999,
+          "end": 185.729996
+        },
+        {
+          "word": "would",
+          "start": 185.729996,
+          "end": 185.820007
+        },
+        {
+          "word": "you",
+          "start": 185.820007,
+          "end": 185.940002
+        },
+        {
+          "word": "say",
+          "start": 185.940002,
+          "end": 186.300003
+        },
+        {
+          "word": "the",
+          "start": 186.300003,
+          "end": 186.529999
+        },
+        {
+          "word": "value",
+          "start": 186.699997,
+          "end": 186.990005
+        },
+        {
+          "word": "of",
+          "start": 186.990005,
+          "end": 187.130005
+        },
+        {
+          "word": "your",
+          "start": 187.130005,
+          "end": 187.270004
+        },
+        {
+          "word": "briefcase",
+          "start": 187.270004,
+          "end": 187.919998
+        },
+        {
+          "word": "is",
+          "start": 187.919998,
+          "end": 188.279999
+        }
+      ],
+      "answers": [],
+      "end": 188.279999
     },
     {
       "id": 41,
-      "start": 189.6,
+      "start": 189.190002,
       "speaker": "WOMAN",
       "en": "Including the contents?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Including",
+          "start": 189.190002,
+          "end": 189.929993
+        },
+        {
+          "word": "the",
+          "start": 189.929993,
+          "end": 190.119995
+        },
+        {
+          "word": "contents",
+          "start": 190.119995,
+          "end": 190.740005
+        }
+      ],
       "answers": [],
-      "end": 191.2
+      "end": 190.740005
     },
     {
       "id": 42,
-      "start": 191.3,
+      "start": 190.740005,
       "speaker": "POLICE OFFICER",
       "en": "Yes, Just a rough estimate is fine.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 190.740005,
+          "end": 191.110001
+        },
+        {
+          "word": "Just",
+          "start": 191.75,
+          "end": 192.050003
+        },
+        {
+          "word": "a",
+          "start": 192.050003,
+          "end": 192.080002
+        },
+        {
+          "word": "rough",
+          "start": 192.080002,
+          "end": 192.179993
+        },
+        {
+          "word": "estimate",
+          "start": 192.580002,
+          "end": 193.029999
+        },
+        {
+          "word": "is",
+          "start": 193.029999,
+          "end": 193.139999
+        },
+        {
+          "word": "fine",
+          "start": 193.139999,
+          "end": 193.580002
+        }
+      ],
       "answers": [],
-      "end": 194.4
+      "end": 193.580002
     },
     {
       "id": 43,
-      "start": 199.6,
+      "start": 194.279999,
       "speaker": "WOMAN",
       "en": "I’m not sure. Well, the briefcase itself is quite new; I bought it last month for £40. I suppose about £65. The contents are worth about 20 or 25 pounds at least.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 194.279999,
+          "end": 194.770004
+        },
+        {
+          "word": "'m",
+          "start": 194.279999,
+          "end": 194.770004
+        },
+        {
+          "word": "not",
+          "start": 195.369995,
+          "end": 195.710007
+        },
+        {
+          "word": "sure",
+          "start": 195.899994,
+          "end": 196.320007
+        },
+        {
+          "word": "Well",
+          "start": 197.25,
+          "end": 197.740005
+        },
+        {
+          "word": "the",
+          "start": 198.160004,
+          "end": 198.449997
+        },
+        {
+          "word": "briefcase",
+          "start": 198.869995,
+          "end": 199.119995
+        },
+        {
+          "word": "itself",
+          "start": 199.119995,
+          "end": 199.470001
+        },
+        {
+          "word": "is",
+          "start": 199.470001,
+          "end": 199.580002
+        },
+        {
+          "word": "quite",
+          "start": 199.580002,
+          "end": 200.020004
+        },
+        {
+          "word": "new",
+          "start": 200.020004,
+          "end": 200.660004
+        },
+        {
+          "word": "I",
+          "start": 201.320007,
+          "end": 201.449997
+        },
+        {
+          "word": "bought",
+          "start": 201.449997,
+          "end": 201.679993
+        },
+        {
+          "word": "it",
+          "start": 201.679993,
+          "end": 201.75
+        },
+        {
+          "word": "last",
+          "start": 201.75,
+          "end": 202.309998
+        },
+        {
+          "word": "month",
+          "start": 202.309998,
+          "end": 202.429993
+        },
+        {
+          "word": "for",
+          "start": 202.520004,
+          "end": 202.639999
+        },
+        {
+          "word": "40",
+          "start": 202.639999,
+          "end": 203.589996
+        },
+        {
+          "word": "I",
+          "start": 204.429993,
+          "end": 204.529999
+        },
+        {
+          "word": "suppose",
+          "start": 204.529999,
+          "end": 204.759995
+        },
+        {
+          "word": "about",
+          "start": 204.970001,
+          "end": 205.429993
+        },
+        {
+          "word": "65",
+          "start": 205.690002,
+          "end": 206.940002
+        },
+        {
+          "word": "The",
+          "start": 207.940002,
+          "end": 208.070007
+        },
+        {
+          "word": "contents",
+          "start": 208.330002,
+          "end": 208.699997
+        },
+        {
+          "word": "are",
+          "start": 208.699997,
+          "end": 208.75
+        },
+        {
+          "word": "worth",
+          "start": 208.75,
+          "end": 209.130005
+        },
+        {
+          "word": "about",
+          "start": 209.130005,
+          "end": 209.429993
+        },
+        {
+          "word": "20",
+          "start": 209.830002,
+          "end": 210.410004
+        },
+        {
+          "word": "or",
+          "start": 210.410004,
+          "end": 210.440002
+        },
+        {
+          "word": "25",
+          "start": 210.440002,
+          "end": 211.110001
+        },
+        {
+          "word": "pounds",
+          "start": 211.110001,
+          "end": 211.470001
+        },
+        {
+          "word": "at",
+          "start": 211.470001,
+          "end": 211.539993
+        },
+        {
+          "word": "least",
+          "start": 211.539993,
+          "end": 212.050003
+        }
+      ],
       "answers": [
         10
-      ]
+      ],
+      "end": 212.050003
     },
     {
       "id": 44,
-      "start": 207.8,
+      "start": 212.570007,
       "speaker": "POLICE OFFICER",
       "en": "That’s fine. Well, if you could come down to the station tomorrow, you can sign this form and have a look at what we’ve got here.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 212.570007,
+          "end": 212.860001
+        },
+        {
+          "word": "'s",
+          "start": 212.860001,
+          "end": 212.970001
+        },
+        {
+          "word": "fine",
+          "start": 212.970001,
+          "end": 213.419998
+        },
+        {
+          "word": "Well",
+          "start": 214.270004,
+          "end": 214.740005
+        },
+        {
+          "word": "if",
+          "start": 214.940002,
+          "end": 215.210007
+        },
+        {
+          "word": "you",
+          "start": 215.210007,
+          "end": 215.389999
+        },
+        {
+          "word": "could",
+          "start": 215.389999,
+          "end": 215.570007
+        },
+        {
+          "word": "come",
+          "start": 215.570007,
+          "end": 215.789993
+        },
+        {
+          "word": "down",
+          "start": 215.789993,
+          "end": 216.029999
+        },
+        {
+          "word": "to",
+          "start": 216.029999,
+          "end": 216.089996
+        },
+        {
+          "word": "the",
+          "start": 216.089996,
+          "end": 216.190002
+        },
+        {
+          "word": "station",
+          "start": 216.190002,
+          "end": 216.649994
+        },
+        {
+          "word": "tomorrow",
+          "start": 216.649994,
+          "end": 217.410004
+        },
+        {
+          "word": "you",
+          "start": 217.690002,
+          "end": 217.910004
+        },
+        {
+          "word": "can",
+          "start": 217.910004,
+          "end": 218.100006
+        },
+        {
+          "word": "sign",
+          "start": 218.100006,
+          "end": 218.440002
+        },
+        {
+          "word": "this",
+          "start": 218.440002,
+          "end": 218.600006
+        },
+        {
+          "word": "form",
+          "start": 218.600006,
+          "end": 219.080002
+        },
+        {
+          "word": "and",
+          "start": 219.080002,
+          "end": 219.5
+        },
+        {
+          "word": "have",
+          "start": 219.729996,
+          "end": 219.759995
+        },
+        {
+          "word": "a",
+          "start": 219.759995,
+          "end": 219.860001
+        },
+        {
+          "word": "look",
+          "start": 219.860001,
+          "end": 220.070007
+        },
+        {
+          "word": "at",
+          "start": 220.070007,
+          "end": 220.169998
+        },
+        {
+          "word": "what",
+          "start": 220.169998,
+          "end": 220.320007
+        },
+        {
+          "word": "we",
+          "start": 220.320007,
+          "end": 220.449997
+        },
+        {
+          "word": "'ve",
+          "start": 220.320007,
+          "end": 220.449997
+        },
+        {
+          "word": "got",
+          "start": 220.449997,
+          "end": 220.639999
+        },
+        {
+          "word": "here",
+          "start": 220.639999,
+          "end": 221.0
+        }
+      ],
       "answers": [],
-      "end": 216.0
+      "end": 221.0
     },
     {
       "id": 45,
-      "start": 216.1,
+      "start": 221.809998,
       "speaker": "WOMAN",
       "en": "OK, thanks. 'Bye.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 221.809998,
+          "end": 222.199997
+        },
+        {
+          "word": "thanks",
+          "start": 222.479996,
+          "end": 222.809998
+        },
+        {
+          "word": "Bye",
+          "start": 223.539993,
+          "end": 224.050003
+        }
+      ],
       "answers": [],
-      "end": 224.2
+      "end": 224.050003
     },
     {
       "id": 46,
-      "start": 224.3,
+      "start": 224.259995,
       "speaker": "POLICE OFFICER",
       "en": "Goodbye.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Goodbye",
+          "start": 224.259995,
+          "end": 224.809998
+        }
+      ],
       "answers": [],
-      "end": 224.9
+      "end": 224.809998
     }
   ],
   "questions": [
@@ -548,5 +3164,14 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 513,
+    "mfa_word_count": 513,
+    "matched_word_count": 494
+  }
 }

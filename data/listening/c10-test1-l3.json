@@ -7,421 +7,4243 @@
   "segments": [
     {
       "id": 1,
-      "start": 59.2,
+      "start": 0.18,
       "speaker": "JOHN",
       "en": "Erm ... hello Professor, I’m John Wishart. I’m working on my entry for the Global Design Competition. My tutor said you might be able to help me with it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Erm",
+          "start": 0.18,
+          "end": 0.27
+        },
+        {
+          "word": "hello",
+          "start": 0.37,
+          "end": 0.55
+        },
+        {
+          "word": "Professor",
+          "start": 0.55,
+          "end": 1.08
+        },
+        {
+          "word": "I",
+          "start": 2.77,
+          "end": 2.85
+        },
+        {
+          "word": "'m",
+          "start": 2.77,
+          "end": 2.85
+        },
+        {
+          "word": "John",
+          "start": 2.85,
+          "end": 3.04
+        },
+        {
+          "word": "Wishart",
+          "start": 3.04,
+          "end": 3.63
+        },
+        {
+          "word": "I",
+          "start": 3.87,
+          "end": 4.05
+        },
+        {
+          "word": "'m",
+          "start": 3.87,
+          "end": 4.05
+        },
+        {
+          "word": "working",
+          "start": 4.13,
+          "end": 4.57
+        },
+        {
+          "word": "on",
+          "start": 4.57,
+          "end": 4.75
+        },
+        {
+          "word": "my",
+          "start": 4.75,
+          "end": 4.81
+        },
+        {
+          "word": "entry",
+          "start": 4.81,
+          "end": 5.0
+        },
+        {
+          "word": "for",
+          "start": 5.33,
+          "end": 5.51
+        },
+        {
+          "word": "the",
+          "start": 5.54,
+          "end": 6.7
+        },
+        {
+          "word": "Global",
+          "start": 6.96,
+          "end": 7.21
+        },
+        {
+          "word": "Design",
+          "start": 7.21,
+          "end": 7.96
+        },
+        {
+          "word": "Competition",
+          "start": 7.96,
+          "end": 8.77
+        },
+        {
+          "word": "My",
+          "start": 8.77,
+          "end": 8.88
+        },
+        {
+          "word": "tutor",
+          "start": 8.88,
+          "end": 9.05
+        },
+        {
+          "word": "said",
+          "start": 9.05,
+          "end": 9.25
+        },
+        {
+          "word": "you",
+          "start": 9.42,
+          "end": 9.92
+        },
+        {
+          "word": "might",
+          "start": 11.24,
+          "end": 11.71
+        },
+        {
+          "word": "be",
+          "start": 12.12,
+          "end": 12.2
+        },
+        {
+          "word": "able",
+          "start": 12.2,
+          "end": 12.32
+        },
+        {
+          "word": "to",
+          "start": 12.35,
+          "end": 15.12
+        },
+        {
+          "word": "help",
+          "start": 15.43,
+          "end": 15.55
+        },
+        {
+          "word": "me",
+          "start": 15.61,
+          "end": 15.65
+        },
+        {
+          "word": "with",
+          "start": 15.65,
+          "end": 16.299999
+        },
+        {
+          "word": "it",
+          "start": 16.299999,
+          "end": 16.58
+        }
+      ],
       "answers": [],
-      "end": 65.1
+      "end": 16.58
     },
     {
       "id": 2,
-      "start": 65.2,
+      "start": 46.959999,
       "speaker": "PROFESSOR",
       "en": "Ah, yes, I got a copy of your drawings. Come in and tell me about it. What sort of competition is it?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Ah",
+          "start": 46.959999,
+          "end": 50.57
+        },
+        {
+          "word": "yes",
+          "start": 51.209999,
+          "end": 51.41
+        },
+        {
+          "word": "I",
+          "start": 51.41,
+          "end": 51.720001
+        },
+        {
+          "word": "got",
+          "start": 51.720001,
+          "end": 52.049999
+        },
+        {
+          "word": "a",
+          "start": 56.080002,
+          "end": 66.050003
+        },
+        {
+          "word": "copy",
+          "start": 66.080002,
+          "end": 66.370003
+        },
+        {
+          "word": "of",
+          "start": 66.370003,
+          "end": 66.449997
+        },
+        {
+          "word": "your",
+          "start": 66.449997,
+          "end": 66.540001
+        },
+        {
+          "word": "drawings",
+          "start": 66.540001,
+          "end": 67.419998
+        },
+        {
+          "word": "Come",
+          "start": 68.0,
+          "end": 68.190002
+        },
+        {
+          "word": "in",
+          "start": 68.190002,
+          "end": 68.269997
+        },
+        {
+          "word": "and",
+          "start": 68.269997,
+          "end": 68.389999
+        },
+        {
+          "word": "tell",
+          "start": 68.389999,
+          "end": 68.629997
+        },
+        {
+          "word": "me",
+          "start": 68.629997,
+          "end": 68.75
+        },
+        {
+          "word": "about",
+          "start": 68.75,
+          "end": 69.059998
+        },
+        {
+          "word": "it",
+          "start": 69.059998,
+          "end": 69.160004
+        },
+        {
+          "word": "What",
+          "start": 69.510002,
+          "end": 69.620003
+        },
+        {
+          "word": "sort",
+          "start": 69.620003,
+          "end": 69.769997
+        },
+        {
+          "word": "of",
+          "start": 69.769997,
+          "end": 69.809998
+        },
+        {
+          "word": "competition",
+          "start": 69.809998,
+          "end": 70.440002
+        },
+        {
+          "word": "is",
+          "start": 70.440002,
+          "end": 70.610001
+        },
+        {
+          "word": "it",
+          "start": 70.610001,
+          "end": 70.779999
+        }
+      ],
       "answers": [],
-      "end": 70.9
+      "end": 70.779999
     },
     {
       "id": 3,
-      "start": 71.2,
+      "start": 71.150002,
       "speaker": "JOHN",
       "en": "Well, it’s an international design competition and we have to come up with a new design for a typical domestic kitchen appliance. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 71.150002,
+          "end": 71.519997
+        },
+        {
+          "word": "it",
+          "start": 71.699997,
+          "end": 71.870003
+        },
+        {
+          "word": "'s",
+          "start": 71.699997,
+          "end": 71.870003
+        },
+        {
+          "word": "an",
+          "start": 71.870003,
+          "end": 71.970001
+        },
+        {
+          "word": "international",
+          "start": 71.970001,
+          "end": 72.730003
+        },
+        {
+          "word": "design",
+          "start": 72.730003,
+          "end": 73.330002
+        },
+        {
+          "word": "competition",
+          "start": 73.330002,
+          "end": 74.0
+        },
+        {
+          "word": "and",
+          "start": 74.269997,
+          "end": 74.370003
+        },
+        {
+          "word": "we",
+          "start": 74.370003,
+          "end": 74.440002
+        },
+        {
+          "word": "have",
+          "start": 74.440002,
+          "end": 74.650002
+        },
+        {
+          "word": "to",
+          "start": 74.650002,
+          "end": 74.720001
+        },
+        {
+          "word": "come",
+          "start": 74.720001,
+          "end": 74.940002
+        },
+        {
+          "word": "up",
+          "start": 74.940002,
+          "end": 75.110001
+        },
+        {
+          "word": "with",
+          "start": 75.110001,
+          "end": 75.25
+        },
+        {
+          "word": "a",
+          "start": 75.25,
+          "end": 75.290001
+        },
+        {
+          "word": "new",
+          "start": 75.290001,
+          "end": 75.540001
+        },
+        {
+          "word": "design",
+          "start": 75.540001,
+          "end": 76.129997
+        },
+        {
+          "word": "for",
+          "start": 76.129997,
+          "end": 76.309998
+        },
+        {
+          "word": "a",
+          "start": 76.309998,
+          "end": 76.349998
+        },
+        {
+          "word": "typical",
+          "start": 76.349998,
+          "end": 76.879997
+        },
+        {
+          "word": "domestic",
+          "start": 76.879997,
+          "end": 77.629997
+        },
+        {
+          "word": "kitchen",
+          "start": 77.730003,
+          "end": 78.080002
+        },
+        {
+          "word": "appliance",
+          "start": 78.080002,
+          "end": 78.809998
+        }
+      ],
       "answers": [
         21
       ],
-      "end": 79.2
+      "end": 78.809998
     },
     {
       "id": 4,
-      "start": 79.3,
+      "start": 78.839996,
       "speaker": "PROFESSOR",
       "en": "I see, and are there any special conditions? Does it have to save energy for example?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 78.839996,
+          "end": 79.089996
+        },
+        {
+          "word": "see",
+          "start": 79.089996,
+          "end": 79.57
+        },
+        {
+          "word": "and",
+          "start": 79.57,
+          "end": 79.879997
+        },
+        {
+          "word": "are",
+          "start": 79.879997,
+          "end": 80.110001
+        },
+        {
+          "word": "there",
+          "start": 80.110001,
+          "end": 80.309998
+        },
+        {
+          "word": "any",
+          "start": 80.309998,
+          "end": 80.489998
+        },
+        {
+          "word": "special",
+          "start": 80.489998,
+          "end": 80.910004
+        },
+        {
+          "word": "conditions",
+          "start": 80.910004,
+          "end": 81.629997
+        },
+        {
+          "word": "Does",
+          "start": 81.629997,
+          "end": 81.849998
+        },
+        {
+          "word": "it",
+          "start": 81.849998,
+          "end": 81.940002
+        },
+        {
+          "word": "have",
+          "start": 82.25,
+          "end": 82.550003
+        },
+        {
+          "word": "to",
+          "start": 82.550003,
+          "end": 82.629997
+        },
+        {
+          "word": "save",
+          "start": 82.629997,
+          "end": 82.959999
+        },
+        {
+          "word": "energy",
+          "start": 82.959999,
+          "end": 83.339996
+        },
+        {
+          "word": "for",
+          "start": 83.339996,
+          "end": 83.470001
+        },
+        {
+          "word": "example",
+          "start": 83.470001,
+          "end": 84.050003
+        }
+      ],
       "answers": [],
-      "end": 84.1
+      "end": 84.050003
     },
     {
       "id": 5,
-      "start": 84.3,
+      "start": 84.339996,
       "speaker": "JOHN",
       "en": "Actually that was the focus in last year’s competition. This year’s different. We have to adopt an innovative approach to existing technology, using it in a way that hasn’t been thought of before.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Actually",
+          "start": 84.339996,
+          "end": 84.75
+        },
+        {
+          "word": "that",
+          "start": 84.75,
+          "end": 84.910004
+        },
+        {
+          "word": "was",
+          "start": 84.910004,
+          "end": 85.029999
+        },
+        {
+          "word": "the",
+          "start": 85.029999,
+          "end": 85.169998
+        },
+        {
+          "word": "focus",
+          "start": 85.169998,
+          "end": 85.580002
+        },
+        {
+          "word": "in",
+          "start": 85.580002,
+          "end": 85.650002
+        },
+        {
+          "word": "last",
+          "start": 85.650002,
+          "end": 86.059998
+        },
+        {
+          "word": "year",
+          "start": 86.059998,
+          "end": 86.199997
+        },
+        {
+          "word": "'s",
+          "start": 86.199997,
+          "end": 86.25
+        },
+        {
+          "word": "competition",
+          "start": 86.25,
+          "end": 86.989998
+        },
+        {
+          "word": "This",
+          "start": 87.550003,
+          "end": 87.940002
+        },
+        {
+          "word": "year",
+          "start": 87.940002,
+          "end": 88.040001
+        },
+        {
+          "word": "'s",
+          "start": 88.040001,
+          "end": 88.18
+        },
+        {
+          "word": "different",
+          "start": 88.18,
+          "end": 88.660004
+        },
+        {
+          "word": "We",
+          "start": 88.900002,
+          "end": 89.019997
+        },
+        {
+          "word": "have",
+          "start": 89.019997,
+          "end": 89.260002
+        },
+        {
+          "word": "to",
+          "start": 89.260002,
+          "end": 89.330002
+        },
+        {
+          "word": "adopt",
+          "start": 89.330002,
+          "end": 89.669998
+        },
+        {
+          "word": "an",
+          "start": 89.669998,
+          "end": 89.93
+        },
+        {
+          "word": "innovative",
+          "start": 90.029999,
+          "end": 90.470001
+        },
+        {
+          "word": "approach",
+          "start": 90.470001,
+          "end": 91.019997
+        },
+        {
+          "word": "to",
+          "start": 91.019997,
+          "end": 91.150002
+        },
+        {
+          "word": "existing",
+          "start": 91.150002,
+          "end": 91.839996
+        },
+        {
+          "word": "technology",
+          "start": 91.839996,
+          "end": 92.57
+        },
+        {
+          "word": "using",
+          "start": 92.75,
+          "end": 93.239998
+        },
+        {
+          "word": "it",
+          "start": 93.239998,
+          "end": 93.349998
+        },
+        {
+          "word": "in",
+          "start": 93.349998,
+          "end": 93.449997
+        },
+        {
+          "word": "a",
+          "start": 93.449997,
+          "end": 93.489998
+        },
+        {
+          "word": "way",
+          "start": 93.489998,
+          "end": 93.550003
+        },
+        {
+          "word": "that",
+          "start": 93.550003,
+          "end": 93.980003
+        },
+        {
+          "word": "has",
+          "start": 93.980003,
+          "end": 94.25
+        },
+        {
+          "word": "n't",
+          "start": 93.980003,
+          "end": 94.25
+        },
+        {
+          "word": "been",
+          "start": 94.25,
+          "end": 94.459999
+        },
+        {
+          "word": "thought",
+          "start": 94.459999,
+          "end": 94.839996
+        },
+        {
+          "word": "of",
+          "start": 94.839996,
+          "end": 95.010002
+        },
+        {
+          "word": "before",
+          "start": 95.010002,
+          "end": 95.580002
+        }
+      ],
       "answers": [],
-      "end": 96.2
+      "end": 95.580002
     },
     {
       "id": 6,
-      "start": 96.2,
+      "start": 95.919998,
       "speaker": "PROFESSOR",
       "en": "I see, that sounds tricky. And what kitchen appliance have you chosen?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 95.919998,
+          "end": 96.059998
+        },
+        {
+          "word": "see",
+          "start": 96.059998,
+          "end": 96.379997
+        },
+        {
+          "word": "that",
+          "start": 96.379997,
+          "end": 96.559998
+        },
+        {
+          "word": "sounds",
+          "start": 96.559998,
+          "end": 97.019997
+        },
+        {
+          "word": "tricky",
+          "start": 97.019997,
+          "end": 97.650002
+        },
+        {
+          "word": "And",
+          "start": 98.059998,
+          "end": 98.190002
+        },
+        {
+          "word": "what",
+          "start": 98.190002,
+          "end": 98.510002
+        },
+        {
+          "word": "kitchen",
+          "start": 98.510002,
+          "end": 98.809998
+        },
+        {
+          "word": "appliance",
+          "start": 98.849998,
+          "end": 99.300003
+        },
+        {
+          "word": "have",
+          "start": 99.300003,
+          "end": 99.410004
+        },
+        {
+          "word": "you",
+          "start": 99.410004,
+          "end": 99.480003
+        },
+        {
+          "word": "chosen",
+          "start": 99.480003,
+          "end": 100.050003
+        }
+      ],
       "answers": [],
-      "end": 100.1
+      "end": 100.050003
     },
     {
       "id": 7,
-      "start": 100.2,
+      "start": 100.160004,
       "speaker": "JOHN",
       "en": "Well, I decided to choose the dishwasher.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 100.160004,
+          "end": 100.510002
+        },
+        {
+          "word": "I",
+          "start": 100.650002,
+          "end": 100.800003
+        },
+        {
+          "word": "decided",
+          "start": 100.800003,
+          "end": 101.339996
+        },
+        {
+          "word": "to",
+          "start": 101.339996,
+          "end": 101.43
+        },
+        {
+          "word": "choose",
+          "start": 101.43,
+          "end": 101.760002
+        },
+        {
+          "word": "the",
+          "start": 101.989998,
+          "end": 102.129997
+        },
+        {
+          "word": "dishwasher",
+          "start": 102.129997,
+          "end": 102.830002
+        }
+      ],
       "answers": [],
-      "end": 103.7
+      "end": 102.830002
     },
     {
       "id": 8,
-      "start": 103.9,
+      "start": 103.379997,
       "speaker": "PROFESSOR",
       "en": "Interesting, what made you choose that?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Interesting",
+          "start": 103.379997,
+          "end": 104.279999
+        },
+        {
+          "word": "what",
+          "start": 104.699997,
+          "end": 104.839996
+        },
+        {
+          "word": "made",
+          "start": 104.839996,
+          "end": 105.040001
+        },
+        {
+          "word": "you",
+          "start": 105.040001,
+          "end": 105.110001
+        },
+        {
+          "word": "choose",
+          "start": 105.110001,
+          "end": 105.529999
+        },
+        {
+          "word": "that",
+          "start": 105.529999,
+          "end": 105.989998
+        }
+      ],
       "answers": [],
-      "end": 106.0
+      "end": 105.989998
     },
     {
       "id": 9,
-      "start": 106.4,
+      "start": 106.339996,
       "speaker": "JOHN",
       "en": "Well, they’re an everyday kitchen appliance in most Australian houses but they’re all pretty boring and almost identical to each other. I think some people will be prepared to pay a little extra for something that looks different. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 106.339996,
+          "end": 106.75
+        },
+        {
+          "word": "they",
+          "start": 106.75,
+          "end": 107.080002
+        },
+        {
+          "word": "'re",
+          "start": 106.75,
+          "end": 107.080002
+        },
+        {
+          "word": "an",
+          "start": 107.080002,
+          "end": 107.169998
+        },
+        {
+          "word": "everyday",
+          "start": 107.169998,
+          "end": 107.790001
+        },
+        {
+          "word": "kitchen",
+          "start": 107.790001,
+          "end": 108.129997
+        },
+        {
+          "word": "appliance",
+          "start": 108.129997,
+          "end": 108.669998
+        },
+        {
+          "word": "in",
+          "start": 108.669998,
+          "end": 108.769997
+        },
+        {
+          "word": "most",
+          "start": 108.769997,
+          "end": 109.059998
+        },
+        {
+          "word": "Australian",
+          "start": 109.059998,
+          "end": 109.580002
+        },
+        {
+          "word": "houses",
+          "start": 109.580002,
+          "end": 110.129997
+        },
+        {
+          "word": "but",
+          "start": 110.459999,
+          "end": 110.580002
+        },
+        {
+          "word": "they",
+          "start": 110.580002,
+          "end": 110.629997
+        },
+        {
+          "word": "'re",
+          "start": 110.580002,
+          "end": 110.629997
+        },
+        {
+          "word": "all",
+          "start": 110.720001,
+          "end": 110.870003
+        },
+        {
+          "word": "pretty",
+          "start": 110.870003,
+          "end": 111.169998
+        },
+        {
+          "word": "boring",
+          "start": 111.169998,
+          "end": 111.779999
+        },
+        {
+          "word": "and",
+          "start": 111.779999,
+          "end": 112.139999
+        },
+        {
+          "word": "almost",
+          "start": 112.139999,
+          "end": 112.470001
+        },
+        {
+          "word": "identical",
+          "start": 112.5,
+          "end": 113.029999
+        },
+        {
+          "word": "to",
+          "start": 113.029999,
+          "end": 113.169998
+        },
+        {
+          "word": "each",
+          "start": 113.169998,
+          "end": 113.349998
+        },
+        {
+          "word": "other",
+          "start": 113.440002,
+          "end": 113.580002
+        },
+        {
+          "word": "I",
+          "start": 114.199997,
+          "end": 114.32
+        },
+        {
+          "word": "think",
+          "start": 114.32,
+          "end": 114.489998
+        },
+        {
+          "word": "some",
+          "start": 114.489998,
+          "end": 114.760002
+        },
+        {
+          "word": "people",
+          "start": 114.760002,
+          "end": 115.129997
+        },
+        {
+          "word": "will",
+          "start": 115.129997,
+          "end": 115.290001
+        },
+        {
+          "word": "be",
+          "start": 115.290001,
+          "end": 115.440002
+        },
+        {
+          "word": "prepared",
+          "start": 115.440002,
+          "end": 115.940002
+        },
+        {
+          "word": "to",
+          "start": 115.940002,
+          "end": 116.0
+        },
+        {
+          "word": "pay",
+          "start": 116.0,
+          "end": 116.190002
+        },
+        {
+          "word": "a",
+          "start": 116.190002,
+          "end": 116.230003
+        },
+        {
+          "word": "little",
+          "start": 116.230003,
+          "end": 116.540001
+        },
+        {
+          "word": "extra",
+          "start": 116.540001,
+          "end": 116.980003
+        },
+        {
+          "word": "for",
+          "start": 116.980003,
+          "end": 117.080002
+        },
+        {
+          "word": "something",
+          "start": 117.080002,
+          "end": 117.589996
+        },
+        {
+          "word": "that",
+          "start": 117.589996,
+          "end": 117.800003
+        },
+        {
+          "word": "looks",
+          "start": 117.800003,
+          "end": 118.169998
+        },
+        {
+          "word": "different",
+          "start": 118.169998,
+          "end": 118.709999
+        }
+      ],
       "answers": [
         22
       ],
-      "end": 115.7
+      "end": 118.709999
     },
     {
       "id": 10,
-      "start": 115.7,
+      "start": 118.809998,
       "speaker": "PROFESSOR",
       "en": "That’s a nice idea. I see you’ve called your design ‘the Rockpool’; why is that?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 118.809998,
+          "end": 118.919998
+        },
+        {
+          "word": "'s",
+          "start": 118.919998,
+          "end": 118.980003
+        },
+        {
+          "word": "a",
+          "start": 118.980003,
+          "end": 119.019997
+        },
+        {
+          "word": "nice",
+          "start": 119.019997,
+          "end": 119.400002
+        },
+        {
+          "word": "idea",
+          "start": 119.400002,
+          "end": 120.160004
+        },
+        {
+          "word": "I",
+          "start": 120.559998,
+          "end": 120.709999
+        },
+        {
+          "word": "see",
+          "start": 120.709999,
+          "end": 120.980003
+        },
+        {
+          "word": "you",
+          "start": 120.980003,
+          "end": 121.120003
+        },
+        {
+          "word": "'ve",
+          "start": 120.980003,
+          "end": 121.120003
+        },
+        {
+          "word": "called",
+          "start": 121.120003,
+          "end": 121.419998
+        },
+        {
+          "word": "your",
+          "start": 121.419998,
+          "end": 121.480003
+        },
+        {
+          "word": "design",
+          "start": 121.480003,
+          "end": 122.129997
+        },
+        {
+          "word": "the",
+          "start": 122.389999,
+          "end": 122.519997
+        },
+        {
+          "word": "Rockpool",
+          "start": 122.519997,
+          "end": 123.25
+        },
+        {
+          "word": "why",
+          "start": 123.709999,
+          "end": 123.900002
+        },
+        {
+          "word": "is",
+          "start": 123.900002,
+          "end": 124.07
+        },
+        {
+          "word": "that",
+          "start": 124.07,
+          "end": 124.510002
+        }
+      ],
       "answers": [],
-      "end": 124.8
+      "end": 124.510002
     },
     {
       "id": 11,
-      "start": 124.9,
+      "start": 124.589996,
       "speaker": "JOHN",
       "en": "Basically because it looks like the rock pools you find on a beach. The top is made of glass so that you can look down into it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Basically",
+          "start": 124.589996,
+          "end": 125.519997
+        },
+        {
+          "word": "because",
+          "start": 125.519997,
+          "end": 125.870003
+        },
+        {
+          "word": "it",
+          "start": 125.870003,
+          "end": 126.010002
+        },
+        {
+          "word": "looks",
+          "start": 126.010002,
+          "end": 126.349998
+        },
+        {
+          "word": "like",
+          "start": 126.349998,
+          "end": 126.599998
+        },
+        {
+          "word": "the",
+          "start": 126.599998,
+          "end": 126.690002
+        },
+        {
+          "word": "rock",
+          "start": 126.690002,
+          "end": 126.910004
+        },
+        {
+          "word": "pools",
+          "start": 126.910004,
+          "end": 127.199997
+        },
+        {
+          "word": "you",
+          "start": 127.199997,
+          "end": 127.269997
+        },
+        {
+          "word": "find",
+          "start": 127.269997,
+          "end": 127.629997
+        },
+        {
+          "word": "on",
+          "start": 127.629997,
+          "end": 127.800003
+        },
+        {
+          "word": "a",
+          "start": 127.800003,
+          "end": 127.830002
+        },
+        {
+          "word": "beach",
+          "start": 127.830002,
+          "end": 128.240005
+        },
+        {
+          "word": "The",
+          "start": 129.100006,
+          "end": 129.240005
+        },
+        {
+          "word": "top",
+          "start": 129.240005,
+          "end": 129.520004
+        },
+        {
+          "word": "is",
+          "start": 129.520004,
+          "end": 129.619995
+        },
+        {
+          "word": "made",
+          "start": 129.619995,
+          "end": 129.869995
+        },
+        {
+          "word": "of",
+          "start": 129.869995,
+          "end": 129.949997
+        },
+        {
+          "word": "glass",
+          "start": 129.949997,
+          "end": 130.5
+        },
+        {
+          "word": "so",
+          "start": 130.529999,
+          "end": 130.75
+        },
+        {
+          "word": "that",
+          "start": 130.75,
+          "end": 130.949997
+        },
+        {
+          "word": "you",
+          "start": 130.949997,
+          "end": 131.059998
+        },
+        {
+          "word": "can",
+          "start": 131.059998,
+          "end": 131.210007
+        },
+        {
+          "word": "look",
+          "start": 131.210007,
+          "end": 131.490005
+        },
+        {
+          "word": "down",
+          "start": 131.490005,
+          "end": 131.779999
+        },
+        {
+          "word": "into",
+          "start": 131.820007,
+          "end": 132.149994
+        },
+        {
+          "word": "it",
+          "start": 132.149994,
+          "end": 132.350006
+        }
+      ],
       "answers": [],
-      "end": 130.3
+      "end": 132.350006
     },
     {
       "id": 12,
-      "start": 130.4,
+      "start": 132.600006,
       "speaker": "PROFESSOR",
       "en": "And there’s a stone at the bottom. Is that just for decoration?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 132.600006,
+          "end": 132.75
+        },
+        {
+          "word": "there",
+          "start": 132.75,
+          "end": 132.830002
+        },
+        {
+          "word": "'s",
+          "start": 132.830002,
+          "end": 132.929993
+        },
+        {
+          "word": "a",
+          "start": 132.929993,
+          "end": 132.970001
+        },
+        {
+          "word": "stone",
+          "start": 132.970001,
+          "end": 133.330002
+        },
+        {
+          "word": "at",
+          "start": 133.389999,
+          "end": 133.479996
+        },
+        {
+          "word": "the",
+          "start": 133.479996,
+          "end": 133.559998
+        },
+        {
+          "word": "bottom",
+          "start": 133.559998,
+          "end": 134.089996
+        },
+        {
+          "word": "Is",
+          "start": 134.419998,
+          "end": 134.570007
+        },
+        {
+          "word": "that",
+          "start": 134.570007,
+          "end": 134.789993
+        },
+        {
+          "word": "just",
+          "start": 134.789993,
+          "end": 135.039993
+        },
+        {
+          "word": "for",
+          "start": 135.039993,
+          "end": 135.110001
+        },
+        {
+          "word": "decoration",
+          "start": 135.110001,
+          "end": 135.779999
+        }
+      ],
       "answers": [],
-      "end": 135.9
+      "end": 135.779999
     },
     {
       "id": 13,
-      "start": 136.0,
+      "start": 136.009995,
       "speaker": "JOHN",
       "en": "Actually it does have a function. Instead of pushing a button, you turn the stone. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Actually",
+          "start": 136.009995,
+          "end": 136.5
+        },
+        {
+          "word": "it",
+          "start": 136.5,
+          "end": 136.809998
+        },
+        {
+          "word": "does",
+          "start": 136.809998,
+          "end": 137.119995
+        },
+        {
+          "word": "have",
+          "start": 137.119995,
+          "end": 137.330002
+        },
+        {
+          "word": "a",
+          "start": 137.330002,
+          "end": 137.369995
+        },
+        {
+          "word": "function",
+          "start": 137.369995,
+          "end": 138.070007
+        },
+        {
+          "word": "Instead",
+          "start": 138.289993,
+          "end": 138.660004
+        },
+        {
+          "word": "of",
+          "start": 138.660004,
+          "end": 138.869995
+        },
+        {
+          "word": "pushing",
+          "start": 138.869995,
+          "end": 139.229996
+        },
+        {
+          "word": "a",
+          "start": 139.229996,
+          "end": 139.289993
+        },
+        {
+          "word": "button",
+          "start": 139.289993,
+          "end": 139.839996
+        },
+        {
+          "word": "you",
+          "start": 140.220001,
+          "end": 140.490005
+        },
+        {
+          "word": "turn",
+          "start": 140.490005,
+          "end": 140.800003
+        },
+        {
+          "word": "the",
+          "start": 140.800003,
+          "end": 140.869995
+        },
+        {
+          "word": "stone",
+          "start": 140.869995,
+          "end": 141.320007
+        }
+      ],
       "answers": [
         23
       ],
-      "end": 139.8
+      "end": 141.320007
     },
     {
       "id": 14,
-      "start": 139.8,
+      "start": 141.669998,
       "speaker": "PROFESSOR",
       "en": "So it’s really just a novel way of starting the dishwasher.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 141.669998,
+          "end": 142.020004
+        },
+        {
+          "word": "it",
+          "start": 142.020004,
+          "end": 142.470001
+        },
+        {
+          "word": "'s",
+          "start": 142.020004,
+          "end": 142.470001
+        },
+        {
+          "word": "really",
+          "start": 142.649994,
+          "end": 143.080002
+        },
+        {
+          "word": "just",
+          "start": 143.080002,
+          "end": 143.350006
+        },
+        {
+          "word": "a",
+          "start": 143.350006,
+          "end": 143.389999
+        },
+        {
+          "word": "novel",
+          "start": 143.389999,
+          "end": 143.690002
+        },
+        {
+          "word": "way",
+          "start": 143.690002,
+          "end": 143.880005
+        },
+        {
+          "word": "of",
+          "start": 143.880005,
+          "end": 143.929993
+        },
+        {
+          "word": "starting",
+          "start": 143.929993,
+          "end": 144.419998
+        },
+        {
+          "word": "the",
+          "start": 144.419998,
+          "end": 144.5
+        },
+        {
+          "word": "dishwasher",
+          "start": 144.5,
+          "end": 145.220001
+        }
+      ],
       "answers": [],
-      "end": 143.4
+      "end": 145.220001
     },
     {
       "id": 15,
-      "start": 143.5,
+      "start": 145.399994,
       "speaker": "JOHN",
       "en": "That’s right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 145.399994,
+          "end": 145.759995
+        },
+        {
+          "word": "'s",
+          "start": 145.759995,
+          "end": 145.800003
+        },
+        {
+          "word": "right",
+          "start": 145.839996,
+          "end": 146.139999
+        }
+      ],
       "answers": [],
-      "end": 147.0
+      "end": 146.139999
     },
     {
       "id": 16,
-      "start": 147.2,
+      "start": 146.380005,
       "speaker": "PROFESSOR",
       "en": "It’s a really nice design, but what makes it innovative?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 146.380005,
+          "end": 146.600006
+        },
+        {
+          "word": "'s",
+          "start": 146.380005,
+          "end": 146.600006
+        },
+        {
+          "word": "a",
+          "start": 146.600006,
+          "end": 146.669998
+        },
+        {
+          "word": "really",
+          "start": 146.669998,
+          "end": 147.339996
+        },
+        {
+          "word": "nice",
+          "start": 147.339996,
+          "end": 147.699997
+        },
+        {
+          "word": "design",
+          "start": 147.699997,
+          "end": 148.350006
+        },
+        {
+          "word": "but",
+          "start": 148.410004,
+          "end": 148.630005
+        },
+        {
+          "word": "what",
+          "start": 148.660004,
+          "end": 148.899994
+        },
+        {
+          "word": "makes",
+          "start": 148.899994,
+          "end": 149.220001
+        },
+        {
+          "word": "it",
+          "start": 149.220001,
+          "end": 149.320007
+        },
+        {
+          "word": "innovative",
+          "start": 149.380005,
+          "end": 150.100006
+        }
+      ],
       "answers": [],
-      "end": 150.7
+      "end": 150.100006
     },
     {
       "id": 17,
-      "start": 151.0,
+      "start": 150.210007,
       "speaker": "JOHN",
       "en": "Well, I decided to make a dishwasher that uses carbon dioxide.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 150.210007,
+          "end": 150.600006
+        },
+        {
+          "word": "I",
+          "start": 151.080002,
+          "end": 151.300003
+        },
+        {
+          "word": "decided",
+          "start": 151.300003,
+          "end": 151.860001
+        },
+        {
+          "word": "to",
+          "start": 151.860001,
+          "end": 151.949997
+        },
+        {
+          "word": "make",
+          "start": 151.949997,
+          "end": 152.169998
+        },
+        {
+          "word": "a",
+          "start": 152.169998,
+          "end": 152.210007
+        },
+        {
+          "word": "dishwasher",
+          "start": 152.210007,
+          "end": 152.800003
+        },
+        {
+          "word": "that",
+          "start": 152.800003,
+          "end": 153.080002
+        },
+        {
+          "word": "uses",
+          "start": 153.080002,
+          "end": 153.419998
+        },
+        {
+          "word": "carbon",
+          "start": 153.419998,
+          "end": 154.029999
+        },
+        {
+          "word": "dioxide",
+          "start": 154.029999,
+          "end": 154.970001
+        }
+      ],
       "answers": [],
-      "end": 155.2
+      "end": 154.970001
     },
     {
       "id": 18,
-      "start": 155.3,
+      "start": 155.0,
       "speaker": "PROFESSOR",
       "en": "In place of water and detergent? How will you manage that?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 155.0,
+          "end": 155.179993
+        },
+        {
+          "word": "place",
+          "start": 155.179993,
+          "end": 155.570007
+        },
+        {
+          "word": "of",
+          "start": 155.570007,
+          "end": 155.660004
+        },
+        {
+          "word": "water",
+          "start": 155.660004,
+          "end": 155.949997
+        },
+        {
+          "word": "and",
+          "start": 155.949997,
+          "end": 156.059998
+        },
+        {
+          "word": "detergent",
+          "start": 156.059998,
+          "end": 156.880005
+        },
+        {
+          "word": "How",
+          "start": 157.309998,
+          "end": 157.639999
+        },
+        {
+          "word": "will",
+          "start": 157.639999,
+          "end": 157.699997
+        },
+        {
+          "word": "you",
+          "start": 157.699997,
+          "end": 157.850006
+        },
+        {
+          "word": "manage",
+          "start": 157.850006,
+          "end": 158.240005
+        },
+        {
+          "word": "that",
+          "start": 158.240005,
+          "end": 158.710007
+        }
+      ],
       "answers": [],
-      "end": 159.1
+      "end": 158.710007
     },
     {
       "id": 19,
-      "start": 159.2,
+      "start": 158.979996,
       "speaker": "JOHN",
       "en": "The idea is to pressurize the carbon dioxide so that it becomes a liquid. The fluid is then released into the dishwasher where it cleans the dishes all by itself.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 158.979996,
+          "end": 159.089996
+        },
+        {
+          "word": "idea",
+          "start": 159.190002,
+          "end": 159.600006
+        },
+        {
+          "word": "is",
+          "start": 159.860001,
+          "end": 160.0
+        },
+        {
+          "word": "to",
+          "start": 160.0,
+          "end": 160.100006
+        },
+        {
+          "word": "pressurize",
+          "start": 160.100006,
+          "end": 160.740005
+        },
+        {
+          "word": "the",
+          "start": 160.740005,
+          "end": 160.839996
+        },
+        {
+          "word": "carbon",
+          "start": 160.839996,
+          "end": 161.309998
+        },
+        {
+          "word": "dioxide",
+          "start": 161.309998,
+          "end": 161.990005
+        },
+        {
+          "word": "so",
+          "start": 161.990005,
+          "end": 162.139999
+        },
+        {
+          "word": "that",
+          "start": 162.139999,
+          "end": 162.270004
+        },
+        {
+          "word": "it",
+          "start": 162.270004,
+          "end": 162.350006
+        },
+        {
+          "word": "becomes",
+          "start": 162.350006,
+          "end": 162.800003
+        },
+        {
+          "word": "a",
+          "start": 162.800003,
+          "end": 162.850006
+        },
+        {
+          "word": "liquid",
+          "start": 162.850006,
+          "end": 163.369995
+        },
+        {
+          "word": "The",
+          "start": 163.880005,
+          "end": 163.960007
+        },
+        {
+          "word": "fluid",
+          "start": 163.960007,
+          "end": 164.339996
+        },
+        {
+          "word": "is",
+          "start": 164.339996,
+          "end": 164.440002
+        },
+        {
+          "word": "then",
+          "start": 164.440002,
+          "end": 164.610001
+        },
+        {
+          "word": "released",
+          "start": 164.610001,
+          "end": 165.149994
+        },
+        {
+          "word": "into",
+          "start": 165.149994,
+          "end": 165.410004
+        },
+        {
+          "word": "the",
+          "start": 165.410004,
+          "end": 165.509995
+        },
+        {
+          "word": "dishwasher",
+          "start": 165.509995,
+          "end": 166.100006
+        },
+        {
+          "word": "where",
+          "start": 166.100006,
+          "end": 166.259995
+        },
+        {
+          "word": "it",
+          "start": 166.259995,
+          "end": 166.440002
+        },
+        {
+          "word": "cleans",
+          "start": 166.440002,
+          "end": 166.830002
+        },
+        {
+          "word": "the",
+          "start": 166.830002,
+          "end": 166.929993
+        },
+        {
+          "word": "dishes",
+          "start": 166.929993,
+          "end": 167.440002
+        },
+        {
+          "word": "all",
+          "start": 167.520004,
+          "end": 167.770004
+        },
+        {
+          "word": "by",
+          "start": 167.770004,
+          "end": 167.979996
+        },
+        {
+          "word": "itself",
+          "start": 167.979996,
+          "end": 168.529999
+        }
+      ],
       "answers": [],
-      "end": 168.8
+      "end": 168.529999
     },
     {
       "id": 20,
-      "start": 168.8,
+      "start": 168.559998,
       "speaker": "PROFESSOR",
       "en": "Sounds like a brilliant idea! Your system will totally do away with the need for strong detergents. So what happens once the dishes are clean?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sounds",
+          "start": 168.559998,
+          "end": 169.149994
+        },
+        {
+          "word": "like",
+          "start": 169.149994,
+          "end": 169.360001
+        },
+        {
+          "word": "a",
+          "start": 169.360001,
+          "end": 169.419998
+        },
+        {
+          "word": "brilliant",
+          "start": 169.419998,
+          "end": 169.910004
+        },
+        {
+          "word": "idea",
+          "start": 169.979996,
+          "end": 170.610001
+        },
+        {
+          "word": "Your",
+          "start": 171.059998,
+          "end": 171.380005
+        },
+        {
+          "word": "system",
+          "start": 171.380005,
+          "end": 171.899994
+        },
+        {
+          "word": "will",
+          "start": 171.899994,
+          "end": 172.080002
+        },
+        {
+          "word": "totally",
+          "start": 172.080002,
+          "end": 172.619995
+        },
+        {
+          "word": "do",
+          "start": 172.619995,
+          "end": 172.759995
+        },
+        {
+          "word": "away",
+          "start": 172.759995,
+          "end": 173.199997
+        },
+        {
+          "word": "with",
+          "start": 173.259995,
+          "end": 173.509995
+        },
+        {
+          "word": "the",
+          "start": 173.509995,
+          "end": 173.589996
+        },
+        {
+          "word": "need",
+          "start": 173.589996,
+          "end": 173.910004
+        },
+        {
+          "word": "for",
+          "start": 173.910004,
+          "end": 173.979996
+        },
+        {
+          "word": "strong",
+          "start": 173.979996,
+          "end": 174.339996
+        },
+        {
+          "word": "detergents",
+          "start": 174.339996,
+          "end": 175.100006
+        },
+        {
+          "word": "So",
+          "start": 175.570007,
+          "end": 175.850006
+        },
+        {
+          "word": "what",
+          "start": 175.850006,
+          "end": 176.070007
+        },
+        {
+          "word": "happens",
+          "start": 176.070007,
+          "end": 176.509995
+        },
+        {
+          "word": "once",
+          "start": 176.509995,
+          "end": 176.850006
+        },
+        {
+          "word": "the",
+          "start": 176.850006,
+          "end": 176.970001
+        },
+        {
+          "word": "dishes",
+          "start": 176.970001,
+          "end": 177.320007
+        },
+        {
+          "word": "are",
+          "start": 177.350006,
+          "end": 177.380005
+        },
+        {
+          "word": "clean",
+          "start": 177.380005,
+          "end": 177.910004
+        }
+      ],
       "answers": [],
-      "end": 178.6
+      "end": 177.910004
     },
     {
       "id": 21,
-      "start": 178.8,
+      "start": 178.289993,
       "speaker": "JOHN",
       "en": "Well, to allow them to dry, the liquid carbon dioxide and the waste materials all go to an area called the holding chamber. That’s where the liquid is depressurised and so it reverts to a gas [[ ]] . Then the oil and grease are separated out and sent to the waste system.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 178.289993,
+          "end": 178.619995
+        },
+        {
+          "word": "to",
+          "start": 179.240005,
+          "end": 179.369995
+        },
+        {
+          "word": "allow",
+          "start": 179.369995,
+          "end": 179.699997
+        },
+        {
+          "word": "them",
+          "start": 179.699997,
+          "end": 179.830002
+        },
+        {
+          "word": "to",
+          "start": 179.830002,
+          "end": 179.910004
+        },
+        {
+          "word": "dry",
+          "start": 179.910004,
+          "end": 180.360001
+        },
+        {
+          "word": "the",
+          "start": 180.630005,
+          "end": 180.740005
+        },
+        {
+          "word": "liquid",
+          "start": 180.740005,
+          "end": 181.139999
+        },
+        {
+          "word": "carbon",
+          "start": 181.139999,
+          "end": 181.5
+        },
+        {
+          "word": "dioxide",
+          "start": 181.5,
+          "end": 182.139999
+        },
+        {
+          "word": "and",
+          "start": 182.139999,
+          "end": 182.210007
+        },
+        {
+          "word": "the",
+          "start": 182.210007,
+          "end": 182.300003
+        },
+        {
+          "word": "waste",
+          "start": 182.300003,
+          "end": 182.610001
+        },
+        {
+          "word": "materials",
+          "start": 182.610001,
+          "end": 183.259995
+        },
+        {
+          "word": "all",
+          "start": 183.320007,
+          "end": 183.559998
+        },
+        {
+          "word": "go",
+          "start": 183.559998,
+          "end": 183.729996
+        },
+        {
+          "word": "to",
+          "start": 183.729996,
+          "end": 183.850006
+        },
+        {
+          "word": "an",
+          "start": 183.850006,
+          "end": 183.919998
+        },
+        {
+          "word": "area",
+          "start": 183.919998,
+          "end": 184.289993
+        },
+        {
+          "word": "called",
+          "start": 184.289993,
+          "end": 184.690002
+        },
+        {
+          "word": "the",
+          "start": 184.690002,
+          "end": 184.789993
+        },
+        {
+          "word": "holding",
+          "start": 184.789993,
+          "end": 185.339996
+        },
+        {
+          "word": "chamber",
+          "start": 185.339996,
+          "end": 185.820007
+        },
+        {
+          "word": "That",
+          "start": 186.169998,
+          "end": 186.360001
+        },
+        {
+          "word": "'s",
+          "start": 186.360001,
+          "end": 186.429993
+        },
+        {
+          "word": "where",
+          "start": 186.429993,
+          "end": 186.539993
+        },
+        {
+          "word": "the",
+          "start": 186.539993,
+          "end": 186.630005
+        },
+        {
+          "word": "liquid",
+          "start": 186.630005,
+          "end": 186.919998
+        },
+        {
+          "word": "is",
+          "start": 186.919998,
+          "end": 187.050003
+        },
+        {
+          "word": "depressurised",
+          "start": 187.050003,
+          "end": 188.059998
+        },
+        {
+          "word": "and",
+          "start": 188.220001,
+          "end": 188.380005
+        },
+        {
+          "word": "so",
+          "start": 188.380005,
+          "end": 188.539993
+        },
+        {
+          "word": "it",
+          "start": 188.690002,
+          "end": 188.800003
+        },
+        {
+          "word": "reverts",
+          "start": 188.830002,
+          "end": 189.289993
+        },
+        {
+          "word": "to",
+          "start": 189.289993,
+          "end": 189.429993
+        },
+        {
+          "word": "a",
+          "start": 189.429993,
+          "end": 189.479996
+        },
+        {
+          "word": "gas",
+          "start": 189.479996,
+          "end": 189.929993
+        },
+        {
+          "word": "Then",
+          "start": 190.520004,
+          "end": 190.710007
+        },
+        {
+          "word": "the",
+          "start": 190.710007,
+          "end": 190.860001
+        },
+        {
+          "word": "oil",
+          "start": 190.889999,
+          "end": 191.139999
+        },
+        {
+          "word": "and",
+          "start": 191.199997,
+          "end": 191.320007
+        },
+        {
+          "word": "grease",
+          "start": 191.320007,
+          "end": 191.639999
+        },
+        {
+          "word": "are",
+          "start": 191.639999,
+          "end": 191.669998
+        },
+        {
+          "word": "separated",
+          "start": 191.669998,
+          "end": 192.529999
+        },
+        {
+          "word": "out",
+          "start": 192.529999,
+          "end": 192.610001
+        },
+        {
+          "word": "and",
+          "start": 192.660004,
+          "end": 192.850006
+        },
+        {
+          "word": "sent",
+          "start": 192.850006,
+          "end": 193.119995
+        },
+        {
+          "word": "to",
+          "start": 193.119995,
+          "end": 193.210007
+        },
+        {
+          "word": "the",
+          "start": 193.210007,
+          "end": 193.300003
+        },
+        {
+          "word": "waste",
+          "start": 193.300003,
+          "end": 193.619995
+        },
+        {
+          "word": "system",
+          "start": 193.619995,
+          "end": 193.970001
+        }
+      ],
       "answers": [
         24
       ],
-      "end": 194.8
+      "end": 193.970001
     },
     {
       "id": 22,
-      "start": 194.8,
+      "start": 194.5,
       "speaker": "PROFESSOR",
       "en": "It sounds like you’ve thought it all out very thoroughly. So, what happens to the carbon dioxide once the process is complete? Not wasted I hope.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 194.5,
+          "end": 194.690002
+        },
+        {
+          "word": "sounds",
+          "start": 194.690002,
+          "end": 195.089996
+        },
+        {
+          "word": "like",
+          "start": 195.089996,
+          "end": 195.389999
+        },
+        {
+          "word": "you",
+          "start": 195.389999,
+          "end": 195.550003
+        },
+        {
+          "word": "'ve",
+          "start": 195.389999,
+          "end": 195.550003
+        },
+        {
+          "word": "thought",
+          "start": 195.550003,
+          "end": 195.75
+        },
+        {
+          "word": "it",
+          "start": 195.75,
+          "end": 195.830002
+        },
+        {
+          "word": "all",
+          "start": 195.889999,
+          "end": 196.139999
+        },
+        {
+          "word": "out",
+          "start": 196.139999,
+          "end": 196.380005
+        },
+        {
+          "word": "very",
+          "start": 196.380005,
+          "end": 196.690002
+        },
+        {
+          "word": "thoroughly",
+          "start": 196.690002,
+          "end": 197.330002
+        },
+        {
+          "word": "So",
+          "start": 197.860001,
+          "end": 198.070007
+        },
+        {
+          "word": "what",
+          "start": 198.070007,
+          "end": 198.270004
+        },
+        {
+          "word": "happens",
+          "start": 198.270004,
+          "end": 198.660004
+        },
+        {
+          "word": "to",
+          "start": 198.660004,
+          "end": 198.779999
+        },
+        {
+          "word": "the",
+          "start": 198.779999,
+          "end": 198.869995
+        },
+        {
+          "word": "carbon",
+          "start": 198.869995,
+          "end": 199.350006
+        },
+        {
+          "word": "dioxide",
+          "start": 199.350006,
+          "end": 199.990005
+        },
+        {
+          "word": "once",
+          "start": 199.990005,
+          "end": 200.229996
+        },
+        {
+          "word": "the",
+          "start": 200.229996,
+          "end": 200.330002
+        },
+        {
+          "word": "process",
+          "start": 200.330002,
+          "end": 200.869995
+        },
+        {
+          "word": "is",
+          "start": 200.869995,
+          "end": 200.979996
+        },
+        {
+          "word": "complete",
+          "start": 200.979996,
+          "end": 201.600006
+        },
+        {
+          "word": "Not",
+          "start": 201.910004,
+          "end": 202.210007
+        },
+        {
+          "word": "wasted",
+          "start": 202.240005,
+          "end": 202.710007
+        },
+        {
+          "word": "I",
+          "start": 202.710007,
+          "end": 202.880005
+        },
+        {
+          "word": "hope",
+          "start": 202.880005,
+          "end": 203.320007
+        }
+      ],
       "answers": [],
-      "end": 203.2
+      "end": 203.320007
     },
     {
       "id": 23,
-      "start": 203.3,
+      "start": 203.350006,
       "speaker": "JOHN",
       "en": "Actually, that’s where the real savings are made. The carbon dioxide is sent back to the cylinder and can be used again and again. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Actually",
+          "start": 203.350006,
+          "end": 203.850006
+        },
+        {
+          "word": "that",
+          "start": 203.850006,
+          "end": 204.119995
+        },
+        {
+          "word": "'s",
+          "start": 204.119995,
+          "end": 204.199997
+        },
+        {
+          "word": "where",
+          "start": 204.199997,
+          "end": 204.270004
+        },
+        {
+          "word": "the",
+          "start": 204.270004,
+          "end": 204.389999
+        },
+        {
+          "word": "real",
+          "start": 204.75,
+          "end": 204.860001
+        },
+        {
+          "word": "savings",
+          "start": 204.860001,
+          "end": 205.440002
+        },
+        {
+          "word": "are",
+          "start": 205.440002,
+          "end": 205.479996
+        },
+        {
+          "word": "made",
+          "start": 205.479996,
+          "end": 206.050003
+        },
+        {
+          "word": "The",
+          "start": 206.529999,
+          "end": 206.630005
+        },
+        {
+          "word": "carbon",
+          "start": 206.630005,
+          "end": 207.020004
+        },
+        {
+          "word": "dioxide",
+          "start": 207.020004,
+          "end": 207.770004
+        },
+        {
+          "word": "is",
+          "start": 207.800003,
+          "end": 207.990005
+        },
+        {
+          "word": "sent",
+          "start": 207.990005,
+          "end": 208.289993
+        },
+        {
+          "word": "back",
+          "start": 208.289993,
+          "end": 208.559998
+        },
+        {
+          "word": "to",
+          "start": 208.559998,
+          "end": 208.649994
+        },
+        {
+          "word": "the",
+          "start": 208.649994,
+          "end": 208.75
+        },
+        {
+          "word": "cylinder",
+          "start": 208.75,
+          "end": 209.490005
+        },
+        {
+          "word": "and",
+          "start": 209.520004,
+          "end": 209.720001
+        },
+        {
+          "word": "can",
+          "start": 209.720001,
+          "end": 209.860001
+        },
+        {
+          "word": "be",
+          "start": 209.860001,
+          "end": 209.940002
+        },
+        {
+          "word": "used",
+          "start": 209.940002,
+          "end": 210.380005
+        },
+        {
+          "word": "again",
+          "start": 210.380005,
+          "end": 211.589996
+        },
+        {
+          "word": "and",
+          "start": 211.589996,
+          "end": 211.649994
+        },
+        {
+          "word": "again",
+          "start": 211.649994,
+          "end": 211.800003
+        }
+      ],
       "answers": [
         25
       ],
-      "end": 211.7
+      "end": 211.800003
     },
     {
       "id": 24,
-      "start": 212.1,
+      "start": 212.039993,
       "speaker": "PROFESSOR",
       "en": "What a terrific idea. Do you think it will ever be built?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 212.039993,
+          "end": 212.199997
+        },
+        {
+          "word": "a",
+          "start": 212.199997,
+          "end": 212.25
+        },
+        {
+          "word": "terrific",
+          "start": 212.25,
+          "end": 212.839996
+        },
+        {
+          "word": "idea",
+          "start": 212.839996,
+          "end": 213.210007
+        },
+        {
+          "word": "Do",
+          "start": 213.990005,
+          "end": 214.070007
+        },
+        {
+          "word": "you",
+          "start": 214.070007,
+          "end": 214.130005
+        },
+        {
+          "word": "think",
+          "start": 214.130005,
+          "end": 214.369995
+        },
+        {
+          "word": "it",
+          "start": 214.369995,
+          "end": 214.399994
+        },
+        {
+          "word": "will",
+          "start": 214.399994,
+          "end": 214.660004
+        },
+        {
+          "word": "ever",
+          "start": 214.660004,
+          "end": 214.720001
+        },
+        {
+          "word": "be",
+          "start": 214.720001,
+          "end": 214.850006
+        },
+        {
+          "word": "built",
+          "start": 214.850006,
+          "end": 215.410004
+        }
+      ],
       "answers": [],
-      "end": 215.1
+      "end": 215.410004
     },
     {
       "id": 25,
-      "start": 215.2,
+      "start": 215.949997,
       "speaker": "JOHN",
       "en": "Probably not, but that’s OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Probably",
+          "start": 215.949997,
+          "end": 216.369995
+        },
+        {
+          "word": "not",
+          "start": 216.369995,
+          "end": 216.710007
+        },
+        {
+          "word": "but",
+          "start": 217.080002,
+          "end": 217.179993
+        },
+        {
+          "word": "that",
+          "start": 217.179993,
+          "end": 217.350006
+        },
+        {
+          "word": "'s",
+          "start": 217.350006,
+          "end": 217.389999
+        },
+        {
+          "word": "OK",
+          "start": 217.389999,
+          "end": 217.610001
+        }
+      ],
       "answers": [],
-      "end": 218.2
+      "end": 217.610001
     },
     {
       "id": 26,
-      "start": 218.3,
+      "start": 218.199997,
       "speaker": "PROFESSOR",
       "en": "Well, I’m sure a lot of positive things will come out of your design. ———————————",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 218.199997,
+          "end": 218.360001
+        },
+        {
+          "word": "I",
+          "start": 218.360001,
+          "end": 218.520004
+        },
+        {
+          "word": "'m",
+          "start": 218.360001,
+          "end": 218.520004
+        },
+        {
+          "word": "sure",
+          "start": 218.520004,
+          "end": 218.869995
+        },
+        {
+          "word": "a",
+          "start": 218.869995,
+          "end": 218.919998
+        },
+        {
+          "word": "lot",
+          "start": 218.919998,
+          "end": 219.119995
+        },
+        {
+          "word": "of",
+          "start": 219.119995,
+          "end": 219.210007
+        },
+        {
+          "word": "positive",
+          "start": 219.210007,
+          "end": 219.690002
+        },
+        {
+          "word": "things",
+          "start": 219.690002,
+          "end": 220.050003
+        },
+        {
+          "word": "will",
+          "start": 220.050003,
+          "end": 220.149994
+        },
+        {
+          "word": "come",
+          "start": 220.149994,
+          "end": 220.369995
+        },
+        {
+          "word": "out",
+          "start": 220.369995,
+          "end": 220.550003
+        },
+        {
+          "word": "of",
+          "start": 220.550003,
+          "end": 220.639999
+        },
+        {
+          "word": "your",
+          "start": 220.639999,
+          "end": 220.860001
+        },
+        {
+          "word": "design",
+          "start": 220.860001,
+          "end": 221.369995
+        }
+      ],
       "answers": [],
-      "end": 221.6
+      "end": 221.369995
     },
     {
       "id": 27,
-      "start": 270.4,
+      "start": 221.369995,
       "speaker": "PROFESSOR",
       "en": "Now, you seem to have thought about everything so what exactly did you need me to help you with?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 221.369995,
+          "end": 221.410004
+        },
+        {
+          "word": "you",
+          "start": 221.410004,
+          "end": 221.470001
+        },
+        {
+          "word": "seem",
+          "start": 221.470001,
+          "end": 221.559998
+        },
+        {
+          "word": "to",
+          "start": 225.0,
+          "end": 227.080002
+        },
+        {
+          "word": "have",
+          "start": 227.589996,
+          "end": 229.630005
+        },
+        {
+          "word": "thought",
+          "start": 230.020004,
+          "end": 230.889999
+        },
+        {
+          "word": "about",
+          "start": 231.339996,
+          "end": 231.630005
+        },
+        {
+          "word": "everything",
+          "start": 262.290009,
+          "end": 264.609985
+        },
+        {
+          "word": "so",
+          "start": 264.609985,
+          "end": 264.700012
+        },
+        {
+          "word": "what",
+          "start": 265.01001,
+          "end": 265.190002
+        },
+        {
+          "word": "exactly",
+          "start": 265.190002,
+          "end": 265.679993
+        },
+        {
+          "word": "did",
+          "start": 265.929993,
+          "end": 266.200012
+        },
+        {
+          "word": "you",
+          "start": 266.200012,
+          "end": 266.279999
+        },
+        {
+          "word": "need",
+          "start": 266.279999,
+          "end": 266.5
+        },
+        {
+          "word": "me",
+          "start": 266.5,
+          "end": 266.809998
+        },
+        {
+          "word": "to",
+          "start": 270.359985,
+          "end": 274.100006
+        },
+        {
+          "word": "help",
+          "start": 274.130005,
+          "end": 274.369995
+        },
+        {
+          "word": "you",
+          "start": 274.369995,
+          "end": 274.450012
+        },
+        {
+          "word": "with",
+          "start": 274.48999,
+          "end": 274.859985
+        }
+      ],
       "answers": [],
-      "end": 275.4
+      "end": 274.859985
     },
     {
       "id": 28,
-      "start": 275.5,
+      "start": 275.140015,
       "speaker": "JOHN",
       "en": "Well, my design has made it to the final stage of the competition and, in a few months’ time, I have to give a presentation, and that’s the part I was hoping you could help me with. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 275.140015,
+          "end": 275.609985
+        },
+        {
+          "word": "my",
+          "start": 275.940002,
+          "end": 276.220001
+        },
+        {
+          "word": "design",
+          "start": 276.220001,
+          "end": 276.630005
+        },
+        {
+          "word": "has",
+          "start": 276.630005,
+          "end": 276.820007
+        },
+        {
+          "word": "made",
+          "start": 276.820007,
+          "end": 277.070007
+        },
+        {
+          "word": "it",
+          "start": 277.070007,
+          "end": 277.160004
+        },
+        {
+          "word": "to",
+          "start": 277.160004,
+          "end": 277.220001
+        },
+        {
+          "word": "the",
+          "start": 277.220001,
+          "end": 277.309998
+        },
+        {
+          "word": "final",
+          "start": 277.309998,
+          "end": 277.829987
+        },
+        {
+          "word": "stage",
+          "start": 277.829987,
+          "end": 278.480011
+        },
+        {
+          "word": "of",
+          "start": 278.480011,
+          "end": 278.579987
+        },
+        {
+          "word": "the",
+          "start": 278.579987,
+          "end": 278.649994
+        },
+        {
+          "word": "competition",
+          "start": 278.649994,
+          "end": 279.519989
+        },
+        {
+          "word": "and",
+          "start": 279.579987,
+          "end": 280.019989
+        },
+        {
+          "word": "in",
+          "start": 280.059998,
+          "end": 280.200012
+        },
+        {
+          "word": "a",
+          "start": 280.200012,
+          "end": 280.230011
+        },
+        {
+          "word": "few",
+          "start": 280.230011,
+          "end": 280.5
+        },
+        {
+          "word": "months",
+          "start": 280.5,
+          "end": 280.850006
+        },
+        {
+          "word": "time",
+          "start": 280.850006,
+          "end": 281.299988
+        },
+        {
+          "word": "I",
+          "start": 281.299988,
+          "end": 281.51001
+        },
+        {
+          "word": "have",
+          "start": 281.51001,
+          "end": 281.700012
+        },
+        {
+          "word": "to",
+          "start": 281.700012,
+          "end": 281.779999
+        },
+        {
+          "word": "give",
+          "start": 281.779999,
+          "end": 281.929993
+        },
+        {
+          "word": "a",
+          "start": 281.929993,
+          "end": 281.980011
+        },
+        {
+          "word": "presentation",
+          "start": 281.980011,
+          "end": 282.940002
+        },
+        {
+          "word": "and",
+          "start": 283.190002,
+          "end": 283.320007
+        },
+        {
+          "word": "that",
+          "start": 283.320007,
+          "end": 283.480011
+        },
+        {
+          "word": "'s",
+          "start": 283.480011,
+          "end": 283.540009
+        },
+        {
+          "word": "the",
+          "start": 283.540009,
+          "end": 283.640015
+        },
+        {
+          "word": "part",
+          "start": 283.640015,
+          "end": 283.959991
+        },
+        {
+          "word": "I",
+          "start": 283.959991,
+          "end": 284.029999
+        },
+        {
+          "word": "was",
+          "start": 284.029999,
+          "end": 284.170013
+        },
+        {
+          "word": "hoping",
+          "start": 284.170013,
+          "end": 284.730011
+        },
+        {
+          "word": "you",
+          "start": 284.730011,
+          "end": 284.910004
+        },
+        {
+          "word": "could",
+          "start": 284.910004,
+          "end": 285.070007
+        },
+        {
+          "word": "help",
+          "start": 285.070007,
+          "end": 285.329987
+        },
+        {
+          "word": "me",
+          "start": 285.329987,
+          "end": 285.440002
+        },
+        {
+          "word": "with",
+          "start": 285.470001,
+          "end": 285.709991
+        }
+      ],
       "answers": [
         26
       ],
-      "end": 286.1
+      "end": 285.709991
     },
     {
       "id": 29,
-      "start": 286.1,
+      "start": 285.980011,
       "speaker": "PROFESSOR",
       "en": "Right, well that should be easy enough. What have you managed to do so far?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 285.980011,
+          "end": 286.450012
+        },
+        {
+          "word": "well",
+          "start": 286.450012,
+          "end": 286.570007
+        },
+        {
+          "word": "that",
+          "start": 286.570007,
+          "end": 286.790009
+        },
+        {
+          "word": "should",
+          "start": 286.790009,
+          "end": 286.959991
+        },
+        {
+          "word": "be",
+          "start": 286.959991,
+          "end": 287.059998
+        },
+        {
+          "word": "easy",
+          "start": 287.059998,
+          "end": 287.380005
+        },
+        {
+          "word": "enough",
+          "start": 287.380005,
+          "end": 287.839996
+        },
+        {
+          "word": "What",
+          "start": 288.369995,
+          "end": 288.540009
+        },
+        {
+          "word": "have",
+          "start": 288.540009,
+          "end": 288.570007
+        },
+        {
+          "word": "you",
+          "start": 288.570007,
+          "end": 288.720001
+        },
+        {
+          "word": "managed",
+          "start": 288.720001,
+          "end": 289.130005
+        },
+        {
+          "word": "to",
+          "start": 289.130005,
+          "end": 289.220001
+        },
+        {
+          "word": "do",
+          "start": 289.220001,
+          "end": 289.410004
+        },
+        {
+          "word": "so",
+          "start": 289.410004,
+          "end": 289.670013
+        },
+        {
+          "word": "far",
+          "start": 289.670013,
+          "end": 290.190002
+        }
+      ],
       "answers": [],
-      "end": 290.4
+      "end": 290.190002
     },
     {
       "id": 30,
-      "start": 290.5,
+      "start": 290.339996,
       "speaker": "JOHN",
       "en": "Well, I’ve got detailed drawings to show how it will work and I’ve also written a 500-word paper on it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 290.339996,
+          "end": 290.76001
+        },
+        {
+          "word": "I",
+          "start": 291.179993,
+          "end": 291.25
+        },
+        {
+          "word": "'ve",
+          "start": 291.25,
+          "end": 291.329987
+        },
+        {
+          "word": "got",
+          "start": 291.329987,
+          "end": 291.540009
+        },
+        {
+          "word": "detailed",
+          "start": 291.540009,
+          "end": 292.0
+        },
+        {
+          "word": "drawings",
+          "start": 292.0,
+          "end": 292.51001
+        },
+        {
+          "word": "to",
+          "start": 292.51001,
+          "end": 292.619995
+        },
+        {
+          "word": "show",
+          "start": 292.619995,
+          "end": 292.929993
+        },
+        {
+          "word": "how",
+          "start": 292.929993,
+          "end": 293.140015
+        },
+        {
+          "word": "it",
+          "start": 293.140015,
+          "end": 293.220001
+        },
+        {
+          "word": "will",
+          "start": 293.220001,
+          "end": 293.309998
+        },
+        {
+          "word": "work",
+          "start": 293.309998,
+          "end": 293.399994
+        },
+        {
+          "word": "and",
+          "start": 293.399994,
+          "end": 293.429993
+        },
+        {
+          "word": "I",
+          "start": 293.429993,
+          "end": 293.459991
+        },
+        {
+          "word": "'ve",
+          "start": 293.459991,
+          "end": 293.48999
+        },
+        {
+          "word": "also",
+          "start": 293.48999,
+          "end": 293.619995
+        },
+        {
+          "word": "written",
+          "start": 293.619995,
+          "end": 294.929993
+        },
+        {
+          "word": "a",
+          "start": 294.929993,
+          "end": 294.980011
+        },
+        {
+          "word": "500",
+          "start": 294.980011,
+          "end": 295.529999
+        },
+        {
+          "word": "word",
+          "start": 295.529999,
+          "end": 295.619995
+        },
+        {
+          "word": "paper",
+          "start": 295.619995,
+          "end": 296.019989
+        },
+        {
+          "word": "on",
+          "start": 296.019989,
+          "end": 296.160004
+        },
+        {
+          "word": "it",
+          "start": 296.160004,
+          "end": 296.23999
+        }
+      ],
       "answers": [],
-      "end": 296.8
+      "end": 296.23999
     },
     {
       "id": 31,
-      "start": 296.9,
+      "start": 296.5,
       "speaker": "PROFESSOR",
       "en": "I see. Well, if you want to stand a good chance of winning you really need a model of the machine. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 296.5,
+          "end": 296.660004
+        },
+        {
+          "word": "see",
+          "start": 296.660004,
+          "end": 297.23999
+        },
+        {
+          "word": "Well",
+          "start": 297.630005,
+          "end": 297.820007
+        },
+        {
+          "word": "if",
+          "start": 297.820007,
+          "end": 297.950012
+        },
+        {
+          "word": "you",
+          "start": 297.950012,
+          "end": 298.01001
+        },
+        {
+          "word": "want",
+          "start": 298.01001,
+          "end": 298.160004
+        },
+        {
+          "word": "to",
+          "start": 298.160004,
+          "end": 298.220001
+        },
+        {
+          "word": "stand",
+          "start": 298.220001,
+          "end": 298.619995
+        },
+        {
+          "word": "a",
+          "start": 298.619995,
+          "end": 298.660004
+        },
+        {
+          "word": "good",
+          "start": 298.660004,
+          "end": 298.910004
+        },
+        {
+          "word": "chance",
+          "start": 298.910004,
+          "end": 299.329987
+        },
+        {
+          "word": "of",
+          "start": 299.329987,
+          "end": 299.410004
+        },
+        {
+          "word": "winning",
+          "start": 299.450012,
+          "end": 299.829987
+        },
+        {
+          "word": "you",
+          "start": 299.829987,
+          "end": 299.950012
+        },
+        {
+          "word": "really",
+          "start": 299.950012,
+          "end": 300.299988
+        },
+        {
+          "word": "need",
+          "start": 300.299988,
+          "end": 300.690002
+        },
+        {
+          "word": "a",
+          "start": 300.690002,
+          "end": 300.769989
+        },
+        {
+          "word": "model",
+          "start": 300.769989,
+          "end": 301.079987
+        },
+        {
+          "word": "of",
+          "start": 301.079987,
+          "end": 301.179993
+        },
+        {
+          "word": "the",
+          "start": 301.179993,
+          "end": 301.26001
+        },
+        {
+          "word": "machine",
+          "start": 301.26001,
+          "end": 301.880005
+        }
+      ],
       "answers": [
         27
       ],
-      "end": 302.1
+      "end": 301.880005
     },
     {
       "id": 32,
-      "start": 302.1,
+      "start": 301.970001,
       "speaker": "JOHN",
       "en": "Yes, I thought I might but I’m having a few problems.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 301.970001,
+          "end": 302.5
+        },
+        {
+          "word": "I",
+          "start": 302.5,
+          "end": 302.720001
+        },
+        {
+          "word": "thought",
+          "start": 302.720001,
+          "end": 302.890015
+        },
+        {
+          "word": "I",
+          "start": 302.959991,
+          "end": 303.070007
+        },
+        {
+          "word": "might",
+          "start": 303.070007,
+          "end": 303.579987
+        },
+        {
+          "word": "but",
+          "start": 303.579987,
+          "end": 303.690002
+        },
+        {
+          "word": "I",
+          "start": 303.690002,
+          "end": 303.799988
+        },
+        {
+          "word": "'m",
+          "start": 303.690002,
+          "end": 303.799988
+        },
+        {
+          "word": "having",
+          "start": 303.799988,
+          "end": 304.109985
+        },
+        {
+          "word": "a",
+          "start": 304.109985,
+          "end": 304.140015
+        },
+        {
+          "word": "few",
+          "start": 304.140015,
+          "end": 304.350006
+        },
+        {
+          "word": "problems",
+          "start": 304.350006,
+          "end": 305.029999
+        }
+      ],
       "answers": [],
-      "end": 305.8
+      "end": 305.029999
     },
     {
       "id": 33,
-      "start": 305.9,
+      "start": 305.290009,
       "speaker": "PROFESSOR",
       "en": "What is the main difficulty so far? Let me guess – is it the materials?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "What",
+          "start": 305.290009,
+          "end": 305.440002
+        },
+        {
+          "word": "is",
+          "start": 305.440002,
+          "end": 305.51001
+        },
+        {
+          "word": "the",
+          "start": 305.51001,
+          "end": 305.619995
+        },
+        {
+          "word": "main",
+          "start": 305.619995,
+          "end": 305.910004
+        },
+        {
+          "word": "difficulty",
+          "start": 305.910004,
+          "end": 306.390015
+        },
+        {
+          "word": "so",
+          "start": 306.390015,
+          "end": 306.660004
+        },
+        {
+          "word": "far",
+          "start": 306.660004,
+          "end": 307.160004
+        },
+        {
+          "word": "Let",
+          "start": 307.850006,
+          "end": 308.100006
+        },
+        {
+          "word": "me",
+          "start": 308.100006,
+          "end": 308.230011
+        },
+        {
+          "word": "guess",
+          "start": 308.230011,
+          "end": 308.619995
+        },
+        {
+          "word": "is",
+          "start": 308.73999,
+          "end": 308.880005
+        },
+        {
+          "word": "it",
+          "start": 308.880005,
+          "end": 308.929993
+        },
+        {
+          "word": "the",
+          "start": 308.929993,
+          "end": 309.029999
+        },
+        {
+          "word": "materials",
+          "start": 309.029999,
+          "end": 309.859985
+        }
+      ],
+      "answers": [],
+      "end": 309.859985
     },
     {
       "id": 34,
-      "start": 309.6,
+      "start": 309.98999,
       "speaker": "JOHN",
       "en": "Yes. I want it to look professional but everything that’s top quality is also very expensive. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 309.98999,
+          "end": 310.649994
+        },
+        {
+          "word": "I",
+          "start": 311.209991,
+          "end": 311.309998
+        },
+        {
+          "word": "want",
+          "start": 311.309998,
+          "end": 311.51001
+        },
+        {
+          "word": "it",
+          "start": 311.51001,
+          "end": 311.619995
+        },
+        {
+          "word": "to",
+          "start": 311.619995,
+          "end": 311.709991
+        },
+        {
+          "word": "look",
+          "start": 311.709991,
+          "end": 311.940002
+        },
+        {
+          "word": "professional",
+          "start": 311.940002,
+          "end": 312.630005
+        },
+        {
+          "word": "but",
+          "start": 312.630005,
+          "end": 312.890015
+        },
+        {
+          "word": "everything",
+          "start": 313.019989,
+          "end": 313.470001
+        },
+        {
+          "word": "that",
+          "start": 313.470001,
+          "end": 313.570007
+        },
+        {
+          "word": "'s",
+          "start": 313.570007,
+          "end": 313.660004
+        },
+        {
+          "word": "top",
+          "start": 313.660004,
+          "end": 313.970001
+        },
+        {
+          "word": "quality",
+          "start": 313.970001,
+          "end": 314.350006
+        },
+        {
+          "word": "is",
+          "start": 314.350006,
+          "end": 314.529999
+        },
+        {
+          "word": "also",
+          "start": 314.529999,
+          "end": 314.910004
+        },
+        {
+          "word": "very",
+          "start": 314.910004,
+          "end": 315.26001
+        },
+        {
+          "word": "expensive",
+          "start": 315.26001,
+          "end": 316.0
+        }
+      ],
       "answers": [
         28
       ],
-      "end": 316.4
+      "end": 316.0
     },
     {
       "id": 35,
-      "start": 316.5,
+      "start": 316.290009,
       "speaker": "PROFESSOR",
       "en": "Look, projects like this are very important to us. They really help lift our profile. So why don’t you talk to the university about a grant? [[ ]] I can help you fill out the application forms if you like.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Look",
+          "start": 316.290009,
+          "end": 316.549988
+        },
+        {
+          "word": "projects",
+          "start": 316.549988,
+          "end": 317.089996
+        },
+        {
+          "word": "like",
+          "start": 317.089996,
+          "end": 317.380005
+        },
+        {
+          "word": "this",
+          "start": 317.380005,
+          "end": 317.609985
+        },
+        {
+          "word": "are",
+          "start": 317.609985,
+          "end": 317.700012
+        },
+        {
+          "word": "very",
+          "start": 317.700012,
+          "end": 318.01001
+        },
+        {
+          "word": "important",
+          "start": 318.01001,
+          "end": 318.51001
+        },
+        {
+          "word": "to",
+          "start": 318.51001,
+          "end": 318.720001
+        },
+        {
+          "word": "us",
+          "start": 318.720001,
+          "end": 319.119995
+        },
+        {
+          "word": "They",
+          "start": 319.25,
+          "end": 319.429993
+        },
+        {
+          "word": "really",
+          "start": 319.429993,
+          "end": 319.899994
+        },
+        {
+          "word": "help",
+          "start": 319.899994,
+          "end": 320.190002
+        },
+        {
+          "word": "lift",
+          "start": 320.190002,
+          "end": 320.450012
+        },
+        {
+          "word": "our",
+          "start": 320.450012,
+          "end": 320.589996
+        },
+        {
+          "word": "profile",
+          "start": 320.589996,
+          "end": 321.329987
+        },
+        {
+          "word": "So",
+          "start": 321.690002,
+          "end": 321.850006
+        },
+        {
+          "word": "why",
+          "start": 321.910004,
+          "end": 322.130005
+        },
+        {
+          "word": "do",
+          "start": 322.130005,
+          "end": 322.339996
+        },
+        {
+          "word": "n't",
+          "start": 322.130005,
+          "end": 322.339996
+        },
+        {
+          "word": "you",
+          "start": 322.339996,
+          "end": 322.420013
+        },
+        {
+          "word": "talk",
+          "start": 322.420013,
+          "end": 322.660004
+        },
+        {
+          "word": "to",
+          "start": 322.660004,
+          "end": 322.730011
+        },
+        {
+          "word": "the",
+          "start": 322.730011,
+          "end": 322.820007
+        },
+        {
+          "word": "university",
+          "start": 322.820007,
+          "end": 323.390015
+        },
+        {
+          "word": "about",
+          "start": 323.390015,
+          "end": 323.660004
+        },
+        {
+          "word": "a",
+          "start": 323.660004,
+          "end": 323.709991
+        },
+        {
+          "word": "grant",
+          "start": 323.709991,
+          "end": 324.309998
+        },
+        {
+          "word": "I",
+          "start": 324.829987,
+          "end": 325.040009
+        },
+        {
+          "word": "can",
+          "start": 325.040009,
+          "end": 325.200012
+        },
+        {
+          "word": "help",
+          "start": 325.200012,
+          "end": 325.420013
+        },
+        {
+          "word": "you",
+          "start": 325.420013,
+          "end": 325.480011
+        },
+        {
+          "word": "fill",
+          "start": 325.480011,
+          "end": 325.670013
+        },
+        {
+          "word": "out",
+          "start": 325.670013,
+          "end": 325.799988
+        },
+        {
+          "word": "the",
+          "start": 325.799988,
+          "end": 325.899994
+        },
+        {
+          "word": "application",
+          "start": 325.899994,
+          "end": 326.480011
+        },
+        {
+          "word": "forms",
+          "start": 326.480011,
+          "end": 326.839996
+        },
+        {
+          "word": "if",
+          "start": 326.839996,
+          "end": 326.98999
+        },
+        {
+          "word": "you",
+          "start": 326.98999,
+          "end": 327.079987
+        },
+        {
+          "word": "like",
+          "start": 327.079987,
+          "end": 327.470001
+        }
+      ],
       "answers": [
         29
       ],
-      "end": 327.4
+      "end": 327.470001
     },
     {
       "id": 36,
-      "start": 327.5,
+      "start": 327.470001,
       "speaker": "JOHN",
       "en": "That would be great.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 327.470001,
+          "end": 327.670013
+        },
+        {
+          "word": "would",
+          "start": 327.670013,
+          "end": 327.839996
+        },
+        {
+          "word": "be",
+          "start": 327.839996,
+          "end": 328.040009
+        },
+        {
+          "word": "great",
+          "start": 328.109985,
+          "end": 328.799988
+        }
+      ],
       "answers": [],
-      "end": 329.4
+      "end": 328.799988
     },
     {
       "id": 37,
-      "start": 333.1,
+      "start": 329.140015,
       "speaker": "PROFESSOR",
       "en": "You’d better show me this paper you’ve written as well. For a global competition such as this you need to make sure the technical details you’ve given are accurate and thorough. [[ ]]",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 329.140015,
+          "end": 329.279999
+        },
+        {
+          "word": "'d",
+          "start": 329.279999,
+          "end": 329.309998
+        },
+        {
+          "word": "better",
+          "start": 329.309998,
+          "end": 329.48999
+        },
+        {
+          "word": "show",
+          "start": 329.48999,
+          "end": 329.75
+        },
+        {
+          "word": "me",
+          "start": 329.75,
+          "end": 329.869995
+        },
+        {
+          "word": "this",
+          "start": 329.869995,
+          "end": 330.089996
+        },
+        {
+          "word": "paper",
+          "start": 330.089996,
+          "end": 330.429993
+        },
+        {
+          "word": "you",
+          "start": 330.429993,
+          "end": 330.570007
+        },
+        {
+          "word": "'ve",
+          "start": 330.429993,
+          "end": 330.570007
+        },
+        {
+          "word": "written",
+          "start": 330.570007,
+          "end": 330.859985
+        },
+        {
+          "word": "as",
+          "start": 330.859985,
+          "end": 330.98999
+        },
+        {
+          "word": "well",
+          "start": 330.98999,
+          "end": 331.48999
+        },
+        {
+          "word": "For",
+          "start": 331.540009,
+          "end": 331.730011
+        },
+        {
+          "word": "a",
+          "start": 331.730011,
+          "end": 331.769989
+        },
+        {
+          "word": "global",
+          "start": 331.769989,
+          "end": 332.200012
+        },
+        {
+          "word": "competition",
+          "start": 332.200012,
+          "end": 332.98999
+        },
+        {
+          "word": "such",
+          "start": 332.98999,
+          "end": 333.320007
+        },
+        {
+          "word": "as",
+          "start": 333.320007,
+          "end": 333.459991
+        },
+        {
+          "word": "this",
+          "start": 333.459991,
+          "end": 333.790009
+        },
+        {
+          "word": "you",
+          "start": 334.170013,
+          "end": 334.290009
+        },
+        {
+          "word": "need",
+          "start": 334.290009,
+          "end": 334.600006
+        },
+        {
+          "word": "to",
+          "start": 334.600006,
+          "end": 334.730011
+        },
+        {
+          "word": "make",
+          "start": 334.730011,
+          "end": 334.920013
+        },
+        {
+          "word": "sure",
+          "start": 334.920013,
+          "end": 335.109985
+        },
+        {
+          "word": "the",
+          "start": 335.109985,
+          "end": 335.209991
+        },
+        {
+          "word": "technical",
+          "start": 335.209991,
+          "end": 335.720001
+        },
+        {
+          "word": "details",
+          "start": 335.720001,
+          "end": 336.350006
+        },
+        {
+          "word": "you",
+          "start": 336.350006,
+          "end": 336.51001
+        },
+        {
+          "word": "'ve",
+          "start": 336.350006,
+          "end": 336.51001
+        },
+        {
+          "word": "given",
+          "start": 336.51001,
+          "end": 336.76001
+        },
+        {
+          "word": "are",
+          "start": 336.76001,
+          "end": 336.859985
+        },
+        {
+          "word": "accurate",
+          "start": 336.929993,
+          "end": 337.579987
+        },
+        {
+          "word": "and",
+          "start": 337.579987,
+          "end": 337.730011
+        },
+        {
+          "word": "thorough",
+          "start": 337.730011,
+          "end": 338.200012
+        }
+      ],
       "answers": [
         30
       ],
-      "end": 338.7
+      "end": 338.200012
     },
     {
       "id": 38,
-      "start": 338.8,
+      "start": 338.200012,
       "speaker": "JOHN",
       "en": "That would be a great help.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 338.200012,
+          "end": 338.459991
+        },
+        {
+          "word": "would",
+          "start": 338.459991,
+          "end": 338.869995
+        },
+        {
+          "word": "be",
+          "start": 338.869995,
+          "end": 338.98999
+        },
+        {
+          "word": "a",
+          "start": 339.170013,
+          "end": 343.179993
+        },
+        {
+          "word": "great",
+          "start": 346.630005,
+          "end": 346.709991
+        },
+        {
+          "word": "help",
+          "start": 346.709991,
+          "end": 346.850006
+        }
+      ],
       "answers": [],
-      "end": 340.2
+      "end": 346.850006
     },
     {
       "id": 39,
-      "start": 340.3,
+      "start": 346.850006,
       "speaker": "PROFESSOR",
       "en": "Is there anything else I can do?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Is",
+          "start": 346.850006,
+          "end": 347.029999
+        },
+        {
+          "word": "there",
+          "start": 347.029999,
+          "end": 347.26001
+        },
+        {
+          "word": "anything",
+          "start": 347.26001,
+          "end": 348.859985
+        },
+        {
+          "word": "else",
+          "start": 349.640015,
+          "end": 350.170013
+        },
+        {
+          "word": "I",
+          "start": 350.609985,
+          "end": 351.420013
+        },
+        {
+          "word": "can",
+          "start": 352.119995,
+          "end": 352.519989
+        },
+        {
+          "word": "do",
+          "start": 352.519989,
+          "end": 352.75
+        }
+      ],
       "answers": [],
-      "end": 342.5
+      "end": 352.75
     },
     {
       "id": 40,
-      "start": 346.3,
+      "start": 383.320007,
       "speaker": "JOHN",
       "en": "Well, I’m really ...",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Well",
+          "start": 383.320007,
+          "end": 384.829987
+        },
+        {
+          "word": "I",
+          "start": 384.829987,
+          "end": 384.869995
+        },
+        {
+          "word": "'m",
+          "start": 384.829987,
+          "end": 384.869995
+        },
+        {
+          "word": "really",
+          "start": 384.869995,
+          "end": 384.98999
+        }
+      ],
+      "answers": [],
+      "end": 384.98999
     }
   ],
   "questions": [
@@ -505,5 +4327,14 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 756,
+    "mfa_word_count": 756,
+    "matched_word_count": 755
+  }
 }

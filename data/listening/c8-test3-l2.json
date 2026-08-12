@@ -7,51 +7,516 @@
   "segments": [
     {
       "id": 1,
-      "start": 50.6,
+      "start": 50.74,
       "speaker": "SPEAKER",
       "en": "Hello, and welcome to Focus on the Arts.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hello",
+          "start": 50.74,
+          "end": 51.120000000000005
+        },
+        {
+          "word": "and",
+          "start": 51.53,
+          "end": 51.69
+        },
+        {
+          "word": "welcome",
+          "start": 51.69,
+          "end": 52.04
+        },
+        {
+          "word": "to",
+          "start": 52.04,
+          "end": 52.18
+        },
+        {
+          "word": "Focus",
+          "start": 52.18,
+          "end": 52.660000000000004
+        },
+        {
+          "word": "on",
+          "start": 52.660000000000004,
+          "end": 52.79
+        },
+        {
+          "word": "the",
+          "start": 52.79,
+          "end": 52.870000000000005
+        },
+        {
+          "word": "Arts",
+          "start": 52.870000000000005,
+          "end": 53.29
+        }
+      ],
       "answers": [],
-      "end": 53.4
+      "end": 53.29
     },
     {
       "id": 2,
-      "start": 54.0,
+      "start": 53.93,
       "speaker": "SPEAKER",
       "en": "I'm your host - Dave Green - and this is your very own local radio programme.Every Friday evening we put the spotlighton different arts and culture facilities, and look at the shows and events that are on offer in the coming week.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 53.93,
+          "end": 54.1
+        },
+        {
+          "word": "'m",
+          "start": 53.93,
+          "end": 54.1
+        },
+        {
+          "word": "your",
+          "start": 54.1,
+          "end": 54.27
+        },
+        {
+          "word": "host",
+          "start": 54.27,
+          "end": 54.61
+        },
+        {
+          "word": "Dave",
+          "start": 54.61,
+          "end": 54.84
+        },
+        {
+          "word": "Green",
+          "start": 54.84,
+          "end": 55.260000000000005
+        },
+        {
+          "word": "and",
+          "start": 55.74,
+          "end": 55.92
+        },
+        {
+          "word": "this",
+          "start": 55.92,
+          "end": 56.07
+        },
+        {
+          "word": "is",
+          "start": 56.07,
+          "end": 56.19
+        },
+        {
+          "word": "your",
+          "start": 56.19,
+          "end": 56.370000000000005
+        },
+        {
+          "word": "very",
+          "start": 56.370000000000005,
+          "end": 56.660000000000004
+        },
+        {
+          "word": "own",
+          "start": 56.660000000000004,
+          "end": 56.88
+        },
+        {
+          "word": "local",
+          "start": 56.88,
+          "end": 57.29
+        },
+        {
+          "word": "radio",
+          "start": 57.29,
+          "end": 57.69
+        },
+        {
+          "word": "programme",
+          "start": 57.69,
+          "end": 58.19
+        },
+        {
+          "word": "Every",
+          "start": 59.19,
+          "end": 59.42
+        },
+        {
+          "word": "Friday",
+          "start": 59.42,
+          "end": 59.89
+        },
+        {
+          "word": "evening",
+          "start": 59.89,
+          "end": 60.24
+        },
+        {
+          "word": "we",
+          "start": 60.29,
+          "end": 60.42
+        },
+        {
+          "word": "put",
+          "start": 60.42,
+          "end": 60.6
+        },
+        {
+          "word": "the",
+          "start": 60.6,
+          "end": 60.660000000000004
+        },
+        {
+          "word": "spotlighton",
+          "start": 60.660000000000004,
+          "end": 61.33
+        },
+        {
+          "word": "different",
+          "start": 61.33,
+          "end": 61.63
+        },
+        {
+          "word": "arts",
+          "start": 61.63,
+          "end": 62.06
+        },
+        {
+          "word": "and",
+          "start": 62.06,
+          "end": 62.21
+        },
+        {
+          "word": "culture",
+          "start": 62.21,
+          "end": 62.55
+        },
+        {
+          "word": "facilities",
+          "start": 62.55,
+          "end": 63.18
+        },
+        {
+          "word": "and",
+          "start": 63.6,
+          "end": 63.730000000000004
+        },
+        {
+          "word": "look",
+          "start": 63.730000000000004,
+          "end": 63.870000000000005
+        },
+        {
+          "word": "at",
+          "start": 63.870000000000005,
+          "end": 63.93
+        },
+        {
+          "word": "the",
+          "start": 63.93,
+          "end": 64.0
+        },
+        {
+          "word": "shows",
+          "start": 64.04,
+          "end": 64.36
+        },
+        {
+          "word": "and",
+          "start": 64.36,
+          "end": 64.46000000000001
+        },
+        {
+          "word": "events",
+          "start": 64.46000000000001,
+          "end": 64.85
+        },
+        {
+          "word": "that",
+          "start": 64.85,
+          "end": 64.880001
+        },
+        {
+          "word": "are",
+          "start": 64.880001,
+          "end": 64.94
+        },
+        {
+          "word": "on",
+          "start": 64.94,
+          "end": 65.130001
+        },
+        {
+          "word": "offer",
+          "start": 65.130001,
+          "end": 65.470001
+        },
+        {
+          "word": "in",
+          "start": 65.5,
+          "end": 65.6
+        },
+        {
+          "word": "the",
+          "start": 65.6,
+          "end": 65.659999
+        },
+        {
+          "word": "coming",
+          "start": 65.659999,
+          "end": 66.01
+        },
+        {
+          "word": "week",
+          "start": 66.01,
+          "end": 66.36
+        }
+      ],
       "answers": [],
-      "end": 66.4
+      "end": 66.36
     },
     {
       "id": 3,
-      "start": 67.5,
+      "start": 67.229999,
       "speaker": "SPEAKER",
       "en": "And today the focus is on The NationalArts Centre.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 67.229999,
+          "end": 67.35
+        },
+        {
+          "word": "today",
+          "start": 67.35,
+          "end": 67.77000000000001
+        },
+        {
+          "word": "the",
+          "start": 67.77000000000001,
+          "end": 67.87
+        },
+        {
+          "word": "focus",
+          "start": 67.87,
+          "end": 68.26
+        },
+        {
+          "word": "is",
+          "start": 68.26,
+          "end": 68.380001
+        },
+        {
+          "word": "on",
+          "start": 68.380001,
+          "end": 68.559999
+        },
+        {
+          "word": "The",
+          "start": 68.559999,
+          "end": 68.64999900000001
+        },
+        {
+          "word": "NationalArts",
+          "start": 68.64999900000001,
+          "end": 69.460001
+        },
+        {
+          "word": "Centre",
+          "start": 69.5,
+          "end": 69.83
+        }
+      ],
       "answers": [],
-      "end": 69.9
+      "end": 69.83
     },
     {
       "id": 4,
-      "start": 70.9,
+      "start": 70.819999,
       "speaker": "SPEAKER",
       "en": "Now, if you don't already know it yourself, I'm sure you've all heard of it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 70.819999,
+          "end": 71.12
+        },
+        {
+          "word": "if",
+          "start": 71.35,
+          "end": 71.540001
+        },
+        {
+          "word": "you",
+          "start": 71.540001,
+          "end": 71.6
+        },
+        {
+          "word": "do",
+          "start": 71.6,
+          "end": 71.78
+        },
+        {
+          "word": "n't",
+          "start": 71.6,
+          "end": 71.78
+        },
+        {
+          "word": "already",
+          "start": 71.78,
+          "end": 72.14999900000001
+        },
+        {
+          "word": "know",
+          "start": 72.14999900000001,
+          "end": 72.25
+        },
+        {
+          "word": "it",
+          "start": 72.25,
+          "end": 72.409999
+        },
+        {
+          "word": "yourself",
+          "start": 72.409999,
+          "end": 73.02000000000001
+        },
+        {
+          "word": "I",
+          "start": 73.33,
+          "end": 73.470001
+        },
+        {
+          "word": "'m",
+          "start": 73.33,
+          "end": 73.470001
+        },
+        {
+          "word": "sure",
+          "start": 73.470001,
+          "end": 73.75
+        },
+        {
+          "word": "you",
+          "start": 73.75,
+          "end": 73.87
+        },
+        {
+          "word": "'ve",
+          "start": 73.75,
+          "end": 73.87
+        },
+        {
+          "word": "all",
+          "start": 73.87,
+          "end": 74.03
+        },
+        {
+          "word": "heard",
+          "start": 74.03,
+          "end": 74.27000000000001
+        },
+        {
+          "word": "of",
+          "start": 74.27000000000001,
+          "end": 74.35
+        },
+        {
+          "word": "it",
+          "start": 74.35,
+          "end": 74.479999
+        }
+      ],
       "answers": [],
-      "end": 74.7
+      "end": 74.479999
     },
     {
       "id": 5,
-      "start": 75.2,
+      "start": 75.19,
       "speaker": "SPEAKER",
       "en": "It's famous throughoutthe world as one of the major 011 venues for classical music.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 75.19,
+          "end": 75.33
+        },
+        {
+          "word": "'s",
+          "start": 75.19,
+          "end": 75.33
+        },
+        {
+          "word": "famous",
+          "start": 75.33,
+          "end": 75.7
+        },
+        {
+          "word": "throughoutthe",
+          "start": 75.7,
+          "end": 76.03
+        },
+        {
+          "word": "world",
+          "start": 76.03,
+          "end": 76.55000100000001
+        },
+        {
+          "word": "as",
+          "start": 76.58,
+          "end": 76.7
+        },
+        {
+          "word": "one",
+          "start": 76.7,
+          "end": 76.809999
+        },
+        {
+          "word": "of",
+          "start": 76.809999,
+          "end": 76.87
+        },
+        {
+          "word": "the",
+          "start": 76.87,
+          "end": 76.95
+        },
+        {
+          "word": "major",
+          "start": 76.95,
+          "end": 77.35
+        },
+        {
+          "word": "011",
+          "start": 77.35,
+          "end": 77.390001
+        },
+        {
+          "word": "venues",
+          "start": 77.390001,
+          "end": 77.80000100000001
+        },
+        {
+          "word": "for",
+          "start": 77.80000100000001,
+          "end": 77.89999900000001
+        },
+        {
+          "word": "classical",
+          "start": 77.89999900000001,
+          "end": 78.380001
+        },
+        {
+          "word": "music",
+          "start": 78.380001,
+          "end": 78.909999
+        }
+      ],
       "answers": [
         11,
         12,
@@ -64,197 +529,2831 @@
         19,
         20
       ],
-      "end": 78.9
+      "end": 78.909999
     },
     {
       "id": 6,
-      "start": 80.4,
+      "start": 79.92,
       "speaker": "SPEAKER",
       "en": "But did you know that it is actually much more than just a place to hear concerts?The Centre itself is a huge complexthat caters for a great range of arts.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 79.92,
+          "end": 80.059999
+        },
+        {
+          "word": "did",
+          "start": 80.059999,
+          "end": 80.210001
+        },
+        {
+          "word": "you",
+          "start": 80.210001,
+          "end": 80.28
+        },
+        {
+          "word": "know",
+          "start": 80.28,
+          "end": 80.58
+        },
+        {
+          "word": "that",
+          "start": 80.58,
+          "end": 80.719999
+        },
+        {
+          "word": "it",
+          "start": 80.719999,
+          "end": 80.750002
+        },
+        {
+          "word": "is",
+          "start": 80.750002,
+          "end": 80.840002
+        },
+        {
+          "word": "actually",
+          "start": 80.840002,
+          "end": 81.17
+        },
+        {
+          "word": "much",
+          "start": 81.17,
+          "end": 81.449998
+        },
+        {
+          "word": "more",
+          "start": 81.449998,
+          "end": 81.730001
+        },
+        {
+          "word": "than",
+          "start": 81.730001,
+          "end": 81.85
+        },
+        {
+          "word": "just",
+          "start": 81.85,
+          "end": 82.059999
+        },
+        {
+          "word": "a",
+          "start": 82.059999,
+          "end": 82.090002
+        },
+        {
+          "word": "place",
+          "start": 82.090002,
+          "end": 82.359998
+        },
+        {
+          "word": "to",
+          "start": 82.359998,
+          "end": 82.460001
+        },
+        {
+          "word": "hear",
+          "start": 82.460001,
+          "end": 82.629999
+        },
+        {
+          "word": "concerts",
+          "start": 82.629999,
+          "end": 83.180002
+        },
+        {
+          "word": "The",
+          "start": 84.25999999999999,
+          "end": 84.359998
+        },
+        {
+          "word": "Centre",
+          "start": 84.359998,
+          "end": 84.69
+        },
+        {
+          "word": "itself",
+          "start": 84.69,
+          "end": 85.070001
+        },
+        {
+          "word": "is",
+          "start": 85.070001,
+          "end": 85.14999900000001
+        },
+        {
+          "word": "a",
+          "start": 85.14999900000001,
+          "end": 85.199998
+        },
+        {
+          "word": "huge",
+          "start": 85.199998,
+          "end": 85.67
+        },
+        {
+          "word": "complexthat",
+          "start": 85.67,
+          "end": 86.39999900000001
+        },
+        {
+          "word": "caters",
+          "start": 86.39999900000001,
+          "end": 86.78
+        },
+        {
+          "word": "for",
+          "start": 86.78,
+          "end": 86.949998
+        },
+        {
+          "word": "a",
+          "start": 86.949998,
+          "end": 87.00999999999999
+        },
+        {
+          "word": "great",
+          "start": 87.00999999999999,
+          "end": 87.289999
+        },
+        {
+          "word": "range",
+          "start": 87.289999,
+          "end": 87.640001
+        },
+        {
+          "word": "of",
+          "start": 87.640001,
+          "end": 87.719999
+        },
+        {
+          "word": "arts",
+          "start": 87.719999,
+          "end": 88.059999
+        }
+      ],
       "answers": [],
-      "end": 88.1
+      "end": 88.059999
     },
     {
       "id": 7,
-      "start": 88.3,
+      "start": 88.949998,
       "speaker": "SPEAKER",
       "en": "Under a single roof it houses concert rooms,theatres,cinemas,art galleries and a wonderfulpublic library, as well as service facilitiesincludingthree restaurantsand a bookshop.So at any one time, 012 the choice of entertainmentthere is simply enormous.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Under",
+          "start": 88.949998,
+          "end": 89.17
+        },
+        {
+          "word": "a",
+          "start": 89.17,
+          "end": 89.210001
+        },
+        {
+          "word": "single",
+          "start": 89.210001,
+          "end": 89.62
+        },
+        {
+          "word": "roof",
+          "start": 89.62,
+          "end": 89.94
+        },
+        {
+          "word": "it",
+          "start": 89.94,
+          "end": 90.00999999999999
+        },
+        {
+          "word": "houses",
+          "start": 90.00999999999999,
+          "end": 90.449998
+        },
+        {
+          "word": "concert",
+          "start": 90.449998,
+          "end": 90.92
+        },
+        {
+          "word": "rooms",
+          "start": 90.92,
+          "end": 91.390001
+        },
+        {
+          "word": "theatres",
+          "start": 91.660001,
+          "end": 92.30000100000001
+        },
+        {
+          "word": "cinemas",
+          "start": 92.44,
+          "end": 93.090002
+        },
+        {
+          "word": "art",
+          "start": 93.199998,
+          "end": 93.50999999999999
+        },
+        {
+          "word": "galleries",
+          "start": 93.50999999999999,
+          "end": 94.070001
+        },
+        {
+          "word": "and",
+          "start": 94.39999900000001,
+          "end": 94.55000100000001
+        },
+        {
+          "word": "a",
+          "start": 94.55000100000001,
+          "end": 94.6
+        },
+        {
+          "word": "wonderfulpublic",
+          "start": 94.6,
+          "end": 95.39999900000001
+        },
+        {
+          "word": "library",
+          "start": 95.39999900000001,
+          "end": 95.89999900000001
+        },
+        {
+          "word": "as",
+          "start": 96.430002,
+          "end": 96.559999
+        },
+        {
+          "word": "well",
+          "start": 96.559999,
+          "end": 96.719999
+        },
+        {
+          "word": "as",
+          "start": 96.719999,
+          "end": 96.910001
+        },
+        {
+          "word": "service",
+          "start": 96.910001,
+          "end": 97.25999999999999
+        },
+        {
+          "word": "facilitiesincludingthree",
+          "start": 97.25999999999999,
+          "end": 98.859998
+        },
+        {
+          "word": "restaurantsand",
+          "start": 98.859998,
+          "end": 99.64999900000001
+        },
+        {
+          "word": "a",
+          "start": 99.64999900000001,
+          "end": 99.699998
+        },
+        {
+          "word": "bookshop",
+          "start": 99.699998,
+          "end": 100.210001
+        },
+        {
+          "word": "So",
+          "start": 100.83,
+          "end": 100.98999900000001
+        },
+        {
+          "word": "at",
+          "start": 101.48999900000001,
+          "end": 101.62
+        },
+        {
+          "word": "any",
+          "start": 101.62,
+          "end": 101.73999900000001
+        },
+        {
+          "word": "one",
+          "start": 101.73999900000001,
+          "end": 101.960001
+        },
+        {
+          "word": "time",
+          "start": 101.960001,
+          "end": 102.44
+        },
+        {
+          "word": "012",
+          "start": 102.469999,
+          "end": 102.50999999999999
+        },
+        {
+          "word": "the",
+          "start": 102.559999,
+          "end": 102.660001
+        },
+        {
+          "word": "choice",
+          "start": 102.660001,
+          "end": 103.00999999999999
+        },
+        {
+          "word": "of",
+          "start": 103.00999999999999,
+          "end": 103.070001
+        },
+        {
+          "word": "entertainmentthere",
+          "start": 103.070001,
+          "end": 103.930002
+        },
+        {
+          "word": "is",
+          "start": 103.930002,
+          "end": 104.08
+        },
+        {
+          "word": "simply",
+          "start": 104.08,
+          "end": 104.379999
+        },
+        {
+          "word": "enormous",
+          "start": 104.379999,
+          "end": 104.930002
+        }
+      ],
       "answers": [],
-      "end": 98.1
+      "end": 104.930002
     },
     {
       "id": 8,
-      "start": 106.5,
+      "start": 106.03,
       "speaker": "SPEAKER",
       "en": "So, how did they manageto build such a big Arts complex right in the heart of the city?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 106.03,
+          "end": 106.23999900000001
+        },
+        {
+          "word": "how",
+          "start": 106.85,
+          "end": 107.03
+        },
+        {
+          "word": "did",
+          "start": 107.03,
+          "end": 107.160001
+        },
+        {
+          "word": "they",
+          "start": 107.160001,
+          "end": 107.30000100000001
+        },
+        {
+          "word": "manageto",
+          "start": 107.30000100000001,
+          "end": 107.69
+        },
+        {
+          "word": "build",
+          "start": 107.69,
+          "end": 107.980001
+        },
+        {
+          "word": "such",
+          "start": 108.090002,
+          "end": 108.269998
+        },
+        {
+          "word": "a",
+          "start": 108.269998,
+          "end": 108.320001
+        },
+        {
+          "word": "big",
+          "start": 108.320001,
+          "end": 108.680002
+        },
+        {
+          "word": "Arts",
+          "start": 108.680002,
+          "end": 108.960001
+        },
+        {
+          "word": "complex",
+          "start": 108.960001,
+          "end": 109.570001
+        },
+        {
+          "word": "right",
+          "start": 109.69,
+          "end": 109.910001
+        },
+        {
+          "word": "in",
+          "start": 109.910001,
+          "end": 110.000002
+        },
+        {
+          "word": "the",
+          "start": 110.000002,
+          "end": 110.059999
+        },
+        {
+          "word": "heart",
+          "start": 110.059999,
+          "end": 110.320001
+        },
+        {
+          "word": "of",
+          "start": 110.320001,
+          "end": 110.359998
+        },
+        {
+          "word": "the",
+          "start": 110.359998,
+          "end": 110.460001
+        },
+        {
+          "word": "city",
+          "start": 110.460001,
+          "end": 110.890001
+        }
+      ],
       "answers": [],
-      "end": 110.9
+      "end": 110.890001
     },
     {
       "id": 9,
-      "start": 111.8,
+      "start": 111.789999,
       "speaker": "SPEAKER",
       "en": "Well, the area was completelydestroyedby bombs during the war in 1940.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 111.789999,
+          "end": 112.08
+        },
+        {
+          "word": "the",
+          "start": 112.539999,
+          "end": 112.66999999999999
+        },
+        {
+          "word": "area",
+          "start": 112.66999999999999,
+          "end": 112.909998
+        },
+        {
+          "word": "was",
+          "start": 112.909998,
+          "end": 113.04999699999999
+        },
+        {
+          "word": "completelydestroyedby",
+          "start": 113.04999699999999,
+          "end": 114.11000200000001
+        },
+        {
+          "word": "bombs",
+          "start": 114.11000200000001,
+          "end": 114.61999700000001
+        },
+        {
+          "word": "during",
+          "start": 114.61999700000001,
+          "end": 114.83999800000001
+        },
+        {
+          "word": "the",
+          "start": 114.83999800000001,
+          "end": 114.930002
+        },
+        {
+          "word": "war",
+          "start": 114.930002,
+          "end": 115.229997
+        },
+        {
+          "word": "in",
+          "start": 115.229997,
+          "end": 115.36000200000001
+        },
+        {
+          "word": "1940",
+          "start": 115.36000200000001,
+          "end": 116.159998
+        }
+      ],
       "answers": [],
-      "end": 116.2
+      "end": 116.159998
     },
     {
       "id": 10,
-      "start": 117.9,
+      "start": 117.000002,
       "speaker": "SPEAKER",
       "en": "So the opportunitywas taken to create a cultural centre that would be, what they called: 'the City's gift to the Nation'.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 117.000002,
+          "end": 117.14000100000001
+        },
+        {
+          "word": "the",
+          "start": 117.14000100000001,
+          "end": 117.309999
+        },
+        {
+          "word": "opportunitywas",
+          "start": 117.309999,
+          "end": 117.98999900000001
+        },
+        {
+          "word": "taken",
+          "start": 117.98999900000001,
+          "end": 118.330003
+        },
+        {
+          "word": "to",
+          "start": 118.330003,
+          "end": 118.41999999999999
+        },
+        {
+          "word": "create",
+          "start": 118.41999999999999,
+          "end": 118.82000099999999
+        },
+        {
+          "word": "a",
+          "start": 118.82000099999999,
+          "end": 118.86999700000001
+        },
+        {
+          "word": "cultural",
+          "start": 118.86999700000001,
+          "end": 119.36000200000001
+        },
+        {
+          "word": "centre",
+          "start": 119.36000200000001,
+          "end": 119.68999600000001
+        },
+        {
+          "word": "that",
+          "start": 119.68999600000001,
+          "end": 119.82000099999999
+        },
+        {
+          "word": "would",
+          "start": 119.82000099999999,
+          "end": 120.01000400000001
+        },
+        {
+          "word": "be",
+          "start": 120.01000400000001,
+          "end": 120.29999699999999
+        },
+        {
+          "word": "what",
+          "start": 120.449998,
+          "end": 120.61000200000001
+        },
+        {
+          "word": "they",
+          "start": 120.61000200000001,
+          "end": 120.78
+        },
+        {
+          "word": "called",
+          "start": 120.78,
+          "end": 121.229997
+        },
+        {
+          "word": "the",
+          "start": 121.54000200000002,
+          "end": 121.650003
+        },
+        {
+          "word": "City",
+          "start": 121.650003,
+          "end": 121.979997
+        },
+        {
+          "word": "'s",
+          "start": 121.979997,
+          "end": 122.07000099999999
+        },
+        {
+          "word": "gift",
+          "start": 122.07000099999999,
+          "end": 122.379999
+        },
+        {
+          "word": "to",
+          "start": 122.379999,
+          "end": 122.47000299999999
+        },
+        {
+          "word": "the",
+          "start": 122.47000299999999,
+          "end": 122.559999
+        },
+        {
+          "word": "Nation",
+          "start": 122.559999,
+          "end": 123.04999699999999
+        }
+      ],
       "answers": [],
-      "end": 123.1
+      "end": 123.04999699999999
     },
     {
       "id": 11,
-      "start": 124.1,
+      "start": 123.86999700000001,
       "speaker": "SPEAKER",
       "en": "Of course it took a while for such a big project to get started, but it was planned in the 60s, built in the 70s and eventuallyopened to the public in 1983.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Of",
+          "start": 123.86999700000001,
+          "end": 123.97000299999999
+        },
+        {
+          "word": "course",
+          "start": 123.97000299999999,
+          "end": 124.23999900000001
+        },
+        {
+          "word": "it",
+          "start": 124.57000099999999,
+          "end": 124.64000100000001
+        },
+        {
+          "word": "took",
+          "start": 124.64000100000001,
+          "end": 124.76999800000002
+        },
+        {
+          "word": "a",
+          "start": 124.76999800000002,
+          "end": 124.83999800000001
+        },
+        {
+          "word": "while",
+          "start": 124.83999800000001,
+          "end": 125.1
+        },
+        {
+          "word": "for",
+          "start": 125.1,
+          "end": 125.18999600000001
+        },
+        {
+          "word": "such",
+          "start": 125.18999600000001,
+          "end": 125.449998
+        },
+        {
+          "word": "a",
+          "start": 125.449998,
+          "end": 125.479997
+        },
+        {
+          "word": "big",
+          "start": 125.479997,
+          "end": 125.710001
+        },
+        {
+          "word": "project",
+          "start": 125.710001,
+          "end": 126.04000200000002
+        },
+        {
+          "word": "to",
+          "start": 126.04000200000002,
+          "end": 126.1
+        },
+        {
+          "word": "get",
+          "start": 126.1,
+          "end": 126.26000400000001
+        },
+        {
+          "word": "started",
+          "start": 126.26000400000001,
+          "end": 126.830003
+        },
+        {
+          "word": "but",
+          "start": 127.23999900000001,
+          "end": 127.36999700000001
+        },
+        {
+          "word": "it",
+          "start": 127.36999700000001,
+          "end": 127.400003
+        },
+        {
+          "word": "was",
+          "start": 127.400003,
+          "end": 127.51000400000001
+        },
+        {
+          "word": "planned",
+          "start": 127.51000400000001,
+          "end": 127.86000200000001
+        },
+        {
+          "word": "in",
+          "start": 127.86000200000001,
+          "end": 127.930002
+        },
+        {
+          "word": "the",
+          "start": 127.930002,
+          "end": 127.98999900000001
+        },
+        {
+          "word": "60",
+          "start": 127.98999900000001,
+          "end": 128.580003
+        },
+        {
+          "word": "s",
+          "start": 127.98999900000001,
+          "end": 128.580003
+        },
+        {
+          "word": "built",
+          "start": 128.78,
+          "end": 129.010004
+        },
+        {
+          "word": "in",
+          "start": 129.010004,
+          "end": 129.080003
+        },
+        {
+          "word": "the",
+          "start": 129.080003,
+          "end": 129.140001
+        },
+        {
+          "word": "70",
+          "start": 129.140001,
+          "end": 129.699998
+        },
+        {
+          "word": "s",
+          "start": 129.140001,
+          "end": 129.699998
+        },
+        {
+          "word": "and",
+          "start": 130.129999,
+          "end": 130.239999
+        },
+        {
+          "word": "eventuallyopened",
+          "start": 130.239999,
+          "end": 130.890001
+        },
+        {
+          "word": "to",
+          "start": 130.890001,
+          "end": 130.92
+        },
+        {
+          "word": "the",
+          "start": 130.92,
+          "end": 130.979997
+        },
+        {
+          "word": "public",
+          "start": 130.979997,
+          "end": 131.460001
+        },
+        {
+          "word": "in",
+          "start": 131.659998,
+          "end": 131.85
+        },
+        {
+          "word": "1983",
+          "start": 131.85,
+          "end": 132.78
+        }
+      ],
       "answers": [],
-      "end": 132.8
+      "end": 132.78
     },
     {
       "id": 12,
-      "start": 133.9,
+      "start": 133.860002,
       "speaker": "SPEAKER",
       "en": "Ever since 013 & 14 then it has provedto be a great success.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Ever",
+          "start": 133.860002,
+          "end": 134.03
+        },
+        {
+          "word": "since",
+          "start": 134.03,
+          "end": 134.089998
+        },
+        {
+          "word": "013",
+          "start": 134.089998,
+          "end": 134.199998
+        },
+        {
+          "word": "14",
+          "start": 134.199998,
+          "end": 134.299997
+        },
+        {
+          "word": "then",
+          "start": 134.35,
+          "end": 134.650003
+        },
+        {
+          "word": "it",
+          "start": 134.939996,
+          "end": 135.04000200000002
+        },
+        {
+          "word": "has",
+          "start": 135.04000200000002,
+          "end": 135.129999
+        },
+        {
+          "word": "provedto",
+          "start": 135.129999,
+          "end": 135.449998
+        },
+        {
+          "word": "be",
+          "start": 135.449998,
+          "end": 135.54000200000002
+        },
+        {
+          "word": "a",
+          "start": 135.54000200000002,
+          "end": 135.6
+        },
+        {
+          "word": "great",
+          "start": 135.6,
+          "end": 135.930002
+        },
+        {
+          "word": "success",
+          "start": 135.930002,
+          "end": 136.54000200000002
+        }
+      ],
       "answers": [],
-      "end": 136.6
+      "end": 136.54000200000002
     },
     {
       "id": 13,
-      "start": 138.4,
+      "start": 138.089998,
       "speaker": "SPEAKER",
       "en": "It is not privatelyowned, like many arts centres, but is still in public hands- it's run by the City Council.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 138.089998,
+          "end": 138.229997
+        },
+        {
+          "word": "is",
+          "start": 138.229997,
+          "end": 138.299997
+        },
+        {
+          "word": "not",
+          "start": 138.299997,
+          "end": 138.53
+        },
+        {
+          "word": "privatelyowned",
+          "start": 138.53,
+          "end": 139.29000200000002
+        },
+        {
+          "word": "like",
+          "start": 139.510004,
+          "end": 139.710001
+        },
+        {
+          "word": "many",
+          "start": 139.710001,
+          "end": 139.949998
+        },
+        {
+          "word": "arts",
+          "start": 139.949998,
+          "end": 140.189996
+        },
+        {
+          "word": "centres",
+          "start": 140.189996,
+          "end": 140.510004
+        },
+        {
+          "word": "but",
+          "start": 140.949998,
+          "end": 141.1
+        },
+        {
+          "word": "is",
+          "start": 141.1,
+          "end": 141.35
+        },
+        {
+          "word": "still",
+          "start": 141.35,
+          "end": 141.549997
+        },
+        {
+          "word": "in",
+          "start": 141.549997,
+          "end": 141.67
+        },
+        {
+          "word": "public",
+          "start": 141.67,
+          "end": 141.979997
+        },
+        {
+          "word": "hands",
+          "start": 141.979997,
+          "end": 142.42
+        },
+        {
+          "word": "it",
+          "start": 142.720003,
+          "end": 142.939996
+        },
+        {
+          "word": "'s",
+          "start": 142.720003,
+          "end": 142.939996
+        },
+        {
+          "word": "run",
+          "start": 142.939996,
+          "end": 143.150003
+        },
+        {
+          "word": "by",
+          "start": 143.150003,
+          "end": 143.29000200000002
+        },
+        {
+          "word": "the",
+          "start": 143.29000200000002,
+          "end": 143.35
+        },
+        {
+          "word": "City",
+          "start": 143.35,
+          "end": 143.6
+        },
+        {
+          "word": "Council",
+          "start": 143.6,
+          "end": 144.070001
+        }
+      ],
       "answers": [],
-      "end": 144.5
+      "end": 144.070001
     },
     {
       "id": 14,
-      "start": 172.1,
+      "start": 145.189996,
       "speaker": "SPEAKER",
       "en": "Both our NationalSymphony 015 Orchestraand NationalTheatre Companywere involvedin the planningof the project, and they are now based there - giving regular performancesevery week - and as the Centre is open 3?3 days of the year, there are plenty of performancesto choose fr_om. 016 So, to give you some idea of what's on, and to help you choosefrom the many possibilities, we've made a selectionof the star attractions.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Both",
+          "start": 145.189996,
+          "end": 145.439996
+        },
+        {
+          "word": "our",
+          "start": 145.439996,
+          "end": 145.580003
+        },
+        {
+          "word": "NationalSymphony",
+          "start": 145.580003,
+          "end": 146.460001
+        },
+        {
+          "word": "015",
+          "start": 146.460001,
+          "end": 146.51999800000002
+        },
+        {
+          "word": "Orchestraand",
+          "start": 146.51999800000002,
+          "end": 147.059999
+        },
+        {
+          "word": "NationalTheatre",
+          "start": 147.28,
+          "end": 148.150003
+        },
+        {
+          "word": "Companywere",
+          "start": 148.150003,
+          "end": 148.680002
+        },
+        {
+          "word": "involvedin",
+          "start": 148.680002,
+          "end": 149.140001
+        },
+        {
+          "word": "the",
+          "start": 149.140001,
+          "end": 149.229997
+        },
+        {
+          "word": "planningof",
+          "start": 149.229997,
+          "end": 149.610002
+        },
+        {
+          "word": "the",
+          "start": 149.610002,
+          "end": 149.680002
+        },
+        {
+          "word": "project",
+          "start": 149.680002,
+          "end": 150.159998
+        },
+        {
+          "word": "and",
+          "start": 150.53,
+          "end": 150.640001
+        },
+        {
+          "word": "they",
+          "start": 150.640001,
+          "end": 150.710001
+        },
+        {
+          "word": "are",
+          "start": 150.710001,
+          "end": 150.76999800000002
+        },
+        {
+          "word": "now",
+          "start": 150.76999800000002,
+          "end": 150.960001
+        },
+        {
+          "word": "based",
+          "start": 150.960001,
+          "end": 151.299997
+        },
+        {
+          "word": "there",
+          "start": 151.299997,
+          "end": 151.510004
+        },
+        {
+          "word": "giving",
+          "start": 151.820001,
+          "end": 152.129999
+        },
+        {
+          "word": "regular",
+          "start": 152.129999,
+          "end": 152.439996
+        },
+        {
+          "word": "performancesevery",
+          "start": 152.439996,
+          "end": 153.379999
+        },
+        {
+          "word": "week",
+          "start": 153.379999,
+          "end": 153.739999
+        },
+        {
+          "word": "and",
+          "start": 154.360002,
+          "end": 154.589998
+        },
+        {
+          "word": "as",
+          "start": 154.589998,
+          "end": 154.67
+        },
+        {
+          "word": "the",
+          "start": 154.67,
+          "end": 154.78
+        },
+        {
+          "word": "Centre",
+          "start": 154.78,
+          "end": 155.059999
+        },
+        {
+          "word": "is",
+          "start": 155.059999,
+          "end": 155.180002
+        },
+        {
+          "word": "open",
+          "start": 155.180002,
+          "end": 155.470003
+        },
+        {
+          "word": "3",
+          "start": 155.470003,
+          "end": 156.150003
+        },
+        {
+          "word": "3",
+          "start": 156.26999800000002,
+          "end": 156.949998
+        },
+        {
+          "word": "days",
+          "start": 156.949998,
+          "end": 157.210001
+        },
+        {
+          "word": "of",
+          "start": 157.210001,
+          "end": 157.29000200000002
+        },
+        {
+          "word": "the",
+          "start": 157.29000200000002,
+          "end": 157.35
+        },
+        {
+          "word": "year",
+          "start": 157.35,
+          "end": 157.78
+        },
+        {
+          "word": "there",
+          "start": 158.26999800000002,
+          "end": 158.390001
+        },
+        {
+          "word": "are",
+          "start": 158.390001,
+          "end": 158.439996
+        },
+        {
+          "word": "plenty",
+          "start": 158.439996,
+          "end": 158.729997
+        },
+        {
+          "word": "of",
+          "start": 158.729997,
+          "end": 158.79000200000002
+        },
+        {
+          "word": "performancesto",
+          "start": 158.79000200000002,
+          "end": 159.430002
+        },
+        {
+          "word": "choose",
+          "start": 159.430002,
+          "end": 159.750002
+        },
+        {
+          "word": "fr",
+          "start": 159.750002,
+          "end": 159.869997
+        },
+        {
+          "word": "om",
+          "start": 159.869997,
+          "end": 160.010004
+        },
+        {
+          "word": "016",
+          "start": 163.559999,
+          "end": 169.659998
+        },
+        {
+          "word": "So",
+          "start": 192.139993,
+          "end": 192.400003
+        },
+        {
+          "word": "to",
+          "start": 192.56000699999998,
+          "end": 193.790002
+        },
+        {
+          "word": "give",
+          "start": 198.090005,
+          "end": 198.329996
+        },
+        {
+          "word": "you",
+          "start": 198.329996,
+          "end": 198.400003
+        },
+        {
+          "word": "some",
+          "start": 198.400003,
+          "end": 198.6
+        },
+        {
+          "word": "idea",
+          "start": 198.6,
+          "end": 198.930002
+        },
+        {
+          "word": "of",
+          "start": 198.930002,
+          "end": 198.999994
+        },
+        {
+          "word": "what",
+          "start": 198.999994,
+          "end": 199.269998
+        },
+        {
+          "word": "'s",
+          "start": 198.999994,
+          "end": 199.269998
+        },
+        {
+          "word": "on",
+          "start": 199.269998,
+          "end": 199.650003
+        },
+        {
+          "word": "and",
+          "start": 199.680002,
+          "end": 199.900003
+        },
+        {
+          "word": "to",
+          "start": 199.900003,
+          "end": 199.980005
+        },
+        {
+          "word": "help",
+          "start": 199.980005,
+          "end": 200.180002
+        },
+        {
+          "word": "you",
+          "start": 200.180002,
+          "end": 200.26000399999998
+        },
+        {
+          "word": "choosefrom",
+          "start": 200.26000399999998,
+          "end": 200.730005
+        },
+        {
+          "word": "the",
+          "start": 200.730005,
+          "end": 200.790002
+        },
+        {
+          "word": "many",
+          "start": 200.790002,
+          "end": 201.1
+        },
+        {
+          "word": "possibilities",
+          "start": 201.1,
+          "end": 201.859995
+        },
+        {
+          "word": "we",
+          "start": 202.329996,
+          "end": 202.499994
+        },
+        {
+          "word": "'ve",
+          "start": 202.329996,
+          "end": 202.499994
+        },
+        {
+          "word": "made",
+          "start": 202.499994,
+          "end": 202.680002
+        },
+        {
+          "word": "a",
+          "start": 202.680002,
+          "end": 202.730005
+        },
+        {
+          "word": "selectionof",
+          "start": 202.730005,
+          "end": 203.230005
+        },
+        {
+          "word": "the",
+          "start": 203.230005,
+          "end": 203.299997
+        },
+        {
+          "word": "star",
+          "start": 203.299997,
+          "end": 203.629999
+        },
+        {
+          "word": "attractions",
+          "start": 203.629999,
+          "end": 204.340005
+        }
+      ],
       "answers": [],
-      "end": 205.6
+      "end": 204.340005
     },
     {
       "id": 15,
-      "start": 205.7,
+      "start": 205.529993,
       "speaker": "SPEAKER",
       "en": "If you're interestedin classical music, then we recommendyou go along to the Nationalon either Mondayor Tuesdayeveningat 7.30 for a spectacularproductionof 'The Magic Flute' - probablythe most popularof all Mozart'soperas.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 205.529993,
+          "end": 205.710001
+        },
+        {
+          "word": "you",
+          "start": 205.710001,
+          "end": 205.859995
+        },
+        {
+          "word": "'re",
+          "start": 205.710001,
+          "end": 205.859995
+        },
+        {
+          "word": "interestedin",
+          "start": 205.859995,
+          "end": 206.290002
+        },
+        {
+          "word": "classical",
+          "start": 206.290002,
+          "end": 206.71999499999998
+        },
+        {
+          "word": "music",
+          "start": 206.71999499999998,
+          "end": 207.150003
+        },
+        {
+          "word": "then",
+          "start": 207.549997,
+          "end": 207.710001
+        },
+        {
+          "word": "we",
+          "start": 207.710001,
+          "end": 207.829996
+        },
+        {
+          "word": "recommendyou",
+          "start": 207.829996,
+          "end": 208.389993
+        },
+        {
+          "word": "go",
+          "start": 208.389993,
+          "end": 208.620004
+        },
+        {
+          "word": "along",
+          "start": 208.620004,
+          "end": 208.900003
+        },
+        {
+          "word": "to",
+          "start": 208.900003,
+          "end": 208.96999499999998
+        },
+        {
+          "word": "the",
+          "start": 208.96999499999998,
+          "end": 209.06000699999998
+        },
+        {
+          "word": "Nationalon",
+          "start": 209.06000699999998,
+          "end": 209.779993
+        },
+        {
+          "word": "either",
+          "start": 209.779993,
+          "end": 210.040002
+        },
+        {
+          "word": "Mondayor",
+          "start": 210.040002,
+          "end": 210.779993
+        },
+        {
+          "word": "Tuesdayeveningat",
+          "start": 210.779993,
+          "end": 211.81000699999998
+        },
+        {
+          "word": "7",
+          "start": 211.81000699999998,
+          "end": 211.870004
+        },
+        {
+          "word": "30",
+          "start": 211.96999499999998,
+          "end": 212.700006
+        },
+        {
+          "word": "for",
+          "start": 213.049997,
+          "end": 213.159998
+        },
+        {
+          "word": "a",
+          "start": 213.159998,
+          "end": 213.200006
+        },
+        {
+          "word": "spectacularproductionof",
+          "start": 213.200006,
+          "end": 214.450006
+        },
+        {
+          "word": "The",
+          "start": 214.450006,
+          "end": 214.529993
+        },
+        {
+          "word": "Magic",
+          "start": 214.529993,
+          "end": 214.950006
+        },
+        {
+          "word": "Flute",
+          "start": 214.950006,
+          "end": 215.359995
+        },
+        {
+          "word": "probablythe",
+          "start": 215.879999,
+          "end": 216.340005
+        },
+        {
+          "word": "most",
+          "start": 216.340005,
+          "end": 216.670007
+        },
+        {
+          "word": "popularof",
+          "start": 216.670007,
+          "end": 217.189996
+        },
+        {
+          "word": "all",
+          "start": 217.189996,
+          "end": 217.389993
+        },
+        {
+          "word": "Mozart'soperas",
+          "start": 217.389993,
+          "end": 218.35
+        }
+      ],
       "answers": [],
-      "end": 211.0
+      "end": 218.35
     },
     {
       "id": 16,
-      "start": 219.4,
+      "start": 219.290002,
       "speaker": "SPEAKER",
       "en": "It's in the Garden Hall and tickets start 017 at only £8.00, but you'll have to be early if you want to get them that cheap!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 219.290002,
+          "end": 219.46999499999998
+        },
+        {
+          "word": "'s",
+          "start": 219.290002,
+          "end": 219.46999499999998
+        },
+        {
+          "word": "in",
+          "start": 219.46999499999998,
+          "end": 219.56000699999998
+        },
+        {
+          "word": "the",
+          "start": 219.56000699999998,
+          "end": 219.629999
+        },
+        {
+          "word": "Garden",
+          "start": 219.629999,
+          "end": 219.98999899999998
+        },
+        {
+          "word": "Hall",
+          "start": 219.98999899999998,
+          "end": 220.31000699999998
+        },
+        {
+          "word": "and",
+          "start": 220.460001,
+          "end": 220.6
+        },
+        {
+          "word": "tickets",
+          "start": 220.6,
+          "end": 220.900003
+        },
+        {
+          "word": "start",
+          "start": 220.900003,
+          "end": 221.180002
+        },
+        {
+          "word": "017",
+          "start": 221.180002,
+          "end": 221.21999499999998
+        },
+        {
+          "word": "at",
+          "start": 221.21999499999998,
+          "end": 221.279993
+        },
+        {
+          "word": "only",
+          "start": 221.279993,
+          "end": 221.6
+        },
+        {
+          "word": "8",
+          "start": 221.6,
+          "end": 221.81000699999998
+        },
+        {
+          "word": "00",
+          "start": 221.81000699999998,
+          "end": 222.299997
+        },
+        {
+          "word": "but",
+          "start": 222.889993,
+          "end": 223.049997
+        },
+        {
+          "word": "you",
+          "start": 223.049997,
+          "end": 223.120004
+        },
+        {
+          "word": "'ll",
+          "start": 223.120004,
+          "end": 223.159998
+        },
+        {
+          "word": "have",
+          "start": 223.159998,
+          "end": 223.269998
+        },
+        {
+          "word": "to",
+          "start": 223.269998,
+          "end": 223.340005
+        },
+        {
+          "word": "be",
+          "start": 223.340005,
+          "end": 223.46999499999998
+        },
+        {
+          "word": "early",
+          "start": 223.46999499999998,
+          "end": 223.73999899999998
+        },
+        {
+          "word": "if",
+          "start": 223.73999899999998,
+          "end": 223.820001
+        },
+        {
+          "word": "you",
+          "start": 223.820001,
+          "end": 223.920007
+        },
+        {
+          "word": "want",
+          "start": 223.920007,
+          "end": 224.040002
+        },
+        {
+          "word": "to",
+          "start": 224.040002,
+          "end": 224.1
+        },
+        {
+          "word": "get",
+          "start": 224.1,
+          "end": 224.189996
+        },
+        {
+          "word": "them",
+          "start": 224.189996,
+          "end": 224.329996
+        },
+        {
+          "word": "that",
+          "start": 224.329996,
+          "end": 224.540002
+        },
+        {
+          "word": "cheap",
+          "start": 224.540002,
+          "end": 224.870004
+        }
+      ],
       "answers": [],
-      "end": 225.7
+      "end": 224.870004
     },
     {
       "id": 17,
-      "start": 225.8,
+      "start": 225.590005,
       "speaker": "SPEAKER",
       "en": "And remember, it's only on for those two evenings.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 225.590005,
+          "end": 225.73999899999998
+        },
+        {
+          "word": "remember",
+          "start": 225.73999899999998,
+          "end": 226.129999
+        },
+        {
+          "word": "it",
+          "start": 226.370004,
+          "end": 226.590005
+        },
+        {
+          "word": "'s",
+          "start": 226.370004,
+          "end": 226.590005
+        },
+        {
+          "word": "only",
+          "start": 226.590005,
+          "end": 226.930002
+        },
+        {
+          "word": "on",
+          "start": 226.930002,
+          "end": 227.150003
+        },
+        {
+          "word": "for",
+          "start": 227.150003,
+          "end": 227.279993
+        },
+        {
+          "word": "those",
+          "start": 227.279993,
+          "end": 227.620004
+        },
+        {
+          "word": "two",
+          "start": 227.620004,
+          "end": 227.879999
+        },
+        {
+          "word": "evenings",
+          "start": 227.879999,
+          "end": 228.329996
+        }
+      ],
       "answers": [],
-      "end": 228.4
+      "end": 228.329996
     },
     {
       "id": 18,
-      "start": 229.7,
+      "start": 229.150003,
       "speaker": "SPEAKER",
       "en": "For those more interestedin the cinema,you might like to see the new Canadianfilm which is showingon Wednesdayeveningat 8pm in Cinema 2.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "For",
+          "start": 229.150003,
+          "end": 229.35
+        },
+        {
+          "word": "those",
+          "start": 229.35,
+          "end": 229.620004
+        },
+        {
+          "word": "more",
+          "start": 229.620004,
+          "end": 229.840005
+        },
+        {
+          "word": "interestedin",
+          "start": 229.840005,
+          "end": 230.26000399999998
+        },
+        {
+          "word": "the",
+          "start": 230.26000399999998,
+          "end": 230.340005
+        },
+        {
+          "word": "cinema",
+          "start": 230.340005,
+          "end": 230.909998
+        },
+        {
+          "word": "you",
+          "start": 231.35,
+          "end": 231.450006
+        },
+        {
+          "word": "might",
+          "start": 231.450006,
+          "end": 231.629999
+        },
+        {
+          "word": "like",
+          "start": 231.629999,
+          "end": 231.790002
+        },
+        {
+          "word": "to",
+          "start": 231.790002,
+          "end": 231.85
+        },
+        {
+          "word": "see",
+          "start": 231.85,
+          "end": 232.070001
+        },
+        {
+          "word": "the",
+          "start": 232.070001,
+          "end": 232.159998
+        },
+        {
+          "word": "new",
+          "start": 232.159998,
+          "end": 232.400003
+        },
+        {
+          "word": "Canadianfilm",
+          "start": 232.400003,
+          "end": 233.269998
+        },
+        {
+          "word": "which",
+          "start": 233.269998,
+          "end": 233.450006
+        },
+        {
+          "word": "is",
+          "start": 233.450006,
+          "end": 233.540002
+        },
+        {
+          "word": "showingon",
+          "start": 233.540002,
+          "end": 233.98999899999998
+        },
+        {
+          "word": "Wednesdayeveningat",
+          "start": 233.98999899999998,
+          "end": 234.920007
+        },
+        {
+          "word": "8",
+          "start": 234.920007,
+          "end": 235.609995
+        },
+        {
+          "word": "pm",
+          "start": 234.920007,
+          "end": 235.609995
+        },
+        {
+          "word": "in",
+          "start": 235.799997,
+          "end": 235.909998
+        },
+        {
+          "word": "Cinema",
+          "start": 235.909998,
+          "end": 236.23999899999998
+        },
+        {
+          "word": "2",
+          "start": 236.23999899999998,
+          "end": 236.769998
+        }
+      ],
       "answers": [],
-      "end": 234.5
+      "end": 236.769998
     },
     {
       "id": 19,
-      "start": 237.6,
+      "start": 237.450006,
       "speaker": "SPEAKER",
       "en": "And that's called 'Three Lives.' It's 018 had fantastic reviewsand tickets cost just £4.50, which is a reductionon the usual price of O 19 £5.50.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 237.450006,
+          "end": 237.570001
+        },
+        {
+          "word": "that",
+          "start": 237.570001,
+          "end": 237.659998
+        },
+        {
+          "word": "'s",
+          "start": 237.659998,
+          "end": 237.730005
+        },
+        {
+          "word": "called",
+          "start": 237.730005,
+          "end": 238.120004
+        },
+        {
+          "word": "Three",
+          "start": 238.279993,
+          "end": 238.659998
+        },
+        {
+          "word": "Lives",
+          "start": 238.659998,
+          "end": 239.170007
+        },
+        {
+          "word": "It",
+          "start": 239.700006,
+          "end": 239.820001
+        },
+        {
+          "word": "'s",
+          "start": 239.700006,
+          "end": 239.820001
+        },
+        {
+          "word": "018",
+          "start": 239.820001,
+          "end": 239.920007
+        },
+        {
+          "word": "had",
+          "start": 239.920007,
+          "end": 239.98999899999998
+        },
+        {
+          "word": "fantastic",
+          "start": 239.98999899999998,
+          "end": 240.529993
+        },
+        {
+          "word": "reviewsand",
+          "start": 240.529993,
+          "end": 241.070001
+        },
+        {
+          "word": "tickets",
+          "start": 241.340005,
+          "end": 241.799997
+        },
+        {
+          "word": "cost",
+          "start": 241.799997,
+          "end": 242.019998
+        },
+        {
+          "word": "just",
+          "start": 242.019998,
+          "end": 242.370004
+        },
+        {
+          "word": "4",
+          "start": 242.370004,
+          "end": 243.01000399999998
+        },
+        {
+          "word": "50",
+          "start": 243.01000399999998,
+          "end": 243.230005
+        },
+        {
+          "word": "which",
+          "start": 243.570001,
+          "end": 243.790002
+        },
+        {
+          "word": "is",
+          "start": 243.790002,
+          "end": 243.909998
+        },
+        {
+          "word": "a",
+          "start": 243.909998,
+          "end": 243.96999499999998
+        },
+        {
+          "word": "reductionon",
+          "start": 243.96999499999998,
+          "end": 244.480005
+        },
+        {
+          "word": "the",
+          "start": 244.480005,
+          "end": 244.540002
+        },
+        {
+          "word": "usual",
+          "start": 244.540002,
+          "end": 244.909998
+        },
+        {
+          "word": "price",
+          "start": 244.909998,
+          "end": 245.340005
+        },
+        {
+          "word": "of",
+          "start": 245.56000699999998,
+          "end": 245.76000399999998
+        },
+        {
+          "word": "O",
+          "start": 245.76000399999998,
+          "end": 245.790002
+        },
+        {
+          "word": "19",
+          "start": 245.790002,
+          "end": 245.96999499999998
+        },
+        {
+          "word": "5",
+          "start": 245.96999499999998,
+          "end": 246.150003
+        },
+        {
+          "word": "50",
+          "start": 246.150003,
+          "end": 246.56000699999998
+        }
+      ],
       "answers": [],
-      "end": 247.2
+      "end": 246.56000699999998
     },
     {
       "id": 20,
-      "start": 247.3,
+      "start": 246.749994,
       "speaker": "SPEAKER",
       "en": "So, it's really good value, especiallyfor such a great movie.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 246.749994,
+          "end": 247.040002
+        },
+        {
+          "word": "it",
+          "start": 247.579996,
+          "end": 247.73999899999998
+        },
+        {
+          "word": "'s",
+          "start": 247.579996,
+          "end": 247.73999899999998
+        },
+        {
+          "word": "really",
+          "start": 247.73999899999998,
+          "end": 247.900003
+        },
+        {
+          "word": "good",
+          "start": 247.900003,
+          "end": 248.070001
+        },
+        {
+          "word": "value",
+          "start": 248.070001,
+          "end": 248.400003
+        },
+        {
+          "word": "especiallyfor",
+          "start": 248.549997,
+          "end": 249.359995
+        },
+        {
+          "word": "such",
+          "start": 249.359995,
+          "end": 249.590005
+        },
+        {
+          "word": "a",
+          "start": 249.590005,
+          "end": 249.639993
+        },
+        {
+          "word": "great",
+          "start": 249.639993,
+          "end": 249.939996
+        },
+        {
+          "word": "movie",
+          "start": 249.939996,
+          "end": 250.35
+        }
+      ],
       "answers": [],
-      "end": 250.4
+      "end": 250.35
     },
     {
       "id": 21,
-      "start": 251.9,
+      "start": 251.359995,
       "speaker": "SPEAKER",
       "en": "But you can see the centre's main attractionat the weekend,becauseon Saturdayand Sunday, 11 am to 10 pm, they're showinga wonderfulnew exhibitionthat hasn't been seen anywhereelse in Europeyet.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 251.359995,
+          "end": 251.519998
+        },
+        {
+          "word": "you",
+          "start": 251.579996,
+          "end": 251.659998
+        },
+        {
+          "word": "can",
+          "start": 251.659998,
+          "end": 251.76000399999998
+        },
+        {
+          "word": "see",
+          "start": 251.76000399999998,
+          "end": 251.950006
+        },
+        {
+          "word": "the",
+          "start": 251.950006,
+          "end": 252.049997
+        },
+        {
+          "word": "centre",
+          "start": 252.049997,
+          "end": 252.379999
+        },
+        {
+          "word": "'s",
+          "start": 252.379999,
+          "end": 252.439996
+        },
+        {
+          "word": "main",
+          "start": 252.439996,
+          "end": 252.730005
+        },
+        {
+          "word": "attractionat",
+          "start": 252.730005,
+          "end": 253.269998
+        },
+        {
+          "word": "the",
+          "start": 253.269998,
+          "end": 253.340005
+        },
+        {
+          "word": "weekend",
+          "start": 253.340005,
+          "end": 253.960001
+        },
+        {
+          "word": "becauseon",
+          "start": 254.450006,
+          "end": 254.769998
+        },
+        {
+          "word": "Saturdayand",
+          "start": 254.769998,
+          "end": 255.499994
+        },
+        {
+          "word": "Sunday",
+          "start": 255.499994,
+          "end": 256.049997
+        },
+        {
+          "word": "11",
+          "start": 256.290002,
+          "end": 256.689996
+        },
+        {
+          "word": "am",
+          "start": 256.689996,
+          "end": 257.090005
+        },
+        {
+          "word": "to",
+          "start": 257.090005,
+          "end": 257.20000600000003
+        },
+        {
+          "word": "10",
+          "start": 257.20000600000003,
+          "end": 257.519998
+        },
+        {
+          "word": "pm",
+          "start": 257.519998,
+          "end": 257.999994
+        },
+        {
+          "word": "they",
+          "start": 258.40999800000003,
+          "end": 258.529993
+        },
+        {
+          "word": "'re",
+          "start": 258.40999800000003,
+          "end": 258.529993
+        },
+        {
+          "word": "showinga",
+          "start": 258.529993,
+          "end": 258.840005
+        },
+        {
+          "word": "wonderfulnew",
+          "start": 258.840005,
+          "end": 259.489999
+        },
+        {
+          "word": "exhibitionthat",
+          "start": 259.489999,
+          "end": 260.15999800000003
+        },
+        {
+          "word": "has",
+          "start": 260.15999800000003,
+          "end": 260.439996
+        },
+        {
+          "word": "n't",
+          "start": 260.15999800000003,
+          "end": 260.439996
+        },
+        {
+          "word": "been",
+          "start": 260.439996,
+          "end": 260.6
+        },
+        {
+          "word": "seen",
+          "start": 260.6,
+          "end": 261.049997
+        },
+        {
+          "word": "anywhereelse",
+          "start": 261.079996,
+          "end": 261.829996
+        },
+        {
+          "word": "in",
+          "start": 261.829996,
+          "end": 261.939996
+        },
+        {
+          "word": "Europeyet",
+          "start": 261.939996,
+          "end": 262.540002
+        }
+      ],
       "answers": [],
-      "end": 259.6
+      "end": 262.540002
     },
     {
       "id": 22,
-      "start": 263.6,
+      "start": 263.389993,
       "speaker": "SPEAKER",
       "en": "It's a collectionof ChineseArt called 'Faces of China' that's 020 in Gallery 1 - and it has some really fascinating paintings and sculptures by leading artists from all over China - and the good news is that it is completely free, so don't miss it!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 263.389993,
+          "end": 263.540002
+        },
+        {
+          "word": "'s",
+          "start": 263.389993,
+          "end": 263.540002
+        },
+        {
+          "word": "a",
+          "start": 263.540002,
+          "end": 263.590005
+        },
+        {
+          "word": "collectionof",
+          "start": 263.590005,
+          "end": 264.129999
+        },
+        {
+          "word": "ChineseArt",
+          "start": 264.129999,
+          "end": 265.129999
+        },
+        {
+          "word": "called",
+          "start": 265.299997,
+          "end": 265.719995
+        },
+        {
+          "word": "Faces",
+          "start": 265.810007,
+          "end": 266.180002
+        },
+        {
+          "word": "of",
+          "start": 266.180002,
+          "end": 266.299997
+        },
+        {
+          "word": "China",
+          "start": 266.299997,
+          "end": 266.779993
+        },
+        {
+          "word": "that",
+          "start": 267.489999,
+          "end": 267.760004
+        },
+        {
+          "word": "'s",
+          "start": 267.760004,
+          "end": 267.790002
+        },
+        {
+          "word": "020",
+          "start": 267.790002,
+          "end": 268.010004
+        },
+        {
+          "word": "in",
+          "start": 268.010004,
+          "end": 268.070001
+        },
+        {
+          "word": "Gallery",
+          "start": 268.070001,
+          "end": 268.430002
+        },
+        {
+          "word": "1",
+          "start": 268.430002,
+          "end": 268.820001
+        },
+        {
+          "word": "and",
+          "start": 269.439996,
+          "end": 269.590005
+        },
+        {
+          "word": "it",
+          "start": 269.590005,
+          "end": 269.620004
+        },
+        {
+          "word": "has",
+          "start": 269.620004,
+          "end": 269.799997
+        },
+        {
+          "word": "some",
+          "start": 269.859995,
+          "end": 270.029993
+        },
+        {
+          "word": "really",
+          "start": 270.029993,
+          "end": 270.269998
+        },
+        {
+          "word": "fascinating",
+          "start": 270.269998,
+          "end": 271.090005
+        },
+        {
+          "word": "paintings",
+          "start": 271.090005,
+          "end": 271.70000600000003
+        },
+        {
+          "word": "and",
+          "start": 271.70000600000003,
+          "end": 271.799997
+        },
+        {
+          "word": "sculptures",
+          "start": 271.799997,
+          "end": 272.400003
+        },
+        {
+          "word": "by",
+          "start": 272.400003,
+          "end": 272.6
+        },
+        {
+          "word": "leading",
+          "start": 272.6,
+          "end": 272.930002
+        },
+        {
+          "word": "artists",
+          "start": 272.930002,
+          "end": 273.370004
+        },
+        {
+          "word": "from",
+          "start": 273.370004,
+          "end": 273.70000600000003
+        },
+        {
+          "word": "all",
+          "start": 273.70000600000003,
+          "end": 273.920007
+        },
+        {
+          "word": "over",
+          "start": 273.920007,
+          "end": 274.139993
+        },
+        {
+          "word": "China",
+          "start": 274.139993,
+          "end": 274.549997
+        },
+        {
+          "word": "and",
+          "start": 275.120004,
+          "end": 275.269998
+        },
+        {
+          "word": "the",
+          "start": 275.269998,
+          "end": 275.340005
+        },
+        {
+          "word": "good",
+          "start": 275.340005,
+          "end": 275.579996
+        },
+        {
+          "word": "news",
+          "start": 275.579996,
+          "end": 275.969995
+        },
+        {
+          "word": "is",
+          "start": 276.219995,
+          "end": 276.329996
+        },
+        {
+          "word": "that",
+          "start": 276.329996,
+          "end": 276.389993
+        },
+        {
+          "word": "it",
+          "start": 276.389993,
+          "end": 276.45000600000003
+        },
+        {
+          "word": "is",
+          "start": 276.45000600000003,
+          "end": 276.570001
+        },
+        {
+          "word": "completely",
+          "start": 276.570001,
+          "end": 277.249994
+        },
+        {
+          "word": "free",
+          "start": 277.249994,
+          "end": 277.670007
+        },
+        {
+          "word": "so",
+          "start": 277.829996,
+          "end": 277.930002
+        },
+        {
+          "word": "do",
+          "start": 277.930002,
+          "end": 278.480005
+        },
+        {
+          "word": "n't",
+          "start": 277.930002,
+          "end": 278.480005
+        },
+        {
+          "word": "miss",
+          "start": 278.480005,
+          "end": 278.71000100000003
+        },
+        {
+          "word": "it",
+          "start": 278.71000100000003,
+          "end": 278.90999800000003
+        }
+      ],
       "answers": [],
-      "end": 279.0
+      "end": 278.90999800000003
     },
     {
       "id": 23,
-      "start": 280.5,
+      "start": 279.870004,
       "speaker": "SPEAKER",
       "en": "So why not go along to the National Arts Centre next week for one - or all - of these great events - and you can always pick up a programmeand check out all the other performancesand exhibitions on offer, or coming soon, on almost every day of the year.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 279.870004,
+          "end": 280.15999800000003
+        },
+        {
+          "word": "why",
+          "start": 280.359995,
+          "end": 280.579996
+        },
+        {
+          "word": "not",
+          "start": 280.579996,
+          "end": 280.739999
+        },
+        {
+          "word": "go",
+          "start": 280.739999,
+          "end": 280.920007
+        },
+        {
+          "word": "along",
+          "start": 280.920007,
+          "end": 281.180002
+        },
+        {
+          "word": "to",
+          "start": 281.180002,
+          "end": 281.260004
+        },
+        {
+          "word": "the",
+          "start": 281.260004,
+          "end": 281.35
+        },
+        {
+          "word": "National",
+          "start": 281.35,
+          "end": 281.799997
+        },
+        {
+          "word": "Arts",
+          "start": 281.799997,
+          "end": 282.019998
+        },
+        {
+          "word": "Centre",
+          "start": 282.019998,
+          "end": 282.299997
+        },
+        {
+          "word": "next",
+          "start": 282.299997,
+          "end": 282.560007
+        },
+        {
+          "word": "week",
+          "start": 282.560007,
+          "end": 282.85
+        },
+        {
+          "word": "for",
+          "start": 282.85,
+          "end": 283.040002
+        },
+        {
+          "word": "one",
+          "start": 283.040002,
+          "end": 283.359995
+        },
+        {
+          "word": "or",
+          "start": 283.359995,
+          "end": 283.70000600000003
+        },
+        {
+          "word": "all",
+          "start": 283.85,
+          "end": 284.230005
+        },
+        {
+          "word": "of",
+          "start": 284.230005,
+          "end": 284.320001
+        },
+        {
+          "word": "these",
+          "start": 284.320001,
+          "end": 284.540002
+        },
+        {
+          "word": "great",
+          "start": 284.540002,
+          "end": 284.829996
+        },
+        {
+          "word": "events",
+          "start": 284.829996,
+          "end": 285.249994
+        },
+        {
+          "word": "and",
+          "start": 285.799997,
+          "end": 285.920007
+        },
+        {
+          "word": "you",
+          "start": 285.920007,
+          "end": 285.980005
+        },
+        {
+          "word": "can",
+          "start": 285.980005,
+          "end": 286.109995
+        },
+        {
+          "word": "always",
+          "start": 286.109995,
+          "end": 286.370004
+        },
+        {
+          "word": "pick",
+          "start": 286.370004,
+          "end": 286.549997
+        },
+        {
+          "word": "up",
+          "start": 286.549997,
+          "end": 286.65999800000003
+        },
+        {
+          "word": "a",
+          "start": 286.65999800000003,
+          "end": 286.739999
+        },
+        {
+          "word": "programmeand",
+          "start": 286.739999,
+          "end": 287.370004
+        },
+        {
+          "word": "check",
+          "start": 287.650003,
+          "end": 287.859995
+        },
+        {
+          "word": "out",
+          "start": 287.859995,
+          "end": 288.010004
+        },
+        {
+          "word": "all",
+          "start": 288.010004,
+          "end": 288.21000100000003
+        },
+        {
+          "word": "the",
+          "start": 288.21000100000003,
+          "end": 288.329996
+        },
+        {
+          "word": "other",
+          "start": 288.329996,
+          "end": 288.529993
+        },
+        {
+          "word": "performancesand",
+          "start": 288.529993,
+          "end": 289.45000600000003
+        },
+        {
+          "word": "exhibitions",
+          "start": 289.45000600000003,
+          "end": 290.010004
+        },
+        {
+          "word": "on",
+          "start": 290.010004,
+          "end": 290.170007
+        },
+        {
+          "word": "offer",
+          "start": 290.170007,
+          "end": 290.439996
+        },
+        {
+          "word": "or",
+          "start": 290.439996,
+          "end": 290.790002
+        },
+        {
+          "word": "coming",
+          "start": 291.019998,
+          "end": 291.290002
+        },
+        {
+          "word": "soon",
+          "start": 291.290002,
+          "end": 291.70000600000003
+        },
+        {
+          "word": "on",
+          "start": 292.170007,
+          "end": 292.359995
+        },
+        {
+          "word": "almost",
+          "start": 292.359995,
+          "end": 292.730005
+        },
+        {
+          "word": "every",
+          "start": 292.760004,
+          "end": 293.079996
+        },
+        {
+          "word": "day",
+          "start": 293.079996,
+          "end": 293.310007
+        },
+        {
+          "word": "of",
+          "start": 293.310007,
+          "end": 293.420007
+        },
+        {
+          "word": "the",
+          "start": 293.420007,
+          "end": 293.480005
+        },
+        {
+          "word": "year",
+          "start": 293.480005,
+          "end": 293.859995
+        }
+      ],
       "answers": [],
-      "end": 294.0
+      "end": 293.859995
     },
     {
       "id": 24,
-      "start": 295.3,
+      "start": 294.999994,
       "speaker": "SPEAKER",
       "en": "Next week we'll.be looking at the new Museum of Science ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Next",
+          "start": 294.999994,
+          "end": 295.290002
+        },
+        {
+          "word": "week",
+          "start": 295.290002,
+          "end": 295.609995
+        },
+        {
+          "word": "we",
+          "start": 295.689996,
+          "end": 295.790002
+        },
+        {
+          "word": "'ll",
+          "start": 295.689996,
+          "end": 295.790002
+        },
+        {
+          "word": "be",
+          "start": 295.790002,
+          "end": 295.889993
+        },
+        {
+          "word": "looking",
+          "start": 295.889993,
+          "end": 296.15999800000003
+        },
+        {
+          "word": "at",
+          "start": 296.15999800000003,
+          "end": 296.219995
+        },
+        {
+          "word": "the",
+          "start": 296.219995,
+          "end": 296.290002
+        },
+        {
+          "word": "new",
+          "start": 296.290002,
+          "end": 296.540002
+        },
+        {
+          "word": "Museum",
+          "start": 296.540002,
+          "end": 297.049997
+        },
+        {
+          "word": "of",
+          "start": 301.590005,
+          "end": 306.65999800000003
+        },
+        {
+          "word": "Science",
+          "start": 337.790002,
+          "end": 338.230005
+        }
+      ],
       "answers": [],
-      "end": 297.5
+      "end": 338.230005
     }
   ],
   "questions": [
@@ -338,5 +3437,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 615,
+    "mfa_word_count": 612,
+    "matched_word_count": 583,
+    "audio_trim_offset": 48.6,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

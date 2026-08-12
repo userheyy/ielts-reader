@@ -7,281 +7,3687 @@
   "segments": [
     {
       "id": 1,
-      "start": 53.9,
+      "start": 0.41,
       "speaker": "SPEAKER",
       "en": "Welcome to Manham Port, where a thousand years of history are brought to life.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Welcome",
+          "start": 0.41,
+          "end": 1.22
+        },
+        {
+          "word": "to",
+          "start": 2.07,
+          "end": 8.58
+        },
+        {
+          "word": "Manham",
+          "start": 8.8,
+          "end": 9.13
+        },
+        {
+          "word": "Port",
+          "start": 9.13,
+          "end": 9.31
+        },
+        {
+          "word": "where",
+          "start": 9.31,
+          "end": 9.47
+        },
+        {
+          "word": "a",
+          "start": 10.75,
+          "end": 15.56
+        },
+        {
+          "word": "thousand",
+          "start": 45.950001,
+          "end": 46.650002
+        },
+        {
+          "word": "years",
+          "start": 46.650002,
+          "end": 46.84
+        },
+        {
+          "word": "of",
+          "start": 46.869999,
+          "end": 50.490002
+        },
+        {
+          "word": "history",
+          "start": 54.580002,
+          "end": 55.41
+        },
+        {
+          "word": "are",
+          "start": 55.41,
+          "end": 55.439999
+        },
+        {
+          "word": "brought",
+          "start": 55.439999,
+          "end": 56.0
+        },
+        {
+          "word": "to",
+          "start": 56.470001,
+          "end": 58.52
+        },
+        {
+          "word": "life",
+          "start": 58.549999,
+          "end": 59.029999
+        }
+      ],
       "answers": [],
-      "end": 59.1
+      "end": 59.029999
     },
     {
       "id": 2,
-      "start": 60.1,
+      "start": 59.98,
       "speaker": "SPEAKER",
       "en": "All the family can enjoy a day out at Manham: visit our copper mine, see models of the machinery it used, have your photo taken in nineteenth-century costume, experience at first hand how people lived at different stages throughout history, and especially how children studied, worked and played.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 59.98,
+          "end": 60.27
+        },
+        {
+          "word": "the",
+          "start": 60.27,
+          "end": 60.330002
+        },
+        {
+          "word": "family",
+          "start": 60.330002,
+          "end": 60.84
+        },
+        {
+          "word": "can",
+          "start": 60.84,
+          "end": 60.990002
+        },
+        {
+          "word": "enjoy",
+          "start": 60.990002,
+          "end": 61.41
+        },
+        {
+          "word": "a",
+          "start": 61.41,
+          "end": 61.439999
+        },
+        {
+          "word": "day",
+          "start": 61.439999,
+          "end": 61.66
+        },
+        {
+          "word": "out",
+          "start": 61.66,
+          "end": 61.950001
+        },
+        {
+          "word": "at",
+          "start": 61.950001,
+          "end": 62.049999
+        },
+        {
+          "word": "Manham",
+          "start": 62.049999,
+          "end": 62.529999
+        },
+        {
+          "word": "visit",
+          "start": 63.080002,
+          "end": 63.380001
+        },
+        {
+          "word": "our",
+          "start": 63.380001,
+          "end": 63.540001
+        },
+        {
+          "word": "copper",
+          "start": 63.540001,
+          "end": 63.84
+        },
+        {
+          "word": "mine",
+          "start": 63.84,
+          "end": 64.25
+        },
+        {
+          "word": "see",
+          "start": 64.720001,
+          "end": 64.910004
+        },
+        {
+          "word": "models",
+          "start": 65.0,
+          "end": 65.5
+        },
+        {
+          "word": "of",
+          "start": 65.5,
+          "end": 65.599998
+        },
+        {
+          "word": "the",
+          "start": 65.599998,
+          "end": 65.690002
+        },
+        {
+          "word": "machinery",
+          "start": 65.690002,
+          "end": 66.309998
+        },
+        {
+          "word": "it",
+          "start": 66.309998,
+          "end": 66.43
+        },
+        {
+          "word": "used",
+          "start": 66.43,
+          "end": 66.980003
+        },
+        {
+          "word": "have",
+          "start": 67.440002,
+          "end": 67.599998
+        },
+        {
+          "word": "your",
+          "start": 67.599998,
+          "end": 67.769997
+        },
+        {
+          "word": "photo",
+          "start": 67.769997,
+          "end": 68.190002
+        },
+        {
+          "word": "taken",
+          "start": 68.190002,
+          "end": 68.68
+        },
+        {
+          "word": "in",
+          "start": 68.68,
+          "end": 68.830002
+        },
+        {
+          "word": "nineteenth",
+          "start": 68.830002,
+          "end": 69.269997
+        },
+        {
+          "word": "century",
+          "start": 69.269997,
+          "end": 69.690002
+        },
+        {
+          "word": "costume",
+          "start": 69.690002,
+          "end": 70.339996
+        },
+        {
+          "word": "experience",
+          "start": 71.040001,
+          "end": 71.800003
+        },
+        {
+          "word": "at",
+          "start": 71.800003,
+          "end": 71.900002
+        },
+        {
+          "word": "first",
+          "start": 71.900002,
+          "end": 72.32
+        },
+        {
+          "word": "hand",
+          "start": 72.419998,
+          "end": 72.720001
+        },
+        {
+          "word": "how",
+          "start": 72.970001,
+          "end": 73.160004
+        },
+        {
+          "word": "people",
+          "start": 73.160004,
+          "end": 73.510002
+        },
+        {
+          "word": "lived",
+          "start": 73.510002,
+          "end": 74.059998
+        },
+        {
+          "word": "at",
+          "start": 74.150002,
+          "end": 74.300003
+        },
+        {
+          "word": "different",
+          "start": 74.300003,
+          "end": 74.629997
+        },
+        {
+          "word": "stages",
+          "start": 74.629997,
+          "end": 75.230003
+        },
+        {
+          "word": "throughout",
+          "start": 75.260002,
+          "end": 75.589996
+        },
+        {
+          "word": "history",
+          "start": 75.589996,
+          "end": 76.129997
+        },
+        {
+          "word": "and",
+          "start": 76.57,
+          "end": 76.709999
+        },
+        {
+          "word": "especially",
+          "start": 76.709999,
+          "end": 77.440002
+        },
+        {
+          "word": "how",
+          "start": 77.660004,
+          "end": 77.870003
+        },
+        {
+          "word": "children",
+          "start": 77.870003,
+          "end": 78.620003
+        },
+        {
+          "word": "studied",
+          "start": 78.620003,
+          "end": 79.239998
+        },
+        {
+          "word": "worked",
+          "start": 79.379997,
+          "end": 80.0
+        },
+        {
+          "word": "and",
+          "start": 80.169998,
+          "end": 80.360001
+        },
+        {
+          "word": "played",
+          "start": 80.360001,
+          "end": 80.860001
+        }
+      ],
       "answers": [],
-      "end": 80.9
+      "end": 80.860001
     },
     {
       "id": 3,
-      "start": 82.5,
+      "start": 82.330002,
       "speaker": "SPEAKER",
       "en": "The port of Manham is located in beautiful and peaceful countryside, on a bend in the great River Avon, and developed here because it’s the highest navigable point of the Avon – boats can go no higher up this river – and proved a handy place to load and unload cargo to and from the sea [[ ]] , which is over 23 miles away.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 82.330002,
+          "end": 82.449997
+        },
+        {
+          "word": "port",
+          "start": 82.449997,
+          "end": 82.779999
+        },
+        {
+          "word": "of",
+          "start": 82.779999,
+          "end": 82.870003
+        },
+        {
+          "word": "Manham",
+          "start": 82.870003,
+          "end": 83.419998
+        },
+        {
+          "word": "is",
+          "start": 83.510002,
+          "end": 83.730003
+        },
+        {
+          "word": "located",
+          "start": 83.730003,
+          "end": 84.330002
+        },
+        {
+          "word": "in",
+          "start": 84.330002,
+          "end": 84.559998
+        },
+        {
+          "word": "beautiful",
+          "start": 84.559998,
+          "end": 85.139999
+        },
+        {
+          "word": "and",
+          "start": 85.139999,
+          "end": 85.300003
+        },
+        {
+          "word": "peaceful",
+          "start": 85.300003,
+          "end": 85.769997
+        },
+        {
+          "word": "countryside",
+          "start": 85.769997,
+          "end": 86.57
+        },
+        {
+          "word": "on",
+          "start": 87.169998,
+          "end": 87.309998
+        },
+        {
+          "word": "a",
+          "start": 87.309998,
+          "end": 87.370003
+        },
+        {
+          "word": "bend",
+          "start": 87.370003,
+          "end": 87.900002
+        },
+        {
+          "word": "in",
+          "start": 87.900002,
+          "end": 88.059998
+        },
+        {
+          "word": "the",
+          "start": 88.059998,
+          "end": 88.139999
+        },
+        {
+          "word": "great",
+          "start": 88.139999,
+          "end": 88.470001
+        },
+        {
+          "word": "River",
+          "start": 88.470001,
+          "end": 88.82
+        },
+        {
+          "word": "Avon",
+          "start": 88.82,
+          "end": 89.339996
+        },
+        {
+          "word": "and",
+          "start": 89.940002,
+          "end": 90.080002
+        },
+        {
+          "word": "developed",
+          "start": 90.080002,
+          "end": 90.540001
+        },
+        {
+          "word": "here",
+          "start": 90.540001,
+          "end": 90.800003
+        },
+        {
+          "word": "because",
+          "start": 91.129997,
+          "end": 91.400002
+        },
+        {
+          "word": "it",
+          "start": 91.400002,
+          "end": 91.57
+        },
+        {
+          "word": "'s",
+          "start": 91.400002,
+          "end": 91.57
+        },
+        {
+          "word": "the",
+          "start": 91.57,
+          "end": 91.660004
+        },
+        {
+          "word": "highest",
+          "start": 91.660004,
+          "end": 92.330002
+        },
+        {
+          "word": "navigable",
+          "start": 92.330002,
+          "end": 92.93
+        },
+        {
+          "word": "point",
+          "start": 92.93,
+          "end": 93.300003
+        },
+        {
+          "word": "of",
+          "start": 93.300003,
+          "end": 93.379997
+        },
+        {
+          "word": "the",
+          "start": 93.379997,
+          "end": 93.589996
+        },
+        {
+          "word": "Avon",
+          "start": 93.589996,
+          "end": 93.989998
+        },
+        {
+          "word": "boats",
+          "start": 94.480003,
+          "end": 94.839996
+        },
+        {
+          "word": "can",
+          "start": 94.839996,
+          "end": 95.080002
+        },
+        {
+          "word": "go",
+          "start": 95.080002,
+          "end": 95.339996
+        },
+        {
+          "word": "no",
+          "start": 95.339996,
+          "end": 95.559998
+        },
+        {
+          "word": "higher",
+          "start": 95.559998,
+          "end": 96.0
+        },
+        {
+          "word": "up",
+          "start": 96.0,
+          "end": 96.150002
+        },
+        {
+          "word": "this",
+          "start": 96.150002,
+          "end": 96.370003
+        },
+        {
+          "word": "river",
+          "start": 96.370003,
+          "end": 96.730003
+        },
+        {
+          "word": "and",
+          "start": 97.400002,
+          "end": 97.57
+        },
+        {
+          "word": "proved",
+          "start": 97.57,
+          "end": 97.959999
+        },
+        {
+          "word": "a",
+          "start": 97.959999,
+          "end": 98.0
+        },
+        {
+          "word": "handy",
+          "start": 98.190002,
+          "end": 98.419998
+        },
+        {
+          "word": "place",
+          "start": 98.419998,
+          "end": 98.879997
+        },
+        {
+          "word": "to",
+          "start": 98.879997,
+          "end": 99.019997
+        },
+        {
+          "word": "load",
+          "start": 99.019997,
+          "end": 99.489998
+        },
+        {
+          "word": "and",
+          "start": 99.489998,
+          "end": 99.650002
+        },
+        {
+          "word": "unload",
+          "start": 99.650002,
+          "end": 100.18
+        },
+        {
+          "word": "cargo",
+          "start": 100.18,
+          "end": 100.779999
+        },
+        {
+          "word": "to",
+          "start": 100.970001,
+          "end": 101.239998
+        },
+        {
+          "word": "and",
+          "start": 101.239998,
+          "end": 101.379997
+        },
+        {
+          "word": "from",
+          "start": 101.379997,
+          "end": 101.699997
+        },
+        {
+          "word": "the",
+          "start": 101.699997,
+          "end": 101.800003
+        },
+        {
+          "word": "sea",
+          "start": 101.800003,
+          "end": 102.269997
+        },
+        {
+          "word": "which",
+          "start": 102.559998,
+          "end": 102.75
+        },
+        {
+          "word": "is",
+          "start": 102.75,
+          "end": 102.860001
+        },
+        {
+          "word": "over",
+          "start": 102.860001,
+          "end": 102.93
+        },
+        {
+          "word": "23",
+          "start": 102.93,
+          "end": 103.629997
+        },
+        {
+          "word": "miles",
+          "start": 103.629997,
+          "end": 104.019997
+        },
+        {
+          "word": "away",
+          "start": 104.019997,
+          "end": 104.419998
+        }
+      ],
       "answers": [
         11
       ],
-      "end": 104.5
+      "end": 104.419998
     },
     {
       "id": 4,
-      "start": 106.1,
+      "start": 105.860001,
       "speaker": "SPEAKER",
       "en": "A small port was already established here when, about 900 years ago, tin was discovered nearby, though it wasn’t until the Industrial Revolution, when a tremendous need for metals of all kinds developed, that Manham expanded to become one of the busiest ports in the country [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "A",
+          "start": 105.860001,
+          "end": 105.940002
+        },
+        {
+          "word": "small",
+          "start": 105.940002,
+          "end": 106.379997
+        },
+        {
+          "word": "port",
+          "start": 106.379997,
+          "end": 106.889999
+        },
+        {
+          "word": "was",
+          "start": 106.889999,
+          "end": 107.019997
+        },
+        {
+          "word": "already",
+          "start": 107.019997,
+          "end": 107.410004
+        },
+        {
+          "word": "established",
+          "start": 107.410004,
+          "end": 108.019997
+        },
+        {
+          "word": "here",
+          "start": 108.019997,
+          "end": 108.309998
+        },
+        {
+          "word": "when",
+          "start": 108.610001,
+          "end": 109.010002
+        },
+        {
+          "word": "about",
+          "start": 109.040001,
+          "end": 109.400002
+        },
+        {
+          "word": "900",
+          "start": 109.400002,
+          "end": 110.019997
+        },
+        {
+          "word": "years",
+          "start": 110.019997,
+          "end": 110.25
+        },
+        {
+          "word": "ago",
+          "start": 110.25,
+          "end": 110.620003
+        },
+        {
+          "word": "tin",
+          "start": 110.980003,
+          "end": 111.370003
+        },
+        {
+          "word": "was",
+          "start": 111.370003,
+          "end": 111.519997
+        },
+        {
+          "word": "discovered",
+          "start": 111.519997,
+          "end": 112.089996
+        },
+        {
+          "word": "nearby",
+          "start": 112.089996,
+          "end": 112.720001
+        },
+        {
+          "word": "though",
+          "start": 113.089996,
+          "end": 113.379997
+        },
+        {
+          "word": "it",
+          "start": 113.379997,
+          "end": 113.489998
+        },
+        {
+          "word": "was",
+          "start": 113.489998,
+          "end": 113.879997
+        },
+        {
+          "word": "n't",
+          "start": 113.489998,
+          "end": 113.879997
+        },
+        {
+          "word": "until",
+          "start": 113.879997,
+          "end": 114.199997
+        },
+        {
+          "word": "the",
+          "start": 114.199997,
+          "end": 114.330002
+        },
+        {
+          "word": "Industrial",
+          "start": 114.330002,
+          "end": 114.860001
+        },
+        {
+          "word": "Revolution",
+          "start": 114.860001,
+          "end": 115.620003
+        },
+        {
+          "word": "when",
+          "start": 115.949997,
+          "end": 116.089996
+        },
+        {
+          "word": "a",
+          "start": 116.089996,
+          "end": 116.120003
+        },
+        {
+          "word": "tremendous",
+          "start": 116.120003,
+          "end": 116.800003
+        },
+        {
+          "word": "need",
+          "start": 116.800003,
+          "end": 117.25
+        },
+        {
+          "word": "for",
+          "start": 117.25,
+          "end": 117.400002
+        },
+        {
+          "word": "metals",
+          "start": 117.400002,
+          "end": 117.889999
+        },
+        {
+          "word": "of",
+          "start": 117.889999,
+          "end": 117.989998
+        },
+        {
+          "word": "all",
+          "start": 117.989998,
+          "end": 118.199997
+        },
+        {
+          "word": "kinds",
+          "start": 118.199997,
+          "end": 118.699997
+        },
+        {
+          "word": "developed",
+          "start": 118.699997,
+          "end": 119.290001
+        },
+        {
+          "word": "that",
+          "start": 119.68,
+          "end": 119.830002
+        },
+        {
+          "word": "Manham",
+          "start": 119.830002,
+          "end": 120.309998
+        },
+        {
+          "word": "expanded",
+          "start": 120.470001,
+          "end": 121.239998
+        },
+        {
+          "word": "to",
+          "start": 121.239998,
+          "end": 121.339996
+        },
+        {
+          "word": "become",
+          "start": 121.339996,
+          "end": 121.699997
+        },
+        {
+          "word": "one",
+          "start": 121.699997,
+          "end": 121.879997
+        },
+        {
+          "word": "of",
+          "start": 121.879997,
+          "end": 121.989998
+        },
+        {
+          "word": "the",
+          "start": 121.989998,
+          "end": 122.080002
+        },
+        {
+          "word": "busiest",
+          "start": 122.080002,
+          "end": 122.660004
+        },
+        {
+          "word": "ports",
+          "start": 122.660004,
+          "end": 123.050003
+        },
+        {
+          "word": "in",
+          "start": 123.050003,
+          "end": 123.129997
+        },
+        {
+          "word": "the",
+          "start": 123.129997,
+          "end": 123.230003
+        },
+        {
+          "word": "country",
+          "start": 123.230003,
+          "end": 123.790001
+        }
+      ],
       "answers": [
         12
       ],
-      "end": 123.8
+      "end": 123.790001
     },
     {
       "id": 5,
-      "start": 125.1,
+      "start": 124.949997,
       "speaker": "SPEAKER",
       "en": "And because it was already so busy, prospectors began to look for other minerals, and by the end of the nineteenth century, lead, copper, manganese and arsenic were added to the cargos leaving Manham.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 124.949997,
+          "end": 125.059998
+        },
+        {
+          "word": "because",
+          "start": 125.059998,
+          "end": 125.18
+        },
+        {
+          "word": "it",
+          "start": 125.18,
+          "end": 125.239998
+        },
+        {
+          "word": "was",
+          "start": 125.410004,
+          "end": 125.529999
+        },
+        {
+          "word": "already",
+          "start": 125.529999,
+          "end": 125.879997
+        },
+        {
+          "word": "so",
+          "start": 125.879997,
+          "end": 126.089996
+        },
+        {
+          "word": "busy",
+          "start": 126.089996,
+          "end": 126.510002
+        },
+        {
+          "word": "prospectors",
+          "start": 126.919998,
+          "end": 127.589996
+        },
+        {
+          "word": "began",
+          "start": 127.589996,
+          "end": 127.910004
+        },
+        {
+          "word": "to",
+          "start": 127.910004,
+          "end": 128.009995
+        },
+        {
+          "word": "look",
+          "start": 128.009995,
+          "end": 128.220001
+        },
+        {
+          "word": "for",
+          "start": 128.220001,
+          "end": 128.369995
+        },
+        {
+          "word": "other",
+          "start": 128.369995,
+          "end": 128.570007
+        },
+        {
+          "word": "minerals",
+          "start": 128.570007,
+          "end": 129.229996
+        },
+        {
+          "word": "and",
+          "start": 129.699997,
+          "end": 129.860001
+        },
+        {
+          "word": "by",
+          "start": 129.860001,
+          "end": 130.009995
+        },
+        {
+          "word": "the",
+          "start": 130.009995,
+          "end": 130.160004
+        },
+        {
+          "word": "end",
+          "start": 130.160004,
+          "end": 130.339996
+        },
+        {
+          "word": "of",
+          "start": 130.339996,
+          "end": 130.419998
+        },
+        {
+          "word": "the",
+          "start": 130.419998,
+          "end": 130.479996
+        },
+        {
+          "word": "nineteenth",
+          "start": 130.479996,
+          "end": 130.919998
+        },
+        {
+          "word": "century",
+          "start": 130.919998,
+          "end": 131.550003
+        },
+        {
+          "word": "lead",
+          "start": 131.860001,
+          "end": 132.369995
+        },
+        {
+          "word": "copper",
+          "start": 132.520004,
+          "end": 132.979996
+        },
+        {
+          "word": "manganese",
+          "start": 133.220001,
+          "end": 134.009995
+        },
+        {
+          "word": "and",
+          "start": 134.009995,
+          "end": 134.210007
+        },
+        {
+          "word": "arsenic",
+          "start": 134.210007,
+          "end": 134.830002
+        },
+        {
+          "word": "were",
+          "start": 135.050003,
+          "end": 135.240005
+        },
+        {
+          "word": "added",
+          "start": 135.240005,
+          "end": 135.589996
+        },
+        {
+          "word": "to",
+          "start": 135.589996,
+          "end": 135.710007
+        },
+        {
+          "word": "the",
+          "start": 135.710007,
+          "end": 135.789993
+        },
+        {
+          "word": "cargos",
+          "start": 135.789993,
+          "end": 136.460007
+        },
+        {
+          "word": "leaving",
+          "start": 136.460007,
+          "end": 136.910004
+        },
+        {
+          "word": "Manham",
+          "start": 136.910004,
+          "end": 137.380005
+        }
+      ],
       "answers": [],
-      "end": 137.4
+      "end": 137.380005
     },
     {
       "id": 6,
-      "start": 139.5,
+      "start": 139.080002,
       "speaker": "SPEAKER",
       "en": "In the early days, the ores had been smelted – or processed – in the same area they were mined.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 139.080002,
+          "end": 139.25
+        },
+        {
+          "word": "the",
+          "start": 139.25,
+          "end": 139.389999
+        },
+        {
+          "word": "early",
+          "start": 139.419998,
+          "end": 139.589996
+        },
+        {
+          "word": "days",
+          "start": 139.589996,
+          "end": 140.080002
+        },
+        {
+          "word": "the",
+          "start": 140.360001,
+          "end": 140.5
+        },
+        {
+          "word": "ores",
+          "start": 140.5,
+          "end": 140.970001
+        },
+        {
+          "word": "had",
+          "start": 140.970001,
+          "end": 141.130005
+        },
+        {
+          "word": "been",
+          "start": 141.130005,
+          "end": 141.309998
+        },
+        {
+          "word": "smelted",
+          "start": 141.309998,
+          "end": 142.0
+        },
+        {
+          "word": "or",
+          "start": 142.169998,
+          "end": 142.350006
+        },
+        {
+          "word": "processed",
+          "start": 142.350006,
+          "end": 143.119995
+        },
+        {
+          "word": "in",
+          "start": 143.360001,
+          "end": 143.479996
+        },
+        {
+          "word": "the",
+          "start": 143.479996,
+          "end": 143.570007
+        },
+        {
+          "word": "same",
+          "start": 143.570007,
+          "end": 143.830002
+        },
+        {
+          "word": "area",
+          "start": 143.830002,
+          "end": 144.25
+        },
+        {
+          "word": "they",
+          "start": 144.25,
+          "end": 144.389999
+        },
+        {
+          "word": "were",
+          "start": 144.389999,
+          "end": 144.520004
+        },
+        {
+          "word": "mined",
+          "start": 144.520004,
+          "end": 145.070007
+        }
+      ],
       "answers": [],
-      "end": 145.1
+      "end": 145.070007
     },
     {
       "id": 7,
-      "start": 146.2,
+      "start": 146.020004,
       "speaker": "SPEAKER",
       "en": "But, as demand grew, the smelting process required huge factory furnaces or fires to melt the metal from the rock and there was not enough coal in the local area, so the rocks containing minerals had to be shipped long distances. [[ ]] Sadly, in the twentieth century, the great port of Manham declined, and thousands of workers were forced to emigrate out of the area [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 146.020004,
+          "end": 146.139999
+        },
+        {
+          "word": "as",
+          "start": 146.139999,
+          "end": 146.320007
+        },
+        {
+          "word": "demand",
+          "start": 146.320007,
+          "end": 146.789993
+        },
+        {
+          "word": "grew",
+          "start": 146.789993,
+          "end": 147.199997
+        },
+        {
+          "word": "the",
+          "start": 147.570007,
+          "end": 147.679993
+        },
+        {
+          "word": "smelting",
+          "start": 147.679993,
+          "end": 148.169998
+        },
+        {
+          "word": "process",
+          "start": 148.169998,
+          "end": 148.75
+        },
+        {
+          "word": "required",
+          "start": 148.75,
+          "end": 149.220001
+        },
+        {
+          "word": "huge",
+          "start": 149.220001,
+          "end": 149.809998
+        },
+        {
+          "word": "factory",
+          "start": 149.809998,
+          "end": 150.229996
+        },
+        {
+          "word": "furnaces",
+          "start": 150.229996,
+          "end": 150.979996
+        },
+        {
+          "word": "or",
+          "start": 151.169998,
+          "end": 151.330002
+        },
+        {
+          "word": "fires",
+          "start": 151.330002,
+          "end": 151.990005
+        },
+        {
+          "word": "to",
+          "start": 152.25,
+          "end": 152.389999
+        },
+        {
+          "word": "melt",
+          "start": 152.389999,
+          "end": 152.75
+        },
+        {
+          "word": "the",
+          "start": 152.75,
+          "end": 152.830002
+        },
+        {
+          "word": "metal",
+          "start": 152.830002,
+          "end": 153.199997
+        },
+        {
+          "word": "from",
+          "start": 153.199997,
+          "end": 153.410004
+        },
+        {
+          "word": "the",
+          "start": 153.410004,
+          "end": 153.509995
+        },
+        {
+          "word": "rock",
+          "start": 153.509995,
+          "end": 153.869995
+        },
+        {
+          "word": "and",
+          "start": 154.460007,
+          "end": 154.619995
+        },
+        {
+          "word": "there",
+          "start": 154.619995,
+          "end": 154.729996
+        },
+        {
+          "word": "was",
+          "start": 154.729996,
+          "end": 154.889999
+        },
+        {
+          "word": "not",
+          "start": 154.889999,
+          "end": 155.089996
+        },
+        {
+          "word": "enough",
+          "start": 155.089996,
+          "end": 155.389999
+        },
+        {
+          "word": "coal",
+          "start": 155.389999,
+          "end": 155.860001
+        },
+        {
+          "word": "in",
+          "start": 155.860001,
+          "end": 156.0
+        },
+        {
+          "word": "the",
+          "start": 156.0,
+          "end": 156.080002
+        },
+        {
+          "word": "local",
+          "start": 156.080002,
+          "end": 156.380005
+        },
+        {
+          "word": "area",
+          "start": 156.380005,
+          "end": 156.850006
+        },
+        {
+          "word": "so",
+          "start": 157.160004,
+          "end": 157.399994
+        },
+        {
+          "word": "the",
+          "start": 157.399994,
+          "end": 157.529999
+        },
+        {
+          "word": "rocks",
+          "start": 157.529999,
+          "end": 157.949997
+        },
+        {
+          "word": "containing",
+          "start": 157.949997,
+          "end": 158.479996
+        },
+        {
+          "word": "minerals",
+          "start": 158.479996,
+          "end": 158.990005
+        },
+        {
+          "word": "had",
+          "start": 159.179993,
+          "end": 159.389999
+        },
+        {
+          "word": "to",
+          "start": 159.389999,
+          "end": 159.470001
+        },
+        {
+          "word": "be",
+          "start": 159.470001,
+          "end": 159.559998
+        },
+        {
+          "word": "shipped",
+          "start": 159.559998,
+          "end": 160.039993
+        },
+        {
+          "word": "long",
+          "start": 160.039993,
+          "end": 160.350006
+        },
+        {
+          "word": "distances",
+          "start": 160.350006,
+          "end": 161.089996
+        },
+        {
+          "word": "Sadly",
+          "start": 162.399994,
+          "end": 163.0
+        },
+        {
+          "word": "in",
+          "start": 163.149994,
+          "end": 163.279999
+        },
+        {
+          "word": "the",
+          "start": 163.279999,
+          "end": 163.369995
+        },
+        {
+          "word": "twentieth",
+          "start": 163.369995,
+          "end": 163.839996
+        },
+        {
+          "word": "century",
+          "start": 163.839996,
+          "end": 164.419998
+        },
+        {
+          "word": "the",
+          "start": 164.850006,
+          "end": 164.949997
+        },
+        {
+          "word": "great",
+          "start": 164.949997,
+          "end": 165.259995
+        },
+        {
+          "word": "port",
+          "start": 165.259995,
+          "end": 165.610001
+        },
+        {
+          "word": "of",
+          "start": 165.610001,
+          "end": 165.710007
+        },
+        {
+          "word": "Manham",
+          "start": 165.710007,
+          "end": 166.179993
+        },
+        {
+          "word": "declined",
+          "start": 166.179993,
+          "end": 166.960007
+        },
+        {
+          "word": "and",
+          "start": 167.369995,
+          "end": 167.5
+        },
+        {
+          "word": "thousands",
+          "start": 167.5,
+          "end": 168.029999
+        },
+        {
+          "word": "of",
+          "start": 168.029999,
+          "end": 168.139999
+        },
+        {
+          "word": "workers",
+          "start": 168.139999,
+          "end": 168.610001
+        },
+        {
+          "word": "were",
+          "start": 168.610001,
+          "end": 168.699997
+        },
+        {
+          "word": "forced",
+          "start": 168.699997,
+          "end": 169.020004
+        },
+        {
+          "word": "to",
+          "start": 169.020004,
+          "end": 169.169998
+        },
+        {
+          "word": "emigrate",
+          "start": 169.169998,
+          "end": 169.660004
+        },
+        {
+          "word": "out",
+          "start": 169.660004,
+          "end": 169.869995
+        },
+        {
+          "word": "of",
+          "start": 169.869995,
+          "end": 169.940002
+        },
+        {
+          "word": "the",
+          "start": 169.940002,
+          "end": 170.100006
+        },
+        {
+          "word": "area",
+          "start": 170.100006,
+          "end": 170.589996
+        }
+      ],
       "answers": [
         14
       ],
-      "end": 170.6
+      "end": 170.589996
     },
     {
       "id": 8,
-      "start": 171.6,
+      "start": 171.360001,
       "speaker": "SPEAKER",
       "en": "The building at the port fell into disrepair, and the place became almost forgotten.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 171.360001,
+          "end": 171.470001
+        },
+        {
+          "word": "building",
+          "start": 171.470001,
+          "end": 171.960007
+        },
+        {
+          "word": "at",
+          "start": 171.960007,
+          "end": 172.059998
+        },
+        {
+          "word": "the",
+          "start": 172.059998,
+          "end": 172.139999
+        },
+        {
+          "word": "port",
+          "start": 172.139999,
+          "end": 172.580002
+        },
+        {
+          "word": "fell",
+          "start": 172.580002,
+          "end": 172.869995
+        },
+        {
+          "word": "into",
+          "start": 172.869995,
+          "end": 173.089996
+        },
+        {
+          "word": "disrepair",
+          "start": 173.089996,
+          "end": 173.860001
+        },
+        {
+          "word": "and",
+          "start": 174.389999,
+          "end": 174.490005
+        },
+        {
+          "word": "the",
+          "start": 174.490005,
+          "end": 174.580002
+        },
+        {
+          "word": "place",
+          "start": 174.580002,
+          "end": 174.860001
+        },
+        {
+          "word": "became",
+          "start": 174.860001,
+          "end": 175.309998
+        },
+        {
+          "word": "almost",
+          "start": 175.309998,
+          "end": 175.699997
+        },
+        {
+          "word": "forgotten",
+          "start": 175.699997,
+          "end": 176.25
+        }
+      ],
       "answers": [],
-      "end": 176.3
+      "end": 176.25
     },
     {
       "id": 9,
-      "start": 177.6,
+      "start": 177.369995,
       "speaker": "SPEAKER",
       "en": "But then, the Manham Trust was formed to conserve the historical resources of the area.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 177.369995,
+          "end": 177.509995
+        },
+        {
+          "word": "then",
+          "start": 177.509995,
+          "end": 177.639999
+        },
+        {
+          "word": "the",
+          "start": 177.639999,
+          "end": 177.899994
+        },
+        {
+          "word": "Manham",
+          "start": 177.899994,
+          "end": 178.270004
+        },
+        {
+          "word": "Trust",
+          "start": 178.270004,
+          "end": 178.720001
+        },
+        {
+          "word": "was",
+          "start": 178.720001,
+          "end": 178.850006
+        },
+        {
+          "word": "formed",
+          "start": 178.850006,
+          "end": 179.380005
+        },
+        {
+          "word": "to",
+          "start": 179.559998,
+          "end": 179.679993
+        },
+        {
+          "word": "conserve",
+          "start": 179.679993,
+          "end": 180.330002
+        },
+        {
+          "word": "the",
+          "start": 180.330002,
+          "end": 180.419998
+        },
+        {
+          "word": "historical",
+          "start": 180.419998,
+          "end": 181.070007
+        },
+        {
+          "word": "resources",
+          "start": 181.070007,
+          "end": 181.649994
+        },
+        {
+          "word": "of",
+          "start": 181.649994,
+          "end": 181.75
+        },
+        {
+          "word": "the",
+          "start": 181.75,
+          "end": 181.899994
+        },
+        {
+          "word": "area",
+          "start": 181.899994,
+          "end": 182.369995
+        }
+      ],
       "answers": [],
-      "end": 182.4
+      "end": 182.369995
     },
     {
       "id": 10,
-      "start": 183.6,
+      "start": 183.279999,
       "speaker": "SPEAKER",
       "en": "It organised scores of local volunteers to remove undergrowth to find the original outlines of the installations.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 183.279999,
+          "end": 183.389999
+        },
+        {
+          "word": "organised",
+          "start": 183.389999,
+          "end": 184.100006
+        },
+        {
+          "word": "scores",
+          "start": 184.100006,
+          "end": 184.639999
+        },
+        {
+          "word": "of",
+          "start": 184.639999,
+          "end": 184.759995
+        },
+        {
+          "word": "local",
+          "start": 184.759995,
+          "end": 185.080002
+        },
+        {
+          "word": "volunteers",
+          "start": 185.080002,
+          "end": 185.929993
+        },
+        {
+          "word": "to",
+          "start": 186.220001,
+          "end": 186.339996
+        },
+        {
+          "word": "remove",
+          "start": 186.339996,
+          "end": 186.690002
+        },
+        {
+          "word": "undergrowth",
+          "start": 186.690002,
+          "end": 187.380005
+        },
+        {
+          "word": "to",
+          "start": 187.619995,
+          "end": 187.740005
+        },
+        {
+          "word": "find",
+          "start": 187.740005,
+          "end": 188.119995
+        },
+        {
+          "word": "the",
+          "start": 188.119995,
+          "end": 188.210007
+        },
+        {
+          "word": "original",
+          "start": 188.210007,
+          "end": 188.710007
+        },
+        {
+          "word": "outlines",
+          "start": 188.710007,
+          "end": 189.330002
+        },
+        {
+          "word": "of",
+          "start": 189.330002,
+          "end": 189.399994
+        },
+        {
+          "word": "the",
+          "start": 189.399994,
+          "end": 189.520004
+        },
+        {
+          "word": "installations",
+          "start": 189.520004,
+          "end": 190.479996
+        }
+      ],
       "answers": [],
-      "end": 190.5
+      "end": 190.479996
     },
     {
       "id": 11,
-      "start": 191.6,
+      "start": 191.309998,
       "speaker": "SPEAKER",
       "en": "It then brought in paid professionals to match installations with maps of the original port complex and to set about reconstructing it [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 191.309998,
+          "end": 191.5
+        },
+        {
+          "word": "then",
+          "start": 191.5,
+          "end": 191.75
+        },
+        {
+          "word": "brought",
+          "start": 191.75,
+          "end": 192.070007
+        },
+        {
+          "word": "in",
+          "start": 192.070007,
+          "end": 192.320007
+        },
+        {
+          "word": "paid",
+          "start": 192.320007,
+          "end": 192.679993
+        },
+        {
+          "word": "professionals",
+          "start": 192.679993,
+          "end": 193.490005
+        },
+        {
+          "word": "to",
+          "start": 193.830002,
+          "end": 193.970001
+        },
+        {
+          "word": "match",
+          "start": 193.970001,
+          "end": 194.320007
+        },
+        {
+          "word": "installations",
+          "start": 194.360001,
+          "end": 195.240005
+        },
+        {
+          "word": "with",
+          "start": 195.509995,
+          "end": 195.690002
+        },
+        {
+          "word": "maps",
+          "start": 195.690002,
+          "end": 196.220001
+        },
+        {
+          "word": "of",
+          "start": 196.220001,
+          "end": 196.360001
+        },
+        {
+          "word": "the",
+          "start": 196.360001,
+          "end": 196.479996
+        },
+        {
+          "word": "original",
+          "start": 196.479996,
+          "end": 197.009995
+        },
+        {
+          "word": "port",
+          "start": 197.009995,
+          "end": 197.440002
+        },
+        {
+          "word": "complex",
+          "start": 197.440002,
+          "end": 198.119995
+        },
+        {
+          "word": "and",
+          "start": 198.529999,
+          "end": 198.639999
+        },
+        {
+          "word": "to",
+          "start": 198.639999,
+          "end": 198.740005
+        },
+        {
+          "word": "set",
+          "start": 198.740005,
+          "end": 198.970001
+        },
+        {
+          "word": "about",
+          "start": 198.970001,
+          "end": 199.279999
+        },
+        {
+          "word": "reconstructing",
+          "start": 199.279999,
+          "end": 200.070007
+        },
+        {
+          "word": "it",
+          "start": 200.070007,
+          "end": 200.339996
+        }
+      ],
       "answers": [
         15
       ],
-      "end": 200.4
+      "end": 200.339996
     },
     {
       "id": 12,
-      "start": 201.6,
+      "start": 201.550003,
       "speaker": "SPEAKER",
       "en": "Today you can see the results of this ambitious programme of restoration.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Today",
+          "start": 201.550003,
+          "end": 202.119995
+        },
+        {
+          "word": "you",
+          "start": 202.220001,
+          "end": 202.369995
+        },
+        {
+          "word": "can",
+          "start": 202.369995,
+          "end": 202.539993
+        },
+        {
+          "word": "see",
+          "start": 202.539993,
+          "end": 202.820007
+        },
+        {
+          "word": "the",
+          "start": 202.820007,
+          "end": 202.949997
+        },
+        {
+          "word": "results",
+          "start": 202.949997,
+          "end": 203.520004
+        },
+        {
+          "word": "of",
+          "start": 203.520004,
+          "end": 203.619995
+        },
+        {
+          "word": "this",
+          "start": 203.619995,
+          "end": 203.820007
+        },
+        {
+          "word": "ambitious",
+          "start": 203.820007,
+          "end": 204.399994
+        },
+        {
+          "word": "programme",
+          "start": 204.399994,
+          "end": 204.929993
+        },
+        {
+          "word": "of",
+          "start": 204.929993,
+          "end": 205.070007
+        },
+        {
+          "word": "restoration",
+          "start": 205.070007,
+          "end": 205.880005
+        }
+      ],
       "answers": [],
-      "end": 205.9
+      "end": 205.880005
     },
     {
       "id": 13,
-      "start": 207.3,
+      "start": 207.050003,
       "speaker": "SPEAKER",
       "en": "The intention, and we believe this will be realised before the end of the year, is to return Manham Port to the condition it reached at its peak as ‘the greatest copper port in the country’. —————— But what can you do and see on your visit today?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 207.050003,
+          "end": 207.160004
+        },
+        {
+          "word": "intention",
+          "start": 207.160004,
+          "end": 207.740005
+        },
+        {
+          "word": "and",
+          "start": 207.960007,
+          "end": 208.169998
+        },
+        {
+          "word": "we",
+          "start": 208.169998,
+          "end": 208.330002
+        },
+        {
+          "word": "believe",
+          "start": 208.330002,
+          "end": 208.660004
+        },
+        {
+          "word": "this",
+          "start": 208.660004,
+          "end": 208.830002
+        },
+        {
+          "word": "will",
+          "start": 208.830002,
+          "end": 208.899994
+        },
+        {
+          "word": "be",
+          "start": 208.899994,
+          "end": 209.029999
+        },
+        {
+          "word": "realised",
+          "start": 209.029999,
+          "end": 209.589996
+        },
+        {
+          "word": "before",
+          "start": 209.589996,
+          "end": 209.910004
+        },
+        {
+          "word": "the",
+          "start": 209.910004,
+          "end": 210.039993
+        },
+        {
+          "word": "end",
+          "start": 210.039993,
+          "end": 210.199997
+        },
+        {
+          "word": "of",
+          "start": 210.199997,
+          "end": 210.300003
+        },
+        {
+          "word": "the",
+          "start": 210.300003,
+          "end": 210.380005
+        },
+        {
+          "word": "year",
+          "start": 210.380005,
+          "end": 210.779999
+        },
+        {
+          "word": "is",
+          "start": 211.169998,
+          "end": 211.389999
+        },
+        {
+          "word": "to",
+          "start": 211.389999,
+          "end": 211.559998
+        },
+        {
+          "word": "return",
+          "start": 211.559998,
+          "end": 211.919998
+        },
+        {
+          "word": "Manham",
+          "start": 212.139999,
+          "end": 212.539993
+        },
+        {
+          "word": "Port",
+          "start": 212.539993,
+          "end": 212.949997
+        },
+        {
+          "word": "to",
+          "start": 213.309998,
+          "end": 213.440002
+        },
+        {
+          "word": "the",
+          "start": 213.440002,
+          "end": 213.529999
+        },
+        {
+          "word": "condition",
+          "start": 213.529999,
+          "end": 214.039993
+        },
+        {
+          "word": "it",
+          "start": 214.039993,
+          "end": 214.169998
+        },
+        {
+          "word": "reached",
+          "start": 214.169998,
+          "end": 214.639999
+        },
+        {
+          "word": "at",
+          "start": 214.639999,
+          "end": 214.779999
+        },
+        {
+          "word": "its",
+          "start": 214.779999,
+          "end": 214.949997
+        },
+        {
+          "word": "peak",
+          "start": 214.949997,
+          "end": 215.399994
+        },
+        {
+          "word": "as",
+          "start": 215.770004,
+          "end": 215.940002
+        },
+        {
+          "word": "the",
+          "start": 215.940002,
+          "end": 216.050003
+        },
+        {
+          "word": "greatest",
+          "start": 216.050003,
+          "end": 216.699997
+        },
+        {
+          "word": "copper",
+          "start": 216.699997,
+          "end": 216.990005
+        },
+        {
+          "word": "port",
+          "start": 216.990005,
+          "end": 217.460007
+        },
+        {
+          "word": "in",
+          "start": 217.509995,
+          "end": 217.729996
+        },
+        {
+          "word": "the",
+          "start": 221.839996,
+          "end": 227.850006
+        },
+        {
+          "word": "country",
+          "start": 242.970001,
+          "end": 243.789993
+        },
+        {
+          "word": "But",
+          "start": 244.539993,
+          "end": 244.759995
+        },
+        {
+          "word": "what",
+          "start": 244.910004,
+          "end": 245.419998
+        },
+        {
+          "word": "can",
+          "start": 245.690002,
+          "end": 246.110001
+        },
+        {
+          "word": "you",
+          "start": 251.720001,
+          "end": 251.800003
+        },
+        {
+          "word": "do",
+          "start": 251.800003,
+          "end": 252.039993
+        },
+        {
+          "word": "and",
+          "start": 252.039993,
+          "end": 252.160004
+        },
+        {
+          "word": "see",
+          "start": 252.160004,
+          "end": 252.460007
+        },
+        {
+          "word": "on",
+          "start": 252.460007,
+          "end": 252.600006
+        },
+        {
+          "word": "your",
+          "start": 252.600006,
+          "end": 252.789993
+        },
+        {
+          "word": "visit",
+          "start": 252.789993,
+          "end": 253.110001
+        },
+        {
+          "word": "today",
+          "start": 253.110001,
+          "end": 253.639999
+        }
+      ],
       "answers": [],
-      "end": 223.3
+      "end": 253.639999
     },
     {
       "id": 14,
-      "start": 254.7,
+      "start": 254.630005,
       "speaker": "SPEAKER",
       "en": "Here are just a few highlights.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Here",
+          "start": 254.630005,
+          "end": 254.740005
+        },
+        {
+          "word": "are",
+          "start": 254.740005,
+          "end": 254.860001
+        },
+        {
+          "word": "just",
+          "start": 254.860001,
+          "end": 255.119995
+        },
+        {
+          "word": "a",
+          "start": 255.119995,
+          "end": 255.149994
+        },
+        {
+          "word": "few",
+          "start": 255.149994,
+          "end": 255.410004
+        },
+        {
+          "word": "highlights",
+          "start": 255.410004,
+          "end": 256.119995
+        }
+      ],
       "answers": [],
-      "end": 256.2
+      "end": 256.119995
     },
     {
       "id": 15,
-      "start": 257.2,
+      "start": 257.0,
       "speaker": "SPEAKER",
       "en": "We suggest you start with the visit to the copper mine.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 257.0,
+          "end": 257.26001
+        },
+        {
+          "word": "suggest",
+          "start": 257.26001,
+          "end": 257.899994
+        },
+        {
+          "word": "you",
+          "start": 257.899994,
+          "end": 258.0
+        },
+        {
+          "word": "start",
+          "start": 258.0,
+          "end": 258.459991
+        },
+        {
+          "word": "with",
+          "start": 258.459991,
+          "end": 258.589996
+        },
+        {
+          "word": "the",
+          "start": 258.589996,
+          "end": 258.660004
+        },
+        {
+          "word": "visit",
+          "start": 258.660004,
+          "end": 258.950012
+        },
+        {
+          "word": "to",
+          "start": 258.950012,
+          "end": 259.040009
+        },
+        {
+          "word": "the",
+          "start": 259.040009,
+          "end": 259.119995
+        },
+        {
+          "word": "copper",
+          "start": 259.119995,
+          "end": 259.399994
+        },
+        {
+          "word": "mine",
+          "start": 259.399994,
+          "end": 259.869995
+        }
+      ],
       "answers": [],
-      "end": 259.9
+      "end": 259.869995
     },
     {
       "id": 16,
-      "start": 260.8,
+      "start": 260.670013,
       "speaker": "SPEAKER",
       "en": "Travel on converted mining trains and journey into the depths of the mountain along seams once worked by hundreds of miners [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Travel",
+          "start": 260.670013,
+          "end": 261.26001
+        },
+        {
+          "word": "on",
+          "start": 261.26001,
+          "end": 261.470001
+        },
+        {
+          "word": "converted",
+          "start": 261.470001,
+          "end": 262.049988
+        },
+        {
+          "word": "mining",
+          "start": 262.049988,
+          "end": 262.51001
+        },
+        {
+          "word": "trains",
+          "start": 262.51001,
+          "end": 263.149994
+        },
+        {
+          "word": "and",
+          "start": 263.480011,
+          "end": 263.630005
+        },
+        {
+          "word": "journey",
+          "start": 263.630005,
+          "end": 264.149994
+        },
+        {
+          "word": "into",
+          "start": 264.149994,
+          "end": 264.339996
+        },
+        {
+          "word": "the",
+          "start": 264.339996,
+          "end": 264.459991
+        },
+        {
+          "word": "depths",
+          "start": 264.459991,
+          "end": 264.890015
+        },
+        {
+          "word": "of",
+          "start": 264.890015,
+          "end": 264.970001
+        },
+        {
+          "word": "the",
+          "start": 264.970001,
+          "end": 265.070007
+        },
+        {
+          "word": "mountain",
+          "start": 265.070007,
+          "end": 265.679993
+        },
+        {
+          "word": "along",
+          "start": 265.890015,
+          "end": 266.25
+        },
+        {
+          "word": "seams",
+          "start": 266.25,
+          "end": 266.799988
+        },
+        {
+          "word": "once",
+          "start": 266.799988,
+          "end": 267.100006
+        },
+        {
+          "word": "worked",
+          "start": 267.100006,
+          "end": 267.529999
+        },
+        {
+          "word": "by",
+          "start": 267.529999,
+          "end": 267.700012
+        },
+        {
+          "word": "hundreds",
+          "start": 267.700012,
+          "end": 268.200012
+        },
+        {
+          "word": "of",
+          "start": 268.200012,
+          "end": 268.269989
+        },
+        {
+          "word": "miners",
+          "start": 268.269989,
+          "end": 268.859985
+        }
+      ],
       "answers": [
         16
       ],
-      "end": 268.9
+      "end": 268.859985
     },
     {
       "id": 17,
-      "start": 269.9,
+      "start": 269.880005,
       "speaker": "SPEAKER",
       "en": "Watch out especially for the great pumping machines which rid the mine of water.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Watch",
+          "start": 269.880005,
+          "end": 270.140015
+        },
+        {
+          "word": "out",
+          "start": 270.140015,
+          "end": 270.329987
+        },
+        {
+          "word": "especially",
+          "start": 270.329987,
+          "end": 270.980011
+        },
+        {
+          "word": "for",
+          "start": 271.100006,
+          "end": 271.200012
+        },
+        {
+          "word": "the",
+          "start": 271.200012,
+          "end": 271.290009
+        },
+        {
+          "word": "great",
+          "start": 271.290009,
+          "end": 271.579987
+        },
+        {
+          "word": "pumping",
+          "start": 271.579987,
+          "end": 271.970001
+        },
+        {
+          "word": "machines",
+          "start": 271.970001,
+          "end": 272.649994
+        },
+        {
+          "word": "which",
+          "start": 272.649994,
+          "end": 272.859985
+        },
+        {
+          "word": "rid",
+          "start": 272.859985,
+          "end": 273.109985
+        },
+        {
+          "word": "the",
+          "start": 273.109985,
+          "end": 273.179993
+        },
+        {
+          "word": "mine",
+          "start": 273.179993,
+          "end": 273.470001
+        },
+        {
+          "word": "of",
+          "start": 273.470001,
+          "end": 273.600006
+        },
+        {
+          "word": "water",
+          "start": 273.600006,
+          "end": 274.059998
+        }
+      ],
       "answers": [],
-      "end": 274.9
+      "end": 274.059998
     },
     {
       "id": 18,
-      "start": 275.2,
+      "start": 274.850006,
       "speaker": "SPEAKER",
       "en": "But please be warned that, like all mines, ours is very dark and closed in and we do say that children under five and also dogs should NOT be taken into the mine. [[ ]] The next recommended visit is to the village school.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 274.850006,
+          "end": 275.140015
+        },
+        {
+          "word": "please",
+          "start": 275.140015,
+          "end": 275.410004
+        },
+        {
+          "word": "be",
+          "start": 275.410004,
+          "end": 275.540009
+        },
+        {
+          "word": "warned",
+          "start": 275.540009,
+          "end": 276.029999
+        },
+        {
+          "word": "that",
+          "start": 276.029999,
+          "end": 276.359985
+        },
+        {
+          "word": "like",
+          "start": 276.390015,
+          "end": 276.690002
+        },
+        {
+          "word": "all",
+          "start": 276.690002,
+          "end": 276.910004
+        },
+        {
+          "word": "mines",
+          "start": 276.910004,
+          "end": 277.51001
+        },
+        {
+          "word": "ours",
+          "start": 277.850006,
+          "end": 278.23999
+        },
+        {
+          "word": "is",
+          "start": 278.23999,
+          "end": 278.399994
+        },
+        {
+          "word": "very",
+          "start": 278.399994,
+          "end": 278.690002
+        },
+        {
+          "word": "dark",
+          "start": 278.690002,
+          "end": 279.190002
+        },
+        {
+          "word": "and",
+          "start": 279.350006,
+          "end": 279.5
+        },
+        {
+          "word": "closed",
+          "start": 279.5,
+          "end": 280.01001
+        },
+        {
+          "word": "in",
+          "start": 280.01001,
+          "end": 280.359985
+        },
+        {
+          "word": "and",
+          "start": 280.660004,
+          "end": 280.820007
+        },
+        {
+          "word": "we",
+          "start": 280.820007,
+          "end": 280.950012
+        },
+        {
+          "word": "do",
+          "start": 280.950012,
+          "end": 281.200012
+        },
+        {
+          "word": "say",
+          "start": 281.200012,
+          "end": 281.369995
+        },
+        {
+          "word": "that",
+          "start": 281.369995,
+          "end": 281.690002
+        },
+        {
+          "word": "children",
+          "start": 281.690002,
+          "end": 282.200012
+        },
+        {
+          "word": "under",
+          "start": 282.25,
+          "end": 282.339996
+        },
+        {
+          "word": "five",
+          "start": 282.339996,
+          "end": 282.890015
+        },
+        {
+          "word": "and",
+          "start": 283.299988,
+          "end": 283.450012
+        },
+        {
+          "word": "also",
+          "start": 283.450012,
+          "end": 283.779999
+        },
+        {
+          "word": "dogs",
+          "start": 283.779999,
+          "end": 284.359985
+        },
+        {
+          "word": "should",
+          "start": 284.480011,
+          "end": 284.720001
+        },
+        {
+          "word": "NOT",
+          "start": 284.720001,
+          "end": 285.040009
+        },
+        {
+          "word": "be",
+          "start": 285.040009,
+          "end": 285.130005
+        },
+        {
+          "word": "taken",
+          "start": 285.130005,
+          "end": 285.51001
+        },
+        {
+          "word": "into",
+          "start": 285.51001,
+          "end": 285.679993
+        },
+        {
+          "word": "the",
+          "start": 285.679993,
+          "end": 285.76001
+        },
+        {
+          "word": "mine",
+          "start": 285.76001,
+          "end": 286.230011
+        },
+        {
+          "word": "The",
+          "start": 288.070007,
+          "end": 288.160004
+        },
+        {
+          "word": "next",
+          "start": 288.160004,
+          "end": 288.450012
+        },
+        {
+          "word": "recommended",
+          "start": 288.450012,
+          "end": 288.929993
+        },
+        {
+          "word": "visit",
+          "start": 288.929993,
+          "end": 289.320007
+        },
+        {
+          "word": "is",
+          "start": 289.679993,
+          "end": 289.769989
+        },
+        {
+          "word": "to",
+          "start": 289.769989,
+          "end": 289.880005
+        },
+        {
+          "word": "the",
+          "start": 289.880005,
+          "end": 289.970001
+        },
+        {
+          "word": "village",
+          "start": 289.970001,
+          "end": 290.320007
+        },
+        {
+          "word": "school",
+          "start": 290.320007,
+          "end": 290.890015
+        }
+      ],
       "answers": [
         17
       ],
-      "end": 290.9
+      "end": 290.890015
     },
     {
       "id": 19,
-      "start": 291.9,
+      "start": 291.829987,
       "speaker": "SPEAKER",
       "en": "While looking round the classrooms, take a special look at our display of games, which is one of the largest in the world [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "While",
+          "start": 291.829987,
+          "end": 292.0
+        },
+        {
+          "word": "looking",
+          "start": 292.0,
+          "end": 292.299988
+        },
+        {
+          "word": "round",
+          "start": 292.299988,
+          "end": 292.529999
+        },
+        {
+          "word": "the",
+          "start": 292.529999,
+          "end": 292.589996
+        },
+        {
+          "word": "classrooms",
+          "start": 292.589996,
+          "end": 293.279999
+        },
+        {
+          "word": "take",
+          "start": 293.279999,
+          "end": 293.73999
+        },
+        {
+          "word": "a",
+          "start": 293.73999,
+          "end": 293.769989
+        },
+        {
+          "word": "special",
+          "start": 293.769989,
+          "end": 294.25
+        },
+        {
+          "word": "look",
+          "start": 294.25,
+          "end": 294.420013
+        },
+        {
+          "word": "at",
+          "start": 294.420013,
+          "end": 294.51001
+        },
+        {
+          "word": "our",
+          "start": 294.51001,
+          "end": 294.649994
+        },
+        {
+          "word": "display",
+          "start": 294.649994,
+          "end": 295.040009
+        },
+        {
+          "word": "of",
+          "start": 295.040009,
+          "end": 295.140015
+        },
+        {
+          "word": "games",
+          "start": 295.140015,
+          "end": 295.73999
+        },
+        {
+          "word": "which",
+          "start": 295.980011,
+          "end": 296.140015
+        },
+        {
+          "word": "is",
+          "start": 296.140015,
+          "end": 296.230011
+        },
+        {
+          "word": "one",
+          "start": 296.230011,
+          "end": 296.369995
+        },
+        {
+          "word": "of",
+          "start": 296.369995,
+          "end": 296.440002
+        },
+        {
+          "word": "the",
+          "start": 296.440002,
+          "end": 296.570007
+        },
+        {
+          "word": "largest",
+          "start": 296.570007,
+          "end": 297.100006
+        },
+        {
+          "word": "in",
+          "start": 297.100006,
+          "end": 297.200012
+        },
+        {
+          "word": "the",
+          "start": 297.200012,
+          "end": 297.299988
+        },
+        {
+          "word": "world",
+          "start": 297.299988,
+          "end": 297.839996
+        }
+      ],
       "answers": [
         18
       ],
-      "end": 297.9
+      "end": 297.839996
     },
     {
       "id": 20,
-      "start": 298.1,
+      "start": 298.769989,
       "speaker": "SPEAKER",
       "en": "And it’s recommended that you time your visit to coincide with a guided tour [[ ]] .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 298.769989,
+          "end": 298.980011
+        },
+        {
+          "word": "it",
+          "start": 298.980011,
+          "end": 299.119995
+        },
+        {
+          "word": "'s",
+          "start": 298.980011,
+          "end": 299.119995
+        },
+        {
+          "word": "recommended",
+          "start": 299.160004,
+          "end": 299.730011
+        },
+        {
+          "word": "that",
+          "start": 299.910004,
+          "end": 300.059998
+        },
+        {
+          "word": "you",
+          "start": 300.059998,
+          "end": 300.170013
+        },
+        {
+          "word": "time",
+          "start": 300.170013,
+          "end": 300.51001
+        },
+        {
+          "word": "your",
+          "start": 300.51001,
+          "end": 300.670013
+        },
+        {
+          "word": "visit",
+          "start": 300.670013,
+          "end": 301.220001
+        },
+        {
+          "word": "to",
+          "start": 301.26001,
+          "end": 301.369995
+        },
+        {
+          "word": "coincide",
+          "start": 301.369995,
+          "end": 302.01001
+        },
+        {
+          "word": "with",
+          "start": 302.01001,
+          "end": 302.119995
+        },
+        {
+          "word": "a",
+          "start": 302.119995,
+          "end": 302.170013
+        },
+        {
+          "word": "guided",
+          "start": 302.170013,
+          "end": 302.619995
+        },
+        {
+          "word": "tour",
+          "start": 302.619995,
+          "end": 303.059998
+        }
+      ],
       "answers": [
         19
       ],
-      "end": 303.1
+      "end": 303.059998
     },
     {
       "id": 21,
-      "start": 304.3,
+      "start": 303.859985,
       "speaker": "SPEAKER",
       "en": "This will give you the opportunity to ask lots of questions.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "This",
+          "start": 303.859985,
+          "end": 304.019989
+        },
+        {
+          "word": "will",
+          "start": 304.130005,
+          "end": 304.26001
+        },
+        {
+          "word": "give",
+          "start": 304.26001,
+          "end": 304.440002
+        },
+        {
+          "word": "you",
+          "start": 304.440002,
+          "end": 304.559998
+        },
+        {
+          "word": "the",
+          "start": 304.559998,
+          "end": 304.690002
+        },
+        {
+          "word": "opportunity",
+          "start": 304.690002,
+          "end": 305.279999
+        },
+        {
+          "word": "to",
+          "start": 305.279999,
+          "end": 305.420013
+        },
+        {
+          "word": "ask",
+          "start": 305.420013,
+          "end": 305.670013
+        },
+        {
+          "word": "lots",
+          "start": 305.670013,
+          "end": 305.929993
+        },
+        {
+          "word": "of",
+          "start": 305.929993,
+          "end": 306.029999
+        },
+        {
+          "word": "questions",
+          "start": 306.029999,
+          "end": 306.709991
+        }
+      ],
       "answers": [],
-      "end": 306.8
+      "end": 306.709991
     },
     {
       "id": 22,
-      "start": 307.9,
+      "start": 308.25,
       "speaker": "SPEAKER",
       "en": "Near the school is the beautiful old sailing ketch called ‘The George’.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Near",
+          "start": 308.25,
+          "end": 308.429993
+        },
+        {
+          "word": "the",
+          "start": 308.429993,
+          "end": 308.51001
+        },
+        {
+          "word": "school",
+          "start": 308.51001,
+          "end": 309.0
+        },
+        {
+          "word": "is",
+          "start": 309.369995,
+          "end": 309.48999
+        },
+        {
+          "word": "the",
+          "start": 309.48999,
+          "end": 309.589996
+        },
+        {
+          "word": "beautiful",
+          "start": 309.589996,
+          "end": 310.070007
+        },
+        {
+          "word": "old",
+          "start": 310.070007,
+          "end": 310.320007
+        },
+        {
+          "word": "sailing",
+          "start": 310.320007,
+          "end": 310.809998
+        },
+        {
+          "word": "ketch",
+          "start": 310.809998,
+          "end": 311.329987
+        },
+        {
+          "word": "called",
+          "start": 311.329987,
+          "end": 311.769989
+        },
+        {
+          "word": "The",
+          "start": 311.839996,
+          "end": 311.959991
+        },
+        {
+          "word": "George",
+          "start": 311.959991,
+          "end": 312.579987
+        }
+      ],
       "answers": [],
-      "end": 312.7
+      "end": 312.579987
     },
     {
       "id": 23,
-      "start": 313.5,
+      "start": 313.230011,
       "speaker": "SPEAKER",
       "en": "You are welcome to board the boat and look round the cabins.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 313.230011,
+          "end": 313.339996
+        },
+        {
+          "word": "are",
+          "start": 313.339996,
+          "end": 313.369995
+        },
+        {
+          "word": "welcome",
+          "start": 313.369995,
+          "end": 313.76001
+        },
+        {
+          "word": "to",
+          "start": 313.76001,
+          "end": 313.859985
+        },
+        {
+          "word": "board",
+          "start": 313.859985,
+          "end": 314.190002
+        },
+        {
+          "word": "the",
+          "start": 314.190002,
+          "end": 314.279999
+        },
+        {
+          "word": "boat",
+          "start": 314.279999,
+          "end": 314.630005
+        },
+        {
+          "word": "and",
+          "start": 314.829987,
+          "end": 314.98999
+        },
+        {
+          "word": "look",
+          "start": 314.98999,
+          "end": 315.160004
+        },
+        {
+          "word": "round",
+          "start": 315.160004,
+          "end": 315.350006
+        },
+        {
+          "word": "the",
+          "start": 315.350006,
+          "end": 315.429993
+        },
+        {
+          "word": "cabins",
+          "start": 315.429993,
+          "end": 315.98999
+        }
+      ],
       "answers": [],
-      "end": 314.9
+      "end": 315.98999
     },
     {
       "id": 24,
-      "start": 315.0,
+      "start": 316.859985,
       "speaker": "SPEAKER",
       "en": "Look out for the shop’s wheel which was missing until only five years ago when it was dredged out of the silt by a local fisherman.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Look",
+          "start": 316.859985,
+          "end": 317.040009
+        },
+        {
+          "word": "out",
+          "start": 317.040009,
+          "end": 317.25
+        },
+        {
+          "word": "for",
+          "start": 317.25,
+          "end": 317.329987
+        },
+        {
+          "word": "the",
+          "start": 317.329987,
+          "end": 317.410004
+        },
+        {
+          "word": "shop",
+          "start": 317.410004,
+          "end": 317.700012
+        },
+        {
+          "word": "'s",
+          "start": 317.700012,
+          "end": 317.75
+        },
+        {
+          "word": "wheel",
+          "start": 317.75,
+          "end": 318.200012
+        },
+        {
+          "word": "which",
+          "start": 318.399994,
+          "end": 318.649994
+        },
+        {
+          "word": "was",
+          "start": 318.649994,
+          "end": 318.790009
+        },
+        {
+          "word": "missing",
+          "start": 318.790009,
+          "end": 319.179993
+        },
+        {
+          "word": "until",
+          "start": 319.179993,
+          "end": 319.51001
+        },
+        {
+          "word": "only",
+          "start": 319.51001,
+          "end": 319.769989
+        },
+        {
+          "word": "five",
+          "start": 319.769989,
+          "end": 320.119995
+        },
+        {
+          "word": "years",
+          "start": 320.119995,
+          "end": 320.359985
+        },
+        {
+          "word": "ago",
+          "start": 320.359985,
+          "end": 320.709991
+        },
+        {
+          "word": "when",
+          "start": 320.940002,
+          "end": 321.049988
+        },
+        {
+          "word": "it",
+          "start": 321.049988,
+          "end": 321.109985
+        },
+        {
+          "word": "was",
+          "start": 321.109985,
+          "end": 321.269989
+        },
+        {
+          "word": "dredged",
+          "start": 321.269989,
+          "end": 321.73999
+        },
+        {
+          "word": "out",
+          "start": 321.73999,
+          "end": 321.950012
+        },
+        {
+          "word": "of",
+          "start": 321.950012,
+          "end": 322.049988
+        },
+        {
+          "word": "the",
+          "start": 322.049988,
+          "end": 322.119995
+        },
+        {
+          "word": "silt",
+          "start": 322.119995,
+          "end": 322.600006
+        },
+        {
+          "word": "by",
+          "start": 322.640015,
+          "end": 322.820007
+        },
+        {
+          "word": "a",
+          "start": 322.820007,
+          "end": 322.850006
+        },
+        {
+          "word": "local",
+          "start": 322.850006,
+          "end": 323.179993
+        },
+        {
+          "word": "fisherman",
+          "start": 323.179993,
+          "end": 323.73999
+        }
+      ],
       "answers": [],
-      "end": 323.8
+      "end": 323.73999
     },
     {
       "id": 25,
-      "start": 324.8,
+      "start": 324.519989,
       "speaker": "SPEAKER",
       "en": "We have no idea how it got there but it’s been polished and proudly restored to its original place on the boat.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 324.519989,
+          "end": 324.630005
+        },
+        {
+          "word": "have",
+          "start": 324.630005,
+          "end": 324.769989
+        },
+        {
+          "word": "no",
+          "start": 324.769989,
+          "end": 324.929993
+        },
+        {
+          "word": "idea",
+          "start": 324.929993,
+          "end": 325.339996
+        },
+        {
+          "word": "how",
+          "start": 325.339996,
+          "end": 325.51001
+        },
+        {
+          "word": "it",
+          "start": 325.51001,
+          "end": 325.589996
+        },
+        {
+          "word": "got",
+          "start": 325.589996,
+          "end": 325.769989
+        },
+        {
+          "word": "there",
+          "start": 325.769989,
+          "end": 326.170013
+        },
+        {
+          "word": "but",
+          "start": 326.519989,
+          "end": 326.630005
+        },
+        {
+          "word": "it",
+          "start": 326.630005,
+          "end": 326.76001
+        },
+        {
+          "word": "'s",
+          "start": 326.630005,
+          "end": 326.76001
+        },
+        {
+          "word": "been",
+          "start": 326.76001,
+          "end": 326.950012
+        },
+        {
+          "word": "polished",
+          "start": 326.950012,
+          "end": 327.540009
+        },
+        {
+          "word": "and",
+          "start": 327.670013,
+          "end": 327.820007
+        },
+        {
+          "word": "proudly",
+          "start": 327.820007,
+          "end": 328.320007
+        },
+        {
+          "word": "restored",
+          "start": 328.320007,
+          "end": 328.899994
+        },
+        {
+          "word": "to",
+          "start": 328.899994,
+          "end": 328.98999
+        },
+        {
+          "word": "its",
+          "start": 328.98999,
+          "end": 329.140015
+        },
+        {
+          "word": "original",
+          "start": 329.140015,
+          "end": 329.579987
+        },
+        {
+          "word": "place",
+          "start": 329.579987,
+          "end": 329.959991
+        },
+        {
+          "word": "on",
+          "start": 329.959991,
+          "end": 330.089996
+        },
+        {
+          "word": "the",
+          "start": 330.089996,
+          "end": 330.160004
+        },
+        {
+          "word": "boat",
+          "start": 330.160004,
+          "end": 330.48999
+        }
+      ],
       "answers": [],
-      "end": 330.6
+      "end": 330.48999
     },
     {
       "id": 26,
-      "start": 331.7,
+      "start": 331.679993,
       "speaker": "SPEAKER",
       "en": "Please take care going down the ladders if you wish to visit the lower deck – we don’t recommend you allow young children to use them. [[ ]] So we hope you have a memorable visit to Manham Port and will tell your friends all about us.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Please",
+          "start": 331.679993,
+          "end": 331.929993
+        },
+        {
+          "word": "take",
+          "start": 331.929993,
+          "end": 332.170013
+        },
+        {
+          "word": "care",
+          "start": 332.170013,
+          "end": 332.440002
+        },
+        {
+          "word": "going",
+          "start": 332.440002,
+          "end": 332.679993
+        },
+        {
+          "word": "down",
+          "start": 332.679993,
+          "end": 332.890015
+        },
+        {
+          "word": "the",
+          "start": 332.890015,
+          "end": 332.970001
+        },
+        {
+          "word": "ladders",
+          "start": 332.970001,
+          "end": 333.480011
+        },
+        {
+          "word": "if",
+          "start": 333.640015,
+          "end": 333.790009
+        },
+        {
+          "word": "you",
+          "start": 333.790009,
+          "end": 333.880005
+        },
+        {
+          "word": "wish",
+          "start": 333.880005,
+          "end": 334.019989
+        },
+        {
+          "word": "to",
+          "start": 334.019989,
+          "end": 334.130005
+        },
+        {
+          "word": "visit",
+          "start": 334.130005,
+          "end": 334.350006
+        },
+        {
+          "word": "the",
+          "start": 334.350006,
+          "end": 334.440002
+        },
+        {
+          "word": "lower",
+          "start": 334.440002,
+          "end": 334.769989
+        },
+        {
+          "word": "deck",
+          "start": 334.769989,
+          "end": 335.140015
+        },
+        {
+          "word": "we",
+          "start": 335.410004,
+          "end": 335.48999
+        },
+        {
+          "word": "do",
+          "start": 335.48999,
+          "end": 335.690002
+        },
+        {
+          "word": "n't",
+          "start": 335.48999,
+          "end": 335.690002
+        },
+        {
+          "word": "recommend",
+          "start": 335.690002,
+          "end": 336.160004
+        },
+        {
+          "word": "you",
+          "start": 336.160004,
+          "end": 336.230011
+        },
+        {
+          "word": "allow",
+          "start": 336.230011,
+          "end": 336.5
+        },
+        {
+          "word": "young",
+          "start": 336.5,
+          "end": 336.809998
+        },
+        {
+          "word": "children",
+          "start": 336.809998,
+          "end": 337.269989
+        },
+        {
+          "word": "to",
+          "start": 337.269989,
+          "end": 337.380005
+        },
+        {
+          "word": "use",
+          "start": 337.380005,
+          "end": 337.640015
+        },
+        {
+          "word": "them",
+          "start": 337.640015,
+          "end": 337.929993
+        },
+        {
+          "word": "So",
+          "start": 339.399994,
+          "end": 339.470001
+        },
+        {
+          "word": "we",
+          "start": 339.470001,
+          "end": 339.630005
+        },
+        {
+          "word": "hope",
+          "start": 339.630005,
+          "end": 339.850006
+        },
+        {
+          "word": "you",
+          "start": 339.850006,
+          "end": 339.959991
+        },
+        {
+          "word": "have",
+          "start": 339.98999,
+          "end": 340.130005
+        },
+        {
+          "word": "a",
+          "start": 340.130005,
+          "end": 340.209991
+        },
+        {
+          "word": "memorable",
+          "start": 340.209991,
+          "end": 340.75
+        },
+        {
+          "word": "visit",
+          "start": 340.75,
+          "end": 341.160004
+        },
+        {
+          "word": "to",
+          "start": 341.160004,
+          "end": 341.269989
+        },
+        {
+          "word": "Manham",
+          "start": 341.269989,
+          "end": 341.649994
+        },
+        {
+          "word": "Port",
+          "start": 341.649994,
+          "end": 342.059998
+        },
+        {
+          "word": "and",
+          "start": 342.429993,
+          "end": 342.549988
+        },
+        {
+          "word": "will",
+          "start": 342.549988,
+          "end": 342.679993
+        },
+        {
+          "word": "tell",
+          "start": 342.679993,
+          "end": 342.880005
+        },
+        {
+          "word": "your",
+          "start": 342.880005,
+          "end": 343.049988
+        },
+        {
+          "word": "friends",
+          "start": 343.049988,
+          "end": 343.519989
+        },
+        {
+          "word": "all",
+          "start": 343.519989,
+          "end": 343.769989
+        },
+        {
+          "word": "about",
+          "start": 343.769989,
+          "end": 344.100006
+        },
+        {
+          "word": "us",
+          "start": 350.519989,
+          "end": 352.230011
+        }
+      ],
       "answers": [
         20
       ],
-      "end": 344.5
+      "end": 352.230011
     }
   ],
   "questions": [
@@ -365,5 +3771,14 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 676,
+    "mfa_word_count": 676,
+    "matched_word_count": 674
+  }
 }

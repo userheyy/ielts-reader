@@ -7,443 +7,4595 @@
   "segments": [
     {
       "id": 1,
-      "start": 60.3,
+      "start": 60.709999999999994,
       "speaker": "SPEAKER",
       "en": "Good afternoon.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 60.709999999999994,
+          "end": 60.86
+        },
+        {
+          "word": "afternoon",
+          "start": 60.86,
+          "end": 61.5
+        }
+      ],
       "answers": [],
-      "end": 62.1
+      "end": 61.5
     },
     {
       "id": 2,
-      "start": 62.1,
+      "start": 61.91,
       "speaker": "SPEAKER",
       "en": "My name's Mrs Carter and I run the before and after school extended hours childcare service.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "My",
+          "start": 61.91,
+          "end": 62.23
+        },
+        {
+          "word": "name",
+          "start": 62.23,
+          "end": 62.53
+        },
+        {
+          "word": "'s",
+          "start": 62.53,
+          "end": 62.65
+        },
+        {
+          "word": "Mrs",
+          "start": 62.65,
+          "end": 62.989999999999995
+        },
+        {
+          "word": "Carter",
+          "start": 62.989999999999995,
+          "end": 63.58
+        },
+        {
+          "word": "and",
+          "start": 63.8,
+          "end": 64.09
+        },
+        {
+          "word": "I",
+          "start": 64.09,
+          "end": 64.27
+        },
+        {
+          "word": "run",
+          "start": 64.27,
+          "end": 64.50999999999999
+        },
+        {
+          "word": "the",
+          "start": 64.50999999999999,
+          "end": 64.61
+        },
+        {
+          "word": "before",
+          "start": 64.61,
+          "end": 65.19
+        },
+        {
+          "word": "and",
+          "start": 65.19,
+          "end": 65.33
+        },
+        {
+          "word": "after",
+          "start": 65.33,
+          "end": 65.67
+        },
+        {
+          "word": "school",
+          "start": 65.67,
+          "end": 66.11
+        },
+        {
+          "word": "extended",
+          "start": 66.11,
+          "end": 66.74
+        },
+        {
+          "word": "hours",
+          "start": 66.74,
+          "end": 67.17999999999999
+        },
+        {
+          "word": "childcare",
+          "start": 67.17999999999999,
+          "end": 67.81
+        },
+        {
+          "word": "service",
+          "start": 67.81,
+          "end": 68.42
+        }
+      ],
       "answers": [],
-      "end": 69.0
+      "end": 68.42
     },
     {
       "id": 3,
-      "start": 69.0,
+      "start": 68.82,
       "speaker": "SPEAKER",
       "en": "I hope you’ve had a chance to have a good look around the school and talk to staff and pupils.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 68.82,
+          "end": 68.97999999999999
+        },
+        {
+          "word": "hope",
+          "start": 68.97999999999999,
+          "end": 69.22999999999999
+        },
+        {
+          "word": "you",
+          "start": 69.22999999999999,
+          "end": 69.42
+        },
+        {
+          "word": "'ve",
+          "start": 69.22999999999999,
+          "end": 69.42
+        },
+        {
+          "word": "had",
+          "start": 69.42,
+          "end": 69.57
+        },
+        {
+          "word": "a",
+          "start": 69.57,
+          "end": 69.61
+        },
+        {
+          "word": "chance",
+          "start": 69.61,
+          "end": 70.03
+        },
+        {
+          "word": "to",
+          "start": 70.03,
+          "end": 70.12
+        },
+        {
+          "word": "have",
+          "start": 70.12,
+          "end": 70.3
+        },
+        {
+          "word": "a",
+          "start": 70.3,
+          "end": 70.35
+        },
+        {
+          "word": "good",
+          "start": 70.35,
+          "end": 70.61
+        },
+        {
+          "word": "look",
+          "start": 70.61,
+          "end": 70.81
+        },
+        {
+          "word": "around",
+          "start": 70.81,
+          "end": 71.17
+        },
+        {
+          "word": "the",
+          "start": 71.17,
+          "end": 71.25
+        },
+        {
+          "word": "school",
+          "start": 71.25,
+          "end": 71.86
+        },
+        {
+          "word": "and",
+          "start": 71.92,
+          "end": 72.27
+        },
+        {
+          "word": "talk",
+          "start": 72.27,
+          "end": 72.58
+        },
+        {
+          "word": "to",
+          "start": 72.58,
+          "end": 72.71
+        },
+        {
+          "word": "staff",
+          "start": 72.71,
+          "end": 73.17999999999999
+        },
+        {
+          "word": "and",
+          "start": 73.17999999999999,
+          "end": 73.35
+        },
+        {
+          "word": "pupils",
+          "start": 73.35,
+          "end": 74.08
+        }
+      ],
       "answers": [],
-      "end": 74.2
+      "end": 74.08
     },
     {
       "id": 4,
-      "start": 74.9,
+      "start": 74.69999999999999,
       "speaker": "SPEAKER",
       "en": "I know that many of you are interested in using our childcare service when your child joins the school, and perhaps you already know something about it, but for those that don’t, I'll go through the main details now.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 74.69999999999999,
+          "end": 74.849999
+        },
+        {
+          "word": "know",
+          "start": 74.849999,
+          "end": 74.939999
+        },
+        {
+          "word": "that",
+          "start": 74.939999,
+          "end": 75.170001
+        },
+        {
+          "word": "many",
+          "start": 75.170001,
+          "end": 75.519999
+        },
+        {
+          "word": "of",
+          "start": 75.519999,
+          "end": 75.63
+        },
+        {
+          "word": "you",
+          "start": 75.63,
+          "end": 75.840001
+        },
+        {
+          "word": "are",
+          "start": 75.840001,
+          "end": 75.910001
+        },
+        {
+          "word": "interested",
+          "start": 75.97999999999999,
+          "end": 76.78999999999999
+        },
+        {
+          "word": "in",
+          "start": 76.78999999999999,
+          "end": 77.009999
+        },
+        {
+          "word": "using",
+          "start": 77.009999,
+          "end": 77.46
+        },
+        {
+          "word": "our",
+          "start": 77.46,
+          "end": 77.62
+        },
+        {
+          "word": "childcare",
+          "start": 77.62,
+          "end": 78.22
+        },
+        {
+          "word": "service",
+          "start": 78.22,
+          "end": 78.849999
+        },
+        {
+          "word": "when",
+          "start": 79.06,
+          "end": 79.32
+        },
+        {
+          "word": "your",
+          "start": 79.32,
+          "end": 79.509999
+        },
+        {
+          "word": "child",
+          "start": 79.509999,
+          "end": 80.000001
+        },
+        {
+          "word": "joins",
+          "start": 80.03,
+          "end": 80.38
+        },
+        {
+          "word": "the",
+          "start": 80.38,
+          "end": 80.47
+        },
+        {
+          "word": "school",
+          "start": 80.47,
+          "end": 80.910001
+        },
+        {
+          "word": "and",
+          "start": 81.330001,
+          "end": 81.47999999999999
+        },
+        {
+          "word": "perhaps",
+          "start": 81.47999999999999,
+          "end": 81.929999
+        },
+        {
+          "word": "you",
+          "start": 81.929999,
+          "end": 82.07
+        },
+        {
+          "word": "already",
+          "start": 82.07,
+          "end": 82.55
+        },
+        {
+          "word": "know",
+          "start": 82.55,
+          "end": 82.74000099999999
+        },
+        {
+          "word": "something",
+          "start": 82.74000099999999,
+          "end": 83.189999
+        },
+        {
+          "word": "about",
+          "start": 83.189999,
+          "end": 83.55
+        },
+        {
+          "word": "it",
+          "start": 83.64,
+          "end": 83.97999999999999
+        },
+        {
+          "word": "but",
+          "start": 84.44999999999999,
+          "end": 84.9
+        },
+        {
+          "word": "for",
+          "start": 84.9,
+          "end": 85.099999
+        },
+        {
+          "word": "those",
+          "start": 85.099999,
+          "end": 85.37
+        },
+        {
+          "word": "that",
+          "start": 85.37,
+          "end": 85.519999
+        },
+        {
+          "word": "do",
+          "start": 85.580001,
+          "end": 86.05
+        },
+        {
+          "word": "n't",
+          "start": 85.580001,
+          "end": 86.05
+        },
+        {
+          "word": "I",
+          "start": 86.340001,
+          "end": 86.439999
+        },
+        {
+          "word": "'ll",
+          "start": 86.439999,
+          "end": 86.49000099999999
+        },
+        {
+          "word": "go",
+          "start": 86.49000099999999,
+          "end": 86.62
+        },
+        {
+          "word": "through",
+          "start": 86.62,
+          "end": 86.920001
+        },
+        {
+          "word": "the",
+          "start": 86.920001,
+          "end": 87.000001
+        },
+        {
+          "word": "main",
+          "start": 87.000001,
+          "end": 87.24000099999999
+        },
+        {
+          "word": "details",
+          "start": 87.24000099999999,
+          "end": 87.769999
+        },
+        {
+          "word": "now",
+          "start": 87.81,
+          "end": 88.13
+        }
+      ],
       "answers": [],
-      "end": 88.2
+      "end": 88.13
     },
     {
       "id": 5,
-      "start": 89.4,
+      "start": 89.099999,
       "speaker": "SPEAKER",
       "en": "We offer childcare for children from the ages of four to eleven both before and after school.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 89.099999,
+          "end": 89.32
+        },
+        {
+          "word": "offer",
+          "start": 89.349999,
+          "end": 89.590001
+        },
+        {
+          "word": "childcare",
+          "start": 89.590001,
+          "end": 90.37
+        },
+        {
+          "word": "for",
+          "start": 90.37,
+          "end": 90.500001
+        },
+        {
+          "word": "children",
+          "start": 90.500001,
+          "end": 91.05
+        },
+        {
+          "word": "from",
+          "start": 91.05,
+          "end": 91.219998
+        },
+        {
+          "word": "the",
+          "start": 91.219998,
+          "end": 91.29000199999999
+        },
+        {
+          "word": "ages",
+          "start": 91.32,
+          "end": 91.849999
+        },
+        {
+          "word": "of",
+          "start": 91.930001,
+          "end": 92.07
+        },
+        {
+          "word": "four",
+          "start": 92.07,
+          "end": 92.610001
+        },
+        {
+          "word": "to",
+          "start": 92.610001,
+          "end": 92.82
+        },
+        {
+          "word": "eleven",
+          "start": 92.82,
+          "end": 93.46
+        },
+        {
+          "word": "both",
+          "start": 93.700002,
+          "end": 94.07
+        },
+        {
+          "word": "before",
+          "start": 94.07,
+          "end": 94.689999
+        },
+        {
+          "word": "and",
+          "start": 94.72999999999999,
+          "end": 94.930001
+        },
+        {
+          "word": "after",
+          "start": 94.96,
+          "end": 95.32
+        },
+        {
+          "word": "school",
+          "start": 95.32,
+          "end": 96.02000100000001
+        }
+      ],
       "answers": [],
-      "end": 96.8
+      "end": 96.02000100000001
     },
     {
       "id": 6,
-      "start": 96.9,
+      "start": 96.649998,
       "speaker": "SPEAKER",
       "en": "I know that many parents who work find this service invaluable.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 96.649998,
+          "end": 96.8
+        },
+        {
+          "word": "know",
+          "start": 96.8,
+          "end": 96.89
+        },
+        {
+          "word": "that",
+          "start": 96.89,
+          "end": 97.14
+        },
+        {
+          "word": "many",
+          "start": 97.14,
+          "end": 97.450002
+        },
+        {
+          "word": "parents",
+          "start": 97.450002,
+          "end": 98.03
+        },
+        {
+          "word": "who",
+          "start": 98.03,
+          "end": 98.160001
+        },
+        {
+          "word": "work",
+          "start": 98.160001,
+          "end": 98.719998
+        },
+        {
+          "word": "find",
+          "start": 98.719998,
+          "end": 99.149998
+        },
+        {
+          "word": "this",
+          "start": 99.149998,
+          "end": 99.360001
+        },
+        {
+          "word": "service",
+          "start": 99.360001,
+          "end": 99.82999899999999
+        },
+        {
+          "word": "invaluable",
+          "start": 99.87,
+          "end": 100.739999
+        }
+      ],
       "answers": [],
-      "end": 100.8
+      "end": 100.739999
     },
     {
       "id": 7,
-      "start": 101.8,
+      "start": 101.37,
       "speaker": "SPEAKER",
       "en": "You can leave your child with us safe in the knowledge that they will be extremely well cared for.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 101.37,
+          "end": 101.54000199999999
+        },
+        {
+          "word": "can",
+          "start": 101.54000199999999,
+          "end": 101.750001
+        },
+        {
+          "word": "leave",
+          "start": 101.750001,
+          "end": 101.950002
+        },
+        {
+          "word": "your",
+          "start": 101.950002,
+          "end": 102.12
+        },
+        {
+          "word": "child",
+          "start": 102.12,
+          "end": 102.55
+        },
+        {
+          "word": "with",
+          "start": 102.55,
+          "end": 102.680001
+        },
+        {
+          "word": "us",
+          "start": 102.680001,
+          "end": 102.899998
+        },
+        {
+          "word": "safe",
+          "start": 103.239999,
+          "end": 103.599999
+        },
+        {
+          "word": "in",
+          "start": 103.599999,
+          "end": 103.680001
+        },
+        {
+          "word": "the",
+          "start": 103.680001,
+          "end": 103.759999
+        },
+        {
+          "word": "knowledge",
+          "start": 103.759999,
+          "end": 104.259999
+        },
+        {
+          "word": "that",
+          "start": 104.259999,
+          "end": 104.55999800000001
+        },
+        {
+          "word": "they",
+          "start": 104.55999800000001,
+          "end": 104.72999999999999
+        },
+        {
+          "word": "will",
+          "start": 104.72999999999999,
+          "end": 104.87
+        },
+        {
+          "word": "be",
+          "start": 104.87,
+          "end": 105.099999
+        },
+        {
+          "word": "extremely",
+          "start": 105.13000199999999,
+          "end": 106.22999999999999
+        },
+        {
+          "word": "well",
+          "start": 106.22999999999999,
+          "end": 106.54000199999999
+        },
+        {
+          "word": "cared",
+          "start": 106.54000199999999,
+          "end": 106.87
+        },
+        {
+          "word": "for",
+          "start": 106.87,
+          "end": 107.200002
+        }
+      ],
       "answers": [],
-      "end": 107.4
+      "end": 107.200002
     },
     {
       "id": 8,
-      "start": 108.9,
+      "start": 108.399998,
       "speaker": "SPEAKER",
       "en": "We are insured to provide care for up to 70 children, although we rarely have this many /12 attending at any one session.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 108.399998,
+          "end": 108.57
+        },
+        {
+          "word": "are",
+          "start": 108.57,
+          "end": 108.680001
+        },
+        {
+          "word": "insured",
+          "start": 108.680001,
+          "end": 109.200002
+        },
+        {
+          "word": "to",
+          "start": 109.200002,
+          "end": 109.439999
+        },
+        {
+          "word": "provide",
+          "start": 109.439999,
+          "end": 109.96
+        },
+        {
+          "word": "care",
+          "start": 109.96,
+          "end": 110.28
+        },
+        {
+          "word": "for",
+          "start": 110.28,
+          "end": 110.46
+        },
+        {
+          "word": "up",
+          "start": 110.46,
+          "end": 110.64
+        },
+        {
+          "word": "to",
+          "start": 110.64,
+          "end": 110.739999
+        },
+        {
+          "word": "70",
+          "start": 110.739999,
+          "end": 111.32
+        },
+        {
+          "word": "children",
+          "start": 111.32,
+          "end": 111.89
+        },
+        {
+          "word": "although",
+          "start": 112.29000199999999,
+          "end": 112.719998
+        },
+        {
+          "word": "we",
+          "start": 112.719998,
+          "end": 112.89
+        },
+        {
+          "word": "rarely",
+          "start": 112.89,
+          "end": 113.340001
+        },
+        {
+          "word": "have",
+          "start": 113.340001,
+          "end": 113.680001
+        },
+        {
+          "word": "this",
+          "start": 113.680001,
+          "end": 113.950002
+        },
+        {
+          "word": "many",
+          "start": 113.950002,
+          "end": 114.250001
+        },
+        {
+          "word": "12",
+          "start": 114.250001,
+          "end": 114.29000199999999
+        },
+        {
+          "word": "attending",
+          "start": 114.32,
+          "end": 114.969998
+        },
+        {
+          "word": "at",
+          "start": 114.969998,
+          "end": 115.090001
+        },
+        {
+          "word": "any",
+          "start": 115.149998,
+          "end": 115.360001
+        },
+        {
+          "word": "one",
+          "start": 115.360001,
+          "end": 115.610001
+        },
+        {
+          "word": "session",
+          "start": 115.610001,
+          "end": 116.21
+        }
+      ],
       "answers": [
         11
       ],
-      "end": 116.3
+      "end": 116.21
     },
     {
       "id": 9,
-      "start": 117.4,
+      "start": 117.03,
       "speaker": "SPEAKER",
       "en": "I think we generally expect around 50-60 children for the /12 afternoon sessions and about half that number for the breakfast sessions.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 117.03,
+          "end": 117.399998
+        },
+        {
+          "word": "think",
+          "start": 117.399998,
+          "end": 117.64
+        },
+        {
+          "word": "we",
+          "start": 117.64,
+          "end": 117.750001
+        },
+        {
+          "word": "generally",
+          "start": 117.750001,
+          "end": 118.250001
+        },
+        {
+          "word": "expect",
+          "start": 118.250001,
+          "end": 118.78
+        },
+        {
+          "word": "around",
+          "start": 118.78,
+          "end": 119.12
+        },
+        {
+          "word": "50",
+          "start": 119.12,
+          "end": 119.77000100000001
+        },
+        {
+          "word": "60",
+          "start": 119.77000100000001,
+          "end": 120.439999
+        },
+        {
+          "word": "children",
+          "start": 120.439999,
+          "end": 121.099999
+        },
+        {
+          "word": "for",
+          "start": 121.099999,
+          "end": 121.219998
+        },
+        {
+          "word": "the",
+          "start": 121.219998,
+          "end": 121.360001
+        },
+        {
+          "word": "12",
+          "start": 121.360001,
+          "end": 121.439999
+        },
+        {
+          "word": "afternoon",
+          "start": 121.439999,
+          "end": 121.87
+        },
+        {
+          "word": "sessions",
+          "start": 121.87,
+          "end": 122.530003
+        },
+        {
+          "word": "and",
+          "start": 123.069997,
+          "end": 123.240002
+        },
+        {
+          "word": "about",
+          "start": 123.240002,
+          "end": 123.520001
+        },
+        {
+          "word": "half",
+          "start": 123.520001,
+          "end": 124.030003
+        },
+        {
+          "word": "that",
+          "start": 124.030003,
+          "end": 124.289998
+        },
+        {
+          "word": "number",
+          "start": 124.289998,
+          "end": 124.749997
+        },
+        {
+          "word": "for",
+          "start": 124.850003,
+          "end": 124.960004
+        },
+        {
+          "word": "the",
+          "start": 124.960004,
+          "end": 125.060002
+        },
+        {
+          "word": "breakfast",
+          "start": 125.060002,
+          "end": 125.740002
+        },
+        {
+          "word": "sessions",
+          "start": 125.740002,
+          "end": 126.450002
+        }
+      ],
       "answers": [
         11
       ],
-      "end": 126.5
+      "end": 126.450002
     },
     {
       "id": 10,
-      "start": 127.6,
+      "start": 127.569997,
       "speaker": "SPEAKER",
       "en": "Although we currently do have 70 children registered with us, not all of these attend every day.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Although",
+          "start": 127.569997,
+          "end": 128.009999
+        },
+        {
+          "word": "we",
+          "start": 128.009999,
+          "end": 128.160001
+        },
+        {
+          "word": "currently",
+          "start": 128.160001,
+          "end": 128.73000000000002
+        },
+        {
+          "word": "do",
+          "start": 128.759999,
+          "end": 128.89999799999998
+        },
+        {
+          "word": "have",
+          "start": 128.89999799999998,
+          "end": 128.92999700000001
+        },
+        {
+          "word": "70",
+          "start": 128.92999700000001,
+          "end": 129.759999
+        },
+        {
+          "word": "children",
+          "start": 129.759999,
+          "end": 130.280003
+        },
+        {
+          "word": "registered",
+          "start": 130.310002,
+          "end": 130.889996
+        },
+        {
+          "word": "with",
+          "start": 130.889996,
+          "end": 131.02000099999998
+        },
+        {
+          "word": "us",
+          "start": 131.02000099999998,
+          "end": 131.439999
+        },
+        {
+          "word": "not",
+          "start": 131.759999,
+          "end": 132.090001
+        },
+        {
+          "word": "all",
+          "start": 132.160001,
+          "end": 132.52000099999998
+        },
+        {
+          "word": "of",
+          "start": 132.52000099999998,
+          "end": 132.64999799999998
+        },
+        {
+          "word": "these",
+          "start": 132.64999799999998,
+          "end": 132.89999799999998
+        },
+        {
+          "word": "attend",
+          "start": 132.89999799999998,
+          "end": 133.319997
+        },
+        {
+          "word": "every",
+          "start": 133.319997,
+          "end": 133.60000300000002
+        },
+        {
+          "word": "day",
+          "start": 133.60000300000002,
+          "end": 134.02000099999998
+        }
+      ],
       "answers": [],
-      "end": 134.1
+      "end": 134.02000099999998
     },
     {
       "id": 11,
-      "start": 134.9,
+      "start": 134.89999799999998,
       "speaker": "SPEAKER",
       "en": "It’s ten years since we began offering an extended hours service and we’ve come a long way during that time.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 134.89999799999998,
+          "end": 135.14999799999998
+        },
+        {
+          "word": "'s",
+          "start": 134.89999799999998,
+          "end": 135.14999799999998
+        },
+        {
+          "word": "ten",
+          "start": 135.14999799999998,
+          "end": 135.42999700000001
+        },
+        {
+          "word": "years",
+          "start": 135.42999700000001,
+          "end": 135.859998
+        },
+        {
+          "word": "since",
+          "start": 135.859998,
+          "end": 136.170003
+        },
+        {
+          "word": "we",
+          "start": 136.170003,
+          "end": 136.289998
+        },
+        {
+          "word": "began",
+          "start": 136.289998,
+          "end": 136.710004
+        },
+        {
+          "word": "offering",
+          "start": 136.759999,
+          "end": 137.27000099999998
+        },
+        {
+          "word": "an",
+          "start": 137.27000099999998,
+          "end": 137.37
+        },
+        {
+          "word": "extended",
+          "start": 137.37,
+          "end": 137.999997
+        },
+        {
+          "word": "hours",
+          "start": 137.999997,
+          "end": 138.39999799999998
+        },
+        {
+          "word": "service",
+          "start": 138.39999799999998,
+          "end": 139.069997
+        },
+        {
+          "word": "and",
+          "start": 139.62,
+          "end": 139.759999
+        },
+        {
+          "word": "we",
+          "start": 139.759999,
+          "end": 139.910001
+        },
+        {
+          "word": "'ve",
+          "start": 139.759999,
+          "end": 139.910001
+        },
+        {
+          "word": "come",
+          "start": 139.910001,
+          "end": 140.069997
+        },
+        {
+          "word": "a",
+          "start": 140.069997,
+          "end": 140.249997
+        },
+        {
+          "word": "long",
+          "start": 140.249997,
+          "end": 140.359998
+        },
+        {
+          "word": "way",
+          "start": 140.359998,
+          "end": 140.630002
+        },
+        {
+          "word": "during",
+          "start": 140.630002,
+          "end": 140.92999700000001
+        },
+        {
+          "word": "that",
+          "start": 140.92999700000001,
+          "end": 141.10000300000002
+        },
+        {
+          "word": "time",
+          "start": 141.10000300000002,
+          "end": 141.62
+        }
+      ],
       "answers": [],
-      "end": 141.7
+      "end": 141.62
     },
     {
       "id": 12,
-      "start": 142.3,
+      "start": 142.240002,
       "speaker": "SPEAKER",
       "en": "When we first opened, we only had about 20 children attending regularly.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "When",
+          "start": 142.240002,
+          "end": 142.45000199999998
+        },
+        {
+          "word": "we",
+          "start": 142.45000199999998,
+          "end": 142.55
+        },
+        {
+          "word": "first",
+          "start": 142.55,
+          "end": 142.889996
+        },
+        {
+          "word": "opened",
+          "start": 142.889996,
+          "end": 143.319997
+        },
+        {
+          "word": "we",
+          "start": 143.64999799999998,
+          "end": 143.749997
+        },
+        {
+          "word": "only",
+          "start": 143.749997,
+          "end": 144.039998
+        },
+        {
+          "word": "had",
+          "start": 144.039998,
+          "end": 144.249997
+        },
+        {
+          "word": "about",
+          "start": 144.249997,
+          "end": 144.45000199999998
+        },
+        {
+          "word": "20",
+          "start": 144.45000199999998,
+          "end": 145.030003
+        },
+        {
+          "word": "children",
+          "start": 145.030003,
+          "end": 145.670003
+        },
+        {
+          "word": "attending",
+          "start": 145.70000199999998,
+          "end": 146.219998
+        },
+        {
+          "word": "regularly",
+          "start": 146.219998,
+          "end": 146.819997
+        }
+      ],
       "answers": [],
-      "end": 146.9
+      "end": 146.819997
     },
     {
       "id": 13,
-      "start": 148.4,
+      "start": 148.109998,
       "speaker": "SPEAKER",
       "en": "We try to keep our costs as low as we can and we think we provide very good value for money.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 148.109998,
+          "end": 148.310002
+        },
+        {
+          "word": "try",
+          "start": 148.310002,
+          "end": 148.55
+        },
+        {
+          "word": "to",
+          "start": 148.55,
+          "end": 148.73000000000002
+        },
+        {
+          "word": "keep",
+          "start": 148.73000000000002,
+          "end": 148.960004
+        },
+        {
+          "word": "our",
+          "start": 148.960004,
+          "end": 149.079999
+        },
+        {
+          "word": "costs",
+          "start": 149.079999,
+          "end": 149.579999
+        },
+        {
+          "word": "as",
+          "start": 149.609998,
+          "end": 149.749997
+        },
+        {
+          "word": "low",
+          "start": 149.780003,
+          "end": 150.090001
+        },
+        {
+          "word": "as",
+          "start": 150.090001,
+          "end": 150.219998
+        },
+        {
+          "word": "we",
+          "start": 150.219998,
+          "end": 150.310002
+        },
+        {
+          "word": "can",
+          "start": 150.310002,
+          "end": 150.780003
+        },
+        {
+          "word": "and",
+          "start": 151.319997,
+          "end": 151.490002
+        },
+        {
+          "word": "we",
+          "start": 151.490002,
+          "end": 151.579999
+        },
+        {
+          "word": "think",
+          "start": 151.579999,
+          "end": 151.920003
+        },
+        {
+          "word": "we",
+          "start": 151.920003,
+          "end": 152.030003
+        },
+        {
+          "word": "provide",
+          "start": 152.030003,
+          "end": 152.60000300000002
+        },
+        {
+          "word": "very",
+          "start": 152.630002,
+          "end": 153.090001
+        },
+        {
+          "word": "good",
+          "start": 153.090001,
+          "end": 153.329999
+        },
+        {
+          "word": "value",
+          "start": 153.329999,
+          "end": 153.60000300000002
+        },
+        {
+          "word": "for",
+          "start": 153.60000300000002,
+          "end": 153.759999
+        },
+        {
+          "word": "money",
+          "start": 153.759999,
+          "end": 154.210004
+        }
+      ],
       "answers": [],
-      "end": 155.0
+      "end": 154.210004
     },
     {
       "id": 14,
-      "start": 155.4,
+      "start": 154.92999700000001,
       "speaker": "SPEAKER",
       "en": "For the afternoon sessions, which run from 3.30 until 6 p.m., it's £7.20.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "For",
+          "start": 154.92999700000001,
+          "end": 155.030003
+        },
+        {
+          "word": "the",
+          "start": 155.030003,
+          "end": 155.14999799999998
+        },
+        {
+          "word": "afternoon",
+          "start": 155.14999799999998,
+          "end": 155.539998
+        },
+        {
+          "word": "sessions",
+          "start": 155.539998,
+          "end": 156.079999
+        },
+        {
+          "word": "which",
+          "start": 156.160001,
+          "end": 156.439999
+        },
+        {
+          "word": "run",
+          "start": 156.439999,
+          "end": 156.740002
+        },
+        {
+          "word": "from",
+          "start": 156.740002,
+          "end": 156.98000000000002
+        },
+        {
+          "word": "3",
+          "start": 156.98000000000002,
+          "end": 157.319997
+        },
+        {
+          "word": "30",
+          "start": 157.319997,
+          "end": 157.87
+        },
+        {
+          "word": "until",
+          "start": 157.89999799999998,
+          "end": 158.210004
+        },
+        {
+          "word": "6",
+          "start": 158.210004,
+          "end": 158.560002
+        },
+        {
+          "word": "p",
+          "start": 158.560002,
+          "end": 158.70000199999998
+        },
+        {
+          "word": "m",
+          "start": 158.70000199999998,
+          "end": 158.880002
+        },
+        {
+          "word": "it",
+          "start": 159.39999799999998,
+          "end": 159.92999700000001
+        },
+        {
+          "word": "'s",
+          "start": 159.39999799999998,
+          "end": 159.92999700000001
+        },
+        {
+          "word": "7",
+          "start": 159.92999700000001,
+          "end": 160.569997
+        },
+        {
+          "word": "20",
+          "start": 160.569997,
+          "end": 161.02000099999998
+        }
+      ],
       "answers": [],
-      "end": 161.7
+      "end": 161.02000099999998
     },
     {
       "id": 15,
-      "start": 162.0,
+      "start": 161.62,
       "speaker": "SPEAKER",
       "en": "But if you prefer, you can pay for one hour only, which costs £3.50, or two hours which costs £5.70.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 161.62,
+          "end": 161.990002
+        },
+        {
+          "word": "if",
+          "start": 162.02000099999998,
+          "end": 162.219998
+        },
+        {
+          "word": "you",
+          "start": 162.219998,
+          "end": 162.319997
+        },
+        {
+          "word": "prefer",
+          "start": 162.319997,
+          "end": 162.590001
+        },
+        {
+          "word": "you",
+          "start": 163.259999,
+          "end": 163.410001
+        },
+        {
+          "word": "can",
+          "start": 163.410001,
+          "end": 163.579999
+        },
+        {
+          "word": "pay",
+          "start": 163.579999,
+          "end": 163.8
+        },
+        {
+          "word": "for",
+          "start": 163.8,
+          "end": 163.98000000000002
+        },
+        {
+          "word": "one",
+          "start": 163.98000000000002,
+          "end": 164.240002
+        },
+        {
+          "word": "hour",
+          "start": 164.240002,
+          "end": 164.52000099999998
+        },
+        {
+          "word": "only",
+          "start": 164.60000300000002,
+          "end": 165.14999799999998
+        },
+        {
+          "word": "which",
+          "start": 165.410001,
+          "end": 165.73000000000002
+        },
+        {
+          "word": "costs",
+          "start": 165.73000000000002,
+          "end": 166.359998
+        },
+        {
+          "word": "3",
+          "start": 166.359998,
+          "end": 166.579999
+        },
+        {
+          "word": "50",
+          "start": 166.579999,
+          "end": 167.37
+        },
+        {
+          "word": "or",
+          "start": 167.810002,
+          "end": 167.939999
+        },
+        {
+          "word": "two",
+          "start": 167.939999,
+          "end": 168.130002
+        },
+        {
+          "word": "hours",
+          "start": 168.130002,
+          "end": 168.719998
+        },
+        {
+          "word": "which",
+          "start": 168.780003,
+          "end": 169.05
+        },
+        {
+          "word": "costs",
+          "start": 169.05,
+          "end": 169.639996
+        },
+        {
+          "word": "5",
+          "start": 169.639996,
+          "end": 169.85000300000002
+        },
+        {
+          "word": "70",
+          "start": 169.85000300000002,
+          "end": 170.8
+        }
+      ],
       "answers": [
         13
       ],
-      "end": 170.9
+      "end": 170.8
     },
     {
       "id": 16,
-      "start": 172.3,
+      "start": 171.92999700000001,
       "speaker": "SPEAKER",
       "en": "The cost of the childcare includes food and snacks.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 171.92999700000001,
+          "end": 172.039998
+        },
+        {
+          "word": "cost",
+          "start": 172.039998,
+          "end": 172.539998
+        },
+        {
+          "word": "of",
+          "start": 172.539998,
+          "end": 172.630002
+        },
+        {
+          "word": "the",
+          "start": 172.630002,
+          "end": 172.73000000000002
+        },
+        {
+          "word": "childcare",
+          "start": 172.73000000000002,
+          "end": 173.42999700000001
+        },
+        {
+          "word": "includes",
+          "start": 173.460004,
+          "end": 174.12
+        },
+        {
+          "word": "food",
+          "start": 174.12,
+          "end": 174.689999
+        },
+        {
+          "word": "and",
+          "start": 174.719998,
+          "end": 174.880002
+        },
+        {
+          "word": "snacks",
+          "start": 174.880002,
+          "end": 175.530003
+        }
+      ],
       "answers": [],
-      "end": 175.7
+      "end": 175.530003
     },
     {
       "id": 17,
-      "start": 176.2,
+      "start": 176.12,
       "speaker": "SPEAKER",
       "en": "They'll be given breakfast in the morning and in the afternoon, a healthy snack as soon as they finish school.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "They",
+          "start": 176.12,
+          "end": 176.259999
+        },
+        {
+          "word": "'ll",
+          "start": 176.259999,
+          "end": 176.319997
+        },
+        {
+          "word": "be",
+          "start": 176.319997,
+          "end": 176.410001
+        },
+        {
+          "word": "given",
+          "start": 176.410001,
+          "end": 176.819997
+        },
+        {
+          "word": "breakfast",
+          "start": 176.819997,
+          "end": 177.420003
+        },
+        {
+          "word": "in",
+          "start": 177.420003,
+          "end": 177.52000099999998
+        },
+        {
+          "word": "the",
+          "start": 177.52000099999998,
+          "end": 177.590001
+        },
+        {
+          "word": "morning",
+          "start": 177.590001,
+          "end": 178.069997
+        },
+        {
+          "word": "and",
+          "start": 178.410001,
+          "end": 178.740002
+        },
+        {
+          "word": "in",
+          "start": 178.740002,
+          "end": 178.87
+        },
+        {
+          "word": "the",
+          "start": 178.87,
+          "end": 178.990002
+        },
+        {
+          "word": "afternoon",
+          "start": 178.990002,
+          "end": 179.670003
+        },
+        {
+          "word": "a",
+          "start": 179.999997,
+          "end": 180.05
+        },
+        {
+          "word": "healthy",
+          "start": 180.05,
+          "end": 180.490002
+        },
+        {
+          "word": "snack",
+          "start": 180.490002,
+          "end": 181.039998
+        },
+        {
+          "word": "as",
+          "start": 181.10000300000002,
+          "end": 181.240002
+        },
+        {
+          "word": "soon",
+          "start": 181.240002,
+          "end": 181.609998
+        },
+        {
+          "word": "as",
+          "start": 181.609998,
+          "end": 181.710004
+        },
+        {
+          "word": "they",
+          "start": 181.710004,
+          "end": 181.85000300000002
+        },
+        {
+          "word": "finish",
+          "start": 181.85000300000002,
+          "end": 182.3
+        },
+        {
+          "word": "school",
+          "start": 182.3,
+          "end": 182.92999700000001
+        }
+      ],
       "answers": [],
-      "end": 183.0
+      "end": 182.92999700000001
     },
     {
       "id": 18,
-      "start": 183.3,
+      "start": 183.789998,
       "speaker": "SPEAKER",
       "en": "At 5 p.m. children are given something more substantial, such as pasta or a casserole.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "At",
+          "start": 183.789998,
+          "end": 183.990002
+        },
+        {
+          "word": "5",
+          "start": 183.990002,
+          "end": 184.27000099999998
+        },
+        {
+          "word": "p",
+          "start": 184.3,
+          "end": 184.45000199999998
+        },
+        {
+          "word": "m",
+          "start": 184.45000199999998,
+          "end": 184.660001
+        },
+        {
+          "word": "children",
+          "start": 184.95000199999998,
+          "end": 185.380002
+        },
+        {
+          "word": "are",
+          "start": 185.380002,
+          "end": 185.48000000000002
+        },
+        {
+          "word": "given",
+          "start": 185.48000000000002,
+          "end": 185.829999
+        },
+        {
+          "word": "something",
+          "start": 185.829999,
+          "end": 186.23000000000002
+        },
+        {
+          "word": "more",
+          "start": 186.23000000000002,
+          "end": 186.35999800000002
+        },
+        {
+          "word": "substantial",
+          "start": 186.35999800000002,
+          "end": 187.430005
+        },
+        {
+          "word": "such",
+          "start": 187.51000699999997,
+          "end": 187.870007
+        },
+        {
+          "word": "as",
+          "start": 187.870007,
+          "end": 188.02000099999998
+        },
+        {
+          "word": "pasta",
+          "start": 188.02000099999998,
+          "end": 188.82000399999998
+        },
+        {
+          "word": "or",
+          "start": 188.96000399999997,
+          "end": 189.10000300000002
+        },
+        {
+          "word": "a",
+          "start": 189.10000300000002,
+          "end": 189.15000600000002
+        },
+        {
+          "word": "casserole",
+          "start": 189.15000600000002,
+          "end": 189.870007
+        }
+      ],
       "answers": [
         14
       ],
-      "end": 190.0
+      "end": 189.870007
     },
     {
       "id": 19,
-      "start": 190.4,
+      "start": 190.66999499999997,
       "speaker": "SPEAKER",
       "en": "Please inform us of any allergies that your child might have and we'll make sure they’re offered a suitable alternative.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Please",
+          "start": 190.66999499999997,
+          "end": 191.22999299999998
+        },
+        {
+          "word": "inform",
+          "start": 191.22999299999998,
+          "end": 191.72999299999998
+        },
+        {
+          "word": "us",
+          "start": 191.72999299999998,
+          "end": 192.07000399999998
+        },
+        {
+          "word": "of",
+          "start": 192.120007,
+          "end": 192.27000099999998
+        },
+        {
+          "word": "any",
+          "start": 192.27000099999998,
+          "end": 192.40000600000002
+        },
+        {
+          "word": "allergies",
+          "start": 192.40000600000002,
+          "end": 193.16999499999997
+        },
+        {
+          "word": "that",
+          "start": 193.16999499999997,
+          "end": 193.370007
+        },
+        {
+          "word": "your",
+          "start": 193.370007,
+          "end": 193.499997
+        },
+        {
+          "word": "child",
+          "start": 193.499997,
+          "end": 193.939999
+        },
+        {
+          "word": "might",
+          "start": 193.939999,
+          "end": 194.120007
+        },
+        {
+          "word": "have",
+          "start": 194.120007,
+          "end": 194.620007
+        },
+        {
+          "word": "and",
+          "start": 194.990002,
+          "end": 195.199994
+        },
+        {
+          "word": "we",
+          "start": 195.199994,
+          "end": 195.3
+        },
+        {
+          "word": "'ll",
+          "start": 195.199994,
+          "end": 195.3
+        },
+        {
+          "word": "make",
+          "start": 195.3,
+          "end": 195.620007
+        },
+        {
+          "word": "sure",
+          "start": 195.620007,
+          "end": 195.96000399999997
+        },
+        {
+          "word": "they",
+          "start": 195.96000399999997,
+          "end": 196.189999
+        },
+        {
+          "word": "'re",
+          "start": 195.96000399999997,
+          "end": 196.189999
+        },
+        {
+          "word": "offered",
+          "start": 196.189999,
+          "end": 196.630002
+        },
+        {
+          "word": "a",
+          "start": 196.66000100000002,
+          "end": 196.740002
+        },
+        {
+          "word": "suitable",
+          "start": 196.740002,
+          "end": 197.370007
+        },
+        {
+          "word": "alternative",
+          "start": 197.40000600000002,
+          "end": 198.339993
+        }
+      ],
       "answers": [],
-      "end": 198.4
+      "end": 198.339993
     },
     {
       "id": 20,
-      "start": 199.8,
+      "start": 199.72999299999998,
       "speaker": "SPEAKER",
       "en": "As you may know, the childcare service runs through the school holidays from 8 a.m. to 6 p.m.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "As",
+          "start": 199.72999299999998,
+          "end": 199.889996
+        },
+        {
+          "word": "you",
+          "start": 199.889996,
+          "end": 199.990002
+        },
+        {
+          "word": "may",
+          "start": 199.990002,
+          "end": 200.130002
+        },
+        {
+          "word": "know",
+          "start": 200.130002,
+          "end": 200.439999
+        },
+        {
+          "word": "the",
+          "start": 200.870007,
+          "end": 200.990002
+        },
+        {
+          "word": "childcare",
+          "start": 200.990002,
+          "end": 201.55
+        },
+        {
+          "word": "service",
+          "start": 201.55,
+          "end": 202.130002
+        },
+        {
+          "word": "runs",
+          "start": 202.199994,
+          "end": 202.52000099999998
+        },
+        {
+          "word": "through",
+          "start": 202.52000099999998,
+          "end": 202.71999799999998
+        },
+        {
+          "word": "the",
+          "start": 202.71999799999998,
+          "end": 202.790005
+        },
+        {
+          "word": "school",
+          "start": 202.790005,
+          "end": 203.10999800000002
+        },
+        {
+          "word": "holidays",
+          "start": 203.10999800000002,
+          "end": 203.77000099999998
+        },
+        {
+          "word": "from",
+          "start": 203.77000099999998,
+          "end": 203.949994
+        },
+        {
+          "word": "8",
+          "start": 203.949994,
+          "end": 204.579999
+        },
+        {
+          "word": "a",
+          "start": 204.579999,
+          "end": 204.60999800000002
+        },
+        {
+          "word": "m",
+          "start": 204.60999800000002,
+          "end": 204.72999299999998
+        },
+        {
+          "word": "to",
+          "start": 204.990002,
+          "end": 205.10000300000002
+        },
+        {
+          "word": "6",
+          "start": 205.10000300000002,
+          "end": 205.46999799999998
+        },
+        {
+          "word": "p",
+          "start": 205.46999799999998,
+          "end": 205.630002
+        },
+        {
+          "word": "m",
+          "start": 205.630002,
+          "end": 205.939999
+        }
+      ],
       "answers": [],
-      "end": 206.9
+      "end": 205.939999
     },
     {
       "id": 21,
-      "start": 207.0,
+      "start": 206.689999,
       "speaker": "SPEAKER",
       "en": "We offer a really varied and exciting programme to keep the children entertained - we don’t want them to feel as if they are still at school!",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 206.689999,
+          "end": 206.90000600000002
+        },
+        {
+          "word": "offer",
+          "start": 206.90000600000002,
+          "end": 207.15000600000002
+        },
+        {
+          "word": "a",
+          "start": 207.180005,
+          "end": 207.32000399999998
+        },
+        {
+          "word": "really",
+          "start": 207.32000399999998,
+          "end": 207.71999799999998
+        },
+        {
+          "word": "varied",
+          "start": 207.71999799999998,
+          "end": 208.32000399999998
+        },
+        {
+          "word": "and",
+          "start": 208.41000100000002,
+          "end": 208.55999500000001
+        },
+        {
+          "word": "exciting",
+          "start": 208.55999500000001,
+          "end": 209.27000099999998
+        },
+        {
+          "word": "programme",
+          "start": 209.27000099999998,
+          "end": 209.8
+        },
+        {
+          "word": "to",
+          "start": 209.8,
+          "end": 209.90000600000002
+        },
+        {
+          "word": "keep",
+          "start": 209.90000600000002,
+          "end": 210.10999800000002
+        },
+        {
+          "word": "the",
+          "start": 210.10999800000002,
+          "end": 210.180005
+        },
+        {
+          "word": "children",
+          "start": 210.180005,
+          "end": 210.65000600000002
+        },
+        {
+          "word": "entertained",
+          "start": 210.699994,
+          "end": 211.540005
+        },
+        {
+          "word": "we",
+          "start": 212.120007,
+          "end": 212.249997
+        },
+        {
+          "word": "do",
+          "start": 212.249997,
+          "end": 212.439999
+        },
+        {
+          "word": "n't",
+          "start": 212.249997,
+          "end": 212.439999
+        },
+        {
+          "word": "want",
+          "start": 212.439999,
+          "end": 212.65000600000002
+        },
+        {
+          "word": "them",
+          "start": 212.65000600000002,
+          "end": 212.77999599999998
+        },
+        {
+          "word": "to",
+          "start": 212.77999599999998,
+          "end": 212.90000600000002
+        },
+        {
+          "word": "feel",
+          "start": 212.90000600000002,
+          "end": 213.27000099999998
+        },
+        {
+          "word": "as",
+          "start": 213.27000099999998,
+          "end": 213.40000600000002
+        },
+        {
+          "word": "if",
+          "start": 213.40000600000002,
+          "end": 213.55
+        },
+        {
+          "word": "they",
+          "start": 213.55,
+          "end": 213.71000399999997
+        },
+        {
+          "word": "are",
+          "start": 213.71000399999997,
+          "end": 213.77000099999998
+        },
+        {
+          "word": "still",
+          "start": 213.90000600000002,
+          "end": 214.120007
+        },
+        {
+          "word": "at",
+          "start": 214.120007,
+          "end": 214.249997
+        },
+        {
+          "word": "school",
+          "start": 214.249997,
+          "end": 214.870007
+        }
+      ],
       "answers": [],
-      "end": 214.9
+      "end": 214.870007
     },
     {
       "id": 22,
-      "start": 216.1,
+      "start": 215.71000399999997,
       "speaker": "SPEAKER",
       "en": "It will also feel different because they’ll get the chance to make new friends with children from other schools - spaces are available for them because a lot of our term-time children don’t always attend during the holiday.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 215.71000399999997,
+          "end": 215.85000300000002
+        },
+        {
+          "word": "will",
+          "start": 215.85000300000002,
+          "end": 215.96999799999998
+        },
+        {
+          "word": "also",
+          "start": 215.96999799999998,
+          "end": 216.30999500000001
+        },
+        {
+          "word": "feel",
+          "start": 216.30999500000001,
+          "end": 216.57000399999998
+        },
+        {
+          "word": "different",
+          "start": 216.57000399999998,
+          "end": 217.30999500000001
+        },
+        {
+          "word": "because",
+          "start": 217.30999500000001,
+          "end": 217.680005
+        },
+        {
+          "word": "they",
+          "start": 217.680005,
+          "end": 217.85999800000002
+        },
+        {
+          "word": "'ll",
+          "start": 217.85999800000002,
+          "end": 217.930005
+        },
+        {
+          "word": "get",
+          "start": 217.930005,
+          "end": 218.15000600000002
+        },
+        {
+          "word": "the",
+          "start": 218.15000600000002,
+          "end": 218.240002
+        },
+        {
+          "word": "chance",
+          "start": 218.240002,
+          "end": 218.699994
+        },
+        {
+          "word": "to",
+          "start": 218.699994,
+          "end": 218.80999500000001
+        },
+        {
+          "word": "make",
+          "start": 218.80999500000001,
+          "end": 219.139996
+        },
+        {
+          "word": "new",
+          "start": 219.139996,
+          "end": 219.339993
+        },
+        {
+          "word": "friends",
+          "start": 219.339993,
+          "end": 219.91000100000002
+        },
+        {
+          "word": "with",
+          "start": 219.91000100000002,
+          "end": 220.079999
+        },
+        {
+          "word": "children",
+          "start": 220.079999,
+          "end": 220.499997
+        },
+        {
+          "word": "from",
+          "start": 220.499997,
+          "end": 220.72999299999998
+        },
+        {
+          "word": "other",
+          "start": 220.829999,
+          "end": 221.05
+        },
+        {
+          "word": "schools",
+          "start": 221.05,
+          "end": 221.749997
+        },
+        {
+          "word": "spaces",
+          "start": 222.35999800000002,
+          "end": 222.870007
+        },
+        {
+          "word": "are",
+          "start": 222.870007,
+          "end": 223.15000600000002
+        },
+        {
+          "word": "available",
+          "start": 223.15000600000002,
+          "end": 223.589993
+        },
+        {
+          "word": "for",
+          "start": 223.589993,
+          "end": 223.829999
+        },
+        {
+          "word": "them",
+          "start": 223.829999,
+          "end": 224.040005
+        },
+        {
+          "word": "because",
+          "start": 224.389996,
+          "end": 224.630002
+        },
+        {
+          "word": "a",
+          "start": 224.630002,
+          "end": 224.680005
+        },
+        {
+          "word": "lot",
+          "start": 224.680005,
+          "end": 224.999997
+        },
+        {
+          "word": "of",
+          "start": 224.999997,
+          "end": 225.089993
+        },
+        {
+          "word": "our",
+          "start": 225.089993,
+          "end": 225.26000699999997
+        },
+        {
+          "word": "term",
+          "start": 225.26000699999997,
+          "end": 225.579999
+        },
+        {
+          "word": "time",
+          "start": 225.579999,
+          "end": 225.839993
+        },
+        {
+          "word": "children",
+          "start": 225.839993,
+          "end": 226.370007
+        },
+        {
+          "word": "do",
+          "start": 226.40000600000002,
+          "end": 226.699994
+        },
+        {
+          "word": "n't",
+          "start": 226.40000600000002,
+          "end": 226.699994
+        },
+        {
+          "word": "always",
+          "start": 226.749997,
+          "end": 227.249997
+        },
+        {
+          "word": "attend",
+          "start": 227.249997,
+          "end": 227.829999
+        },
+        {
+          "word": "during",
+          "start": 227.829999,
+          "end": 228.139996
+        },
+        {
+          "word": "the",
+          "start": 228.139996,
+          "end": 228.21999799999998
+        },
+        {
+          "word": "holiday",
+          "start": 228.21999799999998,
+          "end": 228.76000699999997
+        }
+      ],
       "answers": [
         15
       ],
-      "end": 228.9
+      "end": 228.76000699999997
     },
     {
       "id": 23,
-      "start": 230.4,
+      "start": 229.949994,
       "speaker": "SPEAKER",
       "en": "In the past, parents have asked if children over the age of 11 are allowed to come with their younger brothers and sisters - but I’m afraid we’re unable to do this because of the type of insurance we have.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 229.949994,
+          "end": 230.079999
+        },
+        {
+          "word": "the",
+          "start": 230.079999,
+          "end": 230.16999499999997
+        },
+        {
+          "word": "past",
+          "start": 230.16999499999997,
+          "end": 230.65000600000002
+        },
+        {
+          "word": "parents",
+          "start": 230.96000399999997,
+          "end": 231.370007
+        },
+        {
+          "word": "have",
+          "start": 231.370007,
+          "end": 231.46999799999998
+        },
+        {
+          "word": "asked",
+          "start": 231.46999799999998,
+          "end": 231.949994
+        },
+        {
+          "word": "if",
+          "start": 231.949994,
+          "end": 232.10000300000002
+        },
+        {
+          "word": "children",
+          "start": 232.10000300000002,
+          "end": 232.55
+        },
+        {
+          "word": "over",
+          "start": 232.77000099999998,
+          "end": 233.05999500000001
+        },
+        {
+          "word": "the",
+          "start": 233.05999500000001,
+          "end": 233.180005
+        },
+        {
+          "word": "age",
+          "start": 233.180005,
+          "end": 233.439999
+        },
+        {
+          "word": "of",
+          "start": 233.439999,
+          "end": 233.499997
+        },
+        {
+          "word": "11",
+          "start": 233.499997,
+          "end": 233.96999799999998
+        },
+        {
+          "word": "are",
+          "start": 233.999997,
+          "end": 234.15000600000002
+        },
+        {
+          "word": "allowed",
+          "start": 234.15000600000002,
+          "end": 234.47999299999998
+        },
+        {
+          "word": "to",
+          "start": 234.47999299999998,
+          "end": 234.579999
+        },
+        {
+          "word": "come",
+          "start": 234.579999,
+          "end": 234.90000600000002
+        },
+        {
+          "word": "with",
+          "start": 234.90000600000002,
+          "end": 235.02999599999998
+        },
+        {
+          "word": "their",
+          "start": 235.02999599999998,
+          "end": 235.130002
+        },
+        {
+          "word": "younger",
+          "start": 235.130002,
+          "end": 235.579999
+        },
+        {
+          "word": "brothers",
+          "start": 235.579999,
+          "end": 236.05
+        },
+        {
+          "word": "and",
+          "start": 236.139996,
+          "end": 236.249997
+        },
+        {
+          "word": "sisters",
+          "start": 236.249997,
+          "end": 236.930005
+        },
+        {
+          "word": "but",
+          "start": 237.439999,
+          "end": 237.72999299999998
+        },
+        {
+          "word": "I",
+          "start": 237.76000699999997,
+          "end": 237.90000600000002
+        },
+        {
+          "word": "'m",
+          "start": 237.76000699999997,
+          "end": 237.90000600000002
+        },
+        {
+          "word": "afraid",
+          "start": 237.90000600000002,
+          "end": 238.630002
+        },
+        {
+          "word": "we",
+          "start": 238.630002,
+          "end": 238.749997
+        },
+        {
+          "word": "'re",
+          "start": 238.630002,
+          "end": 238.749997
+        },
+        {
+          "word": "unable",
+          "start": 238.91000100000002,
+          "end": 239.380002
+        },
+        {
+          "word": "to",
+          "start": 239.380002,
+          "end": 239.52000099999998
+        },
+        {
+          "word": "do",
+          "start": 239.52000099999998,
+          "end": 239.829999
+        },
+        {
+          "word": "this",
+          "start": 239.829999,
+          "end": 240.139996
+        },
+        {
+          "word": "because",
+          "start": 240.46999799999998,
+          "end": 240.90000600000002
+        },
+        {
+          "word": "of",
+          "start": 240.90000600000002,
+          "end": 240.990002
+        },
+        {
+          "word": "the",
+          "start": 240.990002,
+          "end": 241.079999
+        },
+        {
+          "word": "type",
+          "start": 241.079999,
+          "end": 241.439999
+        },
+        {
+          "word": "of",
+          "start": 241.439999,
+          "end": 241.55
+        },
+        {
+          "word": "insurance",
+          "start": 241.55,
+          "end": 242.22999299999998
+        },
+        {
+          "word": "we",
+          "start": 242.22999299999998,
+          "end": 242.35999800000002
+        },
+        {
+          "word": "have",
+          "start": 246.35999800000002,
+          "end": 251.180005
+        }
+      ],
       "answers": [],
-      "end": 242.8
+      "end": 251.180005
     },
     {
       "id": 24,
-      "start": 285.4,
+      "start": 251.30999500000001,
       "speaker": "SPEAKER",
       "en": "So now let me tell you about some of the activities that your child can do during the after-school sessions.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 251.30999500000001,
+          "end": 251.51000699999997
+        },
+        {
+          "word": "now",
+          "start": 251.71000399999997,
+          "end": 252.05
+        },
+        {
+          "word": "let",
+          "start": 252.3,
+          "end": 252.52000099999998
+        },
+        {
+          "word": "me",
+          "start": 252.52000099999998,
+          "end": 252.699994
+        },
+        {
+          "word": "tell",
+          "start": 277.979993,
+          "end": 278.189999
+        },
+        {
+          "word": "you",
+          "start": 278.189999,
+          "end": 278.249997
+        },
+        {
+          "word": "about",
+          "start": 278.249997,
+          "end": 278.329999
+        },
+        {
+          "word": "some",
+          "start": 278.329999,
+          "end": 278.650006
+        },
+        {
+          "word": "of",
+          "start": 278.689999,
+          "end": 281.570004
+        },
+        {
+          "word": "the",
+          "start": 285.699994,
+          "end": 287.339993
+        },
+        {
+          "word": "activities",
+          "start": 287.370007,
+          "end": 288.270001
+        },
+        {
+          "word": "that",
+          "start": 288.270001,
+          "end": 288.419995
+        },
+        {
+          "word": "your",
+          "start": 288.419995,
+          "end": 288.529996
+        },
+        {
+          "word": "child",
+          "start": 288.529996,
+          "end": 288.999997
+        },
+        {
+          "word": "can",
+          "start": 288.999997,
+          "end": 289.180005
+        },
+        {
+          "word": "do",
+          "start": 289.180005,
+          "end": 289.479993
+        },
+        {
+          "word": "during",
+          "start": 289.570004,
+          "end": 289.930005
+        },
+        {
+          "word": "the",
+          "start": 289.930005,
+          "end": 290.059995
+        },
+        {
+          "word": "after",
+          "start": 290.089993,
+          "end": 290.439999
+        },
+        {
+          "word": "school",
+          "start": 290.439999,
+          "end": 290.760007
+        },
+        {
+          "word": "sessions",
+          "start": 290.760007,
+          "end": 291.439999
+        }
+      ],
       "answers": [],
-      "end": 291.6
+      "end": 291.439999
     },
     {
       "id": 25,
-      "start": 292.6,
+      "start": 292.370007,
       "speaker": "SPEAKER",
       "en": "As well as being able to use the playground equipment, computers and the library, there is usually at least one ‘special’ activity that children can do each day.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "As",
+          "start": 292.370007,
+          "end": 292.510007
+        },
+        {
+          "word": "well",
+          "start": 292.589993,
+          "end": 292.8
+        },
+        {
+          "word": "as",
+          "start": 292.8,
+          "end": 292.910001
+        },
+        {
+          "word": "being",
+          "start": 292.910001,
+          "end": 293.169995
+        },
+        {
+          "word": "able",
+          "start": 293.169995,
+          "end": 293.410001
+        },
+        {
+          "word": "to",
+          "start": 293.410001,
+          "end": 293.570004
+        },
+        {
+          "word": "use",
+          "start": 293.570004,
+          "end": 293.809995
+        },
+        {
+          "word": "the",
+          "start": 293.809995,
+          "end": 293.910001
+        },
+        {
+          "word": "playground",
+          "start": 293.910001,
+          "end": 294.589993
+        },
+        {
+          "word": "equipment",
+          "start": 294.589993,
+          "end": 295.339993
+        },
+        {
+          "word": "computers",
+          "start": 295.380002,
+          "end": 296.070004
+        },
+        {
+          "word": "and",
+          "start": 296.070004,
+          "end": 296.130002
+        },
+        {
+          "word": "the",
+          "start": 296.380002,
+          "end": 296.660001
+        },
+        {
+          "word": "library",
+          "start": 296.660001,
+          "end": 297.270001
+        },
+        {
+          "word": "there",
+          "start": 297.809995,
+          "end": 297.949994
+        },
+        {
+          "word": "is",
+          "start": 297.949994,
+          "end": 298.130002
+        },
+        {
+          "word": "usually",
+          "start": 298.130002,
+          "end": 298.600003
+        },
+        {
+          "word": "at",
+          "start": 298.600003,
+          "end": 298.729993
+        },
+        {
+          "word": "least",
+          "start": 298.729993,
+          "end": 298.990002
+        },
+        {
+          "word": "one",
+          "start": 298.990002,
+          "end": 299.370007
+        },
+        {
+          "word": "special",
+          "start": 299.370007,
+          "end": 299.910001
+        },
+        {
+          "word": "activity",
+          "start": 299.910001,
+          "end": 300.630002
+        },
+        {
+          "word": "that",
+          "start": 300.630002,
+          "end": 300.770001
+        },
+        {
+          "word": "children",
+          "start": 300.770001,
+          "end": 301.260007
+        },
+        {
+          "word": "can",
+          "start": 301.260007,
+          "end": 301.419995
+        },
+        {
+          "word": "do",
+          "start": 301.419995,
+          "end": 301.520001
+        },
+        {
+          "word": "each",
+          "start": 301.520001,
+          "end": 301.930005
+        },
+        {
+          "word": "day",
+          "start": 301.930005,
+          "end": 302.320004
+        }
+      ],
       "answers": [],
-      "end": 302.5
+      "end": 302.320004
     },
     {
       "id": 26,
-      "start": 303.4,
+      "start": 303.270001,
       "speaker": "SPEAKER",
       "en": "For example, Spanish.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "For",
+          "start": 303.270001,
+          "end": 303.380002
+        },
+        {
+          "word": "example",
+          "start": 303.380002,
+          "end": 303.889996
+        },
+        {
+          "word": "Spanish",
+          "start": 303.889996,
+          "end": 304.699994
+        }
+      ],
       "answers": [],
-      "end": 304.8
+      "end": 304.699994
     },
     {
       "id": 27,
-      "start": 305.9,
+      "start": 305.270001,
       "speaker": "SPEAKER",
       "en": "We have a specialist teacher coming in every Thursday to give a basic introduction to the language through games and songs.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 305.270001,
+          "end": 305.439999
+        },
+        {
+          "word": "have",
+          "start": 305.439999,
+          "end": 305.630002
+        },
+        {
+          "word": "a",
+          "start": 305.630002,
+          "end": 305.669995
+        },
+        {
+          "word": "specialist",
+          "start": 305.669995,
+          "end": 306.410001
+        },
+        {
+          "word": "teacher",
+          "start": 306.410001,
+          "end": 306.850003
+        },
+        {
+          "word": "coming",
+          "start": 306.939999,
+          "end": 307.3
+        },
+        {
+          "word": "in",
+          "start": 307.3,
+          "end": 307.469998
+        },
+        {
+          "word": "every",
+          "start": 307.529996,
+          "end": 307.900006
+        },
+        {
+          "word": "Thursday",
+          "start": 307.900006,
+          "end": 308.499997
+        },
+        {
+          "word": "to",
+          "start": 308.859998,
+          "end": 308.969998
+        },
+        {
+          "word": "give",
+          "start": 308.969998,
+          "end": 309.130002
+        },
+        {
+          "word": "a",
+          "start": 309.130002,
+          "end": 309.219998
+        },
+        {
+          "word": "basic",
+          "start": 309.219998,
+          "end": 309.790005
+        },
+        {
+          "word": "introduction",
+          "start": 309.790005,
+          "end": 310.449994
+        },
+        {
+          "word": "to",
+          "start": 310.449994,
+          "end": 310.55
+        },
+        {
+          "word": "the",
+          "start": 310.55,
+          "end": 310.740002
+        },
+        {
+          "word": "language",
+          "start": 310.740002,
+          "end": 311.270001
+        },
+        {
+          "word": "through",
+          "start": 311.270001,
+          "end": 311.410001
+        },
+        {
+          "word": "games",
+          "start": 311.410001,
+          "end": 311.96000399999997
+        },
+        {
+          "word": "and",
+          "start": 311.96000399999997,
+          "end": 312.180005
+        },
+        {
+          "word": "songs",
+          "start": 312.180005,
+          "end": 312.639996
+        }
+      ],
       "answers": [],
-      "end": 313.4
+      "end": 312.639996
     },
     {
       "id": 28,
-      "start": 314.0,
+      "start": 313.350003,
       "speaker": "SPEAKER",
       "en": "She does two sessions: one for the over 8s and one for the younger children.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "She",
+          "start": 313.350003,
+          "end": 313.540005
+        },
+        {
+          "word": "does",
+          "start": 313.540005,
+          "end": 313.859998
+        },
+        {
+          "word": "two",
+          "start": 313.859998,
+          "end": 314.130002
+        },
+        {
+          "word": "sessions",
+          "start": 314.130002,
+          "end": 314.81001000000003
+        },
+        {
+          "word": "one",
+          "start": 315.199994,
+          "end": 315.569989
+        },
+        {
+          "word": "for",
+          "start": 315.569989,
+          "end": 315.659985
+        },
+        {
+          "word": "the",
+          "start": 315.659985,
+          "end": 315.819989
+        },
+        {
+          "word": "over",
+          "start": 315.819989,
+          "end": 316.079999
+        },
+        {
+          "word": "8",
+          "start": 316.079999,
+          "end": 316.500012
+        },
+        {
+          "word": "s",
+          "start": 316.079999,
+          "end": 316.500012
+        },
+        {
+          "word": "and",
+          "start": 316.8,
+          "end": 316.960004
+        },
+        {
+          "word": "one",
+          "start": 316.960004,
+          "end": 317.3
+        },
+        {
+          "word": "for",
+          "start": 317.3,
+          "end": 317.41999500000003
+        },
+        {
+          "word": "the",
+          "start": 317.41999500000003,
+          "end": 317.52000100000004
+        },
+        {
+          "word": "younger",
+          "start": 317.52000100000004,
+          "end": 317.759991
+        },
+        {
+          "word": "children",
+          "start": 317.759991,
+          "end": 318.379987
+        }
+      ],
       "answers": [],
-      "end": 318.4
+      "end": 318.379987
     },
     {
       "id": 29,
-      "start": 320.1,
+      "start": 319.349988,
       "speaker": "SPEAKER",
       "en": "This is the only activity which we have to make an extra charge for - but it's well worth it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "This",
+          "start": 319.349988,
+          "end": 319.569989
+        },
+        {
+          "word": "is",
+          "start": 319.569989,
+          "end": 319.629987
+        },
+        {
+          "word": "the",
+          "start": 319.629987,
+          "end": 319.930005
+        },
+        {
+          "word": "only",
+          "start": 320.009991,
+          "end": 320.220013
+        },
+        {
+          "word": "activity",
+          "start": 320.220013,
+          "end": 321.079999
+        },
+        {
+          "word": "which",
+          "start": 321.079999,
+          "end": 321.370007
+        },
+        {
+          "word": "we",
+          "start": 321.370007,
+          "end": 321.470013
+        },
+        {
+          "word": "have",
+          "start": 321.52000100000004,
+          "end": 321.680005
+        },
+        {
+          "word": "to",
+          "start": 321.680005,
+          "end": 321.78999
+        },
+        {
+          "word": "make",
+          "start": 321.78999,
+          "end": 321.97999300000004
+        },
+        {
+          "word": "an",
+          "start": 321.97999300000004,
+          "end": 322.069989
+        },
+        {
+          "word": "extra",
+          "start": 322.150006,
+          "end": 322.579999
+        },
+        {
+          "word": "charge",
+          "start": 322.579999,
+          "end": 323.180005
+        },
+        {
+          "word": "for",
+          "start": 323.180005,
+          "end": 323.509991
+        },
+        {
+          "word": "but",
+          "start": 323.81001000000003,
+          "end": 324.03999
+        },
+        {
+          "word": "it",
+          "start": 324.03999,
+          "end": 324.240002
+        },
+        {
+          "word": "'s",
+          "start": 324.03999,
+          "end": 324.240002
+        },
+        {
+          "word": "well",
+          "start": 324.240002,
+          "end": 324.66999500000003
+        },
+        {
+          "word": "worth",
+          "start": 324.66999500000003,
+          "end": 325.090009
+        },
+        {
+          "word": "it",
+          "start": 325.090009,
+          "end": 325.409985
+        }
+      ],
       "answers": [
         16
       ],
-      "end": 325.5
+      "end": 325.409985
     },
     {
       "id": 30,
-      "start": 326.5,
+      "start": 326.359998,
       "speaker": "SPEAKER",
       "en": "Once a week the children have the opportunity to do some music.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Once",
+          "start": 326.359998,
+          "end": 326.680005
+        },
+        {
+          "word": "a",
+          "start": 326.680005,
+          "end": 326.72999300000004
+        },
+        {
+          "word": "week",
+          "start": 326.72999300000004,
+          "end": 327.069989
+        },
+        {
+          "word": "the",
+          "start": 327.069989,
+          "end": 327.150006
+        },
+        {
+          "word": "children",
+          "start": 327.150006,
+          "end": 327.699994
+        },
+        {
+          "word": "have",
+          "start": 327.699994,
+          "end": 327.940015
+        },
+        {
+          "word": "the",
+          "start": 327.940015,
+          "end": 328.069989
+        },
+        {
+          "word": "opportunity",
+          "start": 328.069989,
+          "end": 328.750012
+        },
+        {
+          "word": "to",
+          "start": 328.750012,
+          "end": 328.900006
+        },
+        {
+          "word": "do",
+          "start": 328.900006,
+          "end": 329.069989
+        },
+        {
+          "word": "some",
+          "start": 329.069989,
+          "end": 329.370007
+        },
+        {
+          "word": "music",
+          "start": 329.370007,
+          "end": 329.949994
+        }
+      ],
       "answers": [],
-      "end": 330.7
+      "end": 329.949994
     },
     {
       "id": 31,
-      "start": 331.1,
+      "start": 330.590009,
       "speaker": "SPEAKER",
       "en": "We’re very lucky that one of our staff is a member of a folk band.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 330.590009,
+          "end": 330.740002
+        },
+        {
+          "word": "'re",
+          "start": 330.590009,
+          "end": 330.740002
+        },
+        {
+          "word": "very",
+          "start": 330.740002,
+          "end": 331.05
+        },
+        {
+          "word": "lucky",
+          "start": 331.05,
+          "end": 331.500012
+        },
+        {
+          "word": "that",
+          "start": 331.500012,
+          "end": 331.680005
+        },
+        {
+          "word": "one",
+          "start": 331.680005,
+          "end": 331.940015
+        },
+        {
+          "word": "of",
+          "start": 331.940015,
+          "end": 332.05
+        },
+        {
+          "word": "our",
+          "start": 332.05,
+          "end": 332.190015
+        },
+        {
+          "word": "staff",
+          "start": 332.190015,
+          "end": 332.879987
+        },
+        {
+          "word": "is",
+          "start": 333.139996,
+          "end": 333.27000100000004
+        },
+        {
+          "word": "a",
+          "start": 333.27000100000004,
+          "end": 333.329999
+        },
+        {
+          "word": "member",
+          "start": 333.329999,
+          "end": 333.639996
+        },
+        {
+          "word": "of",
+          "start": 333.720013,
+          "end": 333.81001000000003
+        },
+        {
+          "word": "a",
+          "start": 333.81001000000003,
+          "end": 333.859998
+        },
+        {
+          "word": "folk",
+          "start": 333.859998,
+          "end": 334.240002
+        },
+        {
+          "word": "band",
+          "start": 334.240002,
+          "end": 334.680005
+        }
+      ],
       "answers": [],
-      "end": 334.8
+      "end": 334.680005
     },
     {
       "id": 32,
-      "start": 335.7,
+      "start": 335.430005,
       "speaker": "SPEAKER",
       "en": "On Mondays, she teaches singing and percussion to groups of children.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "On",
+          "start": 335.430005,
+          "end": 335.590009
+        },
+        {
+          "word": "Mondays",
+          "start": 335.590009,
+          "end": 336.099988
+        },
+        {
+          "word": "she",
+          "start": 336.3,
+          "end": 336.470013
+        },
+        {
+          "word": "teaches",
+          "start": 336.470013,
+          "end": 336.940015
+        },
+        {
+          "word": "singing",
+          "start": 336.940015,
+          "end": 337.440015
+        },
+        {
+          "word": "and",
+          "start": 337.509991,
+          "end": 337.740002
+        },
+        {
+          "word": "percussion",
+          "start": 337.740002,
+          "end": 338.359998
+        },
+        {
+          "word": "to",
+          "start": 338.359998,
+          "end": 338.47999300000004
+        },
+        {
+          "word": "groups",
+          "start": 338.47999300000004,
+          "end": 338.78999
+        },
+        {
+          "word": "of",
+          "start": 338.78999,
+          "end": 338.879987
+        },
+        {
+          "word": "children",
+          "start": 338.879987,
+          "end": 339.509991
+        }
+      ],
       "answers": [],
-      "end": 339.6
+      "end": 339.509991
     },
     {
       "id": 33,
-      "start": 341.1,
+      "start": 340.359998,
       "speaker": "SPEAKER",
       "en": "We do rely on parental support for this, so if any of you sing or play an instrument and would be prepared to help out at these sessions, we’d be delighted.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "We",
+          "start": 340.359998,
+          "end": 340.53999
+        },
+        {
+          "word": "do",
+          "start": 340.53999,
+          "end": 340.639996
+        },
+        {
+          "word": "rely",
+          "start": 340.710004,
+          "end": 341.53999
+        },
+        {
+          "word": "on",
+          "start": 341.53999,
+          "end": 341.740002
+        },
+        {
+          "word": "parental",
+          "start": 341.740002,
+          "end": 342.199994
+        },
+        {
+          "word": "support",
+          "start": 342.199994,
+          "end": 342.710004
+        },
+        {
+          "word": "for",
+          "start": 342.710004,
+          "end": 342.840009
+        },
+        {
+          "word": "this",
+          "start": 342.840009,
+          "end": 343.250012
+        },
+        {
+          "word": "so",
+          "start": 343.449994,
+          "end": 343.599988
+        },
+        {
+          "word": "if",
+          "start": 343.72999300000004,
+          "end": 343.889996
+        },
+        {
+          "word": "any",
+          "start": 343.97999300000004,
+          "end": 344.329999
+        },
+        {
+          "word": "of",
+          "start": 344.329999,
+          "end": 344.389996
+        },
+        {
+          "word": "you",
+          "start": 344.389996,
+          "end": 344.52000100000004
+        },
+        {
+          "word": "sing",
+          "start": 344.52000100000004,
+          "end": 345.030011
+        },
+        {
+          "word": "or",
+          "start": 345.099988,
+          "end": 345.250012
+        },
+        {
+          "word": "play",
+          "start": 345.250012,
+          "end": 345.579999
+        },
+        {
+          "word": "an",
+          "start": 345.579999,
+          "end": 345.690015
+        },
+        {
+          "word": "instrument",
+          "start": 345.690015,
+          "end": 346.280011
+        },
+        {
+          "word": "and",
+          "start": 346.55,
+          "end": 346.680005
+        },
+        {
+          "word": "would",
+          "start": 346.680005,
+          "end": 346.8
+        },
+        {
+          "word": "be",
+          "start": 346.8,
+          "end": 346.930005
+        },
+        {
+          "word": "prepared",
+          "start": 346.930005,
+          "end": 347.500012
+        },
+        {
+          "word": "to",
+          "start": 347.500012,
+          "end": 347.590009
+        },
+        {
+          "word": "help",
+          "start": 347.590009,
+          "end": 347.870007
+        },
+        {
+          "word": "out",
+          "start": 347.870007,
+          "end": 348.150006
+        },
+        {
+          "word": "at",
+          "start": 348.150006,
+          "end": 348.250012
+        },
+        {
+          "word": "these",
+          "start": 348.250012,
+          "end": 348.470013
+        },
+        {
+          "word": "sessions",
+          "start": 348.470013,
+          "end": 349.069989
+        },
+        {
+          "word": "we",
+          "start": 349.280011,
+          "end": 349.599988
+        },
+        {
+          "word": "'d",
+          "start": 349.599988,
+          "end": 349.72999300000004
+        },
+        {
+          "word": "be",
+          "start": 349.72999300000004,
+          "end": 349.889996
+        },
+        {
+          "word": "delighted",
+          "start": 349.889996,
+          "end": 350.639996
+        }
+      ],
       "answers": [
         17
       ],
-      "end": 350.8
+      "end": 350.639996
     },
     {
       "id": 34,
-      "start": 352.2,
+      "start": 351.889996,
       "speaker": "SPEAKER",
       "en": "Painting continues to be one of the most popular activities.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Painting",
+          "start": 351.889996,
+          "end": 352.400006
+        },
+        {
+          "word": "continues",
+          "start": 352.400006,
+          "end": 352.97999300000004
+        },
+        {
+          "word": "to",
+          "start": 352.97999300000004,
+          "end": 353.129987
+        },
+        {
+          "word": "be",
+          "start": 353.129987,
+          "end": 353.259991
+        },
+        {
+          "word": "one",
+          "start": 353.259991,
+          "end": 353.430005
+        },
+        {
+          "word": "of",
+          "start": 353.430005,
+          "end": 353.530011
+        },
+        {
+          "word": "the",
+          "start": 353.530011,
+          "end": 353.609998
+        },
+        {
+          "word": "most",
+          "start": 353.609998,
+          "end": 353.990002
+        },
+        {
+          "word": "popular",
+          "start": 353.990002,
+          "end": 354.490002
+        },
+        {
+          "word": "activities",
+          "start": 354.490002,
+          "end": 355.47999300000004
+        }
+      ],
       "answers": [],
-      "end": 356.2
+      "end": 355.47999300000004
     },
     {
       "id": 35,
-      "start": 356.3,
+      "start": 356.069989,
       "speaker": "SPEAKER",
       "en": "To begin with we weren’t keen on offering this because of the extra mess involved, but children kept asking if they could do some art and so we finally gave in.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "To",
+          "start": 356.069989,
+          "end": 356.180005
+        },
+        {
+          "word": "begin",
+          "start": 356.180005,
+          "end": 356.47999300000004
+        },
+        {
+          "word": "with",
+          "start": 356.47999300000004,
+          "end": 356.699994
+        },
+        {
+          "word": "we",
+          "start": 356.940015,
+          "end": 357.099988
+        },
+        {
+          "word": "were",
+          "start": 357.150006,
+          "end": 357.52000100000004
+        },
+        {
+          "word": "n't",
+          "start": 357.150006,
+          "end": 357.52000100000004
+        },
+        {
+          "word": "keen",
+          "start": 357.52000100000004,
+          "end": 357.859998
+        },
+        {
+          "word": "on",
+          "start": 357.859998,
+          "end": 358.000012
+        },
+        {
+          "word": "offering",
+          "start": 358.000012,
+          "end": 358.440015
+        },
+        {
+          "word": "this",
+          "start": 358.440015,
+          "end": 358.759991
+        },
+        {
+          "word": "because",
+          "start": 358.759991,
+          "end": 359.090009
+        },
+        {
+          "word": "of",
+          "start": 359.090009,
+          "end": 359.180005
+        },
+        {
+          "word": "the",
+          "start": 359.180005,
+          "end": 359.329999
+        },
+        {
+          "word": "extra",
+          "start": 359.389996,
+          "end": 359.78999
+        },
+        {
+          "word": "mess",
+          "start": 359.78999,
+          "end": 360.159985
+        },
+        {
+          "word": "involved",
+          "start": 360.159985,
+          "end": 360.909985
+        },
+        {
+          "word": "but",
+          "start": 361.3,
+          "end": 361.639996
+        },
+        {
+          "word": "children",
+          "start": 361.639996,
+          "end": 362.180005
+        },
+        {
+          "word": "kept",
+          "start": 362.180005,
+          "end": 362.650006
+        },
+        {
+          "word": "asking",
+          "start": 362.680005,
+          "end": 363.280011
+        },
+        {
+          "word": "if",
+          "start": 363.31001000000003,
+          "end": 363.47999300000004
+        },
+        {
+          "word": "they",
+          "start": 363.47999300000004,
+          "end": 363.609998
+        },
+        {
+          "word": "could",
+          "start": 363.609998,
+          "end": 363.829999
+        },
+        {
+          "word": "do",
+          "start": 363.829999,
+          "end": 364.000012
+        },
+        {
+          "word": "some",
+          "start": 364.000012,
+          "end": 364.22999300000004
+        },
+        {
+          "word": "art",
+          "start": 364.259991,
+          "end": 364.569989
+        },
+        {
+          "word": "and",
+          "start": 365.03999,
+          "end": 365.150006
+        },
+        {
+          "word": "so",
+          "start": 365.150006,
+          "end": 365.329999
+        },
+        {
+          "word": "we",
+          "start": 365.329999,
+          "end": 365.460004
+        },
+        {
+          "word": "finally",
+          "start": 365.460004,
+          "end": 365.97999300000004
+        },
+        {
+          "word": "gave",
+          "start": 365.97999300000004,
+          "end": 366.280011
+        },
+        {
+          "word": "in",
+          "start": 366.280011,
+          "end": 366.620007
+        }
+      ],
       "answers": [
         18
       ],
-      "end": 367.6
+      "end": 366.620007
     },
     {
       "id": 36,
-      "start": 367.8,
+      "start": 367.53999,
       "speaker": "SPEAKER",
       "en": "Art is great for helping the children to relax after working hard at school all day.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Art",
+          "start": 367.53999,
+          "end": 367.78999
+        },
+        {
+          "word": "is",
+          "start": 367.78999,
+          "end": 367.91999500000003
+        },
+        {
+          "word": "great",
+          "start": 367.91999500000003,
+          "end": 368.430005
+        },
+        {
+          "word": "for",
+          "start": 368.430005,
+          "end": 368.53999
+        },
+        {
+          "word": "helping",
+          "start": 368.53999,
+          "end": 368.870007
+        },
+        {
+          "word": "the",
+          "start": 368.870007,
+          "end": 368.930005
+        },
+        {
+          "word": "children",
+          "start": 368.930005,
+          "end": 369.379987
+        },
+        {
+          "word": "to",
+          "start": 369.379987,
+          "end": 369.509991
+        },
+        {
+          "word": "relax",
+          "start": 369.509991,
+          "end": 370.079999
+        },
+        {
+          "word": "after",
+          "start": 370.079999,
+          "end": 370.359998
+        },
+        {
+          "word": "working",
+          "start": 370.359998,
+          "end": 370.859998
+        },
+        {
+          "word": "hard",
+          "start": 370.859998,
+          "end": 371.250012
+        },
+        {
+          "word": "at",
+          "start": 371.250012,
+          "end": 371.359998
+        },
+        {
+          "word": "school",
+          "start": 371.359998,
+          "end": 371.829999
+        },
+        {
+          "word": "all",
+          "start": 371.829999,
+          "end": 371.97999300000004
+        },
+        {
+          "word": "day",
+          "start": 371.97999300000004,
+          "end": 372.349988
+        }
+      ],
       "answers": [],
-      "end": 372.5
+      "end": 372.349988
     },
     {
       "id": 37,
-      "start": 373.5,
+      "start": 373.699994,
       "speaker": "SPEAKER",
       "en": "Yoga is something that we’ve been meaning to introduce for some time but haven’t been able to find anyone available to teach it - until now that is.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yoga",
+          "start": 373.699994,
+          "end": 374.090009
+        },
+        {
+          "word": "is",
+          "start": 374.240002,
+          "end": 374.349988
+        },
+        {
+          "word": "something",
+          "start": 374.349988,
+          "end": 374.840009
+        },
+        {
+          "word": "that",
+          "start": 374.870007,
+          "end": 375.05
+        },
+        {
+          "word": "we",
+          "start": 375.05,
+          "end": 375.240002
+        },
+        {
+          "word": "'ve",
+          "start": 375.05,
+          "end": 375.240002
+        },
+        {
+          "word": "been",
+          "start": 375.240002,
+          "end": 375.430005
+        },
+        {
+          "word": "meaning",
+          "start": 375.430005,
+          "end": 375.740002
+        },
+        {
+          "word": "to",
+          "start": 375.740002,
+          "end": 375.840009
+        },
+        {
+          "word": "introduce",
+          "start": 375.840009,
+          "end": 376.389996
+        },
+        {
+          "word": "for",
+          "start": 376.389996,
+          "end": 376.490002
+        },
+        {
+          "word": "some",
+          "start": 376.490002,
+          "end": 376.77000100000004
+        },
+        {
+          "word": "time",
+          "start": 376.77000100000004,
+          "end": 377.250012
+        },
+        {
+          "word": "but",
+          "start": 377.650006,
+          "end": 377.78999
+        },
+        {
+          "word": "have",
+          "start": 377.78999,
+          "end": 378.069989
+        },
+        {
+          "word": "n't",
+          "start": 377.78999,
+          "end": 378.069989
+        },
+        {
+          "word": "been",
+          "start": 378.069989,
+          "end": 378.180005
+        },
+        {
+          "word": "able",
+          "start": 378.180005,
+          "end": 378.430005
+        },
+        {
+          "word": "to",
+          "start": 378.430005,
+          "end": 378.55
+        },
+        {
+          "word": "find",
+          "start": 378.55,
+          "end": 378.889996
+        },
+        {
+          "word": "anyone",
+          "start": 378.889996,
+          "end": 379.240002
+        },
+        {
+          "word": "available",
+          "start": 379.240002,
+          "end": 379.759991
+        },
+        {
+          "word": "to",
+          "start": 379.759991,
+          "end": 379.900006
+        },
+        {
+          "word": "teach",
+          "start": 379.900006,
+          "end": 380.280011
+        },
+        {
+          "word": "it",
+          "start": 380.280011,
+          "end": 380.56001000000003
+        },
+        {
+          "word": "until",
+          "start": 380.900006,
+          "end": 381.680005
+        },
+        {
+          "word": "now",
+          "start": 381.680005,
+          "end": 381.8
+        },
+        {
+          "word": "that",
+          "start": 381.8,
+          "end": 382.05
+        },
+        {
+          "word": "is",
+          "start": 382.05,
+          "end": 382.370007
+        }
+      ],
       "answers": [
         19
       ],
-      "end": 379.8
+      "end": 382.370007
     },
     {
       "id": 38,
-      "start": 379.8,
+      "start": 382.990002,
       "speaker": "SPEAKER",
       "en": "So we’ll see how this goes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 382.990002,
+          "end": 383.069989
+        },
+        {
+          "word": "we",
+          "start": 383.349988,
+          "end": 383.509991
+        },
+        {
+          "word": "'ll",
+          "start": 383.349988,
+          "end": 383.509991
+        },
+        {
+          "word": "see",
+          "start": 383.509991,
+          "end": 383.680005
+        },
+        {
+          "word": "how",
+          "start": 383.680005,
+          "end": 383.849988
+        },
+        {
+          "word": "this",
+          "start": 383.849988,
+          "end": 384.03999
+        },
+        {
+          "word": "goes",
+          "start": 384.03999,
+          "end": 384.579999
+        }
+      ],
       "answers": [],
-      "end": 385.4
+      "end": 384.579999
     },
     {
       "id": 39,
-      "start": 386.0,
+      "start": 385.22999300000004,
       "speaker": "SPEAKER",
       "en": "Hopefully, children will benefit in all sorts of ways from this.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Hopefully",
+          "start": 385.22999300000004,
+          "end": 385.849988
+        },
+        {
+          "word": "children",
+          "start": 386.16999500000003,
+          "end": 386.699994
+        },
+        {
+          "word": "will",
+          "start": 386.699994,
+          "end": 386.849988
+        },
+        {
+          "word": "benefit",
+          "start": 386.849988,
+          "end": 387.409985
+        },
+        {
+          "word": "in",
+          "start": 387.409985,
+          "end": 387.530011
+        },
+        {
+          "word": "all",
+          "start": 387.569989,
+          "end": 387.740002
+        },
+        {
+          "word": "sorts",
+          "start": 387.740002,
+          "end": 388.27000100000004
+        },
+        {
+          "word": "of",
+          "start": 388.27000100000004,
+          "end": 388.400006
+        },
+        {
+          "word": "ways",
+          "start": 388.400006,
+          "end": 388.78999
+        },
+        {
+          "word": "from",
+          "start": 388.78999,
+          "end": 388.900006
+        },
+        {
+          "word": "this",
+          "start": 388.900006,
+          "end": 389.430005
+        }
+      ],
       "answers": [],
-      "end": 389.5
+      "end": 389.430005
     },
     {
       "id": 40,
-      "start": 390.7,
+      "start": 390.530011,
       "speaker": "SPEAKER",
       "en": "Cooking is another popular activity.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Cooking",
+          "start": 390.530011,
+          "end": 390.91999500000003
+        },
+        {
+          "word": "is",
+          "start": 390.91999500000003,
+          "end": 391.099988
+        },
+        {
+          "word": "another",
+          "start": 391.099988,
+          "end": 391.659985
+        },
+        {
+          "word": "popular",
+          "start": 391.659985,
+          "end": 392.090009
+        },
+        {
+          "word": "activity",
+          "start": 392.090009,
+          "end": 392.859998
+        }
+      ],
       "answers": [],
-      "end": 393.7
+      "end": 392.859998
     },
     {
       "id": 41,
-      "start": 393.8,
+      "start": 393.509991,
       "speaker": "SPEAKER",
       "en": "They make a different sort of cake, or pizza or bread each week.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "They",
+          "start": 393.509991,
+          "end": 393.740002
+        },
+        {
+          "word": "make",
+          "start": 393.740002,
+          "end": 393.930005
+        },
+        {
+          "word": "a",
+          "start": 393.930005,
+          "end": 393.97999300000004
+        },
+        {
+          "word": "different",
+          "start": 393.97999300000004,
+          "end": 394.340009
+        },
+        {
+          "word": "sort",
+          "start": 394.340009,
+          "end": 394.599988
+        },
+        {
+          "word": "of",
+          "start": 394.599988,
+          "end": 394.710004
+        },
+        {
+          "word": "cake",
+          "start": 394.710004,
+          "end": 395.22999300000004
+        },
+        {
+          "word": "or",
+          "start": 395.3,
+          "end": 395.440015
+        },
+        {
+          "word": "pizza",
+          "start": 395.440015,
+          "end": 395.990002
+        },
+        {
+          "word": "or",
+          "start": 395.990002,
+          "end": 396.159985
+        },
+        {
+          "word": "bread",
+          "start": 396.159985,
+          "end": 396.639996
+        },
+        {
+          "word": "each",
+          "start": 396.690015,
+          "end": 397.009991
+        },
+        {
+          "word": "week",
+          "start": 397.009991,
+          "end": 397.449994
+        }
+      ],
       "answers": [],
-      "end": 397.4
+      "end": 397.449994
     },
     {
       "id": 42,
-      "start": 397.5,
+      "start": 398.000012,
       "speaker": "SPEAKER",
       "en": "Although the younger children love doing it, we found that the mess was just too much, so we’ve decided to restrict this to the over 8s, as they are better able to clean up after themselves.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Although",
+          "start": 398.000012,
+          "end": 398.340009
+        },
+        {
+          "word": "the",
+          "start": 398.340009,
+          "end": 398.52000100000004
+        },
+        {
+          "word": "younger",
+          "start": 398.52000100000004,
+          "end": 398.889996
+        },
+        {
+          "word": "children",
+          "start": 398.889996,
+          "end": 399.370007
+        },
+        {
+          "word": "love",
+          "start": 399.370007,
+          "end": 399.599988
+        },
+        {
+          "word": "doing",
+          "start": 399.599988,
+          "end": 399.889996
+        },
+        {
+          "word": "it",
+          "start": 399.889996,
+          "end": 400.139996
+        },
+        {
+          "word": "we",
+          "start": 400.55,
+          "end": 400.720013
+        },
+        {
+          "word": "found",
+          "start": 400.720013,
+          "end": 401.06001000000003
+        },
+        {
+          "word": "that",
+          "start": 401.06001000000003,
+          "end": 401.16999500000003
+        },
+        {
+          "word": "the",
+          "start": 401.16999500000003,
+          "end": 401.250012
+        },
+        {
+          "word": "mess",
+          "start": 401.250012,
+          "end": 401.66999500000003
+        },
+        {
+          "word": "was",
+          "start": 401.66999500000003,
+          "end": 401.819989
+        },
+        {
+          "word": "just",
+          "start": 401.819989,
+          "end": 402.129987
+        },
+        {
+          "word": "too",
+          "start": 402.129987,
+          "end": 402.389996
+        },
+        {
+          "word": "much",
+          "start": 402.389996,
+          "end": 402.91999500000003
+        },
+        {
+          "word": "so",
+          "start": 403.31001000000003,
+          "end": 403.77000100000004
+        },
+        {
+          "word": "we",
+          "start": 403.849988,
+          "end": 404.159985
+        },
+        {
+          "word": "'ve",
+          "start": 403.849988,
+          "end": 404.159985
+        },
+        {
+          "word": "decided",
+          "start": 404.159985,
+          "end": 404.740002
+        },
+        {
+          "word": "to",
+          "start": 404.740002,
+          "end": 404.859998
+        },
+        {
+          "word": "restrict",
+          "start": 404.859998,
+          "end": 405.440015
+        },
+        {
+          "word": "this",
+          "start": 405.440015,
+          "end": 405.829999
+        },
+        {
+          "word": "to",
+          "start": 405.829999,
+          "end": 406.009991
+        },
+        {
+          "word": "the",
+          "start": 406.009991,
+          "end": 406.150006
+        },
+        {
+          "word": "over",
+          "start": 406.150006,
+          "end": 406.430005
+        },
+        {
+          "word": "8",
+          "start": 406.430005,
+          "end": 410.030011
+        },
+        {
+          "word": "s",
+          "start": 406.430005,
+          "end": 410.030011
+        },
+        {
+          "word": "as",
+          "start": 413.720013,
+          "end": 414.090009
+        },
+        {
+          "word": "they",
+          "start": 414.090009,
+          "end": 414.190015
+        },
+        {
+          "word": "are",
+          "start": 414.190015,
+          "end": 414.220013
+        },
+        {
+          "word": "better",
+          "start": 414.220013,
+          "end": 414.47999300000004
+        },
+        {
+          "word": "able",
+          "start": 414.55,
+          "end": 415.02000100000004
+        },
+        {
+          "word": "to",
+          "start": 415.109998,
+          "end": 415.490002
+        },
+        {
+          "word": "clean",
+          "start": 416.220013,
+          "end": 416.41999500000003
+        },
+        {
+          "word": "up",
+          "start": 416.41999500000003,
+          "end": 416.609998
+        },
+        {
+          "word": "after",
+          "start": 416.609998,
+          "end": 416.740002
+        },
+        {
+          "word": "themselves",
+          "start": 416.740002,
+          "end": 419.120007
+        }
+      ],
       "answers": [
         20
       ],
-      "end": 410.1
+      "end": 419.120007
     }
   ],
   "questions": [
@@ -527,5 +4679,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 822,
+    "mfa_word_count": 820,
+    "matched_word_count": 798,
+    "audio_trim_offset": 58.3,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

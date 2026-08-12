@@ -7,564 +7,4096 @@
   "segments": [
     {
       "id": 1,
-      "start": 100.4,
+      "start": 100.54,
       "speaker": "MAN",
       "en": "Good morning, please take a seat. How can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 100.54,
+          "end": 100.79
+        },
+        {
+          "word": "morning",
+          "start": 100.79,
+          "end": 101.19000000000001
+        },
+        {
+          "word": "please",
+          "start": 101.69000000000001,
+          "end": 101.92
+        },
+        {
+          "word": "take",
+          "start": 101.92,
+          "end": 102.11
+        },
+        {
+          "word": "a",
+          "start": 102.11,
+          "end": 102.15
+        },
+        {
+          "word": "seat",
+          "start": 102.15,
+          "end": 102.53
+        },
+        {
+          "word": "How",
+          "start": 103.69000000000001,
+          "end": 103.87
+        },
+        {
+          "word": "can",
+          "start": 103.87,
+          "end": 103.99000000000001
+        },
+        {
+          "word": "I",
+          "start": 103.99000000000001,
+          "end": 104.09
+        },
+        {
+          "word": "help",
+          "start": 104.09,
+          "end": 104.35000000000001
+        },
+        {
+          "word": "you",
+          "start": 104.35000000000001,
+          "end": 104.51
+        }
+      ],
       "answers": [],
-      "end": 104.7
+      "end": 104.51
     },
     {
       "id": 2,
-      "start": 105.2,
+      "start": 105.03,
       "speaker": "WOMAN",
       "en": "Well, I'm thinking of buying a new car and I'd like some advice.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 105.03,
+          "end": 105.49000000000001
+        },
+        {
+          "word": "I",
+          "start": 105.59,
+          "end": 105.93
+        },
+        {
+          "word": "'m",
+          "start": 105.59,
+          "end": 105.93
+        },
+        {
+          "word": "thinking",
+          "start": 105.93,
+          "end": 106.31
+        },
+        {
+          "word": "of",
+          "start": 106.31,
+          "end": 106.43
+        },
+        {
+          "word": "buying",
+          "start": 106.43,
+          "end": 106.73
+        },
+        {
+          "word": "a",
+          "start": 106.73,
+          "end": 106.76
+        },
+        {
+          "word": "new",
+          "start": 106.76,
+          "end": 106.97
+        },
+        {
+          "word": "car",
+          "start": 106.97,
+          "end": 107.42
+        },
+        {
+          "word": "and",
+          "start": 107.49000000000001,
+          "end": 107.91000000000001
+        },
+        {
+          "word": "I",
+          "start": 107.97,
+          "end": 108.11000000000001
+        },
+        {
+          "word": "'d",
+          "start": 108.11000000000001,
+          "end": 108.15
+        },
+        {
+          "word": "like",
+          "start": 108.15,
+          "end": 108.36000000000001
+        },
+        {
+          "word": "some",
+          "start": 108.36000000000001,
+          "end": 108.51
+        },
+        {
+          "word": "advice",
+          "start": 108.51,
+          "end": 109.04
+        }
+      ],
       "answers": [],
-      "end": 109.0
+      "end": 109.04
     },
     {
       "id": 3,
-      "start": 109.0,
+      "start": 109.47,
       "speaker": "MAN",
       "en": "Sure, yes. Had you got any particular make in mind?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sure",
+          "start": 109.47,
+          "end": 109.88000000000001
+        },
+        {
+          "word": "yes",
+          "start": 110.09,
+          "end": 110.34
+        },
+        {
+          "word": "Had",
+          "start": 111.02000000000001,
+          "end": 111.36000000000001
+        },
+        {
+          "word": "you",
+          "start": 111.41000000000001,
+          "end": 111.55000000000001
+        },
+        {
+          "word": "got",
+          "start": 111.55000000000001,
+          "end": 111.83000000000001
+        },
+        {
+          "word": "any",
+          "start": 111.83000000000001,
+          "end": 112.13000000000001
+        },
+        {
+          "word": "particular",
+          "start": 112.13000000000001,
+          "end": 112.66000000000001
+        },
+        {
+          "word": "make",
+          "start": 112.66000000000001,
+          "end": 112.95
+        },
+        {
+          "word": "in",
+          "start": 112.95,
+          "end": 113.06
+        },
+        {
+          "word": "mind",
+          "start": 113.06,
+          "end": 113.5
+        }
+      ],
       "answers": [],
-      "end": 114.2
+      "end": 113.5
     },
     {
       "id": 4,
-      "start": 114.3,
+      "start": 113.99000000000001,
       "speaker": "WOMAN",
       "en": "I'm interested in a Lida - I've had one before and liked it. But I haven't really made up my mind.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 113.99000000000001,
+          "end": 114.28
+        },
+        {
+          "word": "'m",
+          "start": 113.99000000000001,
+          "end": 114.28
+        },
+        {
+          "word": "interested",
+          "start": 114.28,
+          "end": 114.869999
+        },
+        {
+          "word": "in",
+          "start": 114.869999,
+          "end": 115.100001
+        },
+        {
+          "word": "a",
+          "start": 115.180001,
+          "end": 115.279999
+        },
+        {
+          "word": "Lida",
+          "start": 115.279999,
+          "end": 115.92
+        },
+        {
+          "word": "I",
+          "start": 116.44000100000001,
+          "end": 116.600001
+        },
+        {
+          "word": "'ve",
+          "start": 116.600001,
+          "end": 116.66000000000001
+        },
+        {
+          "word": "had",
+          "start": 116.66000000000001,
+          "end": 116.859999
+        },
+        {
+          "word": "one",
+          "start": 116.859999,
+          "end": 116.97
+        },
+        {
+          "word": "before",
+          "start": 116.97,
+          "end": 117.39
+        },
+        {
+          "word": "and",
+          "start": 117.39,
+          "end": 117.45999900000001
+        },
+        {
+          "word": "liked",
+          "start": 117.45999900000001,
+          "end": 117.850001
+        },
+        {
+          "word": "it",
+          "start": 117.850001,
+          "end": 118.25
+        },
+        {
+          "word": "But",
+          "start": 118.279999,
+          "end": 118.5
+        },
+        {
+          "word": "I",
+          "start": 118.699999,
+          "end": 118.80000000000001
+        },
+        {
+          "word": "have",
+          "start": 118.80000000000001,
+          "end": 119.14
+        },
+        {
+          "word": "n't",
+          "start": 118.80000000000001,
+          "end": 119.14
+        },
+        {
+          "word": "really",
+          "start": 119.14,
+          "end": 119.359999
+        },
+        {
+          "word": "made",
+          "start": 119.359999,
+          "end": 119.55000000000001
+        },
+        {
+          "word": "up",
+          "start": 119.55000000000001,
+          "end": 119.64
+        },
+        {
+          "word": "my",
+          "start": 119.64,
+          "end": 119.760001
+        },
+        {
+          "word": "mind",
+          "start": 119.760001,
+          "end": 120.199999
+        }
+      ],
       "answers": [],
-      "end": 120.3
+      "end": 120.199999
     },
     {
       "id": 5,
-      "start": 169.5,
+      "start": 120.199999,
       "speaker": "MAN",
       "en": "Sure. We've got various models. Umm, right. What about the engine size? Any ideas?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sure",
+          "start": 120.199999,
+          "end": 120.28999900000001
+        },
+        {
+          "word": "We",
+          "start": 123.91000000000001,
+          "end": 124.06
+        },
+        {
+          "word": "'ve",
+          "start": 123.91000000000001,
+          "end": 124.06
+        },
+        {
+          "word": "got",
+          "start": 124.06,
+          "end": 124.13000000000001
+        },
+        {
+          "word": "various",
+          "start": 124.13000000000001,
+          "end": 124.340001
+        },
+        {
+          "word": "models",
+          "start": 124.340001,
+          "end": 124.56
+        },
+        {
+          "word": "Umm",
+          "start": 124.56,
+          "end": 124.619999
+        },
+        {
+          "word": "right",
+          "start": 124.66000000000001,
+          "end": 124.859999
+        },
+        {
+          "word": "What",
+          "start": 124.859999,
+          "end": 124.99000000000001
+        },
+        {
+          "word": "about",
+          "start": 124.99000000000001,
+          "end": 125.090001
+        },
+        {
+          "word": "the",
+          "start": 125.20999900000001,
+          "end": 125.340001
+        },
+        {
+          "word": "engine",
+          "start": 125.340001,
+          "end": 125.65
+        },
+        {
+          "word": "size",
+          "start": 125.65,
+          "end": 125.95999900000001
+        },
+        {
+          "word": "Any",
+          "start": 126.0,
+          "end": 126.100001
+        },
+        {
+          "word": "ideas",
+          "start": 126.100001,
+          "end": 126.32000000000001
+        }
+      ],
       "answers": [],
-      "end": 177.1
+      "end": 126.32000000000001
     },
     {
       "id": 6,
-      "start": 177.7,
+      "start": 126.32000000000001,
       "speaker": "WOMAN",
       "en": "The one I've got at the moment's a 1.2 litre engine but I find it a bit slow on long journeys. I'd like a bit more power this time ... a lA should do, don't think I need a 1.6 or anything.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 126.32000000000001,
+          "end": 127.180001
+        },
+        {
+          "word": "one",
+          "start": 127.78999900000001,
+          "end": 128.14000000000001
+        },
+        {
+          "word": "I",
+          "start": 128.209999,
+          "end": 128.5
+        },
+        {
+          "word": "'ve",
+          "start": 128.5,
+          "end": 128.529999
+        },
+        {
+          "word": "got",
+          "start": 128.529999,
+          "end": 128.869999
+        },
+        {
+          "word": "at",
+          "start": 129.15,
+          "end": 129.35000100000002
+        },
+        {
+          "word": "the",
+          "start": 129.35000100000002,
+          "end": 130.53999900000002
+        },
+        {
+          "word": "moment",
+          "start": 132.210001,
+          "end": 132.589999
+        },
+        {
+          "word": "'s",
+          "start": 132.589999,
+          "end": 132.640002
+        },
+        {
+          "word": "a",
+          "start": 132.679999,
+          "end": 133.24
+        },
+        {
+          "word": "1",
+          "start": 134.140002,
+          "end": 139.81
+        },
+        {
+          "word": "2",
+          "start": 141.31,
+          "end": 145.10999900000002
+        },
+        {
+          "word": "litre",
+          "start": 148.60999900000002,
+          "end": 149.06
+        },
+        {
+          "word": "engine",
+          "start": 149.06,
+          "end": 149.260001
+        },
+        {
+          "word": "but",
+          "start": 149.72,
+          "end": 149.83
+        },
+        {
+          "word": "I",
+          "start": 149.83,
+          "end": 149.9
+        },
+        {
+          "word": "find",
+          "start": 149.9,
+          "end": 150.15
+        },
+        {
+          "word": "it",
+          "start": 150.15,
+          "end": 150.56
+        },
+        {
+          "word": "a",
+          "start": 151.74,
+          "end": 152.260001
+        },
+        {
+          "word": "bit",
+          "start": 152.260001,
+          "end": 152.67000000000002
+        },
+        {
+          "word": "slow",
+          "start": 153.13,
+          "end": 153.530001
+        },
+        {
+          "word": "on",
+          "start": 153.63,
+          "end": 154.440001
+        },
+        {
+          "word": "long",
+          "start": 154.47,
+          "end": 155.480002
+        },
+        {
+          "word": "journeys",
+          "start": 155.530001,
+          "end": 155.85000100000002
+        },
+        {
+          "word": "I",
+          "start": 155.999998,
+          "end": 156.140002
+        },
+        {
+          "word": "'d",
+          "start": 156.140002,
+          "end": 156.179999
+        },
+        {
+          "word": "like",
+          "start": 156.179999,
+          "end": 156.47
+        },
+        {
+          "word": "a",
+          "start": 156.47,
+          "end": 156.58
+        },
+        {
+          "word": "bit",
+          "start": 156.58,
+          "end": 157.08
+        },
+        {
+          "word": "more",
+          "start": 157.589999,
+          "end": 157.83
+        },
+        {
+          "word": "power",
+          "start": 157.83,
+          "end": 157.909998
+        },
+        {
+          "word": "this",
+          "start": 158.10999900000002,
+          "end": 158.370001
+        },
+        {
+          "word": "time",
+          "start": 159.03999900000002,
+          "end": 159.24
+        },
+        {
+          "word": "a",
+          "start": 159.24,
+          "end": 159.269999
+        },
+        {
+          "word": "lA",
+          "start": 159.269999,
+          "end": 159.33
+        },
+        {
+          "word": "should",
+          "start": 159.33,
+          "end": 159.4
+        },
+        {
+          "word": "do",
+          "start": 159.4,
+          "end": 159.569998
+        },
+        {
+          "word": "do",
+          "start": 159.569998,
+          "end": 159.83
+        },
+        {
+          "word": "n't",
+          "start": 159.569998,
+          "end": 159.83
+        },
+        {
+          "word": "think",
+          "start": 159.83,
+          "end": 161.49
+        },
+        {
+          "word": "I",
+          "start": 162.019999,
+          "end": 162.249998
+        },
+        {
+          "word": "need",
+          "start": 162.249998,
+          "end": 162.499998
+        },
+        {
+          "word": "a",
+          "start": 162.550002,
+          "end": 163.91000200000002
+        },
+        {
+          "word": "1",
+          "start": 164.48999600000002,
+          "end": 168.319998
+        },
+        {
+          "word": "6",
+          "start": 169.230002,
+          "end": 189.980002
+        },
+        {
+          "word": "or",
+          "start": 189.980002,
+          "end": 190.020003
+        },
+        {
+          "word": "anything",
+          "start": 190.020003,
+          "end": 190.440001
+        }
+      ],
       "answers": [],
-      "end": 190.3
+      "end": 190.440001
     },
     {
       "id": 7,
-      "start": 190.4,
+      "start": 190.440001,
       "speaker": "MAN",
       "en": "Right. Well I think the model you're looking at is the Max. Here's a picture.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 190.440001,
+          "end": 191.03999900000002
+        },
+        {
+          "word": "Well",
+          "start": 191.349997,
+          "end": 191.779997
+        },
+        {
+          "word": "I",
+          "start": 191.810004,
+          "end": 191.97
+        },
+        {
+          "word": "think",
+          "start": 191.97,
+          "end": 192.179999
+        },
+        {
+          "word": "the",
+          "start": 192.179999,
+          "end": 192.270003
+        },
+        {
+          "word": "model",
+          "start": 192.270003,
+          "end": 192.59000200000003
+        },
+        {
+          "word": "you",
+          "start": 192.59000200000003,
+          "end": 192.819998
+        },
+        {
+          "word": "'re",
+          "start": 192.59000200000003,
+          "end": 192.819998
+        },
+        {
+          "word": "looking",
+          "start": 192.819998,
+          "end": 193.34000200000003
+        },
+        {
+          "word": "at",
+          "start": 193.34000200000003,
+          "end": 193.53999900000002
+        },
+        {
+          "word": "is",
+          "start": 193.679999,
+          "end": 194.060004
+        },
+        {
+          "word": "the",
+          "start": 194.060004,
+          "end": 194.16999700000002
+        },
+        {
+          "word": "Max",
+          "start": 194.16999700000002,
+          "end": 194.779997
+        },
+        {
+          "word": "Here",
+          "start": 195.190001,
+          "end": 195.370001
+        },
+        {
+          "word": "'s",
+          "start": 195.190001,
+          "end": 195.370001
+        },
+        {
+          "word": "a",
+          "start": 195.370001,
+          "end": 195.41999700000002
+        },
+        {
+          "word": "picture",
+          "start": 195.41999700000002,
+          "end": 195.779997
+        }
+      ],
       "answers": [],
-      "end": 196.6
+      "end": 195.779997
     },
     {
       "id": 8,
-      "start": 197.0,
+      "start": 196.380003,
       "speaker": "WOMAN",
       "en": "Oh, yes . . . have you got one in?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 196.380003,
+          "end": 197.09000200000003
+        },
+        {
+          "word": "yes",
+          "start": 197.73999600000002,
+          "end": 198.779997
+        },
+        {
+          "word": "have",
+          "start": 198.83,
+          "end": 198.95999799999998
+        },
+        {
+          "word": "you",
+          "start": 198.95999799999998,
+          "end": 199.029997
+        },
+        {
+          "word": "got",
+          "start": 199.029997,
+          "end": 199.16000200000002
+        },
+        {
+          "word": "one",
+          "start": 199.16000200000002,
+          "end": 199.34000200000003
+        },
+        {
+          "word": "in",
+          "start": 199.34000200000003,
+          "end": 199.66000200000002
+        }
+      ],
       "answers": [],
-      "end": 200.1
+      "end": 199.66000200000002
     },
     {
       "id": 9,
-      "start": 200.2,
+      "start": 199.730002,
       "speaker": "MAN",
       "en": "Yes. I'll take you to have a look at it in a minute. I'll just get a few more details. Er ... Is there anything else to do with the engine? What kind of gear change do you want? I presume you'd want a manual?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 199.730002,
+          "end": 200.16999700000002
+        },
+        {
+          "word": "I",
+          "start": 200.389998,
+          "end": 200.48999600000002
+        },
+        {
+          "word": "'ll",
+          "start": 200.48999600000002,
+          "end": 200.550002
+        },
+        {
+          "word": "take",
+          "start": 200.550002,
+          "end": 200.849997
+        },
+        {
+          "word": "you",
+          "start": 200.849997,
+          "end": 200.980002
+        },
+        {
+          "word": "to",
+          "start": 200.980002,
+          "end": 201.230002
+        },
+        {
+          "word": "have",
+          "start": 201.230002,
+          "end": 201.4
+        },
+        {
+          "word": "a",
+          "start": 201.4,
+          "end": 201.440001
+        },
+        {
+          "word": "look",
+          "start": 201.440001,
+          "end": 201.66999700000002
+        },
+        {
+          "word": "at",
+          "start": 201.66999700000002,
+          "end": 201.749998
+        },
+        {
+          "word": "it",
+          "start": 201.749998,
+          "end": 201.880003
+        },
+        {
+          "word": "in",
+          "start": 201.880003,
+          "end": 201.97
+        },
+        {
+          "word": "a",
+          "start": 201.97,
+          "end": 202.020003
+        },
+        {
+          "word": "minute",
+          "start": 202.020003,
+          "end": 202.33
+        },
+        {
+          "word": "I",
+          "start": 202.929999,
+          "end": 203.029997
+        },
+        {
+          "word": "'ll",
+          "start": 203.029997,
+          "end": 203.069998
+        },
+        {
+          "word": "just",
+          "start": 203.069998,
+          "end": 203.260001
+        },
+        {
+          "word": "get",
+          "start": 203.260001,
+          "end": 203.4
+        },
+        {
+          "word": "a",
+          "start": 203.4,
+          "end": 203.569998
+        },
+        {
+          "word": "few",
+          "start": 203.569998,
+          "end": 203.779997
+        },
+        {
+          "word": "more",
+          "start": 203.779997,
+          "end": 204.029997
+        },
+        {
+          "word": "details",
+          "start": 204.029997,
+          "end": 204.73999600000002
+        },
+        {
+          "word": "Er",
+          "start": 204.91999700000002,
+          "end": 205.370001
+        },
+        {
+          "word": "Is",
+          "start": 205.84000200000003,
+          "end": 206.120001
+        },
+        {
+          "word": "there",
+          "start": 206.120001,
+          "end": 206.279997
+        },
+        {
+          "word": "anything",
+          "start": 206.279997,
+          "end": 206.560004
+        },
+        {
+          "word": "else",
+          "start": 206.560004,
+          "end": 206.84000200000003
+        },
+        {
+          "word": "to",
+          "start": 206.84000200000003,
+          "end": 206.980002
+        },
+        {
+          "word": "do",
+          "start": 206.980002,
+          "end": 207.15
+        },
+        {
+          "word": "with",
+          "start": 207.15,
+          "end": 207.260001
+        },
+        {
+          "word": "the",
+          "start": 207.260001,
+          "end": 207.389998
+        },
+        {
+          "word": "engine",
+          "start": 207.389998,
+          "end": 207.91000200000002
+        },
+        {
+          "word": "What",
+          "start": 208.08,
+          "end": 208.249998
+        },
+        {
+          "word": "kind",
+          "start": 208.249998,
+          "end": 208.48999600000002
+        },
+        {
+          "word": "of",
+          "start": 208.48999600000002,
+          "end": 208.639998
+        },
+        {
+          "word": "gear",
+          "start": 208.639998,
+          "end": 208.870001
+        },
+        {
+          "word": "change",
+          "start": 208.870001,
+          "end": 209.349997
+        },
+        {
+          "word": "do",
+          "start": 209.349997,
+          "end": 209.440001
+        },
+        {
+          "word": "you",
+          "start": 209.440001,
+          "end": 209.510001
+        },
+        {
+          "word": "want",
+          "start": 209.510001,
+          "end": 209.749998
+        },
+        {
+          "word": "I",
+          "start": 210.060004,
+          "end": 210.16000200000002
+        },
+        {
+          "word": "presume",
+          "start": 210.16000200000002,
+          "end": 210.550002
+        },
+        {
+          "word": "you",
+          "start": 210.550002,
+          "end": 210.620001
+        },
+        {
+          "word": "'d",
+          "start": 210.620001,
+          "end": 210.65
+        },
+        {
+          "word": "want",
+          "start": 210.65,
+          "end": 210.800002
+        },
+        {
+          "word": "a",
+          "start": 210.800002,
+          "end": 210.84000200000003
+        },
+        {
+          "word": "manual",
+          "start": 210.84000200000003,
+          "end": 211.349997
+        }
+      ],
       "answers": [],
-      "end": 212.1
+      "end": 211.349997
     },
     {
       "id": 10,
-      "start": 212.2,
+      "start": 211.679999,
       "speaker": "WOMAN",
       "en": "I'd want automatic- I've never driven a car with manual gears.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 211.679999,
+          "end": 212.060004
+        },
+        {
+          "word": "'d",
+          "start": 212.060004,
+          "end": 212.249998
+        },
+        {
+          "word": "want",
+          "start": 212.249998,
+          "end": 212.510001
+        },
+        {
+          "word": "automatic",
+          "start": 212.510001,
+          "end": 213.319998
+        },
+        {
+          "word": "I",
+          "start": 213.35999900000002,
+          "end": 213.499998
+        },
+        {
+          "word": "'ve",
+          "start": 213.499998,
+          "end": 213.550002
+        },
+        {
+          "word": "never",
+          "start": 213.550002,
+          "end": 213.73999600000002
+        },
+        {
+          "word": "driven",
+          "start": 213.73999600000002,
+          "end": 213.98999600000002
+        },
+        {
+          "word": "a",
+          "start": 213.98999600000002,
+          "end": 214.03999900000002
+        },
+        {
+          "word": "car",
+          "start": 214.03999900000002,
+          "end": 214.28999900000002
+        },
+        {
+          "word": "with",
+          "start": 214.28999900000002,
+          "end": 214.41999700000002
+        },
+        {
+          "word": "manual",
+          "start": 214.41999700000002,
+          "end": 214.770003
+        },
+        {
+          "word": "gears",
+          "start": 214.770003,
+          "end": 215.10999900000002
+        }
+      ],
       "answers": [
         2
       ],
-      "end": 215.6
+      "end": 215.10999900000002
     },
     {
       "id": 11,
-      "start": 216.1,
+      "start": 215.520003,
       "speaker": "MAN",
       "en": "Right. Well now, here's the colour chart for the Max. Have you given that any thought? This blue's very popular at the moment.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 215.520003,
+          "end": 216.20999799999998
+        },
+        {
+          "word": "Well",
+          "start": 217.260001,
+          "end": 217.550002
+        },
+        {
+          "word": "now",
+          "start": 217.550002,
+          "end": 217.78999900000002
+        },
+        {
+          "word": "here",
+          "start": 217.91999700000002,
+          "end": 218.230002
+        },
+        {
+          "word": "'s",
+          "start": 217.91999700000002,
+          "end": 218.230002
+        },
+        {
+          "word": "the",
+          "start": 218.230002,
+          "end": 218.389998
+        },
+        {
+          "word": "colour",
+          "start": 218.389998,
+          "end": 218.73999600000002
+        },
+        {
+          "word": "chart",
+          "start": 218.73999600000002,
+          "end": 219.15
+        },
+        {
+          "word": "for",
+          "start": 219.15,
+          "end": 219.260001
+        },
+        {
+          "word": "the",
+          "start": 219.260001,
+          "end": 219.34000200000003
+        },
+        {
+          "word": "Max",
+          "start": 219.34000200000003,
+          "end": 219.91000200000002
+        },
+        {
+          "word": "Have",
+          "start": 220.139998,
+          "end": 220.319998
+        },
+        {
+          "word": "you",
+          "start": 220.319998,
+          "end": 220.450003
+        },
+        {
+          "word": "given",
+          "start": 220.450003,
+          "end": 220.84000200000003
+        },
+        {
+          "word": "that",
+          "start": 220.84000200000003,
+          "end": 221.020003
+        },
+        {
+          "word": "any",
+          "start": 221.020003,
+          "end": 221.230002
+        },
+        {
+          "word": "thought",
+          "start": 221.230002,
+          "end": 221.690001
+        },
+        {
+          "word": "This",
+          "start": 222.069998,
+          "end": 222.34000200000003
+        },
+        {
+          "word": "blue",
+          "start": 222.34000200000003,
+          "end": 222.73999600000002
+        },
+        {
+          "word": "'s",
+          "start": 222.73999600000002,
+          "end": 222.84000200000003
+        },
+        {
+          "word": "very",
+          "start": 222.84000200000003,
+          "end": 223.139998
+        },
+        {
+          "word": "popular",
+          "start": 223.139998,
+          "end": 223.66999700000002
+        },
+        {
+          "word": "at",
+          "start": 223.66999700000002,
+          "end": 223.730002
+        },
+        {
+          "word": "the",
+          "start": 223.730002,
+          "end": 223.78999900000002
+        },
+        {
+          "word": "moment",
+          "start": 223.78999900000002,
+          "end": 224.120001
+        }
+      ],
       "answers": [],
-      "end": 224.6
+      "end": 224.120001
     },
     {
       "id": 12,
-      "start": 224.7,
+      "start": 224.429999,
       "speaker": "WOMAN",
       "en": "Yes, it is nice, I like blue. What's it called? 'Royal'?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 224.429999,
+          "end": 225.20999799999998
+        },
+        {
+          "word": "it",
+          "start": 225.20999799999998,
+          "end": 225.28999900000002
+        },
+        {
+          "word": "is",
+          "start": 225.28999900000002,
+          "end": 225.499998
+        },
+        {
+          "word": "nice",
+          "start": 225.499998,
+          "end": 225.91000200000002
+        },
+        {
+          "word": "I",
+          "start": 225.91000200000002,
+          "end": 226.279997
+        },
+        {
+          "word": "like",
+          "start": 226.349997,
+          "end": 226.849997
+        },
+        {
+          "word": "blue",
+          "start": 227.53000500000002,
+          "end": 228.090002
+        },
+        {
+          "word": "What",
+          "start": 228.090002,
+          "end": 228.370001
+        },
+        {
+          "word": "'s",
+          "start": 228.090002,
+          "end": 228.370001
+        },
+        {
+          "word": "it",
+          "start": 228.370001,
+          "end": 228.450003
+        },
+        {
+          "word": "called",
+          "start": 228.450003,
+          "end": 228.909995
+        },
+        {
+          "word": "Royal",
+          "start": 228.93999300000002,
+          "end": 229.470007
+        }
+      ],
       "answers": [],
-      "end": 230.0
+      "end": 229.470007
     },
     {
       "id": 13,
-      "start": 235.4,
+      "start": 229.53000500000002,
       "speaker": "MAN",
       "en": "Yes.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 229.53000500000002,
+          "end": 229.950003
+        }
+      ],
       "answers": [],
-      "end": 235.8
+      "end": 229.950003
     },
     {
       "id": 14,
-      "start": 235.9,
+      "start": 230.909995,
       "speaker": "WOMAN",
       "en": "But actually, I think I prefer this lighter shade here- 'fu'.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "But",
+          "start": 230.909995,
+          "end": 231.319998
+        },
+        {
+          "word": "actually",
+          "start": 231.700003,
+          "end": 232.110007
+        },
+        {
+          "word": "I",
+          "start": 232.110007,
+          "end": 232.23999600000002
+        },
+        {
+          "word": "think",
+          "start": 232.23999600000002,
+          "end": 232.480002
+        },
+        {
+          "word": "I",
+          "start": 232.480002,
+          "end": 232.539999
+        },
+        {
+          "word": "prefer",
+          "start": 232.539999,
+          "end": 232.9
+        },
+        {
+          "word": "this",
+          "start": 232.9,
+          "end": 233.250006
+        },
+        {
+          "word": "lighter",
+          "start": 233.28000500000002,
+          "end": 233.709998
+        },
+        {
+          "word": "shade",
+          "start": 233.709998,
+          "end": 234.03000500000002
+        },
+        {
+          "word": "here",
+          "start": 234.03000500000002,
+          "end": 234.53000500000002
+        },
+        {
+          "word": "fu",
+          "start": 235.179999,
+          "end": 235.250006
+        }
+      ],
       "answers": [
         3
-      ]
+      ],
+      "end": 235.250006
     },
     {
       "id": 15,
-      "start": 236.4,
+      "start": 235.250006,
       "speaker": "MAN",
       "en": "Yes, that's popular too.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 235.250006,
+          "end": 235.849997
+        },
+        {
+          "word": "that",
+          "start": 235.849997,
+          "end": 236.01000100000002
+        },
+        {
+          "word": "'s",
+          "start": 236.01000100000002,
+          "end": 236.079993
+        },
+        {
+          "word": "popular",
+          "start": 236.079993,
+          "end": 236.53000500000002
+        },
+        {
+          "word": "too",
+          "start": 236.53000500000002,
+          "end": 236.879996
+        }
+      ],
       "answers": [],
-      "end": 236.9
+      "end": 236.879996
     },
     {
       "id": 16,
-      "start": 237.0,
+      "start": 236.909995,
       "speaker": "WOMAN",
       "en": "I think I'll go for that.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 236.909995,
+          "end": 237.019995
+        },
+        {
+          "word": "think",
+          "start": 237.019995,
+          "end": 237.18999300000002
+        },
+        {
+          "word": "I",
+          "start": 237.18999300000002,
+          "end": 237.23999600000002
+        },
+        {
+          "word": "'ll",
+          "start": 237.23999600000002,
+          "end": 237.28000500000002
+        },
+        {
+          "word": "go",
+          "start": 237.28000500000002,
+          "end": 237.429999
+        },
+        {
+          "word": "for",
+          "start": 237.429999,
+          "end": 237.539999
+        },
+        {
+          "word": "that",
+          "start": 237.539999,
+          "end": 237.890005
+        }
+      ],
       "answers": [],
-      "end": 238.3
+      "end": 237.890005
     },
     {
       "id": 17,
-      "start": 238.4,
+      "start": 238.060004,
       "speaker": "MAN",
       "en": "You might have to wait a week or so for that colour, but I assume that'd be OK?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 238.060004,
+          "end": 238.329993
+        },
+        {
+          "word": "might",
+          "start": 238.329993,
+          "end": 238.640005
+        },
+        {
+          "word": "have",
+          "start": 238.640005,
+          "end": 238.840002
+        },
+        {
+          "word": "to",
+          "start": 238.840002,
+          "end": 238.929999
+        },
+        {
+          "word": "wait",
+          "start": 238.929999,
+          "end": 239.390005
+        },
+        {
+          "word": "a",
+          "start": 239.390005,
+          "end": 239.450003
+        },
+        {
+          "word": "week",
+          "start": 239.450003,
+          "end": 239.769995
+        },
+        {
+          "word": "or",
+          "start": 239.769995,
+          "end": 239.9
+        },
+        {
+          "word": "so",
+          "start": 239.9,
+          "end": 240.159995
+        },
+        {
+          "word": "for",
+          "start": 240.159995,
+          "end": 240.28000500000002
+        },
+        {
+          "word": "that",
+          "start": 240.28000500000002,
+          "end": 240.48999600000002
+        },
+        {
+          "word": "colour",
+          "start": 240.48999600000002,
+          "end": 240.870001
+        },
+        {
+          "word": "but",
+          "start": 240.98999600000002,
+          "end": 241.15
+        },
+        {
+          "word": "I",
+          "start": 241.15,
+          "end": 241.310004
+        },
+        {
+          "word": "assume",
+          "start": 241.310004,
+          "end": 241.629996
+        },
+        {
+          "word": "that",
+          "start": 241.629996,
+          "end": 241.769995
+        },
+        {
+          "word": "'d",
+          "start": 241.769995,
+          "end": 241.829993
+        },
+        {
+          "word": "be",
+          "start": 241.829993,
+          "end": 241.950003
+        },
+        {
+          "word": "OK",
+          "start": 241.950003,
+          "end": 242.370001
+        }
+      ],
       "answers": [],
-      "end": 242.4
+      "end": 242.370001
     },
     {
       "id": 18,
-      "start": 242.6,
+      "start": 242.65,
       "speaker": "WOMAN",
       "en": "Oh yes, fine.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 242.65,
+          "end": 242.870001
+        },
+        {
+          "word": "yes",
+          "start": 243.000006,
+          "end": 243.250006
+        },
+        {
+          "word": "fine",
+          "start": 243.329993,
+          "end": 243.659995
+        }
+      ],
       "answers": [],
-      "end": 243.9
+      "end": 243.659995
     },
     {
       "id": 19,
-      "start": 244.1,
+      "start": 244.200003,
       "speaker": "MAN",
       "en": "Well, we can go outside and you can have a good look at one, and perhaps take it out. But first, can ljust ask you about finance? The cash price is going to be somewhere in the region of seven and a half thousand. How would you like to pay? Are you in a position to pay cash, or would you need credit?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 244.200003,
+          "end": 244.629996
+        },
+        {
+          "word": "we",
+          "start": 244.629996,
+          "end": 244.810004
+        },
+        {
+          "word": "can",
+          "start": 244.810004,
+          "end": 245.060004
+        },
+        {
+          "word": "go",
+          "start": 245.060004,
+          "end": 245.26000100000002
+        },
+        {
+          "word": "outside",
+          "start": 245.26000100000002,
+          "end": 245.929999
+        },
+        {
+          "word": "and",
+          "start": 245.929999,
+          "end": 246.090002
+        },
+        {
+          "word": "you",
+          "start": 246.090002,
+          "end": 246.319998
+        },
+        {
+          "word": "can",
+          "start": 246.319998,
+          "end": 246.560004
+        },
+        {
+          "word": "have",
+          "start": 246.560004,
+          "end": 246.829993
+        },
+        {
+          "word": "a",
+          "start": 246.829993,
+          "end": 246.9
+        },
+        {
+          "word": "good",
+          "start": 246.9,
+          "end": 247.15
+        },
+        {
+          "word": "look",
+          "start": 247.15,
+          "end": 247.379996
+        },
+        {
+          "word": "at",
+          "start": 247.379996,
+          "end": 247.470007
+        },
+        {
+          "word": "one",
+          "start": 247.470007,
+          "end": 247.720007
+        },
+        {
+          "word": "and",
+          "start": 247.93999300000002,
+          "end": 248.200003
+        },
+        {
+          "word": "perhaps",
+          "start": 248.200003,
+          "end": 248.610007
+        },
+        {
+          "word": "take",
+          "start": 248.610007,
+          "end": 248.870001
+        },
+        {
+          "word": "it",
+          "start": 248.870001,
+          "end": 248.93999300000002
+        },
+        {
+          "word": "out",
+          "start": 248.93999300000002,
+          "end": 249.15
+        },
+        {
+          "word": "But",
+          "start": 249.15,
+          "end": 249.9
+        },
+        {
+          "word": "first",
+          "start": 249.9,
+          "end": 250.23999600000002
+        },
+        {
+          "word": "can",
+          "start": 250.730002,
+          "end": 250.98999600000002
+        },
+        {
+          "word": "ljust",
+          "start": 250.98999600000002,
+          "end": 251.269995
+        },
+        {
+          "word": "ask",
+          "start": 251.269995,
+          "end": 251.560004
+        },
+        {
+          "word": "you",
+          "start": 251.560004,
+          "end": 251.659995
+        },
+        {
+          "word": "about",
+          "start": 251.659995,
+          "end": 251.920004
+        },
+        {
+          "word": "finance",
+          "start": 251.920004,
+          "end": 252.610007
+        },
+        {
+          "word": "The",
+          "start": 253.090002,
+          "end": 253.370001
+        },
+        {
+          "word": "cash",
+          "start": 253.409995,
+          "end": 253.709998
+        },
+        {
+          "word": "price",
+          "start": 253.709998,
+          "end": 254.069998
+        },
+        {
+          "word": "is",
+          "start": 254.069998,
+          "end": 254.18999300000002
+        },
+        {
+          "word": "going",
+          "start": 254.18999300000002,
+          "end": 254.409995
+        },
+        {
+          "word": "to",
+          "start": 254.409995,
+          "end": 254.480002
+        },
+        {
+          "word": "be",
+          "start": 254.480002,
+          "end": 254.629996
+        },
+        {
+          "word": "somewhere",
+          "start": 254.629996,
+          "end": 255.090002
+        },
+        {
+          "word": "in",
+          "start": 255.090002,
+          "end": 255.159995
+        },
+        {
+          "word": "the",
+          "start": 255.159995,
+          "end": 255.23999600000002
+        },
+        {
+          "word": "region",
+          "start": 255.23999600000002,
+          "end": 255.670004
+        },
+        {
+          "word": "of",
+          "start": 255.670004,
+          "end": 255.950003
+        },
+        {
+          "word": "seven",
+          "start": 255.950003,
+          "end": 256.470007
+        },
+        {
+          "word": "and",
+          "start": 256.470007,
+          "end": 256.560004
+        },
+        {
+          "word": "a",
+          "start": 256.560004,
+          "end": 256.65
+        },
+        {
+          "word": "half",
+          "start": 256.65,
+          "end": 256.909995
+        },
+        {
+          "word": "thousand",
+          "start": 256.909995,
+          "end": 257.429999
+        },
+        {
+          "word": "How",
+          "start": 257.909995,
+          "end": 258.09999700000003
+        },
+        {
+          "word": "would",
+          "start": 258.09999700000003,
+          "end": 258.239996
+        },
+        {
+          "word": "you",
+          "start": 258.239996,
+          "end": 258.310004
+        },
+        {
+          "word": "like",
+          "start": 258.310004,
+          "end": 258.510001
+        },
+        {
+          "word": "to",
+          "start": 258.510001,
+          "end": 258.610007
+        },
+        {
+          "word": "pay",
+          "start": 258.610007,
+          "end": 259.060004
+        },
+        {
+          "word": "Are",
+          "start": 259.09999700000003,
+          "end": 259.230002
+        },
+        {
+          "word": "you",
+          "start": 259.230002,
+          "end": 259.360007
+        },
+        {
+          "word": "in",
+          "start": 259.360007,
+          "end": 259.429999
+        },
+        {
+          "word": "a",
+          "start": 259.429999,
+          "end": 259.519995
+        },
+        {
+          "word": "position",
+          "start": 259.519995,
+          "end": 259.989996
+        },
+        {
+          "word": "to",
+          "start": 259.989996,
+          "end": 260.129996
+        },
+        {
+          "word": "pay",
+          "start": 260.129996,
+          "end": 260.379996
+        },
+        {
+          "word": "cash",
+          "start": 260.379996,
+          "end": 260.780005
+        },
+        {
+          "word": "or",
+          "start": 260.780005,
+          "end": 261.019995
+        },
+        {
+          "word": "would",
+          "start": 261.019995,
+          "end": 261.230002
+        },
+        {
+          "word": "you",
+          "start": 261.230002,
+          "end": 261.319998
+        },
+        {
+          "word": "need",
+          "start": 261.319998,
+          "end": 261.519995
+        },
+        {
+          "word": "credit",
+          "start": 261.519995,
+          "end": 261.9
+        }
+      ],
       "answers": [],
       "end": 261.9
     },
     {
       "id": 20,
-      "start": 262.4,
+      "start": 262.370001,
       "speaker": "WOMAN",
       "en": "I'd ·like credit provided the terms are reasonable.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 262.370001,
+          "end": 262.640005
+        },
+        {
+          "word": "'d",
+          "start": 262.640005,
+          "end": 262.720007
+        },
+        {
+          "word": "like",
+          "start": 262.720007,
+          "end": 263.069998
+        },
+        {
+          "word": "credit",
+          "start": 263.069998,
+          "end": 263.620001
+        },
+        {
+          "word": "provided",
+          "start": 263.620001,
+          "end": 264.010001
+        },
+        {
+          "word": "the",
+          "start": 264.010001,
+          "end": 264.09999700000003
+        },
+        {
+          "word": "terms",
+          "start": 264.09999700000003,
+          "end": 264.500006
+        },
+        {
+          "word": "are",
+          "start": 264.500006,
+          "end": 264.569998
+        },
+        {
+          "word": "reasonable",
+          "start": 264.569998,
+          "end": 265.179999
+        }
+      ],
       "answers": [
         4
       ],
-      "end": 265.6
+      "end": 265.179999
     },
     {
       "id": 21,
-      "start": 265.6,
+      "start": 265.45000300000004,
       "speaker": "MAN",
       "en": "Well you can discuss that with my colleague in a moment; we have various arrangements. And would you be interested in us taking your present car as part exchange?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 265.45000300000004,
+          "end": 265.730002
+        },
+        {
+          "word": "you",
+          "start": 265.730002,
+          "end": 265.890005
+        },
+        {
+          "word": "can",
+          "start": 265.890005,
+          "end": 266.030005
+        },
+        {
+          "word": "discuss",
+          "start": 266.030005,
+          "end": 266.480002
+        },
+        {
+          "word": "that",
+          "start": 266.480002,
+          "end": 266.670004
+        },
+        {
+          "word": "with",
+          "start": 266.670004,
+          "end": 266.840002
+        },
+        {
+          "word": "my",
+          "start": 266.840002,
+          "end": 267.019995
+        },
+        {
+          "word": "colleague",
+          "start": 267.019995,
+          "end": 267.470007
+        },
+        {
+          "word": "in",
+          "start": 267.470007,
+          "end": 267.560004
+        },
+        {
+          "word": "a",
+          "start": 267.560004,
+          "end": 267.590002
+        },
+        {
+          "word": "moment",
+          "start": 267.590002,
+          "end": 267.980002
+        },
+        {
+          "word": "we",
+          "start": 268.360007,
+          "end": 268.500006
+        },
+        {
+          "word": "have",
+          "start": 268.500006,
+          "end": 268.95000300000004
+        },
+        {
+          "word": "various",
+          "start": 269.010001,
+          "end": 269.569998
+        },
+        {
+          "word": "arrangements",
+          "start": 269.569998,
+          "end": 270.179999
+        },
+        {
+          "word": "And",
+          "start": 270.730002,
+          "end": 271.030005
+        },
+        {
+          "word": "would",
+          "start": 271.030005,
+          "end": 271.269995
+        },
+        {
+          "word": "you",
+          "start": 271.269995,
+          "end": 271.390005
+        },
+        {
+          "word": "be",
+          "start": 271.390005,
+          "end": 271.510001
+        },
+        {
+          "word": "interested",
+          "start": 271.510001,
+          "end": 272.090002
+        },
+        {
+          "word": "in",
+          "start": 272.090002,
+          "end": 272.189993
+        },
+        {
+          "word": "us",
+          "start": 272.189993,
+          "end": 272.420004
+        },
+        {
+          "word": "taking",
+          "start": 272.420004,
+          "end": 272.79999399999997
+        },
+        {
+          "word": "your",
+          "start": 272.79999399999997,
+          "end": 273.000006
+        },
+        {
+          "word": "present",
+          "start": 273.000006,
+          "end": 273.4
+        },
+        {
+          "word": "car",
+          "start": 273.4,
+          "end": 273.769995
+        },
+        {
+          "word": "as",
+          "start": 273.769995,
+          "end": 273.870001
+        },
+        {
+          "word": "part",
+          "start": 273.870001,
+          "end": 274.170004
+        },
+        {
+          "word": "exchange",
+          "start": 274.170004,
+          "end": 274.79999399999997
+        }
+      ],
       "answers": [],
-      "end": 275.4
+      "end": 274.79999399999997
     },
     {
       "id": 22,
-      "start": 285.2,
+      "start": 275.03999899999997,
       "speaker": "WOMAN",
       "en": "Yes.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Yes",
+          "start": 275.03999899999997,
+          "end": 275.560004
+        }
+      ],
+      "answers": [],
+      "end": 275.560004
     },
     {
       "id": 23,
-      "start": 297.2,
+      "start": 275.70000300000004,
       "speaker": "MAN",
       "en": "OK, fine. So I'll just need some details from you and then we can do a valuation .. . Is that OK?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "OK",
+          "start": 275.70000300000004,
+          "end": 276.260001
+        },
+        {
+          "word": "fine",
+          "start": 276.260001,
+          "end": 276.670004
+        },
+        {
+          "word": "So",
+          "start": 277.370001,
+          "end": 277.579993
+        },
+        {
+          "word": "I",
+          "start": 277.670004,
+          "end": 277.810004
+        },
+        {
+          "word": "'ll",
+          "start": 277.810004,
+          "end": 277.870001
+        },
+        {
+          "word": "just",
+          "start": 277.870001,
+          "end": 278.230002
+        },
+        {
+          "word": "need",
+          "start": 278.230002,
+          "end": 278.480002
+        },
+        {
+          "word": "some",
+          "start": 278.480002,
+          "end": 278.760001
+        },
+        {
+          "word": "details",
+          "start": 278.760001,
+          "end": 279.45000300000004
+        },
+        {
+          "word": "from",
+          "start": 279.45000300000004,
+          "end": 279.750006
+        },
+        {
+          "word": "you",
+          "start": 279.750006,
+          "end": 280.030005
+        },
+        {
+          "word": "and",
+          "start": 280.030005,
+          "end": 280.319998
+        },
+        {
+          "word": "then",
+          "start": 280.319998,
+          "end": 280.489996
+        },
+        {
+          "word": "we",
+          "start": 280.489996,
+          "end": 280.59999700000003
+        },
+        {
+          "word": "can",
+          "start": 280.59999700000003,
+          "end": 280.780005
+        },
+        {
+          "word": "do",
+          "start": 280.780005,
+          "end": 280.95000300000004
+        },
+        {
+          "word": "a",
+          "start": 280.95000300000004,
+          "end": 280.989996
+        },
+        {
+          "word": "valuation",
+          "start": 280.989996,
+          "end": 281.760001
+        },
+        {
+          "word": "Is",
+          "start": 282.060004,
+          "end": 282.20999800000004
+        },
+        {
+          "word": "that",
+          "start": 282.20999800000004,
+          "end": 282.34999700000003
+        },
+        {
+          "word": "OK",
+          "start": 282.34999700000003,
+          "end": 282.730002
+        }
+      ],
+      "answers": [],
+      "end": 282.730002
     },
     {
       "id": 24,
-      "start": 309.2,
+      "start": 282.970007,
       "speaker": "WOMAN",
       "en": "Fine, yes.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Fine",
+          "start": 282.970007,
+          "end": 283.45999800000004
+        },
+        {
+          "word": "yes",
+          "start": 283.53999899999997,
+          "end": 283.920004
+        }
+      ],
+      "answers": [],
+      "end": 283.920004
     },
     {
       "id": 25,
-      "start": 321.3,
+      "start": 287.54999399999997,
       "speaker": "MAN",
       "en": "Could I have your full name?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Could",
+          "start": 287.54999399999997,
+          "end": 288.03999899999997
+        },
+        {
+          "word": "I",
+          "start": 288.03999899999997,
+          "end": 288.090002
+        },
+        {
+          "word": "have",
+          "start": 288.090002,
+          "end": 288.120001
+        },
+        {
+          "word": "your",
+          "start": 288.120001,
+          "end": 288.179999
+        },
+        {
+          "word": "full",
+          "start": 288.179999,
+          "end": 288.269995
+        },
+        {
+          "word": "name",
+          "start": 288.269995,
+          "end": 288.409995
+        }
+      ],
       "answers": [],
-      "end": 323.2
+      "end": 288.409995
     },
     {
       "id": 26,
-      "start": 324.8,
+      "start": 288.510001,
       "speaker": "WOMAN",
       "en": "Wendy Harries, that's H-A-double R-1-E-S.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Wendy",
+          "start": 288.510001,
+          "end": 288.689993
+        },
+        {
+          "word": "Harries",
+          "start": 288.730002,
+          "end": 288.920004
+        },
+        {
+          "word": "that",
+          "start": 288.920004,
+          "end": 288.95999800000004
+        },
+        {
+          "word": "'s",
+          "start": 288.95999800000004,
+          "end": 289.069998
+        },
+        {
+          "word": "H",
+          "start": 289.069998,
+          "end": 289.329993
+        },
+        {
+          "word": "A",
+          "start": 289.329993,
+          "end": 289.429999
+        },
+        {
+          "word": "double",
+          "start": 289.429999,
+          "end": 289.54999399999997
+        },
+        {
+          "word": "R",
+          "start": 289.54999399999997,
+          "end": 289.610007
+        },
+        {
+          "word": "1",
+          "start": 290.019995,
+          "end": 293.230002
+        },
+        {
+          "word": "E",
+          "start": 293.230002,
+          "end": 293.269995
+        },
+        {
+          "word": "S",
+          "start": 293.269995,
+          "end": 293.329993
+        }
+      ],
       "answers": [
         5
-      ]
+      ],
+      "end": 293.329993
     },
     {
       "id": 27,
-      "start": 328.4,
+      "start": 313.659995,
       "speaker": "MAN",
       "en": "And is that Mrs .. . Miss ... Ms .. . ?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 313.659995,
+          "end": 313.720007
+        },
+        {
+          "word": "is",
+          "start": 313.720007,
+          "end": 313.780005
+        },
+        {
+          "word": "that",
+          "start": 313.780005,
+          "end": 313.84999700000003
+        },
+        {
+          "word": "Mrs",
+          "start": 313.84999700000003,
+          "end": 314.110007
+        },
+        {
+          "word": "Miss",
+          "start": 314.110007,
+          "end": 314.29999399999997
+        },
+        {
+          "word": "Ms",
+          "start": 314.689993,
+          "end": 314.84999700000003
+        }
+      ],
       "answers": [],
-      "end": 330.2
+      "end": 314.84999700000003
     },
     {
       "id": 28,
-      "start": 331.9,
+      "start": 315.04999399999997,
       "speaker": "WOMAN",
       "en": "It's Doctor, actually.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 315.04999399999997,
+          "end": 315.179999
+        },
+        {
+          "word": "'s",
+          "start": 315.04999399999997,
+          "end": 315.179999
+        },
+        {
+          "word": "Doctor",
+          "start": 315.179999,
+          "end": 315.390005
+        },
+        {
+          "word": "actually",
+          "start": 315.390005,
+          "end": 315.78999899999997
+        }
+      ],
       "answers": [
         6
       ],
-      "end": 333.2
+      "end": 315.78999899999997
     },
     {
       "id": 29,
-      "start": 333.8,
+      "start": 315.78999899999997,
       "speaker": "MAN",
       "en": "Oh, right. And your address?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 315.78999899999997,
+          "end": 315.829993
+        },
+        {
+          "word": "right",
+          "start": 316.15,
+          "end": 316.65
+        },
+        {
+          "word": "And",
+          "start": 316.65,
+          "end": 316.78999899999997
+        },
+        {
+          "word": "your",
+          "start": 316.78999899999997,
+          "end": 317.010001
+        },
+        {
+          "word": "address",
+          "start": 317.010001,
+          "end": 317.129996
+        }
+      ],
       "answers": [],
-      "end": 335.6
+      "end": 317.129996
     },
     {
       "id": 30,
-      "start": 335.6,
+      "start": 320.610007,
       "speaker": "WOMAN",
       "en": "20 Green Banks.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "20",
+          "start": 320.610007,
+          "end": 322.260001
+        },
+        {
+          "word": "Green",
+          "start": 322.989996,
+          "end": 323.250006
+        },
+        {
+          "word": "Banks",
+          "start": 323.250006,
+          "end": 323.750006
+        }
+      ],
       "answers": [],
-      "end": 337.3
+      "end": 323.750006
     },
     {
       "id": 31,
-      "start": 337.4,
+      "start": 323.750006,
       "speaker": "MAN",
       "en": "Is that 'Green' spelled as in the colour?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Is",
+          "start": 323.750006,
+          "end": 324.069998
+        },
+        {
+          "word": "that",
+          "start": 324.53999899999997,
+          "end": 324.989996
+        },
+        {
+          "word": "Green",
+          "start": 325.179999,
+          "end": 325.420004
+        },
+        {
+          "word": "spelled",
+          "start": 325.420004,
+          "end": 325.95000300000004
+        },
+        {
+          "word": "as",
+          "start": 326.20999800000004,
+          "end": 326.370001
+        },
+        {
+          "word": "in",
+          "start": 326.370001,
+          "end": 326.45999800000004
+        },
+        {
+          "word": "the",
+          "start": 326.45999800000004,
+          "end": 326.870001
+        },
+        {
+          "word": "colour",
+          "start": 327.159995,
+          "end": 327.390005
+        }
+      ],
       "answers": [],
-      "end": 341.6
+      "end": 327.390005
     },
     {
       "id": 32,
-      "start": 341.9,
+      "start": 327.420004,
       "speaker": "WOMAN",
       "en": "Yes, that's right.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Yes",
+          "start": 327.420004,
+          "end": 328.030005
+        },
+        {
+          "word": "that",
+          "start": 328.329993,
+          "end": 328.45000300000004
+        },
+        {
+          "word": "'s",
+          "start": 328.45000300000004,
+          "end": 329.310004
+        },
+        {
+          "word": "right",
+          "start": 330.939993,
+          "end": 331.250006
+        }
+      ],
       "answers": [],
-      "end": 343.7
+      "end": 331.250006
     },
     {
       "id": 33,
-      "start": 407.5,
+      "start": 331.780005,
       "speaker": "MAN",
       "en": "OK.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 331.780005,
+          "end": 333.220007
+        }
+      ],
       "answers": [],
-      "end": 407.9
+      "end": 333.220007
     },
     {
       "id": 34,
-      "start": 407.9,
+      "start": 333.780005,
       "speaker": "WOMAN",
       "en": "Alton.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Alton",
+          "start": 333.780005,
+          "end": 334.310004
+        }
+      ],
+      "answers": [],
+      "end": 334.310004
     },
     {
       "id": 35,
-      "start": 407.9,
+      "start": 334.310004,
       "speaker": "MAN",
       "en": "Is that 0-L-T-0-N?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Is",
+          "start": 334.310004,
+          "end": 334.370001
+        },
+        {
+          "word": "that",
+          "start": 334.370001,
+          "end": 334.45999800000004
+        },
+        {
+          "word": "0",
+          "start": 335.220007,
+          "end": 336.250006
+        },
+        {
+          "word": "L",
+          "start": 336.9,
+          "end": 337.090002
+        },
+        {
+          "word": "T",
+          "start": 337.090002,
+          "end": 337.409995
+        },
+        {
+          "word": "0",
+          "start": 337.409995,
+          "end": 341.470007
+        },
+        {
+          "word": "N",
+          "start": 341.870001,
+          "end": 342.069998
+        }
+      ],
+      "answers": [],
+      "end": 342.069998
     },
     {
       "id": 36,
-      "start": 407.9,
+      "start": 342.20000300000004,
       "speaker": "WOMAN",
       "en": "Not quite, it begins with an A. not an 0.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Not",
+          "start": 342.20000300000004,
+          "end": 342.390005
+        },
+        {
+          "word": "quite",
+          "start": 342.390005,
+          "end": 342.659995
+        },
+        {
+          "word": "it",
+          "start": 343.069998,
+          "end": 343.129996
+        },
+        {
+          "word": "begins",
+          "start": 343.129996,
+          "end": 343.610007
+        },
+        {
+          "word": "with",
+          "start": 344.629996,
+          "end": 344.929999
+        },
+        {
+          "word": "an",
+          "start": 344.929999,
+          "end": 345.220007
+        },
+        {
+          "word": "A",
+          "start": 345.689993,
+          "end": 345.730002
+        },
+        {
+          "word": "not",
+          "start": 345.730002,
+          "end": 346.000006
+        },
+        {
+          "word": "an",
+          "start": 346.000006,
+          "end": 346.079993
+        },
+        {
+          "word": "0",
+          "start": 346.250006,
+          "end": 351.03999899999997
+        }
+      ],
       "answers": [
         7
-      ]
+      ],
+      "end": 351.03999899999997
     },
     {
       "id": 37,
-      "start": 407.9,
+      "start": 351.379996,
       "speaker": "MAN",
       "en": "Oh yes, that's in Hampshire isn't it?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Oh",
+          "start": 351.379996,
+          "end": 351.84999700000003
+        },
+        {
+          "word": "yes",
+          "start": 351.84999700000003,
+          "end": 352.379996
+        },
+        {
+          "word": "that",
+          "start": 352.409995,
+          "end": 352.65
+        },
+        {
+          "word": "'s",
+          "start": 352.65,
+          "end": 352.750006
+        },
+        {
+          "word": "in",
+          "start": 352.750006,
+          "end": 352.840002
+        },
+        {
+          "word": "Hampshire",
+          "start": 352.840002,
+          "end": 353.340002
+        },
+        {
+          "word": "is",
+          "start": 353.340002,
+          "end": 353.510001
+        },
+        {
+          "word": "n't",
+          "start": 353.340002,
+          "end": 353.510001
+        },
+        {
+          "word": "it",
+          "start": 353.510001,
+          "end": 353.640005
+        }
+      ],
+      "answers": [],
+      "end": 353.640005
     },
     {
       "id": 38,
-      "start": 408.0,
+      "start": 353.829993,
       "speaker": "WOMAN",
       "en": "That's right.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "That",
+          "start": 353.829993,
+          "end": 353.989996
+        },
+        {
+          "word": "'s",
+          "start": 353.989996,
+          "end": 354.04999399999997
+        },
+        {
+          "word": "right",
+          "start": 354.04999399999997,
+          "end": 354.28999899999997
+        }
+      ],
+      "answers": [],
+      "end": 354.28999899999997
     },
     {
       "id": 39,
-      "start": 408.1,
+      "start": 355.04999399999997,
       "speaker": "MAN",
       "en": "And do you know your postcode?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "And",
+          "start": 355.04999399999997,
+          "end": 355.29999399999997
+        },
+        {
+          "word": "do",
+          "start": 355.29999399999997,
+          "end": 355.4
+        },
+        {
+          "word": "you",
+          "start": 355.4,
+          "end": 355.50998500000003
+        },
+        {
+          "word": "know",
+          "start": 355.50998500000003,
+          "end": 355.590002
+        },
+        {
+          "word": "your",
+          "start": 355.590002,
+          "end": 355.820013
+        },
+        {
+          "word": "postcode",
+          "start": 355.820013,
+          "end": 356.4
+        }
+      ],
+      "answers": [],
+      "end": 356.4
     },
     {
       "id": 40,
-      "start": 408.2,
+      "start": 356.95999800000004,
       "speaker": "WOMAN",
       "en": "Yes. It's GU8 9EW",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Yes",
+          "start": 356.95999800000004,
+          "end": 357.41001000000006
+        },
+        {
+          "word": "It",
+          "start": 357.44998799999996,
+          "end": 357.85999100000004
+        },
+        {
+          "word": "'s",
+          "start": 357.44998799999996,
+          "end": 357.85999100000004
+        },
+        {
+          "word": "GU",
+          "start": 357.85999100000004,
+          "end": 359.29999399999997
+        },
+        {
+          "word": "8",
+          "start": 357.85999100000004,
+          "end": 359.29999399999997
+        },
+        {
+          "word": "9",
+          "start": 359.590002,
+          "end": 360.92999899999995
+        },
+        {
+          "word": "EW",
+          "start": 359.590002,
+          "end": 360.92999899999995
+        }
+      ],
+      "answers": [],
+      "end": 360.92999899999995
     },
     {
       "id": 41,
-      "start": 408.3,
+      "start": 361.42999899999995,
       "speaker": "MAN",
       "en": "Do you have a daytime phone number?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Do",
+          "start": 361.42999899999995,
+          "end": 361.570013
+        },
+        {
+          "word": "you",
+          "start": 361.570013,
+          "end": 361.70999800000004
+        },
+        {
+          "word": "have",
+          "start": 361.70999800000004,
+          "end": 361.9
+        },
+        {
+          "word": "a",
+          "start": 361.9,
+          "end": 361.989996
+        },
+        {
+          "word": "daytime",
+          "start": 361.989996,
+          "end": 362.56000400000005
+        },
+        {
+          "word": "phone",
+          "start": 362.56000400000005,
+          "end": 362.81000400000005
+        },
+        {
+          "word": "number",
+          "start": 362.81000400000005,
+          "end": 363.15
+        }
+      ],
+      "answers": [],
+      "end": 363.15
     },
     {
       "id": 42,
-      "start": 408.5,
+      "start": 363.570013,
       "speaker": "WOMAN",
       "en": "Well, I work at the hospital but it's a bit difficult to get hold of me. I can give you a number just for messages, and then I'll get back to you when I can. that OK?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Well",
+          "start": 363.570013,
+          "end": 364.03000499999996
+        },
+        {
+          "word": "I",
+          "start": 364.06000400000005,
+          "end": 364.19000900000003
+        },
+        {
+          "word": "work",
+          "start": 364.19000900000003,
+          "end": 364.4
+        },
+        {
+          "word": "at",
+          "start": 364.4,
+          "end": 364.470007
+        },
+        {
+          "word": "the",
+          "start": 364.470007,
+          "end": 364.50998500000003
+        },
+        {
+          "word": "hospital",
+          "start": 364.50998500000003,
+          "end": 365.16001000000006
+        },
+        {
+          "word": "but",
+          "start": 365.19998799999996,
+          "end": 365.32999300000006
+        },
+        {
+          "word": "it",
+          "start": 365.32999300000006,
+          "end": 365.50998500000003
+        },
+        {
+          "word": "'s",
+          "start": 365.32999300000006,
+          "end": 365.50998500000003
+        },
+        {
+          "word": "a",
+          "start": 365.50998500000003,
+          "end": 365.54999399999997
+        },
+        {
+          "word": "bit",
+          "start": 365.54999399999997,
+          "end": 365.769995
+        },
+        {
+          "word": "difficult",
+          "start": 365.769995,
+          "end": 366.28000499999996
+        },
+        {
+          "word": "to",
+          "start": 366.28000499999996,
+          "end": 366.35999100000004
+        },
+        {
+          "word": "get",
+          "start": 366.35999100000004,
+          "end": 366.54001500000004
+        },
+        {
+          "word": "hold",
+          "start": 366.54001500000004,
+          "end": 366.82999300000006
+        },
+        {
+          "word": "of",
+          "start": 366.82999300000006,
+          "end": 366.94998799999996
+        },
+        {
+          "word": "me",
+          "start": 366.94998799999996,
+          "end": 367.22998700000005
+        },
+        {
+          "word": "I",
+          "start": 367.75998500000003,
+          "end": 367.95999800000004
+        },
+        {
+          "word": "can",
+          "start": 367.95999800000004,
+          "end": 368.239996
+        },
+        {
+          "word": "give",
+          "start": 368.239996,
+          "end": 368.38999
+        },
+        {
+          "word": "you",
+          "start": 368.38999,
+          "end": 368.500006
+        },
+        {
+          "word": "a",
+          "start": 368.500006,
+          "end": 368.54999399999997
+        },
+        {
+          "word": "number",
+          "start": 368.54999399999997,
+          "end": 368.97998700000005
+        },
+        {
+          "word": "just",
+          "start": 368.97998700000005,
+          "end": 369.250006
+        },
+        {
+          "word": "for",
+          "start": 369.250006,
+          "end": 369.32999300000006
+        },
+        {
+          "word": "messages",
+          "start": 369.32999300000006,
+          "end": 370.07999300000006
+        },
+        {
+          "word": "and",
+          "start": 370.120001,
+          "end": 370.340002
+        },
+        {
+          "word": "then",
+          "start": 370.340002,
+          "end": 370.519995
+        },
+        {
+          "word": "I",
+          "start": 370.519995,
+          "end": 370.590002
+        },
+        {
+          "word": "'ll",
+          "start": 370.590002,
+          "end": 370.63999
+        },
+        {
+          "word": "get",
+          "start": 370.63999,
+          "end": 370.85999100000004
+        },
+        {
+          "word": "back",
+          "start": 370.85999100000004,
+          "end": 371.000006
+        },
+        {
+          "word": "to",
+          "start": 371.000006,
+          "end": 371.100012
+        },
+        {
+          "word": "you",
+          "start": 371.100012,
+          "end": 371.220007
+        },
+        {
+          "word": "when",
+          "start": 371.220007,
+          "end": 371.32999300000006
+        },
+        {
+          "word": "I",
+          "start": 371.32999300000006,
+          "end": 371.45999800000004
+        },
+        {
+          "word": "can",
+          "start": 371.45999800000004,
+          "end": 371.769995
+        },
+        {
+          "word": "that",
+          "start": 371.769995,
+          "end": 371.970007
+        },
+        {
+          "word": "OK",
+          "start": 371.970007,
+          "end": 372.38001099999997
+        }
+      ],
+      "answers": [],
+      "end": 372.38001099999997
     },
     {
       "id": 43,
-      "start": 408.6,
+      "start": 372.419989,
       "speaker": "MAN",
       "en": "That's fine.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "That",
+          "start": 372.419989,
+          "end": 372.67999899999995
+        },
+        {
+          "word": "'s",
+          "start": 372.67999899999995,
+          "end": 372.769995
+        },
+        {
+          "word": "fine",
+          "start": 372.769995,
+          "end": 373.090002
+        }
+      ],
+      "answers": [],
+      "end": 373.090002
     },
     {
       "id": 44,
-      "start": 408.8,
+      "start": 373.78000499999996,
       "speaker": "WOMAN",
       "en": "It's 0-7-9-8-2-5-7-6-4-3.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "It",
+          "start": 373.78000499999996,
+          "end": 374.31000400000005
+        },
+        {
+          "word": "'s",
+          "start": 373.78000499999996,
+          "end": 374.31000400000005
+        },
+        {
+          "word": "0",
+          "start": 374.419989,
+          "end": 374.79001500000004
+        },
+        {
+          "word": "7",
+          "start": 374.79001500000004,
+          "end": 375.50998500000003
+        },
+        {
+          "word": "9",
+          "start": 375.50998500000003,
+          "end": 375.88001099999997
+        },
+        {
+          "word": "8",
+          "start": 375.88001099999997,
+          "end": 376.019995
+        },
+        {
+          "word": "2",
+          "start": 376.63001099999997,
+          "end": 376.85999100000004
+        },
+        {
+          "word": "5",
+          "start": 376.85999100000004,
+          "end": 377.13001099999997
+        },
+        {
+          "word": "7",
+          "start": 377.13001099999997,
+          "end": 377.63001099999997
+        },
+        {
+          "word": "6",
+          "start": 377.91001000000006,
+          "end": 378.489996
+        },
+        {
+          "word": "4",
+          "start": 378.489996,
+          "end": 378.840002
+        },
+        {
+          "word": "3",
+          "start": 379.88001099999997,
+          "end": 380.019995
+        }
+      ],
+      "answers": [],
+      "end": 380.019995
     },
     {
       "id": 45,
-      "start": 408.9,
+      "start": 380.019995,
       "speaker": "MAN",
       "en": "Fine. And about the car you have now, what make is it?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Fine",
+          "start": 380.019995,
+          "end": 380.4
+        },
+        {
+          "word": "And",
+          "start": 381.370001,
+          "end": 381.840002
+        },
+        {
+          "word": "about",
+          "start": 381.840002,
+          "end": 382.17999899999995
+        },
+        {
+          "word": "the",
+          "start": 382.17999899999995,
+          "end": 382.29001500000004
+        },
+        {
+          "word": "car",
+          "start": 382.29001500000004,
+          "end": 382.63999
+        },
+        {
+          "word": "you",
+          "start": 382.63999,
+          "end": 382.820013
+        },
+        {
+          "word": "have",
+          "start": 382.820013,
+          "end": 383.10999100000004
+        },
+        {
+          "word": "now",
+          "start": 383.10999100000004,
+          "end": 383.50998500000003
+        },
+        {
+          "word": "what",
+          "start": 383.75998500000003,
+          "end": 383.94000900000003
+        },
+        {
+          "word": "make",
+          "start": 383.94000900000003,
+          "end": 384.239996
+        },
+        {
+          "word": "is",
+          "start": 384.239996,
+          "end": 384.370001
+        },
+        {
+          "word": "it",
+          "start": 384.370001,
+          "end": 384.500006
+        }
+      ],
+      "answers": [],
+      "end": 384.500006
     },
     {
       "id": 46,
-      "start": 409.1,
+      "start": 384.85999100000004,
       "speaker": "WOMAN",
       "en": "It's a Conti.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "It",
+          "start": 384.85999100000004,
+          "end": 385.10999100000004
+        },
+        {
+          "word": "'s",
+          "start": 384.85999100000004,
+          "end": 385.10999100000004
+        },
+        {
+          "word": "a",
+          "start": 385.10999100000004,
+          "end": 385.15
+        },
+        {
+          "word": "Conti",
+          "start": 385.15,
+          "end": 385.65
+        }
+      ],
+      "answers": [],
+      "end": 385.65
     },
     {
       "id": 47,
-      "start": 409.2,
+      "start": 386.32999300000006,
       "speaker": "MAN",
       "en": "Do you know the year or the model name?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Do",
+          "start": 386.32999300000006,
+          "end": 386.50998500000003
+        },
+        {
+          "word": "you",
+          "start": 386.50998500000003,
+          "end": 386.66001000000006
+        },
+        {
+          "word": "know",
+          "start": 386.66001000000006,
+          "end": 386.85999100000004
+        },
+        {
+          "word": "the",
+          "start": 386.85999100000004,
+          "end": 386.92999899999995
+        },
+        {
+          "word": "year",
+          "start": 386.92999899999995,
+          "end": 387.350012
+        },
+        {
+          "word": "or",
+          "start": 387.350012,
+          "end": 387.489996
+        },
+        {
+          "word": "the",
+          "start": 387.489996,
+          "end": 387.69000900000003
+        },
+        {
+          "word": "model",
+          "start": 387.69000900000003,
+          "end": 388.00998500000003
+        },
+        {
+          "word": "name",
+          "start": 388.00998500000003,
+          "end": 388.31000400000005
+        }
+      ],
+      "answers": [],
+      "end": 388.31000400000005
     },
     {
       "id": 48,
-      "start": 409.4,
+      "start": 388.620001,
       "speaker": "WOMAN",
       "en": "I think it's 1996, and it's called a Lion - like the animal.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 388.620001,
+          "end": 388.820013
+        },
+        {
+          "word": "think",
+          "start": 389.019995,
+          "end": 389.41001000000006
+        },
+        {
+          "word": "it",
+          "start": 389.41001000000006,
+          "end": 389.63999
+        },
+        {
+          "word": "'s",
+          "start": 389.41001000000006,
+          "end": 389.63999
+        },
+        {
+          "word": "1996",
+          "start": 389.63999,
+          "end": 391.250006
+        },
+        {
+          "word": "and",
+          "start": 391.29001500000004,
+          "end": 391.53000499999996
+        },
+        {
+          "word": "it",
+          "start": 391.53000499999996,
+          "end": 391.69000900000003
+        },
+        {
+          "word": "'s",
+          "start": 391.53000499999996,
+          "end": 391.69000900000003
+        },
+        {
+          "word": "called",
+          "start": 391.69000900000003,
+          "end": 392.13999
+        },
+        {
+          "word": "a",
+          "start": 392.28000499999996,
+          "end": 392.419989
+        },
+        {
+          "word": "Lion",
+          "start": 392.419989,
+          "end": 393.169989
+        },
+        {
+          "word": "like",
+          "start": 393.42999899999995,
+          "end": 393.63999
+        },
+        {
+          "word": "the",
+          "start": 393.63999,
+          "end": 393.720007
+        },
+        {
+          "word": "animal",
+          "start": 393.720007,
+          "end": 394.090002
+        }
+      ],
       "answers": [
         9
-      ]
+      ],
+      "end": 394.090002
     },
     {
       "id": 49,
-      "start": 409.5,
+      "start": 394.25998500000003,
       "speaker": "MAN",
       "en": "Then it must be 1994, because they brought out the Fox after that.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Then",
+          "start": 394.25998500000003,
+          "end": 394.60999100000004
+        },
+        {
+          "word": "it",
+          "start": 394.60999100000004,
+          "end": 394.72998700000005
+        },
+        {
+          "word": "must",
+          "start": 394.72998700000005,
+          "end": 395.13001099999997
+        },
+        {
+          "word": "be",
+          "start": 395.13001099999997,
+          "end": 395.239996
+        },
+        {
+          "word": "1994",
+          "start": 395.239996,
+          "end": 396.590002
+        },
+        {
+          "word": "because",
+          "start": 396.590002,
+          "end": 396.88999
+        },
+        {
+          "word": "they",
+          "start": 396.88999,
+          "end": 397.019995
+        },
+        {
+          "word": "brought",
+          "start": 397.019995,
+          "end": 397.44000900000003
+        },
+        {
+          "word": "out",
+          "start": 397.44000900000003,
+          "end": 397.720007
+        },
+        {
+          "word": "the",
+          "start": 397.720007,
+          "end": 397.79999399999997
+        },
+        {
+          "word": "Fox",
+          "start": 397.79999399999997,
+          "end": 398.340002
+        },
+        {
+          "word": "after",
+          "start": 398.370001,
+          "end": 398.66001000000006
+        },
+        {
+          "word": "that",
+          "start": 398.66001000000006,
+          "end": 398.850012
+        }
+      ],
+      "answers": [],
+      "end": 398.850012
     },
     {
       "id": 50,
-      "start": 409.7,
+      "start": 399.20999800000004,
       "speaker": "WOMAN",
       "en": "Oh right, yes.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Oh",
+          "start": 399.20999800000004,
+          "end": 399.56000400000005
+        },
+        {
+          "word": "right",
+          "start": 399.590002,
+          "end": 399.88999
+        },
+        {
+          "word": "yes",
+          "start": 399.970007,
+          "end": 400.65
+        }
+      ],
+      "answers": [],
+      "end": 400.65
     },
     {
       "id": 51,
-      "start": 409.9,
+      "start": 400.720007,
       "speaker": "MAN",
       "en": "Mileage? Roughly?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "Mileage",
+          "start": 400.720007,
+          "end": 401.269995
+        },
+        {
+          "word": "Roughly",
+          "start": 401.54001500000004,
+          "end": 402.04001500000004
+        }
+      ],
+      "answers": [],
+      "end": 402.04001500000004
     },
     {
       "id": 52,
-      "start": 410.0,
+      "start": 402.54999399999997,
       "speaker": "WOMAN",
       "en": "I'm not sure. I know it's less than seventy thousand.",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "I",
+          "start": 402.54999399999997,
+          "end": 402.81000400000005
+        },
+        {
+          "word": "'m",
+          "start": 402.54999399999997,
+          "end": 402.81000400000005
+        },
+        {
+          "word": "not",
+          "start": 402.81000400000005,
+          "end": 403.07999300000006
+        },
+        {
+          "word": "sure",
+          "start": 403.07999300000006,
+          "end": 403.9
+        },
+        {
+          "word": "I",
+          "start": 404.04999399999997,
+          "end": 404.22998700000005
+        },
+        {
+          "word": "know",
+          "start": 404.22998700000005,
+          "end": 404.370001
+        },
+        {
+          "word": "it",
+          "start": 404.370001,
+          "end": 404.57999300000006
+        },
+        {
+          "word": "'s",
+          "start": 404.370001,
+          "end": 404.57999300000006
+        },
+        {
+          "word": "less",
+          "start": 404.57999300000006,
+          "end": 404.95999800000004
+        },
+        {
+          "word": "than",
+          "start": 404.95999800000004,
+          "end": 405.120001
+        },
+        {
+          "word": "seventy",
+          "start": 405.120001,
+          "end": 405.63999
+        },
+        {
+          "word": "thousand",
+          "start": 405.63999,
+          "end": 406.72998700000005
+        }
+      ],
+      "answers": [],
+      "end": 406.72998700000005
     },
     {
       "id": 53,
-      "start": 410.1,
+      "start": 407.169989,
       "speaker": "MAN",
       "en": "OK. What colour is it?",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "OK",
+          "start": 407.169989,
+          "end": 408.350012
+        },
+        {
+          "word": "What",
+          "start": 409.00998500000003,
+          "end": 409.370001
+        },
+        {
+          "word": "colour",
+          "start": 409.370001,
+          "end": 409.65
+        },
+        {
+          "word": "is",
+          "start": 409.65,
+          "end": 409.75998500000003
+        },
+        {
+          "word": "it",
+          "start": 409.75998500000003,
+          "end": 409.88001099999997
+        }
+      ],
+      "answers": [],
+      "end": 409.88001099999997
     },
     {
       "id": 54,
-      "start": 410.3,
+      "start": 410.25998500000003,
       "speaker": "WOMAN",
       "en": "It's grey, metallic grey.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 410.25998500000003,
+          "end": 410.53000499999996
+        },
+        {
+          "word": "'s",
+          "start": 410.25998500000003,
+          "end": 410.53000499999996
+        },
+        {
+          "word": "grey",
+          "start": 410.53000499999996,
+          "end": 411.07999300000006
+        },
+        {
+          "word": "metallic",
+          "start": 411.19998799999996,
+          "end": 411.669989
+        },
+        {
+          "word": "grey",
+          "start": 411.669989,
+          "end": 412.04999399999997
+        }
+      ],
       "answers": [],
-      "end": 412.1
+      "end": 412.04999399999997
     },
     {
       "id": 55,
-      "start": 412.5,
+      "start": 412.419989,
       "speaker": "MAN",
       "en": "Right, and one last thing- what sort of condition would you say it's in?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 412.419989,
+          "end": 412.970007
+        },
+        {
+          "word": "and",
+          "start": 413.500006,
+          "end": 413.70999800000004
+        },
+        {
+          "word": "one",
+          "start": 413.70999800000004,
+          "end": 413.97998700000005
+        },
+        {
+          "word": "last",
+          "start": 413.97998700000005,
+          "end": 414.31000400000005
+        },
+        {
+          "word": "thing",
+          "start": 414.31000400000005,
+          "end": 414.54999399999997
+        },
+        {
+          "word": "what",
+          "start": 414.82999300000006,
+          "end": 415.070013
+        },
+        {
+          "word": "sort",
+          "start": 415.070013,
+          "end": 415.44000900000003
+        },
+        {
+          "word": "of",
+          "start": 415.44000900000003,
+          "end": 415.63999
+        },
+        {
+          "word": "condition",
+          "start": 415.63999,
+          "end": 416.22998700000005
+        },
+        {
+          "word": "would",
+          "start": 416.22998700000005,
+          "end": 416.38001099999997
+        },
+        {
+          "word": "you",
+          "start": 416.38001099999997,
+          "end": 416.45999800000004
+        },
+        {
+          "word": "say",
+          "start": 416.45999800000004,
+          "end": 416.669989
+        },
+        {
+          "word": "it",
+          "start": 416.669989,
+          "end": 416.840002
+        },
+        {
+          "word": "'s",
+          "start": 416.669989,
+          "end": 416.840002
+        },
+        {
+          "word": "in",
+          "start": 416.840002,
+          "end": 416.989996
+        }
+      ],
       "answers": [],
-      "end": 417.8
+      "end": 416.989996
     },
     {
       "id": 56,
-      "start": 417.9,
+      "start": 417.67999899999995,
       "speaker": "WOMAN",
       "en": "I'd probably describe it as reasonable. Do you need to see it? It's parked outside.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 417.67999899999995,
+          "end": 417.870001
+        },
+        {
+          "word": "'d",
+          "start": 417.870001,
+          "end": 417.9
+        },
+        {
+          "word": "probably",
+          "start": 418.22998700000005,
+          "end": 418.590002
+        },
+        {
+          "word": "describe",
+          "start": 418.590002,
+          "end": 419.120001
+        },
+        {
+          "word": "it",
+          "start": 419.120001,
+          "end": 419.220007
+        },
+        {
+          "word": "as",
+          "start": 419.220007,
+          "end": 419.500006
+        },
+        {
+          "word": "reasonable",
+          "start": 419.500006,
+          "end": 420.239996
+        },
+        {
+          "word": "Do",
+          "start": 420.669989,
+          "end": 420.88999
+        },
+        {
+          "word": "you",
+          "start": 420.88999,
+          "end": 420.94998799999996
+        },
+        {
+          "word": "need",
+          "start": 420.94998799999996,
+          "end": 421.100012
+        },
+        {
+          "word": "to",
+          "start": 421.100012,
+          "end": 421.169989
+        },
+        {
+          "word": "see",
+          "start": 421.169989,
+          "end": 421.41001000000006
+        },
+        {
+          "word": "it",
+          "start": 421.41001000000006,
+          "end": 421.69998799999996
+        },
+        {
+          "word": "It",
+          "start": 421.69998799999996,
+          "end": 421.840002
+        },
+        {
+          "word": "'s",
+          "start": 421.69998799999996,
+          "end": 421.840002
+        },
+        {
+          "word": "parked",
+          "start": 421.840002,
+          "end": 422.15
+        },
+        {
+          "word": "outside",
+          "start": 422.15,
+          "end": 422.69998799999996
+        }
+      ],
       "answers": [
         10
       ],
-      "end": 422.8
+      "end": 422.69998799999996
     },
     {
       "id": 57,
-      "start": 422.9,
+      "start": 422.750006,
       "speaker": "MAN",
       "en": "Not at the moment, no. Perhaps you could call in one day next week .. .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Not",
+          "start": 422.750006,
+          "end": 423.04999399999997
+        },
+        {
+          "word": "at",
+          "start": 423.04999399999997,
+          "end": 423.15
+        },
+        {
+          "word": "the",
+          "start": 423.15,
+          "end": 423.22998700000005
+        },
+        {
+          "word": "moment",
+          "start": 423.22998700000005,
+          "end": 423.57999300000006
+        },
+        {
+          "word": "no",
+          "start": 423.57999300000006,
+          "end": 423.79999399999997
+        },
+        {
+          "word": "Perhaps",
+          "start": 424.42999899999995,
+          "end": 424.850012
+        },
+        {
+          "word": "you",
+          "start": 424.850012,
+          "end": 424.95999800000004
+        },
+        {
+          "word": "could",
+          "start": 424.95999800000004,
+          "end": 426.100012
+        },
+        {
+          "word": "call",
+          "start": 426.100012,
+          "end": 426.22998700000005
+        },
+        {
+          "word": "in",
+          "start": 426.22998700000005,
+          "end": 426.41001000000006
+        },
+        {
+          "word": "one",
+          "start": 431.29999399999997,
+          "end": 431.91001000000006
+        },
+        {
+          "word": "day",
+          "start": 432.720007,
+          "end": 432.97998700000005
+        },
+        {
+          "word": "next",
+          "start": 433.769995,
+          "end": 434.31000400000005
+        },
+        {
+          "word": "week",
+          "start": 435.53000499999996,
+          "end": 435.870001
+        }
+      ],
       "answers": [],
-      "end": 426.5
+      "end": 435.870001
     }
   ],
   "questions": [
@@ -648,5 +4180,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 690,
+    "mfa_word_count": 688,
+    "matched_word_count": 665,
+    "audio_trim_offset": 98.4,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

@@ -7,353 +7,3668 @@
   "segments": [
     {
       "id": 1,
-      "start": 40.9,
+      "start": 40.65,
       "speaker": "MELANIE",
       "en": "Excuse me, Or Johnson. May I speak to you for a minute?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Excuse",
+          "start": 40.65,
+          "end": 41.44
+        },
+        {
+          "word": "me",
+          "start": 41.44,
+          "end": 41.58
+        },
+        {
+          "word": "Or",
+          "start": 41.66,
+          "end": 41.699999999999996
+        },
+        {
+          "word": "Johnson",
+          "start": 41.699999999999996,
+          "end": 42.519999999999996
+        },
+        {
+          "word": "May",
+          "start": 43.07,
+          "end": 43.26
+        },
+        {
+          "word": "I",
+          "start": 43.26,
+          "end": 43.33
+        },
+        {
+          "word": "speak",
+          "start": 43.33,
+          "end": 43.62
+        },
+        {
+          "word": "to",
+          "start": 43.62,
+          "end": 43.739999999999995
+        },
+        {
+          "word": "you",
+          "start": 43.739999999999995,
+          "end": 43.78
+        },
+        {
+          "word": "for",
+          "start": 43.78,
+          "end": 43.91
+        },
+        {
+          "word": "a",
+          "start": 43.91,
+          "end": 43.949999999999996
+        },
+        {
+          "word": "minute",
+          "start": 43.949999999999996,
+          "end": 44.47
+        }
+      ],
       "answers": [],
-      "end": 44.6
+      "end": 44.47
     },
     {
       "id": 2,
-      "start": 44.6,
+      "start": 44.5,
       "speaker": "DR JOHNSON",
       "en": "Sure. Come in.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sure",
+          "start": 44.5,
+          "end": 44.949999999999996
+        },
+        {
+          "word": "Come",
+          "start": 45.12,
+          "end": 45.28
+        },
+        {
+          "word": "in",
+          "start": 45.28,
+          "end": 45.53
+        }
+      ],
       "answers": [],
-      "end": 45.6
+      "end": 45.53
     },
     {
       "id": 3,
-      "start": 46.4,
+      "start": 46.379999999999995,
       "speaker": "MELANIE",
       "en": "I'm Melanie Griffin. I'm taking your course in Population Studies.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 46.379999999999995,
+          "end": 46.76
+        },
+        {
+          "word": "'m",
+          "start": 46.379999999999995,
+          "end": 46.76
+        },
+        {
+          "word": "Melanie",
+          "start": 46.76,
+          "end": 47.16
+        },
+        {
+          "word": "Griffin",
+          "start": 47.16,
+          "end": 47.86
+        },
+        {
+          "word": "I",
+          "start": 48.05,
+          "end": 48.33
+        },
+        {
+          "word": "'m",
+          "start": 48.05,
+          "end": 48.33
+        },
+        {
+          "word": "taking",
+          "start": 48.33,
+          "end": 48.65
+        },
+        {
+          "word": "your",
+          "start": 48.65,
+          "end": 48.78
+        },
+        {
+          "word": "course",
+          "start": 48.78,
+          "end": 49.089999999999996
+        },
+        {
+          "word": "in",
+          "start": 49.089999999999996,
+          "end": 49.21
+        },
+        {
+          "word": "Population",
+          "start": 49.21,
+          "end": 49.839999999999996
+        },
+        {
+          "word": "Studies",
+          "start": 49.839999999999996,
+          "end": 50.43
+        }
+      ],
       "answers": [],
-      "end": 50.8
+      "end": 50.43
     },
     {
       "id": 4,
-      "start": 50.8,
+      "start": 50.589999999999996,
       "speaker": "DR JOHNSON",
       "en": "Right. Well, Melanie, how can I help you?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 50.589999999999996,
+          "end": 51.43
+        },
+        {
+          "word": "Well",
+          "start": 52.18,
+          "end": 52.589999999999996
+        },
+        {
+          "word": "Melanie",
+          "start": 52.589999999999996,
+          "end": 53.31
+        },
+        {
+          "word": "how",
+          "start": 53.31,
+          "end": 53.589999999999996
+        },
+        {
+          "word": "can",
+          "start": 53.589999999999996,
+          "end": 53.7
+        },
+        {
+          "word": "I",
+          "start": 53.76,
+          "end": 53.81
+        },
+        {
+          "word": "help",
+          "start": 53.81,
+          "end": 54.05
+        },
+        {
+          "word": "you",
+          "start": 54.05,
+          "end": 54.12
+        }
+      ],
       "answers": [],
-      "end": 54.4
+      "end": 54.12
     },
     {
       "id": 5,
-      "start": 56.0,
+      "start": 55.3,
       "speaker": "MELANIE",
       "en": "I'm . . . having a bit of trouble with the second assignment, and it's due in twelve days.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 55.3,
+          "end": 56.010001
+        },
+        {
+          "word": "'m",
+          "start": 55.3,
+          "end": 56.010001
+        },
+        {
+          "word": "having",
+          "start": 56.32,
+          "end": 56.98
+        },
+        {
+          "word": "a",
+          "start": 56.98,
+          "end": 57.02000099999999
+        },
+        {
+          "word": "bit",
+          "start": 57.02000099999999,
+          "end": 57.23
+        },
+        {
+          "word": "of",
+          "start": 57.23,
+          "end": 57.4
+        },
+        {
+          "word": "trouble",
+          "start": 57.4,
+          "end": 57.77000099999999
+        },
+        {
+          "word": "with",
+          "start": 57.77000099999999,
+          "end": 57.89
+        },
+        {
+          "word": "the",
+          "start": 57.89,
+          "end": 57.959998999999996
+        },
+        {
+          "word": "second",
+          "start": 57.959998999999996,
+          "end": 58.379999999999995
+        },
+        {
+          "word": "assignment",
+          "start": 58.379999999999995,
+          "end": 59.23
+        },
+        {
+          "word": "and",
+          "start": 59.42,
+          "end": 59.72
+        },
+        {
+          "word": "it",
+          "start": 59.940000999999995,
+          "end": 60.209998999999996
+        },
+        {
+          "word": "'s",
+          "start": 59.940000999999995,
+          "end": 60.209998999999996
+        },
+        {
+          "word": "due",
+          "start": 60.209998999999996,
+          "end": 60.42
+        },
+        {
+          "word": "in",
+          "start": 60.42,
+          "end": 60.56
+        },
+        {
+          "word": "twelve",
+          "start": 60.56,
+          "end": 61.029999000000004
+        },
+        {
+          "word": "days",
+          "start": 61.029999000000004,
+          "end": 61.680001
+        }
+      ],
       "answers": [],
-      "end": 62.0
+      "end": 61.680001
     },
     {
       "id": 6,
-      "start": 62.0,
+      "start": 61.709998999999996,
       "speaker": "OR JOHNSON",
       "en": "What sort of trouble are you having? Is the assignment question a problem?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "What",
+          "start": 61.709998999999996,
+          "end": 62.02000099999999
+        },
+        {
+          "word": "sort",
+          "start": 62.02000099999999,
+          "end": 62.239999999999995
+        },
+        {
+          "word": "of",
+          "start": 62.239999999999995,
+          "end": 62.31
+        },
+        {
+          "word": "trouble",
+          "start": 62.31,
+          "end": 62.64
+        },
+        {
+          "word": "are",
+          "start": 62.64,
+          "end": 62.680001
+        },
+        {
+          "word": "you",
+          "start": 62.680001,
+          "end": 62.850001
+        },
+        {
+          "word": "having",
+          "start": 62.850001,
+          "end": 63.58
+        },
+        {
+          "word": "Is",
+          "start": 63.58,
+          "end": 63.859999
+        },
+        {
+          "word": "the",
+          "start": 63.859999,
+          "end": 64.010001
+        },
+        {
+          "word": "assignment",
+          "start": 64.010001,
+          "end": 64.709999
+        },
+        {
+          "word": "question",
+          "start": 64.709999,
+          "end": 65.15
+        },
+        {
+          "word": "a",
+          "start": 65.15,
+          "end": 65.22
+        },
+        {
+          "word": "problem",
+          "start": 65.22,
+          "end": 65.74
+        }
+      ],
       "answers": [],
-      "end": 66.5
+      "end": 65.74
     },
     {
       "id": 7,
-      "start": 66.6,
+      "start": 66.340001,
       "speaker": "MELANIE",
       "en": "Well, that's part of the problem. I'm also having- been having- trouble getting hold of the books. I've been to the library several times, and all the books are out.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 66.340001,
+          "end": 66.88
+        },
+        {
+          "word": "that",
+          "start": 66.99,
+          "end": 67.24
+        },
+        {
+          "word": "'s",
+          "start": 67.24,
+          "end": 67.369999
+        },
+        {
+          "word": "part",
+          "start": 67.440001,
+          "end": 67.840001
+        },
+        {
+          "word": "of",
+          "start": 67.840001,
+          "end": 67.930001
+        },
+        {
+          "word": "the",
+          "start": 67.930001,
+          "end": 68.010001
+        },
+        {
+          "word": "problem",
+          "start": 68.010001,
+          "end": 68.57
+        },
+        {
+          "word": "I",
+          "start": 69.270001,
+          "end": 69.459999
+        },
+        {
+          "word": "'m",
+          "start": 69.270001,
+          "end": 69.459999
+        },
+        {
+          "word": "also",
+          "start": 69.459999,
+          "end": 69.770001
+        },
+        {
+          "word": "having",
+          "start": 69.770001,
+          "end": 70.279999
+        },
+        {
+          "word": "been",
+          "start": 70.859999,
+          "end": 71.109999
+        },
+        {
+          "word": "having",
+          "start": 71.109999,
+          "end": 71.81
+        },
+        {
+          "word": "trouble",
+          "start": 71.839999,
+          "end": 72.15
+        },
+        {
+          "word": "getting",
+          "start": 72.15,
+          "end": 72.42
+        },
+        {
+          "word": "hold",
+          "start": 72.42,
+          "end": 72.65
+        },
+        {
+          "word": "of",
+          "start": 72.65,
+          "end": 72.710001
+        },
+        {
+          "word": "the",
+          "start": 72.710001,
+          "end": 72.789999
+        },
+        {
+          "word": "books",
+          "start": 72.789999,
+          "end": 73.33
+        },
+        {
+          "word": "I",
+          "start": 73.929999,
+          "end": 74.01000099999999
+        },
+        {
+          "word": "'ve",
+          "start": 74.01000099999999,
+          "end": 74.039999
+        },
+        {
+          "word": "been",
+          "start": 74.039999,
+          "end": 74.190001
+        },
+        {
+          "word": "to",
+          "start": 74.190001,
+          "end": 74.280001
+        },
+        {
+          "word": "the",
+          "start": 74.280001,
+          "end": 74.359999
+        },
+        {
+          "word": "library",
+          "start": 74.359999,
+          "end": 74.730002
+        },
+        {
+          "word": "several",
+          "start": 74.730002,
+          "end": 75.069998
+        },
+        {
+          "word": "times",
+          "start": 75.069998,
+          "end": 75.530001
+        },
+        {
+          "word": "and",
+          "start": 75.530001,
+          "end": 75.609999
+        },
+        {
+          "word": "all",
+          "start": 75.609999,
+          "end": 75.72
+        },
+        {
+          "word": "the",
+          "start": 75.72,
+          "end": 75.789999
+        },
+        {
+          "word": "books",
+          "start": 75.789999,
+          "end": 76.08
+        },
+        {
+          "word": "are",
+          "start": 76.08,
+          "end": 76.159998
+        },
+        {
+          "word": "out",
+          "start": 76.159998,
+          "end": 76.999998
+        }
+      ],
       "answers": [],
-      "end": 77.1
+      "end": 76.999998
     },
     {
       "id": 8,
-      "start": 77.4,
+      "start": 77.280001,
       "speaker": "DR JOHNSON",
       "en": "Sounds like you should have started borrowing books a bit earlier.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Sounds",
+          "start": 77.280001,
+          "end": 77.60000099999999
+        },
+        {
+          "word": "like",
+          "start": 77.60000099999999,
+          "end": 77.81
+        },
+        {
+          "word": "you",
+          "start": 77.81,
+          "end": 77.909998
+        },
+        {
+          "word": "should",
+          "start": 77.909998,
+          "end": 78.08
+        },
+        {
+          "word": "have",
+          "start": 78.08,
+          "end": 78.19999899999999
+        },
+        {
+          "word": "started",
+          "start": 78.19999899999999,
+          "end": 78.60000099999999
+        },
+        {
+          "word": "borrowing",
+          "start": 78.60000099999999,
+          "end": 79.120001
+        },
+        {
+          "word": "books",
+          "start": 79.120001,
+          "end": 79.4
+        },
+        {
+          "word": "a",
+          "start": 79.4,
+          "end": 79.460001
+        },
+        {
+          "word": "bit",
+          "start": 79.460001,
+          "end": 79.640002
+        },
+        {
+          "word": "earlier",
+          "start": 79.67,
+          "end": 80.109999
+        }
+      ],
       "answers": [],
-      "end": 80.0
+      "end": 80.109999
     },
     {
       "id": 9,
-      "start": 80.0,
+      "start": 80.679999,
       "speaker": "MELANIE",
       "en": "Well, I had a really big assignment due in for another course. and I've been spending all my time on that, and I thought ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 80.679999,
+          "end": 81.08
+        },
+        {
+          "word": "I",
+          "start": 81.81,
+          "end": 82.01000099999999
+        },
+        {
+          "word": "had",
+          "start": 82.01000099999999,
+          "end": 82.17
+        },
+        {
+          "word": "a",
+          "start": 82.17,
+          "end": 82.280001
+        },
+        {
+          "word": "really",
+          "start": 82.280001,
+          "end": 82.609999
+        },
+        {
+          "word": "big",
+          "start": 82.609999,
+          "end": 82.97
+        },
+        {
+          "word": "assignment",
+          "start": 82.97,
+          "end": 83.569998
+        },
+        {
+          "word": "due",
+          "start": 83.569998,
+          "end": 83.69999899999999
+        },
+        {
+          "word": "in",
+          "start": 83.69999899999999,
+          "end": 83.85000099999999
+        },
+        {
+          "word": "for",
+          "start": 83.85000099999999,
+          "end": 83.97
+        },
+        {
+          "word": "another",
+          "start": 83.97,
+          "end": 84.300002
+        },
+        {
+          "word": "course",
+          "start": 84.300002,
+          "end": 84.85000099999999
+        },
+        {
+          "word": "and",
+          "start": 84.85000099999999,
+          "end": 85.10000099999999
+        },
+        {
+          "word": "I",
+          "start": 85.839999,
+          "end": 86.120001
+        },
+        {
+          "word": "'ve",
+          "start": 86.120001,
+          "end": 86.15
+        },
+        {
+          "word": "been",
+          "start": 86.15,
+          "end": 86.31
+        },
+        {
+          "word": "spending",
+          "start": 86.31,
+          "end": 86.63
+        },
+        {
+          "word": "all",
+          "start": 86.63,
+          "end": 86.69999899999999
+        },
+        {
+          "word": "my",
+          "start": 86.69999899999999,
+          "end": 86.85000099999999
+        },
+        {
+          "word": "time",
+          "start": 86.85000099999999,
+          "end": 87.15
+        },
+        {
+          "word": "on",
+          "start": 87.15,
+          "end": 87.289999
+        },
+        {
+          "word": "that",
+          "start": 87.289999,
+          "end": 87.780001
+        },
+        {
+          "word": "and",
+          "start": 87.81,
+          "end": 87.99000000000001
+        },
+        {
+          "word": "I",
+          "start": 87.99000000000001,
+          "end": 88.230002
+        },
+        {
+          "word": "thought",
+          "start": 88.230002,
+          "end": 89.159998
+        }
+      ],
       "answers": [
         21
       ],
-      "end": 89.5
+      "end": 89.159998
     },
     {
       "id": 10,
-      "start": 89.5,
+      "start": 89.159998,
       "speaker": "DR JOHNSON",
       "en": "... You might get an extension of time to finish your assignment for me?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 89.159998,
+          "end": 89.56
+        },
+        {
+          "word": "might",
+          "start": 89.56,
+          "end": 89.92
+        },
+        {
+          "word": "get",
+          "start": 89.92,
+          "end": 90.179999
+        },
+        {
+          "word": "an",
+          "start": 90.179999,
+          "end": 90.300002
+        },
+        {
+          "word": "extension",
+          "start": 90.300002,
+          "end": 90.859999
+        },
+        {
+          "word": "of",
+          "start": 90.859999,
+          "end": 90.999998
+        },
+        {
+          "word": "time",
+          "start": 90.999998,
+          "end": 91.440001
+        },
+        {
+          "word": "to",
+          "start": 91.440001,
+          "end": 91.569998
+        },
+        {
+          "word": "finish",
+          "start": 91.569998,
+          "end": 91.97
+        },
+        {
+          "word": "your",
+          "start": 91.97,
+          "end": 92.089999
+        },
+        {
+          "word": "assignment",
+          "start": 92.089999,
+          "end": 92.65
+        },
+        {
+          "word": "for",
+          "start": 92.65,
+          "end": 92.780001
+        },
+        {
+          "word": "me",
+          "start": 92.780001,
+          "end": 93.269999
+        }
+      ],
       "answers": [],
-      "end": 93.4
+      "end": 93.269999
     },
     {
       "id": 11,
-      "start": 93.9,
+      "start": 94.01000099999999,
       "speaker": "MELANIE",
       "en": "If that's possible, but I don't know . ..",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "If",
+          "start": 94.01000099999999,
+          "end": 94.300002
+        },
+        {
+          "word": "that",
+          "start": 94.300002,
+          "end": 94.519999
+        },
+        {
+          "word": "'s",
+          "start": 94.519999,
+          "end": 94.58
+        },
+        {
+          "word": "possible",
+          "start": 94.58,
+          "end": 95.47
+        },
+        {
+          "word": "but",
+          "start": 96.039999,
+          "end": 96.159998
+        },
+        {
+          "word": "I",
+          "start": 96.159998,
+          "end": 96.269999
+        },
+        {
+          "word": "do",
+          "start": 96.269999,
+          "end": 96.56
+        },
+        {
+          "word": "n't",
+          "start": 96.269999,
+          "end": 96.56
+        },
+        {
+          "word": "know",
+          "start": 96.56,
+          "end": 96.909998
+        }
+      ],
       "answers": [],
-      "end": 97.5
+      "end": 96.909998
     },
     {
       "id": 12,
-      "start": 97.5,
+      "start": 96.94999899999999,
       "speaker": "DR JOHNSON",
       "en": "Well, yes, it is possible, but extensions are normally given only for medical or compassionate reasons, otherwise it's really a question of organising your study, and we don't like giving extensions to students who simply didn't plan their work properly. What did you get for your first assignment?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 96.94999899999999,
+          "end": 97.319998
+        },
+        {
+          "word": "yes",
+          "start": 97.69999899999999,
+          "end": 98.15
+        },
+        {
+          "word": "it",
+          "start": 98.15,
+          "end": 98.24000000000001
+        },
+        {
+          "word": "is",
+          "start": 98.24000000000001,
+          "end": 98.44999899999999
+        },
+        {
+          "word": "possible",
+          "start": 98.44999899999999,
+          "end": 99.089999
+        },
+        {
+          "word": "but",
+          "start": 99.089999,
+          "end": 99.499998
+        },
+        {
+          "word": "extensions",
+          "start": 100.51000099999999,
+          "end": 101.089999
+        },
+        {
+          "word": "are",
+          "start": 101.089999,
+          "end": 101.15
+        },
+        {
+          "word": "normally",
+          "start": 101.15,
+          "end": 101.67
+        },
+        {
+          "word": "given",
+          "start": 101.67,
+          "end": 102.24000000000001
+        },
+        {
+          "word": "only",
+          "start": 102.31,
+          "end": 102.65
+        },
+        {
+          "word": "for",
+          "start": 102.65,
+          "end": 102.780001
+        },
+        {
+          "word": "medical",
+          "start": 102.780001,
+          "end": 103.45000300000001
+        },
+        {
+          "word": "or",
+          "start": 103.45000300000001,
+          "end": 103.539999
+        },
+        {
+          "word": "compassionate",
+          "start": 103.539999,
+          "end": 104.35999899999999
+        },
+        {
+          "word": "reasons",
+          "start": 104.35999899999999,
+          "end": 105.039999
+        },
+        {
+          "word": "otherwise",
+          "start": 105.45999799999998,
+          "end": 106.31000399999999
+        },
+        {
+          "word": "it",
+          "start": 106.539999,
+          "end": 106.76000099999999
+        },
+        {
+          "word": "'s",
+          "start": 106.539999,
+          "end": 106.76000099999999
+        },
+        {
+          "word": "really",
+          "start": 106.76000099999999,
+          "end": 107.01000099999999
+        },
+        {
+          "word": "a",
+          "start": 107.01000099999999,
+          "end": 107.08000000000001
+        },
+        {
+          "word": "question",
+          "start": 107.08000000000001,
+          "end": 107.47
+        },
+        {
+          "word": "of",
+          "start": 107.47,
+          "end": 107.620001
+        },
+        {
+          "word": "organising",
+          "start": 107.620001,
+          "end": 108.41000199999999
+        },
+        {
+          "word": "your",
+          "start": 108.41000199999999,
+          "end": 108.539999
+        },
+        {
+          "word": "study",
+          "start": 108.539999,
+          "end": 109.039999
+        },
+        {
+          "word": "and",
+          "start": 109.520003,
+          "end": 109.789999
+        },
+        {
+          "word": "we",
+          "start": 109.789999,
+          "end": 109.91000199999999
+        },
+        {
+          "word": "do",
+          "start": 109.91000199999999,
+          "end": 110.17999900000001
+        },
+        {
+          "word": "n't",
+          "start": 109.91000199999999,
+          "end": 110.17999900000001
+        },
+        {
+          "word": "like",
+          "start": 110.17999900000001,
+          "end": 110.41000199999999
+        },
+        {
+          "word": "giving",
+          "start": 110.41000199999999,
+          "end": 110.73000199999998
+        },
+        {
+          "word": "extensions",
+          "start": 110.73000199999998,
+          "end": 111.41000199999999
+        },
+        {
+          "word": "to",
+          "start": 111.41000199999999,
+          "end": 111.52999700000001
+        },
+        {
+          "word": "students",
+          "start": 111.52999700000001,
+          "end": 111.95999799999998
+        },
+        {
+          "word": "who",
+          "start": 111.95999799999998,
+          "end": 112.06000399999999
+        },
+        {
+          "word": "simply",
+          "start": 112.06000399999999,
+          "end": 112.48000199999998
+        },
+        {
+          "word": "did",
+          "start": 112.48000199999998,
+          "end": 112.870001
+        },
+        {
+          "word": "n't",
+          "start": 112.48000199999998,
+          "end": 112.870001
+        },
+        {
+          "word": "plan",
+          "start": 112.870001,
+          "end": 113.26000099999999
+        },
+        {
+          "word": "their",
+          "start": 113.26000099999999,
+          "end": 113.35999899999999
+        },
+        {
+          "word": "work",
+          "start": 113.35999899999999,
+          "end": 113.60999899999999
+        },
+        {
+          "word": "properly",
+          "start": 113.60999899999999,
+          "end": 114.15
+        },
+        {
+          "word": "What",
+          "start": 116.27999700000001,
+          "end": 116.38999799999999
+        },
+        {
+          "word": "did",
+          "start": 116.38999799999999,
+          "end": 116.48999599999999
+        },
+        {
+          "word": "you",
+          "start": 116.48999599999999,
+          "end": 116.569998
+        },
+        {
+          "word": "get",
+          "start": 116.569998,
+          "end": 116.73000199999998
+        },
+        {
+          "word": "for",
+          "start": 116.73000199999998,
+          "end": 116.83000000000001
+        },
+        {
+          "word": "your",
+          "start": 116.83000000000001,
+          "end": 116.95999799999998
+        },
+        {
+          "word": "first",
+          "start": 116.95999799999998,
+          "end": 117.38000299999999
+        },
+        {
+          "word": "assignment",
+          "start": 117.38000299999999,
+          "end": 117.92999900000001
+        }
+      ],
       "answers": [
         22
       ],
-      "end": 107.7
+      "end": 117.92999900000001
     },
     {
       "id": 13,
-      "start": 107.7,
+      "start": 118.41000199999999,
       "speaker": "MELANIE",
       "en": "I got eighty-seven per cent.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 118.41000199999999,
+          "end": 118.51000099999999
+        },
+        {
+          "word": "got",
+          "start": 118.51000099999999,
+          "end": 118.70000300000001
+        },
+        {
+          "word": "eighty",
+          "start": 118.70000300000001,
+          "end": 118.92999900000001
+        },
+        {
+          "word": "seven",
+          "start": 118.92999900000001,
+          "end": 119.22
+        },
+        {
+          "word": "per",
+          "start": 119.22,
+          "end": 119.300002
+        },
+        {
+          "word": "cent",
+          "start": 119.300002,
+          "end": 119.9
+        }
+      ],
       "answers": [],
-      "end": 117.7
+      "end": 119.9
     },
     {
       "id": 14,
-      "start": 117.8,
+      "start": 120.20000300000001,
       "speaker": "DR JOHNSON",
       "en": "Mmm, yes. you did very well indeed, so obviously you can produce good work.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Mmm",
+          "start": 120.20000300000001,
+          "end": 120.789999
+        },
+        {
+          "word": "yes",
+          "start": 121.590002,
+          "end": 122.020003
+        },
+        {
+          "word": "you",
+          "start": 122.020003,
+          "end": 122.10999899999999
+        },
+        {
+          "word": "did",
+          "start": 122.10999899999999,
+          "end": 122.31000399999999
+        },
+        {
+          "word": "very",
+          "start": 122.31000399999999,
+          "end": 122.520003
+        },
+        {
+          "word": "well",
+          "start": 122.590002,
+          "end": 122.98999599999999
+        },
+        {
+          "word": "indeed",
+          "start": 123.06000399999999,
+          "end": 123.870001
+        },
+        {
+          "word": "so",
+          "start": 124.56000399999999,
+          "end": 124.849997
+        },
+        {
+          "word": "obviously",
+          "start": 124.9,
+          "end": 125.56000399999999
+        },
+        {
+          "word": "you",
+          "start": 125.56000399999999,
+          "end": 125.81000399999999
+        },
+        {
+          "word": "can",
+          "start": 125.81000399999999,
+          "end": 126.120001
+        },
+        {
+          "word": "produce",
+          "start": 126.120001,
+          "end": 126.520003
+        },
+        {
+          "word": "good",
+          "start": 126.520003,
+          "end": 126.73000199999998
+        },
+        {
+          "word": "work",
+          "start": 126.73000199999998,
+          "end": 127.35999899999999
+        }
+      ],
       "answers": [],
-      "end": 127.5
+      "end": 127.35999899999999
     },
     {
       "id": 15,
-      "start": 128.0,
+      "start": 127.599997,
       "speaker": "MELANIE",
       "en": "I don't think I'll need too much extra time, as long as I can get hold of some of the important references.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 127.599997,
+          "end": 127.81000399999999
+        },
+        {
+          "word": "do",
+          "start": 127.81000399999999,
+          "end": 128.160002
+        },
+        {
+          "word": "n't",
+          "start": 127.81000399999999,
+          "end": 128.160002
+        },
+        {
+          "word": "think",
+          "start": 128.160002,
+          "end": 128.4
+        },
+        {
+          "word": "I",
+          "start": 128.4,
+          "end": 128.489996
+        },
+        {
+          "word": "'ll",
+          "start": 128.489996,
+          "end": 128.520003
+        },
+        {
+          "word": "need",
+          "start": 128.520003,
+          "end": 128.749998
+        },
+        {
+          "word": "too",
+          "start": 128.749998,
+          "end": 129.050002
+        },
+        {
+          "word": "much",
+          "start": 129.050002,
+          "end": 129.349997
+        },
+        {
+          "word": "extra",
+          "start": 129.349997,
+          "end": 129.749998
+        },
+        {
+          "word": "time",
+          "start": 129.749998,
+          "end": 130.33
+        },
+        {
+          "word": "as",
+          "start": 130.749998,
+          "end": 130.989996
+        },
+        {
+          "word": "long",
+          "start": 130.989996,
+          "end": 131.139998
+        },
+        {
+          "word": "as",
+          "start": 131.139998,
+          "end": 131.200003
+        },
+        {
+          "word": "I",
+          "start": 131.23000199999998,
+          "end": 131.33
+        },
+        {
+          "word": "can",
+          "start": 131.33,
+          "end": 131.440001
+        },
+        {
+          "word": "get",
+          "start": 131.440001,
+          "end": 131.599997
+        },
+        {
+          "word": "hold",
+          "start": 131.599997,
+          "end": 131.870001
+        },
+        {
+          "word": "of",
+          "start": 131.870001,
+          "end": 132.020003
+        },
+        {
+          "word": "some",
+          "start": 132.020003,
+          "end": 132.380003
+        },
+        {
+          "word": "of",
+          "start": 132.380003,
+          "end": 132.450003
+        },
+        {
+          "word": "the",
+          "start": 132.450003,
+          "end": 132.539999
+        },
+        {
+          "word": "important",
+          "start": 132.539999,
+          "end": 133.020003
+        },
+        {
+          "word": "references",
+          "start": 133.020003,
+          "end": 134.010001
+        }
+      ],
       "answers": [],
-      "end": 134.4
+      "end": 134.010001
     },
     {
       "id": 16,
-      "start": 134.5,
+      "start": 134.489996,
       "speaker": "DR JOHNSON",
       "en": "Well. since you did so well in your first assignment. I'm prepared to give you an extra two weeks for this one, so that'll mean you'll need to submit it about a month from now.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 134.489996,
+          "end": 134.940001
+        },
+        {
+          "word": "since",
+          "start": 134.940001,
+          "end": 135.20999799999998
+        },
+        {
+          "word": "you",
+          "start": 135.20999799999998,
+          "end": 135.270003
+        },
+        {
+          "word": "did",
+          "start": 135.270003,
+          "end": 135.440001
+        },
+        {
+          "word": "so",
+          "start": 135.440001,
+          "end": 135.58
+        },
+        {
+          "word": "well",
+          "start": 135.58,
+          "end": 135.859999
+        },
+        {
+          "word": "in",
+          "start": 135.859999,
+          "end": 135.919997
+        },
+        {
+          "word": "your",
+          "start": 135.919997,
+          "end": 136.039999
+        },
+        {
+          "word": "first",
+          "start": 136.039999,
+          "end": 136.389998
+        },
+        {
+          "word": "assignment",
+          "start": 136.389998,
+          "end": 136.97
+        },
+        {
+          "word": "I",
+          "start": 137.880003,
+          "end": 138.130003
+        },
+        {
+          "word": "'m",
+          "start": 137.880003,
+          "end": 138.130003
+        },
+        {
+          "word": "prepared",
+          "start": 138.130003,
+          "end": 138.65
+        },
+        {
+          "word": "to",
+          "start": 138.65,
+          "end": 138.770003
+        },
+        {
+          "word": "give",
+          "start": 138.770003,
+          "end": 139.010001
+        },
+        {
+          "word": "you",
+          "start": 139.010001,
+          "end": 139.169997
+        },
+        {
+          "word": "an",
+          "start": 139.169997,
+          "end": 139.279997
+        },
+        {
+          "word": "extra",
+          "start": 139.279997,
+          "end": 139.599997
+        },
+        {
+          "word": "two",
+          "start": 139.599997,
+          "end": 139.83
+        },
+        {
+          "word": "weeks",
+          "start": 139.83,
+          "end": 140.249998
+        },
+        {
+          "word": "for",
+          "start": 140.249998,
+          "end": 140.389998
+        },
+        {
+          "word": "this",
+          "start": 140.389998,
+          "end": 140.65
+        },
+        {
+          "word": "one",
+          "start": 140.65,
+          "end": 140.9
+        },
+        {
+          "word": "so",
+          "start": 141.349997,
+          "end": 141.520003
+        },
+        {
+          "word": "that",
+          "start": 141.520003,
+          "end": 141.550002
+        },
+        {
+          "word": "'ll",
+          "start": 141.550002,
+          "end": 142.029997
+        },
+        {
+          "word": "mean",
+          "start": 142.029997,
+          "end": 142.319998
+        },
+        {
+          "word": "you",
+          "start": 142.319998,
+          "end": 142.429999
+        },
+        {
+          "word": "'ll",
+          "start": 142.429999,
+          "end": 142.489996
+        },
+        {
+          "word": "need",
+          "start": 142.489996,
+          "end": 142.690001
+        },
+        {
+          "word": "to",
+          "start": 142.690001,
+          "end": 142.779997
+        },
+        {
+          "word": "submit",
+          "start": 142.779997,
+          "end": 143.22
+        },
+        {
+          "word": "it",
+          "start": 143.22,
+          "end": 143.510001
+        },
+        {
+          "word": "about",
+          "start": 143.660002,
+          "end": 143.989996
+        },
+        {
+          "word": "a",
+          "start": 143.989996,
+          "end": 144.039999
+        },
+        {
+          "word": "month",
+          "start": 144.039999,
+          "end": 144.340002
+        },
+        {
+          "word": "from",
+          "start": 144.340002,
+          "end": 144.539999
+        },
+        {
+          "word": "now",
+          "start": 144.539999,
+          "end": 144.840002
+        }
+      ],
       "answers": [],
-      "end": 143.6
+      "end": 144.840002
     },
     {
       "id": 17,
-      "start": 143.7,
+      "start": 145.389998,
       "speaker": "MELANIE",
       "en": "Thank you . . DR JOHN SON: Now, what about the reading materials? Have you checked out the journal articles in the list?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Thank",
+          "start": 145.389998,
+          "end": 146.050002
+        },
+        {
+          "word": "you",
+          "start": 146.050002,
+          "end": 146.160002
+        },
+        {
+          "word": "DR",
+          "start": 146.160002,
+          "end": 146.260001
+        },
+        {
+          "word": "JOHN",
+          "start": 146.260001,
+          "end": 146.349997
+        },
+        {
+          "word": "SON",
+          "start": 146.349997,
+          "end": 146.440001
+        },
+        {
+          "word": "Now",
+          "start": 147.029997,
+          "end": 147.499998
+        },
+        {
+          "word": "what",
+          "start": 147.58,
+          "end": 147.810004
+        },
+        {
+          "word": "about",
+          "start": 147.810004,
+          "end": 148.08
+        },
+        {
+          "word": "the",
+          "start": 148.08,
+          "end": 148.160002
+        },
+        {
+          "word": "reading",
+          "start": 148.160002,
+          "end": 148.800002
+        },
+        {
+          "word": "materials",
+          "start": 148.800002,
+          "end": 149.550002
+        },
+        {
+          "word": "Have",
+          "start": 149.550002,
+          "end": 149.609999
+        },
+        {
+          "word": "you",
+          "start": 149.609999,
+          "end": 149.889998
+        },
+        {
+          "word": "checked",
+          "start": 149.889998,
+          "end": 150.270003
+        },
+        {
+          "word": "out",
+          "start": 150.270003,
+          "end": 150.539999
+        },
+        {
+          "word": "the",
+          "start": 150.539999,
+          "end": 150.630003
+        },
+        {
+          "word": "journal",
+          "start": 150.630003,
+          "end": 151.050002
+        },
+        {
+          "word": "articles",
+          "start": 151.050002,
+          "end": 151.550002
+        },
+        {
+          "word": "in",
+          "start": 151.550002,
+          "end": 151.630003
+        },
+        {
+          "word": "the",
+          "start": 151.630003,
+          "end": 151.700003
+        },
+        {
+          "word": "list",
+          "start": 151.700003,
+          "end": 152.139998
+        }
+      ],
       "answers": [],
-      "end": 152.8
+      "end": 152.139998
     },
     {
       "id": 18,
-      "start": 152.9,
+      "start": 152.609999,
       "speaker": "MELANIE",
       "en": "Umm, no, not yet, there were about twenty of them, and I wasn't sure which ones would be most useful or important.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Umm",
+          "start": 152.609999,
+          "end": 153.359999
+        },
+        {
+          "word": "no",
+          "start": 153.489996,
+          "end": 153.73000199999998
+        },
+        {
+          "word": "not",
+          "start": 153.73000199999998,
+          "end": 154.429999
+        },
+        {
+          "word": "yet",
+          "start": 154.429999,
+          "end": 154.789999
+        },
+        {
+          "word": "there",
+          "start": 155.560004,
+          "end": 155.739996
+        },
+        {
+          "word": "were",
+          "start": 155.739996,
+          "end": 155.870001
+        },
+        {
+          "word": "about",
+          "start": 155.870001,
+          "end": 156.609999
+        },
+        {
+          "word": "twenty",
+          "start": 156.859999,
+          "end": 157.359999
+        },
+        {
+          "word": "of",
+          "start": 157.359999,
+          "end": 157.58
+        },
+        {
+          "word": "them",
+          "start": 157.58,
+          "end": 157.779997
+        },
+        {
+          "word": "and",
+          "start": 157.779997,
+          "end": 158.029997
+        },
+        {
+          "word": "I",
+          "start": 158.499998,
+          "end": 158.770003
+        },
+        {
+          "word": "was",
+          "start": 158.770003,
+          "end": 159.020003
+        },
+        {
+          "word": "n't",
+          "start": 158.770003,
+          "end": 159.020003
+        },
+        {
+          "word": "sure",
+          "start": 159.020003,
+          "end": 159.270003
+        },
+        {
+          "word": "which",
+          "start": 159.270003,
+          "end": 159.47
+        },
+        {
+          "word": "ones",
+          "start": 159.47,
+          "end": 159.700003
+        },
+        {
+          "word": "would",
+          "start": 159.700003,
+          "end": 159.840002
+        },
+        {
+          "word": "be",
+          "start": 159.840002,
+          "end": 160.15
+        },
+        {
+          "word": "most",
+          "start": 160.429999,
+          "end": 160.749998
+        },
+        {
+          "word": "useful",
+          "start": 160.749998,
+          "end": 161.4
+        },
+        {
+          "word": "or",
+          "start": 161.4,
+          "end": 161.609999
+        },
+        {
+          "word": "important",
+          "start": 161.609999,
+          "end": 162.370001
+        }
+      ],
       "answers": [],
-      "end": 162.1
+      "end": 162.370001
     },
     {
       "id": 19,
-      "start": 162.2,
+      "start": 162.4,
       "speaker": "DR JOHNSON",
       "en": "Well, they're all useful, but I don't expect anyone to read them all, because a number of them deal with the same issues. Let me give you some suggestions. The article by Anderson and Hawker is really worth reading.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 162.4,
+          "end": 162.560004
+        },
+        {
+          "word": "they",
+          "start": 162.560004,
+          "end": 162.690001
+        },
+        {
+          "word": "'re",
+          "start": 162.560004,
+          "end": 162.690001
+        },
+        {
+          "word": "all",
+          "start": 162.690001,
+          "end": 162.950003
+        },
+        {
+          "word": "useful",
+          "start": 162.950003,
+          "end": 163.529997
+        },
+        {
+          "word": "but",
+          "start": 163.940001,
+          "end": 164.060004
+        },
+        {
+          "word": "I",
+          "start": 164.060004,
+          "end": 164.179999
+        },
+        {
+          "word": "do",
+          "start": 164.179999,
+          "end": 164.359999
+        },
+        {
+          "word": "n't",
+          "start": 164.179999,
+          "end": 164.359999
+        },
+        {
+          "word": "expect",
+          "start": 164.359999,
+          "end": 164.800002
+        },
+        {
+          "word": "anyone",
+          "start": 164.9,
+          "end": 165.419997
+        },
+        {
+          "word": "to",
+          "start": 165.419997,
+          "end": 165.47
+        },
+        {
+          "word": "read",
+          "start": 165.499998,
+          "end": 165.880003
+        },
+        {
+          "word": "them",
+          "start": 165.880003,
+          "end": 166.060004
+        },
+        {
+          "word": "all",
+          "start": 166.090002,
+          "end": 166.499998
+        },
+        {
+          "word": "because",
+          "start": 166.499998,
+          "end": 166.870001
+        },
+        {
+          "word": "a",
+          "start": 166.870001,
+          "end": 166.920004
+        },
+        {
+          "word": "number",
+          "start": 166.920004,
+          "end": 167.220007
+        },
+        {
+          "word": "of",
+          "start": 167.220007,
+          "end": 167.289999
+        },
+        {
+          "word": "them",
+          "start": 167.289999,
+          "end": 167.450003
+        },
+        {
+          "word": "deal",
+          "start": 167.450003,
+          "end": 167.750006
+        },
+        {
+          "word": "with",
+          "start": 167.750006,
+          "end": 167.849997
+        },
+        {
+          "word": "the",
+          "start": 167.849997,
+          "end": 167.909995
+        },
+        {
+          "word": "same",
+          "start": 167.909995,
+          "end": 168.099997
+        },
+        {
+          "word": "issues",
+          "start": 168.099997,
+          "end": 168.659995
+        },
+        {
+          "word": "Let",
+          "start": 169.23999600000002,
+          "end": 169.560004
+        },
+        {
+          "word": "me",
+          "start": 169.560004,
+          "end": 169.629996
+        },
+        {
+          "word": "give",
+          "start": 170.28000500000002,
+          "end": 170.68999300000002
+        },
+        {
+          "word": "you",
+          "start": 170.68999300000002,
+          "end": 170.750006
+        },
+        {
+          "word": "some",
+          "start": 170.750006,
+          "end": 170.950003
+        },
+        {
+          "word": "suggestions",
+          "start": 170.950003,
+          "end": 171.909995
+        },
+        {
+          "word": "The",
+          "start": 172.750006,
+          "end": 172.980002
+        },
+        {
+          "word": "article",
+          "start": 173.019995,
+          "end": 173.26000100000002
+        },
+        {
+          "word": "by",
+          "start": 173.26000100000002,
+          "end": 173.450003
+        },
+        {
+          "word": "Anderson",
+          "start": 173.450003,
+          "end": 174.060004
+        },
+        {
+          "word": "and",
+          "start": 174.060004,
+          "end": 174.129996
+        },
+        {
+          "word": "Hawker",
+          "start": 174.129996,
+          "end": 174.76000100000002
+        },
+        {
+          "word": "is",
+          "start": 174.76000100000002,
+          "end": 175.129996
+        },
+        {
+          "word": "really",
+          "start": 175.129996,
+          "end": 175.470007
+        },
+        {
+          "word": "worth",
+          "start": 175.470007,
+          "end": 175.810004
+        },
+        {
+          "word": "reading",
+          "start": 175.810004,
+          "end": 176.220007
+        }
+      ],
       "answers": [],
-      "end": 176.3
+      "end": 176.220007
     },
     {
       "id": 20,
-      "start": 176.9,
+      "start": 176.870001,
       "speaker": "MELANIE",
       "en": "Right, I'll read that one.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Right",
+          "start": 176.870001,
+          "end": 177.299994
+        },
+        {
+          "word": "I",
+          "start": 177.299994,
+          "end": 177.500006
+        },
+        {
+          "word": "'ll",
+          "start": 177.500006,
+          "end": 177.65
+        },
+        {
+          "word": "read",
+          "start": 177.65,
+          "end": 177.829993
+        },
+        {
+          "word": "that",
+          "start": 177.829993,
+          "end": 178.019995
+        },
+        {
+          "word": "one",
+          "start": 178.019995,
+          "end": 178.329993
+        }
+      ],
       "answers": [],
-      "end": 178.8
+      "end": 178.329993
     },
     {
       "id": 21,
-      "start": 178.8,
+      "start": 178.500006,
       "speaker": "DR JOHNSON",
       "en": "You should also read the article by Jackson, but just look at the part on the research methodology- how they did it.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "You",
+          "start": 178.500006,
+          "end": 178.679999
+        },
+        {
+          "word": "should",
+          "start": 178.679999,
+          "end": 179.069998
+        },
+        {
+          "word": "also",
+          "start": 179.200003,
+          "end": 179.549994
+        },
+        {
+          "word": "read",
+          "start": 179.579993,
+          "end": 179.890005
+        },
+        {
+          "word": "the",
+          "start": 179.890005,
+          "end": 180.01000100000002
+        },
+        {
+          "word": "article",
+          "start": 180.01000100000002,
+          "end": 180.349997
+        },
+        {
+          "word": "by",
+          "start": 180.349997,
+          "end": 180.48999600000002
+        },
+        {
+          "word": "Jackson",
+          "start": 180.48999600000002,
+          "end": 181.159995
+        },
+        {
+          "word": "but",
+          "start": 181.409995,
+          "end": 181.65
+        },
+        {
+          "word": "just",
+          "start": 181.679999,
+          "end": 182.079993
+        },
+        {
+          "word": "look",
+          "start": 182.079993,
+          "end": 182.23999600000002
+        },
+        {
+          "word": "at",
+          "start": 182.23999600000002,
+          "end": 182.310004
+        },
+        {
+          "word": "the",
+          "start": 182.310004,
+          "end": 182.4
+        },
+        {
+          "word": "part",
+          "start": 182.4,
+          "end": 182.68999300000002
+        },
+        {
+          "word": "on",
+          "start": 182.68999300000002,
+          "end": 182.76000100000002
+        },
+        {
+          "word": "the",
+          "start": 182.76000100000002,
+          "end": 182.849997
+        },
+        {
+          "word": "research",
+          "start": 182.849997,
+          "end": 183.28000500000002
+        },
+        {
+          "word": "methodology",
+          "start": 183.28000500000002,
+          "end": 184.099997
+        },
+        {
+          "word": "how",
+          "start": 184.099997,
+          "end": 184.310004
+        },
+        {
+          "word": "they",
+          "start": 184.310004,
+          "end": 184.450003
+        },
+        {
+          "word": "did",
+          "start": 184.450003,
+          "end": 184.670004
+        },
+        {
+          "word": "it",
+          "start": 184.670004,
+          "end": 184.959998
+        }
+      ],
       "answers": [
         23
       ],
-      "end": 184.0
+      "end": 184.959998
     },
     {
       "id": 22,
-      "start": 184.1,
+      "start": 185.360007,
       "speaker": "MELANIE",
       "en": "OK . .. Jackson, got that ...",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 185.360007,
+          "end": 186.26000100000002
+        },
+        {
+          "word": "Jackson",
+          "start": 186.789999,
+          "end": 187.829993
+        },
+        {
+          "word": "got",
+          "start": 188.079993,
+          "end": 188.299994
+        },
+        {
+          "word": "that",
+          "start": 188.299994,
+          "end": 188.810004
+        }
+      ],
       "answers": [],
-      "end": 189.2
+      "end": 188.810004
     },
     {
       "id": 23,
-      "start": 189.3,
+      "start": 188.93999300000002,
       "speaker": "DR JOHNSON",
       "en": "And if you have time, the one by Roberts says very relevant things, although it's not essential.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "And",
+          "start": 188.93999300000002,
+          "end": 189.319998
+        },
+        {
+          "word": "if",
+          "start": 189.319998,
+          "end": 189.4
+        },
+        {
+          "word": "you",
+          "start": 189.4,
+          "end": 189.629996
+        },
+        {
+          "word": "have",
+          "start": 189.629996,
+          "end": 189.709998
+        },
+        {
+          "word": "time",
+          "start": 189.709998,
+          "end": 190.140005
+        },
+        {
+          "word": "the",
+          "start": 190.140005,
+          "end": 190.23999600000002
+        },
+        {
+          "word": "one",
+          "start": 190.23999600000002,
+          "end": 190.420004
+        },
+        {
+          "word": "by",
+          "start": 190.420004,
+          "end": 190.53000500000002
+        },
+        {
+          "word": "Roberts",
+          "start": 190.53000500000002,
+          "end": 191.289999
+        },
+        {
+          "word": "says",
+          "start": 191.360007,
+          "end": 191.610007
+        },
+        {
+          "word": "very",
+          "start": 191.610007,
+          "end": 191.920004
+        },
+        {
+          "word": "relevant",
+          "start": 191.920004,
+          "end": 192.349997
+        },
+        {
+          "word": "things",
+          "start": 192.349997,
+          "end": 192.840002
+        },
+        {
+          "word": "although",
+          "start": 193.090002,
+          "end": 193.51000100000002
+        },
+        {
+          "word": "it",
+          "start": 193.51000100000002,
+          "end": 193.68999300000002
+        },
+        {
+          "word": "'s",
+          "start": 193.51000100000002,
+          "end": 193.68999300000002
+        },
+        {
+          "word": "not",
+          "start": 193.68999300000002,
+          "end": 193.870001
+        },
+        {
+          "word": "essential",
+          "start": 193.870001,
+          "end": 194.360007
+        }
+      ],
       "answers": [],
-      "end": 194.6
+      "end": 194.360007
     },
     {
       "id": 24,
-      "start": 194.7,
+      "start": 194.659995,
       "speaker": "MELANIE",
       "en": "So, OK. if it's~ . I'll try and read that one . . .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 194.659995,
+          "end": 195.610007
+        },
+        {
+          "word": "OK",
+          "start": 196.470007,
+          "end": 197.220007
+        },
+        {
+          "word": "if",
+          "start": 197.289999,
+          "end": 197.470007
+        },
+        {
+          "word": "it",
+          "start": 197.470007,
+          "end": 198.049994
+        },
+        {
+          "word": "'s",
+          "start": 197.470007,
+          "end": 198.049994
+        },
+        {
+          "word": "I",
+          "start": 198.049994,
+          "end": 198.099997
+        },
+        {
+          "word": "'ll",
+          "start": 198.099997,
+          "end": 198.250006
+        },
+        {
+          "word": "try",
+          "start": 198.250006,
+          "end": 198.48999600000002
+        },
+        {
+          "word": "and",
+          "start": 198.48999600000002,
+          "end": 198.579993
+        },
+        {
+          "word": "read",
+          "start": 198.579993,
+          "end": 198.819998
+        },
+        {
+          "word": "that",
+          "start": 198.819998,
+          "end": 199.049994
+        },
+        {
+          "word": "one",
+          "start": 199.129996,
+          "end": 199.590002
+        }
+      ],
       "answers": [
         24
       ],
-      "end": 199.9
+      "end": 199.590002
     },
     {
       "id": 25,
-      "start": 200.0,
+      "start": 199.929999,
       "speaker": "DR JOHNSON",
       "en": "Now, the one by Morris. I wouldn't bother with that at this stage, if I were you.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 199.929999,
+          "end": 200.15
+        },
+        {
+          "word": "the",
+          "start": 200.15,
+          "end": 200.250006
+        },
+        {
+          "word": "one",
+          "start": 200.250006,
+          "end": 200.409995
+        },
+        {
+          "word": "by",
+          "start": 200.409995,
+          "end": 200.549994
+        },
+        {
+          "word": "Morris",
+          "start": 200.549994,
+          "end": 201.450003
+        },
+        {
+          "word": "I",
+          "start": 202.730002,
+          "end": 202.929999
+        },
+        {
+          "word": "would",
+          "start": 202.929999,
+          "end": 203.159995
+        },
+        {
+          "word": "n't",
+          "start": 202.929999,
+          "end": 203.159995
+        },
+        {
+          "word": "bother",
+          "start": 203.159995,
+          "end": 203.569998
+        },
+        {
+          "word": "with",
+          "start": 203.569998,
+          "end": 203.78000500000002
+        },
+        {
+          "word": "that",
+          "start": 203.78000500000002,
+          "end": 204.090002
+        },
+        {
+          "word": "at",
+          "start": 204.090002,
+          "end": 204.23999600000002
+        },
+        {
+          "word": "this",
+          "start": 204.23999600000002,
+          "end": 204.409995
+        },
+        {
+          "word": "stage",
+          "start": 204.409995,
+          "end": 204.860007
+        },
+        {
+          "word": "if",
+          "start": 204.860007,
+          "end": 204.98999600000002
+        },
+        {
+          "word": "I",
+          "start": 204.98999600000002,
+          "end": 205.140005
+        },
+        {
+          "word": "were",
+          "start": 205.140005,
+          "end": 205.289999
+        },
+        {
+          "word": "you",
+          "start": 205.289999,
+          "end": 205.519995
+        }
+      ],
       "answers": [],
-      "end": 206.0
+      "end": 205.519995
     },
     {
       "id": 26,
-      "start": 206.3,
+      "start": 205.829993,
       "speaker": "MELANIE",
       "en": "OK. I won't bother with Morris. Oh, now, someone told me the article by Cooper is important.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 205.829993,
+          "end": 206.360007
+        },
+        {
+          "word": "I",
+          "start": 206.360007,
+          "end": 206.409995
+        },
+        {
+          "word": "wo",
+          "start": 206.409995,
+          "end": 206.849997
+        },
+        {
+          "word": "n't",
+          "start": 206.409995,
+          "end": 206.849997
+        },
+        {
+          "word": "bother",
+          "start": 207.039999,
+          "end": 207.329993
+        },
+        {
+          "word": "with",
+          "start": 207.329993,
+          "end": 207.48999600000002
+        },
+        {
+          "word": "Morris",
+          "start": 207.48999600000002,
+          "end": 208.28000500000002
+        },
+        {
+          "word": "Oh",
+          "start": 209.120001,
+          "end": 209.269995
+        },
+        {
+          "word": "now",
+          "start": 209.269995,
+          "end": 209.629996
+        },
+        {
+          "word": "someone",
+          "start": 209.929999,
+          "end": 210.269995
+        },
+        {
+          "word": "told",
+          "start": 210.269995,
+          "end": 210.470007
+        },
+        {
+          "word": "me",
+          "start": 210.470007,
+          "end": 210.560004
+        },
+        {
+          "word": "the",
+          "start": 210.560004,
+          "end": 210.65
+        },
+        {
+          "word": "article",
+          "start": 210.65,
+          "end": 211.01000100000002
+        },
+        {
+          "word": "by",
+          "start": 211.01000100000002,
+          "end": 211.200003
+        },
+        {
+          "word": "Cooper",
+          "start": 211.200003,
+          "end": 211.810004
+        },
+        {
+          "word": "is",
+          "start": 211.810004,
+          "end": 212.000006
+        },
+        {
+          "word": "important",
+          "start": 212.000006,
+          "end": 212.98999600000002
+        }
+      ],
       "answers": [
         25
       ],
-      "end": 212.6
+      "end": 212.98999600000002
     },
     {
       "id": 27,
-      "start": 212.7,
+      "start": 213.019995,
       "speaker": "DR JOHNSON",
       "en": "Well. yes. in a way, but just look at the last part. where he discusses the research results. And lastly. there's Forster- I can't think why I included that one. It's not bad and could be of some help. but not that much.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 213.019995,
+          "end": 213.170004
+        },
+        {
+          "word": "yes",
+          "start": 213.170004,
+          "end": 213.569998
+        },
+        {
+          "word": "in",
+          "start": 213.569998,
+          "end": 213.65
+        },
+        {
+          "word": "a",
+          "start": 213.65,
+          "end": 213.750006
+        },
+        {
+          "word": "way",
+          "start": 213.750006,
+          "end": 214.170004
+        },
+        {
+          "word": "but",
+          "start": 214.840002,
+          "end": 214.98999600000002
+        },
+        {
+          "word": "just",
+          "start": 214.98999600000002,
+          "end": 215.319998
+        },
+        {
+          "word": "look",
+          "start": 215.319998,
+          "end": 215.579993
+        },
+        {
+          "word": "at",
+          "start": 215.579993,
+          "end": 215.679999
+        },
+        {
+          "word": "the",
+          "start": 215.679999,
+          "end": 215.750006
+        },
+        {
+          "word": "last",
+          "start": 215.750006,
+          "end": 216.310004
+        },
+        {
+          "word": "part",
+          "start": 216.310004,
+          "end": 216.78000500000002
+        },
+        {
+          "word": "where",
+          "start": 216.78000500000002,
+          "end": 217.03000500000002
+        },
+        {
+          "word": "he",
+          "start": 217.03000500000002,
+          "end": 217.099997
+        },
+        {
+          "word": "discusses",
+          "start": 217.099997,
+          "end": 217.68999300000002
+        },
+        {
+          "word": "the",
+          "start": 217.68999300000002,
+          "end": 217.819998
+        },
+        {
+          "word": "research",
+          "start": 217.819998,
+          "end": 218.519995
+        },
+        {
+          "word": "results",
+          "start": 218.519995,
+          "end": 219.170004
+        },
+        {
+          "word": "And",
+          "start": 219.810004,
+          "end": 220.370001
+        },
+        {
+          "word": "lastly",
+          "start": 220.579993,
+          "end": 221.170004
+        },
+        {
+          "word": "there",
+          "start": 221.170004,
+          "end": 221.340002
+        },
+        {
+          "word": "'s",
+          "start": 221.340002,
+          "end": 221.549994
+        },
+        {
+          "word": "Forster",
+          "start": 221.549994,
+          "end": 222.120001
+        },
+        {
+          "word": "I",
+          "start": 223.01000100000002,
+          "end": 223.110007
+        },
+        {
+          "word": "ca",
+          "start": 223.110007,
+          "end": 223.340002
+        },
+        {
+          "word": "n't",
+          "start": 223.110007,
+          "end": 223.340002
+        },
+        {
+          "word": "think",
+          "start": 223.340002,
+          "end": 223.560004
+        },
+        {
+          "word": "why",
+          "start": 223.560004,
+          "end": 223.709998
+        },
+        {
+          "word": "I",
+          "start": 223.709998,
+          "end": 223.769995
+        },
+        {
+          "word": "included",
+          "start": 223.769995,
+          "end": 224.299994
+        },
+        {
+          "word": "that",
+          "start": 224.299994,
+          "end": 224.590002
+        },
+        {
+          "word": "one",
+          "start": 224.590002,
+          "end": 224.890005
+        },
+        {
+          "word": "It",
+          "start": 225.519995,
+          "end": 225.68999300000002
+        },
+        {
+          "word": "'s",
+          "start": 225.519995,
+          "end": 225.68999300000002
+        },
+        {
+          "word": "not",
+          "start": 225.68999300000002,
+          "end": 225.920004
+        },
+        {
+          "word": "bad",
+          "start": 225.920004,
+          "end": 226.519995
+        },
+        {
+          "word": "and",
+          "start": 226.799994,
+          "end": 227.129996
+        },
+        {
+          "word": "could",
+          "start": 227.129996,
+          "end": 227.370001
+        },
+        {
+          "word": "be",
+          "start": 227.370001,
+          "end": 227.65
+        },
+        {
+          "word": "of",
+          "start": 227.65,
+          "end": 227.78000500000002
+        },
+        {
+          "word": "some",
+          "start": 227.78000500000002,
+          "end": 228.060004
+        },
+        {
+          "word": "help",
+          "start": 228.060004,
+          "end": 228.51000100000002
+        },
+        {
+          "word": "but",
+          "start": 228.51000100000002,
+          "end": 228.849997
+        },
+        {
+          "word": "not",
+          "start": 229.640005,
+          "end": 229.840002
+        },
+        {
+          "word": "that",
+          "start": 229.840002,
+          "end": 230.039999
+        },
+        {
+          "word": "much",
+          "start": 230.039999,
+          "end": 230.470007
+        }
+      ],
       "answers": [
         26,
         27
       ],
-      "end": 230.8
+      "end": 230.470007
     },
     {
       "id": 28,
-      "start": 259.7,
+      "start": 230.470007,
       "speaker": "DR JOHNSON",
       "en": "Now, let's deal with the assignment question. What's the problem there?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 230.470007,
+          "end": 230.670004
+        },
+        {
+          "word": "let",
+          "start": 234.429999,
+          "end": 235.28000500000002
+        },
+        {
+          "word": "'s",
+          "start": 234.429999,
+          "end": 235.28000500000002
+        },
+        {
+          "word": "deal",
+          "start": 235.28000500000002,
+          "end": 235.390005
+        },
+        {
+          "word": "with",
+          "start": 235.390005,
+          "end": 240.500006
+        },
+        {
+          "word": "the",
+          "start": 260.519995,
+          "end": 264.030005
+        },
+        {
+          "word": "assignment",
+          "start": 268.129996,
+          "end": 269.480002
+        },
+        {
+          "word": "question",
+          "start": 269.480002,
+          "end": 269.970007
+        },
+        {
+          "word": "What",
+          "start": 270.420004,
+          "end": 270.709998
+        },
+        {
+          "word": "'s",
+          "start": 270.420004,
+          "end": 270.709998
+        },
+        {
+          "word": "the",
+          "start": 270.709998,
+          "end": 270.810004
+        },
+        {
+          "word": "problem",
+          "start": 270.810004,
+          "end": 271.29999399999997
+        },
+        {
+          "word": "there",
+          "start": 271.29999399999997,
+          "end": 271.700003
+        }
+      ],
       "answers": [],
-      "end": 272.4
+      "end": 271.700003
     },
     {
       "id": 29,
-      "start": 272.5,
+      "start": 272.329993,
       "speaker": "MELANIE",
       "en": "It's the graph on page two.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 272.329993,
+          "end": 272.54999399999997
+        },
+        {
+          "word": "'s",
+          "start": 272.329993,
+          "end": 272.54999399999997
+        },
+        {
+          "word": "the",
+          "start": 272.54999399999997,
+          "end": 272.689993
+        },
+        {
+          "word": "graph",
+          "start": 272.689993,
+          "end": 273.120001
+        },
+        {
+          "word": "on",
+          "start": 273.120001,
+          "end": 273.260001
+        },
+        {
+          "word": "page",
+          "start": 273.260001,
+          "end": 273.65
+        },
+        {
+          "word": "two",
+          "start": 273.65,
+          "end": 274.209998
+        }
+      ],
       "answers": [],
-      "end": 275.0
+      "end": 274.209998
     },
     {
       "id": 30,
-      "start": 276.4,
+      "start": 274.620001,
       "speaker": "DR JOHNSON",
       "en": "What seems to be the problem? It's just the bar graph showing reasons why people change where they live. ·",
       "zh": "",
-      "words": [],
-      "answers": []
+      "words": [
+        {
+          "word": "What",
+          "start": 274.620001,
+          "end": 274.78999899999997
+        },
+        {
+          "word": "seems",
+          "start": 274.78999899999997,
+          "end": 275.030005
+        },
+        {
+          "word": "to",
+          "start": 275.030005,
+          "end": 275.099997
+        },
+        {
+          "word": "be",
+          "start": 275.099997,
+          "end": 275.200003
+        },
+        {
+          "word": "the",
+          "start": 275.200003,
+          "end": 275.28999899999997
+        },
+        {
+          "word": "problem",
+          "start": 275.28999899999997,
+          "end": 275.780005
+        },
+        {
+          "word": "It",
+          "start": 275.780005,
+          "end": 275.929999
+        },
+        {
+          "word": "'s",
+          "start": 275.780005,
+          "end": 275.929999
+        },
+        {
+          "word": "just",
+          "start": 275.929999,
+          "end": 276.230002
+        },
+        {
+          "word": "the",
+          "start": 276.230002,
+          "end": 276.310004
+        },
+        {
+          "word": "bar",
+          "start": 276.310004,
+          "end": 276.659995
+        },
+        {
+          "word": "graph",
+          "start": 276.659995,
+          "end": 277.310004
+        },
+        {
+          "word": "showing",
+          "start": 277.34000199999997,
+          "end": 277.720007
+        },
+        {
+          "word": "reasons",
+          "start": 277.720007,
+          "end": 278.15
+        },
+        {
+          "word": "why",
+          "start": 278.15,
+          "end": 278.329993
+        },
+        {
+          "word": "people",
+          "start": 278.329993,
+          "end": 278.640005
+        },
+        {
+          "word": "change",
+          "start": 278.640005,
+          "end": 279.110007
+        },
+        {
+          "word": "where",
+          "start": 279.110007,
+          "end": 279.209998
+        },
+        {
+          "word": "they",
+          "start": 279.209998,
+          "end": 279.379996
+        },
+        {
+          "word": "live",
+          "start": 279.379996,
+          "end": 279.760001
+        }
+      ],
+      "answers": [],
+      "end": 279.760001
     },
     {
       "id": 31,
-      "start": 280.2,
+      "start": 280.159995,
       "speaker": "MELANIE",
       "en": "Well, I've got a photocopy but the reasons at the bottom are missing.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Well",
+          "start": 280.159995,
+          "end": 280.349997
+        },
+        {
+          "word": "I",
+          "start": 280.349997,
+          "end": 280.439993
+        },
+        {
+          "word": "'ve",
+          "start": 280.439993,
+          "end": 280.489996
+        },
+        {
+          "word": "got",
+          "start": 280.489996,
+          "end": 280.679999
+        },
+        {
+          "word": "a",
+          "start": 280.679999,
+          "end": 280.730002
+        },
+        {
+          "word": "photocopy",
+          "start": 280.730002,
+          "end": 281.470007
+        },
+        {
+          "word": "but",
+          "start": 281.470007,
+          "end": 281.709998
+        },
+        {
+          "word": "the",
+          "start": 282.03999899999997,
+          "end": 282.200003
+        },
+        {
+          "word": "reasons",
+          "start": 282.200003,
+          "end": 282.769995
+        },
+        {
+          "word": "at",
+          "start": 282.769995,
+          "end": 282.879996
+        },
+        {
+          "word": "the",
+          "start": 282.879996,
+          "end": 282.959998
+        },
+        {
+          "word": "bottom",
+          "start": 282.959998,
+          "end": 283.379996
+        },
+        {
+          "word": "are",
+          "start": 283.379996,
+          "end": 283.439993
+        },
+        {
+          "word": "missing",
+          "start": 283.439993,
+          "end": 283.879996
+        }
+      ],
       "answers": [],
-      "end": 284.6
+      "end": 283.879996
     },
     {
       "id": 32,
-      "start": 287.1,
+      "start": 284.170004,
       "speaker": "OR JOHNSON",
       "en": "Ab, OK. Look at the first bar on the graph- now that indicates the number of people who move because they want more space.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Ab",
+          "start": 284.170004,
+          "end": 284.579993
+        },
+        {
+          "word": "OK",
+          "start": 284.84000199999997,
+          "end": 285.489996
+        },
+        {
+          "word": "Look",
+          "start": 285.9,
+          "end": 286.560004
+        },
+        {
+          "word": "at",
+          "start": 286.560004,
+          "end": 286.78999899999997
+        },
+        {
+          "word": "the",
+          "start": 286.78999899999997,
+          "end": 286.870001
+        },
+        {
+          "word": "first",
+          "start": 286.870001,
+          "end": 287.329993
+        },
+        {
+          "word": "bar",
+          "start": 287.329993,
+          "end": 287.620001
+        },
+        {
+          "word": "on",
+          "start": 287.620001,
+          "end": 287.709998
+        },
+        {
+          "word": "the",
+          "start": 287.709998,
+          "end": 287.78999899999997
+        },
+        {
+          "word": "graph",
+          "start": 287.78999899999997,
+          "end": 288.420004
+        },
+        {
+          "word": "now",
+          "start": 288.450003,
+          "end": 288.879996
+        },
+        {
+          "word": "that",
+          "start": 288.879996,
+          "end": 289.09000199999997
+        },
+        {
+          "word": "indicates",
+          "start": 289.09000199999997,
+          "end": 289.730002
+        },
+        {
+          "word": "the",
+          "start": 289.730002,
+          "end": 289.829993
+        },
+        {
+          "word": "number",
+          "start": 289.829993,
+          "end": 290.15
+        },
+        {
+          "word": "of",
+          "start": 290.15,
+          "end": 290.239996
+        },
+        {
+          "word": "people",
+          "start": 290.239996,
+          "end": 290.599997
+        },
+        {
+          "word": "who",
+          "start": 290.599997,
+          "end": 290.720007
+        },
+        {
+          "word": "move",
+          "start": 290.720007,
+          "end": 291.4
+        },
+        {
+          "word": "because",
+          "start": 291.530005,
+          "end": 291.860007
+        },
+        {
+          "word": "they",
+          "start": 291.860007,
+          "end": 291.970007
+        },
+        {
+          "word": "want",
+          "start": 291.970007,
+          "end": 292.209998
+        },
+        {
+          "word": "more",
+          "start": 292.209998,
+          "end": 292.379996
+        },
+        {
+          "word": "space",
+          "start": 292.379996,
+          "end": 292.970007
+        }
+      ],
       "answers": [],
-      "end": 294.0
+      "end": 292.970007
     },
     {
       "id": 33,
-      "start": 294.1,
+      "start": 293.379996,
       "speaker": "MELANIE",
       "en": "Oh I see . .. bar one. OK . .. Now what about the next bar?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 293.379996,
+          "end": 293.409995
+        },
+        {
+          "word": "I",
+          "start": 293.659995,
+          "end": 294.260001
+        },
+        {
+          "word": "see",
+          "start": 294.260001,
+          "end": 295.190009
+        },
+        {
+          "word": "bar",
+          "start": 296.03000499999996,
+          "end": 296.419989
+        },
+        {
+          "word": "one",
+          "start": 296.419989,
+          "end": 297.359991
+        },
+        {
+          "word": "OK",
+          "start": 297.509985,
+          "end": 298.169989
+        },
+        {
+          "word": "Now",
+          "start": 298.560004,
+          "end": 298.669989
+        },
+        {
+          "word": "what",
+          "start": 298.669989,
+          "end": 298.84000199999997
+        },
+        {
+          "word": "about",
+          "start": 298.84000199999997,
+          "end": 298.979987
+        },
+        {
+          "word": "the",
+          "start": 298.979987,
+          "end": 299.07001299999996
+        },
+        {
+          "word": "next",
+          "start": 299.07001299999996,
+          "end": 299.560004
+        },
+        {
+          "word": "bar",
+          "start": 299.560004,
+          "end": 300.079993
+        }
+      ],
       "answers": [],
-      "end": 299.6
+      "end": 300.079993
     },
     {
       "id": 34,
-      "start": 299.6,
+      "start": 300.709998,
       "speaker": "OR JOHN SON",
       "en": "Bar two is to do with the people living neartzy disturbing them, so they chose to move away to somewhere quieter. Now let's look at bar number three .. . another reason people change their place of living is because they want to be closer to the city.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Bar",
+          "start": 300.709998,
+          "end": 301.000006
+        },
+        {
+          "word": "two",
+          "start": 301.000006,
+          "end": 301.41001
+        },
+        {
+          "word": "is",
+          "start": 301.41001,
+          "end": 301.63001099999997
+        },
+        {
+          "word": "to",
+          "start": 301.63001099999997,
+          "end": 301.750006
+        },
+        {
+          "word": "do",
+          "start": 301.750006,
+          "end": 302.019995
+        },
+        {
+          "word": "with",
+          "start": 302.019995,
+          "end": 302.209998
+        },
+        {
+          "word": "the",
+          "start": 302.209998,
+          "end": 302.28000499999996
+        },
+        {
+          "word": "people",
+          "start": 302.28000499999996,
+          "end": 302.609991
+        },
+        {
+          "word": "living",
+          "start": 302.609991,
+          "end": 302.92999899999995
+        },
+        {
+          "word": "neartzy",
+          "start": 302.92999899999995,
+          "end": 303.310004
+        },
+        {
+          "word": "disturbing",
+          "start": 303.67999899999995,
+          "end": 304.29999399999997
+        },
+        {
+          "word": "them",
+          "start": 304.29999399999997,
+          "end": 304.560004
+        },
+        {
+          "word": "so",
+          "start": 304.729987,
+          "end": 304.940009
+        },
+        {
+          "word": "they",
+          "start": 304.940009,
+          "end": 305.269995
+        },
+        {
+          "word": "chose",
+          "start": 305.269995,
+          "end": 305.669989
+        },
+        {
+          "word": "to",
+          "start": 305.669989,
+          "end": 305.790015
+        },
+        {
+          "word": "move",
+          "start": 305.790015,
+          "end": 306.07001299999996
+        },
+        {
+          "word": "away",
+          "start": 306.07001299999996,
+          "end": 306.41001
+        },
+        {
+          "word": "to",
+          "start": 306.41001,
+          "end": 306.509985
+        },
+        {
+          "word": "somewhere",
+          "start": 306.509985,
+          "end": 306.919989
+        },
+        {
+          "word": "quieter",
+          "start": 306.919989,
+          "end": 307.519995
+        },
+        {
+          "word": "Now",
+          "start": 308.500006,
+          "end": 308.729987
+        },
+        {
+          "word": "let",
+          "start": 308.729987,
+          "end": 309.04999399999997
+        },
+        {
+          "word": "'s",
+          "start": 308.729987,
+          "end": 309.04999399999997
+        },
+        {
+          "word": "look",
+          "start": 309.04999399999997,
+          "end": 309.269995
+        },
+        {
+          "word": "at",
+          "start": 309.269995,
+          "end": 309.48999599999996
+        },
+        {
+          "word": "bar",
+          "start": 309.48999599999996,
+          "end": 309.69998799999996
+        },
+        {
+          "word": "number",
+          "start": 309.69998799999996,
+          "end": 309.91001
+        },
+        {
+          "word": "three",
+          "start": 309.91001,
+          "end": 310.479987
+        },
+        {
+          "word": "another",
+          "start": 311.100012,
+          "end": 311.41001
+        },
+        {
+          "word": "reason",
+          "start": 311.41001,
+          "end": 311.78000499999996
+        },
+        {
+          "word": "people",
+          "start": 311.78000499999996,
+          "end": 312.060004
+        },
+        {
+          "word": "change",
+          "start": 312.060004,
+          "end": 312.500006
+        },
+        {
+          "word": "their",
+          "start": 312.500006,
+          "end": 312.63001099999997
+        },
+        {
+          "word": "place",
+          "start": 312.63001099999997,
+          "end": 312.92999899999995
+        },
+        {
+          "word": "of",
+          "start": 312.92999899999995,
+          "end": 313.060004
+        },
+        {
+          "word": "living",
+          "start": 313.060004,
+          "end": 313.44998799999996
+        },
+        {
+          "word": "is",
+          "start": 313.78000499999996,
+          "end": 313.94998799999996
+        },
+        {
+          "word": "because",
+          "start": 313.94998799999996,
+          "end": 314.269995
+        },
+        {
+          "word": "they",
+          "start": 314.269995,
+          "end": 314.38001099999997
+        },
+        {
+          "word": "want",
+          "start": 314.38001099999997,
+          "end": 314.66001
+        },
+        {
+          "word": "to",
+          "start": 314.66001,
+          "end": 314.750006
+        },
+        {
+          "word": "be",
+          "start": 314.750006,
+          "end": 315.04999399999997
+        },
+        {
+          "word": "closer",
+          "start": 315.109991,
+          "end": 315.690009
+        },
+        {
+          "word": "to",
+          "start": 315.690009,
+          "end": 315.9
+        },
+        {
+          "word": "the",
+          "start": 315.9,
+          "end": 315.98999599999996
+        },
+        {
+          "word": "city",
+          "start": 315.98999599999996,
+          "end": 316.4
+        }
+      ],
       "answers": [
         28
       ],
@@ -361,77 +3676,629 @@
     },
     {
       "id": 35,
-      "start": 316.6,
+      "start": 316.850012,
       "speaker": "MELANIE",
       "en": "OK. Proximity to the city is an issue .. .",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 316.850012,
+          "end": 317.620001
+        },
+        {
+          "word": "Proximity",
+          "start": 318.22000699999995,
+          "end": 319.009985
+        },
+        {
+          "word": "to",
+          "start": 319.009985,
+          "end": 319.109991
+        },
+        {
+          "word": "the",
+          "start": 319.109991,
+          "end": 319.209998
+        },
+        {
+          "word": "city",
+          "start": 319.209998,
+          "end": 319.54999399999997
+        },
+        {
+          "word": "is",
+          "start": 319.54999399999997,
+          "end": 319.709998
+        },
+        {
+          "word": "an",
+          "start": 319.709998,
+          "end": 319.79999399999997
+        },
+        {
+          "word": "issue",
+          "start": 319.79999399999997,
+          "end": 320.500006
+        }
+      ],
       "answers": [],
-      "end": 320.4
+      "end": 320.500006
     },
     {
       "id": 36,
-      "start": 321.4,
+      "start": 321.269995,
       "speaker": "DR JOHNSON",
       "en": "Now . . . bar number four refers to problems when the owner of the property won't help fix things that go wrong. In other words, the owner is not helpful and so the tenants move out.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Now",
+          "start": 321.269995,
+          "end": 321.669989
+        },
+        {
+          "word": "bar",
+          "start": 321.669989,
+          "end": 321.870001
+        },
+        {
+          "word": "number",
+          "start": 321.870001,
+          "end": 322.120001
+        },
+        {
+          "word": "four",
+          "start": 322.120001,
+          "end": 322.850012
+        },
+        {
+          "word": "refers",
+          "start": 322.850012,
+          "end": 323.32001299999996
+        },
+        {
+          "word": "to",
+          "start": 323.32001299999996,
+          "end": 323.42999899999995
+        },
+        {
+          "word": "problems",
+          "start": 323.42999899999995,
+          "end": 324.209998
+        },
+        {
+          "word": "when",
+          "start": 324.209998,
+          "end": 324.350012
+        },
+        {
+          "word": "the",
+          "start": 324.350012,
+          "end": 324.509985
+        },
+        {
+          "word": "owner",
+          "start": 324.509985,
+          "end": 324.870001
+        },
+        {
+          "word": "of",
+          "start": 324.870001,
+          "end": 324.979987
+        },
+        {
+          "word": "the",
+          "start": 324.979987,
+          "end": 325.07001299999996
+        },
+        {
+          "word": "property",
+          "start": 325.07001299999996,
+          "end": 325.66001
+        },
+        {
+          "word": "wo",
+          "start": 325.690009,
+          "end": 326.169989
+        },
+        {
+          "word": "n't",
+          "start": 325.690009,
+          "end": 326.169989
+        },
+        {
+          "word": "help",
+          "start": 326.169989,
+          "end": 326.4
+        },
+        {
+          "word": "fix",
+          "start": 326.4,
+          "end": 326.92999899999995
+        },
+        {
+          "word": "things",
+          "start": 326.979987,
+          "end": 327.38001099999997
+        },
+        {
+          "word": "that",
+          "start": 327.38001099999997,
+          "end": 327.53000499999996
+        },
+        {
+          "word": "go",
+          "start": 327.53000499999996,
+          "end": 327.69998799999996
+        },
+        {
+          "word": "wrong",
+          "start": 327.69998799999996,
+          "end": 328.22000699999995
+        },
+        {
+          "word": "In",
+          "start": 329.19998799999996,
+          "end": 329.32001299999996
+        },
+        {
+          "word": "other",
+          "start": 329.32001299999996,
+          "end": 329.44998799999996
+        },
+        {
+          "word": "words",
+          "start": 329.479987,
+          "end": 329.790015
+        },
+        {
+          "word": "the",
+          "start": 329.790015,
+          "end": 329.92999899999995
+        },
+        {
+          "word": "owner",
+          "start": 329.959998,
+          "end": 330.23999599999996
+        },
+        {
+          "word": "is",
+          "start": 330.23999599999996,
+          "end": 330.459998
+        },
+        {
+          "word": "not",
+          "start": 330.459998,
+          "end": 330.790015
+        },
+        {
+          "word": "helpful",
+          "start": 330.790015,
+          "end": 331.359991
+        },
+        {
+          "word": "and",
+          "start": 331.620001,
+          "end": 331.850012
+        },
+        {
+          "word": "so",
+          "start": 331.850012,
+          "end": 332.07001299999996
+        },
+        {
+          "word": "the",
+          "start": 332.07001299999996,
+          "end": 332.169989
+        },
+        {
+          "word": "tenants",
+          "start": 332.169989,
+          "end": 332.579993
+        },
+        {
+          "word": "move",
+          "start": 332.579993,
+          "end": 332.78000499999996
+        },
+        {
+          "word": "out",
+          "start": 332.78000499999996,
+          "end": 333.109991
+        }
+      ],
       "answers": [
         29
       ],
-      "end": 333.6
+      "end": 333.109991
     },
     {
       "id": 37,
-      "start": 333.7,
+      "start": 333.38998999999995,
       "speaker": "MELANIE",
       "en": "OK .. . Now what about bar five?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 333.38998999999995,
+          "end": 334.009985
+        },
+        {
+          "word": "Now",
+          "start": 334.709998,
+          "end": 334.9
+        },
+        {
+          "word": "what",
+          "start": 334.9,
+          "end": 335.09000199999997
+        },
+        {
+          "word": "about",
+          "start": 335.09000199999997,
+          "end": 335.350012
+        },
+        {
+          "word": "bar",
+          "start": 335.350012,
+          "end": 335.57001299999996
+        },
+        {
+          "word": "five",
+          "start": 335.57001299999996,
+          "end": 336.329993
+        }
+      ],
       "answers": [],
-      "end": 335.3
+      "end": 336.329993
     },
     {
       "id": 38,
-      "start": 335.4,
+      "start": 336.459998,
       "speaker": "OR JOHN SON",
       "en": "Bar five is about those people who move because they need a bus or train to get them into the city or to go to work.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Bar",
+          "start": 336.459998,
+          "end": 337.109991
+        },
+        {
+          "word": "five",
+          "start": 337.109991,
+          "end": 337.509985
+        },
+        {
+          "word": "is",
+          "start": 337.509985,
+          "end": 337.620001
+        },
+        {
+          "word": "about",
+          "start": 337.620001,
+          "end": 337.9
+        },
+        {
+          "word": "those",
+          "start": 337.9,
+          "end": 338.120001
+        },
+        {
+          "word": "people",
+          "start": 338.120001,
+          "end": 338.4
+        },
+        {
+          "word": "who",
+          "start": 338.4,
+          "end": 338.53000499999996
+        },
+        {
+          "word": "move",
+          "start": 338.53000499999996,
+          "end": 339.000006
+        },
+        {
+          "word": "because",
+          "start": 339.000006,
+          "end": 339.750006
+        },
+        {
+          "word": "they",
+          "start": 339.78000499999996,
+          "end": 340.03000499999996
+        },
+        {
+          "word": "need",
+          "start": 340.03000499999996,
+          "end": 340.229987
+        },
+        {
+          "word": "a",
+          "start": 340.229987,
+          "end": 340.310004
+        },
+        {
+          "word": "bus",
+          "start": 340.310004,
+          "end": 340.84000199999997
+        },
+        {
+          "word": "or",
+          "start": 340.84000199999997,
+          "end": 341.03000499999996
+        },
+        {
+          "word": "train",
+          "start": 341.03000499999996,
+          "end": 341.66001
+        },
+        {
+          "word": "to",
+          "start": 341.66001,
+          "end": 341.78000499999996
+        },
+        {
+          "word": "get",
+          "start": 341.78000499999996,
+          "end": 341.979987
+        },
+        {
+          "word": "them",
+          "start": 341.979987,
+          "end": 342.190009
+        },
+        {
+          "word": "into",
+          "start": 342.190009,
+          "end": 342.310004
+        },
+        {
+          "word": "the",
+          "start": 342.310004,
+          "end": 342.419989
+        },
+        {
+          "word": "city",
+          "start": 342.419989,
+          "end": 342.919989
+        },
+        {
+          "word": "or",
+          "start": 343.229987,
+          "end": 343.419989
+        },
+        {
+          "word": "to",
+          "start": 343.419989,
+          "end": 343.519995
+        },
+        {
+          "word": "go",
+          "start": 343.519995,
+          "end": 343.65
+        },
+        {
+          "word": "to",
+          "start": 343.65,
+          "end": 343.709998
+        },
+        {
+          "word": "work",
+          "start": 343.709998,
+          "end": 344.22000699999995
+        }
+      ],
       "answers": [],
-      "end": 340.9
+      "end": 344.22000699999995
     },
     {
       "id": 39,
-      "start": 341.0,
+      "start": 344.669989,
       "speaker": "MELANIE",
       "en": "OK .. . And bar six?",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "OK",
+          "start": 344.669989,
+          "end": 345.57001299999996
+        },
+        {
+          "word": "And",
+          "start": 346.34000199999997,
+          "end": 346.500006
+        },
+        {
+          "word": "bar",
+          "start": 346.500006,
+          "end": 346.690009
+        },
+        {
+          "word": "six",
+          "start": 346.690009,
+          "end": 347.23999599999996
+        }
+      ],
       "answers": [],
-      "end": 346.5
+      "end": 347.23999599999996
     },
     {
       "id": 40,
-      "start": 346.6,
+      "start": 347.759985,
       "speaker": "DR JOHNSON",
       "en": "Bar number six is interesting. That reason was given quite a lot- people moving because they wanted to be in a more attractive neighbourhood.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Bar",
+          "start": 347.759985,
+          "end": 348.000006
+        },
+        {
+          "word": "number",
+          "start": 348.000006,
+          "end": 348.17999899999995
+        },
+        {
+          "word": "six",
+          "start": 348.17999899999995,
+          "end": 348.57001299999996
+        },
+        {
+          "word": "is",
+          "start": 348.69998799999996,
+          "end": 349.019995
+        },
+        {
+          "word": "interesting",
+          "start": 349.04999399999997,
+          "end": 349.73999599999996
+        },
+        {
+          "word": "That",
+          "start": 350.28000499999996,
+          "end": 350.579993
+        },
+        {
+          "word": "reason",
+          "start": 350.609991,
+          "end": 351.019995
+        },
+        {
+          "word": "was",
+          "start": 351.019995,
+          "end": 351.250006
+        },
+        {
+          "word": "given",
+          "start": 351.250006,
+          "end": 351.63998999999995
+        },
+        {
+          "word": "quite",
+          "start": 351.63998999999995,
+          "end": 351.88998999999995
+        },
+        {
+          "word": "a",
+          "start": 351.88998999999995,
+          "end": 351.940009
+        },
+        {
+          "word": "lot",
+          "start": 351.940009,
+          "end": 352.259985
+        },
+        {
+          "word": "people",
+          "start": 352.78000499999996,
+          "end": 353.19998799999996
+        },
+        {
+          "word": "moving",
+          "start": 353.19998799999996,
+          "end": 353.620001
+        },
+        {
+          "word": "because",
+          "start": 353.620001,
+          "end": 353.870001
+        },
+        {
+          "word": "they",
+          "start": 353.870001,
+          "end": 353.979987
+        },
+        {
+          "word": "wanted",
+          "start": 353.979987,
+          "end": 354.310004
+        },
+        {
+          "word": "to",
+          "start": 354.310004,
+          "end": 354.4
+        },
+        {
+          "word": "be",
+          "start": 354.4,
+          "end": 354.57001299999996
+        },
+        {
+          "word": "in",
+          "start": 354.57001299999996,
+          "end": 354.750006
+        },
+        {
+          "word": "a",
+          "start": 354.750006,
+          "end": 354.82001299999996
+        },
+        {
+          "word": "more",
+          "start": 354.82001299999996,
+          "end": 355.229987
+        },
+        {
+          "word": "attractive",
+          "start": 355.259985,
+          "end": 356.120001
+        },
+        {
+          "word": "neighbourhood",
+          "start": 356.23999599999996,
+          "end": 356.810004
+        }
+      ],
       "answers": [
         30
       ],
-      "end": 356.7
+      "end": 356.810004
     },
     {
       "id": 41,
-      "start": 356.8,
+      "start": 356.84000199999997,
       "speaker": "MELANIE",
       "en": "Oh, yes, thank you very much.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Oh",
+          "start": 356.84000199999997,
+          "end": 357.190009
+        },
+        {
+          "word": "yes",
+          "start": 357.190009,
+          "end": 357.98999599999996
+        },
+        {
+          "word": "thank",
+          "start": 358.759985,
+          "end": 359.78000499999996
+        },
+        {
+          "word": "you",
+          "start": 363.63998999999995,
+          "end": 363.98999599999996
+        },
+        {
+          "word": "very",
+          "start": 364.42999899999995,
+          "end": 365.15
+        },
+        {
+          "word": "much",
+          "start": 366.109991,
+          "end": 367.63001099999997
+        }
+      ],
       "answers": [],
-      "end": 359.8
+      "end": 367.63001099999997
     }
   ],
   "questions": [
@@ -515,5 +4382,20 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 765,
+    "mfa_word_count": 765,
+    "matched_word_count": 765,
+    "audio_trim_offset": 38.9,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }

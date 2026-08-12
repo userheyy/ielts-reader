@@ -7,383 +7,4074 @@
   "segments": [
     {
       "id": 1,
-      "start": 1.4,
+      "start": 1.77,
       "speaker": "SPEAKER",
       "en": "Good afternoon.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Good",
+          "start": 1.77,
+          "end": 1.91
+        },
+        {
+          "word": "afternoon",
+          "start": 1.91,
+          "end": 2.72
+        }
+      ],
       "answers": [],
-      "end": 3.1
+      "end": 2.72
     },
     {
       "id": 2,
-      "start": 5.8,
+      "start": 3.33,
       "speaker": "SPEAKER",
       "en": "I’m Paula Bundell and I am giving you the lectures on Environmental Noise this term.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 3.33,
+          "end": 3.72
+        },
+        {
+          "word": "'m",
+          "start": 3.33,
+          "end": 3.72
+        },
+        {
+          "word": "Paula",
+          "start": 3.72,
+          "end": 4.17
+        },
+        {
+          "word": "Bundell",
+          "start": 4.17,
+          "end": 4.84
+        },
+        {
+          "word": "and",
+          "start": 5.29,
+          "end": 5.71
+        },
+        {
+          "word": "I",
+          "start": 5.78,
+          "end": 6.14
+        },
+        {
+          "word": "am",
+          "start": 6.14,
+          "end": 6.44
+        },
+        {
+          "word": "giving",
+          "start": 6.44,
+          "end": 6.72
+        },
+        {
+          "word": "you",
+          "start": 6.72,
+          "end": 6.83
+        },
+        {
+          "word": "the",
+          "start": 6.83,
+          "end": 6.92
+        },
+        {
+          "word": "lectures",
+          "start": 6.92,
+          "end": 7.41
+        },
+        {
+          "word": "on",
+          "start": 7.41,
+          "end": 7.62
+        },
+        {
+          "word": "Environmental",
+          "start": 7.62,
+          "end": 8.37
+        },
+        {
+          "word": "Noise",
+          "start": 8.37,
+          "end": 8.79
+        },
+        {
+          "word": "this",
+          "start": 8.79,
+          "end": 9.02
+        },
+        {
+          "word": "term",
+          "start": 9.02,
+          "end": 9.45
+        }
+      ],
       "answers": [],
-      "end": 9.8
+      "end": 9.45
     },
     {
       "id": 3,
-      "start": 10.2,
+      "start": 10.07,
       "speaker": "SPEAKER",
       "en": "Today we are going to look into the effects of noise on a planned housing estate in a particularly difficult part of the new Manchester Park area.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Today",
+          "start": 10.07,
+          "end": 10.65
+        },
+        {
+          "word": "we",
+          "start": 10.94,
+          "end": 11.04
+        },
+        {
+          "word": "are",
+          "start": 11.04,
+          "end": 11.07
+        },
+        {
+          "word": "going",
+          "start": 11.07,
+          "end": 11.29
+        },
+        {
+          "word": "to",
+          "start": 11.29,
+          "end": 11.4
+        },
+        {
+          "word": "look",
+          "start": 11.4,
+          "end": 11.57
+        },
+        {
+          "word": "into",
+          "start": 11.57,
+          "end": 11.78
+        },
+        {
+          "word": "the",
+          "start": 11.78,
+          "end": 11.89
+        },
+        {
+          "word": "effects",
+          "start": 11.89,
+          "end": 12.33
+        },
+        {
+          "word": "of",
+          "start": 12.33,
+          "end": 12.43
+        },
+        {
+          "word": "noise",
+          "start": 12.43,
+          "end": 12.83
+        },
+        {
+          "word": "on",
+          "start": 12.83,
+          "end": 13.02
+        },
+        {
+          "word": "a",
+          "start": 13.02,
+          "end": 13.08
+        },
+        {
+          "word": "planned",
+          "start": 13.08,
+          "end": 13.52
+        },
+        {
+          "word": "housing",
+          "start": 13.52,
+          "end": 13.93
+        },
+        {
+          "word": "estate",
+          "start": 13.93,
+          "end": 14.42
+        },
+        {
+          "word": "in",
+          "start": 14.83,
+          "end": 15.04
+        },
+        {
+          "word": "a",
+          "start": 15.04,
+          "end": 15.23
+        },
+        {
+          "word": "particularly",
+          "start": 15.23,
+          "end": 15.94
+        },
+        {
+          "word": "difficult",
+          "start": 15.94,
+          "end": 16.49
+        },
+        {
+          "word": "part",
+          "start": 16.49,
+          "end": 16.85
+        },
+        {
+          "word": "of",
+          "start": 16.85,
+          "end": 16.969999
+        },
+        {
+          "word": "the",
+          "start": 16.969999,
+          "end": 17.059999
+        },
+        {
+          "word": "new",
+          "start": 17.059999,
+          "end": 17.469999
+        },
+        {
+          "word": "Manchester",
+          "start": 17.51,
+          "end": 18.09
+        },
+        {
+          "word": "Park",
+          "start": 18.09,
+          "end": 18.469999
+        },
+        {
+          "word": "area",
+          "start": 18.469999,
+          "end": 18.950001
+        }
+      ],
       "answers": [],
-      "end": 19.0
+      "end": 18.950001
     },
     {
       "id": 4,
-      "start": 20.4,
+      "start": 19.93,
       "speaker": "SPEAKER",
       "en": "This site is not as bad as some 1 have researched in the past.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "This",
+          "start": 19.93,
+          "end": 20.280001
+        },
+        {
+          "word": "site",
+          "start": 20.379999,
+          "end": 20.780001
+        },
+        {
+          "word": "is",
+          "start": 21.01,
+          "end": 21.209999
+        },
+        {
+          "word": "not",
+          "start": 21.209999,
+          "end": 21.450001
+        },
+        {
+          "word": "as",
+          "start": 21.450001,
+          "end": 21.58
+        },
+        {
+          "word": "bad",
+          "start": 21.58,
+          "end": 21.870001
+        },
+        {
+          "word": "as",
+          "start": 21.870001,
+          "end": 22.0
+        },
+        {
+          "word": "some",
+          "start": 22.0,
+          "end": 22.27
+        },
+        {
+          "word": "1",
+          "start": 22.27,
+          "end": 22.6
+        },
+        {
+          "word": "have",
+          "start": 22.6,
+          "end": 22.799999
+        },
+        {
+          "word": "researched",
+          "start": 22.799999,
+          "end": 23.27
+        },
+        {
+          "word": "in",
+          "start": 23.27,
+          "end": 23.370001
+        },
+        {
+          "word": "the",
+          "start": 23.370001,
+          "end": 23.450001
+        },
+        {
+          "word": "past",
+          "start": 23.450001,
+          "end": 23.969999
+        }
+      ],
       "answers": [],
-      "end": 24.8
+      "end": 23.969999
     },
     {
       "id": 5,
-      "start": 26.3,
+      "start": 24.440001,
       "speaker": "SPEAKER",
       "en": "The Blacktown airport is closed from 6pm to 7am and this is a great advantage to the site.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 24.440001,
+          "end": 24.559999
+        },
+        {
+          "word": "Blacktown",
+          "start": 24.559999,
+          "end": 25.129999
+        },
+        {
+          "word": "airport",
+          "start": 25.129999,
+          "end": 25.549999
+        },
+        {
+          "word": "is",
+          "start": 25.549999,
+          "end": 25.700001
+        },
+        {
+          "word": "closed",
+          "start": 25.700001,
+          "end": 26.32
+        },
+        {
+          "word": "from",
+          "start": 26.32,
+          "end": 26.52
+        },
+        {
+          "word": "6",
+          "start": 26.52,
+          "end": 26.68
+        },
+        {
+          "word": "pm",
+          "start": 26.52,
+          "end": 26.68
+        },
+        {
+          "word": "to",
+          "start": 27.02,
+          "end": 27.08
+        },
+        {
+          "word": "7",
+          "start": 27.08,
+          "end": 28.389999
+        },
+        {
+          "word": "am",
+          "start": 27.08,
+          "end": 28.389999
+        },
+        {
+          "word": "and",
+          "start": 28.92,
+          "end": 29.27
+        },
+        {
+          "word": "this",
+          "start": 29.27,
+          "end": 29.59
+        },
+        {
+          "word": "is",
+          "start": 29.59,
+          "end": 29.719999
+        },
+        {
+          "word": "a",
+          "start": 29.719999,
+          "end": 29.809999
+        },
+        {
+          "word": "great",
+          "start": 29.809999,
+          "end": 30.110001
+        },
+        {
+          "word": "advantage",
+          "start": 30.110001,
+          "end": 30.639999
+        },
+        {
+          "word": "to",
+          "start": 30.639999,
+          "end": 30.74
+        },
+        {
+          "word": "the",
+          "start": 30.74,
+          "end": 30.83
+        },
+        {
+          "word": "site",
+          "start": 30.83,
+          "end": 31.280001
+        }
+      ],
       "answers": [],
-      "end": 32.1
+      "end": 31.280001
     },
     {
       "id": 6,
-      "start": 32.2,
+      "start": 32.0,
       "speaker": "SPEAKER",
       "en": "The only noise after dark is from the highway and the traffic is somewhat reduced between 7.30pm and 5.30am.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 32.0,
+          "end": 32.139999
+        },
+        {
+          "word": "only",
+          "start": 32.139999,
+          "end": 32.349998
+        },
+        {
+          "word": "noise",
+          "start": 32.349998,
+          "end": 32.669998
+        },
+        {
+          "word": "after",
+          "start": 32.669998,
+          "end": 32.98
+        },
+        {
+          "word": "dark",
+          "start": 32.98,
+          "end": 33.48
+        },
+        {
+          "word": "is",
+          "start": 33.48,
+          "end": 33.610001
+        },
+        {
+          "word": "from",
+          "start": 33.610001,
+          "end": 33.779999
+        },
+        {
+          "word": "the",
+          "start": 33.779999,
+          "end": 33.849998
+        },
+        {
+          "word": "highway",
+          "start": 33.849998,
+          "end": 34.419998
+        },
+        {
+          "word": "and",
+          "start": 34.93,
+          "end": 35.259998
+        },
+        {
+          "word": "the",
+          "start": 35.259998,
+          "end": 35.34
+        },
+        {
+          "word": "traffic",
+          "start": 35.34,
+          "end": 35.880001
+        },
+        {
+          "word": "is",
+          "start": 35.880001,
+          "end": 36.119999
+        },
+        {
+          "word": "somewhat",
+          "start": 36.119999,
+          "end": 36.52
+        },
+        {
+          "word": "reduced",
+          "start": 36.52,
+          "end": 37.09
+        },
+        {
+          "word": "between",
+          "start": 37.09,
+          "end": 37.450001
+        },
+        {
+          "word": "7",
+          "start": 37.450001,
+          "end": 37.84
+        },
+        {
+          "word": "30",
+          "start": 37.450001,
+          "end": 37.84
+        },
+        {
+          "word": "pm",
+          "start": 37.84,
+          "end": 38.48
+        },
+        {
+          "word": "and",
+          "start": 38.48,
+          "end": 38.779999
+        },
+        {
+          "word": "5",
+          "start": 38.779999,
+          "end": 39.509998
+        },
+        {
+          "word": "30",
+          "start": 38.779999,
+          "end": 39.509998
+        },
+        {
+          "word": "am",
+          "start": 39.540001,
+          "end": 40.060001
+        }
+      ],
       "answers": [],
-      "end": 40.5
+      "end": 40.060001
     },
     {
       "id": 7,
-      "start": 41.5,
+      "start": 40.610001,
       "speaker": "SPEAKER",
       "en": "So, the people most affected by the noise will be, I expect, housewives.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "So",
+          "start": 40.610001,
+          "end": 40.950001
+        },
+        {
+          "word": "the",
+          "start": 41.16,
+          "end": 41.34
+        },
+        {
+          "word": "people",
+          "start": 41.34,
+          "end": 41.880001
+        },
+        {
+          "word": "most",
+          "start": 41.91,
+          "end": 42.400002
+        },
+        {
+          "word": "affected",
+          "start": 42.400002,
+          "end": 42.860001
+        },
+        {
+          "word": "by",
+          "start": 42.860001,
+          "end": 43.080002
+        },
+        {
+          "word": "the",
+          "start": 43.080002,
+          "end": 43.18
+        },
+        {
+          "word": "noise",
+          "start": 43.18,
+          "end": 43.619999
+        },
+        {
+          "word": "will",
+          "start": 43.619999,
+          "end": 43.799999
+        },
+        {
+          "word": "be",
+          "start": 43.799999,
+          "end": 44.189999
+        },
+        {
+          "word": "I",
+          "start": 44.220001,
+          "end": 44.419998
+        },
+        {
+          "word": "expect",
+          "start": 44.419998,
+          "end": 44.889999
+        },
+        {
+          "word": "housewives",
+          "start": 45.369999,
+          "end": 46.23
+        }
+      ],
       "answers": [
         31
       ],
-      "end": 46.9
+      "end": 46.23
     },
     {
       "id": 8,
-      "start": 47.1,
+      "start": 47.049999,
       "speaker": "SPEAKER",
       "en": "By the time most of the students and workers have arrived back home in the evening during the week the noise will have abated to a fairly large extent.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "By",
+          "start": 47.049999,
+          "end": 47.259998
+        },
+        {
+          "word": "the",
+          "start": 47.259998,
+          "end": 47.349998
+        },
+        {
+          "word": "time",
+          "start": 47.349998,
+          "end": 47.77
+        },
+        {
+          "word": "most",
+          "start": 47.77,
+          "end": 48.080002
+        },
+        {
+          "word": "of",
+          "start": 48.080002,
+          "end": 48.150002
+        },
+        {
+          "word": "the",
+          "start": 48.150002,
+          "end": 48.220001
+        },
+        {
+          "word": "students",
+          "start": 48.220001,
+          "end": 48.919998
+        },
+        {
+          "word": "and",
+          "start": 48.919998,
+          "end": 49.119999
+        },
+        {
+          "word": "workers",
+          "start": 49.119999,
+          "end": 49.630001
+        },
+        {
+          "word": "have",
+          "start": 49.630001,
+          "end": 49.73
+        },
+        {
+          "word": "arrived",
+          "start": 49.73,
+          "end": 50.139999
+        },
+        {
+          "word": "back",
+          "start": 50.139999,
+          "end": 50.400002
+        },
+        {
+          "word": "home",
+          "start": 50.400002,
+          "end": 50.68
+        },
+        {
+          "word": "in",
+          "start": 50.68,
+          "end": 50.759998
+        },
+        {
+          "word": "the",
+          "start": 50.759998,
+          "end": 50.84
+        },
+        {
+          "word": "evening",
+          "start": 50.84,
+          "end": 51.349998
+        },
+        {
+          "word": "during",
+          "start": 51.349998,
+          "end": 51.669998
+        },
+        {
+          "word": "the",
+          "start": 51.669998,
+          "end": 51.759998
+        },
+        {
+          "word": "week",
+          "start": 51.759998,
+          "end": 52.119999
+        },
+        {
+          "word": "the",
+          "start": 52.540001,
+          "end": 52.630001
+        },
+        {
+          "word": "noise",
+          "start": 52.630001,
+          "end": 53.099998
+        },
+        {
+          "word": "will",
+          "start": 53.099998,
+          "end": 53.23
+        },
+        {
+          "word": "have",
+          "start": 53.23,
+          "end": 53.389999
+        },
+        {
+          "word": "abated",
+          "start": 53.389999,
+          "end": 53.990002
+        },
+        {
+          "word": "to",
+          "start": 53.990002,
+          "end": 54.16
+        },
+        {
+          "word": "a",
+          "start": 54.16,
+          "end": 54.240002
+        },
+        {
+          "word": "fairly",
+          "start": 54.240002,
+          "end": 54.599998
+        },
+        {
+          "word": "large",
+          "start": 54.599998,
+          "end": 54.950001
+        },
+        {
+          "word": "extent",
+          "start": 54.950001,
+          "end": 55.529999
+        }
+      ],
       "answers": [
         32
       ],
-      "end": 56.3
+      "end": 55.529999
     },
     {
       "id": 9,
-      "start": 56.5,
+      "start": 56.299999,
       "speaker": "SPEAKER",
       "en": "The weekends are still a problem of course, but the traffic is certainly reduced on Saturdays to a large extent and even more so on Sundays.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 56.299999,
+          "end": 56.389999
+        },
+        {
+          "word": "weekends",
+          "start": 56.389999,
+          "end": 57.150002
+        },
+        {
+          "word": "are",
+          "start": 57.150002,
+          "end": 57.209999
+        },
+        {
+          "word": "still",
+          "start": 57.209999,
+          "end": 57.470001
+        },
+        {
+          "word": "a",
+          "start": 57.470001,
+          "end": 57.52
+        },
+        {
+          "word": "problem",
+          "start": 57.52,
+          "end": 57.919998
+        },
+        {
+          "word": "of",
+          "start": 57.919998,
+          "end": 58.049999
+        },
+        {
+          "word": "course",
+          "start": 58.049999,
+          "end": 58.450001
+        },
+        {
+          "word": "but",
+          "start": 58.849998,
+          "end": 58.990002
+        },
+        {
+          "word": "the",
+          "start": 58.990002,
+          "end": 59.299999
+        },
+        {
+          "word": "traffic",
+          "start": 59.299999,
+          "end": 59.849998
+        },
+        {
+          "word": "is",
+          "start": 59.849998,
+          "end": 60.080002
+        },
+        {
+          "word": "certainly",
+          "start": 60.080002,
+          "end": 60.470001
+        },
+        {
+          "word": "reduced",
+          "start": 60.470001,
+          "end": 60.950001
+        },
+        {
+          "word": "on",
+          "start": 60.950001,
+          "end": 61.150002
+        },
+        {
+          "word": "Saturdays",
+          "start": 61.150002,
+          "end": 61.759998
+        },
+        {
+          "word": "to",
+          "start": 61.759998,
+          "end": 61.900002
+        },
+        {
+          "word": "a",
+          "start": 61.900002,
+          "end": 61.98
+        },
+        {
+          "word": "large",
+          "start": 61.98,
+          "end": 62.299999
+        },
+        {
+          "word": "extent",
+          "start": 62.299999,
+          "end": 62.77
+        },
+        {
+          "word": "and",
+          "start": 63.32,
+          "end": 63.790001
+        },
+        {
+          "word": "even",
+          "start": 63.82,
+          "end": 64.169998
+        },
+        {
+          "word": "more",
+          "start": 64.169998,
+          "end": 64.379997
+        },
+        {
+          "word": "so",
+          "start": 64.379997,
+          "end": 64.540001
+        },
+        {
+          "word": "on",
+          "start": 64.540001,
+          "end": 64.93
+        },
+        {
+          "word": "Sundays",
+          "start": 64.93,
+          "end": 65.620003
+        }
+      ],
       "answers": [],
-      "end": 65.7
+      "end": 65.620003
     },
     {
       "id": 10,
-      "start": 67.1,
+      "start": 66.800003,
       "speaker": "SPEAKER",
       "en": "Of course modifications to houses will be necessary at a site like this and they come at a significant cost to the developer and home buyer.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Of",
+          "start": 66.800003,
+          "end": 66.949997
+        },
+        {
+          "word": "course",
+          "start": 66.949997,
+          "end": 67.290001
+        },
+        {
+          "word": "modifications",
+          "start": 67.760002,
+          "end": 68.860001
+        },
+        {
+          "word": "to",
+          "start": 68.860001,
+          "end": 68.940002
+        },
+        {
+          "word": "houses",
+          "start": 68.940002,
+          "end": 69.489998
+        },
+        {
+          "word": "will",
+          "start": 69.489998,
+          "end": 69.639999
+        },
+        {
+          "word": "be",
+          "start": 69.639999,
+          "end": 69.779999
+        },
+        {
+          "word": "necessary",
+          "start": 69.779999,
+          "end": 70.440002
+        },
+        {
+          "word": "at",
+          "start": 70.440002,
+          "end": 70.519997
+        },
+        {
+          "word": "a",
+          "start": 70.519997,
+          "end": 70.57
+        },
+        {
+          "word": "site",
+          "start": 70.57,
+          "end": 70.93
+        },
+        {
+          "word": "like",
+          "start": 70.93,
+          "end": 71.160004
+        },
+        {
+          "word": "this",
+          "start": 71.160004,
+          "end": 71.330002
+        },
+        {
+          "word": "and",
+          "start": 71.949997,
+          "end": 72.120003
+        },
+        {
+          "word": "they",
+          "start": 72.120003,
+          "end": 72.290001
+        },
+        {
+          "word": "come",
+          "start": 72.290001,
+          "end": 72.730003
+        },
+        {
+          "word": "at",
+          "start": 72.82,
+          "end": 73.029999
+        },
+        {
+          "word": "a",
+          "start": 73.029999,
+          "end": 73.089996
+        },
+        {
+          "word": "significant",
+          "start": 73.089996,
+          "end": 73.889999
+        },
+        {
+          "word": "cost",
+          "start": 73.889999,
+          "end": 74.550003
+        },
+        {
+          "word": "to",
+          "start": 74.690002,
+          "end": 74.93
+        },
+        {
+          "word": "the",
+          "start": 74.93,
+          "end": 75.029999
+        },
+        {
+          "word": "developer",
+          "start": 75.029999,
+          "end": 75.580002
+        },
+        {
+          "word": "and",
+          "start": 75.620003,
+          "end": 75.82
+        },
+        {
+          "word": "home",
+          "start": 75.82,
+          "end": 76.099998
+        },
+        {
+          "word": "buyer",
+          "start": 76.099998,
+          "end": 76.470001
+        }
+      ],
       "answers": [
         33
       ],
-      "end": 77.3
+      "end": 76.470001
     },
     {
       "id": 11,
-      "start": 77.7,
+      "start": 77.32,
       "speaker": "SPEAKER",
       "en": "The modifications I am about to outline will add about $25,000 to the price of a newly-built house.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 77.32,
+          "end": 77.410004
+        },
+        {
+          "word": "modifications",
+          "start": 77.410004,
+          "end": 78.279999
+        },
+        {
+          "word": "I",
+          "start": 78.279999,
+          "end": 78.459999
+        },
+        {
+          "word": "am",
+          "start": 78.459999,
+          "end": 78.489998
+        },
+        {
+          "word": "about",
+          "start": 78.489998,
+          "end": 78.760002
+        },
+        {
+          "word": "to",
+          "start": 78.760002,
+          "end": 78.860001
+        },
+        {
+          "word": "outline",
+          "start": 78.860001,
+          "end": 79.519997
+        },
+        {
+          "word": "will",
+          "start": 79.860001,
+          "end": 80.059998
+        },
+        {
+          "word": "add",
+          "start": 80.059998,
+          "end": 80.300003
+        },
+        {
+          "word": "about",
+          "start": 80.300003,
+          "end": 80.650002
+        },
+        {
+          "word": "25",
+          "start": 80.760002,
+          "end": 81.290001
+        },
+        {
+          "word": "000",
+          "start": 81.290001,
+          "end": 82.410004
+        },
+        {
+          "word": "to",
+          "start": 82.410004,
+          "end": 82.5
+        },
+        {
+          "word": "the",
+          "start": 82.5,
+          "end": 82.589996
+        },
+        {
+          "word": "price",
+          "start": 82.589996,
+          "end": 82.970001
+        },
+        {
+          "word": "of",
+          "start": 82.970001,
+          "end": 83.050003
+        },
+        {
+          "word": "a",
+          "start": 83.050003,
+          "end": 83.110001
+        },
+        {
+          "word": "newly",
+          "start": 83.110001,
+          "end": 83.410004
+        },
+        {
+          "word": "built",
+          "start": 83.410004,
+          "end": 83.68
+        },
+        {
+          "word": "house",
+          "start": 83.68,
+          "end": 84.07
+        }
+      ],
       "answers": [
         34
       ],
-      "end": 84.9
+      "end": 84.07
     },
     {
       "id": 12,
-      "start": 85.6,
+      "start": 85.0,
       "speaker": "SPEAKER",
       "en": "That will still mean a cheaper house than in a less noisy and more desirable area.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "That",
+          "start": 85.0,
+          "end": 85.25
+        },
+        {
+          "word": "will",
+          "start": 85.25,
+          "end": 85.379997
+        },
+        {
+          "word": "still",
+          "start": 85.379997,
+          "end": 85.82
+        },
+        {
+          "word": "mean",
+          "start": 85.82,
+          "end": 86.089996
+        },
+        {
+          "word": "a",
+          "start": 86.089996,
+          "end": 86.169998
+        },
+        {
+          "word": "cheaper",
+          "start": 86.169998,
+          "end": 86.599998
+        },
+        {
+          "word": "house",
+          "start": 86.599998,
+          "end": 87.099998
+        },
+        {
+          "word": "than",
+          "start": 87.419998,
+          "end": 87.68
+        },
+        {
+          "word": "in",
+          "start": 87.68,
+          "end": 87.800003
+        },
+        {
+          "word": "a",
+          "start": 87.800003,
+          "end": 87.900002
+        },
+        {
+          "word": "less",
+          "start": 87.900002,
+          "end": 88.279999
+        },
+        {
+          "word": "noisy",
+          "start": 88.279999,
+          "end": 88.800003
+        },
+        {
+          "word": "and",
+          "start": 88.800003,
+          "end": 89.059998
+        },
+        {
+          "word": "more",
+          "start": 89.059998,
+          "end": 89.300003
+        },
+        {
+          "word": "desirable",
+          "start": 89.300003,
+          "end": 89.989998
+        },
+        {
+          "word": "area",
+          "start": 89.989998,
+          "end": 90.480003
+        }
+      ],
       "answers": [],
-      "end": 90.5
+      "end": 90.480003
     },
     {
       "id": 13,
-      "start": 92.2,
+      "start": 91.870003,
       "speaker": "SPEAKER",
       "en": "A bit of background would not go astray.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "A",
+          "start": 91.870003,
+          "end": 92.169998
+        },
+        {
+          "word": "bit",
+          "start": 92.169998,
+          "end": 92.410004
+        },
+        {
+          "word": "of",
+          "start": 92.410004,
+          "end": 92.68
+        },
+        {
+          "word": "background",
+          "start": 92.68,
+          "end": 93.349998
+        },
+        {
+          "word": "would",
+          "start": 93.349998,
+          "end": 93.459999
+        },
+        {
+          "word": "not",
+          "start": 93.459999,
+          "end": 93.639999
+        },
+        {
+          "word": "go",
+          "start": 93.639999,
+          "end": 93.75
+        },
+        {
+          "word": "astray",
+          "start": 93.75,
+          "end": 94.360001
+        }
+      ],
       "answers": [],
-      "end": 95.2
+      "end": 94.360001
     },
     {
       "id": 14,
-      "start": 95.2,
+      "start": 94.919998,
       "speaker": "SPEAKER",
       "en": "I understand that you are all familiar with the proposed development site at Manchester Park.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 94.919998,
+          "end": 95.059998
+        },
+        {
+          "word": "understand",
+          "start": 95.059998,
+          "end": 95.760002
+        },
+        {
+          "word": "that",
+          "start": 95.760002,
+          "end": 95.919998
+        },
+        {
+          "word": "you",
+          "start": 95.919998,
+          "end": 96.029999
+        },
+        {
+          "word": "are",
+          "start": 96.029999,
+          "end": 96.129997
+        },
+        {
+          "word": "all",
+          "start": 96.129997,
+          "end": 96.269997
+        },
+        {
+          "word": "familiar",
+          "start": 96.269997,
+          "end": 96.919998
+        },
+        {
+          "word": "with",
+          "start": 96.919998,
+          "end": 97.120003
+        },
+        {
+          "word": "the",
+          "start": 97.120003,
+          "end": 97.309998
+        },
+        {
+          "word": "proposed",
+          "start": 97.309998,
+          "end": 97.860001
+        },
+        {
+          "word": "development",
+          "start": 97.860001,
+          "end": 98.389999
+        },
+        {
+          "word": "site",
+          "start": 98.389999,
+          "end": 98.769997
+        },
+        {
+          "word": "at",
+          "start": 98.769997,
+          "end": 98.93
+        },
+        {
+          "word": "Manchester",
+          "start": 98.93,
+          "end": 99.440002
+        },
+        {
+          "word": "Park",
+          "start": 99.440002,
+          "end": 99.919998
+        }
+      ],
       "answers": [],
-      "end": 99.9
+      "end": 99.919998
     },
     {
       "id": 15,
-      "start": 103.8,
+      "start": 101.18,
       "speaker": "SPEAKER",
       "en": "It’s a particularly difficult one in terms of noise with the highway along the eastern perimeter and the Blacktown airport not 3 kilometres away to the north.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 101.18,
+          "end": 101.519997
+        },
+        {
+          "word": "'s",
+          "start": 101.18,
+          "end": 101.519997
+        },
+        {
+          "word": "a",
+          "start": 101.519997,
+          "end": 101.589996
+        },
+        {
+          "word": "particularly",
+          "start": 101.589996,
+          "end": 102.300003
+        },
+        {
+          "word": "difficult",
+          "start": 102.300003,
+          "end": 102.849998
+        },
+        {
+          "word": "one",
+          "start": 102.849998,
+          "end": 103.089996
+        },
+        {
+          "word": "in",
+          "start": 103.089996,
+          "end": 103.239998
+        },
+        {
+          "word": "terms",
+          "start": 103.239998,
+          "end": 103.650002
+        },
+        {
+          "word": "of",
+          "start": 103.650002,
+          "end": 103.739998
+        },
+        {
+          "word": "noise",
+          "start": 103.739998,
+          "end": 104.300003
+        },
+        {
+          "word": "with",
+          "start": 104.690002,
+          "end": 104.93
+        },
+        {
+          "word": "the",
+          "start": 104.93,
+          "end": 105.120003
+        },
+        {
+          "word": "highway",
+          "start": 105.120003,
+          "end": 105.720001
+        },
+        {
+          "word": "along",
+          "start": 105.720001,
+          "end": 106.050003
+        },
+        {
+          "word": "the",
+          "start": 106.050003,
+          "end": 106.139999
+        },
+        {
+          "word": "eastern",
+          "start": 106.139999,
+          "end": 106.669998
+        },
+        {
+          "word": "perimeter",
+          "start": 106.669998,
+          "end": 107.160004
+        },
+        {
+          "word": "and",
+          "start": 107.68,
+          "end": 107.940002
+        },
+        {
+          "word": "the",
+          "start": 107.940002,
+          "end": 108.019997
+        },
+        {
+          "word": "Blacktown",
+          "start": 108.019997,
+          "end": 108.580002
+        },
+        {
+          "word": "airport",
+          "start": 108.580002,
+          "end": 109.120003
+        },
+        {
+          "word": "not",
+          "start": 109.120003,
+          "end": 109.220001
+        },
+        {
+          "word": "3",
+          "start": 109.220001,
+          "end": 109.669998
+        },
+        {
+          "word": "kilometres",
+          "start": 109.669998,
+          "end": 110.220001
+        },
+        {
+          "word": "away",
+          "start": 110.220001,
+          "end": 110.5
+        },
+        {
+          "word": "to",
+          "start": 110.5,
+          "end": 110.610001
+        },
+        {
+          "word": "the",
+          "start": 110.610001,
+          "end": 110.690002
+        },
+        {
+          "word": "north",
+          "start": 110.690002,
+          "end": 111.269997
+        }
+      ],
       "answers": [],
-      "end": 111.7
+      "end": 111.269997
     },
     {
       "id": 16,
-      "start": 112.5,
+      "start": 112.239998,
       "speaker": "SPEAKER",
       "en": "Of course, those nearest the highway will be the worst hit, with heavy traffic noise as well as the noise from the light planes overhead.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Of",
+          "start": 112.239998,
+          "end": 112.379997
+        },
+        {
+          "word": "course",
+          "start": 112.379997,
+          "end": 112.709999
+        },
+        {
+          "word": "those",
+          "start": 113.129997,
+          "end": 113.580002
+        },
+        {
+          "word": "nearest",
+          "start": 113.580002,
+          "end": 114.089996
+        },
+        {
+          "word": "the",
+          "start": 114.089996,
+          "end": 114.18
+        },
+        {
+          "word": "highway",
+          "start": 114.18,
+          "end": 114.699997
+        },
+        {
+          "word": "will",
+          "start": 114.699997,
+          "end": 114.910004
+        },
+        {
+          "word": "be",
+          "start": 114.910004,
+          "end": 115.07
+        },
+        {
+          "word": "the",
+          "start": 115.07,
+          "end": 115.150002
+        },
+        {
+          "word": "worst",
+          "start": 115.150002,
+          "end": 115.580002
+        },
+        {
+          "word": "hit",
+          "start": 115.580002,
+          "end": 115.910004
+        },
+        {
+          "word": "with",
+          "start": 116.330002,
+          "end": 116.519997
+        },
+        {
+          "word": "heavy",
+          "start": 116.519997,
+          "end": 116.870003
+        },
+        {
+          "word": "traffic",
+          "start": 116.870003,
+          "end": 117.339996
+        },
+        {
+          "word": "noise",
+          "start": 117.339996,
+          "end": 117.760002
+        },
+        {
+          "word": "as",
+          "start": 117.989998,
+          "end": 118.199997
+        },
+        {
+          "word": "well",
+          "start": 118.199997,
+          "end": 118.480003
+        },
+        {
+          "word": "as",
+          "start": 118.480003,
+          "end": 118.580002
+        },
+        {
+          "word": "the",
+          "start": 118.580002,
+          "end": 118.699997
+        },
+        {
+          "word": "noise",
+          "start": 118.699997,
+          "end": 119.080002
+        },
+        {
+          "word": "from",
+          "start": 119.080002,
+          "end": 119.389999
+        },
+        {
+          "word": "the",
+          "start": 119.389999,
+          "end": 119.480003
+        },
+        {
+          "word": "light",
+          "start": 119.480003,
+          "end": 119.779999
+        },
+        {
+          "word": "planes",
+          "start": 119.779999,
+          "end": 120.230003
+        },
+        {
+          "word": "overhead",
+          "start": 120.230003,
+          "end": 120.82
+        }
+      ],
       "answers": [],
-      "end": 121.5
+      "end": 120.82
     },
     {
       "id": 17,
-      "start": 121.6,
+      "start": 121.559998,
       "speaker": "SPEAKER",
       "en": "As you all know, the normal noise threshold for private housing is 55 decibels.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "As",
+          "start": 121.559998,
+          "end": 121.769997
+        },
+        {
+          "word": "you",
+          "start": 121.769997,
+          "end": 121.940002
+        },
+        {
+          "word": "all",
+          "start": 121.940002,
+          "end": 122.110001
+        },
+        {
+          "word": "know",
+          "start": 122.110001,
+          "end": 122.529999
+        },
+        {
+          "word": "the",
+          "start": 122.800003,
+          "end": 122.900002
+        },
+        {
+          "word": "normal",
+          "start": 122.900002,
+          "end": 123.349998
+        },
+        {
+          "word": "noise",
+          "start": 123.349998,
+          "end": 123.760002
+        },
+        {
+          "word": "threshold",
+          "start": 123.760002,
+          "end": 124.370003
+        },
+        {
+          "word": "for",
+          "start": 124.370003,
+          "end": 124.550003
+        },
+        {
+          "word": "private",
+          "start": 124.550003,
+          "end": 124.970001
+        },
+        {
+          "word": "housing",
+          "start": 124.970001,
+          "end": 125.470001
+        },
+        {
+          "word": "is",
+          "start": 125.610001,
+          "end": 125.940002
+        },
+        {
+          "word": "55",
+          "start": 126.099998,
+          "end": 126.870003
+        },
+        {
+          "word": "decibels",
+          "start": 126.870003,
+          "end": 127.57
+        }
+      ],
       "answers": [],
-      "end": 128.4
+      "end": 127.57
     },
     {
       "id": 18,
-      "start": 128.6,
+      "start": 128.020004,
       "speaker": "SPEAKER",
       "en": "At this site the levels have been recorded as high as 67 decibels. -------------------------------------------------------------------------------------------------------------- The construction of the houses has to be somewhat modified from houses in most areas.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "At",
+          "start": 128.020004,
+          "end": 128.179993
+        },
+        {
+          "word": "this",
+          "start": 128.179993,
+          "end": 128.350006
+        },
+        {
+          "word": "site",
+          "start": 128.460007,
+          "end": 128.839996
+        },
+        {
+          "word": "the",
+          "start": 129.360001,
+          "end": 129.460007
+        },
+        {
+          "word": "levels",
+          "start": 129.460007,
+          "end": 129.979996
+        },
+        {
+          "word": "have",
+          "start": 129.979996,
+          "end": 130.100006
+        },
+        {
+          "word": "been",
+          "start": 130.100006,
+          "end": 130.289993
+        },
+        {
+          "word": "recorded",
+          "start": 130.289993,
+          "end": 130.789993
+        },
+        {
+          "word": "as",
+          "start": 130.789993,
+          "end": 130.910004
+        },
+        {
+          "word": "high",
+          "start": 130.910004,
+          "end": 131.179993
+        },
+        {
+          "word": "as",
+          "start": 131.179993,
+          "end": 131.389999
+        },
+        {
+          "word": "67",
+          "start": 131.389999,
+          "end": 132.169998
+        },
+        {
+          "word": "decibels",
+          "start": 132.169998,
+          "end": 132.919998
+        },
+        {
+          "word": "The",
+          "start": 136.029999,
+          "end": 136.149994
+        },
+        {
+          "word": "construction",
+          "start": 136.149994,
+          "end": 136.830002
+        },
+        {
+          "word": "of",
+          "start": 136.830002,
+          "end": 136.940002
+        },
+        {
+          "word": "the",
+          "start": 136.940002,
+          "end": 137.029999
+        },
+        {
+          "word": "houses",
+          "start": 137.029999,
+          "end": 137.529999
+        },
+        {
+          "word": "has",
+          "start": 137.809998,
+          "end": 138.020004
+        },
+        {
+          "word": "to",
+          "start": 138.020004,
+          "end": 138.110001
+        },
+        {
+          "word": "be",
+          "start": 138.110001,
+          "end": 138.229996
+        },
+        {
+          "word": "somewhat",
+          "start": 138.229996,
+          "end": 138.759995
+        },
+        {
+          "word": "modified",
+          "start": 138.759995,
+          "end": 139.550003
+        },
+        {
+          "word": "from",
+          "start": 139.550003,
+          "end": 139.710007
+        },
+        {
+          "word": "houses",
+          "start": 139.710007,
+          "end": 140.119995
+        },
+        {
+          "word": "in",
+          "start": 140.119995,
+          "end": 140.259995
+        },
+        {
+          "word": "most",
+          "start": 140.259995,
+          "end": 140.580002
+        },
+        {
+          "word": "areas",
+          "start": 140.580002,
+          "end": 141.139999
+        }
+      ],
       "answers": [
         35
       ],
-      "end": 141.8
+      "end": 141.139999
     },
     {
       "id": 19,
-      "start": 142.3,
+      "start": 141.770004,
       "speaker": "SPEAKER",
       "en": "In the houses on the highway and in the noisiest areas of this site there will be a need for specialised double glazing and special acoustic seals will have to be fitted to the doors.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 141.770004,
+          "end": 141.979996
+        },
+        {
+          "word": "the",
+          "start": 141.979996,
+          "end": 142.070007
+        },
+        {
+          "word": "houses",
+          "start": 142.070007,
+          "end": 142.539993
+        },
+        {
+          "word": "on",
+          "start": 142.539993,
+          "end": 142.710007
+        },
+        {
+          "word": "the",
+          "start": 142.710007,
+          "end": 142.779999
+        },
+        {
+          "word": "highway",
+          "start": 142.779999,
+          "end": 143.529999
+        },
+        {
+          "word": "and",
+          "start": 143.899994,
+          "end": 144.160004
+        },
+        {
+          "word": "in",
+          "start": 144.160004,
+          "end": 144.320007
+        },
+        {
+          "word": "the",
+          "start": 144.320007,
+          "end": 144.419998
+        },
+        {
+          "word": "noisiest",
+          "start": 144.419998,
+          "end": 145.020004
+        },
+        {
+          "word": "areas",
+          "start": 145.020004,
+          "end": 145.419998
+        },
+        {
+          "word": "of",
+          "start": 145.419998,
+          "end": 145.509995
+        },
+        {
+          "word": "this",
+          "start": 145.509995,
+          "end": 145.740005
+        },
+        {
+          "word": "site",
+          "start": 145.770004,
+          "end": 146.050003
+        },
+        {
+          "word": "there",
+          "start": 146.369995,
+          "end": 146.5
+        },
+        {
+          "word": "will",
+          "start": 146.5,
+          "end": 146.669998
+        },
+        {
+          "word": "be",
+          "start": 146.669998,
+          "end": 146.789993
+        },
+        {
+          "word": "a",
+          "start": 146.789993,
+          "end": 146.869995
+        },
+        {
+          "word": "need",
+          "start": 146.869995,
+          "end": 147.199997
+        },
+        {
+          "word": "for",
+          "start": 147.199997,
+          "end": 147.449997
+        },
+        {
+          "word": "specialised",
+          "start": 147.449997,
+          "end": 148.289993
+        },
+        {
+          "word": "double",
+          "start": 148.289993,
+          "end": 148.589996
+        },
+        {
+          "word": "glazing",
+          "start": 148.589996,
+          "end": 149.149994
+        },
+        {
+          "word": "and",
+          "start": 149.830002,
+          "end": 150.160004
+        },
+        {
+          "word": "special",
+          "start": 150.160004,
+          "end": 150.570007
+        },
+        {
+          "word": "acoustic",
+          "start": 150.570007,
+          "end": 151.020004
+        },
+        {
+          "word": "seals",
+          "start": 151.020004,
+          "end": 151.600006
+        },
+        {
+          "word": "will",
+          "start": 151.600006,
+          "end": 151.729996
+        },
+        {
+          "word": "have",
+          "start": 151.729996,
+          "end": 151.929993
+        },
+        {
+          "word": "to",
+          "start": 151.929993,
+          "end": 152.009995
+        },
+        {
+          "word": "be",
+          "start": 152.009995,
+          "end": 152.139999
+        },
+        {
+          "word": "fitted",
+          "start": 152.139999,
+          "end": 152.550003
+        },
+        {
+          "word": "to",
+          "start": 152.550003,
+          "end": 152.639999
+        },
+        {
+          "word": "the",
+          "start": 152.639999,
+          "end": 152.729996
+        },
+        {
+          "word": "doors",
+          "start": 152.729996,
+          "end": 153.270004
+        }
+      ],
       "answers": [],
-      "end": 154.0
+      "end": 153.270004
     },
     {
       "id": 20,
-      "start": 154.1,
+      "start": 154.050003,
       "speaker": "SPEAKER",
       "en": "All exterior doors in this especially noisy pocket will have to be solid core wood doors with hinges.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 154.050003,
+          "end": 154.449997
+        },
+        {
+          "word": "exterior",
+          "start": 154.490005,
+          "end": 155.240005
+        },
+        {
+          "word": "doors",
+          "start": 155.240005,
+          "end": 155.669998
+        },
+        {
+          "word": "in",
+          "start": 155.669998,
+          "end": 155.820007
+        },
+        {
+          "word": "this",
+          "start": 155.820007,
+          "end": 155.990005
+        },
+        {
+          "word": "especially",
+          "start": 155.990005,
+          "end": 156.570007
+        },
+        {
+          "word": "noisy",
+          "start": 156.570007,
+          "end": 157.020004
+        },
+        {
+          "word": "pocket",
+          "start": 157.020004,
+          "end": 157.410004
+        },
+        {
+          "word": "will",
+          "start": 157.830002,
+          "end": 158.009995
+        },
+        {
+          "word": "have",
+          "start": 158.009995,
+          "end": 158.25
+        },
+        {
+          "word": "to",
+          "start": 158.25,
+          "end": 158.339996
+        },
+        {
+          "word": "be",
+          "start": 158.339996,
+          "end": 158.490005
+        },
+        {
+          "word": "solid",
+          "start": 158.490005,
+          "end": 159.149994
+        },
+        {
+          "word": "core",
+          "start": 159.149994,
+          "end": 159.619995
+        },
+        {
+          "word": "wood",
+          "start": 159.619995,
+          "end": 160.009995
+        },
+        {
+          "word": "doors",
+          "start": 160.119995,
+          "end": 160.639999
+        },
+        {
+          "word": "with",
+          "start": 160.830002,
+          "end": 161.020004
+        },
+        {
+          "word": "hinges",
+          "start": 161.020004,
+          "end": 161.619995
+        }
+      ],
       "answers": [],
-      "end": 161.7
+      "end": 161.619995
     },
     {
       "id": 21,
-      "start": 162.3,
+      "start": 162.5,
       "speaker": "SPEAKER",
       "en": "Every house built on this site, not just those adjacent to the highway or nearest to the airport, will require high density insulation materials in the roof.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Every",
+          "start": 162.5,
+          "end": 162.869995
+        },
+        {
+          "word": "house",
+          "start": 162.869995,
+          "end": 163.25
+        },
+        {
+          "word": "built",
+          "start": 163.330002,
+          "end": 163.570007
+        },
+        {
+          "word": "on",
+          "start": 163.570007,
+          "end": 163.759995
+        },
+        {
+          "word": "this",
+          "start": 163.759995,
+          "end": 163.929993
+        },
+        {
+          "word": "site",
+          "start": 163.929993,
+          "end": 164.470001
+        },
+        {
+          "word": "not",
+          "start": 164.899994,
+          "end": 165.130005
+        },
+        {
+          "word": "just",
+          "start": 165.130005,
+          "end": 165.360001
+        },
+        {
+          "word": "those",
+          "start": 165.360001,
+          "end": 165.619995
+        },
+        {
+          "word": "adjacent",
+          "start": 165.619995,
+          "end": 166.050003
+        },
+        {
+          "word": "to",
+          "start": 166.050003,
+          "end": 166.139999
+        },
+        {
+          "word": "the",
+          "start": 166.139999,
+          "end": 166.220001
+        },
+        {
+          "word": "highway",
+          "start": 166.220001,
+          "end": 166.830002
+        },
+        {
+          "word": "or",
+          "start": 166.830002,
+          "end": 166.970001
+        },
+        {
+          "word": "nearest",
+          "start": 166.970001,
+          "end": 167.320007
+        },
+        {
+          "word": "to",
+          "start": 167.320007,
+          "end": 167.399994
+        },
+        {
+          "word": "the",
+          "start": 167.399994,
+          "end": 167.559998
+        },
+        {
+          "word": "airport",
+          "start": 167.559998,
+          "end": 168.009995
+        },
+        {
+          "word": "will",
+          "start": 168.5,
+          "end": 168.660004
+        },
+        {
+          "word": "require",
+          "start": 168.660004,
+          "end": 169.190002
+        },
+        {
+          "word": "high",
+          "start": 169.190002,
+          "end": 169.580002
+        },
+        {
+          "word": "density",
+          "start": 169.580002,
+          "end": 170.169998
+        },
+        {
+          "word": "insulation",
+          "start": 170.169998,
+          "end": 170.850006
+        },
+        {
+          "word": "materials",
+          "start": 170.850006,
+          "end": 171.490005
+        },
+        {
+          "word": "in",
+          "start": 171.490005,
+          "end": 171.729996
+        },
+        {
+          "word": "the",
+          "start": 171.729996,
+          "end": 171.830002
+        },
+        {
+          "word": "roof",
+          "start": 171.830002,
+          "end": 172.210007
+        }
+      ],
       "answers": [],
-      "end": 173.0
+      "end": 172.210007
     },
     {
       "id": 22,
-      "start": 173.1,
+      "start": 173.0,
       "speaker": "SPEAKER",
       "en": "Not only will all the roofs need insulating, the exterior walls will be required to be double brick.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Not",
+          "start": 173.0,
+          "end": 173.229996
+        },
+        {
+          "word": "only",
+          "start": 173.229996,
+          "end": 173.529999
+        },
+        {
+          "word": "will",
+          "start": 173.529999,
+          "end": 173.690002
+        },
+        {
+          "word": "all",
+          "start": 173.690002,
+          "end": 174.029999
+        },
+        {
+          "word": "the",
+          "start": 174.029999,
+          "end": 174.130005
+        },
+        {
+          "word": "roofs",
+          "start": 174.130005,
+          "end": 174.559998
+        },
+        {
+          "word": "need",
+          "start": 174.559998,
+          "end": 174.770004
+        },
+        {
+          "word": "insulating",
+          "start": 174.770004,
+          "end": 175.559998
+        },
+        {
+          "word": "the",
+          "start": 175.809998,
+          "end": 176.119995
+        },
+        {
+          "word": "exterior",
+          "start": 176.119995,
+          "end": 176.850006
+        },
+        {
+          "word": "walls",
+          "start": 176.850006,
+          "end": 177.470001
+        },
+        {
+          "word": "will",
+          "start": 177.470001,
+          "end": 177.630005
+        },
+        {
+          "word": "be",
+          "start": 177.630005,
+          "end": 177.789993
+        },
+        {
+          "word": "required",
+          "start": 177.789993,
+          "end": 178.369995
+        },
+        {
+          "word": "to",
+          "start": 178.369995,
+          "end": 178.460007
+        },
+        {
+          "word": "be",
+          "start": 178.460007,
+          "end": 178.630005
+        },
+        {
+          "word": "double",
+          "start": 178.630005,
+          "end": 179.080002
+        },
+        {
+          "word": "brick",
+          "start": 179.080002,
+          "end": 179.529999
+        }
+      ],
       "answers": [],
-      "end": 179.6
+      "end": 179.529999
     },
     {
       "id": 23,
-      "start": 180.6,
+      "start": 180.440002,
       "speaker": "SPEAKER",
       "en": "All ceilings will require double thickness plaster board to be used in the construction.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "All",
+          "start": 180.440002,
+          "end": 180.809998
+        },
+        {
+          "word": "ceilings",
+          "start": 180.809998,
+          "end": 181.449997
+        },
+        {
+          "word": "will",
+          "start": 181.449997,
+          "end": 181.610001
+        },
+        {
+          "word": "require",
+          "start": 181.610001,
+          "end": 182.020004
+        },
+        {
+          "word": "double",
+          "start": 182.020004,
+          "end": 182.270004
+        },
+        {
+          "word": "thickness",
+          "start": 182.270004,
+          "end": 182.699997
+        },
+        {
+          "word": "plaster",
+          "start": 182.699997,
+          "end": 183.149994
+        },
+        {
+          "word": "board",
+          "start": 183.149994,
+          "end": 183.419998
+        },
+        {
+          "word": "to",
+          "start": 183.419998,
+          "end": 183.490005
+        },
+        {
+          "word": "be",
+          "start": 183.490005,
+          "end": 183.589996
+        },
+        {
+          "word": "used",
+          "start": 183.589996,
+          "end": 183.949997
+        },
+        {
+          "word": "in",
+          "start": 183.949997,
+          "end": 184.029999
+        },
+        {
+          "word": "the",
+          "start": 184.029999,
+          "end": 184.100006
+        },
+        {
+          "word": "construction",
+          "start": 184.100006,
+          "end": 184.830002
+        }
+      ],
       "answers": [
         36
       ],
-      "end": 184.9
+      "end": 184.830002
     },
     {
       "id": 24,
-      "start": 186.2,
+      "start": 185.669998,
       "speaker": "SPEAKER",
       "en": "In the noisiest areas mechanical ventilation will have to be installed in the exterior walls.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 185.669998,
+          "end": 185.880005
+        },
+        {
+          "word": "the",
+          "start": 185.880005,
+          "end": 185.979996
+        },
+        {
+          "word": "noisiest",
+          "start": 185.979996,
+          "end": 186.610001
+        },
+        {
+          "word": "areas",
+          "start": 186.610001,
+          "end": 187.089996
+        },
+        {
+          "word": "mechanical",
+          "start": 187.539993,
+          "end": 188.339996
+        },
+        {
+          "word": "ventilation",
+          "start": 188.339996,
+          "end": 189.089996
+        },
+        {
+          "word": "will",
+          "start": 189.089996,
+          "end": 189.199997
+        },
+        {
+          "word": "have",
+          "start": 189.199997,
+          "end": 189.399994
+        },
+        {
+          "word": "to",
+          "start": 189.399994,
+          "end": 189.479996
+        },
+        {
+          "word": "be",
+          "start": 189.479996,
+          "end": 189.610001
+        },
+        {
+          "word": "installed",
+          "start": 189.610001,
+          "end": 190.149994
+        },
+        {
+          "word": "in",
+          "start": 190.149994,
+          "end": 190.350006
+        },
+        {
+          "word": "the",
+          "start": 190.350006,
+          "end": 190.470001
+        },
+        {
+          "word": "exterior",
+          "start": 190.470001,
+          "end": 191.080002
+        },
+        {
+          "word": "walls",
+          "start": 191.080002,
+          "end": 191.679993
+        }
+      ],
       "answers": [],
-      "end": 192.4
+      "end": 191.679993
     },
     {
       "id": 25,
-      "start": 193.0,
+      "start": 192.410004,
       "speaker": "SPEAKER",
       "en": "In those areas with sealed windows it will be necessary to fit fans with absorbers to cut out the noise in those particular houses.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "In",
+          "start": 192.410004,
+          "end": 192.600006
+        },
+        {
+          "word": "those",
+          "start": 192.600006,
+          "end": 192.850006
+        },
+        {
+          "word": "areas",
+          "start": 192.850006,
+          "end": 193.279999
+        },
+        {
+          "word": "with",
+          "start": 193.279999,
+          "end": 193.429993
+        },
+        {
+          "word": "sealed",
+          "start": 193.429993,
+          "end": 193.970001
+        },
+        {
+          "word": "windows",
+          "start": 193.970001,
+          "end": 194.570007
+        },
+        {
+          "word": "it",
+          "start": 195.009995,
+          "end": 195.179993
+        },
+        {
+          "word": "will",
+          "start": 195.179993,
+          "end": 195.369995
+        },
+        {
+          "word": "be",
+          "start": 195.369995,
+          "end": 195.509995
+        },
+        {
+          "word": "necessary",
+          "start": 195.509995,
+          "end": 196.130005
+        },
+        {
+          "word": "to",
+          "start": 196.130005,
+          "end": 196.229996
+        },
+        {
+          "word": "fit",
+          "start": 196.229996,
+          "end": 196.559998
+        },
+        {
+          "word": "fans",
+          "start": 196.559998,
+          "end": 197.130005
+        },
+        {
+          "word": "with",
+          "start": 197.130005,
+          "end": 197.289993
+        },
+        {
+          "word": "absorbers",
+          "start": 197.289993,
+          "end": 197.979996
+        },
+        {
+          "word": "to",
+          "start": 197.979996,
+          "end": 198.089996
+        },
+        {
+          "word": "cut",
+          "start": 198.089996,
+          "end": 198.330002
+        },
+        {
+          "word": "out",
+          "start": 198.330002,
+          "end": 198.539993
+        },
+        {
+          "word": "the",
+          "start": 198.539993,
+          "end": 198.610001
+        },
+        {
+          "word": "noise",
+          "start": 198.610001,
+          "end": 198.990005
+        },
+        {
+          "word": "in",
+          "start": 198.990005,
+          "end": 199.089996
+        },
+        {
+          "word": "those",
+          "start": 199.089996,
+          "end": 199.339996
+        },
+        {
+          "word": "particular",
+          "start": 199.339996,
+          "end": 199.779999
+        },
+        {
+          "word": "houses",
+          "start": 199.779999,
+          "end": 200.389999
+        }
+      ],
       "answers": [],
-      "end": 200.5
+      "end": 200.389999
     },
     {
       "id": 26,
-      "start": 201.6,
+      "start": 201.449997,
       "speaker": "SPEAKER",
       "en": "Air conditioning units could also be fitted in the ceilings of such houses but this is substantially more expensive than fans, and may not be needed on this site.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Air",
+          "start": 201.449997,
+          "end": 201.550003
+        },
+        {
+          "word": "conditioning",
+          "start": 201.710007,
+          "end": 202.339996
+        },
+        {
+          "word": "units",
+          "start": 202.339996,
+          "end": 202.740005
+        },
+        {
+          "word": "could",
+          "start": 202.740005,
+          "end": 203.029999
+        },
+        {
+          "word": "also",
+          "start": 203.029999,
+          "end": 203.460007
+        },
+        {
+          "word": "be",
+          "start": 203.460007,
+          "end": 203.589996
+        },
+        {
+          "word": "fitted",
+          "start": 203.589996,
+          "end": 203.910004
+        },
+        {
+          "word": "in",
+          "start": 203.910004,
+          "end": 204.020004
+        },
+        {
+          "word": "the",
+          "start": 204.020004,
+          "end": 204.100006
+        },
+        {
+          "word": "ceilings",
+          "start": 204.100006,
+          "end": 204.580002
+        },
+        {
+          "word": "of",
+          "start": 204.580002,
+          "end": 204.669998
+        },
+        {
+          "word": "such",
+          "start": 204.669998,
+          "end": 204.940002
+        },
+        {
+          "word": "houses",
+          "start": 204.940002,
+          "end": 205.460007
+        },
+        {
+          "word": "but",
+          "start": 205.970001,
+          "end": 206.350006
+        },
+        {
+          "word": "this",
+          "start": 206.520004,
+          "end": 206.789993
+        },
+        {
+          "word": "is",
+          "start": 206.789993,
+          "end": 206.929993
+        },
+        {
+          "word": "substantially",
+          "start": 206.929993,
+          "end": 207.740005
+        },
+        {
+          "word": "more",
+          "start": 207.740005,
+          "end": 207.979996
+        },
+        {
+          "word": "expensive",
+          "start": 207.979996,
+          "end": 208.679993
+        },
+        {
+          "word": "than",
+          "start": 208.679993,
+          "end": 208.820007
+        },
+        {
+          "word": "fans",
+          "start": 208.820007,
+          "end": 209.350006
+        },
+        {
+          "word": "and",
+          "start": 209.729996,
+          "end": 210.199997
+        },
+        {
+          "word": "may",
+          "start": 210.199997,
+          "end": 210.460007
+        },
+        {
+          "word": "not",
+          "start": 210.460007,
+          "end": 210.679993
+        },
+        {
+          "word": "be",
+          "start": 210.679993,
+          "end": 210.789993
+        },
+        {
+          "word": "needed",
+          "start": 210.789993,
+          "end": 211.179993
+        },
+        {
+          "word": "on",
+          "start": 211.179993,
+          "end": 211.360001
+        },
+        {
+          "word": "this",
+          "start": 211.360001,
+          "end": 211.570007
+        },
+        {
+          "word": "site",
+          "start": 211.570007,
+          "end": 212.070007
+        }
+      ],
       "answers": [
         37
       ],
-      "end": 212.1
+      "end": 212.070007
     },
     {
       "id": 27,
-      "start": 212.2,
+      "start": 213.259995,
       "speaker": "SPEAKER",
       "en": "Coming back now to the double glazing I mentioned before.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Coming",
+          "start": 213.259995,
+          "end": 213.440002
+        },
+        {
+          "word": "back",
+          "start": 213.580002,
+          "end": 213.820007
+        },
+        {
+          "word": "now",
+          "start": 213.820007,
+          "end": 214.059998
+        },
+        {
+          "word": "to",
+          "start": 214.059998,
+          "end": 214.199997
+        },
+        {
+          "word": "the",
+          "start": 214.199997,
+          "end": 214.460007
+        },
+        {
+          "word": "double",
+          "start": 214.460007,
+          "end": 214.789993
+        },
+        {
+          "word": "glazing",
+          "start": 214.789993,
+          "end": 215.339996
+        },
+        {
+          "word": "I",
+          "start": 215.339996,
+          "end": 215.470001
+        },
+        {
+          "word": "mentioned",
+          "start": 215.470001,
+          "end": 215.850006
+        },
+        {
+          "word": "before",
+          "start": 215.850006,
+          "end": 216.320007
+        }
+      ],
       "answers": [],
-      "end": 217.2
+      "end": 216.320007
     },
     {
       "id": 28,
-      "start": 217.5,
+      "start": 217.179993,
       "speaker": "SPEAKER",
       "en": "Specialised double glazing requires a larger air gap between the inner and outer glass than normal double glazing.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Specialised",
+          "start": 217.179993,
+          "end": 218.100006
+        },
+        {
+          "word": "double",
+          "start": 218.100006,
+          "end": 218.389999
+        },
+        {
+          "word": "glazing",
+          "start": 218.389999,
+          "end": 218.889999
+        },
+        {
+          "word": "requires",
+          "start": 218.889999,
+          "end": 219.470001
+        },
+        {
+          "word": "a",
+          "start": 219.830002,
+          "end": 219.949997
+        },
+        {
+          "word": "larger",
+          "start": 219.949997,
+          "end": 220.520004
+        },
+        {
+          "word": "air",
+          "start": 220.610001,
+          "end": 220.929993
+        },
+        {
+          "word": "gap",
+          "start": 220.929993,
+          "end": 221.389999
+        },
+        {
+          "word": "between",
+          "start": 221.389999,
+          "end": 221.800003
+        },
+        {
+          "word": "the",
+          "start": 221.800003,
+          "end": 221.940002
+        },
+        {
+          "word": "inner",
+          "start": 221.970001,
+          "end": 222.199997
+        },
+        {
+          "word": "and",
+          "start": 222.199997,
+          "end": 222.479996
+        },
+        {
+          "word": "outer",
+          "start": 222.509995,
+          "end": 222.830002
+        },
+        {
+          "word": "glass",
+          "start": 222.830002,
+          "end": 223.279999
+        },
+        {
+          "word": "than",
+          "start": 223.550003,
+          "end": 223.860001
+        },
+        {
+          "word": "normal",
+          "start": 223.860001,
+          "end": 224.190002
+        },
+        {
+          "word": "double",
+          "start": 224.190002,
+          "end": 224.440002
+        },
+        {
+          "word": "glazing",
+          "start": 224.440002,
+          "end": 224.979996
+        }
+      ],
       "answers": [],
-      "end": 225.2
+      "end": 224.979996
     },
     {
       "id": 29,
-      "start": 225.8,
+      "start": 225.539993,
       "speaker": "SPEAKER",
       "en": "The gap must be at least 7 centimetres.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 225.539993,
+          "end": 225.630005
+        },
+        {
+          "word": "gap",
+          "start": 225.630005,
+          "end": 225.789993
+        },
+        {
+          "word": "must",
+          "start": 226.270004,
+          "end": 226.550003
+        },
+        {
+          "word": "be",
+          "start": 226.550003,
+          "end": 226.699997
+        },
+        {
+          "word": "at",
+          "start": 226.699997,
+          "end": 226.820007
+        },
+        {
+          "word": "least",
+          "start": 226.820007,
+          "end": 227.300003
+        },
+        {
+          "word": "7",
+          "start": 227.330002,
+          "end": 227.850006
+        },
+        {
+          "word": "centimetres",
+          "start": 227.850006,
+          "end": 228.660004
+        }
+      ],
       "answers": [],
-      "end": 228.1
+      "end": 228.660004
     },
     {
       "id": 30,
-      "start": 230.0,
+      "start": 229.539993,
       "speaker": "SPEAKER",
       "en": "The thickness of the glass is also a factor, 8 millimetres on the outside and 6 on the inside pane.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "The",
+          "start": 229.539993,
+          "end": 229.809998
+        },
+        {
+          "word": "thickness",
+          "start": 229.809998,
+          "end": 230.410004
+        },
+        {
+          "word": "of",
+          "start": 230.410004,
+          "end": 230.550003
+        },
+        {
+          "word": "the",
+          "start": 230.550003,
+          "end": 230.639999
+        },
+        {
+          "word": "glass",
+          "start": 230.639999,
+          "end": 231.149994
+        },
+        {
+          "word": "is",
+          "start": 231.149994,
+          "end": 231.279999
+        },
+        {
+          "word": "also",
+          "start": 231.279999,
+          "end": 231.589996
+        },
+        {
+          "word": "a",
+          "start": 231.589996,
+          "end": 231.699997
+        },
+        {
+          "word": "factor",
+          "start": 231.699997,
+          "end": 232.220001
+        },
+        {
+          "word": "8",
+          "start": 232.610001,
+          "end": 232.910004
+        },
+        {
+          "word": "millimetres",
+          "start": 232.979996,
+          "end": 233.509995
+        },
+        {
+          "word": "on",
+          "start": 233.509995,
+          "end": 233.630005
+        },
+        {
+          "word": "the",
+          "start": 233.630005,
+          "end": 233.740005
+        },
+        {
+          "word": "outside",
+          "start": 233.740005,
+          "end": 234.410004
+        },
+        {
+          "word": "and",
+          "start": 234.679993,
+          "end": 234.919998
+        },
+        {
+          "word": "6",
+          "start": 234.919998,
+          "end": 235.070007
+        },
+        {
+          "word": "on",
+          "start": 235.5,
+          "end": 235.75
+        },
+        {
+          "word": "the",
+          "start": 235.75,
+          "end": 235.889999
+        },
+        {
+          "word": "inside",
+          "start": 235.889999,
+          "end": 236.429993
+        },
+        {
+          "word": "pane",
+          "start": 236.429993,
+          "end": 236.910004
+        }
+      ],
       "answers": [
         35
       ],
-      "end": 237.7
+      "end": 236.910004
     },
     {
       "id": 31,
-      "start": 238.3,
+      "start": 237.839996,
       "speaker": "SPEAKER",
       "en": "It is essential that the glass be thicker on the outside than on the inside and that the gap between the panes of glass be a minimum of 7 centimetres.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "It",
+          "start": 237.839996,
+          "end": 237.960007
+        },
+        {
+          "word": "is",
+          "start": 237.960007,
+          "end": 238.139999
+        },
+        {
+          "word": "essential",
+          "start": 238.139999,
+          "end": 238.800003
+        },
+        {
+          "word": "that",
+          "start": 238.800003,
+          "end": 238.970001
+        },
+        {
+          "word": "the",
+          "start": 238.970001,
+          "end": 239.039993
+        },
+        {
+          "word": "glass",
+          "start": 239.039993,
+          "end": 239.470001
+        },
+        {
+          "word": "be",
+          "start": 239.470001,
+          "end": 239.630005
+        },
+        {
+          "word": "thicker",
+          "start": 239.630005,
+          "end": 240.070007
+        },
+        {
+          "word": "on",
+          "start": 240.070007,
+          "end": 240.279999
+        },
+        {
+          "word": "the",
+          "start": 240.279999,
+          "end": 240.389999
+        },
+        {
+          "word": "outside",
+          "start": 240.389999,
+          "end": 241.039993
+        },
+        {
+          "word": "than",
+          "start": 241.039993,
+          "end": 241.169998
+        },
+        {
+          "word": "on",
+          "start": 241.169998,
+          "end": 241.309998
+        },
+        {
+          "word": "the",
+          "start": 241.309998,
+          "end": 241.490005
+        },
+        {
+          "word": "inside",
+          "start": 241.490005,
+          "end": 242.029999
+        },
+        {
+          "word": "and",
+          "start": 242.630005,
+          "end": 242.889999
+        },
+        {
+          "word": "that",
+          "start": 242.889999,
+          "end": 243.110001
+        },
+        {
+          "word": "the",
+          "start": 243.110001,
+          "end": 243.199997
+        },
+        {
+          "word": "gap",
+          "start": 243.199997,
+          "end": 243.669998
+        },
+        {
+          "word": "between",
+          "start": 243.759995,
+          "end": 244.25
+        },
+        {
+          "word": "the",
+          "start": 244.25,
+          "end": 244.320007
+        },
+        {
+          "word": "panes",
+          "start": 244.320007,
+          "end": 244.710007
+        },
+        {
+          "word": "of",
+          "start": 244.710007,
+          "end": 244.820007
+        },
+        {
+          "word": "glass",
+          "start": 244.820007,
+          "end": 245.300003
+        },
+        {
+          "word": "be",
+          "start": 245.649994,
+          "end": 245.899994
+        },
+        {
+          "word": "a",
+          "start": 245.929993,
+          "end": 246.029999
+        },
+        {
+          "word": "minimum",
+          "start": 246.029999,
+          "end": 246.710007
+        },
+        {
+          "word": "of",
+          "start": 246.850006,
+          "end": 247.009995
+        },
+        {
+          "word": "7",
+          "start": 247.009995,
+          "end": 247.380005
+        },
+        {
+          "word": "centimetres",
+          "start": 247.380005,
+          "end": 248.070007
+        }
+      ],
       "answers": [],
-      "end": 249.4
+      "end": 248.070007
     },
     {
       "id": 32,
-      "start": 249.5,
+      "start": 249.419998,
       "speaker": "SPEAKER",
       "en": "Obviously, the noise factor will have to be taken into consideration with the layout of the houses.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Obviously",
+          "start": 249.419998,
+          "end": 250.199997
+        },
+        {
+          "word": "the",
+          "start": 250.490005,
+          "end": 250.610001
+        },
+        {
+          "word": "noise",
+          "start": 250.610001,
+          "end": 251.059998
+        },
+        {
+          "word": "factor",
+          "start": 251.089996,
+          "end": 251.460007
+        },
+        {
+          "word": "will",
+          "start": 251.460007,
+          "end": 251.610001
+        },
+        {
+          "word": "have",
+          "start": 251.610001,
+          "end": 251.850006
+        },
+        {
+          "word": "to",
+          "start": 251.850006,
+          "end": 251.929993
+        },
+        {
+          "word": "be",
+          "start": 251.929993,
+          "end": 252.029999
+        },
+        {
+          "word": "taken",
+          "start": 252.029999,
+          "end": 252.389999
+        },
+        {
+          "word": "into",
+          "start": 252.389999,
+          "end": 252.559998
+        },
+        {
+          "word": "consideration",
+          "start": 252.559998,
+          "end": 253.369995
+        },
+        {
+          "word": "with",
+          "start": 253.600006,
+          "end": 253.850006
+        },
+        {
+          "word": "the",
+          "start": 253.850006,
+          "end": 253.949997
+        },
+        {
+          "word": "layout",
+          "start": 253.949997,
+          "end": 254.589996
+        },
+        {
+          "word": "of",
+          "start": 254.589996,
+          "end": 254.679993
+        },
+        {
+          "word": "the",
+          "start": 254.679993,
+          "end": 254.779999
+        },
+        {
+          "word": "houses",
+          "start": 254.779999,
+          "end": 255.479996
+        }
+      ],
       "answers": [],
-      "end": 256.2
+      "end": 255.479996
     },
     {
       "id": 33,
-      "start": 256.5,
+      "start": 256.290009,
       "speaker": "SPEAKER",
       "en": "Living areas will have to be designed at the back of the houses away from the highway.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Living",
+          "start": 256.290009,
+          "end": 256.75
+        },
+        {
+          "word": "areas",
+          "start": 256.75,
+          "end": 257.220001
+        },
+        {
+          "word": "will",
+          "start": 257.399994,
+          "end": 257.549988
+        },
+        {
+          "word": "have",
+          "start": 257.549988,
+          "end": 257.769989
+        },
+        {
+          "word": "to",
+          "start": 257.769989,
+          "end": 257.850006
+        },
+        {
+          "word": "be",
+          "start": 257.850006,
+          "end": 257.970001
+        },
+        {
+          "word": "designed",
+          "start": 257.970001,
+          "end": 258.459991
+        },
+        {
+          "word": "at",
+          "start": 258.459991,
+          "end": 258.720001
+        },
+        {
+          "word": "the",
+          "start": 258.720001,
+          "end": 258.829987
+        },
+        {
+          "word": "back",
+          "start": 258.829987,
+          "end": 259.309998
+        },
+        {
+          "word": "of",
+          "start": 259.309998,
+          "end": 259.410004
+        },
+        {
+          "word": "the",
+          "start": 259.410004,
+          "end": 259.48999
+        },
+        {
+          "word": "houses",
+          "start": 259.48999,
+          "end": 260.059998
+        },
+        {
+          "word": "away",
+          "start": 260.25,
+          "end": 260.75
+        },
+        {
+          "word": "from",
+          "start": 260.75,
+          "end": 260.980011
+        },
+        {
+          "word": "the",
+          "start": 260.980011,
+          "end": 261.040009
+        },
+        {
+          "word": "highway",
+          "start": 261.040009,
+          "end": 261.630005
+        }
+      ],
       "answers": [],
-      "end": 261.4
+      "end": 261.630005
     },
     {
       "id": 34,
-      "start": 261.5,
+      "start": 262.220001,
       "speaker": "SPEAKER",
       "en": "Bedrooms and living rooms will have to be built towards the back, and for those houses closest to the highway two layers of plasterboard will be needed for the interior bedroom walls.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Bedrooms",
+          "start": 262.220001,
+          "end": 262.890015
+        },
+        {
+          "word": "and",
+          "start": 262.890015,
+          "end": 263.040009
+        },
+        {
+          "word": "living",
+          "start": 263.040009,
+          "end": 263.329987
+        },
+        {
+          "word": "rooms",
+          "start": 263.329987,
+          "end": 263.690002
+        },
+        {
+          "word": "will",
+          "start": 263.920013,
+          "end": 264.059998
+        },
+        {
+          "word": "have",
+          "start": 264.059998,
+          "end": 264.23999
+        },
+        {
+          "word": "to",
+          "start": 264.23999,
+          "end": 264.329987
+        },
+        {
+          "word": "be",
+          "start": 264.329987,
+          "end": 264.470001
+        },
+        {
+          "word": "built",
+          "start": 264.470001,
+          "end": 264.769989
+        },
+        {
+          "word": "towards",
+          "start": 264.769989,
+          "end": 265.200012
+        },
+        {
+          "word": "the",
+          "start": 265.200012,
+          "end": 265.299988
+        },
+        {
+          "word": "back",
+          "start": 265.299988,
+          "end": 265.75
+        },
+        {
+          "word": "and",
+          "start": 266.220001,
+          "end": 266.549988
+        },
+        {
+          "word": "for",
+          "start": 266.549988,
+          "end": 266.76001
+        },
+        {
+          "word": "those",
+          "start": 266.76001,
+          "end": 267.070007
+        },
+        {
+          "word": "houses",
+          "start": 267.070007,
+          "end": 267.529999
+        },
+        {
+          "word": "closest",
+          "start": 267.529999,
+          "end": 268.109985
+        },
+        {
+          "word": "to",
+          "start": 268.109985,
+          "end": 268.209991
+        },
+        {
+          "word": "the",
+          "start": 268.209991,
+          "end": 268.290009
+        },
+        {
+          "word": "highway",
+          "start": 268.290009,
+          "end": 268.899994
+        },
+        {
+          "word": "two",
+          "start": 269.450012,
+          "end": 269.809998
+        },
+        {
+          "word": "layers",
+          "start": 269.809998,
+          "end": 270.220001
+        },
+        {
+          "word": "of",
+          "start": 270.220001,
+          "end": 270.350006
+        },
+        {
+          "word": "plasterboard",
+          "start": 270.350006,
+          "end": 271.220001
+        },
+        {
+          "word": "will",
+          "start": 271.450012,
+          "end": 271.630005
+        },
+        {
+          "word": "be",
+          "start": 271.630005,
+          "end": 271.779999
+        },
+        {
+          "word": "needed",
+          "start": 271.779999,
+          "end": 272.109985
+        },
+        {
+          "word": "for",
+          "start": 272.109985,
+          "end": 272.359985
+        },
+        {
+          "word": "the",
+          "start": 272.359985,
+          "end": 272.529999
+        },
+        {
+          "word": "interior",
+          "start": 272.529999,
+          "end": 273.209991
+        },
+        {
+          "word": "bedroom",
+          "start": 273.209991,
+          "end": 273.670013
+        },
+        {
+          "word": "walls",
+          "start": 273.670013,
+          "end": 274.179993
+        }
+      ],
       "answers": [
         39
       ],
-      "end": 275.0
+      "end": 274.179993
     },
     {
       "id": 35,
-      "start": 275.6,
+      "start": 275.130005,
       "speaker": "SPEAKER",
       "en": "Those rooms constructed at the front of the houses should be garages, laundries, kitchens, bathrooms and dining rooms.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "Those",
+          "start": 275.130005,
+          "end": 275.519989
+        },
+        {
+          "word": "rooms",
+          "start": 275.519989,
+          "end": 275.910004
+        },
+        {
+          "word": "constructed",
+          "start": 275.910004,
+          "end": 276.630005
+        },
+        {
+          "word": "at",
+          "start": 276.660004,
+          "end": 276.940002
+        },
+        {
+          "word": "the",
+          "start": 276.940002,
+          "end": 277.149994
+        },
+        {
+          "word": "front",
+          "start": 277.149994,
+          "end": 277.619995
+        },
+        {
+          "word": "of",
+          "start": 277.619995,
+          "end": 277.700012
+        },
+        {
+          "word": "the",
+          "start": 277.700012,
+          "end": 277.799988
+        },
+        {
+          "word": "houses",
+          "start": 277.799988,
+          "end": 278.299988
+        },
+        {
+          "word": "should",
+          "start": 278.480011,
+          "end": 278.720001
+        },
+        {
+          "word": "be",
+          "start": 278.720001,
+          "end": 278.829987
+        },
+        {
+          "word": "garages",
+          "start": 278.829987,
+          "end": 279.640015
+        },
+        {
+          "word": "laundries",
+          "start": 279.709991,
+          "end": 280.390015
+        },
+        {
+          "word": "kitchens",
+          "start": 280.390015,
+          "end": 281.070007
+        },
+        {
+          "word": "bathrooms",
+          "start": 281.290009,
+          "end": 282.040009
+        },
+        {
+          "word": "and",
+          "start": 282.040009,
+          "end": 282.279999
+        },
+        {
+          "word": "dining",
+          "start": 282.279999,
+          "end": 282.679993
+        },
+        {
+          "word": "rooms",
+          "start": 282.679993,
+          "end": 283.079987
+        }
+      ],
       "answers": [],
-      "end": 283.2
+      "end": 283.079987
     },
     {
       "id": 36,
-      "start": 284.6,
+      "start": 284.089996,
       "speaker": "SPEAKER",
       "en": "I have come to the conclusion that this development should go ahead, but with various acoustic modifications according to the position of the block in relation to the highway and intersection.",
       "zh": "",
-      "words": [],
+      "words": [
+        {
+          "word": "I",
+          "start": 284.089996,
+          "end": 284.290009
+        },
+        {
+          "word": "have",
+          "start": 284.290009,
+          "end": 284.470001
+        },
+        {
+          "word": "come",
+          "start": 284.470001,
+          "end": 284.579987
+        },
+        {
+          "word": "to",
+          "start": 284.690002,
+          "end": 284.779999
+        },
+        {
+          "word": "the",
+          "start": 284.779999,
+          "end": 284.880005
+        },
+        {
+          "word": "conclusion",
+          "start": 284.880005,
+          "end": 285.429993
+        },
+        {
+          "word": "that",
+          "start": 285.429993,
+          "end": 285.640015
+        },
+        {
+          "word": "this",
+          "start": 285.640015,
+          "end": 285.869995
+        },
+        {
+          "word": "development",
+          "start": 285.869995,
+          "end": 286.570007
+        },
+        {
+          "word": "should",
+          "start": 286.570007,
+          "end": 286.890015
+        },
+        {
+          "word": "go",
+          "start": 286.890015,
+          "end": 286.959991
+        },
+        {
+          "word": "ahead",
+          "start": 286.959991,
+          "end": 287.51001
+        },
+        {
+          "word": "but",
+          "start": 287.940002,
+          "end": 288.350006
+        },
+        {
+          "word": "with",
+          "start": 288.350006,
+          "end": 288.640015
+        },
+        {
+          "word": "various",
+          "start": 288.640015,
+          "end": 289.119995
+        },
+        {
+          "word": "acoustic",
+          "start": 289.119995,
+          "end": 289.630005
+        },
+        {
+          "word": "modifications",
+          "start": 289.630005,
+          "end": 290.670013
+        },
+        {
+          "word": "according",
+          "start": 291.059998,
+          "end": 291.519989
+        },
+        {
+          "word": "to",
+          "start": 291.519989,
+          "end": 291.630005
+        },
+        {
+          "word": "the",
+          "start": 291.630005,
+          "end": 291.769989
+        },
+        {
+          "word": "position",
+          "start": 291.769989,
+          "end": 292.23999
+        },
+        {
+          "word": "of",
+          "start": 292.23999,
+          "end": 292.339996
+        },
+        {
+          "word": "the",
+          "start": 292.339996,
+          "end": 292.429993
+        },
+        {
+          "word": "block",
+          "start": 292.429993,
+          "end": 292.829987
+        },
+        {
+          "word": "in",
+          "start": 293.100006,
+          "end": 293.320007
+        },
+        {
+          "word": "relation",
+          "start": 293.320007,
+          "end": 293.839996
+        },
+        {
+          "word": "to",
+          "start": 293.839996,
+          "end": 293.940002
+        },
+        {
+          "word": "the",
+          "start": 293.940002,
+          "end": 294.019989
+        },
+        {
+          "word": "highway",
+          "start": 294.019989,
+          "end": 294.700012
+        },
+        {
+          "word": "and",
+          "start": 294.730011,
+          "end": 294.940002
+        },
+        {
+          "word": "intersection",
+          "start": 294.940002,
+          "end": 295.670013
+        }
+      ],
       "answers": [
         40
       ],
-      "end": 295.7
+      "end": 295.670013
     }
   ],
   "questions": [
@@ -467,5 +4158,19 @@
         }
       ]
     }
-  ]
+  ],
+  "alignment": {
+    "engine": "montreal-forced-aligner",
+    "model": "MontrealCorpusTools/english_mfa",
+    "granularity": "word+phone",
+    "fixed_transcript": true,
+    "source_word_count": 731,
+    "mfa_word_count": 727,
+    "matched_word_count": 711,
+    "full_track_mfa": true,
+    "leading_silence_trim": true,
+    "trim_padding": 2.0,
+    "beam": 100,
+    "retry_beam": 400
+  }
 }
