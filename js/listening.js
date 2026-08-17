@@ -182,7 +182,7 @@ let snippetAudio = null;
 let snippetEndTime = null;
 let snippetPlayingSid = null;
 // 音频文件在本地修复后，避免浏览器继续复用旧的无声缓存。
-const AUDIO_CACHE_VERSION = "20260810-2";
+const AUDIO_CACHE_VERSION = "20260817-1";
 
 function audioUrl() {
   const raw = String(PART && PART.audio || "");
